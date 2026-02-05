@@ -36,8 +36,3 @@ jobs:
           git add nba/data/nbaplayerstatus.csv
           git diff --cached --quiet || git commit -m "Update NBA injuries CSV [skip ci]"
           git push
-
-
-          git add nba/data/nbaplayerstatus.csv
-          git commit -m "Auto-update NBA injury status"
-          git push
