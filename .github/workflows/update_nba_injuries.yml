@@ -29,12 +29,14 @@ jobs:
         run: |
           python nba/nbainjuries.py
 
-      - name: Commit & push CSV if changed
+      - name: Commit & Push Updated CSV
         run: |
-          git status
-          git diff --quiet && echo "No changes detected" && exit 0
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A nba/data/
+          git commit -m "Update NBA injuries CSV [skip ci]" || echo "No changes to commit"
+          git push
+
           git add nba/data/nbaplayerstatus.csv
           git commit -m "Auto-update NBA injury status"
           git push
