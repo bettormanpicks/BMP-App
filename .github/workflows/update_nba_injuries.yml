@@ -27,7 +27,7 @@ jobs:
 
       - name: Run NBA injury scraper
         run: |
-          python nbainjuries.py
+          python nba/nbainjuries.py
 
       - name: Commit & push CSV if changed
         run: |
