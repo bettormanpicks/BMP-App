@@ -33,8 +33,8 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add -A nba/data/
-          git commit -m "Update NBA injuries CSV [skip ci]" || echo "No changes to commit"
+          git add nba/data/nbaplayerstatus.csv
+          git diff --cached --quiet || git commit -m "Update NBA injuries CSV [skip ci]"
           git push
 
           git add nba/data/nbaplayerstatus.csv
