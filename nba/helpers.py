@@ -350,21 +350,20 @@ def load_nba_raw_data():
 
 @st.cache_data(ttl=3600)
 def load_defense_tables(window):
-    # Load raw data
+    """
+    Load raw NBA data and compute overall + positional defensive tables.
+    """
     player_logs_df, team_totals_df, pos_df = load_nba_raw_data()
 
-    # --- Defensive stats REQUIRE Opp column ---
+    # Ensure player logs have opponent column
     if "Opp" not in player_logs_df.columns:
         player_logs_df = add_team_opponent_columns(player_logs_df)
 
-    # --- Drop rows where position is unknown ---
+    # Drop rows where position is unknown
     player_logs_df = player_logs_df[player_logs_df["PosBucket"].notna()]
 
-    print("Team totals columns:", team_totals_df.columns.tolist())
-    print("First few rows:\n", team_totals_df.head())
-
-    # --- Compute defense tables ---
-    overall_def = get_team_def_ranks(team_totals_df, window)  # <--- pass team_totals_df
+    # Compute defense tables
+    overall_def = get_team_def_ranks(team_totals_df, window)
     positional_def = get_team_def_ranks_by_position(player_logs_df, window)
 
     return overall_def, positional_def

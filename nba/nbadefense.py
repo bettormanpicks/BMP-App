@@ -2,21 +2,44 @@
 
 import pandas as pd
 
+def ensure_opp_column(df):
+    """
+    Returns a tuple: (df, column_name) where column_name can be used as the opponent team.
+    - Uses 'OPP_TEAM' if present
+    - Uses 'Opp' if present
+    - Uses 'MATCHUP' to derive OPP_TEAM if present
+    Raises ValueError if none found.
+    """
+    if "OPP_TEAM" in df.columns:
+        return df, "OPP_TEAM"
+    elif "Opp" in df.columns:
+        return df, "Opp"
+    elif "MATCHUP" in df.columns:
+        df = add_opp_from_matchup(df)
+        return df, "OPP_TEAM"
+    else:
+        raise ValueError("No column found to represent opponent team")
+
 def add_opp_from_matchup(df):
     """
-    Derive OPP_TEAM from MATCHUP for team totals.
+    Adds 'OPP_TEAM' column from 'MATCHUP' if it exists.
+    Compatible with ensure_opp_column:
+      - If 'OPP_TEAM' already exists, does nothing.
+      - If 'MATCHUP' exists, extracts opponent team.
+      - Otherwise, creates 'OPP_TEAM' with None values.
     """
     if "OPP_TEAM" in df.columns:
         return df
 
-    if "MATCHUP" not in df.columns:
-        raise ValueError("MATCHUP column not found for opponent derivation")
-
-    df["OPP_TEAM"] = (
-        df["MATCHUP"]
-        .astype(str)
-        .str.extract(r"(?:@|vs\.)\s+([A-Z]{3})", expand=False)
-    )
+    if "MATCHUP" in df.columns:
+        df["OPP_TEAM"] = (
+            df["MATCHUP"]
+            .astype(str)
+            .str.extract(r"(?:@|vs\.)\s*([A-Z]{3})", expand=False)
+        )
+    else:
+        # Safe fallback: create empty column
+        df["OPP_TEAM"] = None
 
     return df
 
@@ -29,7 +52,8 @@ STATS = [
 
 def get_team_def_ranks(team_totals_df=None, window="ALL"):
     """
-    Compute defensive rankings based on opponent-allowed stats.
+    Compute defensive rankings based on opponent-allowed stats from team totals.
+    Expects team_totals_df with 'OPP_TEAM' or 'MATCHUP'.
     """
     if team_totals_df is None:
         df = pd.read_csv("nba/data/nbateamgametotals.csv")
@@ -37,18 +61,22 @@ def get_team_def_ranks(team_totals_df=None, window="ALL"):
         df = team_totals_df.copy()
 
     df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
-    df = add_opp_from_matchup(df)
-    
+
+    # Ensure we have an opponent column
+    df, opp_col = ensure_opp_column(df)
+
+    # Combo stat
     if {"PTS","REB","AST"}.issubset(df.columns):
         df["PRA"] = df["PTS"] + df["REB"] + df["AST"]
 
+    # Apply window (e.g., "L5")
     if window != "ALL":
         n_games = int(window[1:])
-        df = df.sort_values("GAME_DATE").groupby("OPP_TEAM", group_keys=False).tail(n_games)
+        df = df.sort_values("GAME_DATE").groupby(opp_col, group_keys=False).tail(n_games)
 
     rows = []
     for stat in STATS:
-        stat_df = df.groupby("OPP_TEAM")[stat].mean().reset_index(name="AVG_ALLOWED")
+        stat_df = df.groupby(opp_col)[stat].mean().reset_index(name="AVG_ALLOWED")
         stat_df["STAT"] = stat
         stat_df["RANK"] = stat_df["AVG_ALLOWED"].rank(method="min", ascending=True).astype(int)
         rows.append(stat_df)
@@ -57,53 +85,37 @@ def get_team_def_ranks(team_totals_df=None, window="ALL"):
 
 def get_team_def_ranks_by_position(player_logs_df, window="ALL"):
     """
-    Compute opponent defensive averages and ranks
-    broken out by player position bucket.
+    Compute defensive averages and ranks by opponent + position bucket.
+    Expects player_logs_df with 'Opp' column.
     """
-
-    # Work ONLY from player logs
     df = player_logs_df.copy()
     df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
 
-    # Sanity checks (important)
-    required = {"Opp", "PosBucket"}
+    # Ensure we have an opponent column
+    df, opp_col = ensure_opp_column(df)
+
+    # Required columns
+    required = {opp_col, "PosBucket"}
     missing = required - set(df.columns)
     if missing:
         raise ValueError(f"Missing required columns: {missing}")
 
-    # PRA
-    if {"PTS", "REB", "AST"}.issubset(df.columns):
+    # Combo stat
+    if {"PTS","REB","AST"}.issubset(df.columns):
         df["PRA"] = df["PTS"] + df["REB"] + df["AST"]
 
     # Apply window per opponent + position
     if window != "ALL":
         n_games = int(window[1:])
-        df = (
-            df.sort_values("GAME_DATE")
-              .groupby(["Opp", "PosBucket"], group_keys=False)
-              .tail(n_games)
-        )
+        df = df.sort_values("GAME_DATE").groupby([opp_col, "PosBucket"], group_keys=False).tail(n_games)
 
     rows = []
 
     for stat in STATS:
-        stat_df = (
-            df
-            .groupby(["Opp", "PosBucket"])[stat]
-            .mean()
-            .reset_index(name="AVG_ALLOWED")
-        )
-
+        stat_df = df.groupby([opp_col, "PosBucket"])[stat].mean().reset_index(name="AVG_ALLOWED")
         stat_df["STAT"] = stat
-
-        # Rank WITHIN position bucket
-        stat_df["RANK"] = (
-            stat_df
-            .groupby("PosBucket")["AVG_ALLOWED"]
-            .rank(method="min", ascending=True)
-            .astype(int)
-        )
-
+        # Rank within position bucket
+        stat_df["RANK"] = stat_df.groupby("PosBucket")["AVG_ALLOWED"].rank(method="min", ascending=True).astype(int)
         rows.append(stat_df)
 
     return pd.concat(rows, ignore_index=True)
