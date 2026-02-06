@@ -6,7 +6,7 @@ import requests
 from datetime import datetime, timedelta
 import re
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
-from nhl.nhlinjuries import fetch_nhl_injuries_selenium
+#from nhl.nhlinjuries import fetch_nhl_injuries_selenium
 
 st.set_page_config(page_title="Sports Stat Analyzer", layout="wide")
 st.title("📊 Sports Stat Analyzer")
@@ -168,9 +168,9 @@ def get_nhl_teams_on_date(date_str):
 
     return teams
 
-@st.cache_data(ttl=900)
-def get_nhl_injuries():
-    return fetch_nhl_injuries_selenium(headless=True)
+#@st.cache_data(ttl=900)
+#def get_nhl_injuries():
+#    return fetch_nhl_injuries_selenium(headless=True)
 
 def norm_name(s):
     s = str(s).lower().replace(".", "").replace(",", "").strip()
@@ -1277,13 +1277,13 @@ elif sport_choice == "NHL":
                     nhl_b2b_map[team] = "N"
 
             # ==== FETCH ESPN NHL INJURIES (cached 15 min) ====
-            inj_df = get_nhl_injuries()
-
-            inj_status_map = (
-                {norm_name(p): s for p, s in zip(inj_df["Player"], inj_df["Status_norm"])}
-                if not inj_df.empty
-                else {}
-            )
+#            inj_df = get_nhl_injuries()
+#
+#            inj_status_map = (
+#                {norm_name(p): s for p, s in zip(inj_df["Player"], inj_df["Status_norm"])}
+#                if not inj_df.empty
+#                else {}
+#            )
 
             # --- Compute recent form ---
             def compute_recent_nhl_stats(group, recent_n, pct, player_type):
