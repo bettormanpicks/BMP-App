@@ -902,16 +902,23 @@ if sport_choice == "NBA":
         # --- Add B2B and injury status ---
         summary_df["B2B"] = summary_df["Team"].map(team_b2b_map).fillna("N")
 
+        # --- Load NBA injury statuses robustly ---
         try:
             inj_df = pd.read_csv("nba/data/nbaplayerstatus.csv")
 
-            inj_df["player_id"] = inj_df["player_id"].astype(str)
-            summary_df["player_id"] = summary_df["player_id"].astype(str)
+            # Strip any spaces from column names
+            inj_df.columns = inj_df.columns.str.strip()
 
+            # Ensure player_id is string and stripped
+            inj_df["player_id"] = inj_df["player_id"].astype(str).str.strip()
+            summary_df["player_id"] = summary_df["player_id"].astype(str).str.strip()
+
+            # Build mapping dict and apply
             inj_map = dict(zip(inj_df["player_id"], inj_df["Status_norm"]))
             summary_df["Status"] = summary_df["player_id"].map(inj_map).fillna("A")
 
         except Exception as e:
+            st.warning(f"Could not load NBA injuries: {e}")
             summary_df["Status"] = "A"
 
         # --- Column order ---
