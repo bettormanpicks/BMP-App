@@ -308,7 +308,7 @@ if sport_choice == "NBA":
 
         filter_today = st.checkbox("Filter To Today's Teams", value=False)
 
-        debug_defense_csv = st.checkbox("Export Defensive Rankings", value=False)
+        #debug_defense_csv = st.checkbox("Export Defensive Rankings", value=False)
 
         calculate = st.form_submit_button("Calculate")
 
@@ -443,7 +443,7 @@ if sport_choice == "NBA":
         st.dataframe(strip_display_ids(summary_df), width='stretch', hide_index=True, column_config=col_config)
 
         csv_bytes = strip_display_ids(summary_df).to_csv(index=False).encode()
-        st.download_button("Download CSV", csv_bytes, "player_stats.csv")
+        #st.download_button("Download CSV", csv_bytes, "player_stats.csv")
 
 ############################################################
 # ===== NFL SECTION (PFR CLEAN DATA ONLY) =====
