@@ -10,9 +10,9 @@ from datetime import datetime
 from unidecode import unidecode
 
 # Path to CSVs
-PLAYER_POS_CSV = "data/nbaplayerspositions.csv"
-OUTPUT_CSV = "data/nbaplayerstatus.csv"
-LOG_FILE = "data/nbaplayerstatus.log"
+PLAYER_POS_CSV = "nba/data/nbaplayerspositions.csv"
+OUTPUT_CSV = "nba/data/nbaplayerstatus.csv"
+LOG_FILE = "nba/data/nbaplayerstatus.log"
 
 def fetch_nba_injuries_selenium(headless=True):
     """
