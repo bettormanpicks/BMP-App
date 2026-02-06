@@ -5,7 +5,15 @@ import pandas as pd
 from datetime import timedelta
 import json
 import streamlit as st
-from shared.utils import hit_rate_threshold, get_nba_today  # if needed
+from shared.utils import (
+    get_nba_today,
+    get_teams_playing_on_date,
+    hit_rate_threshold,
+    trim_df_to_recent_82,
+    dedupe_columns,
+    strip_display_ids,
+    norm_name,
+)
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 
 DEF_STAT_MAP = {
@@ -33,7 +41,6 @@ def load_nba_schedule(path="nba/data/nbaschedule.json"):
 
 @st.cache_data(ttl=3600)
 def load_today_matchups(path="nba/data/nbaschedule.json"):
-    from nba.helpers_schedule import load_todays_schedule  # if you keep that helper separate
     return load_todays_schedule(path)
 
 @st.cache_data(ttl=300)
