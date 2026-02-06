@@ -332,9 +332,9 @@ if sport_choice == "NBA":
             opponent_def[rank_col] = stat_df["RANK"]
 
         # Export debug CSVs if requested
-        if debug_defense_csv:
-            opponent_def.to_csv("debug_nba_defense_overall.csv", index=True)
-            pos_def_df.to_csv("debug_nba_defense_positional.csv", index=False)
+        #if debug_defense_csv:
+            #opponent_def.to_csv("debug_nba_defense_overall.csv", index=True)
+            #pos_def_df.to_csv("debug_nba_defense_positional.csv", index=False)
 
         # --- Load schedule & compute B2B map ---
         schedule_data = load_nba_schedule()
