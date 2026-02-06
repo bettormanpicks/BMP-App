@@ -347,7 +347,7 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
             except:
                 continue
 
-            if date_str != today:
+            if date_str != today_str:
                 continue
 
             # Extract today's games
