@@ -7,7 +7,7 @@ from datetime import datetime, timedelta
 import pytz
 import re
 from shared.utils import get_nba_today, hit_rate_threshold, trim_df_to_recent_82, dedupe_columns, strip_display_ids, norm_name, get_teams_playing_on_date
-from nba.helpers import DEF_STAT_MAP, load_nba_schedule, load_today_matchups, load_nba_injury_status, parse_nba_matchup, add_team_opponent_columns, compute_player_percentiles, load_todays_schedule, compute_team_b2b_from_schedule, normalize_nba_position, normalize_nba_position_display, add_combo_stats, load_nba_raw_data
+from nba.helpers import DEF_STAT_MAP, load_nba_schedule, load_today_matchups, load_nba_injury_status, parse_nba_matchup, add_team_opponent_columns, compute_player_percentiles, load_todays_schedule, compute_team_b2b_from_schedule, normalize_nba_position, normalize_nba_position_display, add_combo_stats, load_nba_raw_data, load_defense_tables
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 #from nhl.nhlinjuries import fetch_nhl_injuries_selenium
 
