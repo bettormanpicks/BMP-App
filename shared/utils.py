@@ -1,5 +1,12 @@
 #shared/utils.py
 
+import pandas as pd
+import math
+from datetime import datetime, timedelta
+import pytz
+import streamlit as st
+from typing import Iterable, Union
+
 def get_nba_today(cutoff_hour_ct=3):
     """
     Returns the NBA 'logical date' using a CT cutoff.
@@ -63,6 +70,15 @@ def dedupe_columns(cols):
 
 def strip_display_ids(df):
     return df.drop(columns=[c for c in df.columns if c.lower() in ("player_id",)], errors="ignore")
+
+def norm_name(s):
+    s = str(s).lower().replace(".", "").replace(",", "").strip()
+    parts = s.split()
+    if len(parts) == 1:
+        return parts[0]
+    first_initial = parts[0][0]
+    last = parts[-1]
+    return f"{first_initial} {last}"
 
 @st.cache_data(ttl=3600)
 def get_teams_playing_on_date(schedule_data, target_date):
