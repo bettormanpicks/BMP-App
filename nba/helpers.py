@@ -360,6 +360,9 @@ def load_defense_tables(window):
     # --- Drop rows where position is unknown ---
     player_logs_df = player_logs_df[player_logs_df["PosBucket"].notna()]
 
+    print("Team totals columns:", team_totals_df.columns.tolist())
+    print("First few rows:\n", team_totals_df.head())
+
     # --- Compute defense tables ---
     overall_def = get_team_def_ranks(team_totals_df, window)  # <--- pass team_totals_df
     positional_def = get_team_def_ranks_by_position(player_logs_df, window)
