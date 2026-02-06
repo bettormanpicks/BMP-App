@@ -4,7 +4,7 @@ import numpy as np
 import json
 import requests
 from datetime import datetime, timedelta
-from zoneinfo import ZoneInfo  # Python 3.9+
+import pytz
 import re
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 #from nhl.nhlinjuries import fetch_nhl_injuries_selenium
@@ -126,19 +126,20 @@ def get_teams_playing_on_date(schedule_data, target_date):
 
     return teams
 
-NBA_TZ = ZoneInfo("America/Chicago")
-
-def get_nba_today(cutoff_hour=3):
+def get_nba_today(cutoff_hour_ct=3):
     """
-    Returns NBA 'today' date using Central Time.
-    Day rolls over at cutoff_hour (default: 3am CT).
+    Returns the NBA 'logical date' using a CT cutoff.
+    Before cutoff_hour_ct, treat today as yesterday.
     """
-    now = datetime.now(NBA_TZ)
+    ct = pytz.timezone("US/Central")
+    now_ct = datetime.now(ct)
 
-    if now.hour < cutoff_hour:
-        return (now - timedelta(days=1)).date()
+    if now_ct.hour < cutoff_hour_ct:
+        nba_date = (now_ct - timedelta(days=1)).date()
+    else:
+        nba_date = now_ct.date()
 
-    return now.date()
+    return nba_date
 
 def compute_team_b2b_from_schedule(schedule_data):
     today = get_nba_today()
@@ -153,9 +154,9 @@ def compute_team_b2b_from_schedule(schedule_data):
 
     for team in today_teams:
         if team in yesterday_teams:
-            b2b[team] = "2"   # Back-to-back (played yesterday)
+            b2b[team] = "2"
         elif team in tomorrow_teams:
-            b2b[team] = "1"   # Front end of B2B
+            b2b[team] = "1"
         else:
             b2b[team] = "N"
 
@@ -297,11 +298,6 @@ def add_team_opponent_columns(df):
     return df
 
 def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
-    """
-    Returns:
-       todays_teams → set of team tricodes
-       today_matchups → dict: TEAM → OPPONENT
-    """
     try:
         with open(schedule_path, "r", encoding="utf-8") as f:
             data = json.load(f)
@@ -309,7 +305,8 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
         st.warning(f"Could not load {schedule_path}: {e}")
         return set(), {}
 
-    today = get_nba_today().strftime("%Y-%m-%d")
+    nba_today = get_nba_today()
+    today_str = nba_today.strftime("%Y-%m-%d")
 
     todays_teams = set()
     today_matchups = {}
@@ -317,15 +314,27 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
     # ---- Simple format ----
     if "games" in data:
         for g in data["games"]:
-            home = g.get("home")
-            away = g.get("away")
+            game_date = g.get("date") or g.get("gameDate")
+            if not game_date:
+                continue
+
+            try:
+                parsed = pd.to_datetime(game_date).strftime("%Y-%m-%d")
+            except:
+                continue
+
+            if parsed != today_str:
+                continue
+
+            home = g.get("home", "").upper()
+            away = g.get("away", "").upper()
+
             if home and away:
-                home = home.upper()
-                away = away.upper()
                 todays_teams.add(home)
                 todays_teams.add(away)
                 today_matchups[home] = away
                 today_matchups[away] = home
+
         return todays_teams, today_matchups
 
     # ---- NBA API format ----
