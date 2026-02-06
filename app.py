@@ -4,6 +4,7 @@ import numpy as np
 import json
 import requests
 from datetime import datetime, timedelta
+from zoneinfo import ZoneInfo  # Python 3.9+
 import re
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 #from nhl.nhlinjuries import fetch_nhl_injuries_selenium
@@ -125,8 +126,22 @@ def get_teams_playing_on_date(schedule_data, target_date):
 
     return teams
 
+NBA_TZ = ZoneInfo("America/Chicago")
+
+def get_nba_today(cutoff_hour=3):
+    """
+    Returns NBA 'today' date using Central Time.
+    Day rolls over at cutoff_hour (default: 3am CT).
+    """
+    now = datetime.now(NBA_TZ)
+
+    if now.hour < cutoff_hour:
+        return (now - timedelta(days=1)).date()
+
+    return now.date()
+
 def compute_team_b2b_from_schedule(schedule_data):
-    today = datetime.now().date()
+    today = get_nba_today()
     yesterday = today - timedelta(days=1)
     tomorrow = today + timedelta(days=1)
 
@@ -138,9 +153,9 @@ def compute_team_b2b_from_schedule(schedule_data):
 
     for team in today_teams:
         if team in yesterday_teams:
-            b2b[team] = "2"
+            b2b[team] = "2"   # Back-to-back (played yesterday)
         elif team in tomorrow_teams:
-            b2b[team] = "1"
+            b2b[team] = "1"   # Front end of B2B
         else:
             b2b[team] = "N"
 
@@ -223,6 +238,7 @@ def normalize_nba_position_display(pos):
 
     return mapping.get(pos, pos)
 
+
 ############################################################
 # NBA HELPERS (restored from your standalone script)
 ############################################################
@@ -293,7 +309,8 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
         st.warning(f"Could not load {schedule_path}: {e}")
         return set(), {}
 
-    today = datetime.now().strftime("%Y-%m-%d")
+    today = get_nba_today().strftime("%Y-%m-%d")
+
     todays_teams = set()
     today_matchups = {}
 
@@ -763,6 +780,8 @@ sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NFL", "NHL"])
 if sport_choice == "NBA":
 
     st.subheader("NBA — Player Hit Rate Analysis")
+    nba_today = get_nba_today()
+    st.caption(f"NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)")
 
     # --- Load core NBA data (cached) ---
     df, team_totals_df, pos_df = load_nba_raw_data()
