@@ -361,7 +361,7 @@ def load_defense_tables(window):
     player_logs_df = player_logs_df[player_logs_df["PosBucket"].notna()]
 
     # --- Compute defense tables ---
-    overall_def = get_team_def_ranks(player_logs_df, window)
+    overall_def = get_team_def_ranks(team_totals_df, window)  # <--- pass team_totals_df
     positional_def = get_team_def_ranks_by_position(player_logs_df, window)
 
     return overall_def, positional_def
