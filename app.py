@@ -1,0 +1,1387 @@
+import streamlit as st
+import pandas as pd
+import numpy as np
+import json
+import requests
+from datetime import datetime, timedelta
+import re
+from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
+from nhl.nhlinjuries import fetch_nhl_injuries_selenium
+
+st.set_page_config(page_title="Sports Stat Analyzer", layout="wide")
+st.title("📊 Sports Stat Analyzer")
+
+############################################################
+# UTILITY FUNCTIONS (shared)
+############################################################
+def dedupe_columns(cols):
+    counts = {}
+    new_cols = []
+    for c in cols:
+        if c not in counts:
+            counts[c] = 0
+            new_cols.append(c)
+        else:
+            counts[c] += 1
+            new_cols.append(f"{c}_{counts[c]}")
+    return new_cols
+
+def strip_display_ids(df):
+    return df.drop(columns=[c for c in df.columns if c.lower() in ("player_id",)], errors="ignore")
+
+def trim_df_to_recent_82(df, date_col="GAME_DATE"):
+    # Keep behavior consistent with your original code (works for NBA GAME_DATE)
+    if date_col in df.columns:
+        df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
+    return (
+        df.sort_values(["player_id", date_col], ascending=[True, False])
+          .groupby("player_id", group_keys=False)
+          .head(82)
+          .reset_index(drop=True)
+    )
+
+def hit_rate_threshold(values, pct):
+    """
+    Lowest stat value hit in at least pct% of games.
+    Accepts pandas Series, list, or iterable.
+    """
+    if values is None:
+        return 0
+
+    # Convert to numeric pandas Series safely
+    if not isinstance(values, pd.Series):
+        values = pd.Series(values)
+
+    values = pd.to_numeric(values, errors="coerce").dropna()
+    if values.empty:
+        return 0
+
+    values = values.sort_values()
+    n = len(values)
+    k = math.ceil((pct / 100.0) * n)
+    k = min(max(k, 1), n)
+
+    return values.iloc[-k]
+
+def add_combo_stats(df):
+    """
+    Derive combination stats (shared by NBA standalone)
+    """
+    df = df.copy()
+
+    def get(col):
+        return next((c for c in df.columns if c.lower() == col.lower()), None)
+
+    pts = get("pts")
+    reb = get("reb")
+    ast = get("ast")
+
+    if pts and reb and ast:
+        df["PRA"] = df[pts] + df[reb] + df[ast]
+    if pts and reb:
+        df["PR"] = df[pts] + df[reb]
+    if pts and ast:
+        df["PA"] = df[pts] + df[ast]
+    if reb and ast:
+        df["RA"] = df[reb] + df[ast]
+
+    return df
+
+@st.cache_data(ttl=3600)
+def get_teams_playing_on_date(schedule_data, target_date):
+    """
+    schedule_data: loaded JSON dict (full season)
+    target_date: datetime.date
+    Returns: set of team tricodes playing on that date
+    """
+    teams = set()
+    target_str = target_date.strftime("%Y-%m-%d")
+
+    # ---- Simple format ----
+    if "games" in schedule_data:
+        for g in schedule_data["games"]:
+            if g.get("gameDate") == target_str:
+                home = g.get("home")
+                away = g.get("away")
+                if home and away:
+                    teams.add(home.upper())
+                    teams.add(away.upper())
+        return teams
+
+    # ---- NBA API format ----
+    for day in schedule_data.get("leagueSchedule", {}).get("gameDates", []):
+        raw = day.get("gameDate", "")
+        try:
+            parsed = pd.to_datetime(raw).date()
+        except:
+            continue
+
+        if parsed != target_date:
+            continue
+
+        for g in day.get("games", []):
+            teams.add(g["homeTeam"]["teamTricode"].upper())
+            teams.add(g["awayTeam"]["teamTricode"].upper())
+
+    return teams
+
+def compute_team_b2b_from_schedule(schedule_data):
+    today = datetime.now().date()
+    yesterday = today - timedelta(days=1)
+    tomorrow = today + timedelta(days=1)
+
+    today_teams = get_teams_playing_on_date(schedule_data, today)
+    yesterday_teams = get_teams_playing_on_date(schedule_data, yesterday)
+    tomorrow_teams = get_teams_playing_on_date(schedule_data, tomorrow)
+
+    b2b = {}
+
+    for team in today_teams:
+        if team in yesterday_teams:
+            b2b[team] = "2"
+        elif team in tomorrow_teams:
+            b2b[team] = "1"
+        else:
+            b2b[team] = "N"
+
+    return b2b
+
+@st.cache_data(ttl=900)
+def get_nhl_teams_on_date(date_str):
+    teams = set()
+    try:
+        r = requests.get(f"https://api-web.nhle.com/v1/schedule/{date_str}", timeout=15)
+        r.raise_for_status()
+        data = r.json()
+
+        for block in data.get("gameWeek", []):
+            if block.get("date") != date_str:
+                continue
+            for g in block.get("games", []):
+                away = (g.get("awayTeam") or {}).get("abbrev")
+                home = (g.get("homeTeam") or {}).get("abbrev")
+                if away and home:
+                    teams.add(away)
+                    teams.add(home)
+    except Exception as e:
+        st.warning("Unable to fetch NHL schedule")
+
+    return teams
+
+@st.cache_data(ttl=900)
+def get_nhl_injuries():
+    return fetch_nhl_injuries_selenium(headless=True)
+
+def norm_name(s):
+    s = str(s).lower().replace(".", "").replace(",", "").strip()
+    parts = s.split()
+    if len(parts) == 1:
+        return parts[0]
+    first_initial = parts[0][0]
+    last = parts[-1]
+    return f"{first_initial} {last}"
+
+def normalize_nba_position(pos):
+    if not isinstance(pos, str):
+        return None
+
+    pos = pos.strip()
+
+    if pos == "Guard":
+        return "G"
+    if pos == "Forward":
+        return "F"
+    if pos == "Center":
+        return "C"
+
+    if pos in ("Forward-Guard", "Guard-Forward"):
+        return "Wing"
+
+    if pos in ("Center-Forward", "Forward-Center"):
+        return "Big"
+
+    return None
+
+def normalize_nba_position_display(pos):
+    """
+    Maps raw NBA position strings to compact display labels
+    """
+    if not isinstance(pos, str):
+        return None
+
+    pos = pos.strip()
+
+    mapping = {
+        "Guard": "G",
+        "Forward": "F",
+        "Center": "C",
+        "Guard-Forward": "G/F",
+        "Forward-Guard": "F/G",
+        "Forward-Center": "F/C",
+        "Center-Forward": "C/F",
+    }
+
+    return mapping.get(pos, pos)
+
+############################################################
+# NBA HELPERS (restored from your standalone script)
+############################################################
+DEF_STAT_MAP = {
+    "PTS": ("PaA", "PaR"),
+    "REB": ("RaA", "RaR"),
+    "AST": ("AaA", "AaR"),
+    "PRA": ("PRAaA", "PRAaR"),
+    "FG3M": ("3PMaA", "3PMaR"),
+    "FG3A": ("3PAaA", "3PAaR"),
+    "STL": ("SaA", "SaR"),
+    "BLK": ("BaA", "BaR"),
+    "TOV": ("TOaA", "TOaR"),
+    "FGM": ("FGMaA", "FGMaR"),
+    "FGA": ("FGAaA", "FGAaR"),
+    "FTM": ("FTMaA", "FTMaR"),
+    "FTA": ("FTAaA", "FTAaR"),
+    "OREB": ("ORaA", "ORaR"),
+    "DREB": ("DRaA", "DRaR"),
+}
+
+def parse_nba_matchup(matchup):
+    """
+    Extract team and opponent from the MATCHUP column, e.g. "LAL @ BOS"
+    Returns: (team, opponent) in uppercase
+    """
+    if pd.isna(matchup):
+        return None, None
+    parts = str(matchup).split()
+    if len(parts) < 3:
+        return None, None
+    team = parts[0].strip().upper()
+    opp = parts[2].strip().upper()
+    return team, opp
+
+def add_team_opponent_columns(df):
+    """
+    Extract Team and Opp from MATCHUP.
+    MATCHUP format:
+      'LAL @ DEN'  -> Team=LAL, Opp=DEN
+      'DEN vs LAL' -> Team=DEN, Opp=LAL
+    """
+
+    if "MATCHUP" not in df.columns:
+        raise ValueError("MATCHUP column not found")
+
+    matchup = df["MATCHUP"].astype(str)
+
+    df["Team"] = matchup.str.slice(0, 3)
+
+    df["Opp"] = matchup.str.extract(
+        r"(?:@|vs.)\s+([A-Z]{3})",
+        expand=False
+    )
+
+    return df
+
+def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
+    """
+    Returns:
+       todays_teams → set of team tricodes
+       today_matchups → dict: TEAM → OPPONENT
+    """
+    try:
+        with open(schedule_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as e:
+        st.warning(f"Could not load {schedule_path}: {e}")
+        return set(), {}
+
+    today = datetime.now().strftime("%Y-%m-%d")
+    todays_teams = set()
+    today_matchups = {}
+
+    # ---- Simple format ----
+    if "games" in data:
+        for g in data["games"]:
+            home = g.get("home")
+            away = g.get("away")
+            if home and away:
+                home = home.upper()
+                away = away.upper()
+                todays_teams.add(home)
+                todays_teams.add(away)
+                today_matchups[home] = away
+                today_matchups[away] = home
+        return todays_teams, today_matchups
+
+    # ---- NBA API format ----
+    try:
+        for day in data["leagueSchedule"]["gameDates"]:
+            raw = day.get("gameDate", "")
+            try:
+                parsed = pd.to_datetime(raw)
+                date_str = parsed.strftime("%Y-%m-%d")
+            except:
+                continue
+
+            if date_str != today:
+                continue
+
+            # Extract today's games
+            for g in day.get("games", []):
+                home = g["homeTeam"]["teamTricode"].upper()
+                away = g["awayTeam"]["teamTricode"].upper()
+                todays_teams.add(home)
+                todays_teams.add(away)
+                today_matchups[home] = away
+                today_matchups[away] = home
+    except:
+        pass
+
+    return todays_teams, today_matchups
+
+def compute_player_percentiles(
+    df,
+    stats,
+    percentages,
+    recent_n,
+    opponent_def,
+    today_matchups,
+    show_positional_def=False,
+    pos_def_df=None,
+):
+    df = df.copy()
+    df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
+
+    results = []
+
+    for pid, group in df.groupby("player_id", sort=False):
+
+        group = group.sort_values("GAME_DATE", ascending=False).head(82)
+        if group.empty:
+            continue
+
+        player_name = group["player_name"].iloc[0]
+        team = group["Team"].iloc[0]
+        pos_bucket = group["PosBucket"].iloc[0]
+        pos_display = group["Pos"].iloc[0]
+
+        row = {
+            "player_id": pid,
+            "Player": player_name,
+            "Team": team,
+            "Pos": pos_display,
+            "Gms": len(group),
+        }
+
+        # ===== TODAY'S OPPONENT =====
+        opp = today_matchups.get(team)
+        row["Opp"] = opp
+
+        # ===== DEFENSIVE MATCHUPS =====
+        if opp and opponent_def is not None and opp in opponent_def.index:
+
+            for stat in stats:
+                if stat not in DEF_STAT_MAP:
+                    continue
+
+                avg_col, rank_col = DEF_STAT_MAP[stat]
+
+                avg_val = opponent_def.loc[opp, avg_col]
+                rank_val = opponent_def.loc[opp, rank_col]
+
+                if (
+                    show_positional_def
+                    and pos_def_df is not None
+                ):
+                    pos_row = pos_def_df[
+                        (pos_def_df["Opp"] == opp)
+                        & (pos_def_df["PosBucket"] == pos_bucket)
+                        & (pos_def_df["STAT"] == stat)
+                    ]
+
+                    if not pos_row.empty:
+                        avg_val = pos_row["AVG_ALLOWED"].iloc[0]
+                        rank_val = pos_row["RANK"].iloc[0]
+
+                row[avg_col] = round(avg_val, 1)
+                row[rank_col] = int(rank_val)
+
+        # ===== PLAYER HIT RATE PERCENTILES =====
+        for stat in stats:
+
+            vals_all = pd.to_numeric(group[stat], errors="coerce").dropna()
+
+            if vals_all.empty:
+                continue
+
+            vals_recent = (
+                pd.to_numeric(group.head(recent_n)[stat], errors="coerce").dropna()
+                if recent_n
+                else None
+            )
+
+            for pct in percentages:
+                row[f"{stat}@{int(pct)}"] = hit_rate_threshold(vals_all, pct)
+
+                if recent_n and vals_recent is not None:
+                    row[f"L{recent_n}{stat}@{int(pct)}"] = hit_rate_threshold(
+                        vals_recent, pct
+                    )
+
+        results.append(row)
+
+    return pd.DataFrame(results)
+
+@st.cache_data(ttl=3600)
+def load_nba_schedule():
+    with open("nba/data/nbaschedule.json", "r", encoding="utf-8") as f:
+        return json.load(f)
+
+@st.cache_data(ttl=3600)
+def load_today_matchups():
+    return load_todays_schedule("nba/data/nbaschedule.json")
+
+@st.cache_data(ttl=300)
+def load_nba_injury_status():
+    try:
+        df = pd.read_csv("nba/data/nbaplayerstatus.csv", dtype={"player_id": str})
+        return dict(zip(df["player_id"], df["Status_norm"]))
+    except Exception:
+        return {}
+
+@st.cache_data(ttl=3600)
+def load_nba_raw_data():
+    # --- Load raw CSVs ---
+    player_logs_df = pd.read_csv("nba/data/nbaplayergamelogs.csv")
+    team_totals_df = pd.read_csv("nba/data/nbateamgametotals.csv")
+    pos_df = pd.read_csv("nba/data/nbaplayerspositions.csv")
+
+    # --- Normalize IDs on RAW dataframes ---
+    player_logs_df["player_id"] = player_logs_df.get(
+        "player_id", player_logs_df.get("Player_ID")
+    ).astype(str)
+
+    player_logs_df["season"] = player_logs_df.get(
+        "season", player_logs_df.get("Season", player_logs_df.get("SEASON_ID"))
+    ).astype(str)
+
+    player_logs_df["season"] = player_logs_df["season"].replace({
+        "22025": "2025-26",
+        "22024": "2024-25",
+    })
+
+    pos_df["player_id"] = pos_df["player_id"].astype(str)
+
+    # --- Merge player positions ---
+    df = player_logs_df.merge(
+        pos_df[["player_id", "Position"]],
+        on="player_id",
+        how="left"
+    )
+
+    # --- Add position buckets & display ---
+    df["PosBucket"] = df["Position"].apply(normalize_nba_position)
+    df = df[df["PosBucket"].notna()]
+    df["Pos"] = df["Position"].apply(normalize_nba_position_display)
+
+    # --- Add matchup columns ---
+    df = add_team_opponent_columns(df)
+    df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
+
+    # --- Add combo stats ---
+    df = add_combo_stats(df)
+
+    return df, team_totals_df, pos_df
+
+@st.cache_data(ttl=3600)
+def load_defense_tables(window):
+    # Load raw data
+    player_logs_df, team_totals_df, pos_df = load_nba_raw_data()
+
+    # --- Defensive stats REQUIRE Opp column ---
+    if "Opp" not in player_logs_df.columns:
+        player_logs_df = add_team_opponent_columns(player_logs_df)
+
+    # --- Drop rows where position is unknown ---
+    player_logs_df = player_logs_df[player_logs_df["PosBucket"].notna()]
+
+    # --- Compute defense tables ---
+    overall_def = get_team_def_ranks(player_logs_df, window)
+    positional_def = get_team_def_ranks_by_position(player_logs_df, window)
+
+    return overall_def, positional_def
+
+# =====================================================
+# NFL HELPERS (PFR CLEAN DATA)
+# =====================================================
+import re
+import os
+import json
+import math
+from datetime import datetime, date
+import pandas as pd
+
+# ------------------------------
+# Team utilities
+# ------------------------------
+TEAM_NAME_TO_CODE = {
+    "Arizona Cardinals": "ARI", "Atlanta Falcons": "ATL", "Baltimore Ravens": "BAL",
+    "Buffalo Bills": "BUF", "Carolina Panthers": "CAR", "Chicago Bears": "CHI",
+    "Cincinnati Bengals": "CIN", "Cleveland Browns": "CLE", "Dallas Cowboys": "DAL",
+    "Denver Broncos": "DEN", "Detroit Lions": "DET", "Green Bay Packers": "GB",
+    "Houston Texans": "HOU", "Indianapolis Colts": "IND", "Jacksonville Jaguars": "JAX",
+    "Kansas City Chiefs": "KC", "Las Vegas Raiders": "LV", "Los Angeles Chargers": "LAC",
+    "Los Angeles Rams": "LAR", "Miami Dolphins": "MIA", "Minnesota Vikings": "MIN",
+    "New England Patriots": "NE", "New Orleans Saints": "NO", "New York Giants": "NYG",
+    "New York Jets": "NYJ", "Philadelphia Eagles": "PHI", "Pittsburgh Steelers": "PIT",
+    "San Francisco 49ers": "SF", "Seattle Seahawks": "SEA", "Tampa Bay Buccaneers": "TB",
+    "Tennessee Titans": "TEN", "Washington Commanders": "WSH",
+}
+
+# nflreadpy / alternate tricodes → canonical app tricodes
+TEAM_CODE_CANONICAL = {
+    "GNB": "GB",
+    "KAN": "KC",
+    "LA": "LAR",
+    "LVR": "LV",
+    "NWE": "NE",
+    "NOR": "NO",
+    "SFO": "SF",
+    "TAM": "TB",
+    "WAS": "WSH",
+}
+
+def normalize_team_code(code: str) -> str:
+    if not isinstance(code, str):
+        return ""
+    code = code.strip().upper()
+    return TEAM_CODE_CANONICAL.get(code, code)
+
+def safe_upper(x):
+    if x is None or (isinstance(x, float) and pd.isna(x)):
+        return ""
+    try:
+        return str(x).upper()
+    except:
+        return ""
+
+def team_name_to_code(name: str) -> str:
+    if not isinstance(name, str):
+        return ""
+    name = name.strip()
+    if not name:
+        return ""
+    if name in TEAM_NAME_TO_CODE:
+        return TEAM_NAME_TO_CODE[name]
+    return "".join(c for c in name.upper() if c.isalpha())[:3]
+
+# ------------------------------
+# Stat Types
+# ------------------------------
+STAT_TYPE_TO_POSITIONS = {
+    "Passing": {"QB"},
+    "Rushing": {"QB", "RB", "FB"},
+    "Receiving": {"RB", "FB", "WR", "TE"},
+    "Defense": {
+        "CB", "DB", "DE", "DL", "DT", "FS",
+        "ILB", "LB", "MLB", "NT", "OLB",
+        "S", "SS"
+    },
+    "Kicking": {"K"},
+}
+
+# ------------------------------
+# Schedule helper (unchanged)
+# ------------------------------
+def load_nfl_games_next_3_days(path="nflschedule.json", today_dt: date = None):
+    if today_dt is None:
+        today_dt = datetime.now().date()
+
+    if not os.path.exists(path):
+        return set(), {}, []
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except:
+        return set(), {}, []
+
+    game_dates = data.get("leagueSchedule", {}).get("gameDates", [])
+    if not game_dates:
+        return set(), {}, []
+
+    wanted_dates = {
+        (today_dt + pd.Timedelta(days=i)).strftime("%m/%d/%Y 00:00:00")
+        for i in range(3)
+    }
+
+    teams = set()
+    opp_map = {}
+    valid_dates = []
+
+    for gd in game_dates:
+        key = str(gd.get("gameDate", ""))
+        if key not in wanted_dates:
+            continue
+
+        valid_dates.append(key)
+
+        for g in gd.get("games", []):
+            home = safe_upper(g.get("homeTeam", {}).get("teamTricode", ""))
+            away = safe_upper(g.get("awayTeam", {}).get("teamTricode", ""))
+
+            if home and away:
+                teams.add(home)
+                teams.add(away)
+                opp_map[home] = away
+                opp_map[away] = home
+
+    return teams, opp_map, valid_dates
+
+#----------------------------
+# Opponent Defensive Rankings
+#----------------------------
+#def compute_nfl_defensive_rankings(df):
+#    """
+#    Compute opponent defensive rankings from NFL game-level data.
+#
+#    Required columns:
+#      - Opp (defensive team)
+#      - PTS (points scored by offense)
+#      - RushYds
+#      - PassYds
+#    """
+#
+#    required = {"Opp", "PTS", "RushYds", "PassYds"}
+#    missing = required - set(df.columns)
+#    if missing:
+#        st.warning(f"Cannot compute NFL defensive rankings — missing columns: {missing}")
+#        return pd.DataFrame()
+#
+#    df = df.copy()
+#
+#    # Aggregate offensive output against each defensive team
+#    team_def = (
+#        df.groupby("Opp")
+#          .agg(
+#              Pa=("PTS", "mean"),
+#              RuYdsa=("RushYds", "mean"),
+#              PaYdsa=("PassYds", "mean"),
+#          )
+#    )
+#
+#    # Rankings (lower allowed = tougher defense)
+#    team_def["Pa_R"] = team_def["Pa"].rank(method="min")
+#    team_def["RuYdsa_R"] = team_def["RuYdsa"].rank(method="min")
+#    team_def["PaYdsa_R"] = team_def["PaYdsa"].rank(method="min")
+#
+#    return team_def.round(1)
+
+# ------------------------------
+# NFL hit-rate calculator (FIXED)
+# ------------------------------
+def calc_nfl_pfr_hit_rates(
+    df: pd.DataFrame,
+    stat_cols: dict,   # {"Rec": "REC", "RecYds": "REY"}
+    percentages=(50, 75, 80),
+    recent_n=None,     # None = ALL
+    restrict_to_teams=None,
+    opp_map=None
+):
+    df = df.copy()
+
+    # Normalize
+    df["Team"] = df["Team"].astype(str)
+    df["Pos"] = df["Pos"].astype(str)
+    df["Opp"] = df["Opp"].astype(str)
+
+    results = []
+
+    for player, g in df.groupby("Name", sort=False):
+        g = g.sort_values("Week")
+
+        team = safe_upper(g.iloc[-1]["Team"])
+        if restrict_to_teams and team not in restrict_to_teams:
+            continue
+
+        pos = g.iloc[-1]["Pos"]
+
+        opp = opp_map.get(team, g.iloc[-1]["Opp"]) if opp_map else g.iloc[-1]["Opp"]
+        opp = safe_upper(opp)
+
+        row = {
+            "Player": player,
+            "Pos": pos,
+            "Team": team,
+            "Gms": len(g),
+            "Opp": opp,
+        }
+
+        # ----------------------------------
+        # Opponent defensive rankings
+        # ----------------------------------
+#        if "nfl_def" in globals() and opp in nfl_def.index:
+#            row["Pa"] = nfl_def.loc[opp, "Pa"]
+#            row["Pa_R"] = int(nfl_def.loc[opp, "Pa_R"])
+#            row["RuYdsa"] = nfl_def.loc[opp, "RuYdsa"]
+#            row["RuYdsa_R"] = int(nfl_def.loc[opp, "RuYdsa_R"])
+#            row["PaYdsa"] = nfl_def.loc[opp, "PaYdsa"]
+#            row["PaYdsa_R"] = int(nfl_def.loc[opp, "PaYdsa_R"])
+#        else:
+#            row["Pa"] = row["Pa_R"] = None
+#            row["RuYdsa"] = row["RuYdsa_R"] = None
+#            row["PaYdsa"] = row["PaYdsa_R"] = None
+
+        # ----------------------------------
+        # Hit-rate calculations
+        # ----------------------------------
+        recent = g if recent_n is None else g.tail(recent_n)
+
+        for col, abbr in stat_cols.items():
+            if col not in g.columns:
+                continue
+
+            vals_all = pd.to_numeric(g[col], errors="coerce").dropna().tolist()
+            vals_recent = pd.to_numeric(recent[col], errors="coerce").dropna().tolist()
+
+            for pct in percentages:
+                row[f"{abbr}@{pct}"] = hit_rate_threshold(vals_all, pct)
+
+                if recent_n is not None:
+                    row[f"L{recent_n}{abbr}@{pct}"] = hit_rate_threshold(vals_recent, pct)
+
+        results.append(row)
+
+    return pd.DataFrame(results)
+
+############################################################
+# SPORT SELECTION
+############################################################
+sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NFL", "NHL"])
+
+############################################################
+# ===== NBA SECTION (Multi-sport compatible) =====
+############################################################
+if sport_choice == "NBA":
+
+    st.subheader("NBA — Player Hit Rate Analysis")
+
+    # --- Load core NBA data (cached) ---
+    df, team_totals_df, pos_df = load_nba_raw_data()
+
+    # --- Sidebar Filters ---
+    with st.sidebar.form("NBA Filters"):
+
+        allowed_stats = [
+            "PTS", "REB", "AST", "FGM", "FGA",
+            "FG3M", "FG3A", "FTM", "FTA",
+            "BLK", "STL", "TOV", "OREB", "DREB",
+            "PRA", "PR", "PA", "RA"
+        ]
+        name_map = {"FG3M": "3PM", "FG3A": "3PA"}
+        default_display = ["PTS", "REB", "AST", "PRA", "3PM", "3PA", "STL", "TOV"]
+
+        stats_selected_display = st.multiselect(
+            "Choose stats",
+            [name_map.get(c, c) for c in allowed_stats],
+            default_display
+        )
+        reverse_lookup = {v: k for k, v in name_map.items()}
+        stats_selected = [reverse_lookup.get(d, d) for d in stats_selected_display]
+
+        percentages = [st.slider("Hit Rate Percentage", 40, 100, 80, 5)]
+
+        player_window = st.radio("Player Performance Window", ["L5", "L10", "ALL"], index=0)
+        recent_n = 5 if player_window == "L5" else 10 if player_window == "L10" else None
+
+        defense_window = st.radio("Opponent Defensive Window", ["L5", "L10", "ALL"], index=0)
+
+        show_positional_def = st.checkbox("Show Positional Defense", value=False)
+
+        filter_today = st.checkbox("Filter To Today's Teams", value=False)
+
+        debug_defense_csv = st.checkbox("Export Defensive Rankings", value=False)
+
+        calculate = st.form_submit_button("Calculate")
+
+    # --- Calculate button ---
+    if calculate:
+
+        # Trim to most recent 82 games per player
+        df_calc = trim_df_to_recent_82(df)
+
+        # --- Cached Defense Tables ---
+        overall_def, pos_def_df = load_defense_tables(defense_window)
+
+        # Pivot overall_def to create lookup table by opponent
+        opponent_def = pd.DataFrame(index=overall_def["OPP_TEAM"].unique())
+
+        for stat in DEF_STAT_MAP:
+            avg_col, rank_col = DEF_STAT_MAP[stat]
+
+            stat_df = overall_def[overall_def["STAT"] == stat].set_index("OPP_TEAM")
+            opponent_def[avg_col] = stat_df["AVG_ALLOWED"]
+            opponent_def[rank_col] = stat_df["RANK"]
+
+        # Export debug CSVs if requested
+        if debug_defense_csv:
+            opponent_def.to_csv("debug_nba_defense_overall.csv", index=True)
+            pos_def_df.to_csv("debug_nba_defense_positional.csv", index=False)
+
+        # --- Load schedule & compute B2B map ---
+        schedule_data = load_nba_schedule()
+        todays_teams, today_matchups = load_today_matchups()
+        team_b2b_map = compute_team_b2b_from_schedule(schedule_data)
+
+        # Filter players to today's teams if selected
+        if filter_today and todays_teams:
+            latest_team = (
+                df_calc.sort_values(["player_id", "GAME_DATE"], ascending=[True, False])
+                       .groupby("player_id")["Team"]
+                       .first()
+            )
+            eligible = latest_team[latest_team.isin(todays_teams)].index
+            df_calc = df_calc[df_calc["player_id"].isin(eligible)]
+
+        # --- Compute Hit Rate Percentiles ---
+        summary_df = compute_player_percentiles(
+            df_calc,
+            stats_selected,
+            percentages,
+            recent_n,
+            opponent_def=opponent_def,
+            today_matchups=today_matchups,
+            show_positional_def=show_positional_def,
+            pos_def_df=pos_def_df,
+        )
+
+        # --- Rename stat columns for display ---
+        stat_abbrev_map = {
+            "PTS": "P", "REB": "R", "AST": "A", "OREB": "OR", "DREB": "DR",
+            "PRA": "PRA", "PR": "PR", "PA": "PA", "RA": "RA",
+            "BLK": "BLK", "STL": "S", "TOV": "TO",
+            "FG3M": "3PM", "FG3A": "3PA"
+        }
+
+        def rename_stat_columns(col):
+            for stat, short in stat_abbrev_map.items():
+                if col.startswith(stat):
+                    return col.replace(stat, short, 1)
+                if col.startswith("L") and stat in col:
+                    return col.replace(stat, short, 1)
+            return col
+
+        summary_df = summary_df.rename(columns=rename_stat_columns)
+
+        # --- Add B2B and injury status ---
+        summary_df["B2B"] = summary_df["Team"].map(team_b2b_map).fillna("N")
+
+        try:
+            inj_df = pd.read_csv("nba/data/nbaplayerstatus.csv")
+
+            inj_df["player_id"] = inj_df["player_id"].astype(str)
+            summary_df["player_id"] = summary_df["player_id"].astype(str)
+
+            inj_map = dict(zip(inj_df["player_id"], inj_df["Status_norm"]))
+            summary_df["Status"] = summary_df["player_id"].map(inj_map).fillna("A")
+
+        except Exception as e:
+            summary_df["Status"] = "A"
+
+        # --- Column order ---
+        base_cols = ["Player", "Pos", "Team", "Opp", "B2B", "Status", "Gms"]
+        ordered_stat_cols = []
+
+        for stat in stats_selected:
+            display_stat = stat_abbrev_map.get(stat, stat)
+            pct_col = f"{display_stat}@{int(percentages[-1])}"
+            if pct_col in summary_df.columns:
+                ordered_stat_cols.append(pct_col)
+
+            if recent_n:
+                recent_col = f"L{recent_n}{display_stat}@{int(percentages[-1])}"
+                if recent_col in summary_df.columns:
+                    ordered_stat_cols.append(recent_col)
+
+            if stat in DEF_STAT_MAP:
+                a_col, r_col = DEF_STAT_MAP[stat]
+                if a_col in summary_df.columns:
+                    ordered_stat_cols.append(a_col)
+                if r_col in summary_df.columns:
+                    ordered_stat_cols.append(r_col)
+
+        cols_ordered = [c for c in base_cols + ordered_stat_cols if c in summary_df.columns]
+        summary_df = summary_df[cols_ordered]
+
+        # --- Sort & display ---
+        sort_col = f"{stat_abbrev_map.get(stats_selected[0], stats_selected[0])}@{int(percentages[-1])}"
+        if sort_col in summary_df.columns:
+            summary_df = summary_df.sort_values(sort_col, ascending=False)
+
+        col_config = {
+            "Player": st.column_config.Column(pinned="left"),
+            "Pos": st.column_config.Column(pinned="left"),
+            "Team": st.column_config.Column(pinned="left"),
+            "Opp": st.column_config.Column(pinned="left"),
+        }
+
+        st.dataframe(strip_display_ids(summary_df), width='stretch', hide_index=True, column_config=col_config)
+
+        csv_bytes = strip_display_ids(summary_df).to_csv(index=False).encode()
+        st.download_button("Download CSV", csv_bytes, "player_stats.csv")
+
+############################################################
+# ===== NFL SECTION (PFR CLEAN DATA ONLY) =====
+############################################################
+elif sport_choice == "NFL":
+
+    st.subheader("NFL — Player Hit Rate Analysis")
+
+    # ---------- Upload ----------
+    uploaded_nfl = st.file_uploader(
+        "Upload NFL Game Logs CSV",
+        type=["csv"],
+        key="nfl"
+    )
+
+    if uploaded_nfl is None:
+        st.stop()
+
+    # ---------- Load CSV ----------
+    nfl_df = pd.read_csv(uploaded_nfl, low_memory=False)
+
+    nfl_df["Team"] = nfl_df["Team"].apply(normalize_team_code)
+    nfl_df["Opp"] = nfl_df["Opp"].apply(normalize_team_code)
+
+    # ---------- Required columns (CANONICAL) ----------
+    required_cols = {"Name", "Team", "Opp", "Week"}
+    missing = required_cols - set(nfl_df.columns)
+    if missing:
+        st.error(f"Missing required columns: {missing}")
+        st.stop()
+
+    st.caption(f"Loaded {len(nfl_df):,} game rows")
+
+# ---------- Stat configuration (CANONICAL NFL) ----------
+    default_stat_config = {
+        # passing
+        "PaCmp": "PaCmp",
+        "PaAtt": "PaAtt",
+        "PaYds": "PaYds",
+        "PaTD": "PaTD",
+
+        # rushing
+        "RuAtt": "RuAtt",
+        "RuYds": "RuYds",
+        "RuTD": "RuTD",
+
+        # receiving
+        "Rec": "Rec",
+        "RecYds": "RecYds",
+        "RecTD": "RecTD",
+
+        # defense
+        "DefSk": "Sk",
+        "TckComb": "Tck",
+
+        # kicking
+        "Fgm": "Fgm",
+        "Fga": "Fga",
+    }
+
+    #------------Stat Types--------------
+    STAT_TYPE_TO_STATS = {
+        "Passing": {"PaCmp", "PaAtt", "PaYds", "PaTD"},
+        "Rushing": {"RuAtt", "RuYds", "RuTD"},
+        "Receiving": {"Rec", "RecYds", "RecTD"},
+        "Defense": {"DefSk", "TckComb"},
+        "Kicking": {"Fgm", "Fga"},
+    }
+
+    # Only keep stats that exist in CSV
+    stat_config = {
+        col: abbr
+        for col, abbr in default_stat_config.items()
+        if col in nfl_df.columns
+    }
+
+    if not stat_config:
+        st.error("No known NFL stat columns found in this CSV.")
+        st.stop()
+
+    # ---------- Sidebar controls ----------
+    stat_type = st.sidebar.radio(
+        "Stat Type",
+        ["Passing", "Rushing", "Receiving", "Defense", "Kicking"],
+        horizontal=True
+    )
+
+    allowed_stats = STAT_TYPE_TO_STATS[stat_type]
+
+    stat_config = {
+        col: abbr
+        for col, abbr in default_stat_config.items()
+        if col in nfl_df.columns and col in allowed_stats
+    }
+
+    stats_selected = st.sidebar.multiselect(
+        "Stats to include",
+        list(stat_config.values()),
+        default=list(stat_config.values())
+    )
+
+    stat_config = {
+        col: abbr
+        for col, abbr in stat_config.items()
+        if abbr in stats_selected
+    }
+
+    if not stat_config:
+        st.error(f"No {stat_type} stats found in this CSV.")
+        st.stop()
+
+    # Percentile thresholds
+    pct_input = st.sidebar.text_input("Hit Rate Percentage", "80")
+    try:
+        percentages = sorted({float(x) for x in pct_input.split()})
+    except Exception:
+        percentages = [75.0, 80.0, 85.0]
+
+    player_window = st.sidebar.radio("Player Performance Window", ["L5", "L10", "ALL"], index=0)
+    recent_n = 5 if player_window == "L5" else 10 if player_window == "L10" else None
+
+    filter_today = st.sidebar.checkbox("Only upcoming games (next 3 days)", value=False)
+    schedule_path = st.sidebar.text_input("Local NFL schedule JSON", "nflschedule.json")
+    teams_window, opp_map_window, _ = load_nfl_games_next_3_days(schedule_path)
+
+    show_debug = st.sidebar.checkbox("Show recent-game debug table", value=False)
+
+    if not stat_config:
+        st.warning("Select at least one stat.")
+        st.stop()
+
+    # ---------- Calculate ----------
+    if st.sidebar.button("Calculate NFL Hit Rates"):
+
+        if "Pos" not in nfl_df.columns:
+            st.error("CSV is missing 'Pos' column required for stat-type filtering.")
+            st.stop()
+
+        allowed_positions = STAT_TYPE_TO_POSITIONS[stat_type]
+        nfl_df_filtered = nfl_df[nfl_df["Pos"].isin(allowed_positions)]
+
+        restrict_to = set(teams_window) if filter_today else None
+
+#        nfl_def = compute_nfl_defensive_rankings(nfl_df)
+#
+#        globals()["nfl_def"] = nfl_def
+
+        results = calc_nfl_pfr_hit_rates(
+            df=nfl_df_filtered,
+            stat_cols=stat_config,
+            percentages=percentages,
+            recent_n=recent_n,
+            restrict_to_teams=restrict_to,
+            opp_map=opp_map_window
+        )
+
+        if results.empty:
+            st.warning("No players matched the current filters.")
+            st.stop()
+
+        base_cols = ["Player", "Pos", "Team", "Gms", "Opp"]
+
+#        opp_cols = [
+#            "Pa", "Pa_R",
+#            "RuYdsa", "RuYdsa_R",
+#            "PaYdsa", "PaYdsa_R"
+#        ]
+
+        stat_cols = [c for c in results.columns if "@" in c]
+
+        ordered_cols = base_cols + stat_cols
+        ordered_cols = [c for c in ordered_cols if c in results.columns]
+
+        results = results[ordered_cols]
+
+        # ---------- Determine primary sort column ----------
+        top_pct = int(percentages[-1])
+        first_abbr = next(iter(stat_config.values()))
+        sort_col = f"{first_abbr}@{top_pct}"
+
+        # ---------- Drop players with no contribution ----------
+        if sort_col in results.columns:
+            results = results[results[sort_col] > 0]
+            results = results.sort_values(sort_col, ascending=False)
+
+        st.subheader("NFL Player Hit-Rate Thresholds")
+
+        st.data_editor(
+            results.head(200),
+            width='stretch',
+            hide_index=True,
+            disabled=True,
+            column_config={
+                "Player": st.column_config.TextColumn(pinned=True),
+                "Pos": st.column_config.TextColumn(pinned=True),
+                "Team": st.column_config.TextColumn(pinned=True),
+            },
+        )
+
+        # ✅ MUST be aligned with st.data_editor (same indentation)
+        st.download_button(
+            "Download NFL Results CSV",
+            results.to_csv(index=False).encode("utf-8"),
+            "nfl_hit_rates.csv"
+        )
+
+        # ---------- Debug recent games ----------
+        if show_debug:
+            debug_rows = []
+            for player, g in nfl_df_filtered.groupby("Name", sort=False):
+                if player not in set(results["Player"]):
+                    continue
+                g = g.sort_values("Week").tail(recent_n)
+                for _, r in g.iterrows():
+                    row = {
+                        "Player": player,
+                        "Team": r.get("Team"),
+                        "Week": r.get("Week"),
+                        "Opp": r.get("Opp"),
+                    }
+                    for c in stat_config.keys():
+                        row[c] = r.get(c)
+                    debug_rows.append(row)
+
+            if debug_rows:
+                dbg = pd.DataFrame(debug_rows)
+                st.subheader("Debug — Games Used in Calculation")
+                st.dataframe(dbg, width='stretch')
+
+                st.download_button(
+                    "Download Debug CSV",
+                    dbg.to_csv(index=False).encode("utf-8"),
+                    "nfl_debug_recent_games.csv"
+                )
+
+############################################################
+# ===== NHL SECTION =====
+############################################################
+elif sport_choice == "NHL":
+
+    st.subheader("NHL — Player Hit Rate Analysis")
+
+    # --- Upload CSV ---
+    uploaded_nhl_file = st.file_uploader("Upload NHL Game Logs CSV", type=["csv"], key="nhl")
+    if uploaded_nhl_file:
+
+        nhl_df = pd.read_csv(uploaded_nhl_file).fillna(0)
+        nhl_df.columns = dedupe_columns(nhl_df.columns)
+
+        # --- Skater / Goalie selection ---
+        player_type_choice = st.sidebar.radio("Select player type", ["Skaters", "Goalies"], index=0)
+
+        if player_type_choice == "Skaters":
+            nhl_stats_options = ["TOI", "G", "A", "P", "SOG", "H", "B", "PPP"]
+            stat_map = {
+                "TOI": "toi_minutes",
+                "G": "goals",
+                "A": "assists",
+                "P": "points",
+                "SOG": "shots",
+                "H": "hits",
+                "B": "blocks",
+                "PPP": "pp_points"
+            }
+        else:
+            nhl_stats_options = ["SA", "GA", "SV", "SV%"]
+            stat_map = {
+                "SA": "shots_against",
+                "GA": "goals_against",
+                "SV": "saves",
+                "SV%": "save_pct"
+            }
+
+        nhl_stats_selected = st.sidebar.multiselect(
+            "Choose NHL stats", nhl_stats_options, nhl_stats_options
+        )
+
+        nhl_percent_input = st.sidebar.text_input("Hit Rate Percentage", "80")
+        nhl_percentages = sorted({float(x) for x in nhl_percent_input.split()})
+
+        # --- Player Performance Window ---
+        nhl_player_window = st.sidebar.radio("Game Window", ["ALL", "L5", "L10"], index=1)
+        nhl_recent_n = 5 if nhl_player_window == "L5" else 10 if nhl_player_window == "L10" else None
+        nhl_recent_pct = nhl_percentages[-1] / 100.0
+
+        nhl_filter_today = st.sidebar.checkbox("Filter to today's teams", value=False)
+
+        # --- Load combined team stats CSV (offense + defense) ---
+        try:
+            team_def = pd.read_csv("nhl/data/nhlteamgametotals.csv").set_index("Team")
+        except Exception as e:
+            st.warning(f"Could not load nhlteamgametotals.csv: {e}")
+            team_def = pd.DataFrame()
+
+        if st.sidebar.button("Analyze NHL"):
+
+            # --- Trim to recent 82 games ---
+            nhl_df_calc = trim_df_to_recent_82(nhl_df.copy(), date_col="game_date")
+            nhl_df_calc["game_date"] = pd.to_datetime(nhl_df_calc["game_date"], errors="coerce")
+
+            # --- Load today's NHL schedule ---
+            today = datetime.now().strftime("%Y-%m-%d")
+            nhl_todays, nhl_opp_map = set(), {}
+            try:
+                r = requests.get(f"https://api-web.nhle.com/v1/schedule/{today}", timeout=15)
+                r.raise_for_status()
+                schedule_data = r.json()
+                for block in schedule_data.get("gameWeek", []):
+                    if block.get("date") != today:
+                        continue
+                    for g in block.get("games", []):
+                        away = (g.get("awayTeam") or {}).get("abbrev")
+                        home = (g.get("homeTeam") or {}).get("abbrev")
+                        if away and home:
+                            nhl_todays.add(away)
+                            nhl_todays.add(home)
+                            nhl_opp_map[away] = home
+                            nhl_opp_map[home] = away
+            except:
+                pass
+
+            if nhl_filter_today:
+                latest_team = (
+                    nhl_df_calc.sort_values(["player_id", "game_date"], ascending=[True, False])
+                               .groupby("player_id")["team"]
+                               .first()
+                )
+                eligible = latest_team[latest_team.isin(nhl_todays)].index
+                nhl_df_calc = nhl_df_calc[nhl_df_calc["player_id"].isin(eligible)].copy()
+
+            # --- Back 2 Back Logic ---
+            today_dt = datetime.now().date()
+            yesterday = (today_dt - timedelta(days=1)).strftime("%Y-%m-%d")
+            today = today_dt.strftime("%Y-%m-%d")
+            tomorrow = (today_dt + timedelta(days=1)).strftime("%Y-%m-%d")
+
+            nhl_teams_today = get_nhl_teams_on_date(today)
+            nhl_teams_yesterday = get_nhl_teams_on_date(yesterday)
+            nhl_teams_tomorrow = get_nhl_teams_on_date(tomorrow)
+
+            nhl_b2b_map = {}
+            for team in nhl_teams_today:
+                if team in nhl_teams_yesterday:
+                    nhl_b2b_map[team] = "2"
+                elif team in nhl_teams_tomorrow:
+                    nhl_b2b_map[team] = "1"
+                else:
+                    nhl_b2b_map[team] = "N"
+
+            # ==== FETCH ESPN NHL INJURIES (cached 15 min) ====
+            inj_df = get_nhl_injuries()
+
+            inj_status_map = (
+                {norm_name(p): s for p, s in zip(inj_df["Player"], inj_df["Status_norm"])}
+                if not inj_df.empty
+                else {}
+            )
+
+            # --- Compute recent form ---
+            def compute_recent_nhl_stats(group, recent_n, pct, player_type):
+                g = group.sort_values("game_date", ascending=False)
+                if recent_n is not None:
+                    g = g.head(recent_n)
+                if player_type == "Skaters":
+                    return {stat: hit_rate_threshold(g[col], pct*100) for stat, col in stat_map.items() if stat in nhl_stats_selected}
+                else:
+                    return {stat: hit_rate_threshold(g[col], pct*100) for stat, col in stat_map.items() if stat in nhl_stats_selected}
+
+            # --- Group players ---
+            if player_type_choice == "Skaters":
+                df_players = nhl_df_calc[
+                    (nhl_df_calc["is_goalie"] == False) &
+                    (nhl_df_calc["toi_minutes"] > 8)
+                ].copy()
+            else:
+                df_players = nhl_df_calc[
+                    (nhl_df_calc["is_goalie"] == True) &
+                    (nhl_df_calc["toi_minutes"] > 40)
+                ].copy()
+
+            rows = []
+            grouped = df_players.groupby(["player_id", "player_name", "team", "position"])
+            for (pid, name, team, pos), g in grouped:
+
+                if nhl_filter_today and team not in nhl_todays:
+                    continue
+
+                rec = {"Player": name, "Pos": pos, "Team": team, "Gms": len(g)}
+
+                rec["B2B"] = nhl_b2b_map.get(team, "N")
+
+                rec["Status"] = inj_status_map.get(norm_name(name), "A")
+
+                ###if norm_name(name) not in inj_status_map:
+                    ###print("NO MATCH:", name, "→", norm_name(name))
+
+                # Opponent info
+                opp = nhl_opp_map.get(team, "")
+                rec["Opp"] = opp
+
+                if player_type_choice == "Skaters":
+                    if not team_def.empty and opp in team_def.index:
+                        rec["GA_A"] = team_def.loc[opp, "GA_A"]
+                        rec["GA_R"] = int(team_def.loc[opp, "GA_R"])
+                        rec["SA_A"] = team_def.loc[opp, "SA_A"]
+                        rec["SA_R"] = int(team_def.loc[opp, "SA_R"])
+                    else:
+                        rec["GA_A"] = rec["GA_R"] = rec["SA_A"] = rec["SA_R"] = None
+                else:
+                    if not team_def.empty and opp in team_def.index:
+                        rec["GF_A"] = team_def.loc[opp, "GF_A"]
+                        rec["GF_R"] = int(team_def.loc[opp, "GF_R"])
+                        rec["SF_A"] = team_def.loc[opp, "SF_A"]
+                        rec["SF_R"] = int(team_def.loc[opp, "SF_R"])
+                    else:
+                        rec["GF_A"] = rec["GF_R"] = rec["SF_A"] = rec["SF_R"] = None
+
+                # Recent form
+                recent_stats = compute_recent_nhl_stats(g, nhl_recent_n, nhl_recent_pct, player_type_choice)
+                tag = f"L{nhl_recent_n}" if nhl_recent_n is not None else ""
+                pct_tag = int(nhl_percentages[-1])
+                for stat, value in recent_stats.items():
+                    rec[f"{tag}{stat}@{pct_tag}"] = value
+
+                rows.append(rec)
+
+            nhl_out = pd.DataFrame(rows)
+
+            if nhl_out.empty:
+                st.warning("No NHL players matched the criteria.")
+            else:
+                # --- Column ordering ---
+                base_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status",]
+                if player_type_choice == "Skaters":
+                    opp_cols = ["GA_A", "GA_R", "SA_A", "SA_R"]
+                else:
+                    opp_cols = ["GF_A", "GF_R", "SF_A", "SF_R"]
+                recent_cols = [c for c in nhl_out.columns if c not in base_cols + opp_cols]
+                ordered_cols = [c for c in base_cols + opp_cols + recent_cols if c in nhl_out.columns]
+
+                nhl_out = nhl_out[ordered_cols]
+
+                # --- Column pinning ---
+                col_config = {
+                    "Player": st.column_config.Column(pinned="left"),
+                    "Pos": st.column_config.Column(pinned="left"),
+                    "Team": st.column_config.Column(pinned="left"),
+                }
+
+                st.dataframe(
+                    nhl_out,
+                    width='stretch',
+                    hide_index=True,
+                    column_config=col_config
+                )
+
+                csv_bytes = nhl_out.to_csv(index=False).encode()
+                st.download_button("Download NHL CSV", csv_bytes, "nhl_stats.csv")
