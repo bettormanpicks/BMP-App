@@ -904,21 +904,21 @@ if sport_choice == "NBA":
 
         # --- Load NBA injury statuses robustly ---
         try:
+            # Load the injuries CSV
             inj_df = pd.read_csv("nba/data/nbaplayerstatus.csv")
 
-            # Strip any spaces from column names
-            inj_df.columns = inj_df.columns.str.strip()
+            # Convert player_id to int first (to remove any .0) then to str for mapping
+            inj_df["player_id"] = inj_df["player_id"].fillna(0).astype(int).astype(str)
+            summary_df["player_id"] = summary_df["player_id"].astype(int).astype(str)
 
-            # Ensure player_id is string and stripped
-            inj_df["player_id"] = inj_df["player_id"].astype(str).str.strip()
-            summary_df["player_id"] = summary_df["player_id"].astype(str).str.strip()
-
-            # Build mapping dict and apply
+            # Create mapping dict
             inj_map = dict(zip(inj_df["player_id"], inj_df["Status_norm"]))
+
+            # Map Status to summary_df
             summary_df["Status"] = summary_df["player_id"].map(inj_map).fillna("A")
 
         except Exception as e:
-            st.warning(f"Could not load NBA injuries: {e}")
+            st.warning(f"Unable to load NBA injuries: {e}")
             summary_df["Status"] = "A"
 
         # --- Column order ---
