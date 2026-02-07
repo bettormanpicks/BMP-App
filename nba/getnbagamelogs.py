@@ -2,6 +2,8 @@ import pandas as pd
 from nba_api.stats.endpoints import playergamelog
 from time import sleep
 
+print("=== NBA PLAYER GAME LOGS START ===")
+
 # ==================================================
 # CONFIG
 # ==================================================
@@ -65,3 +67,5 @@ if rows:
     print(f"\n💾 Saved {len(final_df)} rows → {OUTPUT_CSV}")
 else:
     print("\n⚠️ No data fetched.")
+
+print("=== NBA PLAYER GAME LOGS FINISHED ===")
