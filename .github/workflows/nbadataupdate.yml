@@ -1,57 +1,52 @@
-name: NBA Data Update
+name: NBA Daily Update
 
 on:
   schedule:
-    - cron: '0 9 * * *'   # 09:00 UTC = 3:00 AM CT (winter)
-  workflow_dispatch:
+    - cron: "0 9 * * *"   # 3:00 AM Central Time (09:00 UTC)
+  workflow_dispatch:       # allows manual run button in GitHub
 
 jobs:
   update-nba-data:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
 
     steps:
-
+    # 1 — Checkout your repo
     - name: Checkout repository
       uses: actions/checkout@v4
 
+    # 2 — Setup Python
     - name: Set up Python
       uses: actions/setup-python@v5
       with:
-        python-version: '3.12'
+        python-version: "3.11"
 
+    # 3 — Install dependencies
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install pandas requests beautifulsoup4 lxml
+        pip install pandas nba_api
 
-    # -------------------------------------------------
-    # STEP 1 — PLAYER GAME LOGS
-    # -------------------------------------------------
-    - name: Run NBA Player Game Logs Scraper
+    # 4 — Run player game logs FIRST
+    - name: Get NBA Player Game Logs
       run: |
-        echo "Starting getnbagamelogs.py"
-        python nba/getnbagamelogs.py
-        echo "Finished getnbagamelogs.py"
+        cd nba
+        python getnbagamelogs.py
 
-    # -------------------------------------------------
-    # STEP 2 — TEAM TOTALS (runs ONLY after success)
-    # -------------------------------------------------
-    - name: Run NBA Team Totals Scraper
+    # 5 — Run team totals AFTER logs finish
+    - name: Get NBA Team Totals
       run: |
-        echo "Starting getnbateamtotals.py"
-        python nba/getnbateamtotals.py
-        echo "Finished getnbateamtotals.py"
+        cd nba
+        python getnbateamtotals.py
 
-    # -------------------------------------------------
-    # STEP 3 — Commit Updated Data
-    # -------------------------------------------------
-    - name: Commit updated CSV files
+    # 6 — Commit updated CSV files back to repo
+    - name: Commit updated data
       run: |
-        git config --global user.name "github-actions"
+        git config --global user.name "nba-data-bot"
         git config --global user.email "actions@github.com"
 
-        git add nba/data/*.csv
+        git add -A
 
-        git diff --cached --quiet || git commit -m "Daily NBA data update"
+        # Only commit if files actually changed
+        git diff --staged --quiet || git commit -m "Daily NBA data update"
+
         git push
