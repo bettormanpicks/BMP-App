@@ -24,26 +24,31 @@ def get_nba_today(cutoff_hour_ct=3):
 
 def hit_rate_threshold(values, pct):
     """
-    Lowest stat value hit in at least pct% of games.
-    Accepts pandas Series, list, or iterable.
+    Returns the highest stat floor S such that
+    the player achieved >= S in at least pct% of games.
     """
+
     if values is None:
         return 0
 
-    # Convert to numeric pandas Series safely
     if not isinstance(values, pd.Series):
         values = pd.Series(values)
 
     values = pd.to_numeric(values, errors="coerce").dropna()
+
     if values.empty:
         return 0
 
-    values = values.sort_values()
     n = len(values)
-    k = math.ceil((pct / 100.0) * n)
-    k = min(max(k, 1), n)
+    target = pct / 100.0
 
-    return values.iloc[-k]
+    # Check candidate floors from high → low
+    for s in sorted(values.unique(), reverse=True):
+        hit_rate = (values >= s).sum() / n
+        if hit_rate >= target:
+            return s
+
+    return values.min()
 
 def trim_df_to_recent_82(df, date_col="GAME_DATE"):
     # Keep behavior consistent with your original code (works for NBA GAME_DATE)
