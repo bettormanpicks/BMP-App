@@ -30,13 +30,13 @@ jobs:
     - name: Get NBA Player Game Logs
       run: |
         cd nba
-        python getnbagamelogs.py
+        python -u getnbagamelogs.py
 
     # 5 — Run team totals AFTER logs finish
     - name: Get NBA Team Totals
       run: |
         cd nba
-        python getnbateamtotals.py
+        python -u getnbateamtotals.py
 
     # 6 — Commit updated CSV files back to repo
     - name: Commit updated data
