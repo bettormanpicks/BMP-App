@@ -1,36 +1,44 @@
+import os
 import pandas as pd
 
-# Columns we care about for defensive impact
+# ==================================================
+# CONFIG
+# ==================================================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))  # folder of this script
+DATA_DIR = os.path.join(BASE_DIR, "data")
+os.makedirs(DATA_DIR, exist_ok=True)
+
+PLAYER_CSV = os.path.join(DATA_DIR, "nbaplayergamelogs.csv")
+TEAM_CSV = os.path.join(DATA_DIR, "nbateamgametotals.csv")
+
 STATS = [
     "PTS", "REB", "AST", "STL", "BLK", "TOV",
     "FGM", "FGA", "FG3M", "FG3A", "FTM", "FTA", "OREB", "DREB",
 ]
 
-# Load raw game logs
-df = pd.read_csv("data/nbaplayergamelogs.csv")
-# LeagueGameLog uses GAME_ID, old script expects Game_ID
-df["Game_ID"] = df["GAME_ID"]
+# ==================================================
+# LOAD PLAYER GAME LOGS
+# ==================================================
+df = pd.read_csv(PLAYER_CSV)
 df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
 
 # Extract TEAM from MATCHUP
-# Extract opponent based on the team on the row
 def parse_matchup(row):
-    matchup = row["MATCHUP"]
-    team = row["TEAM_ABBREVIATION"]
+    parts = row.split()
+    if "@" in parts:
+        return parts[0], parts[2]  # TEAM, OPP
+    else:  # "SAC vs. DET"
+        return parts[0], parts[2]
 
-    if "@" in matchup:
-        away, home = matchup.split(" @ ")
-        opp = home if team == away else away
-    else:  # "vs."
-        home, away = matchup.split(" vs. ")
-        opp = away if team == home else home
+df[["TEAM", "OPP_TEAM"]] = df["MATCHUP"].apply(lambda x: pd.Series(parse_matchup(x)))
 
-    return team, opp
+# ==================================================
+# AGGREGATE TO TEAM TOTALS
+# ==================================================
+team_totals = df.groupby(["GAME_ID", "GAME_DATE", "TEAM", "OPP_TEAM"])[STATS].sum().reset_index()
 
-df[["TEAM", "OPP_TEAM"]] = df.apply(lambda row: pd.Series(parse_matchup(row)), axis=1)
-
-# Aggregate player stats to team totals per game
-team_totals = df.groupby(["Game_ID", "GAME_DATE", "TEAM", "OPP_TEAM"])[STATS].sum().reset_index()
-
-# Optional: save to CSV for quick reuse
-team_totals.to_csv("data/nbateamgametotals.csv", index=False)
+# ==================================================
+# SAVE
+# ==================================================
+team_totals.to_csv(TEAM_CSV, index=False)
+print(f"💾 Saved {len(team_totals)} rows → {TEAM_CSV}")
