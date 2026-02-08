@@ -44,7 +44,16 @@ retries = Retry(
     status_forcelist=[429, 500, 502, 503, 504],
 )
 
-adapter = HTTPAdapter(max_retries=retries)
+class TimeoutHTTPAdapter(HTTPAdapter):
+    def __init__(self, *args, **kwargs):
+        self.timeout = 30
+        super().__init__(*args, **kwargs)
+
+    def send(self, request, **kwargs):
+        kwargs["timeout"] = self.timeout
+        return super().send(request, **kwargs)
+
+adapter = TimeoutHTTPAdapter(max_retries=retries)
 session.mount("https://", adapter)
 
 NBAStatsHTTP._session = session
