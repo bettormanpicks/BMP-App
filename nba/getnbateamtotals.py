@@ -8,18 +8,26 @@ STATS = [
 
 # Load raw game logs
 df = pd.read_csv("data/nbaplayergamelogs.csv")
+# LeagueGameLog uses GAME_ID, old script expects Game_ID
+df["Game_ID"] = df["GAME_ID"]
 df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
 
 # Extract TEAM from MATCHUP
-# Example: "SAC @ DET" → SAC is TEAM, DET is OPPONENT
+# Extract opponent based on the team on the row
 def parse_matchup(row):
-    parts = row.split()
-    if "@" in parts:
-        return parts[0], parts[2]  # TEAM, OPP
-    else:  # "SAC vs. DET"
-        return parts[0], parts[2]
+    matchup = row["MATCHUP"]
+    team = row["TEAM_ABBREVIATION"]
 
-df[["TEAM", "OPP_TEAM"]] = df["MATCHUP"].apply(lambda x: pd.Series(parse_matchup(x)))
+    if "@" in matchup:
+        away, home = matchup.split(" @ ")
+        opp = home if team == away else away
+    else:  # "vs."
+        home, away = matchup.split(" vs. ")
+        opp = away if team == home else home
+
+    return team, opp
+
+df[["TEAM", "OPP_TEAM"]] = df.apply(lambda row: pd.Series(parse_matchup(row)), axis=1)
 
 # Aggregate player stats to team totals per game
 team_totals = df.groupby(["Game_ID", "GAME_DATE", "TEAM", "OPP_TEAM"])[STATS].sum().reset_index()
