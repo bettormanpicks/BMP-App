@@ -7,6 +7,7 @@ from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
 from nba_api.stats.library.http import NBAStatsHTTP
 
+
 print("=== NBA PLAYER GAME LOGS START ===")
 
 # ==================================================
@@ -112,17 +113,14 @@ for i, p in enumerate(players, start=1):
             print(f"   ⚠️ Retry {attempts}/3 for {name} ({e})")
             sleep(5)
 
-if not success:
-    failed_players += 1
-    print(f"   ❌ Failed after retries: {name}")
+    if not success:
+        failed_players += 1
+        print(f"   ❌ Failed after retries: {name}")
 
-attempted_players = len(players)
-completed_players = 0
-
-if failed_players > 20:
-    raise RuntimeError(
-        f"Too many players failed ({failed_players}). Aborting save."
-    )
+    if failed_players > 20:
+        raise RuntimeError(
+            f"Too many players failed ({failed_players}). Aborting save."
+        )
 
 # ==================================================
 # SAVE CSV
