@@ -1,25 +1,20 @@
 import pandas as pd
-from nba_api.stats.endpoints import playergamelog
-from time import sleep
+from nba_api.stats.endpoints import leaguegamelog
+from nba_api.stats.library.http import NBAStatsHTTP
 import requests
-import random
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry
-from nba_api.stats.library.http import NBAStatsHTTP
-
 
 print("=== NBA PLAYER GAME LOGS START ===")
 
 # ==================================================
 # CONFIG
 # ==================================================
-PLAYERS_FILE = "data/nbaplayers.txt"
 OUTPUT_CSV = "data/nbaplayergamelogs.csv"
 SEASON = "2025-26"
-SLEEP_BETWEEN_PLAYERS = 0.6   # conservative but fast
 
 # ==================================================
-# RESILIENT SESSION (critical for GitHub Actions)
+# RESILIENT SESSION (still useful but now lightweight)
 # ==================================================
 session = requests.Session()
 
@@ -45,93 +40,100 @@ retries = Retry(
     status_forcelist=[429, 500, 502, 503, 504],
 )
 
-class TimeoutHTTPAdapter(HTTPAdapter):
-    def __init__(self, *args, **kwargs):
-        self.timeout = 30
-        super().__init__(*args, **kwargs)
-
-    def send(self, request, **kwargs):
-        kwargs["timeout"] = self.timeout
-        return super().send(request, **kwargs)
-
-adapter = TimeoutHTTPAdapter(max_retries=retries)
+adapter = HTTPAdapter(max_retries=retries)
 session.mount("https://", adapter)
 
 NBAStatsHTTP._session = session
 
 # ==================================================
-# LOAD PLAYERS
+# PULL LEAGUE PLAYER GAME LOGS
 # ==================================================
-players = []
-with open(PLAYERS_FILE, "r", encoding="utf-8") as f:
-    for line in f:
-        name, pid = line.strip().split(",")
-        players.append({"player_name": name.strip(), "player_id": pid.strip()})
+print("[INFO] Requesting league game logs...")
 
-print(f"[INFO] Loaded {len(players)} players")
+gamelog = leaguegamelog.LeagueGameLog(
+    season=SEASON,
+    player_or_team_abbreviation="P",
+    season_type_all_star="Regular Season"
+)
 
-# ==================================================
-# FETCH ALL GAME LOGS
-# ==================================================
-rows = []
-failed_players = 0
+df = gamelog.get_data_frames()[0]
 
-for i, p in enumerate(players, start=1):
-    name = p["player_name"]
-    pid = p["player_id"]
+if df.empty:
+    raise RuntimeError("NBA returned empty league gamelog dataset.")
 
-    attempts = 0
-    success = False
-
-    while attempts < 3 and not success:
-        try:
-            logs = playergamelog.PlayerGameLog(
-                player_id=pid,
-                season=SEASON,
-                timeout=60
-            )
-
-            df = logs.get_data_frames()[0]
-
-            if df.empty:
-                print(f"   ℹ️ {name}: no games")
-                success = True
-                break
-
-            df["player_name"] = name
-            df["player_id"] = pid
-            df["Season"] = SEASON
-
-            rows.append(df)
-            print(f"   ✅ {name}: {len(df)} games")
-
-            sleep(SLEEP_BETWEEN_PLAYERS + random.uniform(0.2, 0.8))
-            success = True
-
-        except Exception as e:
-            attempts += 1
-            print(f"   ⚠️ Retry {attempts}/3 for {name} ({e})")
-            sleep(5)
-
-    if not success:
-        failed_players += 1
-        print(f"   ❌ Failed after retries: {name}")
-
-    if failed_players > 20:
-        raise RuntimeError(
-            f"Too many players failed ({failed_players}). Aborting save."
-        )
+print(f"[INFO] Retrieved {len(df)} player-game rows")
 
 # ==================================================
-# SAVE CSV
+# CLEAN + MATCH YOUR OLD STRUCTURE
 # ==================================================
-if rows:
-    final_df = pd.concat(rows, ignore_index=True)
-    final_df["GAME_DATE"] = pd.to_datetime(final_df["GAME_DATE"], errors="coerce")
 
-    final_df.to_csv(OUTPUT_CSV, index=False)
-    print(f"\n💾 Saved {len(final_df)} rows → {OUTPUT_CSV}")
-else:
-    print("\n⚠️ No data fetched.")
+# Convert date
+df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
+
+# Match your previous column naming
+df.rename(columns={
+    "PLAYER_ID": "player_id",
+    "PLAYER_NAME": "player_name",
+    "SEASON_ID": "Season"
+}, inplace=True)
+
+# Your downstream scripts expect this
+df["Season"] = SEASON
+
+# ==================================================
+# NORMALIZE COLUMNS TO MATCH OLD PLAYERGAMELOG OUTPUT
+# ==================================================
+
+# --- Convert MIN from "MM:SS" to decimal minutes ---
+def convert_min_to_float(min_str):
+    if pd.isna(min_str):
+        return 0.0
+    try:
+        minutes, seconds = min_str.split(":")
+        return float(minutes) + float(seconds)/60.0
+    except:
+        return 0.0
+
+df["MIN"] = df["MIN"].apply(convert_min_to_float)
+
+# --- Ensure correct Season format ---
+df["Season"] = SEASON
+
+# --- Sort for rolling calculations consistency ---
+df = df.sort_values(["player_id", "GAME_DATE"])
+
+# --- Keep only columns your app actually uses ---
+desired_columns = [
+    "Season",
+    "player_id",
+    "player_name",
+    "TEAM_ID",
+    "TEAM_ABBREVIATION",
+    "GAME_ID",
+    "GAME_DATE",
+    "MATCHUP",
+    "WL",
+    "MIN",
+    "FGM","FGA","FG3M","FG3A","FTM","FTA",
+    "OREB","DREB","REB",
+    "AST","STL","BLK","TOV","PF",
+    "PTS","PLUS_MINUS"
+]
+
+df = df[desired_columns]
+
+# ==================================================
+# SAVE
+# ==================================================
+df.to_csv(OUTPUT_CSV, index=False)
+print(f"\n💾 Saved {len(df)} rows → {OUTPUT_CSV}")
+
+# ==================================================
+# DATA INTEGRITY CHECK
+# ==================================================
+if len(df) < 10000:
+    raise RuntimeError(
+        f"NBA download incomplete — only {len(df)} rows collected."
+    )
 
 print("=== NBA PLAYER GAME LOGS FINISHED ===")
