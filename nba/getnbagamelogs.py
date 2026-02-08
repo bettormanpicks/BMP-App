@@ -116,6 +116,9 @@ if not success:
     failed_players += 1
     print(f"   ❌ Failed after retries: {name}")
 
+attempted_players = len(players)
+completed_players = 0
+
 if failed_players > 20:
     raise RuntimeError(
         f"Too many players failed ({failed_players}). Aborting save."
