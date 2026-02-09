@@ -1,6 +1,32 @@
 import streamlit as st
 import base64
 
+def set_header_banner(image_path):
+    with open(image_path, "rb") as f:
+        data = base64.b64encode(f.read()).decode()
+
+    st.markdown(f"""
+    <style>
+
+    /* remove the annoying blank gap above apps */
+    .block-container {{
+        padding-top: 0rem !important;
+    }}
+
+    /* the ACTUAL banner */
+    .stApp {{
+        background: url("data:image/png;base64,{data}") no-repeat top center;
+        background-size: 100% 220px;
+    }}
+
+    /* push the app content below the banner */
+    .main .block-container {{
+        padding-top: 230px !important;
+    }}
+
+    </style>
+    """, unsafe_allow_html=True)
+
 st.markdown("""
 <style>
 
@@ -40,50 +66,10 @@ td {
 
 /* Sidebar width */
 section[data-testid="stSidebar"] {
-    width: 310px !important;
+    width: 280px !important;
 }
 
 </style>
-""", unsafe_allow_html=True)
-
-def get_base64_image(image_path):
-    with open(image_path, "rb") as img:
-        return base64.b64encode(img.read()).decode()
-
-banner = get_base64_image("assets/header.png")
-
-st.markdown(f"""
-<div style="
-    background-image: url('data:image/png;base64,{banner}');
-    background-size: cover;
-    background-position: center;
-    padding: 70px 20px;
-    border-radius: 10px;
-    margin-bottom: 15px;
-">
-
-    <h1 style="
-        text-align:center;
-        color:white;
-        margin-bottom:0;
-        font-size:42px;
-        font-weight:800;
-        text-shadow: 0px 2px 8px rgba(0,0,0,.65);
-    ">
-        🏀 NBA Matchup Analyzer
-    </h1>
-
-    <p style="
-        text-align:center;
-        color:#d1d5db;
-        margin-top:0;
-        font-size:18px;
-        text-shadow: 0px 1px 6px rgba(0,0,0,.6);
-    ">
-        Player Performance vs Defensive Matchups
-    </p>
-
-</div>
 """, unsafe_allow_html=True)
 
 import pandas as pd
