@@ -27,14 +27,11 @@ def set_header_banner(image_path):
     </style>
     """, unsafe_allow_html=True)
 
+set_header_banner("assets/banner.png")
+st.sidebar.image("assets/logo.png", use_container_width=True)
+
 st.markdown("""
 <style>
-
-/* Remove default padding */
-.block-container {
-    padding-top: 0rem;
-    padding-bottom: 1rem;
-}
 
 /* Dataframe header */
 thead tr th {
