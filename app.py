@@ -72,13 +72,18 @@ def set_header_banner(image_path, height_px=120):
 # Set the header banner
 set_header_banner("assets/banner.png", height_px=120)
 
-# ============================================================
-# SIDEBAR LOGO (smaller, no extra vertical space)
-# ============================================================
-st.sidebar.markdown("""
-<div style="text-align: center; margin-bottom: 10px;">
-    <img src="assets/logo.png" width="120">
-</div>
+# Sidebar logo
+st.sidebar.image("assets/logo.png", width=120)
+
+# Additional CSS tweaks
+st.markdown("""
+<style>
+/* Remove extra space below the page */
+.block-container {
+    padding-bottom: 0rem !important;
+    margin-bottom: 0 !important;
+}
+</style>
 """, unsafe_allow_html=True)
 
 # ============================================================
