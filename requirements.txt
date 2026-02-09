@@ -1,4 +1,5 @@
 streamlit
+base64
 pandas
 numpy
 requests
