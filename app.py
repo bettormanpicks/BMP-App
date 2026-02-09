@@ -11,7 +11,7 @@ import re
 # ============================================================
 # HEADER BANNER (frozen at top)
 # ============================================================
-def set_header_banner(image_path, height_px=120):
+def set_header_banner(image_path, height_px=180):
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
@@ -95,7 +95,7 @@ st.set_page_config(
 )
 
 st.title("📊 Bettor Man Picks Stat Analyzer")
-st.markdown("<p style='text-align:center; color:#8b949e;'>Player Performance vs Defensive Matchups</p>", unsafe_allow_html=True)
+#st.markdown("<p style='text-align:center; color:#8b949e;'>Player Performance vs Defensive Matchups</p>", unsafe_allow_html=True)
 
 # ============================================================
 # Remaining imports for your app logic
