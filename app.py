@@ -1,4 +1,58 @@
 import streamlit as st
+
+st.markdown("""
+<style>
+
+/* Remove default padding */
+.block-container {
+    padding-top: 1.5rem;
+}
+
+/* Dataframe header */
+thead tr th {
+    background-color: #1f2933 !important;
+    color: #e6edf3 !important;
+    font-weight: 700 !important;
+    border-bottom: 2px solid #2d333b !important;
+}
+
+/* Rows */
+tbody tr {
+    background-color: #0e1117 !important;
+}
+
+/* Zebra striping */
+tbody tr:nth-child(even) {
+    background-color: #11161c !important;
+}
+
+/* Hover highlight */
+tbody tr:hover {
+    background-color: #1f2933 !important;
+}
+
+/* Numeric columns */
+td {
+    font-size: 13px !important;
+}
+
+/* Sidebar width */
+section[data-testid="stSidebar"] {
+    width: 310px !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<h1 style='text-align: center; margin-bottom: 0;'>
+🏀 NBA Matchup Analyzer
+</h1>
+<p style='text-align: center; color: #8b949e; margin-top: 0;'>
+Player Performance vs Defensive Matchups
+</p>
+""", unsafe_allow_html=True)
+
 import pandas as pd
 import numpy as np
 import json
@@ -11,10 +65,8 @@ from nba.helpers import DEF_STAT_MAP, load_nba_schedule, load_today_matchups, lo
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 #from nhl.nhlinjuries import fetch_nhl_injuries_selenium
 
-st.set_page_config(page_title="Sports Stat Analyzer", layout="wide")
-st.title("📊 Sports Stat Analyzer")
-
-
+st.set_page_config(page_title="Bettor Man Picks Stat Analyzer", layout="wide")
+st.title("📊 Bettor Man Picks Stat Analyzer")
 
 
 # =====================================================
