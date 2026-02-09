@@ -1,6 +1,16 @@
 import streamlit as st
 import base64
+import pandas as pd
+import numpy as np
+import json
+import requests
+from datetime import datetime, timedelta
+import pytz
+import re
 
+# ============================================================
+# HEADER BANNER (frozen at top)
+# ============================================================
 def set_header_banner(image_path, height_px=120):
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
@@ -20,94 +30,85 @@ def set_header_banner(image_path, height_px=120):
         z-index: 1000;
     }}
 
-    /* Push main app content below the banner */
+    /* Push main app content below banner */
     .main .block-container {{
-        padding-top: {height_px + 10}px !important; /* adjust spacing below banner */
+        padding-top: {height_px + 10}px !important;
+        padding-bottom: 0rem !important; /* remove extra bottom space */
     }}
 
-    /* Remove default Streamlit top padding */
-    .block-container {{
-        padding-top: 0rem !important;
+    /* Sidebar width */
+    section[data-testid="stSidebar"] {{
+        width: 280px !important;
+    }}
+
+    /* Hide default menu and footer */
+    #MainMenu {{visibility: hidden;}}
+    footer {{visibility: hidden;}}
+
+    /* Dataframe styling */
+    thead tr th {{
+        background-color: #1f2933 !important;
+        color: #e6edf3 !important;
+        font-weight: 700 !important;
+        border-bottom: 2px solid #2d333b !important;
+    }}
+    tbody tr {{
+        background-color: #0e1117 !important;
+    }}
+    tbody tr:nth-child(even) {{
+        background-color: #11161c !important;
+    }}
+    tbody tr:hover {{
+        background-color: #1f2933 !important;
+    }}
+    td {{
+        font-size: 13px !important;
     }}
     </style>
 
     <div class="banner"></div>
     """, unsafe_allow_html=True)
 
-set_header_banner("assets/banner.png")
+# Set the header banner
+set_header_banner("assets/banner.png", height_px=120)
+
+# ============================================================
+# SIDEBAR LOGO (smaller, no extra vertical space)
+# ============================================================
 st.sidebar.markdown("""
 <div style="text-align: center; margin-bottom: 10px;">
     <img src="assets/logo.png" width="120">
 </div>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-<style>
+# ============================================================
+# PAGE CONFIG & TITLE
+# ============================================================
+st.set_page_config(
+    page_title="Bettor Man Picks Stat Analyzer",
+    layout="wide"
+)
 
-/* Dataframe header */
-thead tr th {
-    background-color: #1f2933 !important;
-    color: #e6edf3 !important;
-    font-weight: 700 !important;
-    border-bottom: 2px solid #2d333b !important;
-}
-
-/* Rows */
-tbody tr {
-    background-color: #0e1117 !important;
-}
-
-/* Zebra striping */
-tbody tr:nth-child(even) {
-    background-color: #11161c !important;
-}
-
-/* Hover highlight */
-tbody tr:hover {
-    background-color: #1f2933 !important;
-}
-
-/* Numeric columns */
-td {
-    font-size: 13px !important;
-}
-
-/* Sidebar width */
-section[data-testid="stSidebar"] {
-    width: 280px !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
-st.markdown("""
-<style>
-/* Remove bottom whitespace in main container */
-.main .block-container {
-    padding-bottom: 0rem !important;
-}
-
-/* Remove extra margins from Streamlit elements */
-footer {visibility: hidden;}
-#MainMenu {visibility: hidden;}
-</style>
-""", unsafe_allow_html=True)
-
-import pandas as pd
-import numpy as np
-import json
-import requests
-from datetime import datetime, timedelta
-import pytz
-import re
-from shared.utils import get_nba_today, hit_rate_threshold, trim_df_to_recent_82, dedupe_columns, strip_display_ids, norm_name, get_teams_playing_on_date
-from nba.helpers import DEF_STAT_MAP, load_nba_schedule, load_today_matchups, load_nba_injury_status, parse_nba_matchup, add_team_opponent_columns, compute_player_percentiles, load_todays_schedule, compute_team_b2b_from_schedule, normalize_nba_position, normalize_nba_position_display, add_combo_stats, load_nba_raw_data, load_defense_tables
-from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
-#from nhl.nhlinjuries import fetch_nhl_injuries_selenium
-
-st.set_page_config(page_title="Bettor Man Picks Stat Analyzer", layout="wide")
 st.title("📊 Bettor Man Picks Stat Analyzer")
+st.markdown("<p style='text-align:center; color:#8b949e;'>Player Performance vs Defensive Matchups</p>", unsafe_allow_html=True)
 
+# ============================================================
+# Remaining imports for your app logic
+# ============================================================
+from shared.utils import (
+    get_nba_today, hit_rate_threshold, trim_df_to_recent_82,
+    dedupe_columns, strip_display_ids, norm_name,
+    get_teams_playing_on_date
+)
+from nba.helpers import (
+    DEF_STAT_MAP, load_nba_schedule, load_today_matchups,
+    load_nba_injury_status, parse_nba_matchup,
+    add_team_opponent_columns, compute_player_percentiles,
+    load_todays_schedule, compute_team_b2b_from_schedule,
+    normalize_nba_position, normalize_nba_position_display,
+    add_combo_stats, load_nba_raw_data, load_defense_tables
+)
+from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 
 # =====================================================
 # NFL HELPERS (PFR CLEAN DATA)
