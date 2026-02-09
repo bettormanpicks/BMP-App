@@ -1,34 +1,45 @@
 import streamlit as st
 import base64
 
-def set_header_banner(image_path):
+def set_header_banner(image_path, height_px=120):
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
+    /* Freeze banner at top */
+    .banner {{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: {height_px}px;
+        background-image: url("data:image/png;base64,{data}");
+        background-size: cover;
+        background-position: center;
+        z-index: 1000;
+    }}
 
-    /* remove the annoying blank gap above apps */
+    /* Push main app content below the banner */
+    .main .block-container {{
+        padding-top: {height_px + 10}px !important; /* adjust spacing below banner */
+    }}
+
+    /* Remove default Streamlit top padding */
     .block-container {{
         padding-top: 0rem !important;
     }}
-
-    /* the ACTUAL banner */
-    .stApp {{
-        background: url("data:image/png;base64,{data}") no-repeat top center;
-        background-size: 100% 220px;
-    }}
-
-    /* push the app content below the banner */
-    .main .block-container {{
-        padding-top: 230px !important;
-    }}
-
     </style>
+
+    <div class="banner"></div>
     """, unsafe_allow_html=True)
 
 set_header_banner("assets/banner.png")
-st.sidebar.image("assets/logo.png", use_container_width=True)
+st.sidebar.markdown("""
+<div style="text-align: center; margin-bottom: 10px;">
+    <img src="assets/logo.png" width="120">
+</div>
+""", unsafe_allow_html=True)
 
 st.markdown("""
 <style>
@@ -71,8 +82,14 @@ section[data-testid="stSidebar"] {
 
 st.markdown("""
 <style>
-#MainMenu {visibility: hidden;}
+/* Remove bottom whitespace in main container */
+.main .block-container {
+    padding-bottom: 0rem !important;
+}
+
+/* Remove extra margins from Streamlit elements */
 footer {visibility: hidden;}
+#MainMenu {visibility: hidden;}
 </style>
 """, unsafe_allow_html=True)
 
