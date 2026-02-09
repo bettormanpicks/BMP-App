@@ -1,11 +1,13 @@
 import streamlit as st
+import base64
 
 st.markdown("""
 <style>
 
 /* Remove default padding */
 .block-container {
-    padding-top: 1.5rem;
+    padding-top: 0rem;
+    padding-bottom: 1rem;
 }
 
 /* Dataframe header */
@@ -44,13 +46,44 @@ section[data-testid="stSidebar"] {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown("""
-<h1 style='text-align: center; margin-bottom: 0;'>
-🏀 NBA Matchup Analyzer
-</h1>
-<p style='text-align: center; color: #8b949e; margin-top: 0;'>
-Player Performance vs Defensive Matchups
-</p>
+def get_base64_image(image_path):
+    with open(image_path, "rb") as img:
+        return base64.b64encode(img.read()).decode()
+
+banner = get_base64_image("assets/header.png")
+
+st.markdown(f"""
+<div style="
+    background-image: url('data:image/png;base64,{banner}');
+    background-size: cover;
+    background-position: center;
+    padding: 70px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+">
+
+    <h1 style="
+        text-align:center;
+        color:white;
+        margin-bottom:0;
+        font-size:42px;
+        font-weight:800;
+        text-shadow: 0px 2px 8px rgba(0,0,0,.65);
+    ">
+        🏀 NBA Matchup Analyzer
+    </h1>
+
+    <p style="
+        text-align:center;
+        color:#d1d5db;
+        margin-top:0;
+        font-size:18px;
+        text-shadow: 0px 1px 6px rgba(0,0,0,.6);
+    ">
+        Player Performance vs Defensive Matchups
+    </p>
+
+</div>
 """, unsafe_allow_html=True)
 
 import pandas as pd
