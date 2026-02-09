@@ -22,7 +22,6 @@ def set_header_banner(image_path):
     /* push the app content below the banner */
     .main .block-container {{
         padding-top: 230px !important;
-        padding-bottom: 0px
     }}
 
     </style>
@@ -67,6 +66,13 @@ section[data-testid="stSidebar"] {
     width: 280px !important;
 }
 
+</style>
+""", unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+#MainMenu {visibility: hidden;}
+footer {visibility: hidden;}
 </style>
 """, unsafe_allow_html=True)
 
