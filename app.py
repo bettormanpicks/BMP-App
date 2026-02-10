@@ -54,7 +54,7 @@ def set_header_banner(image_path, height_px=150):
         background-position: center;
         display: flex;
         align-items: flex-end;
-        padding: 20px 40px;
+        padding: 5px 5px;
         box-sizing: border-box;
         border-bottom: 1px solid #2d333b;
     }}
