@@ -44,7 +44,7 @@ nba_today = get_nba_today()
 # ============================================================
 # HEADER BANNER (hero header with title + date)
 # ============================================================
-def set_header_banner(image_path, height_px=150):
+def set_header_banner(image_path, height_px=180):
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
@@ -53,18 +53,17 @@ def set_header_banner(image_path, height_px=150):
     .hero-header {{
         position: relative;
         width: 100%;
-        height: {height_px}px;
-        overflow: hidden;
+        height: auto;                  /* let the image define height */
         display: flex;
-        justify-content: center;  /* centers image horizontally */
-        align-items: center;      /* centers image vertically */
+        justify-content: center;
+        align-items: center;
     }}
 
     .hero-header img {{
-        width: 100%;
-        height: auto;           /* preserves aspect ratio */
-        object-fit: contain;    /* prevents cropping */
-        max-height: 100%;
+        width: 100%;                   /* scale width to container */
+        height: auto;                  /* scale height proportionally */
+        object-fit: contain;           /* no cropping */
+        display: block;                /* removes inline spacing below img */
     }}
 
     .hero-text {{
@@ -113,7 +112,7 @@ def set_header_banner(image_path, height_px=150):
     """, unsafe_allow_html=True)
 
 # Set the header banner
-set_header_banner("assets/banner.png", height_px=150)
+set_header_banner("assets/banner.png", height_px=180)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
