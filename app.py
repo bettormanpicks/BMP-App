@@ -26,43 +26,6 @@ from nba.helpers import (
 )
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 
-# ============================================================
-# PAGE CONFIG & TITLE
-# ============================================================
-st.set_page_config(
-    page_title="Bettor Man Picks Stat Analyzer",
-    layout="wide"
-)
-
-st.markdown("""
-<style>
-
-/* remove Streamlit’s real spacing source */
-.block-container {
-    padding-top: 0rem !important;
-    padding-bottom: 0rem !important;
-    margin-top: 0rem !important;
-}
-
-/* remove extra spacing around first element */
-.main > div:first-child {
-    padding-top: 0rem !important;
-    margin-top: 0rem !important;
-}
-
-/* ensure the app touches the top */
-[data-testid="stAppViewContainer"] {
-    padding-top: 0rem !important;
-}
-
-/* remove bottom scroll void */
-[data-testid="stAppViewContainer"] .main {
-    padding-bottom: 0rem !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
 import streamlit as st
 import base64
 from datetime import datetime
@@ -76,11 +39,12 @@ st.set_page_config(
     layout="wide"
 )
 
+nba_today = get_nba_today()
+
 # ============================================================
 # HEADER BANNER (hero header with title + date)
 # ============================================================
-def set_header_banner(image_path):
-    nba_today = get_nba_today()
+def set_header_banner(image_path, height_px=150):
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
@@ -90,35 +54,40 @@ def set_header_banner(image_path):
     .hero-header {{
         position: relative;
         width: 100%;
-        height: auto;
+        height: {height_px}px;
+        overflow: hidden;
     }}
 
-    /* Banner image */
+    /* Banner image fills container */
     .hero-header img {{
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
-        height: auto;
-        display: block;
+        height: 100%;
+        object-fit: cover;
     }}
 
     /* Text overlay container */
     .hero-text {{
         position: absolute;
-        bottom: 20px;  /* adjust vertical position of text inside banner */
-        left: 40px;    /* horizontal padding from left */
+        bottom: 10px;  /* vertical spacing from bottom */
+        left: 40px;
         z-index: 2;
         color: #e6edf3;
+        line-height: 1.2;
     }}
 
     .hero-title {{
         font-size: 30px;
         font-weight: 700;
-        margin: 0;
+        margin: 0 0 4px 0;
     }}
 
     .date-pill {{
         font-size: 13px;
         color: #8b949e;
-        margin-top: 4px;
+        margin: 0;
     }}
 
     /* Sidebar width */
@@ -130,7 +99,7 @@ def set_header_banner(image_path):
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
 
-    /* Remove top & bottom page padding */
+    /* Remove top & bottom padding from page */
     .block-container {{
         padding-top: 0rem !important;
         padding-bottom: 0rem !important;
@@ -149,28 +118,7 @@ def set_header_banner(image_path):
     """, unsafe_allow_html=True)
 
 # Set the header banner
-set_header_banner("assets/banner.png")
-
-nba_today = get_nba_today()
-
-st.markdown(
-    f"""
-    <style>
-    .date-pill {{
-        position: relative;
-        margin-top: -35px;
-        margin-left: 42px;
-        color: #8b949e;
-        font-size: 13px;
-    }}
-    </style>
-
-    <div class="date-pill">
-        NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+set_header_banner("assets/banner.png", height_px=150)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
