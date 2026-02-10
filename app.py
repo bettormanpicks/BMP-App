@@ -39,7 +39,7 @@ nba_today = get_nba_today()
 # ============================================================
 # HEADER BANNER (hero header with title + date)
 # ============================================================
-def set_header_banner(image_path, image_width=1500, image_height=150):
+def set_header_banner(image_path, image_width=1500, image_height=170):
     """
     Sets a full-width hero banner at the top of the page, preserving the entire image.
 
@@ -96,7 +96,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     </div>
     """, unsafe_allow_html=True)
 
-set_header_banner("assets/banner.png", image_width=1500, image_height=150)
+set_header_banner("assets/banner.png", image_width=1500, image_height=170)
 
 nba_today = get_nba_today()
 
