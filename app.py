@@ -176,7 +176,7 @@ st.markdown(
 )
 
 # Set the header banner
-set_header_banner("assets/banner.png", height_px=150)
+set_header_banner("assets/banner.png")
 
 nba_today = get_nba_today()
 
