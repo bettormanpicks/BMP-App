@@ -34,6 +34,35 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+
+/* remove Streamlit’s real spacing source */
+.block-container {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    margin-top: 0rem !important;
+}
+
+/* remove extra spacing around first element */
+.main > div:first-child {
+    padding-top: 0rem !important;
+    margin-top: 0rem !important;
+}
+
+/* ensure the app touches the top */
+[data-testid="stAppViewContainer"] {
+    padding-top: 0rem !important;
+}
+
+/* remove bottom scroll void */
+[data-testid="stAppViewContainer"] .main {
+    padding-bottom: 0rem !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 # ============================================================
 # HEADER BANNER (hero header)
 # ============================================================
@@ -47,6 +76,7 @@ def set_header_banner(image_path, height_px=150):
     /* --- HEADER HERO --- */
     .hero-header {{
         position: relative;
+        margin-top: -1rem;
         width: 100%;
         height: {height_px}px;
         background-image: url("data:image/png;base64,{data}");
@@ -105,46 +135,6 @@ def set_header_banner(image_path, height_px=150):
 
 # Set the header banner
 set_header_banner("assets/banner.png", height_px=150)
-
-st.markdown("""
-<style>
-
-/* ===== REMOVE GLOBAL STREAMLIT PAGE PADDING ===== */
-
-/* removes blank space ABOVE your banner */
-div[data-testid="stAppViewContainer"] > .main {
-    padding-top: 0rem !important;
-}
-
-/* removes extra space below page */
-div[data-testid="stAppViewContainer"] {
-    padding-bottom: 0rem !important;
-}
-
-/* removes Streamlit content wrapper padding */
-section.main > div {
-    padding-top: 0rem !important;
-    padding-bottom: 0rem !important;
-}
-
-/* kill the invisible first spacer Streamlit inserts */
-section.main div[data-testid="stVerticalBlock"] > div:first-child:empty {
-    display: none !important;
-}
-
-/* eliminate the mysterious bottom scroll void */
-section.main div[data-testid="stVerticalBlock"] > div:last-child {
-    margin-bottom: 0rem !important;
-    padding-bottom: 0rem !important;
-}
-
-/* ensure the page height hugs the content */
-html, body, .stApp {
-    height: auto !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 nba_today = get_nba_today()
 
