@@ -64,29 +64,27 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ============================================================
-# HEADER BANNER (hero header) — aspect-ratio preserving
+# HEADER BANNER (hero header)
 # ============================================================
-def set_header_banner(image_path, original_width=1500, original_height=150):
-    # Calculate aspect ratio as a percentage for padding-top
-    aspect_ratio_pct = (original_height / original_width) * 100
-
+def set_header_banner(image_path, height_px=150):
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
-    /* --- HERO HEADER CONTAINER --- */
+
+    /* --- HEADER HERO --- */
     .hero-header {{
         position: relative;
+        margin-top: -1rem;
         width: 100%;
-        padding-top: {aspect_ratio_pct}%;
+        height: {height_px}px;
         background-image: url("data:image/png;base64,{data}");
         background-size: cover;
         background-position: center;
         display: flex;
         align-items: flex-end;
-        padding-left: 40px;
-        padding-right: 40px;
+        padding: 20px 40px;
         box-sizing: border-box;
         border-bottom: 1px solid #2d333b;
     }}
@@ -124,6 +122,7 @@ def set_header_banner(image_path, original_width=1500, original_height=150):
     /* Hide Streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
+
     </style>
 
     <div class="hero-header">
@@ -135,7 +134,7 @@ def set_header_banner(image_path, original_width=1500, original_height=150):
     """, unsafe_allow_html=True)
 
 # Set the header banner
-set_header_banner("assets/banner.png")
+set_header_banner("assets/banner.png", height_px=150)
 
 nba_today = get_nba_today()
 
