@@ -122,28 +122,28 @@ st.markdown(
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
 
-    # Additional CSS tweaks
-    st.markdown("""
-    <style>
-    /* --- Remove extra spacing below hero header --- */
-    div[data-testid="stVerticalBlock"] > div:first-child {
-        margin-top: 0 !important;
-        padding-top: 0 !important;
-    }
+# Additional CSS tweaks
+st.markdown("""
+<style>
+/* --- Remove extra spacing immediately after hero header --- */
+div[data-testid="stVerticalBlock"] > div:nth-child(2) {
+    margin-top: 0 !important;
+    padding-top: 0 !important;
+}
 
-    /* --- Remove extra space below the table --- */
-    div[data-testid="stVerticalBlock"] > div:last-child {
-        margin-bottom: 0 !important;
-        padding-bottom: 0 !important;
-    }
+/* --- Remove extra space below the last block (table/footer) --- */
+div[data-testid="stVerticalBlock"] > div:last-child {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
 
-    /* Ensure block container hugs content */
-    .block-container {
-        padding-top: 0 !important;
-        padding-bottom: 0 !important;
-    }
-    </style>
-    """, unsafe_allow_html=True)
+/* Keep block container padding minimal but do not touch hero header */
+.block-container {
+    padding-bottom: 0 !important;
+}
+</style>
+""", unsafe_allow_html=True)
+
 
 
 
