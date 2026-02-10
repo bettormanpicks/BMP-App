@@ -125,25 +125,38 @@ st.sidebar.image("assets/logo.png", width=170)
 # Additional CSS tweaks
 st.markdown("""
 <style>
-/* ===== REMOVE PAGE TOP/BOTTOM MARGINS ===== */
+/* --------------------------
+   REMOVE EXTRA PAGE SPACING
+-------------------------- */
 
-/* Remove default top padding of the Streamlit main container, but keep .hero-header intact */
+/* Removes space above the hero header */
 [data-testid="stAppViewContainer"] > .main {
     padding-top: 0 !important;
 }
 
-/* Remove default bottom padding of the Streamlit main container */
-[data-testid="stAppViewContainer"] {
+/* Remove default top/bottom padding in each vertical block */
+div[data-testid="stVerticalBlock"] > div {
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
-}
-
-/* Remove extra bottom space created by last vertical block in the page */
-section.main div[data-testid="stVerticalBlock"] > div:last-child {
+    margin-top: 0 !important;
     margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
 }
 
-/* Ensure page height hugs content */
+/* Remove extra bottom space at the end of the page */
+section.main div[data-testid="stVerticalBlock"] > div:last-child {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Make sure the block container height hugs content */
+.block-container {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+
+/* Ensure the page height wraps tightly around content */
 html, body, .stApp {
     height: auto !important;
 }
