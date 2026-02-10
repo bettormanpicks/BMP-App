@@ -109,7 +109,7 @@ def set_header_banner(image_path, height_px=150):
         <div class="hero-overlay"></div>
         <div class="hero-text">
             <div class="hero-title">NBA — Player Hit Rate Analysis</div>
-            <div class="hero-subtitle">Daily matchup performance vs defensive rankings</div>
+           */ <div class="hero-subtitle">Daily matchup performance vs defensive rankings</div> */
         </div>
     </div>
     """, unsafe_allow_html=True)
