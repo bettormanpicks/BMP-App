@@ -44,78 +44,65 @@ nba_today = get_nba_today()
 # ============================================================
 # HEADER BANNER (hero header with title + date)
 # ============================================================
-def set_header_banner(image_path, height_px=400):
+def set_header_banner(image_path, image_width=1500, image_height=150):
+    """
+    Sets a full-width hero banner at the top of the page, preserving the entire image.
+
+    image_width / image_height: the actual pixel dimensions of your banner image
+    """
+    aspect_ratio_pct = (image_height / image_width) * 100  # padding-top % to preserve aspect ratio
+
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
-
+    /* --- HERO HEADER --- */
     .hero-header {{
         position: relative;
         width: 100%;
-        height: auto;  /* we'll compute it via aspect ratio */
-        padding-top: 10%; /* roughly 150px / 1500px = 10% aspect ratio */
+        height: 0;
+        padding-top: {aspect_ratio_pct:.2f}%;
         background-image: url("data:image/png;base64,{data}");
-        background-size: contain;  /* scales image fully inside container */
+        background-size: contain;       /* scale image fully inside container */
         background-repeat: no-repeat;
         background-position: center top;
     }}
 
-    .hero-header img {{
-        height: 100%;                  /* fill container height exactly */
-        width: auto;                    /* scale width to preserve aspect ratio */
-        object-fit: none;               /* don’t crop */
-        display: block;                 
-    }}
-
+    /* Overlay text (hero title) */
     .hero-text {{
         position: absolute;
         bottom: 10px;
         left: 40px;
-        z-index: 2;
         color: #e6edf3;
-        line-height: 1.2;
+        z-index: 2;
     }}
 
     .hero-title {{
         font-size: 30px;
         font-weight: 700;
-        margin: 0 0 4px 0;
-    }}
-
-    .date-pill {{
-        font-size: 13px;
-        color: #8b949e;
         margin: 0;
     }}
 
+    /* Sidebar width */
     section[data-testid="stSidebar"] {{
         width: 280px !important;
     }}
 
+    /* Hide Streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
-
-    .block-container {{
-        padding-top: 0rem !important;
-        padding-bottom: 0rem !important;
-        margin-top: 0rem !important;
-        margin-bottom: 0rem !important;
-    }}
     </style>
 
     <div class="hero-header">
-        <img src="data:image/png;base64,{data}">
         <div class="hero-text">
             <div class="hero-title">NBA — Player Hit Rate Analysis</div>
-            <div class="date-pill">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
 # Set the header banner
-set_header_banner("assets/banner.png", height_px=400)
+set_header_banner("assets/banner.png", height_px=150)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
