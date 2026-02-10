@@ -50,7 +50,7 @@ def set_header_banner(image_path, height_px=200):
 
     /* Push app below banner */
     .main .block-container {{
-        padding-top: {height_px + 50}px !important;
+        padding-top: {height_px + 100}px !important;
         padding-bottom: 0rem !important;
         margin-bottom: 0rem !important;
     }}
