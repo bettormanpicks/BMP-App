@@ -49,10 +49,14 @@ def set_header_banner(image_path, height_px=200):
         object-fit: contain;
     }}
 
-    /* Push content below banner */
-    .stApp > div.main > div.block-container {{
-        padding-top: {height_px + 15}px !important;
-        padding-bottom: 0rem !important;
+    /* Push entire Streamlit app below fixed banner */
+    .stApp > div.main {{
+        padding-top: {height_px + 20}px !important;
+    }}
+
+    /* Prevent anchor jump under fixed banner */
+    html {{
+        scroll-padding-top: {height_px + 20}px;
     }}
 
     /* Sidebar width */
