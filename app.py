@@ -57,7 +57,7 @@ def set_header_banner(image_path, height_px=180):
 
     /* Sidebar width */
     section[data-testid="stSidebar"] {{
-        width: 270px !important;
+        width: 275px !important;
     }}
 
     /* Hide default menu and footer */
