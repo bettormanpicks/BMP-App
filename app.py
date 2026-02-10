@@ -66,24 +66,31 @@ st.markdown("""
 # ============================================================
 # HEADER BANNER (hero header)
 # ============================================================
-def set_header_banner(image_path, height_px=150):
+def set_header_banner(image_path, max_height_px=150, min_height_px=100):
+    """
+    Sets a responsive hero header with full-width banner image.
+    max_height_px: height for desktop
+    min_height_px: height for small/mobile screens
+    """
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
-
-    /* --- HEADER HERO --- */
+    /* --- HERO HEADER --- */
     .hero-header {{
         position: relative;
-        margin-top: -1rem;
+        margin-top: -1rem;          /* keeps banner flush with top */
         width: 100%;
-        height: {height_px}px;
+        height: auto;               /* auto height scales with screen */
+        min-height: {min_height_px}px;
+        max-height: {max_height_px}px;
         background-image: url("data:image/png;base64,{data}");
-        background-size: cover;
-        background-position: center;
+        background-size: contain;   /* ensures full image is visible */
+        background-repeat: no-repeat;
+        background-position: center top;
         display: flex;
-        align-items: flex-end;
+        align-items: flex-end;      /* hero text aligns at bottom */
         padding: 20px 40px;
         box-sizing: border-box;
         border-bottom: 1px solid #2d333b;
@@ -114,6 +121,18 @@ def set_header_banner(image_path, height_px=150):
         margin-bottom: 4px;
     }}
 
+    /* Responsive tweaks for small screens */
+    @media screen and (max-width: 480px) {{
+        .hero-header {{
+            min-height: 80px;
+            max-height: 120px;
+            padding: 10px 20px;
+        }}
+        .hero-title {{
+            font-size: 22px;
+        }}
+    }}
+
     /* Sidebar width */
     section[data-testid="stSidebar"] {{
         width: 280px !important;
@@ -122,7 +141,6 @@ def set_header_banner(image_path, height_px=150):
     /* Hide Streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
-
     </style>
 
     <div class="hero-header">
@@ -132,6 +150,30 @@ def set_header_banner(image_path, height_px=150):
         </div>
     </div>
     """, unsafe_allow_html=True)
+
+
+# --- Set the header banner ---
+set_header_banner("assets/banner.png", max_height_px=150, min_height_px=100)
+
+# --- NBA date pill inside the header ---
+nba_today = get_nba_today()
+st.markdown(
+    f"""
+    <style>
+    .date-pill {{
+        position: relative;
+        margin-top: -35px;  /* keeps date inside hero header */
+        margin-left: 42px;
+        color: #8b949e;
+        font-size: 13px;
+    }}
+    </style>
+    <div class="date-pill">
+        NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Set the header banner
 set_header_banner("assets/banner.png", height_px=150)
