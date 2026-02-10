@@ -102,7 +102,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     """, unsafe_allow_html=True)
 
 # Set the header banner
-set_header_banner("assets/banner.png", height_px=150)
+set_header_banner("assets/banner.png")
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
