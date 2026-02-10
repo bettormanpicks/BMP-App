@@ -26,11 +26,6 @@ from nba.helpers import (
 )
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 
-import streamlit as st
-import base64
-from datetime import datetime
-from shared.utils import get_nba_today
-
 # ============================================================
 # PAGE CONFIG
 # ============================================================
@@ -101,8 +96,28 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     </div>
     """, unsafe_allow_html=True)
 
-# Set the header banner
-set_header_banner("assets/banner.png")
+set_header_banner("assets/banner.png", image_width=1500, image_height=150)
+
+nba_today = get_nba_today()
+
+st.markdown(
+    f"""
+    <style>
+    .date-pill {{
+        position: absolute;
+        bottom: 10px;       /* aligns nicely with hero-title */
+        left: 42px;
+        color: #8b949e;
+        font-size: 13px;
+    }}
+    </style>
+
+    <div class="date-pill">
+        NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
