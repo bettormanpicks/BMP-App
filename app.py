@@ -54,11 +54,12 @@ def set_header_banner(image_path, height_px=400):
     .hero-header {{
         position: relative;
         width: 100%;
-        height: 150px;                  /* match your actual banner height */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;               /* ensures nothing spills outside */
+        height: auto;  /* we'll compute it via aspect ratio */
+        padding-top: 10%; /* roughly 150px / 1500px = 10% aspect ratio */
+        background-image: url("data:image/png;base64,{data}");
+        background-size: contain;  /* scales image fully inside container */
+        background-repeat: no-repeat;
+        background-position: center top;
     }}
 
     .hero-header img {{
