@@ -37,46 +37,24 @@ st.set_page_config(
 nba_today = get_nba_today()
 
 # ============================================================
-# HEADER BANNER (hero header with title + date)
+# HEADER BANNER (uses Streamlit top padding as container)
 # ============================================================
-def set_header_banner(image_path, image_width=1500, image_height=150):
+def set_header_banner(image_path, banner_height_px=150):
     """
-    Sets a full-width hero banner at the top of the page, preserving the entire image.
-
-    image_width / image_height: the actual pixel dimensions of your banner image
+    Places a full-width hero banner inside the Streamlit top padding space.
+    banner_height_px: height of the banner in pixels
     """
-    aspect_ratio_pct = (image_height / image_width) * 100  # padding-top % to preserve aspect ratio
-
+    # Read image and encode as base64
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
-    /* --- HERO HEADER --- */
-    .hero-header {{
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-top: {aspect_ratio_pct:.2f}%;
-        background-image: url("data:image/png;base64,{data}");
-        background-size: contain;       /* scale image fully inside container */
-        background-repeat: no-repeat;
-        background-position: center top;
-    }}
-
-    /* Overlay text (hero title) */
-    .hero-text {{
-        position: absolute;
-        bottom: 15px;
-        left: 10px;
-        color: #e6edf3;
-        z-index: 2;
-    }}
-
-    .hero-title {{
-        font-size: 30px;
-        font-weight: 700;
-        margin: 0;
+    /* --- Use Streamlit top padding as container for banner --- */
+    .block-container {{
+        padding-top: {banner_height_px}px !important;  /* space for banner */
+        padding-bottom: 0rem !important;
+        margin: 0 !important;
     }}
 
     /* Sidebar width */
@@ -87,40 +65,62 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     /* Hide Streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
+
+    /* Banner container inside top padding */
+    .banner-container {{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: {banner_height_px}px;
+        background-image: url("data:image/png;base64,{data}");
+        background-size: contain;      /* fully visible */
+        background-repeat: no-repeat;
+        background-position: center top;
+        z-index: 1;
+    }}
+
+    /* Overlay text (hero title + date) */
+    .hero-text {{
+        position: absolute;
+        top: 0;
+        left: 20px;
+        height: {banner_height_px}px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;  /* text at bottom of banner */
+        z-index: 2;
+        color: #e6edf3;
+    }}
+
+    .hero-title {{
+        font-size: 30px;
+        font-weight: 700;
+        margin: 0;
+    }}
+
+    .date-pill {{
+        font-size: 13px;
+        color: #8b949e;
+        margin-top: 2px;
+    }}
+
     </style>
 
-    <div class="hero-header">
-        <div class="hero-text">
-            <div class="hero-title">NBA — Player Hit Rates</div>
-        </div>
+    <div class="banner-container"></div>
+
+    <div class="hero-text">
+        <div class="hero-title">NBA — Player Hit Rates</div>
+        <div class="date-pill">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
     </div>
     """, unsafe_allow_html=True)
 
-set_header_banner("assets/banner.png", image_width=1500, image_height=150)
-
-nba_today = get_nba_today()
-
-st.markdown(
-    f"""
-    <style>
-    .date-pill {{
-        position: absolute;
-        bottom: 2px;       /* aligns nicely with hero-title */
-        left: 10px;
-        color: #8b949e;
-        font-size: 13px;
-    }}
-    </style>
-
-    <div class="date-pill">
-        NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
-    </div>
-    """,
-    unsafe_allow_html=True
-)
+# Set the banner
+set_header_banner("assets/banner.png", banner_height_px=150)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
+
 
 # Additional CSS tweaks
 
