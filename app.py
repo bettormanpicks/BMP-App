@@ -125,24 +125,31 @@ st.sidebar.image("assets/logo.png", width=170)
 # Additional CSS tweaks
 st.markdown("""
 <style>
-/* --- Remove extra spacing immediately after hero header --- */
-div[data-testid="stVerticalBlock"] > div:nth-child(2) {
+/* --- Kill empty space above hero header --- */
+div[data-testid="stAppViewContainer"] > .main {
+    padding-top: 0 !important;
+}
+
+/* --- Kill empty space between hero header and first content block --- */
+div[data-testid="stVerticalBlock"] > div:first-child {
     margin-top: 0 !important;
     padding-top: 0 !important;
 }
 
-/* --- Remove extra space below the last block (table/footer) --- */
+/* --- Kill extra bottom spacing under the last block (table/footer) --- */
 div[data-testid="stVerticalBlock"] > div:last-child {
     margin-bottom: 0 !important;
     padding-bottom: 0 !important;
 }
 
-/* Keep block container padding minimal but do not touch hero header */
+/* --- Keep block container minimal but do not touch hero header padding --- */
 .block-container {
+    padding-top: 0 !important;
     padding-bottom: 0 !important;
 }
 </style>
 """, unsafe_allow_html=True)
+
 
 
 
