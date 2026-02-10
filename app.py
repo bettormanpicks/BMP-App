@@ -34,8 +34,37 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+
+/* remove Streamlit’s real spacing source */
+.block-container {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    margin-top: 0rem !important;
+}
+
+/* remove extra spacing around first element */
+.main > div:first-child {
+    padding-top: 0rem !important;
+    margin-top: 0rem !important;
+}
+
+/* ensure the app touches the top */
+[data-testid="stAppViewContainer"] {
+    padding-top: 0rem !important;
+}
+
+/* remove bottom scroll void */
+[data-testid="stAppViewContainer"] .main {
+    padding-bottom: 0rem !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 # ============================================================
-# HEADER BANNER (hero header, double braces preserved)
+# HEADER BANNER (hero header)
 # ============================================================
 def set_header_banner(image_path, height_px=150):
     with open(image_path, "rb") as f:
@@ -44,9 +73,10 @@ def set_header_banner(image_path, height_px=150):
     st.markdown(f"""
     <style>
 
-    /* --- HERO HEADER --- */
+    /* --- HEADER HERO --- */
     .hero-header {{
         position: relative;
+        margin-top: -1rem;
         width: 100%;
         height: {height_px}px;
         background-image: url("data:image/png;base64,{data}");
@@ -59,7 +89,7 @@ def set_header_banner(image_path, height_px=150):
         border-bottom: 1px solid #2d333b;
     }}
 
-    /* Dark gradient overlay for text readability */
+    /* Dark gradient for text readability */
     .hero-overlay {{
         position: absolute;
         inset: 0;
@@ -106,21 +136,17 @@ def set_header_banner(image_path, height_px=150):
 # Set the header banner
 set_header_banner("assets/banner.png", height_px=150)
 
-# ============================================================
-# DATE PILL over banner
-# ============================================================
 nba_today = get_nba_today()
 
 st.markdown(
     f"""
     <style>
     .date-pill {{
-        position: absolute;
-        top: 110px; /* tweak vertical placement */
-        left: 42px;
+        position: relative;
+        margin-top: -35px;
+        margin-left: 42px;
         color: #8b949e;
         font-size: 13px;
-        z-index: 3;
     }}
     </style>
 
@@ -130,46 +156,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
-# ============================================================
-# GLOBAL PAGE SPACING & BOTTOM LOCK
-# ============================================================
-st.markdown("""
-<style>
-
-/* Remove extra padding above and below the page */
-div[data-testid="stAppViewContainer"] > .main {
-    padding-top: 0 !important;
-}
-
-div[data-testid="stAppViewContainer"] {
-    padding-bottom: 0 !important;
-}
-
-/* Remove default block spacing but preserve sidebar form spacing */
-section.main > div {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-/* Remove Streamlit invisible spacer before first block */
-section.main div[data-testid="stVerticalBlock"] > div:first-child:empty {
-    display: none !important;
-}
-
-/* Remove extra bottom margin/scroll space */
-section.main div[data-testid="stVerticalBlock"] > div:last-child {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-/* Make page hug content */
-html, body, .stApp {
-    height: auto !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
