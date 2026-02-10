@@ -39,7 +39,7 @@ nba_today = get_nba_today()
 # ============================================================
 # HEADER BANNER (hero header with title + date)
 # ============================================================
-def set_header_banner(image_path, image_width=1500, image_height=170):
+def set_header_banner(image_path, image_width=1500, image_height=150):
     """
     Sets a full-width hero banner at the top of the page, preserving the entire image.
 
@@ -67,7 +67,7 @@ def set_header_banner(image_path, image_width=1500, image_height=170):
     /* Overlay text (hero title) */
     .hero-text {{
         position: absolute;
-        bottom: 10px;
+        bottom: 15px;
         left: 40px;
         color: #e6edf3;
         z-index: 2;
@@ -96,7 +96,7 @@ def set_header_banner(image_path, image_width=1500, image_height=170):
     </div>
     """, unsafe_allow_html=True)
 
-set_header_banner("assets/banner.png", image_width=1500, image_height=170)
+set_header_banner("assets/banner.png", image_width=1500, image_height=150)
 
 nba_today = get_nba_today()
 
@@ -105,7 +105,7 @@ st.markdown(
     <style>
     .date-pill {{
         position: absolute;
-        bottom: 0px;       /* aligns nicely with hero-title */
+        bottom: 5px;       /* aligns nicely with hero-title */
         left: 42px;
         color: #8b949e;
         font-size: 13px;
