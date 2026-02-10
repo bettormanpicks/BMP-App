@@ -1,4 +1,12 @@
 import streamlit as st
+# ============================================================
+# PAGE CONFIG & TITLE
+# ============================================================
+st.set_page_config(
+    page_title="Bettor Man Picks Stat Analyzer",
+    layout="wide"
+)
+
 import base64
 import pandas as pd
 import numpy as np
@@ -18,7 +26,7 @@ def set_header_banner(image_path, height_px=240):
     st.markdown(f"""
     <style>
 
-    /* Fixed banner container */
+    /* ===== FIXED TOP BANNER ===== */
     .banner-container {{
         position: fixed;
         top: 0;
@@ -33,7 +41,6 @@ def set_header_banner(image_path, height_px=240):
         border-bottom: 1px solid #2d333b;
     }}
 
-    /* The actual image */
     .banner-container img {{
         height: 100%;
         width: auto;
@@ -45,25 +52,19 @@ def set_header_banner(image_path, height_px=240):
     .main .block-container {{
         padding-top: {height_px + 15}px !important;
         padding-bottom: 0rem !important;
+        margin-bottom: 0rem !important;
     }}
-
-    </style>
-
-    <div class="banner-container">
-        <img src="data:image/png;base64,{data}">
-    </div>
-    """, unsafe_allow_html=True)
 
     /* Sidebar width */
     section[data-testid="stSidebar"] {{
         width: 280px !important;
     }}
 
-    /* Hide default menu and footer */
+    /* Hide streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
 
-    /* Dataframe styling */
+    /* Table styling */
     thead tr th {{
         background-color: #1f2933 !important;
         color: #e6edf3 !important;
@@ -82,9 +83,12 @@ def set_header_banner(image_path, height_px=240):
     td {{
         font-size: 13px !important;
     }}
+
     </style>
 
-    <div class="banner"></div>
+    <div class="banner-container">
+        <img src="data:image/png;base64,{data}">
+    </div>
     """, unsafe_allow_html=True)
 
 # Set the header banner
@@ -92,25 +96,6 @@ set_header_banner("assets/banner.png", height_px=240)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=180)
-
-# Additional CSS tweaks
-st.markdown("""
-<style>
-/* Remove extra space below the page */
-.block-container {
-    padding-bottom: 0rem !important;
-    margin-bottom: 0 !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
-# ============================================================
-# PAGE CONFIG & TITLE
-# ============================================================
-st.set_page_config(
-    page_title="Bettor Man Picks Stat Analyzer",
-    layout="wide"
-)
 
 # ============================================================
 # Remaining imports for your app logic
