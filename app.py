@@ -50,20 +50,22 @@ def set_header_banner(image_path, height_px=400):
 
     st.markdown(f"""
     <style>
+
     .hero-header {{
         position: relative;
         width: 100%;
-        height: auto;                  /* let the image define height */
+        height: 150px;                  /* match your actual banner height */
         display: flex;
         justify-content: center;
         align-items: center;
+        overflow: hidden;               /* ensures nothing spills outside */
     }}
 
     .hero-header img {{
-        width: 100%;                   /* scale width to container */
-        height: auto;                  /* scale height proportionally */
-        object-fit: contain;           /* no cropping */
-        display: block;                /* removes inline spacing below img */
+        height: 100%;                  /* fill container height exactly */
+        width: auto;                    /* scale width to preserve aspect ratio */
+        object-fit: none;               /* don’t crop */
+        display: block;                 
     }}
 
     .hero-text {{
