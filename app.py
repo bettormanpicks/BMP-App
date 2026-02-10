@@ -19,7 +19,7 @@ st.set_page_config(
 # ============================================================
 # HEADER BANNER (frozen at top)
 # ============================================================
-def set_header_banner(image_path, height_px=220):
+def set_header_banner(image_path, height_px=180):
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
@@ -57,7 +57,7 @@ def set_header_banner(image_path, height_px=220):
 
     /* Sidebar width */
     section[data-testid="stSidebar"] {{
-        width: 280px !important;
+        width: 270px !important;
     }}
 
     /* Hide default menu and footer */
@@ -91,7 +91,7 @@ def set_header_banner(image_path, height_px=220):
     """, unsafe_allow_html=True)
 
 # Set the header banner
-set_header_banner("assets/banner.png", height_px=220)
+set_header_banner("assets/banner.png", height_px=180)
 
 # Sidebar logo
 #st.sidebar.image("assets/logo.png", width=180)
