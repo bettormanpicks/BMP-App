@@ -91,7 +91,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
 
     <div class="hero-header">
         <div class="hero-text">
-            <div class="hero-title">NBA — Player Hit Rate Analysis</div>
+            <div class="hero-title">NBA — Player Hit Rates</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
