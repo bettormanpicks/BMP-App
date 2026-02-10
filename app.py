@@ -11,7 +11,7 @@ import re
 # ============================================================
 # HEADER BANNER (frozen at top)
 # ============================================================
-def set_header_banner(image_path, height_px=200):
+def set_header_banner(image_path, height_px=150):
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
@@ -87,7 +87,7 @@ def set_header_banner(image_path, height_px=200):
     """, unsafe_allow_html=True)
 
 # Set the header banner
-set_header_banner("assets/banner.png", height_px=200)
+set_header_banner("assets/banner.png", height_px=150)
 
 # Sidebar logo
 #st.sidebar.image("assets/logo.png", width=180)
