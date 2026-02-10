@@ -63,47 +63,48 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
+import streamlit as st
+import base64
+from datetime import datetime
+from shared.utils import get_nba_today
+
 # ============================================================
-# HEADER BANNER (hero header)
+# PAGE CONFIG
 # ============================================================
-def set_header_banner(image_path, height_px=150):
+st.set_page_config(
+    page_title="Bettor Man Picks Stat Analyzer",
+    layout="wide"
+)
+
+# ============================================================
+# HEADER BANNER (hero header with title + date)
+# ============================================================
+def set_header_banner(image_path):
+    nba_today = get_nba_today()
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
-
-    /* --- HEADER HERO --- */
+    /* Hero header container */
     .hero-header {{
         position: relative;
-        margin-top: -1rem;
         width: 100%;
-        height: {height_px}px;
-        background-image: url("data:image/png;base64,{data}");
-        background-size: cover;
-        background-position: center;
-        display: flex;
-        align-items: flex-end;
-        padding: 20px 40px;
-        box-sizing: border-box;
-        border-bottom: 1px solid #2d333b;
+        height: auto;
     }}
 
-    /* Dark gradient for text readability */
-    .hero-overlay {{
-        position: absolute;
-        inset: 0;
-        background: linear-gradient(
-            to bottom,
-            rgba(0,0,0,0.15) 0%,
-            rgba(0,0,0,0.45) 60%,
-            rgba(0,0,0,0.75) 100%
-        );
+    /* Banner image */
+    .hero-header img {{
+        width: 100%;
+        height: auto;
+        display: block;
     }}
 
-    /* Text container */
+    /* Text overlay container */
     .hero-text {{
-        position: relative;
+        position: absolute;
+        bottom: 20px;  /* adjust vertical position of text inside banner */
+        left: 40px;    /* horizontal padding from left */
         z-index: 2;
         color: #e6edf3;
     }}
@@ -111,7 +112,13 @@ def set_header_banner(image_path, height_px=150):
     .hero-title {{
         font-size: 30px;
         font-weight: 700;
-        margin-bottom: 4px;
+        margin: 0;
+    }}
+
+    .date-pill {{
+        font-size: 13px;
+        color: #8b949e;
+        margin-top: 4px;
     }}
 
     /* Sidebar width */
@@ -123,18 +130,26 @@ def set_header_banner(image_path, height_px=150):
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
 
+    /* Remove top & bottom page padding */
+    .block-container {{
+        padding-top: 0rem !important;
+        padding-bottom: 0rem !important;
+        margin-top: 0rem !important;
+        margin-bottom: 0rem !important;
+    }}
     </style>
 
     <div class="hero-header">
-        <div class="hero-overlay"></div>
+        <img src="data:image/png;base64,{data}">
         <div class="hero-text">
             <div class="hero-title">NBA — Player Hit Rate Analysis</div>
+            <div class="date-pill">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
 # Set the header banner
-set_header_banner("assets/banner.png", height_px=150)
+set_header_banner("assets/banner.png")
 
 nba_today = get_nba_today()
 
