@@ -123,6 +123,40 @@ st.markdown(
 st.sidebar.image("assets/logo.png", width=170)
 
 # Additional CSS tweaks
+st.markdown("""
+<style>
+/* Remove extra space above the page */
+[data-testid="stAppViewContainer"] > .main {
+    padding-top: 0rem !important;
+}
+
+/* Remove extra space below the page */
+[data-testid="stAppViewContainer"] {
+    padding-bottom: 0rem !important;
+}
+
+/* Remove Streamlit block-container top/bottom padding */
+.block-container {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
+/* Remove Streamlit’s first and last vertical spacers */
+section.main div[data-testid="stVerticalBlock"] > div:first-child:empty,
+section.main div[data-testid="stVerticalBlock"] > div:last-child {
+    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Ensure page hugs content */
+html, body, .stApp {
+    height: auto !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 
 
