@@ -19,7 +19,7 @@ import re
 # ============================================================
 # HEADER BANNER (frozen at top)
 # ============================================================
-def set_header_banner(image_path, height_px=240):
+def set_header_banner(image_path, height_px=200):
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
@@ -50,7 +50,7 @@ def set_header_banner(image_path, height_px=240):
 
     /* Push app below banner */
     .main .block-container {{
-        padding-top: {height_px + 15}px !important;
+        padding-top: {height_px + 50}px !important;
         padding-bottom: 0rem !important;
         margin-bottom: 0rem !important;
     }}
@@ -92,7 +92,7 @@ def set_header_banner(image_path, height_px=240):
     """, unsafe_allow_html=True)
 
 # Set the header banner
-set_header_banner("assets/banner.png", height_px=240)
+set_header_banner("assets/banner.png", height_px=200)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=180)
