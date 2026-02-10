@@ -68,7 +68,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     .hero-text {{
         position: absolute;
         bottom: 15px;
-        left: 5px;
+        left: 10px;
         color: #e6edf3;
         z-index: 2;
     }}
@@ -106,7 +106,7 @@ st.markdown(
     .date-pill {{
         position: absolute;
         bottom: 2px;       /* aligns nicely with hero-title */
-        left: 5px;
+        left: 10px;
         color: #8b949e;
         font-size: 13px;
     }}
