@@ -158,7 +158,7 @@ st.markdown(
 )
 
 # Sidebar logo
-#st.sidebar.image("assets/logo.png", width=180)
+st.sidebar.image("assets/logo.png", width=175)
 
 # Additional CSS tweaks
 
