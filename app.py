@@ -105,7 +105,7 @@ st.markdown(
     <style>
     .date-pill {{
         position: absolute;
-        bottom: 10px;       /* aligns nicely with hero-title */
+        bottom: 20px;       /* aligns nicely with hero-title */
         left: 42px;
         color: #8b949e;
         font-size: 13px;
