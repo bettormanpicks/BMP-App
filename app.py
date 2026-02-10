@@ -113,7 +113,7 @@ st.markdown(
     <style>
     .date-pill {{
         position: relative;
-        margin-top: 6px;
+        margin-top: -35px;
         margin-left: 42px;
         color: #8b949e;
         font-size: 13px;
