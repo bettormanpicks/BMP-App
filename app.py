@@ -134,31 +134,33 @@ st.markdown(
 st.markdown("""
 <style>
 
-/* Kill ALL top spacing Streamlit inserts */
-section.main > div {
-    padding-top: 0rem !important;
-}
+/* ---------- MAIN PAGE ONLY (not sidebar) ---------- */
 
-/* Remove the first vertical block margin (THE hidden gap) */
-div[data-testid="stVerticalBlock"] > div:first-child {
+/* Remove top gap Streamlit inserts above first element */
+section.main div[data-testid="stVerticalBlock"] > div:first-child {
     margin-top: 0rem !important;
     padding-top: 0rem !important;
 }
 
-/* Remove default element spacing */
-div[data-testid="stVerticalBlock"] {
+/* Remove internal spacing between main page widgets */
+section.main div[data-testid="stVerticalBlock"] {
     gap: 0rem !important;
 }
 
-/* Remove bottom whitespace (this is the phantom scroll area) */
-.block-container {
+/* Remove phantom scroll space at bottom of page */
+section.main .block-container {
     padding-bottom: 0rem !important;
     margin-bottom: 0rem !important;
 }
 
-/* ALSO remove Streamlit spacer element */
-div[data-testid="stSpacer"] {
+/* Kill Streamlit spacer elements ONLY in main page */
+section.main div[data-testid="stSpacer"] {
     height: 0rem !important;
+}
+
+/* Keep sidebar spacing normal */
+section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] {
+    gap: 0.75rem !important;
 }
 
 </style>
