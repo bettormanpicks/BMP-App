@@ -84,11 +84,6 @@ def set_header_banner(image_path, height_px=150):
         margin-bottom: 4px;
     }}
 
-    /* Remove Streamlit top padding */
-    .block-container {{
-        padding-top: 0rem !important;
-    }}
-
     /* Sidebar width */
     section[data-testid="stSidebar"] {{
         width: 280px !important;
@@ -138,13 +133,37 @@ st.markdown(
 # Additional CSS tweaks
 st.markdown("""
 <style>
-/* Remove extra space below the page */
+
+/* Kill ALL top spacing Streamlit inserts */
+section.main > div {
+    padding-top: 0rem !important;
+}
+
+/* Remove the first vertical block margin (THE hidden gap) */
+div[data-testid="stVerticalBlock"] > div:first-child {
+    margin-top: 0rem !important;
+    padding-top: 0rem !important;
+}
+
+/* Remove default element spacing */
+div[data-testid="stVerticalBlock"] {
+    gap: 0rem !important;
+}
+
+/* Remove bottom whitespace (this is the phantom scroll area) */
 .block-container {
     padding-bottom: 0rem !important;
-    margin-bottom: 0 !important;
+    margin-bottom: 0rem !important;
 }
+
+/* ALSO remove Streamlit spacer element */
+div[data-testid="stSpacer"] {
+    height: 0rem !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
+
 
 
 # =====================================================
