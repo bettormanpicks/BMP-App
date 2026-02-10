@@ -123,34 +123,6 @@ st.markdown(
 st.sidebar.image("assets/logo.png", width=170)
 
 # Additional CSS tweaks
-st.markdown("""
-<style>
-/* --- Kill empty space above hero header --- */
-div[data-testid="stAppViewContainer"] > .main {
-    padding-top: 0 !important;
-}
-
-/* --- Kill empty space between hero header and first content block --- */
-div[data-testid="stVerticalBlock"] > div:first-child {
-    margin-top: 0 !important;
-    padding-top: 0 !important;
-}
-
-/* --- Kill extra bottom spacing under the last block (table/footer) --- */
-div[data-testid="stVerticalBlock"] > div:last-child {
-    margin-bottom: 0 !important;
-    padding-bottom: 0 !important;
-}
-
-/* --- Keep block container minimal but do not touch hero header padding --- */
-.block-container {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-}
-</style>
-""", unsafe_allow_html=True)
-
-
 
 
 
