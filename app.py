@@ -50,7 +50,7 @@ def set_header_banner(image_path, height_px=200):
 
     /* Push app below banner */
     .main .block-container {{
-        padding-top: {height_px + 1200}px !important;
+        padding-top: {height_px +15}px !important;
         padding-bottom: 0rem !important;
         margin-bottom: 0rem !important;
     }}
@@ -90,6 +90,15 @@ def set_header_banner(image_path, height_px=200):
         <img src="data:image/png;base64,{data}">
     </div>
     """, unsafe_allow_html=True)
+
+st.markdown("""
+<style>
+.block-container {
+    padding-bottom: 0rem !important;
+    margin-bottom: 0 !important;
+}
+</style>
+""", unsafe_allow_html=True)
 
 # Set the header banner
 set_header_banner("assets/banner.png", height_px=200)
