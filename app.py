@@ -9,14 +9,6 @@ import pytz
 import re
 
 # ============================================================
-# PAGE CONFIG & TITLE
-# ============================================================
-st.set_page_config(
-    page_title="Bettor Man Picks Stat Analyzer",
-    layout="wide"
-)
-
-# ============================================================
 # HEADER BANNER (frozen at top)
 # ============================================================
 def set_header_banner(image_path, height_px=200):
@@ -110,6 +102,14 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
+
+# ============================================================
+# PAGE CONFIG & TITLE
+# ============================================================
+st.set_page_config(
+    page_title="Bettor Man Picks Stat Analyzer",
+    layout="wide"
+)
 
 # ============================================================
 # Remaining imports for your app logic
