@@ -54,7 +54,7 @@ def set_header_banner(image_path, height_px=150):
         background-position: center;
         display: flex;
         align-items: flex-end;
-        padding: 5px 5px;
+        padding: 20px 40px;
         box-sizing: border-box;
         border-bottom: 1px solid #2d333b;
     }}
@@ -84,10 +84,10 @@ def set_header_banner(image_path, height_px=150):
         margin-bottom: 4px;
     }}
 
-    .hero-subtitle {{
-        font-size: 14px;
-        color: #c9d1d9;
-    }}
+#    .hero-subtitle {{
+#        font-size: 14px;
+#        color: #c9d1d9;
+#    }}
 
     /* Remove Streamlit top padding */
     .block-container {{
@@ -109,7 +109,7 @@ def set_header_banner(image_path, height_px=150):
         <div class="hero-overlay"></div>
         <div class="hero-text">
             <div class="hero-title">NBA — Player Hit Rate Analysis</div>
-            <div class="hero-subtitle">Daily matchup performance vs defensive rankings</div>
+#            <div class="hero-subtitle">Daily matchup performance vs defensive rankings</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
