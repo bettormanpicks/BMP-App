@@ -9,6 +9,14 @@ import pytz
 import re
 
 # ============================================================
+# PAGE CONFIG & TITLE
+# ============================================================
+st.set_page_config(
+    page_title="Bettor Man Picks Stat Analyzer",
+    layout="wide"
+)
+
+# ============================================================
 # HEADER BANNER (frozen at top)
 # ============================================================
 def set_header_banner(image_path, height_px=220):
@@ -17,23 +25,34 @@ def set_header_banner(image_path, height_px=220):
 
     st.markdown(f"""
     <style>
-    /* Freeze banner at top */
+
+    /* Banner container */
     .banner {{
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         height: {height_px}px;
-        background-image: url("data:image/png;base64,{data}");
-        background-size: cover;
-        background-position: center;
+        background-color: #0e1117;
         z-index: 1000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px solid #2d333b;
     }}
 
-    /* Push main app content below banner */
-    .main .block-container {{
-        padding-top: {height_px + 10}px !important;
-        padding-bottom: 0rem !important; /* remove extra bottom space */
+    /* Actual image scaling (THIS is the important part) */
+    .banner img {{
+        height: 100%;
+        width: auto;
+        max-width: 100%;
+        object-fit: contain;
+    }}
+
+    /* Push content below banner */
+    .stApp > div.main > div.block-container {{
+        padding-top: {height_px + 15}px !important;
+        padding-bottom: 0rem !important;
     }}
 
     /* Sidebar width */
@@ -66,14 +85,16 @@ def set_header_banner(image_path, height_px=220):
     }}
     </style>
 
-    <div class="banner"></div>
+    <div class="banner">
+        <img src="data:image/png;base64,{data}">
+    </div>
     """, unsafe_allow_html=True)
 
 # Set the header banner
 set_header_banner("assets/banner.png", height_px=220)
 
 # Sidebar logo
-st.sidebar.image("assets/logo.png", width=180)
+#st.sidebar.image("assets/logo.png", width=180)
 
 # Additional CSS tweaks
 st.markdown("""
@@ -85,17 +106,6 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-
-# ============================================================
-# PAGE CONFIG & TITLE
-# ============================================================
-st.set_page_config(
-    page_title="Bettor Man Picks Stat Analyzer",
-    layout="wide"
-)
-
-st.title("📊 Bettor Man Picks Stat Analyzer")
-#st.markdown("<p style='text-align:center; color:#8b949e;'>Player Performance vs Defensive Matchups</p>", unsafe_allow_html=True)
 
 # ============================================================
 # Remaining imports for your app logic
