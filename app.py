@@ -9,7 +9,15 @@ import pytz
 import re
 
 # ============================================================
-# HEADER BANNER (frozen at top)
+# PAGE CONFIG & TITLE
+# ============================================================
+st.set_page_config(
+    page_title="Bettor Man Picks Stat Analyzer",
+    layout="wide"
+)
+
+# ============================================================
+# HEADER BANNER (hero header)
 # ============================================================
 def set_header_banner(image_path, height_px=150):
     with open(image_path, "rb") as f:
@@ -18,37 +26,54 @@ def set_header_banner(image_path, height_px=150):
     st.markdown(f"""
     <style>
 
-    /* Banner container */
-    .banner {{
-        position: fixed;
-        top: 0;
-        left: 0;
+    /* --- HEADER HERO --- */
+    .hero-header {{
+        position: relative;
         width: 100%;
         height: {height_px}px;
-        background-color: #0e1117;
-        z-index: 1000;
+        background-image: url("data:image/png;base64,{data}");
+        background-size: cover;
+        background-position: center;
         display: flex;
-        justify-content: center;
-        align-items: center;
+        align-items: flex-end;
+        padding: 20px 40px;
+        box-sizing: border-box;
         border-bottom: 1px solid #2d333b;
     }}
 
-    /* Actual image scaling (THIS is the important part) */
-    .banner img {{
-        height: 100%;
-        width: auto;
-        max-width: 100%;
-        object-fit: contain;
+    /* Dark gradient for text readability */
+    .hero-overlay {{
+        position: absolute;
+        inset: 0;
+        background: linear-gradient(
+            to bottom,
+            rgba(0,0,0,0.15) 0%,
+            rgba(0,0,0,0.45) 60%,
+            rgba(0,0,0,0.75) 100%
+        );
     }}
 
-    /* Push entire Streamlit app below fixed banner */
-    .stApp > div.main {{
-        padding-top: {height_px + 20}px !important;
+    /* Text container */
+    .hero-text {{
+        position: relative;
+        z-index: 2;
+        color: #e6edf3;
     }}
 
-    /* Prevent anchor jump under fixed banner */
-    html {{
-        scroll-padding-top: {height_px + 20}px;
+    .hero-title {{
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 4px;
+    }}
+
+    .hero-subtitle {{
+        font-size: 14px;
+        color: #c9d1d9;
+    }}
+
+    /* Remove Streamlit top padding */
+    .block-container {{
+        padding-top: 0rem !important;
     }}
 
     /* Sidebar width */
@@ -56,38 +81,44 @@ def set_header_banner(image_path, height_px=150):
         width: 280px !important;
     }}
 
-    /* Hide default menu and footer */
+    /* Hide Streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
 
-    /* Dataframe styling */
-    thead tr th {{
-        background-color: #1f2933 !important;
-        color: #e6edf3 !important;
-        font-weight: 700 !important;
-        border-bottom: 2px solid #2d333b !important;
-    }}
-    tbody tr {{
-        background-color: #0e1117 !important;
-    }}
-    tbody tr:nth-child(even) {{
-        background-color: #11161c !important;
-    }}
-    tbody tr:hover {{
-        background-color: #1f2933 !important;
-    }}
-    td {{
-        font-size: 13px !important;
-    }}
     </style>
 
-    <div class="banner">
-        <img src="data:image/png;base64,{data}">
+    <div class="hero-header">
+        <div class="hero-overlay"></div>
+        <div class="hero-text">
+            <div class="hero-title">NBA — Player Hit Rate Analysis</div>
+            <div class="hero-subtitle">Daily matchup performance vs defensive rankings</div>
+        </div>
     </div>
     """, unsafe_allow_html=True)
 
 # Set the header banner
 set_header_banner("assets/banner.png", height_px=150)
+
+nba_today = get_nba_today()
+
+st.markdown(
+    f"""
+    <style>
+    .date-pill {{
+        position: relative;
+        margin-top: -35px;
+        margin-left: 42px;
+        color: #8b949e;
+        font-size: 13px;
+    }}
+    </style>
+
+    <div class="date-pill">
+        NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Sidebar logo
 #st.sidebar.image("assets/logo.png", width=180)
@@ -102,14 +133,6 @@ st.markdown("""
 }
 </style>
 """, unsafe_allow_html=True)
-
-# ============================================================
-# PAGE CONFIG & TITLE
-# ============================================================
-st.set_page_config(
-    page_title="Bettor Man Picks Stat Analyzer",
-    layout="wide"
-)
 
 # ============================================================
 # Remaining imports for your app logic
@@ -382,9 +405,9 @@ sport_choice = st.sidebar.selectbox("Select Sport", ["NBA"]) #, "NFL", "NHL"])
 ############################################################
 if sport_choice == "NBA":
 
-    st.subheader("NBA — Player Hit Rate Analysis")
-    nba_today = get_nba_today()
-    st.caption(f"NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)")
+    #st.subheader("NBA — Player Hit Rate Analysis")
+    #nba_today = get_nba_today()
+    #st.caption(f"NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)")
 
     # --- Load core NBA data (cached) ---
     df, team_totals_df, pos_df = load_nba_raw_data()
