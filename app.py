@@ -106,6 +106,46 @@ def set_header_banner(image_path, height_px=150):
 # Set the header banner
 set_header_banner("assets/banner.png", height_px=150)
 
+st.markdown("""
+<style>
+
+/* ===== REMOVE GLOBAL STREAMLIT PAGE PADDING ===== */
+
+/* removes blank space ABOVE your banner */
+div[data-testid="stAppViewContainer"] > .main {
+    padding-top: 0rem !important;
+}
+
+/* removes extra space below page */
+div[data-testid="stAppViewContainer"] {
+    padding-bottom: 0rem !important;
+}
+
+/* removes Streamlit content wrapper padding */
+section.main > div {
+    padding-top: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+/* kill the invisible first spacer Streamlit inserts */
+section.main div[data-testid="stVerticalBlock"] > div:first-child:empty {
+    display: none !important;
+}
+
+/* eliminate the mysterious bottom scroll void */
+section.main div[data-testid="stVerticalBlock"] > div:last-child {
+    margin-bottom: 0rem !important;
+    padding-bottom: 0rem !important;
+}
+
+/* ensure the page height hugs the content */
+html, body, .stApp {
+    height: auto !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 nba_today = get_nba_today()
 
 st.markdown(
@@ -131,40 +171,6 @@ st.markdown(
 #st.sidebar.image("assets/logo.png", width=180)
 
 # Additional CSS tweaks
-st.markdown("""
-<style>
-
-/* ---------- MAIN PAGE ONLY (not sidebar) ---------- */
-
-/* Remove top gap Streamlit inserts above first element */
-section.main div[data-testid="stVerticalBlock"] > div:first-child {
-    margin-top: 0rem !important;
-    padding-top: 0rem !important;
-}
-
-/* Remove internal spacing between main page widgets */
-section.main div[data-testid="stVerticalBlock"] {
-    gap: 0rem !important;
-}
-
-/* Remove phantom scroll space at bottom of page */
-section.main .block-container {
-    padding-bottom: 0rem !important;
-    margin-bottom: 0rem !important;
-}
-
-/* Kill Streamlit spacer elements ONLY in main page */
-section.main div[data-testid="stSpacer"] {
-    height: 0rem !important;
-}
-
-/* Keep sidebar spacing normal */
-section[data-testid="stSidebar"] div[data-testid="stVerticalBlock"] {
-    gap: 0.75rem !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 
 
