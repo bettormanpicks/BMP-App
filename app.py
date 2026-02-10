@@ -67,8 +67,8 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     /* Overlay text (hero title) */
     .hero-text {{
         position: absolute;
-        bottom: 20px;
-        left: 3px;
+        bottom: 15px;
+        left: 5px;
         color: #e6edf3;
         z-index: 2;
     }}
@@ -105,7 +105,7 @@ st.markdown(
     <style>
     .date-pill {{
         position: absolute;
-        bottom: 5px;       /* aligns nicely with hero-title */
+        bottom: 2px;       /* aligns nicely with hero-title */
         left: 5px;
         color: #8b949e;
         font-size: 13px;
