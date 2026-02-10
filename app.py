@@ -37,24 +37,23 @@ st.set_page_config(
 nba_today = get_nba_today()
 
 # ============================================================
-# HEADER BANNER (uses Streamlit top padding as container)
+# HEADER BANNER (inside Streamlit top padding)
 # ============================================================
 def set_header_banner(image_path, banner_height_px=150):
     """
-    Places a full-width hero banner inside the Streamlit top padding space.
-    banner_height_px: height of the banner in pixels
+    Hero banner inside Streamlit top padding so table starts immediately below.
     """
-    # Read image and encode as base64
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
-    /* --- Use Streamlit top padding as container for banner --- */
+    /* Set top padding to make room for banner */
     .block-container {{
-        padding-top: {banner_height_px}px !important;  /* space for banner */
+        padding-top: {banner_height_px}px !important;
         padding-bottom: 0rem !important;
         margin: 0 !important;
+        position: relative;
     }}
 
     /* Sidebar width */
@@ -66,21 +65,22 @@ def set_header_banner(image_path, banner_height_px=150):
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
 
-    /* Banner container inside top padding */
-    .banner-container {{
+    /* Banner as background of top padding */
+    .block-container::before {{
+        content: "";
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: {banner_height_px}px;
         background-image: url("data:image/png;base64,{data}");
-        background-size: contain;      /* fully visible */
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center top;
         z-index: 1;
     }}
 
-    /* Overlay text (hero title + date) */
+    /* Hero text overlay */
     .hero-text {{
         position: absolute;
         top: 0;
@@ -88,7 +88,7 @@ def set_header_banner(image_path, banner_height_px=150):
         height: {banner_height_px}px;
         display: flex;
         flex-direction: column;
-        justify-content: flex-end;  /* text at bottom of banner */
+        justify-content: flex-end;
         z-index: 2;
         color: #e6edf3;
     }}
@@ -104,10 +104,7 @@ def set_header_banner(image_path, banner_height_px=150):
         color: #8b949e;
         margin-top: 2px;
     }}
-
     </style>
-
-    <div class="banner-container"></div>
 
     <div class="hero-text">
         <div class="hero-title">NBA — Player Hit Rates</div>
@@ -115,12 +112,11 @@ def set_header_banner(image_path, banner_height_px=150):
     </div>
     """, unsafe_allow_html=True)
 
-# Set the banner
+# Apply banner
 set_header_banner("assets/banner.png", banner_height_px=150)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
-
 
 # Additional CSS tweaks
 
