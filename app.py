@@ -50,28 +50,26 @@ def set_header_banner(image_path, height_px=150):
 
     st.markdown(f"""
     <style>
-    /* Hero header container */
     .hero-header {{
         position: relative;
         width: 100%;
         height: {height_px}px;
         overflow: hidden;
+        display: flex;
+        justify-content: center;  /* centers image horizontally */
+        align-items: center;      /* centers image vertically */
     }}
 
-    /* Banner image fills container */
     .hero-header img {{
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        height: auto;           /* preserves aspect ratio */
+        object-fit: contain;    /* prevents cropping */
+        max-height: 100%;
     }}
 
-    /* Text overlay container */
     .hero-text {{
         position: absolute;
-        bottom: 10px;  /* vertical spacing from bottom */
+        bottom: 10px;
         left: 40px;
         z-index: 2;
         color: #e6edf3;
@@ -90,16 +88,13 @@ def set_header_banner(image_path, height_px=150):
         margin: 0;
     }}
 
-    /* Sidebar width */
     section[data-testid="stSidebar"] {{
         width: 280px !important;
     }}
 
-    /* Hide Streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
 
-    /* Remove top & bottom padding from page */
     .block-container {{
         padding-top: 0rem !important;
         padding-bottom: 0rem !important;
