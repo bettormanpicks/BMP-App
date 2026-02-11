@@ -40,41 +40,48 @@ nba_today = get_nba_today()
 # ============================================================
 # HEADER BANNER (full width, full image, hero text overlay)
 # ============================================================
-def set_header_banner(image_path, banner_height_px=150):
+def set_header_banner(image_path, banner_height=150):
     nba_today = get_nba_today()
 
     with open(image_path, "rb") as f:
-        data = base64.b64encode(f.read()).decode()
+        encoded = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
 
-    /* 1️⃣ Remove Streamlit's visual gap WITHOUT moving scroll origin */
-    .block-container {{
-        padding-top: 0rem !important;
-    }}
-
-    /* 2️⃣ Create a real header attached to the page */
-    .stApp > header {{
-        background-image: url("data:image/png;base64,{data}");
+    /* ---------- FIXED HERO BANNER ---------- */
+    .fixed-banner {{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: {banner_height}px;
+        background-image: url("data:image/png;base64,{encoded}");
         background-size: contain;
         background-repeat: no-repeat;
         background-position: center top;
-
-        height: {banner_height_px}px;
-        width: 100%;
-
-        display: flex;
-        align-items: flex-end;
-        padding: 10px 20px;
-        box-sizing: border-box;
+        z-index: 9999;
+        pointer-events: none;
     }}
 
-    /* 3️⃣ Overlay text */
+    /* push the app DOWN so nothing overlaps banner */
+    .block-container {{
+        padding-top: {banner_height + 20}px !important;
+    }}
+
+    /* overlay text */
+    .banner-text {{
+        position: fixed;
+        top: {banner_height - 42}px;
+        left: 20px;
+        z-index: 10000;
+        pointer-events: none;
+        color: #e6edf3;
+    }}
+
     .hero-title {{
         font-size: 30px;
         font-weight: 700;
-        color: #e6edf3;
         margin: 0;
     }}
 
@@ -83,25 +90,24 @@ def set_header_banner(image_path, banner_height_px=150):
         color: #8b949e;
     }}
 
-    /* Hide default Streamlit header contents but keep its space */
-    .stApp > header > div {{
-        display: none;
+    /* keep your sidebar width */
+    section[data-testid="stSidebar"] {{
+        width: 280px !important;
     }}
 
-    /* Hide hamburger + menu + footer */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
 
     </style>
 
-    <header>
-        <div>
-            <div class="hero-title">NBA — Player Hit Rates</div>
-            <div class="date-pill">
-                NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
-            </div>
+    <div class="fixed-banner"></div>
+
+    <div class="banner-text">
+        <div class="hero-title">NBA — Player Hit Rates</div>
+        <div class="date-pill">
+            NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
         </div>
-    </header>
+    </div>
     """, unsafe_allow_html=True)
 
 # Set banner
