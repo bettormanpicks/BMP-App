@@ -75,7 +75,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     }}
 
     .hero-title {{
-        font-size: 30px;
+        font-size: 20px;
         font-weight: 700;
         margin: 0;
         line-height: 1.15;
