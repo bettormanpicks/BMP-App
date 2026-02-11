@@ -68,8 +68,8 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     /* Overlay text (hero title) */
     .hero-text {{
         position: absolute;
-        bottom: 0px;
-        left: 10px;
+        bottom: 8px;
+        left: 12px;
         color: #e6edf3;
         z-index: 2;
     }}
@@ -78,12 +78,14 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
         font-size: 30px;
         font-weight: 700;
         margin: 0;
+        line-height: 1.05;
     }}
 
     .hero-date {{
         font-size: 13px;
         color: #8b949e;
-        margin-top: -2px;
+        margin-top: 0px;
+        line-height: 1.1;
     }}
 
     /* Sidebar width */
