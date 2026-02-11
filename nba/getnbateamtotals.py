@@ -41,4 +41,4 @@ team_totals = df.groupby(["GAME_ID", "GAME_DATE", "TEAM", "OPP_TEAM"])[STATS].su
 # SAVE
 # ==================================================
 team_totals.to_csv(TEAM_CSV, index=False)
-print(f"💾 Saved {len(team_totals)} rows → {TEAM_CSV}")
+print(f"Saved {len(team_totals)} rows -> {TEAM_CSV}")
