@@ -29,54 +29,48 @@ from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 # ============================================================
 # PAGE CONFIG
 # ============================================================
-import streamlit as st
-import base64
-from datetime import datetime
-from shared.utils import get_nba_today
+st.set_page_config(
+    page_title="Bettor Man Picks Stat Analyzer",
+    layout="wide"
+)
 
-st.set_page_config(page_title="Bettor Man Picks Stat Analyzer", layout="wide")
 nba_today = get_nba_today()
 
 # ============================================================
-# HEADER BANNER (full width, full image, hero text overlay)
+# HEADER BANNER (hero header with title + date)
 # ============================================================
-def set_header_banner(image_path, banner_height=150):
-    nba_today = get_nba_today()
+def set_header_banner(image_path, image_width=1500, image_height=150):
+    """
+    Sets a full-width hero banner at the top of the page, preserving the entire image.
+
+    image_width / image_height: the actual pixel dimensions of your banner image
+    """
+    aspect_ratio_pct = (image_height / image_width) * 100  # padding-top % to preserve aspect ratio
 
     with open(image_path, "rb") as f:
-        encoded = base64.b64encode(f.read()).decode()
+        data = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
-
-    /* ---------- FIXED HERO BANNER ---------- */
-    .fixed-banner {{
-        position: fixed;
-        top: 0;
-        left: 0;
+    /* --- HERO HEADER --- */
+    .hero-header {{
+        position: relative;
         width: 100%;
-        height: {banner_height}px;
-        background-image: url("data:image/png;base64,{encoded}");
-        background-size: contain;
+        height: 0;
+        padding-top: {aspect_ratio_pct:.2f}%;
+        background-image: url("data:image/png;base64,{data}");
+        background-size: contain;       /* scale image fully inside container */
         background-repeat: no-repeat;
         background-position: center top;
-        z-index: 9999;
-        pointer-events: none;
     }}
 
-    /* push the app DOWN so nothing overlaps banner */
-    .block-container {{
-        padding-top: {banner_height + 20}px !important;
-    }}
-
-    /* overlay text */
-    .banner-text {{
-        position: fixed;
-        top: {banner_height - 42}px;
-        left: 20px;
-        z-index: 10000;
-        pointer-events: none;
+    /* Overlay text (hero title) */
+    .hero-text {{
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
         color: #e6edf3;
+        z-index: 2;
     }}
 
     .hero-title {{
@@ -85,33 +79,45 @@ def set_header_banner(image_path, banner_height=150):
         margin: 0;
     }}
 
-    .date-pill {{
-        font-size: 13px;
-        color: #8b949e;
-    }}
-
-    /* keep your sidebar width */
+    /* Sidebar width */
     section[data-testid="stSidebar"] {{
         width: 280px !important;
     }}
 
+    /* Hide Streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
-
     </style>
 
-    <div class="fixed-banner"></div>
-
-    <div class="banner-text">
-        <div class="hero-title">NBA — Player Hit Rates</div>
-        <div class="date-pill">
-            NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
+    <div class="hero-header">
+        <div class="hero-text">
+            <div class="hero-title">NBA — Player Hit Rates</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
 
-# Set banner
-set_header_banner("assets/banner.png", 150)
+set_header_banner("assets/banner.png", image_width=1500, image_height=150)
+
+nba_today = get_nba_today()
+
+st.markdown(
+    f"""
+    <style>
+    .date-pill {{
+        position: absolute;
+        bottom: 2px;       /* aligns nicely with hero-title */
+        left: 10px;
+        color: #8b949e;
+        font-size: 13px;
+    }}
+    </style>
+
+    <div class="date-pill">
+        NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
