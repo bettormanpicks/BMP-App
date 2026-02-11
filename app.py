@@ -93,6 +93,12 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
         width: 280px !important;
     }}
 
+    /* Center items inside sidebar (affects the logo) */
+    section[data-testid="stSidebar"] .stImage {{
+        text-align: center;
+        margin-top: -10px;
+    }}
+
     /* Remove empty space below the page */
     .block-container {{
         padding-bottom: 0rem !important;
@@ -116,7 +122,7 @@ set_header_banner("assets/banner.png", image_width=1500, image_height=150)
 nba_today = get_nba_today()
 
 # Sidebar logo
-st.sidebar.image("assets/logo.png", 170, center)
+st.sidebar.image("assets/logo.png", width=170)
 
 # Additional CSS tweaks
 
