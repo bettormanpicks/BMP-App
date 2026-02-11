@@ -110,32 +110,33 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     footer {{visibility: hidden;}}
 
     /* =========================================================
-       MOBILE FIX — move hero text below banner on small screens
+       STREAMLIT MOBILE FIX — move hero text below banner
        ========================================================= */
-    @media (max-width: 768px) {{
 
-        /* Make banner behave like a normal image container */
-        .hero-header {{
-            height: auto;
-            padding-top: 0;
-            aspect-ratio: 1500 / 150;
-            margin-top: -1rem;
-        }}
+    /* When Streamlit content area becomes narrow (mobile/app) */
+    @media (max-width: 1000px) {{
 
-        /* STOP overlaying the text */
+        /* Stop overlay behavior */
         .hero-text {{
-            position: static;
-            margin-top: 10px;
+            position: relative !important;
+            bottom: auto !important;
+            left: auto !important;
+            margin-top: 8px;
             margin-left: 6px;
         }}
 
-        /* Give breathing room */
+        /* Banner becomes just an image */
+        .hero-header {{
+            padding-top: 10% !important;
+        }}
+
+        /* Comfortable readable sizes */
         .hero-title {{
-            font-size: 18px;
+            font-size: 18px !important;
         }}
 
         .hero-date {{
-            font-size: 13px;
+            font-size: 13px !important;
             margin-bottom: 12px;
         }}
     }}
