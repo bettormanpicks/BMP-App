@@ -68,7 +68,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     /* Overlay text (hero title) */
     .hero-text {{
         position: absolute;
-        bottom: 5px;
+        bottom: 2px;
         left: 10px;
         color: #e6edf3;
         z-index: 2;
