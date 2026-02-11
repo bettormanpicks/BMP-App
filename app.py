@@ -62,7 +62,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
         background-size: contain;       /* scale image fully inside container */
         background-repeat: no-repeat;
         background-position: center top;
-        margin-top: -6rem;
+        margin-top: 2px;
     }}
 
     /* Overlay text (hero title) */
