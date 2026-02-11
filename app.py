@@ -108,6 +108,33 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     /* Hide Streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
+
+    /* Mobile / small screen adjustments */
+    @media only screen and (max-width: 600px) {
+        /* Hide overlay text on top of the banner */
+        .hero-text {
+            display: none;
+        }
+
+        /* Create below-banner mobile title/date */
+        .hero-title-mobile, .hero-date-mobile {
+            display: block;
+            text-align: center;
+            margin-top: 0.5rem;
+        }
+
+        .hero-title-mobile {
+            font-size: 18px;   /* smaller than desktop but still readable */
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .hero-date-mobile {
+            font-size: 12px;
+            color: #8b949e;
+            line-height: 1.1;
+        }
+    }
     </style>
 
     <div class="hero-header">
@@ -116,6 +143,9 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
             <div class="hero-date">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
         </div>
     </div>
+
+    <div class="hero-title-mobile">NBA — Player Hit Rates</div>
+    <div class="hero-date-mobile">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
     """, unsafe_allow_html=True)
 
 set_header_banner("assets/banner.png", image_width=1500, image_height=150)
