@@ -112,33 +112,33 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     /* =========================================================
        MOBILE FIX — move hero text below banner on small screens
        ========================================================= */
-    @media (max-width: 768px) {
+    @media (max-width: 768px) {{
 
         /* Make banner behave like a normal image container */
-        .hero-header {
+        .hero-header {{
             height: auto;
             padding-top: 0;
             aspect-ratio: 1500 / 150;
             margin-top: -1rem;
-        }
+        }}
 
         /* STOP overlaying the text */
-        .hero-text {
+        .hero-text {{
             position: static;
             margin-top: 10px;
             margin-left: 6px;
-        }
+        }}
 
         /* Give breathing room */
-        .hero-title {
+        .hero-title {{
             font-size: 18px;
-        }
+        }}
 
-        .hero-date {
+        .hero-date {{
             font-size: 13px;
             margin-bottom: 12px;
-        }
-    }
+        }}
+    }}
     </style>
 
     <div class="hero-header">
