@@ -93,6 +93,11 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
         width: 280px !important;
     }}
 
+    /* Remove empty space below the page */
+    .block-container {{
+        padding-bottom: 0rem !important;
+    }}
+
     /* Hide Streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
