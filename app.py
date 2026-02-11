@@ -39,114 +39,133 @@ nba_today = get_nba_today()
 # ============================================================
 # HEADER BANNER (hero header with title + date)
 # ============================================================
-def set_header_banner(image_path, image_width=1500, image_height=150):
-    """
-    Sets a full-width hero banner at the top of the page, preserving the entire image.
+# Streamlit Responsive Hero Banner (Desktop overlay, Mobile below)
+# -------------------------------------------------------------
+# Drop this into a helpers file (e.g., ui_hero.py) and import it in app.py
+# Usage:
+#   from ui_hero import render_hero
+#   render_hero(
+#       banner_url="https://your-image-url/banner.png",
+#       title="NBA Matchup Analyzer",
+#       date_text="Updated Feb 11, 2026"
+#   )
 
-    image_width / image_height: the actual pixel dimensions of your banner image
-    """
-    aspect_ratio_pct = (image_height / image_width) * 100  # padding-top % to preserve aspect ratio
+import streamlit as st
 
-    with open(image_path, "rb") as f:
-        data = base64.b64encode(f.read()).decode()
 
-    st.markdown(f"""
-    <style>
-    /* --- HERO HEADER --- */
-    .hero-header {{
-        position: relative;
-        width: 100%;
-        height: 0;
-        padding-top: {aspect_ratio_pct:.2f}%;
-        background-image: url("data:image/png;base64,{data}");
-        background-size: contain;       /* scale image fully inside container */
-        background-repeat: no-repeat;
-        background-position: center top;
-        margin-top: -2rem;
-    }}
+def _inject_css():
+    st.markdown(
+        """
+<style>
+/* --- Wrapper --- */
+.hero-wrap {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 14px;
+}
 
-    /* Overlay text (hero title) */
-    .hero-text {{
-        position: absolute;
-        bottom: 8px;
-        left: 12px;
-        color: #e6edf3;
-        z-index: 2;
-    }}
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 14px;
+}
 
-    .hero-title {{
-        font-size: 20px;
-        font-weight: 700;
-        margin: 0;
-        line-height: 1.15;
-    }}
+/* --- Desktop Overlay Text --- */
+.hero-overlay {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 18px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    pointer-events: none;
+}
 
-    .hero-date {{
-        font-size: 13px;
-        color: #8b949e;
-        margin-top: 0px;
-        line-height: 1.1;
-    }}
+.hero-title {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1.05;
+    color: white;
+    text-shadow: 0 3px 10px rgba(0,0,0,.65);
+    margin: 0;
+}
 
-    /* Sidebar width */
-    section[data-testid="stSidebar"] {{
-        width: 280px !important;
-    }}
+.hero-date {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgba(255,255,255,.95);
+    text-shadow: 0 2px 8px rgba(0,0,0,.6);
+    margin-top: 6px;
+}
 
-    /* Center items inside sidebar (affects the logo) */
-    section[data-testid="stSidebar"] .stImage {{
-        text-align: center;
-        margin-left: 25px;
-        margin-top: -50px;
-    }}
+/* --- Mobile Below-Banner Text (hidden on desktop) --- */
+.hero-below {
+    margin-top: 10px;
+}
 
-    /* Remove empty space below the page */
-    .block-container {{
-        padding-bottom: 0rem !important;
-    }}
+.hero-title-below {
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 1.15;
+    margin-bottom: 4px;
+}
 
-    /* Hide Streamlit chrome */
-    #MainMenu {{visibility: hidden;}}
-    footer {{visibility: hidden;}}
+.hero-date-below {
+    font-size: 15px;
+    opacity: 0.75;
+}
 
-    /* Mobile / small screen adjustments */
-    @media only screen and (max-width: 600px) {
-        /* Hide overlay text on top of the banner */
-        .hero-text {
-            display: none;
-        }
+/* ---------- RESPONSIVE SWITCH ---------- */
+/* Phones / Streamlit mobile app */
+@media (max-width: 768px) {
+    .hero-overlay { display: none; }
+    .hero-below { display: block; }
+}
 
-        /* Create below-banner mobile title/date */
-        .hero-title-mobile, .hero-date-mobile {
-            display: block;
-            text-align: center;
-            margin-top: 0.5rem;
-        }
+/* Desktop / tablets */
+@media (min-width: 769px) {
+    .hero-below { display: none; }
+}
+</style>
+        """,
+        unsafe_allow_html=True,
+    )
 
-        .hero-title-mobile {
-            font-size: 18px;   /* smaller than desktop but still readable */
-            font-weight: 700;
-            line-height: 1.2;
-        }
 
-        .hero-date-mobile {
-            font-size: 12px;
-            color: #8b949e;
-            line-height: 1.1;
-        }
-    }
-    </style>
+def render_hero(banner_url: str, title: str, date_text: str):
+    """Render a hero banner that overlays text on desktop but moves text below on mobile."""
 
-    <div class="hero-header">
-        <div class="hero-text">
-            <div class="hero-title">NBA — Player Hit Rates</div>
-            <div class="hero-date">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
-        </div>
+    _inject_css()
+
+    # Banner with desktop overlay
+    st.markdown(
+        f"""
+<div class="hero-wrap">
+    <img src="{banner_url}" class="hero-img" />
+    <div class="hero-overlay">
+        <div class="hero-title">{title}</div>
+        <div class="hero-date">{date_text}</div>
     </div>
+</div>
+        """,
+        unsafe_allow_html=True,
+    )
 
-    <div class="hero-title-mobile">NBA — Player Hit Rates</div>
-    <div class="hero-date-mobile">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
-    """, unsafe_allow_html=True)
+    # Mobile-only text (appears below banner)
+    st.markdown(
+        f"""
+<div class="hero-below">
+    <div class="hero-title-below">{title}</div>
+    <div class="hero-date-below">{date_text}</div>
+</div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 set_header_banner("assets/banner.png", image_width=1500, image_height=150)
 
