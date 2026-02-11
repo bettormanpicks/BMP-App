@@ -116,7 +116,7 @@ set_header_banner("assets/banner.png", image_width=1500, image_height=150)
 nba_today = get_nba_today()
 
 # Sidebar logo
-st.sidebar.image("assets/logo.png", width=170)
+st.sidebar.image("assets/logo.png", 170, center)
 
 # Additional CSS tweaks
 
