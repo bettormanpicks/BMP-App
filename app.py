@@ -80,6 +80,12 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
         margin: 0;
     }}
 
+    .hero-date {{
+        font-size: 13px;
+        color: #8b949e;
+        margin-top: 2px;
+    }}
+
     /* Sidebar width */
     section[data-testid="stSidebar"] {{
         width: 280px !important;
@@ -93,6 +99,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     <div class="hero-header">
         <div class="hero-text">
             <div class="hero-title">NBA — Player Hit Rates</div>
+            <div class="hero-date">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -100,25 +107,6 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
 set_header_banner("assets/banner.png", image_width=1500, image_height=150)
 
 nba_today = get_nba_today()
-
-st.markdown(
-    f"""
-    <style>
-    .date-pill {{
-        position: absolute;
-        bottom: 2px;       /* aligns nicely with hero-title */
-        left: 10px;
-        color: #8b949e;
-        font-size: 13px;
-    }}
-    </style>
-
-    <div class="date-pill">
-        NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
-    </div>
-    """,
-    unsafe_allow_html=True
-)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
