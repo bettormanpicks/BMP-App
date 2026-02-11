@@ -114,7 +114,7 @@ df = df[desired_columns]
 # SAVE
 # ==================================================
 df.to_csv(OUTPUT_CSV, index=False)
-print(f"\n💾 Saved {len(df)} rows → {OUTPUT_CSV}")
+print(f"\nSaved {len(df)} rows -> {OUTPUT_CSV}")
 
 if len(df) < 10000:
     raise RuntimeError(f"NBA download incomplete — only {len(df)} rows collected.")
