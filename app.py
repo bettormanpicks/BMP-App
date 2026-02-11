@@ -140,6 +140,15 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
             margin-bottom: 12px;
         }}
     }}
+
+    /* Add space below banner ONLY on mobile */
+    @media (max-width: 1000px) {{
+
+        .hero-header {{
+            margin-bottom: 70px !important;
+        }}
+
+    }}
     </style>
 
     <div class="hero-header">
