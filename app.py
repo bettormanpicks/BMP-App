@@ -29,31 +29,50 @@ from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 # ============================================================
 # PAGE CONFIG
 # ============================================================
-st.set_page_config(
-    page_title="Bettor Man Picks Stat Analyzer",
-    layout="wide"
-)
+import streamlit as st
+import base64
+from datetime import datetime
+from shared.utils import get_nba_today
 
+st.set_page_config(page_title="Bettor Man Picks Stat Analyzer", layout="wide")
 nba_today = get_nba_today()
 
 # ============================================================
-# HEADER BANNER (inside Streamlit top padding)
+# HEADER BANNER (full width, full image, hero text overlay)
 # ============================================================
 def set_header_banner(image_path, banner_height_px=150):
-    """
-    Hero banner inside Streamlit top padding so table starts immediately below.
-    """
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
-    /* Set top padding to make room for banner */
-    .block-container {{
-        padding-top: {banner_height_px}px !important;
-        padding-bottom: 0rem !important;
-        margin: 0 !important;
+    /* Banner container */
+    .banner-container {{
         position: relative;
+        width: 100%;
+        height: {banner_height_px}px;
+        background-image: url("data:image/png;base64,{data}");
+        background-size: contain; /* ensures full image shows */
+        background-repeat: no-repeat;
+        background-position: center top;
+        display: flex;
+        align-items: flex-end; /* aligns hero text at bottom */
+        padding: 10px 20px;
+        box-sizing: border-box;
+    }}
+
+    /* Hero text overlay */
+    .hero-title {{
+        font-size: 30px;
+        font-weight: 700;
+        color: #e6edf3;
+        margin: 0;
+    }}
+
+    .date-pill {{
+        font-size: 13px;
+        color: #8b949e;
+        margin-top: 2px;
     }}
 
     /* Sidebar width */
@@ -64,55 +83,17 @@ def set_header_banner(image_path, banner_height_px=150):
     /* Hide Streamlit chrome */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
-
-    /* Banner as background of top padding */
-    .block-container::before {{
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: {banner_height_px}px;
-        background-image: url("data:image/png;base64,{data}");
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center top;
-        z-index: 1;
-    }}
-
-    /* Hero text overlay */
-    .hero-text {{
-        position: absolute;
-        top: 0;
-        left: 20px;
-        height: {banner_height_px}px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        z-index: 2;
-        color: #e6edf3;
-    }}
-
-    .hero-title {{
-        font-size: 30px;
-        font-weight: 700;
-        margin: 0;
-    }}
-
-    .date-pill {{
-        font-size: 13px;
-        color: #8b949e;
-        margin-top: 2px;
-    }}
     </style>
 
-    <div class="hero-text">
-        <div class="hero-title">NBA — Player Hit Rates</div>
-        <div class="date-pill">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
+    <div class="banner-container">
+        <div>
+            <div class="hero-title">NBA — Player Hit Rates</div>
+            <div class="date-pill">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
+        </div>
     </div>
     """, unsafe_allow_html=True)
 
-# Apply banner
+# Set banner
 set_header_banner("assets/banner.png", banner_height_px=150)
 
 # Sidebar logo
