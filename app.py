@@ -96,8 +96,8 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     /* Center items inside sidebar (affects the logo) */
     section[data-testid="stSidebar"] .stImage {{
         text-align: center;
-        margin-left: 2px;
-        margin-top: -16px;
+        margin-left: 5px;
+        margin-top: -20px;
     }}
 
     /* Remove empty space below the page */
