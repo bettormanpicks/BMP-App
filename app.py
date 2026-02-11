@@ -41,27 +41,36 @@ nba_today = get_nba_today()
 # HEADER BANNER (full width, full image, hero text overlay)
 # ============================================================
 def set_header_banner(image_path, banner_height_px=150):
+    nba_today = get_nba_today()
+
     with open(image_path, "rb") as f:
         data = base64.b64encode(f.read()).decode()
 
     st.markdown(f"""
     <style>
-    /* Banner container */
-    .banner-container {{
-        position: relative;
-        width: 100%;
-        height: {banner_height_px}px;
+
+    /* 1️⃣ Remove Streamlit's visual gap WITHOUT moving scroll origin */
+    .block-container {{
+        padding-top: 0rem !important;
+    }}
+
+    /* 2️⃣ Create a real header attached to the page */
+    .stApp > header {{
         background-image: url("data:image/png;base64,{data}");
-        background-size: contain; /* ensures full image shows */
+        background-size: contain;
         background-repeat: no-repeat;
         background-position: center top;
+
+        height: {banner_height_px}px;
+        width: 100%;
+
         display: flex;
-        align-items: flex-end; /* aligns hero text at bottom */
+        align-items: flex-end;
         padding: 10px 20px;
         box-sizing: border-box;
     }}
 
-    /* Hero text overlay */
+    /* 3️⃣ Overlay text */
     .hero-title {{
         font-size: 30px;
         font-weight: 700;
@@ -72,29 +81,31 @@ def set_header_banner(image_path, banner_height_px=150):
     .date-pill {{
         font-size: 13px;
         color: #8b949e;
-        margin-top: 2px;
     }}
 
-    /* Sidebar width */
-    section[data-testid="stSidebar"] {{
-        width: 280px !important;
+    /* Hide default Streamlit header contents but keep its space */
+    .stApp > header > div {{
+        display: none;
     }}
 
-    /* Hide Streamlit chrome */
+    /* Hide hamburger + menu + footer */
     #MainMenu {{visibility: hidden;}}
     footer {{visibility: hidden;}}
+
     </style>
 
-    <div class="banner-container">
+    <header>
         <div>
             <div class="hero-title">NBA — Player Hit Rates</div>
-            <div class="date-pill">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
+            <div class="date-pill">
+                NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)
+            </div>
         </div>
-    </div>
+    </header>
     """, unsafe_allow_html=True)
 
 # Set banner
-set_header_banner("assets/banner.png", banner_height_px=150)
+set_header_banner("assets/banner.png", 150)
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
