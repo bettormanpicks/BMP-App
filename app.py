@@ -884,7 +884,7 @@ elif sport_choice == "NHL":
                 "SOG": "shots",
                 "H": "hits",
                 "B": "blocks",
-                "PPP": "pp_points"
+                "PPP": "pp_points",
                 "FOW": "faceoffs_won"
             }
         else:
