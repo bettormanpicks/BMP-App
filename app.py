@@ -937,10 +937,10 @@ elif sport_choice == "NHL":
             get_nhl_teams_on_date(tomorrow)
         )
 
-        # Injuries
+        # Injuries (optional)
         inj_status_map = {}
 
-        # Full-season stats
+        # Analyze all games (full season)
         nhl_all = analyze_nhl_players(
             nhl_df,
             nhl_stats_selected,
@@ -958,6 +958,7 @@ elif sport_choice == "NHL":
         recent_map = {"L5": 5, "L10": 10, "ALL": None}
         recent_n = recent_map[nhl_player_window]
 
+        # Analyze recent games if needed
         if recent_n:
             nhl_recent = analyze_nhl_players(
                 nhl_df,
@@ -972,31 +973,45 @@ elif sport_choice == "NHL":
                 inj_status_map=inj_status_map
             )
 
-        # Column definitions
-        base_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
-        opp_cols = ["GA_A", "GA_R", "SA_A", "SA_R"] if player_type_choice == "Skaters" else ["GF_A", "GF_R", "SF_A", "SF_R"]
-        all_stat_cols = [f"{stat}@{int(nhl_recent_pct*100)}" for stat in nhl_stats_selected]
-        recent_stat_cols = [f"L{recent_n}{stat}@{int(nhl_recent_pct*100)}" for stat in nhl_stats_selected if recent_n]
+        # Key columns for merging
+        key_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
 
-        # Merge ALL + recent (if applicable)
+        # Merge full season and recent stats
         if recent_n:
             nhl_out = nhl_all.merge(
                 nhl_recent,
-                on=base_cols,
-                how="left",
-                suffixes=("", f"_L{recent_n}")
+                on=key_cols,
+                how="left"
             )
         else:
             nhl_out = nhl_all
 
-        # Reorder columns
-        ordered_cols = base_cols + opp_cols + all_stat_cols + recent_stat_cols
-        nhl_out = nhl_out[[c for c in ordered_cols if c in nhl_out.columns]]
-
-        # Check for empty table
         if nhl_out.empty:
             st.warning("No NHL players matched the criteria.")
         else:
+            # Base + opponent columns
+            base_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
+            if player_type_choice == "Skaters":
+                opp_cols = ["GA_A", "GA_R", "SA_A", "SA_R"]
+            else:
+                opp_cols = ["GF_A", "GF_R", "SF_A", "SF_R"]
+
+            # Build interleaved stat columns
+            ordered_cols = base_cols + opp_cols
+            for stat in nhl_stats_selected:
+                # Full season
+                all_col = f"{stat}@{int(nhl_recent_pct*100)}"
+                if all_col in nhl_out.columns:
+                    ordered_cols.append(all_col)
+                # Recent window
+                if recent_n:
+                    recent_col = f"L{recent_n}{stat}@{int(nhl_recent_pct*100)}"
+                    if recent_col in nhl_out.columns:
+                        ordered_cols.append(recent_col)
+
+            # Apply final column order
+            nhl_out = nhl_out[[c for c in ordered_cols if c in nhl_out.columns]]
+
             # Column pinning
             col_config = {
                 "Player": st.column_config.Column(pinned="left"),
@@ -1005,6 +1020,7 @@ elif sport_choice == "NHL":
                 "Opp": st.column_config.Column(pinned="left"),
             }
 
+            # Display dataframe
             st.dataframe(
                 nhl_out,
                 width="stretch",
