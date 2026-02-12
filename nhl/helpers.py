@@ -6,6 +6,13 @@ import requests
 from shared.utils import hit_rate_threshold, dedupe_columns, norm_name
 
 # -------------------------------
+# Fetch NHL Injuries
+# -------------------------------
+@st.cache_data(ttl=900)
+def get_nhl_injuries(headless=True):
+    return fetch_nhl_injuries_selenium(headless=headless)
+
+# -------------------------------
 # Schedule / Teams
 # -------------------------------
 @st.cache_data(ttl=900)
@@ -76,7 +83,7 @@ def analyze_nhl_players(
     recent_n=None,
     recent_pct=0.8,
     filter_teams=None,
-    team_def_df=None,
+    team_def_df=pd.DataFrame(),
     player_type="Skaters",
     b2b_map=None,
     inj_status_map=None,
@@ -84,31 +91,13 @@ def analyze_nhl_players(
 ):
     """
     Main analysis engine for NHL players.
-    Returns a DataFrame ready for display.
-
-    nhl_df: raw uploaded CSV
-    nhl_stats_selected: list of stats user selected
-    stat_map: {"Display Name": "csv_column"}
-    recent_n: number of recent games to consider (None = all)
-    recent_pct: decimal pct (0-1)
-    filter_teams: optional set of team codes to filter
-    team_def_df: optional dataframe with team defense (index=Team)
-    player_type: "Skaters" or "Goalies"
-    b2b_map: optional dict {team: B2B status}
-    inj_status_map: optional dict {norm_name(player): status}
-    opp_map: optional dict {team: opponent}
+    Returns DataFrame ready for display with NBA-style recent game columns.
     """
-    if team_def_df is None:
-        team_def_df = pd.DataFrame()
-    if b2b_map is None:
-        b2b_map = {}
-    if inj_status_map is None:
-        inj_status_map = {}
 
     nhl_df = nhl_df.copy().fillna(0)
     nhl_df.columns = dedupe_columns(nhl_df.columns)
 
-    # Filter by player type & minimum TOI
+    # Filter by Skater / Goalie criteria
     if player_type == "Skaters":
         df_players = nhl_df[(nhl_df["is_goalie"] == False) & (nhl_df["toi_minutes"] > 8)].copy()
     else:
@@ -116,6 +105,8 @@ def analyze_nhl_players(
 
     rows = []
     grouped = df_players.groupby(["player_id", "player_name", "team", "position"])
+
+    tag = f"L{recent_n}" if recent_n is not None else ""
 
     for (pid, name, team, pos), g in grouped:
 
@@ -125,34 +116,36 @@ def analyze_nhl_players(
         rec = {"Player": name, "Pos": pos, "Team": team, "Gms": len(g)}
 
         # B2B
-        rec["B2B"] = b2b_map.get(team, "N")
+        rec["B2B"] = b2b_map.get(team, "N") if b2b_map else "N"
 
         # Injury status
-        rec["Status"] = inj_status_map.get(norm_name(name), "A")
+        rec["Status"] = inj_status_map.get(norm_name(name), "A") if inj_status_map else "A"
 
         # Opponent
-        opponent = opp_map.get(team, "") if opp_map else ""
-        rec["Opp"] = opponent
+        opp = None
+        if opp_map:
+            opp = opp_map.get(team, "")
+        rec["Opp"] = opp or ""
 
         # Attach opponent defense
-        if not team_def_df.empty and opponent in team_def_df.index:
+        if not team_def_df.empty and opp in team_def_df.index:
             if player_type == "Skaters":
-                rec["GA_A"] = team_def_df.loc[opponent, "GA_A"]
-                rec["GA_R"] = int(team_def_df.loc[opponent, "GA_R"])
-                rec["SA_A"] = team_def_df.loc[opponent, "SA_A"]
-                rec["SA_R"] = int(team_def_df.loc[opponent, "SA_R"])
+                rec["GA_A"] = team_def_df.loc[opp, "GA_A"]
+                rec["GA_R"] = int(team_def_df.loc[opp, "GA_R"])
+                rec["SA_A"] = team_def_df.loc[opp, "SA_A"]
+                rec["SA_R"] = int(team_def_df.loc[opp, "SA_R"])
             else:
-                rec["GF_A"] = team_def_df.loc[opponent, "GF_A"]
-                rec["GF_R"] = int(team_def_df.loc[opponent, "GF_R"])
-                rec["SF_A"] = team_def_df.loc[opponent, "SF_A"]
-                rec["SF_R"] = int(team_def_df.loc[opponent, "SF_R"])
+                rec["GF_A"] = team_def_df.loc[opp, "GF_A"]
+                rec["GF_R"] = int(team_def_df.loc[opp, "GF_R"])
+                rec["SF_A"] = team_def_df.loc[opp, "SF_A"]
+                rec["SF_R"] = int(team_def_df.loc[opp, "SF_R"])
         else:
             if player_type == "Skaters":
                 rec["GA_A"] = rec["GA_R"] = rec["SA_A"] = rec["SA_R"] = None
             else:
                 rec["GF_A"] = rec["GF_R"] = rec["SF_A"] = rec["SF_R"] = None
 
-        # Recent form
+        # Recent form / hit rate thresholds
         g_sorted = g.sort_values("game_date", ascending=False)
         if recent_n is not None:
             g_sorted = g_sorted.head(recent_n)
@@ -160,9 +153,7 @@ def analyze_nhl_players(
         for stat, col in stat_map.items():
             if stat not in nhl_stats_selected:
                 continue
-            rec[f"L{recent_n}{stat}@{int(recent_pct*100)}"] = hit_rate_threshold(
-                g_sorted[col], recent_pct*100
-            )
+            rec[f"{tag}{stat}@{int(recent_pct*100)}"] = hit_rate_threshold(g_sorted[col], recent_pct*100)
 
         rows.append(rec)
 
