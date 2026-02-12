@@ -979,7 +979,6 @@ elif sport_choice == "NHL":
                 nhl_recent,
                 on=key_cols,
                 how="left",
-                suffixes=("", f"_L{recent_n}")  # keeps ALL columns as stat@XX, recent as L5stat@XX
             )
         else:
             nhl_out = nhl_all
