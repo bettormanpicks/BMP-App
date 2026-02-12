@@ -994,16 +994,16 @@ elif sport_choice == "NHL":
             else:
                 opp_cols = ["GF_A", "GF_R", "SF_A", "SF_R"]
 
-            # Build interleaved stat columns
+            # --- Build interleaved stat columns (ALL + recent side by side) ---
             ordered_cols = base_cols + opp_cols
             for stat in nhl_stats_selected:
-                # Full season
-                all_col = f"{stat}@{int(nhl_recent_pct*100)}"
+                # Full season / ALL
+                all_col = f"{stat}@{int(nhl_recent_pct*100)}"   # G@80, A@80
                 if all_col in nhl_out.columns:
                     ordered_cols.append(all_col)
-                # Recent window
+                # Recent window (L5 / L10)
                 if recent_n:
-                    recent_col = f"L{recent_n}{stat}@{int(nhl_recent_pct*100)}"
+                    recent_col = f"L{recent_n}{stat}@{int(nhl_recent_pct*100)}"  # L5G@80, L5A@80
                     if recent_col in nhl_out.columns:
                         ordered_cols.append(recent_col)
 
