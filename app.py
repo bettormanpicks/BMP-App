@@ -26,6 +26,10 @@ from nba.helpers import (
 )
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 
+# NHL helper functions
+from nhl.helpers import get_nhl_todays_schedule, compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date, get_nhl_injuries
+from shared.utils import compute_hit_rates
+
 # ============================================================
 # PAGE CONFIG
 # ============================================================
@@ -416,7 +420,7 @@ def calc_nfl_pfr_hit_rates(
 ############################################################
 # SPORT SELECTION
 ############################################################
-sport_choice = st.sidebar.selectbox("Select Sport", ["NBA"]) #, "NFL", "NHL"])
+sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL"]) #, "NFL", "NHL"])
 
 ############################################################
 # ===== NBA SECTION (Multi-sport compatible) =====
@@ -839,16 +843,37 @@ elif sport_choice == "NHL":
 
     st.subheader("NHL — Player Hit Rate Analysis")
 
-    # --- Upload CSV ---
-    uploaded_nhl_file = st.file_uploader("Upload NHL Game Logs CSV", type=["csv"], key="nhl")
-    if uploaded_nhl_file:
-
-        nhl_df = pd.read_csv(uploaded_nhl_file).fillna(0)
+    # --- Load NHL CSV automatically from repo ---
+    try:
+        nhl_df = pd.read_csv("nhl/data/nhlplayergamelogs.csv").fillna(0)
         nhl_df.columns = dedupe_columns(nhl_df.columns)
+    except Exception as e:
+        st.error(f"Could not load nhlplayergamelogs.csv: {e}")
+        nhl_df = pd.DataFrame()
 
-        # --- Skater / Goalie selection ---
-        player_type_choice = st.sidebar.radio("Select player type", ["Skaters", "Goalies"], index=0)
+    # --- Sidebar Form ---
+    with st.sidebar.form(key="nhl_form"):
+        
+        # Skater / Goalie selection
+        player_type_choice = st.radio("Select player type", ["Skaters", "Goalies"], index=0)
 
+        # Hit Rate Percentage slider (like NBA)
+        nhl_percent_slider = st.slider("Hit Rate Percentage", min_value=40, max_value=100, step=5, value=80)
+
+        # Game Window
+        nhl_player_window = st.radio("Player Performance Window", ["L5", "L10", "ALL"], index=0)
+        nhl_recent_n = 5 if nhl_player_window == "L5" else 10 if nhl_player_window == "L10" else None
+
+        # Filter to today's teams
+        nhl_filter_today = st.checkbox("Filter to today's teams", value=False)
+
+        # --- Submit button ---
+        submit_btn = st.form_submit_button("Calculate")
+
+    # --- Only run analysis after button click ---
+    if submit_btn and not nhl_df.empty:
+
+        # Determine stats and stat map
         if player_type_choice == "Skaters":
             nhl_stats_options = ["TOI", "G", "A", "P", "SOG", "H", "B", "PPP"]
             stat_map = {
@@ -870,188 +895,70 @@ elif sport_choice == "NHL":
                 "SV%": "save_pct"
             }
 
-        nhl_stats_selected = st.sidebar.multiselect(
-            "Choose NHL stats", nhl_stats_options, nhl_stats_options
+        nhl_stats_selected = nhl_stats_options  # default: all
+
+        # --- Fetch today's NHL teams ---
+        today_str = datetime.now().strftime("%Y-%m-%d")
+        nhl_todays, nhl_opp_map = get_nhl_todays_schedule(today_str)
+
+        # --- Apply filter to today's teams if checkbox enabled ---
+        if nhl_filter_today:
+            latest_team = (
+                nhl_df.sort_values(["player_id", "game_date"], ascending=[True, False])
+                      .groupby("player_id")["team"]
+                      .first()
+            )
+            eligible_players = latest_team[latest_team.isin(nhl_todays)].index
+            nhl_df = nhl_df[nhl_df["player_id"].isin(eligible_players)].copy()
+
+        # --- Compute B2B map ---
+        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
+        tomorrow = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
+        nhl_b2b_map = compute_nhl_b2b(
+            teams_today=get_nhl_teams_on_date(today_str),
+            teams_yesterday=get_nhl_teams_on_date(yesterday),
+            teams_tomorrow=get_nhl_teams_on_date(tomorrow)
         )
 
-        nhl_percent_input = st.sidebar.text_input("Hit Rate Percentage", "80")
-        nhl_percentages = sorted({float(x) for x in nhl_percent_input.split()})
+        # --- Analyze players ---
+        nhl_out = analyze_nhl_players(
+            nhl_df=nhl_df,
+            nhl_stats_selected=nhl_stats_selected,
+            stat_map=stat_map,
+            recent_n=nhl_recent_n,
+            recent_pct=nhl_percent_slider/100.0,
+            filter_teams=nhl_todays if nhl_filter_today else None,
+            b2b_map=nhl_b2b_map,
+            team_def_df=pd.read_csv("nhl/data/nhlteamgametotals.csv").set_index("Team") if nhl_filter_today else pd.DataFrame(),
+            player_type=player_type_choice,
+            inj_status_map={}  # add injury logic later if desired
+        )
 
-        # --- Player Performance Window ---
-        nhl_player_window = st.sidebar.radio("Game Window", ["ALL", "L5", "L10"], index=1)
-        nhl_recent_n = 5 if nhl_player_window == "L5" else 10 if nhl_player_window == "L10" else None
-        nhl_recent_pct = nhl_percentages[-1] / 100.0
-
-        nhl_filter_today = st.sidebar.checkbox("Filter to today's teams", value=False)
-
-        # --- Load combined team stats CSV (offense + defense) ---
-        try:
-            team_def = pd.read_csv("nhl/data/nhlteamgametotals.csv").set_index("Team")
-        except Exception as e:
-            st.warning(f"Could not load nhlteamgametotals.csv: {e}")
-            team_def = pd.DataFrame()
-
-        if st.sidebar.button("Analyze NHL"):
-
-            # --- Trim to recent 82 games ---
-            nhl_df_calc = trim_df_to_recent_82(nhl_df.copy(), date_col="game_date")
-            nhl_df_calc["game_date"] = pd.to_datetime(nhl_df_calc["game_date"], errors="coerce")
-
-            # --- Load today's NHL schedule ---
-            today = datetime.now().strftime("%Y-%m-%d")
-            nhl_todays, nhl_opp_map = set(), {}
-            try:
-                r = requests.get(f"https://api-web.nhle.com/v1/schedule/{today}", timeout=15)
-                r.raise_for_status()
-                schedule_data = r.json()
-                for block in schedule_data.get("gameWeek", []):
-                    if block.get("date") != today:
-                        continue
-                    for g in block.get("games", []):
-                        away = (g.get("awayTeam") or {}).get("abbrev")
-                        home = (g.get("homeTeam") or {}).get("abbrev")
-                        if away and home:
-                            nhl_todays.add(away)
-                            nhl_todays.add(home)
-                            nhl_opp_map[away] = home
-                            nhl_opp_map[home] = away
-            except:
-                pass
-
-            if nhl_filter_today:
-                latest_team = (
-                    nhl_df_calc.sort_values(["player_id", "game_date"], ascending=[True, False])
-                               .groupby("player_id")["team"]
-                               .first()
-                )
-                eligible = latest_team[latest_team.isin(nhl_todays)].index
-                nhl_df_calc = nhl_df_calc[nhl_df_calc["player_id"].isin(eligible)].copy()
-
-            # --- Back 2 Back Logic ---
-            today_dt = datetime.now().date()
-            yesterday = (today_dt - timedelta(days=1)).strftime("%Y-%m-%d")
-            today = today_dt.strftime("%Y-%m-%d")
-            tomorrow = (today_dt + timedelta(days=1)).strftime("%Y-%m-%d")
-
-            nhl_teams_today = get_nhl_teams_on_date(today)
-            nhl_teams_yesterday = get_nhl_teams_on_date(yesterday)
-            nhl_teams_tomorrow = get_nhl_teams_on_date(tomorrow)
-
-            nhl_b2b_map = {}
-            for team in nhl_teams_today:
-                if team in nhl_teams_yesterday:
-                    nhl_b2b_map[team] = "2"
-                elif team in nhl_teams_tomorrow:
-                    nhl_b2b_map[team] = "1"
-                else:
-                    nhl_b2b_map[team] = "N"
-
-            # ==== FETCH ESPN NHL INJURIES (cached 15 min) ====
-#            inj_df = get_nhl_injuries()
-#
-#            inj_status_map = (
-#                {norm_name(p): s for p, s in zip(inj_df["Player"], inj_df["Status_norm"])}
-#                if not inj_df.empty
-#                else {}
-#            )
-
-            # --- Compute recent form ---
-            def compute_recent_nhl_stats(group, recent_n, pct, player_type):
-                g = group.sort_values("game_date", ascending=False)
-                if recent_n is not None:
-                    g = g.head(recent_n)
-                if player_type == "Skaters":
-                    return {stat: hit_rate_threshold(g[col], pct*100) for stat, col in stat_map.items() if stat in nhl_stats_selected}
-                else:
-                    return {stat: hit_rate_threshold(g[col], pct*100) for stat, col in stat_map.items() if stat in nhl_stats_selected}
-
-            # --- Group players ---
+        # --- Display results ---
+        if nhl_out.empty:
+            st.warning("No NHL players matched the criteria.")
+        else:
+            # --- Column ordering ---
+            base_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
             if player_type_choice == "Skaters":
-                df_players = nhl_df_calc[
-                    (nhl_df_calc["is_goalie"] == False) &
-                    (nhl_df_calc["toi_minutes"] > 8)
-                ].copy()
+                opp_cols = ["GA_A", "GA_R", "SA_A", "SA_R"]
             else:
-                df_players = nhl_df_calc[
-                    (nhl_df_calc["is_goalie"] == True) &
-                    (nhl_df_calc["toi_minutes"] > 40)
-                ].copy()
+                opp_cols = ["GF_A", "GF_R", "SF_A", "SF_R"]
+            recent_cols = [c for c in nhl_out.columns if c not in base_cols + opp_cols]
+            ordered_cols = [c for c in base_cols + opp_cols + recent_cols if c in nhl_out.columns]
 
-            rows = []
-            grouped = df_players.groupby(["player_id", "player_name", "team", "position"])
-            for (pid, name, team, pos), g in grouped:
+            nhl_out = nhl_out[ordered_cols]
 
-                if nhl_filter_today and team not in nhl_todays:
-                    continue
+            # --- Column pinning ---
+            col_config = {
+                "Player": st.column_config.Column(pinned="left"),
+                "Pos": st.column_config.Column(pinned="left"),
+                "Team": st.column_config.Column(pinned="left"),
+            }
 
-                rec = {"Player": name, "Pos": pos, "Team": team, "Gms": len(g)}
-
-                rec["B2B"] = nhl_b2b_map.get(team, "N")
-
-                rec["Status"] = inj_status_map.get(norm_name(name), "A")
-
-                ###if norm_name(name) not in inj_status_map:
-                    ###print("NO MATCH:", name, "→", norm_name(name))
-
-                # Opponent info
-                opp = nhl_opp_map.get(team, "")
-                rec["Opp"] = opp
-
-                if player_type_choice == "Skaters":
-                    if not team_def.empty and opp in team_def.index:
-                        rec["GA_A"] = team_def.loc[opp, "GA_A"]
-                        rec["GA_R"] = int(team_def.loc[opp, "GA_R"])
-                        rec["SA_A"] = team_def.loc[opp, "SA_A"]
-                        rec["SA_R"] = int(team_def.loc[opp, "SA_R"])
-                    else:
-                        rec["GA_A"] = rec["GA_R"] = rec["SA_A"] = rec["SA_R"] = None
-                else:
-                    if not team_def.empty and opp in team_def.index:
-                        rec["GF_A"] = team_def.loc[opp, "GF_A"]
-                        rec["GF_R"] = int(team_def.loc[opp, "GF_R"])
-                        rec["SF_A"] = team_def.loc[opp, "SF_A"]
-                        rec["SF_R"] = int(team_def.loc[opp, "SF_R"])
-                    else:
-                        rec["GF_A"] = rec["GF_R"] = rec["SF_A"] = rec["SF_R"] = None
-
-                # Recent form
-                recent_stats = compute_recent_nhl_stats(g, nhl_recent_n, nhl_recent_pct, player_type_choice)
-                tag = f"L{nhl_recent_n}" if nhl_recent_n is not None else ""
-                pct_tag = int(nhl_percentages[-1])
-                for stat, value in recent_stats.items():
-                    rec[f"{tag}{stat}@{pct_tag}"] = value
-
-                rows.append(rec)
-
-            nhl_out = pd.DataFrame(rows)
-
-            if nhl_out.empty:
-                st.warning("No NHL players matched the criteria.")
-            else:
-                # --- Column ordering ---
-                base_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status",]
-                if player_type_choice == "Skaters":
-                    opp_cols = ["GA_A", "GA_R", "SA_A", "SA_R"]
-                else:
-                    opp_cols = ["GF_A", "GF_R", "SF_A", "SF_R"]
-                recent_cols = [c for c in nhl_out.columns if c not in base_cols + opp_cols]
-                ordered_cols = [c for c in base_cols + opp_cols + recent_cols if c in nhl_out.columns]
-
-                nhl_out = nhl_out[ordered_cols]
-
-                # --- Column pinning ---
-                col_config = {
-                    "Player": st.column_config.Column(pinned="left"),
-                    "Pos": st.column_config.Column(pinned="left"),
-                    "Team": st.column_config.Column(pinned="left"),
-                }
-
-                st.dataframe(
-                    nhl_out,
-                    width='stretch',
-                    hide_index=True,
-                    column_config=col_config
-                )
-
-                csv_bytes = nhl_out.to_csv(index=False).encode()
-                st.download_button("Download NHL CSV", csv_bytes, "nhl_stats.csv")
+            st.dataframe(
+                nhl_out,
+                width='stretch',
+                hide_index=True,
+                column_config=col_config
+            )
