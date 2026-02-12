@@ -999,9 +999,9 @@ elif sport_choice == "NHL":
         ordered_cols = base_cols + stat_cols
         nhl_out = nhl_out[ordered_cols]
 
-            st.dataframe(
-                nhl_out,
-                width="stretch",
-                hide_index=True,
-                column_config=col_config
-            )
+        st.dataframe(
+            nhl_out,
+            width="stretch",
+            hide_index=True,
+            column_config=col_config
+        )
