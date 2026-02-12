@@ -50,6 +50,46 @@ def hit_rate_threshold(values, pct):
 
     return values.min()
 
+def compute_hit_rates(group: pd.DataFrame, stat_map: dict, stats_selected: list, recent_n=None, pct=0.8):
+    """
+    Compute hit rate thresholds for a player's recent games.
+
+    Parameters
+    ----------
+    group : pd.DataFrame
+        Player's game log (already filtered by player_id)
+    stat_map : dict
+        Mapping of display stat → DataFrame column, e.g. {"G": "goals", "A": "assists"}
+    stats_selected : list
+        Stats to calculate, e.g. ["G", "A", "P"]
+    recent_n : int | None
+        Number of most recent games to consider. If None, uses all games
+    pct : float
+        Hit rate percentage (0–1). E.g., 0.8 for 80%.
+
+    Returns
+    -------
+    dict
+        Keys are stat names (like "G") or tagged (like "L5G@80"), values are thresholds
+    """
+    g = group.sort_values("game_date", ascending=False)
+    if recent_n is not None:
+        g = g.head(recent_n)
+
+    results = {}
+    pct_pct = pct * 100
+
+    for stat in stats_selected:
+        if stat not in stat_map:
+            continue
+        col = stat_map[stat]
+        if col not in g.columns:
+            results[stat] = None
+            continue
+        results[stat] = hit_rate_threshold(g[col], pct_pct)
+
+    return results
+
 def trim_df_to_recent_82(df, date_col="GAME_DATE"):
     # Keep behavior consistent with your original code (works for NBA GAME_DATE)
     if date_col in df.columns:
