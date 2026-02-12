@@ -88,17 +88,18 @@ def analyze_nhl_players(
     player_type="Skaters",
     b2b_map=None,
     inj_status_map=None,
-    opp_map=None,
 ):
     """
     Main analysis engine for NHL players.
-    Returns DataFrame ready for display with NBA-style recent game columns.
+    Returns DataFrame ready for display.
     """
 
     nhl_df = nhl_df.copy().fillna(0)
     nhl_df.columns = dedupe_columns(nhl_df.columns)
 
-    # Filter by Skater / Goalie criteria
+    # ✅ Convert game_date to datetime to ensure proper sorting
+    nhl_df['game_date'] = pd.to_datetime(nhl_df['game_date'], errors='coerce')
+
     if player_type == "Skaters":
         df_players = nhl_df[(nhl_df["is_goalie"] == False) & (nhl_df["toi_minutes"] > 8)].copy()
     else:
@@ -106,8 +107,6 @@ def analyze_nhl_players(
 
     rows = []
     grouped = df_players.groupby(["player_id", "player_name", "team", "position"])
-
-    tag = f"L{recent_n}" if recent_n is not None else ""
 
     for (pid, name, team, pos), g in grouped:
 
@@ -124,8 +123,8 @@ def analyze_nhl_players(
 
         # Opponent
         opp = None
-        if opp_map:
-            opp = opp_map.get(team, "")
+        if "opp_map" in locals():
+            opp = filter_teams.get(team) if filter_teams else None
         rec["Opp"] = opp or ""
 
         # Attach opponent defense
@@ -146,22 +145,15 @@ def analyze_nhl_players(
             else:
                 rec["GF_A"] = rec["GF_R"] = rec["SF_A"] = rec["SF_R"] = None
 
-        # Recent form / hit rate thresholds
-        g_sorted = g.sort_values("game_date", ascending=False)
+        # ✅ Sort by game_date descending and slice recent_n if specified
+        g = g.sort_values("game_date", ascending=False)
         if recent_n is not None:
-            g_sorted = g_sorted.head(recent_n)
+            g = g.head(recent_n)
 
         for stat, col in stat_map.items():
             if stat not in nhl_stats_selected:
                 continue
-            # Show baseline (ALL) as STAT@PCT, recent windows as L5STAT@PCT, etc.
-            pct_tag = int(recent_pct * 100)
-            if recent_n is None:
-                col_name = f"{stat}@{pct_tag}"
-            else:
-                col_name = f"L{recent_n}{stat}@{pct_tag}"
-
-            rec[col_name] = hit_rate_threshold(g[col], pct_tag)
+            rec[f"{stat}@{int(recent_pct*100)}"] = hit_rate_threshold(g[col], recent_pct*100)
 
         rows.append(rec)
 
