@@ -985,7 +985,7 @@ elif sport_choice == "NHL":
         if nhl_out.empty:
             st.warning("No NHL players matched the criteria.")
         else:
-            base_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
+            base_cols = ["Player", "Pos", "Team", "Opp", "B2B", "Status", "Gms"]
 
             other_cols = [c for c in nhl_out.columns if c not in base_cols]
             nhl_out = nhl_out[base_cols + other_cols]
@@ -994,6 +994,7 @@ elif sport_choice == "NHL":
                 "Player": st.column_config.Column(pinned="left"),
                 "Pos": st.column_config.Column(pinned="left"),
                 "Team": st.column_config.Column(pinned="left"),
+                "Opp": st.column_config.Column(pinned="left"),
             }
 
             st.dataframe(
