@@ -841,8 +841,6 @@ elif sport_choice == "NFL":
 ############################################################
 elif sport_choice == "NHL":
 
-    st.subheader("NHL — Player Hit Rate Analysis")
-
     # --- Load NHL CSV automatically from repo ---
     try:
         nhl_df = pd.read_csv("nhl/data/nhlplayergamelogs.csv").fillna(0)
