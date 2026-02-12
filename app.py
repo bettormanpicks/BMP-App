@@ -970,15 +970,10 @@ elif sport_choice == "NHL":
                 inj_status_map=inj_status_map
             )
 
-        if recent_n:
-            key_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
+        key_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
 
-            nhl_out = nhl_all.merge(
-                nhl_recent,
-                on=key_cols,
-                how="left",
-                suffixes=("_ALL", f"_L{recent_n}")
-            )
+        if recent_n:
+            nhl_out = nhl_all.merge(nhl_recent, on=key_cols, how="left")
         else:
             nhl_out = nhl_all
 
@@ -996,6 +991,13 @@ elif sport_choice == "NHL":
                 "Team": st.column_config.Column(pinned="left"),
                 "Opp": st.column_config.Column(pinned="left"),
             }
+
+        base_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
+
+        stat_cols = sorted([c for c in nhl_out.columns if c not in base_cols])
+
+        ordered_cols = base_cols + stat_cols
+        nhl_out = nhl_out[ordered_cols]
 
             st.dataframe(
                 nhl_out,
