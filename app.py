@@ -117,7 +117,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     section[data-testid="stSidebar"] .stImage {{
         text-align: center;
         margin-left: 25px;
-        margin-top: -125px;
+        margin-top: -140px;
     }}
 
     /* Remove empty space below the page */
