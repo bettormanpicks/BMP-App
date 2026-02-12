@@ -846,6 +846,7 @@ elif sport_choice == "NHL":
     # --- Load NHL CSV automatically from repo ---
     try:
         nhl_df = pd.read_csv("nhl/data/nhlplayergamelogs.csv").fillna(0)
+        st.write("NHL rows loaded:", len(nhl_df))
         nhl_df.columns = dedupe_columns(nhl_df.columns)
     except Exception as e:
         st.error(f"Could not load nhlplayergamelogs.csv: {e}")
@@ -887,7 +888,8 @@ elif sport_choice == "NHL":
         nhl_stats_selected = st.multiselect(
             "Select Stats",
             nhl_stats_options,
-            default=nhl_stats_options
+            default=nhl_stats_options,
+            key=f"nhl_stats_{player_type_choice}"
         )
 
         # Hit Rate Percentage slider (like NBA)
