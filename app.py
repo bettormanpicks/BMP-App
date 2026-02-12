@@ -858,28 +858,28 @@ elif sport_choice == "NHL":
         key="nhl_player_type"
     )
 
-        # Skater / Goalie selection
-        if player_type_choice == "Skaters":
-            nhl_stats_options = ["G", "A", "P", "SOG", "H"]
-            stat_map = {
-                "TOI": "toi_minutes",
-                "G": "goals",
-                "A": "assists",
-                "P": "points",
-                "SOG": "shots",
-                "H": "hits",
-                "B": "blocks",
-                "PPP": "pp_points",
-                "FOW": "faceoffs_won"
-            }
-        else:
-            nhl_stats_options = ["SA", "GA", "SV", "SV%"]
-            stat_map = {
-                "SA": "shots_against",
-                "GA": "goals_against",
-                "SV": "saves",
-                "SV%": "save_pct"
-            }
+    # Skater / Goalie selection
+    if player_type_choice == "Skaters":
+        nhl_stats_options = ["G", "A", "P", "SOG", "H"]
+        stat_map = {
+            "TOI": "toi_minutes",
+            "G": "goals",
+            "A": "assists",
+            "P": "points",
+            "SOG": "shots",
+            "H": "hits",
+            "B": "blocks",
+            "PPP": "pp_points",
+            "FOW": "faceoffs_won"
+        }
+    else:
+        nhl_stats_options = ["SA", "GA", "SV", "SV%"]
+        stat_map = {
+            "SA": "shots_against",
+            "GA": "goals_against",
+            "SV": "saves",
+            "SV%": "save_pct"
+        }
 
     # --- Sidebar Form ---
     with st.sidebar.form(key="nhl_form"):
