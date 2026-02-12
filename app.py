@@ -875,7 +875,7 @@ elif sport_choice == "NHL":
 
         # Determine stats and stat map
         if player_type_choice == "Skaters":
-            nhl_stats_options = ["TOI", "G", "A", "P", "SOG", "H", "B", "PPP"]
+            nhl_stats_options = ["TOI", "G", "A", "P", "SOG", "H", "B", "PPP", "FOW"]
             stat_map = {
                 "TOI": "toi_minutes",
                 "G": "goals",
