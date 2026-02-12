@@ -851,16 +851,14 @@ elif sport_choice == "NHL":
         st.error(f"Could not load nhlplayergamelogs.csv: {e}")
         nhl_df = pd.DataFrame()
 
-    # --- Sidebar Form ---
-    with st.sidebar.form(key="nhl_form"):
-        
-        # Skater / Goalie selection
-        player_type_choice = st.radio(
-            "Player Type",
-            ["Skaters", "Goalies"],
-            index=0
-        )
+    # --- Player Type (REACTIVE) ---
+    player_type_choice = st.sidebar.radio(
+        "Player Type",
+        ["Skaters", "Goalies"],
+        key="nhl_player_type"
+    )
 
+        # Skater / Goalie selection
         if player_type_choice == "Skaters":
             nhl_stats_options = ["G", "A", "P", "SOG", "H"]
             stat_map = {
@@ -883,6 +881,9 @@ elif sport_choice == "NHL":
                 "SV%": "save_pct"
             }
 
+    # --- Sidebar Form ---
+    with st.sidebar.form(key="nhl_form"):
+        
         nhl_stats_selected = st.multiselect(
             "Select Stats",
             nhl_stats_options,
