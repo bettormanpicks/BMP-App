@@ -82,23 +82,33 @@ def analyze_nhl_players(
     nhl_stats_selected,
     stat_map,
     recent_n=None,
-    recent_pct=0.8,
+    recent_pct=None,           # Must be provided by caller (from slider)
     filter_teams=None,
     team_def_df=pd.DataFrame(),
-    player_type="Skaters",
+    player_type=None,           # Must be provided by caller (Skaters or Goalies)
     b2b_map=None,
     inj_status_map=None,
 ):
     """
     Main analysis engine for NHL players.
     Returns DataFrame ready for display.
+
+    nhl_df: raw uploaded CSV
+    nhl_stats_selected: list of stats user selected
+    stat_map: {"Display": "csv_column"}
+    recent_n: number of recent games to consider (None = all)
+    recent_pct: decimal pct (0-1), must come from sidebar
+    filter_teams: optional set of team codes to filter
+    team_def_df: optional dataframe with team defense (index=Team)
+    player_type: "Skaters" or "Goalies", must come from sidebar
+    b2b_map: optional dict {team: B2B status}
+    inj_status_map: optional dict {norm_name(player): status}
     """
+    if player_type is None or recent_pct is None:
+        raise ValueError("player_type and recent_pct must be provided by the caller.")
 
     nhl_df = nhl_df.copy().fillna(0)
     nhl_df.columns = dedupe_columns(nhl_df.columns)
-
-    # ✅ Convert game_date to datetime to ensure proper sorting
-    nhl_df['game_date'] = pd.to_datetime(nhl_df['game_date'], errors='coerce')
 
     if player_type == "Skaters":
         df_players = nhl_df[(nhl_df["is_goalie"] == False) & (nhl_df["toi_minutes"] > 8)].copy()
@@ -145,7 +155,7 @@ def analyze_nhl_players(
             else:
                 rec["GF_A"] = rec["GF_R"] = rec["SF_A"] = rec["SF_R"] = None
 
-        # ✅ Sort by game_date descending and slice recent_n if specified
+        # Recent form
         g = g.sort_values("game_date", ascending=False)
         if recent_n is not None:
             g = g.head(recent_n)
