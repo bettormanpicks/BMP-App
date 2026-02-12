@@ -154,7 +154,14 @@ def analyze_nhl_players(
         for stat, col in stat_map.items():
             if stat not in nhl_stats_selected:
                 continue
-            rec[f"{tag}{stat}@{int(recent_pct*100)}"] = hit_rate_threshold(g_sorted[col], recent_pct*100)
+            # Show baseline (ALL) as STAT@PCT, recent windows as L5STAT@PCT, etc.
+            pct_tag = int(recent_pct * 100)
+            if recent_n is None:
+                col_name = f"{stat}@{pct_tag}"
+            else:
+                col_name = f"L{recent_n}{stat}@{pct_tag}"
+
+            rec[col_name] = hit_rate_threshold(g[col], pct_tag)
 
         rows.append(rec)
 
