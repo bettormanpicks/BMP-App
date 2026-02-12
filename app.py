@@ -936,10 +936,10 @@ elif sport_choice == "NHL":
             get_nhl_teams_on_date(tomorrow)
         )
 
-        # Injuries (optional)
+        # injuries (optional for now)
         inj_status_map = {}
 
-        # Analyze all games (full season)
+        # --- ALL stats (full season) ---
         nhl_all = analyze_nhl_players(
             nhl_df,
             nhl_stats_selected,
@@ -953,11 +953,10 @@ elif sport_choice == "NHL":
             inj_status_map=inj_status_map
         )
 
-        # Determine recent window
+        # --- Recent window stats ---
         recent_map = {"L5": 5, "L10": 10, "ALL": None}
         recent_n = recent_map[nhl_player_window]
 
-        # Analyze recent games if needed
         if recent_n:
             nhl_recent = analyze_nhl_players(
                 nhl_df,
@@ -972,15 +971,15 @@ elif sport_choice == "NHL":
                 inj_status_map=inj_status_map
             )
 
-        # Key columns for merging
+        # --- Merge ALL + recent side by side ---
         key_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
 
-        # Merge full season and recent stats
         if recent_n:
             nhl_out = nhl_all.merge(
                 nhl_recent,
                 on=key_cols,
-                how="left"
+                how="left",
+                suffixes=("", f"_L{recent_n}")  # keeps ALL columns as stat@XX, recent as L5stat@XX
             )
         else:
             nhl_out = nhl_all
