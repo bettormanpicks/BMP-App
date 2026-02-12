@@ -160,10 +160,14 @@ def analyze_nhl_players(
         if recent_n is not None:
             g = g.head(recent_n)
 
+        # Determine column prefix
+        prefix = f"L{recent_n}" if recent_n else ""  # L5, L10, or "" for ALL
+
         for stat, col in stat_map.items():
             if stat not in nhl_stats_selected:
                 continue
-            rec[f"{stat}@{int(recent_pct*100)}"] = hit_rate_threshold(g[col], recent_pct*100)
+            col_name = f"{prefix}{stat}@{int(recent_pct*100)}" if prefix else f"{stat}@{int(recent_pct*100)}"
+            rec[col_name] = hit_rate_threshold(g[col], recent_pct*100)
 
         rows.append(rec)
 
