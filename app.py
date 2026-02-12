@@ -38,7 +38,23 @@ st.set_page_config(
     layout="wide"
 )
 
+############################################################
+# SPORT SELECTION
+############################################################
+sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL"]) #, "NFL", "NHL"])
+
 nba_today = get_nba_today()
+
+# Determine the title and date based on sport
+if sport_choice == "NBA":
+    hero_title = "NBA — Player Hit Rates"
+    hero_date = f"NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)"
+elif sport_choice == "NHL":
+    hero_title = "NHL — Player Hit Rates"
+    hero_date = f"NHL date: {datetime.now().strftime('%b %d')} (rolls over at 3:00 AM CT)"
+else:
+    hero_title = f"{sport_choice} — Player Hit Rates"
+    hero_date = f"{sport_choice} date: {datetime.now().strftime('%b %d')}"
 
 # ============================================================
 # HEADER BANNER (hero header with title + date)
@@ -157,8 +173,8 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
 
     <div class="hero-header">
         <div class="hero-text">
-            <div class="hero-title">NBA — Player Hit Rates</div>
-            <div class="hero-date">NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)</div>
+            <div class="hero-title">{hero_title}</div>
+            <div class="hero-date">{hero_date}</div>
         </div>
     </div>
     """, unsafe_allow_html=True)
@@ -416,11 +432,6 @@ def calc_nfl_pfr_hit_rates(
         results.append(row)
 
     return pd.DataFrame(results)
-
-############################################################
-# SPORT SELECTION
-############################################################
-sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL"]) #, "NFL", "NHL"])
 
 ############################################################
 # ===== NBA SECTION (Multi-sport compatible) =====
