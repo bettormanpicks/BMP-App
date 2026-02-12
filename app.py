@@ -861,7 +861,10 @@ elif sport_choice == "NHL":
 
     # Skater / Goalie selection
     if player_type_choice == "Skaters":
-        nhl_stats_options = ["G", "A", "P", "SOG", "H"]
+
+        all_stats = ["TOI","G","A","P","SOG","H","B","PPP","FOW"]
+        default_stats = ["G","A","P","SOG","H"]
+
         stat_map = {
             "TOI": "toi_minutes",
             "G": "goals",
@@ -873,8 +876,12 @@ elif sport_choice == "NHL":
             "PPP": "pp_points",
             "FOW": "faceoffs_won"
         }
+
     else:
-        nhl_stats_options = ["SA", "GA", "SV", "SV%"]
+
+        all_stats = ["SA","GA","SV","SV%"]
+        default_stats = ["SA","GA","SV","SV%"]
+
         stat_map = {
             "SA": "shots_against",
             "GA": "goals_against",
@@ -887,8 +894,8 @@ elif sport_choice == "NHL":
         
         nhl_stats_selected = st.multiselect(
             "Select Stats",
-            nhl_stats_options,
-            default=nhl_stats_options,
+            options=all_stats,
+            default=default_stats,
             key=f"nhl_stats_{player_type_choice}"
         )
 
@@ -974,3 +981,24 @@ elif sport_choice == "NHL":
             )
         else:
             nhl_out = nhl_all
+
+        if nhl_out.empty:
+            st.warning("No NHL players matched the criteria.")
+        else:
+            base_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
+
+            other_cols = [c for c in nhl_out.columns if c not in base_cols]
+            nhl_out = nhl_out[base_cols + other_cols]
+
+            col_config = {
+                "Player": st.column_config.Column(pinned="left"),
+                "Pos": st.column_config.Column(pinned="left"),
+                "Team": st.column_config.Column(pinned="left"),
+            }
+
+            st.dataframe(
+                nhl_out,
+                width="stretch",
+                hide_index=True,
+                column_config=col_config
+            )
