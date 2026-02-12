@@ -937,9 +937,10 @@ elif sport_choice == "NHL":
             get_nhl_teams_on_date(tomorrow)
         )
 
-        # injuries (optional for now)
+        # Injuries
         inj_status_map = {}
 
+        # Full-season stats
         nhl_all = analyze_nhl_players(
             nhl_df,
             nhl_stats_selected,
@@ -953,6 +954,7 @@ elif sport_choice == "NHL":
             inj_status_map=inj_status_map
         )
 
+        # Determine recent window
         recent_map = {"L5": 5, "L10": 10, "ALL": None}
         recent_n = recent_map[nhl_player_window]
 
@@ -970,21 +972,32 @@ elif sport_choice == "NHL":
                 inj_status_map=inj_status_map
             )
 
-        key_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
+        # Column definitions
+        base_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
+        opp_cols = ["GA_A", "GA_R", "SA_A", "SA_R"] if player_type_choice == "Skaters" else ["GF_A", "GF_R", "SF_A", "SF_R"]
+        all_stat_cols = [f"{stat}@{int(nhl_recent_pct*100)}" for stat in nhl_stats_selected]
+        recent_stat_cols = [f"L{recent_n}{stat}@{int(nhl_recent_pct*100)}" for stat in nhl_stats_selected if recent_n]
 
+        # Merge ALL + recent (if applicable)
         if recent_n:
-            nhl_out = nhl_all.merge(nhl_recent, on=key_cols, how="left")
+            nhl_out = nhl_all.merge(
+                nhl_recent,
+                on=base_cols,
+                how="left",
+                suffixes=("", f"_L{recent_n}")
+            )
         else:
             nhl_out = nhl_all
 
+        # Reorder columns
+        ordered_cols = base_cols + opp_cols + all_stat_cols + recent_stat_cols
+        nhl_out = nhl_out[[c for c in ordered_cols if c in nhl_out.columns]]
+
+        # Check for empty table
         if nhl_out.empty:
             st.warning("No NHL players matched the criteria.")
         else:
-            base_cols = ["Player", "Pos", "Team", "Opp", "B2B", "Status", "Gms"]
-
-            other_cols = [c for c in nhl_out.columns if c not in base_cols]
-            nhl_out = nhl_out[base_cols + other_cols]
-
+            # Column pinning
             col_config = {
                 "Player": st.column_config.Column(pinned="left"),
                 "Pos": st.column_config.Column(pinned="left"),
@@ -992,16 +1005,9 @@ elif sport_choice == "NHL":
                 "Opp": st.column_config.Column(pinned="left"),
             }
 
-        base_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
-
-        stat_cols = sorted([c for c in nhl_out.columns if c not in base_cols])
-
-        ordered_cols = base_cols + stat_cols
-        nhl_out = nhl_out[ordered_cols]
-
-        st.dataframe(
-            nhl_out,
-            width="stretch",
-            hide_index=True,
-            column_config=col_config
-        )
+            st.dataframe(
+                nhl_out,
+                width="stretch",
+                hide_index=True,
+                column_config=col_config
+            )
