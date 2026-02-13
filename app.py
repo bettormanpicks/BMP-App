@@ -919,15 +919,15 @@ elif sport_choice == "NHL":
     # Skater / Goalie selection
     if player_type_choice == "Skaters":
 
-        all_stats = ["TOI","G","A","P","SOG","H","B","PPP","FOW"]
-        default_stats = ["G","A","P","SOG","H"]
+        all_stats = ["TOI","G","A","P","S","H","B","PPP","FOW"]
+        default_stats = ["G","A","P","S","H"]
 
         stat_map = {
             "TOI": "toi_minutes",
             "G": "goals",
             "A": "assists",
             "P": "points",
-            "SOG": "shots",
+            "S": "shots",
             "H": "hits",
             "B": "blocks",
             "PPP": "pp_points",
