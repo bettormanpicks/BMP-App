@@ -909,46 +909,17 @@ elif sport_choice == "NHL":
         st.error(f"Could not load nhlplayergamelogs.csv: {e}")
         nhl_df = pd.DataFrame()
 
-    # --- Player Type (REACTIVE) ---
+    # --- Player Type (REACTIVE, stays outside form) ---
     player_type_choice = st.sidebar.radio(
         "Player Type",
         ["Skaters", "Goalies"],
         key="nhl_player_type"
     )
 
-    # Skater / Goalie selection
-    if player_type_choice == "Skaters":
-
-        all_stats = ["TOI","G","A","P","S","H","B","PPP","FOW"]
-        default_stats = ["G","A","P","S","H"]
-
-        stat_map = {
-            "TOI": "toi_minutes",
-            "G": "goals",
-            "A": "assists",
-            "P": "points",
-            "S": "shots",
-            "H": "hits",
-            "B": "blocks",
-            "PPP": "pp_points",
-            "FOW": "faceoffs_won"
-        }
-
-    else:
-
-        all_stats = ["SA","GA","SV","SV%"]
-        default_stats = ["SA","GA","SV","SV%"]
-
-        stat_map = {
-            "SA": "shots_against",
-            "GA": "goals_against",
-            "SV": "saves",
-            "SV%": "save_pct"
-        }
-
     # --- Sidebar Form ---
     with st.sidebar.form(key="nhl_form"):
-        
+
+        # Stats selection
         nhl_stats_selected = st.multiselect(
             "Select Stats",
             options=all_stats,
@@ -956,78 +927,65 @@ elif sport_choice == "NHL":
             key=f"nhl_stats_{player_type_choice}"
         )
 
-        # Hit Rate Percentage slider (like NBA)
+        # Hit Rate %
         nhl_percent_slider = st.slider("Hit Rate Percentage", min_value=40, max_value=100, step=5, value=80)
 
-        # Game Window
+        # Player Performance Window
         nhl_player_window = st.radio("Player Performance Window", ["L5", "L10", "ALL"], index=0)
-        nhl_recent_n = 5 if nhl_player_window == "L5" else 10 if nhl_player_window == "L10" else None
 
-        # Filter to today's teams
+        # --- NEW: Opponent Window (depends on player type) ---
+        opp_window_label = "Opponent Defensive Window" if player_type_choice == "Skaters" else "Opponent Offensive     Window"
+        nhl_opp_window = st.radio(
+            opp_window_label,
+            ["L5", "L10", "ALL"],
+            index=2  # default ALL
+        )
+
+        # Filter today's teams
         nhl_filter_today = st.checkbox("Filter To Today's Teams", value=False)
 
-        # --- Submit button ---
+        # Submit button
         submit_btn = st.form_submit_button("Calculate")
 
-    # --- Only run analysis after button click ---
+    # --- Run analysis after Calculate ---
     if submit_btn and not nhl_df.empty:
 
         nhl_recent_pct = nhl_percent_slider / 100.0
 
-        # Today's schedule
-        today_str = datetime.now().strftime("%Y-%m-%d")
-        nhl_todays, nhl_opp_map = get_nhl_todays_schedule(today_str)
+        # Map opponent window to recent_n
+        opp_recent_map = {"L5": 5, "L10": 10, "ALL": None}
+        opp_recent_n = opp_recent_map[nhl_opp_window]
 
-        # Team defense
-        try:
-            team_def = pd.read_csv("nhl/data/nhlteamgametotals.csv").set_index("Team")
-        except:
-            team_def = pd.DataFrame()
+        # Load team games
+        nhlteamgames_df = pd.read_csv("nhl/data/nhlteamgames.csv")
 
-        # B2B
-        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-        tomorrow = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
-
-        nhl_b2b_map = compute_nhl_b2b(
-            get_nhl_teams_on_date(today_str),
-            get_nhl_teams_on_date(yesterday),
-            get_nhl_teams_on_date(tomorrow)
-        )
-
-        # injuries (optional for now)
-        inj_status_map = {}
-
-        # --- ALL stats (full season) ---
-        nhl_all = analyze_nhl_players(
-            nhl_df,
-            nhl_stats_selected,
-            stat_map,
-            recent_n=None,
+        # Analyze players (player stats still compute ALL + recent automatically)
+        nhl_out = analyze_nhl_players(
+            nhl_df=nhl_df,
+            nhl_stats_selected=nhl_stats_selected,
+            stat_map=stat_map,
+            recent_n=None,  # player stats: ALL + recent handled inside helper
             recent_pct=nhl_recent_pct,
-            filter_teams=nhl_todays if nhl_filter_today else None,
-            team_def_df=team_def,
+            filter_teams=get_nhl_todays_schedule(datetime.now().strftime("%Y-%m-%d"))[0] if nhl_filter_today else     None,
+            nhlteamgames_df=nhlteamgames_df,  # opponent windowing
             player_type=player_type_choice,
             b2b_map=nhl_b2b_map,
             inj_status_map=inj_status_map
         )
 
-        # --- Recent window stats ---
-        recent_map = {"L5": 5, "L10": 10, "ALL": None}
-        recent_n = recent_map[nhl_player_window]
+        # --- Apply opponent windowing dynamically ---
+        if player_type_choice == "Skaters":
+            opp_cols = ["GA_A", "GA_R", "SA_A", "SA_R"]
+        else:
+            opp_cols = ["GF_A", "GF_R", "SF_A", "SF_R"]
 
-        if recent_n:
-            nhl_recent = analyze_nhl_players(
-                nhl_df,
-                nhl_stats_selected,
-                stat_map,
-                recent_n=recent_n,
-                recent_pct=nhl_recent_pct,
-                filter_teams=nhl_todays if nhl_filter_today else None,
-                team_def_df=team_def,
-                player_type=player_type_choice,
-                b2b_map=nhl_b2b_map,
-                inj_status_map=inj_status_map
-            )
+        # Only keep the opponent stats for the selected window
+        if opp_recent_n:
+            # compute opponent stats for last N games
+            nhl_out = nhl_out  # analyze_nhl_players() already calculates using nhlteamgames_df + window
+        else:
+            # ALL window, nothing to filter
+            pass
 
         # --- Merge ALL + recent side by side ---
         key_cols = ["Player", "Pos", "Team", "Gms", "Opp", "B2B", "Status"]
