@@ -136,7 +136,7 @@ def compute_opponent_window_stats(nhlteamgames_df, player_type="Skaters", window
     return team_def_df
 
 # -------------------------------
-# Player Analysis (with dynamic opponent window)
+# Player Analysis (with reactive opponent window)
 # -------------------------------
 def analyze_nhl_players(
     nhl_df,
@@ -148,8 +148,8 @@ def analyze_nhl_players(
     player_type=None,
     b2b_map=None,
     inj_status_map=None,
-    nhlteamgames_df=None,   # NEW: dataframe with each game row for each team
-    opp_recent_n=None       # NEW: number of recent games for opponent window
+    nhlteamgames_df=None,   # dataframe with every team/game row
+    opp_recent_n=None       # number of recent games for opponent window
 ):
     """
     Main analysis engine for NHL players with dynamic opponent window.
@@ -163,7 +163,7 @@ def analyze_nhl_players(
     player_type: "Skaters" or "Goalies"
     b2b_map: optional dict {team: B2B status}
     inj_status_map: optional dict {norm_name(player): status}
-    nhlteamgames_df: dataframe with every team/game row
+    nhlteamgames_df: dataframe with each team/game row
     opp_recent_n: opponent window (L5/L10/ALL)
     """
     if player_type is None or recent_pct is None:
@@ -182,37 +182,52 @@ def analyze_nhl_players(
     grouped = df_players.groupby(["player_id", "player_name", "team", "position"])
 
     # Precompute opponent stats if nhlteamgames_df and opp_recent_n are provided
+    opp_stats = {}
     if nhlteamgames_df is not None and opp_recent_n is not None:
         nhlteamgames_df = nhlteamgames_df.copy()
         nhlteamgames_df["game_date"] = pd.to_datetime(nhlteamgames_df["GAME_DATE"])
-        opp_stats = {}
 
-        # Group by team
         teams = nhlteamgames_df["TEAM"].unique()
+        opp_avgs = {}
+
+        # Compute averages per team
         for team in teams:
-            team_games = nhlteamgames_df[(nhlteamgames_df["TEAM"] == team)].sort_values(
-                "game_date", ascending=False
-            )
+            team_games = nhlteamgames_df[nhlteamgames_df["TEAM"] == team].sort_values("game_date", ascending=False)
             if opp_recent_n:
                 team_games = team_games.head(opp_recent_n)
 
             if player_type == "Skaters":
-                # Defensive window for opponent (Goals Against / Shots Against)
-                opp_stats[team] = {
+                opp_avgs[team] = {
                     "GA_A": team_games["GA"].mean(),
-                    "GA_R": int(team_games["GA"].mean().rank() if "GA" in team_games else 0),
-                    "SA_A": team_games["SA"].mean(),
-                    "SA_R": int(team_games["SA"].mean().rank() if "SA" in team_games else 0)
+                    "SA_A": team_games["SA"].mean()
                 }
             else:
-                # Offensive window for opponent (Goals For / Shots For)
-                opp_stats[team] = {
+                opp_avgs[team] = {
                     "GF_A": team_games["GF"].mean(),
-                    "GF_R": int(team_games["GF"].mean().rank() if "GF" in team_games else 0),
-                    "SF_A": team_games["SF"].mean(),
-                    "SF_R": int(team_games["SF"].mean().rank() if "SF" in team_games else 0)
+                    "SF_A": team_games["SF"].mean()
                 }
 
+        # Compute ranks across all teams
+        if player_type == "Skaters":
+            ga_series = pd.Series({t: v["GA_A"] for t, v in opp_avgs.items()})
+            sa_series = pd.Series({t: v["SA_A"] for t, v in opp_avgs.items()})
+            ga_rank = ga_series.rank(method="min", ascending=True).astype(int)
+            sa_rank = sa_series.rank(method="min", ascending=True).astype(int)
+            for t in teams:
+                opp_avgs[t]["GA_R"] = ga_rank[t]
+                opp_avgs[t]["SA_R"] = sa_rank[t]
+        else:
+            gf_series = pd.Series({t: v["GF_A"] for t, v in opp_avgs.items()})
+            sf_series = pd.Series({t: v["SF_A"] for t, v in opp_avgs.items()})
+            gf_rank = gf_series.rank(method="min", ascending=False).astype(int)
+            sf_rank = sf_series.rank(method="min", ascending=False).astype(int)
+            for t in teams:
+                opp_avgs[t]["GF_R"] = gf_rank[t]
+                opp_avgs[t]["SF_R"] = sf_rank[t]
+
+        opp_stats = opp_avgs
+
+    # --- Iterate players ---
     for (pid, name, team, pos), g in grouped:
 
         if filter_teams and team not in filter_teams:
@@ -227,13 +242,10 @@ def analyze_nhl_players(
         rec["Status"] = inj_status_map.get(norm_name(name), "A") if inj_status_map else "A"
 
         # Opponent team
-        opp = None
-        if "opp_map" in locals():
-            opp = filter_teams.get(team) if filter_teams else None
-        rec["Opp"] = opp or ""
+        rec["Opp"] = ""  # Optional: can fill if you have schedule mapping
 
-        # Attach opponent stats from precomputed window
-        if nhlteamgames_df is not None and opp_recent_n is not None and team in opp_stats:
+        # Attach opponent stats
+        if team in opp_stats:
             rec.update(opp_stats[team])
         else:
             if player_type == "Skaters":
