@@ -507,7 +507,7 @@ if sport_choice == "NBA":
         default_display = ["PTS", "REB", "AST", "PRA", "3PM", "3PA", "STL", "TOV"]
 
         stats_selected_display = st.multiselect(
-            "Choose stats",
+            "Select Stats",
             [name_map.get(c, c) for c in allowed_stats],
             default_display
         )
@@ -964,7 +964,7 @@ elif sport_choice == "NHL":
         nhl_recent_n = 5 if nhl_player_window == "L5" else 10 if nhl_player_window == "L10" else None
 
         # Filter to today's teams
-        nhl_filter_today = st.checkbox("Filter to today's teams", value=False)
+        nhl_filter_today = st.checkbox("Filter To Today's Teams", value=False)
 
         # --- Submit button ---
         submit_btn = st.form_submit_button("Calculate")
