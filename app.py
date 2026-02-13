@@ -235,32 +235,7 @@ nba_today = get_nba_today()
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
 
-# --------------------------
-# Detect screen width for responsive column pinning
-# --------------------------
-
-# Only run once
-if "screen_width" not in st.session_state:
-    st.session_state.screen_width = 1024  # default desktop width
-
-    # Inject JS to get window.innerWidth and send it back to Streamlit
-    st.components.v1.html(
-        """
-        <script>
-        const width = window.innerWidth;
-        const streamlitEvent = new CustomEvent("stScreenWidth", {detail: width});
-        document.dispatchEvent(streamlitEvent);
-
-        // Listen and update the Streamlit input
-        window.addEventListener("load", () => {
-            const pyFunc = window.parent.streamlitRerun;
-            if(pyFunc) { pyFunc(); }
-        });
-        </script>
-        """,
-        height=0,
-        width=0
-    )
+# Additional CSS tweaks
 
 
 
@@ -675,24 +650,12 @@ if sport_choice == "NBA":
         if sort_col in summary_df.columns:
             summary_df = summary_df.sort_values(sort_col, ascending=False)
 
-        # --------------------------
-        # Column pinning (responsive)
-        # --------------------------
-        width = st.session_state.get("screen_width", 1024)
-
-        if width < 768:
-            # Mobile: only pin Player
-            col_config = {
-                "Player": st.column_config.Column(pinned="left")
-            }
-        else:
-            # Desktop: pin 4 columns
-            col_config = {
-                "Player": st.column_config.Column(pinned="left"),
-                "Pos": st.column_config.Column(pinned="left"),
-                "Team": st.column_config.Column(pinned="left"),
-                "Opp": st.column_config.Column(pinned="left")
-            }
+        col_config = {
+            "Player": st.column_config.Column(pinned="left"),
+            "Pos": st.column_config.Column(pinned="left"),
+            "Team": st.column_config.Column(pinned="left"),
+            "Opp": st.column_config.Column(pinned="left"),
+        }
 
         st.dataframe(strip_display_ids(summary_df), width='stretch', hide_index=True, column_config=col_config)
 
@@ -1105,24 +1068,13 @@ elif sport_choice == "NHL":
             # Apply final column order
             nhl_out = nhl_out[[c for c in ordered_cols if c in nhl_out.columns]]
 
-            # --------------------------
-            # Column pinning (responsive)
-            # --------------------------
-            width = st.session_state.get("screen_width", 1024)
-
-            if width < 768:
-                # Mobile: only pin Player
-                col_config = {
-                    "Player": st.column_config.Column(pinned="left")
-                }
-            else:
-                # Desktop: pin 4 columns
-                col_config = {
-                    "Player": st.column_config.Column(pinned="left"),
-                    "Pos": st.column_config.Column(pinned="left"),
-                    "Team": st.column_config.Column(pinned="left"),
-                    "Opp": st.column_config.Column(pinned="left")
-                }
+            # Column pinning
+            col_config = {
+                "Player": st.column_config.Column(pinned="left"),
+                "Pos": st.column_config.Column(pinned="left"),
+                "Team": st.column_config.Column(pinned="left"),
+                "Opp": st.column_config.Column(pinned="left"),
+            }
 
             # Display dataframe
             st.dataframe(
