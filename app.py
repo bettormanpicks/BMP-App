@@ -30,32 +30,26 @@ from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 from nhl.helpers import get_nhl_todays_schedule, compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date, get_nhl_injuries
 from shared.utils import compute_hit_rates
 
+import streamlit as st
+
 st.markdown("""
 <style>
 
-/* ===== REMOVE FULLSCREEN ICON FROM SIDEBAR LOGO ===== */
+/* ===== REMOVE STREAMLIT FULLSCREEN TOOLBAR (GLOBAL) ===== */
 
-/* kill the hover toolbar container */
-section[data-testid="stSidebar"] [data-testid="stImage"] > div {
-    position: static !important;
-}
-
-/* remove the fullscreen overlay elements */
-section[data-testid="stSidebar"] [data-testid="stImage"] button,
-section[data-testid="stSidebar"] [data-testid="stImage"] svg,
-section[data-testid="stSidebar"] [data-testid="stImage"] [role="button"] {
+/* Hide the floating media toolbar entirely */
+div[data-testid="stElementToolbar"] {
     display: none !important;
-    visibility: hidden !important;
 }
 
-/* disable hover activation in sidebar only */
-section[data-testid="stSidebar"] [data-testid="stImage"] {
-    pointer-events: none !important;
+/* Extra safety — remove the fullscreen button specifically */
+button[aria-label="View fullscreen"] {
+    display: none !important;
 }
 
-/* but allow the actual image to still exist */
-section[data-testid="stSidebar"] [data-testid="stImage"] img {
-    pointer-events: auto !important;
+/* Prevent hover activation area */
+[data-testid="stElementToolbar"] * {
+    display: none !important;
 }
 
 </style>
@@ -1065,5 +1059,3 @@ elif sport_choice == "NHL":
                 hide_index=True,
                 column_config=col_config
             )
-
-
