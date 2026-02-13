@@ -30,6 +30,37 @@ from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 from nhl.helpers import get_nhl_todays_schedule, compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date, get_nhl_injuries
 from shared.utils import compute_hit_rates
 
+st.markdown("""
+<style>
+
+/* ===== REMOVE FULLSCREEN ICON FROM SIDEBAR LOGO ===== */
+
+/* kill the hover toolbar container */
+section[data-testid="stSidebar"] [data-testid="stImage"] > div {
+    position: static !important;
+}
+
+/* remove the fullscreen overlay elements */
+section[data-testid="stSidebar"] [data-testid="stImage"] button,
+section[data-testid="stSidebar"] [data-testid="stImage"] svg,
+section[data-testid="stSidebar"] [data-testid="stImage"] [role="button"] {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/* disable hover activation in sidebar only */
+section[data-testid="stSidebar"] [data-testid="stImage"] {
+    pointer-events: none !important;
+}
+
+/* but allow the actual image to still exist */
+section[data-testid="stSidebar"] [data-testid="stImage"] img {
+    pointer-events: auto !important;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 # ============================================================
 # PAGE CONFIG
 # ============================================================
@@ -37,39 +68,6 @@ st.set_page_config(
     page_title="Bettor Man Picks Stat Analyzer",
     layout="wide"
 )
-
-st.markdown("""
-<style>
-
-/* ---- Kill Streamlit image hover toolbar everywhere ---- */
-
-/* hides the hover overlay container */
-[data-testid="stImage"] div[role="button"] {
-    display: none !important;
-}
-
-/* hides the new fullscreen icon element */
-[data-testid="stImage"] button {
-    display: none !important;
-}
-
-/* Streamlit 1.30+ viewer icon (SVG overlay) */
-[data-testid="stImage"] svg {
-    display: none !important;
-}
-
-/* Prevent hover capture so it never triggers */
-[data-testid="stImage"] {
-    pointer-events: none !important;
-}
-
-/* but still allow the actual image to render normally */
-[data-testid="stImage"] img {
-    pointer-events: auto !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
 
 ############################################################
 # SPORT SELECTION
