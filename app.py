@@ -235,7 +235,32 @@ nba_today = get_nba_today()
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
 
-# Additional CSS tweaks
+# --------------------------
+# Detect screen width for responsive column pinning
+# --------------------------
+
+# Only run once
+if "screen_width" not in st.session_state:
+    st.session_state.screen_width = 1024  # default desktop width
+
+    # Inject JS to get window.innerWidth and send it back to Streamlit
+    st.components.v1.html(
+        """
+        <script>
+        const width = window.innerWidth;
+        const streamlitEvent = new CustomEvent("stScreenWidth", {detail: width});
+        document.dispatchEvent(streamlitEvent);
+
+        // Listen and update the Streamlit input
+        window.addEventListener("load", () => {
+            const pyFunc = window.parent.streamlitRerun;
+            if(pyFunc) { pyFunc(); }
+        });
+        </script>
+        """,
+        height=0,
+        width=0
+    )
 
 
 
@@ -651,24 +676,17 @@ if sport_choice == "NBA":
             summary_df = summary_df.sort_values(sort_col, ascending=False)
 
         # --------------------------
-        # Column pinning based on screen width
+        # Column pinning (responsive)
         # --------------------------
+        width = st.session_state.get("screen_width", 1024)
 
-        # Approximate mobile detection
-        # You can tweak the breakpoint (768) if needed
-        screen_width = st.experimental_get_query_params().get("screen_width", [1024])
-        try:
-            screen_width = int(screen_width[0])
-        except:
-            screen_width = 1024  # fallback to desktop width
-
-        if screen_width < 768:
-            # Mobile: only pin Player column
+        if width < 768:
+            # Mobile: only pin Player
             col_config = {
                 "Player": st.column_config.Column(pinned="left")
             }
         else:
-            # Desktop: pin Player, Pos, Team, Opp
+            # Desktop: pin 4 columns
             col_config = {
                 "Player": st.column_config.Column(pinned="left"),
                 "Pos": st.column_config.Column(pinned="left"),
@@ -1088,24 +1106,17 @@ elif sport_choice == "NHL":
             nhl_out = nhl_out[[c for c in ordered_cols if c in nhl_out.columns]]
 
             # --------------------------
-            # Column pinning based on screen width
+            # Column pinning (responsive)
             # --------------------------
+            width = st.session_state.get("screen_width", 1024)
 
-            # Approximate mobile detection
-            # You can tweak the breakpoint (768) if needed
-            screen_width = st.experimental_get_query_params().get("screen_width", [1024])
-            try:
-                screen_width = int(screen_width[0])
-            except:
-                screen_width = 1024  # fallback to desktop width
-
-            if screen_width < 768:
-                # Mobile: only pin Player column
+            if width < 768:
+                # Mobile: only pin Player
                 col_config = {
                     "Player": st.column_config.Column(pinned="left")
                 }
             else:
-                # Desktop: pin Player, Pos, Team, Opp
+                # Desktop: pin 4 columns
                 col_config = {
                     "Player": st.column_config.Column(pinned="left"),
                     "Pos": st.column_config.Column(pinned="left"),
