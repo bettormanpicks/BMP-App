@@ -194,7 +194,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
             color: #e5e7eb;
             padding: 0px 0px;
             border-radius: 2px;
-            margin-top: -10px;
+            margin-top: -20px;
             margin-bottom: 0px;
             font-size: 14px;
             text-align: center;
