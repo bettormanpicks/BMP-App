@@ -192,10 +192,10 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
         .mobile-hint {{
             background: #111827;
             color: #e5e7eb;
-            padding: 10px 14px;
-            border-radius: 8px;
-            margin-top: 8px;
-            margin-bottom: 14px;
+            padding: 5px 7px;
+            border-radius: 4px;
+            margin-top: 4px;
+            margin-bottom: 7px;
             font-size: 14px;
             text-align: center;
             border: 1px solid #374151;
@@ -224,7 +224,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
     </div>
 
     <div class="mobile-hint">
-    ⬅ Tap the arrow in the top-left to open filters and projections
+    ⬅ Tap the arrow in the top-left to open filters
     </div>
     """, unsafe_allow_html=True)
 
