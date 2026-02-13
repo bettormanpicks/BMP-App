@@ -30,31 +30,6 @@ from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 from nhl.helpers import get_nhl_todays_schedule, compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date, get_nhl_injuries
 from shared.utils import compute_hit_rates
 
-import streamlit as st
-
-st.markdown("""
-<style>
-
-/* ===== REMOVE STREAMLIT FULLSCREEN TOOLBAR (GLOBAL) ===== */
-
-/* Hide the floating media toolbar entirely */
-div[data-testid="stElementToolbar"] {
-    display: none !important;
-}
-
-/* Extra safety — remove the fullscreen button specifically */
-button[aria-label="View fullscreen"] {
-    display: none !important;
-}
-
-/* Prevent hover activation area */
-[data-testid="stElementToolbar"] * {
-    display: none !important;
-}
-
-</style>
-""", unsafe_allow_html=True)
-
 # ============================================================
 # PAGE CONFIG
 # ============================================================
@@ -97,6 +72,23 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
 
     st.markdown(f"""
     <style>
+    /* ===== REMOVE STREAMLIT FULLSCREEN TOOLBAR (GLOBAL) ===== */
+
+    /* Hide the floating media toolbar entirely */
+    div[data-testid="stElementToolbar"] {{
+        display: none !important;
+    }}
+
+    /* Extra safety — remove the fullscreen button specifically */
+    button[aria-label="View fullscreen"] {{
+        display: none !important;
+    }}
+
+    /* Prevent hover activation area */
+    [data-testid="stElementToolbar"] * {{
+        display: none !important;
+    }}
+
     /* --- HERO HEADER --- */
     .hero-header {{
         position: relative;
@@ -194,6 +186,34 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
         }}
 
     }}
+
+    /* Mobile-only instruction banner */
+    @media (max-width: 768px) {{
+        .mobile-hint {{
+            background: #111827;
+            color: #e5e7eb;
+            padding: 10px 14px;
+            border-radius: 8px;
+            margin-top: 8px;
+            margin-bottom: 14px;
+            font-size: 14px;
+            text-align: center;
+            border: 1px solid #374151;
+            animation: pulseHint 1.8s ease-in-out infinite alternate;
+        }}
+
+        @keyframes pulseHint {{
+            from {{ opacity: 0.65; }}
+            to   {{ opacity: 1.0; }}
+        }}
+    }}
+
+    /* Hide on desktop */
+    @media (min-width: 769px) {{
+        .mobile-hint {{
+            display: none;
+        }}
+    }}
     </style>
 
     <div class="hero-header">
@@ -201,6 +221,10 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
             <div class="hero-title">{hero_title}</div>
             <div class="hero-date">{hero_date}</div>
         </div>
+    </div>
+
+    <div class="mobile-hint">
+    ⬅ Tap the arrow in the top-left to open filters and projections
     </div>
     """, unsafe_allow_html=True)
 
