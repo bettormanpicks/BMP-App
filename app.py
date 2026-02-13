@@ -41,19 +41,31 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-/* Remove Streamlit image fullscreen/expand button */
-button[title="View fullscreen"] {
+/* ---- Kill Streamlit image hover toolbar everywhere ---- */
+
+/* hides the hover overlay container */
+[data-testid="stImage"] div[role="button"] {
     display: none !important;
 }
 
-/* Also prevents hover overlay from capturing mouse focus */
-[data-testid="stImage"] {
-    pointer-events: none;
+/* hides the new fullscreen icon element */
+[data-testid="stImage"] button {
+    display: none !important;
 }
 
-/* But keep links clickable if you ever wrap an image in one */
+/* Streamlit 1.30+ viewer icon (SVG overlay) */
+[data-testid="stImage"] svg {
+    display: none !important;
+}
+
+/* Prevent hover capture so it never triggers */
+[data-testid="stImage"] {
+    pointer-events: none !important;
+}
+
+/* but still allow the actual image to render normally */
 [data-testid="stImage"] img {
-    pointer-events: auto;
+    pointer-events: auto !important;
 }
 
 </style>
