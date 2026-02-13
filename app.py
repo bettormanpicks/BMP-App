@@ -174,7 +174,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
 
         .hero-date {{
             font-size: 13px !important;
-            margin-bottom: 12px;
+            margin-bottom: 2px;
         }}
     }}
 
