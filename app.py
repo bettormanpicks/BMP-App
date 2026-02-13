@@ -650,12 +650,31 @@ if sport_choice == "NBA":
         if sort_col in summary_df.columns:
             summary_df = summary_df.sort_values(sort_col, ascending=False)
 
-        col_config = {
-            "Player": st.column_config.Column(pinned="left"),
-            "Pos": st.column_config.Column(pinned="left"),
-            "Team": st.column_config.Column(pinned="left"),
-            "Opp": st.column_config.Column(pinned="left"),
-        }
+        # --------------------------
+        # Column pinning based on screen width
+        # --------------------------
+
+        # Approximate mobile detection
+        # You can tweak the breakpoint (768) if needed
+        screen_width = st.experimental_get_query_params().get("screen_width", [1024])
+        try:
+            screen_width = int(screen_width[0])
+        except:
+            screen_width = 1024  # fallback to desktop width
+
+        if screen_width < 768:
+            # Mobile: only pin Player column
+            col_config = {
+                "Player": st.column_config.Column(pinned="left")
+            }
+        else:
+            # Desktop: pin Player, Pos, Team, Opp
+            col_config = {
+                "Player": st.column_config.Column(pinned="left"),
+                "Pos": st.column_config.Column(pinned="left"),
+                "Team": st.column_config.Column(pinned="left"),
+                "Opp": st.column_config.Column(pinned="left")
+            }
 
         st.dataframe(strip_display_ids(summary_df), width='stretch', hide_index=True, column_config=col_config)
 
@@ -1068,13 +1087,31 @@ elif sport_choice == "NHL":
             # Apply final column order
             nhl_out = nhl_out[[c for c in ordered_cols if c in nhl_out.columns]]
 
-            # Column pinning
-            col_config = {
-                "Player": st.column_config.Column(pinned="left"),
-                "Pos": st.column_config.Column(pinned="left"),
-                "Team": st.column_config.Column(pinned="left"),
-                "Opp": st.column_config.Column(pinned="left"),
-            }
+            # --------------------------
+            # Column pinning based on screen width
+            # --------------------------
+
+            # Approximate mobile detection
+            # You can tweak the breakpoint (768) if needed
+            screen_width = st.experimental_get_query_params().get("screen_width", [1024])
+            try:
+                screen_width = int(screen_width[0])
+            except:
+                screen_width = 1024  # fallback to desktop width
+
+            if screen_width < 768:
+                # Mobile: only pin Player column
+                col_config = {
+                    "Player": st.column_config.Column(pinned="left")
+                }
+            else:
+                # Desktop: pin Player, Pos, Team, Opp
+                col_config = {
+                    "Player": st.column_config.Column(pinned="left"),
+                    "Pos": st.column_config.Column(pinned="left"),
+                    "Team": st.column_config.Column(pinned="left"),
+                    "Opp": st.column_config.Column(pinned="left")
+                }
 
             # Display dataframe
             st.dataframe(
