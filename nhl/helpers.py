@@ -73,9 +73,8 @@ def compute_nhl_b2b(teams_today, teams_yesterday, teams_tomorrow):
             b2b[team] = "N"
     return b2b
 
-
 # -------------------------------
-# Player Analysis
+# Player Analysis (New Version)
 # -------------------------------
 def analyze_nhl_players(
     nhl_df,
@@ -84,23 +83,22 @@ def analyze_nhl_players(
     recent_n=None,
     recent_pct=None,           # Must be provided by caller (from slider)
     filter_teams=None,
-    team_def_df=pd.DataFrame(),
+    team_games_csv="nhl/data/nhlteamgames.csv",  # New CSV path
     player_type=None,           # Must be provided by caller (Skaters or Goalies)
     b2b_map=None,
     inj_status_map=None,
 ):
     """
-    Main analysis engine for NHL players.
-    Returns DataFrame ready for display.
+    Main analysis engine for NHL players with dynamic opponent stats.
 
-    nhl_df: raw uploaded CSV
+    nhl_df: raw uploaded CSV (players)
     nhl_stats_selected: list of stats user selected
     stat_map: {"Display": "csv_column"}
-    recent_n: number of recent games to consider (None = all)
+    recent_n: number of recent games to consider for player (None = all)
     recent_pct: decimal pct (0-1), must come from sidebar
     filter_teams: optional set of team codes to filter
-    team_def_df: optional dataframe with team defense (index=Team)
-    player_type: "Skaters" or "Goalies", must come from sidebar
+    team_games_csv: path to nhlteamgames.csv
+    player_type: "Skaters" or "Goalies"
     b2b_map: optional dict {team: B2B status}
     inj_status_map: optional dict {norm_name(player): status}
     """
@@ -110,10 +108,19 @@ def analyze_nhl_players(
     nhl_df = nhl_df.copy().fillna(0)
     nhl_df.columns = dedupe_columns(nhl_df.columns)
 
+    # -------------------------------
+    # Filter by player type & TOI
+    # -------------------------------
     if player_type == "Skaters":
         df_players = nhl_df[(nhl_df["is_goalie"] == False) & (nhl_df["toi_minutes"] > 8)].copy()
     else:
         df_players = nhl_df[(nhl_df["is_goalie"] == True) & (nhl_df["toi_minutes"] > 40)].copy()
+
+    # -------------------------------
+    # Load team game log for opponent stats
+    # -------------------------------
+    team_games_df = pd.read_csv(team_games_csv)
+    team_games_df["GAME_DATE"] = pd.to_datetime(team_games_df["GAME_DATE"])
 
     rows = []
     grouped = df_players.groupby(["player_id", "player_name", "team", "position"])
@@ -132,42 +139,59 @@ def analyze_nhl_players(
         rec["Status"] = inj_status_map.get(norm_name(name), "A") if inj_status_map else "A"
 
         # Opponent
-        opp = None
-        if "opp_map" in locals():
-            opp = filter_teams.get(team) if filter_teams else None
+        opp = g["opponent"].iloc[-1] if "opponent" in g.columns else None
         rec["Opp"] = opp or ""
 
-        # Attach opponent defense
-        if not team_def_df.empty and opp in team_def_df.index:
-            if player_type == "Skaters":
-                rec["GA_A"] = team_def_df.loc[opp, "GA_A"]
-                rec["GA_R"] = int(team_def_df.loc[opp, "GA_R"])
-                rec["SA_A"] = team_def_df.loc[opp, "SA_A"]
-                rec["SA_R"] = int(team_def_df.loc[opp, "SA_R"])
+        # -------------------------------
+        # Attach opponent stats (dynamic, windowed)
+        # -------------------------------
+        if opp:
+            # Filter nhlteamgames for opponent
+            opp_rows = team_games_df[team_games_df["TEAM"] == opp].sort_values("GAME_DATE", ascending=False)
+
+            # Apply recent_n window if provided
+            if recent_n is not None:
+                opp_rows = opp_rows.head(recent_n)
+
+            # Compute averages & ranks
+            if not opp_rows.empty:
+                if player_type == "Skaters":
+                    rec["GA_A"] = round(opp_rows["GF"].mean(), 2)
+                    rec["SA_A"] = round(opp_rows["SF"].mean(), 2)
+                    rec["GA_R"] = int(opp_rows["GF"].rank(method="min", ascending=True).iloc[-1])
+                    rec["SA_R"] = int(opp_rows["SF"].rank(method="min", ascending=True).iloc[-1])
+                else:
+                    rec["GF_A"] = round(opp_rows["GF"].mean(), 2)
+                    rec["SF_A"] = round(opp_rows["SF"].mean(), 2)
+                    rec["GF_R"] = int(opp_rows["GF"].rank(method="min", ascending=False).iloc[-1])
+                    rec["SF_R"] = int(opp_rows["SF"].rank(method="min", ascending=False).iloc[-1])
             else:
-                rec["GF_A"] = team_def_df.loc[opp, "GF_A"]
-                rec["GF_R"] = int(team_def_df.loc[opp, "GF_R"])
-                rec["SF_A"] = team_def_df.loc[opp, "SF_A"]
-                rec["SF_R"] = int(team_def_df.loc[opp, "SF_R"])
+                # fallback if no data
+                if player_type == "Skaters":
+                    rec["GA_A"] = rec["GA_R"] = rec["SA_A"] = rec["SA_R"] = None
+                else:
+                    rec["GF_A"] = rec["GF_R"] = rec["SF_A"] = rec["SF_R"] = None
         else:
+            # fallback if no opponent
             if player_type == "Skaters":
                 rec["GA_A"] = rec["GA_R"] = rec["SA_A"] = rec["SA_R"] = None
             else:
                 rec["GF_A"] = rec["GF_R"] = rec["SF_A"] = rec["SF_R"] = None
 
-        # Recent form
-        g = g.sort_values("game_date", ascending=False)
+        # -------------------------------
+        # Recent form / hit rate thresholds
+        # -------------------------------
+        g_sorted = g.sort_values("game_date", ascending=False)
         if recent_n is not None:
-            g = g.head(recent_n)
+            g_sorted = g_sorted.head(recent_n)
 
-        # Determine column prefix
-        prefix = f"L{recent_n}" if recent_n else ""  # L5, L10, or "" for ALL
+        prefix = f"L{recent_n}" if recent_n else ""  # L5, L10, or ALL
 
         for stat, col in stat_map.items():
             if stat not in nhl_stats_selected:
                 continue
             col_name = f"{prefix}{stat}@{int(recent_pct*100)}" if prefix else f"{stat}@{int(recent_pct*100)}"
-            rec[col_name] = hit_rate_threshold(g[col], recent_pct*100)
+            rec[col_name] = hit_rate_threshold(g_sorted[col], recent_pct*100)
 
         rows.append(rec)
 
