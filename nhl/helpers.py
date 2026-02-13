@@ -136,47 +136,35 @@ def compute_opponent_window_stats(nhlteamgames_df, player_type="Skaters", window
     return team_def_df
 
 # -------------------------------
-# Player Analysis
+# Player Analysis (with dynamic opponent window)
 # -------------------------------
 def analyze_nhl_players(
     nhl_df,
     nhl_stats_selected,
     stat_map,
     recent_n=None,
-    recent_pct=None,           # decimal from sidebar (0-1)
+    recent_pct=None,
     filter_teams=None,
-    nhlteamgames_df=None,      # the new nhlteamgames.csv
-    player_type=None,          # "Skaters" or "Goalies"
+    player_type=None,
     b2b_map=None,
     inj_status_map=None,
+    nhlteamgames_df=None,   # NEW: dataframe with each game row for each team
+    opp_recent_n=None       # NEW: number of recent games for opponent window
 ):
     """
-    Main NHL player analysis engine with dynamic opponent windowing.
+    Main analysis engine for NHL players with dynamic opponent window.
 
-    Returns a DataFrame ready for display.
-
-    Parameters
-    ----------
-    nhl_df : DataFrame
-        Raw NHL player game logs
-    nhl_stats_selected : list
-        Stats selected by the user (ex: ["G","A","SOG"])
-    stat_map : dict
-        {"Display Name": "CSV Column Name"}
-    recent_n : int or None
-        Recent window (5, 10, or None for ALL)
-    recent_pct : float
-        Hit rate decimal (0-1)
-    filter_teams : set
-        Optional set of teams to include
-    nhlteamgames_df : DataFrame
-        Team-level game logs (for opponent windowing)
-    player_type : str
-        "Skaters" or "Goalies"
-    b2b_map : dict
-        Optional B2B status per team
-    inj_status_map : dict
-        Optional injury status per player
+    nhl_df: raw uploaded CSV
+    nhl_stats_selected: list of stats user selected
+    stat_map: {"Display": "csv_column"}
+    recent_n: player performance window (L5/L10/ALL)
+    recent_pct: decimal pct (0-1)
+    filter_teams: optional set of team codes to filter
+    player_type: "Skaters" or "Goalies"
+    b2b_map: optional dict {team: B2B status}
+    inj_status_map: optional dict {norm_name(player): status}
+    nhlteamgames_df: dataframe with every team/game row
+    opp_recent_n: opponent window (L5/L10/ALL)
     """
     if player_type is None or recent_pct is None:
         raise ValueError("player_type and recent_pct must be provided by the caller.")
@@ -184,23 +172,46 @@ def analyze_nhl_players(
     nhl_df = nhl_df.copy().fillna(0)
     nhl_df.columns = dedupe_columns(nhl_df.columns)
 
-    # Filter players by type
+    # Filter by player type & TOI
     if player_type == "Skaters":
         df_players = nhl_df[(nhl_df["is_goalie"] == False) & (nhl_df["toi_minutes"] > 8)].copy()
     else:
         df_players = nhl_df[(nhl_df["is_goalie"] == True) & (nhl_df["toi_minutes"] > 40)].copy()
 
-    # Compute dynamic opponent window stats if team games provided
-    team_def_df = pd.DataFrame()
-    if nhlteamgames_df is not None:
-        team_def_df = compute_opponent_window_stats(
-            nhlteamgames_df=nhlteamgames_df,
-            player_type=player_type,
-            window_n=recent_n  # L5, L10, or None for ALL
-        )
-
     rows = []
     grouped = df_players.groupby(["player_id", "player_name", "team", "position"])
+
+    # Precompute opponent stats if nhlteamgames_df and opp_recent_n are provided
+    if nhlteamgames_df is not None and opp_recent_n is not None:
+        nhlteamgames_df = nhlteamgames_df.copy()
+        nhlteamgames_df["game_date"] = pd.to_datetime(nhlteamgames_df["GAME_DATE"])
+        opp_stats = {}
+
+        # Group by team
+        teams = nhlteamgames_df["TEAM"].unique()
+        for team in teams:
+            team_games = nhlteamgames_df[(nhlteamgames_df["TEAM"] == team)].sort_values(
+                "game_date", ascending=False
+            )
+            if opp_recent_n:
+                team_games = team_games.head(opp_recent_n)
+
+            if player_type == "Skaters":
+                # Defensive window for opponent (Goals Against / Shots Against)
+                opp_stats[team] = {
+                    "GA_A": team_games["GA"].mean(),
+                    "GA_R": int(team_games["GA"].mean().rank() if "GA" in team_games else 0),
+                    "SA_A": team_games["SA"].mean(),
+                    "SA_R": int(team_games["SA"].mean().rank() if "SA" in team_games else 0)
+                }
+            else:
+                # Offensive window for opponent (Goals For / Shots For)
+                opp_stats[team] = {
+                    "GF_A": team_games["GF"].mean(),
+                    "GF_R": int(team_games["GF"].mean().rank() if "GF" in team_games else 0),
+                    "SF_A": team_games["SF"].mean(),
+                    "SF_R": int(team_games["SF"].mean().rank() if "SF" in team_games else 0)
+                }
 
     for (pid, name, team, pos), g in grouped:
 
@@ -215,46 +226,35 @@ def analyze_nhl_players(
         # Injury status
         rec["Status"] = inj_status_map.get(norm_name(name), "A") if inj_status_map else "A"
 
-        # Attach opponent defense/offense based on window
-        if not team_def_df.empty and team in team_def_df.index:
-            if player_type == "Skaters":
-                rec["GA_A"] = team_def_df.loc[team, "GA_A"]
-                rec["GA_R"] = int(team_def_df.loc[team, "GA_R"])
-                rec["SA_A"] = team_def_df.loc[team, "SA_A"]
-                rec["SA_R"] = int(team_def_df.loc[team, "SA_R"])
-            else:
-                rec["GF_A"] = team_def_df.loc[team, "GF_A"]
-                rec["GF_R"] = int(team_def_df.loc[team, "GF_R"])
-                rec["SF_A"] = team_def_df.loc[team, "SF_A"]
-                rec["SF_R"] = int(team_def_df.loc[team, "SF_R"])
-        else:
-            # fallback if no team_def_df
-            if player_type == "Skaters":
-                rec["GA_A"] = rec["GA_R"] = rec["SA_A"] = rec["SA_R"] = None
-            else:
-                rec["GF_A"] = rec["GF_R"] = rec["SF_A"] = rec["SF_R"] = None
+        # Opponent team
+        opp = None
+        if "opp_map" in locals():
+            opp = filter_teams.get(team) if filter_teams else None
+        rec["Opp"] = opp or ""
 
-        # --- Player stat hit rates ---
-        # ALL games
-        g_all = g.sort_values("game_date", ascending=False)
-        prefix_all = ""
+        # Attach opponent stats from precomputed window
+        if nhlteamgames_df is not None and opp_recent_n is not None and team in opp_stats:
+            rec.update(opp_stats[team])
+        else:
+            if player_type == "Skaters":
+                rec.update({"GA_A": None, "GA_R": None, "SA_A": None, "SA_R": None})
+            else:
+                rec.update({"GF_A": None, "GF_R": None, "SF_A": None, "SF_R": None})
+
+        # Player recent form
+        g_sorted = g.sort_values("game_date", ascending=False)
+        if recent_n is not None:
+            g_sorted = g_sorted.head(recent_n)
+
+        prefix = f"L{recent_n}" if recent_n else ""  # L5/L10 or "" for ALL
+
+        # Compute hit rate thresholds
         for stat, col in stat_map.items():
             if stat not in nhl_stats_selected:
                 continue
-            col_name_all = f"{stat}@{int(recent_pct*100)}"
-            rec[col_name_all] = hit_rate_threshold(g_all[col], recent_pct*100)
-
-        # Recent window
-        if recent_n is not None:
-            g_recent = g_all.head(recent_n)
-            prefix_recent = f"L{recent_n}"
-            for stat, col in stat_map.items():
-                if stat not in nhl_stats_selected:
-                    continue
-                col_name_recent = f"{prefix_recent}{stat}@{int(recent_pct*100)}"
-                rec[col_name_recent] = hit_rate_threshold(g_recent[col], recent_pct*100)
+            col_name = f"{prefix}{stat}@{int(recent_pct*100)}" if prefix else f"{stat}@{int(recent_pct*100)}"
+            rec[col_name] = hit_rate_threshold(g_sorted[col], recent_pct*100)
 
         rows.append(rec)
 
-    df_out = pd.DataFrame(rows)
-    return df_out
+    return pd.DataFrame(rows)
