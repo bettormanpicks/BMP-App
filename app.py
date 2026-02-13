@@ -38,6 +38,27 @@ st.set_page_config(
     layout="wide"
 )
 
+st.markdown("""
+<style>
+
+/* Remove Streamlit image fullscreen/expand button */
+button[title="View fullscreen"] {
+    display: none !important;
+}
+
+/* Also prevents hover overlay from capturing mouse focus */
+[data-testid="stImage"] {
+    pointer-events: none;
+}
+
+/* But keep links clickable if you ever wrap an image in one */
+[data-testid="stImage"] img {
+    pointer-events: auto;
+}
+
+</style>
+""", unsafe_allow_html=True)
+
 ############################################################
 # SPORT SELECTION
 ############################################################
