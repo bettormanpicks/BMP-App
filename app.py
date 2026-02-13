@@ -967,7 +967,7 @@ elif sport_choice == "NHL":
         nhl_opp_window = st.radio(
             opp_window_label,
             ["L5", "L10", "ALL"],
-            index=2  # default ALL
+            index=0
         )
 
         nhl_filter_today = st.checkbox("Filter To Today's Teams", value=False)
