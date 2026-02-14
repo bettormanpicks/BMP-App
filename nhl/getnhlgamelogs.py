@@ -2,12 +2,13 @@ import requests
 import pandas as pd
 import time
 import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 from datetime import datetime, timedelta
 
 # -------------------------------------------------
 # CONFIG
 # -------------------------------------------------
-OUTPUT_CSV = r"data\nhlplayergamelogs.csv"
+OUTPUT_CSV = "nhl/data/nhlplayergamelogs.csv"
 
 API_BASE = "https://api-web.nhle.com/v1/gamecenter/{}/boxscore"
 SLEEP_SECONDS = 0.25

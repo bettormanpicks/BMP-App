@@ -1,10 +1,12 @@
 import pandas as pd
+import os
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 # -----------------------------
 # INPUT / OUTPUT
 # -----------------------------
-INPUT_CSV = r"data\nhlplayergamelogs.csv"
-OUTPUT_CSV = r"data\nhlteamgametotals.csv"
+INPUT_CSV = "nhl/data/nhlplayergamelogs.csv"
+OUTPUT_CSV = "nhl/data/nhlteamgametotals.csv"
 
 # -----------------------------
 # Load NHL player games
