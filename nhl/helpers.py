@@ -185,14 +185,23 @@ def analyze_nhl_players(
     opp_stats = {}
     if nhlteamgames_df is not None and opp_recent_n is not None:
         nhlteamgames_df = nhlteamgames_df.copy()
-        nhlteamgames_df["game_date"] = pd.to_datetime(nhlteamgames_df["GAME_DATE"])
+    
+        # Convert GAME_DATE to datetime, then take only the date (discard time)
+        nhlteamgames_df["game_date"] = pd.to_datetime(
+            nhlteamgames_df["GAME_DATE"], errors="coerce", infer_datetime_format=True
+        ).dt.date
+
+        # Drop rows that couldn't be parsed
+        nhlteamgames_df = nhlteamgames_df.dropna(subset=["game_date"])
 
         teams = nhlteamgames_df["TEAM"].unique()
         opp_avgs = {}
 
         # Compute averages per team
         for team in teams:
-            team_games = nhlteamgames_df[nhlteamgames_df["TEAM"] == team].sort_values("game_date", ascending=False)
+            team_games = nhlteamgames_df[nhlteamgames_df["TEAM"] == team].sort_values(
+                "game_date", ascending=False
+            )
             if opp_recent_n:
                 team_games = team_games.head(opp_recent_n)
 
