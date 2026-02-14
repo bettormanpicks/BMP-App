@@ -1,14 +1,17 @@
 import requests
 import pandas as pd
 import time
-import os
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+from pathlib import Path
 from datetime import datetime, timedelta
 
 # -------------------------------------------------
-# CONFIG
+# PATH SETUP (GitHub Actions safe)
 # -------------------------------------------------
-OUTPUT_CSV = "nhl/data/nhlplayergamelogs.csv"
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+OUTPUT_CSV = DATA_DIR / "nhlplayergamelogs.csv"
 
 API_BASE = "https://api-web.nhle.com/v1/gamecenter/{}/boxscore"
 SLEEP_SECONDS = 0.25
@@ -45,10 +48,30 @@ def fetch_game_ids(start_date, end_date):
 
     return sorted(game_ids)
 
-SEASON_START = datetime(2025, 10, 7)   # adjust if needed
-TODAY = datetime.now()
+# -------------------------------------------------
+# Determine what dates need updating
+# -------------------------------------------------
+today = datetime.utcnow().date()
+yesterday = today - timedelta(days=1)
 
-game_ids = fetch_game_ids(SEASON_START, TODAY)
+# default: only check yesterday
+start_date = yesterday
+end_date = today
+
+# If file exists, resume from last recorded game
+if OUTPUT_CSV.exists():
+    df_existing = pd.read_csv(OUTPUT_CSV, usecols=["game_date"])
+    if not df_existing.empty:
+        last_date = pd.to_datetime(df_existing["game_date"]).dt.date.max()
+        start_date = last_date
+
+print(f"Fetching games from {start_date} to {end_date}")
+
+game_ids = fetch_game_ids(
+    datetime.combine(start_date, datetime.min.time()),
+    datetime.combine(end_date, datetime.min.time())
+)
+
 print(f"Discovered {len(game_ids)} games via schedule API.")
 
 # -------------------------------------------------
@@ -56,7 +79,7 @@ print(f"Discovered {len(game_ids)} games via schedule API.")
 # -------------------------------------------------
 processed_games = set()
 
-if os.path.exists(OUTPUT_CSV):
+if OUTPUT_CSV.exists():
     existing = pd.read_csv(OUTPUT_CSV, usecols=["game_id"])
     processed_games = set(existing["game_id"].unique())
     print(f"Resuming — {len(processed_games)} games already processed.")
@@ -69,8 +92,8 @@ game_ids = [
 print(f"{len(game_ids)} new games to process.")
 
 write_header = (
-    not os.path.exists(OUTPUT_CSV)
-    or os.path.getsize(OUTPUT_CSV) == 0
+    not OUTPUT_CSV.exists()
+    or OUTPUT_CSV.stat().st_size == 0
 )
 
 # -------------------------------------------------
@@ -232,6 +255,5 @@ if rows:
 
 print(f"\n[SUCCESS] NHL player game data written to:\n{OUTPUT_CSV}")
 
-import os
-print("File exists:", os.path.exists(OUTPUT_CSV))
-print("Absolute path:", os.path.abspath(OUTPUT_CSV))
+print("File exists:", OUTPUT_CSV.exists())
+print(f"Absolute path: {OUTPUT_CSV.resolve()}")

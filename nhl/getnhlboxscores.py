@@ -1,79 +1,97 @@
+from pathlib import Path
 import pandas as pd
-import os
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-# -----------------------------
-# INPUT / OUTPUT
-# -----------------------------
-INPUT_CSV = "nhl/data/nhlplayergamelogs.csv"
-OUTPUT_CSV = "nhl/data/nhlteamgametotals.csv"
+# ==================================================
+# PATH SETUP (GitHub + Windows safe)
+# ==================================================
+BASE_DIR = Path(__file__).resolve().parent
+DATA_DIR = BASE_DIR / "data"
+DATA_DIR.mkdir(parents=True, exist_ok=True)
 
-# -----------------------------
-# Load NHL player games
-# -----------------------------
+INPUT_CSV = DATA_DIR / "nhlplayergamelogs.csv"
+OUTPUT_CSV = DATA_DIR / "nhlteamgames.csv"
+
+# ==================================================
+# LOAD PLAYER GAME LOGS
+# ==================================================
+print("Loading NHL player game logs...")
 df = pd.read_csv(INPUT_CSV)
 
-# Only include real games (exclude DNPs / scratches / reliefs)
+# Only include real games (exclude scratches / DNPs)
 df = df[df["toi_minutes"] > 0].copy()
 
-# -----------------------------
-# Aggregate per game
-# -----------------------------
-# Total goals and shots for each team in each game
-df_team_game = df.groupby(["game_id", "team", "opponent"]).agg({
-    "goals": "sum",
-    "shots": "sum"
-}).reset_index()
+# Ensure date is datetime
+df["game_date"] = pd.to_datetime(df["game_date"])
 
-# -----------------------------
-# Compute offensive stats
-# -----------------------------
-team_offense = df_team_game.groupby("team").agg({
-    "goals": "mean",  # GF_A
-    "shots": "mean"   # SF_A
-}).rename(columns={"goals": "GF_A", "shots": "SF_A"}).round(2)
+# ==================================================
+# BUILD TEAM GAME TOTALS (PER GAME, PER TEAM)
+# ==================================================
+# Sum all player stats to create team boxscore
+df_team_game = (
+    df.groupby(["game_id", "team", "opponent"])
+      .agg({
+          "goals": "sum",
+          "shots": "sum"
+      })
+      .reset_index()
+)
 
-team_offense["GF_R"] = team_offense["GF_A"].rank(method="min", ascending=False).astype(int)
-team_offense["SF_R"] = team_offense["SF_A"].rank(method="min", ascending=False).astype(int)
+# Attach game date
+game_dates = df.groupby("game_id")["game_date"].first().reset_index()
+df_team_game = df_team_game.merge(game_dates, on="game_id", how="left")
 
-# -----------------------------
-# Compute defensive stats
-# -----------------------------
-# Defensive totals are goals/shots allowed per team
-team_defense = df_team_game.groupby("opponent").agg({
-    "goals": "mean",  # GA_A
-    "shots": "mean"   # SA_A
-}).rename(columns={"goals": "GA_A", "shots": "SA_A"}).round(2)
+# ==================================================
+# CREATE GOALS ALLOWED / SHOTS ALLOWED
+# (self-join to opponent row)
+# ==================================================
+opp = df_team_game.rename(columns={
+    "team": "opponent",
+    "opponent": "team",
+    "goals": "GA",
+    "shots": "SA"
+})[["game_id", "team", "GA", "SA"]]
 
-team_defense["GA_R"] = team_defense["GA_A"].rank(method="min", ascending=True).astype(int)
-team_defense["SA_R"] = team_defense["SA_A"].rank(method="min", ascending=True).astype(int)
+df_team_game = df_team_game.merge(opp, on=["game_id", "team"], how="left")
 
-# -----------------------------
-# Combine offense + defense
-# -----------------------------
-teams = sorted(set(df["team"].unique()))
-records = []
-for team in teams:
-    rec = {"Team": team}
-    # Offense
-    if team in team_offense.index:
-        rec.update(team_offense.loc[team].to_dict())
-    else:
-        rec.update({"GF_A": None, "GF_R": None, "SF_A": None, "SF_R": None})
-    # Defense
-    if team in team_defense.index:
-        rec.update(team_defense.loc[team].to_dict())
-    else:
-        rec.update({"GA_A": None, "GA_R": None, "SA_A": None, "SA_R": None})
-    records.append(rec)
+# ==================================================
+# FINAL COLUMN FORMAT
+# ==================================================
+df_team_game = df_team_game.rename(columns={
+    "game_id": "GAME_ID",
+    "game_date": "GAME_DATE",
+    "team": "TEAM",
+    "opponent": "OPP_TEAM",
+    "goals": "GF",
+    "shots": "SF"
+})
 
-df_out = pd.DataFrame(records)
+df_team_game = df_team_game[
+    ["GAME_ID", "GAME_DATE", "TEAM", "OPP_TEAM", "GF", "GA", "SF", "SA"]
+]
 
-# Sort by team name
-df_out = df_out.sort_values("Team").reset_index(drop=True)
+# Sort chronologically
+df_team_game = df_team_game.sort_values(["GAME_DATE", "GAME_ID", "TEAM"])
 
-# -----------------------------
-# Save CSV
-# -----------------------------
-df_out.to_csv(OUTPUT_CSV, index=False)
-print(f"[DONE] Team offense + defense stats saved to:\n{OUTPUT_CSV}")
+# ==================================================
+# PREVENT DUPLICATES (Incremental Updating)
+# ==================================================
+if OUTPUT_CSV.exists():
+    print("Existing team game file found — appending new games only...")
+    existing = pd.read_csv(OUTPUT_CSV)
+
+    existing_keys = set(
+        zip(existing["GAME_ID"].astype(str), existing["TEAM"])
+    )
+
+    df_team_game["key"] = list(zip(df_team_game["GAME_ID"].astype(str), df_team_game["TEAM"]))
+    df_team_game = df_team_game[~df_team_game["key"].isin(existing_keys)]
+    df_team_game = df_team_game.drop(columns="key")
+
+    df_team_game = pd.concat([existing, df_team_game], ignore_index=True)
+
+# ==================================================
+# SAVE
+# ==================================================
+df_team_game.to_csv(OUTPUT_CSV, index=False)
+
+print(f"[DONE] Saved {len(df_team_game)} team game rows -> {OUTPUT_CSV}")
