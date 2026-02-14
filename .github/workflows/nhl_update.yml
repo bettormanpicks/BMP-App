@@ -27,13 +27,13 @@ jobs:
       # STEP 1 — GAME LOGS
       # -------------------------
       - name: Run NHL Game Logs
-        run: python nhl/getnhlgamelogs.py
+        run: python -u nhl/getnhlgamelogs.py
 
       # -------------------------
       # STEP 2 — TEAM GAMES (only runs if step above succeeded)
       # -------------------------
       - name: Run NHL Boxscores
-        run: python nhl/getnhlboxscores.py
+        run: python -u nhl/getnhlboxscores.py
 
       # -------------------------
       # COMMIT CHANGES
