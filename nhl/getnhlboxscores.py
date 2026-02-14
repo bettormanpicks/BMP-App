@@ -90,8 +90,14 @@ if OUTPUT_CSV.exists():
     df_team_game = pd.concat([existing, df_team_game], ignore_index=True)
 
 # ==================================================
+# NORMALIZE GAME DATE
+# ==================================================
+df_team_game["GAME_DATE"] = pd.to_datetime(df_team_game["GAME_DATE"]).dt.strftime("%Y-%m-%d")
+
+# ==================================================
 # SAVE
 # ==================================================
 df_team_game.to_csv(OUTPUT_CSV, index=False)
 
 print(f"[DONE] Saved {len(df_team_game)} team game rows -> {OUTPUT_CSV}")
+
