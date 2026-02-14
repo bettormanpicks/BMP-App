@@ -2,46 +2,42 @@ name: NHL Daily Update
 
 on:
   schedule:
-    - cron: "0 9 * * *"   # 3:00 AM Central (approx during season)
-  workflow_dispatch:       # allows manual run from GitHub button
+    # Runs every day at 3:00 AM Central Time
+    - cron: '0 9 * * *' # UTC is 6 hours ahead of CT
+  workflow_dispatch:  # allows manual trigger
 
 jobs:
-  update-nhl:
+  nhl_update:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Repository
-        uses: actions/checkout@v4
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true  # required for pushing commits
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v4
         with:
           python-version: "3.12"
 
-      - name: Install Dependencies
+      - name: Install dependencies
         run: |
-          pip install --upgrade pip
-          pip install pandas requests numpy python-dateutil
+          python -m pip install --upgrade pip
+          pip install pandas requests
 
-      # -------------------------
-      # STEP 1 — GAME LOGS
-      # -------------------------
-      - name: Run NHL Game Logs
-        run: python -u nhl/getnhlgamelogs.py
-
-      # -------------------------
-      # STEP 2 — TEAM GAMES (only runs if step above succeeded)
-      # -------------------------
-      - name: Run NHL Boxscores
-        run: python -u nhl/getnhlboxscores.py
-
-      # -------------------------
-      # COMMIT CHANGES
-      # -------------------------
-      - name: Commit updated data
+      - name: Run getnhlgamelogs.py
         run: |
-          git config user.name "github-actions"
-          git config user.email "actions@github.com"
-          git add nhl/data/*.csv
-          git commit -m "Automated NHL data update" || echo "No changes to commit"
+          python -u nhl/getnhlgamelogs.py
+
+      - name: Run getnhlboxscores.py
+        run: |
+          python -u nhl/getnhlboxscores.py
+
+      - name: Commit and push updated CSVs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add nhl/data/nhlplayergamelogs.csv nhl/data/nhlteamgames.csv
+          git commit -m "Automated NHL update: $(date +'%Y-%m-%d')" || echo "No changes to commit"
           git push
