@@ -6,7 +6,21 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 import pandas as pd
+import os
+from datetime import datetime
 
+# ==================================================
+# CONFIG for saving CSV
+# ==================================================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+os.makedirs(DATA_DIR, exist_ok=True)
+
+OUTPUT_CSV = os.path.join(DATA_DIR, "nhlplayerstatus.csv")
+
+# ==================================================
+# SCRAPER FUNCTION
+# ==================================================
 def fetch_nhl_injuries_selenium(headless=True):
     """
     Scrape ESPN NHL injuries page via Selenium.
@@ -73,8 +87,6 @@ def fetch_nhl_injuries_selenium(headless=True):
             "available": "A",
         }
 
-        from datetime import datetime
-
         def infer_status(row):
             status = row["Status"]
             comment = str(row["Comment"]).lower()
@@ -109,9 +121,25 @@ def fetch_nhl_injuries_selenium(headless=True):
     finally:
         driver.quit()
 
+# ==================================================
+# WRAPPER TO SAVE CSV
+# ==================================================
+def update_nhl_injuries(headless=True):
+    df = fetch_nhl_injuries_selenium(headless=headless)
+    if df.empty:
+        print("No injuries found.")
+        return df
 
+    df.to_csv(OUTPUT_CSV, index=False)
+    print(f"[DONE] Saved {len(df)} rows -> {OUTPUT_CSV}")
+    return df
+
+# ==================================================
+# RUN SCRIPT DIRECTLY
+# ==================================================
 if __name__ == "__main__":
-    print("Fetching ESPN NHL injury report...")
-    df = fetch_nhl_injuries_selenium(headless=False)
-    print(f"Rows scraped: {len(df)}")
-    print(df.head(20))
+    print("Fetching NHL injuries...")
+    df = update_nhl_injuries(headless=False)
+    if not df.empty:
+        print(f"Rows scraped: {len(df)}")
+        print(df.head(20))
