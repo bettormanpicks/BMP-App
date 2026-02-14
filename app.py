@@ -1006,7 +1006,8 @@ elif sport_choice == "NHL":
             get_nhl_teams_on_date(tomorrow)
         )
 
-        inj_status_map = {}
+        injuries_df = get_nhl_injuries(headless=True)
+        inj_status_map = {norm_name(row["Player"]): row["Status_norm"] for _, row in injuries_df.iterrows()}
 
         # --- Player Analysis: ALL season stats ---
         nhl_all = analyze_nhl_players(
