@@ -10,25 +10,30 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # 1️⃣ Checkout the repo
       - name: Checkout repo
         uses: actions/checkout@v4
         with:
           persist-credentials: true
 
+      # 2️⃣ Set up Python 3.12
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install pandas selenium webdriver-manager unidecode pytz
 
+      # 4️⃣ Run NHL injury scraper
       - name: Run NHL injury scraper
         run: |
           python -u nhl/nhlinjuries.py
 
+      # 5️⃣ Commit & push updated CSV
       - name: Commit & Push Updated CSV
         run: |
           git config user.name "github-actions[bot]"
