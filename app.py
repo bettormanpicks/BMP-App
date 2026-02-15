@@ -22,7 +22,7 @@ if ROOT_DIR not in sys.path:
 from shared.utils import (
     get_league_today, hit_rate_threshold, trim_df_to_recent_82,
     dedupe_columns, strip_display_ids, norm_name,
-    get_teams_playing_on_date
+    get_teams_playing_on_date, compute_hit_rates
 )
 from nba.helpers import (
     DEF_STAT_MAP, load_nba_schedule, load_today_matchups,
@@ -36,7 +36,6 @@ from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 
 # NHL helper functions
 from nhl.helpers import get_nhl_todays_schedule, compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date, get_nhl_injuries
-from shared.utils import compute_hit_rates
 
 # ============================================================
 # PAGE CONFIG
@@ -239,7 +238,7 @@ def set_header_banner(image_path, image_width=1500, image_height=150):
 
 set_header_banner("assets/banner.png", image_width=1500, image_height=150)
 
-nba_today = get_nba_today()
+nba_today = get_league_today()
 
 # Sidebar logo
 st.sidebar.image("assets/logo.png", width=170)
@@ -497,7 +496,7 @@ def calc_nfl_pfr_hit_rates(
 if sport_choice == "NBA":
 
     #st.subheader("NBA — Player Hit Rate Analysis")
-    #nba_today = get_nba_today()
+    #nba_today = get_league_today()
     #st.caption(f"NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)")
 
     # --- Load core NBA data (cached) ---
