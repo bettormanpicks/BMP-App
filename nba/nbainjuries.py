@@ -160,8 +160,8 @@ if __name__ == "__main__":
     print("Fetching ESPN NBA injury report...")
 
     df = fetch_nba_injuries_selenium(headless=True)
-    if df.empty:
-        print("No injuries found. Exiting.")
+    if df is None or len(df) < 5:
+        print("WARNING: Suspiciously small scrape. Skipping update to protect existing data.")
         raise SystemExit(0)
 
     df_final = add_player_ids(df)
