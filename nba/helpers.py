@@ -6,7 +6,7 @@ from datetime import timedelta
 import json
 import streamlit as st
 from shared.utils import (
-    get_nba_today,
+    get_league_today,
     get_teams_playing_on_date,
     hit_rate_threshold,
     trim_df_to_recent_82,
@@ -188,7 +188,7 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
         st.warning(f"Could not load {schedule_path}: {e}")
         return set(), {}
 
-    nba_today = get_nba_today()
+    nba_today = get_league_today()
     today_str = nba_today.strftime("%Y-%m-%d")
 
     todays_teams = set()
@@ -247,7 +247,7 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
     return todays_teams, today_matchups
 
 def compute_team_b2b_from_schedule(schedule_data):
-    today = get_nba_today()
+    today = get_league_today()
     yesterday = today - timedelta(days=1)
     tomorrow = today + timedelta(days=1)
 
