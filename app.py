@@ -12,7 +12,7 @@ import re
 # Remaining imports for your app logic
 # ============================================================
 from shared.utils import (
-    get_nba_today, hit_rate_threshold, trim_df_to_recent_82,
+    get_league_today, hit_rate_threshold, trim_df_to_recent_82,
     dedupe_columns, strip_display_ids, norm_name,
     get_teams_playing_on_date
 )
@@ -43,7 +43,8 @@ st.set_page_config(
 ############################################################
 sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL"]) #, "NFL", "NHL"])
 
-nba_today = get_nba_today()
+nba_today = get_league_today()
+nhl_date = get_league_today()
 
 # Determine the title and date based on sport
 if sport_choice == "NBA":
@@ -51,7 +52,7 @@ if sport_choice == "NBA":
     hero_date = f"NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)"
 elif sport_choice == "NHL":
     hero_title = "NHL — Player Hit Rates"
-    hero_date = f"NHL date: {datetime.now().strftime('%b %d')} (rolls over at 3:00 AM CT)"
+    hero_date = f"NHL date: {nhl_date.strftime('%b %d')} (rolls over at 3:00 AM CT)"
 else:
     hero_title = f"{sport_choice} — Player Hit Rates"
     hero_date = f"{sport_choice} date: {datetime.now().strftime('%b %d')}"
