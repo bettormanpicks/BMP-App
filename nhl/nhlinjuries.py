@@ -163,8 +163,12 @@ def update_nhl_injuries(headless=True):
     print("Fetching NHL injuries...")
 
     df = fetch_nhl_injuries_selenium(headless=headless)
-    if df.empty:
-        print("No injuries found. Exiting.")
+
+    # ---- SAFETY CHECK ----
+    # ESPN sometimes loads page chrome but not the injury table.
+    # That produces a tiny dataframe which would wipe your CSV.
+    if df is None or len(df) < 5:
+        print("WARNING: Suspiciously small scrape. Skipping update to protect existing data.")
         return
 
     df_final = add_player_ids(df)
