@@ -9,17 +9,20 @@ from webdriver_manager.chrome import ChromeDriverManager
 
 import pandas as pd
 from datetime import datetime
-from unidecode import unidecode
 import pytz
+from unidecode import unidecode
+
+# ------------------------------
+# CONFIG
+# ------------------------------
+MASTER_ROSTER = "nhl/data/nhlplayers.csv"
+OUTPUT_CSV = "nhl/data/nhlplayerstatus.csv"
+ESPN_URL = "https://www.espn.com/nhl/injuries"
 
 # ------------------------------
 # Helpers
 # ------------------------------
 def canon_name(name: str) -> str:
-    """
-    Canonical form for name matching only.
-    ASCII, lowercase, no punctuation.
-    """
     if not isinstance(name, str):
         return ""
     return (
@@ -31,22 +34,21 @@ def canon_name(name: str) -> str:
     )
 
 # ------------------------------
-# Scraper
+# Selenium Scraper
 # ------------------------------
 def fetch_nhl_injuries_selenium(headless=True):
-    """
-    Scrape ESPN NHL injuries page via Selenium.
-    Returns DataFrame with:
-        Player, Status_norm, Comment
-    """
 
     options = Options()
+
+    # REQUIRED for GitHub Actions Linux runners
     if headless:
         options.add_argument("--headless=new")
+
+    options.add_argument("--no-sandbox")
+    options.add_argument("--disable-dev-shm-usage")
     options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")  # Required on GitHub Actions
-    options.add_argument("--disable-dev-shm-usage")  # Avoid shared memory issues
     options.add_argument("--window-size=1920,1080")
+    options.add_argument("--remote-debugging-port=9222")
 
     driver = webdriver.Chrome(
         service=Service(ChromeDriverManager().install()),
@@ -54,29 +56,27 @@ def fetch_nhl_injuries_selenium(headless=True):
     )
 
     try:
-        driver.get("https://www.espn.com/nhl/injuries")
-        wait = WebDriverWait(driver, 20)
+        driver.get(ESPN_URL)
+
+        wait = WebDriverWait(driver, 25)
         wait.until(EC.presence_of_element_located((By.TAG_NAME, "table")))
 
         rows = []
 
-        for table in driver.find_elements(By.TAG_NAME, "table"):
+        tables = driver.find_elements(By.TAG_NAME, "table")
+
+        for table in tables:
             tbody = table.find_element(By.TAG_NAME, "tbody")
+
             for tr in tbody.find_elements(By.TAG_NAME, "tr"):
                 tds = tr.find_elements(By.TAG_NAME, "td")
                 if len(tds) < 5:
                     continue
 
-                player = tds[0].text.strip()
-                return_date = tds[2].text.strip()
-                status = tds[3].text.strip()
-                comment = tds[4].text.strip()
-
                 rows.append({
-                    "Player": player,
-                    "ReturnDate": return_date,
-                    "Status": status,
-                    "Comment": comment
+                    "Player": tds[0].text.strip(),
+                    "Status_raw": tds[3].text.strip(),
+                    "Comment": tds[4].text.strip(),
                 })
 
         df = pd.DataFrame(rows)
@@ -84,98 +84,93 @@ def fetch_nhl_injuries_selenium(headless=True):
             return df
 
         # ------------------------------
-        # Normalize status
+        # Normalize injury status
         # ------------------------------
-        status_map = {
-            "Long-Term Injured Reserve": "LTIR",
-            "Injured Reserve": "IR",
+        base_map = {
             "Out": "O",
+            "Injured Reserve": "IR",
+            "Long-Term Injured Reserve": "LTIR",
             "Day-To-Day": "GTD",
-            "Available": "A",
         }
 
-        triggers = {
-            "long-term injured reserve": "LTIR",
-            "ir-lt": "LTIR",
-            "ltir": "LTIR",
+        comment_triggers = {
+            "out": "O",
+            "will not play": "O",
             "game-time decision": "GTD",
             "day-to-day": "GTD",
-            "will play": "A",
-            "available": "A",
+            "long-term injured reserve": "LTIR",
+            "ltir": "LTIR",
         }
 
         def infer_status(row):
-            norm = status_map.get(row["Status"], "A")
+            base = base_map.get(row["Status_raw"], "A")
             comment = str(row["Comment"]).lower()
-            return_date = str(row["ReturnDate"]).strip()
 
-            # EST. RETURN DATE == today → GTD
-            if return_date:
-                try:
-                    rd = datetime.strptime(return_date, "%b %d").replace(year=datetime.now().year).date()
-                    if rd == datetime.now().date():
-                        return "GTD"
-                except:
-                    pass
+            for key, val in comment_triggers.items():
+                if key in comment:
+                    return val
 
-            # Comment overrides
-            for word, code in triggers.items():
-                if word in comment:
-                    return code
-
-            return norm
+            return base
 
         df["Status_norm"] = df.apply(infer_status, axis=1)
+        df = df.drop(columns=["Status_raw"])
 
-        return df[["Player", "Status_norm", "ReturnDate", "Comment"]]
+        return df
 
     finally:
         driver.quit()
 
 # ------------------------------
-# Player ID merge (optional)
+# Player ID merge
 # ------------------------------
-def add_player_ids(inj_df, roster_path="nhl/data/nhlplayers.csv"):
+def add_player_ids(inj_df, roster_path=MASTER_ROSTER):
     roster = pd.read_csv(roster_path, dtype={"player_id": str})
 
-    # Build canonical names
+    # NHL roster uses player_name instead of Player
     roster["canon_name"] = roster["player_name"].apply(canon_name)
     inj_df["canon_name"] = inj_df["Player"].apply(canon_name)
 
     merged = inj_df.merge(
         roster[["player_id", "canon_name"]],
         on="canon_name",
-        how="left"
+        how="left",
     )
 
-    merged["player_id"] = merged["player_id"].astype(str).replace("nan", "").str.replace(".0", "", regex=False).str.strip()
+    merged["player_id"] = (
+        merged["player_id"]
+        .astype(str)
+        .replace("nan", "")
+        .str.replace(".0", "", regex=False)
+        .str.strip()
+    )
 
+    # Timestamp (Central time to match NBA)
     ct = pytz.timezone("US/Central")
     merged["Last_Updated"] = datetime.now(ct).strftime("%Y-%m-%d %H:%M:%S")
 
     merged = merged.drop(columns=["canon_name"], errors="ignore")
 
-    merged = merged[["player_id", "Player", "Status_norm", "Comment", "Last_Updated"]]
+    merged = merged[
+        ["player_id", "Player", "Status_norm", "Comment", "Last_Updated"]
+    ]
 
     return merged
 
 # ------------------------------
-# Scrape & save CSV
+# Main
 # ------------------------------
 def update_nhl_injuries(headless=True):
+    print("Fetching NHL injuries...")
+
     df = fetch_nhl_injuries_selenium(headless=headless)
     if df.empty:
-        print("No injuries found.")
-        return df
+        print("No injuries found. Exiting.")
+        return
 
     df_final = add_player_ids(df)
     df_final.to_csv(OUTPUT_CSV, index=False)
-    print(f"[DONE] Saved {len(df_final)} rows -> {OUTPUT_CSV}")
-    return df_final
 
-# ------------------------------
-# Run script directly
-# ------------------------------
+    print(f"Saved {len(df_final)} injury rows to {OUTPUT_CSV}")
+
 if __name__ == "__main__":
-    print("Fetching NHL injuries...")
-    update_nhl_injuries(headless=False)
+    update_nhl_injuries(headless=True)
