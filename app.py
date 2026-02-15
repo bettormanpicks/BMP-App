@@ -8,6 +8,14 @@ from datetime import datetime, timedelta
 import pytz
 import re
 
+import sys
+import os
+
+# Ensure project root is on Python path (Streamlit Cloud fix)
+ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
+
 # ============================================================
 # Remaining imports for your app logic
 # ============================================================
