@@ -7,20 +7,18 @@ import pytz
 import streamlit as st
 from typing import Iterable, Union
 
-def get_nba_today(cutoff_hour_ct=3):
+def get_league_today(cutoff_hour_ct=3):
     """
-    Returns the NBA 'logical date' using a CT cutoff.
-    Before cutoff_hour_ct, treat today as yesterday.
+    Returns the logical sports date using a CT cutoff.
+    Before the cutoff hour, treat today as the previous slate day.
     """
     ct = pytz.timezone("US/Central")
     now_ct = datetime.now(ct)
 
     if now_ct.hour < cutoff_hour_ct:
-        nba_date = (now_ct - timedelta(days=1)).date()
+        return (now_ct - timedelta(days=1)).date()
     else:
-        nba_date = now_ct.date()
-
-    return nba_date
+        return now_ct.date()
 
 def hit_rate_threshold(values, pct):
     """
