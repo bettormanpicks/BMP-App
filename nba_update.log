@@ -118,3 +118,25 @@ Saved 1638 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbatea
 2026-02-17 03:30:09 - ✅ nbateamgametotals.csv validation passed (1638 rows)
 2026-02-17 03:30:09 - === Git sync ===
 2026-02-17 03:30:12 - Repository on main and synced with GitHub.
+2026-02-17 03:30:12 - 📊 New NBA data detected — committing update
+2026-02-17 03:30:14 - 🚀 NBA data successfully pushed to GitHub!
+2026-02-17 03:30:14 - === NBA Data Update Finished Successfully ===
+
+2026-02-18 03:30:04 - === NBA Data Update Started ===
+2026-02-18 03:30:04 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Requesting full-season league game logs...
+[INFO] Retrieved 17772 player-game rows
+
+Saved 17772 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbaplayergamelogs.csv
+=== NBA PLAYER GAME LOGS FINISHED ===
+2026-02-18 03:30:07 - ✅ getnbagamelogs.py completed successfully
+2026-02-18 03:30:07 - === Validating nbaplayergamelogs.csv ===
+2026-02-18 03:30:07 - ✅ nbaplayergamelogs.csv validation passed (17772 rows)
+2026-02-18 03:30:07 - === Running getnbateamtotals.py ===
+Saved 1638 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbateamgametotals.csv
+2026-02-18 03:30:09 - ✅ getnbateamtotals.py completed successfully
+2026-02-18 03:30:09 - === Validating nbateamgametotals.csv ===
+2026-02-18 03:30:09 - ✅ nbateamgametotals.csv validation passed (1638 rows)
+2026-02-18 03:30:09 - === Git sync ===
+2026-02-18 03:30:11 - Repository on main and synced with GitHub.
