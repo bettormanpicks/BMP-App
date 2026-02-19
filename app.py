@@ -1074,3 +1074,51 @@ elif sport_choice == "NHL":
                 hide_index=True,
                 column_config=col_config
             )
+
+############################################################
+# ===== Tennis Section =====
+############################################################
+if sport_choice == "Tennis":
+
+    # WTA / ATP selection
+    tour_choice = st.radio("Tour", ["WTA", "ATP"])
+
+    # Load gamelogs based on tour
+    df = load_tennis_raw_data(tour=tour_choice)
+
+    # Sidebar Filters
+    with st.sidebar.form("Tennis Filters"):
+
+        stats_available = ["GW", "GL", "GD", "TG", "MW"] #, "ACES", "DF"]
+        stats_selected = st.multiselect(
+            "Select Stats", stats_available, default=["GW","GL","GD","TG","MW"]
+        )
+
+        percentages = [st.slider("Hit Rate %", 40, 100, 80, 5)]
+
+        player_window = st.radio("Player Performance Window", ["L5", "L10", "ALL"], index=0)
+        recent_n = 5 if player_window == "L5" else 10 if player_window == "L10" else None
+
+        calculate = st.form_submit_button("Calculate")
+
+    # --- Calculate ---
+    if calculate:
+
+        # Trim to most recent 82 games per player
+        df_calc = trim_df_to_recent_82(df)
+
+        # Compute surface-aware percentiles
+        summary_df = compute_tennis_percentiles(
+            df_calc,
+            stats_selected,
+            percentages,
+            recent_n=recent_n
+        )
+
+        # Sort by first stat selected
+        sort_col = f"{stats_selected[0]}@{percentages[0]}"
+        if sort_col in summary_df.columns:
+            summary_df = summary_df.sort_values(sort_col, ascending=False)
+
+        # Display DataFrame with Surface included
+        st.dataframe(summary_df, use_container_width=True)
