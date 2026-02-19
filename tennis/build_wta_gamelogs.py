@@ -121,7 +121,8 @@ for _, m in matches.iterrows():
     p2_diff = p2_games - p1_games
     total_games = p1_games + p2_games
 
-    match_date = pd.to_datetime(m["Date"], format="%m/%d/%Y", errors="coerce")
+    match_date = pd.to_datetime(m["Date"], errors="coerce")
+    match_date = match_date.strftime("%Y-%m-%d")
 
     # --- player 1 ---
     rows.append({
