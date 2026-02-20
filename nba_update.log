@@ -162,3 +162,213 @@ Saved 1638 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbatea
 2026-02-19 03:30:06 - ✅ nbateamgametotals.csv validation passed (1638 rows)
 2026-02-19 03:30:06 - === Git sync ===
 2026-02-19 03:30:09 - Repository on main and synced with GitHub.
+2026-02-19 03:30:09 - 📊 New NBA data detected — committing update
+2026-02-19 03:30:11 - 🚀 NBA data successfully pushed to GitHub!
+2026-02-19 03:30:11 - === NBA Data Update Finished Successfully ===
+
+2026-02-20 03:30:01 - === NBA Data Update Started ===
+2026-02-20 03:30:01 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Requesting full-season league game logs...
+Traceback (most recent call last):
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=180)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  [Previous line repeated 2 more times]
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='stats.nba.com', port=443): Max retries exceeded with url: /stats/leaguegamelog?Counter=0&DateFrom=&DateTo=&Direction=ASC&LeagueID=00&PlayerOrTeam=P&Season=2025-26&SeasonType=Regular+Season&Sorter=DATE (Caused by ReadTimeoutError("HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=180)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\getnbagamelogs.py", line 54, in <module>
+    gamelog = leaguegamelog.LeagueGameLog(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\nba_api\stats\endpoints\leaguegamelog.py", line 87, in __init__
+    self.get_request()
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\nba_api\stats\endpoints\leaguegamelog.py", line 90, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\nba_api\library\http.py", line 160, in send_api_request
+    response = self.get_session().get(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='stats.nba.com', port=443): Max retries exceeded with url: /stats/leaguegamelog?Counter=0&DateFrom=&DateTo=&Direction=ASC&LeagueID=00&PlayerOrTeam=P&Season=2025-26&SeasonType=Regular+Season&Sorter=DATE (Caused by ReadTimeoutError("HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=180)"))
+2026-02-20 03:49:06 - ❌ getnbagamelogs.py FAILED (return code 1)
+2026-02-20 10:39:56 - === NBA Data Update Started ===
+2026-02-20 10:39:56 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Requesting full-season league game logs...
+Traceback (most recent call last):
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 565, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1428, in getresponse
+    response.begin()
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 720, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1251, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\ssl.py", line 1103, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: The read operation timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=180)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 644, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 871, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  [Previous line repeated 2 more times]
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 841, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 519, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='stats.nba.com', port=443): Max retries exceeded with url: /stats/leaguegamelog?Counter=0&DateFrom=&DateTo=&Direction=ASC&LeagueID=00&PlayerOrTeam=P&Season=2025-26&SeasonType=Regular+Season&Sorter=DATE (Caused by ReadTimeoutError("HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=180)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\getnbagamelogs.py", line 54, in <module>
+    gamelog = leaguegamelog.LeagueGameLog(
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\nba_api\stats\endpoints\leaguegamelog.py", line 87, in __init__
+    self.get_request()
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\nba_api\stats\endpoints\leaguegamelog.py", line 90, in get_request
+    self.nba_response = NBAStatsHTTP().send_api_request(
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\nba_api\library\http.py", line 160, in send_api_request
+    response = self.get_session().get(
+               ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 677, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='stats.nba.com', port=443): Max retries exceeded with url: /stats/leaguegamelog?Counter=0&DateFrom=&DateTo=&Direction=ASC&LeagueID=00&PlayerOrTeam=P&Season=2025-26&SeasonType=Regular+Season&Sorter=DATE (Caused by ReadTimeoutError("HTTPSConnectionPool(host='stats.nba.com', port=443): Read timed out. (read timeout=180)"))
+2026-02-20 10:59:00 - ❌ getnbagamelogs.py FAILED (return code 1)
+2026-02-20 14:29:03 - === NBA Data Update Started ===
+2026-02-20 14:29:03 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Priming NBA session...
+[WARNING] Session priming failed: Failed to perform, curl: (47) Maximum (30) redirects followed. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[RESUME] Continuing from 2026-02-20
+[PULL] 02/20/2026
+
+Saved 17986 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbaplayergamelogs.csv
+=== NBA PLAYER GAME LOGS FINISHED ===
+2026-02-20 14:29:08 - ✅ getnbagamelogs.py completed successfully
+2026-02-20 14:29:08 - === Validating nbaplayergamelogs.csv ===
+2026-02-20 14:29:08 - ✅ nbaplayergamelogs.csv validation passed (17986 rows)
+2026-02-20 14:29:08 - === Running getnbateamtotals.py ===
+Saved 1658 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbateamgametotals.csv
+2026-02-20 14:29:10 - ✅ getnbateamtotals.py completed successfully
+2026-02-20 14:29:10 - === Validating nbateamgametotals.csv ===
+2026-02-20 14:29:10 - ✅ nbateamgametotals.csv validation passed (1658 rows)
+2026-02-20 14:29:10 - === Git sync ===
+2026-02-20 14:29:11 - Repository on main and synced with GitHub.
