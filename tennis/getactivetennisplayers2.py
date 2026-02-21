@@ -7,13 +7,14 @@ OUTPUT_FILE = "data/tennisplayers.csv"
 
 TOP_N = 500
 
+
 # ------------------------------------------------------------
-# Smart Name Normalization (CRITICAL for later match log matching)
+# Name Normalization (CRITICAL for later match log matching)
 # ------------------------------------------------------------
 def normalize_name(name: str) -> str:
     if pd.isna(name):
         return ""
-    
+
     # remove accents (Djoković -> Djokovic)
     name = unicodedata.normalize("NFKD", name)
     name = "".join(c for c in name if not unicodedata.combining(c))
@@ -30,24 +31,8 @@ def normalize_name(name: str) -> str:
     # collapse double spaces
     name = " ".join(name.split())
 
-    # --- handle multi-word last names with particles ---
-    # common particles
-    particles = {"de","da","del","di","van","von","la","le","du"}
-    parts = name.split()
-    
-    if len(parts) <= 2:
-        return name  # already simple
+    return name
 
-    # detect last name particle and move all after to last name
-    first_name = parts[0]
-    last_name = parts[-1]
-    for i in range(1, len(parts)-1):
-        if parts[i].lower() in particles:
-            first_name = " ".join(parts[:i])
-            last_name = " ".join(parts[i:])
-            break
-
-    return f"{first_name} {last_name}"
 
 # ------------------------------------------------------------
 def process_rankings(file, tour):
@@ -68,12 +53,14 @@ def process_rankings(file, tour):
     # normalize names
     df["player_name"] = df["player"].apply(normalize_name)
 
-    # deterministic player_id (tour + rank)
-    df["player_id"] = tour.lower() + "_" + df["rank"].astype(int).astype(str)
+    # deterministic player_id
+    df["player_id"] = df["rank"].astype(int).astype(str)
+    df["player_id"] = tour.lower() + "_" + df["player_id"]
 
     df["tour"] = tour
 
     return df[["player_id", "player_name", "tour", "rank", "points", "country"]]
+
 
 # ------------------------------------------------------------
 def main():
