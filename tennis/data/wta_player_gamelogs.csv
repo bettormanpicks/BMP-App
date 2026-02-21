@@ -4503,3 +4503,765 @@ wta_1,wta_6,2025-11-07,15,12,3,27,,,1,WTA Finals,Tour Championships,Hard,The Fin
 wta_6,wta_1,2025-11-07,12,15,-3,27,,,0,WTA Finals,Tour Championships,Hard,The Final
 wta_3,wta_1,2025-11-08,13,9,4,22,,,1,WTA Finals,Tour Championships,Hard,The Final
 wta_1,wta_3,2025-11-08,9,13,-4,22,,,0,WTA Finals,Tour Championships,Hard,The Final
+wta_41,wta_93,2026-01-04,13,6,7,19,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_93,wta_41,2026-01-04,6,13,-7,19,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_20,wta_184,2026-01-04,16,7,9,23,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_184,wta_20,2026-01-04,7,16,-9,23,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_142,wta_162,2026-01-05,15,11,4,26,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_162,wta_142,2026-01-05,11,15,-4,26,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_223,wta_68,2026-01-05,15,14,1,29,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_68,wta_223,2026-01-05,14,15,-1,29,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_131,wta_59,2026-01-05,13,7,6,20,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_59,wta_131,2026-01-05,7,13,-6,20,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_105,wta_80,2026-01-05,12,6,6,18,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_80,wta_105,2026-01-05,6,12,-6,18,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_72,wta_19,2026-01-05,15,15,0,30,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_19,wta_72,2026-01-05,15,15,0,30,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_83,wta_101,2026-01-05,12,6,6,18,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_101,wta_83,2026-01-05,6,12,-6,18,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_51,wta_47,2026-01-06,18,11,7,29,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_47,wta_51,2026-01-06,11,18,-7,29,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_40,wta_76,2026-01-06,13,7,6,20,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_76,wta_40,2026-01-06,7,13,-6,20,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_9,wta_60,2026-01-06,12,4,8,16,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_60,wta_9,2026-01-06,4,12,-8,16,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_45,wta_99,2026-01-06,16,14,2,30,,,1,ASB Classic,WTA250,Hard,1st Round
+wta_99,wta_45,2026-01-06,14,16,-2,30,,,0,ASB Classic,WTA250,Hard,1st Round
+wta_20,wta_41,2026-01-06,13,10,3,23,,,1,ASB Classic,WTA250,Hard,2nd Round
+wta_41,wta_20,2026-01-06,10,13,-3,23,,,0,ASB Classic,WTA250,Hard,2nd Round
+wta_72,wta_105,2026-01-07,13,11,2,24,,,1,ASB Classic,WTA250,Hard,2nd Round
+wta_105,wta_72,2026-01-07,11,13,-2,24,,,0,ASB Classic,WTA250,Hard,2nd Round
+wta_223,wta_87,2026-01-07,13,9,4,22,,,1,ASB Classic,WTA250,Hard,2nd Round
+wta_87,wta_223,2026-01-07,9,13,-4,22,,,0,ASB Classic,WTA250,Hard,2nd Round
+wta_142,wta_131,2026-01-07,12,2,10,14,,,1,ASB Classic,WTA250,Hard,2nd Round
+wta_131,wta_142,2026-01-07,2,12,-10,14,,,0,ASB Classic,WTA250,Hard,2nd Round
+wta_45,wta_69,2026-01-08,12,2,10,14,,,1,ASB Classic,WTA250,Hard,2nd Round
+wta_69,wta_45,2026-01-08,2,12,-10,14,,,0,ASB Classic,WTA250,Hard,2nd Round
+wta_50,wta_40,2026-01-08,15,14,1,29,,,1,ASB Classic,WTA250,Hard,2nd Round
+wta_40,wta_50,2026-01-08,14,15,-1,29,,,0,ASB Classic,WTA250,Hard,2nd Round
+wta_9,wta_83,2026-01-08,13,9,4,22,,,1,ASB Classic,WTA250,Hard,2nd Round
+wta_83,wta_9,2026-01-08,9,13,-4,22,,,0,ASB Classic,WTA250,Hard,2nd Round
+wta_51,wta_95,2026-01-08,12,4,8,16,,,1,ASB Classic,WTA250,Hard,2nd Round
+wta_95,wta_51,2026-01-08,4,12,-8,16,,,0,ASB Classic,WTA250,Hard,2nd Round
+wta_223,wta_72,2026-01-08,10,7,3,17,,,1,ASB Classic,WTA250,Hard,Quarterfinals
+wta_72,wta_223,2026-01-08,7,10,-3,17,,,0,ASB Classic,WTA250,Hard,Quarterfinals
+wta_45,wta_50,2026-01-09,12,5,7,17,,,1,ASB Classic,WTA250,Hard,Quarterfinals
+wta_50,wta_45,2026-01-09,5,12,-7,17,,,0,ASB Classic,WTA250,Hard,Quarterfinals
+wta_20,wta_142,2026-01-09,13,8,5,21,,,1,ASB Classic,WTA250,Hard,Quarterfinals
+wta_142,wta_20,2026-01-09,8,13,-5,21,,,0,ASB Classic,WTA250,Hard,Quarterfinals
+wta_9,wta_51,2026-01-09,19,17,2,36,,,1,ASB Classic,WTA250,Hard,Quarterfinals
+wta_51,wta_9,2026-01-09,17,19,-2,36,,,0,ASB Classic,WTA250,Hard,Quarterfinals
+wta_223,wta_45,2026-01-10,18,16,2,34,,,1,ASB Classic,WTA250,Hard,Semifinals
+wta_45,wta_223,2026-01-10,16,18,-2,34,,,0,ASB Classic,WTA250,Hard,Semifinals
+wta_9,wta_20,2026-01-10,13,8,5,21,,,1,ASB Classic,WTA250,Hard,Semifinals
+wta_20,wta_9,2026-01-10,8,13,-5,21,,,0,ASB Classic,WTA250,Hard,Semifinals
+wta_9,wta_223,2026-01-11,13,9,4,22,,,1,ASB Classic,WTA250,Hard,The Final
+wta_223,wta_9,2026-01-11,9,13,-4,22,,,0,ASB Classic,WTA250,Hard,The Final
+wta_73,wta_57,2026-01-04,12,4,8,16,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_57,wta_73,2026-01-04,4,12,-8,16,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_31,wta_58,2026-01-04,12,4,8,16,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_58,wta_31,2026-01-04,4,12,-8,16,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_75,wta_61,2026-01-04,17,15,2,32,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_61,wta_75,2026-01-04,15,17,-2,32,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_30,wta_110,2026-01-04,12,4,8,16,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_110,wta_30,2026-01-04,4,12,-8,16,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_32,wta_79,2026-01-04,16,13,3,29,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_79,wta_32,2026-01-04,13,16,-3,29,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_39,wta_38,2026-01-04,12,7,5,19,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_38,wta_39,2026-01-04,7,12,-5,19,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_94,wta_102,2026-01-05,15,13,2,28,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_102,wta_94,2026-01-05,13,15,-2,28,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_85,wta_100,2026-01-05,17,15,2,32,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_100,wta_85,2026-01-05,15,17,-2,32,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_179,wta_36,2026-01-05,12,8,4,20,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_36,wta_179,2026-01-05,8,12,-4,20,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_62,wta_65,2026-01-05,17,14,3,31,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_65,wta_62,2026-01-05,14,17,-3,31,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_77,wta_44,2026-01-05,12,6,6,18,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_44,wta_77,2026-01-05,6,12,-6,18,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_113,wta_82,2026-01-05,13,6,7,19,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_82,wta_113,2026-01-05,6,13,-7,19,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_24,wta_42,2026-01-05,12,8,4,20,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_42,wta_24,2026-01-05,8,12,-4,20,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_43,wta_111,2026-01-05,14,12,2,26,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_111,wta_43,2026-01-05,12,14,-2,26,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_55,wta_37,2026-01-05,20,18,2,38,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_37,wta_55,2026-01-05,18,20,-2,38,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_152,wta_54,2026-01-05,12,6,6,18,,,1,Brisbane International,WTA500,Hard,1st Round
+wta_54,wta_152,2026-01-05,6,12,-6,18,,,0,Brisbane International,WTA500,Hard,1st Round
+wta_17,wta_31,2026-01-06,12,7,5,19,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_31,wta_17,2026-01-06,7,12,-5,19,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_21,wta_75,2026-01-06,12,4,8,16,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_75,wta_21,2026-01-06,4,12,-8,16,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_1,wta_62,2026-01-06,12,1,11,13,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_62,wta_1,2026-01-06,1,12,-11,13,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_11,wta_32,2026-01-06,13,9,4,22,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_32,wta_11,2026-01-06,9,13,-4,22,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_30,wta_27,2026-01-06,13,8,5,21,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_27,wta_30,2026-01-06,8,13,-5,21,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_13,wta_73,2026-01-06,17,13,4,30,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_73,wta_13,2026-01-06,13,17,-4,30,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_3,wta_85,2026-01-06,13,8,5,21,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_85,wta_3,2026-01-06,8,13,-5,21,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_70,wta_39,2026-01-06,18,13,5,31,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_39,wta_70,2026-01-06,13,18,-5,31,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_43,wta_28,2026-01-07,12,3,9,15,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_28,wta_43,2026-01-07,3,12,-9,15,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_5,wta_24,2026-01-07,14,12,2,26,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_24,wta_5,2026-01-07,12,14,-2,26,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_113,wta_15,2026-01-07,12,5,7,17,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_15,wta_113,2026-01-07,5,12,-7,17,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_18,wta_152,2026-01-07,12,5,7,17,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_152,wta_18,2026-01-07,5,12,-7,17,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_14,wta_55,2026-01-07,18,15,3,33,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_55,wta_14,2026-01-07,15,18,-3,33,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_7,wta_179,2026-01-07,16,9,7,25,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_179,wta_7,2026-01-07,9,16,-7,25,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_26,wta_77,2026-01-07,18,8,10,26,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_77,wta_26,2026-01-07,8,18,-10,26,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_6,wta_94,2026-01-07,12,4,8,16,,,1,Brisbane International,WTA500,Hard,2nd Round
+wta_94,wta_6,2026-01-07,4,12,-8,16,,,0,Brisbane International,WTA500,Hard,2nd Round
+wta_1,wta_30,2026-01-08,12,6,6,18,,,1,Brisbane International,WTA500,Hard,3rd Round
+wta_30,wta_1,2026-01-08,6,12,-6,18,,,0,Brisbane International,WTA500,Hard,3rd Round
+wta_3,wta_70,2026-01-08,12,5,7,17,,,1,Brisbane International,WTA500,Hard,3rd Round
+wta_70,wta_3,2026-01-08,5,12,-7,17,,,0,Brisbane International,WTA500,Hard,3rd Round
+wta_13,wta_11,2026-01-08,13,9,4,22,,,1,Brisbane International,WTA500,Hard,3rd Round
+wta_11,wta_13,2026-01-08,9,13,-4,22,,,0,Brisbane International,WTA500,Hard,3rd Round
+wta_17,wta_21,2026-01-08,20,19,1,39,,,1,Brisbane International,WTA500,Hard,3rd Round
+wta_21,wta_17,2026-01-08,19,20,-1,39,,,0,Brisbane International,WTA500,Hard,3rd Round
+wta_18,wta_113,2026-01-08,12,8,4,20,,,1,Brisbane International,WTA500,Hard,3rd Round
+wta_113,wta_18,2026-01-08,8,12,-4,20,,,0,Brisbane International,WTA500,Hard,3rd Round
+wta_5,wta_43,2026-01-08,17,12,5,29,,,1,Brisbane International,WTA500,Hard,3rd Round
+wta_43,wta_5,2026-01-08,12,17,-5,29,,,0,Brisbane International,WTA500,Hard,3rd Round
+wta_26,wta_6,2026-01-08,12,7,5,19,,,1,Brisbane International,WTA500,Hard,3rd Round
+wta_6,wta_26,2026-01-08,7,12,-5,19,,,0,Brisbane International,WTA500,Hard,3rd Round
+wta_7,wta_14,2026-01-08,18,16,2,34,,,1,Brisbane International,WTA500,Hard,3rd Round
+wta_14,wta_7,2026-01-08,16,18,-2,34,,,0,Brisbane International,WTA500,Hard,3rd Round
+wta_13,wta_3,2026-01-09,14,12,2,26,,,1,Brisbane International,WTA500,Hard,Quarterfinals
+wta_3,wta_13,2026-01-09,12,14,-2,26,,,0,Brisbane International,WTA500,Hard,Quarterfinals
+wta_1,wta_17,2026-01-09,12,6,6,18,,,1,Brisbane International,WTA500,Hard,Quarterfinals
+wta_17,wta_1,2026-01-09,6,12,-6,18,,,0,Brisbane International,WTA500,Hard,Quarterfinals
+wta_5,wta_18,2026-01-09,13,9,4,22,,,1,Brisbane International,WTA500,Hard,Quarterfinals
+wta_18,wta_5,2026-01-09,9,13,-4,22,,,0,Brisbane International,WTA500,Hard,Quarterfinals
+wta_26,wta_7,2026-01-09,13,9,4,22,,,1,Brisbane International,WTA500,Hard,Quarterfinals
+wta_7,wta_26,2026-01-09,9,13,-4,22,,,0,Brisbane International,WTA500,Hard,Quarterfinals
+wta_1,wta_13,2026-01-10,12,7,5,19,,,1,Brisbane International,WTA500,Hard,Semifinals
+wta_13,wta_1,2026-01-10,7,12,-5,19,,,0,Brisbane International,WTA500,Hard,Semifinals
+wta_26,wta_5,2026-01-10,12,3,9,15,,,1,Brisbane International,WTA500,Hard,Semifinals
+wta_5,wta_26,2026-01-10,3,12,-9,15,,,0,Brisbane International,WTA500,Hard,Semifinals
+wta_1,wta_26,2026-01-11,12,7,5,19,,,1,Brisbane International,WTA500,Hard,The Final
+wta_26,wta_1,2026-01-11,7,12,-5,19,,,0,Brisbane International,WTA500,Hard,The Final
+wta_19,wta_152,2026-01-12,12,6,6,18,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_152,wta_19,2026-01-12,6,12,-6,18,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_73,wta_15,2026-01-12,7,6,1,13,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_15,wta_73,2026-01-12,6,7,-1,13,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_24,wta_79,2026-01-12,12,3,9,15,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_79,wta_24,2026-01-12,3,12,-9,15,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_39,wta_70,2026-01-12,15,13,2,28,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_70,wta_39,2026-01-12,13,15,-2,28,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_38,wta_11,2026-01-12,12,8,4,20,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_11,wta_38,2026-01-12,8,12,-4,20,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_61,wta_33,2026-01-12,13,10,3,23,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_33,wta_61,2026-01-12,10,13,-3,23,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_21,wta_28,2026-01-13,13,8,5,21,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_28,wta_21,2026-01-13,8,13,-5,21,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_94,wta_75,2026-01-13,12,8,4,20,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_75,wta_94,2026-01-13,8,12,-4,20,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_37,wta_18,2026-01-13,16,9,7,25,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_18,wta_37,2026-01-13,9,16,-7,25,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_29,wta_32,2026-01-13,13,10,3,23,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_32,wta_29,2026-01-13,10,13,-3,23,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_42,wta_27,2026-01-13,10,7,3,17,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_27,wta_42,2026-01-13,7,10,-3,17,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_77,wta_86,2026-01-13,12,8,4,20,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_86,wta_77,2026-01-13,8,12,-4,20,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_46,wta_43,2026-01-13,12,1,11,13,,,1,Adelaide International,WTA500,Hard,1st Round
+wta_43,wta_46,2026-01-13,1,12,-11,13,,,0,Adelaide International,WTA500,Hard,1st Round
+wta_10,wta_24,2026-01-13,16,14,2,30,,,1,Adelaide International,WTA500,Hard,2nd Round
+wta_24,wta_10,2026-01-13,14,16,-2,30,,,0,Adelaide International,WTA500,Hard,2nd Round
+wta_7,wta_39,2026-01-13,12,4,8,16,,,1,Adelaide International,WTA500,Hard,2nd Round
+wta_39,wta_7,2026-01-13,4,12,-8,16,,,0,Adelaide International,WTA500,Hard,2nd Round
+wta_94,wta_37,2026-01-14,0,0,0,0,,,1,Adelaide International,WTA500,Hard,2nd Round
+wta_37,wta_94,2026-01-14,0,0,0,0,,,0,Adelaide International,WTA500,Hard,2nd Round
+wta_38,wta_61,2026-01-14,12,4,8,16,,,1,Adelaide International,WTA500,Hard,2nd Round
+wta_61,wta_38,2026-01-14,4,12,-8,16,,,0,Adelaide International,WTA500,Hard,2nd Round
+wta_17,wta_42,2026-01-14,12,5,7,17,,,1,Adelaide International,WTA500,Hard,2nd Round
+wta_42,wta_17,2026-01-14,5,12,-7,17,,,0,Adelaide International,WTA500,Hard,2nd Round
+wta_21,wta_46,2026-01-14,15,12,3,27,,,1,Adelaide International,WTA500,Hard,2nd Round
+wta_46,wta_21,2026-01-14,12,15,-3,27,,,0,Adelaide International,WTA500,Hard,2nd Round
+wta_19,wta_77,2026-01-14,12,5,7,17,,,1,Adelaide International,WTA500,Hard,2nd Round
+wta_77,wta_19,2026-01-14,5,12,-7,17,,,0,Adelaide International,WTA500,Hard,2nd Round
+wta_29,wta_73,2026-01-14,0,2,-2,2,,,1,Adelaide International,WTA500,Hard,2nd Round
+wta_73,wta_29,2026-01-14,2,0,2,2,,,0,Adelaide International,WTA500,Hard,2nd Round
+wta_94,wta_38,2026-01-15,18,13,5,31,,,1,Adelaide International,WTA500,Hard,Quarterfinals
+wta_38,wta_94,2026-01-15,13,18,-5,31,,,0,Adelaide International,WTA500,Hard,Quarterfinals
+wta_10,wta_17,2026-01-15,16,12,4,28,,,1,Adelaide International,WTA500,Hard,Quarterfinals
+wta_17,wta_10,2026-01-15,12,16,-4,28,,,0,Adelaide International,WTA500,Hard,Quarterfinals
+wta_21,wta_19,2026-01-15,12,6,6,18,,,1,Adelaide International,WTA500,Hard,Quarterfinals
+wta_19,wta_21,2026-01-15,6,12,-6,18,,,0,Adelaide International,WTA500,Hard,Quarterfinals
+wta_7,wta_29,2026-01-15,12,2,10,14,,,1,Adelaide International,WTA500,Hard,Quarterfinals
+wta_29,wta_7,2026-01-15,2,12,-10,14,,,0,Adelaide International,WTA500,Hard,Quarterfinals
+wta_10,wta_94,2026-01-16,12,3,9,15,,,1,Adelaide International,WTA500,Hard,Semifinals
+wta_94,wta_10,2026-01-16,3,12,-9,15,,,0,Adelaide International,WTA500,Hard,Semifinals
+wta_7,wta_21,2026-01-16,12,5,7,17,,,1,Adelaide International,WTA500,Hard,Semifinals
+wta_21,wta_7,2026-01-16,5,12,-7,17,,,0,Adelaide International,WTA500,Hard,Semifinals
+wta_7,wta_10,2026-01-17,12,4,8,16,,,1,Adelaide International,WTA500,Hard,The Final
+wta_10,wta_7,2026-01-17,4,12,-8,16,,,0,Adelaide International,WTA500,Hard,The Final
+wta_87,wta_44,2026-01-12,18,13,5,31,,,1,Hobart International,WTA250,Hard,1st Round
+wta_44,wta_87,2026-01-12,13,18,-5,31,,,0,Hobart International,WTA250,Hard,1st Round
+wta_36,wta_96,2026-01-12,17,13,4,30,,,1,Hobart International,WTA250,Hard,1st Round
+wta_96,wta_36,2026-01-12,13,17,-4,30,,,0,Hobart International,WTA250,Hard,1st Round
+wta_40,wta_403,2026-01-12,12,7,5,19,,,1,Hobart International,WTA250,Hard,1st Round
+wta_403,wta_40,2026-01-12,7,12,-5,19,,,0,Hobart International,WTA250,Hard,1st Round
+wta_64,wta_68,2026-01-12,13,11,2,24,,,1,Hobart International,WTA250,Hard,1st Round
+wta_68,wta_64,2026-01-12,11,13,-2,24,,,0,Hobart International,WTA250,Hard,1st Round
+wta_89,wta_31,2026-01-12,16,14,2,30,,,1,Hobart International,WTA250,Hard,1st Round
+wta_31,wta_89,2026-01-12,14,16,-2,30,,,0,Hobart International,WTA250,Hard,1st Round
+wta_67,wta_58,2026-01-12,13,6,7,19,,,1,Hobart International,WTA250,Hard,1st Round
+wta_58,wta_67,2026-01-12,6,13,-7,19,,,0,Hobart International,WTA250,Hard,1st Round
+wta_65,wta_95,2026-01-13,12,1,11,13,,,1,Hobart International,WTA250,Hard,1st Round
+wta_95,wta_65,2026-01-13,1,12,-11,13,,,0,Hobart International,WTA250,Hard,1st Round
+wta_102,wta_60,2026-01-13,16,12,4,28,,,1,Hobart International,WTA250,Hard,1st Round
+wta_60,wta_102,2026-01-13,12,16,-4,28,,,0,Hobart International,WTA250,Hard,1st Round
+wta_59,wta_53,2026-01-13,14,16,-2,30,,,1,Hobart International,WTA250,Hard,1st Round
+wta_53,wta_59,2026-01-13,16,14,2,30,,,0,Hobart International,WTA250,Hard,1st Round
+wta_20,wta_47,2026-01-13,12,1,11,13,,,1,Hobart International,WTA250,Hard,1st Round
+wta_47,wta_20,2026-01-13,1,12,-11,13,,,0,Hobart International,WTA250,Hard,1st Round
+wta_55,wta_57,2026-01-13,12,4,8,16,,,1,Hobart International,WTA250,Hard,1st Round
+wta_57,wta_55,2026-01-13,4,12,-8,16,,,0,Hobart International,WTA250,Hard,1st Round
+wta_223,wta_111,2026-01-13,12,5,7,17,,,1,Hobart International,WTA250,Hard,1st Round
+wta_111,wta_223,2026-01-13,5,12,-7,17,,,0,Hobart International,WTA250,Hard,1st Round
+wta_50,wta_74,2026-01-14,13,10,3,23,,,1,Hobart International,WTA250,Hard,1st Round
+wta_74,wta_50,2026-01-14,10,13,-3,23,,,0,Hobart International,WTA250,Hard,1st Round
+wta_40,wta_36,2026-01-14,15,16,-1,31,,,1,Hobart International,WTA250,Hard,2nd Round
+wta_36,wta_40,2026-01-14,16,15,1,31,,,0,Hobart International,WTA250,Hard,2nd Round
+wta_147,wta_102,2026-01-14,12,5,7,17,,,1,Hobart International,WTA250,Hard,2nd Round
+wta_102,wta_147,2026-01-14,5,12,-7,17,,,0,Hobart International,WTA250,Hard,2nd Round
+wta_20,wta_87,2026-01-14,12,3,9,15,,,1,Hobart International,WTA250,Hard,2nd Round
+wta_87,wta_20,2026-01-14,3,12,-9,15,,,0,Hobart International,WTA250,Hard,2nd Round
+wta_65,wta_54,2026-01-14,14,11,3,25,,,1,Hobart International,WTA250,Hard,2nd Round
+wta_54,wta_65,2026-01-14,11,14,-3,25,,,0,Hobart International,WTA250,Hard,2nd Round
+wta_67,wta_64,2026-01-14,13,9,4,22,,,1,Hobart International,WTA250,Hard,2nd Round
+wta_64,wta_67,2026-01-14,9,13,-4,22,,,0,Hobart International,WTA250,Hard,2nd Round
+wta_50,wta_223,2026-01-14,13,6,7,19,,,1,Hobart International,WTA250,Hard,2nd Round
+wta_223,wta_50,2026-01-14,6,13,-7,19,,,0,Hobart International,WTA250,Hard,2nd Round
+wta_89,wta_59,2026-01-14,13,7,6,20,,,1,Hobart International,WTA250,Hard,2nd Round
+wta_59,wta_89,2026-01-14,7,13,-6,20,,,0,Hobart International,WTA250,Hard,2nd Round
+wta_25,wta_55,2026-01-14,0,0,0,0,,,1,Hobart International,WTA250,Hard,2nd Round
+wta_55,wta_25,2026-01-14,0,0,0,0,,,0,Hobart International,WTA250,Hard,2nd Round
+wta_40,wta_65,2026-01-15,12,4,8,16,,,1,Hobart International,WTA250,Hard,Quarterfinals
+wta_65,wta_40,2026-01-15,4,12,-8,16,,,0,Hobart International,WTA250,Hard,Quarterfinals
+wta_147,wta_25,2026-01-15,12,6,6,18,,,1,Hobart International,WTA250,Hard,Quarterfinals
+wta_25,wta_147,2026-01-15,6,12,-6,18,,,0,Hobart International,WTA250,Hard,Quarterfinals
+wta_67,wta_89,2026-01-15,12,6,6,18,,,1,Hobart International,WTA250,Hard,Quarterfinals
+wta_89,wta_67,2026-01-15,6,12,-6,18,,,0,Hobart International,WTA250,Hard,Quarterfinals
+wta_20,wta_50,2026-01-15,18,12,6,30,,,1,Hobart International,WTA250,Hard,Quarterfinals
+wta_50,wta_20,2026-01-15,12,18,-6,30,,,0,Hobart International,WTA250,Hard,Quarterfinals
+wta_40,wta_67,2026-01-16,12,5,7,17,,,1,Hobart International,WTA250,Hard,Semifinals
+wta_67,wta_40,2026-01-16,5,12,-7,17,,,0,Hobart International,WTA250,Hard,Semifinals
+wta_20,wta_147,2026-01-16,16,11,5,27,,,1,Hobart International,WTA250,Hard,Semifinals
+wta_147,wta_20,2026-01-16,11,16,-5,27,,,0,Hobart International,WTA250,Hard,Semifinals
+wta_40,wta_20,2026-01-17,12,8,4,20,,,1,Hobart International,WTA250,Hard,The Final
+wta_20,wta_40,2026-01-17,8,12,-4,20,,,0,Hobart International,WTA250,Hard,The Final
+wta_79,wta_43,2026-01-18,13,9,4,22,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_43,wta_79,2026-01-18,9,13,-4,22,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_111,wta_82,2026-01-18,12,4,8,16,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_82,wta_111,2026-01-18,4,12,-8,16,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_8,wta_113,2026-01-18,12,3,9,15,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_113,wta_8,2026-01-18,3,12,-9,15,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_33,wta_115,2026-01-18,12,6,6,18,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_115,wta_33,2026-01-18,6,12,-6,18,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_68,wta_135,2026-01-18,12,4,8,16,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_135,wta_68,2026-01-18,4,12,-8,16,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_57,wta_26,2026-01-18,20,19,1,39,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_26,wta_57,2026-01-18,19,20,-1,39,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_9,wta_62,2026-01-18,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_62,wta_9,2026-01-18,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_44,wta_116,2026-01-18,18,13,5,31,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_116,wta_44,2026-01-18,13,18,-5,31,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_84,wta_11,2026-01-18,17,15,2,32,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_11,wta_84,2026-01-18,15,17,-2,32,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_144,wta_165,2026-01-18,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_165,wta_144,2026-01-18,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_75,wta_109,2026-01-18,16,13,3,29,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_109,wta_75,2026-01-18,13,16,-3,29,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_379,wta_110,2026-01-18,15,16,-1,31,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_110,wta_379,2026-01-18,16,15,1,31,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_25,wta_198,2026-01-18,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_198,wta_25,2026-01-18,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_59,wta_32,2026-01-19,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_32,wta_59,2026-01-19,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_55,wta_112,2026-01-19,12,2,10,14,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_112,wta_55,2026-01-19,2,12,-10,14,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_31,wta_58,2026-01-19,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_58,wta_31,2026-01-19,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_50,wta_19,2026-01-19,15,12,3,27,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_19,wta_50,2026-01-19,12,15,-3,27,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_69,wta_54,2026-01-19,13,8,5,21,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_54,wta_69,2026-01-19,8,13,-5,21,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_65,wta_168,2026-01-19,12,4,8,16,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_168,wta_65,2026-01-19,4,12,-8,16,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_4,wta_91,2026-01-19,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_91,wta_4,2026-01-19,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_130,wta_137,2026-01-19,12,13,-1,25,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_137,wta_130,2026-01-19,13,12,1,25,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_133,wta_72,2026-01-19,9,4,5,13,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_72,wta_133,2026-01-19,4,9,-5,13,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_5,wta_103,2026-01-19,12,3,9,15,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_103,wta_5,2026-01-19,3,12,-9,15,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_15,wta_86,2026-01-19,12,6,6,18,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_86,wta_15,2026-01-19,6,12,-6,18,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_76,wta_45,2026-01-19,12,11,1,23,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_45,wta_76,2026-01-19,11,12,-1,23,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_13,wta_38,2026-01-19,13,9,4,22,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_38,wta_13,2026-01-19,9,13,-4,22,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_6,wta_81,2026-01-19,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_81,wta_6,2026-01-19,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_74,wta_95,2026-01-19,15,9,6,24,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_95,wta_74,2026-01-19,9,15,-6,24,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_20,wta_96,2026-01-19,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_96,wta_20,2026-01-19,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_10,wta_152,2026-01-19,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_152,wta_10,2026-01-19,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_14,wta_97,2026-01-19,12,3,9,15,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_97,wta_14,2026-01-19,3,12,-9,15,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_73,wta_101,2026-01-19,17,13,4,30,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_101,wta_73,2026-01-19,13,17,-4,30,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_70,wta_292,2026-01-19,12,6,6,18,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_292,wta_70,2026-01-19,6,12,-6,18,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_39,wta_87,2026-01-19,13,7,6,20,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_87,wta_39,2026-01-19,7,13,-6,20,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_21,wta_53,2026-01-19,14,12,2,26,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_53,wta_21,2026-01-19,12,14,-2,26,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_7,wta_99,2026-01-19,16,9,7,25,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_99,wta_7,2026-01-19,9,16,-7,25,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_2,wta_122,2026-01-19,13,9,4,22,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_122,wta_2,2026-01-19,9,13,-4,22,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_90,wta_64,2026-01-19,12,4,8,16,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_64,wta_90,2026-01-19,4,12,-8,16,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_22,wta_124,2026-01-19,13,6,7,19,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_124,wta_22,2026-01-19,6,13,-7,19,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_46,wta_93,2026-01-20,12,3,9,15,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_93,wta_46,2026-01-20,3,12,-9,15,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_47,wta_28,2026-01-20,13,8,5,21,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_28,wta_47,2026-01-20,8,13,-5,21,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_147,wta_85,2026-01-20,14,12,2,26,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_85,wta_147,2026-01-20,12,14,-2,26,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_60,wta_88,2026-01-20,14,8,6,22,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_88,wta_60,2026-01-20,8,14,-6,22,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_100,wta_41,2026-01-20,12,6,6,18,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_41,wta_100,2026-01-20,6,12,-6,18,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_42,wta_29,2026-01-20,12,8,4,20,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_29,wta_42,2026-01-20,8,12,-4,20,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_17,wta_71,2026-01-20,13,7,6,20,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_71,wta_17,2026-01-20,7,13,-6,20,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_223,wta_191,2026-01-20,12,6,6,18,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_191,wta_223,2026-01-20,6,12,-6,18,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_80,wta_40,2026-01-20,15,15,0,30,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_40,wta_80,2026-01-20,15,15,0,30,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_118,wta_98,2026-01-20,13,8,5,21,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_98,wta_118,2026-01-20,8,13,-5,21,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_24,wta_51,2026-01-20,13,7,6,20,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_51,wta_24,2026-01-20,7,13,-6,20,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_3,wta_92,2026-01-20,12,7,5,19,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_92,wta_3,2026-01-20,7,12,-5,19,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_30,wta_56,2026-01-20,15,13,2,28,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_56,wta_30,2026-01-20,13,15,-2,28,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_27,wta_102,2026-01-20,12,8,4,20,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_102,wta_27,2026-01-20,8,12,-4,20,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_52,wta_18,2026-01-20,13,15,-2,28,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_18,wta_52,2026-01-20,15,13,2,28,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_12,wta_83,2026-01-20,13,5,8,18,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_83,wta_12,2026-01-20,5,13,-8,18,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_16,wta_67,2026-01-20,15,13,2,28,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_67,wta_16,2026-01-20,13,15,-2,28,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_123,wta_94,2026-01-20,19,17,2,36,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_94,wta_123,2026-01-20,17,19,-2,36,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_104,wta_61,2026-01-20,13,15,-2,28,,,1,Australian Open,Grand Slam,Hard,1st Round
+wta_61,wta_104,2026-01-20,15,13,2,28,,,0,Australian Open,Grand Slam,Hard,1st Round
+wta_21,wta_111,2026-01-21,16,14,2,30,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_111,wta_21,2026-01-21,14,16,-2,30,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_84,wta_65,2026-01-21,12,6,6,18,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_65,wta_84,2026-01-21,6,12,-6,18,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_9,wta_133,2026-01-21,13,6,7,19,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_133,wta_9,2026-01-21,6,13,-7,19,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_1,wta_379,2026-01-21,12,4,8,16,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_379,wta_1,2026-01-21,4,12,-8,16,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_77,wta_57,2026-01-21,12,3,9,15,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_57,wta_77,2026-01-21,3,12,-9,15,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_44,wta_231,2026-01-21,12,3,9,15,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_231,wta_44,2026-01-21,3,12,-9,15,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_10,wta_68,2026-01-21,12,7,5,19,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_68,wta_10,2026-01-21,7,12,-5,19,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_15,wta_144,2026-01-21,16,14,2,30,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_144,wta_15,2026-01-21,14,16,-2,30,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_75,wta_25,2026-01-21,13,8,5,21,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_25,wta_75,2026-01-21,8,13,-5,21,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_4,wta_89,2026-01-21,12,4,8,16,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_89,wta_4,2026-01-21,4,12,-8,16,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_79,wta_73,2026-01-21,12,8,4,20,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_73,wta_79,2026-01-21,8,12,-4,20,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_50,wta_36,2026-01-21,12,6,6,18,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_36,wta_50,2026-01-21,6,12,-6,18,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_13,wta_76,2026-01-21,16,14,2,30,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_76,wta_13,2026-01-21,14,16,-2,30,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_7,wta_33,2026-01-21,12,4,8,16,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_33,wta_7,2026-01-21,4,12,-8,16,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_8,wta_55,2026-01-21,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_55,wta_8,2026-01-21,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_20,wta_130,2026-01-21,12,3,9,15,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_130,wta_20,2026-01-21,3,12,-9,15,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_17,wta_100,2026-01-22,13,6,7,19,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_100,wta_17,2026-01-22,6,13,-7,19,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_74,wta_70,2026-01-22,12,8,4,20,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_70,wta_74,2026-01-22,8,12,-4,20,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_5,wta_31,2026-01-22,12,2,10,14,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_31,wta_5,2026-01-22,2,12,-10,14,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_267,wta_47,2026-01-22,12,8,4,20,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_47,wta_267,2026-01-22,8,12,-4,20,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_24,wta_80,2026-01-22,12,6,6,18,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_80,wta_24,2026-01-22,6,12,-6,18,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_123,wta_52,2026-01-22,19,17,2,36,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_52,wta_123,2026-01-22,17,19,-2,36,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_223,wta_27,2026-01-22,16,14,2,30,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_27,wta_223,2026-01-22,14,16,-2,30,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_14,wta_147,2026-01-22,16,10,6,26,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_147,wta_14,2026-01-22,10,16,-6,26,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_59,wta_69,2026-01-22,13,7,6,20,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_69,wta_59,2026-01-22,7,13,-6,20,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_6,wta_46,2026-01-22,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_46,wta_6,2026-01-22,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_22,wta_90,2026-01-22,12,4,8,16,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_90,wta_22,2026-01-22,4,12,-8,16,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_42,wta_118,2026-01-22,15,14,1,29,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_118,wta_42,2026-01-22,14,15,-1,29,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_2,wta_39,2026-01-22,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_39,wta_2,2026-01-22,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_16,wta_30,2026-01-22,16,11,5,27,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_30,wta_16,2026-01-22,11,16,-5,27,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_104,wta_12,2026-01-22,12,13,-1,25,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_12,wta_104,2026-01-22,13,12,1,25,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_3,wta_60,2026-01-22,13,7,6,20,,,1,Australian Open,Grand Slam,Hard,2nd Round
+wta_60,wta_3,2026-01-22,7,13,-6,20,,,0,Australian Open,Grand Slam,Hard,2nd Round
+wta_10,wta_15,2026-01-23,18,16,2,34,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_15,wta_10,2026-01-23,16,18,-2,34,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_1,wta_75,2026-01-23,14,12,2,26,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_75,wta_1,2026-01-23,12,14,-2,26,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_77,wta_84,2026-01-23,18,13,5,31,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_84,wta_77,2026-01-23,13,18,-5,31,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_4,wta_44,2026-01-23,15,9,6,24,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_44,wta_4,2026-01-23,9,15,-6,24,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_13,wta_50,2026-01-23,12,2,10,14,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_50,wta_13,2026-01-23,2,12,-10,14,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_20,wta_8,2026-01-23,13,8,5,21,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_8,wta_20,2026-01-23,8,13,-5,21,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_9,wta_21,2026-01-23,13,9,4,22,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_21,wta_9,2026-01-23,9,13,-4,22,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_7,wta_79,2026-01-23,12,7,5,19,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_79,wta_7,2026-01-23,7,12,-5,19,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_5,wta_74,2026-01-23,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_74,wta_5,2026-01-23,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_17,wta_267,2026-01-23,12,6,6,18,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_267,wta_17,2026-01-23,6,12,-6,18,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_6,wta_59,2026-01-24,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_59,wta_6,2026-01-24,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_223,wta_14,2026-01-24,13,9,4,22,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_14,wta_223,2026-01-24,9,13,-4,22,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_22,wta_104,2026-01-24,12,4,8,16,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_104,wta_22,2026-01-24,4,12,-8,16,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_2,wta_24,2026-01-24,13,8,5,21,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_24,wta_2,2026-01-24,8,13,-5,21,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_123,wta_16,2026-01-24,0,0,0,0,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_16,wta_123,2026-01-24,0,0,0,0,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_3,wta_42,2026-01-24,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,3rd Round
+wta_42,wta_3,2026-01-24,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,3rd Round
+wta_1,wta_10,2026-01-25,13,7,6,20,,,1,Australian Open,Grand Slam,Hard,4th Round
+wta_10,wta_1,2026-01-25,7,13,-6,20,,,0,Australian Open,Grand Slam,Hard,4th Round
+wta_20,wta_77,2026-01-25,12,1,11,13,,,1,Australian Open,Grand Slam,Hard,4th Round
+wta_77,wta_20,2026-01-25,1,12,-11,13,,,0,Australian Open,Grand Slam,Hard,4th Round
+wta_4,wta_13,2026-01-25,15,10,5,25,,,1,Australian Open,Grand Slam,Hard,4th Round
+wta_13,wta_4,2026-01-25,10,15,-5,25,,,0,Australian Open,Grand Slam,Hard,4th Round
+wta_9,wta_7,2026-01-25,12,6,6,18,,,1,Australian Open,Grand Slam,Hard,4th Round
+wta_7,wta_9,2026-01-25,6,12,-6,18,,,0,Australian Open,Grand Slam,Hard,4th Round
+wta_5,wta_17,2026-01-26,12,7,5,19,,,1,Australian Open,Grand Slam,Hard,4th Round
+wta_17,wta_5,2026-01-26,7,12,-5,19,,,0,Australian Open,Grand Slam,Hard,4th Round
+wta_6,wta_223,2026-01-26,13,10,3,23,,,1,Australian Open,Grand Slam,Hard,4th Round
+wta_223,wta_6,2026-01-26,10,13,-3,23,,,0,Australian Open,Grand Slam,Hard,4th Round
+wta_3,wta_22,2026-01-26,12,4,8,16,,,1,Australian Open,Grand Slam,Hard,4th Round
+wta_22,wta_3,2026-01-26,4,12,-8,16,,,0,Australian Open,Grand Slam,Hard,4th Round
+wta_2,wta_123,2026-01-26,12,3,9,15,,,1,Australian Open,Grand Slam,Hard,4th Round
+wta_123,wta_2,2026-01-26,3,12,-9,15,,,0,Australian Open,Grand Slam,Hard,4th Round
+wta_1,wta_20,2026-01-27,12,3,9,15,,,1,Australian Open,Grand Slam,Hard,Quarterfinals
+wta_20,wta_1,2026-01-27,3,12,-9,15,,,0,Australian Open,Grand Slam,Hard,Quarterfinals
+wta_9,wta_4,2026-01-27,12,3,9,15,,,1,Australian Open,Grand Slam,Hard,Quarterfinals
+wta_4,wta_9,2026-01-27,3,12,-9,15,,,0,Australian Open,Grand Slam,Hard,Quarterfinals
+wta_3,wta_2,2026-01-28,13,6,7,19,,,1,Australian Open,Grand Slam,Hard,Quarterfinals
+wta_2,wta_3,2026-01-28,6,13,-7,19,,,0,Australian Open,Grand Slam,Hard,Quarterfinals
+wta_5,wta_6,2026-01-28,13,8,5,21,,,1,Australian Open,Grand Slam,Hard,Quarterfinals
+wta_6,wta_5,2026-01-28,8,13,-5,21,,,0,Australian Open,Grand Slam,Hard,Quarterfinals
+wta_1,wta_9,2026-01-29,12,5,7,17,,,1,Australian Open,Grand Slam,Hard,Semifinals
+wta_9,wta_1,2026-01-29,5,12,-7,17,,,0,Australian Open,Grand Slam,Hard,Semifinals
+wta_3,wta_5,2026-01-29,13,9,4,22,,,1,Australian Open,Grand Slam,Hard,Semifinals
+wta_5,wta_3,2026-01-29,9,13,-4,22,,,0,Australian Open,Grand Slam,Hard,Semifinals
+wta_3,wta_1,2026-01-31,16,14,2,30,,,1,Australian Open,Grand Slam,Hard,The Final
+wta_1,wta_3,2026-01-31,14,16,-2,30,,,0,Australian Open,Grand Slam,Hard,The Final
+wta_18,wta_32,2026-02-01,12,4,8,16,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_32,wta_18,2026-02-01,4,12,-8,16,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_31,wta_110,2026-02-01,12,6,6,18,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_110,wta_31,2026-02-01,6,12,-6,18,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_28,wta_215,2026-02-01,12,3,9,15,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_215,wta_28,2026-02-01,3,12,-9,15,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_44,wta_171,2026-02-01,16,13,3,29,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_171,wta_44,2026-02-01,13,16,-3,29,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_41,wta_100,2026-02-02,12,3,9,15,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_100,wta_41,2026-02-02,3,12,-9,15,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_113,wta_70,2026-02-02,15,11,4,26,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_70,wta_113,2026-02-02,11,15,-4,26,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_51,wta_62,2026-02-02,13,9,4,22,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_62,wta_51,2026-02-02,9,13,-4,22,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_81,wta_61,2026-02-02,16,16,0,32,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_61,wta_81,2026-02-02,16,16,0,32,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_47,wta_29,2026-02-02,16,15,1,31,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_29,wta_47,2026-02-02,15,16,-1,31,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_27,wta_74,2026-02-02,18,15,3,33,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_74,wta_27,2026-02-02,15,18,-3,33,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_45,wta_84,2026-02-02,12,7,5,19,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_84,wta_45,2026-02-02,7,12,-5,19,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,1st Round
+wta_18,wta_47,2026-02-03,12,4,8,16,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_47,wta_18,2026-02-03,4,12,-8,16,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_31,wta_28,2026-02-03,12,5,7,17,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_28,wta_31,2026-02-03,5,12,-7,17,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_44,wta_19,2026-02-03,13,15,-2,28,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_19,wta_44,2026-02-03,15,13,2,28,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_15,wta_81,2026-02-03,12,4,8,16,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_81,wta_15,2026-02-03,4,12,-8,16,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_11,wta_43,2026-02-04,12,3,9,15,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_43,wta_11,2026-02-04,3,12,-9,15,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_41,wta_27,2026-02-04,12,7,5,19,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_27,wta_41,2026-02-04,7,12,-5,19,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_51,wta_87,2026-02-04,12,3,9,15,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_87,wta_51,2026-02-04,3,12,-9,15,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_45,wta_113,2026-02-04,15,16,-1,31,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_113,wta_45,2026-02-04,16,15,1,31,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,2nd Round
+wta_15,wta_31,2026-02-05,12,7,5,19,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Quarterfinals
+wta_31,wta_15,2026-02-05,7,12,-5,19,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Quarterfinals
+wta_41,wta_51,2026-02-05,12,2,10,14,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Quarterfinals
+wta_51,wta_41,2026-02-05,2,12,-10,14,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Quarterfinals
+wta_11,wta_45,2026-02-05,12,6,6,18,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Quarterfinals
+wta_45,wta_11,2026-02-05,6,12,-6,18,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Quarterfinals
+wta_44,wta_18,2026-02-05,16,12,4,28,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Quarterfinals
+wta_18,wta_44,2026-02-05,12,16,-4,28,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Quarterfinals
+wta_11,wta_44,2026-02-06,16,15,1,31,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Semifinals
+wta_44,wta_11,2026-02-06,15,16,-1,31,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Semifinals
+wta_41,wta_15,2026-02-06,17,16,1,33,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Semifinals
+wta_15,wta_41,2026-02-06,16,17,-1,33,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,Semifinals
+wta_41,wta_11,2026-02-07,13,7,6,20,,,1,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,The Final
+wta_11,wta_41,2026-02-07,7,13,-6,20,,,0,Abu Dhabi WTA Women's Tennis Open,WTA500,Hard,The Final
+wta_122,wta_67,2026-02-01,17,13,4,30,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_67,wta_122,2026-02-01,13,17,-4,30,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_65,wta_95,2026-02-01,17,12,5,29,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_95,wta_65,2026-02-01,12,17,-5,29,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_71,wta_108,2026-02-01,18,15,3,33,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_108,wta_71,2026-02-01,15,18,-3,33,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_92,wta_300,2026-02-02,12,7,5,19,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_300,wta_92,2026-02-02,7,12,-5,19,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_103,wta_267,2026-02-02,16,10,6,26,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_267,wta_103,2026-02-02,10,16,-6,26,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_145,wta_112,2026-02-02,12,5,7,17,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_112,wta_145,2026-02-02,5,12,-7,17,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_89,wta_208,2026-02-02,12,7,5,19,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_208,wta_89,2026-02-02,7,12,-5,19,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_25,wta_129,2026-02-02,12,4,8,16,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_129,wta_25,2026-02-02,4,12,-8,16,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_30,wta_91,2026-02-02,12,8,4,20,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_91,wta_30,2026-02-02,8,12,-4,20,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_75,wta_138,2026-02-03,18,16,2,34,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_138,wta_75,2026-02-03,16,18,-2,34,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_223,wta_131,2026-02-03,12,3,9,15,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_131,wta_223,2026-02-03,3,12,-9,15,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_117,wta_79,2026-02-03,16,9,7,25,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_79,wta_117,2026-02-03,9,16,-7,25,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_38,wta_136,2026-02-03,15,13,2,28,,,1,Transylvania Open,WTA250,Hard,1st Round
+wta_136,wta_38,2026-02-03,13,15,-2,28,,,0,Transylvania Open,WTA250,Hard,1st Round
+wta_71,wta_65,2026-02-03,12,8,4,20,,,1,Transylvania Open,WTA250,Hard,2nd Round
+wta_65,wta_71,2026-02-03,8,12,-4,20,,,0,Transylvania Open,WTA250,Hard,2nd Round
+wta_223,wta_117,2026-02-04,12,6,6,18,,,1,Transylvania Open,WTA250,Hard,2nd Round
+wta_117,wta_223,2026-02-04,6,12,-6,18,,,0,Transylvania Open,WTA250,Hard,2nd Round
+wta_75,wta_103,2026-02-04,13,13,0,26,,,1,Transylvania Open,WTA250,Hard,2nd Round
+wta_103,wta_75,2026-02-04,13,13,0,26,,,0,Transylvania Open,WTA250,Hard,2nd Round
+wta_126,wta_89,2026-02-04,13,9,4,22,,,1,Transylvania Open,WTA250,Hard,2nd Round
+wta_89,wta_126,2026-02-04,9,13,-4,22,,,0,Transylvania Open,WTA250,Hard,2nd Round
+wta_132,wta_38,2026-02-04,12,1,11,13,,,1,Transylvania Open,WTA250,Hard,2nd Round
+wta_38,wta_132,2026-02-04,1,12,-11,13,,,0,Transylvania Open,WTA250,Hard,2nd Round
+wta_30,wta_145,2026-02-04,12,1,11,13,,,1,Transylvania Open,WTA250,Hard,2nd Round
+wta_145,wta_30,2026-02-04,1,12,-11,13,,,0,Transylvania Open,WTA250,Hard,2nd Round
+wta_25,wta_92,2026-02-04,13,6,7,19,,,1,Transylvania Open,WTA250,Hard,2nd Round
+wta_92,wta_25,2026-02-04,6,13,-7,19,,,0,Transylvania Open,WTA250,Hard,2nd Round
+wta_71,wta_223,2026-02-05,12,8,4,20,,,1,Transylvania Open,WTA250,Hard,Quarterfinals
+wta_223,wta_71,2026-02-05,8,12,-4,20,,,0,Transylvania Open,WTA250,Hard,Quarterfinals
+wta_25,wta_126,2026-02-05,12,4,8,16,,,1,Transylvania Open,WTA250,Hard,Quarterfinals
+wta_126,wta_25,2026-02-05,4,12,-8,16,,,0,Transylvania Open,WTA250,Hard,Quarterfinals
+wta_30,wta_75,2026-02-05,13,9,4,22,,,1,Transylvania Open,WTA250,Hard,Quarterfinals
+wta_75,wta_30,2026-02-05,9,13,-4,22,,,0,Transylvania Open,WTA250,Hard,Quarterfinals
+wta_132,wta_122,2026-02-05,17,11,6,28,,,1,Transylvania Open,WTA250,Hard,Quarterfinals
+wta_122,wta_132,2026-02-05,11,17,-6,28,,,0,Transylvania Open,WTA250,Hard,Quarterfinals
+wta_25,wta_71,2026-02-06,16,14,2,30,,,1,Transylvania Open,WTA250,Hard,Semifinals
+wta_71,wta_25,2026-02-06,14,16,-2,30,,,0,Transylvania Open,WTA250,Hard,Semifinals
+wta_30,wta_132,2026-02-06,12,3,9,15,,,1,Transylvania Open,WTA250,Hard,Semifinals
+wta_132,wta_30,2026-02-06,3,12,-9,15,,,0,Transylvania Open,WTA250,Hard,Semifinals
+wta_30,wta_25,2026-02-07,12,2,10,14,,,1,Transylvania Open,WTA250,Hard,The Final
+wta_25,wta_30,2026-02-07,2,12,-10,14,,,0,Transylvania Open,WTA250,Hard,The Final
+wta_178,wta_90,2026-02-01,14,12,2,26,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_90,wta_178,2026-02-01,12,14,-2,26,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_96,wta_133,2026-02-01,12,3,9,15,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_133,wta_96,2026-02-01,3,12,-9,15,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_351,wta_86,2026-02-01,15,14,1,29,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_86,wta_351,2026-02-01,14,15,-1,29,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_93,wta_127,2026-02-01,13,8,5,21,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_127,wta_93,2026-02-01,8,13,-5,21,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_68,wta_109,2026-02-01,13,8,5,21,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_109,wta_68,2026-02-01,8,13,-5,21,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_76,wta_80,2026-02-02,13,8,5,21,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_80,wta_76,2026-02-02,8,13,-5,21,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_106,wta_227,2026-02-02,12,8,4,20,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_227,wta_106,2026-02-02,8,12,-4,20,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_104,wta_82,2026-02-02,12,8,4,20,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_82,wta_104,2026-02-02,8,12,-4,20,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_118,wta_203,2026-02-02,13,10,3,23,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_203,wta_118,2026-02-02,10,13,-3,23,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_102,wta_286,2026-02-03,12,5,7,17,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_286,wta_102,2026-02-03,5,12,-7,17,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_83,wta_276,2026-02-03,15,11,4,26,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_276,wta_83,2026-02-03,11,15,-4,26,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_88,wta_105,2026-02-03,12,4,8,16,,,1,Ostrava Open,WTA250,Hard,1st Round
+wta_105,wta_88,2026-02-03,4,12,-8,16,,,0,Ostrava Open,WTA250,Hard,1st Round
+wta_96,wta_54,2026-02-03,13,6,7,19,,,1,Ostrava Open,WTA250,Hard,2nd Round
+wta_54,wta_96,2026-02-03,6,13,-7,19,,,0,Ostrava Open,WTA250,Hard,2nd Round
+wta_68,wta_351,2026-02-03,12,8,4,20,,,1,Ostrava Open,WTA250,Hard,2nd Round
+wta_351,wta_68,2026-02-03,8,12,-4,20,,,0,Ostrava Open,WTA250,Hard,2nd Round
+wta_76,wta_178,2026-02-03,12,6,6,18,,,1,Ostrava Open,WTA250,Hard,2nd Round
+wta_178,wta_76,2026-02-03,6,12,-6,18,,,0,Ostrava Open,WTA250,Hard,2nd Round
+wta_106,wta_58,2026-02-04,12,7,5,19,,,1,Ostrava Open,WTA250,Hard,2nd Round
+wta_58,wta_106,2026-02-04,7,12,-5,19,,,0,Ostrava Open,WTA250,Hard,2nd Round
+wta_83,wta_88,2026-02-04,12,4,8,16,,,1,Ostrava Open,WTA250,Hard,2nd Round
+wta_88,wta_83,2026-02-04,4,12,-8,16,,,0,Ostrava Open,WTA250,Hard,2nd Round
+wta_118,wta_102,2026-02-04,12,4,8,16,,,1,Ostrava Open,WTA250,Hard,2nd Round
+wta_102,wta_118,2026-02-04,4,12,-8,16,,,0,Ostrava Open,WTA250,Hard,2nd Round
+wta_104,wta_239,2026-02-04,15,11,4,26,,,1,Ostrava Open,WTA250,Hard,2nd Round
+wta_239,wta_104,2026-02-04,11,15,-4,26,,,0,Ostrava Open,WTA250,Hard,2nd Round
+wta_107,wta_93,2026-02-04,12,3,9,15,,,1,Ostrava Open,WTA250,Hard,2nd Round
+wta_93,wta_107,2026-02-04,3,12,-9,15,,,0,Ostrava Open,WTA250,Hard,2nd Round
+wta_96,wta_76,2026-02-05,17,13,4,30,,,1,Ostrava Open,WTA250,Hard,Quarterfinals
+wta_76,wta_96,2026-02-05,13,17,-4,30,,,0,Ostrava Open,WTA250,Hard,Quarterfinals
+wta_83,wta_118,2026-02-05,12,5,7,17,,,1,Ostrava Open,WTA250,Hard,Quarterfinals
+wta_118,wta_83,2026-02-05,5,12,-7,17,,,0,Ostrava Open,WTA250,Hard,Quarterfinals
+wta_107,wta_104,2026-02-05,12,4,8,16,,,1,Ostrava Open,WTA250,Hard,Quarterfinals
+wta_104,wta_107,2026-02-05,4,12,-8,16,,,0,Ostrava Open,WTA250,Hard,Quarterfinals
+wta_106,wta_68,2026-02-05,12,6,6,18,,,1,Ostrava Open,WTA250,Hard,Quarterfinals
+wta_68,wta_106,2026-02-05,6,12,-6,18,,,0,Ostrava Open,WTA250,Hard,Quarterfinals
+wta_83,wta_96,2026-02-06,12,4,8,16,,,1,Ostrava Open,WTA250,Hard,Semifinals
+wta_96,wta_83,2026-02-06,4,12,-8,16,,,0,Ostrava Open,WTA250,Hard,Semifinals
+wta_106,wta_107,2026-02-06,12,8,4,20,,,1,Ostrava Open,WTA250,Hard,Semifinals
+wta_107,wta_106,2026-02-06,8,12,-4,20,,,0,Ostrava Open,WTA250,Hard,Semifinals
+wta_83,wta_106,2026-02-07,17,10,7,27,,,1,Ostrava Open,WTA250,Hard,The Final
+wta_106,wta_83,2026-02-07,10,17,-7,27,,,0,Ostrava Open,WTA250,Hard,The Final
+wta_55,wta_18,2026-02-08,17,15,2,32,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_18,wta_55,2026-02-08,15,17,-2,32,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_357,wta_59,2026-02-08,14,11,3,25,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_59,wta_357,2026-02-08,11,14,-3,25,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_60,wta_52,2026-02-08,13,10,3,23,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_52,wta_60,2026-02-08,10,13,-3,23,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_22,wta_110,2026-02-08,12,3,9,15,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_110,wta_22,2026-02-08,3,12,-9,15,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_76,wta_21,2026-02-08,14,16,-2,30,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_21,wta_76,2026-02-08,16,14,2,30,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_40,wta_57,2026-02-08,13,8,5,21,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_57,wta_40,2026-02-08,8,13,-5,21,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_36,wta_28,2026-02-08,12,7,5,19,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_28,wta_36,2026-02-08,7,12,-5,19,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_50,wta_51,2026-02-08,15,13,2,28,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_51,wta_50,2026-02-08,13,15,-2,28,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_10,wta_39,2026-02-08,13,7,6,20,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_39,wta_10,2026-02-08,7,13,-6,20,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_267,wta_64,2026-02-08,12,3,9,15,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_64,wta_267,2026-02-08,3,12,-9,15,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_61,wta_90,2026-02-08,16,9,7,25,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_90,wta_61,2026-02-08,9,16,-7,25,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_13,wta_38,2026-02-08,12,5,7,17,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_38,wta_13,2026-02-08,5,12,-7,17,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_14,wta_29,2026-02-09,12,4,8,16,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_29,wta_14,2026-02-09,4,12,-8,16,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_43,wta_62,2026-02-09,17,16,1,33,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_62,wta_43,2026-02-09,16,17,-1,33,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_223,wta_58,2026-02-09,13,6,7,19,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_58,wta_223,2026-02-09,6,13,-7,19,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_46,wta_15,2026-02-09,12,5,7,17,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_15,wta_46,2026-02-09,5,12,-7,17,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_42,wta_45,2026-02-09,13,7,6,20,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_45,wta_42,2026-02-09,7,13,-6,20,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_19,wta_54,2026-02-09,13,6,7,19,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_54,wta_19,2026-02-09,6,13,-7,19,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_23,wta_32,2026-02-09,16,9,7,25,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_32,wta_23,2026-02-09,9,16,-7,25,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_27,wta_103,2026-02-09,18,14,4,32,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_103,wta_27,2026-02-09,14,18,-4,32,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_33,wta_84,2026-02-09,12,4,8,16,,,1,Qatar Open,WTA1000,Hard,1st Round
+wta_84,wta_33,2026-02-09,4,12,-8,16,,,0,Qatar Open,WTA1000,Hard,1st Round
+wta_267,wta_6,2026-02-09,16,14,2,30,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_6,wta_267,2026-02-09,14,16,-2,30,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_7,wta_50,2026-02-09,13,7,6,20,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_50,wta_7,2026-02-09,7,13,-6,20,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_61,wta_22,2026-02-10,12,4,8,16,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_22,wta_61,2026-02-10,4,12,-8,16,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_36,wta_55,2026-02-10,12,7,5,19,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_55,wta_36,2026-02-10,7,12,-5,19,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_33,wta_8,2026-02-10,12,6,6,18,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_8,wta_33,2026-02-10,6,12,-6,18,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_27,wta_11,2026-02-10,12,6,6,18,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_11,wta_27,2026-02-10,6,12,-6,18,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_40,wta_4,2026-02-10,12,6,6,18,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_4,wta_40,2026-02-10,6,12,-6,18,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_10,wta_357,2026-02-10,12,8,4,20,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_357,wta_10,2026-02-10,8,12,-4,20,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_60,wta_14,2026-02-10,15,13,2,28,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_14,wta_60,2026-02-10,13,15,-2,28,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_9,wta_43,2026-02-10,12,5,7,17,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_43,wta_9,2026-02-10,5,12,-7,17,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_2,wta_47,2026-02-10,12,3,9,15,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_47,wta_2,2026-02-10,3,12,-9,15,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_13,wta_42,2026-02-10,12,5,7,17,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_42,wta_13,2026-02-10,5,12,-7,17,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_23,wta_76,2026-02-10,16,14,2,30,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_76,wta_23,2026-02-10,14,16,-2,30,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_3,wta_223,2026-02-10,12,6,6,18,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_223,wta_3,2026-02-10,6,12,-6,18,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_24,wta_19,2026-02-10,15,13,2,28,,,1,Qatar Open,WTA1000,Hard,2nd Round
+wta_19,wta_24,2026-02-10,13,15,-2,28,,,0,Qatar Open,WTA1000,Hard,2nd Round
+wta_33,wta_60,2026-02-11,13,6,7,19,,,1,Qatar Open,WTA1000,Hard,3rd Round
+wta_60,wta_33,2026-02-11,6,13,-7,19,,,0,Qatar Open,WTA1000,Hard,3rd Round
+wta_40,wta_36,2026-02-11,18,17,1,35,,,1,Qatar Open,WTA1000,Hard,3rd Round
+wta_36,wta_40,2026-02-11,17,18,-1,35,,,0,Qatar Open,WTA1000,Hard,3rd Round
+wta_10,wta_7,2026-02-11,16,15,1,31,,,1,Qatar Open,WTA1000,Hard,3rd Round
+wta_7,wta_10,2026-02-11,15,16,-1,31,,,0,Qatar Open,WTA1000,Hard,3rd Round
+wta_2,wta_61,2026-02-11,17,9,8,26,,,1,Qatar Open,WTA1000,Hard,3rd Round
+wta_61,wta_2,2026-02-11,9,17,-8,26,,,0,Qatar Open,WTA1000,Hard,3rd Round
+wta_13,wta_267,2026-02-11,5,2,3,7,,,1,Qatar Open,WTA1000,Hard,3rd Round
+wta_267,wta_13,2026-02-11,2,5,-3,7,,,0,Qatar Open,WTA1000,Hard,3rd Round
+wta_3,wta_23,2026-02-11,17,13,4,30,,,1,Qatar Open,WTA1000,Hard,3rd Round
+wta_23,wta_3,2026-02-11,13,17,-4,30,,,0,Qatar Open,WTA1000,Hard,3rd Round
+wta_24,wta_9,2026-02-11,12,7,5,19,,,1,Qatar Open,WTA1000,Hard,3rd Round
+wta_9,wta_24,2026-02-11,7,12,-5,19,,,0,Qatar Open,WTA1000,Hard,3rd Round
+wta_27,wta_40,2026-02-12,13,9,4,22,,,1,Qatar Open,WTA1000,Hard,Quarterfinals
+wta_40,wta_27,2026-02-12,9,13,-4,22,,,0,Qatar Open,WTA1000,Hard,Quarterfinals
+wta_33,wta_2,2026-02-12,15,15,0,30,,,1,Qatar Open,WTA1000,Hard,Quarterfinals
+wta_2,wta_33,2026-02-12,15,15,0,30,,,0,Qatar Open,WTA1000,Hard,Quarterfinals
+wta_10,wta_3,2026-02-12,17,15,2,32,,,1,Qatar Open,WTA1000,Hard,Quarterfinals
+wta_3,wta_10,2026-02-12,15,17,-2,32,,,0,Qatar Open,WTA1000,Hard,Quarterfinals
+wta_13,wta_24,2026-02-12,12,7,5,19,,,1,Qatar Open,WTA1000,Hard,Quarterfinals
+wta_24,wta_13,2026-02-12,7,12,-5,19,,,0,Qatar Open,WTA1000,Hard,Quarterfinals
+wta_10,wta_27,2026-02-13,12,5,7,17,,,1,Qatar Open,WTA1000,Hard,Semifinals
+wta_27,wta_10,2026-02-13,5,12,-7,17,,,0,Qatar Open,WTA1000,Hard,Semifinals
+wta_13,wta_33,2026-02-13,15,11,4,26,,,1,Qatar Open,WTA1000,Hard,Semifinals
+wta_33,wta_13,2026-02-13,11,15,-4,26,,,0,Qatar Open,WTA1000,Hard,Semifinals
+wta_13,wta_10,2026-02-14,13,9,4,22,,,1,Qatar Open,WTA1000,Hard,The Final
+wta_10,wta_13,2026-02-14,9,13,-4,22,,,0,Qatar Open,WTA1000,Hard,The Final

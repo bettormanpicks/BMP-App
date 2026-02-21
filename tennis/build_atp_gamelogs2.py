@@ -5,8 +5,8 @@ import re
 # CONFIG
 # ========================
 PLAYERS_FILE = "data/tennisplayers.csv"
-MATCH_FILE = "data/wta_match_logs.csv"
-OUTPUT_FILE = "data/wta_player_gamelogs.csv"
+MATCH_FILE = "data/atp_match_logs.csv"
+OUTPUT_FILE = "data/atp_player_gamelogs.csv"
 
 
 # ------------------------
@@ -23,13 +23,13 @@ def normalize(text):
 
 
 # ------------------------
-# Build lookup: "osaka n" -> player_id
+# Build lookup: "alcaraz c" -> player_id
 # ------------------------
 def build_player_lookup(players_df):
     lookup = {}
 
     for _, row in players_df.iterrows():
-        if row["tour"] != "WTA":
+        if row["tour"] != "ATP":
             continue
 
         player_id = row["player_id"]
@@ -49,7 +49,7 @@ def build_player_lookup(players_df):
 
 
 # ------------------------
-# Convert "Osaka N." -> player_id
+# Convert "Alcaraz C." -> player_id
 # ------------------------
 def resolve_scoreboard_name(name, lookup):
     name = normalize(name)
@@ -73,7 +73,7 @@ print("Loading players...")
 players = pd.read_csv(PLAYERS_FILE)
 
 player_lookup = build_player_lookup(players)
-print("WTA players indexed:", len(player_lookup))
+print("ATP players indexed:", len(player_lookup))
 
 
 # ------------------------

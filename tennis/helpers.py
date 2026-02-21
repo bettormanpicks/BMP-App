@@ -2,6 +2,7 @@
 
 import pandas as pd
 import streamlit as st
+from datetime import datetime, timedelta
 from shared.utils import hit_rate_threshold, trim_df_to_recent_82
 
 # --- Surface / positional mapping ---
@@ -21,7 +22,11 @@ TENNIS_STAT_MAP = {
     "MW": "match_win"
 }
 
-
+@st.cache_data(ttl=300)
+def load_tennis_schedule():
+    df = pd.read_csv("data/tennis_schedule.csv")
+    df["Date"] = pd.to_datetime(df["Date"], errors="coerce").dt.date
+    return df
 
 @st.cache_data(ttl=3600)
 def load_tennis_raw_data(tour="WTA"):

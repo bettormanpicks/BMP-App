@@ -4,7 +4,7 @@ atp_2,Jannik Sinner,ATP,2,10300,ITA
 atp_3,Novak Djokovic,ATP,3,5280,SRB
 atp_4,Alexander Zverev,ATP,4,4605,GER
 atp_5,Lorenzo Musetti,ATP,5,4405,ITA
-atp_6,Felix Auger Aliassime,ATP,6,4000,CAN
+atp_6,Felix Aliassime,ATP,6,4000,CAN
 atp_7,Taylor Fritz,ATP,7,3990,USA
 atp_8,Alex de Minaur,ATP,8,3850,AUS
 atp_9,Ben Shelton,ATP,9,3650,USA
@@ -13,7 +13,7 @@ atp_11,Daniil Medvedev,ATP,11,3010,RUS
 atp_12,Jack Draper,ATP,12,2790,GBR
 atp_13,Casper Ruud,ATP,13,2625,NOR
 atp_14,Andrey Rublev,ATP,14,2510,RUS
-atp_15,Alejandro Davidovich Fokina,ATP,15,2470,ESP
+atp_15,Alejandro Fokina,ATP,15,2470,ESP
 atp_16,Jakub Mensik,ATP,16,2425,CZE
 atp_17,Karen Khachanov,ATP,17,2360,RUS
 atp_18,Holger Rune,ATP,18,2340,DEN
@@ -43,7 +43,7 @@ atp_41,Alex Michelsen,ATP,41,1110,USA
 atp_42,Grigor Dimitrov,ATP,42,1105,BUL
 atp_43,Zizou Bergs,ATP,43,1080,BEL
 atp_44,Nuno Borges,ATP,44,1070,POR
-atp_45,Camilo Ugo Carabelli,ATP,45,1068,ARG
+atp_45,Camilo Carabelli,ATP,45,1068,ARG
 atp_46,Jenson Brooksby,ATP,46,1042,USA
 atp_47,Fabian Marozsan,ATP,47,1040,HUN
 atp_48,Adrian Mannarino,ATP,48,1025,FRA
@@ -51,12 +51,12 @@ atp_49,Sebastian Korda,ATP,49,1020,USA
 atp_50,Alexandre Muller,ATP,50,1020,FRA
 atp_51,Alexei Popyrin,ATP,51,1000,AUS
 atp_52,Marin Cilic,ATP,52,990,CRO
-atp_53,Tomas Martin Etcheverry,ATP,53,970,ARG
+atp_53,Tomas Etcheverry,ATP,53,970,ARG
 atp_54,Daniel Altmaier,ATP,54,961,GER
 atp_55,Botic van de Zandschulp,ATP,55,936,NED
 atp_56,Kamil Majchrzak,ATP,56,920,POL
 atp_57,Matteo Berrettini,ATP,57,910,ITA
-atp_58,Giovanni Mpetshi Perricard,ATP,58,905,FRA
+atp_58,Giovanni Perricard,ATP,58,905,FRA
 atp_59,Valentin Royer,ATP,59,897,FRA
 atp_60,Marton Fucsovics,ATP,60,891,HUN
 atp_61,Damir Dzumhur,ATP,61,877,BIH
@@ -75,12 +75,12 @@ atp_73,Arthur Cazaux,ATP,73,755,FRA
 atp_74,Mariano Navone,ATP,74,750,ARG
 atp_75,Aleksandar Kovacevic,ATP,75,746,USA
 atp_76,Emilio Nava,ATP,76,710,USA
-atp_77,Jan Lennard Struff,ATP,77,706,GER
-atp_78,Juan Manuel Cerundolo,ATP,78,706,ARG
+atp_77,Jan Struff,ATP,77,706,GER
+atp_78,Juan Cerundolo,ATP,78,706,ARG
 atp_79,Alexander Shevchenko,ATP,79,696,KAZ
 atp_80,James Duckworth,ATP,80,691,AUS
 atp_81,Filip Misolic,ATP,81,687,AUT
-atp_82,Roberto Bautista Agut,ATP,82,685,ESP
+atp_82,Roberto Agut,ATP,82,685,ESP
 atp_83,Miomir Kecmanovic,ATP,83,670,SRB
 atp_84,Jacob Fearnley,ATP,84,668,GBR
 atp_85,Matteo Arnaldi,ATP,85,665,ITA
@@ -90,7 +90,7 @@ atp_88,Aleksandar Vukic,ATP,88,656,AUS
 atp_89,Cristian Garin,ATP,89,656,CHI
 atp_90,Yannick Hanfmann,ATP,90,653,GER
 atp_91,Ignacio Buse,ATP,91,648,PER
-atp_92,Thiago Agustin Tirante,ATP,92,647,ARG
+atp_92,Thiago Tirante,ATP,92,647,ARG
 atp_93,Adam Walton,ATP,93,643,AUS
 atp_94,Luca Nardi,ATP,94,629,ITA
 atp_95,Christopher OConnell,ATP,95,626,AUS
@@ -100,19 +100,19 @@ atp_98,Stan Wawrinka,ATP,98,612,SUI
 atp_99,Dalibor Svrcina,ATP,99,612,CZE
 atp_100,Carlos Taberner,ATP,100,608,ESP
 atp_101,Pedro Martinez,ATP,101,586,ESP
-atp_102,Roman Andres Burruchaga,ATP,102,580,ARG
-atp_103,Adolfo Daniel Vallejo,ATP,103,580,PAR
+atp_102,Roman Burruchaga,ATP,102,580,ARG
+atp_103,Adolfo Vallejo,ATP,103,580,PAR
 atp_104,Alexander Blockx,ATP,104,570,BEL
 atp_105,Patrick Kypson,ATP,105,565,USA
 atp_106,Zachary Svajda,ATP,106,563,USA
-atp_107,Tomas Barrios Vera,ATP,107,563,CHI
+atp_107,Tomas Vera,ATP,107,563,CHI
 atp_108,Tristan Schoolkate,ATP,108,556,AUS
 atp_109,Mattia Bellucci,ATP,109,553,ITA
 atp_110,Francesco Maestrelli,ATP,110,553,ITA
 atp_111,Jordan Thompson,ATP,111,548,AUS
 atp_112,Rinky Hijikata,ATP,112,546,AUS
 atp_113,Laslo Djere,ATP,113,538,SRB
-atp_114,Chun Hsin Tseng,ATP,114,536,TWN
+atp_114,Chun Tseng,ATP,114,536,TWN
 atp_115,Mackenzie McDonald,ATP,115,535,USA
 atp_116,Shintaro Mochizuki,ATP,116,525,JPN
 atp_117,Rafael Jodar,ATP,117,523,ESP
@@ -120,7 +120,7 @@ atp_118,David Goffin,ATP,118,515,BEL
 atp_119,Titouan Droguet,ATP,119,510,FRA
 atp_120,Elmer Møller,ATP,120,509,DEN
 atp_121,Dino Prizmic,ATP,121,507,CRO
-atp_122,Pablo Carreno Busta,ATP,122,504,ESP
+atp_122,Pablo Busta,ATP,122,504,ESP
 atp_123,Benjamin Bonzi,ATP,123,500,FRA
 atp_124,Jan Choinski,ATP,124,498,GBR
 atp_125,Martin Damm,ATP,125,492,USA
@@ -131,12 +131,12 @@ atp_129,Dusan Lajovic,ATP,129,485,SRB
 atp_130,Luca Van Assche,ATP,130,477,FRA
 atp_131,Marco Trungelliti,ATP,131,472,ARG
 atp_132,Sebastian Ofner,ATP,132,471,AUT
-atp_133,Nicolai Budkov Kjaer,ATP,133,470,NOR
+atp_133,Nicolai Kjaer,ATP,133,470,NOR
 atp_134,Dane Sweeny,ATP,134,468,AUS
 atp_135,Sho Shimabukuro,ATP,135,466,JPN
 atp_136,Nikoloz Basilashvili,ATP,136,464,GEO
 atp_137,Coleman Wong,ATP,137,458,HKG
-atp_138,Jack Pinnington Jones,ATP,138,456,GBR
+atp_138,Jack Jones,ATP,138,456,GBR
 atp_139,Moez Echargui,ATP,139,449,TUN
 atp_140,Andrea Pellegrino,ATP,140,447,ITA
 atp_141,Colton Smith,ATP,141,446,USA
@@ -152,7 +152,7 @@ atp_150,Lukas Klein,ATP,150,421,SVK
 atp_151,Brandon Holt,ATP,151,418,USA
 atp_152,Michael Zheng,ATP,152,414,USA
 atp_153,Kyrian Jacquet,ATP,153,414,FRA
-atp_154,Guy Den Ouden,ATP,154,405,NED
+atp_154,Guy Ouden,ATP,154,405,NED
 atp_155,Giulio Zeppieri,ATP,155,397,ITA
 atp_156,Arthur Fery,ATP,156,396,GBR
 atp_157,Hugo Dellien,ATP,157,393,BOL
@@ -172,7 +172,7 @@ atp_170,Henrique Rocha,ATP,170,357,POR
 atp_171,Leandro Riedi,ATP,171,356,SUI
 atp_172,Harold Mayot,ATP,172,355,FRA
 atp_173,Rei Sakamoto,ATP,173,354,JPN
-atp_174,Roberto Carballes Baena,ATP,174,350,ESP
+atp_174,Roberto Baena,ATP,174,350,ESP
 atp_175,Jurij Rodionov,ATP,175,350,AUT
 atp_176,Yosuke Watanuki,ATP,176,349,JPN
 atp_177,Zsombor Piros,ATP,177,341,HUN
@@ -180,14 +180,14 @@ atp_178,Nicolas Mejia,ATP,178,341,COL
 atp_179,Lloyd Harris,ATP,179,336,RSA
 atp_180,Alex Barrena,ATP,180,336,ARG
 atp_181,Vitaliy Sachko,ATP,181,333,UKR
-atp_182,Juan Pablo Ficovich,ATP,182,331,ARG
-atp_183,Daniel Elahi Galan,ATP,183,330,COL
+atp_182,Juan Ficovich,ATP,182,331,ARG
+atp_183,Daniel Galan,ATP,183,330,COL
 atp_184,Jay Clarke,ATP,184,329,GBR
 atp_185,Roman Safiullin,ATP,185,328,RUS
 atp_186,Bernard Tomic,ATP,186,319,AUS
 atp_187,Elias Ymer,ATP,187,315,SWE
-atp_188,Federico Agustin Gomez,ATP,188,314,ARG
-atp_189,Pierre Hugues Herbert,ATP,189,313,FRA
+atp_188,Federico Gomez,ATP,188,314,ARG
+atp_189,Pierre Herbert,ATP,189,313,FRA
 atp_190,Nishesh Basavareddy,ATP,190,310,USA
 atp_191,Hugo Grenier,ATP,191,310,FRA
 atp_192,Justin Engel,ATP,192,309,GER
@@ -195,11 +195,11 @@ atp_193,Timofey Skatov,ATP,193,308,KAZ
 atp_194,Zdenek Kolar,ATP,194,308,CZE
 atp_195,Jerome Kym,ATP,195,307,SUI
 atp_196,Daniel Evans,ATP,196,306,GBR
-atp_197,Pablo Llamas Ruiz,ATP,197,304,ESP
+atp_197,Pablo Ruiz,ATP,197,304,ESP
 atp_198,August Holmgren,ATP,198,303,DEN
 atp_199,Alex Molcan,ATP,199,302,SVK
 atp_200,Dan Added,ATP,200,299,FRA
-atp_201,Alvaro Guillen Meza,ATP,201,298,ECU
+atp_201,Alvaro Meza,ATP,201,298,ECU
 atp_202,Jason Kubler,ATP,202,295,AUS
 atp_203,George Loffhagen,ATP,203,295,GBR
 atp_204,Clement Tabur,ATP,204,292,FRA
@@ -209,24 +209,24 @@ atp_207,Joao Lucas Reis Da Silva,ATP,207,291,BRA
 atp_208,Thiago Monteiro,ATP,208,290,BRA
 atp_209,Luka Pavlovic,ATP,209,286,FRA
 atp_210,James McCabe,ATP,210,283,AUS
-atp_211,Gilles Arnaud Bailly,ATP,211,280,BEL
-atp_212,Juan Carlos Prado Angelo,ATP,212,279,BOL
+atp_211,Gilles Bailly,ATP,211,280,BEL
+atp_212,Juan Angelo,ATP,212,279,BOL
 atp_213,Remy Bertola,ATP,213,276,SUI
 atp_214,Oliver Crawford,ATP,214,273,GBR
 atp_215,Marco Cecchinato,ATP,215,270,ITA
 atp_216,Tristan Boyer,ATP,216,268,USA
 atp_217,Ilia Simakin,ATP,217,268,RUS
 atp_218,Gonzalo Bueno,ATP,218,265,PER
-atp_219,Thiago Seyboth Wild,ATP,219,262,BRA
+atp_219,Thiago Wild,ATP,219,262,BRA
 atp_220,Yi Zhou,ATP,220,261,CHN
-atp_221,Yu hsiou Hsu,ATP,221,259,TWN
+atp_221,Yu Hsu,ATP,221,259,TWN
 atp_222,Lukas Neumayer,ATP,222,255,AUT
 atp_223,Nerman Fatic,ATP,223,254,BIH
 atp_224,Federico Cina,ATP,224,252,ITA
 atp_225,Lautaro Midon,ATP,225,252,ARG
-atp_226,Marc Andrea Husler,ATP,226,250,SUI
-atp_227,Rodrigo Pacheco Mendez,ATP,227,248,MEX
-atp_228,Genaro Alberto Olivieri,ATP,228,247,ARG
+atp_226,Marc Husler,ATP,226,250,SUI
+atp_227,Rodrigo Mendez,ATP,227,248,MEX
+atp_228,Genaro Olivieri,ATP,228,247,ARG
 atp_229,Santiago Taverna,ATP,229,246,ARG
 atp_230,Matej Dodig,ATP,230,244,CRO
 atp_231,Andrea Collarini,ATP,231,244,ARG
@@ -234,7 +234,7 @@ atp_232,Ryan Peniston,ATP,232,242,GBR
 atp_233,Max Houkes,ATP,233,242,NED
 atp_234,Dmitry Popko,ATP,234,241,KAZ
 atp_235,Borna Gojo,ATP,235,236,CRO
-atp_236,Felipe Meligeni Alves,ATP,236,236,BRA
+atp_236,Felipe Alves,ATP,236,236,BRA
 atp_237,Marko Topo,ATP,237,234,GER
 atp_238,Johannus Monday,ATP,238,233,GBR
 atp_239,Murphy Cassone,ATP,239,233,USA
@@ -249,10 +249,10 @@ atp_247,Rio Noguchi,ATP,247,221,JPN
 atp_248,Kimmer Coppejans,ATP,248,220,BEL
 atp_249,Ivan Gakhov,ATP,249,219,RUS
 atp_250,Edas Butvilas,ATP,250,217,LTU
-atp_251,Pol Martin Tiffon,ATP,251,215,ESP
+atp_251,Pol Tiffon,ATP,251,215,ESP
 atp_252,Andres Andrade,ATP,252,213,ECU
-atp_253,Pedro Boscardin Dias,ATP,253,213,BRA
-atp_254,Frederico Ferreira Silva,ATP,254,212,POR
+atp_253,Pedro Dias,ATP,253,213,BRA
+atp_254,Frederico Silva,ATP,254,212,POR
 atp_255,Patrick Zahraj,ATP,255,209,GER
 atp_256,Gustavo Heide,ATP,256,207,BRA
 atp_257,Charles Broom,ATP,257,206,GBR
@@ -264,25 +264,25 @@ atp_262,Mikhail Kukushkin,ATP,262,203,KAZ
 atp_263,Fajing Sun,ATP,263,202,CHN
 atp_264,Dimitar Kuzmanov,ATP,264,202,BUL
 atp_265,Geoffrey Blancaneaux,ATP,265,201,FRA
-atp_266,Sascha Gueymard Wayenburg,ATP,266,201,FRA
+atp_266,Sascha Wayenburg,ATP,266,201,FRA
 atp_267,Nicolas Kicker,ATP,267,200,ARG
 atp_268,Tiago Pereira,ATP,268,200,POR
 atp_269,Andres Martin,ATP,269,198,USA
 atp_270,Florent Bax,ATP,270,197,FRA
-atp_271,Alejandro Moro Canas,ATP,271,197,ESP
+atp_271,Alejandro Canas,ATP,271,197,ESP
 atp_272,Stefan Kozlov,ATP,272,196,USA
 atp_273,Darwin Blanch,ATP,273,195,USA
-atp_274,Nikolas Sanchez Izquierdo,ATP,274,194,ESP
+atp_274,Nikolas Izquierdo,ATP,274,194,ESP
 atp_275,Stefanos Sakellaridis,ATP,275,193,GRE
 atp_276,Harry Wendelken,ATP,276,193,GBR
 atp_277,Daniel Rincon,ATP,277,191,ESP
 atp_278,Murkel Dellien,ATP,278,186,BOL
 atp_279,Saba Purtseladze,ATP,279,185,GEO
-atp_280,Juan Pablo Varillas,ATP,280,184,PER
+atp_280,Juan Varillas,ATP,280,184,PER
 atp_281,Andrej Nedic,ATP,281,184,BIH
 atp_282,Liam Broady,ATP,282,184,GBR
 atp_283,Kei Nishikori,ATP,283,182,JPN
-atp_284,Facundo Diaz Acosta,ATP,284,182,ARG
+atp_284,Facundo Acosta,ATP,284,182,ARG
 atp_285,Yasutaka Uchiyama,ATP,285,182,JPN
 atp_286,Petr Brunclik,ATP,286,181,CZE
 atp_287,Benjamin Hassan,ATP,287,180,LBN
@@ -301,7 +301,7 @@ atp_299,Michael Geerts,ATP,299,173,BEL
 atp_300,Jacopo Berrettini,ATP,300,172,ITA
 atp_301,Maximus Jones,ATP,301,172,THA
 atp_302,Akira Santillan,ATP,302,172,JPN
-atp_303,Petr Bar Biryukov,ATP,303,172,RUS
+atp_303,Petr Biryukov,ATP,303,172,RUS
 atp_304,Sandro Kopp,ATP,304,171,AUT
 atp_305,Miguel Damas,ATP,305,168,ESP
 atp_306,Gianluca Cadenasso,ATP,306,166,ITA
@@ -311,9 +311,9 @@ atp_309,Eliakim Coulibaly,ATP,309,164,CIV
 atp_310,Diego Dedura,ATP,310,164,GER
 atp_311,Philip Henning,ATP,311,160,RSA
 atp_312,Gauthier Onclin,ATP,312,160,BEL
-atp_313,Gabi Adrian Boitan,ATP,313,159,ROU
+atp_313,Gabi Boitan,ATP,313,159,ROU
 atp_314,Mathys Erhard,ATP,314,159,FRA
-atp_315,Cedrik Marcel Stebe,ATP,315,158,GER
+atp_315,Cedrik Stebe,ATP,315,158,GER
 atp_316,Renta Tokuda,ATP,316,157,JPN
 atp_317,Matias Soto,ATP,317,157,CHI
 atp_318,Abdullah Shelbayh,ATP,318,156,JOR
@@ -339,12 +339,12 @@ atp_337,Franco Roncadelli,ATP,337,142,URU
 atp_338,Hamish Stewart,ATP,338,142,GBR
 atp_339,Raul Brancaccio,ATP,339,142,ITA
 atp_340,Sean Cuenin,ATP,340,141,FRA
-atp_341,Carlos Sanchez Jover,ATP,341,141,ESP
+atp_341,Carlos Jover,ATP,341,141,ESP
 atp_342,Antoine Ghibaudo,ATP,342,140,FRA
 atp_343,Martin Krumich,ATP,343,140,CZE
 atp_344,Florian Broska,ATP,344,139,GER
 atp_345,Duje Ajdukovic,ATP,345,139,CRO
-atp_346,Guido Ivan Justo,ATP,346,139,ARG
+atp_346,Guido Justo,ATP,346,139,ARG
 atp_347,Igor Marcondes,ATP,347,138,BRA
 atp_348,Sanhui Shin,ATP,348,138,KOR
 atp_349,Denis Yevseyev,ATP,349,138,KAZ
@@ -352,7 +352,7 @@ atp_350,Marat Sharipov,ATP,350,137,RUS
 atp_351,Gonzalo Villanueva,ATP,351,137,ARG
 atp_352,Oleg Prihodko,ATP,352,136,UKR
 atp_353,Michael Mmoh,ATP,353,134,USA
-atp_354,Juan Bautista Torres,ATP,354,134,ARG
+atp_354,Juan Torres,ATP,354,134,ARG
 atp_355,Richard Gasquet,ATP,355,133,FRA
 atp_356,Arthur Bouquier,ATP,356,133,FRA
 atp_357,Gabriele Piraino,ATP,357,133,ITA
@@ -368,10 +368,10 @@ atp_366,Marc Polmans,ATP,366,128,AUS
 atp_367,Hayato Matsuoka,ATP,367,128,JPN
 atp_368,Raphael Perot,ATP,368,127,FRA
 atp_369,Yuta Shimizu,ATP,369,127,JPN
-atp_370,Tung Lin Wu,ATP,370,127,TWN
+atp_370,Tung Wu,ATP,370,127,TWN
 atp_371,Li Tu,ATP,371,126,AUS
 atp_372,Dominic Stricker,ATP,372,126,SUI
-atp_373,Javier Barranco Cosano,ATP,373,126,ESP
+atp_373,Javier Cosano,ATP,373,126,ESP
 atp_374,Cezar Cretu,ATP,374,126,ROU
 atp_375,Inaki Montes De La Torre,ATP,375,125,ESP
 atp_376,Omar Jasika,ATP,376,125,AUS
@@ -379,27 +379,27 @@ atp_377,Federico Coria,ATP,377,124,ARG
 atp_378,Pedro Sakamoto,ATP,378,124,BRA
 atp_379,Mert Alkaya,ATP,379,124,TUR
 atp_380,Daniel Milavsky,ATP,380,124,USA
-atp_381,David Jorda Sanchis,ATP,381,124,ESP
+atp_381,David Sanchis,ATP,381,124,ESP
 atp_382,Andre Ilagan,ATP,382,124,USA
 atp_383,Dan Martin,ATP,383,122,CAN
 atp_384,Aidan McHugh,ATP,384,122,GBR
-atp_385,Luciano Emanuel Ambrogi,ATP,385,122,ARG
+atp_385,Luciano Ambrogi,ATP,385,122,ARG
 atp_386,Maks Kasnikowski,ATP,386,121,POL
 atp_387,Gastao Elias,ATP,387,121,POR
 atp_388,Mili Poljicak,ATP,388,121,CRO
 atp_389,Alfredo Perez,ATP,389,121,USA
 atp_390,Facundo Bagnis,ATP,390,120,ARG
 atp_391,Christopher Eubanks,ATP,391,120,USA
-atp_392,Adria Soriano Barrera,ATP,392,120,COL
-atp_393,Carlo Alberto Caniato,ATP,393,120,ITA
+atp_392,Adria Barrera,ATP,392,120,COL
+atp_393,Carlo Caniato,ATP,393,120,ITA
 atp_394,Hyeon Chung,ATP,394,120,KOR
 atp_395,Federico Arnaboldi,ATP,395,120,ITA
 atp_396,Kasidit Samrej,ATP,396,120,THA
 atp_397,Hernan Casanova,ATP,397,119,ARG
 atp_398,Corentin Denolly,ATP,398,119,FRA
-atp_399,Albert Ramos Vinolas,ATP,399,118,ESP
+atp_399,Albert Vinolas,ATP,399,118,ESP
 atp_400,Aziz Dougaz,ATP,400,118,TUN
-atp_401,Max Alcala Gurri,ATP,401,118,ESP
+atp_401,Max Gurri,ATP,401,118,ESP
 atp_402,Taro Daniel,ATP,402,117,JPN
 atp_403,Andrea Picchione,ATP,403,117,ITA
 atp_404,Marek Gengel,ATP,404,117,CZE
@@ -415,7 +415,7 @@ atp_413,Luca Castelnuovo,ATP,413,115,SUI
 atp_414,Alex Hernandez,ATP,414,115,MEX
 atp_415,Alex Martinez,ATP,415,115,ESP
 atp_416,Lucas Poullain,ATP,416,115,FRA
-atp_417,Oriol Roca Batalla,ATP,417,114,ESP
+atp_417,Oriol Batalla,ATP,417,114,ESP
 atp_418,Mariano Kestelboim,ATP,418,114,ARG
 atp_419,Patrick Maloney,ATP,419,113,USA
 atp_420,Robert Strombachs,ATP,420,113,LAT
@@ -423,7 +423,7 @@ atp_421,Jie Cui,ATP,421,113,CHN
 atp_422,Buvaysar Gadamauri,ATP,422,113,BEL
 atp_423,Braden Shick,ATP,423,112,USA
 atp_424,Radu Albot,ATP,424,112,MDA
-atp_425,Nicolas Alvarez Varona,ATP,425,111,ESP
+atp_425,Nicolas Varona,ATP,425,111,ESP
 atp_426,Stuart Parker,ATP,426,111,GBR
 atp_427,Neil Oberleitner,ATP,427,111,AUT
 atp_428,Luca Potenza,ATP,428,111,ITA
@@ -437,7 +437,7 @@ atp_435,Stefano Napolitano,ATP,435,107,ITA
 atp_436,Yankı Erel,ATP,436,107,TUR
 atp_437,Rudolf Molleker,ATP,437,107,GER
 atp_438,Hikaru Shiraishi,ATP,438,107,JPN
-atp_439,Roberto Cid Subervi,ATP,439,106,DOM
+atp_439,Roberto Subervi,ATP,439,106,DOM
 atp_440,Lukas Pokorny,ATP,440,106,SVK
 atp_441,Lorenzo Carboni,ATP,441,106,ITA
 atp_442,Juan Estevez,ATP,442,106,ARG
@@ -469,12 +469,12 @@ atp_467,Valerio Aboian,ATP,467,95,ARG
 atp_468,Ognjen Milic,ATP,468,95,SRB
 atp_469,Moerani Bouzige,ATP,469,95,AUS
 atp_470,Dhakshineswar Suresh,ATP,470,94,IND
-atp_471,Bernabe Zapata Miralles,ATP,471,94,ESP
+atp_471,Bernabe Miralles,ATP,471,94,ESP
 atp_472,Bor Artnak,ATP,472,94,SLO
 atp_473,Stefan Dostanic,ATP,473,93,USA
 atp_474,Cannon Kingsley,ATP,474,93,USA
 atp_475,Henry Searle,ATP,475,93,GBR
-atp_476,Carlos Lopez Montagud,ATP,476,93,ESP
+atp_476,Carlos Montagud,ATP,476,93,ESP
 atp_477,Filippo Moroni,ATP,477,92,ITA
 atp_478,Takuya Kumasaka,ATP,478,92,JPN
 atp_479,Dusan Obradovic,ATP,479,92,SRB
@@ -489,14 +489,14 @@ atp_487,Manas Dhamne,ATP,487,89,IND
 atp_488,Jay Friend,ATP,488,88,JPN
 atp_489,Giovanni Fonio,ATP,489,88,ITA
 atp_490,Aristotelis Thanos,ATP,490,87,GRE
-atp_491,Enrico Dalla Valle,ATP,491,87,ITA
-atp_492,Carl Emil Overbeck,ATP,492,87,DEN
+atp_491,Enrico Valle,ATP,491,87,ITA
+atp_492,Carl Overbeck,ATP,492,87,DEN
 atp_493,Hiroki Moriya,ATP,493,87,JPN
 atp_494,Edward Winter,ATP,494,87,AUS
-atp_495,Tsung Hao Huang,ATP,495,87,TWN
+atp_495,Tsung Huang,ATP,495,87,TWN
 atp_496,Jakub Paul,ATP,496,86,SUI
 atp_497,Mirza Basic,ATP,497,86,BIH
-atp_498,Lorenzo Joaquin Rodriguez,ATP,498,85,ARG
+atp_498,Lorenzo Rodriguez,ATP,498,85,ARG
 atp_499,Jake Delaney,ATP,499,85,AUS
 atp_500,Laurent Lokoli,ATP,500,84,FRA
 wta_1,Aryna Sabalenka,WTA,1,10990,BLR
@@ -546,7 +546,7 @@ wta_44,Hailey Baptiste,WTA,44,1264,USA
 wta_45,Alexandra Eala,WTA,45,1244,PHI
 wta_46,Katerina Siniakova,WTA,46,1242,CZE
 wta_47,Janice Tjen,WTA,47,1236,INA
-wta_48,Jessica Bouzas Maneiro,WTA,48,1202,ESP
+wta_48,Jessica Maneiro,WTA,48,1202,ESP
 wta_49,Veronika Kudermetova,WTA,49,1194,RUS
 wta_50,Magda Linette,WTA,50,1124,POL
 wta_51,Sonay Kartal,WTA,51,1122,GBR
@@ -564,7 +564,7 @@ wta_62,Cristina Bucsa,WTA,62,994,ESP
 wta_63,Camila Osorio,WTA,63,991,COL
 wta_64,Solana Sierra,WTA,64,980,ARG
 wta_65,Anna Bondar,WTA,65,978,HUN
-wta_66,Beatriz Haddad Maia,WTA,66,942,BRA
+wta_66,Beatriz Maia,WTA,66,942,BRA
 wta_67,Antonia Ruzic,WTA,67,933,CRO
 wta_68,Caty McNally,WTA,68,928,USA
 wta_69,Petra Marcinko,WTA,69,912,CRO
@@ -577,7 +577,7 @@ wta_75,Anastasia Potapova,WTA,75,872,AUT
 wta_76,Alycia Parks,WTA,76,872,USA
 wta_77,Yulia Putintseva,WTA,77,871,KAZ
 wta_78,Danielle Collins,WTA,78,865,USA
-wta_79,Elena Gabriela Ruse,WTA,79,864,ROU
+wta_79,Elena Ruse,WTA,79,864,ROU
 wta_80,Julia Grabher,WTA,80,859,AUT
 wta_81,Simona Waltert,WTA,81,850,SUI
 wta_82,Anna Blinkova,WTA,82,848,RUS
@@ -617,8 +617,8 @@ wta_115,Leolia Jeanjean,WTA,115,672,FRA
 wta_116,Taylor Townsend,WTA,116,668,USA
 wta_117,Rebeka Masarova,WTA,117,660,SUI
 wta_118,Linda Fruhvirtova,WTA,118,657,CZE
-wta_119,Victoria Jimenez Kasintseva,WTA,119,657,AND
-wta_120,Tiantsoa Rakotomanga Rajaonah,WTA,120,649,FRA
+wta_119,Victoria Kasintseva,WTA,119,657,AND
+wta_120,Tiantsoa Rajaonah,WTA,120,649,FRA
 wta_121,Caroline Dolehide,WTA,121,627,USA
 wta_122,Yue Yuan,WTA,122,626,CHN
 wta_123,Maddison Inglis,WTA,123,607,AUS
@@ -638,7 +638,7 @@ wta_136,Lucrezia Stefanini,WTA,136,550,ITA
 wta_137,Marina Stakusic,WTA,137,542,CAN
 wta_138,Lucia Bronzetti,WTA,138,541,ITA
 wta_139,Lola Radivojevic,WTA,139,540,SRB
-wta_140,Leyre Romero Gormaz,WTA,140,534,ESP
+wta_140,Leyre Gormaz,WTA,140,534,ESP
 wta_141,Lin Zhu,WTA,141,529,CHN
 wta_142,Sofia Costoulas,WTA,142,527,BEL
 wta_143,Katarzyna Kawa,WTA,143,516,POL
@@ -646,7 +646,7 @@ wta_144,Polina Kudermetova,WTA,144,515,UZB
 wta_145,Tamara Zidansek,WTA,145,507,SLO
 wta_146,Alina Korneeva,WTA,146,504,RUS
 wta_147,Taylah Preston,WTA,147,487,AUS
-wta_148,Irina Camelia Begu,WTA,148,485,ROU
+wta_148,Irina Begu,WTA,148,485,ROU
 wta_149,Varvara Lepchenko,WTA,149,483,USA
 wta_150,Victoria Azarenka,WTA,150,475,BLR
 wta_151,Dominika Salkova,WTA,151,475,CZE
@@ -680,20 +680,20 @@ wta_178,Elina Avanesyan,WTA,178,387,ARM
 wta_179,Olivia Gadecki,WTA,179,387,AUS
 wta_180,Anca Todoni,WTA,180,387,ROU
 wta_181,Lina Gjorcheska,WTA,181,387,MKD
-wta_182,Ye Xin Ma,WTA,182,386,CHN
+wta_182,Ye Ma,WTA,182,386,CHN
 wta_183,Anastasija Sevastova,WTA,183,385,LAT
 wta_184,Gabriela Knutson,WTA,184,385,CZE
 wta_185,Mary Stoiana,WTA,185,383,USA
 wta_186,Hanyu Guo,WTA,186,382,CHN
 wta_187,Julia Riera,WTA,187,382,ARG
-wta_188,Yeon Woo Ku,WTA,188,380,KOR
+wta_188,Yeon Ku,WTA,188,380,KOR
 wta_189,Anastasia Gasanova,WTA,189,379,RUS
 wta_190,Astra Sharma,WTA,190,378,AUS
 wta_191,Anhelina Kalinina,WTA,191,374,UKR
 wta_192,Elena Pridankina,WTA,192,374,RUS
 wta_193,Lisa Pigato,WTA,193,374,ITA
 wta_194,Kayla Day,WTA,194,373,USA
-wta_195,Ana Sofia Sanchez,WTA,195,373,MEX
+wta_195,Ana Sanchez,WTA,195,373,MEX
 wta_196,Nao Hibino,WTA,196,372,JPN
 wta_197,Kayla Cross,WTA,197,372,CAN
 wta_198,Mananchaya Sawangkaew,WTA,198,371,THA
@@ -702,12 +702,12 @@ wta_200,Ena Shibahara,WTA,200,365,JPN
 wta_201,Fiona Crawley,WTA,201,361,USA
 wta_202,Cadence Brace,WTA,202,360,CAN
 wta_203,Mona Barthel,WTA,203,357,GER
-wta_204,Anna Lena Friedsam,WTA,204,356,GER
+wta_204,Anna Friedsam,WTA,204,356,GER
 wta_205,Silvia Ambrosio,WTA,205,351,ITA
-wta_206,Andrea Lazaro Garcia,WTA,206,350,ESP
+wta_206,Andrea Garcia,WTA,206,350,ESP
 wta_207,Francisca Jorge,WTA,207,348,POR
 wta_208,Miriam Bulgaru,WTA,208,346,ROU
-wta_209,Marina Bassols Ribera,WTA,209,344,ESP
+wta_209,Marina Ribera,WTA,209,344,ESP
 wta_210,Jana Fett,WTA,210,340,CRO
 wta_211,Arina Rodionova,WTA,211,340,AUS
 wta_212,Laura Samson,WTA,212,339,CZE
@@ -733,14 +733,14 @@ wta_231,Storm Hunter,WTA,231,299,AUS
 wta_232,Veronika Podrez,WTA,232,299,UKR
 wta_233,Susan Bandecchi,WTA,233,296,SUI
 wta_234,Caroline Werner,WTA,234,295,GER
-wta_235,Nuria Parrizas Diaz,WTA,235,291,ESP
+wta_235,Nuria Diaz,WTA,235,291,ESP
 wta_236,Sara Saito,WTA,236,291,JPN
 wta_237,Hina Inoue,WTA,237,290,USA
 wta_238,Mingge Xu,WTA,238,289,GBR
 wta_239,Fiona Ferro,WTA,239,288,FRA
 wta_240,Luisina Giovannini,WTA,240,288,ARG
 wta_241,Carson Branstine,WTA,241,287,CAN
-wta_242,Angela Fita Boluda,WTA,242,286,ESP
+wta_242,Angela Boluda,WTA,242,286,ESP
 wta_243,Sohyun Park,WTA,243,286,KOR
 wta_244,Raluca Serban,WTA,244,285,CYP
 wta_245,Jessica Pieri,WTA,245,285,ITA
@@ -753,7 +753,7 @@ wta_251,Arianne Hartono,WTA,251,276,NED
 wta_252,Xiaodi You,WTA,252,275,CHN
 wta_253,Manon Leonard,WTA,253,274,FRA
 wta_254,Eva Vedder,WTA,254,274,NED
-wta_255,Noma Noha Akugue,WTA,255,274,GER
+wta_255,Noma Akugue,WTA,255,274,GER
 wta_256,Matilde Jorge,WTA,256,273,POR
 wta_257,Anastasia Tikhonova,WTA,257,273,RUS
 wta_258,Ons Jabeur,WTA,258,272,TUN
@@ -761,8 +761,8 @@ wta_259,Clervie Ngounoue,WTA,259,271,USA
 wta_260,Celine Naef,WTA,260,271,SUI
 wta_261,Selena Janicijevic,WTA,261,271,FRA
 wta_262,Xinyu Gao,WTA,262,271,CHN
-wta_263,Eva Guerrero Alvarez,WTA,263,271,ESP
-wta_264,Kajsa Rinaldo Persson,WTA,264,271,SWE
+wta_263,Eva Alvarez,WTA,263,271,ESP
+wta_264,Kajsa Persson,WTA,264,271,SWE
 wta_265,Julia Avdeeva,WTA,265,270,RUS
 wta_266,Julie Belgraver,WTA,266,269,FRA
 wta_267,Karolina Pliskova,WTA,267,267,CZE
@@ -787,18 +787,18 @@ wta_285,Mei Yamaguchi,WTA,285,235,JPN
 wta_286,Vendula Valdmannova,WTA,286,235,CZE
 wta_287,Carolyn Ansari,WTA,287,235,USA
 wta_288,Wakana Sonobe,WTA,288,232,JPN
-wta_289,Tessa Johanna Brockmann,WTA,289,232,GER
+wta_289,Tessa Brockmann,WTA,289,232,GER
 wta_290,Samira de Stefano,WTA,290,230,ITA
 wta_291,Jeline Vandromme,WTA,291,228,BEL
 wta_292,Zarina Diyas,WTA,292,225,KAZ
 wta_293,Robin Montgomery,WTA,293,224,USA
-wta_294,Anouck Vrancken Peeters,WTA,294,224,NED
+wta_294,Anouck Peeters,WTA,294,224,NED
 wta_295,Anastasia Zolotareva,WTA,295,223,RUS
 wta_296,Lia Karatancheva,WTA,296,221,BUL
 wta_297,Kyoka Okamura,WTA,297,216,JPN
 wta_298,Rina Saigo,WTA,298,216,JPN
 wta_299,Ekaterina Reyngold,WTA,299,215,RUS
-wta_300,Elena Ruxandra Bertea,WTA,300,215,ROU
+wta_300,Elena Bertea,WTA,300,215,ROU
 wta_301,Haruka Kaji,WTA,301,214,JPN
 wta_302,Jule Niemeier,WTA,302,213,GER
 wta_303,Renata Jamrichova,WTA,303,212,SVK
@@ -806,7 +806,7 @@ wta_304,Ayla Aksu,WTA,304,210,TUR
 wta_305,Dayeon Back,WTA,305,209,KOR
 wta_306,Laura Hietaranta,WTA,306,208,FIN
 wta_307,Akasha Urhobo,WTA,307,207,USA
-wta_308,Alicia Herrero Linana,WTA,308,207,ESP
+wta_308,Alicia Linana,WTA,308,207,ESP
 wta_309,Gabriela Ce,WTA,309,207,BRA
 wta_310,Katarina Zavatska,WTA,310,207,UKR
 wta_311,Lea Boskovic,WTA,311,206,CRO
@@ -839,7 +839,7 @@ wta_337,Victoria Bosio,WTA,337,188,ARG
 wta_338,Martyna Kubka,WTA,338,188,POL
 wta_339,Francesca Pace,WTA,339,188,ITA
 wta_340,Isabella Shinikova,WTA,340,187,BUL
-wta_341,Han na Chang,WTA,341,186,USA
+wta_341,Han Chang,WTA,341,186,USA
 wta_342,Nina Stojanovic,WTA,342,185,SRB
 wta_343,Ariana Geerlings,WTA,343,185,ESP
 wta_344,Alexandra Shubladze,WTA,344,185,RUS
@@ -857,8 +857,8 @@ wta_355,Yafan Wang,WTA,355,180,CHN
 wta_356,Aliona Falei,WTA,356,180,BLR
 wta_357,Vera Zvonareva,WTA,357,178,RUS
 wta_358,Sijia Wei,WTA,358,178,CHN
-wta_359,Carlota Martinez Cirez,WTA,359,177,ESP
-wta_360,En shuo Liang,WTA,360,177,TWN
+wta_359,Carlota Cirez,WTA,359,177,ESP
+wta_360,En Liang,WTA,360,177,TWN
 wta_361,Yasmine Kabbaj,WTA,361,177,MAR
 wta_362,Erika Andreeva,WTA,362,175,RUS
 wta_363,Eva Bennemann,WTA,363,175,GER
@@ -868,7 +868,7 @@ wta_366,Jenny Duerst,WTA,366,174,SUI
 wta_367,Giorgia Pedone,WTA,367,173,ITA
 wta_368,Haley Giavara,WTA,368,173,USA
 wta_369,Emina Bektas,WTA,369,172,USA
-wta_370,Martina Capurro Taborda,WTA,370,171,ARG
+wta_370,Martina Taborda,WTA,370,171,ARG
 wta_371,Martha Matoula,WTA,371,170,GRE
 wta_372,Wushuang Zheng,WTA,372,169,CHN
 wta_373,Ane Mintegi Del Olmo,WTA,373,169,ESP
@@ -879,7 +879,7 @@ wta_377,Caijsa Hennemann,WTA,377,167,SWE
 wta_378,Eri Shimizu,WTA,378,166,JPN
 wta_379,Zhuoxuan Bai,WTA,379,165,CHN
 wta_380,Darya Astakhova,WTA,380,165,RUS
-wta_381,Lucciana Perez Alarcon,WTA,381,165,PER
+wta_381,Lucciana Alarcon,WTA,381,165,PER
 wta_382,Alina Granwehr,WTA,382,165,SUI
 wta_383,Tatiana Pieri,WTA,383,164,ITA
 wta_384,Miriana Tona,WTA,384,164,ITA
@@ -896,7 +896,7 @@ wta_394,Ekaterina Kazionova,WTA,394,160,RUS
 wta_395,Victoria Hu,WTA,395,160,USA
 wta_396,Denislava Glushkova,WTA,396,160,BUL
 wta_397,Ikumi Yamazaki,WTA,397,159,JPN
-wta_398,Cristina Diaz Adrover,WTA,398,158,ESP
+wta_398,Cristina Adrover,WTA,398,158,ESP
 wta_399,Jodie Burrage,WTA,399,156,GBR
 wta_400,Madison Brengle,WTA,400,156,USA
 wta_401,Angelina Voloshchuk,WTA,401,156,POR
@@ -908,12 +908,12 @@ wta_406,Yasmine Mansouri,WTA,406,154,FRA
 wta_407,Sofia Shapatava,WTA,407,153,GEO
 wta_408,Vittoria Paganetti,WTA,408,152,ITA
 wta_409,Alexis Blokhina,WTA,409,152,USA
-wta_410,Astrid Lew Yan Foon,WTA,410,151,FRA
+wta_410,Astrid Foon,WTA,410,151,FRA
 wta_411,Sapfo Sakellaridi,WTA,411,151,GRE
 wta_412,Antonia Schmidt,WTA,412,151,GER
 wta_413,Martina Colmegna,WTA,413,149,ITA
 wta_414,Weronika Ewald,WTA,414,149,POL
-wta_415,Patricia Maria Tig,WTA,415,148,ROU
+wta_415,Patricia Tig,WTA,415,148,ROU
 wta_416,Sahaja Yamalapalli,WTA,416,148,IND
 wta_417,Hayu Kinoshita,WTA,417,148,JPN
 wta_418,Victoria Rodriguez,WTA,418,147,MEX
@@ -921,8 +921,8 @@ wta_419,Zongyu Li,WTA,419,146,CHN
 wta_420,Sofya Lansere,WTA,420,146,RUS
 wta_421,Martina Okalova,WTA,421,145,SVK
 wta_422,Zuzanna Pawlikowska,WTA,422,145,POL
-wta_423,Nicole Fossa Huergo,WTA,423,144,ARG
-wta_424,Ylena In Albon,WTA,424,144,SUI
+wta_423,Nicole Huergo,WTA,423,144,ARG
+wta_424,Ylena Albon,WTA,424,144,SUI
 wta_425,Emily Appleton,WTA,425,143,GBR
 wta_426,Aneta Kucmova,WTA,426,143,CZE
 wta_427,Momoko Kobori,WTA,427,142,JPN
@@ -930,11 +930,11 @@ wta_428,Priska Nugroho,WTA,428,140,INA
 wta_429,Maria Mateas,WTA,429,139,USA
 wta_430,Alana Smith,WTA,430,138,USA
 wta_431,Jiajing Lu,WTA,431,138,CHN
-wta_432,Antonia Vergara Rivera,WTA,432,138,CHI
+wta_432,Antonia Rivera,WTA,432,138,CHI
 wta_433,Misaki Matsuda,WTA,433,138,JPN
 wta_434,Kristiana Sidorova,WTA,434,137,RUS
 wta_435,Alice Tubello,WTA,435,136,FRA
-wta_436,Lamis Alhussein Abdel Aziz,WTA,436,136,EGY
+wta_436,Lamis Aziz,WTA,436,136,EGY
 wta_437,Caroline Garcia,WTA,437,135,FRA
 wta_438,Federica Urgesi,WTA,438,135,ITA
 wta_439,Amelia Rajecki,WTA,439,135,GBR
@@ -946,12 +946,12 @@ wta_444,Patcharin Cheapchandej,WTA,444,132,THA
 wta_445,Aunchisa Chanta,WTA,445,132,THA
 wta_446,Yufei Ren,WTA,446,129,CHN
 wta_447,Leonie Kung,WTA,447,128,SUI
-wta_448,Lucija Ciric Bagaric,WTA,448,128,CRO
+wta_448,Lucija Bagaric,WTA,448,128,CRO
 wta_449,Stephanie Visscher,WTA,449,127,NED
 wta_450,Jasmijn Gimbrere,WTA,450,127,NED
-wta_451,Sara Sorribes Tormo,WTA,451,126,ESP
+wta_451,Sara Tormo,WTA,451,126,ESP
 wta_452,Ekaterina Makarova,WTA,452,126,RUS
-wta_453,Thaisa Grana Pedretti,WTA,453,126,BRA
+wta_453,Thaisa Pedretti,WTA,453,126,BRA
 wta_454,Mariia Tkacheva,WTA,454,126,RUS
 wta_455,Tena Lukas,WTA,455,126,CRO
 wta_456,Britt Du Pree,WTA,456,125,NED
@@ -959,7 +959,7 @@ wta_457,Julia Adams,WTA,457,125,USA
 wta_458,Angella Okutoyi,WTA,458,124,KEN
 wta_459,Natsumi Kawaguchi,WTA,459,124,JPN
 wta_460,Ranah Stoiber,WTA,460,123,GBR
-wta_461,Mell Reasco Gonzalez,WTA,461,123,ECU
+wta_461,Mell Gonzalez,WTA,461,123,ECU
 wta_462,Fernanda Labrana,WTA,462,123,CHI
 wta_463,Lauren Davis,WTA,463,121,USA
 wta_464,Nahia Berecoechea,WTA,464,121,FRA
@@ -977,9 +977,9 @@ wta_475,Vaidehi Chaudhari,WTA,475,116,IND
 wta_476,Ariana Arseneault,WTA,476,114,CAN
 wta_477,Carla Markus,WTA,477,114,ARG
 wta_478,Luca Udvardy,WTA,478,114,HUN
-wta_479,Maria Martinez Vaquero,WTA,479,114,ESP
+wta_479,Maria Vaquero,WTA,479,114,ESP
 wta_480,Berfu Cengiz,WTA,480,113,TUR
-wta_481,Ruth Roura Llaverias,WTA,481,113,ESP
+wta_481,Ruth Llaverias,WTA,481,113,ESP
 wta_482,Ella Mcdonald,WTA,482,113,GBR
 wta_483,Isis Louise van Den Broek,WTA,483,113,NED
 wta_484,Ilinca Amariei,WTA,484,113,ROU
@@ -989,7 +989,7 @@ wta_487,Ayumi Koshiishi,WTA,487,112,JPN
 wta_488,Mayu Crossley,WTA,488,112,JPN
 wta_489,Varvara Panshina,WTA,489,112,RUS
 wta_490,Tahlia Kokkinis,WTA,490,111,AUS
-wta_491,Ema Burgic Bucko,WTA,491,111,BIH
+wta_491,Ema Bucko,WTA,491,111,BIH
 wta_492,Sara Dols,WTA,492,111,ESP
 wta_493,Weronika Falkowska,WTA,493,110,POL
 wta_494,Ekaterina Khayrutdinova,WTA,494,110,RUS

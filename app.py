@@ -1099,6 +1099,8 @@ if sport_choice == "Tennis":
         player_window = st.radio("Player Performance Window", ["L5", "L10", "ALL"], index=0)
         recent_n = 5 if player_window == "L5" else 10 if player_window == "L10" else None
 
+        players_with_match = st.checkbox("Players With A Match Soon", value=True)
+
         calculate = st.form_submit_button("Calculate")
 
     # --- Calculate ---
@@ -1106,6 +1108,36 @@ if sport_choice == "Tennis":
 
         # Trim to most recent 82 games per player
         df_calc = trim_df_to_recent_82(df)
+
+        if players_with_match:
+
+            schedule_df = load_tennis_schedule()
+
+            today = datetime.today().date()
+            tomorrow = today + timedelta(days=1)
+
+            schedule_df = schedule_df[
+                schedule_df["Date"].isin([today, tomorrow])
+            ]
+
+            # Collect all scheduled players (singles + doubles)
+            scheduled_players = set()
+
+            for _, row in schedule_df.iterrows():
+
+                p1 = row["Player 1"]
+                p2 = row["Player 2"]
+
+                # Split doubles teams
+                for name in [p1, p2]:
+                    if "/" in name:
+                        parts = [x.strip() for x in name.split("/")]
+                        scheduled_players.update(parts)
+                    else:
+                        scheduled_players.add(name)
+
+            # Filter gamelog df to only scheduled players
+            df_calc = df_calc[df_calc["Player"].isin(scheduled_players)]
 
         # Compute surface-aware percentiles
         summary_df = compute_tennis_percentiles(

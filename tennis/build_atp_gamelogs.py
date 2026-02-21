@@ -1,40 +1,44 @@
 import pandas as pd
-import re
+import unicodedata
 
 # ========================
 # CONFIG
 # ========================
 PLAYERS_FILE = "data/tennisplayers.csv"
-MATCH_FILE = "data/wta_match_logs.csv"
-OUTPUT_FILE = "data/wta_player_gamelogs.csv"
+MATCH_FILE = "data/atp_match_logs.csv"
+OUTPUT_FILE = "data/atp_player_gamelogs.csv"
 
 
 # ------------------------
-# Name normalization
+# Normalize names (from tennisplayers pipeline)
 # ------------------------
-def normalize(text):
-    if pd.isna(text):
+def normalize_name(name: str) -> str:
+    if pd.isna(name):
         return ""
-    text = text.lower()
-    text = text.replace(".", "")
-    text = re.sub(r"[^a-z ]", "", text)
-    text = " ".join(text.split())
-    return text
+    # remove accents
+    name = unicodedata.normalize("NFKD", name)
+    name = "".join(c for c in name if not unicodedata.combining(c))
+    # lowercase
+    name = name.lower()
+    # remove punctuation (dots, commas, apostrophes, hyphens)
+    name = name.replace(".", "").replace(",", "").replace("'", "").replace("-", " ")
+    # collapse spaces
+    name = " ".join(name.split())
+    return name
 
 
 # ------------------------
-# Build lookup: "osaka n" -> player_id
+# Build lookup: "last first_initial" -> player_id
 # ------------------------
 def build_player_lookup(players_df):
     lookup = {}
 
     for _, row in players_df.iterrows():
-        if row["tour"] != "WTA":
+        if row["tour"] != "ATP":
             continue
 
         player_id = row["player_id"]
-        full_name = normalize(row["player_name"])
-
+        full_name = normalize_name(row["player_name"])
         parts = full_name.split()
         if len(parts) < 2:
             continue
@@ -49,21 +53,22 @@ def build_player_lookup(players_df):
 
 
 # ------------------------
-# Convert "Osaka N." -> player_id
+# Convert scoreboard name -> player_id
 # ------------------------
 def resolve_scoreboard_name(name, lookup):
-    name = normalize(name)
-
+    name = normalize_name(name)
     parts = name.split()
     if len(parts) < 2:
         return None
 
-    last = parts[0]
-    first_initial = parts[1][0]
+    first = parts[0]
+    last = parts[-1]
 
-    key = f"{last} {first_initial}"
-
-    return lookup.get(key)
+    key = f"{last} {first[0]}"
+    pid = lookup.get(key)
+    if not pid:
+        print(f"Unmatched scoreboard name: '{name}' -> key '{key}'")
+    return pid
 
 
 # ------------------------
@@ -71,9 +76,8 @@ def resolve_scoreboard_name(name, lookup):
 # ------------------------
 print("Loading players...")
 players = pd.read_csv(PLAYERS_FILE)
-
 player_lookup = build_player_lookup(players)
-print("WTA players indexed:", len(player_lookup))
+print("ATP players indexed:", len(player_lookup))
 
 
 # ------------------------
@@ -84,26 +88,22 @@ matches = pd.read_csv(MATCH_FILE, low_memory=False)
 
 rows = []
 
-
 # ------------------------
 # Process matches
 # ------------------------
 for _, m in matches.iterrows():
-
     p1_id = resolve_scoreboard_name(m["Winner"], player_lookup)
     p2_id = resolve_scoreboard_name(m["Loser"], player_lookup)
 
     if not p1_id or not p2_id:
-        continue
+        continue  # skip unmatched
 
     # --- games won/lost ---
     p1_games = 0
     p2_games = 0
-
-    for s in range(1, 4):
+    for s in range(1, 6):  # handle best of 3/5 sets
         w_col = f"W{s}"
         l_col = f"L{s}"
-
         if w_col in m and l_col in m:
             try:
                 w = int(m[w_col])
