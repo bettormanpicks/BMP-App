@@ -22,6 +22,21 @@ TENNIS_STAT_MAP = {
     "MW": "match_win"
 }
 
+DEFENSE_FILE = "data/tennis_opponent_defense_normalized.csv"
+
+@st.cache_data
+def load_tennis_defense():
+    return pd.read_csv(DEFENSE_FILE)
+
+def get_opponent_return_tier(opponent_id):
+    df = load_tennis_defense()
+    row = df[df["player_id"] == opponent_id]
+
+    if row.empty:
+        return "Unknown"
+
+    return row.iloc[0]["return_tier"]
+
 @st.cache_data(ttl=300)
 def load_tennis_schedule():
     df = pd.read_csv("data/tennis_schedule.csv")
