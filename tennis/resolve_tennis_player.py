@@ -2,6 +2,7 @@
 import pandas as pd
 import re
 import os
+from name_normalizer import clean_name, generate_name_keys
 
 # ==============================
 # CONFIG
@@ -20,12 +21,12 @@ WTA_NEW_START = 9100
 # ==============================
 # HELPERS
 # ==============================
-def normalize_name(name):
-    """Lowercase, remove periods, accents, extra spaces"""
-    name = name.lower()
-    name = re.sub(r"[.\']", "", name)
-    name = name.strip()
-    return name
+def infer_tour(player_id):
+    if player_id.startswith("atp_"):
+        return "ATP"
+    if player_id.startswith("wta_"):
+        return "WTA"
+    return None
 
 def generate_new_id(tour, existing_ids):
     """Generate a new player_id above the 9000 threshold"""
@@ -45,33 +46,38 @@ atp_rankings = pd.read_csv(ATP_RANKINGS_FILE)
 wta_rankings = pd.read_csv(WTA_RANKINGS_FILE)
 schedule = pd.read_csv(SCHEDULE_FILE)
 
+# Log each key generated and which player_id it matched
+key_match_log = []  # Will store dicts like {'schedule_name': name, 'key': key, 'player_id': pid, 'matched_by': method}
+
 # ==============================
 # BUILD LOOKUPS
 # ==============================
 # Alias lookup: canonical_name -> player_id
 alias_lookup = {}
 for _, row in aliases.iterrows():
-    n = normalize_name(row['scoreboard_name'])
-    alias_lookup[n] = row['player_id']
+    keys = generate_name_keys(row['scoreboard_name'])
+    for k in keys:
+        alias_lookup[k] = row['player_id']
 
 # Player lookup: canonical_name -> player_id
 player_lookup = {}
 for _, row in players.iterrows():
-    n = normalize_name(row['player_name'])
-    player_lookup[n] = row['player_id']
+    keys = generate_name_keys(row['player_name'])
+    for k in keys:
+        player_lookup[k] = row['player_id']
 
 # Ranking lookup: canonical_name -> (player_id, rank)
 ranking_lookup = {}
 
 for _, row in atp_rankings.iterrows():
-    n = normalize_name(row['player'])
-    pid = f"atp_{row['rank']}"
-    ranking_lookup[n] = (pid, row['rank'])
+    keys = generate_name_keys(row['player'])
+    for k in keys:
+        ranking_lookup[k] = (f"atp_{row['rank']}", row['rank'])
 
 for _, row in wta_rankings.iterrows():
-    n = normalize_name(row['player'])
-    pid = f"wta_{row['rank']}"
-    ranking_lookup[n] = (pid, row['rank'])
+    keys = generate_name_keys(row['player'])
+    for k in keys:
+        ranking_lookup[k] = (f"wta_{row['rank']}", row['rank'])
 
 # ==============================
 # RESOLVE FUNCTION
@@ -87,69 +93,142 @@ def resolve_player(name):
     - Checks ATP/WTA rankings to assign rank-aligned IDs.
     - Falls back to new generated ID if completely unknown.
     """
-    global players, aliases, alias_lookup, player_lookup, atp_rankings, wta_rankings, new_players_created
+
+    global players, aliases, alias_lookup, player_lookup, ranking_lookup, atp_rankings, wta_rankings, new_players_created, key_match_log
 
     if "/" in name:
         return None  # skip doubles automatically
 
-    n = normalize_name(name)
+    # Generate identity keys for the incoming name
+    keys = generate_name_keys(name)
+    if not keys:
+        return None
 
-    # 1) Check alias
-    if n in alias_lookup:
-        return alias_lookup[n]
+    n = clean_name(name)  # base cleaned name
 
-    # 2) Check existing players
-    if n in player_lookup:
-        return player_lookup[n]
+    # --------------------------------------------------
+    # 1) Alias match
+    # --------------------------------------------------
+    for k in keys:
+        if k in alias_lookup:
+            key_match_log.append({
+                "schedule_name": name,
+                "key": k,
+                "player_id": alias_lookup[k],
+                "matched_by": "alias"
+            })
+            print(f"[DEBUG] Alias matched: {name} (key: {k}) -> {alias_lookup[k]}")
+            return alias_lookup[k]
+        else:
+            # Log the non-match
+            key_match_log.append({
+                "schedule_name": name,
+                "key": k,
+                "player_id": None,
+                "matched_by": "alias_no_match"
+            })
 
-    # 3) Check ATP/WTA rankings
+    # --------------------------------------------------
+    # 2) Existing players match
+    # --------------------------------------------------
+    for k in keys:
+        if k in player_lookup:
+            key_match_log.append({
+                "schedule_name": name,
+                "key": k,
+                "player_id": player_lookup[k],
+                "matched_by": "player_lookup"
+            })
+            print(f"[DEBUG] Player lookup matched: {name} (key: {k}) -> {player_lookup[k]}")
+            return player_lookup[k]
+        else:
+            key_match_log.append({
+                "schedule_name": name,
+                "key": k,
+                "player_id": None,
+                "matched_by": "player_lookup_no_match"
+            })
+
+    # --------------------------------------------------
+    # 3) Ranking lookup
+    # --------------------------------------------------
     tour = None
     new_id = None
+    row = None
 
-    # Check ATP rankings
-    match = atp_rankings[atp_rankings['player'].apply(lambda x: normalize_name(x) == n)]
-    if not match.empty:
-        row = match.iloc[0]
-        tour = "ATP"
-        new_id = f"atp_{row['rank']}"
+    for k in keys:
+        if k in ranking_lookup:
+            ranked_id, rank = ranking_lookup[k]
+            tour = "ATP" if ranked_id.startswith("atp_") else "WTA"
 
-    # Check WTA rankings
-    else:
-        match = wta_rankings[wta_rankings['player'].apply(lambda x: normalize_name(x) == n)]
-        if not match.empty:
-            row = match.iloc[0]
-            tour = "WTA"
-            new_id = f"wta_{row['rank']}"
+            # Pull full ranking row for metadata
+            if tour == "ATP":
+                match = atp_rankings[atp_rankings['rank'] == rank]
+            else:
+                match = wta_rankings[wta_rankings['rank'] == rank]
 
+            if not match.empty:
+                row = match.iloc[0]
+
+            key_match_log.append({
+                "schedule_name": name,
+                "key": k,
+                "player_id": ranked_id,
+                "matched_by": "ranking"
+            })
+            print(f"[DEBUG] Rankings matched: {name} (key: {k}) -> {ranked_id} (rank {rank})")
+            return ranked_id
+        else:
+            key_match_log.append({
+                "schedule_name": name,
+                "key": k,
+                "player_id": None,
+                "matched_by": "ranking_no_match"
+            })
+
+    # --------------------------------------------------
     # 4) If still unknown → generate new ID
+    # --------------------------------------------------
     if new_id is None:
         tour = "ATP"  # fallback
         new_id = generate_new_id(tour, players['player_id'])
 
-    # Add to players if not already there
+    # --------------------------------------------------
+    # 5) Add to players and aliases if not already there
+    # --------------------------------------------------
     if new_id not in set(players['player_id']):
+        # Add to players
         new_row = {
             "player_id": new_id,
             "player_name": name,
             "tour": tour,
-            "rank": row['rank'] if 'row' in locals() else None,
-            "points": row['points'] if 'row' in locals() and 'points' in row else None,
-            "country": row['country'] if 'row' in locals() and 'country' in row else None
+            "rank": row['rank'] if row is not None and 'rank' in row else None,
+            "points": row['points'] if row is not None and 'points' in row else None,
+            "country": row['country'] if row is not None and 'country' in row else None
         }
         players = pd.concat([players, pd.DataFrame([new_row])], ignore_index=True)
         new_players_created.append((name, new_id))
 
-    # Add to aliases
-    new_alias = {
-        "scoreboard_name": name,
-        "player_id": new_id,
-        "canonical_name": n
-    }
-    aliases = pd.concat([aliases, pd.DataFrame([new_alias])], ignore_index=True)
+        # Add to aliases
+        canonical_key = clean_name(name)  # <-- replaces normalize_name
+        new_alias = {
+            "scoreboard_name": name,
+            "player_id": new_id,
+            "canonical_name": canonical_key
+        }
+        aliases = pd.concat([aliases, pd.DataFrame([new_alias])], ignore_index=True)
 
-    # Update lookups
-    alias_lookup[n] = new_id
-    player_lookup[n] = new_id
+        # Update lookup tables
+        alias_lookup[canonical_key] = new_id
+        player_lookup[canonical_key] = new_id
+
+        # Optional: track which key matched for debugging
+        key_match_log.append({
+            "schedule_name": name,
+            "key": canonical_key,
+            "player_id": new_id,
+            "matched_by": "generated"
+        })
 
     return new_id
 
@@ -160,13 +239,19 @@ total_processed = 0
 matched = 0
 unmatched = []
 
+# Create new columns for player IDs
+schedule['player_id'] = None
+schedule['opponent_id'] = None
+
 for idx, row in schedule.iterrows():
-    for col in ["Player 1", "Player 2"]:
+    for col, id_col in [("Player 1", "player_id"), ("Player 2", "opponent_id")]:
         name = row[col]
         pid = resolve_player(name)
         total_processed += 1
         if pid is not None:
             matched += 1
+            # Assign resolved player_id into new column
+            schedule.at[idx, id_col] = pid
         else:
             unmatched.append(name)
 
@@ -180,9 +265,55 @@ print(f"Unmatched singles ({len(unmatched)}): {unmatched}")
 if unmatched:
     pd.Series(unmatched).to_csv(UNMATCHED_FILE, index=False, header=False)
 
+# Save key-to-player_id log
+if key_match_log:
+    log_df = pd.DataFrame(key_match_log)
+    log_df.to_csv("data/key_match_log.csv", index=False)
+
 # Save updated players and aliases
 players.to_csv(PLAYERS_FILE, index=False)
 aliases.to_csv(ALIASES_FILE, index=False)
+
+schedule["Tour"] = schedule["player_id"].apply(infer_tour)
+
+if (
+    schedule["player_id"].fillna("").str[:3] 
+    != schedule["opponent_id"].fillna("").str[:3]
+).any():
+    print("WARNING: Mixed tours detected")
+
+tournaments = pd.read_csv("data/tournament_list.csv", dtype=str)
+
+tournaments["Tournament"] = tournaments["Tournament"].str.strip().str.lower()
+schedule["Tournament_clean"] = schedule["Tournament"].str.strip().str.lower()
+
+schedule = schedule.merge(
+    tournaments[["Tournament","Surface"]],
+    left_on="Tournament_clean",
+    right_on="Tournament",
+    how="left"
+)
+
+schedule.drop(columns=["Tournament_clean","Tournament_y"], inplace=True, errors="ignore")
+schedule.rename(columns={"Tournament_x":"Tournament"}, inplace=True)
+
+missing_surface = schedule["Surface"].isna().sum()
+print(f"Missing surface count: {missing_surface}")
+
+# ==============================
+# DEDUPLICATE MATCHES
+# ==============================
+# Consider a match duplicate if Date, Time, Tournament, Player 1, and Player 2 are identical
+schedule = schedule.drop_duplicates(
+    subset=["Date", "Time", "Tournament", "Player 1", "Player 2"],
+    keep="first"
+)
+print(f"Total matches after deduplication: {len(schedule)}")
+
+# ==============================
+# SAVE RESOLVED SCHEDULE
+# ==============================
+schedule.to_csv("data/tennis_schedule_resolved.csv", index=False)
 
 # Print new players added
 if new_players_created:

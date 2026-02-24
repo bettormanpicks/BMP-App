@@ -121,6 +121,10 @@ def scrape_espn_scoreboard(target_date: datetime):
                 # Unexpected layout
                 continue
 
+            # Skip doubles for now
+            if "/" in player1 or "/" in player2:
+                continue
+
             data.append({
                 "Date": date_formatted,
                 "Time": match_time,

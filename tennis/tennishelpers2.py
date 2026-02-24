@@ -28,9 +28,9 @@ DEFENSE_FILE = "data/tennis_opponent_defense_normalized.csv"
 def load_tennis_defense():
     return pd.read_csv(DEFENSE_FILE)
 
-def get_opponent_return_tier(opponent_id, surface):
+def get_opponent_return_tier(opponent_id):
     df = load_tennis_defense()
-    row = df[(df["player_id"] == opponent_id) & (df["surface"] == surface)]
+    row = df[df["player_id"] == opponent_id]
 
     if row.empty:
         return "Unknown"
@@ -39,7 +39,7 @@ def get_opponent_return_tier(opponent_id, surface):
 
 @st.cache_data(ttl=300)
 def load_tennis_schedule():
-    df = pd.read_csv("data/tennis_schedule_resolved.csv")
+    df = pd.read_csv("data/tennis_schedule.csv")
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce").dt.date
     return df
 
@@ -67,9 +67,8 @@ def load_tennis_raw_data(tour="WTA"):
             df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
 
     # --- Load players for display names ---
-    players = pd.read_csv("tennisplayers.csv", dtype=str)
-    name_lookup = dict(zip(players["player_id"], players["player_name"]))
-    opponent_name = name_lookup.get(opponent_id, opponent_id)
+    players = pd.read_csv(players_path, dtype=str)
+    players_lookup = dict(zip(players["player_id"], players["player_name"]))
 
     df["Player"] = df["player_id"].map(players_lookup).fillna(df["player_id"])
     df["Opp"] = df["opponent"].map(players_lookup).fillna(df["opponent"])
@@ -96,26 +95,30 @@ def load_tennis_raw_data(tour="WTA"):
 
     return df
 
-def normalize_surface(s):
-    if pd.isna(s):
-        return None
-    s = str(s).strip().lower()
-    if "hard" in s:
-        return "Hard"
-    if "clay" in s:
-        return "Clay"
-    if "grass" in s:
-        return "Grass"
-    if "carpet" in s:
-        return "Carpet"
-    return None
-
 def compute_tennis_percentiles(df: pd.DataFrame, stats_selected: list, percentages: list, recent_n=None):
+    """
+    Compute hit rate thresholds for tennis players, filtered by the surface of their next match.
+    Only past games on the same surface are considered for percentiles.
+
+    Parameters
+    ----------
+    df : pd.DataFrame
+        Raw tennis gamelogs, must have 'player_id', 'GAME_DATE', and 'PosBucket' (surface)
+    stats_selected : list
+        List of stats to compute, e.g. ["GW","GL","GD","TG","MW"]
+    percentages : list
+        List of hit rate percentages, e.g. [80] for 80%
+    recent_n : int | None
+        Number of most recent games to consider. None = all games on same surface.
+
+    Returns
+    -------
+    pd.DataFrame
+        Player-level summary with thresholds per stat
+    """
 
     df = df.copy()
     df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
-
-    schedule = load_tennis_schedule()   # <-- load here
 
     results = []
 
@@ -124,33 +127,18 @@ def compute_tennis_percentiles(df: pd.DataFrame, stats_selected: list, percentag
         if group.empty:
             continue
 
-        # --- Find upcoming match ---
-        match = schedule[
-            (schedule["player_id"] == pid) | (schedule["opponent_id"] == pid)
-        ]
-
-        if match.empty:
-            continue
-
-        match = match.iloc[0]
-
-        if match["player_id"] == pid:
-            opponent_id = match["opponent_id"]
-        else:
-            opponent_id = match["player_id"]
-
-        next_surface = normalize_surface(match["Surface"])
-
+        # Identify next match surface
+        next_surface = group["PosBucket"].iloc[0]
         surface_group = group[group["PosBucket"] == next_surface]
+
         if surface_group.empty:
             continue
 
         row = {
             "player_id": pid,
             "Player": surface_group["Player"].iloc[0],
+            "Opp": surface_group["Opp"].iloc[0],
             "Surface": next_surface,
-            "Opponent_id": opponent_id,
-            "Opponent": opponent_name,
             "Gms": len(surface_group),
         }
 
