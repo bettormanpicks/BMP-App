@@ -1,31 +1,87 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-02-23,Live,Abierto Mexicano Telcel presentado por HSBC,Adam Walton,Aleksandar Kovacevic,atp_93,atp_75,ATP,Hard
-2026-02-23,Live,Abierto Mexicano Telcel presentado por HSBC,Rafael Jodar,Cameron Norrie,atp_117,atp_27,ATP,Hard
-2026-02-23,Final,Abierto Mexicano Telcel presentado por HSBC,Patrick Kypson,Alex De Minaur,atp_105,atp_8,ATP,Hard
-2026-02-23,Final,Abierto Mexicano Telcel presentado por HSBC,Daniel Altmaier,Alejandro Davidovich Fokina,atp_54,atp_15,ATP,Hard
-2026-02-23,Final,Abierto Mexicano Telcel presentado por HSBC,Valentin Vacherot,Chak Lam Coleman Wong,atp_26,atp_137,ATP,Hard
-2026-02-23,Final,Abierto Mexicano Telcel presentado por HSBC,Brandon Nakashima,Elias Ymer,atp_29,atp_187,ATP,Hard
-2026-02-23,Final,Abierto Mexicano Telcel presentado por HSBC,Tristan Schoolkate,Miomir Kecmanovic,atp_108,atp_83,ATP,Hard
-2026-02-23,Final,BCI Seguros Chile Open,Francisco Comesana,Pedro Martinez Portero,atp_62,atp_101,ATP,Clay
-2026-02-23,Final,BCI Seguros Chile Open,Nicolas Jarry,Dino Prizmic,atp_143,atp_121,ATP,Clay
-2026-02-23,Final,BCI Seguros Chile Open,Andrea Pellegrino,Alex Barrena,atp_140,atp_180,ATP,Clay
-2026-02-23,Final,BCI Seguros Chile Open,Dusan Lajovic,Yannick Hanfmann,atp_129,atp_90,ATP,Clay
-2026-02-23,Final,Dubai Duty Free Tennis Championships,Felix Auger-Aliassime,Zhang Zhizhen,atp_6,atp_449,ATP,Hard
-2026-02-23,Final,Dubai Duty Free Tennis Championships,Quentin Halys,Jack Draper,atp_72,atp_12,ATP,Hard
-2026-02-23,Final,Dubai Duty Free Tennis Championships,Stan Wawrinka,Benjamin Hassan,atp_98,atp_287,ATP,Hard
-2026-02-23,Final,Dubai Duty Free Tennis Championships,Moez Echargui,Giovanni Mpetshi Perricard,atp_139,atp_58,ATP,Hard
-2026-02-23,Final,ATX Open,Wang Xinyu,Rebeka Masarova,wta_34,wta_117,WTA,Hard
-2026-02-23,Final,ATX Open,Anna Bondar,Kamilla Rakhimova,wta_65,wta_91,WTA,Hard
-2026-02-23,Final,ATX Open,Taylor Townsend,Linda Fruhvirtova,wta_116,wta_118,WTA,Hard
-2026-02-23,Final,ATX Open,Elizabeth Mandlik,Whitney Osuigwe,wta_168,wta_162,WTA,Hard
-2026-02-23,Final,ATX Open,Katie Volynets,Nikola Bartunkova,wta_96,wta_104,WTA,Hard
-2026-02-23,Final,ATX Open,Alycia Parks,Oksana Selekhmeteva,wta_76,wta_74,WTA,Hard
-2026-02-23,01:30,Megasaray Hotels Open 1,Julia Riera,Anastasia Zolotareva,wta_187,wta_295,WTA,Clay
-2026-02-23,01:30,Megasaray Hotels Open 1,Guiomar Maristany Zuleta De Reales,Mayar Sherif,wta_165,wta_108,WTA,Clay
-2026-02-23,01:30,Megasaray Hotels Open 1,Moyuka Uchijima,Katarzyna Kawa,wta_90,wta_143,WTA,Clay
-2026-02-23,Final,Megasaray Hotels Open 1,Amarissa Toth,Dalila Spiteri,wta_250,wta_275,WTA,Clay
-2026-02-23,Final,Megasaray Hotels Open 1,Iryna Shymanovich,Katarina Zavatska,wta_156,wta_310,WTA,Clay
-2026-02-23,Final,Mérida Open Akron,Marina Stakusic,Dayana Yastremska,wta_137,wta_43,WTA,Hard
-2026-02-23,Final,Mérida Open Akron,Emiliana Arango,Anastasia Potapova,wta_58,wta_75,WTA,Hard
-2026-02-23,Final,Mérida Open Akron,Katie Boulter,Beatriz Haddad Maia,wta_83,wta_66,WTA,Hard
-2026-02-23,Final,Mérida Open Akron,Victoria Jimenez Kasintseva,Yulia Putintseva,wta_119,wta_77,WTA,Hard
+2026-02-24,Live,Abierto Mexicano Telcel presentado por HSBC,Casper Ruud,Wu Yibing,atp_13,atp_145,ATP,Hard
+2026-02-24,Live,Abierto Mexicano Telcel presentado por HSBC,Damir Dzumhur,Gael Monfils,atp_61,atp_168,ATP,Hard
+2026-02-24,Live,Abierto Mexicano Telcel presentado por HSBC,Adrian Mannarino,Sho Shimabukuro,atp_48,atp_135,ATP,Hard
+2026-02-24,Final,Abierto Mexicano Telcel presentado por HSBC,Alexander Zverev,Corentin Moutet,atp_4,atp_34,ATP,Hard
+2026-02-24,Final,Abierto Mexicano Telcel presentado por HSBC,Rodrigo Pacheco Mendez,Flavio Cobolli,atp_227,atp_20,ATP,Hard
+2026-02-24,Final,Abierto Mexicano Telcel presentado por HSBC,Frances Tiafoe,Nuno Borges,atp_28,atp_44,ATP,Hard
+2026-02-24,Final,Abierto Mexicano Telcel presentado por HSBC,Rinky Hijikata,Mattia Bellucci,atp_112,atp_109,ATP,Hard
+2026-02-24,Final,Abierto Mexicano Telcel presentado por HSBC,Terence Atmane,Grigor Dimitrov,atp_65,atp_42,ATP,Hard
+2026-02-24,Final,Abierto Mexicano Telcel presentado por HSBC,James Duckworth,Dalibor Svrcina,atp_80,atp_99,ATP,Hard
+2026-02-24,Final,BCI Seguros Chile Open,Emilio Nava,Matteo Berrettini,atp_76,atp_57,ATP,Clay
+2026-02-24,Final,BCI Seguros Chile Open,Alejandro Tabilo,Tomas Barrios Vera,atp_67,atp_107,ATP,Clay
+2026-02-24,TBD,BCI Seguros Chile Open,Francesco Passaro,Adolfo Daniel Vallejo,atp_161,atp_103,ATP,Clay
+2026-02-24,Final,BCI Seguros Chile Open,Juan Manuel Cerundolo,Cristian Garin,atp_78,atp_89,ATP,Clay
+2026-02-24,Final,BCI Seguros Chile Open,Thiago Agustin Tirante,Ignacio Buse,atp_92,atp_91,ATP,Clay
+2026-02-24,TBD,BCI Seguros Chile Open,Mariano Navone,Vit Kopriva,atp_74,atp_87,ATP,Clay
+2026-02-24,Final,BCI Seguros Chile Open,Elmer Moller,Roman Andres Burruchaga,atp_120,atp_102,ATP,Clay
+2026-02-24,Final,BCI Seguros Chile Open,Matias Soto,Vilius Gaubas,atp_317,atp_126,ATP,Clay
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Jan-Lennard Struff,Alexander Bublik,atp_77,atp_10,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Daniil Medvedev,Shang Juncheng,atp_11,atp_259,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Andrey Rublev,Valentin Royer,atp_14,atp_59,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Jakub Mensik,Hubert Hurkacz,atp_16,atp_71,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Alexander Shevchenko,Karen Khachanov,atp_79,atp_17,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Luca Nardi,Jiri Lehecka,atp_94,atp_21,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Alexei Popyrin,Kamil Majchrzak,atp_51,atp_56,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Ugo Humbert,Stefanos Tsitsipas,atp_38,atp_32,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Otto Virtanen,Tallon Griekspoor,atp_128,atp_25,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Fabian Marozsan,Arthur Rinderknech,atp_47,atp_30,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Pablo Carreno Busta,Denis Shapovalov,atp_122,atp_36,ATP,Hard
+2026-02-24,Final,Dubai Duty Free Tennis Championships,Zizou Bergs,Jenson Brooksby,atp_43,atp_46,ATP,Hard
+2026-02-24,Final,ATX Open,Anna Blinkova,Iva Jovic,wta_82,wta_20,WTA,Hard
+2026-02-24,Final,ATX Open,Francesca Jones,Peyton Stearns,wta_72,wta_59,WTA,Hard
+2026-02-24,Final,ATX Open,Ashlyn Krueger,Catherine McNally,wta_100,wta_68,WTA,Hard
+2026-02-24,Final,ATX Open,Petra Marcinko,Kimberly Birrell,wta_69,wta_94,WTA,Hard
+2026-02-24,Final,ATX Open,Lulu Sun,Caroline Dolehide,wta_98,wta_121,WTA,Hard
+2026-02-24,Final,ATX Open,Anastasia Zakharova,Mary Stoiana,wta_103,wta_185,WTA,Hard
+2026-02-24,Final,ATX Open,Yuan Yue,Rebecca Sramkova,wta_122,wta_102,WTA,Hard
+2026-02-24,Final,ATX Open,Venus Williams,Ajla Tomljanovic,wta_555,wta_73,WTA,Hard
+2026-02-24,Final,ATX Open,Bianca Andreescu,Dalma Galfi,wta_161,wta_86,WTA,Hard
+2026-02-24,Final,ATX Open,Kaja Juvan,Claire Liu,wta_92,wta_213,WTA,Hard
+2026-02-24,01:00,Megasaray Hotels Open 1,Alice Rame,Tamara Zidansek,wta_199,wta_145,WTA,Clay
+2026-02-24,01:00,Megasaray Hotels Open 1,Adelina Lachinova,Ekaterine Gorgodze,wta_589,wta_167,WTA,Clay
+2026-02-24,01:00,Megasaray Hotels Open 1,Arantxa Rus,Selena Janicijevic,wta_134,wta_261,WTA,Clay
+2026-02-24,01:00,Megasaray Hotels Open 1,Carole Monnet,Panna Udvardy,wta_177,wta_93,WTA,Clay
+2026-02-24,Final,Megasaray Hotels Open 1,Veronika Erjavec,Ilay Yoruk,wta_112,wta_809,WTA,Clay
+2026-02-24,Final,Megasaray Hotels Open 1,Leyre Romero Gormaz,Dalila Spiteri,wta_140,wta_275,WTA,Clay
+2026-02-24,Final,Megasaray Hotels Open 1,Laura Pigossi,Iryna Shymanovich,wta_214,wta_156,WTA,Clay
+2026-02-24,Final,Megasaray Hotels Open 1,Nuria Brancaccio,Ada Kumru,wta_164,wta_1100,WTA,Clay
+2026-02-24,Final,Mérida Open Akron,Camila Osorio,Janice Tjen,wta_63,wta_47,WTA,Hard
+2026-02-24,Final,Mérida Open Akron,Jessica Bouzas Maneiro,Heather Watson,wta_48,wta_278,WTA,Hard
+2026-02-24,Final,Mérida Open Akron,Magda Linette,Tatjana Maria,wta_50,wta_54,WTA,Hard
+2026-02-24,Final,Mérida Open Akron,Cadence Brace,Zeynep Sonmez,wta_202,wta_84,WTA,Hard
+2026-02-24,Final,Mérida Open Akron,Varvara Lepchenko,Zhang Shuai,wta_149,wta_85,WTA,Hard
+2026-02-24,Final,Mérida Open Akron,Priscilla Hon,Renata Zarazua,wta_130,wta_87,WTA,Hard
+2026-02-24,Final,Mérida Open Akron,Magdalena Frech,Maria Timofeeva,wta_55,wta_154,WTA,Hard
+2026-02-24,Final,Mérida Open Akron,Cristina Bucsa,Donna Vekic,wta_62,wta_99,WTA,Hard
+2026-02-25,18:00,Abierto Mexicano Telcel presentado por HSBC,Alexander Zverev,Miomir Kecmanovic,atp_4,atp_83,ATP,Hard
+2026-02-25,18:00,Abierto Mexicano Telcel presentado por HSBC,Dalibor Svrcina,Flavio Cobolli,atp_99,atp_20,ATP,Hard
+2026-02-25,18:00,Abierto Mexicano Telcel presentado por HSBC,Terence Atmane,Rafael Jodar,atp_65,atp_117,ATP,Hard
+2026-02-25,19:30,Abierto Mexicano Telcel presentado por HSBC,Brandon Nakashima,Patrick Kypson,atp_29,atp_105,ATP,Hard
+2026-02-25,19:30,Abierto Mexicano Telcel presentado por HSBC,Frances Tiafoe,Aleksandar Kovacevic,atp_28,atp_75,ATP,Hard
+2026-02-25,21:00,Abierto Mexicano Telcel presentado por HSBC,Mattia Bellucci,Alejandro Davidovich Fokina,atp_109,atp_15,ATP,Hard
+2026-02-25,10:00,BCI Seguros Chile Open,Camilo Ugo Carabelli,Yannick Hanfmann,atp_45,atp_90,ATP,Clay
+2026-02-25,12:00,BCI Seguros Chile Open,Francisco Comesana,Andrea Pellegrino,atp_62,atp_140,ATP,Clay
+2026-02-25,13:30,BCI Seguros Chile Open,Dino Prizmic,Vilius Gaubas,atp_121,atp_126,ATP,Clay
+2026-02-25,17:00,BCI Seguros Chile Open,Mariano Navone,Luciano Darderi,atp_74,atp_22,ATP,Clay
+2026-02-25,04:00,Dubai Duty Free Tennis Championships,Jenson Brooksby,Karen Khachanov,atp_46,atp_17,ATP,Hard
+2026-02-25,04:00,Dubai Duty Free Tennis Championships,Daniil Medvedev,Stan Wawrinka,atp_11,atp_98,ATP,Hard
+2026-02-25,05:30,Dubai Duty Free Tennis Championships,Pablo Carreno Busta,Jiri Lehecka,atp_122,atp_21,ATP,Hard
+2026-02-25,06:00,Dubai Duty Free Tennis Championships,Felix Auger-Aliassime,Giovanni Mpetshi Perricard,atp_6,atp_58,ATP,Hard
+2026-02-25,07:00,Dubai Duty Free Tennis Championships,Tallon Griekspoor,Alexander Bublik,atp_25,atp_10,ATP,Hard
+2026-02-25,09:00,Dubai Duty Free Tennis Championships,Jakub Mensik,Alexei Popyrin,atp_16,atp_51,ATP,Hard
+2026-02-25,09:00,Dubai Duty Free Tennis Championships,Andrey Rublev,Ugo Humbert,atp_14,atp_38,ATP,Hard
+2026-02-25,10:30,Dubai Duty Free Tennis Championships,Arthur Rinderknech,Jack Draper,atp_30,atp_12,ATP,Hard
+2026-02-25,12:00,ATX Open,Kamilla Rakhimova,Oksana Selekhmeteva,wta_91,wta_74,WTA,Hard
+2026-02-25,12:00,ATX Open,Rebeka Masarova,Whitney Osuigwe,wta_117,wta_162,WTA,Hard
+2026-02-25,13:30,ATX Open,Nikola Bartunkova,Taylor Townsend,wta_104,wta_116,WTA,Hard
+2026-02-25,19:30,ATX Open,Yuan Yue,Dalma Galfi,wta_122,wta_86,WTA,Hard
+2026-02-25,02:30,Megasaray Hotels Open 1,Ipek Oz,Anastasia Gasanova,wta_523,wta_189,WTA,Clay
+2026-02-25,02:30,Megasaray Hotels Open 1,Despina Papamichail,Lucia Bronzetti,wta_157,wta_138,WTA,Clay
+2026-02-25,02:30,Megasaray Hotels Open 1,Katarina Zavatska,Julia Grabher,wta_310,wta_80,WTA,Clay
+2026-02-25,02:30,Megasaray Hotels Open 1,Anhelina Kalinina,Alevtina Ibragimova,wta_191,wta_321,WTA,Clay
+2026-02-25,04:00,Megasaray Hotels Open 1,Oleksandra Oliynykova,Polina Kudermetova,wta_71,wta_144,WTA,Clay
+2026-02-25,14:00,Mérida Open Akron,Magda Linette,Victoria Jimenez Kasintseva,wta_50,wta_119,WTA,Hard
+2026-02-25,15:30,Mérida Open Akron,Emiliana Arango,Marie Bouzkova,wta_58,wta_39,WTA,Hard
+2026-02-25,18:00,Mérida Open Akron,Katie Boulter,Camila Osorio,wta_83,wta_63,WTA,Hard
+2026-02-25,19:30,Mérida Open Akron,Cristina Bucsa,Marina Stakusic,wta_62,wta_137,WTA,Hard

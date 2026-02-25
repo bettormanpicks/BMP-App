@@ -37,6 +37,14 @@ from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 # NHL helper functions
 from nhl.helpers import get_nhl_todays_schedule, compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date, get_nhl_injuries
 
+# Tennis helper functions
+from tennis.tennishelpers import (
+    load_tennis_raw_data,
+    load_tennis_schedule,
+    compute_tennis_percentiles,
+    load_tennis_defense
+)
+
 # ============================================================
 # PAGE CONFIG
 # ============================================================
@@ -48,7 +56,7 @@ st.set_page_config(
 ############################################################
 # SPORT SELECTION
 ############################################################
-sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL"]) #, "NFL", "NHL"])
+sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL", "Tennis"]) #, "NFL", "NHL"])
 
 nba_today = get_league_today()
 nhl_date = get_league_today()
@@ -1074,3 +1082,114 @@ elif sport_choice == "NHL":
                 hide_index=True,
                 column_config=col_config
             )
+
+############################################################
+# ===== Tennis Section =====
+############################################################
+if sport_choice == "Tennis":
+
+    # --- ATP / WTA selection ---
+    tour_choice = st.sidebar.radio("Tour", ["ATP", "WTA"])
+
+    # Load raw gamelogs
+    df = load_tennis_raw_data(tour=tour_choice)
+
+    # --- Sidebar Filters ---
+    with st.sidebar.form("Tennis Filters"):
+
+        stats_available = ["GW", "GL", "GD", "TG", "MW"]
+        stats_selected = st.multiselect(
+            "Select Stats", stats_available, default=stats_available
+        )
+
+        percentages = [st.slider("Hit Rate %", 40, 100, 80, 5)]
+
+        player_window = st.radio("Player Performance Window", ["L5", "L10", "ALL"], index=0)
+        recent_n = 5 if player_window == "L5" else 10 if player_window == "L10" else None
+
+        players_with_match = st.checkbox("Players With A Match Soon", value=True)
+
+        # Surface filter only appears in historical mode
+        surface_choice = None
+        if not players_with_match:
+            surface_choice = st.selectbox("Surface Filter (Historical Mode)", ["All", "Hard", "Clay", "Grass"])
+
+        calculate = st.form_submit_button("Calculate")
+
+    # --- Calculate ---
+    if calculate:
+
+        df_calc = trim_df_to_recent_82(df)
+
+        schedule_df = load_tennis_schedule()
+        #st.write("Schedule preview:", schedule_df.head())
+        #st.write("Scheduled player IDs:", schedule_df["player_id"].unique())
+        #st.write("Scheduled opponent IDs:", schedule_df["opponent_id"].unique())
+
+        # Filter for upcoming matches if checkbox is on
+        if players_with_match:
+            today = datetime.today().date()
+            tomorrow = today + timedelta(days=1)
+            schedule_df = schedule_df[schedule_df["Date"].isin([today, tomorrow])]
+
+            scheduled_ids = set(schedule_df["player_id"]).union(set(schedule_df["opponent_id"]))
+            df_calc = df_calc[df_calc["player_id"].isin(scheduled_ids)]
+
+        # --- Compute percentiles ---
+        summary_df = compute_tennis_percentiles(
+            df_calc,
+            stats_selected,
+            percentages,
+            recent_n=recent_n,
+            upcoming_only=players_with_match,
+            schedule_df=schedule_df if players_with_match else None,
+            surface_filter=surface_choice if surface_choice != "All" else None
+        )
+
+        if summary_df.empty:
+            st.warning("No data available for the selected players/surface.")
+        else:
+
+            # --- Attach opponent info only if upcoming match mode ---
+            if players_with_match:
+                defense_df = load_tennis_defense()
+                summary_df = summary_df.merge(
+                    defense_df[["player_id", "surface", "return_tier"]],
+                    left_on=["opponent_id", "Surface"],
+                    right_on=["player_id", "surface"],
+                    how="left",
+                    suffixes=("", "_opp")
+                )
+
+                players_df = pd.read_csv("tennis/data/tennisplayers.csv", dtype=str)
+                players_lookup = dict(zip(players_df["player_id"], players_df["player_name"]))
+                summary_df["Opponent"] = summary_df["opponent_id"].map(players_lookup).fillna(summary_df["opponent_id"])
+
+            # --- Rename & clean columns ---
+            rename_map = {"Gms": "Ms"}
+            if players_with_match:
+                rename_map["return_tier"] = "Opponent Return Tier"
+            summary_df.rename(columns=rename_map, inplace=True)
+            summary_df.drop(columns=["player_id_opp", "surface"], errors="ignore", inplace=True)
+
+            # --- Dynamically order columns ---
+            display_cols = ["Player"]
+            if players_with_match:
+                display_cols.append("Opponent")
+                display_cols.append("Surface")
+            display_cols.append("Ms")
+
+            stat_cols = [c for c in summary_df.columns if "@" in c]
+            display_cols.extend(stat_cols)
+
+            if players_with_match:
+                display_cols.append("Opponent Return Tier")
+
+            summary_df = summary_df[display_cols]
+
+            # --- Sort by first stat ---
+            sort_col = f"{stats_selected[0]}@{percentages[0]}"
+            if sort_col in summary_df.columns:
+                summary_df = summary_df.sort_values(sort_col, ascending=False)
+
+            st.dataframe(summary_df, use_container_width=True)
