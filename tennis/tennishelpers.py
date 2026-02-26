@@ -3,7 +3,7 @@
 import pandas as pd
 import streamlit as st
 from datetime import datetime, timedelta
-from shared.utils import hit_rate_threshold, trim_df_to_recent_82
+from shared.utils import hit_rate_threshold
 
 import os
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -117,34 +117,40 @@ def normalize_surface(s):
 
 def compute_tennis_percentiles(df: pd.DataFrame, stats_selected: list, percentages: list,
                                recent_n=None, upcoming_only=True, schedule_df=None, surface_filter=None):
+
+    #st.write("Incoming DF rows:", len(df))
+    #st.write("Unique players in DF:", df["player_id"].nunique())
+
     """
     Compute tennis percentiles for players.
-
-    Parameters
-    ----------
-    df : pd.DataFrame
-        Raw gamelog dataframe with 'player_id', 'PosBucket', etc.
-    stats_selected : list
-        List of stats keys to compute.
-    percentages : list
-        List of percentiles to calculate (hit rate thresholds).
-    recent_n : int, optional
-        Number of most recent games to consider.
-    upcoming_only : bool
-        If True, compute based on upcoming matches using schedule_df.
-        If False, compute historical stats optionally filtered by surface_filter.
-    schedule_df : pd.DataFrame, optional
-        Tennis schedule dataframe required if upcoming_only=True.
-    surface_filter : str, optional
-        Surface to filter for historical mode ("Hard", "Clay", "Grass").
     """
     df = df.copy()
-    df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"], errors="coerce")
+
+    # Be tolerant to column casing from CSVs (e.g., 'game_date' vs 'GAME_DATE')
+    date_col = None
+    for c in df.columns:
+        if c.lower() == "game_date":
+            date_col = c
+            break
+    if date_col is not None:
+        df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
+    else:
+        # fallback – do nothing if not present
+        pass
+
+    # Normalize surface_filter: treat None/''/'All' as no filter
+    def _no_surface_filter(val):
+        if val is None:
+            return True
+        if isinstance(val, str) and val.strip().lower() in {"", "all"}:
+            return True
+        return False
 
     results = []
 
     for pid, group in df.groupby("player_id", sort=False):
-        group = group.sort_values("GAME_DATE", ascending=False)
+        if date_col is not None:
+            group = group.sort_values(date_col, ascending=False)
         if group.empty:
             continue
 
@@ -162,21 +168,39 @@ def compute_tennis_percentiles(df: pd.DataFrame, stats_selected: list, percentag
             opponent_id = match["opponent_id"] if match["player_id"] == pid else match["player_id"]
             next_surface = normalize_surface(match["Surface"])
 
-            surface_group = group[group["PosBucket"] == next_surface]
+            # Prefer PosBucket if present, else fall back to 'surface'
+            if "PosBucket" in group.columns:
+                surface_group = group[group["PosBucket"].astype(str).str.strip().str.casefold() == str(next_surface).strip().casefold()]
+            elif "surface" in group.columns:
+                surface_group = group[group["surface"].astype(str).str.strip().str.casefold() == str(next_surface).strip().casefold()]
+            else:
+                surface_group = group
+
             if surface_group.empty:
                 continue
         else:
             # Historical mode
             opponent_id = None
-            if surface_filter:
-                surface_group = group[group["PosBucket"] == surface_filter]
-            else:
+            next_surface = None
+
+            if _no_surface_filter(surface_filter):
+                # 'All' -> use every row for the player
                 surface_group = group
+                display_surface = "All"
+            else:
+                # Filter by the selected surface (case-insensitive)
+                if "PosBucket" in group.columns:
+                    surface_group = group[group["PosBucket"].astype(str).str.strip().str.casefold() == str(surface_filter).strip().casefold()]
+                elif "surface" in group.columns:
+                    surface_group = group[group["surface"].astype(str).str.strip().str.casefold() == str(surface_filter).strip().casefold()]
+                else:
+                    surface_group = group
+                display_surface = surface_filter
 
         row = {
             "player_id": pid,
             "Player": group["Player"].iloc[0] if "Player" in group.columns else pid,
-            "Surface": next_surface if upcoming_only else (surface_filter or "All"),
+            "Surface": next_surface if upcoming_only else display_surface,
             "Gms": len(surface_group),
         }
         if upcoming_only:

@@ -30,7 +30,7 @@ wta_def = build_defense(wta, "WTA")
 
 final = pd.concat([atp_def, wta_def], ignore_index=True)
 
-final = final[final["matches_faced"] >= 5]
+final = final[final["matches_faced"] >= 2]
 
 final.to_csv(OUTPUT_FILE, index=False)
 
