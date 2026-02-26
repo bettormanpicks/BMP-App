@@ -1,293 +1,182 @@
 schedule_name,key,player_id,matched_by
-Alexander Zverev,alexanderzverev,,alias_no_match
-Alexander Zverev,zverev,,alias_no_match
-Alexander Zverev,azverev,,alias_no_match
-Alexander Zverev,zvereva,atp_4,alias
-Miomir Kecmanovic,mkecmanovic,atp_83,alias
-Dalibor Svrcina,svrcinad,atp_99,alias
-Flavio Cobolli,flaviocobolli,,alias_no_match
+Wu Yibing,yibingw,atp_145,alias
 Flavio Cobolli,cobolli,,alias_no_match
-Flavio Cobolli,fcobolli,,alias_no_match
 Flavio Cobolli,cobollif,atp_20,alias
-Terence Atmane,atmanet,atp_65,alias
-Rafael Jodar,rafaeljodar,atp_117,alias
-Brandon Nakashima,nakashimab,atp_29,alias
-Patrick Kypson,pkypson,,alias_no_match
-Patrick Kypson,kypson,,alias_no_match
-Patrick Kypson,patrickkypson,,alias_no_match
-Patrick Kypson,kypsonp,atp_105,alias
+Frances Tiafoe,francestiafoe,,alias_no_match
+Frances Tiafoe,tiafoe,,alias_no_match
 Frances Tiafoe,ftiafoe,,alias_no_match
 Frances Tiafoe,tiafoef,atp_28,alias
-Aleksandar Kovacevic,akovacevic,atp_75,alias
-Wu Yibing,wuyibing,atp_145,alias
-Sho Shimabukuro,sshimabukuro,,alias_no_match
-Sho Shimabukuro,shimabukuros,atp_135,alias
-Valentin Vacherot,valentinvacherot,,alias_no_match
-Valentin Vacherot,vacherotv,atp_26,alias
-Gael Monfils,monfilsg,atp_168,alias
+Mattia Bellucci,bellucci,,alias_no_match
 Mattia Bellucci,mattiabellucci,,alias_no_match
+Mattia Bellucci,mbellucci,,alias_no_match
 Mattia Bellucci,belluccim,atp_109,alias
-Alejandro Davidovich Fokina,davidovichfokinaa,atp_15,alias
-Francisco Comesana,franciscocomesana,atp_62,alias
-Andrea Pellegrino,apellegrino,,alias_no_match
-Andrea Pellegrino,pellegrinoa,atp_140,alias
-Dino Prizmic,prizmic,atp_121,alias
-Vilius Gaubas,viliusgaubas,,alias_no_match
-Vilius Gaubas,gaubasv,atp_126,alias
-Mariano Navone,navonem,atp_74,alias
-Luciano Darderi,ldarderi,,alias_no_match
-Luciano Darderi,lucianodarderi,,alias_no_match
-Luciano Darderi,darderi,,alias_no_match
-Luciano Darderi,darderil,atp_22,alias
-Camilo Ugo Carabelli,cucarabelli,,alias_no_match
-Camilo Ugo Carabelli,carabelli,,alias_no_match
-Camilo Ugo Carabelli,ugocarabelli,,alias_no_match
-Camilo Ugo Carabelli,ugocarabellic,atp_45,alias
-Yannick Hanfmann,yhanfmann,,alias_no_match
-Yannick Hanfmann,hanfmanny,atp_90,alias
-Felix Auger-Aliassime,felixaugeraliassime,atp_6,alias
-Giovanni Mpetshi Perricard,mpetshiperricardg,atp_58,alias
-Tallon Griekspoor,griekspoort,atp_25,alias
-Alexander Bublik,bublik,,alias_no_match
-Alexander Bublik,alexanderbublik,,alias_no_match
-Alexander Bublik,abublik,,alias_no_match
-Alexander Bublik,bublika,atp_10,alias
-Daniil Medvedev,dmedvedev,,alias_no_match
-Daniil Medvedev,daniilmedvedev,,alias_no_match
-Daniil Medvedev,medvedev,,alias_no_match
-Daniil Medvedev,medvedevd,atp_11,alias
-Stan Wawrinka,swawrinka,,alias_no_match
-Stan Wawrinka,wawrinka,,alias_no_match
-Stan Wawrinka,stanwawrinka,,alias_no_match
-Stan Wawrinka,wawrinkas,atp_98,alias
-Arthur Rinderknech,rinderknech,,alias_no_match
-Arthur Rinderknech,rinderknecha,atp_30,alias
-Jack Draper,draper,,alias_no_match
-Jack Draper,jackdraper,,alias_no_match
-Jack Draper,draperj,atp_12,alias
-Andrey Rublev,andreyrublev,,alias_no_match
-Andrey Rublev,rubleva,atp_14,alias
-Ugo Humbert,humbert,,alias_no_match
-Ugo Humbert,uhumbert,,alias_no_match
-Ugo Humbert,ugohumbert,,alias_no_match
-Ugo Humbert,humbertu,atp_38,alias
-Jakub Mensik,mensik,,alias_no_match
-Jakub Mensik,mensikj,atp_16,alias
-Alexei Popyrin,apopyrin,,alias_no_match
-Alexei Popyrin,alexeipopyrin,,alias_no_match
-Alexei Popyrin,popyrin,,alias_no_match
-Alexei Popyrin,popyrina,atp_51,alias
-Jenson Brooksby,jbrooksby,,alias_no_match
-Jenson Brooksby,jensonbrooksby,,alias_no_match
-Jenson Brooksby,brooksby,,alias_no_match
-Jenson Brooksby,brooksbyj,atp_46,alias
-Karen Khachanov,khachanovk,atp_17,alias
-Pablo Carreno Busta,bustap,atp_122,alias
-Jiri Lehecka,jirilehecka,,alias_no_match
-Jiri Lehecka,lehecka,,alias_no_match
-Jiri Lehecka,jlehecka,,alias_no_match
-Jiri Lehecka,leheckaj,atp_21,alias
-Nikola Bartunkova,nikolabartunkova,wta_104,alias
-Taylor Townsend,townsendt,wta_116,alias
-Yuan Yue,yuey,wta_122,alias
-Dalma Galfi,galfid,wta_86,alias
-Kamilla Rakhimova,rakhimova,,alias_no_match
-Kamilla Rakhimova,rakhimovak,wta_91,alias
-Oksana Selekhmeteva,selekhmetevao,wta_74,alias
-Rebeka Masarova,rebekamasarova,,alias_no_match
-Rebeka Masarova,masarovar,wta_117,alias
-Whitney Osuigwe,osuigwe,,alias_no_match
-Whitney Osuigwe,wosuigwe,,alias_no_match
-Whitney Osuigwe,osuigwew,wta_162,alias
-Iryna Shymanovich,shymanovich,,alias_no_match
-Iryna Shymanovich,ishymanovich,,alias_no_match
-Iryna Shymanovich,irynashymanovich,,alias_no_match
-Iryna Shymanovich,shymanovichi,wta_156,alias
-Despina Papamichail,papamichail,,alias_no_match
-Despina Papamichail,despinapapamichail,,alias_no_match
-Despina Papamichail,dpapamichail,,alias_no_match
-Despina Papamichail,papamichaild,,alias_no_match
-Despina Papamichail,papamichail,wta_157,player_lookup
-Veronika Erjavec,veronikaerjavec,,alias_no_match
-Veronika Erjavec,erjavecv,wta_112,alias
-Leyre Romero Gormaz,romerogormaz,,alias_no_match
-Leyre Romero Gormaz,romerogormazl,wta_140,alias
-Nuria Brancaccio,nuriabrancaccio,,alias_no_match
-Nuria Brancaccio,brancaccion,wta_164,alias
-Panna Udvardy,pudvardy,,alias_no_match
-Panna Udvardy,udvardyp,wta_93,alias
-Moyuka Uchijima,uchijimam,wta_90,alias
-Anastasia Gasanova,agasanova,,alias_no_match
-Anastasia Gasanova,anastasiagasanova,,alias_no_match
-Anastasia Gasanova,gasanovaa,wta_189,alias
-Oleksandra Oliynykova,oliynykova,,alias_no_match
-Oleksandra Oliynykova,oliynykovao,wta_71,alias
-Polina Kudermetova,pkudermetova,,alias_no_match
-Polina Kudermetova,kudermetova,,alias_no_match
-Polina Kudermetova,kudermetovap,wta_144,alias
-Katarina Zavatska,zavatska,,alias_no_match
-Katarina Zavatska,katarinazavatska,,alias_no_match
-Katarina Zavatska,kzavatska,,alias_no_match
-Katarina Zavatska,zavatskak,,alias_no_match
-Katarina Zavatska,zavatska,wta_310,player_lookup
-Julia Grabher,grabherj,wta_80,alias
-Despina Papamichail,papamichail,,alias_no_match
-Despina Papamichail,despinapapamichail,,alias_no_match
-Despina Papamichail,dpapamichail,,alias_no_match
-Despina Papamichail,papamichaild,,alias_no_match
-Despina Papamichail,papamichail,wta_157,player_lookup
-Lucia Bronzetti,lbronzetti,,alias_no_match
-Lucia Bronzetti,luciabronzetti,,alias_no_match
-Lucia Bronzetti,bronzetti,,alias_no_match
-Lucia Bronzetti,bronzettil,wta_138,alias
-Anhelina Kalinina,anhelinakalinina,,alias_no_match
-Anhelina Kalinina,kalinina,,alias_no_match
-Anhelina Kalinina,akalinina,,alias_no_match
-Anhelina Kalinina,kalininaa,wta_191,alias
-Alevtina Ibragimova,alevtinaibragimova,,alias_no_match
-Alevtina Ibragimova,aibragimova,,alias_no_match
-Alevtina Ibragimova,ibragimovaa,,alias_no_match
-Alevtina Ibragimova,ibragimova,,alias_no_match
-Alevtina Ibragimova,alevtinaibragimova,wta_321,player_lookup
-Ipek Oz,oz,,alias_no_match
-Ipek Oz,ioz,,alias_no_match
-Ipek Oz,ozi,,alias_no_match
-Ipek Oz,ipekoz,,alias_no_match
-Ipek Oz,oz,,player_lookup_no_match
-Ipek Oz,ioz,,player_lookup_no_match
-Ipek Oz,ozi,,player_lookup_no_match
-Ipek Oz,ipekoz,,player_lookup_no_match
-Ipek Oz,oz,wta_523,ranking
-Anastasia Gasanova,agasanova,,alias_no_match
-Anastasia Gasanova,anastasiagasanova,,alias_no_match
-Anastasia Gasanova,gasanovaa,wta_189,alias
-Magda Linette,linette,,alias_no_match
-Magda Linette,linettem,wta_50,alias
-Victoria Jimenez Kasintseva,kasintseva,,alias_no_match
-Victoria Jimenez Kasintseva,victoriajimenezkasintseva,,alias_no_match
-Victoria Jimenez Kasintseva,jimenezkasintseva,,alias_no_match
-Victoria Jimenez Kasintseva,kasintsevav,wta_119,alias
-Emiliana Arango,earango,,alias_no_match
-Emiliana Arango,emilianaarango,,alias_no_match
-Emiliana Arango,arangoe,wta_58,alias
-Marie Bouzkova,bouzkovam,wta_39,alias
-Katie Boulter,kboulter,,alias_no_match
-Katie Boulter,boulterk,wta_83,alias
-Camila Osorio,osorioc,,alias_no_match
-Camila Osorio,osorio,,alias_no_match
-Camila Osorio,camilaosorio,,alias_no_match
-Camila Osorio,cosorio,,alias_no_match
-Camila Osorio,osorioc,wta_63,player_lookup
-Cristina Bucsa,bucsa,,alias_no_match
-Cristina Bucsa,bucsac,wta_62,alias
-Marina Stakusic,stakusic,,alias_no_match
-Marina Stakusic,mstakusic,,alias_no_match
-Marina Stakusic,marinastakusic,,alias_no_match
-Marina Stakusic,stakusicm,wta_137,alias
-Adolfo Daniel Vallejo,danielvallejoa,,alias_no_match
-Adolfo Daniel Vallejo,danielvallejo,,alias_no_match
-Adolfo Daniel Vallejo,vallejo,,alias_no_match
-Adolfo Daniel Vallejo,advallejo,,alias_no_match
+Miomir Kecmanovic,kecmanovicm,atp_83,alias
+Terence Atmane,tatmane,,alias_no_match
+Terence Atmane,atmanet,atp_65,alias
+Valentin Vacherot,valentinvacherot,,alias_no_match
+Valentin Vacherot,vacherot,,alias_no_match
+Valentin Vacherot,vvacherot,,alias_no_match
+Valentin Vacherot,vacherotv,atp_26,alias
+Brandon Nakashima,brandonnakashima,,alias_no_match
+Brandon Nakashima,nakashimab,atp_29,alias
 Adolfo Daniel Vallejo,adolfodanielvallejo,,alias_no_match
 Adolfo Daniel Vallejo,vallejoa,,alias_no_match
+Adolfo Daniel Vallejo,vallejo,,alias_no_match
+Adolfo Daniel Vallejo,danielvallejo,,alias_no_match
 Adolfo Daniel Vallejo,avallejo,,alias_no_match
-Adolfo Daniel Vallejo,danielvallejoa,atp_103,player_lookup
+Adolfo Daniel Vallejo,advallejo,,alias_no_match
+Adolfo Daniel Vallejo,danielvallejoa,,alias_no_match
+Adolfo Daniel Vallejo,adolfodanielvallejo,atp_103,player_lookup
 Emilio Nava,emilionava,,alias_no_match
-Emilio Nava,enava,,alias_no_match
 Emilio Nava,navae,atp_76,alias
+Francisco Cerundolo,fcerundolo,,alias_no_match
+Francisco Cerundolo,franciscocerundolo,,alias_no_match
 Francisco Cerundolo,cerundolof,atp_19,alias
-Elmer Moller,moller,,alias_no_match
-Elmer Moller,emoller,,alias_no_match
 Elmer Moller,mollere,atp_120,alias
-Cristian Garin,cgarin,,alias_no_match
-Cristian Garin,cristiangarin,,alias_no_match
+Cristian Garin,garin,,alias_no_match
 Cristian Garin,garinc,atp_89,alias
-Sebastian Baez,baez,,alias_no_match
+Sebastian Baez,sebastianbaez,,alias_no_match
 Sebastian Baez,sbaez,,alias_no_match
 Sebastian Baez,baezs,atp_33,alias
+Alejandro Tabilo,tabilo,,alias_no_match
 Alejandro Tabilo,tabiloa,atp_67,alias
-Thiago Agustin Tirante,tatirante,,alias_no_match
-Thiago Agustin Tirante,ttirante,,alias_no_match
 Thiago Agustin Tirante,agustintirante,,alias_no_match
-Thiago Agustin Tirante,thiagoagustintirante,,alias_no_match
 Thiago Agustin Tirante,tirante,,alias_no_match
-Thiago Agustin Tirante,tirantet,,alias_no_match
+Thiago Agustin Tirante,ttirante,,alias_no_match
 Thiago Agustin Tirante,agustintirantet,,alias_no_match
-Thiago Agustin Tirante,tatirante,atp_92,player_lookup
+Thiago Agustin Tirante,tirantet,,alias_no_match
+Thiago Agustin Tirante,tatirante,,alias_no_match
+Thiago Agustin Tirante,thiagoagustintirante,,alias_no_match
+Thiago Agustin Tirante,agustintirante,atp_92,player_lookup
+Andrey Rublev,rubleva,atp_14,alias
+Arthur Rinderknech,arinderknech,,alias_no_match
+Arthur Rinderknech,arthurrinderknech,,alias_no_match
+Arthur Rinderknech,rinderknech,,alias_no_match
+Arthur Rinderknech,rinderknecha,atp_30,alias
+Jakub Mensik,mensikj,atp_16,alias
+Tallon Griekspoor,griekspoort,atp_25,alias
+Felix Auger-Aliassime,aliassime,atp_6,alias
+Jiri Lehecka,leheckaj,atp_21,alias
 Daniil Medvedev,dmedvedev,,alias_no_match
-Daniil Medvedev,daniilmedvedev,,alias_no_match
 Daniil Medvedev,medvedev,,alias_no_match
 Daniil Medvedev,medvedevd,atp_11,alias
 Jenson Brooksby,jbrooksby,,alias_no_match
-Jenson Brooksby,jensonbrooksby,,alias_no_match
 Jenson Brooksby,brooksby,,alias_no_match
+Jenson Brooksby,jensonbrooksby,,alias_no_match
 Jenson Brooksby,brooksbyj,atp_46,alias
-Felix Auger-Aliassime,felixaugeraliassime,atp_6,alias
-Jiri Lehecka,jirilehecka,,alias_no_match
-Jiri Lehecka,lehecka,,alias_no_match
-Jiri Lehecka,jlehecka,,alias_no_match
-Jiri Lehecka,leheckaj,atp_21,alias
-Jakub Mensik,mensik,,alias_no_match
-Jakub Mensik,mensikj,atp_16,alias
-Tallon Griekspoor,griekspoort,atp_25,alias
-Ajla Tomljanovic,tomljanovic,,alias_no_match
-Ajla Tomljanovic,tomljanovica,wta_73,alias
-Iva Jovic,jovic,,alias_no_match
-Iva Jovic,ivajovic,,alias_no_match
-Iva Jovic,jovici,wta_20,alias
-Kaja Juvan,kjuvan,,alias_no_match
-Kaja Juvan,juvank,wta_92,alias
-Peyton Stearns,stearnsp,wta_59,alias
-Anastasia Zakharova,azakharova,,alias_no_match
 Anastasia Zakharova,anastasiazakharova,,alias_no_match
+Anastasia Zakharova,azakharova,,alias_no_match
 Anastasia Zakharova,zakharovaa,wta_103,alias
+Ashlyn Krueger,ashlynkrueger,,alias_no_match
 Ashlyn Krueger,krueger,,alias_no_match
 Ashlyn Krueger,akrueger,,alias_no_match
 Ashlyn Krueger,kruegera,wta_100,alias
+Kaja Juvan,kjuvan,,alias_no_match
+Kaja Juvan,juvan,,alias_no_match
+Kaja Juvan,kajajuvan,,alias_no_match
+Kaja Juvan,juvank,wta_92,alias
+Peyton Stearns,stearnsp,wta_59,alias
+Kimberly Birrell,kimberlybirrell,,alias_no_match
+Kimberly Birrell,kbirrell,,alias_no_match
 Kimberly Birrell,birrell,,alias_no_match
 Kimberly Birrell,birrellk,wta_94,alias
+Caroline Dolehide,dolehide,,alias_no_match
 Caroline Dolehide,dolehidec,wta_121,alias
-Oleksandra Oliynykova,oliynykova,,alias_no_match
-Oleksandra Oliynykova,oliynykovao,wta_71,alias
-Amarissa Toth,atoth,wta_250,alias
-Anhelina Kalinina,anhelinakalinina,,alias_no_match
-Anhelina Kalinina,kalinina,,alias_no_match
-Anhelina Kalinina,akalinina,,alias_no_match
-Anhelina Kalinina,kalininaa,wta_191,alias
-Katarina Zavatska,zavatska,,alias_no_match
-Katarina Zavatska,katarinazavatska,,alias_no_match
-Katarina Zavatska,kzavatska,,alias_no_match
-Katarina Zavatska,zavatskak,,alias_no_match
-Katarina Zavatska,zavatska,wta_310,player_lookup
-Selena Janicijevic,selenajanicijevic,,alias_no_match
-Selena Janicijevic,sjanicijevic,,alias_no_match
-Selena Janicijevic,janicijevics,wta_261,alias
+Ajla Tomljanovic,tomljanovica,wta_73,alias
+Iva Jovic,ijovic,,alias_no_match
+Iva Jovic,jovici,wta_20,alias
 Ekaterine Gorgodze,egorgodze,,alias_no_match
-Ekaterine Gorgodze,ekaterinegorgodze,,alias_no_match
 Ekaterine Gorgodze,gorgodzee,,alias_no_match
+Ekaterine Gorgodze,ekaterinegorgodze,,alias_no_match
 Ekaterine Gorgodze,gorgodze,,alias_no_match
 Ekaterine Gorgodze,egorgodze,wta_167,player_lookup
-Anastasia Zolotareva,azolotareva,,alias_no_match
+Anhelina Kalinina,akalinina,,alias_no_match
+Anhelina Kalinina,anhelinakalinina,,alias_no_match
+Anhelina Kalinina,kalinina,,alias_no_match
+Anhelina Kalinina,kalininaa,wta_191,alias
+Oleksandra Oliynykova,oleksandraoliynykova,,alias_no_match
+Oleksandra Oliynykova,oliynykovao,wta_71,alias
+Amarissa Toth,amarissatoth,wta_250,alias
 Anastasia Zolotareva,zolotareva,,alias_no_match
-Anastasia Zolotareva,anastasiazolotareva,,alias_no_match
 Anastasia Zolotareva,zolotarevaa,,alias_no_match
-Anastasia Zolotareva,azolotareva,wta_295,player_lookup
+Anastasia Zolotareva,anastasiazolotareva,,alias_no_match
+Anastasia Zolotareva,azolotareva,,alias_no_match
+Anastasia Zolotareva,zolotareva,wta_295,player_lookup
+Mayar Sherif,mayarsherif,,alias_no_match
 Mayar Sherif,msherif,,alias_no_match
 Mayar Sherif,sherifm,wta_108,alias
-Jessica Bouzas Maneiro,bouzasmaneiroj,wta_48,alias
+Anhelina Kalinina,akalinina,,alias_no_match
+Anhelina Kalinina,anhelinakalinina,,alias_no_match
+Anhelina Kalinina,kalinina,,alias_no_match
+Anhelina Kalinina,kalininaa,wta_191,alias
+Katarina Zavatska,kzavatska,,alias_no_match
+Katarina Zavatska,katarinazavatska,,alias_no_match
+Katarina Zavatska,zavatskak,,alias_no_match
+Katarina Zavatska,zavatska,,alias_no_match
+Katarina Zavatska,kzavatska,wta_310,player_lookup
+Selena Janicijevic,selenajanicijevic,,alias_no_match
+Selena Janicijevic,janicijevic,,alias_no_match
+Selena Janicijevic,janicijevics,wta_261,alias
+Ekaterine Gorgodze,egorgodze,,alias_no_match
+Ekaterine Gorgodze,gorgodzee,,alias_no_match
+Ekaterine Gorgodze,ekaterinegorgodze,,alias_no_match
+Ekaterine Gorgodze,gorgodze,,alias_no_match
+Ekaterine Gorgodze,egorgodze,wta_167,player_lookup
+Jessica Bouzas Maneiro,bouzasmaneiro,,alias_no_match
+Jessica Bouzas Maneiro,jmaneiro,,alias_no_match
+Jessica Bouzas Maneiro,jbmaneiro,,alias_no_match
+Jessica Bouzas Maneiro,maneiroj,wta_48,alias
 Magdalena Frech,mfrech,,alias_no_match
-Magdalena Frech,magdalenafrech,,alias_no_match
-Magdalena Frech,frech,,alias_no_match
 Magdalena Frech,frechm,wta_55,alias
-Zhang Shuai,shuaiz,wta_85,alias
-Emma Navarro,enavarro,,alias_no_match
-Emma Navarro,emmanavarro,,alias_no_match
-Emma Navarro,navarroe,wta_19,alias
-Jasmine Paolini,paolini,,alias_no_match
+Ann Li,annli,,alias_no_match
+Ann Li,ali,,alias_no_match
+Ann Li,lia,wta_36,alias
+Zeynep Sonmez,zeynepsonmez,,alias_no_match
+Zeynep Sonmez,sonmez,,alias_no_match
+Zeynep Sonmez,sonmezz,wta_84,alias
+Jasmine Paolini,jasminepaolini,,alias_no_match
+Jasmine Paolini,jpaolini,,alias_no_match
 Jasmine Paolini,paolinij,wta_8,alias
 Priscilla Hon,hon,,alias_no_match
-Priscilla Hon,phon,,alias_no_match
-Priscilla Hon,priscillahon,,alias_no_match
 Priscilla Hon,honp,wta_130,alias
-Ann Li,lia,wta_36,alias
-Zeynep Sonmez,sonmezz,wta_84,alias
+Zhang Shuai,shuaiz,wta_85,alias
+Emma Navarro,enavarro,,alias_no_match
+Emma Navarro,navarroe,wta_19,alias
+Yannick Hanfmann,yhanfmann,,alias_no_match
+Yannick Hanfmann,hanfmann,,alias_no_match
+Yannick Hanfmann,hanfmanny,atp_90,alias
+Vilius Gaubas,gaubasv,atp_126,alias
+Andrea Pellegrino,apellegrino,,alias_no_match
+Andrea Pellegrino,andreapellegrino,,alias_no_match
+Andrea Pellegrino,pellegrino,,alias_no_match
+Andrea Pellegrino,pellegrinoa,atp_140,alias
+Luciano Darderi,darderil,atp_22,alias
+Felix Auger-Aliassime,aliassime,atp_6,alias
+Daniil Medvedev,dmedvedev,,alias_no_match
+Daniil Medvedev,medvedev,,alias_no_match
+Daniil Medvedev,medvedevd,atp_11,alias
+Rebeka Masarova,rmasarova,,alias_no_match
+Rebeka Masarova,masarova,,alias_no_match
+Rebeka Masarova,masarovar,wta_117,alias
+Taylor Townsend,taylortownsend,,alias_no_match
+Taylor Townsend,ttownsend,,alias_no_match
+Taylor Townsend,townsendt,wta_116,alias
+Moyuka Uchijima,uchijima,,alias_no_match
+Moyuka Uchijima,moyukauchijima,,alias_no_match
+Moyuka Uchijima,muchijima,,alias_no_match
+Moyuka Uchijima,uchijimam,wta_90,alias
+Despina Papamichail,papamichaild,,alias_no_match
+Despina Papamichail,papamichail,,alias_no_match
+Despina Papamichail,despinapapamichail,,alias_no_match
+Despina Papamichail,dpapamichail,,alias_no_match
+Despina Papamichail,papamichaild,wta_157,player_lookup
+Veronika Erjavec,verjavec,,alias_no_match
+Veronika Erjavec,erjavec,,alias_no_match
+Veronika Erjavec,erjavecv,wta_112,alias
+Nuria Brancaccio,nbrancaccio,,alias_no_match
+Nuria Brancaccio,nuriabrancaccio,,alias_no_match
+Nuria Brancaccio,brancaccion,wta_164,alias
+Amarissa Toth,amarissatoth,wta_250,alias
+Mayar Sherif,mayarsherif,,alias_no_match
+Mayar Sherif,msherif,,alias_no_match
+Mayar Sherif,sherifm,wta_108,alias

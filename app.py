@@ -931,26 +931,54 @@ if sport_choice == "Tennis":
                 summary_df["Opponent"] = summary_df["opponent_id"].map(name_lookup).fillna(summary_df["opponent_id"])
 
                 # Clean up columns
-                summary_df.rename(columns={"return_tier": "Opponent Return Tier"}, inplace=True)
+                summary_df.rename(columns={"return_tier": "Opponent Strength"}, inplace=True)
                 summary_df.drop(columns=["player_id_opp", "surface"], errors="ignore", inplace=True)
 
             # --- Rename Gms → Ms for matches played ---
             summary_df.rename(columns={"Gms": "Ms"}, inplace=True)
 
-            # --- Prepare display columns ---
+            # --- Build display column order explicitly ---
             display_cols = ["Player"]
+
             if players_with_match:
                 display_cols.append("Opponent")
+                display_cols.append("Opponent Strength")
+
             display_cols.extend(["Surface", "Ms"])
-            stat_cols = [c for c in summary_df.columns if "@" in c]
+
+            # --- Collect stat columns in correct order ---
+            stat_cols = []
+
+            for stat in stats_selected:
+                if stat == "MW":
+                    # Add MW% columns
+                    if "MW%" in summary_df.columns:
+                        stat_cols.append("MW%")
+                    if recent_n and f"L{recent_n}MW%" in summary_df.columns:
+                        stat_cols.append(f"L{recent_n}MW%")
+                else:
+                    for pct in percentages:
+                        col_all = f"{stat}@{pct}"
+                        col_recent = f"L{recent_n}{stat}@{pct}" if recent_n else None
+
+                        if col_all in summary_df.columns:
+                            stat_cols.append(col_all)
+                        if col_recent and col_recent in summary_df.columns:
+                            stat_cols.append(col_recent)
+
             display_cols.extend(stat_cols)
-            if players_with_match:
-                display_cols.append("Opponent Return Tier")
 
-            summary_df = summary_df[display_cols]
+            # --- Keep only intended columns (prevents ID leakage) ---
+            summary_df = summary_df[[c for c in display_cols if c in summary_df.columns]]
 
-            # Sort by first stat selected
-            sort_col = f"{stats_selected[0]}@{percentages[0]}"
+            # --- Sorting ---
+            first_stat = stats_selected[0]
+
+            if first_stat == "MW":
+                sort_col = f"L{recent_n}MW%" if recent_n else "MW%"
+            else:
+                sort_col = f"{first_stat}@{percentages[0]}"
+
             if sort_col in summary_df.columns:
                 summary_df = summary_df.sort_values(sort_col, ascending=False)
 

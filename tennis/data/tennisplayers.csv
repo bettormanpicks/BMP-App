@@ -722,7 +722,7 @@ wta_220,Mai Hontama,WTA,220.0,326.0,JPN
 wta_221,Barbora Palicová,WTA,221.0,324.0,CZE
 wta_222,Daria Saville,WTA,222.0,321.0,AUS
 wta_223,Xiyu Wang,WTA,223.0,315.0,CHN
-wta_224,Tara Würth,WTA,224.0,311.0,CRO
+wta_224,Tara Wuerth,WTA,224.0,311.0,CRO
 wta_225,Aliona Bolsova,WTA,225.0,310.0,ESP
 wta_226,Kathinka von Deichmann,WTA,226.0,306.0,LIE
 wta_227,Anna Sisková,WTA,227.0,305.0,CZE
@@ -766,7 +766,7 @@ wta_264,Kajsa Rinaldo Persson,WTA,264.0,271.0,SWE
 wta_265,Julia Avdeeva,WTA,265.0,270.0,RUS
 wta_266,Julie Belgraver,WTA,266.0,269.0,FRA
 wta_267,Karolína Plíšková,WTA,267.0,267.0,CZE
-wta_268,Anastasiya Soboleva,WTA,268.0,266.0,UKR
+wta_268,Anastasiia Sobolieva,WTA,268.0,266.0,UKR
 wta_269,Tyra Grant,WTA,269.0,266.0,ITA
 wta_270,Katherine Sebov,WTA,270.0,265.0,CAN
 wta_271,Katie Swan,WTA,271.0,260.0,GBR
@@ -1033,9 +1033,11 @@ atp_449,Zhang Zhizhen,ATP,,,
 wta_65,Anna Bondar,WTA,,,
 wta_34,Wang Xinyu,WTA,,,
 wta_165,Guiomar Maristany Zuleta De Reales,WTA,,,
+wta_555,Venus Williams,WTA,,,
 wta_775,Sloane Stephens,WTA,,,
 atp_259,Shang Juncheng,ATP,,,
 wta_1100,Ada Kumru,WTA,,,
+atp_9000,Mubarak Al-Harrasi,ATP,,,
 atp_9001,Nick Kyrgios,ATP,,,
 atp_9002,Marc Andrea-Huesler,ATP,,,
 atp_9003,Thanasi Kokkinakis,ATP,,,
@@ -1071,6 +1073,7 @@ atp_9033,Emil Ruusuvuori,ATP,,,
 atp_9034,Amir Omarkhanov,ATP,,,
 atp_9035,Leo Borg,ATP,,,
 atp_9036,Henry Bernet,ATP,,,
+atp_9037,Luis Miguel,ATP,,,
 atp_9038,Ivan Ivanov,ATP,,,
 atp_9039,James Watt,ATP,,,
 atp_9040,Moise Kouame,ATP,,,

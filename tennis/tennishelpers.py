@@ -206,16 +206,14 @@ def compute_tennis_percentiles(df: pd.DataFrame, stats_selected: list, percentag
         if upcoming_only:
             row["opponent_id"] = opponent_id
 
-        # --- Compute percentiles ---
+        # --- Compute stats ---
         for stat in stats_selected:
             col = TENNIS_STAT_MAP.get(stat)
             if col not in surface_group.columns:
-                row[stat] = None
                 continue
 
             vals_all = pd.to_numeric(surface_group[col], errors="coerce").dropna()
             if vals_all.empty:
-                row[stat] = None
                 continue
 
             vals_recent = (
@@ -223,6 +221,18 @@ def compute_tennis_percentiles(df: pd.DataFrame, stats_selected: list, percentag
                 if recent_n else None
             )
 
+            #   Special handling for Match Wins
+            if stat == "MW":
+                # Season / Surface MW%
+                row["MW%"] = round(vals_all.mean() * 100, 1)
+
+                # Recent window MW%
+                if recent_n and vals_recent is not None and not vals_recent.empty:
+                    row[f"L{recent_n}MW%"] = round(vals_recent.mean() * 100, 1)
+
+                continue  # skip hit rate logic for MW
+
+            #   All other stats use hit rate logic
             for pct in percentages:
                 row[f"{stat}@{pct}"] = hit_rate_threshold(vals_all, pct)
                 if recent_n and vals_recent is not None:
