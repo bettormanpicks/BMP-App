@@ -826,6 +826,15 @@ elif sport_choice == "NHL":
 
             nhl_out = nhl_out[[c for c in ordered_cols if c in nhl_out.columns]]
 
+            # --- Force opponent averages to display 2 decimals ---
+            float_opp_cols = ["GA_A","SA_A","GF_A","SF_A"]
+
+            for col in float_opp_cols:
+                if col in nhl_out.columns:
+                    nhl_out[col] = nhl_out[col].apply(
+                        lambda x: f"{x:.2f}" if pd.notnull(x) else ""
+                    )
+
             # Column pinning
             col_config = {
                 "Player": st.column_config.Column(pinned="left"),
@@ -833,22 +842,6 @@ elif sport_choice == "NHL":
                 "Team": st.column_config.Column(pinned="left"),
                 "Opp": st.column_config.Column(pinned="left"),
             }
-
-            # Add formatting for opponent window columns
-            if player_type_choice == "Skaters":
-                col_config.update({
-                    "GA_A": st.column_config.Column(format="%.2f"),
-                    "SA_A": st.column_config.Column(format="%.2f"),
-                    "GA_R": st.column_config.Column(format="%d"),
-                    "SA_R": st.column_config.Column(format="%d"),
-                })
-            else:
-                col_config.update({
-                    "GF_A": st.column_config.Column(format="%.2f"),
-                    "SF_A": st.column_config.Column(format="%.2f"),
-                    "GF_R": st.column_config.Column(format="%d"),
-                    "SF_R": st.column_config.Column(format="%d"),
-                })
 
             st.dataframe(
                 nhl_out,
