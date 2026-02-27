@@ -290,4 +290,12 @@ def analyze_nhl_players(
 
         rows.append(rec)
 
+    # --- Ensure opponent columns display 2 decimals ---
+    opp_cols = ["GA_A","SA_A","GF_A","SF_A"]
+    for col in opp_cols:
+        if col in rows[0]:  # only if column exists
+            for rec in rows:
+                if rec[col] is not None:
+                    rec[col] = float(f"{rec[col]:.2f}")
+
     return pd.DataFrame(rows)
