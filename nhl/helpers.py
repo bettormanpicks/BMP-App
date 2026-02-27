@@ -184,7 +184,7 @@ def analyze_nhl_players(
 
     # Precompute opponent stats if nhlteamgames_df and opp_recent_n are provided
     opp_stats = {}
-    if nhlteamgames_df is not None and opp_recent_n is not None:
+    if nhlteamgames_df is not None:
         nhlteamgames_df = nhlteamgames_df.copy()
 
         # Convert GAME_DATE to datetime.date
@@ -207,6 +207,7 @@ def analyze_nhl_players(
             # Only slice if a window is specified (L5, L10). ALL uses all games
             if opp_recent_n is not None:
                 team_games = team_games.head(int(opp_recent_n))
+            # else: use all games
 
             if player_type == "Skaters":
                 opp_avgs[team] = {
