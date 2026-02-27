@@ -33,6 +33,34 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add nba/data/nbaplayerstatus.csv
-          git diff --cached --quiet || git commit -m "Update NBA injuries CSV [skip ci]"
-          git push
+
+          MAX_RETRIES=3
+          RETRY_DELAY=5  # seconds
+
+          for i in $(seq 1 $MAX_RETRIES); do
+            echo "Attempt $i to push changes..."
+
+            # Ensure we start from the latest remote main
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Stage updated CSV
+            git add nba/data/nbaplayerstatus.csv
+
+            # Commit only if there are changes
+            git diff --cached --quiet || git commit -m "Update NBA injuries CSV [skip ci]"
+
+            # Try pushing
+            if git push origin main; then
+              echo "Push succeeded!"
+              break
+            else
+              echo "Push failed, retrying in $RETRY_DELAY seconds..."
+              sleep $RETRY_DELAY
+            fi
+
+            if [ "$i" -eq "$MAX_RETRIES" ]; then
+              echo "Push failed after $MAX_RETRIES attempts."
+              exit 1
+            fi
+          done
