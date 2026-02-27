@@ -827,13 +827,13 @@ elif sport_choice == "NHL":
             nhl_out = nhl_out[[c for c in ordered_cols if c in nhl_out.columns]]
 
             # --- Force opponent averages to display 2 decimals ---
-#            float_opp_cols = ["GA_A","SA_A","GF_A","SF_A"]
-#
-#            for col in float_opp_cols:
-#                if col in nhl_out.columns:
-#                    nhl_out[col] = nhl_out[col].apply(
-#                        lambda x: f"{x:.2f}" if pd.notnull(x) else ""
-#                    )
+            float_opp_cols = ["GA_A","SA_A","GF_A","SF_A"]
+
+            for col in float_opp_cols:
+                if col in nhl_out.columns:
+                    nhl_out[col] = nhl_out[col].apply(
+                        lambda x: f"{x:.2f}" if pd.notnull(x) else ""
+                    )
 
             # Column pinning
             col_config = {
@@ -842,10 +842,6 @@ elif sport_choice == "NHL":
                 "Team": st.column_config.Column(pinned="left"),
                 "Opp": st.column_config.Column(pinned="left"),
             }
-
-            st.write("DEBUG — Raw Opponent Averages (first 5 rows)")
-            debug_cols = [c for c in ["Team","GA_A","SA_A","GF_A","SF_A"] if c in nhl_out.columns]
-            st.write(nhl_out[debug_cols].head())
 
             st.dataframe(
                 nhl_out,
