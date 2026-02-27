@@ -211,13 +211,13 @@ def analyze_nhl_players(
 
             if player_type == "Skaters":
                 opp_avgs[team] = {
-                    "GA_A": team_games["GA"].mean(),
-                    "SA_A": team_games["SA"].mean()
+                    "GA_A": round(team_games["GA"].mean(), 2),
+                    "SA_A": round(team_games["SA"].mean(), 2)
                 }
             else:
                 opp_avgs[team] = {
-                    "GF_A": team_games["GF"].mean(),
-                    "SF_A": team_games["SF"].mean()
+                    "GF_A": round(team_games["GF"].mean(), 2),
+                    "SF_A": round(team_games["SF"].mean(), 2)
                 }
 
         # Compute ranks across all teams
