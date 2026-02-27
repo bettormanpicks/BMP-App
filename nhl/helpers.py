@@ -110,9 +110,9 @@ def compute_opponent_window_stats(nhlteamgames_df, player_type="Skaters", window
             SA_R = team_games["SA"].rank(method="min").mean()
             records.append({
                 "Team": team,
-                "GA_A": round(GA_A, 2),
+                "GA_A": GA_A,
                 "GA_R": int(GA_R),
-                "SA_A": round(SA_A, 2),
+                "SA_A": SA_A,
                 "SA_R": int(SA_R)
             })
         else:
@@ -126,9 +126,9 @@ def compute_opponent_window_stats(nhlteamgames_df, player_type="Skaters", window
             SF_R = team_games["SF"].rank(method="min").mean()
             records.append({
                 "Team": team,
-                "GF_A": round(GF_A, 2),
+                "GF_A": GF_A,
                 "GF_R": int(GF_R),
-                "SF_A": round(SF_A, 2),
+                "SF_A": SF_A,
                 "SF_R": int(SF_R)
             })
 
@@ -209,12 +209,12 @@ def analyze_nhl_players(
                 team_games = team_games.head(int(opp_recent_n))
 
             if player_type == "Skaters":
-                ga_avg = round(team_games["GA"].mean(), 2)
-                sa_avg = round(team_games["SA"].mean(), 2)
+                ga_avg = team_games["GA"].mean()
+                sa_avg = team_games["SA"].mean()
                 opp_avgs[team] = {"GA_A": ga_avg, "SA_A": sa_avg}
             else:
-                gf_avg = round(team_games["GF"].mean(), 2)
-                sf_avg = round(team_games["SF"].mean(), 2)
+                gf_avg = team_games["GF"].mean()
+                sf_avg = team_games["SF"].mean()
                 opp_avgs[team] = {"GF_A": gf_avg, "SF_A": sf_avg}
 
         # Compute ranks across all teams
@@ -289,13 +289,5 @@ def analyze_nhl_players(
             rec[col_name] = hit_rate_threshold(g_sorted[col], recent_pct*100)
 
         rows.append(rec)
-
-    # --- Ensure opponent columns display 2 decimals ---
-    opp_cols = ["GA_A","SA_A","GF_A","SF_A"]
-    for col in opp_cols:
-        if col in rows[0]:  # only if column exists
-            for rec in rows:
-                if rec[col] is not None:
-                    rec[col] = float(f"{rec[col]:.2f}")
 
     return pd.DataFrame(rows)
