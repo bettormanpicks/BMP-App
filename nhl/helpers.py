@@ -184,9 +184,9 @@ def analyze_nhl_players(
 
     # --- Precompute opponent stats if nhlteamgames_df and opp_recent_n are provided ---
     opp_stats = {}
-    if nhlteamgames_df is not None:
+    if nhlteamgames_df is not None and opp_recent_n is not None:
         nhlteamgames_df = nhlteamgames_df.copy()
-    
+
         # Convert GAME_DATE to datetime.date
         nhlteamgames_df["game_date"] = pd.to_datetime(
             nhlteamgames_df["GAME_DATE"], errors="coerce", infer_datetime_format=True
@@ -198,13 +198,13 @@ def analyze_nhl_players(
         teams = nhlteamgames_df["TEAM"].unique()
         opp_avgs = {}
 
-        # Compute averages and ranks for each team
+        # Compute averages per team
         for team in teams:
             team_games = nhlteamgames_df[nhlteamgames_df["TEAM"] == team].sort_values(
                 "game_date", ascending=False
             )
 
-            # Slice for L5/L10; ALL uses all games
+            # Only slice if a window is specified (L5, L10). ALL uses all games
             if opp_recent_n is not None:
                 team_games = team_games.head(int(opp_recent_n))
 
@@ -219,34 +219,33 @@ def analyze_nhl_players(
 
         # Compute ranks across all teams
         if player_type == "Skaters":
-            ga_series = pd.Series({t: v["GA_A"] for t, v in opp_avgs.items()})
-            sa_series = pd.Series({t: v["SA_A"] for t, v in opp_avgs.items()})
-            ga_rank = ga_series.rank(method="min", ascending=True).astype(int)
-            sa_rank = sa_series.rank(method="min", ascending=True).astype(int)
+            ga_series = pd.Series({t: opp_avgs[t]["GA_A"] for t in teams})
+            sa_series = pd.Series({t: opp_avgs[t]["SA_A"] for t in teams})
+            ga_rank = ga_series.rank(method="min", ascending=True)
+            sa_rank = sa_series.rank(method="min", ascending=True)
             for t in teams:
-                opp_avgs[t]["GA_R"] = ga_rank[t]
-                opp_avgs[t]["SA_R"] = sa_rank[t]
+                opp_avgs[t]["GA_R"] = int(ga_rank[t])
+                opp_avgs[t]["SA_R"] = int(sa_rank[t])
+                # Round averages again to ensure consistency in L5/L10/ALL
+                opp_avgs[t]["GA_A"] = round(opp_avgs[t]["GA_A"], 2)
+                opp_avgs[t]["SA_A"] = round(opp_avgs[t]["SA_A"], 2)
         else:
-            gf_series = pd.Series({t: v["GF_A"] for t, v in opp_avgs.items()})
-            sf_series = pd.Series({t: v["SF_A"] for t, v in opp_avgs.items()})
-            gf_rank = gf_series.rank(method="min", ascending=False).astype(int)
-            sf_rank = sf_series.rank(method="min", ascending=False).astype(int)
+            gf_series = pd.Series({t: opp_avgs[t]["GF_A"] for t in teams})
+            sf_series = pd.Series({t: opp_avgs[t]["SF_A"] for t in teams})
+            gf_rank = gf_series.rank(method="min", ascending=False)
+            sf_rank = sf_series.rank(method="min", ascending=False)
             for t in teams:
-                opp_avgs[t]["GF_R"] = gf_rank[t]
-                opp_avgs[t]["SF_R"] = sf_rank[t]
-
-        # Round ranks to int (already int, just to be safe)
-        for t in teams:
-            for key in opp_avgs[t]:
-                if "R" not in key:  # Only averages
-                    opp_avgs[t][key] = round(opp_avgs[t][key], 2)
+                opp_avgs[t]["GF_R"] = int(gf_rank[t])
+                opp_avgs[t]["SF_R"] = int(sf_rank[t])
+                opp_avgs[t]["GF_A"] = round(opp_avgs[t]["GF_A"], 2)
+                opp_avgs[t]["SF_A"] = round(opp_avgs[t]["SF_A"], 2)
 
         opp_stats = opp_avgs
 
     # --- Optional: format floats as strings for Streamlit display ---
-    for col in ["GA_A","SA_A","GF_A","SF_A"]:
-        if col in nhl_df.columns:
-            nhl_df[col] = nhl_df[col].map(lambda x: f"{x:.2f}" if pd.notnull(x) else "")
+#    for col in ["GA_A","SA_A","GF_A","SF_A"]:
+#        if col in nhl_df.columns:
+#            nhl_df[col] = nhl_df[col].map(lambda x: f"{x:.2f}" if pd.notnull(x) else "")
 
     # --- Iterate players ---
     for (pid, name, team, pos), g in grouped:
