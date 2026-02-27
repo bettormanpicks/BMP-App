@@ -159,7 +159,7 @@ def analyze_nhl_players(
     nhl_stats_selected: list of stats user selected
     stat_map: {"Display": "csv_column"}
     recent_n: player performance window (L5/L10/ALL)
-    recent_pct: decimal pct (0-1)
+    recent_pct: decimal pct (0-2)
     filter_teams: optional set of team codes to filter
     player_type: "Skaters" or "Goalies"
     b2b_map: optional dict {team: B2B status}
