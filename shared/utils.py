@@ -10,7 +10,7 @@ from typing import Iterable, Union
 def sidebar_footer():
     st.sidebar.markdown(
         """
-        <div style="margin-top: 1rem; font-size: 11px; color: #888; text-align: center;">
+        <div style="margin-top: 1rem; font-size: 13px; color: #00FF00; text-align: center;">
             &copy; 2026 Bettor Man Picks. All rights reserved.
         </div>
         """,
@@ -170,4 +170,5 @@ def get_teams_playing_on_date(schedule_data, target_date):
             teams.add(g["awayTeam"]["teamTricode"].upper())
 
     return teams
+
 
