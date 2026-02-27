@@ -186,22 +186,11 @@ def analyze_nhl_players(
     opp_stats = {}
     if nhlteamgames_df is not None and opp_recent_n is not None:
         nhlteamgames_df = nhlteamgames_df.copy()
-    
-        # Convert GAME_DATE to datetime, then take only the date (discard time)
-#        nhlteamgames_df["game_date"] = pd.to_datetime(
-#            nhlteamgames_df["GAME_DATE"], errors="coerce", infer_datetime_format=True
-#        ).dt.date
 
-        # Ensure column exists
-        if "GAME_DATE" in nhlteamgames_df.columns:
-            nhlteamgames_df["game_date"] = pd.to_datetime(
-                nhlteamgames_df["GAME_DATE"], errors="coerce"
-            ).dt.date
-        else:
-            # fallback: try lowercase
-            nhlteamgames_df["game_date"] = pd.to_datetime(
-                nhlteamgames_df["game_date"], errors="coerce"
-            ).dt.date
+        # Convert GAME_DATE to datetime.date
+        nhlteamgames_df["game_date"] = pd.to_datetime(
+            nhlteamgames_df["GAME_DATE"], errors="coerce"
+        ).dt.date
 
         # Drop rows that couldn't be parsed
         nhlteamgames_df = nhlteamgames_df.dropna(subset=["game_date"])
@@ -214,9 +203,10 @@ def analyze_nhl_players(
             team_games = nhlteamgames_df[nhlteamgames_df["TEAM"] == team].sort_values(
                 "game_date", ascending=False
             )
+
+            # Only slice if a window is specified (L5, L10). ALL uses all games
             if opp_recent_n is not None:
                 team_games = team_games.head(int(opp_recent_n))
-            # else: keep all games (do nothing)
 
             if player_type == "Skaters":
                 opp_avgs[team] = {
