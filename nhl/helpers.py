@@ -214,8 +214,9 @@ def analyze_nhl_players(
             team_games = nhlteamgames_df[nhlteamgames_df["TEAM"] == team].sort_values(
                 "game_date", ascending=False
             )
-            if opp_recent_n:
-                team_games = team_games.head(opp_recent_n)
+            if opp_recent_n is not None:
+                team_games = team_games.head(int(opp_recent_n))
+            # else: keep all games (do nothing)
 
             if player_type == "Skaters":
                 opp_avgs[team] = {
