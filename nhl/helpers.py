@@ -159,7 +159,7 @@ def analyze_nhl_players(
     nhl_stats_selected: list of stats user selected
     stat_map: {"Display": "csv_column"}
     recent_n: player performance window (L5/L10/ALL)
-    recent_pct: decimal pct (0-2)
+    recent_pct: decimal pct (0-1)
     filter_teams: optional set of team codes to filter
     player_type: "Skaters" or "Goalies"
     b2b_map: optional dict {team: B2B status}
@@ -210,17 +210,15 @@ def analyze_nhl_players(
             # else: use all games
 
             if player_type == "Skaters":
-                opp_avgs[team] = {
-                    "GA_A": round(team_games["GA"].mean(), 2),
-                    "SA_A": round(team_games["SA"].mean(), 2)
-                }
+                GA_A = round(team_games["GA"].mean(), 2)
+                SA_A = round(team_games["SA"].mean(), 2)
+                opp_avgs[team] = {"GA_A": GA_A, "SA_A": SA_A}
             else:
-                opp_avgs[team] = {
-                    "GF_A": round(team_games["GF"].mean(), 2),
-                    "SF_A": round(team_games["SF"].mean(), 2)
-                }
+                GF_A = round(team_games["GF"].mean(), 2)
+                SF_A = round(team_games["SF"].mean(), 2)
+                opp_avgs[team] = {"GF_A": GF_A, "SF_A": SF_A}
 
-        # Compute ranks across all teams
+        # Compute ranks across all teams (ranks stay integers)
         if player_type == "Skaters":
             ga_series = pd.Series({t: v["GA_A"] for t, v in opp_avgs.items()})
             sa_series = pd.Series({t: v["SA_A"] for t, v in opp_avgs.items()})
