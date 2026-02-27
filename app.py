@@ -35,7 +35,7 @@ from nba.helpers import (
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 
 # NHL helper functions
-from nhl.helpers import get_nhl_todays_schedule, compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date, get_nhl_injuries
+from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date, get_nhl_injuries
 
 # Tennis helper functions
 from tennis.tennishelpers import (
@@ -674,13 +674,15 @@ elif sport_choice == "NFL":
 ############################################################
 elif sport_choice == "NHL":
 
-    # --- Load NHL CSV automatically ---
+    # --- Load NHL data (cached like NBA) ---
     try:
-        nhl_df = pd.read_csv("nhl/data/nhlplayergamelogs.csv").fillna(0)
+        nhl_df, nhlteamgames_df, injuries_df = load_nhl_raw_data()
         nhl_df.columns = dedupe_columns(nhl_df.columns)
     except Exception as e:
-        st.error(f"Could not load nhlplayergamelogs.csv: {e}")
+        st.error(f"Could not load NHL data: {e}")
         nhl_df = pd.DataFrame()
+        nhlteamgames_df = pd.DataFrame()
+        injuries_df = pd.DataFrame()
 
     # --- Player Type (REACTIVE) ---
     player_type_choice = st.sidebar.radio(
@@ -761,9 +763,6 @@ elif sport_choice == "NHL":
         today_str = datetime.now().strftime("%Y-%m-%d")
         nhl_todays, nhl_opp_map = get_nhl_todays_schedule(today_str)
 
-        # Team games (for opponent window)
-        nhlteamgames_df = pd.read_csv("nhl/data/nhlteamgames.csv")
-
         # Team defense/offense (optional CSV fallback)
         try:
             team_def = pd.read_csv("nhl/data/nhlteamgametotals.csv").set_index("Team")
@@ -779,7 +778,6 @@ elif sport_choice == "NHL":
             get_nhl_teams_on_date(tomorrow)
         )
 
-        injuries_df = pd.read_csv("nhl/data/nhlplayerstatus.csv")
         inj_status_map = {norm_name(row["Player"]): row["Status_norm"] for _, row in injuries_df.iterrows()}
 
         # --- Player Analysis: ALL season stats ---

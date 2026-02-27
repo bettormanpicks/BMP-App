@@ -7,6 +7,17 @@ import requests
 from shared.utils import hit_rate_threshold, dedupe_columns, norm_name
 
 # -------------------------------
+# Load NHL Data
+# -------------------------------
+@st.cache_data
+def load_nhl_raw_data():
+    player_df = pd.read_csv("nhl/data/nhlplayergamelogs.csv").fillna(0)
+    team_games_df = pd.read_csv("nhl/data/nhlteamgames.csv").fillna(0)
+    injuries_df = pd.read_csv("nhl/data/nhlplayerstatus.csv").fillna(0)
+
+    return player_df, team_games_df, injuries_df
+
+# -------------------------------
 # Fetch NHL Injuries
 # -------------------------------
 @st.cache_data(ttl=900)
