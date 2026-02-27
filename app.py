@@ -787,15 +787,15 @@ elif sport_choice == "NHL":
             nhl_df=nhl_df,
             nhl_stats_selected=nhl_stats_selected,
             stat_map=stat_map,
-            opp_map=opp_map,
-            recent_n=nhl_recent_n,            # player recent window
+            recent_n=nhl_recent_n,
             recent_pct=nhl_recent_pct,
             filter_teams=nhl_todays if nhl_filter_today else None,
-            nhlteamgames_df=nhlteamgames_df,  # needed for opponent stats
+            nhlteamgames_df=nhlteamgames_df,
             player_type=player_type_choice,
-            opp_recent_n=opp_recent_n,        # opponent window
+            opp_recent_n=opp_recent_n,
             b2b_map=nhl_b2b_map,
-            inj_status_map=inj_status_map
+            inj_status_map=inj_status_map,
+            opp_map=nhl_opp_map           # ← add this line
         )
 
         # --- Merge ALL + Recent (player stats only) ---
