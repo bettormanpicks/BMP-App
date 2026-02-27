@@ -7,6 +7,16 @@ import pytz
 import streamlit as st
 from typing import Iterable, Union
 
+def sidebar_footer():
+    st.sidebar.markdown(
+        """
+        <div style="margin-top: 1rem; font-size: 11px; color: #888; text-align: center;">
+            &copy; 2026 Bettor Man Picks. All rights reserved.
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
+
 def get_league_today(cutoff_hour_ct=3):
     """
     Returns the logical sports date using a CT cutoff.
@@ -160,3 +170,4 @@ def get_teams_playing_on_date(schedule_data, target_date):
             teams.add(g["awayTeam"]["teamTricode"].upper())
 
     return teams
+
