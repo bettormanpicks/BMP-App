@@ -834,6 +834,22 @@ elif sport_choice == "NHL":
                 "Opp": st.column_config.Column(pinned="left"),
             }
 
+            # Add formatting for opponent window columns
+            if player_type_choice == "Skaters":
+                col_config.update({
+                    "GA_A": st.column_config.Column(format="%.2f"),
+                    "SA_A": st.column_config.Column(format="%.2f"),
+                    "GA_R": st.column_config.Column(format="%d"),
+                    "SA_R": st.column_config.Column(format="%d"),
+                })
+            else:
+                col_config.update({
+                    "GF_A": st.column_config.Column(format="%.2f"),
+                    "SF_A": st.column_config.Column(format="%.2f"),
+                    "GF_R": st.column_config.Column(format="%d"),
+                    "SF_R": st.column_config.Column(format="%d"),
+                })
+
             st.dataframe(
                 nhl_out,
                 width="stretch",
