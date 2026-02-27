@@ -22,7 +22,7 @@ if ROOT_DIR not in sys.path:
 from shared.utils import (
     get_league_today, hit_rate_threshold, trim_df_to_recent_82,
     dedupe_columns, strip_display_ids, norm_name,
-    get_teams_playing_on_date, compute_hit_rates
+    get_teams_playing_on_date, compute_hit_rates, sidebar_footer
 )
 from nba.helpers import (
     DEF_STAT_MAP, load_nba_schedule, load_today_matchups,
@@ -301,6 +301,8 @@ if sport_choice == "NBA":
         #debug_defense_csv = st.checkbox("Export Defensive Rankings", value=False)
 
         calculate = st.form_submit_button("Calculate")
+
+    sidebar_footer()
 
     # --- Calculate button ---
     if calculate:
@@ -749,6 +751,8 @@ elif sport_choice == "NHL":
 
         submit_btn = st.form_submit_button("Calculate")
 
+    sidebar_footer()
+
     # --- Only run analysis after submit ---
     if submit_btn and not nhl_df.empty:
 
@@ -881,6 +885,8 @@ if sport_choice == "Tennis":
             surface_choice = st.selectbox("Surface Filter (historical)", ["All", "Hard", "Clay", "Grass"])
 
         calculate = st.form_submit_button("Calculate")
+
+    sidebar_footer()
 
     # --- Calculate ---
     if calculate:
