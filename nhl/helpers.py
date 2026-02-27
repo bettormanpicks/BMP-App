@@ -142,6 +142,7 @@ def analyze_nhl_players(
     nhl_df,
     nhl_stats_selected,
     stat_map,
+    opp_map=None,
     recent_n=None,
     recent_pct=None,
     filter_teams=None,
@@ -187,9 +188,9 @@ def analyze_nhl_players(
         nhlteamgames_df = nhlteamgames_df.copy()
     
         # Convert GAME_DATE to datetime, then take only the date (discard time)
-        nhlteamgames_df["game_date"] = pd.to_datetime(
-            nhlteamgames_df["GAME_DATE"], errors="coerce", infer_datetime_format=True
-        ).dt.date
+#        nhlteamgames_df["game_date"] = pd.to_datetime(
+#            nhlteamgames_df["GAME_DATE"], errors="coerce", infer_datetime_format=True
+#        ).dt.date
 
         # Drop rows that couldn't be parsed
         nhlteamgames_df = nhlteamgames_df.dropna(subset=["game_date"])
@@ -251,7 +252,7 @@ def analyze_nhl_players(
         rec["Status"] = inj_status_map.get(norm_name(name), "A") if inj_status_map else "A"
 
         # Opponent team
-        rec["Opp"] = ""  # Optional: can fill if you have schedule mapping
+        rec["Opp"] = opp_map.get(team, "") if opp_map else ""
 
         # Attach opponent stats
         if team in opp_stats:
