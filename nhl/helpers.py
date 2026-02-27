@@ -192,6 +192,17 @@ def analyze_nhl_players(
 #            nhlteamgames_df["GAME_DATE"], errors="coerce", infer_datetime_format=True
 #        ).dt.date
 
+        # Ensure column exists
+        if "GAME_DATE" in nhlteamgames_df.columns:
+            nhlteamgames_df["game_date"] = pd.to_datetime(
+                nhlteamgames_df["GAME_DATE"], errors="coerce"
+            ).dt.date
+        else:
+            # fallback: try lowercase
+            nhlteamgames_df["game_date"] = pd.to_datetime(
+                nhlteamgames_df["game_date"], errors="coerce"
+            ).dt.date
+
         # Drop rows that couldn't be parsed
         nhlteamgames_df = nhlteamgames_df.dropna(subset=["game_date"])
 
