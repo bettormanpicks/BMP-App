@@ -182,14 +182,14 @@ def analyze_nhl_players(
     rows = []
     grouped = df_players.groupby(["player_id", "player_name", "team", "position"])
 
-    # Precompute opponent stats if nhlteamgames_df and opp_recent_n are provided
+    # --- Precompute opponent stats if nhlteamgames_df and opp_recent_n are provided ---
     opp_stats = {}
     if nhlteamgames_df is not None:
         nhlteamgames_df = nhlteamgames_df.copy()
-
+    
         # Convert GAME_DATE to datetime.date
         nhlteamgames_df["game_date"] = pd.to_datetime(
-            nhlteamgames_df["GAME_DATE"], errors="coerce"
+            nhlteamgames_df["GAME_DATE"], errors="coerce", infer_datetime_format=True
         ).dt.date
 
         # Drop rows that couldn't be parsed
@@ -198,27 +198,26 @@ def analyze_nhl_players(
         teams = nhlteamgames_df["TEAM"].unique()
         opp_avgs = {}
 
-        # Compute averages per team
+        # Compute averages and ranks for each team
         for team in teams:
             team_games = nhlteamgames_df[nhlteamgames_df["TEAM"] == team].sort_values(
                 "game_date", ascending=False
             )
 
-            # Only slice if a window is specified (L5, L10). ALL uses all games
+            # Slice for L5/L10; ALL uses all games
             if opp_recent_n is not None:
                 team_games = team_games.head(int(opp_recent_n))
-            # else: use all games
 
             if player_type == "Skaters":
-                GA_A = round(team_games["GA"].mean(), 2)
-                SA_A = round(team_games["SA"].mean(), 2)
-                opp_avgs[team] = {"GA_A": GA_A, "SA_A": SA_A}
+                ga_avg = round(team_games["GA"].mean(), 2)
+                sa_avg = round(team_games["SA"].mean(), 2)
+                opp_avgs[team] = {"GA_A": ga_avg, "SA_A": sa_avg}
             else:
-                GF_A = round(team_games["GF"].mean(), 2)
-                SF_A = round(team_games["SF"].mean(), 2)
-                opp_avgs[team] = {"GF_A": GF_A, "SF_A": SF_A}
+                gf_avg = round(team_games["GF"].mean(), 2)
+                sf_avg = round(team_games["SF"].mean(), 2)
+                opp_avgs[team] = {"GF_A": gf_avg, "SF_A": sf_avg}
 
-        # Compute ranks across all teams (ranks stay integers)
+        # Compute ranks across all teams
         if player_type == "Skaters":
             ga_series = pd.Series({t: v["GA_A"] for t, v in opp_avgs.items()})
             sa_series = pd.Series({t: v["SA_A"] for t, v in opp_avgs.items()})
@@ -236,7 +235,18 @@ def analyze_nhl_players(
                 opp_avgs[t]["GF_R"] = gf_rank[t]
                 opp_avgs[t]["SF_R"] = sf_rank[t]
 
+        # Round ranks to int (already int, just to be safe)
+        for t in teams:
+            for key in opp_avgs[t]:
+                if "R" not in key:  # Only averages
+                    opp_avgs[t][key] = round(opp_avgs[t][key], 2)
+
         opp_stats = opp_avgs
+
+    # --- Optional: format floats as strings for Streamlit display ---
+#    for col in ["GA_A","SA_A","GF_A","SF_A"]:
+#        if col in nhl_df.columns:
+#            nhl_df[col] = nhl_df[col].map(lambda x: f"{x:.2f}" if pd.notnull(x) else "")
 
     # --- Iterate players ---
     for (pid, name, team, pos), g in grouped:
