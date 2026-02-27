@@ -34,10 +34,40 @@ jobs:
         run: |
           python -u nhl/getnhlboxscores.py
 
-      - name: Commit and push updated CSVs
+      - name: Commit and Push Updated CSVs
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add nhl/data/nhlplayergamelogs.csv nhl/data/nhlteamgames.csv
-          git commit -m "Automated NHL update: $(date +'%Y-%m-%d')" || echo "No changes to commit"
-          git push
+
+          MAX_RETRIES=3
+          RETRY_DELAY=5  # seconds
+
+          for i in $(seq 1 $MAX_RETRIES); do
+            echo "Attempt $i to push updates..."
+
+            # Make sure local branch matches remote main
+            git fetch origin main
+            git reset --hard origin/main
+
+            # Stage the updated CSVs
+            git add nhl/data/nhlplayergamelogs.csv nhl/data/nhlteamgames.csv
+
+            # Commit only if changes exist
+            if ! git diff --cached --quiet; then
+              git commit -m "Automated NHL update: $(date +'%Y-%m-%d')"
+            fi
+
+            # Push changes
+            if git push origin main; then
+              echo "Push succeeded!"
+              break
+            else
+              echo "Push failed, retrying in $RETRY_DELAY seconds..."
+              sleep $RETRY_DELAY
+            fi
+
+            if [ "$i" -eq "$MAX_RETRIES" ]; then
+              echo "Push failed after $MAX_RETRIES attempts."
+              exit 1
+            fi
+          done
