@@ -244,9 +244,9 @@ def analyze_nhl_players(
         opp_stats = opp_avgs
 
     # --- Optional: format floats as strings for Streamlit display ---
-#    for col in ["GA_A","SA_A","GF_A","SF_A"]:
-#        if col in nhl_df.columns:
-#            nhl_df[col] = nhl_df[col].map(lambda x: f"{x:.2f}" if pd.notnull(x) else "")
+    for col in ["GA_A","SA_A","GF_A","SF_A"]:
+        if col in nhl_df.columns:
+            nhl_df[col] = nhl_df[col].map(lambda x: f"{x:.2f}" if pd.notnull(x) else "")
 
     # --- Iterate players ---
     for (pid, name, team, pos), g in grouped:
