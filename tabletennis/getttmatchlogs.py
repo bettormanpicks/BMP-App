@@ -104,7 +104,7 @@ def scrape_page(url):
 # Main Historical Scraper
 # -------------------------
 
-def scrape_history(start_page=2001, end_page=8554,
+def scrape_history(start_page=21, end_page=30,
                    save_interval=50,
                    min_delay=1.2,
                    max_delay=3.0):
@@ -175,8 +175,8 @@ def scrape_history(start_page=2001, end_page=8554,
 
 if __name__ == "__main__":
     scrape_history(
-        start_page=2001,
-        end_page=8554,
+        start_page=21,
+        end_page=30,
         save_interval=50,
         min_delay=1.2,
         max_delay=3.0
