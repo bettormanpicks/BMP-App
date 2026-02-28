@@ -274,11 +274,12 @@ def analyze_nhl_players(
         rec["Status"] = inj_status_map.get(norm_name(name), "A") if inj_status_map else "A"
 
         # Opponent team
-        rec["Opp"] = opp_map.get(team, "") if opp_map else ""
+        opp_team = opp_map.get(team, "") if opp_map else ""
+        rec["Opp"] = opp_team
 
-        # Attach opponent stats
-        if team in opp_stats:
-            rec.update(opp_stats[team])
+        # Attach opponent stats (FIXED)
+        if opp_team in opp_stats:
+            rec.update(opp_stats[opp_team])
         else:
             if player_type == "Skaters":
                 rec.update({"GA_A": None, "GA_R": None, "SA_A": None, "SA_R": None})
