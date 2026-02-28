@@ -33,8 +33,11 @@ def get_nhl_todays_schedule(target_date=None):
     Returns (teams_set, opponent_map) from NHL API for a given date.
     If no date provided, defaults to today.
     """
+
     if target_date is None:
         target_date = get_central_today()
+
+    print("Using target_date:", target_date)
 
     teams, opp_map = set(), {}
     try:
