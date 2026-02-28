@@ -773,8 +773,10 @@ elif sport_choice == "NHL":
             team_def = pd.DataFrame()
 
         # B2B mapping
-        yesterday = (datetime.now() - timedelta(days=1)).strftime("%Y-%m-%d")
-        tomorrow = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d")
+        now_ct = datetime.now(central)
+
+        yesterday = (now_ct - timedelta(days=1)).strftime("%Y-%m-%d")
+        tomorrow = (now_ct + timedelta(days=1)).strftime("%Y-%m-%d")
         nhl_b2b_map = compute_nhl_b2b(
             get_nhl_teams_on_date(today_str),
             get_nhl_teams_on_date(yesterday),
