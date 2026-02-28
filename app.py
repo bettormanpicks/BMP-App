@@ -777,6 +777,7 @@ elif sport_choice == "NHL":
         central = pytz.timezone("America/Chicago")
         now_ct = datetime.now(central)
 
+        today_str = now_ct.strftime("%Y-%m-%d")
         yesterday = (now_ct - timedelta(days=1)).strftime("%Y-%m-%d")
         tomorrow = (now_ct + timedelta(days=1)).strftime("%Y-%m-%d")
         nhl_b2b_map = compute_nhl_b2b(
