@@ -7,6 +7,11 @@ import pytz
 import streamlit as st
 from typing import Iterable, Union
 
+def get_central_today():
+    from datetime import datetime
+    central = pytz.timezone("America/Chicago")
+    return datetime.now(central).strftime("%Y-%m-%d")
+
 def sidebar_footer():
     st.sidebar.markdown(
         """
@@ -170,6 +175,7 @@ def get_teams_playing_on_date(schedule_data, target_date):
             teams.add(g["awayTeam"]["teamTricode"].upper())
 
     return teams
+
 
 
 
