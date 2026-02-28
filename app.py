@@ -773,6 +773,8 @@ elif sport_choice == "NHL":
             team_def = pd.DataFrame()
 
         # B2B mapping
+        import pytz
+        central = pytz.timezone("America/Chicago")
         now_ct = datetime.now(central)
 
         yesterday = (now_ct - timedelta(days=1)).strftime("%Y-%m-%d")
