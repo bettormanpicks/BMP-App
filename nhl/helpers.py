@@ -34,7 +34,9 @@ def get_nhl_todays_schedule(target_date=None):
     If no date provided, defaults to today.
     """
     if target_date is None:
-        target_date = datetime.now().strftime("%Y-%m-%d")
+        import pytz
+        central = pytz.timezone("America/Chicago")
+        target_date = datetime.now(central).strftime("%Y-%m-%d")
 
     teams, opp_map = set(), {}
     try:
@@ -101,7 +103,6 @@ def compute_opponent_window_stats(nhlteamgames_df, player_type="Skaters", window
         Skaters → GA_A, GA_R, SA_A, SA_R
         Goalies → GF_A, GF_R, SF_A, SF_R
     """
-    import pandas as pd
 
     df = nhlteamgames_df.copy()
     df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
