@@ -764,8 +764,7 @@ elif sport_choice == "NHL":
         opp_recent_n = recent_map[nhl_opp_window]
 
         # Today's schedule
-        today_str = datetime.now().strftime("%Y-%m-%d")
-        nhl_todays, nhl_opp_map = get_nhl_todays_schedule(today_str)
+        nhl_todays, nhl_opp_map = get_nhl_todays_schedule()
 
         # Team defense/offense (optional CSV fallback)
         try:
