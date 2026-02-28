@@ -22,7 +22,7 @@ if ROOT_DIR not in sys.path:
 from shared.utils import (
     get_league_today, hit_rate_threshold, trim_df_to_recent_82,
     dedupe_columns, strip_display_ids, norm_name,
-    get_teams_playing_on_date, compute_hit_rates, sidebar_footer
+    get_teams_playing_on_date, sidebar_footer
 )
 from nba.helpers import (
     DEF_STAT_MAP, load_nba_schedule, load_today_matchups,
