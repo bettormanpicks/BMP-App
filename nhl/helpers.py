@@ -37,8 +37,6 @@ def get_nhl_todays_schedule(target_date=None):
     if target_date is None:
         target_date = get_central_today()
 
-    print("Using target_date:", target_date)
-
     teams, opp_map = set(), {}
     try:
         r = requests.get(f"https://api-web.nhle.com/v1/schedule/{target_date}", timeout=15)
