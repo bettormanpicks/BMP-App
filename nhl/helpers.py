@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 from datetime import datetime, timedelta
 import requests
-from shared.utils import hit_rate_threshold, dedupe_columns, norm_name
+from shared.utils import get_central_today, hit_rate_threshold, dedupe_columns, norm_name
 
 # -------------------------------
 # Load NHL Data
@@ -34,9 +34,7 @@ def get_nhl_todays_schedule(target_date=None):
     If no date provided, defaults to today.
     """
     if target_date is None:
-        import pytz
-        central = pytz.timezone("America/Chicago")
-        target_date = datetime.now(central).strftime("%Y-%m-%d")
+        target_date = get_central_today()
 
     teams, opp_map = set(), {}
     try:
