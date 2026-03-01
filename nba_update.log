@@ -580,3 +580,29 @@ Saved 1780 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbatea
 2026-02-28 03:30:12 - ✅ nbateamgametotals.csv validation passed (1780 rows)
 2026-02-28 03:30:12 - === Git sync ===
 2026-02-28 03:30:13 - Repository on main and synced with GitHub.
+2026-02-28 03:30:13 - 📊 New NBA data detected — committing update
+2026-02-28 03:30:15 - 🚀 NBA data successfully pushed to GitHub!
+2026-02-28 03:30:15 - === NBA Data Update Finished Successfully ===
+
+2026-03-01 03:30:01 - === NBA Data Update Started ===
+2026-03-01 03:30:01 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Priming NBA session...
+[WARNING] Session priming failed: Failed to perform, curl: (47) Maximum (30) redirects followed. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[RESUME] Continuing from 2026-02-28
+[PULL] 02/28/2026
+   -> 115 rows
+[PULL] 03/01/2026
+
+Saved 19420 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbaplayergamelogs.csv
+=== NBA PLAYER GAME LOGS FINISHED ===
+2026-03-01 03:30:15 - ✅ getnbagamelogs.py completed successfully
+2026-03-01 03:30:15 - === Validating nbaplayergamelogs.csv ===
+2026-03-01 03:30:15 - ✅ nbaplayergamelogs.csv validation passed (19420 rows)
+2026-03-01 03:30:15 - === Running getnbateamtotals.py ===
+Saved 1790 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbateamgametotals.csv
+2026-03-01 03:30:17 - ✅ getnbateamtotals.py completed successfully
+2026-03-01 03:30:17 - === Validating nbateamgametotals.csv ===
+2026-03-01 03:30:17 - ✅ nbateamgametotals.csv validation passed (1790 rows)
+2026-03-01 03:30:17 - === Git sync ===
+2026-03-01 03:30:19 - Repository on main and synced with GitHub.

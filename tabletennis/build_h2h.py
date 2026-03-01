@@ -1,6 +1,6 @@
 import pandas as pd
 
-df = pd.read_csv("tt_elite_matches.csv")
+df = pd.read_csv("data/tt_elite_matchlogs.csv")
 
 # Identify sweep
 df["is_sweep"] = df[["sets1", "sets2"]].min(axis=1) == 0
@@ -32,7 +32,7 @@ h2h["non_sweep_rate"] = 1 - h2h["sweep_rate"]
 h2h = h2h[h2h["matches"] >= 20]
 
 # Save
-h2h.to_csv("tt_elite_h2h_summary.csv", index=False)
+h2h.to_csv("data/tt_elite_h2h_summary.csv", index=False)
 
 print("Final H2H shape:", h2h.shape)
 

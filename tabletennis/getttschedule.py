@@ -5,9 +5,8 @@ from playwright.async_api import async_playwright
 
 BASE_URL = "https://betsapi.com/ls/29128/TT-Elite-Series"
 TOTAL_PAGES = 6
-OUTPUT_FILE = "tt_elite_schedule.csv"
+OUTPUT_FILE = "data/tt_elite_schedule.csv"
 
-# Dedicated Playwright profile folder (NOT your real Chrome profile)
 CHROME_PROFILE_PATH = r"C:\playwright_profiles\ttelite"
 
 async def scrape_schedule():
@@ -16,7 +15,10 @@ async def scrape_schedule():
     async with async_playwright() as p:
         context = await p.chromium.launch_persistent_context(
             CHROME_PROFILE_PATH,
-            headless=False
+            headless=False,
+            args=[
+                "--disable-blink-features=AutomationControlled"
+            ]
         )
 
         page = context.pages[0] if context.pages else await context.new_page()
@@ -32,22 +34,36 @@ async def scrape_schedule():
 
             for row in rows:
                 cols = await row.query_selector_all("td")
-                if len(cols) < 3:
+                if len(cols) < 4:
                     continue
 
+                # --- DATE ---
                 date_text = (await cols[0].inner_text()).strip()
-                matchup_text = (await cols[2].inner_text()).strip()
 
-                # Expect format: "Player A v Player B"
-                if " v " not in matchup_text:
+                # --- PLAYERS ---
+                matchup_links = await cols[2].query_selector_all("a")
+                if len(matchup_links) < 2:
                     continue
 
-                player1, player2 = matchup_text.split(" v ", 1)
+                player1 = (await matchup_links[0].inner_text()).strip()
+                player2 = (await matchup_links[1].inner_text()).strip()
+
+                # --- MATCH ID ---
+                match_link = await cols[3].query_selector("a")
+                if match_link:
+                    href = await match_link.get_attribute("href")
+                    if href and "/r/" in href:
+                        match_id = href.split("/")[2]
+                    else:
+                        match_id = None
+                else:
+                    match_id = None
 
                 all_matches.append({
+                    "match_id": match_id,
                     "date": date_text,
-                    "player1": player1.strip(),
-                    "player2": player2.strip()
+                    "player1": player1,
+                    "player2": player2
                 })
 
             print(f"Page {page_num} scraped")
@@ -57,26 +73,20 @@ async def scrape_schedule():
     df = pd.DataFrame(all_matches)
 
     if df.empty:
-        print("No matches were scraped.")
+        print("No matches scraped.")
         return
 
-    # Add current year and normalize date strings
+    # --- DATE PARSING (robust version you already fixed) ---
     current_year = datetime.now().year
 
     def parse_date(x):
-        x = x.replace("-", "/")  # normalize separator
-        if len(x.split()) == 1:  # no time included
-            x = x + " 00:00"
+        x = x.replace("-", "/")
+        if len(x.split()) == 1:
+            x += " 00:00"
         x = f"{x} {current_year}"
-        try:
-            return pd.to_datetime(x, errors='coerce')  # let pandas infer format
-        except Exception as e:
-            print(f"Failed to parse date: {x} -> {e}")
-            return pd.NaT
+        return pd.to_datetime(x, errors="coerce")
 
     df["date"] = df["date"].apply(parse_date)
-
-    # Drop rows that failed to parse
     df = df.dropna(subset=["date"])
     df.sort_values("date", inplace=True)
 

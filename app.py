@@ -37,6 +37,13 @@ from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 # NHL helper functions
 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date, get_nhl_injuries
 
+# Table Tennis helper functions
+from tabletennis.helpers import (
+    load_tt_raw_data,
+    build_h2h_index,
+    compute_h2h_stats
+)
+
 # Tennis helper functions
 from tennis.tennishelpers import (
     load_tennis_raw_data,
@@ -57,7 +64,7 @@ st.set_page_config(
 ############################################################
 # SPORT SELECTION
 ############################################################
-sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL", "Tennis"]) #, "NFL", "NHL"])
+sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL", "Table Tennis", "Tennis"]) #, "NFL", "NHL"])
 
 nba_today = get_league_today()
 nhl_date = get_league_today()
@@ -855,6 +862,99 @@ elif sport_choice == "NHL":
                 hide_index=True,
                 column_config=col_config
             )
+
+############################################################
+# ===== Table Tennis Section =====
+############################################################
+if sport_choice == "Table Tennis":
+
+    # --- Load raw TT data ---
+    schedule, matchlogs, h2h_summary = load_tt_raw_data()
+    h2h_index = build_h2h_index(matchlogs)
+
+    # --- Sidebar Filters ---
+    with st.sidebar.form("TT Filters"):
+
+        show_full_history = st.checkbox("Show Full Match History", value=False)
+        recency_window = st.radio("Recency Window", ["L10", "L30", "ALL"], index=1)
+
+        # --- Minimum Matches Slider ---
+        min_matches = st.slider(
+            "Minimum H2H Matches",
+            min_value=5,
+            max_value=60,
+            step=5,
+            value=10
+        )
+
+        calculate = st.form_submit_button("Calculate")
+
+    sidebar_footer()
+
+    # --- Calculate / Build Display Table ---
+    if calculate:
+
+        if show_full_history:
+            df_display = h2h_summary.copy()
+            # Optional: apply recency filter if applicable
+            if recency_window != "ALL":
+                df_display = df_display[df_display["matches_last_n"] == recency_window]
+
+        else:
+            # Upcoming schedule view
+            upcoming = schedule[schedule["date"] >= pd.Timestamp.now()]
+            rows = []
+            for _, row in upcoming.iterrows():
+                p1 = row["player1"]
+                p2 = row["player2"]
+
+                stats = compute_h2h_stats(h2h_index, p1, p2, window=recency_window)
+                if stats is None:
+                    stats = {
+                        "matches": 0,
+                        "non_sweep_pct": 0,
+                        "sweeps_a": 0,
+                        "sweeps_b": 0,
+                        "a_wins": 0,
+                        "b_wins": 0,
+                        "win_pct": 0,
+                        "last_played": None,
+                        "avg_total_sets": 0
+                    }
+
+                row_dict = {
+                    "Date": row["date"],
+                    "Player 1": p1,
+                    "Player 2": p2,
+                    "Matches": stats["matches"],
+                    "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
+                    "Avg Total Sets": round(stats.get("avg_total_sets", 0), 2),
+                    "P1 Sweeps": stats.get("sweeps_a", 0),
+                    "P2 Sweeps": stats.get("sweeps_b", 0),
+                    "P1 Wins": stats["a_wins"],
+                    "P2 Wins": stats["b_wins"],
+                    "Win % (P1)": round(stats["win_pct"] * 100, 1),
+                    "Last Played": stats["last_played"]
+                }
+
+                rows.append(row_dict)
+
+            df_display = pd.DataFrame(rows)
+
+        # --- Apply minimum match filter ---
+        df_display = df_display[df_display["Matches"] >= min_matches]
+
+        # --- Display table ---
+        pinned_cols = ["Player 1", "Player 2", "Date"]
+        col_config = {c: st.column_config.Column(pinned="left") for c in pinned_cols}
+
+        st.dataframe(
+            df_display.sort_values("Date"),
+            width="stretch",
+            hide_index=True,
+            column_config=col_config
+        )
+
 
 ############################################################
 # ===== Tennis Section =====
