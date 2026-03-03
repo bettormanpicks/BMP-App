@@ -869,7 +869,14 @@ elif sport_choice == "NHL":
 if sport_choice == "Table Tennis":
 
     # --- Load raw TT data ---
-    schedule, matchlogs, h2h_summary = load_tt_raw_data()
+    league = st.sidebar.radio(
+        "Select League",
+        ["TT Elite", "Czech"],
+        horizontal=True
+    )
+
+    schedule, matchlogs, h2h = load_tt_raw_data(league)
+
     h2h_index = build_h2h_index(matchlogs)
 
     # --- Sidebar Filters ---

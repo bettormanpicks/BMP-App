@@ -69,8 +69,8 @@ def resort_csv():
 # Playwright Scraper
 # -------------------------
 
-async def scrape_history(start_page=200,
-                         end_page=5015,
+async def scrape_history(start_page=1465,
+                         end_page=1522,
                          min_delay=3,
                          max_delay=7):
 
@@ -79,6 +79,7 @@ async def scrape_history(start_page=200,
 
     buffer = []
     consecutive_failures = 0
+    failed_pages = []
 
     async with async_playwright() as p:
 
@@ -121,12 +122,12 @@ async def scrape_history(start_page=200,
 
             if not success:
                 consecutive_failures += 1
-                print(f"Skipping page {page_num} after repeated failures.")
+                print(f"Page {page_num} failed after 5 attempts. Marking for retry.")
+                failed_pages.append(page_num)
 
-                # If multiple failures in a row → long cooldown
                 if consecutive_failures >= 5:
                     cooldown = random.uniform(300, 600)
-                    print(f"Too many failures. Long cooldown: {round(cooldown)}s")
+                    print(f"Too many consecutive failures. Long cooldown: {round(cooldown)}s")
                     await asyncio.sleep(cooldown)
                     consecutive_failures = 0
 
@@ -227,6 +228,81 @@ async def scrape_history(start_page=200,
             if page_num % 250 == 0:
                 print(f"=== Reached page {page_num} successfully ===")
 
+        # ------------------------
+        # Second pass for failed pages
+        # ------------------------
+        if failed_pages:
+            print(f"\n=== Retrying {len(failed_pages)} failed pages ===")
+
+            for retry_page in failed_pages:
+                print(f"Retrying page {retry_page}...")
+
+                url = BASE_URL if retry_page == 1 else f"{BASE_URL}/p.{retry_page}"
+
+                try:
+                    await page.goto(url, timeout=60000)
+                    await page.wait_for_selector("table", timeout=60000)
+
+                    rows = await page.query_selector_all("table tbody tr")
+
+                    for row in rows:
+                        cols = await row.query_selector_all("td")
+                        if len(cols) < 4:
+                            continue
+
+                        date = await cols[0].get_attribute("data-dt")
+                        if not date:
+                            date = (await cols[0].inner_text()).strip()
+
+                        try:
+                            parsed = pd.to_datetime(date, utc=True)
+                            parsed = parsed.tz_convert(None)
+                            date = parsed.strftime("%Y-%m-%d %H:%M:%S")
+                        except:
+                            continue
+
+                        player_links = await cols[2].query_selector_all("a")
+                        if len(player_links) != 2:
+                            continue
+
+                        player1 = normalize_name(await player_links[0].inner_text())
+                        player2 = normalize_name(await player_links[1].inner_text())
+
+                        score_link = await cols[3].query_selector("a")
+                        if not score_link:
+                            continue
+
+                        score_text = (await score_link.inner_text()).strip()
+                        if "-" not in score_text:
+                            continue
+
+                        try:
+                            sets1, sets2 = map(int, score_text.split("-"))
+                        except:
+                            continue
+
+                        href = await score_link.get_attribute("href")
+                        if not href or "/r/" not in href:
+                            continue
+
+                        match_id = href.split("/")[2]
+
+                        if match_id not in existing_ids:
+                            buffer.append({
+                                "match_id": match_id,
+                                "date": date,
+                                "player1": player1,
+                                "player2": player2,
+                                "sets1": sets1,
+                                "sets2": sets2
+                            })
+                            existing_ids.add(match_id)
+
+                    await asyncio.sleep(random.uniform(5, 10))
+
+                except Exception as e:
+                    print(f"Retry failed again for page {retry_page}: {e}")
+
         await context.close()
 
     if buffer:
@@ -240,6 +316,6 @@ async def scrape_history(start_page=200,
 
 if __name__ == "__main__":
     asyncio.run(scrape_history(
-        start_page=200,
-        end_page=5015
+        start_page=1465,
+        end_page=1522
     ))

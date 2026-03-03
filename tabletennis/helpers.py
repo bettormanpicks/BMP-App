@@ -3,23 +3,35 @@ import pandas as pd
 import streamlit as st
 
 DATA_DIR = os.path.join("tabletennis", "data")
-SCHEDULE_PATH = os.path.join(DATA_DIR, "tt_elite_schedule.csv")
-MATCHLOGS_PATH = os.path.join(DATA_DIR, "tt_elite_matchlogs.csv")
-H2H_PATH = os.path.join(DATA_DIR, "tt_elite_h2h_summary.csv")
+
+LEAGUE_FILES = {
+    "TT Elite": {
+        "schedule": os.path.join(DATA_DIR, "tt_elite_schedule.csv"),
+        "matchlogs": os.path.join(DATA_DIR, "tt_elite_matchlogs.csv"),
+        "h2h": os.path.join(DATA_DIR, "tt_elite_h2h_summary.csv"),
+    },
+    "Czech": {
+        "schedule": os.path.join(DATA_DIR, "tt_czech_schedule.csv"),
+        "matchlogs": os.path.join(DATA_DIR, "tt_czech_matchlogs.csv"),
+        "h2h": os.path.join(DATA_DIR, "tt_czech_h2h_summary.csv"),
+    }
+}
 
 # -------------------------
 # Load Raw CSVs
 # -------------------------
 @st.cache_data(show_spinner=False)
-def load_tt_raw_data():
+def load_tt_raw_data(league):
     """
     Loads raw Table Tennis datasets and applies minimal cleaning.
     Cached for performance.
     """
 
-    schedule = pd.read_csv(SCHEDULE_PATH)
-    matchlogs = pd.read_csv(MATCHLOGS_PATH)
-    h2h = pd.read_csv(H2H_PATH)
+    paths = LEAGUE_FILES[league]
+
+    schedule = pd.read_csv(paths["schedule"])
+    matchlogs = pd.read_csv(paths["matchlogs"])
+    h2h = pd.read_csv(paths["h2h"])
 
     # --- Date parsing + normalization ---
 
