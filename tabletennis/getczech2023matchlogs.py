@@ -8,8 +8,8 @@ import pandas as pd
 from datetime import datetime
 from playwright.async_api import async_playwright
 
-BASE_URL = "https://betsapi.com/le/22742/Czech-Liga-Pro"
-OUTPUT_CSV = "data/tt_czech_matchlogs.csv"
+BASE_URL = "https://betsapi.com/le/38414/Czech-Liga-Pro-%282023%29"
+OUTPUT_CSV = "data/tt_czech2023_matchlogs.csv"
 
 # Same persistent profile (keeps Cloudflare clearance)
 CHROME_PROFILE_PATH = r"C:\playwright_profiles\ttelite"
@@ -69,8 +69,8 @@ def resort_csv():
 # Playwright Scraper
 # -------------------------
 
-async def scrape_history(start_page=1,
-                         end_page=5,
+async def scrape_history(start_page=1737,
+                         end_page=1738,
                          min_delay=3,
                          max_delay=7):
 
@@ -316,6 +316,6 @@ async def scrape_history(start_page=1,
 
 if __name__ == "__main__":
     asyncio.run(scrape_history(
-        start_page=1,
-        end_page=5
+        start_page=1737,
+        end_page=1738
     ))

@@ -4,7 +4,7 @@ from datetime import datetime
 from playwright.async_api import async_playwright
 
 BASE_URL = "https://betsapi.com/ls/29128/TT-Elite-Series"
-TOTAL_PAGES = 6
+TOTAL_PAGES = 7
 OUTPUT_FILE = "data/tt_elite_schedule.csv"
 
 CHROME_PROFILE_PATH = r"C:\playwright_profiles\ttelite"
