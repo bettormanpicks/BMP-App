@@ -68,6 +68,8 @@ sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL", "Table Tennis
 
 nba_today = get_league_today()
 nhl_date = get_league_today()
+central_today = get_central_today()
+central_dt = datetime.strptime(central_today, "%Y-%m-%d")
 
 # Determine the title and date based on sport
 if sport_choice == "NBA":
@@ -76,10 +78,10 @@ if sport_choice == "NBA":
 elif sport_choice == "NHL":
     hero_title = "NHL — Player Hit Rates"
     hero_date = f"NHL date: {nhl_date.strftime('%b %d')} (rolls over at 3:00 AM CT)"
+elif sport_choice == "Table Tennis":
+    hero_title = "Table Tennis - H2H History"
+    hero_date = f"{sport_choice} date: {central_dt.strftime('%b %d')} (rolls over at 3:00 AM CT)"
 else:
-    central_today = get_central_today()
-    central_dt = datetime.strptime(central_today, "%Y-%m-%d")
-
     hero_title = f"{sport_choice} — Player Hit Rates"
     hero_date = f"{sport_choice} date: {central_dt.strftime('%b %d')} (rolls over at 3:00 AM CT)"
 
