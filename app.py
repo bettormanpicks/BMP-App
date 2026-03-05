@@ -885,7 +885,6 @@ if sport_choice == "Table Tennis":
     # --- Sidebar Filters ---
     with st.sidebar.form("TT Filters"):
 
-        show_full_history = st.checkbox("Show Full Match History", value=False)
         recency_window = st.radio("Recency Window", ["L10", "L30", "ALL"], index=1)
 
         # --- Minimum Matches Slider ---
@@ -904,63 +903,56 @@ if sport_choice == "Table Tennis":
     # --- Calculate / Build Display Table ---
     if calculate:
 
-        if show_full_history:
-            df_display = h2h_summary.copy()
-            # Optional: apply recency filter if applicable
-            if recency_window != "ALL":
-                df_display = df_display[df_display["matches_last_n"] == recency_window]
+        # Upcoming schedule view
+        central = pytz.timezone("America/Chicago")
 
-        else:
-            # Upcoming schedule view
-            central = pytz.timezone("America/Chicago")
+        # Ensure schedule is timezone-aware UTC
+        schedule["date"] = pd.to_datetime(schedule["date"], utc=True)
 
-            # Ensure schedule is timezone-aware UTC
-            schedule["date"] = pd.to_datetime(schedule["date"], utc=True)
+        # Convert to Central for filtering/display
+        schedule["date_ct"] = schedule["date"].dt.tz_convert(central)
 
-            # Convert to Central for filtering/display
-            schedule["date_ct"] = schedule["date"].dt.tz_convert(central)
+        now_ct = datetime.now(central)
 
-            now_ct = datetime.now(central)
+        upcoming = schedule[schedule["date_ct"] >= now_ct]
 
-            upcoming = schedule[schedule["date_ct"] >= now_ct]
+        rows = []
+        for _, row in upcoming.iterrows():
+            p1 = row["player1"]
+            p2 = row["player2"]
 
-            rows = []
-            for _, row in upcoming.iterrows():
-                p1 = row["player1"]
-                p2 = row["player2"]
-
-                stats = compute_h2h_stats(h2h_index, p1, p2, window=recency_window)
-                if stats is None:
-                    stats = {
-                        "matches": 0,
-                        "non_sweep_pct": 0,
-                        "sweeps_a": 0,
-                        "sweeps_b": 0,
-                        "a_wins": 0,
-                        "b_wins": 0,
-                        "win_pct": 0,
-                        "last_played": None,
-                        "avg_total_sets": 0
-                    }
-
-                row_dict = {
-                    "Date": row["date_ct"].strftime("%Y-%m-%d %H:%M"),
-                    "Player 1": p1,
-                    "Player 2": p2,
-                    "Matches": stats["matches"],
-                    "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
-                    "Avg Total Sets": round(stats.get("avg_total_sets", 0), 2),
-                    "P1 Sweeps": stats.get("sweeps_a", 0),
-                    "P2 Sweeps": stats.get("sweeps_b", 0),
-                    "P1 Wins": stats["a_wins"],
-                    "P2 Wins": stats["b_wins"],
-                    "Win % (P1)": round(stats["win_pct"] * 100, 1),
-                    "Last Played": stats["last_played"]
+            stats = compute_h2h_stats(h2h_index, p1, p2, window=recency_window)
+            if stats is None:
+                stats = {
+                    "matches": 0,
+                    "non_sweep_pct": 0,
+                    "sweeps_a": 0,
+                    "sweeps_b": 0,
+                    "a_wins": 0,
+                    "b_wins": 0,
+                    "win_pct": 0,
+                    "last_played": None,
+                    "avg_total_sets": 0
                 }
 
-                rows.append(row_dict)
+            row_dict = {
+                "Date": row["date_ct"].strftime("%Y-%m-%d %H:%M"),
+                "Player 1": p1,
+                "Player 2": p2,
+                "Matches": stats["matches"],
+                "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
+                "Avg Total Sets": round(stats.get("avg_total_sets", 0), 2),
+                "P1 Sweeps": stats.get("sweeps_a", 0),
+                "P2 Sweeps": stats.get("sweeps_b", 0),
+                "P1 Wins": stats["a_wins"],
+                "P2 Wins": stats["b_wins"],
+                "Win % (P1)": round(stats["win_pct"] * 100, 1),
+                "Last Played": stats["last_played"]
+            }
 
-            df_display = pd.DataFrame(rows)
+            rows.append(row_dict)
+
+        df_display = pd.DataFrame(rows)
 
         # --- Apply minimum match filter ---
         df_display = df_display[df_display["Matches"] >= min_matches]
