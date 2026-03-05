@@ -893,7 +893,7 @@ if sport_choice == "Table Tennis":
             min_value=5,
             max_value=60,
             step=5,
-            value=10
+            value=20
         )
 
         calculate = st.form_submit_button("Calculate")
