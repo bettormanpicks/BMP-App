@@ -981,7 +981,6 @@ if sport_choice == "Tennis":
 
     # --- Load gamelogs ---
     df = load_tennis_raw_data(tour=tour_choice)
-    #st.write(f"Loaded {df.shape[0]} gamelog rows for {tour_choice}")
 
     # --- Sidebar Filters ---
     with st.sidebar.form("Tennis Filters"):
@@ -1021,14 +1020,9 @@ if sport_choice == "Tennis":
             # Filter schedule to today/tomorrow
             schedule_upcoming = schedule_df[schedule_df["Date"].isin([today, tomorrow])]
             scheduled_ids = set(schedule_upcoming["player_id"]).union(set(schedule_upcoming["opponent_id"]))
-            
-            #st.write("Scheduled IDs sample:", list(scheduled_ids)[:10])
-            #st.write("Gamelog player_ids sample:", list(df_calc["player_id"].unique())[:10])
-            #st.write("Intersection:", set(df_calc["player_id"]).intersection(scheduled_ids))
 
             # Keep only players in upcoming matches
             df_calc = df_calc[df_calc["player_id"].isin(scheduled_ids)]
-
         else:
             schedule_upcoming = None  # Not used in historical mode
 
@@ -1046,9 +1040,8 @@ if sport_choice == "Tennis":
         if summary_df.empty:
             st.warning("No data available for the selected players/surface.")
         else:
-            # --- Opponent info only for upcoming matches ---
             if players_with_match:
-                # Attach opponent return tier
+                # --- Attach opponent return tier and display names ---
                 defense_df = load_tennis_defense()
                 summary_df = summary_df.merge(
                     defense_df[["player_id", "surface", "return_tier"]],
@@ -1058,14 +1051,26 @@ if sport_choice == "Tennis":
                     suffixes=("", "_opp")
                 )
 
-                # Attach opponent display names
                 players_df = load_tennis_players()
                 name_lookup = dict(zip(players_df["player_id"], players_df["player_name"]))
                 summary_df["Opponent"] = summary_df["opponent_id"].map(name_lookup).fillna(summary_df["opponent_id"])
 
-                # Clean up columns
                 summary_df.rename(columns={"return_tier": "Opponent Strength"}, inplace=True)
                 summary_df.drop(columns=["player_id_opp", "surface"], errors="ignore", inplace=True)
+
+                # --- Attach schedule info: Match Date, Match Time, Tournament ---
+                schedule_info_cols = ["player_id", "opponent_id", "Date", "Time", "Tournament"]
+                schedule_merge_df = schedule_upcoming[schedule_info_cols].copy()
+                summary_df = summary_df.merge(
+                    schedule_merge_df,
+                    on=["player_id", "opponent_id"],
+                    how="left"
+                )
+                summary_df.rename(columns={
+                    "Date": "Date",
+                    "Time": "Status",
+                    "Tournament": "Tournament"
+                }, inplace=True)
 
             # --- Rename Gms → Ms for matches played ---
             summary_df.rename(columns={"Gms": "Ms"}, inplace=True)
@@ -1074,17 +1079,20 @@ if sport_choice == "Tennis":
             display_cols = ["Player"]
 
             if players_with_match:
-                display_cols.append("Opponent")
-                display_cols.append("Opponent Strength")
+                display_cols.extend([
+                    "Opponent",
+                    "Opponent Strength",
+                    "Date",
+                    "Status",
+                    "Tournament"
+                ])
 
             display_cols.extend(["Surface", "Ms"])
 
             # --- Collect stat columns in correct order ---
             stat_cols = []
-
             for stat in stats_selected:
                 if stat == "MW":
-                    # Add MW% columns
                     if "MW%" in summary_df.columns:
                         stat_cols.append("MW%")
                     if recent_n and f"L{recent_n}MW%" in summary_df.columns:
@@ -1093,7 +1101,6 @@ if sport_choice == "Tennis":
                     for pct in percentages:
                         col_all = f"{stat}@{pct}"
                         col_recent = f"L{recent_n}{stat}@{pct}" if recent_n else None
-
                         if col_all in summary_df.columns:
                             stat_cols.append(col_all)
                         if col_recent and col_recent in summary_df.columns:
@@ -1106,7 +1113,6 @@ if sport_choice == "Tennis":
 
             # --- Sorting ---
             first_stat = stats_selected[0]
-
             if first_stat == "MW":
                 sort_col = f"L{recent_n}MW%" if recent_n else "MW%"
             else:
@@ -1115,8 +1121,9 @@ if sport_choice == "Tennis":
             if sort_col in summary_df.columns:
                 summary_df = summary_df.sort_values(sort_col, ascending=False)
 
+            # --- Display in Streamlit ---
             st.dataframe(
-                summary_df, 
+                summary_df,
                 width="stretch",
                 hide_index=True
             )
