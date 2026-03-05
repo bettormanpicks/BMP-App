@@ -912,7 +912,18 @@ if sport_choice == "Table Tennis":
 
         else:
             # Upcoming schedule view
-            upcoming = schedule[schedule["date"] >= pd.Timestamp.now()]
+            central = pytz.timezone("America/Chicago")
+
+            # Ensure schedule is timezone-aware UTC
+            schedule["date"] = pd.to_datetime(schedule["date"], utc=True)
+
+            # Convert to Central for filtering/display
+            schedule["date_ct"] = schedule["date"].dt.tz_convert(central)
+
+            now_ct = datetime.now(central)
+
+            upcoming = schedule[schedule["date_ct"] >= now_ct]
+
             rows = []
             for _, row in upcoming.iterrows():
                 p1 = row["player1"]
@@ -933,7 +944,7 @@ if sport_choice == "Table Tennis":
                     }
 
                 row_dict = {
-                    "Date": row["date"],
+                    "Date": row["date_ct"].strftime("%Y-%m-%d %H:%M"),
                     "Player 1": p1,
                     "Player 2": p2,
                     "Matches": stats["matches"],
