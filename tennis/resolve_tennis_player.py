@@ -5,14 +5,20 @@ import os
 from name_normalizer import clean_name, generate_name_keys
 
 # ==============================
+# BASE DIRECTORY (robust path fix)
+# ==============================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+
+# ==============================
 # CONFIG
 # ==============================
-PLAYERS_FILE = "data/tennisplayers.csv"
-ALIASES_FILE = "data/player_aliases.csv"
-ATP_RANKINGS_FILE = "data/atp_rankings.csv"
-WTA_RANKINGS_FILE = "data/wta_rankings.csv"
-SCHEDULE_FILE = "data/tennis_schedule.csv"
-UNMATCHED_FILE = "data/unmatched_singles.txt"
+PLAYERS_FILE = os.path.join(DATA_DIR, "tennisplayers.csv")
+ALIASES_FILE = os.path.join(DATA_DIR, "player_aliases.csv")
+ATP_RANKINGS_FILE = os.path.join(DATA_DIR, "atp_rankings.csv")
+WTA_RANKINGS_FILE = os.path.join(DATA_DIR, "wta_rankings.csv")
+SCHEDULE_FILE = os.path.join(DATA_DIR, "tennis_schedule.csv")
+UNMATCHED_FILE = os.path.join(DATA_DIR, "unmatched_singles.txt")
 
 # starting point for new unknown IDs
 ATP_NEW_START = 9100
@@ -268,11 +274,11 @@ if unmatched:
 # Save key-to-player_id log
 if key_match_log:
     log_df = pd.DataFrame(key_match_log)
-    log_df.to_csv("data/key_match_log.csv", index=False)
+    log_df.to_csv(os.path.join(DATA_DIR, "key_match_log.csv"), index=False)
 
 # Save updated players and aliases
-players.to_csv(PLAYERS_FILE, index=False)
-aliases.to_csv(ALIASES_FILE, index=False)
+players.to_csv(PLAYERS_FILE, index=False)       # already fixed
+aliases.to_csv(ALIASES_FILE, index=False)       # already fixed
 
 schedule["Tour"] = schedule["player_id"].apply(infer_tour)
 
@@ -282,7 +288,7 @@ if (
 ).any():
     print("WARNING: Mixed tours detected")
 
-tournaments = pd.read_csv("data/tournament_list.csv", dtype=str)
+tournaments = pd.read_csv(os.path.join(DATA_DIR, "tournament_list.csv"), dtype=str)
 
 tournaments["Tournament"] = tournaments["Tournament"].str.strip().str.lower()
 schedule["Tournament_clean"] = schedule["Tournament"].str.strip().str.lower()
@@ -313,7 +319,7 @@ print(f"Total matches after deduplication: {len(schedule)}")
 # ==============================
 # SAVE RESOLVED SCHEDULE
 # ==============================
-schedule.to_csv("data/tennis_schedule_resolved.csv", index=False)
+schedule.to_csv(os.path.join(DATA_DIR, "tennis_schedule_resolved.csv"), index=False)
 
 # Print new players added
 if new_players_created:
