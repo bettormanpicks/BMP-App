@@ -4,6 +4,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 import time
 import re
+import os
 from datetime import datetime, timedelta
 
 # -------------------
@@ -149,5 +150,8 @@ df_tomorrow = scrape_espn_scoreboard(tomorrow)
 combined_df = pd.concat([df_today, df_tomorrow], ignore_index=True)
 
 # Save CSV
-combined_df.to_csv("data/tennis_schedule.csv", index=False)
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+output_path = os.path.join(BASE_DIR, "data", "tennis_schedule.csv")
+
+combined_df.to_csv(output_path, index=False)
 print(combined_df)
