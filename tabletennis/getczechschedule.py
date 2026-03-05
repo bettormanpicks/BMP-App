@@ -4,7 +4,6 @@ from datetime import datetime
 from playwright.async_api import async_playwright
 
 BASE_URL = "https://betsapi.com/ls/22742/Czech-Liga-Pro"
-TOTAL_PAGES = 7
 OUTPUT_FILE = "data/tt_czech_schedule.csv"
 
 CHROME_PROFILE_PATH = r"C:\playwright_profiles\ttelite"
@@ -21,17 +20,60 @@ async def scrape_schedule():
             ]
         )
 
+        # Block Google vignette / ad network requests
+        await context.route(
+            "**/*",
+            lambda route, request: (
+                route.abort() if any(x in request.url for x in ["google", "doubleclick"]) else route.continue_()
+            )
+        )
+
         page = context.pages[0] if context.pages else await context.new_page()
 
-        for page_num in range(1, TOTAL_PAGES + 1):
-            url = BASE_URL if page_num == 1 else f"{BASE_URL}/p.{page_num}"
-            print(f"Loading page {page_num}")
+        # -------------------------
+        # Detect total pages automatically
+        # -------------------------
+        await page.goto(BASE_URL, timeout=60000)
+        await page.wait_for_selector("table", timeout=60000)
 
-            await page.goto(url, timeout=60000)
-            await page.wait_for_selector("table", timeout=60000)
+        pagination_links = await page.query_selector_all('a[href*="/p."]')
+        max_page = 1
+        for link in pagination_links:
+            href = await link.get_attribute("href")
+            if href and "/p." in href:
+                try:
+                    page_number = int(href.split("/p.")[1])
+                    max_page = max(max_page, page_number)
+                except:
+                    continue
+
+        print(f"Detected {max_page} total pages.")
+
+        # -------------------------
+        # Scrape all pages
+        # -------------------------
+        for page_num in range(1, max_page + 1):
+
+            if page_num == 1:
+                await page.goto(BASE_URL, timeout=60000)
+                await page.wait_for_selector("table", timeout=60000)
+            else:
+                print(f"Clicking page {page_num}")
+                # Click the pagination link
+                old_first_row = await page.locator("table tbody tr").first.inner_text()
+                await page.click(f'a[href*="p.{page_num}"]')
+                # Wait until the first row changes (AJAX load)
+                await page.wait_for_function(
+                    """(oldText) => {
+                        const row = document.querySelector("table tbody tr");
+                        return row && row.innerText !== oldText;
+                    }""",
+                    arg=old_first_row
+                )
+
+            print(f"Scraping page {page_num}")
 
             rows = await page.query_selector_all("table tbody tr")
-
             for row in rows:
                 cols = await row.query_selector_all("td")
                 if len(cols) < 4:
@@ -70,13 +112,15 @@ async def scrape_schedule():
 
         await context.close()
 
+    # -------------------------
+    # Convert to DataFrame and clean dates
+    # -------------------------
     df = pd.DataFrame(all_matches)
 
     if df.empty:
         print("No matches scraped.")
         return
 
-    # --- DATE PARSING (robust version you already fixed) ---
     current_year = datetime.now().year
 
     def parse_date(x):
@@ -91,7 +135,6 @@ async def scrape_schedule():
     df.sort_values("date", inplace=True)
 
     df.to_csv(OUTPUT_FILE, index=False)
-
     print(f"Done. Saved {len(df)} matches to {OUTPUT_FILE}")
 
 if __name__ == "__main__":

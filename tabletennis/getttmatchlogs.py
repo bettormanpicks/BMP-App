@@ -70,7 +70,7 @@ def resort_csv():
 # -------------------------
 
 async def scrape_history(start_page=1,
-                         end_page=7,
+                         end_page=10,
                          min_delay=3,
                          max_delay=7):
 
@@ -89,27 +89,40 @@ async def scrape_history(start_page=1,
             args=["--disable-blink-features=AutomationControlled"]
         )
 
+        # Block Google vignette / ad network requests
+        await context.route("**/*", lambda route, request: (
+            route.abort()
+            if any(x in request.url for x in ["doubleclick", "googlesyndication", "googleads"])
+            else route.continue_()
+        ))
+
         page = context.pages[0] if context.pages else await context.new_page()
 
         for page_num in range(start_page, end_page + 1):
 
-            url = BASE_URL if page_num == 1 else f"{BASE_URL}/p.{page_num}"
             print(f"\nScraping page {page_num}...")
 
-            # ------------------------
-            # RETRY + EXP BACKOFF
-            # ------------------------
             success = False
 
             for attempt in range(5):
                 try:
-                    await page.goto(url, timeout=60000)
+                    if page_num == 1:
+                        await page.goto(BASE_URL, timeout=60000)
+                        await page.wait_for_selector("table", timeout=60000)
+                    else:
+                        print(f"Clicking page {page_num}...")
 
-                    content = await page.content()
-                    if "502" in content and "Bad gateway" in content:
-                        raise Exception("Cloudflare 502 page detected")
+                        old_first_row = await page.locator("table tbody tr").first.inner_text()
 
-                    await page.wait_for_selector("table", timeout=60000)
+                        await page.click(f'a[href*="p.{page_num}"]')
+
+                        await page.wait_for_function(
+                            """(oldText) => {
+                                const row = document.querySelector("table tbody tr");
+                                return row && row.innerText !== oldText;
+                            }""",
+                            arg=old_first_row
+                        )
 
                     success = True
                     consecutive_failures = 0
@@ -317,5 +330,5 @@ async def scrape_history(start_page=1,
 if __name__ == "__main__":
     asyncio.run(scrape_history(
         start_page=1,
-        end_page=7
+        end_page=10
     ))
