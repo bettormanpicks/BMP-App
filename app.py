@@ -1062,31 +1062,32 @@ if sport_choice == "Tennis":
                 schedule_info_cols = ["player_id", "opponent_id", "Date", "Time", "Tournament"]
                 schedule_merge_df = schedule_upcoming[schedule_info_cols].copy()
 
-                # Merge normally
-                summary_df = summary_df.merge(
+                # Merge on original order
+                merged = summary_df.merge(
                     schedule_merge_df,
                     on=["player_id", "opponent_id"],
-                    how="left"
+                    how="left",
+                    suffixes=("", "_orig")
                 )
 
-                # Handle swapped player order if merge failed
-                missing_mask = summary_df["Date"].isna()
-                if missing_mask.any():
-                    # Swap player_id and opponent_id for the merge
-                    schedule_swap = schedule_merge_df.rename(
-                        columns={"player_id": "opponent_id", "opponent_id": "player_id"}
-                    )
-                    merged_swap = summary_df[missing_mask].merge(
-                        schedule_swap,
-                        on=["player_id", "opponent_id"],
-                        how="left",
-                        suffixes=("", "_swap")
-                    )
-                    # Fill missing Date, Time, Tournament
-                    for col in ["Date", "Time", "Tournament"]:
-                        summary_df.loc[missing_mask, col] = merged_swap[col].values
+                # Merge on swapped order
+                schedule_swap = schedule_merge_df.rename(
+                    columns={"player_id": "opponent_id", "opponent_id": "player_id"}
+                )
+                merged_swap = summary_df.merge(
+                    schedule_swap,
+                    on=["player_id", "opponent_id"],
+                    how="left",
+                    suffixes=("", "_swap")
+                )
 
-                # Rename Time to Status for display in Streamlit
+                # Coalesce Date, Time, Tournament from original or swapped merge
+                for col in ["Date", "Time", "Tournament"]:
+                    merged[col] = merged[col].combine_first(merged_swap[f"{col}_swap"])
+
+                summary_df = merged
+
+                # Rename Time → Status for display
                 summary_df.rename(columns={"Time": "Status"}, inplace=True)
 
             # --- Rename Gms → Ms for matches played ---
