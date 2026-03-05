@@ -1,6 +1,12 @@
 import pandas as pd
 import os
 
+# ==============================
+# BASE DIRECTORY (robust path fix)
+# ==============================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+
 ATP_FILE = os.path.join(DATA_DIR, "atp_player_gamelogs.csv")
 WTA_FILE = os.path.join(DATA_DIR, "wta_player_gamelogs.csv")
 OUTPUT_FILE = os.path.join(DATA_DIR, "tennis_opponent_defense.csv")
