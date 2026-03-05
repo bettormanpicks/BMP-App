@@ -20,9 +20,9 @@ if ROOT_DIR not in sys.path:
 # Remaining imports for your app logic
 # ============================================================
 from shared.utils import (
-    get_league_today, hit_rate_threshold, trim_df_to_recent_82,
-    dedupe_columns, strip_display_ids, norm_name,
-    get_teams_playing_on_date, sidebar_footer
+    get_central_today, get_league_today, hit_rate_threshold,
+    trim_df_to_recent_82, dedupe_columns, strip_display_ids,
+    norm_name, get_teams_playing_on_date, sidebar_footer
 )
 from nba.helpers import (
     DEF_STAT_MAP, load_nba_schedule, load_today_matchups,
@@ -77,8 +77,11 @@ elif sport_choice == "NHL":
     hero_title = "NHL — Player Hit Rates"
     hero_date = f"NHL date: {nhl_date.strftime('%b %d')} (rolls over at 3:00 AM CT)"
 else:
+    central_today = get_central_today()
+    central_dt = datetime.strptime(central_today, "%Y-%m-%d")
+
     hero_title = f"{sport_choice} — Player Hit Rates"
-    hero_date = f"{sport_choice} date: {datetime.now().strftime('%b %d')} (rolls over at 3:00 AM CT)"
+    hero_date = f"{sport_choice} date: {central_dt.strftime('%b %d')} (rolls over at 3:00 AM CT)"
 
 # ============================================================
 # HEADER BANNER (hero header with title + date)
