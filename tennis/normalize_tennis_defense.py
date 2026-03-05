@@ -1,7 +1,8 @@
 import pandas as pd
+import os
 
-INPUT = "data/tennis_opponent_defense.csv"
-OUTPUT = "data/tennis_opponent_defense_normalized.csv"
+INPUT = os.path.join(DATA_DIR, "tennis_opponent_defense.csv")
+OUTPUT = os.path.join(DATA_DIR, "tennis_opponent_defense_normalized.csv")
 
 df = pd.read_csv(INPUT)
 
