@@ -70,7 +70,7 @@ def resort_csv():
 # -------------------------
 
 async def scrape_history(start_page=1,
-                         end_page=10,
+                         end_page=8,
                          min_delay=3,
                          max_delay=7):
 
@@ -97,6 +97,7 @@ async def scrape_history(start_page=1,
         ))
 
         page = context.pages[0] if context.pages else await context.new_page()
+        page.set_default_timeout(60000)
 
         for page_num in range(start_page, end_page + 1):
 
@@ -112,17 +113,13 @@ async def scrape_history(start_page=1,
                     else:
                         print(f"Clicking page {page_num}...")
 
-                        old_first_row = await page.locator("table tbody tr").first.inner_text()
-
                         await page.click(f'a[href*="p.{page_num}"]')
 
-                        await page.wait_for_function(
-                            """(oldText) => {
-                                const row = document.querySelector("table tbody tr");
-                                return row && row.innerText !== oldText;
-                            }""",
-                            arg=old_first_row
-                        )
+                        # Wait for table rows to reappear after AJAX reload
+                        await page.wait_for_selector("table tbody tr", timeout=60000)
+
+                        # Small buffer for stability
+                        await page.wait_for_timeout(1000)
 
                     success = True
                     consecutive_failures = 0
@@ -330,5 +327,5 @@ async def scrape_history(start_page=1,
 if __name__ == "__main__":
     asyncio.run(scrape_history(
         start_page=1,
-        end_page=10
+        end_page=8
     ))
