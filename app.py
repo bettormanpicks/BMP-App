@@ -1058,19 +1058,15 @@ if sport_choice == "Tennis":
                 summary_df.rename(columns={"return_tier": "Opponent Strength"}, inplace=True)
                 summary_df.drop(columns=["player_id_opp", "surface"], errors="ignore", inplace=True)
 
-                # --- Attach schedule info: Match Date, Match Time, Tournament ---
-                schedule_info_cols = ["player_id", "opponent_id", "Date", "Time", "Tournament"]
-                schedule_merge_df = schedule_upcoming[schedule_info_cols].copy()
-
-                # Merge on original order
-                merged = summary_df.merge(
+                # --- Merge schedule normally ---
+                merged_orig = summary_df.merge(
                     schedule_merge_df,
                     on=["player_id", "opponent_id"],
                     how="left",
                     suffixes=("", "_orig")
                 )
 
-                # Merge on swapped order
+                # --- Merge schedule with swapped player/opponent ---
                 schedule_swap = schedule_merge_df.rename(
                     columns={"player_id": "opponent_id", "opponent_id": "player_id"}
                 )
@@ -1081,13 +1077,15 @@ if sport_choice == "Tennis":
                     suffixes=("", "_swap")
                 )
 
-                # Coalesce Date, Time, Tournament from original or swapped merge
+                # --- Coalesce Date, Time, Tournament ---
                 for col in ["Date", "Time", "Tournament"]:
-                    merged[col] = merged[col].combine_first(merged_swap[f"{col}_swap"])
+                    # If col missing in merged_swap (rare), fill with None
+                    val = merged_swap[col] if col in merged_swap.columns else pd.NA
+                    merged_orig[col] = merged_orig[col].combine_first(val)
 
-                summary_df = merged
+                summary_df = merged_orig
 
-                # Rename Time → Status for display
+                # --- Rename Time to Status ---
                 summary_df.rename(columns={"Time": "Status"}, inplace=True)
 
             # --- Rename Gms → Ms for matches played ---
