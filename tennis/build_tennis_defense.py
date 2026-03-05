@@ -1,8 +1,9 @@
 import pandas as pd
+import os
 
-ATP_FILE = "data/atp_player_gamelogs.csv"
-WTA_FILE = "data/wta_player_gamelogs.csv"
-OUTPUT_FILE = "data/tennis_opponent_defense.csv"
+ATP_FILE = os.path.join(DATA_DIR, "atp_player_gamelogs.csv")
+WTA_FILE = os.path.join(DATA_DIR, "wta_player_gamelogs.csv")
+OUTPUT_FILE = os.path.join(DATA_DIR, "tennis_opponent_defense.csv")
 
 def build_defense(df, tour):
 
