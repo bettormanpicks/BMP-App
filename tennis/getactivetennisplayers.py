@@ -1,9 +1,10 @@
 import pandas as pd
 import unicodedata
+import os
 
-ATP_FILE = "data/atp_rankings.csv"
-WTA_FILE = "data/wta_rankings.csv"
-OUTPUT_FILE = "data/tennisplayers.csv"
+ATP_FILE = os.path.join(DATA_DIR, "atp_rankings.csv")
+WTA_FILE = os.path.join(DATA_DIR, "wta_rankings.csv")
+OUTPUT_FILE = os.path.join(DATA_DIR, "tennisplayers.csv")
 
 TOP_N = 500
 
