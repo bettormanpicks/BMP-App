@@ -2,6 +2,12 @@ import pandas as pd
 import unicodedata
 import os
 
+# ==============================
+# BASE DIRECTORY (robust path fix)
+# ==============================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+
 ATP_FILE = os.path.join(DATA_DIR, "atp_rankings.csv")
 WTA_FILE = os.path.join(DATA_DIR, "wta_rankings.csv")
 OUTPUT_FILE = os.path.join(DATA_DIR, "tennisplayers.csv")
