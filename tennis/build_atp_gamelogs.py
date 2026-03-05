@@ -1,12 +1,13 @@
 import pandas as pd
+import os
 from helpers.player_utils import get_atp_player_id
 
 # ========================
 # CONFIG
 # ========================
-PLAYERS_FILE = "data/tennisplayers.csv"
-MATCH_FILE = "data/atp_match_logs.csv"
-OUTPUT_FILE = "data/atp_player_gamelogs.csv"
+PLAYERS_FILE = os.path.join(DATA_DIR, "tennisplayers.csv")
+MATCH_FILE = os.path.join(DATA_DIR, "atp_match_logs.csv")
+OUTPUT_FILE = os.path.join(DATA_DIR, "atp_player_gamelogs.csv")
 
 
 # ------------------------
