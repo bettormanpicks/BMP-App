@@ -1058,35 +1058,35 @@ if sport_choice == "Tennis":
                 summary_df.rename(columns={"return_tier": "Opponent Strength"}, inplace=True)
                 summary_df.drop(columns=["player_id_opp", "surface"], errors="ignore", inplace=True)
 
-                # --- Merge schedule normally ---
-                merged_orig = summary_df.merge(
-                    schedule_merge_df,
-                    on=["player_id", "opponent_id"],
-                    how="left",
-                    suffixes=("", "_orig")
-                )
+                if players_with_match:
+                    schedule_info_cols = ["player_id", "opponent_id", "Date", "Time", "Tournament"]
+                    schedule_merge_df = schedule_upcoming[schedule_info_cols].copy()
 
-                # --- Merge schedule with swapped player/opponent ---
-                schedule_swap = schedule_merge_df.rename(
-                    columns={"player_id": "opponent_id", "opponent_id": "player_id"}
-                )
-                merged_swap = summary_df.merge(
-                    schedule_swap,
-                    on=["player_id", "opponent_id"],
-                    how="left",
-                    suffixes=("", "_swap")
-                )
+                    # Merge normally
+                    summary_df = summary_df.merge(
+                        schedule_merge_df,
+                        on=["player_id", "opponent_id"],
+                        how="left"
+                    )
 
-                # --- Coalesce Date, Time, Tournament ---
-                for col in ["Date", "Time", "Tournament"]:
-                    # If col missing in merged_swap (rare), fill with None
-                    val = merged_swap[col] if col in merged_swap.columns else pd.NA
-                    merged_orig[col] = merged_orig[col].combine_first(val)
+                    # Handle swapped player order if merge failed
+                    missing_mask = summary_df["Date"].isna()
+                    if missing_mask.any():
+                        schedule_swap = schedule_merge_df.rename(
+                            columns={"player_id": "opponent_id", "opponent_id": "player_id"}
+                        )
+                        merged_swap = summary_df[missing_mask].merge(
+                            schedule_swap,
+                            on=["player_id", "opponent_id"],
+                            how="left",
+                            suffixes=("", "_swap")
+                        )
+                        # Fill missing Date, Time, Tournament
+                        for col in ["Date", "Time", "Tournament"]:
+                            summary_df.loc[missing_mask, col] = merged_swap[col].values
 
-                summary_df = merged_orig
-
-                # --- Rename Time to Status ---
-                summary_df.rename(columns={"Time": "Status"}, inplace=True)
+                    # Rename Time → Status
+                    summary_df.rename(columns={"Time": "Status"}, inplace=True)
 
             # --- Rename Gms → Ms for matches played ---
             summary_df.rename(columns={"Gms": "Ms"}, inplace=True)
