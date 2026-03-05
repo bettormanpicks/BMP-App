@@ -1061,16 +1061,33 @@ if sport_choice == "Tennis":
                 # --- Attach schedule info: Match Date, Match Time, Tournament ---
                 schedule_info_cols = ["player_id", "opponent_id", "Date", "Time", "Tournament"]
                 schedule_merge_df = schedule_upcoming[schedule_info_cols].copy()
+
+                # Merge normally
                 summary_df = summary_df.merge(
                     schedule_merge_df,
                     on=["player_id", "opponent_id"],
                     how="left"
                 )
-                summary_df.rename(columns={
-                    "Date": "Date",
-                    "Time": "Status",
-                    "Tournament": "Tournament"
-                }, inplace=True)
+
+                # Handle swapped player order if merge failed
+                missing_mask = summary_df["Date"].isna()
+                if missing_mask.any():
+                    # Swap player_id and opponent_id for the merge
+                    schedule_swap = schedule_merge_df.rename(
+                        columns={"player_id": "opponent_id", "opponent_id": "player_id"}
+                    )
+                    merged_swap = summary_df[missing_mask].merge(
+                        schedule_swap,
+                        on=["player_id", "opponent_id"],
+                        how="left",
+                        suffixes=("", "_swap")
+                    )
+                    # Fill missing Date, Time, Tournament
+                    for col in ["Date", "Time", "Tournament"]:
+                        summary_df.loc[missing_mask, col] = merged_swap[col].values
+
+                # Rename Time to Status for display in Streamlit
+                summary_df.rename(columns={"Time": "Status"}, inplace=True)
 
             # --- Rename Gms → Ms for matches played ---
             summary_df.rename(columns={"Gms": "Ms"}, inplace=True)
