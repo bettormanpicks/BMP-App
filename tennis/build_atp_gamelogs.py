@@ -2,6 +2,12 @@ import pandas as pd
 import os
 from helpers.player_utils import get_atp_player_id
 
+# ==============================
+# BASE DIRECTORY (robust path fix)
+# ==============================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+
 # ========================
 # CONFIG
 # ========================
