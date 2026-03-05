@@ -37,7 +37,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install pandas selenium webdriver-manager unidecode pytz lxml
+          pip install pandas selenium webdriver-manager unidecode pytz lxml beautifulsoup4
 
       # STEP 1 — scrape schedule
       - name: Run tennis schedule scraper
