@@ -1,3 +1,4 @@
+# gettennisschedule.py
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from bs4 import BeautifulSoup
@@ -6,10 +7,24 @@ import time
 import re
 import os
 from datetime import datetime, timedelta
+import pytz
 
-# -------------------
-# Function Definitions
-# -------------------
+# ==============================
+# BASE DIRECTORY (robust path fix)
+# ==============================
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(BASE_DIR, "data")
+output_path = os.path.join(DATA_DIR, "tennis_schedule.csv")
+
+# Ensure data directory exists
+os.makedirs(DATA_DIR, exist_ok=True)
+
+# ==============================
+# UTILS
+# ==============================
+def get_central_today():
+    central = pytz.timezone("America/Chicago")
+    return datetime.now(central)
 
 def extract_match_time(match):
     """
@@ -20,7 +35,6 @@ def extract_match_time(match):
         TBD   -> not assigned yet
     """
     time_pattern = re.compile(r"\b\d{1,2}:\d{2}\s?(AM|PM)\b", re.IGNORECASE)
-
     for text in match.stripped_strings:
         clean = text.strip()
         if time_pattern.search(clean):
@@ -33,21 +47,22 @@ def extract_match_time(match):
 
     if match.select_one('[data-testid="live-indicator"]'):
         return "Live"
-
     for text in match.stripped_strings:
         if text.strip().lower() == "final":
             return "Final"
-
     return "TBD"
 
 def scrape_espn_scoreboard(target_date: datetime):
     """
     Scrape ESPN Tennis scoreboard for a specific date.
-    target_date: datetime object
     Returns: pd.DataFrame
     """
     date_str_url = target_date.strftime("%Y%m%d")
-    url = f"https://www.espn.com/tennis/scoreboard/_/date/{date_str_url}" if target_date.date() != datetime.today().date() else "https://www.espn.com/tennis/scoreboard"
+    url = (
+        f"https://www.espn.com/tennis/scoreboard/_/date/{date_str_url}"
+        if target_date.date() != datetime.today().date()
+        else "https://www.espn.com/tennis/scoreboard"
+    )
 
     chrome_options = Options()
     chrome_options.add_argument("--headless")
@@ -74,7 +89,10 @@ def scrape_espn_scoreboard(target_date: datetime):
     date_tag = soup.select_one("header.Card__Header h3.Card__Header__Title")
     if date_tag:
         raw_date = date_tag.get_text(strip=True)
-        date_formatted = datetime.strptime(raw_date, "%A, %B %d, %Y").strftime("%Y-%m-%d")
+        try:
+            date_formatted = datetime.strptime(raw_date, "%A, %B %d, %Y").strftime("%Y-%m-%d")
+        except:
+            date_formatted = target_date.strftime("%Y-%m-%d")
     else:
         date_formatted = target_date.strftime("%Y-%m-%d")
 
@@ -86,10 +104,8 @@ def scrape_espn_scoreboard(target_date: datetime):
         tournament_name = tourney_name_tag.get_text(strip=True) if tourney_name_tag else "Unknown Tournament"
 
         matches_wrapper = card.find_all("div", {"data-testid": "match-cell"})
-
         for match in matches_wrapper:
             match_time = extract_match_time(match)
-
             competitors = match.select('[data-testid="competitor"]')
             if len(competitors) < 2:
                 continue
@@ -100,30 +116,17 @@ def scrape_espn_scoreboard(target_date: datetime):
                 if player_tag:
                     names.append(player_tag.get_text(strip=True))
                 else:
-                    # If no player tag, check if text says TBD
                     text_div = c.get_text(strip=True)
                     if text_div.upper() == "TBD":
                         names.append("TBD")
 
-            # --- Skip any match with TBD ---
             if "TBD" in names:
                 continue
 
-            # --- Build singles / doubles teams ---
+            # Singles only
             if len(names) == 2:
-                # Singles
-                player1 = names[0]
-                player2 = names[1]
-            elif len(names) == 4:
-                # Doubles
-                player1 = f"{names[0]} / {names[1]}"
-                player2 = f"{names[2]} / {names[3]}"
+                player1, player2 = names
             else:
-                # Unexpected layout
-                continue
-
-            # Skip doubles for now
-            if "/" in player1 or "/" in player2:
                 continue
 
             data.append({
@@ -137,21 +140,17 @@ def scrape_espn_scoreboard(target_date: datetime):
     return pd.DataFrame(data)
 
 
-# -------------------
-# Run scraper for today and tomorrow
-# -------------------
-today = datetime.today()
-tomorrow = today + timedelta(days=1)
+# ==============================
+# RUN SCRAPER
+# ==============================
+central_today = get_central_today()
+central_tomorrow = central_today + timedelta(days=1)
 
-df_today = scrape_espn_scoreboard(today)
-df_tomorrow = scrape_espn_scoreboard(tomorrow)
+df_today = scrape_espn_scoreboard(central_today)
+df_tomorrow = scrape_espn_scoreboard(central_tomorrow)
 
-# Combine
 combined_df = pd.concat([df_today, df_tomorrow], ignore_index=True)
 
 # Save CSV
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-output_path = os.path.join(BASE_DIR, "data", "tennis_schedule.csv")
-
 combined_df.to_csv(output_path, index=False)
 print(combined_df)
