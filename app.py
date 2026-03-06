@@ -905,13 +905,18 @@ if sport_choice == "Table Tennis":
     # --- Calculate / Build Display Table ---
     if calculate:
 
-        # --- CSV times are already in CST, treat as naive ---
+        # --- Parse CSV dates as naive and drop bad rows ---
         schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
         schedule.dropna(subset=["date"], inplace=True)
 
-        # --- Compare to current CST time ---
+        # --- Localize schedule dates to CST (make timezone-aware) ---
         central = pytz.timezone("America/Chicago")
-        now_ct = pd.Timestamp.now(central).replace(tzinfo=None)  # naive CST
+        schedule["date"] = schedule["date"].dt.tz_localize(central)
+
+        # --- Current CST time (timezone-aware) ---
+        now_ct = pd.Timestamp.now(central)
+
+        # --- Filter upcoming matches ---
         upcoming = schedule[schedule["date"] >= now_ct]
 
         rows = []
@@ -934,7 +939,7 @@ if sport_choice == "Table Tennis":
                 }
 
             row_dict = {
-                "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
+                "Date": row["date"].strftime("%Y-%m-%d %H:%M"),  # display in CST
                 "Player 1": p1,
                 "Player 2": p2,
                 "Matches": stats["matches"],
