@@ -868,10 +868,13 @@ elif sport_choice == "NHL":
                 column_config=col_config
             )
 
+
 ############################################################
 # ===== Table Tennis Section =====
 ############################################################
 if sport_choice == "Table Tennis":
+
+    import pytz
 
     # --- Load raw TT data ---
     league = st.sidebar.radio(
@@ -888,6 +891,7 @@ if sport_choice == "Table Tennis":
 
         recency_window = st.radio("Recency Window", ["L10", "L30", "ALL"], index=1)
 
+        # --- Minimum Matches Slider ---
         min_matches = st.slider(
             "Minimum H2H Matches",
             min_value=5,
@@ -903,10 +907,14 @@ if sport_choice == "Table Tennis":
     # --- Calculate / Build Display Table ---
     if calculate:
 
-        # CSV times are already CST, just parse as naive datetime
+        # --- CSV times are already in CST, treat as naive ---
         schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
-        now = pd.Timestamp.now()
-        upcoming = schedule[schedule["date"] >= now]
+        schedule.dropna(subset=["date"], inplace=True)
+
+        # --- Compare to current CST time ---
+        central = pytz.timezone("America/Chicago")
+        now_ct = pd.Timestamp.now(central).replace(tzinfo=None)  # naive CST
+        upcoming = schedule[schedule["date"] >= now_ct]
 
         rows = []
         for _, row in upcoming.iterrows():
