@@ -1,4 +1,4 @@
-# gettt_czech_matchlogs.py
+# getczechmatchlogs.py
 
 import asyncio
 import csv
@@ -9,7 +9,8 @@ from datetime import datetime
 from playwright.async_api import async_playwright
 
 BASE_URL = "https://betsapi.com/table-tennis/le/22742/Czech-Liga-Pro"
-OUTPUT_CSV = "data/tt_czech_matchlogs.csv"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_CSV = os.path.join(BASE_DIR, "data", "tt_czech_matchlogs.csv")
 
 # Same persistent profile (keeps Cloudflare clearance)
 CHROME_PROFILE_PATH = r"C:\playwright_profiles\ttelite"
@@ -48,7 +49,7 @@ def resort_csv():
     if not os.path.exists(OUTPUT_CSV):
         return
 
-    df = pd.read_csv(OUTPUT_CSV)
+    df = pd.read_csv(OUTPUT_CSV, dtype={"match_id": str})
 
     print("Rows before parsing:", len(df))
     df["date"] = pd.to_datetime(df["date"], errors="coerce")

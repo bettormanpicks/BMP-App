@@ -1,6 +1,7 @@
 import asyncio
 import pandas as pd
 import os
+import re
 from datetime import datetime
 from playwright.async_api import async_playwright
 
@@ -76,7 +77,7 @@ async def scrape_schedule():
                 date_text = (await cols[0].inner_text()).strip()
 
                 # Skip rows that show scores instead of dates or empty strings
-                if not date_text or not date_text[0].isdigit():
+                if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
                     continue
 
                 # --- PLAYERS ---
@@ -88,14 +89,14 @@ async def scrape_schedule():
 
                 # --- MATCH ID ---
                 match_link = await cols[3].query_selector("a")
+                match_id = None
+
                 if match_link:
                     href = await match_link.get_attribute("href")
-                    if href and "/r/" in href:
-                        match_id = href.split("/")[2]
-                    else:
-                        match_id = None
-                else:
-                    match_id = None
+                    if href:
+                        m = re.search(r"\d+", href)
+                        if m:
+                            match_id = m.group()
 
                 all_matches.append({
                     "match_id": match_id,
