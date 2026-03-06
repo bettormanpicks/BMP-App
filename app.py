@@ -908,10 +908,8 @@ if sport_choice == "Table Tennis":
         # Upcoming schedule view
         central = pytz.timezone("America/Chicago")
 
-        # Ensure schedule is timezone-aware UTC
-        schedule["date"] = pd.to_datetime(schedule["date"], utc=True)
-
         # Convert to Central for filtering/display
+        schedule = schedule.copy()
         schedule["date_ct"] = schedule["date"].dt.tz_convert(central)
 
         now_ct = datetime.now(central)
@@ -958,6 +956,10 @@ if sport_choice == "Table Tennis":
 
         # --- Apply minimum match filter ---
         df_display = df_display[df_display["Matches"] >= min_matches]
+
+        if df_display.empty:
+            st.info("No upcoming matches meet the filter criteria.")
+            st.stop()
 
         # --- Display table ---
         pinned_cols = ["Player 1", "Player 2", "Date"]

@@ -49,9 +49,9 @@ def load_tt_raw_data(league):
     matchlogs.sort_values("date", ascending=False, inplace=True)
 
     # --- Compute winner column in matchlogs ---
-    matchlogs["winner"] = matchlogs.apply(
-        lambda row: row["player1"] if row["sets1"] > row["sets2"] else row["player2"],
-        axis=1
+    matchlogs["winner"] = matchlogs["player1"].where(
+        matchlogs["sets1"] > matchlogs["sets2"],
+        matchlogs["player2"]
     )
 
     return schedule, matchlogs, h2h
@@ -120,6 +120,7 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
             "sweeps_a": 0,
             "sweeps_b": 0,
             "non_sweep_pct": 0
+            "avg_total_sets": 0
         }
 
     # Count wins
