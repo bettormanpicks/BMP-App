@@ -36,16 +36,10 @@ def load_tt_raw_data(league):
     # --- Date parsing + normalization ---
 
     if "date" in schedule.columns:
-        schedule["date"] = (
-            pd.to_datetime(schedule["date"], errors="coerce", utc=True)
-            .dt.tz_convert(None)
-        )
+        schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
 
     if "date" in matchlogs.columns:
-        matchlogs["date"] = (
-            pd.to_datetime(matchlogs["date"], errors="coerce", utc=True)
-            .dt.tz_convert(None)
-        )
+        matchlogs["date"] = pd.to_datetime(matchlogs["date"], errors="coerce")
 
     # --- Drop bad rows ---
     schedule.dropna(subset=["match_id", "date"], inplace=True)
