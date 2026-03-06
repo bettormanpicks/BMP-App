@@ -119,7 +119,7 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
             "last_played": None,
             "sweeps_a": 0,
             "sweeps_b": 0,
-            "non_sweep_pct": 0
+            "non_sweep_pct": 0,
             "avg_total_sets": 0
         }
 
