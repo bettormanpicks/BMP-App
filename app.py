@@ -905,16 +905,11 @@ if sport_choice == "Table Tennis":
     # --- Calculate / Build Display Table ---
     if calculate:
 
-        # Upcoming schedule view
-        central = pytz.timezone("America/Chicago")
+        schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
 
-        # Convert to Central for filtering/display
-        schedule = schedule.copy()
-        schedule["date_ct"] = schedule["date"].dt.tz_convert(central)
+        now = pd.Timestamp.now()
 
-        now_ct = datetime.now(central)
-
-        upcoming = schedule[schedule["date_ct"] >= now_ct]
+        upcoming = schedule[schedule["date"] >= now]
 
         rows = []
         for _, row in upcoming.iterrows():
