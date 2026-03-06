@@ -931,7 +931,7 @@ if sport_choice == "Table Tennis":
                 }
 
             row_dict = {
-                "Date": row["date_ct"].strftime("%Y-%m-%d %H:%M"),
+                "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
                 "Player 1": p1,
                 "Player 2": p2,
                 "Matches": stats["matches"],
