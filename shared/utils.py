@@ -4,8 +4,12 @@ import pandas as pd
 import math
 from datetime import datetime, timedelta
 import pytz
+import os
 import streamlit as st
 from typing import Iterable, Union
+
+def file_cache_key(path):
+    return os.path.getmtime(path)
 
 def get_central_today():
     from datetime import datetime
