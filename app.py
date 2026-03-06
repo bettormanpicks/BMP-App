@@ -881,7 +881,6 @@ if sport_choice == "Table Tennis":
     )
 
     schedule, matchlogs, h2h = load_tt_raw_data(league)
-
     h2h_index = build_h2h_index(matchlogs)
 
     # --- Sidebar Filters ---
@@ -889,7 +888,6 @@ if sport_choice == "Table Tennis":
 
         recency_window = st.radio("Recency Window", ["L10", "L30", "ALL"], index=1)
 
-        # --- Minimum Matches Slider ---
         min_matches = st.slider(
             "Minimum H2H Matches",
             min_value=5,
@@ -905,18 +903,10 @@ if sport_choice == "Table Tennis":
     # --- Calculate / Build Display Table ---
     if calculate:
 
-        # Treat CSV times as UTC
-        utc = pytz.utc
-        central = pytz.timezone("America/Chicago")
-
+        # CSV times are already CST, just parse as naive datetime
         schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
-        schedule["date_utc"] = schedule["date"].dt.tz_localize(utc)
-
-        # Convert to Central Time for display
-        schedule["date_ct"] = schedule["date_utc"].dt.tz_convert(central)
-
-        now_ct = datetime.now(central)
-        upcoming = schedule[schedule["date_ct"] >= now_ct]
+        now = pd.Timestamp.now()
+        upcoming = schedule[schedule["date"] >= now]
 
         rows = []
         for _, row in upcoming.iterrows():
@@ -938,7 +928,7 @@ if sport_choice == "Table Tennis":
                 }
 
             row_dict = {
-                "Date": row["date_ct"].strftime("%Y-%m-%d %H:%M"),
+                "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
                 "Player 1": p1,
                 "Player 2": p2,
                 "Matches": stats["matches"],
