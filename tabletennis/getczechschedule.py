@@ -1,10 +1,12 @@
 import asyncio
 import pandas as pd
+import os
 from datetime import datetime
 from playwright.async_api import async_playwright
 
 BASE_URL = "https://betsapi.com/table-tennis/ls/22742/Czech-Liga-Pro"
-OUTPUT_FILE = "data/tt_czech_schedule.csv"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_CSV = os.path.join(BASE_DIR, "data", "tt_czech_schedule.csv")
 
 CHROME_PROFILE_PATH = r"C:\playwright_profiles\ttelite"
 
@@ -129,8 +131,8 @@ async def scrape_schedule():
     df.dropna(subset=["date"], inplace=True)
     df.sort_values("date", inplace=True)
 
-    df.to_csv(OUTPUT_FILE, index=False)
-    print(f"Done. Saved {len(df)} matches to {OUTPUT_FILE}")
+    df.to_csv(OUTPUT_CSV, index=False)
+    print(f"Done. Saved {len(df)} matches to {OUTPUT_CSV}")
 
 if __name__ == "__main__":
     asyncio.run(scrape_schedule())
