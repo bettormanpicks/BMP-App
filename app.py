@@ -905,15 +905,17 @@ if sport_choice == "Table Tennis":
     # --- Calculate / Build Display Table ---
     if calculate:
 
-        # --- Parse schedule dates as naive Czech time ---
+        # Parse as datetime
         schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
 
-        # --- Make them timezone-aware as CET/CEST ---
+        # Localize to Czech time
         czech = pytz.timezone("Europe/Prague")
-        schedule["date_ct"] = schedule["date"].apply(lambda x: czech.localize(x))
+        schedule["date_ctz"] = schedule["date"].apply(lambda x: czech.localize(x))
 
-        # --- Now compare with current Prague time ---
-        now_ct = datetime.now(czech)
+        central = pytz.timezone("America/Chicago")
+        schedule["date_ct"] = schedule["date_ctz"].dt.tz_convert(central)
+
+        now_ct = datetime.now(central)
         upcoming = schedule[schedule["date_ct"] >= now_ct]
 
         rows = []
@@ -935,9 +937,8 @@ if sport_choice == "Table Tennis":
                     "avg_total_sets": 0
                 }
 
-            central = pytz.timezone("America/Chicago")
             row_dict = {
-                "Date": row["date_ct"] = row["date_ct"].dt.tz_convert(central),
+                "Date": row["date_ct"].strftime("%Y-%m-%d %H:%M"),
                 "Player 1": p1,
                 "Player 2": p2,
                 "Matches": stats["matches"],
