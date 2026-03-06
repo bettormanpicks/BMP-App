@@ -911,7 +911,11 @@ if sport_choice == "Table Tennis":
 
         # --- Localize schedule dates to CST (make timezone-aware) ---
         central = pytz.timezone("America/Chicago")
-        schedule["date"] = schedule["date"].dt.tz_localize(central)
+        schedule["date"] = schedule["date"].dt.tz_localize(
+            central,
+            nonexistent="shift_forward",  # handles spring DST
+            ambiguous="NaT"               # handles fall DST
+        )
 
         # --- Current CST time (timezone-aware) ---
         now_ct = pd.Timestamp.now(central)
