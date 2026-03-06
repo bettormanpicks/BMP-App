@@ -2,6 +2,7 @@ import asyncio
 import pandas as pd
 import os
 import re
+from bs4 import BeautifulSoup
 from datetime import datetime
 from playwright.async_api import async_playwright
 
@@ -67,32 +68,38 @@ async def scrape_schedule():
                 )
 
             print(f"Scraping page {page_num}")
-            rows = await page.query_selector_all("table tbody tr")
+            # Freeze table HTML to avoid DOM updates mid-scrape
+            table_html = await page.inner_html("table tbody")
+
+            soup = BeautifulSoup(table_html, "html.parser")
+            rows = soup.select("tr")
+
             for row in rows:
-                cols = await row.query_selector_all("td")
+                cols = row.select("td")
                 if len(cols) < 4:
                     continue
 
                 # --- DATE as rendered in browser ---
-                date_text = (await cols[0].inner_text()).strip()
+                date_text = cols[0].get_text(strip=True)
 
                 # Skip rows that show scores instead of dates or empty strings
                 if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
                     continue
 
                 # --- PLAYERS ---
-                matchup_links = await cols[2].query_selector_all("a")
-                if len(matchup_links) < 2:
+                players = cols[2].select("a")
+                if len(players) < 2:
                     continue
-                player1 = (await matchup_links[0].inner_text()).strip()
-                player2 = (await matchup_links[1].inner_text()).strip()
+
+                player1 = players[0].get_text(strip=True)
+                player2 = players[1].get_text(strip=True)
 
                 # --- MATCH ID ---
-                match_link = await cols[3].query_selector("a")
                 match_id = None
 
+                match_link = cols[3].select_one("a")
                 if match_link:
-                    href = await match_link.get_attribute("href")
+                    href = match_link.get("href")
                     if href:
                         m = re.search(r"\d+", href)
                         if m:
@@ -119,16 +126,11 @@ async def scrape_schedule():
 
     current_year = datetime.now().year
 
-    # Convert browser-rendered times (already local CST) into timestamps
-    def parse_browser_time(x):
-        # BetsAPI shows dates as MM/DD HH:MM
-        try:
-            dt = datetime.strptime(f"{x} {current_year}", "%m/%d %H:%M %Y")
-            return dt
-        except:
-            return pd.NaT
+    # Append year to browser date text
+    df["date"] = df["date"] + f" {current_year}"
 
-    df["date"] = df["date"].apply(parse_browser_time)
+    # Let pandas parse it directly
+    df["date"] = pd.to_datetime(df["date"], format="%m/%d %H:%M %Y", errors="coerce")
     df.dropna(subset=["date"], inplace=True)
     df.sort_values("date", inplace=True)
 

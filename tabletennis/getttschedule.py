@@ -67,32 +67,35 @@ async def scrape_schedule():
                 )
 
             print(f"Scraping page {page_num}")
-            rows = await page.query_selector_all("table tbody tr")
+            await page.wait_for_timeout(1000)
+
+            rows = await page.locator("table tbody tr").all()
+
             for row in rows:
-                cols = await row.query_selector_all("td")
+                cols = await row.locator("td").all()
+
                 if len(cols) < 4:
                     continue
 
-                # --- DATE as rendered in browser ---
+                # --- DATE exactly as shown in browser ---
                 date_text = (await cols[0].inner_text()).strip()
 
-                # Skip rows that show scores instead of dates or empty strings
                 if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
                     continue
 
                 # --- PLAYERS ---
-                matchup_links = await cols[2].query_selector_all("a")
-                if len(matchup_links) < 2:
+                players = await cols[2].locator("a").all()
+                if len(players) < 2:
                     continue
-                player1 = (await matchup_links[0].inner_text()).strip()
-                player2 = (await matchup_links[1].inner_text()).strip()
+
+                player1 = (await players[0].inner_text()).strip()
+                player2 = (await players[1].inner_text()).strip()
 
                 # --- MATCH ID ---
-                match_link = await cols[3].query_selector("a")
                 match_id = None
-
-                if match_link:
-                    href = await match_link.get_attribute("href")
+                link = cols[3].locator("a").first
+                if await link.count() > 0:
+                    href = await link.get_attribute("href")
                     if href:
                         m = re.search(r"\d+", href)
                         if m:
@@ -119,16 +122,11 @@ async def scrape_schedule():
 
     current_year = datetime.now().year
 
-    # Convert browser-rendered times (already local CST) into timestamps
-    def parse_browser_time(x):
-        # BetsAPI shows dates as MM/DD HH:MM
-        try:
-            dt = datetime.strptime(f"{x} {current_year}", "%m/%d %H:%M %Y")
-            return dt
-        except:
-            return pd.NaT
+    # Append year to browser date text
+    df["date"] = df["date"] + f" {current_year}"
 
-    df["date"] = df["date"].apply(parse_browser_time)
+    # Let pandas parse it directly
+    df["date"] = pd.to_datetime(df["date"], format="%m/%d %H:%M %Y", errors="coerce")
     df.dropna(subset=["date"], inplace=True)
     df.sort_values("date", inplace=True)
 
