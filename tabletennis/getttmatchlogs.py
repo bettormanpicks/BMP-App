@@ -8,7 +8,7 @@ import pandas as pd
 from datetime import datetime
 from playwright.async_api import async_playwright
 
-BASE_URL = "https://betsapi.com/le/29128/TT-Elite-Series"
+BASE_URL = "https://betsapi.com/table-tennis/le/29128/TT-Elite-Series"
 OUTPUT_CSV = "data/tt_elite_matchlogs.csv"
 
 # Same persistent profile (keeps Cloudflare clearance)
@@ -112,10 +112,12 @@ async def scrape_history(start_page=1,
                     else:
                         print(f"Clicking page {page_num}...")
 
-                        await page.click(f'a[href*="p.{page_num}"]')
+                        await page.locator(f'a[href*="p.{page_num}"]').first.click(force=True)
+                        await page.wait_for_timeout(1200)
 
                         # Wait for table rows to reappear after AJAX reload
-                        await page.wait_for_selector("table tbody tr", timeout=60000)
+                        await page.wait_for_selector("table", timeout=60000)
+                        await page.wait_for_selector("table tbody tr >> nth=0", timeout=60000)
 
                         # Small buffer for stability
                         await page.wait_for_timeout(1000)
