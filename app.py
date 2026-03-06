@@ -905,14 +905,15 @@ if sport_choice == "Table Tennis":
     # --- Calculate / Build Display Table ---
     if calculate:
 
-        # Parse as datetime
-        schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
-
-        # Localize to Czech time
+        # CSV times are Czech local
         czech = pytz.timezone("Europe/Prague")
-        schedule["date_ctz"] = schedule["date"].apply(lambda x: czech.localize(x))
-
         central = pytz.timezone("America/Chicago")
+
+        # Make schedule["date"] timezone-aware (Czech time)
+        schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
+        schedule["date_ctz"] = schedule["date"].apply(lambda x: czech.localize(x, is_dst=None))
+
+        # Convert to Central Time
         schedule["date_ct"] = schedule["date_ctz"].dt.tz_convert(central)
 
         now_ct = datetime.now(central)
