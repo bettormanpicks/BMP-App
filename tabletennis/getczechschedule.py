@@ -15,27 +15,21 @@ async def scrape_schedule():
         context = await p.chromium.launch_persistent_context(
             CHROME_PROFILE_PATH,
             headless=False,
-            args=[
-                "--disable-blink-features=AutomationControlled"
-            ]
+            args=["--disable-blink-features=AutomationControlled"]
         )
 
-        # Block Google vignette / ad network requests
-        await context.route(
-            "**/*",
-            lambda route, request: (
-                route.abort() if any(x in request.url for x in ["google", "doubleclick"]) else route.continue_()
-            )
-        )
+        # Block ads
+        await context.route("**/*", lambda route, request: (
+            route.abort() if any(x in request.url for x in ["google", "doubleclick"]) else route.continue_()
+        ))
 
         page = context.pages[0] if context.pages else await context.new_page()
 
-        # -------------------------
-        # Detect total pages automatically
-        # -------------------------
+        # Load first page
         await page.goto(BASE_URL, timeout=60000)
         await page.wait_for_selector("table", timeout=60000)
 
+        # Detect pagination
         pagination_links = await page.query_selector_all('a[href*="/p."]')
         max_page = 1
         for link in pagination_links:
@@ -59,10 +53,8 @@ async def scrape_schedule():
                 await page.wait_for_selector("table", timeout=60000)
             else:
                 print(f"Clicking page {page_num}")
-                # Click the pagination link
                 old_first_row = await page.locator("table tbody tr").first.inner_text()
                 await page.click(f'a[href*="p.{page_num}"]')
-                # Wait until the first row changes (AJAX load)
                 await page.wait_for_function(
                     """(oldText) => {
                         const row = document.querySelector("table tbody tr");
@@ -72,21 +64,23 @@ async def scrape_schedule():
                 )
 
             print(f"Scraping page {page_num}")
-
             rows = await page.query_selector_all("table tbody tr")
             for row in rows:
                 cols = await row.query_selector_all("td")
                 if len(cols) < 4:
                     continue
 
-                # --- DATE ---
+                # --- DATE as rendered in browser ---
                 date_text = (await cols[0].inner_text()).strip()
+
+                # Skip rows that show scores instead of dates or empty strings
+                if not date_text or not date_text[0].isdigit():
+                    continue
 
                 # --- PLAYERS ---
                 matchup_links = await cols[2].query_selector_all("a")
                 if len(matchup_links) < 2:
                     continue
-
                 player1 = (await matchup_links[0].inner_text()).strip()
                 player2 = (await matchup_links[1].inner_text()).strip()
 
@@ -113,25 +107,26 @@ async def scrape_schedule():
         await context.close()
 
     # -------------------------
-    # Convert to DataFrame and clean dates
+    # Convert to DataFrame
     # -------------------------
     df = pd.DataFrame(all_matches)
-
     if df.empty:
         print("No matches scraped.")
         return
 
     current_year = datetime.now().year
 
-    def parse_date(x):
-        x = x.replace("-", "/")
-        if len(x.split()) == 1:
-            x += " 00:00"
-        x = f"{x} {current_year}"
-        return pd.to_datetime(x, errors="coerce")
+    # Convert browser-rendered times (already local CST) into timestamps
+    def parse_browser_time(x):
+        # BetsAPI shows dates as MM/DD HH:MM
+        try:
+            dt = datetime.strptime(f"{x} {current_year}", "%m/%d %H:%M %Y")
+            return dt
+        except:
+            return pd.NaT
 
-    df["date"] = df["date"].apply(parse_date)
-    df = df.dropna(subset=["date"])
+    df["date"] = df["date"].apply(parse_browser_time)
+    df.dropna(subset=["date"], inplace=True)
     df.sort_values("date", inplace=True)
 
     df.to_csv(OUTPUT_FILE, index=False)
