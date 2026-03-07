@@ -40,13 +40,10 @@ def clean_name(name: str) -> str:
 def generate_name_keys(name: str) -> set:
     """
     Produce multiple identity fingerprints for a tennis player name.
-    This allows matching:
-    Etcheverry T.
-    T. Etcheverry
-    Tomas Martin Etcheverry
-    Etcheverry T. M.
-    Martinez Portero P.
-    Portero P.
+    Handles:
+    - initials
+    - double surnames
+    - reversed first/last order
     """
 
     cleaned = clean_name(name)
@@ -58,39 +55,49 @@ def generate_name_keys(name: str) -> set:
 
     keys = set()
 
-    # -------- Full name --------
-    keys.add("".join(parts))
+    def build_keys(p):
+        """Generate keys assuming first name first"""
+        local_keys = set()
 
-    # -------- Single word (rare but safe) --------
-    if len(parts) == 1:
-        keys.add(parts[0])
-        return keys
+        # full name
+        local_keys.add("".join(p))
 
-    # -------- Assume first name first --------
-    first = parts[0]
-    first_initial = first[0]
+        if len(p) == 1:
+            local_keys.add(p[0])
+            return local_keys
 
-    # possible surnames
-    surname_full = "".join(parts[1:])
-    surname_last = parts[-1]
+        first = p[0]
+        first_initial = first[0]
 
-    # 1) surname + first initial  (Etcheverry T.)
-    keys.add(surname_last + first_initial)
+        surname_full = "".join(p[1:])
+        surname_last = p[-1]
 
-    # 2) full surname + first initial (MartinezPortero P.)
-    keys.add(surname_full + first_initial)
+        # surname + first initial
+        local_keys.add(surname_last + first_initial)
 
-    # 3) initial + surname (T Etcheverry)
-    keys.add(first_initial + surname_last)
+        # compound surname + first initial
+        local_keys.add(surname_full + first_initial)
 
-    # 4) initials + surname (T M Etcheverry)
-    initials = "".join(p[0] for p in parts[:-1])
-    keys.add(initials + surname_last)
+        # initial + surname
+        local_keys.add(first_initial + surname_last)
 
-    # 5) surname only (betting feeds sometimes)
-    keys.add(surname_last)
+        # initials + surname
+        initials = "".join(x[0] for x in p[:-1])
+        local_keys.add(initials + surname_last)
 
-    # 6) full surname only (double surname protection)
-    keys.add(surname_full)
+        # surname only
+        local_keys.add(surname_last)
+
+        # compound surname only
+        local_keys.add(surname_full)
+
+        return local_keys
+
+    # Normal order
+    keys |= build_keys(parts)
+
+    # Reversed order (important for Asian names)
+    if len(parts) == 2:
+        keys |= build_keys(parts[::-1])
 
     return keys

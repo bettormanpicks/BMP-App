@@ -196,7 +196,18 @@ def resolve_player(name):
     # 4) If still unknown → generate new ID
     # --------------------------------------------------
     if new_id is None:
-        tour = "ATP"  # fallback
+
+        # Try to infer tour from opponent
+        opponent_id = schedule.loc[schedule["Player 1"] == name, "opponent_id"].values
+        if len(opponent_id) > 0 and pd.notna(opponent_id[0]):
+            opponent_tour = infer_tour(opponent_id[0])
+            if opponent_tour:
+                tour = opponent_tour
+            else:
+                tour = "ATP"
+        else:
+            tour = "ATP"
+
         new_id = generate_new_id(tour, players['player_id'])
 
     # --------------------------------------------------
