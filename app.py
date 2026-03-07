@@ -983,11 +983,11 @@ if sport_choice == "Table Tennis":
         df_display = df.rename(columns=DISPLAY_NAMES)
 
         # --- Display table ---
-        pinned_cols = ["Player 1", "Player 2", "Date"]
+        pinned_cols = ["Player 1", "Player 2", "Match Start"]
         col_config = {c: st.column_config.Column(pinned="left") for c in pinned_cols}
 
         st.dataframe(
-            df_display.sort_values("Date"),
+            df_display.sort_values("Match Start"),
             width="stretch",
             hide_index=True,
             column_config=col_config
