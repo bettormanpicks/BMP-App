@@ -39,6 +39,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install pandas selenium webdriver-manager unidecode pytz lxml beautifulsoup4
 
+      # STEP 0 — prepare repo (reset before scraping)
+      - name: Prepare repo
+        run: |
+          git fetch origin main
+          git reset --hard origin/main
+
       # STEP 1 — scrape schedule
       - name: Run tennis schedule scraper
         run: |
@@ -49,7 +55,7 @@ jobs:
         run: |
           python -u tennis/resolve_tennis_player.py
 
-      # STEP 3 — commit updated CSVs
+      # STEP 3 — commit & push updated CSVs
       - name: Commit & Push Updated CSVs
         run: |
           git config user.name "github-actions[bot]"
@@ -60,9 +66,6 @@ jobs:
 
           for i in $(seq 1 $MAX_RETRIES); do
             echo "Attempt $i to push changes..."
-
-            git fetch origin main
-            git reset --hard origin/main
 
             git add tennis/data/tennis_schedule.csv
             git add tennis/data/tennis_schedule_resolved.csv
