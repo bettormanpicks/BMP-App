@@ -969,6 +969,7 @@ if sport_choice == "Table Tennis":
             st.stop()
 
         DISPLAY_NAMES = {
+            "Date": "Match Starts",
             "Matches": "M",
             "Non Sweep %": "NS%",
             "Avg Total Sets": "ATS",
