@@ -959,14 +959,14 @@ if sport_choice == "Table Tennis":
 
             rows.append(row_dict)
 
-            df = pd.DataFrame(rows)
+        df = pd.DataFrame(rows)
 
-            # --- Apply minimum match filter ---
-            df = df[df["Matches"] >= min_matches]
+        # --- Apply minimum match filter ---
+        df = df[df["Matches"] >= min_matches]
 
-            if df.empty:
-                st.info("No upcoming matches meet the filter criteria.")
-                st.stop()
+        if df.empty:
+            st.info("No upcoming matches meet the filter criteria.")
+            st.stop()
 
         DISPLAY_NAMES = {
             "Matches": "M",
