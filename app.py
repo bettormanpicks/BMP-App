@@ -943,7 +943,7 @@ if sport_choice == "Table Tennis":
                 }
 
             row_dict = {
-                "Date": row["date"].strftime("%Y-%m-%d %H:%M"),  # display in CST
+                "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
                 "Player 1": p1,
                 "Player 2": p2,
                 "Matches": stats["matches"],
@@ -959,14 +959,27 @@ if sport_choice == "Table Tennis":
 
             rows.append(row_dict)
 
-        df_display = pd.DataFrame(rows)
+            df = pd.DataFrame(rows)
 
-        # --- Apply minimum match filter ---
-        df_display = df_display[df_display["Matches"] >= min_matches]
+            # --- Apply minimum match filter ---
+            df = df[df["Matches"] >= min_matches]
 
-        if df_display.empty:
-            st.info("No upcoming matches meet the filter criteria.")
-            st.stop()
+            if df.empty:
+                st.info("No upcoming matches meet the filter criteria.")
+                st.stop()
+
+        DISPLAY_NAMES = {
+            "Matches": "M",
+            "Non Sweep %": "NS%",
+            "Avg Total Sets": "ATS",
+            "P1 Sweeps": "P1 S",
+            "P2 Sweeps": "P2 S",
+            "P1 Wins": "P1 W",
+            "P2 Wins": "P2 W",
+            "Win % (P1)": "P1 W%",
+        }
+
+        df_display = df.rename(columns=DISPLAY_NAMES)
 
         # --- Display table ---
         pinned_cols = ["Player 1", "Player 2", "Date"]
