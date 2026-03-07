@@ -293,11 +293,39 @@ aliases.to_csv(ALIASES_FILE, index=False)       # already fixed
 
 schedule["Tour"] = schedule["player_id"].apply(infer_tour)
 
-if (
-    schedule["player_id"].fillna("").str[:3] 
+mismatch_mask = (
+    schedule["player_id"].fillna("").str[:3]
     != schedule["opponent_id"].fillna("").str[:3]
-).any():
+)
+
+if mismatch_mask.any():
     print("WARNING: Mixed tours detected")
+
+    for idx, row in schedule[mismatch_mask].iterrows():
+
+        p1 = row["player_id"]
+        p2 = row["opponent_id"]
+
+        if pd.isna(p1) or pd.isna(p2):
+            continue
+
+        tour1 = p1.split("_")[0]
+        tour2 = p2.split("_")[0]
+
+        id1_num = int(p1.split("_")[1])
+        id2_num = int(p2.split("_")[1])
+
+        # If player1 is a generated ID
+        if id1_num >= 9000:
+            corrected = f"{tour2}_{id1_num}"
+            print(f"[AUTO-FIX] {p1} -> {corrected}")
+            schedule.at[idx, "player_id"] = corrected
+
+        # If player2 is a generated ID
+        elif id2_num >= 9000:
+            corrected = f"{tour1}_{id2_num}"
+            print(f"[AUTO-FIX] {p2} -> {corrected}")
+            schedule.at[idx, "opponent_id"] = corrected
 
 tournaments = pd.read_csv(os.path.join(DATA_DIR, "tournament_list.csv"), dtype=str)
 
