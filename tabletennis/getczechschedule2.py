@@ -2,7 +2,6 @@ import asyncio
 import pandas as pd
 import os
 import re
-from bs4 import BeautifulSoup
 from datetime import datetime
 from playwright.async_api import async_playwright
 
@@ -68,38 +67,35 @@ async def scrape_schedule():
                 )
 
             print(f"Scraping page {page_num}")
-            # Freeze table HTML to avoid DOM updates mid-scrape
-            table_html = await page.inner_html("table tbody")
+            await page.wait_for_timeout(1000)
 
-            soup = BeautifulSoup(table_html, "html.parser")
-            rows = soup.select("tr")
+            rows = await page.locator("table tbody tr").all()
 
             for row in rows:
-                cols = row.select("td")
+                cols = await row.locator("td").all()
+
                 if len(cols) < 4:
                     continue
 
-                # --- DATE as rendered in browser ---
-                date_text = cols[0].get_text(strip=True)
+                # --- DATE exactly as shown in browser ---
+                date_text = (await cols[0].inner_text()).strip()
 
-                # Skip rows that show scores instead of dates or empty strings
                 if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
                     continue
 
                 # --- PLAYERS ---
-                players = cols[2].select("a")
+                players = await cols[2].locator("a").all()
                 if len(players) < 2:
                     continue
 
-                player1 = players[0].get_text(strip=True)
-                player2 = players[1].get_text(strip=True)
+                player1 = (await players[0].inner_text()).strip()
+                player2 = (await players[1].inner_text()).strip()
 
                 # --- MATCH ID ---
                 match_id = None
-
-                match_link = cols[3].select_one("a")
-                if match_link:
-                    href = match_link.get("href")
+                link = cols[3].locator("a").first
+                if await link.count() > 0:
+                    href = await link.get_attribute("href")
                     if href:
                         m = re.search(r"\d+", href)
                         if m:
