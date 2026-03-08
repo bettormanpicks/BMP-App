@@ -1,4 +1,4 @@
-# gettt_czech_matchlogs.py
+# getczechmatchlogs.py
 
 import asyncio
 import csv
@@ -8,9 +8,9 @@ import pandas as pd
 from datetime import datetime
 from playwright.async_api import async_playwright
 
-BASE_URL = "https://betsapi.com/table-tennis/le/29128/TT-Elite-Series"
+BASE_URL = "https://betsapi.com/table-tennis/le/22742/Czech-Liga-Pro"
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_CSV = os.path.join(BASE_DIR, "data", "tt_elite_matchlogs.csv")
+OUTPUT_CSV = os.path.join(BASE_DIR, "data", "tt_czech_matchlogs.csv")
 
 # Same persistent profile (keeps Cloudflare clearance)
 CHROME_PROFILE_PATH = r"C:\playwright_profiles\ttelite"
@@ -70,7 +70,7 @@ def resort_csv():
 # Playwright Scraper
 # -------------------------
 async def scrape_history(start_page=1,
-                         end_page=25,
+                         end_page=9,
                          min_delay=3,
                          max_delay=7):
 
@@ -154,8 +154,13 @@ async def scrape_history(start_page=1,
             rows = await page.query_selector_all("table tbody tr")
 
             for row in rows:
+                row_text = await row.inner_text()
+                if "Denis Hofman v Milan Klement" in row_text:
+                    print("DEBUG TARGET ROW:", row_text)
                 cols = await row.query_selector_all("td")
                 if len(cols) < 4:
+                    if "Denis Hofman v Milan Klement" in row_text:
+                        print("SKIPPED: NOT ENOUGH COLS")
                     continue
 
                 date = await cols[0].get_attribute("data-dt")
@@ -166,11 +171,15 @@ async def scrape_history(start_page=1,
                     parsed = pd.to_datetime(date, utc=True)
                     parsed = parsed.tz_convert(None)
                     date = parsed.strftime("%Y-%m-%d %H:%M:%S")
-                except:
+                except Exception as e:
+                    if "Denis Hofman v Milan Klement" in row_text:
+                        print("SKIPPED: DATE PARSE FAIL:", date, e)
                     continue
 
                 player_links = await cols[2].query_selector_all("a")
                 if len(player_links) != 2:
+                    if "Denis Hofman v Milan Klement" in row_text:
+                        print("SKIPPED: PLAYER LINK COUNT:", len(player_links))
                     continue
 
                 player1 = normalize_name(await player_links[0].inner_text())
@@ -178,22 +187,34 @@ async def scrape_history(start_page=1,
 
                 score_link = await cols[3].query_selector("a")
                 if not score_link:
+                    if "Denis Hofman v Milan Klement" in row_text:
+                        print("SKIPPED: NO SCORE LINK")
                     continue
 
-                score_text = (await score_link.inner_text()).strip()
+                score_text = (await cols[3].inner_text()).strip()
+
                 if "-" not in score_text:
+                    if "Denis Hofman v Milan Klement" in row_text:
+                        print("SKIPPED: SCORE FORMAT:", score_text)
                     continue
 
                 try:
                     sets1, sets2 = map(int, score_text.split("-"))
-                except:
+                except Exception as e:
+                    if "Denis Hofman v Milan Klement" in row_text:
+                        print("SKIPPED: SCORE PARSE FAIL:", score_text, e)
                     continue
 
                 href = await score_link.get_attribute("href")
                 if not href or "/r/" not in href:
+                    if "Denis Hofman v Milan Klement" in row_text:
+                        print("SKIPPED: BAD HREF:", href)
                     continue
 
                 match_id = href.split("/r/")[1].split("/")[0]
+
+                if "Denis Hofman v Milan Klement" in row_text:
+                    print("MATCH ID:", match_id, "EXISTS:", match_id in existing_ids)
 
                 if match_id not in existing_ids:
                     buffer.append({
@@ -329,5 +350,5 @@ async def scrape_history(start_page=1,
 if __name__ == "__main__":
     asyncio.run(scrape_history(
         start_page=1,
-        end_page=25
+        end_page=9
     ))

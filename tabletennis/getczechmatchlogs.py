@@ -70,7 +70,7 @@ def resort_csv():
 # Playwright Scraper
 # -------------------------
 async def scrape_history(start_page=1,
-                         end_page=8,
+                         end_page=25,
                          min_delay=3,
                          max_delay=7):
 
@@ -193,7 +193,7 @@ async def scrape_history(start_page=1,
                 if not href or "/r/" not in href:
                     continue
 
-                match_id = href.split("/")[2]
+                match_id = href.split("/r/")[1].split("/")[0]
 
                 if match_id not in existing_ids:
                     buffer.append({
@@ -329,5 +329,5 @@ async def scrape_history(start_page=1,
 if __name__ == "__main__":
     asyncio.run(scrape_history(
         start_page=1,
-        end_page=8
+        end_page=25
     ))

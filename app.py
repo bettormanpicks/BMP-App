@@ -970,7 +970,7 @@ if sport_choice == "Table Tennis":
 
         DISPLAY_NAMES = {
             "Date": "Match Start",
-            "Matches": "M",
+            "Matches": "Ms",
             "Non Sweep %": "NS%",
             "Avg Total Sets": "ATS",
             "P1 Sweeps": "P1 S",

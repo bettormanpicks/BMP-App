@@ -81,7 +81,6 @@ async def scrape_schedule():
 
                 # --- DATE as rendered in browser ---
                 date_text = cols[0].get_text(strip=True)
-                print("DATE TEXT:", date_text)
 
                 # Skip rows that show scores instead of dates or empty strings
                 if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
