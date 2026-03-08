@@ -1,7 +1,6 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-03-07,Live,BNP Paribas Open,Marta Kostyuk,Taylor Townsend,wta_26,wta_116,WTA,Hard
 2026-03-07,Live,BNP Paribas Open,Laura Siegemund,Elina Svitolina,wta_52,wta_9,WTA,Hard
-2026-03-07,Final,BNP Paribas Open,Kayla Day,Iga Swiatek,wta_194,wta_2,WTA,Hard
+2026-03-07,Final,BNP Paribas Open,Kayla Day,Iga Swiatek,wta_197,wta_2,WTA,Hard
 2026-03-07,Final,BNP Paribas Open,Hailey Baptiste,Elena Rybakina,wta_44,wta_3,WTA,Hard
 2026-03-07,Final,BNP Paribas Open,Jessica Pegula,Donna Vekic,wta_5,wta_99,WTA,Hard
 2026-03-07,Final,BNP Paribas Open,Mirra Andreeva,Solana Sierra,wta_7,wta_64,WTA,Hard
@@ -11,27 +10,42 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-07,Final,BNP Paribas Open,Liudmila Samsonova,Ashlyn Krueger,wta_18,wta_100,WTA,Hard
 2026-03-07,Final,BNP Paribas Open,Sonay Kartal,Emma Navarro,wta_51,wta_19,WTA,Hard
 2026-03-07,Final,BNP Paribas Open,Elise Mertens,Cristina Bucsa,wta_22,wta_62,WTA,Hard
-2026-03-07,Final,BNP Paribas Open,Antonia Ruzic,Zheng Qinwen,wta_67,wta_23,WTA,Hard
+2026-03-07,Final,BNP Paribas Open,Antonia Ruzic,Zheng Qinwen,wta_67,wta_372,WTA,Hard
 2026-03-07,Final,BNP Paribas Open,Katie Volynets,Jelena Ostapenko,wta_96,wta_27,WTA,Hard
 2026-03-07,Final,BNP Paribas Open,Katerina Siniakova,Leylah Fernandez,wta_46,wta_28,WTA,Hard
+2026-03-07,Final,BNP Paribas Open,Marta Kostyuk,Taylor Townsend,wta_26,wta_116,WTA,Hard
 2026-03-07,Final,BNP Paribas Open,Maria Sakkari,Lilli Tagger,wta_33,wta_114,WTA,Hard
-2026-03-07,Live,BNP Paribas Open,Alexander Bublik,Vit Kopriva,atp_10,atp_87,ATP,Hard
-2026-03-07,Live,BNP Paribas Open,Ugo Humbert,Alex Michelsen,atp_38,atp_41,ATP,Hard
-2026-03-07,Live,BNP Paribas Open,Daniil Medvedev,Alejandro Tabilo,atp_11,atp_67,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Carlos Alcaraz,Grigor Dimitrov,atp_1,atp_42,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Novak Djokovic,Kamil Majchrzak,atp_3,atp_56,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Sebastian Korda,Alex De Minaur,atp_49,atp_8,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Jacob Fearnley,Taylor Fritz,atp_84,atp_7,ATP,Hard
+2026-03-07,Final,BNP Paribas Open,Alexander Bublik,Vit Kopriva,atp_10,atp_87,ATP,Hard
+2026-03-07,Final,BNP Paribas Open,Daniil Medvedev,Alejandro Tabilo,atp_11,atp_67,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Alexander Shevchenko,Casper Ruud,atp_79,atp_13,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Roberto Bautista Agut,Jack Draper,atp_82,atp_12,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Karen Khachanov,Joao Fonseca,atp_17,atp_37,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Andrey Rublev,Gabriel Diallo,atp_14,atp_39,ATP,Hard
-2026-03-07,Final,BNP Paribas Open,Francisco Cerundolo,Benjamin Bonzi,atp_19,atp_123,ATP,Hard
+2026-03-07,Final,BNP Paribas Open,Francisco Cerundolo,Benjamin Bonzi,atp_62,atp_123,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Rinky Hijikata,Luciano Darderi,atp_112,atp_22,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Sebastian Baez,Jiri Lehecka,atp_33,atp_21,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Valentin Vacherot,Nuno Borges,atp_26,atp_44,ATP,Hard
 2026-03-07,TBD,BNP Paribas Open,Juan Manuel Cerundolo,Arthur Rinderknech,atp_19,atp_30,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Cameron Norrie,Mackenzie McDonald,atp_27,atp_115,ATP,Hard
 2026-03-07,Final,BNP Paribas Open,Aleksandar Kovacevic,Corentin Moutet,atp_75,atp_34,ATP,Hard
+2026-03-07,Final,BNP Paribas Open,Ugo Humbert,Alex Michelsen,atp_38,atp_41,ATP,Hard
 2026-03-07,Final,Megasaray Hotels Open 2,Oleksandra Oliynykova,Moyuka Uchijima,wta_71,wta_90,WTA,Clay
 2026-03-07,Final,Megasaray Hotels Open 2,Katarzyna Kawa,Anhelina Kalinina,wta_143,wta_191,WTA,Clay
+2026-03-09,TBD,BNP Paribas Open,Marta Kostyuk,Elena Rybakina,wta_26,wta_3,WTA,Hard
+2026-03-09,TBD,BNP Paribas Open,Madison Keys,Sonay Kartal,wta_17,wta_51,WTA,Hard
+2026-03-09,TBD,BNP Paribas Open,Mirra Andreeva,Katerina Siniakova,wta_7,wta_46,WTA,Hard
+2026-03-09,TBD,BNP Paribas Open,Elise Mertens,Belinda Bencic,wta_22,wta_12,WTA,Hard
+2026-03-09,TBD,BNP Paribas Open,Jessica Pegula,Jelena Ostapenko,wta_5,wta_27,WTA,Hard
+2026-03-09,TBD,BNP Paribas Open,Karolina Muchova,Antonia Ruzic,wta_13,wta_67,WTA,Hard
+2026-03-09,TBD,BNP Paribas Open,Maria Sakkari,Iga Swiatek,wta_33,wta_2,WTA,Hard
+2026-03-09,TBD,BNP Paribas Open,Francisco Cerundolo,Jack Draper,atp_62,atp_12,ATP,Hard
+2026-03-09,TBD,BNP Paribas Open,Novak Djokovic,Aleksandar Kovacevic,atp_3,atp_75,ATP,Hard
+2026-03-09,TBD,BNP Paribas Open,Valentin Vacherot,Casper Ruud,atp_26,atp_13,ATP,Hard
+2026-03-09,TBD,BNP Paribas Open,Carlos Alcaraz,Arthur Rinderknech,atp_1,atp_30,ATP,Hard
+2026-03-09,TBD,BNP Paribas Open,Cameron Norrie,Alex De Minaur,atp_27,atp_8,ATP,Hard
+2026-03-09,TBD,BNP Paribas Open,Alexander Bublik,Rinky Hijikata,atp_10,atp_112,ATP,Hard
+2026-03-09,TBD,BNP Paribas Open,Daniil Medvedev,Sebastian Baez,atp_11,atp_33,ATP,Hard
