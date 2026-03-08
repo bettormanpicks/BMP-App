@@ -1,13 +1,13 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-03-08,18:00,BNP Paribas Open,Aryna Sabalenka,Jaqueline Cristian,wta_1,wta_38,WTA,Hard
-2026-03-08,18:00,BNP Paribas Open,Sorana Cirstea,Linda Noskova,wta_30,wta_14,WTA,Hard
-2026-03-08,18:00,BNP Paribas Open,Talia Gibson,Clara Tauson,wta_111,wta_15,WTA,Hard
+2026-03-08,Live,BNP Paribas Open,Sorana Cirstea,Linda Noskova,wta_30,wta_14,WTA,Hard
+2026-03-08,Live,BNP Paribas Open,Talia Gibson,Clara Tauson,wta_111,wta_15,WTA,Hard
+2026-03-08,Live,BNP Paribas Open,Aryna Sabalenka,Jaqueline Cristian,wta_1,wta_38,WTA,Hard
 2026-03-08,19:30,BNP Paribas Open,Ajla Tomljanovic,Jasmine Paolini,wta_73,wta_8,WTA,Hard
 2026-03-08,20:00,BNP Paribas Open,Camila Osorio,Naomi Osaka,wta_63,wta_16,WTA,Hard
 2026-03-08,21:30,BNP Paribas Open,Emma Raducanu,Amanda Anisimova,wta_25,wta_6,WTA,Hard
 2026-03-08,01:00,BNP Paribas Open,Coco Gauff,Alexandra Eala,wta_4,wta_45,WTA,Hard
 2026-03-08,03:00,BNP Paribas Open,Victoria Mboko,Anna Kalinskaya,wta_10,wta_24,WTA,Hard
-2026-03-08,18:00,BNP Paribas Open,Brandon Nakashima,Alexander Zverev,atp_29,atp_4,ATP,Hard
+2026-03-08,Live,BNP Paribas Open,Brandon Nakashima,Alexander Zverev,atp_29,atp_4,ATP,Hard
 2026-03-08,20:00,BNP Paribas Open,Ben Shelton,Learner Tien,atp_9,atp_23,ATP,Hard
 2026-03-08,20:00,BNP Paribas Open,Alejandro Davidovich Fokina,Jakub Mensik,atp_15,atp_16,ATP,Hard
 2026-03-08,21:00,BNP Paribas Open,Marton Fucsovics,Arthur Fils,atp_60,atp_40,ATP,Hard
