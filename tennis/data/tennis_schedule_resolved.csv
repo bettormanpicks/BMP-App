@@ -1,13 +1,13 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-03-08,18:00,BNP Paribas Open,Aryna Sabalenka,Jaqueline Cristian,wta_1,wta_38,WTA,Hard
-2026-03-08,18:00,BNP Paribas Open,Sorana Cirstea,Linda Noskova,wta_30,wta_14,WTA,Hard
-2026-03-08,18:00,BNP Paribas Open,Talia Gibson,Clara Tauson,wta_111,wta_15,WTA,Hard
+2026-03-08,Live,BNP Paribas Open,Sorana Cirstea,Linda Noskova,wta_30,wta_14,WTA,Hard
+2026-03-08,Live,BNP Paribas Open,Talia Gibson,Clara Tauson,wta_111,wta_15,WTA,Hard
+2026-03-08,Live,BNP Paribas Open,Aryna Sabalenka,Jaqueline Cristian,wta_1,wta_38,WTA,Hard
 2026-03-08,19:30,BNP Paribas Open,Ajla Tomljanovic,Jasmine Paolini,wta_73,wta_8,WTA,Hard
 2026-03-08,20:00,BNP Paribas Open,Camila Osorio,Naomi Osaka,wta_63,wta_16,WTA,Hard
 2026-03-08,21:30,BNP Paribas Open,Emma Raducanu,Amanda Anisimova,wta_25,wta_6,WTA,Hard
 2026-03-08,01:00,BNP Paribas Open,Coco Gauff,Alexandra Eala,wta_4,wta_45,WTA,Hard
 2026-03-08,03:00,BNP Paribas Open,Victoria Mboko,Anna Kalinskaya,wta_10,wta_24,WTA,Hard
-2026-03-08,18:00,BNP Paribas Open,Brandon Nakashima,Alexander Zverev,atp_29,atp_4,ATP,Hard
+2026-03-08,Live,BNP Paribas Open,Brandon Nakashima,Alexander Zverev,atp_29,atp_4,ATP,Hard
 2026-03-08,20:00,BNP Paribas Open,Ben Shelton,Learner Tien,atp_9,atp_23,ATP,Hard
 2026-03-08,20:00,BNP Paribas Open,Alejandro Davidovich Fokina,Jakub Mensik,atp_15,atp_16,ATP,Hard
 2026-03-08,21:00,BNP Paribas Open,Marton Fucsovics,Arthur Fils,atp_60,atp_40,ATP,Hard
@@ -16,9 +16,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-08,01:00,BNP Paribas Open,Flavio Cobolli,Frances Tiafoe,atp_20,atp_28,ATP,Hard
 2026-03-08,02:30,BNP Paribas Open,Joao Fonseca,Tommy Paul,atp_37,atp_24,ATP,Hard
 2026-03-08,Final,Megasaray Hotels Open 2,Oleksandra Oliynykova,Anhelina Kalinina,wta_71,wta_191,WTA,Clay
-2026-03-08,Live,Megasaray Hotels Open 3,Mia Ristic,Lisa Pigato,wta_273,wta_193,WTA,
-2026-03-08,Live,Megasaray Hotels Open 3,Dalila Jakupovic,Nuria Parrizas Diaz,wta_385,wta_235,WTA,
+2026-03-08,TBD,Megasaray Hotels Open 3,Dalila Jakupovic,Nuria Parrizas Diaz,wta_385,wta_235,WTA,
 2026-03-08,Final,Megasaray Hotels Open 3,Ekaterina Reyngold,Elena Pridankina,wta_299,wta_192,WTA,
+2026-03-08,Final,Megasaray Hotels Open 3,Mia Ristic,Lisa Pigato,wta_273,wta_466,WTA,
 2026-03-08,Final,Megasaray Hotels Open 3,Anastasia Gasanova,Caroline Werner,wta_189,wta_234,WTA,
 2026-03-08,Final,Megasaray Hotels Open 3,Irem Kurt,Mai Hontama,wta_863,wta_220,WTA,
 2026-03-09,TBD,BNP Paribas Open,Marta Kostyuk,Elena Rybakina,wta_26,wta_3,WTA,Hard
@@ -37,3 +37,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-09,TBD,BNP Paribas Open,Alexander Bublik,Rinky Hijikata,atp_10,atp_112,ATP,Hard
 2026-03-09,TBD,BNP Paribas Open,Daniil Medvedev,Sebastian Baez,atp_11,atp_33,ATP,Hard
 2026-03-09,TBD,BNP Paribas Open,Alex Michelsen,Taylor Fritz,atp_41,atp_7,ATP,Hard
+2026-03-09,07:30,Megasaray Hotels Open 3,Anastasia Gasanova,Mai Hontama,wta_189,wta_220,WTA,
+2026-03-09,07:30,Megasaray Hotels Open 3,Carole Monnet,Lia Karatancheva,wta_177,wta_36,WTA,
+2026-03-09,09:00,Megasaray Hotels Open 3,Katarina Zavatska,Elena Pridankina,wta_310,wta_192,WTA,
+2026-03-09,09:00,Megasaray Hotels Open 3,Dalila Jakupovic,Lisa Pigato,wta_385,wta_466,WTA,
