@@ -1,20 +1,20 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-03-11,18:00,BNP Paribas Open,Karolina Muchova,Iga Swiatek,wta_13,wta_2,WTA,Hard
+2026-03-11,Live,BNP Paribas Open,Karolina Muchova,Iga Swiatek,wta_13,wta_2,WTA,Hard
 2026-03-11,19:30,BNP Paribas Open,Jessica Pegula,Belinda Bencic,wta_5,wta_12,WTA,Hard
 2026-03-11,22:00,BNP Paribas Open,Katerina Siniakova,Elina Svitolina,wta_46,wta_9,WTA,Hard
 2026-03-11,23:30,BNP Paribas Open,Sonay Kartal,Elena Rybakina,wta_51,wta_3,WTA,Hard
-2026-03-11,18:00,BNP Paribas Open,Rinky Hijikata,Cameron Norrie,atp_112,atp_27,ATP,Hard
+2026-03-11,Live,BNP Paribas Open,Rinky Hijikata,Cameron Norrie,atp_112,atp_27,ATP,Hard
 2026-03-11,20:00,BNP Paribas Open,Daniil Medvedev,Alex Michelsen,atp_11,atp_41,ATP,Hard
 2026-03-11,21:00,BNP Paribas Open,Carlos Alcaraz,Casper Ruud,atp_1,atp_13,ATP,Hard
 2026-03-11,01:00,BNP Paribas Open,Novak Djokovic,Jack Draper,atp_3,atp_12,ATP,Hard
-2026-03-11,17:00,Austin 125 2,Bianca Andreescu,Renata Zarazua,wta_161,wta_87,WTA,
-2026-03-11,17:00,Austin 125 2,Anastasia Zakharova,Linda Fruhvirtova,wta_103,wta_118,WTA,
-2026-03-11,17:00,Austin 125 2,Catherine McNally,Lanlana Tararudee,wta_68,wta_124,WTA,
-2026-03-11,18:30,Austin 125 2,Sinja Kraus,Oksana Selekhmeteva,wta_105,wta_74,WTA,
-2026-03-11,18:30,Austin 125 2,Kaja Juvan,McCartney Kessler,wta_92,wta_31,WTA,
-2026-03-11,18:30,Austin 125 2,Emerson Jones,Donna Vekic,wta_152,wta_99,WTA,
+2026-03-11,Live,Austin 125 2,Bianca Andreescu,Renata Zarazua,wta_161,wta_87,WTA,
+2026-03-11,Live,Austin 125 2,Catherine McNally,Lanlana Tararudee,wta_68,wta_124,WTA,
+2026-03-11,Live,Austin 125 2,Emerson Jones,Donna Vekic,wta_152,wta_99,WTA,
+2026-03-11,18:50,Austin 125 2,Sinja Kraus,Oksana Selekhmeteva,wta_105,wta_74,WTA,
+2026-03-11,18:50,Austin 125 2,Kaja Juvan,McCartney Kessler,wta_92,wta_31,WTA,
 2026-03-11,20:00,Austin 125 2,Kimberly Birrell,Kamilla Rakhimova,wta_94,wta_91,WTA,
 2026-03-11,22:00,Austin 125 2,Lulu Sun,Paula Badosa,wta_98,wta_70,WTA,
+2026-03-11,Final,Austin 125 2,Anastasia Zakharova,Linda Fruhvirtova,wta_103,wta_118,WTA,
 2026-03-11,Final,Megasaray Hotels Open 3,Mai Hontama,Julia Grabher,wta_220,wta_80,WTA,
 2026-03-11,Final,Megasaray Hotels Open 3,Panna Udvardy,Leyre Romero Gormaz,wta_93,wta_140,WTA,
 2026-03-11,Final,Megasaray Hotels Open 3,Veronika Erjavec,Ipek Oz,wta_112,wta_523,WTA,
@@ -22,7 +22,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-11,Final,Megasaray Hotels Open 3,Lucia Bronzetti,Nuria Brancaccio,wta_138,wta_164,WTA,
 2026-03-11,Final,Megasaray Hotels Open 3,Anhelina Kalinina,Elena Pridankina,wta_191,wta_192,WTA,
 2026-03-11,Final,Megasaray Hotels Open 3,Alina Charaeva,Lia Karatancheva,wta_163,wta_36,WTA,
-2026-03-12,TBD,BNP Paribas Open,Linda Noskova,Talia Gibson,wta_118,wta_111,WTA,Hard
+2026-03-12,TBD,BNP Paribas Open,Linda Noskova,Talia Gibson,wta_14,wta_111,WTA,Hard
 2026-03-12,TBD,BNP Paribas Open,Aryna Sabalenka,Victoria Mboko,wta_1,wta_10,WTA,Hard
 2026-03-12,TBD,BNP Paribas Open,Arthur Fils,Alexander Zverev,atp_40,atp_4,ATP,Hard
 2026-03-12,TBD,BNP Paribas Open,Learner Tien,Jannik Sinner,atp_23,atp_2,ATP,Hard
