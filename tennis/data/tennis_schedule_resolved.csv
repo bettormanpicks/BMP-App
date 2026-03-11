@@ -12,7 +12,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-11,17:00,Austin 125 2,Catherine McNally,Lanlana Tararudee,wta_68,wta_124,WTA,
 2026-03-11,18:30,Austin 125 2,Sinja Kraus,Oksana Selekhmeteva,wta_105,wta_74,WTA,
 2026-03-11,18:30,Austin 125 2,Kaja Juvan,McCartney Kessler,wta_92,wta_31,WTA,
-2026-03-11,18:30,Austin 125 2,Emerson Jones,Donna Vekic,wta_72,wta_99,WTA,
+2026-03-11,18:30,Austin 125 2,Emerson Jones,Donna Vekic,wta_152,wta_99,WTA,
 2026-03-11,20:00,Austin 125 2,Kimberly Birrell,Kamilla Rakhimova,wta_94,wta_91,WTA,
 2026-03-11,22:00,Austin 125 2,Lulu Sun,Paula Badosa,wta_98,wta_70,WTA,
 2026-03-11,Final,Megasaray Hotels Open 3,Mai Hontama,Julia Grabher,wta_220,wta_80,WTA,
@@ -26,11 +26,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-12,TBD,BNP Paribas Open,Aryna Sabalenka,Victoria Mboko,wta_1,wta_10,WTA,Hard
 2026-03-12,TBD,BNP Paribas Open,Arthur Fils,Alexander Zverev,atp_40,atp_4,ATP,Hard
 2026-03-12,TBD,BNP Paribas Open,Learner Tien,Jannik Sinner,atp_23,atp_2,ATP,Hard
-2026-03-12,TBD,Megasaray Hotels Open 3,Veronika Erjavec,Teodora Kostovic,wta_112,wta_171,WTA,
-2026-03-12,TBD,Megasaray Hotels Open 3,Nuria Brancaccio,Julia Grabher,wta_164,wta_80,WTA,
-2026-03-12,TBD,Megasaray Hotels Open 3,Leyre Romero Gormaz,Katarzyna Kawa,wta_140,wta_143,WTA,
-2026-03-12,TBD,Megasaray Hotels Open 3,Carole Monnet,Dominika Salkova,wta_177,wta_151,WTA,
-2026-03-12,TBD,Megasaray Hotels Open 3,Ekaterine Gorgodze,Anhelina Kalinina,wta_167,wta_191,WTA,
-2026-03-12,TBD,Megasaray Hotels Open 3,Alina Charaeva,Elina Avanesyan,wta_163,wta_178,WTA,
-2026-03-12,TBD,Megasaray Hotels Open 3,Maja Chwalinska,Tamara Zidansek,wta_126,wta_145,WTA,
-2026-03-12,TBD,Megasaray Hotels Open 3,Polina Kudermetova,Moyuka Uchijima,wta_144,wta_90,WTA,
+2026-03-12,07:30,Megasaray Hotels Open 3,Maja Chwalinska,Tamara Zidansek,wta_126,wta_145,WTA,
+2026-03-12,07:30,Megasaray Hotels Open 3,Carole Monnet,Dominika Salkova,wta_177,wta_151,WTA,
+2026-03-12,07:30,Megasaray Hotels Open 3,Ekaterine Gorgodze,Anhelina Kalinina,wta_167,wta_191,WTA,
+2026-03-12,07:30,Megasaray Hotels Open 3,Alina Charaeva,Elina Avanesyan,wta_163,wta_178,WTA,
+2026-03-12,09:00,Megasaray Hotels Open 3,Polina Kudermetova,Moyuka Uchijima,wta_144,wta_90,WTA,
+2026-03-12,09:00,Megasaray Hotels Open 3,Leyre Romero Gormaz,Katarzyna Kawa,wta_140,wta_143,WTA,
+2026-03-12,09:00,Megasaray Hotels Open 3,Nuria Brancaccio,Julia Grabher,wta_164,wta_80,WTA,
+2026-03-12,09:00,Megasaray Hotels Open 3,Veronika Erjavec,Teodora Kostovic,wta_112,wta_171,WTA,
