@@ -1,6 +1,6 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-12,18:00,BNP Paribas Open,Aryna Sabalenka,Victoria Mboko,wta_1,wta_10,WTA,Hard
-2026-03-12,20:00,BNP Paribas Open,Linda Noskova,Talia Gibson,wta_14,wta_111,WTA,Hard
+2026-03-12,20:00,BNP Paribas Open,Linda Noskova,Talia Gibson,wta_118,wta_111,WTA,Hard
 2026-03-12,21:30,BNP Paribas Open,Elina Svitolina,Iga Swiatek,wta_9,wta_2,WTA,Hard
 2026-03-12,00:00,BNP Paribas Open,Jessica Pegula,Elena Rybakina,wta_5,wta_3,WTA,Hard
 2026-03-12,18:00,BNP Paribas Open,Arthur Fils,Alexander Zverev,atp_40,atp_4,ATP,Hard
@@ -10,7 +10,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-12,17:00,Austin 125 2,Lanlana Tararudee,Anastasia Zakharova,wta_124,wta_103,WTA,
 2026-03-12,18:00,Austin 125 2,Kimberly Birrell,McCartney Kessler,wta_94,wta_31,WTA,
 2026-03-12,20:00,Austin 125 2,Paula Badosa,Sinja Kraus,wta_70,wta_105,WTA,
-2026-03-12,22:00,Austin 125 2,Bianca Andreescu,Emerson Jones,wta_161,wta_72,WTA,
+2026-03-12,22:00,Austin 125 2,Bianca Andreescu,Emerson Jones,wta_161,wta_152,WTA,
 2026-03-12,07:30,Megasaray Hotels Open 3,Maja Chwalinska,Tamara Zidansek,wta_126,wta_145,WTA,
 2026-03-12,07:30,Megasaray Hotels Open 3,Carole Monnet,Dominika Salkova,wta_177,wta_151,WTA,
 2026-03-12,07:30,Megasaray Hotels Open 3,Ekaterine Gorgodze,Anhelina Kalinina,wta_167,wta_191,WTA,
