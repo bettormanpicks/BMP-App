@@ -1,17 +1,17 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-03-11,Live,BNP Paribas Open,Jessica Pegula,Belinda Bencic
-2026-03-11,22:00,BNP Paribas Open,Katerina Siniakova,Elina Svitolina
-2026-03-11,23:30,BNP Paribas Open,Sonay Kartal,Elena Rybakina
 2026-03-11,Final,BNP Paribas Open,Karolina Muchova,Iga Swiatek
-2026-03-11,Live,BNP Paribas Open,Daniil Medvedev,Alex Michelsen
-2026-03-11,21:45,BNP Paribas Open,Carlos Alcaraz,Casper Ruud
-2026-03-11,01:00,BNP Paribas Open,Novak Djokovic,Jack Draper
+2026-03-11,TBD,BNP Paribas Open,Sonay Kartal,Elena Rybakina
+2026-03-11,Final,BNP Paribas Open,Jessica Pegula,Belinda Bencic
+2026-03-11,TBD,BNP Paribas Open,Katerina Siniakova,Elina Svitolina
+2026-03-11,01:10,BNP Paribas Open,Novak Djokovic,Jack Draper
+2026-03-11,Final,BNP Paribas Open,Carlos Alcaraz,Casper Ruud
+2026-03-11,Final,BNP Paribas Open,Daniil Medvedev,Alex Michelsen
 2026-03-11,Final,BNP Paribas Open,Rinky Hijikata,Cameron Norrie
-2026-03-11,Live,Austin 125 2,Kaja Juvan,McCartney Kessler
-2026-03-11,Live,Austin 125 2,Sinja Kraus,Oksana Selekhmeteva
-2026-03-11,Live,Austin 125 2,Kimberly Birrell,Kamilla Rakhimova
-2026-03-11,22:00,Austin 125 2,Lulu Sun,Paula Badosa
+2026-03-11,Final,Austin 125 2,Kaja Juvan,McCartney Kessler
 2026-03-11,Final,Austin 125 2,Catherine McNally,Lanlana Tararudee
+2026-03-11,Final,Austin 125 2,Kimberly Birrell,Kamilla Rakhimova
+2026-03-11,Final,Austin 125 2,Sinja Kraus,Oksana Selekhmeteva
+2026-03-11,Final,Austin 125 2,Lulu Sun,Paula Badosa
 2026-03-11,Final,Austin 125 2,Emerson Jones,Donna Vekic
 2026-03-11,Final,Austin 125 2,Anastasia Zakharova,Linda Fruhvirtova
 2026-03-11,Final,Austin 125 2,Bianca Andreescu,Renata Zarazua
@@ -22,17 +22,26 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-11,Final,Megasaray Hotels Open 3,Lucia Bronzetti,Nuria Brancaccio
 2026-03-11,Final,Megasaray Hotels Open 3,Anhelina Kalinina,Elena Pridankina
 2026-03-11,Final,Megasaray Hotels Open 3,Alina Charaeva,Lia Karatancheva
-2026-03-12,TBD,BNP Paribas Open,Linda Noskova,Talia Gibson
-2026-03-12,TBD,BNP Paribas Open,Aryna Sabalenka,Victoria Mboko
-2026-03-12,TBD,BNP Paribas Open,Arthur Fils,Alexander Zverev
-2026-03-12,TBD,BNP Paribas Open,Learner Tien,Jannik Sinner
-2026-03-12,17:00,Austin 125 2,Lanlana Tararudee,Anastasia Zakharova
-2026-03-12,22:00,Austin 125 2,Bianca Andreescu,Emerson Jones
-2026-03-12,07:30,Megasaray Hotels Open 3,Maja Chwalinska,Tamara Zidansek
-2026-03-12,07:30,Megasaray Hotels Open 3,Carole Monnet,Dominika Salkova
-2026-03-12,07:30,Megasaray Hotels Open 3,Ekaterine Gorgodze,Anhelina Kalinina
-2026-03-12,07:30,Megasaray Hotels Open 3,Alina Charaeva,Elina Avanesyan
-2026-03-12,09:00,Megasaray Hotels Open 3,Polina Kudermetova,Moyuka Uchijima
-2026-03-12,09:00,Megasaray Hotels Open 3,Leyre Romero Gormaz,Katarzyna Kawa
-2026-03-12,09:00,Megasaray Hotels Open 3,Nuria Brancaccio,Julia Grabher
-2026-03-12,09:00,Megasaray Hotels Open 3,Veronika Erjavec,Teodora Kostovic
+2026-03-11,Final,BNP Paribas Open,Karolina Muchova,Iga Swiatek
+2026-03-11,TBD,BNP Paribas Open,Sonay Kartal,Elena Rybakina
+2026-03-11,Final,BNP Paribas Open,Jessica Pegula,Belinda Bencic
+2026-03-11,TBD,BNP Paribas Open,Katerina Siniakova,Elina Svitolina
+2026-03-11,01:10,BNP Paribas Open,Novak Djokovic,Jack Draper
+2026-03-11,Final,BNP Paribas Open,Carlos Alcaraz,Casper Ruud
+2026-03-11,Final,BNP Paribas Open,Daniil Medvedev,Alex Michelsen
+2026-03-11,Final,BNP Paribas Open,Rinky Hijikata,Cameron Norrie
+2026-03-11,Final,Austin 125 2,Kaja Juvan,McCartney Kessler
+2026-03-11,Final,Austin 125 2,Catherine McNally,Lanlana Tararudee
+2026-03-11,Final,Austin 125 2,Kimberly Birrell,Kamilla Rakhimova
+2026-03-11,Final,Austin 125 2,Sinja Kraus,Oksana Selekhmeteva
+2026-03-11,Final,Austin 125 2,Lulu Sun,Paula Badosa
+2026-03-11,Final,Austin 125 2,Emerson Jones,Donna Vekic
+2026-03-11,Final,Austin 125 2,Anastasia Zakharova,Linda Fruhvirtova
+2026-03-11,Final,Austin 125 2,Bianca Andreescu,Renata Zarazua
+2026-03-11,Final,Megasaray Hotels Open 3,Mai Hontama,Julia Grabher
+2026-03-11,Final,Megasaray Hotels Open 3,Panna Udvardy,Leyre Romero Gormaz
+2026-03-11,Final,Megasaray Hotels Open 3,Veronika Erjavec,Ipek Oz
+2026-03-11,Final,Megasaray Hotels Open 3,Maja Chwalinska,Ada Kumru
+2026-03-11,Final,Megasaray Hotels Open 3,Lucia Bronzetti,Nuria Brancaccio
+2026-03-11,Final,Megasaray Hotels Open 3,Anhelina Kalinina,Elena Pridankina
+2026-03-11,Final,Megasaray Hotels Open 3,Alina Charaeva,Lia Karatancheva
