@@ -37,7 +37,7 @@ def append_to_csv(matches):
     with open(OUTPUT_CSV, "a", newline="", encoding="utf-8") as f:
         writer = csv.DictWriter(
             f,
-            fieldnames=["match_id","date","player1","player2","sets1","sets2"]
+            fieldnames=["match_id","date","player1","player2","sets1","sets2","four_plus"]
         )
         if not file_exists:
             writer.writeheader()
@@ -70,7 +70,7 @@ def resort_csv():
 # Playwright Scraper
 # -------------------------
 async def scrape_history(start_page=1,
-                         end_page=18,
+                         end_page=5,
                          min_delay=3,
                          max_delay=7):
 
@@ -196,13 +196,16 @@ async def scrape_history(start_page=1,
                 match_id = href.split("/r/")[1].split("/")[0]
 
                 if match_id not in existing_ids:
+                    four_plus = 1 if (sets1 + sets2) >= 4 else 0
+
                     buffer.append({
                         "match_id": match_id,
                         "date": date,
                         "player1": player1,
                         "player2": player2,
                         "sets1": sets1,
-                        "sets2": sets2
+                        "sets2": sets2,
+                        "four_plus": four_plus
                     })
                     existing_ids.add(match_id)
 
@@ -300,13 +303,16 @@ async def scrape_history(start_page=1,
                         match_id = href.split("/")[2]
 
                         if match_id not in existing_ids:
+                            four_plus = 1 if (sets1 + sets2) >= 4 else 0
+
                             buffer.append({
                                 "match_id": match_id,
                                 "date": date,
                                 "player1": player1,
                                 "player2": player2,
                                 "sets1": sets1,
-                                "sets2": sets2
+                                "sets2": sets2,
+                                "four_plus": four_plus
                             })
                             existing_ids.add(match_id)
 
@@ -329,5 +335,5 @@ async def scrape_history(start_page=1,
 if __name__ == "__main__":
     asyncio.run(scrape_history(
         start_page=1,
-        end_page=18
+        end_page=5
     ))
