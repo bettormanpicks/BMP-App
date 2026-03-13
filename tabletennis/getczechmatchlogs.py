@@ -69,8 +69,8 @@ def resort_csv():
 # -------------------------
 # Playwright Scraper
 # -------------------------
-async def scrape_history(start_page=1,
-                         end_page=5,
+async def scrape_history(start_page=11,
+                         end_page=13,
                          min_delay=3,
                          max_delay=7):
 
@@ -334,6 +334,6 @@ async def scrape_history(start_page=1,
 
 if __name__ == "__main__":
     asyncio.run(scrape_history(
-        start_page=1,
-        end_page=5
+        start_page=11,
+        end_page=13
     ))
