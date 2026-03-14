@@ -887,7 +887,7 @@ if sport_choice == "Table Tennis":
     # --- Sidebar Filters ---
     with st.sidebar.form("TT Filters"):
 
-        recency_window = st.radio("Recency Window", ["L10", "L30", "ALL"], index=1)
+        recency_window = st.radio("Recency Window", ["L10", "L30", "L60", "ALL"], index=1)
 
         # --- Minimum Matches Slider ---
         min_matches = st.slider(
