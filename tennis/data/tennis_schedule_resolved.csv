@@ -1,9 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-03-13,Final,BNP Paribas Open,Aryna Sabalenka,Linda Noskova,wta_1,wta_14,WTA,Hard
-2026-03-13,Final,BNP Paribas Open,Elena Rybakina,Elina Svitolina,wta_3,wta_9,WTA,Hard
-2026-03-13,Final,Austin 125 2,Lanlana Tararudee,Kimberly Birrell,wta_124,wta_94,WTA,
-2026-03-13,Final,Austin 125 2,Paula Badosa,Bianca Andreescu,wta_70,wta_161,WTA,
-2026-03-13,Final,Megasaray Hotels Open 3,Veronika Erjavec,Nuria Brancaccio,wta_112,wta_164,WTA,
-2026-03-13,Final,Megasaray Hotels Open 3,Tamara Zidansek,Polina Kudermetova,wta_145,wta_144,WTA,
-2026-03-13,Final,Megasaray Hotels Open 3,Anhelina Kalinina,Alina Charaeva,wta_191,wta_163,WTA,
-2026-03-13,Final,Megasaray Hotels Open 3,Katarzyna Kawa,Carole Monnet,wta_143,wta_177,WTA,
+2026-03-14,20:30,BNP Paribas Open,Alexander Zverev,Jannik Sinner,atp_4,atp_2,ATP,Hard
+2026-03-14,22:00,BNP Paribas Open,Carlos Alcaraz,Daniil Medvedev,atp_1,atp_11,ATP,Hard
+2026-03-14,19:00,Austin 125 2,Bianca Andreescu,Lanlana Tararudee,wta_161,wta_124,WTA,
+2026-03-14,08:00,Megasaray Hotels Open 3,Veronika Erjavec,Tamara Zidansek,wta_112,wta_145,WTA,
+2026-03-14,08:00,Megasaray Hotels Open 3,Anhelina Kalinina,Katarzyna Kawa,wta_191,wta_143,WTA,
+2026-03-15,Final,BNP Paribas Open,Aryna Sabalenka,Elena Rybakina,wta_1,wta_3,WTA,Hard
