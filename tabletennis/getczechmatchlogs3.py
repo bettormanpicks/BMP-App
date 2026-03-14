@@ -34,31 +34,16 @@ def load_existing_ids():
 # ------------------------
 # Robust pagination helper
 # ------------------------
-async def click_next_page(page, current_page_num):
-    """Click the pagination link for the next page on betsapi table."""
-    # Only visible links inside pagination
-    pagination_links = page.locator('ul.pagination a[href*="p."] >> visible=true')
-    count = await pagination_links.count()
-    if count == 0:
-        raise Exception("No visible pagination links found!")
+async def click_next_page(page):
+    next_button = page.locator('ul.pagination li a[rel="next"]')
 
-    # Look for the exact page number link
-    for i in range(count):
-        href = await pagination_links.nth(i).get_attribute("href")
-        if not href or "/p." not in href:
-            continue
-        # Extract page number from href
-        try:
-            page_num = int(href.split("/p.")[1].split("/")[0])
-            if page_num == current_page_num:
-                await pagination_links.nth(i).click(force=True)
-                # Wait for AJAX content to load
-                await page.wait_for_selector("table tbody tr >> nth=0", timeout=60000)
-                await page.wait_for_timeout(1000)  # small buffer
-                return True
-        except:
-            continue
-    raise Exception(f"Could not find pagination link for page {current_page_num}")
+    if await next_button.count() == 0:
+        raise Exception("Next button not found")
+
+    await next_button.first.click()
+    await page.wait_for_selector("table tbody tr")
+
+    await page.wait_for_timeout(1200)
 
 def append_to_csv(matches):
     file_exists = os.path.exists(OUTPUT_CSV)
@@ -98,10 +83,10 @@ def resort_csv():
 # -------------------------
 # Playwright Scraper
 # -------------------------
-async def scrape_history(start_page=101,
-                         end_page=200,
-                         min_delay=3,
-                         max_delay=5):
+async def scrape_history(start_page=1,
+                         end_page=10,
+                         min_delay=4,
+                         max_delay=7):
 
     existing_ids = load_existing_ids()
     print(f"Loaded {len(existing_ids)} existing match IDs.")
@@ -119,10 +104,28 @@ async def scrape_history(start_page=101,
         )
 
         # Block ads
-        await context.route("**/*", lambda route, request: (
-            route.abort() if any(x in request.url for x in ["doubleclick", "googlesyndication", "googleads"]) 
-            else route.continue_()
-        ))
+        async def route_handler(route, request):
+            rtype = request.resource_type
+
+            # Block heavy resources we don't need
+            if rtype in ["image", "media", "font"]:
+                await route.abort()
+                return
+
+            # Block known ad / tracking domains
+            if any(x in request.url for x in [
+                "doubleclick",
+                "googlesyndication",
+                "googleads",
+                "googletagmanager",
+                "google-analytics"
+            ]):
+                await route.abort()
+                return
+
+            await route.continue_()
+
+        await context.route("**/*", route_handler)
 
         page = context.pages[0] if context.pages else await context.new_page()
         page.set_default_timeout(60000)
@@ -133,7 +136,7 @@ async def scrape_history(start_page=101,
         print(f"Opening start page: {start_url}")
 
         await page.goto(start_url)
-        await page.wait_for_selector("table tbody tr >> nth=0", timeout=60000)
+        await page.wait_for_selector("table tbody tr", timeout=60000)
         await page.wait_for_timeout(2000)  # small stabilization pause
 
         current_page_num = start_page
@@ -142,9 +145,20 @@ async def scrape_history(start_page=101,
             print(f"\nScraping page {current_page_num}...")
 
             try:
-                # Wait for the table rows to appear
-                await page.wait_for_selector("table tbody tr >> nth=0", timeout=60000)
-                await page.wait_for_timeout(1000)  # buffer
+                # Wait for either table rows OR a possible server error page
+                await page.wait_for_selector("body", timeout=60000)
+
+                content = await page.content()
+
+                if (
+                    "500 Server Error" in content
+                    or "website error has occurred" in content.lower()
+                    or "temporary inconvenience" in content.lower()
+                ):
+                    raise Exception("Server returned error page")
+
+                await page.wait_for_selector("table tbody tr")
+                await page.wait_for_timeout(1000)
 
                 rows = await page.query_selector_all("table tbody tr")
 
@@ -211,7 +225,7 @@ async def scrape_history(start_page=101,
 
                 # Move to next page if not at end
                 if current_page_num < end_page:
-                    await click_next_page(page, current_page_num + 1)
+                    await click_next_page(page)
 
                 current_page_num += 1
 
@@ -225,38 +239,53 @@ async def scrape_history(start_page=101,
                         args=["--disable-blink-features=AutomationControlled"]
                     )
 
-                    await context.route("**/*", lambda route, request: (
-                        route.abort() if any(x in request.url for x in ["doubleclick","googlesyndication","googleads"])
-                        else route.continue_()
-                    ))
+                    async def route_handler(route, request):
+                        rtype = request.resource_type
+
+                        # Block heavy resources we don't need
+                        if rtype in ["image", "media", "font"]:
+                            await route.abort()
+                            return
+
+                        # Block known ad / tracking domains
+                        if any(x in request.url for x in [
+                            "doubleclick",
+                            "googlesyndication",
+                            "googleads",
+                            "googletagmanager",
+                            "google-analytics"
+                        ]):
+                            await route.abort()
+                            return
+
+                        await route.continue_()
+
+                    await context.route("**/*", route_handler)
 
                     page = context.pages[0] if context.pages else await context.new_page()
 
-                    await page.goto(BASE_URL)
-                    await page.wait_for_selector("table")
-
-                    for page_num in range(2, current_page_num + 1):
-                        await click_next_page(page, page_num)        
+                    await page.goto(f"{BASE_URL}/p.{current_page_num}")
+                    await page.wait_for_selector("table tbody tr")
+                    await page.wait_for_timeout(2000)      
 
             except Exception as e:
                 print(f"Page {current_page_num} failed: {e}")
 
-                failed_pages.append(current_page_num)
+                if current_page_num not in failed_pages:
+                    failed_pages.append(current_page_num)
                 consecutive_failures += 1
 
                 # Reset browser to a clean state
-                print("Resetting to page 1...")
-                await page.goto(f"{BASE_URL}/p.{current_page_num}")
-                await page.wait_for_selector("table")
+                print(f"Resetting to page {current_page_num} after error...")
+
+                await asyncio.sleep(random.uniform(6,10))
+
+                await page.goto(
+                    f"{BASE_URL}/p.{current_page_num}",
+                    wait_until="domcontentloaded"
+                )
+                await page.wait_for_selector("table tbody tr")
                 await page.wait_for_timeout(2000)
-
-                # Re-navigate to the current page
-                for p in range(2, current_page_num + 1):
-                    try:
-                        await click_next_page(page, p)
-                    except:
-                        break
-
 
 
         # --- Retry failed pages ---
@@ -267,8 +296,8 @@ async def scrape_history(start_page=101,
                 # Always start from page 1 and click forward
                 await page.goto(BASE_URL)
                 await page.wait_for_selector("table")
-                for page_num in range(2, retry_page + 1):
-                    await click_next_page(page, page_num)
+                for _ in range(2, retry_page + 1):
+                    await click_next_page(page)
                 # Then scrape as above (reuse same scraping logic)
 
         await context.close()
@@ -285,6 +314,6 @@ async def scrape_history(start_page=101,
 
 if __name__ == "__main__":
     asyncio.run(scrape_history(
-        start_page=101,
-        end_page=200
+        start_page=1,
+        end_page=10
     ))

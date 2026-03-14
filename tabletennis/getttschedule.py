@@ -22,15 +22,19 @@ async def scrape_schedule():
         )
 
         # Block ads
-        await context.route("**/*", lambda route, request: (
-            route.abort() if any(x in request.url for x in ["google", "doubleclick"]) else route.continue_()
-        ))
+        async def route_handler(route, request):
+            if any(x in request.url for x in ["google", "doubleclick"]):
+                await route.abort()
+            else:
+                await route.continue_()
+        await context.route("**/*", route_handler)
 
         page = context.pages[0] if context.pages else await context.new_page()
 
         # Load first page
         await page.goto(BASE_URL, timeout=60000)
-        await page.wait_for_selector("table", timeout=60000)
+        await page.wait_for_selector("table tbody tr", timeout=60000)
+        await page.wait_for_timeout(1500)  # allow site JS to update times
 
         # Detect pagination
         pagination_links = await page.query_selector_all('a[href*="/p."]')
@@ -53,7 +57,8 @@ async def scrape_schedule():
 
             if page_num == 1:
                 await page.goto(BASE_URL, timeout=60000)
-                await page.wait_for_selector("table", timeout=60000)
+                await page.wait_for_selector("table tbody tr", timeout=60000)
+                await page.wait_for_timeout(1500)  # stabilize table times
             else:
                 print(f"Clicking page {page_num}")
                 old_first_row = await page.locator("table tbody tr").first.inner_text()
@@ -65,29 +70,30 @@ async def scrape_schedule():
                     }""",
                     arg=old_first_row
                 )
+                await page.wait_for_timeout(1000)  # extra delay to stabilize table
 
-            print(f"Scraping page {page_num}")
-            await page.wait_for_timeout(1000)
-
+            # Retry logic if rows not fully loaded
             rows = await page.locator("table tbody tr").all()
+            if len(rows) == 0:
+                await page.wait_for_timeout(1000)
+                rows = await page.locator("table tbody tr").all()
+
+            print(f"Scraping page {page_num} ({len(rows)} rows)")
 
             for row in rows:
                 cols = await row.locator("td").all()
-
                 if len(cols) < 4:
                     continue
 
                 # --- DATE exactly as shown in browser ---
                 date_text = (await cols[0].inner_text()).strip()
-
-                if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
-                    continue
+#                if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
+#                    continue
 
                 # --- PLAYERS ---
                 players = await cols[2].locator("a").all()
                 if len(players) < 2:
                     continue
-
                 player1 = (await players[0].inner_text()).strip()
                 player2 = (await players[1].inner_text()).strip()
 
@@ -101,6 +107,11 @@ async def scrape_schedule():
                         if m:
                             match_id = m.group()
 
+                # right before all_matches.append(...)
+                if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
+                    print(f"Skipping match with invalid date: {date_text}")
+                    continue
+
                 all_matches.append({
                     "match_id": match_id,
                     "date": date_text,
@@ -108,7 +119,7 @@ async def scrape_schedule():
                     "player2": player2
                 })
 
-            print(f"Page {page_num} scraped")
+            await page.wait_for_timeout(500)  # stabilize before next page
 
         await context.close()
 
@@ -121,17 +132,14 @@ async def scrape_schedule():
         return
 
     current_year = datetime.now().year
-
-    # Append year to browser date text
     df["date"] = df["date"] + f" {current_year}"
-
-    # Let pandas parse it directly
     df["date"] = pd.to_datetime(df["date"], format="%m/%d %H:%M %Y", errors="coerce")
     df.dropna(subset=["date"], inplace=True)
     df.sort_values("date", inplace=True)
 
     df.to_csv(OUTPUT_CSV, index=False)
     print(f"Done. Saved {len(df)} matches to {OUTPUT_CSV}")
+
 
 if __name__ == "__main__":
     asyncio.run(scrape_schedule())

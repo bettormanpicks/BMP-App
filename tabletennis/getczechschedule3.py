@@ -2,6 +2,7 @@ import asyncio
 import pandas as pd
 import os
 import re
+from bs4 import BeautifulSoup
 from datetime import datetime
 from playwright.async_api import async_playwright
 
@@ -22,19 +23,15 @@ async def scrape_schedule():
         )
 
         # Block ads
-        async def route_handler(route, request):
-            if any(x in request.url for x in ["google", "doubleclick"]):
-                await route.abort()
-            else:
-                await route.continue_()
-        await context.route("**/*", route_handler)
+        await context.route("**/*", lambda route, request: (
+            route.abort() if any(x in request.url for x in ["google", "doubleclick"]) else route.continue_()
+        ))
 
         page = context.pages[0] if context.pages else await context.new_page()
 
         # Load first page
         await page.goto(BASE_URL, timeout=60000)
-        await page.wait_for_selector("table tbody tr", timeout=60000)
-        await page.wait_for_timeout(1500)  # allow site JS to update times
+        await page.wait_for_selector("table", timeout=60000)
 
         # Detect pagination
         pagination_links = await page.query_selector_all('a[href*="/p."]')
@@ -57,8 +54,7 @@ async def scrape_schedule():
 
             if page_num == 1:
                 await page.goto(BASE_URL, timeout=60000)
-                await page.wait_for_selector("table tbody tr", timeout=60000)
-                await page.wait_for_timeout(1500)  # stabilize table times
+                await page.wait_for_selector("table", timeout=60000)
             else:
                 print(f"Clicking page {page_num}")
                 old_first_row = await page.locator("table tbody tr").first.inner_text()
@@ -70,47 +66,44 @@ async def scrape_schedule():
                     }""",
                     arg=old_first_row
                 )
-                await page.wait_for_timeout(1000)  # extra delay to stabilize table
 
-            # Retry logic if rows not fully loaded
-            rows = await page.locator("table tbody tr").all()
-            if len(rows) == 0:
-                await page.wait_for_timeout(1000)
-                rows = await page.locator("table tbody tr").all()
+            print(f"Scraping page {page_num}")
+            # Freeze table HTML to avoid DOM updates mid-scrape
+            table_html = await page.inner_html("table tbody")
 
-            print(f"Scraping page {page_num} ({len(rows)} rows)")
+            soup = BeautifulSoup(table_html, "html.parser")
+            rows = soup.select("tr")
 
             for row in rows:
-                cols = await row.locator("td").all()
+                cols = row.select("td")
                 if len(cols) < 4:
                     continue
 
-                # --- DATE exactly as shown in browser ---
-                date_text = (await cols[0].inner_text()).strip()
-#                if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
-#                    continue
+                # --- DATE as rendered in browser ---
+                date_text = cols[0].get_text(strip=True)
+
+                # Skip rows that show scores instead of dates or empty strings
+                if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
+                    continue
 
                 # --- PLAYERS ---
-                players = await cols[2].locator("a").all()
+                players = cols[2].select("a")
                 if len(players) < 2:
                     continue
-                player1 = (await players[0].inner_text()).strip()
-                player2 = (await players[1].inner_text()).strip()
+
+                player1 = players[0].get_text(strip=True)
+                player2 = players[1].get_text(strip=True)
 
                 # --- MATCH ID ---
                 match_id = None
-                link = cols[3].locator("a").first
-                if await link.count() > 0:
-                    href = await link.get_attribute("href")
+
+                match_link = cols[3].select_one("a")
+                if match_link:
+                    href = match_link.get("href")
                     if href:
                         m = re.search(r"\d+", href)
                         if m:
                             match_id = m.group()
-
-                # right before all_matches.append(...)
-                if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
-                    print(f"Skipping match with invalid date: {date_text}")
-                    continue
 
                 all_matches.append({
                     "match_id": match_id,
@@ -119,7 +112,7 @@ async def scrape_schedule():
                     "player2": player2
                 })
 
-            await page.wait_for_timeout(500)  # stabilize before next page
+            print(f"Page {page_num} scraped")
 
         await context.close()
 
@@ -132,14 +125,17 @@ async def scrape_schedule():
         return
 
     current_year = datetime.now().year
+
+    # Append year to browser date text
     df["date"] = df["date"] + f" {current_year}"
+
+    # Let pandas parse it directly
     df["date"] = pd.to_datetime(df["date"], format="%m/%d %H:%M %Y", errors="coerce")
     df.dropna(subset=["date"], inplace=True)
     df.sort_values("date", inplace=True)
 
     df.to_csv(OUTPUT_CSV, index=False)
     print(f"Done. Saved {len(df)} matches to {OUTPUT_CSV}")
-
 
 if __name__ == "__main__":
     asyncio.run(scrape_schedule())

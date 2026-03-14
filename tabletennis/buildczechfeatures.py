@@ -27,17 +27,20 @@ for idx, match in schedule.iterrows():
         ((past_matches["player1"] == player2) & (past_matches["player2"] == player1))
     ].sort_values("date", ascending=False)
 
-    # Take last 10 and last 30
+    # Take last 10, last 30, and last 60
     last_10 = h2h_matches.head(10)
     last_30 = h2h_matches.head(30)
+    last_60 = h2h_matches.head(60)
 
     # Compute raw H2H values using four_plus
-    h2h_L10 = last_10["four_plus"].mean() if not last_10.empty else 0.5
-    h2h_L30 = last_30["four_plus"].mean() if not last_30.empty else 0.5
+    h2h_L10 = last_10["four_plus"].mean() if not last_10.empty else 0
+    h2h_L30 = last_30["four_plus"].mean() if not last_30.empty else 0
+    h2h_L60 = last_60["four_plus"].mean() if not last_60.empty else 0
 
     # Track counts
     h2h_count_L10 = len(last_10)
     h2h_count_L30 = len(last_30)
+    h2h_count_L60 = len(last_60)
 
     # --- Recent form for each player ---
     recent_A = past_matches[
@@ -61,6 +64,8 @@ for idx, match in schedule.iterrows():
                         (1 - min(h2h_count_L10, min_h2h_threshold)/min_h2h_threshold) * recent_avg)
     h2h_L30_weighted = (min(h2h_count_L30, min_h2h_threshold)/min_h2h_threshold * h2h_L30 +
                         (1 - min(h2h_count_L30, min_h2h_threshold)/min_h2h_threshold) * recent_avg)
+    h2h_L60_weighted = (min(h2h_count_L60, min_h2h_threshold)/min_h2h_threshold * h2h_L60 +
+                        (1 - min(h2h_count_L60, min_h2h_threshold)/min_h2h_threshold) * recent_avg)
 
     # --- Store features ---
     features.append({
@@ -70,8 +75,10 @@ for idx, match in schedule.iterrows():
         "player2": player2,
         "h2h_L10_weighted": h2h_L10_weighted,
         "h2h_L30_weighted": h2h_L30_weighted,
+        "h2h_L60_weighted": h2h_L60_weighted,
         "h2h_L10_count": h2h_count_L10,
         "h2h_L30_count": h2h_count_L30,
+        "h2h_L60_count": h2h_count_L60,
         "recent_A_L10": recent_A_L10,
         "recent_B_L10": recent_B_L10,
         "recent_A_L30": recent_A_L30,
@@ -81,4 +88,4 @@ for idx, match in schedule.iterrows():
 # --- Output final CSV ---
 features_df = pd.DataFrame(features)
 features_df.to_csv("data/tt_czech_features_weighted.csv", index=False)
-print("Weighted feature CSV generated: tt_czech_schedule_features_weighted.csv")
+print("Weighted feature CSV generated: tt_czech_features_weighted.csv")
