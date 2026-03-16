@@ -1,6 +1,6 @@
 import pandas as pd
 
-pred = pd.read_csv("data/tt_czech_historical_4plus_predictions.csv")
+pred = pd.read_csv("data/tt_czech_4plus_predictions.csv")
 logs = pd.read_csv("data/tt_czech_matchlogs.csv")
 
 # create actual 4+ result
