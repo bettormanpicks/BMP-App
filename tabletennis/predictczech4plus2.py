@@ -7,10 +7,11 @@ df = pd.read_csv(INPUT_CSV)
 
 # weights
 w_h2h_l10 = 0.35
-w_a_l30 = 0.15
-w_b_l30 = 0.15
-w_a_l10 = 0.175
-w_b_l10 = 0.175
+w_h2h_l60 = 0.15
+w_a_l30 = 0.05
+w_b_l30 = 0.05
+w_a_l10 = 0.20
+w_b_l10 = 0.20
 
 
 def reliability_adjust(stat, baseline, count, window):
@@ -26,9 +27,11 @@ def predict_probability(row):
     # sample sizes
     h2h10_count = row["h2h_L10_count"]
     h2h30_count = row["h2h_L30_count"]
+    h2h60_count = row["h2h_L60_count"]
 
     # reliability adjustments
     h2h10 = reliability_adjust(row["h2h_L10_weighted"], baseline, h2h10_count, 10)
+    h2h60 = reliability_adjust(row["h2h_L60_weighted"], baseline, h2h60_count, 60)
     a_l10 = reliability_adjust(row["recent_A_L10"], baseline, 10, 10)
     b_l10 = reliability_adjust(row["recent_B_L10"], baseline, 10, 10)
     a_l30 = reliability_adjust(row["recent_A_L30"], baseline, 30, 30)
@@ -37,10 +40,11 @@ def predict_probability(row):
     adj = 0
 
     adj += 0.35 * (h2h10 - baseline)
-    adj += 0.175 * (a_l10 - baseline)
-    adj += 0.175 * (b_l10 - baseline)
-    adj += 0.15 * (a_l30 - baseline)
-    adj += 0.15 * (b_l30 - baseline)
+    adj += 0.15 * (h2h60 - baseline)
+    adj += 0.20 * (a_l10 - baseline)
+    adj += 0.20 * (b_l10 - baseline)
+    adj += 0.05 * (a_l30 - baseline)
+    adj += 0.05 * (b_l30 - baseline)
 
     prob = baseline + adj
 

@@ -1,7 +1,7 @@
 import pandas as pd
 
-INPUT_CSV = "data/tt_elite_features_weighted.csv"
-OUTPUT_CSV = "data/tt_elite_4plus_predictions.csv"
+INPUT_CSV = "data/tt_czech_historical_features_weighted.csv"
+OUTPUT_CSV = "data/tt_czech_historical_4plus_predictions.csv"
 
 df = pd.read_csv(INPUT_CSV)
 
