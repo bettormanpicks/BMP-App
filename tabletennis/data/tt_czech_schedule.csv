@@ -1,57 +1,12 @@
 match_id,date,player1,player2
-11594249,2026-03-16 02:00:00,Antonin Schneeberger,Miroslav Kowolowski
-11594522,2026-03-16 02:00:00,Milos Pospisil,Vaclav Dolezal
-11594635,2026-03-16 02:00:00,Milan Regner,Milan Chalupnicek
-11595179,2026-03-16 02:00:00,Tomas Milkov,Jiri Stach
-11595180,2026-03-16 02:00:00,Lubos Forman,Milan Vrabec
-11594521,2026-03-16 02:30:00,Tomas Nohejl,Jiri Svec
-11594044,2026-03-16 02:30:00,Zbynek Zientek,Filip Zurek
-11594222,2026-03-16 02:30:00,Cesta Havrda,Petr Serak
-11594025,2026-03-16 02:30:00,Michal Koral,Eduard Sionkala
-11594033,2026-03-16 02:30:00,Jiri Havel,Martin Stefek
-11595177,2026-03-16 03:00:00,Miroslav Kowolowski,Zbynek Zientek
-11595178,2026-03-16 03:00:00,Milan Vrabec,Cesta Havrda
-11595192,2026-03-16 03:00:00,Vaclav Dolezal,Jiri Havel
-11595193,2026-03-16 03:00:00,Milan Chalupnicek,Tomas Nohejl
-11595202,2026-03-16 03:00:00,Jiri Stach,Michal Koral
-11595196,2026-03-16 03:30:00,Filip Zurek,Antonin Schneeberger
-11595188,2026-03-16 03:30:00,Jiri Svec,Milan Regner
-11595189,2026-03-16 03:30:00,Eduard Sionkala,Tomas Milkov
-11595182,2026-03-16 03:30:00,Petr Serak,Lubos Forman
-11595183,2026-03-16 03:30:00,Martin Stefek,Milos Pospisil
-11595184,2026-03-16 04:00:00,Milos Pospisil,Jiri Havel
-11595185,2026-03-16 04:00:00,Milan Regner,Tomas Nohejl
-11595194,2026-03-16 04:00:00,Lubos Forman,Cesta Havrda
-11595200,2026-03-16 04:00:00,Tomas Milkov,Michal Koral
-11595203,2026-03-16 04:00:00,Antonin Schneeberger,Zbynek Zientek
-11595198,2026-03-16 04:30:00,Milan Vrabec,Petr Serak
-11595223,2026-03-16 04:30:00,Vaclav Dolezal,Martin Stefek
-11595222,2026-03-16 04:30:00,Milan Chalupnicek,Jiri Svec
-11595195,2026-03-16 04:30:00,Miroslav Kowolowski,Filip Zurek
-11595186,2026-03-16 04:30:00,Jiri Stach,Eduard Sionkala
-11594045,2026-03-16 06:00:00,Vratislav Petracek,Jiri Ruzicka
-11594219,2026-03-16 06:00:00,Ladislav Novotny,Jaroslav Strnad 1961
-11594808,2026-03-16 06:00:00,Martin Skotnica,Tadeas Zika
-11594950,2026-03-16 06:00:00,Kyryl Darin,Marek Placek
-11595136,2026-03-16 06:00:00,Jakub Levicky,Tomas Petrek
-11595187,2026-03-16 06:30:00,Jaroslav Schwan,Marek Volny
-11594395,2026-03-16 06:30:00,Radovan Polasek,Jakub Pilch
-11594218,2026-03-16 06:30:00,Ivo Zikmund,Vladimir Kubat
-11594220,2026-03-16 06:30:00,Lukas Malek,Josef Belovsky
-11594381,2026-03-16 06:30:00,Viktor Vejvoda,Michal Zahradka
-11595029,2026-03-16 07:00:00,Jiri Ruzicka,Viktor Vejvoda
-11595248,2026-03-16 07:00:00,Tomas Petrek,Jaroslav Schwan
-11595258,2026-03-16 07:00:00,Tadeas Zika,Radovan Polasek
-11595276,2026-03-16 07:00:00,Marek Placek,Lukas Malek
-11595385,2026-03-16 07:00:00,Jaroslav Strnad 1961,Ivo Zikmund
 11594396,2026-03-16 07:30:00,Jakub Pilch,Martin Skotnica
 11595134,2026-03-16 07:30:00,Marek Volny,Jakub Levicky
 11595249,2026-03-16 07:30:00,Michal Zahradka,Vratislav Petracek
 11595260,2026-03-16 07:30:00,Josef Belovsky,Kyryl Darin
 11595261,2026-03-16 07:30:00,Vladimir Kubat,Ladislav Novotny
-11595259,2026-03-16 08:00:00,Kyryl Darin,Lukas Malek
-11595250,2026-03-16 08:00:00,Ladislav Novotny,Ivo Zikmund
 11595304,2026-03-16 08:00:00,Martin Skotnica,Radovan Polasek
+11595250,2026-03-16 08:00:00,Ladislav Novotny,Ivo Zikmund
+11595259,2026-03-16 08:00:00,Kyryl Darin,Lukas Malek
 11595030,2026-03-16 08:00:00,Vratislav Petracek,Viktor Vejvoda
 11595135,2026-03-16 08:00:00,Jakub Levicky,Jaroslav Schwan
 11594397,2026-03-16 08:30:00,Tadeas Zika,Jakub Pilch
@@ -59,9 +14,9 @@ match_id,date,player1,player2
 11595251,2026-03-16 08:30:00,Jaroslav Strnad 1961,Vladimir Kubat
 11595262,2026-03-16 08:30:00,Tomas Petrek,Marek Volny
 11595386,2026-03-16 08:30:00,Marek Placek,Josef Belovsky
-11594936,2026-03-16 10:00:00,Martin Huk,Radek Rose
-11594403,2026-03-16 10:00:00,Radomir Revay,Jan Szotkowski
+11598786,2026-03-16 10:00:00,Radomir Revay,Radovan Polasek
 11594379,2026-03-16 10:00:00,Martin Sychra,Jakub Hradecky
+11594936,2026-03-16 10:00:00,Martin Huk,Radek Rose
 11594250,2026-03-16 10:00:00,Michal Jezek,Petr Bradac
 11594374,2026-03-16 10:00:00,Lukas Kern,Richard Skacelik
 11594294,2026-03-16 10:30:00,Adrian Walek,Jaroslav Neuwirth Snr
@@ -70,25 +25,25 @@ match_id,date,player1,player2
 11595252,2026-03-16 10:30:00,Vratislav Petracek,Tomas Postelt
 11595270,2026-03-16 10:30:00,Adam Pokorny,Tadeas Zika
 11595256,2026-03-16 11:00:00,Petr Bradac,Vratislav Petracek
-11595127,2026-03-16 11:00:00,Jakub Hradecky,Martin Sobisek
+11598803,2026-03-16 11:00:00,Radovan Polasek,Adam Pokorny
 11595271,2026-03-16 11:00:00,Richard Skacelik,Adrian Walek
-11594404,2026-03-16 11:00:00,Jan Szotkowski,Adam Pokorny
+11595127,2026-03-16 11:00:00,Jakub Hradecky,Martin Sobisek
 11595028,2026-03-16 11:00:00,Radek Rose,Viktor Vejvoda
 11595121,2026-03-16 11:30:00,Jiri Ruzicka,Martin Huk
 11595253,2026-03-16 11:30:00,Jaroslav Neuwirth Snr,Lukas Kern
 11595267,2026-03-16 11:30:00,Tomas Dousa,Martin Sychra
 11595268,2026-03-16 11:30:00,Tadeas Zika,Radomir Revay
 11595272,2026-03-16 11:30:00,Tomas Postelt,Michal Jezek
+11595273,2026-03-16 12:00:00,Michal Jezek,Vratislav Petracek
+11595254,2026-03-16 12:00:00,Radomir Revay,Adam Pokorny
+11595274,2026-03-16 12:00:00,Lukas Kern,Adrian Walek
 11595027,2026-03-16 12:00:00,Martin Huk,Viktor Vejvoda
 11595131,2026-03-16 12:00:00,Martin Sychra,Martin Sobisek
-11595254,2026-03-16 12:00:00,Radomir Revay,Adam Pokorny
-11595273,2026-03-16 12:00:00,Michal Jezek,Vratislav Petracek
-11595274,2026-03-16 12:00:00,Lukas Kern,Adrian Walek
-11594405,2026-03-16 12:30:00,Jan Szotkowski,Tadeas Zika
 11595031,2026-03-16 12:30:00,Radek Rose,Jiri Ruzicka
 11595255,2026-03-16 12:30:00,Petr Bradac,Tomas Postelt
 11595265,2026-03-16 12:30:00,Richard Skacelik,Jaroslav Neuwirth Snr
 11595275,2026-03-16 12:30:00,Jakub Hradecky,Tomas Dousa
+11598802,2026-03-16 12:30:00,Radovan Polasek,Tadeas Zika
 11595263,2026-03-16 14:00:00,Karel Kapras,Tomas Vinter
 11594451,2026-03-16 14:00:00,Karel Brozik,Marcel Pikous
 11594380,2026-03-16 14:00:00,Zdenek Bilek,Michal Vavrecka
@@ -100,52 +55,104 @@ match_id,date,player1,player2
 11595024,2026-03-16 14:30:00,Michal Hrabec,Vitezslav Burdik
 11595129,2026-03-16 14:30:00,Martin Sychra,Martin Sobisek
 11595554,2026-03-16 15:00:00,Vitezslav Bosak,David Mikula
-11595553,2026-03-16 15:00:00,Tomas Vinter,Martin Sychra
-11595138,2026-03-16 15:00:00,Marcel Pikous,Petr Sebera
-11595025,2026-03-16 15:00:00,David Szotek,Michal Hrabec
 11595542,2026-03-16 15:00:00,Michal Vavrecka,Jakub Vales
+11595553,2026-03-16 15:00:00,Tomas Vinter,Martin Sychra
+11595025,2026-03-16 15:00:00,David Szotek,Michal Hrabec
+11595138,2026-03-16 15:00:00,Marcel Pikous,Petr Sebera
 11594301,2026-03-16 15:30:00,Vitezslav Burdik,Radim Urbaniec
 11594306,2026-03-16 15:30:00,Dan Volhejn,Zdenek Bilek
 11595128,2026-03-16 15:30:00,Martin Sobisek,Karel Kapras
 11595555,2026-03-16 15:30:00,Radim Kvasnicka,Milan Jasek
 11595559,2026-03-16 15:30:00,Denis Hofman,Karel Brozik
 11595576,2026-03-16 16:00:00,Karel Kapras,Martin Sychra
-11595546,2026-03-16 16:00:00,Milan Jasek,David Mikula
-11595137,2026-03-16 16:00:00,Karel Brozik,Petr Sebera
-11594300,2026-03-16 16:00:00,Radim Urbaniec,Michal Hrabec
 11595543,2026-03-16 16:00:00,Zdenek Bilek,Jakub Vales
+11595546,2026-03-16 16:00:00,Milan Jasek,David Mikula
+11594300,2026-03-16 16:00:00,Radim Urbaniec,Michal Hrabec
+11595137,2026-03-16 16:00:00,Karel Brozik,Petr Sebera
 11594309,2026-03-16 16:30:00,Michal Vavrecka,Dan Volhejn
 11595130,2026-03-16 16:30:00,Tomas Vinter,Martin Sobisek
 11595560,2026-03-16 16:30:00,Marcel Pikous,Denis Hofman
 11595575,2026-03-16 16:30:00,Vitezslav Bosak,Radim Kvasnicka
 11595581,2026-03-16 16:30:00,David Szotek,Vitezslav Burdik
 11594904,2026-03-16 18:00:00,Julius Didi,Jiri Grohsgott
-11594311,2026-03-16 18:00:00,Tomas Barta,Jaroslav Prokupek
 11594147,2026-03-16 18:00:00,Tomas Regner,Martin Stefek
+11594311,2026-03-16 18:00:00,Tomas Barta,Jaroslav Prokupek
+11595567,2026-03-16 18:30:00,Vladimir Svoboda,Josef Pelikan
 11594112,2026-03-16 18:30:00,Jiri Plachy,Hoang Tai Nguyen Ba
 11594150,2026-03-16 18:30:00,Jan Steffan,Oleg Vitrovyj
-11595567,2026-03-16 18:30:00,Vladimir Svoboda,Josef Pelikan
 11594304,2026-03-16 19:00:00,Jaroslav Prokupek,Vladimir Postelt
 11595551,2026-03-16 19:00:00,Martin Stefek,Jan Varcl Jnr
 11595556,2026-03-16 19:00:00,Jiri Grohsgott,Rostislav Hasmanda
+11594307,2026-03-16 19:30:00,Tomas Barta,Jiri Plachy
 11595547,2026-03-16 19:30:00,Tomas Regner,Jan Steffan
 11595579,2026-03-16 19:30:00,Julius Didi,Vladimir Svoboda
-11594307,2026-03-16 19:30:00,Tomas Barta,Jiri Plachy
-11595557,2026-03-16 20:00:00,Vladimir Postelt,Hoang Tai Nguyen Ba
 11595561,2026-03-16 20:00:00,Jan Varcl Jnr,Oleg Vitrovyj
 11595562,2026-03-16 20:00:00,Rostislav Hasmanda,Josef Pelikan
+11595557,2026-03-16 20:00:00,Vladimir Postelt,Hoang Tai Nguyen Ba
 11594303,2026-03-16 20:30:00,Jaroslav Prokupek,Jiri Plachy
 11595548,2026-03-16 20:30:00,Jiri Grohsgott,Vladimir Svoboda
 11595563,2026-03-16 20:30:00,Martin Stefek,Jan Steffan
-11595549,2026-03-16 21:00:00,Oleg Vitrovyj,Tomas Regner
 11594310,2026-03-16 21:00:00,Hoang Tai Nguyen Ba,Tomas Barta
 11595545,2026-03-16 21:00:00,Josef Pelikan,Julius Didi
+11595549,2026-03-16 21:00:00,Oleg Vitrovyj,Tomas Regner
+11595849,2026-03-16 21:30:00,Jiri Plachy,Vladimir Postelt
 11595544,2026-03-16 21:30:00,Vladimir Svoboda,Rostislav Hasmanda
 11595564,2026-03-16 21:30:00,Jan Steffan,Jan Varcl Jnr
-11595849,2026-03-16 21:30:00,Jiri Plachy,Vladimir Postelt
+11595582,2026-03-16 22:00:00,Josef Pelikan,Jiri Grohsgott
 11594305,2026-03-16 22:00:00,Hoang Tai Nguyen Ba,Jaroslav Prokupek
 11595558,2026-03-16 22:00:00,Oleg Vitrovyj,Martin Stefek
-11595582,2026-03-16 22:00:00,Josef Pelikan,Jiri Grohsgott
-11595565,2026-03-16 22:30:00,Jan Varcl Jnr,Tomas Regner
 11594308,2026-03-16 22:30:00,Vladimir Postelt,Tomas Barta
+11595565,2026-03-16 22:30:00,Jan Varcl Jnr,Tomas Regner
 11595580,2026-03-16 22:30:00,Rostislav Hasmanda,Julius Didi
+11598554,2026-03-17 02:00:00,Filip Jungman,Milan Kolar
+11598603,2026-03-17 02:00:00,Daniel Tuma,Jiri Pozarsky
+11598916,2026-03-17 02:00:00,Milan Vrabec,Jindrich Vrba
+11599052,2026-03-17 02:00:00,Radomir Revay,Tadeas Zika
+11598604,2026-03-17 02:30:00,Jiri Zuzanek,Ales Bayer
+11598627,2026-03-17 02:30:00,Jiri Havel,Milos Pospisil
+11598628,2026-03-17 02:30:00,Cesta Havrda,Ludek Madle
+11598843,2026-03-17 02:30:00,Radovan Polasek,Michal Cabis
+11598948,2026-03-17 02:30:00,Eduard Sionkala,Alexandr Virag
+11599050,2026-03-17 03:00:00,Tadeas Zika,Radovan Polasek
+11599175,2026-03-17 04:00:00,Radomir Revay,Radovan Polasek
+11599049,2026-03-17 04:30:00,Tadeas Zika,Michal Cabis
+11599051,2026-03-17 06:00:00,Kyryl Darin,Jaroslav Novotny
+11598830,2026-03-17 06:00:00,Michael Sedlacek,Adam Pokorny
+11598555,2026-03-17 06:00:00,Milan Fisera,Jaroslav Strnad 1964
+11599037,2026-03-17 06:00:00,Marek Placek,Jiri Dedek
+11598703,2026-03-17 06:30:00,Adrian Walek,Martin Pavliska
+11598844,2026-03-17 06:30:00,Ondrej Paril,Tadeas Zika
+11599021,2026-03-17 06:30:00,Milan Longin,Vaclav Dolezal
+11599150,2026-03-17 06:30:00,Dmitro Parhomenko,Frantisek Just
+11599177,2026-03-17 06:30:00,Lukas Malek,Jiri Havel
+11599176,2026-03-17 07:00:00,Jaroslav Novotny,Lukas Malek
+11599048,2026-03-17 07:30:00,Jiri Havel,Kyryl Darin
+11599046,2026-03-17 07:30:00,Tadeas Zika,Michael Sedlacek
+11599043,2026-03-17 07:30:00,Frantisek Just,Marek Placek
+11599036,2026-03-17 08:00:00,Marek Placek,Dmitro Parhomenko
+11599047,2026-03-17 08:00:00,Kyryl Darin,Lukas Malek
+11599045,2026-03-17 08:30:00,Adam Pokorny,Tadeas Zika
+11598548,2026-03-17 10:00:00,Michal Chalupa,Daniel Unzeitig
+11598706,2026-03-17 10:00:00,Jan Pleskot,Milan Cetner
+11599003,2026-03-17 10:00:00,Radim Urbaniec,Roman Opralka
+11599151,2026-03-17 10:00:00,Michal Jezek,Oleksandr Kolisnyk
+11599289,2026-03-17 10:30:00,Jan Mecl Jr,Tomas Postelt
+11598553,2026-03-17 10:30:00,Marek Holub,Lukas Martinak
+11599087,2026-03-17 10:30:00,David Szotek,Zdenek Babinec
+11598549,2026-03-17 14:00:00,Miroslav Tuma,Vaclav Hruska Sr
+11598626,2026-03-17 14:00:00,Lukas Velicka,Michal Koral
+11599033,2026-03-17 14:00:00,Jakub Levicky,Tomas Petrek
+11598552,2026-03-17 14:30:00,Dominik Oborny,Roman Guliak
+11598609,2026-03-17 14:30:00,Tomas Janata,Martin Sopko
+11599075,2026-03-17 14:30:00,Marcel Pikous,Jiri Louda
+11599038,2026-03-17 15:00:00,Tomas Petrek,Dominik Oborny
+11599040,2026-03-17 15:30:00,Roman Guliak,Jakub Levicky
+11599035,2026-03-17 16:00:00,Jakub Levicky,Dominik Oborny
+11599034,2026-03-17 16:30:00,Tomas Petrek,Roman Guliak
+11598709,2026-03-17 18:00:00,Tomas Janata,Vladimir Cermak
+11598608,2026-03-17 18:00:00,Frantisek Briza,Filip Jungman
+11599039,2026-03-17 18:30:00,Kyryl Darin,Milan Smrcek
+11599149,2026-03-17 19:00:00,Filip Jungman,Michal Vedmoch
+11599044,2026-03-17 19:30:00,Frantisek Briza,Kyryl Darin
+11599041,2026-03-17 20:30:00,Filip Jungman,Kyryl Darin
+11599042,2026-03-17 21:30:00,Kyryl Darin,Michal Vedmoch

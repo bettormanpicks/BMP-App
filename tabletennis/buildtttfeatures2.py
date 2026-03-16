@@ -59,13 +59,34 @@ for idx, match in schedule.iterrows():
     recent_B_L30 = recent_B["four_plus"].tail(30).mean() if not recent_B.empty else 0.5
 
     # --- Weighted H2H ---
-    recent_avg = (recent_A_L10 + recent_B_L10) / 2
+    recent_avg = (
+        (recent_A_L10 * 0.6 + recent_A_L30 * 0.4) +
+        (recent_B_L10 * 0.6 + recent_B_L30 * 0.4)
+    ) / 2
     h2h_L10_weighted = (min(h2h_count_L10, min_h2h_threshold)/min_h2h_threshold * h2h_L10 +
                         (1 - min(h2h_count_L10, min_h2h_threshold)/min_h2h_threshold) * recent_avg)
     h2h_L30_weighted = (min(h2h_count_L30, min_h2h_threshold)/min_h2h_threshold * h2h_L30 +
                         (1 - min(h2h_count_L30, min_h2h_threshold)/min_h2h_threshold) * recent_avg)
     h2h_L60_weighted = (min(h2h_count_L60, min_h2h_threshold)/min_h2h_threshold * h2h_L60 +
                         (1 - min(h2h_count_L60, min_h2h_threshold)/min_h2h_threshold) * recent_avg)
+
+    recent_A["is_win"] = (
+        ((recent_A["player1"] == player1) & (recent_A["sets1"] > recent_A["sets2"])) |
+        ((recent_A["player2"] == player1) & (recent_A["sets2"] > recent_A["sets1"]))
+    )
+
+    recent_B["is_win"] = (
+        ((recent_B["player1"] == player2) & (recent_B["sets1"] > recent_B["sets2"])) |
+        ((recent_B["player2"] == player2) & (recent_B["sets2"] > recent_B["sets1"]))
+    )
+
+    win_A_L10 = recent_A.tail(10)["is_win"].mean() if not recent_A.empty else 0.5
+    win_B_L10 = recent_B.tail(10)["is_win"].mean() if not recent_B.empty else 0.5
+
+    strength_gap_L10 = abs(win_A_L10 - win_B_L10)
+    form_gap_L10 = abs(recent_A_L10 - recent_B_L10)
+
+    match_balance_L10 = form_gap_L10 + strength_gap_L10
 
     # --- Store features ---
     features.append({
@@ -82,7 +103,8 @@ for idx, match in schedule.iterrows():
         "recent_A_L10": recent_A_L10,
         "recent_B_L10": recent_B_L10,
         "recent_A_L30": recent_A_L30,
-        "recent_B_L30": recent_B_L30
+        "recent_B_L30": recent_B_L30,
+        "match_balance_L10": match_balance_L10
     })
 
 # --- Output final CSV ---
