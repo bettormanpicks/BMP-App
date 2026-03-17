@@ -69,7 +69,7 @@ def resort_csv():
 # Selenium Scraper (replaces Playwright)
 # -------------------------
 
-def scrape_history(start_page=11, end_page=20, min_delay=4, max_delay=7):
+def scrape_history(start_page=1, end_page=11, min_delay=4, max_delay=7):
 
     empty_pages = 0
     EMPTY_PAGE_THRESHOLD = 10  # tweakable
@@ -82,8 +82,15 @@ def scrape_history(start_page=11, end_page=20, min_delay=4, max_delay=7):
 
     print("Launching browser...")
 
+    CHROME_PROFILE_PATH = r"C:\selenium_profiles\ttelite"
+
     options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
+    options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
+    options.add_argument("--profile-directory=Default")
+    options.add_argument("--disable-blink-features=AutomationControlled")
+    options.add_argument("--no-first-run")
+    options.add_argument("--no-default-browser-check")
 
     driver = uc.Chrome(options=options, version_main=145)
 
@@ -235,6 +242,6 @@ def scrape_history(start_page=11, end_page=20, min_delay=4, max_delay=7):
 
 if __name__ == "__main__":
     scrape_history(
-        start_page=11,
-        end_page=20
+        start_page=1,
+        end_page=11
     )
