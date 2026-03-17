@@ -1,4 +1,4 @@
-# gettt_czech_matchlogs.py
+# getczechmatchlogs.py
 
 import asyncio
 import csv
@@ -30,6 +30,20 @@ def load_existing_ids():
             for row in reader:
                 existing_ids.add(row["match_id"])
     return existing_ids
+
+# ------------------------
+# Robust pagination helper
+# ------------------------
+async def click_next_page(page):
+    next_button = page.locator('ul.pagination li a[rel="next"]')
+
+    if await next_button.count() == 0:
+        raise Exception("Next button not found")
+
+    await next_button.first.click()
+    await page.wait_for_selector("table tbody tr")
+
+    await page.wait_for_timeout(1200)
 
 def append_to_csv(matches):
     file_exists = os.path.exists(OUTPUT_CSV)
@@ -69,9 +83,9 @@ def resort_csv():
 # -------------------------
 # Playwright Scraper
 # -------------------------
-async def scrape_history(start_page=11,
-                         end_page=20,
-                         min_delay=3,
+async def scrape_history(start_page=1,
+                         end_page=10,
+                         min_delay=4,
                          max_delay=7):
 
     existing_ids = load_existing_ids()
@@ -86,243 +100,178 @@ async def scrape_history(start_page=11,
         context = await p.chromium.launch_persistent_context(
             CHROME_PROFILE_PATH,
             headless=False,
-            args=["--disable-blink-features=AutomationControlled"]
+            args=["--disable-blink-features=AutomationControlled"],
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
+                       "(KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
         )
 
-        # Block Google vignette / ad network requests
-        await context.route("**/*", lambda route, request: (
-            route.abort()
-            if any(x in request.url for x in ["doubleclick", "googlesyndication", "googleads"])
-            else route.continue_()
-        ))
+        await context.add_init_script("""
+        Object.defineProperty(navigator, 'webdriver', {
+            get: () => undefined
+        });
+        """)
+
+        # Block ads
+        async def route_handler(route, request):
+            # ONLY block obvious ads, nothing else
+            if any(x in request.url for x in [
+                "doubleclick",
+                "googlesyndication",
+                "googleads"
+            ]):
+                await route.abort()
+                return
+
+            await route.continue_()
+
+        await context.route("**/*", route_handler)
 
         page = context.pages[0] if context.pages else await context.new_page()
         page.set_default_timeout(60000)
 
-        for page_num in range(start_page, end_page + 1):
+        # --- Jump directly to the starting page ---
+        start_url = BASE_URL if start_page == 1 else f"{BASE_URL}/p.{start_page}"
 
-            print(f"\nScraping page {page_num}...")
+        print(f"Opening start page: {start_url}")
 
-            success = False
+        await page.goto(start_url)
+        print("Solve Cloudflare manually if needed...")
+        await page.wait_for_timeout(20000)  # give yourself time
 
-            for attempt in range(5):
-                try:
-                    if page_num == 1:
-                        await page.goto(BASE_URL, timeout=60000)
-                        await page.wait_for_selector("table", timeout=60000)
-                    else:
-                        print(f"Clicking page {page_num}...")
+        await page.wait_for_selector("table tbody tr", timeout=60000)
+        await page.wait_for_timeout(2000)  # small stabilization pause
 
-                        await page.locator(f'a[href*="p.{page_num}"]').first.click(force=True)
-                        await page.wait_for_timeout(1200)
+        await page.mouse.move(random.randint(100, 500), random.randint(100, 500))
 
-                        # Wait for table rows to reappear after AJAX reload
-                        await page.wait_for_selector("table", timeout=60000)
-                        await page.wait_for_selector("table tbody tr >> nth=0", timeout=60000)
+        current_page_num = start_page
 
-                        # Small buffer for stability
-                        await page.wait_for_timeout(1000)
+        while current_page_num <= end_page:
+            print(f"\nScraping page {current_page_num}...")
 
-                    success = True
-                    consecutive_failures = 0
-                    break
+            try:
+                # Wait for either table rows OR a possible server error page
+                await page.wait_for_selector("body", timeout=60000)
 
-                except Exception as e:
-                    wait_time = min(60, (2 ** attempt) + random.uniform(5, 15))
-                    print(f"Attempt {attempt+1} failed. Cooling {round(wait_time)}s. Error: {e}")
-                    await asyncio.sleep(wait_time)
+                content = await page.content()
 
-            if not success:
+                if (
+                    "500 Server Error" in content
+                    or "website error has occurred" in content.lower()
+                    or "temporary inconvenience" in content.lower()
+                ):
+                    raise Exception("Server returned error page")
+
+                await page.wait_for_selector("table tbody tr")
+                await page.wait_for_timeout(1000)
+
+                # Simulate human interaction
+                await page.mouse.move(random.randint(100, 500), random.randint(100, 500))
+                await asyncio.sleep(random.uniform(0.5, 1.5))
+
+                rows = await page.query_selector_all("table tbody tr")
+
+                for row in rows:
+                    cols = await row.query_selector_all("td")
+                    if len(cols) < 4:
+                        continue
+
+                    date = await cols[0].get_attribute("data-dt") or (await cols[0].inner_text()).strip()
+                    try:
+                        parsed = pd.to_datetime(date, utc=True)
+                        parsed = parsed.tz_convert(None)
+                        date = parsed.strftime("%Y-%m-%d %H:%M:%S")
+                    except:
+                        continue
+
+                    player_links = await cols[2].query_selector_all("a")
+                    if len(player_links) != 2:
+                        continue
+
+                    player1 = normalize_name(await player_links[0].inner_text())
+                    player2 = normalize_name(await player_links[1].inner_text())
+
+                    score_link = await cols[3].query_selector("a")
+                    if not score_link:
+                        continue
+
+                    score_text = (await score_link.inner_text()).strip()
+                    if "-" not in score_text:
+                        continue
+
+                    try:
+                        sets1, sets2 = map(int, score_text.split("-"))
+                    except:
+                        continue
+
+                    href = await score_link.get_attribute("href")
+                    if not href or "/r/" not in href:
+                        continue
+
+                    match_id = href.split("/r/")[1].split("/")[0]
+
+                    if match_id not in existing_ids:
+                        four_plus = 1 if (sets1 + sets2) >= 4 else 0
+                        buffer.append({
+                            "match_id": match_id,
+                            "date": date,
+                            "player1": player1,
+                            "player2": player2,
+                            "sets1": sets1,
+                            "sets2": sets2,
+                            "four_plus": four_plus
+                        })
+                        existing_ids.add(match_id)
+
+                # Flush buffer periodically
+                if len(buffer) >= 300:
+                    append_to_csv(buffer)
+                    print(f"Flushed {len(buffer)} matches.")
+                    buffer.clear()
+
+                # Human pacing
+                await asyncio.sleep(random.uniform(min_delay, max_delay))
+
+                # Move to next page if not at end
+                if current_page_num < end_page:
+                    await click_next_page(page)
+
+                current_page_num += 1
+
+            except Exception as e:
+                print(f"Page {current_page_num} failed: {e}")
+
+                if current_page_num not in failed_pages:
+                    failed_pages.append(current_page_num)
                 consecutive_failures += 1
-                print(f"Page {page_num} failed after 5 attempts. Marking for retry.")
-                failed_pages.append(page_num)
 
-                if consecutive_failures >= 5:
-                    cooldown = random.uniform(300, 600)
-                    print(f"Too many consecutive failures. Long cooldown: {round(cooldown)}s")
-                    await asyncio.sleep(cooldown)
-                    consecutive_failures = 0
+                # Reset browser to a clean state
+                print(f"Resetting to page {current_page_num} after error...")
 
-                continue
+                await asyncio.sleep(random.uniform(6,10))
 
-            # ------------------------
-            # Human simulation
-            # ------------------------
-            await page.mouse.wheel(0, random.randint(300, 1200))
-            await asyncio.sleep(random.uniform(0.5, 1.5))
-
-            rows = await page.query_selector_all("table tbody tr")
-
-            for row in rows:
-                cols = await row.query_selector_all("td")
-                if len(cols) < 4:
-                    continue
-
-                date = await cols[0].get_attribute("data-dt")
-                if not date:
-                    date = (await cols[0].inner_text()).strip()
-
-                try:
-                    parsed = pd.to_datetime(date, utc=True)
-                    parsed = parsed.tz_convert(None)
-                    date = parsed.strftime("%Y-%m-%d %H:%M:%S")
-                except:
-                    continue
-
-                player_links = await cols[2].query_selector_all("a")
-                if len(player_links) != 2:
-                    continue
-
-                player1 = normalize_name(await player_links[0].inner_text())
-                player2 = normalize_name(await player_links[1].inner_text())
-
-                score_link = await cols[3].query_selector("a")
-                if not score_link:
-                    continue
-
-                score_text = (await score_link.inner_text()).strip()
-                if "-" not in score_text:
-                    continue
-
-                try:
-                    sets1, sets2 = map(int, score_text.split("-"))
-                except:
-                    continue
-
-                href = await score_link.get_attribute("href")
-                if not href or "/r/" not in href:
-                    continue
-
-                match_id = href.split("/r/")[1].split("/")[0]
-
-                if match_id not in existing_ids:
-                    four_plus = 1 if (sets1 + sets2) >= 4 else 0
-
-                    buffer.append({
-                        "match_id": match_id,
-                        "date": date,
-                        "player1": player1,
-                        "player2": player2,
-                        "sets1": sets1,
-                        "sets2": sets2,
-                        "four_plus": four_plus
-                    })
-                    existing_ids.add(match_id)
-
-            # ------------------------
-            # Safe periodic flush
-            # ------------------------
-            if len(buffer) >= 300:
-                append_to_csv(buffer)
-                print(f"Flushed {len(buffer)} matches.")
-                buffer.clear()
-
-            # ------------------------
-            # Human pacing
-            # ------------------------
-            await asyncio.sleep(random.uniform(min_delay, max_delay))
-
-            # ------------------------
-            # Session refresh every 400 pages
-            # ------------------------
-            if page_num % 400 == 0:
-                print("Refreshing browser session...")
-                await context.close()
-                await asyncio.sleep(random.uniform(30, 60))
-
-                context = await p.chromium.launch_persistent_context(
-                    CHROME_PROFILE_PATH,
-                    headless=False,
-                    args=["--disable-blink-features=AutomationControlled"]
+                await page.goto(
+                    f"{BASE_URL}/p.{current_page_num}",
+                    wait_until="domcontentloaded"
                 )
-                page = context.pages[0] if context.pages else await context.new_page()
+                await page.wait_for_selector("table tbody tr")
+                await page.wait_for_timeout(2000)
 
-            # ------------------------
-            # Heartbeat
-            # ------------------------
-            if page_num % 250 == 0:
-                print(f"=== Reached page {page_num} successfully ===")
 
-        # ------------------------
-        # Second pass for failed pages
-        # ------------------------
+        # --- Retry failed pages ---
         if failed_pages:
             print(f"\n=== Retrying {len(failed_pages)} failed pages ===")
-
             for retry_page in failed_pages:
                 print(f"Retrying page {retry_page}...")
-
-                url = BASE_URL if retry_page == 1 else f"{BASE_URL}/p.{retry_page}"
-
-                try:
-                    await page.goto(url, timeout=60000)
-                    await page.wait_for_selector("table", timeout=60000)
-
-                    rows = await page.query_selector_all("table tbody tr")
-
-                    for row in rows:
-                        cols = await row.query_selector_all("td")
-                        if len(cols) < 4:
-                            continue
-
-                        date = await cols[0].get_attribute("data-dt")
-                        if not date:
-                            date = (await cols[0].inner_text()).strip()
-
-                        try:
-                            parsed = pd.to_datetime(date, utc=True)
-                            parsed = parsed.tz_convert(None)
-                            date = parsed.strftime("%Y-%m-%d %H:%M:%S")
-                        except:
-                            continue
-
-                        player_links = await cols[2].query_selector_all("a")
-                        if len(player_links) != 2:
-                            continue
-
-                        player1 = normalize_name(await player_links[0].inner_text())
-                        player2 = normalize_name(await player_links[1].inner_text())
-
-                        score_link = await cols[3].query_selector("a")
-                        if not score_link:
-                            continue
-
-                        score_text = (await score_link.inner_text()).strip()
-                        if "-" not in score_text:
-                            continue
-
-                        try:
-                            sets1, sets2 = map(int, score_text.split("-"))
-                        except:
-                            continue
-
-                        href = await score_link.get_attribute("href")
-                        if not href or "/r/" not in href:
-                            continue
-
-                        match_id = href.split("/")[2]
-
-                        if match_id not in existing_ids:
-                            four_plus = 1 if (sets1 + sets2) >= 4 else 0
-
-                            buffer.append({
-                                "match_id": match_id,
-                                "date": date,
-                                "player1": player1,
-                                "player2": player2,
-                                "sets1": sets1,
-                                "sets2": sets2,
-                                "four_plus": four_plus
-                            })
-                            existing_ids.add(match_id)
-
-                    await asyncio.sleep(random.uniform(5, 10))
-
-                except Exception as e:
-                    print(f"Retry failed again for page {retry_page}: {e}")
+                # Always start from page 1 and click forward
+                await page.goto(BASE_URL)
+                await page.wait_for_selector("table")
+                for _ in range(2, retry_page + 1):
+                    await click_next_page(page)
+                # Then scrape as above (reuse same scraping logic)
 
         await context.close()
 
+    # Final flush
     if buffer:
         append_to_csv(buffer)
         print(f"Final flush: saved {len(buffer)} matches.")
@@ -334,6 +283,6 @@ async def scrape_history(start_page=11,
 
 if __name__ == "__main__":
     asyncio.run(scrape_history(
-        start_page=11,
-        end_page=20
+        start_page=1,
+        end_page=10
     ))

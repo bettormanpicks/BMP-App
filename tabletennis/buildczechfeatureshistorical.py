@@ -67,6 +67,9 @@ for idx, match in schedule.iterrows():
     recent_A_L30 = recent_A["four_plus"].tail(30).mean() if not recent_A.empty else 0.5
     recent_B_L30 = recent_B["four_plus"].tail(30).mean() if not recent_B.empty else 0.5
 
+    player_A_4plus_rate_last50 = recent_A["four_plus"].tail(50).mean() if not recent_A.empty else 0.5
+    player_B_4plus_rate_last50 = recent_B["four_plus"].tail(50).mean() if not recent_B.empty else 0.5
+
     # --- Weighted H2H ---
     recent_avg = ((recent_A_L10 * 0.6 + recent_A_L30 * 0.4) +
                   (recent_B_L10 * 0.6 + recent_B_L30 * 0.4)) / 2
@@ -88,6 +91,11 @@ for idx, match in schedule.iterrows():
     win_A_L10 = recent_A.tail(10)["is_win"].mean() if not recent_A.empty else 0.5
     win_B_L10 = recent_B.tail(10)["is_win"].mean() if not recent_B.empty else 0.5
 
+    win_A_L50 = recent_A.tail(50)["is_win"].mean() if not recent_A.empty else 0.5
+    win_B_L50 = recent_B.tail(50)["is_win"].mean() if not recent_B.empty else 0.5
+
+    strength_diff_last50 = abs(win_A_L50 - win_B_L50)
+
     strength_gap_L10 = abs(win_A_L10 - win_B_L10)
     form_gap_L10 = abs(recent_A_L10 - recent_B_L10)
     match_balance_L10 = form_gap_L10 + strength_gap_L10
@@ -108,7 +116,10 @@ for idx, match in schedule.iterrows():
         "recent_B_L10": recent_B_L10,
         "recent_A_L30": recent_A_L30,
         "recent_B_L30": recent_B_L30,
-        "match_balance_L10": match_balance_L10
+        "match_balance_L10": match_balance_L10,
+        "player_A_4plus_rate_last50": player_A_4plus_rate_last50,
+        "player_B_4plus_rate_last50": player_B_4plus_rate_last50,
+        "strength_diff_last50": strength_diff_last50
     })
 
     # --- Progress log ---
