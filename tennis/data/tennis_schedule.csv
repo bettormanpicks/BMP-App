@@ -1,14 +1,14 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-03-17,Live,Miami Open presented by Itau,Viktorija Golubic,Nikola Bartunkova
-2026-03-17,Live,Miami Open presented by Itau,McCartney Kessler,Magdalena Frech
-2026-03-17,Live,Miami Open presented by Itau,Laura Siegemund,Petra Marcinko
-2026-03-17,Live,Miami Open presented by Itau,Katie Boulter,Jessica Bouzas Maneiro
-2026-03-17,21:50,Miami Open presented by Itau,Zhang Shuai,Sorana Cirstea
-2026-03-17,22:10,Miami Open presented by Itau,Sofia Kenin,Anna Blinkova
-2026-03-17,23:00,Miami Open presented by Itau,Zeynep Sonmez,Beatriz Haddad Maia
-2026-03-17,00:00,Miami Open presented by Itau,Katerina Siniakova,Camila Osorio
+2026-03-17,Live,Miami Open presented by Itau,Sofia Kenin,Anna Blinkova
+2026-03-17,Live,Miami Open presented by Itau,Katerina Siniakova,Camila Osorio
+2026-03-17,Final,Miami Open presented by Itau,Zeynep Sonmez,Beatriz Haddad Maia
+2026-03-17,Final,Miami Open presented by Itau,Zhang Shuai,Sorana Cirstea
+2026-03-17,Final,Miami Open presented by Itau,Katie Boulter,Jessica Bouzas Maneiro
+2026-03-17,Final,Miami Open presented by Itau,Laura Siegemund,Petra Marcinko
+2026-03-17,Final,Miami Open presented by Itau,McCartney Kessler,Magdalena Frech
 2026-03-17,Final,Miami Open presented by Itau,Mary Stoiana,Yuliia Starodubtseva
 2026-03-17,Final,Miami Open presented by Itau,Darja Semenistaja,Sinja Kraus
+2026-03-17,Final,Miami Open presented by Itau,Viktorija Golubic,Nikola Bartunkova
 2026-03-17,Final,Miami Open presented by Itau,Magda Linette,Varvara Gracheva
 2026-03-17,Final,Miami Open presented by Itau,Elvina Kalieva,Diane Parry
 2026-03-17,Final,Miami Open presented by Itau,Simona Waltert,Ajla Tomljanovic
@@ -21,13 +21,13 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-17,Final,Miami Open presented by Itau,Renata Zarazua,Aliaksandra Sasnovich
 2026-03-17,Final,Miami Open presented by Itau,Anastasia Zakharova,Rebecca Sramkova
 2026-03-17,Final,Miami Open presented by Itau,Kamilla Rakhimova,Talia Gibson
-2026-03-17,Live,Miami Open presented by Itau,Liam Draxl,Jay Clarke
-2026-03-17,Live,Miami Open presented by Itau,Rafael Jodar,Benjamin Bonzi
-2026-03-17,Live,Miami Open presented by Itau,Adam Walton,Rinky Hijikata
-2026-03-17,Live,Miami Open presented by Itau,Mattia Bellucci,Murphy Cassone
-2026-03-17,21:30,Miami Open presented by Itau,Aleksandar Vukic,Tomas Barrios Vera
-2026-03-17,21:40,Miami Open presented by Itau,Thiago Agustin Tirante,Martin Landaluce
-2026-03-17,21:45,Miami Open presented by Itau,Zachary Svajda,Daniel Merida Aguilar
+2026-03-17,Live,Miami Open presented by Itau,Thiago Agustin Tirante,Martin Landaluce
+2026-03-17,Final,Miami Open presented by Itau,Zachary Svajda,Daniel Merida Aguilar
+2026-03-17,Final,Miami Open presented by Itau,Aleksandar Vukic,Tomas Barrios Vera
+2026-03-17,Final,Miami Open presented by Itau,Mattia Bellucci,Murphy Cassone
+2026-03-17,Final,Miami Open presented by Itau,Adam Walton,Rinky Hijikata
+2026-03-17,Final,Miami Open presented by Itau,Rafael Jodar,Benjamin Bonzi
+2026-03-17,Final,Miami Open presented by Itau,Liam Draxl,Jay Clarke
 2026-03-17,Final,Miami Open presented by Itau,Nikoloz Basilashvili,Sho Shimabukuro
 2026-03-17,Final,Miami Open presented by Itau,Zachary Svajda,Colton Smith
 2026-03-17,Final,Miami Open presented by Itau,Aleksandar Vukic,Billy Harris
@@ -35,30 +35,39 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-17,Final,Miami Open presented by Itau,Ignacio Buse,Chak Lam Coleman Wong
 2026-03-17,Final,Miami Open presented by Itau,Yannick Hanfmann,Luca Van Assche
 2026-03-17,Final,Miami Open presented by Itau,Arthur Fery,Bu Yunchaokete
-2026-03-18,TBD,Miami Open presented by Itau,Dayana Yastremska,Ashlyn Krueger
-2026-03-18,TBD,Miami Open presented by Itau,Janice Tjen,Yulia Putintseva
-2026-03-18,TBD,Miami Open presented by Itau,Emiliana Arango,Oksana Selekhmeteva
-2026-03-18,TBD,Miami Open presented by Itau,Francesca Jones,Venus Williams
-2026-03-18,TBD,Miami Open presented by Itau,Hailey Baptiste,Tatjana Maria
-2026-03-18,TBD,Miami Open presented by Itau,Jennifer Brady,Sloane Stephens
-2026-03-18,TBD,Miami Open presented by Itau,Elena-Gabriela Ruse,Antonia Ruzic
-2026-03-18,TBD,Miami Open presented by Itau,James Duckworth,Roberto Bautista Agut
-2026-03-18,TBD,Miami Open presented by Itau,Marin Cilic,Alexei Popyrin
-2026-03-18,TBD,Miami Open presented by Itau,Terence Atmane,Daniel Altmaier
-2026-03-18,TBD,Miami Open presented by Itau,Ethan Quinn,Hubert Hurkacz
-2026-03-18,TBD,Miami Open presented by Itau,Denis Shapovalov,Botic Van De Zandschulp
-2026-03-18,TBD,Miami Open presented by Itau,Reilly Opelka,Nuno Borges
-2026-03-18,TBD,Miami Open presented by Itau,Martin Damm,Jacob Fearnley
-2026-03-18,TBD,Miami Open presented by Itau,Emilio Nava,Tomas Machac
-2026-03-18,TBD,Miami Open presented by Itau,Zizou Bergs,Jenson Brooksby
-2026-03-18,TBD,Miami Open presented by Itau,Zhang Zhizhen,Adrian Mannarino
-2026-03-18,TBD,Miami Open presented by Itau,Raphael Collignon,Grigor Dimitrov
-2026-03-18,TBD,Miami Open presented by Itau,Alexandre Muller,Matteo Berrettini
-2026-03-18,TBD,Miami Open presented by Itau,Alejandro Tabilo,Francisco Comesana
-2026-03-18,TBD,Miami Open presented by Itau,Darwin Blanch,Jan-Lennard Struff
-2026-03-18,TBD,Miami Open presented by Itau,Matteo Arnaldi,Alexander Shevchenko
-2026-03-18,TBD,Miami Open presented by Itau,Gabriel Diallo,Wu Yibing
-2026-03-18,TBD,Miami Open presented by Itau,Aleksandar Kovacevic,Rei Sakamoto
-2026-03-18,TBD,Miami Open presented by Itau,Kamil Majchrzak,Miomir Kecmanovic
-2026-03-18,TBD,Miami Open presented by Itau,Fabian Marozsan,Joao Fonseca
-2026-03-18,TBD,Miami Open presented by Itau,Giovanni Mpetshi Perricard,Camilo Ugo Carabelli
+2026-03-17,Live,Miami Open presented by Itau,Sofia Kenin,Anna Blinkova
+2026-03-17,Live,Miami Open presented by Itau,Katerina Siniakova,Camila Osorio
+2026-03-17,Final,Miami Open presented by Itau,Zeynep Sonmez,Beatriz Haddad Maia
+2026-03-17,Final,Miami Open presented by Itau,Zhang Shuai,Sorana Cirstea
+2026-03-17,Final,Miami Open presented by Itau,Katie Boulter,Jessica Bouzas Maneiro
+2026-03-17,Final,Miami Open presented by Itau,Laura Siegemund,Petra Marcinko
+2026-03-17,Final,Miami Open presented by Itau,McCartney Kessler,Magdalena Frech
+2026-03-17,Final,Miami Open presented by Itau,Mary Stoiana,Yuliia Starodubtseva
+2026-03-17,Final,Miami Open presented by Itau,Darja Semenistaja,Sinja Kraus
+2026-03-17,Final,Miami Open presented by Itau,Viktorija Golubic,Nikola Bartunkova
+2026-03-17,Final,Miami Open presented by Itau,Magda Linette,Varvara Gracheva
+2026-03-17,Final,Miami Open presented by Itau,Elvina Kalieva,Diane Parry
+2026-03-17,Final,Miami Open presented by Itau,Simona Waltert,Ajla Tomljanovic
+2026-03-17,Final,Miami Open presented by Itau,Lulu Sun,Donna Vekic
+2026-03-17,Final,Miami Open presented by Itau,Darja Vidmanova,Elsa Jacquemot
+2026-03-17,Final,Miami Open presented by Itau,Ella Seidel,Rebeka Masarova
+2026-03-17,Final,Miami Open presented by Itau,Katie Volynets,Bianca Andreescu
+2026-03-17,Final,Miami Open presented by Itau,Varvara Lepchenko,Linda Fruhvirtova
+2026-03-17,Final,Miami Open presented by Itau,Kimberly Birrell,Yuan Yue
+2026-03-17,Final,Miami Open presented by Itau,Renata Zarazua,Aliaksandra Sasnovich
+2026-03-17,Final,Miami Open presented by Itau,Anastasia Zakharova,Rebecca Sramkova
+2026-03-17,Final,Miami Open presented by Itau,Kamilla Rakhimova,Talia Gibson
+2026-03-17,Live,Miami Open presented by Itau,Thiago Agustin Tirante,Martin Landaluce
+2026-03-17,Final,Miami Open presented by Itau,Zachary Svajda,Daniel Merida Aguilar
+2026-03-17,Final,Miami Open presented by Itau,Aleksandar Vukic,Tomas Barrios Vera
+2026-03-17,Final,Miami Open presented by Itau,Mattia Bellucci,Murphy Cassone
+2026-03-17,Final,Miami Open presented by Itau,Adam Walton,Rinky Hijikata
+2026-03-17,Final,Miami Open presented by Itau,Rafael Jodar,Benjamin Bonzi
+2026-03-17,Final,Miami Open presented by Itau,Liam Draxl,Jay Clarke
+2026-03-17,Final,Miami Open presented by Itau,Nikoloz Basilashvili,Sho Shimabukuro
+2026-03-17,Final,Miami Open presented by Itau,Zachary Svajda,Colton Smith
+2026-03-17,Final,Miami Open presented by Itau,Aleksandar Vukic,Billy Harris
+2026-03-17,Final,Miami Open presented by Itau,Alexander Blockx,Christopher O'Connell
+2026-03-17,Final,Miami Open presented by Itau,Ignacio Buse,Chak Lam Coleman Wong
+2026-03-17,Final,Miami Open presented by Itau,Yannick Hanfmann,Luca Van Assche
+2026-03-17,Final,Miami Open presented by Itau,Arthur Fery,Bu Yunchaokete
