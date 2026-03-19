@@ -1,12 +1,11 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-03-19,14:00,Miami Open presented by Itau,Sara Bejlek,Talia Gibson
-2026-03-19,14:00,Miami Open presented by Itau,Paula Badosa,Aliaksandra Sasnovich
-2026-03-19,15:00,Miami Open presented by Itau,Anastasia Zakharova,Anna Bondar
-2026-03-19,15:00,Miami Open presented by Itau,Eva Lys,Yuliia Starodubtseva
-2026-03-19,15:00,Miami Open presented by Itau,Tereza Valentova,Katie Volynets
-2026-03-19,15:00,Miami Open presented by Itau,Dalma Galfi,Elvina Kalieva
-2026-03-19,15:00,Miami Open presented by Itau,Alycia Parks,Sinja Kraus
-2026-03-19,15:00,Miami Open presented by Itau,Darja Semenistaja,Elisabetta Cocciaretto
+2026-03-19,Live,Miami Open presented by Itau,Paula Badosa,Aliaksandra Sasnovich
+2026-03-19,Live,Miami Open presented by Itau,Tereza Valentova,Katie Volynets
+2026-03-19,Live,Miami Open presented by Itau,Alycia Parks,Sinja Kraus
+2026-03-19,Live,Miami Open presented by Itau,Dalma Galfi,Elvina Kalieva
+2026-03-19,15:50,Miami Open presented by Itau,Anastasia Zakharova,Anna Bondar
+2026-03-19,15:50,Miami Open presented by Itau,Eva Lys,Yuliia Starodubtseva
+2026-03-19,15:50,Miami Open presented by Itau,Darja Semenistaja,Elisabetta Cocciaretto
 2026-03-19,16:00,Miami Open presented by Itau,Francesca Jones,Venus Williams
 2026-03-19,16:00,Miami Open presented by Itau,Alexandra Eala,Laura Siegemund
 2026-03-19,16:30,Miami Open presented by Itau,Lilli Tagger,Ella Seidel
@@ -25,13 +24,14 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-19,21:00,Miami Open presented by Itau,Lulu Sun,Taylor Townsend
 2026-03-19,23:00,Miami Open presented by Itau,Jennifer Brady,Sloane Stephens
 2026-03-19,00:30,Miami Open presented by Itau,Mirra Andreeva,McCartney Kessler
-2026-03-19,14:00,Miami Open presented by Itau,James Duckworth,Roberto Bautista Agut
-2026-03-19,14:00,Miami Open presented by Itau,Moise Kouame,Zachary Svajda
-2026-03-19,14:00,Miami Open presented by Itau,Rafael Jodar,Yannick Hanfmann
-2026-03-19,14:00,Miami Open presented by Itau,Nikoloz Basilashvili,Mariano Navone
-2026-03-19,15:00,Miami Open presented by Itau,Zizou Bergs,Jenson Brooksby
-2026-03-19,15:30,Miami Open presented by Itau,Zhang Zhizhen,Adrian Mannarino
-2026-03-19,15:30,Miami Open presented by Itau,Darwin Blanch,Jan-Lennard Struff
+2026-03-19,Final,Miami Open presented by Itau,Sara Bejlek,Talia Gibson
+2026-03-19,Live,Miami Open presented by Itau,James Duckworth,Roberto Bautista Agut
+2026-03-19,Live,Miami Open presented by Itau,Moise Kouame,Zachary Svajda
+2026-03-19,Live,Miami Open presented by Itau,Rafael Jodar,Yannick Hanfmann
+2026-03-19,Live,Miami Open presented by Itau,Nikoloz Basilashvili,Mariano Navone
+2026-03-19,Live,Miami Open presented by Itau,Zizou Bergs,Jenson Brooksby
+2026-03-19,15:50,Miami Open presented by Itau,Zhang Zhizhen,Adrian Mannarino
+2026-03-19,15:50,Miami Open presented by Itau,Darwin Blanch,Jan-Lennard Struff
 2026-03-19,16:30,Miami Open presented by Itau,Ethan Quinn,Hubert Hurkacz
 2026-03-19,16:30,Miami Open presented by Itau,Marcos Giron,Martin Landaluce
 2026-03-19,16:30,Miami Open presented by Itau,Giovanni Mpetshi Perricard,Camilo Ugo Carabelli
@@ -51,6 +51,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-19,23:00,Miami Open presented by Itau,Alex Michelsen,Mattia Bellucci
 2026-03-20,TBD,Miami Open presented by Itau,Katie Boulter,Clara Tauson
 2026-03-20,TBD,Miami Open presented by Itau,Amanda Anisimova,Ajla Tomljanovic
+2026-03-20,TBD,Miami Open presented by Itau,Talia Gibson,Naomi Osaka
 2026-03-20,TBD,Miami Open presented by Itau,Karolina Muchova,Camila Osorio
 2026-03-20,TBD,Miami Open presented by Itau,Anna Blinkova,Victoria Mboko
 2026-03-20,TBD,Miami Open presented by Itau,Linda Noskova,Sorana Cirstea
