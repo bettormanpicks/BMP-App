@@ -2,18 +2,17 @@ import time
 import csv
 import os
 from urllib.parse import quote
-from datetime import datetime, timedelta
 import pandas as pd
 import undetected_chromedriver as uc
 from selenium.webdriver.support.ui import WebDriverWait
+from datetime import datetime
 
 # -------------------------
 # Configuration
 # -------------------------
-LEAGUE_URL = "https://scores24.live/en/table-tennis/l-czech-liga-pro-1"
+LEAGUE_URL = "https://scores24.live/en/table-tennis/l-tt-elite-series-1"
 CHROME_PROFILE_PATH = r"C:\selenium_profiles\scores24"
-OUTPUT_CSV = "data/tt_czech_matchlogs.csv"
-START_DATE = "2023-01-01 00:00:00"  # First date to scrape
+OUTPUT_CSV = "data/tt_elite_schedule.csv"
 
 # -------------------------
 # Helpers
@@ -32,8 +31,7 @@ def append_to_csv(matches):
         writer = csv.DictWriter(
             f,
             fieldnames=[
-                "match_id","match_date","player1","player2","sets",
-                "total_points","match_winner","four_plus"
+                "match_id", "match_date", "player1", "player2", "match_link"
             ],
             quoting=csv.QUOTE_MINIMAL
         )
@@ -50,22 +48,13 @@ def resort_csv():
         return
     df["match_date"] = pd.to_datetime(df["match_date"], errors="coerce")
     df = df.dropna(subset=["match_date"])
-    df.sort_values("match_date", ascending=False, inplace=True)
+    df.sort_values("match_date", ascending=True, inplace=True)
     df.to_csv(OUTPUT_CSV, index=False)
 
 # -------------------------
 # Main Scraper
 # -------------------------
-def scrape_api():
-    existing_ids = set()
-    if os.path.exists(OUTPUT_CSV):
-        try:
-            df_existing = pd.read_csv(OUTPUT_CSV)
-            existing_ids = set(df_existing["match_id"].astype(str))
-            print(f"Loaded {len(existing_ids)} existing match IDs")
-        except:
-            print("Could not load existing CSV, continuing fresh")
-
+def scrape_schedule():
     print("Launching browser...")
 
     options = uc.ChromeOptions()
@@ -74,21 +63,21 @@ def scrape_api():
     options.add_argument("--disable-blink-features=AutomationControlled")
 
     driver = uc.Chrome(options=options, version_main=145)
-    wait = WebDriverWait(driver, 20)
 
     driver.get(LEAGUE_URL)
     print("Solve Cloudflare if needed...")
     time.sleep(15)
 
-    base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/czech-liga-pro-1/matches"
+    base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/tt-elite-series-1/matches"
 
     cursor = None
     buffer = []
 
-    start_date_encoded = quote(START_DATE)
+    start_date = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+    start_date_encoded = quote(start_date)
 
     while True:
-        query = f"{base_url}?lang=en&first=50&status=ended&audience=us&date_between[]={start_date_encoded}"
+        query = f"{base_url}?lang=en&first=50&status=not_started&audience=us&date_between[]={start_date_encoded}"
         if cursor:
             query += f"&after={quote(cursor)}"
 
@@ -106,64 +95,43 @@ def scrape_api():
 
         edges = data.get("data", {}).get("edges", [])
         if not edges:
-            print("No more matches.")
+            print("No more upcoming matches.")
             break
 
         print(f"Fetched {len(edges)} matches")
 
-        for idx, edge in enumerate(edges):
+        for edge in edges:
             try:
                 node = edge["node"]
 
                 match_id = node["slug"]
-
-                # ✅ SKIP duplicates HERE
-                if match_id in existing_ids:
-                    continue
-
-                existing_ids.add(match_id)
-
                 player1 = normalize_name(node["teams"][0]["name"])
                 player2 = normalize_name(node["teams"][1]["name"])
                 match_date = pd.to_datetime(node["match_date"]).strftime("%Y-%m-%d %H:%M:%S")
-                winner_raw = node.get("winner")
-                match_winner = int(winner_raw) if winner_raw else 0
-
-                sets = [s["value"] for s in node.get("result_scores", []) if s["type"] != "FT"]
-                total_points = sum(sum(map(int, x.split(":"))) for x in sets if ":" in x)
-                four_plus = 1 if len(sets) >= 4 else 0
+                match_link = f"https://scores24.live/en/table-tennis/{match_id}"
 
                 buffer.append({
                     "match_id": match_id,
                     "match_date": match_date,
                     "player1": player1,
                     "player2": player2,
-                    "sets": "|".join(sets),
-                    "total_points": total_points,
-                    "match_winner": match_winner,
-                    "four_plus": four_plus
+                    "match_link": match_link
                 })
 
             except Exception as e:
-                print(f"Parse error at index {idx}: {e}")
-
-        # ✅ Flush every loop (safe + prevents data loss)
-        if buffer:
-            append_to_csv(buffer)
-            print(f"Saved {len(buffer)} matches")
-            buffer.clear()
+                print("Parse error:", e)
 
         cursor = edges[-1].get("cursor")
         if not cursor:
-            print("No next cursor. Done.")
             break
 
         time.sleep(0.5)
 
     driver.quit()
-    resort_csv()
-    print("✅ Scraping complete.")
+
+    pd.DataFrame(buffer).to_csv("data/tt_elite_schedule.csv", index=False)
+    print("✅ Schedule scraping complete.")
 
 # -------------------------
 if __name__ == "__main__":
-    scrape_api()
+    scrape_schedule()

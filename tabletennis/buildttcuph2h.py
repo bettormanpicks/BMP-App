@@ -3,8 +3,8 @@ import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
-MATCHLOGS_CSV = os.path.join(BASE_DIR, "data", "tt_czech_matchlogs.csv")
-OUTPUT_CSV = os.path.join(BASE_DIR, "data", "tt_czech_h2h_summary.csv")
+MATCHLOGS_CSV = os.path.join(BASE_DIR, "data", "tt_cup_matchlogs.csv")
+OUTPUT_CSV = os.path.join(BASE_DIR, "data", "tt_cup_h2h_summary.csv")
 
 df = pd.read_csv(MATCHLOGS_CSV, dtype={"match_id": str})
 

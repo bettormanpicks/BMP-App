@@ -1,145 +1,137 @@
-import asyncio
-import pandas as pd
+import time
+import csv
 import os
-import re
+from urllib.parse import quote
+import pandas as pd
+import undetected_chromedriver as uc
+from selenium.webdriver.support.ui import WebDriverWait
 from datetime import datetime
-from playwright.async_api import async_playwright
 
-BASE_URL = "https://betsapi.com/table-tennis/ls/22742/Czech-Liga-Pro"
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_CSV = os.path.join(BASE_DIR, "data", "tt_czech_schedule.csv")
+# -------------------------
+# Configuration
+# -------------------------
+LEAGUE_URL = "https://scores24.live/en/table-tennis/l-czech-liga-pro-1"
+CHROME_PROFILE_PATH = r"C:\selenium_profiles\scores24"
+OUTPUT_CSV = "data/czech_schedule.csv"
 
-CHROME_PROFILE_PATH = r"C:\playwright_profiles\ttelite"
+# -------------------------
+# Helpers
+# -------------------------
+def normalize_name(name):
+    if "," in name:
+        last, first = name.split(",", 1)
+        return f"{first.strip()} {last.strip()}"
+    return name.strip()
 
-async def scrape_schedule():
-    all_matches = []
-
-    async with async_playwright() as p:
-        context = await p.chromium.launch_persistent_context(
-            CHROME_PROFILE_PATH,
-            headless=False,
-            args=["--disable-blink-features=AutomationControlled"]
+def append_to_csv(matches):
+    if not matches:
+        return
+    file_exists = os.path.exists(OUTPUT_CSV)
+    with open(OUTPUT_CSV, "a", newline="", encoding="utf-8") as f:
+        writer = csv.DictWriter(
+            f,
+            fieldnames=[
+                "match_id", "match_date", "player1", "player2", "match_link"
+            ],
+            quoting=csv.QUOTE_MINIMAL
         )
+        if not file_exists:
+            writer.writeheader()
+        writer.writerows(matches)
 
-        # Block ads
-        async def route_handler(route, request):
-            if any(x in request.url for x in ["google", "doubleclick"]):
-                await route.abort()
-            else:
-                await route.continue_()
-        await context.route("**/*", route_handler)
+def resort_csv():
+    if not os.path.exists(OUTPUT_CSV):
+        return
+    df = pd.read_csv(OUTPUT_CSV)
+    if "match_date" not in df.columns:
+        print("CSV empty or missing match_date, skipping sort")
+        return
+    df["match_date"] = pd.to_datetime(df["match_date"], errors="coerce")
+    df = df.dropna(subset=["match_date"])
+    df.sort_values("match_date", ascending=True, inplace=True)
+    df.to_csv(OUTPUT_CSV, index=False)
 
-        page = context.pages[0] if context.pages else await context.new_page()
+# -------------------------
+# Main Scraper
+# -------------------------
+def scrape_schedule():
+    print("Launching browser...")
 
-        # Load first page
-        await page.goto(BASE_URL, timeout=60000)
-        await page.wait_for_selector("table tbody tr", timeout=60000)
-        await page.wait_for_timeout(1500)  # allow site JS to update times
+    options = uc.ChromeOptions()
+    options.add_argument("--start-maximized")
+    options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
+    options.add_argument("--disable-blink-features=AutomationControlled")
 
-        # Detect pagination
-        pagination_links = await page.query_selector_all('a[href*="/p."]')
-        max_page = 1
-        for link in pagination_links:
-            href = await link.get_attribute("href")
-            if href and "/p." in href:
-                try:
-                    page_number = int(href.split("/p.")[1])
-                    max_page = max(max_page, page_number)
-                except:
-                    continue
+    driver = uc.Chrome(options=options, version_main=145)
 
-        print(f"Detected {max_page} total pages.")
+    driver.get(LEAGUE_URL)
+    print("Solve Cloudflare if needed...")
+    time.sleep(15)
 
-        # -------------------------
-        # Scrape all pages
-        # -------------------------
-        for page_num in range(1, max_page + 1):
+    base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/czech-liga-pro-1/matches"
 
-            if page_num == 1:
-                await page.goto(BASE_URL, timeout=60000)
-                await page.wait_for_selector("table tbody tr", timeout=60000)
-                await page.wait_for_timeout(1500)  # stabilize table times
-            else:
-                print(f"Clicking page {page_num}")
-                old_first_row = await page.locator("table tbody tr").first.inner_text()
-                await page.click(f'a[href*="p.{page_num}"]')
-                await page.wait_for_function(
-                    """(oldText) => {
-                        const row = document.querySelector("table tbody tr");
-                        return row && row.innerText !== oldText;
-                    }""",
-                    arg=old_first_row
-                )
-                await page.wait_for_timeout(1000)  # extra delay to stabilize table
+    cursor = None
+    buffer = []
 
-            # Retry logic if rows not fully loaded
-            rows = await page.locator("table tbody tr").all()
-            if len(rows) == 0:
-                await page.wait_for_timeout(1000)
-                rows = await page.locator("table tbody tr").all()
+    start_date = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
+    start_date_encoded = quote(start_date)
 
-            print(f"Scraping page {page_num} ({len(rows)} rows)")
+    while True:
+        query = f"{base_url}?lang=en&first=50&status=not_started&audience=us&date_between[]={start_date_encoded}"
+        if cursor:
+            query += f"&after={quote(cursor)}"
 
-            for row in rows:
-                cols = await row.locator("td").all()
-                if len(cols) < 4:
-                    continue
+        print("Fetching:", query)
 
-                # --- DATE exactly as shown in browser ---
-                date_text = (await cols[0].inner_text()).strip()
-#                if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
-#                    continue
+        data = driver.execute_script("""
+            return fetch(arguments[0])
+                .then(r => r.json())
+                .catch(e => null)
+        """, query)
 
-                # --- PLAYERS ---
-                players = await cols[2].locator("a").all()
-                if len(players) < 2:
-                    continue
-                player1 = (await players[0].inner_text()).strip()
-                player2 = (await players[1].inner_text()).strip()
+        if not data:
+            print("❌ Failed to fetch data")
+            break
 
-                # --- MATCH ID ---
-                match_id = None
-                link = cols[3].locator("a").first
-                if await link.count() > 0:
-                    href = await link.get_attribute("href")
-                    if href:
-                        m = re.search(r"\d+", href)
-                        if m:
-                            match_id = m.group()
+        edges = data.get("data", {}).get("edges", [])
+        if not edges:
+            print("No more upcoming matches.")
+            break
 
-                # right before all_matches.append(...)
-                if not re.match(r"\d{2}/\d{2}\s\d{2}:\d{2}", date_text):
-                    print(f"Skipping match with invalid date: {date_text}")
-                    continue
+        print(f"Fetched {len(edges)} matches")
 
-                all_matches.append({
+        for edge in edges:
+            try:
+                node = edge["node"]
+
+                match_id = node["slug"]
+                player1 = normalize_name(node["teams"][0]["name"])
+                player2 = normalize_name(node["teams"][1]["name"])
+                match_date = pd.to_datetime(node["match_date"]).strftime("%Y-%m-%d %H:%M:%S")
+                match_link = f"https://scores24.live/en/table-tennis/{match_id}"
+
+                buffer.append({
                     "match_id": match_id,
-                    "date": date_text,
+                    "match_date": match_date,
                     "player1": player1,
-                    "player2": player2
+                    "player2": player2,
+                    "match_link": match_link
                 })
 
-            await page.wait_for_timeout(500)  # stabilize before next page
+            except Exception as e:
+                print("Parse error:", e)
 
-        await context.close()
+        cursor = edges[-1].get("cursor")
+        if not cursor:
+            break
 
-    # -------------------------
-    # Convert to DataFrame
-    # -------------------------
-    df = pd.DataFrame(all_matches)
-    if df.empty:
-        print("No matches scraped.")
-        return
+        time.sleep(0.5)
 
-    current_year = datetime.now().year
-    df["date"] = df["date"] + f" {current_year}"
-    df["date"] = pd.to_datetime(df["date"], format="%m/%d %H:%M %Y", errors="coerce")
-    df.dropna(subset=["date"], inplace=True)
-    df.sort_values("date", inplace=True)
+    driver.quit()
 
-    df.to_csv(OUTPUT_CSV, index=False)
-    print(f"Done. Saved {len(df)} matches to {OUTPUT_CSV}")
+    pd.DataFrame(buffer).to_csv("data/czech_schedule.csv", index=False)
+    print("✅ Schedule scraping complete.")
 
-
+# -------------------------
 if __name__ == "__main__":
-    asyncio.run(scrape_schedule())
+    scrape_schedule()

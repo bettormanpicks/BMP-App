@@ -10,9 +10,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 # -------------------------
 # Configuration
 # -------------------------
-LEAGUE_URL = "https://scores24.live/en/table-tennis/l-czech-liga-pro-1"
+LEAGUE_URL = "https://scores24.live/en/table-tennis/l-international-tt-cup"
 CHROME_PROFILE_PATH = r"C:\selenium_profiles\scores24"
-OUTPUT_CSV = "data/tt_czech_matchlogs.csv"
+OUTPUT_CSV = "data/tt_cup_matchlogs.csv"
 START_DATE = "2023-01-01 00:00:00"  # First date to scrape
 
 # -------------------------
@@ -80,7 +80,7 @@ def scrape_api():
     print("Solve Cloudflare if needed...")
     time.sleep(15)
 
-    base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/czech-liga-pro-1/matches"
+    base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/international-tt-cup/matches"
 
     cursor = None
     buffer = []

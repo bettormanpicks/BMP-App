@@ -8,10 +8,49 @@ OUTPUT_CSV = os.path.join(BASE_DIR, "data", "tt_elite_h2h_summary.csv")
 
 df = pd.read_csv(MATCHLOGS_CSV, dtype={"match_id": str})
 
-# Identify sweep
-df["is_sweep"] = df[["sets1", "sets2"]].min(axis=1) == 0
+# -------------------------
+# Normalize column names
+# -------------------------
+if "match_date" in df.columns:
+    df.rename(columns={"match_date": "date"}, inplace=True)
 
+# -------------------------
+# Normalize player names
+# -------------------------
+df["player1"] = df["player1"].str.strip().str.lower()
+df["player2"] = df["player2"].str.strip().str.lower()
+
+# -------------------------
+# Parse sets
+# -------------------------
+def parse_sets(sets_str):
+    try:
+        return [tuple(map(int, s.split(":"))) for s in sets_str.split("|")]
+    except:
+        return []
+
+def compute_set_wins(parsed_sets):
+    p1 = sum(1 for a, b in parsed_sets if a > b)
+    p2 = sum(1 for a, b in parsed_sets if b > a)
+    return p1, p2
+
+df["parsed_sets"] = df["sets"].apply(parse_sets)
+df = df[df["parsed_sets"].apply(len) > 0]
+
+df["sets1"], df["sets2"] = zip(*df["parsed_sets"].apply(compute_set_wins))
+
+# -------------------------
+# Derived stats
+# -------------------------
+df["total_sets"] = df["sets1"] + df["sets2"]
+
+# Sweep = 3-0
+df["is_sweep"] = (df["sets1"] == 3) & (df["sets2"] == 0) | \
+                 (df["sets2"] == 3) & (df["sets1"] == 0)
+
+# -------------------------
 # Normalize player pairs
+# -------------------------
 df["player_low"] = df[["player1", "player2"]].min(axis=1)
 df["player_high"] = df[["player1", "player2"]].max(axis=1)
 
@@ -25,6 +64,7 @@ h2h = (
           matches=("match_id", "count"),
           sweeps=("is_sweep", "sum"),
           avg_total_sets=("total_sets", "mean"),
+          avg_ATP=("total_points", "mean"),
           last_match=("date", "max")
       )
       .reset_index()
