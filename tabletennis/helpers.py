@@ -35,9 +35,8 @@ def compute_set_wins(parsed_sets):
     p2_sets = sum(1 for p1, p2 in parsed_sets if p2 > p1)
     return p1_sets, p2_sets
 
-def average_total_points(parsed_sets):
-    total_points_per_set = [p1 + p2 for p1, p2 in parsed_sets]
-    return sum(total_points_per_set) / len(total_points_per_set)
+def total_points_match(parsed_sets):
+    return sum(p1 + p2 for p1, p2 in parsed_sets)
 
 def point_spread(parsed_sets):
     return sum(p1 - p2 for p1, p2 in parsed_sets)
@@ -106,7 +105,7 @@ def load_tt_raw_data(league):
 
     # --- Compute stats ---
     matchlogs["sets1"], matchlogs["sets2"] = zip(*matchlogs["parsed_sets"].apply(compute_set_wins))
-    matchlogs["ATP"] = matchlogs["parsed_sets"].apply(average_total_points)
+    matchlogs["ATP"] = matchlogs["parsed_sets"].apply(total_points_match)
     matchlogs["PS"] = matchlogs["parsed_sets"].apply(point_spread)
     matchlogs["SS"] = matchlogs["parsed_sets"].apply(set_spread)
     matchlogs["winner"] = matchlogs.apply(
