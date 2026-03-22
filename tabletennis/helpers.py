@@ -5,6 +5,11 @@ import streamlit as st
 DATA_DIR = os.path.join("tabletennis", "data")
 
 LEAGUE_FILES = {
+    "TT Cup": {
+        "schedule": os.path.join(DATA_DIR, "tt_cup_schedule.csv"),
+        "matchlogs": os.path.join(DATA_DIR, "tt_cup_matchlogs.csv"),
+        "h2h": os.path.join(DATA_DIR, "tt_cup_h2h_summary.csv"),
+    },
     "TT Elite": {
         "schedule": os.path.join(DATA_DIR, "tt_elite_schedule.csv"),
         "matchlogs": os.path.join(DATA_DIR, "tt_elite_matchlogs.csv"),
