@@ -18,6 +18,40 @@ LEAGUE_FILES = {
 }
 
 # -------------------------
+# Helper: parse sets column
+# -------------------------
+def parse_sets(sets_str):
+    try:
+        sets = sets_str.split("|")
+        return [tuple(map(int, s.split(":"))) for s in sets]
+    except Exception:
+        return []
+
+def compute_set_wins(parsed_sets):
+    """
+    Returns sets won for player1 and player2
+    """
+    p1_sets = sum(1 for p1, p2 in parsed_sets if p1 > p2)
+    p2_sets = sum(1 for p1, p2 in parsed_sets if p2 > p1)
+    return p1_sets, p2_sets
+
+def average_total_points(parsed_sets):
+    total_points_per_set = [p1 + p2 for p1, p2 in parsed_sets]
+    return sum(total_points_per_set) / len(total_points_per_set)
+
+def point_spread(parsed_sets):
+    return sum(p1 - p2 for p1, p2 in parsed_sets)
+
+def set_spread(parsed_sets):
+    p1_sets, p2_sets = compute_set_wins(parsed_sets)
+    return p1_sets - p2_sets
+
+def normalize_name(name):
+    if pd.isna(name):
+        return name
+    return name.strip().lower()
+
+# -------------------------
 # Load Raw CSVs
 # -------------------------
 @st.cache_data(show_spinner=False)
@@ -26,33 +60,63 @@ def load_tt_raw_data(league):
     Loads raw Table Tennis datasets and applies minimal cleaning.
     Cached for performance.
     """
-
     paths = LEAGUE_FILES[league]
 
     schedule = pd.read_csv(paths["schedule"])
     matchlogs = pd.read_csv(paths["matchlogs"])
     h2h = pd.read_csv(paths["h2h"])
 
-    # --- Date parsing + normalization ---
+    # Keep original for display
+    matchlogs["player1_display"] = matchlogs["player1"]
+    matchlogs["player2_display"] = matchlogs["player2"]
 
-    if "date" in schedule.columns:
-        schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
+    # Normalize for logic
+    matchlogs["player1"] = matchlogs["player1"].apply(normalize_name)
+    matchlogs["player2"] = matchlogs["player2"].apply(normalize_name)
 
-    if "date" in matchlogs.columns:
-        matchlogs["date"] = pd.to_datetime(matchlogs["date"], errors="coerce")
+    # Keep original for display
+    schedule["player1_display"] = schedule["player1"]
+    schedule["player2_display"] = schedule["player2"]
 
-    # --- Drop bad rows ---
+    # Normalize for logic
+    schedule["player1"] = schedule["player1"].apply(normalize_name)
+    schedule["player2"] = schedule["player2"].apply(normalize_name)
+
+    # Normalize column naming
+    if "match_date" in matchlogs.columns:
+        matchlogs.rename(columns={"match_date": "date"}, inplace=True)
+
+    # Normalize column naming
+    if "match_date" in schedule.columns:
+        schedule.rename(columns={"match_date": "date"}, inplace=True)
+
+    # --- Date parsing ---
+    for df, col in [(schedule, "date"), (matchlogs, "date")]:
+        if col in df.columns:
+            df[col] = pd.to_datetime(df[col], errors="coerce")
+
     schedule.dropna(subset=["match_id", "date"], inplace=True)
     matchlogs.dropna(subset=["match_id", "date"], inplace=True)
 
-    # --- Ensure newest first globally (extra safety) ---
-    matchlogs.sort_values("date", ascending=False, inplace=True)
+    # --- Parse sets ---
+    matchlogs["parsed_sets"] = matchlogs["sets"].apply(parse_sets)
 
-    # --- Compute winner column in matchlogs ---
-    matchlogs["winner"] = matchlogs["player1"].where(
-        matchlogs["sets1"] > matchlogs["sets2"],
-        matchlogs["player2"]
+    # --- Drop bad parsed rows ---
+    matchlogs = matchlogs[matchlogs["parsed_sets"].apply(len) > 0]
+
+    # --- Compute stats ---
+    matchlogs["sets1"], matchlogs["sets2"] = zip(*matchlogs["parsed_sets"].apply(compute_set_wins))
+    matchlogs["ATP"] = matchlogs["parsed_sets"].apply(average_total_points)
+    matchlogs["PS"] = matchlogs["parsed_sets"].apply(point_spread)
+    matchlogs["SS"] = matchlogs["parsed_sets"].apply(set_spread)
+    matchlogs["winner"] = matchlogs.apply(
+        lambda r: r["player1"] if r["sets1"] > r["sets2"] else r["player2"],
+        axis=1
     )
+    matchlogs["four_plus"] = matchlogs["parsed_sets"].apply(lambda x: int(len(x) >= 4))
+
+    # --- Ensure newest first globally ---
+    matchlogs.sort_values("date", ascending=False, inplace=True)
 
     return schedule, matchlogs, h2h
 
@@ -66,8 +130,6 @@ def build_h2h_index(matchlogs):
     with a list of matches (newest first)
     """
     h2h_index = {}
-
-    # Sort newest first
     matchlogs_sorted = matchlogs.sort_values("date", ascending=False)
 
     for _, row in matchlogs_sorted.iterrows():
@@ -84,7 +146,11 @@ def build_h2h_index(matchlogs):
             "player2": p2,
             "sets1": row["sets1"],
             "sets2": row["sets2"],
-            "winner": row["winner"]
+            "parsed_sets": row["parsed_sets"],
+            "winner": row["winner"],
+            "ATP": row["ATP"],
+            "PS": row["PS"],
+            "SS": row["SS"]
         })
 
     return h2h_index
@@ -122,7 +188,10 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
             "sweeps_a": 0,
             "sweeps_b": 0,
             "non_sweep_pct": 0,
-            "avg_total_sets": 0
+            "avg_total_sets": 0,
+            "ATP": 0,
+            "PS": 0,
+            "SS": 0
         }
 
     # Count wins
@@ -132,34 +201,25 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     # Average total sets per match
     avg_total_sets = sum(m["sets1"] + m["sets2"] for m in matches) / total
 
-    # Count sweeps (3-0 wins) — orientation safe
-    sweeps_a = 0
-    sweeps_b = 0
+    # Sweeps (3-0 wins, orientation-safe)
+    sweeps_a = sum(1 for m in matches if
+                   ((m["player1"] == player_a and m["sets1"] == len(m["parsed_sets"]) and m["sets2"] == 0) or
+                    (m["player2"] == player_a and m["sets2"] == len(m["parsed_sets"]) and m["sets1"] == 0)))
+    sweeps_b = sum(1 for m in matches if
+                   ((m["player1"] == player_b and m["sets1"] == len(m["parsed_sets"]) and m["sets2"] == 0) or
+                    (m["player2"] == player_b and m["sets2"] == len(m["parsed_sets"]) and m["sets1"] == 0)))
 
-    for m in matches:
-        p1 = m["player1"]
-        p2 = m["player2"]
-        s1 = m["sets1"]
-        s2 = m["sets2"]
-
-        # Player A sweep
-        if (p1 == player_a and s1 == 3 and s2 == 0) or \
-           (p2 == player_a and s2 == 3 and s1 == 0):
-            sweeps_a += 1
-
-        # Player B sweep
-        if (p1 == player_b and s1 == 3 and s2 == 0) or \
-           (p2 == player_b and s2 == 3 and s1 == 0):
-            sweeps_b += 1
-
-    # Count non-sweep matches
-    non_sweep = sum(
-        1 for m in matches if not (
-            (m["sets1"] == 3 and m["sets2"] == 0) or
-            (m["sets2"] == 3 and m["sets1"] == 0)
-        )
-    )
+    # Non-sweep matches
+    non_sweep = sum(1 for m in matches if not (
+        (m["sets1"] == len(m["parsed_sets"]) and m["sets2"] == 0) or
+        (m["sets2"] == len(m["parsed_sets"]) and m["sets1"] == 0)
+    ))
     non_sweep_pct = non_sweep / total if total > 0 else 0
+
+    # Average ATP, PS, SS over window
+    avg_ATP = sum(m["ATP"] for m in matches) / total
+    avg_PS = sum(abs(m["PS"]) for m in matches) / total
+    avg_SS = sum(abs(m["SS"]) for m in matches) / total
 
     last_played = matches[0]["date"]  # newest first
 
@@ -172,5 +232,8 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         "sweeps_a": sweeps_a,
         "sweeps_b": sweeps_b,
         "non_sweep_pct": non_sweep_pct,
-        "avg_total_sets": avg_total_sets
+        "avg_total_sets": avg_total_sets,
+        "ATP": avg_ATP,
+        "PS": avg_PS,
+        "SS": avg_SS
     }

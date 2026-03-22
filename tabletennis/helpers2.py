@@ -95,7 +95,7 @@ def build_h2h_index(matchlogs):
 def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     """
     Returns head-to-head stats for player_a vs player_b
-    window = "ALL", "L10", "L30"
+    window = "ALL", "L10", "L30", "L60"
     """
     key = tuple(sorted([player_a, player_b]))
     if key not in h2h_index:
@@ -108,6 +108,8 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         matches = matches[:10]
     elif window == "L30":
         matches = matches[:30]
+    elif window == "L60":
+        matches = matches[:60]
 
     total = len(matches)
     if total == 0:
