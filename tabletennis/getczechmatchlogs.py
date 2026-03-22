@@ -2,7 +2,7 @@ import time
 import csv
 import os
 from urllib.parse import quote
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, UTC
 import pandas as pd
 import undetected_chromedriver as uc
 from selenium.webdriver.support.ui import WebDriverWait
@@ -13,7 +13,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 LEAGUE_URL = "https://scores24.live/en/table-tennis/l-czech-liga-pro-1"
 CHROME_PROFILE_PATH = r"C:\selenium_profiles\scores24"
 OUTPUT_CSV = "data/tt_czech_matchlogs.csv"
-START_DATE = "2023-01-01 00:00:00"  # First date to scrape
+LOOKBACK_DAYS = 2
+
+start_dt = datetime.now(UTC) - timedelta(days=LOOKBACK_DAYS)
+START_DATE = start_dt.strftime("%Y-%m-%d %H:%M:%S")
 
 # -------------------------
 # Helpers
@@ -44,13 +47,28 @@ def append_to_csv(matches):
 def resort_csv():
     if not os.path.exists(OUTPUT_CSV):
         return
+
     df = pd.read_csv(OUTPUT_CSV)
+
     if "match_date" not in df.columns:
         print("CSV empty or missing match_date, skipping sort")
         return
+
+    # --- Parse date ---
     df["match_date"] = pd.to_datetime(df["match_date"], errors="coerce")
     df = df.dropna(subset=["match_date"])
+
+    # ✅ NEW: Drop duplicates by match_id
+    before = len(df)
+    df = df.drop_duplicates(subset=["match_id"], keep="last")
+    df.reset_index(drop=True, inplace=True)
+    after = len(df)
+
+    print(f"Removed {before - after} duplicate rows")
+
+    # --- Sort ---
     df.sort_values("match_date", ascending=False, inplace=True)
+
     df.to_csv(OUTPUT_CSV, index=False)
 
 # -------------------------
@@ -88,6 +106,7 @@ def scrape_api():
     start_date_encoded = quote(START_DATE)
 
     while True:
+        new_matches_found = False
         query = f"{base_url}?lang=en&first=50&status=ended&audience=us&date_between[]={start_date_encoded}"
         if cursor:
             query += f"&after={quote(cursor)}"
@@ -121,6 +140,8 @@ def scrape_api():
                 if match_id in existing_ids:
                     continue
 
+                new_matches_found = True
+
                 existing_ids.add(match_id)
 
                 player1 = normalize_name(node["teams"][0]["name"])
@@ -152,6 +173,10 @@ def scrape_api():
             append_to_csv(buffer)
             print(f"Saved {len(buffer)} matches")
             buffer.clear()
+
+        if not new_matches_found:
+            print("No new matches found on this page. Stopping early.")
+            break
 
         cursor = edges[-1].get("cursor")
         if not cursor:
