@@ -877,7 +877,7 @@ if sport_choice == "Table Tennis":
     # --- Load raw TT data ---
     league = st.sidebar.radio(
         "Select League",
-        ["TT Cup", "TT Elite", "Czech"],
+        ["TT Elite", "Czech", "TT Cup"],
         horizontal=True
     )
 
@@ -976,7 +976,7 @@ if sport_choice == "Table Tennis":
             st.stop()
 
         DISPLAY_NAMES = {
-            "Date": "Match Start (CT)",
+            "Date": "Match Start",
             "Matches": "Ms",
             "Non Sweep %": "NS%",
             "P1 Sweeps": "P1 S",
