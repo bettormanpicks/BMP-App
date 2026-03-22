@@ -976,7 +976,7 @@ if sport_choice == "Table Tennis":
             st.stop()
 
         DISPLAY_NAMES = {
-            "Date": "Match Start",
+            "Date": "Match Start (CT)",
             "Matches": "Ms",
             "Non Sweep %": "NS%",
             "P1 Sweeps": "P1 S",
