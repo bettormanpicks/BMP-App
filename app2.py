@@ -887,7 +887,7 @@ if sport_choice == "Table Tennis":
     # --- Sidebar Filters ---
     with st.sidebar.form("TT Filters"):
 
-        recency_window = st.radio("Recency Window", ["L10", "L30", "ALL"], index=1)
+        recency_window = st.radio("Recency Window", ["L10", "L30", "L60", "ALL"], index=1)
 
         # --- Minimum Matches Slider ---
         min_matches = st.slider(
@@ -943,7 +943,7 @@ if sport_choice == "Table Tennis":
                 }
 
             row_dict = {
-                "Date": row["date"].strftime("%Y-%m-%d %H:%M"),  # display in CST
+                "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
                 "Player 1": p1,
                 "Player 2": p2,
                 "Matches": stats["matches"],
@@ -959,21 +959,35 @@ if sport_choice == "Table Tennis":
 
             rows.append(row_dict)
 
-        df_display = pd.DataFrame(rows)
+        df = pd.DataFrame(rows)
 
         # --- Apply minimum match filter ---
-        df_display = df_display[df_display["Matches"] >= min_matches]
+        df = df[df["Matches"] >= min_matches]
 
-        if df_display.empty:
+        if df.empty:
             st.info("No upcoming matches meet the filter criteria.")
             st.stop()
 
+        DISPLAY_NAMES = {
+            "Date": "Match Start",
+            "Matches": "Ms",
+            "Non Sweep %": "NS%",
+            "Avg Total Sets": "ATS",
+            "P1 Sweeps": "P1 S",
+            "P2 Sweeps": "P2 S",
+            "P1 Wins": "P1 W",
+            "P2 Wins": "P2 W",
+            "Win % (P1)": "P1 W%",
+        }
+
+        df_display = df.rename(columns=DISPLAY_NAMES)
+
         # --- Display table ---
-        pinned_cols = ["Player 1", "Player 2", "Date"]
+        pinned_cols = ["Player 1", "Player 2", "Match Start"]
         col_config = {c: st.column_config.Column(pinned="left") for c in pinned_cols}
 
         st.dataframe(
-            df_display.sort_values("Date"),
+            df_display.sort_values("Match Start"),
             width="stretch",
             hide_index=True,
             column_config=col_config
