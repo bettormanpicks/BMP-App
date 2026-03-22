@@ -877,7 +877,7 @@ if sport_choice == "Table Tennis":
     # --- Load raw TT data ---
     league = st.sidebar.radio(
         "Select League",
-        ["TT Elite", "Czech"],
+        ["TT Cup", "TT Elite", "Czech"],
         horizontal=True
     )
 
