@@ -925,8 +925,11 @@ if sport_choice == "Table Tennis":
 
         rows = []
         for _, row in upcoming.iterrows():
-            p1 = row["player1"]
+            p1 = row["player1"]  # for H2H lookup
             p2 = row["player2"]
+
+            p1_display = row["player1_display"]
+            p2_display = row["player2_display"]
 
             stats = compute_h2h_stats(h2h_index, p1, p2, window=recency_window)
             if stats is None:
@@ -944,13 +947,16 @@ if sport_choice == "Table Tennis":
 
             row_dict = {
                 "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
-                "Player 1": p1,
-                "Player 2": p2,
+                "Player 1": p1_display,
+                "Player 2": p2_display,
                 "Matches": stats["matches"],
                 "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
-                "Avg Total Sets": round(stats.get("avg_total_sets", 0), 2),
                 "P1 Sweeps": stats.get("sweeps_a", 0),
                 "P2 Sweeps": stats.get("sweeps_b", 0),
+                "Avg Total Sets": round(stats.get("avg_total_sets", 0), 2),
+                "SS": round(stats.get("SS", 0), 2),
+                "ATP": round(stats.get("ATP", 0), 2),
+                "PS": round(stats.get("PS", 0), 2),
                 "P1 Wins": stats["a_wins"],
                 "P2 Wins": stats["b_wins"],
                 "Win % (P1)": round(stats["win_pct"] * 100, 1),
@@ -972,9 +978,12 @@ if sport_choice == "Table Tennis":
             "Date": "Match Start",
             "Matches": "Ms",
             "Non Sweep %": "NS%",
-            "Avg Total Sets": "ATS",
             "P1 Sweeps": "P1 S",
             "P2 Sweeps": "P2 S",
+            "Avg Total Sets": "ATS",
+            "SS": "SS",
+            "ATP": "ATP",
+            "PS": "PS",
             "P1 Wins": "P1 W",
             "P2 Wins": "P2 W",
             "Win % (P1)": "P1 W%",
