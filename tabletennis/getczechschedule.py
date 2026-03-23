@@ -129,7 +129,7 @@ def scrape_schedule():
 
     driver.quit()
 
-    pd.DataFrame(buffer).to_csv("data/czech_schedule.csv", index=False)
+    pd.DataFrame(buffer).to_csv("data/tt_czech_schedule.csv", index=False)
     print("✅ Schedule scraping complete.")
 
 # -------------------------
