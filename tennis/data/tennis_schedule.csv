@@ -1,20 +1,20 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-03-23,Live,Miami Open presented by Itau,Karolina Muchova,Alexandra Eala
-2026-03-23,16:30,Miami Open presented by Itau,Mirra Andreeva,Victoria Mboko
-2026-03-23,17:00,Miami Open presented by Itau,Sorana Cirstea,Coco Gauff
-2026-03-23,18:00,Miami Open presented by Itau,Hailey Baptiste,Jelena Ostapenko
-2026-03-23,18:30,Miami Open presented by Itau,Aryna Sabalenka,Zheng Qinwen
-2026-03-23,19:30,Miami Open presented by Itau,Jaqueline Cristian,Jessica Pegula
+2026-03-23,Live,Miami Open presented by Itau,Mirra Andreeva,Victoria Mboko
+2026-03-23,18:45,Miami Open presented by Itau,Sorana Cirstea,Coco Gauff
+2026-03-23,18:50,Miami Open presented by Itau,Hailey Baptiste,Jelena Ostapenko
+2026-03-23,20:00,Miami Open presented by Itau,Aryna Sabalenka,Zheng Qinwen
+2026-03-23,20:00,Miami Open presented by Itau,Jaqueline Cristian,Jessica Pegula
 2026-03-23,23:00,Miami Open presented by Itau,Amanda Anisimova,Belinda Bencic
 2026-03-23,00:30,Miami Open presented by Itau,Elena Rybakina,Talia Gibson
-2026-03-23,Live,Miami Open presented by Itau,Alexander Shevchenko,Ugo Humbert
-2026-03-23,16:00,Miami Open presented by Itau,Francisco Cerundolo,Daniil Medvedev
-2026-03-23,16:30,Miami Open presented by Itau,Felix Auger-Aliassime,Terence Atmane
-2026-03-23,18:00,Miami Open presented by Itau,Frances Tiafoe,Jakub Mensik
+2026-03-23,Final,Miami Open presented by Itau,Karolina Muchova,Alexandra Eala
+2026-03-23,18:40,Miami Open presented by Itau,Frances Tiafoe,Jakub Mensik
 2026-03-23,20:00,Miami Open presented by Itau,Marin Cilic,Alexander Zverev
 2026-03-23,20:00,Miami Open presented by Itau,Alejandro Tabilo,Alex Michelsen
 2026-03-23,21:00,Miami Open presented by Itau,Quentin Halys,Kamil Majchrzak
 2026-03-23,23:00,Miami Open presented by Itau,Corentin Moutet,Jannik Sinner
+2026-03-23,Final,Miami Open presented by Itau,Felix Auger-Aliassime,Terence Atmane
+2026-03-23,Final,Miami Open presented by Itau,Francisco Cerundolo,Daniil Medvedev
+2026-03-23,Final,Miami Open presented by Itau,Alexander Shevchenko,Ugo Humbert
 2026-03-23,Final,Dubrovnik Open,Guiomar Maristany Zuleta De Reales,Veronika Erjavec
 2026-03-23,Final,Dubrovnik Open,Mayar Sherif,Noma Noha Akugue
 2026-03-23,Final,Dubrovnik Open,Yasmine Kabbaj,Suzan Lamens
@@ -30,6 +30,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-24,TBD,Miami Open presented by Itau,Tomas Martin Etcheverry,Tommy Paul
 2026-03-24,TBD,Miami Open presented by Itau,Jiri Lehecka,Taylor Fritz
 2026-03-24,TBD,Miami Open presented by Itau,Sebastian Korda,Martin Landaluce
+2026-03-24,TBD,Miami Open presented by Itau,Ugo Humbert,Francisco Cerundolo
 2026-03-24,10:00,Dubrovnik Open,Amarissa Toth,Andrea Lazaro Garcia
 2026-03-24,10:00,Dubrovnik Open,Tiantsoa Rakotomanga Rajaonah,Sara Sorribes Tormo
 2026-03-24,10:00,Dubrovnik Open,Lucija Ciric Bagaric,Mia Ristic
