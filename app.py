@@ -922,7 +922,8 @@ if sport_choice == "Table Tennis":
         now_ct = pd.Timestamp.now(central)
 
         # --- Filter upcoming matches ---
-        upcoming = schedule[schedule["date"] >= now_ct]
+        grace_period = pd.Timedelta(minutes=20)
+        upcoming = schedule[schedule["date"] + grace_period >= now_ct]
 
         rows = []
         for _, row in upcoming.iterrows():
