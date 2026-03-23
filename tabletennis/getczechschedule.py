@@ -12,7 +12,7 @@ from datetime import datetime
 # -------------------------
 LEAGUE_URL = "https://scores24.live/en/table-tennis/l-czech-liga-pro-1"
 CHROME_PROFILE_PATH = r"C:\selenium_profiles\scores24"
-OUTPUT_CSV = "data/czech_schedule.csv"
+OUTPUT_CSV = "data/tt_czech_schedule.csv"
 
 # -------------------------
 # Helpers
