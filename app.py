@@ -885,6 +885,11 @@ if sport_choice == "Table Tennis":
     )
 
     schedule, matchlogs, h2h = load_tt_raw_data(league)
+
+    # CRITICAL: break link to cached objects
+    schedule = schedule.copy()
+    matchlogs = matchlogs.copy()
+
     h2h_index = build_h2h_index(matchlogs)
 
     # --- Sidebar Filters ---
@@ -910,7 +915,7 @@ if sport_choice == "Table Tennis":
 
         # --- Parse CSV dates as naive and drop bad rows ---
         schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
-        schedule.dropna(subset=["date"], inplace=True)
+        schedule = schedule.dropna(subset=["date"])
 
         # --- Localize schedule dates to CST (make timezone-aware) ---
         central = pytz.timezone("America/Chicago")
