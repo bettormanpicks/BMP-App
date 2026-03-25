@@ -1,82 +1,4 @@
 match_id,match_date,player1,player2,match_link
-25-03-2026-frantisek-laburda-kern-lukas,2026-03-25 12:30:00,Frantisek Laburda,Lukas Kern,https://scores24.live/en/table-tennis/25-03-2026-frantisek-laburda-kern-lukas
-25-03-2026-jan-szotkowski-radovan-polasek,2026-03-25 12:30:00,Jan Szotkowski,Radovan Polasek,https://scores24.live/en/table-tennis/25-03-2026-jan-szotkowski-radovan-polasek
-25-03-2026-jiri-havel-steffan-jan,2026-03-25 12:30:00,Jiri Havel,Jan Steffan,https://scores24.live/en/table-tennis/25-03-2026-jiri-havel-steffan-jan
-25-03-2026-jiri-plachy-tomas-barta,2026-03-25 12:30:00,Jiri Plachy,Tomas Barta,https://scores24.live/en/table-tennis/25-03-2026-jiri-plachy-tomas-barta
-25-03-2026-rotislav-hasmanda-martin-stefek,2026-03-25 12:30:00,Rotislav Hasmanda,Martin Stefek,https://scores24.live/en/table-tennis/25-03-2026-rotislav-hasmanda-martin-stefek
-25-03-2026-kern-lukas-lukas-martinak,2026-03-25 13:00:00,Lukas Kern,Lukas Martinak,https://scores24.live/en/table-tennis/25-03-2026-kern-lukas-lukas-martinak
-25-03-2026-martin-stefek-milan-cetner,2026-03-25 13:00:00,Martin Stefek,Milan Cetner,https://scores24.live/en/table-tennis/25-03-2026-martin-stefek-milan-cetner
-25-03-2026-radovan-polasek-adam-pokorny,2026-03-25 13:00:00,Radovan Polasek,Adam Pokorny,https://scores24.live/en/table-tennis/25-03-2026-radovan-polasek-adam-pokorny
-25-03-2026-steffan-jan-vladimir-havlicek,2026-03-25 13:00:00,Jan Steffan,Vladimir Havlicek,https://scores24.live/en/table-tennis/25-03-2026-steffan-jan-vladimir-havlicek
-25-03-2026-tomas-barta-vladimr-postelt,2026-03-25 13:00:00,Tomas Barta,Vladimr Postelt,https://scores24.live/en/table-tennis/25-03-2026-tomas-barta-vladimr-postelt
-25-03-2026-lukas-malek-jiri-havel,2026-03-25 13:30:00,Lukas Malek,Jiri Havel,https://scores24.live/en/table-tennis/25-03-2026-lukas-malek-jiri-havel
-25-03-2026-martin-pavliska-frantisek-laburda,2026-03-25 13:30:00,Martin Pavliska,Frantisek Laburda,https://scores24.live/en/table-tennis/25-03-2026-martin-pavliska-frantisek-laburda
-25-03-2026-milan-regner-rotislav-hasmanda,2026-03-25 13:30:00,Milan Regner,Rotislav Hasmanda,https://scores24.live/en/table-tennis/25-03-2026-milan-regner-rotislav-hasmanda
-25-03-2026-nguyen-ba-hoang-tai-jiri-plachy,2026-03-25 13:30:00,Ba Hoang Tai Nguyen,Jiri Plachy,https://scores24.live/en/table-tennis/25-03-2026-nguyen-ba-hoang-tai-jiri-plachy
-25-03-2026-tadeas-zika-jan-szotkowski,2026-03-25 13:30:00,Tadeas Zika,Jan Szotkowski,https://scores24.live/en/table-tennis/25-03-2026-tadeas-zika-jan-szotkowski
-25-03-2026-cabis-michal-skotnica-martin,2026-03-25 15:00:00,Michal Cabis,Martin Skotnica,https://scores24.live/en/table-tennis/25-03-2026-cabis-michal-skotnica-martin
-25-03-2026-denis-hofman-sebera-petr,2026-03-25 15:00:00,Denis Hofman,Petr Sebera,https://scores24.live/en/table-tennis/25-03-2026-denis-hofman-sebera-petr
-25-03-2026-jiri-nesnera-petr-bradach,2026-03-25 15:00:00,Jiri Nesnera,Petr Bradach,https://scores24.live/en/table-tennis/25-03-2026-jiri-nesnera-petr-bradach
-25-03-2026-radim-pavelka-nguyen-ba-hoang-tai,2026-03-25 15:00:00,Radim Pavelka,Ba Hoang Tai Nguyen,https://scores24.live/en/table-tennis/25-03-2026-radim-pavelka-nguyen-ba-hoang-tai
-25-03-2026-roman-hudeczek-unzeitig-daniel,2026-03-25 15:00:00,Roman Hudeczek,Daniel Unzeitig,https://scores24.live/en/table-tennis/25-03-2026-roman-hudeczek-unzeitig-daniel
-25-03-2026-marek-holub-kern-lukas,2026-03-25 15:30:00,Marek Holub,Lukas Kern,https://scores24.live/en/table-tennis/25-03-2026-marek-holub-kern-lukas
-25-03-2026-michal-vavrecka-martin-huk,2026-03-25 15:30:00,Michal Vavrecka,Martin Huk,https://scores24.live/en/table-tennis/25-03-2026-michal-vavrecka-martin-huk
-25-03-2026-radovan-polasek-grundel-matej,2026-03-25 15:30:00,Radovan Polasek,Matej Grundel,https://scores24.live/en/table-tennis/25-03-2026-radovan-polasek-grundel-matej
-25-03-2026-tomas-barta-dmitro-parhomenko,2026-03-25 15:30:00,Tomas Barta,Dmitro Parhomenko,https://scores24.live/en/table-tennis/25-03-2026-tomas-barta-dmitro-parhomenko
-25-03-2026-vitek-dvorak-michal-vondrak,2026-03-25 15:30:00,Vitek Dvorak,Michal Vondrak,https://scores24.live/en/table-tennis/25-03-2026-vitek-dvorak-michal-vondrak
-25-03-2026-nguyen-ba-hoang-tai-tomas-barta,2026-03-25 16:00:00,Ba Hoang Tai Nguyen,Tomas Barta,https://scores24.live/en/table-tennis/25-03-2026-nguyen-ba-hoang-tai-tomas-barta
-25-03-2026-petr-bradach-michal-vavrecka,2026-03-25 16:00:00,Petr Bradach,Michal Vavrecka,https://scores24.live/en/table-tennis/25-03-2026-petr-bradach-michal-vavrecka
-25-03-2026-sebera-petr-vitek-dvorak,2026-03-25 16:00:00,Petr Sebera,Vitek Dvorak,https://scores24.live/en/table-tennis/25-03-2026-sebera-petr-vitek-dvorak
-25-03-2026-skotnica-martin-radovan-polasek,2026-03-25 16:00:00,Martin Skotnica,Radovan Polasek,https://scores24.live/en/table-tennis/25-03-2026-skotnica-martin-radovan-polasek
-25-03-2026-unzeitig-daniel-marek-holub,2026-03-25 16:00:00,Daniel Unzeitig,Marek Holub,https://scores24.live/en/table-tennis/25-03-2026-unzeitig-daniel-marek-holub
-25-03-2026-dmitro-parhomenko-radim-pavelka,2026-03-25 16:30:00,Dmitro Parhomenko,Radim Pavelka,https://scores24.live/en/table-tennis/25-03-2026-dmitro-parhomenko-radim-pavelka
-25-03-2026-grundel-matej-cabis-michal,2026-03-25 16:30:00,Matej Grundel,Michal Cabis,https://scores24.live/en/table-tennis/25-03-2026-grundel-matej-cabis-michal
-25-03-2026-kern-lukas-roman-hudeczek,2026-03-25 16:30:00,Lukas Kern,Roman Hudeczek,https://scores24.live/en/table-tennis/25-03-2026-kern-lukas-roman-hudeczek
-25-03-2026-martin-huk-jiri-nesnera,2026-03-25 16:30:00,Martin Huk,Jiri Nesnera,https://scores24.live/en/table-tennis/25-03-2026-martin-huk-jiri-nesnera
-25-03-2026-michal-vondrak-denis-hofman,2026-03-25 16:30:00,Michal Vondrak,Denis Hofman,https://scores24.live/en/table-tennis/25-03-2026-michal-vondrak-denis-hofman
-25-03-2026-cabis-michal-radovan-polasek,2026-03-25 17:00:00,Michal Cabis,Radovan Polasek,https://scores24.live/en/table-tennis/25-03-2026-cabis-michal-radovan-polasek
-25-03-2026-denis-hofman-vitek-dvorak,2026-03-25 17:00:00,Denis Hofman,Vitek Dvorak,https://scores24.live/en/table-tennis/25-03-2026-denis-hofman-vitek-dvorak
-25-03-2026-jiri-nesnera-michal-vavrecka,2026-03-25 17:00:00,Jiri Nesnera,Michal Vavrecka,https://scores24.live/en/table-tennis/25-03-2026-jiri-nesnera-michal-vavrecka
-25-03-2026-radim-pavelka-tomas-barta,2026-03-25 17:00:00,Radim Pavelka,Tomas Barta,https://scores24.live/en/table-tennis/25-03-2026-radim-pavelka-tomas-barta
-25-03-2026-roman-hudeczek-marek-holub,2026-03-25 17:00:00,Roman Hudeczek,Marek Holub,https://scores24.live/en/table-tennis/25-03-2026-roman-hudeczek-marek-holub
-25-03-2026-nguyen-ba-hoang-tai-dmitro-parhomenko,2026-03-25 17:30:00,Ba Hoang Tai Nguyen,Dmitro Parhomenko,https://scores24.live/en/table-tennis/25-03-2026-nguyen-ba-hoang-tai-dmitro-parhomenko
-25-03-2026-petr-bradach-martin-huk,2026-03-25 17:30:00,Petr Bradach,Martin Huk,https://scores24.live/en/table-tennis/25-03-2026-petr-bradach-martin-huk
-25-03-2026-sebera-petr-michal-vondrak,2026-03-25 17:30:00,Petr Sebera,Michal Vondrak,https://scores24.live/en/table-tennis/25-03-2026-sebera-petr-michal-vondrak
-25-03-2026-skotnica-martin-grundel-matej,2026-03-25 17:30:00,Martin Skotnica,Matej Grundel,https://scores24.live/en/table-tennis/25-03-2026-skotnica-martin-grundel-matej
-25-03-2026-unzeitig-daniel-kern-lukas,2026-03-25 17:30:00,Daniel Unzeitig,Lukas Kern,https://scores24.live/en/table-tennis/25-03-2026-unzeitig-daniel-kern-lukas
-25-03-2026-adam-radim-hrabec-jan,2026-03-25 19:00:00,Radim Adam,Jan Hrabec,https://scores24.live/en/table-tennis/25-03-2026-adam-radim-hrabec-jan
-25-03-2026-cabis-michal-urbaniec-radim,2026-03-25 19:00:00,Michal Cabis,Radim Urbaniec,https://scores24.live/en/table-tennis/25-03-2026-cabis-michal-urbaniec-radim
-25-03-2026-dan-volhejn-jakub-kycelt,2026-03-25 19:00:00,Dan Volhejn,Jakub Kycelt,https://scores24.live/en/table-tennis/25-03-2026-dan-volhejn-jakub-kycelt
-25-03-2026-josef-obeslo-jr-viktor-vejvoda,2026-03-25 19:00:00,Josef Obeslo Jr,Viktor Vejvoda,https://scores24.live/en/table-tennis/25-03-2026-josef-obeslo-jr-viktor-vejvoda
-25-03-2026-karel-kapras-lukas-tonar,2026-03-25 19:00:00,Karel Kapras,Lukas Tonar,https://scores24.live/en/table-tennis/25-03-2026-karel-kapras-lukas-tonar
-25-03-2026-jiri-zuzanek-tomas-janata,2026-03-25 19:30:00,Jiri Zuzanek,Tomas Janata,https://scores24.live/en/table-tennis/25-03-2026-jiri-zuzanek-tomas-janata
-25-03-2026-marek-blejchar-heczko-david,2026-03-25 19:30:00,Marek Blejchar,David Heczko,https://scores24.live/en/table-tennis/25-03-2026-marek-blejchar-heczko-david
-25-03-2026-mecl-jan-martin-huk,2026-03-25 19:30:00,Jan Mecl Jr,Martin Huk,https://scores24.live/en/table-tennis/25-03-2026-mecl-jan-martin-huk
-25-03-2026-ondrej-cmerda-kasnik-sebastian-1,2026-03-25 19:30:00,Ondrej Cmerda,Sebastian Kasnik,https://scores24.live/en/table-tennis/25-03-2026-ondrej-cmerda-kasnik-sebastian-1
-25-03-2026-velebil-lukas-michal-hrabec,2026-03-25 19:30:00,Lukas Velebil,Michal Hrabec,https://scores24.live/en/table-tennis/25-03-2026-velebil-lukas-michal-hrabec
-25-03-2026-hrabec-jan-marek-blejchar,2026-03-25 20:00:00,Jan Hrabec,Marek Blejchar,https://scores24.live/en/table-tennis/25-03-2026-hrabec-jan-marek-blejchar
-25-03-2026-jakub-kycelt-mecl-jan,2026-03-25 20:00:00,Jakub Kycelt,Jan Mecl Jr,https://scores24.live/en/table-tennis/25-03-2026-jakub-kycelt-mecl-jan
-25-03-2026-lukas-tonar-jiri-zuzanek,2026-03-25 20:00:00,Lukas Tonar,Jiri Zuzanek,https://scores24.live/en/table-tennis/25-03-2026-lukas-tonar-jiri-zuzanek
-25-03-2026-urbaniec-radim-velebil-lukas,2026-03-25 20:00:00,Radim Urbaniec,Lukas Velebil,https://scores24.live/en/table-tennis/25-03-2026-urbaniec-radim-velebil-lukas
-25-03-2026-viktor-vejvoda-ondrej-cmerda,2026-03-25 20:00:00,Viktor Vejvoda,Ondrej Cmerda,https://scores24.live/en/table-tennis/25-03-2026-viktor-vejvoda-ondrej-cmerda
-25-03-2026-heczko-david-adam-radim,2026-03-25 20:30:00,David Heczko,Radim Adam,https://scores24.live/en/table-tennis/25-03-2026-heczko-david-adam-radim
-25-03-2026-kasnik-sebastian-josef-obeslo-jr,2026-03-25 20:30:00,Sebastian Kasnik,Josef Obeslo Jr,https://scores24.live/en/table-tennis/25-03-2026-kasnik-sebastian-josef-obeslo-jr
-25-03-2026-martin-huk-dan-volhejn,2026-03-25 20:30:00,Martin Huk,Dan Volhejn,https://scores24.live/en/table-tennis/25-03-2026-martin-huk-dan-volhejn
-25-03-2026-michal-hrabec-cabis-michal,2026-03-25 20:30:00,Michal Hrabec,Michal Cabis,https://scores24.live/en/table-tennis/25-03-2026-michal-hrabec-cabis-michal
-25-03-2026-tomas-janata-karel-kapras,2026-03-25 20:30:00,Tomas Janata,Karel Kapras,https://scores24.live/en/table-tennis/25-03-2026-tomas-janata-karel-kapras
-25-03-2026-adam-radim-marek-blejchar,2026-03-25 21:00:00,Radim Adam,Marek Blejchar,https://scores24.live/en/table-tennis/25-03-2026-adam-radim-marek-blejchar
-25-03-2026-cabis-michal-velebil-lukas,2026-03-25 21:00:00,Michal Cabis,Lukas Velebil,https://scores24.live/en/table-tennis/25-03-2026-cabis-michal-velebil-lukas
-25-03-2026-dan-volhejn-mecl-jan,2026-03-25 21:00:00,Dan Volhejn,Jan Mecl Jr,https://scores24.live/en/table-tennis/25-03-2026-dan-volhejn-mecl-jan
-25-03-2026-josef-obeslo-jr-ondrej-cmerda,2026-03-25 21:00:00,Josef Obeslo Jr,Ondrej Cmerda,https://scores24.live/en/table-tennis/25-03-2026-josef-obeslo-jr-ondrej-cmerda
-25-03-2026-karel-kapras-jiri-zuzanek,2026-03-25 21:00:00,Karel Kapras,Jiri Zuzanek,https://scores24.live/en/table-tennis/25-03-2026-karel-kapras-jiri-zuzanek
-25-03-2026-hrabec-jan-heczko-david,2026-03-25 21:30:00,Jan Hrabec,David Heczko,https://scores24.live/en/table-tennis/25-03-2026-hrabec-jan-heczko-david
-25-03-2026-jakub-kycelt-martin-huk,2026-03-25 21:30:00,Jakub Kycelt,Martin Huk,https://scores24.live/en/table-tennis/25-03-2026-jakub-kycelt-martin-huk
-25-03-2026-lukas-tonar-tomas-janata,2026-03-25 21:30:00,Lukas Tonar,Tomas Janata,https://scores24.live/en/table-tennis/25-03-2026-lukas-tonar-tomas-janata
-25-03-2026-urbaniec-radim-michal-hrabec-1,2026-03-25 21:30:00,Radim Urbaniec,Michal Hrabec,https://scores24.live/en/table-tennis/25-03-2026-urbaniec-radim-michal-hrabec-1
-25-03-2026-viktor-vejvoda-kasnik-sebastian,2026-03-25 21:30:00,Viktor Vejvoda,Sebastian Kasnik,https://scores24.live/en/table-tennis/25-03-2026-viktor-vejvoda-kasnik-sebastian
-25-03-2026-lubor-sulava-trojan-frantisek,2026-03-25 23:00:00,Lubor Sulava,Trojan Frantisek,https://scores24.live/en/table-tennis/25-03-2026-lubor-sulava-trojan-frantisek
-25-03-2026-ondrej-kucirek-smrcek-milan,2026-03-25 23:00:00,Ondrej Kucirek,Milan Smrcek,https://scores24.live/en/table-tennis/25-03-2026-ondrej-kucirek-smrcek-milan
-25-03-2026-vaclav-kosar-tomas-kucera,2026-03-25 23:00:00,Semen Kosarev,Tomas Kucera,https://scores24.live/en/table-tennis/25-03-2026-vaclav-kosar-tomas-kucera
 25-03-2026-josef-pelikan-jan-potensky,2026-03-25 23:30:00,Josef Pelikan,Jan Potensky,https://scores24.live/en/table-tennis/25-03-2026-josef-pelikan-jan-potensky
 25-03-2026-karel-bartak-jan-pleskot,2026-03-25 23:30:00,Karel Bartak,Jan Pleskot,https://scores24.live/en/table-tennis/25-03-2026-karel-bartak-jan-pleskot
 25-03-2026-petr-picek-steffan-jan,2026-03-25 23:30:00,Petr Picek,Jan Steffan,https://scores24.live/en/table-tennis/25-03-2026-petr-picek-steffan-jan
@@ -203,9 +125,9 @@ match_id,match_date,player1,player2,match_link
 26-03-2026-darin-kyryl-lukas-krok,2026-03-26 19:30:00,Kyryl Darin,Lukas Krok,https://scores24.live/en/table-tennis/26-03-2026-darin-kyryl-lukas-krok
 26-03-2026-hrabec-jan-mikula-david,2026-03-26 19:30:00,Jan Hrabec,David Mikula,https://scores24.live/en/table-tennis/26-03-2026-hrabec-jan-mikula-david
 26-03-2026-josef-medek-jakub-vales,2026-03-26 19:30:00,Josef Medek,Jakub Vales,https://scores24.live/en/table-tennis/26-03-2026-josef-medek-jakub-vales
-26-03-2026-vitek-dvorak-karel-kapras,2026-03-26 19:30:00,Vitek Dvorak,Karel Kapras,https://scores24.live/en/table-tennis/26-03-2026-vitek-dvorak-karel-kapras
+26-03-2026-martin-sychra-karel-kapras,2026-03-26 19:30:00,Martin Sychra,Karel Kapras,https://scores24.live/en/table-tennis/26-03-2026-martin-sychra-karel-kapras
 26-03-2026-jan-zajicek-josef-medek,2026-03-26 20:00:00,Jan Zajicek,Josef Medek,https://scores24.live/en/table-tennis/26-03-2026-jan-zajicek-josef-medek
-26-03-2026-jiri-zuzanek-vitek-dvorak,2026-03-26 20:00:00,Jiri Zuzanek,Vitek Dvorak,https://scores24.live/en/table-tennis/26-03-2026-jiri-zuzanek-vitek-dvorak
+26-03-2026-jiri-zuzanek-martin-sychra,2026-03-26 20:00:00,Jiri Zuzanek,Martin Sychra,https://scores24.live/en/table-tennis/26-03-2026-jiri-zuzanek-martin-sychra
 26-03-2026-kocian-vojtech-bednar-roman,2026-03-26 20:00:00,Vojtech Kocian,Roman Bednar,https://scores24.live/en/table-tennis/26-03-2026-kocian-vojtech-bednar-roman
 26-03-2026-milkov-tomas-hrabec-jan,2026-03-26 20:00:00,Tomas Milkov,Jan Hrabec,https://scores24.live/en/table-tennis/26-03-2026-milkov-tomas-hrabec-jan
 26-03-2026-yurii-holovatiuk-darin-kyryl,2026-03-26 20:00:00,Yurii Holovatiuk,Kyryl Darin,https://scores24.live/en/table-tennis/26-03-2026-yurii-holovatiuk-darin-kyryl
@@ -218,7 +140,7 @@ match_id,match_date,player1,player2,match_link
 26-03-2026-lukas-boruvka-josef-medek,2026-03-26 21:00:00,Lukas Boruvka,Josef Medek,https://scores24.live/en/table-tennis/26-03-2026-lukas-boruvka-josef-medek
 26-03-2026-michal-vedmoch-darin-kyryl,2026-03-26 21:00:00,Michal Vedmoch,Kyryl Darin,https://scores24.live/en/table-tennis/26-03-2026-michal-vedmoch-darin-kyryl
 26-03-2026-tomas-navrat-bednar-roman,2026-03-26 21:00:00,Tomas Navrat,Roman Bednar,https://scores24.live/en/table-tennis/26-03-2026-tomas-navrat-bednar-roman
-26-03-2026-tomas-zahradnik-vitek-dvorak,2026-03-26 21:00:00,Tomas Zahradnik,Vitek Dvorak,https://scores24.live/en/table-tennis/26-03-2026-tomas-zahradnik-vitek-dvorak
+26-03-2026-tomas-zahradnik-martin-sychra,2026-03-26 21:00:00,Tomas Zahradnik,Martin Sychra,https://scores24.live/en/table-tennis/26-03-2026-tomas-zahradnik-martin-sychra
 26-03-2026-jan-zajicek-jakub-vales,2026-03-26 21:30:00,Jan Zajicek,Jakub Vales,https://scores24.live/en/table-tennis/26-03-2026-jan-zajicek-jakub-vales
 26-03-2026-jiri-zuzanek-karel-kapras,2026-03-26 21:30:00,Jiri Zuzanek,Karel Kapras,https://scores24.live/en/table-tennis/26-03-2026-jiri-zuzanek-karel-kapras
 26-03-2026-kocian-vojtech-blaha-michal,2026-03-26 21:30:00,Vojtech Kocian,Michal Blaha,https://scores24.live/en/table-tennis/26-03-2026-kocian-vojtech-blaha-michal
