@@ -872,6 +872,9 @@ elif sport_choice == "NHL":
 ############################################################
 # ===== Table Tennis Section =====
 ############################################################
+import time
+st.sidebar.write("TT last run:", time.time())
+
 if sport_choice == "Table Tennis":
 
     # --- Load raw TT data ---
