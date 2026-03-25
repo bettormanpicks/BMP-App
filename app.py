@@ -872,32 +872,22 @@ elif sport_choice == "NHL":
 ############################################################
 # ===== Table Tennis Section =====
 ############################################################
-#import time
-#st.sidebar.write("TT last run:", time.time())
-
 if sport_choice == "Table Tennis":
 
-    # --- Load raw TT data ---
+    # --- League selector (outside form so we know which CSVs to load) ---
     league = st.sidebar.radio(
         "Select League",
         ["TT Elite", "Czech", "TT Cup"],
         horizontal=True
     )
 
-    schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
-
-    # CRITICAL: break link to cached objects
-    schedule = schedule.copy()
-    matchlogs = matchlogs.copy()
-
-    h2h_index = build_h2h_index(matchlogs)
-
     # --- Sidebar Filters ---
     with st.sidebar.form("TT Filters"):
 
-        recency_window = st.radio("Recency Window", ["L10", "L30", "L60", "ALL"], index=1)
+        recency_window = st.radio(
+            "Recency Window", ["L10", "L30", "L60", "ALL"], index=1
+        )
 
-        # --- Minimum Matches Slider ---
         min_matches = st.slider(
             "Minimum H2H Matches",
             min_value=5,
@@ -910,23 +900,27 @@ if sport_choice == "Table Tennis":
 
     sidebar_footer()
 
-    # --- Calculate / Build Display Table ---
-    if calculate:
+    # --- Show info if user hasn't clicked Calculate yet ---
+    if not calculate:
+        st.info("Select a league and click Calculate to load upcoming matches.")
+    else:
+        # --- Load data inside Calculate (cached, safe, on-demand) ---
+        with st.spinner("Loading and processing data..."):
+            schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
 
-        # --- Parse CSV dates as naive and drop bad rows ---
+            # Break link to cached objects so mutations are safe
+            schedule = schedule.copy()
+            matchlogs = matchlogs.copy()
+
+        # --- Parse CSV dates and drop bad rows ---
         schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
         schedule = schedule.dropna(subset=["date"])
 
-        # --- Localize schedule dates to CST (make timezone-aware) ---
+        # --- Localize schedule dates to CST ---
         central = pytz.timezone("America/Chicago")
+        schedule["date"] = schedule["date"].dt.tz_localize("UTC").dt.tz_convert(central)
 
-        # First assume scraped times are UTC
-        schedule["date"] = schedule["date"].dt.tz_localize("UTC")
-
-        # Then convert to Central Time
-        schedule["date"] = schedule["date"].dt.tz_convert(central)
-
-        # --- Current CST time (timezone-aware) ---
+        # --- Current CST time ---
         now_ct = pd.Timestamp.now(central)
 
         # --- Filter upcoming matches ---
@@ -935,27 +929,27 @@ if sport_choice == "Table Tennis":
 
         rows = []
         for _, row in upcoming.iterrows():
-            p1 = row["player1"]  # for H2H lookup
-            p2 = row["player2"]
-
-            p1_display = row["player1_display"]
-            p2_display = row["player2_display"]
+            p1, p2 = row["player1"], row["player2"]
+            p1_display, p2_display = row["player1_display"], row["player2_display"]
 
             stats = compute_h2h_stats(h2h_index, p1, p2, window=recency_window)
             if stats is None:
                 stats = {
                     "matches": 0,
-                    "non_sweep_pct": 0,
-                    "sweeps_a": 0,
-                    "sweeps_b": 0,
                     "a_wins": 0,
                     "b_wins": 0,
                     "win_pct": 0,
                     "last_played": None,
-                    "avg_total_sets": 0
+                    "sweeps_a": 0,
+                    "sweeps_b": 0,
+                    "non_sweep_pct": 0,
+                    "avg_total_sets": 0,
+                    "ATP": 0,
+                    "PS": 0,
+                    "SS": 0
                 }
 
-            row_dict = {
+            rows.append({
                 "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
                 "Player 1": p1_display,
                 "Player 2": p2_display,
@@ -971,9 +965,7 @@ if sport_choice == "Table Tennis":
                 "P2 Wins": stats["b_wins"],
                 "Win % (P1)": round(stats["win_pct"] * 100, 1),
                 "Last Played": stats["last_played"]
-            }
-
-            rows.append(row_dict)
+            })
 
         df = pd.DataFrame(rows)
 
