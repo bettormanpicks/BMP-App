@@ -122,12 +122,13 @@ def load_tt_raw_data(league):
     # --- Ensure newest first globally ---
     matchlogs.sort_values("date", ascending=False, inplace=True)
 
-    return schedule, matchlogs, h2h
+    h2h_index = build_h2h_index(matchlogs)
+
+    return schedule, matchlogs, h2h, h2h_index
 
 # -------------------------
 # Build H2H index from matchlogs
 # -------------------------
-@st.cache_data(show_spinner=False)
 def build_h2h_index(matchlogs):
     """
     Creates a dictionary keyed by sorted player pair (tuple),

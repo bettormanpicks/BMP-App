@@ -872,8 +872,8 @@ elif sport_choice == "NHL":
 ############################################################
 # ===== Table Tennis Section =====
 ############################################################
-import time
-st.sidebar.write("TT last run:", time.time())
+#import time
+#st.sidebar.write("TT last run:", time.time())
 
 if sport_choice == "Table Tennis":
 
@@ -884,7 +884,7 @@ if sport_choice == "Table Tennis":
         horizontal=True
     )
 
-    schedule, matchlogs, h2h = load_tt_raw_data(league)
+    schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
 
     # CRITICAL: break link to cached objects
     schedule = schedule.copy()
