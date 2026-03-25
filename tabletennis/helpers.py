@@ -40,6 +40,20 @@ def compute_set_wins(parsed_sets):
     p2_sets = sum(1 for p1, p2 in parsed_sets if p2 > p1)
     return p1_sets, p2_sets
 
+def is_1all(parsed_sets):
+    """
+    Returns True if match was tied 1-1 after first 2 sets.
+    Expects parsed_sets as list of (p1_points, p2_points) tuples.
+    """
+    if len(parsed_sets) < 2:
+        return False  # cannot be tied 1-1 with fewer than 2 sets
+
+    # Determine winner of first two sets
+    first_set_winner = 1 if parsed_sets[0][0] > parsed_sets[0][1] else 2
+    second_set_winner = 1 if parsed_sets[1][0] > parsed_sets[1][1] else 2
+
+    return first_set_winner != second_set_winner
+
 def total_points_match(parsed_sets):
     return sum(p1 + p2 for p1, p2 in parsed_sets)
 
@@ -221,6 +235,10 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     ))
     non_sweep_pct = non_sweep / total if total > 0 else 0
 
+    # Count matches tied 1-1 after first 2 sets
+    one_all_count = sum(1 for m in matches if is_1all(m["parsed_sets"]))
+    one_all_pct = one_all_count / total if total > 0 else 0
+
     # Average ATP, PS, SS over window
     avg_ATP = sum(m["ATP"] for m in matches) / total
     avg_PS = sum(abs(m["PS"]) for m in matches) / total
@@ -237,6 +255,7 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         "sweeps_a": sweeps_a,
         "sweeps_b": sweeps_b,
         "non_sweep_pct": non_sweep_pct,
+        "one_all_pct": one_all_pct,
         "avg_total_sets": avg_total_sets,
         "ATP": avg_ATP,
         "PS": avg_PS,
