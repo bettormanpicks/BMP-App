@@ -1,9 +1,12 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-25,Final,Miami Open presented by Itau,Aryna Sabalenka,Hailey Baptiste,wta_1,wta_44,WTA,
 2026-03-25,Final,Miami Open presented by Itau,Elena Rybakina,Jessica Pegula,wta_3,wta_5,WTA,
-2026-03-25,Live,Miami Open presented by Itau,Tommy Paul,Arthur Fils,atp_24,atp_40,ATP,
 2026-03-25,Final,Miami Open presented by Itau,Martin Landaluce,Jiri Lehecka,atp_158,atp_21,ATP,
+2026-03-25,Final,Miami Open presented by Itau,Tommy Paul,Arthur Fils,atp_24,atp_40,ATP,
 2026-03-25,Final,Dubrovnik Open,Kaitlin Quevedo,Veronika Erjavec,wta_131,wta_112,WTA,
 2026-03-25,Final,Dubrovnik Open,Mayar Sherif,Mia Ristic,wta_108,wta_273,WTA,
 2026-03-25,Final,Dubrovnik Open,Leyre Romero Gormaz,Suzan Lamens,wta_140,wta_109,WTA,
 2026-03-25,Final,Dubrovnik Open,Tamara Zidansek,Sara Sorribes Tormo,wta_145,wta_451,WTA,
+2026-03-27,TBD,Miami Open presented by Itau,Jiri Lehecka,Arthur Fils,atp_21,atp_40,ATP,
+2026-03-27,TBD,Dubrovnik Open,Tamara Zidansek,Veronika Erjavec,wta_145,wta_112,WTA,
+2026-03-27,TBD,Dubrovnik Open,Mayar Sherif,Leyre Romero Gormaz,wta_108,wta_140,WTA,
