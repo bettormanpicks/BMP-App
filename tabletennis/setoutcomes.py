@@ -190,7 +190,7 @@ print(f"Std dev: {pm.std():.4f}")
 # TOTAL POINTS STRATEGY TEST
 # -------------------------
 TOTAL_LINE = 75       # try 73, 75, 77, etc
-TOTAL_ODDS = 1.91     # typical -110
+TOTAL_ODDS = 1.83     # typical -120
 
 filtered_totals = clean[
     (clean["ns_pct"] >= 86) &
@@ -290,53 +290,6 @@ for ns in range(80, 93, 2):
 
 summary_df = pd.DataFrame(summary)
 summary_df = summary_df.sort_values(["NS","ATP","line"])
-
-print("\n=== LOWEST PROFITABLE TOTALS LINE PER NS+ATP ===\n")
-print(summary_df.to_string(index=False))
-
-# -------------------------
-# CONFIG
-# -------------------------
-LINE_MIN = 70
-LINE_MAX = 78
-LINE_STEP = 0.5
-
-filtered = clean[
-    (clean["ns_pct"] >= 86) &
-    (clean["atp"] >= 84)
-]
-
-lines = np.arange(LINE_MIN, LINE_MAX + LINE_STEP, LINE_STEP)
-
-best_lines = []
-
-for ns in sorted(filtered["ns_pct"].unique()):
-    for atp in sorted(filtered["atp"].unique()):
-        sub = filtered[(filtered["ns_pct"] == ns) & (filtered["atp"] == atp)]
-        if len(sub) < 10:
-            continue
-
-        # find highest line with positive EV
-        line_ev_pairs = []
-        for line in lines:
-            wins = (sub["actual_points"] > line).sum()
-            total = len(sub)
-            ev = (wins/total)*(ODDS_DECIMAL-1) - ((total-wins)/total)
-            if ev > 0:
-                line_ev_pairs.append((line, ev))
-
-        if line_ev_pairs:
-            # highest line that is still +EV
-            best_line, best_ev = max(line_ev_pairs, key=lambda x: x[0])
-            best_lines.append({
-                "NS": ns,
-                "ATP": atp,
-                "line": best_line,
-                "matches": len(sub),
-                "EV": best_ev
-            })
-
-best_lines_df = pd.DataFrame(best_lines).sort_values(["EV"], ascending=False)
 
 # -------------------------
 # INVERSE LINE SCAN: Lowest NS% and ATP for +EV at given totals lines

@@ -12,7 +12,8 @@ from datetime import datetime
 # -------------------------
 LEAGUE_URL = "https://scores24.live/en/table-tennis/l-czech-liga-pro-1"
 CHROME_PROFILE_PATH = r"C:\selenium_profiles\scores24"
-OUTPUT_CSV = "data/tt_czech_schedule.csv"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+OUTPUT_CSV = os.path.join(BASE_DIR, "data", "tt_czech_schedule.csv")
 
 # -------------------------
 # Helpers
@@ -129,7 +130,8 @@ def scrape_schedule():
 
     driver.quit()
 
-    pd.DataFrame(buffer).to_csv("data/tt_czech_schedule.csv", index=False)
+    os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
+    pd.DataFrame(buffer).to_csv(OUTPUT_CSV, index=False)
     print("✅ Schedule scraping complete.")
 
 # -------------------------

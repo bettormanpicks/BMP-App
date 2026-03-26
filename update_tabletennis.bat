@@ -8,7 +8,7 @@ echo %date% %time%
 echo ===============================
 
 echo Running TT Elite matchlogs...
-python tabletennis\getttmatchlogs.py
+python tabletennis\getelitematchlogs.py
 
 timeout /t 45
 
@@ -17,8 +17,13 @@ python tabletennis\getczechmatchlogs.py
 
 timeout /t 45
 
+echo Running TT Cup matchlogs...
+python tabletennis\getttcupmatchlogs.py
+
+timeout /t 45
+
 echo Running TT Elite schedule...
-python tabletennis\getttschedule.py
+python tabletennis\geteliteschedule.py
 
 timeout /t 45
 
@@ -27,13 +32,22 @@ python tabletennis\getczechschedule.py
 
 timeout /t 45
 
+echo Running TT Cup schedule...
+python tabletennis\getttcupschedule.py
+
+timeout /t 45
+
 echo Building TT Elite H2H...
-python tabletennis\buildtth2h.py
+python tabletennis\buildeliteh2h.py
 
 echo Building Czech H2H...
 python tabletennis\buildczechh2h.py
 
+echo Building TT Cup H2H...
+python tabletennis\buildttcuph2h.py
+
 echo Pushing updates to GitHub...
+git pull
 git add tabletennis/data/
 git commit -m "Updated table tennis data"
 git push origin main
