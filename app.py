@@ -982,8 +982,8 @@ if sport_choice == "Table Tennis":
         DISPLAY_NAMES = {
             "Date": "Match Start",
             "Matches": "Ms",
-            "P1 Bounce %": "P1 BB%",
-            "P2 Bounce %": "P2 BB%",
+            "P1 B%": "P1 BB%",
+            "P2 B%": "P2 BB%",
             "One-All %": "1ALL%",
             "Non Sweep %": "NS%",
             "P1 Sweeps": "P1 S",
