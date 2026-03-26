@@ -954,6 +954,8 @@ if sport_choice == "Table Tennis":
                 "Player 1": p1_display,
                 "Player 2": p2_display,
                 "Matches": stats["matches"],
+                "P1 Bounce %": stats.get("a_bounce_pct", 0),
+                "P2 Bounce %": stats.get("b_bounce_pct", 0),
                 "One-All %": round(stats.get("one_all_pct", 0) * 100, 1),
                 "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
                 "P1 Sweeps": stats.get("sweeps_a", 0),
@@ -980,6 +982,8 @@ if sport_choice == "Table Tennis":
         DISPLAY_NAMES = {
             "Date": "Match Start",
             "Matches": "Ms",
+            "P1 Bounce %": "P1 B%",
+            "P2 Bounce %": "P2 B%",
             "One-All %": "1ALL%",
             "Non Sweep %": "NS%",
             "P1 Sweeps": "P1 S",
