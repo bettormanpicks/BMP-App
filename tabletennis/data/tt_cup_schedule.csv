@@ -1,67 +1,79 @@
 match_id,match_date,player1,player2,match_link
-27-03-2026-pawel-gola-bart-omiej-molka,2026-03-27 06:00:00,Pawel Gola,Bartłomiej Molka,https://scores24.live/en/table-tennis/27-03-2026-pawel-gola-bart-omiej-molka
-27-03-2026-dawid-stapor-michal-lysakowski,2026-03-27 06:30:00,Dawid Stapor,Michal Lysakowski,https://scores24.live/en/table-tennis/27-03-2026-dawid-stapor-michal-lysakowski
-27-03-2026-adam-strelec-sindler-jaroslav,2026-03-27 06:40:00,Adam Strelec,Jaroslav Sindler,https://scores24.live/en/table-tennis/27-03-2026-adam-strelec-sindler-jaroslav
-27-03-2026-marcin-stepien-sylwester-wloszek,2026-03-27 07:00:00,Marcin Stepien,Sylwester Wloszek,https://scores24.live/en/table-tennis/27-03-2026-marcin-stepien-sylwester-wloszek
-27-03-2026-mandrysz-filip-sikora-robert,2026-03-27 07:10:00,Filip Mandrysz,Robert Sikora,https://scores24.live/en/table-tennis/27-03-2026-mandrysz-filip-sikora-robert
-27-03-2026-pawel-gola-michal-lysakowski,2026-03-27 07:30:00,Pawel Gola,Michal Lysakowski,https://scores24.live/en/table-tennis/27-03-2026-pawel-gola-michal-lysakowski
-27-03-2026-adam-strelec-sikora-robert,2026-03-27 07:40:00,Adam Strelec,Robert Sikora,https://scores24.live/en/table-tennis/27-03-2026-adam-strelec-sikora-robert
-27-03-2026-vojtech-kosak-ondrej-kadavy,2026-03-27 07:55:00,Vojtech Kosak,Ondrej Kadavy,https://scores24.live/en/table-tennis/27-03-2026-vojtech-kosak-ondrej-kadavy
-27-03-2026-sylwester-wloszek-bart-omiej-molka,2026-03-27 08:00:00,Sylwester Wloszek,Bartłomiej Molka,https://scores24.live/en/table-tennis/27-03-2026-sylwester-wloszek-bart-omiej-molka
-27-03-2026-sindler-jaroslav-mandrysz-filip,2026-03-27 08:10:00,Jaroslav Sindler,Filip Mandrysz,https://scores24.live/en/table-tennis/27-03-2026-sindler-jaroslav-mandrysz-filip
-27-03-2026-pavel-benes-martin-cerny,2026-03-27 08:25:00,Pavel Benes,Martin Cerny,https://scores24.live/en/table-tennis/27-03-2026-pavel-benes-martin-cerny
-27-03-2026-dawid-stapor-marcin-stepien,2026-03-27 08:30:00,Dawid Stapor,Marcin Stepien,https://scores24.live/en/table-tennis/27-03-2026-dawid-stapor-marcin-stepien
-27-03-2026-adam-strelec-mandrysz-filip,2026-03-27 08:40:00,Adam Strelec,Filip Mandrysz,https://scores24.live/en/table-tennis/27-03-2026-adam-strelec-mandrysz-filip
-27-03-2026-vojtech-kosak-martin-cerny,2026-03-27 08:55:00,Vojtech Kosak,Martin Cerny,https://scores24.live/en/table-tennis/27-03-2026-vojtech-kosak-martin-cerny
-27-03-2026-pawel-gola-sylwester-wloszek,2026-03-27 09:00:00,Pawel Gola,Sylwester Wloszek,https://scores24.live/en/table-tennis/27-03-2026-pawel-gola-sylwester-wloszek
-27-03-2026-sikora-robert-sindler-jaroslav,2026-03-27 09:10:00,Robert Sikora,Jaroslav Sindler,https://scores24.live/en/table-tennis/27-03-2026-sikora-robert-sindler-jaroslav
-27-03-2026-ondrej-kadavy-pavel-benes,2026-03-27 09:25:00,Ondrej Kadavy,Pavel Benes,https://scores24.live/en/table-tennis/27-03-2026-ondrej-kadavy-pavel-benes
-27-03-2026-marcin-stepien-michal-lysakowski,2026-03-27 09:30:00,Marcin Stepien,Michal Lysakowski,https://scores24.live/en/table-tennis/27-03-2026-marcin-stepien-michal-lysakowski
-27-03-2026-vojtech-kosak-pavel-benes,2026-03-27 09:55:00,Vojtech Kosak,Pavel Benes,https://scores24.live/en/table-tennis/27-03-2026-vojtech-kosak-pavel-benes
-27-03-2026-dawid-stapor-bart-omiej-molka,2026-03-27 10:00:00,Dawid Stapor,Bartłomiej Molka,https://scores24.live/en/table-tennis/27-03-2026-dawid-stapor-bart-omiej-molka
-27-03-2026-martin-cerny-ondrej-kadavy,2026-03-27 10:25:00,Martin Cerny,Ondrej Kadavy,https://scores24.live/en/table-tennis/27-03-2026-martin-cerny-ondrej-kadavy
-27-03-2026-pawel-gola-marcin-stepien,2026-03-27 10:30:00,Pawel Gola,Marcin Stepien,https://scores24.live/en/table-tennis/27-03-2026-pawel-gola-marcin-stepien
-27-03-2026-jan-krupnik-michal-raska,2026-03-27 10:40:00,Jan Krupnik,Michal Raska,https://scores24.live/en/table-tennis/27-03-2026-jan-krupnik-michal-raska
-27-03-2026-dawid-stapor-sylwester-wloszek,2026-03-27 11:00:00,Dawid Stapor,Sylwester Wloszek,https://scores24.live/en/table-tennis/27-03-2026-dawid-stapor-sylwester-wloszek
-27-03-2026-hitzger-jakub-tomas-bartik,2026-03-27 11:05:00,Jakub Hitzger,Tomas Bartik,https://scores24.live/en/table-tennis/27-03-2026-hitzger-jakub-tomas-bartik
-27-03-2026-ales-cizek-dalibor-velky-junior,2026-03-27 11:10:00,Ales Cizek,Dalibor Velky Jnr,https://scores24.live/en/table-tennis/27-03-2026-ales-cizek-dalibor-velky-junior
-27-03-2026-martin-filipek-ondrej-knazik,2026-03-27 11:20:00,Martin Filipek,Ondrej Knazik,https://scores24.live/en/table-tennis/27-03-2026-martin-filipek-ondrej-knazik
-27-03-2026-michal-lysakowski-bart-omiej-molka,2026-03-27 11:30:00,Michal Lysakowski,Bartłomiej Molka,https://scores24.live/en/table-tennis/27-03-2026-michal-lysakowski-bart-omiej-molka
-27-03-2026-dominik-lengal-oldrich-stehlik,2026-03-27 11:35:00,Dominik Lengal,Oldrich Stehlik,https://scores24.live/en/table-tennis/27-03-2026-dominik-lengal-oldrich-stehlik
-27-03-2026-jan-krupnik-dalibor-velky-junior,2026-03-27 11:40:00,Jan Krupnik,Dalibor Velky Jnr,https://scores24.live/en/table-tennis/27-03-2026-jan-krupnik-dalibor-velky-junior
-27-03-2026-vojtech-koutnik-vojna-daniel,2026-03-27 11:50:00,Vojtech Koutnik,Vojna Daniel,https://scores24.live/en/table-tennis/27-03-2026-vojtech-koutnik-vojna-daniel
-27-03-2026-vaclav-jr-hejda-ondrej-fiklik,2026-03-27 11:55:00,Vaclav Jr Hejda,Ondrej Fiklik,https://scores24.live/en/table-tennis/27-03-2026-vaclav-jr-hejda-ondrej-fiklik
-27-03-2026-pawel-gola-dawid-stapor,2026-03-27 12:00:00,Pawel Gola,Dawid Stapor,https://scores24.live/en/table-tennis/27-03-2026-pawel-gola-dawid-stapor
-27-03-2026-hitzger-jakub-oldrich-stehlik,2026-03-27 12:05:00,Jakub Hitzger,Oldrich Stehlik,https://scores24.live/en/table-tennis/27-03-2026-hitzger-jakub-oldrich-stehlik
-27-03-2026-michal-raska-ales-cizek,2026-03-27 12:10:00,Michal Raska,Ales Cizek,https://scores24.live/en/table-tennis/27-03-2026-michal-raska-ales-cizek
-27-03-2026-martin-filipek-vojna-daniel,2026-03-27 12:20:00,Martin Filipek,Vojna Daniel,https://scores24.live/en/table-tennis/27-03-2026-martin-filipek-vojna-daniel
-27-03-2026-anton-veliev-robert-jamrich,2026-03-27 12:25:00,Anton Veliev,Robert Jamrich,https://scores24.live/en/table-tennis/27-03-2026-anton-veliev-robert-jamrich
-27-03-2026-marcin-stepien-bart-omiej-molka,2026-03-27 12:30:00,Marcin Stepien,Bartłomiej Molka,https://scores24.live/en/table-tennis/27-03-2026-marcin-stepien-bart-omiej-molka
-27-03-2026-tomas-bartik-dominik-lengal,2026-03-27 12:35:00,Tomas Bartik,Dominik Lengal,https://scores24.live/en/table-tennis/27-03-2026-tomas-bartik-dominik-lengal
-27-03-2026-jan-krupnik-ales-cizek,2026-03-27 12:40:00,Jan Krupnik,Ales Cizek,https://scores24.live/en/table-tennis/27-03-2026-jan-krupnik-ales-cizek
-27-03-2026-ondrej-knazik-vojtech-koutnik,2026-03-27 12:50:00,Ondrej Knazik,Vojtech Koutnik,https://scores24.live/en/table-tennis/27-03-2026-ondrej-knazik-vojtech-koutnik
-27-03-2026-vaclav-jr-hejda-robert-jamrich,2026-03-27 12:55:00,Vaclav Jr Hejda,Robert Jamrich,https://scores24.live/en/table-tennis/27-03-2026-vaclav-jr-hejda-robert-jamrich
-27-03-2026-sylwester-wloszek-michal-lysakowski,2026-03-27 13:00:00,Sylwester Wloszek,Michal Lysakowski,https://scores24.live/en/table-tennis/27-03-2026-sylwester-wloszek-michal-lysakowski
-27-03-2026-hitzger-jakub-dominik-lengal,2026-03-27 13:05:00,Jakub Hitzger,Dominik Lengal,https://scores24.live/en/table-tennis/27-03-2026-hitzger-jakub-dominik-lengal
-27-03-2026-dalibor-velky-junior-michal-raska,2026-03-27 13:10:00,Dalibor Velky Jnr,Michal Raska,https://scores24.live/en/table-tennis/27-03-2026-dalibor-velky-junior-michal-raska
-27-03-2026-martin-filipek-vojtech-koutnik,2026-03-27 13:20:00,Martin Filipek,Vojtech Koutnik,https://scores24.live/en/table-tennis/27-03-2026-martin-filipek-vojtech-koutnik
-27-03-2026-ondrej-fiklik-anton-veliev,2026-03-27 13:25:00,Ondrej Fiklik,Anton Veliev,https://scores24.live/en/table-tennis/27-03-2026-ondrej-fiklik-anton-veliev
-27-03-2026-oldrich-stehlik-tomas-bartik,2026-03-27 13:35:00,Oldrich Stehlik,Tomas Bartik,https://scores24.live/en/table-tennis/27-03-2026-oldrich-stehlik-tomas-bartik
-27-03-2026-vojna-daniel-ondrej-knazik,2026-03-27 13:50:00,Vojna Daniel,Ondrej Knazik,https://scores24.live/en/table-tennis/27-03-2026-vojna-daniel-ondrej-knazik
-27-03-2026-vaclav-jr-hejda-anton-veliev,2026-03-27 13:55:00,Vaclav Jr Hejda,Anton Veliev,https://scores24.live/en/table-tennis/27-03-2026-vaclav-jr-hejda-anton-veliev
+27-03-2026-bart-omiej-molka-pawel-gola,2026-03-27 14:10:00,Bartłomiej Molka,Pawel Gola,https://scores24.live/en/table-tennis/27-03-2026-bart-omiej-molka-pawel-gola
+27-03-2026-jan-krupnik-dalibor-velky-junior-1,2026-03-27 14:20:00,Jan Krupnik,Dalibor Velky Jnr,https://scores24.live/en/table-tennis/27-03-2026-jan-krupnik-dalibor-velky-junior-1
 27-03-2026-robert-jamrich-ondrej-fiklik,2026-03-27 14:25:00,Robert Jamrich,Ondrej Fiklik,https://scores24.live/en/table-tennis/27-03-2026-robert-jamrich-ondrej-fiklik
+27-03-2026-patrik-sturma-kulhanek-tomas,2026-03-27 14:40:00,Patrik Sturma,Tomas Kulhanek,https://scores24.live/en/table-tennis/27-03-2026-patrik-sturma-kulhanek-tomas
+27-03-2026-moravec-borek-tomas-krenek,2026-03-27 14:45:00,Borek Moravec,Tomas Krenek,https://scores24.live/en/table-tennis/27-03-2026-moravec-borek-tomas-krenek
 27-03-2026-damian-bucko-marek-chybinski,2026-03-27 15:00:00,Damian Bucko,Marek Chybinski,https://scores24.live/en/table-tennis/27-03-2026-damian-bucko-marek-chybinski
-27-03-2026-adam-duch-guzy-karol,2026-03-27 15:30:00,Adam Duch,Karol Guzi,https://scores24.live/en/table-tennis/27-03-2026-adam-duch-guzy-karol
+27-03-2026-filip-karel-jiri-babinek,2026-03-27 15:05:00,Karel Filip,Jiri Babinek,https://scores24.live/en/table-tennis/27-03-2026-filip-karel-jiri-babinek
+27-03-2026-krupnik-sr-lukas-cecotka-dusan,2026-03-27 15:10:00,Lukas Krupnik,Dusan Cecotka,https://scores24.live/en/table-tennis/27-03-2026-krupnik-sr-lukas-cecotka-dusan
+27-03-2026-jan-krupnik-patrik-marsalek,2026-03-27 15:15:00,Jan Krupnik,Patrik Marsalek,https://scores24.live/en/table-tennis/27-03-2026-jan-krupnik-patrik-marsalek
+27-03-2026-jan-hendrych-milan-dvorak-,2026-03-27 15:20:00,Jan Hendrych,Milan Dvorak,https://scores24.live/en/table-tennis/27-03-2026-jan-hendrych-milan-dvorak-
+27-03-2026-blazej-gola-guzy-karol,2026-03-27 15:30:00,Blazej Gola,Karol Guzi,https://scores24.live/en/table-tennis/27-03-2026-blazej-gola-guzy-karol
+27-03-2026-hitzger-jakub-jan-volhejn,2026-03-27 15:35:00,Jakub Hitzger,Jan Volhejn,https://scores24.live/en/table-tennis/27-03-2026-hitzger-jakub-jan-volhejn
+27-03-2026-patrik-sturma-cecotka-dusan,2026-03-27 15:40:00,Patrik Sturma,Dusan Cecotka,https://scores24.live/en/table-tennis/27-03-2026-patrik-sturma-cecotka-dusan
+27-03-2026-moravec-borek-patrik-marsalek,2026-03-27 15:45:00,Borek Moravec,Patrik Marsalek,https://scores24.live/en/table-tennis/27-03-2026-moravec-borek-patrik-marsalek
+27-03-2026-adam-kral-zdenek-zahradka,2026-03-27 15:50:00,Adam Kral,Zdenek Zahradka,https://scores24.live/en/table-tennis/27-03-2026-adam-kral-zdenek-zahradka
+27-03-2026-adam-martin-jan-vonasek,2026-03-27 15:55:00,Adam Martin Rek,Jan Vonasek,https://scores24.live/en/table-tennis/27-03-2026-adam-martin-jan-vonasek
 27-03-2026-damian-bucko-guzy-karol,2026-03-27 16:00:00,Damian Bucko,Karol Guzi,https://scores24.live/en/table-tennis/27-03-2026-damian-bucko-guzy-karol
+27-03-2026-filip-karel-jan-volhejn,2026-03-27 16:05:00,Karel Filip,Jan Volhejn,https://scores24.live/en/table-tennis/27-03-2026-filip-karel-jan-volhejn
+27-03-2026-kulhanek-tomas-krupnik-sr-lukas,2026-03-27 16:10:00,Tomas Kulhanek,Lukas Krupnik,https://scores24.live/en/table-tennis/27-03-2026-kulhanek-tomas-krupnik-sr-lukas
+27-03-2026-tomas-krenek-jan-krupnik,2026-03-27 16:15:00,Tomas Krenek,Jan Krupnik,https://scores24.live/en/table-tennis/27-03-2026-tomas-krenek-jan-krupnik
+27-03-2026-jan-hendrych-zdenek-zahradka,2026-03-27 16:20:00,Jan Hendrych,Zdenek Zahradka,https://scores24.live/en/table-tennis/27-03-2026-jan-hendrych-zdenek-zahradka
+27-03-2026-viktor-skokan-miroslav-sochor,2026-03-27 16:25:00,Viktor Skokan,Miroslav Sochor,https://scores24.live/en/table-tennis/27-03-2026-viktor-skokan-miroslav-sochor
 27-03-2026-artur-urbanski-marek-chybinski,2026-03-27 16:30:00,Artur Urbanski,Marek Chybinski,https://scores24.live/en/table-tennis/27-03-2026-artur-urbanski-marek-chybinski
+27-03-2026-jiri-babinek-hitzger-jakub,2026-03-27 16:35:00,Jiri Babinek,Jakub Hitzger,https://scores24.live/en/table-tennis/27-03-2026-jiri-babinek-hitzger-jakub
+27-03-2026-patrik-sturma-krupnik-sr-lukas,2026-03-27 16:40:00,Patrik Sturma,Lukas Krupnik,https://scores24.live/en/table-tennis/27-03-2026-patrik-sturma-krupnik-sr-lukas
+27-03-2026-moravec-borek-jan-krupnik,2026-03-27 16:45:00,Borek Moravec,Jan Krupnik,https://scores24.live/en/table-tennis/27-03-2026-moravec-borek-jan-krupnik
+27-03-2026-milan-dvorak-adam-kral,2026-03-27 16:50:00,Milan Dvorak,Adam Kral,https://scores24.live/en/table-tennis/27-03-2026-milan-dvorak-adam-kral
+27-03-2026-adam-martin-miroslav-sochor,2026-03-27 16:55:00,Adam Martin Rek,Miroslav Sochor,https://scores24.live/en/table-tennis/27-03-2026-adam-martin-miroslav-sochor
 27-03-2026-pawel-kos-artur-urbanski,2026-03-27 17:00:00,Pawel Kos,Artur Urbanski,https://scores24.live/en/table-tennis/27-03-2026-pawel-kos-artur-urbanski
-27-03-2026-adam-duch-pawel-kos-,2026-03-27 17:30:00,Adam Duch,Pawel Kos,https://scores24.live/en/table-tennis/27-03-2026-adam-duch-pawel-kos-
+27-03-2026-filip-karel-hitzger-jakub,2026-03-27 17:05:00,Karel Filip,Jakub Hitzger,https://scores24.live/en/table-tennis/27-03-2026-filip-karel-hitzger-jakub
+27-03-2026-cecotka-dusan-kulhanek-tomas,2026-03-27 17:10:00,Dusan Cecotka,Tomas Kulhanek,https://scores24.live/en/table-tennis/27-03-2026-cecotka-dusan-kulhanek-tomas
+27-03-2026-patrik-marsalek-tomas-krenek,2026-03-27 17:15:00,Patrik Marsalek,Tomas Krenek,https://scores24.live/en/table-tennis/27-03-2026-patrik-marsalek-tomas-krenek
+27-03-2026-jan-hendrych-adam-kral,2026-03-27 17:20:00,Jan Hendrych,Adam Kral,https://scores24.live/en/table-tennis/27-03-2026-jan-hendrych-adam-kral
+27-03-2026-jan-vonasek-viktor-skokan,2026-03-27 17:25:00,Jan Vonasek,Viktor Skokan,https://scores24.live/en/table-tennis/27-03-2026-jan-vonasek-viktor-skokan
+27-03-2026-blazej-gola-pawel-kos-,2026-03-27 17:30:00,Blazej Gola,Pawel Kos,https://scores24.live/en/table-tennis/27-03-2026-blazej-gola-pawel-kos-
+27-03-2026-jan-volhejn-jiri-babinek,2026-03-27 17:35:00,Jan Volhejn,Jiri Babinek,https://scores24.live/en/table-tennis/27-03-2026-jan-volhejn-jiri-babinek
+27-03-2026-zdenek-zahradka-milan-dvorak-,2026-03-27 17:50:00,Zdenek Zahradka,Milan Dvorak,https://scores24.live/en/table-tennis/27-03-2026-zdenek-zahradka-milan-dvorak-
+27-03-2026-adam-martin-viktor-skokan,2026-03-27 17:55:00,Adam Martin Rek,Viktor Skokan,https://scores24.live/en/table-tennis/27-03-2026-adam-martin-viktor-skokan
 27-03-2026-damian-bucko-artur-urbanski,2026-03-27 18:00:00,Damian Bucko,Artur Urbanski,https://scores24.live/en/table-tennis/27-03-2026-damian-bucko-artur-urbanski
+27-03-2026-miroslav-sochor-jan-vonasek,2026-03-27 18:25:00,Miroslav Sochor,Jan Vonasek,https://scores24.live/en/table-tennis/27-03-2026-miroslav-sochor-jan-vonasek
 27-03-2026-pawel-kos-guzy-karol,2026-03-27 18:30:00,Pawel Kos,Karol Guzi,https://scores24.live/en/table-tennis/27-03-2026-pawel-kos-guzy-karol
-27-03-2026-adam-duch-marek-chybinski-1,2026-03-27 19:00:00,Adam Duch,Marek Chybinski,https://scores24.live/en/table-tennis/27-03-2026-adam-duch-marek-chybinski-1
+27-03-2026-matus-jiri-krupa-daniel,2026-03-27 18:40:00,Jiri  Matus,Daniel Krupa,https://scores24.live/en/table-tennis/27-03-2026-matus-jiri-krupa-daniel
+27-03-2026-kamil-przeczek-karel-zeman,2026-03-27 18:45:00,Kamil Przeczek,Karel Zeman,https://scores24.live/en/table-tennis/27-03-2026-kamil-przeczek-karel-zeman
+27-03-2026-blazej-gola-marek-chybinski,2026-03-27 19:00:00,Blazej Gola,Marek Chybinski,https://scores24.live/en/table-tennis/27-03-2026-blazej-gola-marek-chybinski
+27-03-2026-stanislav-kafka-richard-vavricka,2026-03-27 19:05:00,Stanislav Kafka,Richard Vavricka,https://scores24.live/en/table-tennis/27-03-2026-stanislav-kafka-richard-vavricka
+27-03-2026-patrik-sturma-kulhanek-tomas-1,2026-03-27 19:10:00,Patrik Sturma,Tomas Kulhanek,https://scores24.live/en/table-tennis/27-03-2026-patrik-sturma-kulhanek-tomas-1
+27-03-2026-tomas-krenek-karel-baros,2026-03-27 19:15:00,Tomas Krenek,Karel Baros,https://scores24.live/en/table-tennis/27-03-2026-tomas-krenek-karel-baros
+27-03-2026-jakub-mach-lukas-vich,2026-03-27 19:20:00,Jakub Mach,Lukas Vich,https://scores24.live/en/table-tennis/27-03-2026-jakub-mach-lukas-vich
 27-03-2026-damian-bucko-pawel-kos-,2026-03-27 19:30:00,Damian Bucko,Pawel Kos,https://scores24.live/en/table-tennis/27-03-2026-damian-bucko-pawel-kos-
-27-03-2026-adam-duch-artur-urbanski,2026-03-27 20:00:00,Adam Duch,Artur Urbanski,https://scores24.live/en/table-tennis/27-03-2026-adam-duch-artur-urbanski
+27-03-2026-jan-vidourek-jan-ruzicka,2026-03-27 19:35:00,Jan Vidourek,Jan Ruzicka,https://scores24.live/en/table-tennis/27-03-2026-jan-vidourek-jan-ruzicka
+27-03-2026-matus-jiri-kulhanek-tomas,2026-03-27 19:40:00,Jiri  Matus,Tomas Kulhanek,https://scores24.live/en/table-tennis/27-03-2026-matus-jiri-kulhanek-tomas
+27-03-2026-kamil-przeczek-karel-baros,2026-03-27 19:45:00,Kamil Przeczek,Karel Baros,https://scores24.live/en/table-tennis/27-03-2026-kamil-przeczek-karel-baros
+27-03-2026-tomas-cerveny-jr-tomas-rein,2026-03-27 19:50:00,Tomas Cerveny Jr,Tomas Rein,https://scores24.live/en/table-tennis/27-03-2026-tomas-cerveny-jr-tomas-rein
+27-03-2026-adam-kosacky-david-bochnak,2026-03-27 19:55:00,Adam Kosacky,David Bochnak,https://scores24.live/en/table-tennis/27-03-2026-adam-kosacky-david-bochnak
+27-03-2026-blazej-gola-artur-urbanski,2026-03-27 20:00:00,Blazej Gola,Artur Urbanski,https://scores24.live/en/table-tennis/27-03-2026-blazej-gola-artur-urbanski
+27-03-2026-stanislav-kafka-jan-ruzicka,2026-03-27 20:05:00,Stanislav Kafka,Jan Ruzicka,https://scores24.live/en/table-tennis/27-03-2026-stanislav-kafka-jan-ruzicka
+27-03-2026-krupa-daniel-patrik-sturma,2026-03-27 20:10:00,Daniel Krupa,Patrik Sturma,https://scores24.live/en/table-tennis/27-03-2026-krupa-daniel-patrik-sturma
+27-03-2026-karel-zeman-tomas-krenek,2026-03-27 20:15:00,Karel Zeman,Tomas Krenek,https://scores24.live/en/table-tennis/27-03-2026-karel-zeman-tomas-krenek
+27-03-2026-jakub-mach-tomas-rein,2026-03-27 20:20:00,Jakub Mach,Tomas Rein,https://scores24.live/en/table-tennis/27-03-2026-jakub-mach-tomas-rein
+27-03-2026-vaclav-nadvornik-martin-cerny,2026-03-27 20:25:00,Vaclav Nadvornik,Martin Cerny,https://scores24.live/en/table-tennis/27-03-2026-vaclav-nadvornik-martin-cerny
 27-03-2026-guzy-karol-marek-chybinski,2026-03-27 20:30:00,Karol Guzi,Marek Chybinski,https://scores24.live/en/table-tennis/27-03-2026-guzy-karol-marek-chybinski
-27-03-2026-damian-bucko-adam-duch,2026-03-27 21:00:00,Damian Bucko,Adam Duch,https://scores24.live/en/table-tennis/27-03-2026-damian-bucko-adam-duch
+27-03-2026-richard-vavricka-jan-vidourek,2026-03-27 20:35:00,Richard Vavricka,Jan Vidourek,https://scores24.live/en/table-tennis/27-03-2026-richard-vavricka-jan-vidourek
+27-03-2026-matus-jiri-patrik-sturma,2026-03-27 20:40:00,Jiri  Matus,Patrik Sturma,https://scores24.live/en/table-tennis/27-03-2026-matus-jiri-patrik-sturma
+27-03-2026-kamil-przeczek-tomas-krenek,2026-03-27 20:45:00,Kamil Przeczek,Tomas Krenek,https://scores24.live/en/table-tennis/27-03-2026-kamil-przeczek-tomas-krenek
+27-03-2026-lukas-vich-tomas-cerveny-jr,2026-03-27 20:50:00,Lukas Vich,Tomas Cerveny Jr,https://scores24.live/en/table-tennis/27-03-2026-lukas-vich-tomas-cerveny-jr
+27-03-2026-adam-kosacky-martin-cerny,2026-03-27 20:55:00,Adam Kosacky,Martin Cerny,https://scores24.live/en/table-tennis/27-03-2026-adam-kosacky-martin-cerny
+27-03-2026-damian-bucko-blazej-gola,2026-03-27 21:00:00,Damian Bucko,Blazej Gola,https://scores24.live/en/table-tennis/27-03-2026-damian-bucko-blazej-gola
+27-03-2026-stanislav-kafka-jan-vidourek,2026-03-27 21:05:00,Stanislav Kafka,Jan Vidourek,https://scores24.live/en/table-tennis/27-03-2026-stanislav-kafka-jan-vidourek
+27-03-2026-kulhanek-tomas-krupa-daniel,2026-03-27 21:10:00,Tomas Kulhanek,Daniel Krupa,https://scores24.live/en/table-tennis/27-03-2026-kulhanek-tomas-krupa-daniel
+27-03-2026-karel-baros-karel-zeman,2026-03-27 21:15:00,Karel Baros,Karel Zeman,https://scores24.live/en/table-tennis/27-03-2026-karel-baros-karel-zeman
+27-03-2026-jakub-mach-tomas-cerveny-jr,2026-03-27 21:20:00,Jakub Mach,Tomas Cerveny Jr,https://scores24.live/en/table-tennis/27-03-2026-jakub-mach-tomas-cerveny-jr
+27-03-2026-david-bochnak-vaclav-nadvornik,2026-03-27 21:25:00,David Bochnak,Vaclav Nadvornik,https://scores24.live/en/table-tennis/27-03-2026-david-bochnak-vaclav-nadvornik
 27-03-2026-pawel-kos-marek-chybinski,2026-03-27 21:30:00,Pawel Kos,Marek Chybinski,https://scores24.live/en/table-tennis/27-03-2026-pawel-kos-marek-chybinski
+27-03-2026-jan-ruzicka-richard-vavricka,2026-03-27 21:35:00,Jan Ruzicka,Richard Vavricka,https://scores24.live/en/table-tennis/27-03-2026-jan-ruzicka-richard-vavricka
+27-03-2026-tomas-rein-lukas-vich,2026-03-27 21:50:00,Tomas Rein,Lukas Vich,https://scores24.live/en/table-tennis/27-03-2026-tomas-rein-lukas-vich
+27-03-2026-adam-kosacky-vaclav-nadvornik,2026-03-27 21:55:00,Adam Kosacky,Vaclav Nadvornik,https://scores24.live/en/table-tennis/27-03-2026-adam-kosacky-vaclav-nadvornik
 27-03-2026-artur-urbanski-guzy-karol,2026-03-27 22:00:00,Artur Urbanski,Karol Guzi,https://scores24.live/en/table-tennis/27-03-2026-artur-urbanski-guzy-karol
+27-03-2026-martin-cerny-david-bochnak,2026-03-27 22:25:00,Martin Cerny,David Bochnak,https://scores24.live/en/table-tennis/27-03-2026-martin-cerny-david-bochnak
