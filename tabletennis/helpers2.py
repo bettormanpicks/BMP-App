@@ -179,7 +179,7 @@ def build_h2h_index(matchlogs):
 # -------------------------
 def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     """
-    Returns head-to-head stats for player_a vs player_b
+    Returns head-to-head stats for player_a vs player_b, including per-player bounce-back %
     window = "ALL", "L10", "L30", "L60"
     """
     key = tuple(sorted([player_a, player_b]))
@@ -207,10 +207,12 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
             "sweeps_a": 0,
             "sweeps_b": 0,
             "non_sweep_pct": 0,
-            "avg_total_sets": 0,
+            "one_all_pct": 0,
             "ATP": 0,
             "PS": 0,
-            "SS": 0
+            "SS": 0,
+            "a_bounce_pct": 0,
+            "b_bounce_pct": 0
         }
 
     # Count wins
@@ -235,9 +237,6 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     ))
     non_sweep_pct = non_sweep / total if total > 0 else 0
 
-    # Compute per-player bounce-back stats
-    bounce_stats = compute_set1_loser_wins_set2(matches, player_a, player_b)
-
     # Count matches tied 1-1 after first 2 sets
     one_all_count = sum(1 for m in matches if is_1all(m["parsed_sets"]))
     one_all_pct = one_all_count / total if total > 0 else 0
@@ -249,6 +248,31 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
 
     last_played = matches[0]["date"]  # newest first
 
+    # -------------------------
+    # Bounce-back % per player
+    # -------------------------
+    def player_bounce_pct(player_name):
+        # Only matches where this player lost set 1
+        lost_s1 = [
+            m for m in matches
+            if len(m["parsed_sets"]) >= 2 and (
+                (m["player1"] == player_name and m["parsed_sets"][0][0] < m["parsed_sets"][0][1]) or
+                (m["player2"] == player_name and m["parsed_sets"][0][1] < m["parsed_sets"][0][0])
+            )
+        ]
+        if not lost_s1:
+            return 0
+        # Count wins in set 2
+        won_s2 = sum(
+            1 for m in lost_s1
+            if (m["player1"] == player_name and m["parsed_sets"][1][0] > m["parsed_sets"][1][1]) or
+               (m["player2"] == player_name and m["parsed_sets"][1][1] > m["parsed_sets"][1][0])
+        )
+        return won_s2 / len(lost_s1)
+
+    a_bounce_pct = player_bounce_pct(player_a)
+    b_bounce_pct = player_bounce_pct(player_b)
+
     return {
         "matches": total,
         "a_wins": a_wins,
@@ -258,11 +282,9 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         "sweeps_a": sweeps_a,
         "sweeps_b": sweeps_b,
         "non_sweep_pct": non_sweep_pct,
-        "a_bounce_pct": bounce_stats["a_bounce_pct"],
-        "b_bounce_pct": bounce_stats["b_bounce_pct"],
-        "a_bounce_total": bounce_stats["a_total"],
-        "b_bounce_total": bounce_stats["b_total"],
         "one_all_pct": one_all_pct,
+        "a_bounce_pct": a_bounce_pct,
+        "b_bounce_pct": b_bounce_pct,
         "avg_total_sets": avg_total_sets,
         "ATP": avg_ATP,
         "PS": avg_PS,

@@ -37,15 +37,15 @@ def loser_wins_set2(parsed_sets):
 # -------------------------
 # Load matchlogs
 # -------------------------
-MATCHLOGS_CSV = "data/tt_czech_matchlogs.csv"
+MATCHLOGS_CSV = "data/tt_elite_matchlogs.csv"
 df = pd.read_csv(MATCHLOGS_CSV)
 df["parsed_sets"] = df["sets"].apply(parse_sets)
 
 # -------------------------
 # H2H filter
 # -------------------------
-player_a = "Jiri Plachy"
-player_b = "Jaroslav Prokupek"
+player_a = "Jaroslaw Rolak"
+player_b = "Adrian Fabis"
 
 def normalize_name(name):
     return name.strip().lower()
