@@ -3,22 +3,19 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-29,16:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Jack Pinnington Jones,Darwin Blanch,atp_138,atp_446,ATP,Clay
 2026-03-29,17:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Bolt,Andres Andrade,atp_167,atp_252,ATP,Clay
 2026-03-29,17:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Liam Draxl,Alexis Galarneau,atp_148,atp_242,ATP,Clay
-2026-03-29,10:00,Grand Prix Hassan II,Pierre-Hugues Herbert,Lloyd Harris,atp_189,atp_179,ATP,Clay
 2026-03-29,11:30,Grand Prix Hassan II,Andrea Pellegrino,Timofey Skatov,atp_140,atp_193,ATP,Clay
 2026-03-29,11:30,Grand Prix Hassan II,Ilya Ivashka,Nicolai Budkov Kjaer,atp_799,atp_133,ATP,Clay
 2026-03-29,11:30,Grand Prix Hassan II,Younes Lalami,Moez Echargui,atp_9019,atp_139,ATP,Clay
 2026-03-29,13:00,Grand Prix Hassan II,Henrique Rocha,David Jorda Sanchis,atp_170,atp_381,ATP,Clay
 2026-03-29,13:00,Grand Prix Hassan II,Amine Jamji,Rei Sakamoto,atp_9100,atp_173,ATP,Clay
 2026-03-29,13:00,Grand Prix Hassan II,Marco Trungelliti,Hynek Barton,atp_131,atp_293,ATP,Clay
+2026-03-29,Final,Grand Prix Hassan II,Pierre-Hugues Herbert,Lloyd Harris,atp_189,atp_179,ATP,Clay
+2026-03-29,Final,Grand Prix Hassan II,Dusan Lajovic,Jakub Paul,atp_129,atp_24,ATP,Clay
 2026-03-29,19:00,Miami Open presented by Itau,Jiri Lehecka,Jannik Sinner,atp_21,atp_2,ATP,
-2026-03-29,11:00,Tiriac Open presented by UniCredit Bank,Daniel Merida,Saba Purtseladze,atp_402,atp_279,ATP,
-2026-03-29,11:00,Tiriac Open presented by UniCredit Bank,Billy Harris,Alex Molcan,atp_144,atp_199,ATP,
-2026-03-29,11:00,Tiriac Open presented by UniCredit Bank,Stefan Horia Haita,Joel Josef Schwaerzler,atp_9101,atp_9030,ATP,
-2026-03-29,12:30,Tiriac Open presented by UniCredit Bank,Gabriel Ghetu,Jay Clarke,atp_39,atp_184,ATP,
-2026-03-29,12:30,Tiriac Open presented by UniCredit Bank,Dimitar Kuzmanov,Stefano Travaglia,atp_264,wta_290,ATP,
-2026-03-29,12:30,Tiriac Open presented by UniCredit Bank,Chun-Hsin Tseng,Stefanos Sakellaridis,atp_114,atp_275,ATP,
-2026-03-29,14:00,Tiriac Open presented by UniCredit Bank,George Loffhagen,Jurij Rodionov,atp_203,atp_175,ATP,
-2026-03-29,14:00,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Daniel Michalski,atp_136,atp_402,ATP,
+2026-03-29,14:00,Tiriac Open presented by UniCredit Bank,Daniel Merida,Saba Purtseladze,atp_402,atp_279,ATP,
+2026-03-29,14:00,Tiriac Open presented by UniCredit Bank,Billy Harris,Alex Molcan,atp_144,atp_415,ATP,
+2026-03-29,14:00,Tiriac Open presented by UniCredit Bank,Stefan Horia Haita,Joel Josef Schwaerzler,atp_9101,atp_9030,ATP,
+2026-03-29,15:30,Tiriac Open presented by UniCredit Bank,Gabriel Ghetu,Jay Clarke,atp_39,atp_184,ATP,
 2026-03-29,15:00,Copa Colsanitas Colsubsidio,Ana Sofia Sanchez,Alisa Oktiabreva,wta_195,wta_329,WTA,Clay
 2026-03-29,15:00,Copa Colsanitas Colsubsidio,Katarina Zavatska,Selena Janicijevic,wta_310,wta_261,WTA,Clay
 2026-03-29,17:00,Copa Colsanitas Colsubsidio,Miriana Tona,Lia Karatancheva,wta_384,wta_36,WTA,Clay
@@ -41,21 +38,26 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Adolfo Daniel Vallejo,Zachary Svajda,atp_9021,atp_106,ATP,Clay
 2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Michelsen,Chak Lam Coleman Wong,atp_41,atp_137,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Federico Cina,Alexandre Muller,atp_224,atp_50,ATP,Clay
+2026-03-30,TBD,Grand Prix Hassan II,Dusan Lajovic,Lloyd Harris,atp_129,atp_179,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Vit Kopriva,Hamad Medjedovic,atp_87,atp_97,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Mattia Bellucci,Reda Bennani,atp_109,atp_562,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Ignacio Buse,Matteo Berrettini,atp_91,atp_57,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Jesper de Jong,Yannick Hanfmann,atp_86,atp_90,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Luca Van Assche,Hugo Gaston,atp_130,atp_96,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Karim Bennani,Quentin Halys,atp_778,atp_72,ATP,Clay
-2026-03-30,TBD,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi,atp_75,atp_9016,ATP,Clay
+2026-03-30,TBD,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi,atp_88,atp_9016,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Juan Manuel Cerundolo,Kamil Majchrzak,atp_19,atp_56,ATP,Clay
+2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Chun-Hsin Tseng,Stefanos Sakellaridis,atp_114,atp_275,ATP,
+2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Dimitar Kuzmanov,Stefano Travaglia,atp_264,atp_164,ATP,
+2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Daniel Michalski,atp_136,atp_402,ATP,
+2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,George Loffhagen,Jurij Rodionov,atp_203,atp_175,ATP,
 2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Vilius Gaubas,atp_33,atp_126,ATP,
 2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Christopher O'Connell,Mariano Navone,atp_95,atp_74,ATP,
 2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Gabi Adrian Boitan,Elmer Moller,atp_313,atp_120,ATP,
 2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Roberto Bautista Agut,Titouan Droguet,atp_82,atp_119,ATP,
 2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Alexander Shevchenko,Radu David Turcanu,atp_79,atp_671,ATP,
 2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Damir Dzumhur,Filip Cristian Jianu,atp_61,atp_245,ATP,
-2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Pedro Martinez,atp_402,atp_101,ATP,
+2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Pedro Martinez,atp_54,atp_101,ATP,
 2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Francesco Maestrelli,Botic Van De Zandschulp,atp_110,atp_55,ATP,
 2026-03-30,TBD,Credit One Charleston Open,Bianca Andreescu,Dalma Galfi,wta_161,wta_86,WTA,Clay
 2026-03-30,TBD,Credit One Charleston Open,Zhang Shuai,Yuliia Starodubtseva,wta_85,wta_101,WTA,Clay
