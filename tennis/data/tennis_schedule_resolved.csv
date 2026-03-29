@@ -21,7 +21,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-29,11:00,Tiriac Open presented by UniCredit Bank,George Loffhagen,Jurij Rodionov,atp_203,atp_175,ATP,
 2026-03-29,11:00,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Daniel Michalski,atp_136,atp_402,ATP,
 2026-03-29,15:00,Copa Colsanitas Colsubsidio,Ana Sofia Sanchez,Alisa Oktiabreva,wta_195,wta_329,WTA,Clay
-2026-03-29,15:00,Copa Colsanitas Colsubsidio,Katarina Zavatska,Selena Janicijevic,wta_310,wta_261,WTA,Clay
+2026-03-29,15:00,Copa Colsanitas Colsubsidio,Katarina Zavatska,Selena Janicijevic,wta_331,wta_261,WTA,Clay
 2026-03-29,17:00,Copa Colsanitas Colsubsidio,Miriana Tona,Lia Karatancheva,wta_384,wta_36,WTA,Clay
 2026-03-29,17:00,Copa Colsanitas Colsubsidio,Marina Bassols Ribera,Anastasia Tikhonova,wta_209,wta_257,WTA,Clay
 2026-03-29,18:30,Copa Colsanitas Colsubsidio,Jazmin Ortenzi,Elina Avanesyan,wta_216,wta_178,WTA,Clay
@@ -48,7 +48,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-30,TBD,Grand Prix Hassan II,Jesper de Jong,Yannick Hanfmann,atp_86,atp_90,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Luca Van Assche,Hugo Gaston,atp_130,atp_96,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Karim Bennani,Quentin Halys,atp_778,atp_72,ATP,Clay
-2026-03-30,TBD,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi,atp_88,atp_9016,ATP,Clay
+2026-03-30,TBD,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi,atp_75,atp_9016,ATP,Clay
 2026-03-30,TBD,Grand Prix Hassan II,Juan Manuel Cerundolo,Kamil Majchrzak,atp_19,atp_56,ATP,Clay
 2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Vilius Gaubas,atp_33,atp_126,ATP,
 2026-03-30,TBD,Tiriac Open presented by UniCredit Bank,Christopher O'Connell,Mariano Navone,atp_95,atp_74,ATP,
