@@ -3,8 +3,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-29,16:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Jack Pinnington Jones,Darwin Blanch
 2026-03-29,17:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Bolt,Andres Andrade
 2026-03-29,17:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Liam Draxl,Alexis Galarneau
-2026-03-29,13:00,Grand Prix Hassan II,Henrique Rocha,David Jorda Sanchis
-2026-03-29,13:00,Grand Prix Hassan II,Amine Jamji,Rei Sakamoto
+2026-03-29,Final,Grand Prix Hassan II,Henrique Rocha,David Jorda Sanchis
+2026-03-29,Final,Grand Prix Hassan II,Amine Jamji,Rei Sakamoto
 2026-03-29,Final,Grand Prix Hassan II,Marco Trungelliti,Hynek Barton
 2026-03-29,TBD,Grand Prix Hassan II,Andrea Pellegrino,Timofey Skatov
 2026-03-29,Final,Grand Prix Hassan II,Ilya Ivashka,Nicolai Budkov Kjaer
@@ -12,19 +12,19 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-29,Final,Grand Prix Hassan II,Pierre-Hugues Herbert,Lloyd Harris
 2026-03-29,Final,Grand Prix Hassan II,Dusan Lajovic,Jakub Paul
 2026-03-29,19:00,Miami Open presented by Itau,Jiri Lehecka,Jannik Sinner
-2026-03-29,Live,Copa Colsanitas Colsubsidio,Katarina Zavatska,Selena Janicijevic
-2026-03-29,17:00,Copa Colsanitas Colsubsidio,Miriana Tona,Lia Karatancheva
-2026-03-29,17:00,Copa Colsanitas Colsubsidio,Marina Bassols Ribera,Anastasia Tikhonova
-2026-03-29,18:30,Copa Colsanitas Colsubsidio,Jazmin Ortenzi,Elina Avanesyan
-2026-03-29,18:30,Copa Colsanitas Colsubsidio,Irene Burillo,Caroline Werner
+2026-03-29,18:30,Copa Colsanitas Colsubsidio,Miriana Tona,Lia Karatancheva
+2026-03-29,18:30,Copa Colsanitas Colsubsidio,Marina Bassols Ribera,Anastasia Tikhonova
+2026-03-29,20:00,Copa Colsanitas Colsubsidio,Jazmin Ortenzi,Elina Avanesyan
+2026-03-29,20:00,Copa Colsanitas Colsubsidio,Irene Burillo,Caroline Werner
+2026-03-29,TBD,Copa Colsanitas Colsubsidio,Katarina Zavatska,Selena Janicijevic
 2026-03-29,TBD,Copa Colsanitas Colsubsidio,Ana Sofia Sanchez,Alisa Oktiabreva
-2026-03-29,Live,Credit One Charleston Open,Ayana Akli,Viktoriya Tomova
-2026-03-29,Live,Credit One Charleston Open,Polina Kudermetova,Eva Vedder
-2026-03-29,16:30,Credit One Charleston Open,Elvina Kalieva,Akasha Urhobo
-2026-03-29,16:30,Credit One Charleston Open,Donna Vekic,Ekaterine Gorgodze
-2026-03-29,18:00,Credit One Charleston Open,Yuan Yue,Kayla Day
-2026-03-29,18:00,Credit One Charleston Open,Darja Vidmanova,Mary Stoiana
-2026-03-29,Live,Dubrovnik Open,Andrea Lazaro Garcia,Anhelina Kalinina
+2026-03-29,Live,Credit One Charleston Open,Yuan Yue,Kayla Day
+2026-03-29,18:30,Credit One Charleston Open,Darja Vidmanova,Mary Stoiana
+2026-03-29,Final,Credit One Charleston Open,Donna Vekic,Ekaterine Gorgodze
+2026-03-29,Final,Credit One Charleston Open,Elvina Kalieva,Akasha Urhobo
+2026-03-29,Final,Credit One Charleston Open,Ayana Akli,Viktoriya Tomova
+2026-03-29,Final,Credit One Charleston Open,Polina Kudermetova,Eva Vedder
+2026-03-29,Final,Dubrovnik Open,Andrea Lazaro Garcia,Anhelina Kalinina
 2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Mackenzie McDonald,Jenson Brooksby
 2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Aleksandar Kovacevic,Rinky Hijikata
 2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Colton Smith,Thiago Agustin Tirante
@@ -35,6 +35,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Michelsen,Chak Lam Coleman Wong
 2026-03-30,10:00,Grand Prix Hassan II,Dusan Lajovic,Lloyd Harris
 2026-03-30,10:00,Grand Prix Hassan II,Timofey Skatov,Moez Echargui
+2026-03-30,11:30,Grand Prix Hassan II,Henrique Rocha,Nicolai Budkov Kjaer
+2026-03-30,11:30,Grand Prix Hassan II,Marco Trungelliti,Rei Sakamoto
 2026-03-30,12:30,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi
 2026-03-30,14:00,Grand Prix Hassan II,Karim Bennani,Quentin Halys
 2026-03-30,15:30,Grand Prix Hassan II,Jesper de Jong,Yannick Hanfmann
@@ -52,6 +54,5 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-30,TBD,Credit One Charleston Open,Yulia Putintseva,Lulu Sun
 2026-03-30,TBD,Credit One Charleston Open,Mayar Sherif,Peyton Stearns
 2026-03-30,TBD,Credit One Charleston Open,Ashlyn Krueger,Catherine McNally
-2026-03-30,TBD,Credit One Charleston Open,Magda Linette,McCartney Kessler
 2026-03-30,TBD,Credit One Charleston Open,Eva Lys,Katie Volynets
 2026-03-30,TBD,Credit One Charleston Open,Anastasia Zakharova,Dayana Yastremska
