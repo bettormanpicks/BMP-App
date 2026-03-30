@@ -4,22 +4,24 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-30,22:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Bolt,Wu Yibing,atp_167,atp_145,ATP,Clay
 2026-03-30,23:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Mackenzie McDonald,Jenson Brooksby,atp_115,atp_46,ATP,Clay
 2026-03-30,00:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Colton Smith,Thiago Agustin Tirante,atp_141,atp_92,ATP,Clay
-2026-03-30,10:00,Grand Prix Hassan II,Dusan Lajovic,Lloyd Harris,atp_129,atp_179,ATP,Clay
-2026-03-30,10:00,Grand Prix Hassan II,Timofey Skatov,Moez Echargui,atp_193,atp_139,ATP,Clay
-2026-03-30,11:30,Grand Prix Hassan II,Henrique Rocha,Nicolai Budkov Kjaer,atp_170,atp_133,ATP,Clay
+2026-03-30,Live,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi,atp_88,atp_9016,ATP,Clay
 2026-03-30,11:30,Grand Prix Hassan II,Marco Trungelliti,Rei Sakamoto,atp_131,atp_173,ATP,Clay
-2026-03-30,12:30,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi,atp_88,atp_9016,ATP,Clay
 2026-03-30,14:00,Grand Prix Hassan II,Karim Bennani,Quentin Halys,atp_778,atp_72,ATP,Clay
 2026-03-30,15:30,Grand Prix Hassan II,Jesper de Jong,Yannick Hanfmann,atp_86,atp_90,ATP,Clay
-2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Dimitar Kuzmanov,Stefano Travaglia,atp_264,atp_164,ATP,
-2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Billy Harris,Alex Molcan,atp_144,atp_415,ATP,
-2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Gabriel Ghetu,Jay Clarke,atp_39,atp_184,ATP,
-2026-03-30,10:00,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Jurij Rodionov,atp_136,atp_175,ATP,
+2026-03-30,Final,Grand Prix Hassan II,Henrique Rocha,Nicolai Budkov Kjaer,atp_170,atp_133,ATP,Clay
+2026-03-30,Final,Grand Prix Hassan II,Dusan Lajovic,Lloyd Harris,atp_129,atp_179,ATP,Clay
+2026-03-30,Final,Grand Prix Hassan II,Timofey Skatov,Moez Echargui,atp_193,atp_139,ATP,Clay
 2026-03-30,10:00,Tiriac Open presented by UniCredit Bank,Stefan Horia Haita,Joel Josef Schwaerzler,atp_9100,atp_9030,ATP,
-2026-03-30,10:00,Tiriac Open presented by UniCredit Bank,Daniel Merida,Saba Purtseladze,atp_402,atp_279,ATP,
+2026-03-30,12:15,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Jurij Rodionov,atp_136,atp_175,ATP,
+2026-03-30,14:00,Tiriac Open presented by UniCredit Bank,Stefanos Sakellaridis,Dimitar Kuzmanov,atp_275,atp_264,ATP,
+2026-03-30,14:00,Tiriac Open presented by UniCredit Bank,Alex Molcan,Jay Clarke,atp_415,atp_184,ATP,
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Daniel Merida,Saba Purtseladze,atp_402,atp_279,ATP,
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Dimitar Kuzmanov,Stefano Travaglia,atp_264,atp_164,ATP,
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Billy Harris,Alex Molcan,atp_179,atp_415,ATP,
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Gabriel Ghetu,Jay Clarke,atp_39,atp_184,ATP,
 2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Chun-Hsin Tseng,Stefanos Sakellaridis,atp_114,atp_275,ATP,
-2026-03-30,Final,Tiriac Open presented by UniCredit Bank,George Loffhagen,Jurij Rodionov,atp_203,atp_175,ATP,
 2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Daniel Michalski,atp_136,atp_402,ATP,
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,George Loffhagen,Jurij Rodionov,atp_203,atp_175,ATP,
 2026-03-30,15:30,Copa Colsanitas Colsubsidio,Carole Monnet,Katarzyna Kawa,wta_177,wta_143,WTA,Clay
 2026-03-30,16:30,Copa Colsanitas Colsubsidio,Selena Janicijevic,Julia Riera,wta_261,wta_187,WTA,Clay
 2026-03-30,17:00,Copa Colsanitas Colsubsidio,Elizabeth Mandlik,Julieta Pareja,wta_168,wta_349,WTA,Clay
@@ -37,7 +39,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-30,22:00,Credit One Charleston Open,Ajla Tomljanovic,Donna Vekic,wta_73,wta_99,WTA,Clay
 2026-03-30,23:30,Credit One Charleston Open,Alycia Parks,Mary Stoiana,wta_76,wta_185,WTA,Clay
 2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Michelsen,Chak Lam Coleman Wong,atp_41,atp_137,ATP,Clay
-2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Martin Damm,Brandon Nakashima,atp_383,atp_29,ATP,Clay
+2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Martin Damm,Brandon Nakashima,atp_125,atp_29,ATP,Clay
 2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tomas Martin Etcheverry,Federico Agustin Gomez,atp_53,atp_188,ATP,Clay
 2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Roman Andres Burruchaga,Adam Walton,atp_102,atp_93,ATP,Clay
 2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Nishesh Basavareddy,Liam Draxl,atp_190,atp_148,ATP,Clay
@@ -49,14 +51,14 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-31,TBD,Grand Prix Hassan II,Ignacio Buse,Matteo Berrettini,atp_91,atp_57,ATP,Clay
 2026-03-31,TBD,Grand Prix Hassan II,Luca Van Assche,Hugo Gaston,atp_130,atp_96,ATP,Clay
 2026-03-31,TBD,Grand Prix Hassan II,Juan Manuel Cerundolo,Kamil Majchrzak,atp_19,atp_56,ATP,Clay
-2026-03-31,TBD,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Vilius Gaubas,atp_33,atp_126,ATP,
-2026-03-31,TBD,Tiriac Open presented by UniCredit Bank,Christopher O'Connell,Mariano Navone,atp_95,atp_74,ATP,
-2026-03-31,TBD,Tiriac Open presented by UniCredit Bank,Gabi Adrian Boitan,Elmer Moller,atp_313,atp_120,ATP,
-2026-03-31,TBD,Tiriac Open presented by UniCredit Bank,Roberto Bautista Agut,Titouan Droguet,atp_82,atp_119,ATP,
-2026-03-31,TBD,Tiriac Open presented by UniCredit Bank,Alexander Shevchenko,Radu David Turcanu,atp_79,atp_671,ATP,
-2026-03-31,TBD,Tiriac Open presented by UniCredit Bank,Damir Dzumhur,Filip Cristian Jianu,atp_61,atp_245,ATP,
-2026-03-31,TBD,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Pedro Martinez,atp_54,atp_101,ATP,
-2026-03-31,TBD,Tiriac Open presented by UniCredit Bank,Francesco Maestrelli,Botic Van De Zandschulp,atp_110,atp_55,ATP,
+2026-03-31,08:00,Tiriac Open presented by UniCredit Bank,Christopher O'Connell,Mariano Navone,atp_95,atp_74,ATP,
+2026-03-31,08:00,Tiriac Open presented by UniCredit Bank,Gabi Adrian Boitan,Elmer Moller,atp_313,atp_120,ATP,
+2026-03-31,08:00,Tiriac Open presented by UniCredit Bank,Alexander Shevchenko,Radu David Turcanu,atp_79,atp_671,ATP,
+2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Francesco Maestrelli,Botic Van De Zandschulp,atp_110,atp_55,ATP,
+2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Damir Dzumhur,Filip Cristian Jianu,atp_61,atp_245,ATP,
+2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Roberto Bautista Agut,Titouan Droguet,atp_82,atp_119,ATP,
+2026-03-31,11:00,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Vilius Gaubas,atp_33,atp_126,ATP,
+2026-03-31,14:00,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Pedro Martinez,atp_54,atp_101,ATP,
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Francesca Jones,Guiomar Maristany Zuleta De Reales,wta_72,wta_165,WTA,Clay
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Hanne Vandewinkel,Sofia Costoulas,wta_128,wta_142,WTA,Clay
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Robin Montgomery,Anna Blinkova,wta_293,wta_82,WTA,Clay
