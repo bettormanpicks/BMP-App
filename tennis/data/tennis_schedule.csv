@@ -4,33 +4,31 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-30,22:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Bolt,Wu Yibing
 2026-03-30,23:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Mackenzie McDonald,Jenson Brooksby
 2026-03-30,00:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Colton Smith,Thiago Agustin Tirante
-2026-03-30,Live,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi
-2026-03-30,11:30,Grand Prix Hassan II,Marco Trungelliti,Rei Sakamoto
-2026-03-30,14:00,Grand Prix Hassan II,Karim Bennani,Quentin Halys
-2026-03-30,15:30,Grand Prix Hassan II,Jesper de Jong,Yannick Hanfmann
+2026-03-30,Live,Grand Prix Hassan II,Karim Bennani,Quentin Halys
+2026-03-30,16:30,Grand Prix Hassan II,Jesper de Jong,Yannick Hanfmann
+2026-03-30,Final,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi
+2026-03-30,Final,Grand Prix Hassan II,Marco Trungelliti,Rei Sakamoto
 2026-03-30,Final,Grand Prix Hassan II,Henrique Rocha,Nicolai Budkov Kjaer
 2026-03-30,Final,Grand Prix Hassan II,Dusan Lajovic,Lloyd Harris
 2026-03-30,Final,Grand Prix Hassan II,Timofey Skatov,Moez Echargui
-2026-03-30,10:00,Tiriac Open presented by UniCredit Bank,Stefan Horia Haita,Joel Josef Schwaerzler
-2026-03-30,12:15,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Jurij Rodionov
-2026-03-30,14:00,Tiriac Open presented by UniCredit Bank,Stefanos Sakellaridis,Dimitar Kuzmanov
-2026-03-30,14:00,Tiriac Open presented by UniCredit Bank,Alex Molcan,Jay Clarke
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Jurij Rodionov
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Stefan Horia Haita,Joel Josef Schwaerzler
 2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Daniel Merida,Saba Purtseladze
-2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Dimitar Kuzmanov,Stefano Travaglia
 2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Billy Harris,Alex Molcan
 2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Gabriel Ghetu,Jay Clarke
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Dimitar Kuzmanov,Stefano Travaglia
 2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Chun-Hsin Tseng,Stefanos Sakellaridis
-2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Daniel Michalski
 2026-03-30,Final,Tiriac Open presented by UniCredit Bank,George Loffhagen,Jurij Rodionov
-2026-03-30,15:30,Copa Colsanitas Colsubsidio,Carole Monnet,Katarzyna Kawa
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Daniel Michalski
+2026-03-30,Live,Copa Colsanitas Colsubsidio,Carole Monnet,Katarzyna Kawa
 2026-03-30,16:30,Copa Colsanitas Colsubsidio,Selena Janicijevic,Julia Riera
 2026-03-30,17:00,Copa Colsanitas Colsubsidio,Elizabeth Mandlik,Julieta Pareja
 2026-03-30,18:00,Copa Colsanitas Colsubsidio,Anastasia Tikhonova,Despina Papamichail
 2026-03-30,18:30,Copa Colsanitas Colsubsidio,Valentina Mediorreal Arias,Tatjana Maria
 2026-03-30,23:00,Copa Colsanitas Colsubsidio,Panna Udvardy,Maria Camila Torres Murcia
-2026-03-30,15:00,Credit One Charleston Open,Yulia Putintseva,Lulu Sun
-2026-03-30,15:00,Credit One Charleston Open,Anastasia Zakharova,Dayana Yastremska
-2026-03-30,15:00,Credit One Charleston Open,Eva Lys,Katie Volynets
+2026-03-30,Live,Credit One Charleston Open,Yulia Putintseva,Lulu Sun
+2026-03-30,Live,Credit One Charleston Open,Eva Lys,Katie Volynets
+2026-03-30,Live,Credit One Charleston Open,Anastasia Zakharova,Dayana Yastremska
 2026-03-30,16:30,Credit One Charleston Open,Elvina Kalieva,McCartney Kessler
 2026-03-30,16:30,Credit One Charleston Open,Solana Sierra,Akasha Urhobo
 2026-03-30,16:30,Credit One Charleston Open,Sloane Stephens,Renata Zarazua
@@ -45,33 +43,38 @@ Date,Time,Tournament,Player 1,Player 2
 2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Nishesh Basavareddy,Liam Draxl
 2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alexei Popyrin,Patrick Kypson
 2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Aleksandar Kovacevic,Rinky Hijikata
-2026-03-31,TBD,Grand Prix Hassan II,Federico Cina,Alexandre Muller
-2026-03-31,TBD,Grand Prix Hassan II,Vit Kopriva,Hamad Medjedovic
-2026-03-31,TBD,Grand Prix Hassan II,Mattia Bellucci,Reda Bennani
-2026-03-31,TBD,Grand Prix Hassan II,Ignacio Buse,Matteo Berrettini
-2026-03-31,TBD,Grand Prix Hassan II,Luca Van Assche,Hugo Gaston
-2026-03-31,TBD,Grand Prix Hassan II,Juan Manuel Cerundolo,Kamil Majchrzak
+2026-03-31,10:00,Grand Prix Hassan II,Juan Manuel Cerundolo,Kamil Majchrzak
+2026-03-31,10:00,Grand Prix Hassan II,Federico Cina,Alexandre Muller
+2026-03-31,11:30,Grand Prix Hassan II,Mattia Bellucci,Reda Bennani
+2026-03-31,11:30,Grand Prix Hassan II,Henrique Rocha,Marco Trungelliti
+2026-03-31,13:00,Grand Prix Hassan II,Ignacio Buse,Matteo Berrettini
+2026-03-31,13:00,Grand Prix Hassan II,Timofey Skatov,Camilo Ugo Carabelli
+2026-03-31,14:30,Grand Prix Hassan II,Luca Van Assche,Hugo Gaston
+2026-03-31,14:30,Grand Prix Hassan II,Rafael Jodar,Dusan Lajovic
 2026-03-31,08:00,Tiriac Open presented by UniCredit Bank,Christopher O'Connell,Mariano Navone
 2026-03-31,08:00,Tiriac Open presented by UniCredit Bank,Gabi Adrian Boitan,Elmer Moller
 2026-03-31,08:00,Tiriac Open presented by UniCredit Bank,Alexander Shevchenko,Radu David Turcanu
-2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Francesco Maestrelli,Botic Van De Zandschulp
-2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Damir Dzumhur,Filip Cristian Jianu
 2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Roberto Bautista Agut,Titouan Droguet
+2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Stefanos Sakellaridis,Dimitar Kuzmanov
+2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Alex Molcan,Jay Clarke
+2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Daniel Merida,Joel Josef Schwaerzler
+2026-03-31,11:00,Tiriac Open presented by UniCredit Bank,Francesco Maestrelli,Botic Van De Zandschulp
+2026-03-31,11:00,Tiriac Open presented by UniCredit Bank,Damir Dzumhur,Filip Cristian Jianu
 2026-03-31,11:00,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Vilius Gaubas
 2026-03-31,14:00,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Pedro Martinez
-2026-03-31,TBD,Copa Colsanitas Colsubsidio,Francesca Jones,Guiomar Maristany Zuleta De Reales
-2026-03-31,TBD,Copa Colsanitas Colsubsidio,Hanne Vandewinkel,Sofia Costoulas
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Robin Montgomery,Anna Blinkova
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Lia Karatancheva,Varvara Lepchenko
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Darja Semenistaja,Ella Seidel
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Tiantsoa Rakotomanga Rajaonah,Jessica Bouzas Maneiro
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Camila Osorio,Caroline Dolehide
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Irene Burillo,Jazmin Ortenzi
-2026-03-31,TBD,Copa Colsanitas Colsubsidio,Emiliana Arango,Maria Lourdes Carle
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Marie Bouzkova,Ana Sofia Sanchez
+2026-03-31,TBD,Copa Colsanitas Colsubsidio,Francesca Jones,Guiomar Maristany Zuleta De Reales
+2026-03-31,TBD,Copa Colsanitas Colsubsidio,Hanne Vandewinkel,Sofia Costoulas
+2026-03-31,TBD,Copa Colsanitas Colsubsidio,Emiliana Arango,Maria Lourdes Carle
 2026-03-31,TBD,Credit One Charleston Open,Bianca Andreescu,Dalma Galfi
 2026-03-31,TBD,Credit One Charleston Open,Kayla Day,Paula Badosa
 2026-03-31,TBD,Credit One Charleston Open,Polina Kudermetova,Oleksandra Oliynykova
 2026-03-31,TBD,Credit One Charleston Open,Ashlyn Krueger,Catherine McNally
-2026-03-31,TBD,Credit One Charleston Open,Mayar Sherif,Peyton Stearns
+2026-03-31,TBD,Credit One Charleston Open,Mayar Sherif,Yuan Yue
 2026-03-31,TBD,Credit One Charleston Open,Zhang Shuai,Yuliia Starodubtseva
