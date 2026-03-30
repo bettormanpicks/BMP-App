@@ -11,14 +11,15 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-30,12:30,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi,atp_88,atp_9016,ATP,Clay
 2026-03-30,14:00,Grand Prix Hassan II,Karim Bennani,Quentin Halys,atp_778,atp_72,ATP,Clay
 2026-03-30,15:30,Grand Prix Hassan II,Jesper de Jong,Yannick Hanfmann,atp_86,atp_90,ATP,Clay
-2026-03-30,07:00,Tiriac Open presented by UniCredit Bank,Chun-Hsin Tseng,Stefanos Sakellaridis,atp_114,atp_275,ATP,
-2026-03-30,07:00,Tiriac Open presented by UniCredit Bank,George Loffhagen,Jurij Rodionov,atp_203,atp_175,ATP,
-2026-03-30,07:00,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Daniel Michalski,atp_136,atp_402,ATP,
-2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Dimitar Kuzmanov,Stefano Travaglia,atp_264,wta_290,ATP,
-2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Billy Harris,Alex Molcan,atp_144,atp_199,ATP,
+2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Dimitar Kuzmanov,Stefano Travaglia,atp_264,atp_164,ATP,
+2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Billy Harris,Alex Molcan,atp_144,atp_415,ATP,
 2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Gabriel Ghetu,Jay Clarke,atp_39,atp_184,ATP,
+2026-03-30,10:00,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Jurij Rodionov,atp_136,atp_175,ATP,
 2026-03-30,10:00,Tiriac Open presented by UniCredit Bank,Stefan Horia Haita,Joel Josef Schwaerzler,atp_9100,atp_9030,ATP,
 2026-03-30,10:00,Tiriac Open presented by UniCredit Bank,Daniel Merida,Saba Purtseladze,atp_402,atp_279,ATP,
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Chun-Hsin Tseng,Stefanos Sakellaridis,atp_114,atp_275,ATP,
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,George Loffhagen,Jurij Rodionov,atp_203,atp_175,ATP,
+2026-03-30,Final,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Daniel Michalski,atp_136,atp_402,ATP,
 2026-03-30,15:30,Copa Colsanitas Colsubsidio,Carole Monnet,Katarzyna Kawa,wta_177,wta_143,WTA,Clay
 2026-03-30,16:30,Copa Colsanitas Colsubsidio,Selena Janicijevic,Julia Riera,wta_261,wta_187,WTA,Clay
 2026-03-30,17:00,Copa Colsanitas Colsubsidio,Elizabeth Mandlik,Julieta Pareja,wta_168,wta_349,WTA,Clay
@@ -34,7 +35,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-30,18:00,Credit One Charleston Open,Darja Vidmanova,Anna Bondar,wta_127,wta_65,WTA,Clay
 2026-03-30,18:00,Credit One Charleston Open,Viktoriya Tomova,Jennifer Brady,wta_153,wta_315,WTA,Clay
 2026-03-30,22:00,Credit One Charleston Open,Ajla Tomljanovic,Donna Vekic,wta_73,wta_99,WTA,Clay
-2026-03-30,23:30,Credit One Charleston Open,Alycia Parks,Mary Stoiana,wta_243,wta_185,WTA,Clay
+2026-03-30,23:30,Credit One Charleston Open,Alycia Parks,Mary Stoiana,wta_76,wta_185,WTA,Clay
 2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Michelsen,Chak Lam Coleman Wong,atp_41,atp_137,ATP,Clay
 2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Martin Damm,Brandon Nakashima,atp_383,atp_29,ATP,Clay
 2026-03-31,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tomas Martin Etcheverry,Federico Agustin Gomez,atp_53,atp_188,ATP,Clay
@@ -58,7 +59,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-31,TBD,Tiriac Open presented by UniCredit Bank,Francesco Maestrelli,Botic Van De Zandschulp,atp_110,atp_55,ATP,
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Francesca Jones,Guiomar Maristany Zuleta De Reales,wta_72,wta_165,WTA,Clay
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Hanne Vandewinkel,Sofia Costoulas,wta_128,wta_142,WTA,Clay
-2026-03-31,TBD,Copa Colsanitas Colsubsidio,Robin Montgomery,Anna Blinkova,wta_293,wta_65,WTA,Clay
+2026-03-31,TBD,Copa Colsanitas Colsubsidio,Robin Montgomery,Anna Blinkova,wta_293,wta_82,WTA,Clay
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Lia Karatancheva,Varvara Lepchenko,wta_36,wta_149,WTA,Clay
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Darja Semenistaja,Ella Seidel,wta_97,wta_95,WTA,Clay
 2026-03-31,TBD,Copa Colsanitas Colsubsidio,Tiantsoa Rakotomanga Rajaonah,Jessica Bouzas Maneiro,wta_120,wta_48,WTA,Clay
