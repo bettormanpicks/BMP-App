@@ -1,20 +1,20 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-29,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Bolt,Andres Andrade,atp_167,atp_252,ATP,Clay
 2026-03-29,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Liam Draxl,Alexis Galarneau,atp_148,atp_242,ATP,Clay
-2026-03-29,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Federico Agustin Gomez,Clement Tabur,atp_188,atp_204,ATP,Clay
 2026-03-29,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Jack Pinnington Jones,Darwin Blanch,wta_72,atp_446,WTA,Clay
+2026-03-29,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Federico Agustin Gomez,Clement Tabur,atp_188,atp_204,ATP,Clay
 2026-03-29,Final,Grand Prix Hassan II,Henrique Rocha,David Jorda Sanchis,atp_170,atp_381,ATP,Clay
 2026-03-29,Final,Grand Prix Hassan II,Amine Jamji,Rei Sakamoto,atp_9100,atp_173,ATP,Clay
 2026-03-29,Final,Grand Prix Hassan II,Marco Trungelliti,Hynek Barton,atp_131,atp_293,ATP,Clay
 2026-03-29,TBD,Grand Prix Hassan II,Andrea Pellegrino,Timofey Skatov,atp_140,atp_193,ATP,Clay
-2026-03-29,Final,Grand Prix Hassan II,Ilya Ivashka,Nicolai Budkov Kjaer,atp_898,atp_133,ATP,Clay
+2026-03-29,Final,Grand Prix Hassan II,Ilya Ivashka,Nicolai Budkov Kjaer,atp_799,atp_133,ATP,Clay
 2026-03-29,Final,Grand Prix Hassan II,Younes Lalami,Moez Echargui,atp_9019,atp_139,ATP,Clay
 2026-03-29,Final,Grand Prix Hassan II,Pierre-Hugues Herbert,Lloyd Harris,atp_189,atp_179,ATP,Clay
 2026-03-29,Final,Grand Prix Hassan II,Dusan Lajovic,Jakub Paul,atp_129,atp_24,ATP,Clay
-2026-03-29,Live,Miami Open presented by Itau,Jiri Lehecka,Jannik Sinner,atp_21,atp_2,ATP,
-2026-03-29,Live,Copa Colsanitas Colsubsidio,Marina Bassols Ribera,Anastasia Tikhonova,wta_209,wta_257,WTA,Clay
-2026-03-29,21:30,Copa Colsanitas Colsubsidio,Irene Burillo,Caroline Werner,wta_249,wta_234,WTA,Clay
+2026-03-29,Final,Miami Open presented by Itau,Jiri Lehecka,Jannik Sinner,atp_21,atp_2,ATP,
+2026-03-29,Live,Copa Colsanitas Colsubsidio,Irene Burillo,Caroline Werner,wta_249,wta_234,WTA,Clay
 2026-03-29,Final,Copa Colsanitas Colsubsidio,Jazmin Ortenzi,Elina Avanesyan,wta_216,wta_178,WTA,Clay
+2026-03-29,Final,Copa Colsanitas Colsubsidio,Marina Bassols Ribera,Anastasia Tikhonova,wta_209,wta_257,WTA,Clay
 2026-03-29,Final,Copa Colsanitas Colsubsidio,Miriana Tona,Lia Karatancheva,wta_384,wta_36,WTA,Clay
 2026-03-29,Final,Copa Colsanitas Colsubsidio,Katarina Zavatska,Selena Janicijevic,wta_310,wta_261,WTA,Clay
 2026-03-29,TBD,Copa Colsanitas Colsubsidio,Ana Sofia Sanchez,Alisa Oktiabreva,wta_195,wta_329,WTA,Clay
@@ -25,40 +25,3 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-29,Final,Credit One Charleston Open,Ayana Akli,Viktoriya Tomova,wta_248,wta_153,WTA,Clay
 2026-03-29,Final,Credit One Charleston Open,Polina Kudermetova,Eva Vedder,wta_144,wta_254,WTA,Clay
 2026-03-29,Final,Dubrovnik Open,Andrea Lazaro Garcia,Anhelina Kalinina,wta_206,wta_191,WTA,
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Mackenzie McDonald,Jenson Brooksby,atp_115,atp_46,ATP,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Aleksandar Kovacevic,Rinky Hijikata,atp_75,atp_112,ATP,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Colton Smith,Thiago Agustin Tirante,atp_141,atp_92,ATP,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alexei Popyrin,Patrick Kypson,atp_51,atp_105,ATP,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Nishesh Basavareddy,Liam Draxl,atp_190,atp_148,ATP,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Roman Andres Burruchaga,Adam Walton,atp_102,atp_93,ATP,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tomas Martin Etcheverry,Federico Agustin Gomez,atp_53,atp_188,ATP,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Martin Damm,Brandon Nakashima,atp_383,atp_29,ATP,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Adolfo Daniel Vallejo,Zachary Svajda,atp_9021,atp_106,ATP,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Bolt,Wu Yibing,atp_167,atp_145,ATP,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Jack Pinnington Jones,Zhang Zhizhen,wta_72,atp_449,WTA,Clay
-2026-03-30,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Michelsen,Chak Lam Coleman Wong,atp_41,atp_137,ATP,Clay
-2026-03-30,10:00,Grand Prix Hassan II,Dusan Lajovic,Lloyd Harris,atp_129,atp_179,ATP,Clay
-2026-03-30,10:00,Grand Prix Hassan II,Timofey Skatov,Moez Echargui,atp_193,atp_139,ATP,Clay
-2026-03-30,11:30,Grand Prix Hassan II,Henrique Rocha,Nicolai Budkov Kjaer,atp_170,atp_133,ATP,Clay
-2026-03-30,11:30,Grand Prix Hassan II,Marco Trungelliti,Rei Sakamoto,atp_131,atp_173,ATP,Clay
-2026-03-30,12:30,Grand Prix Hassan II,Aleksandar Vukic,Taha Baadi,atp_88,atp_9016,ATP,Clay
-2026-03-30,14:00,Grand Prix Hassan II,Karim Bennani,Quentin Halys,atp_778,atp_72,ATP,Clay
-2026-03-30,15:30,Grand Prix Hassan II,Jesper de Jong,Yannick Hanfmann,atp_86,atp_90,ATP,Clay
-2026-03-30,07:00,Tiriac Open presented by UniCredit Bank,Chun-Hsin Tseng,Stefanos Sakellaridis,atp_114,atp_275,ATP,
-2026-03-30,07:00,Tiriac Open presented by UniCredit Bank,George Loffhagen,Jurij Rodionov,atp_203,atp_175,ATP,
-2026-03-30,07:00,Tiriac Open presented by UniCredit Bank,Nikoloz Basilashvili,Daniel Michalski,atp_136,atp_402,ATP,
-2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Dimitar Kuzmanov,Stefano Travaglia,atp_264,atp_164,ATP,
-2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Billy Harris,Alex Molcan,atp_144,atp_415,ATP,
-2026-03-30,08:30,Tiriac Open presented by UniCredit Bank,Gabriel Ghetu,Jay Clarke,atp_39,atp_184,ATP,
-2026-03-30,10:00,Tiriac Open presented by UniCredit Bank,Stefan Horia Haita,Joel Josef Schwaerzler,atp_9101,atp_9030,ATP,
-2026-03-30,10:00,Tiriac Open presented by UniCredit Bank,Daniel Merida,Saba Purtseladze,atp_402,atp_279,ATP,
-2026-03-30,15:00,Credit One Charleston Open,Yulia Putintseva,Lulu Sun,wta_77,wta_98,WTA,Clay
-2026-03-30,15:00,Credit One Charleston Open,Anastasia Zakharova,Dayana Yastremska,wta_103,wta_43,WTA,Clay
-2026-03-30,15:00,Credit One Charleston Open,Eva Lys,Katie Volynets,wta_56,wta_96,WTA,Clay
-2026-03-30,16:30,Credit One Charleston Open,Elvina Kalieva,McCartney Kessler,wta_158,wta_31,WTA,Clay
-2026-03-30,16:30,Credit One Charleston Open,Solana Sierra,Akasha Urhobo,wta_64,wta_307,WTA,Clay
-2026-03-30,16:30,Credit One Charleston Open,Sloane Stephens,Renata Zarazua,wta_775,wta_87,WTA,Clay
-2026-03-30,18:00,Credit One Charleston Open,Darja Vidmanova,Anna Bondar,wta_127,wta_65,WTA,Clay
-2026-03-30,18:00,Credit One Charleston Open,Viktoriya Tomova,Jennifer Brady,wta_153,wta_315,WTA,Clay
-2026-03-30,22:00,Credit One Charleston Open,Ajla Tomljanovic,Donna Vekic,wta_73,wta_99,WTA,Clay
-2026-03-30,23:30,Credit One Charleston Open,Alycia Parks,Mary Stoiana,wta_243,wta_185,WTA,Clay
