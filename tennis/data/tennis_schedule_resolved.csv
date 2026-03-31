@@ -1,7 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-31,18:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Nishesh Basavareddy,Liam Draxl,atp_190,atp_148,ATP,Clay
 2026-03-31,19:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tomas Martin Etcheverry,Federico Agustin Gomez,atp_53,atp_188,ATP,Clay
-2026-03-31,20:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Martin Damm,Brandon Nakashima,atp_125,atp_29,ATP,Clay
+2026-03-31,20:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Martin Damm,Brandon Nakashima,atp_383,atp_29,ATP,Clay
 2026-03-31,21:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Aleksandar Kovacevic,Rinky Hijikata,atp_75,atp_112,ATP,Clay
 2026-03-31,23:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Michelsen,Chak Lam Coleman Wong,atp_41,atp_137,ATP,Clay
 2026-03-31,00:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alexei Popyrin,Patrick Kypson,atp_51,atp_105,ATP,Clay
@@ -13,22 +13,22 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-03-31,13:00,Grand Prix Hassan II,Timofey Skatov,Camilo Ugo Carabelli,atp_193,atp_45,ATP,Clay
 2026-03-31,14:30,Grand Prix Hassan II,Luca Van Assche,Hugo Gaston,atp_130,atp_96,ATP,Clay
 2026-03-31,14:30,Grand Prix Hassan II,Rafael Jodar,Dusan Lajovic,atp_117,atp_129,ATP,Clay
-2026-03-31,08:00,Tiriac Open presented by UniCredit Bank,Christopher O'Connell,Mariano Navone,atp_95,atp_74,ATP,
-2026-03-31,08:00,Tiriac Open presented by UniCredit Bank,Gabi Adrian Boitan,Elmer Moller,atp_313,atp_120,ATP,
-2026-03-31,08:00,Tiriac Open presented by UniCredit Bank,Alexander Shevchenko,Radu David Turcanu,atp_79,atp_671,ATP,
-2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Roberto Bautista Agut,Titouan Droguet,atp_82,atp_119,ATP,
+2026-03-31,Live,Tiriac Open presented by UniCredit Bank,Christopher O'Connell,Mariano Navone,atp_95,atp_74,ATP,
 2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Stefanos Sakellaridis,Dimitar Kuzmanov,atp_275,atp_264,ATP,
 2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Alex Molcan,Jay Clarke,atp_199,atp_184,ATP,
 2026-03-31,09:30,Tiriac Open presented by UniCredit Bank,Daniel Merida,Joel Josef Schwaerzler,atp_402,atp_9030,ATP,
 2026-03-31,11:00,Tiriac Open presented by UniCredit Bank,Francesco Maestrelli,Botic Van De Zandschulp,atp_110,atp_55,ATP,
 2026-03-31,11:00,Tiriac Open presented by UniCredit Bank,Damir Dzumhur,Filip Cristian Jianu,atp_61,atp_245,ATP,
-2026-03-31,11:00,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Vilius Gaubas,atp_33,atp_126,ATP,
+2026-03-31,11:00,Tiriac Open presented by UniCredit Bank,Roberto Bautista Agut,Titouan Droguet,atp_82,atp_119,ATP,
+2026-03-31,12:30,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Vilius Gaubas,atp_33,atp_126,ATP,
 2026-03-31,14:00,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Pedro Martinez,atp_54,atp_101,ATP,
+2026-03-31,Final,Tiriac Open presented by UniCredit Bank,Gabi Adrian Boitan,Elmer Moller,atp_313,atp_120,ATP,
+2026-03-31,Final,Tiriac Open presented by UniCredit Bank,Alexander Shevchenko,Radu David Turcanu,atp_79,atp_671,ATP,
 2026-03-31,15:30,Copa Colsanitas Colsubsidio,Darja Semenistaja,Ella Seidel,wta_97,wta_95,WTA,Clay
 2026-03-31,15:30,Copa Colsanitas Colsubsidio,Lia Karatancheva,Varvara Lepchenko,wta_36,wta_149,WTA,Clay
 2026-03-31,17:00,Copa Colsanitas Colsubsidio,Francesca Jones,Guiomar Maristany Zuleta De Reales,wta_72,wta_165,WTA,Clay
 2026-03-31,17:00,Copa Colsanitas Colsubsidio,Camila Osorio,Caroline Dolehide,wta_63,wta_121,WTA,Clay
-2026-03-31,17:00,Copa Colsanitas Colsubsidio,Robin Montgomery,Anna Blinkova,wta_293,wta_65,WTA,Clay
+2026-03-31,17:00,Copa Colsanitas Colsubsidio,Robin Montgomery,Anna Blinkova,wta_293,wta_82,WTA,Clay
 2026-03-31,18:30,Copa Colsanitas Colsubsidio,Irene Burillo,Jazmin Ortenzi,wta_249,wta_216,WTA,Clay
 2026-03-31,18:30,Copa Colsanitas Colsubsidio,Tiantsoa Rakotomanga Rajaonah,Jessica Bouzas Maneiro,wta_120,wta_48,WTA,Clay
 2026-03-31,18:30,Copa Colsanitas Colsubsidio,Emiliana Arango,Maria Lourdes Carle,wta_58,wta_155,WTA,Clay
