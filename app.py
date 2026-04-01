@@ -877,7 +877,7 @@ if sport_choice == "Table Tennis":
     # --- League selector (outside form so we know which CSVs to load) ---
     league = st.sidebar.radio(
         "Select League",
-        ["TT Elite", "Czech", "TT Cup"],
+        ["TT Elite", "Czech", "TT Cup", "Setka"],
         horizontal=True
     )
 
