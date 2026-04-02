@@ -1,31 +1,32 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-01,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Ben Shelton,Zhang Zhizhen,atp_9,atp_449,ATP,Clay
-2026-04-01,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Adolfo Daniel Vallejo,Tommy Paul,atp_9021,atp_24,ATP,Clay
-2026-04-01,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tomas Martin Etcheverry,Alex Bolt,atp_53,atp_167,ATP,Clay
-2026-04-01,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Thiago Agustin Tirante,Mackenzie McDonald,atp_92,atp_115,ATP,Clay
-2026-04-01,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Roman Andres Burruchaga,Adam Walton,atp_102,atp_93,ATP,Clay
-2026-04-01,Final,Grand Prix Hassan II,Luciano Darderi,Mattia Bellucci,atp_22,atp_109,ATP,Clay
-2026-04-01,Final,Grand Prix Hassan II,Corentin Moutet,Taha Baadi,atp_34,atp_9016,ATP,Clay
-2026-04-01,Final,Grand Prix Hassan II,Marco Trungelliti,Kamil Majchrzak,atp_131,atp_56,ATP,Clay
-2026-04-01,Final,Grand Prix Hassan II,Vit Kopriva,Hamad Medjedovic,atp_87,atp_97,ATP,Clay
-2026-04-01,Final,Grand Prix Hassan II,Karim Bennani,Yannick Hanfmann,atp_778,atp_90,ATP,Clay
-2026-04-01,Final,Tiriac Open presented by UniCredit Bank,Gabriel Diallo,Alex Molcan,atp_39,atp_199,ATP,
-2026-04-01,Final,Tiriac Open presented by UniCredit Bank,Nuno Borges,Damir Dzumhur,atp_44,atp_61,ATP,
-2026-04-01,Final,Tiriac Open presented by UniCredit Bank,Elmer Moller,Mariano Navone,atp_120,atp_74,ATP,
-2026-04-01,Final,Tiriac Open presented by UniCredit Bank,Alexander Shevchenko,Botic Van De Zandschulp,atp_79,atp_55,ATP,
-2026-04-01,Final,Copa Colsanitas Colsubsidio,Katarzyna Kawa,Tatjana Maria,wta_143,wta_54,WTA,Clay
-2026-04-01,Final,Copa Colsanitas Colsubsidio,Julia Riera,Anna Blinkova,wta_187,wta_82,WTA,Clay
-2026-04-01,Final,Copa Colsanitas Colsubsidio,Panna Udvardy,Julieta Pareja,wta_93,wta_349,WTA,Clay
-2026-04-01,Final,Copa Colsanitas Colsubsidio,Despina Papamichail,Darja Semenistaja,wta_157,wta_97,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Jessica Pegula,Yulia Putintseva,wta_5,wta_77,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Iva Jovic,Alycia Parks,wta_20,wta_76,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Madison Keys,Donna Vekic,wta_17,wta_99,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Leylah Fernandez,Polina Kudermetova,wta_28,wta_144,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Maria Sakkari,Paula Badosa,wta_54,wta_70,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Anna Bondar,Magdalena Frech,wta_65,wta_55,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,McCartney Kessler,Janice Tjen,wta_31,wta_47,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Yuan Yue,Elisabetta Cocciaretto,wta_122,wta_40,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Hailey Baptiste,Renata Zarazua,wta_44,wta_87,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Bianca Andreescu,Sofia Kenin,wta_161,wta_32,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Peyton Stearns,Ashlyn Krueger,wta_59,wta_100,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Yuliia Starodubtseva,Ekaterine Gorgodze,wta_101,wta_167,WTA,Clay
+2026-04-02,19:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Roman Andres Burruchaga,Brandon Nakashima,atp_102,atp_29,ATP,Clay
+2026-04-02,20:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Learner Tien,Nishesh Basavareddy,atp_23,atp_190,ATP,Clay
+2026-04-02,23:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Rinky Hijikata,Frances Tiafoe,atp_112,atp_28,ATP,Clay
+2026-04-02,00:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Michelsen,Alexei Popyrin,atp_41,atp_51,ATP,Clay
+2026-04-02,10:00,Grand Prix Hassan II,Vit Kopriva,Alexandre Muller,atp_87,atp_50,ATP,Clay
+2026-04-02,11:30,Grand Prix Hassan II,Rafael Jodar,Tomas Machac,atp_117,atp_31,ATP,Clay
+2026-04-02,13:00,Grand Prix Hassan II,Ignacio Buse,Camilo Ugo Carabelli,atp_91,atp_45,ATP,Clay
+2026-04-02,14:30,Grand Prix Hassan II,Luca Van Assche,Tallon Griekspoor,atp_130,atp_25,ATP,Clay
+2026-04-02,09:30,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Dino Prizmic,atp_54,atp_121,ATP,
+2026-04-02,10:00,Tiriac Open presented by UniCredit Bank,Stefanos Sakellaridis,Fabian Marozsan,atp_275,atp_47,ATP,
+2026-04-02,11:30,Tiriac Open presented by UniCredit Bank,Daniel Merida,Adrian Mannarino,atp_402,atp_48,ATP,
+2026-04-02,14:00,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Titouan Droguet,atp_33,atp_119,ATP,
+2026-04-02,16:00,Copa Colsanitas Colsubsidio,Guiomar Maristany Zuleta De Reales,Emiliana Arango,wta_165,wta_58,WTA,Clay
+2026-04-02,17:00,Copa Colsanitas Colsubsidio,Camila Osorio,Jazmin Ortenzi,wta_63,wta_216,WTA,Clay
+2026-04-02,18:30,Copa Colsanitas Colsubsidio,Marie Bouzkova,Hanne Vandewinkel,wta_39,wta_128,WTA,Clay
+2026-04-02,20:00,Copa Colsanitas Colsubsidio,Varvara Lepchenko,Jessica Bouzas Maneiro,wta_149,wta_48,WTA,Clay
+2026-04-02,15:00,Credit One Charleston Open,Sara Bejlek,Belinda Bencic,wta_41,wta_12,WTA,Clay
+2026-04-02,15:00,Credit One Charleston Open,Peyton Stearns,McCartney Kessler,wta_59,wta_31,WTA,Clay
+2026-04-02,16:30,Credit One Charleston Open,Jessica Pegula,Elisabetta Cocciaretto,wta_5,wta_40,WTA,Clay
+2026-04-02,16:30,Credit One Charleston Open,Leylah Fernandez,Diana Shnaider,wta_28,wta_21,WTA,Clay
+2026-04-02,18:00,Credit One Charleston Open,Renata Zarazua,Yuliia Starodubtseva,wta_87,wta_101,WTA,Clay
+2026-04-02,18:00,Credit One Charleston Open,Madison Keys,Anna Bondar,wta_17,wta_65,WTA,Clay
+2026-04-02,22:00,Credit One Charleston Open,Iva Jovic,Sofia Kenin,wta_20,wta_32,WTA,Clay
+2026-04-02,23:30,Credit One Charleston Open,Paula Badosa,Anna Kalinskaya,wta_70,wta_24,WTA,Clay
+2026-04-03,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tomas Martin Etcheverry,Tommy Paul,atp_53,atp_24,ATP,Clay
+2026-04-03,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Ben Shelton,Thiago Agustin Tirante,atp_9,atp_92,ATP,Clay
+2026-04-03,TBD,Grand Prix Hassan II,Luciano Darderi,Yannick Hanfmann,atp_22,atp_90,ATP,Clay
+2026-04-03,TBD,Grand Prix Hassan II,Corentin Moutet,Marco Trungelliti,atp_34,atp_131,ATP,Clay
+2026-04-03,TBD,Tiriac Open presented by UniCredit Bank,Damir Dzumhur,Botic Van De Zandschulp,atp_61,atp_55,ATP,
+2026-04-03,TBD,Tiriac Open presented by UniCredit Bank,Alex Molcan,Mariano Navone,atp_199,atp_74,ATP,
+2026-04-03,TBD,Copa Colsanitas Colsubsidio,Panna Udvardy,Katarzyna Kawa,wta_93,wta_143,WTA,Clay
