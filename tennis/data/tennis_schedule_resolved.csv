@@ -1,6 +1,6 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-01,01:20,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Adolfo Daniel Vallejo,Tommy Paul,atp_9021,atp_24,ATP,Clay
 2026-04-01,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Ben Shelton,Zhang Zhizhen,atp_9,atp_449,ATP,Clay
+2026-04-01,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Adolfo Daniel Vallejo,Tommy Paul,atp_9021,atp_24,ATP,Clay
 2026-04-01,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tomas Martin Etcheverry,Alex Bolt,atp_53,atp_167,ATP,Clay
 2026-04-01,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Thiago Agustin Tirante,Mackenzie McDonald,atp_92,atp_115,ATP,Clay
 2026-04-01,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Roman Andres Burruchaga,Adam Walton,atp_102,atp_93,ATP,Clay
@@ -17,15 +17,15 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-01,Final,Copa Colsanitas Colsubsidio,Julia Riera,Anna Blinkova,wta_187,wta_82,WTA,Clay
 2026-04-01,Final,Copa Colsanitas Colsubsidio,Panna Udvardy,Julieta Pareja,wta_93,wta_349,WTA,Clay
 2026-04-01,Final,Copa Colsanitas Colsubsidio,Despina Papamichail,Darja Semenistaja,wta_157,wta_97,WTA,Clay
-2026-04-01,Live,Credit One Charleston Open,Hailey Baptiste,Renata Zarazua,wta_44,wta_87,WTA,Clay
 2026-04-01,Final,Credit One Charleston Open,Jessica Pegula,Yulia Putintseva,wta_5,wta_77,WTA,Clay
-2026-04-01,Final,Credit One Charleston Open,Iva Jovic,Alycia Parks,wta_20,wta_243,WTA,Clay
+2026-04-01,Final,Credit One Charleston Open,Iva Jovic,Alycia Parks,wta_20,wta_76,WTA,Clay
 2026-04-01,Final,Credit One Charleston Open,Madison Keys,Donna Vekic,wta_17,wta_99,WTA,Clay
 2026-04-01,Final,Credit One Charleston Open,Leylah Fernandez,Polina Kudermetova,wta_28,wta_144,WTA,Clay
 2026-04-01,Final,Credit One Charleston Open,Maria Sakkari,Paula Badosa,wta_54,wta_70,WTA,Clay
 2026-04-01,Final,Credit One Charleston Open,Anna Bondar,Magdalena Frech,wta_65,wta_55,WTA,Clay
 2026-04-01,Final,Credit One Charleston Open,McCartney Kessler,Janice Tjen,wta_31,wta_47,WTA,Clay
 2026-04-01,Final,Credit One Charleston Open,Yuan Yue,Elisabetta Cocciaretto,wta_122,wta_40,WTA,Clay
+2026-04-01,Final,Credit One Charleston Open,Hailey Baptiste,Renata Zarazua,wta_44,wta_87,WTA,Clay
 2026-04-01,Final,Credit One Charleston Open,Bianca Andreescu,Sofia Kenin,wta_161,wta_32,WTA,Clay
 2026-04-01,Final,Credit One Charleston Open,Peyton Stearns,Ashlyn Krueger,wta_59,wta_100,WTA,Clay
 2026-04-01,Final,Credit One Charleston Open,Yuliia Starodubtseva,Ekaterine Gorgodze,wta_101,wta_167,WTA,Clay
