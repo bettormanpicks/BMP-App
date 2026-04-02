@@ -15,6 +15,10 @@ timeout /t 45
 echo Running Czech matchlogs...
 python tabletennis\getczechmatchlogs.py
 
+timout /t 45
+echo Running Setka matchlogs...
+python tabletennis\getsetkamatchlogs.py
+
 timeout /t 45
 
 echo Running TT Cup matchlogs...
@@ -32,6 +36,11 @@ python tabletennis\getczechschedule.py
 
 timeout /t 45
 
+echo Running Setka schedule...
+python tabletennis\getsetkaschedule.py
+
+timeout /t 45
+
 echo Running TT Cup schedule...
 python tabletennis\getttcupschedule.py
 
@@ -42,6 +51,9 @@ python tabletennis\buildeliteh2h.py
 
 echo Building Czech H2H...
 python tabletennis\buildczechh2h.py
+
+echo Building Setka H2H...
+python tabletennis\buildsetkah2h.py
 
 echo Building TT Cup H2H...
 python tabletennis\buildttcuph2h.py

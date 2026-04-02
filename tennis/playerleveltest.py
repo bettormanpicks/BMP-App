@@ -121,7 +121,7 @@ matches = matches.groupby(["player", "surface"], group_keys=False)\
                  .apply(compute_rolling)
 
 # Shift so we don't use current match
-rolling_cols = ["avg_game_diff", "avg_total_games", "three_set_rate"]
+rolling_cols = ["avg_game_diff", "avg_total_games", "three_set_rate", "close_set_rate"]
 
 matches[rolling_cols] = matches.groupby(["player", "surface"])[rolling_cols].shift(1)
 
@@ -316,53 +316,123 @@ upcoming["Date"] = pd.to_datetime(upcoming["Date"])
 # Canonical names mapping
 players = pd.read_csv("data/tennisplayers.csv")
 aliases = pd.read_csv("data/player_aliases.csv")
+
+player_id_map = dict(zip(players["player_name"].str.lower().str.strip(), players["player_id"]))
+
+aliases["scoreboard_name"] = aliases["scoreboard_name"].str.lower().str.strip()
+aliases["canonical_name"] = aliases["canonical_name"].str.lower().str.strip()
+
 alias_map = dict(zip(aliases["scoreboard_name"], aliases["canonical_name"]))
 
-# Normalize upcoming player names
-upcoming["player_1_canon"] = upcoming["Player 1"].map(lambda x: alias_map.get(x, x))
-upcoming["player_2_canon"] = upcoming["Player 2"].map(lambda x: alias_map.get(x, x))
+def normalize_name(x):
+    x = str(x).lower().strip()
+    return alias_map.get(x, x)
+
+# Normalize historical matches
+matches["player"] = matches["player"].apply(normalize_name)
+matches["surface"] = matches["surface"].str.lower().str.strip()
+
+matches["player_id"] = matches["player"].map(player_id_map)
+
+# Normalize upcoming
+upcoming["Surface"] = upcoming["Surface"].str.lower().str.strip()
+
+upcoming["player_1_canon"] = upcoming["Player 1"].apply(normalize_name)
+upcoming["player_2_canon"] = upcoming["Player 2"].apply(normalize_name)
+
+# ✅ FIX 1: CREATE PLAYER IDS
+upcoming["player_1_id"] = upcoming["player_1_canon"].map(player_id_map)
+upcoming["player_2_id"] = upcoming["player_2_canon"].map(player_id_map)
+
+# -------------------------
+# GET LATEST ROLLING STATS PER PLAYER/SURFACE
+# -------------------------
+latest_stats = (
+    matches
+    .dropna(subset=["avg_total_games", "three_set_rate", "close_set_rate", "player_id"])
+    .sort_values("date")
+    .groupby(["player_id", "surface"])
+    .tail(1)
+)
 
 # -------------------------
 # MERGE HISTORICAL ROLLING STATS
 # -------------------------
-# Player 1 stats
+
+# ✅ FIX 2: CORRECT MERGE KEYS
+
+# Player 1
 upcoming = upcoming.merge(
-    matches[["player", "surface", "avg_total_games", "three_set_rate"]],
-    left_on=["player_1_canon", "Surface"],
-    right_on=["player", "surface"],
+    latest_stats[["player_id", "surface", "avg_total_games", "three_set_rate", "close_set_rate"]],
+    left_on=["player_1_id", "Surface"],
+    right_on=["player_id", "surface"],
     how="left"
 ).rename(columns={
     "avg_total_games": "avg_total_games_1",
-    "three_set_rate": "three_set_rate_1"
-}).drop(columns=["player", "surface"])
+    "three_set_rate": "three_set_rate_1",
+    "close_set_rate": "close_set_rate_1"
+}).drop(columns=["surface"])
 
-# Player 2 stats
+# Player 2
 upcoming = upcoming.merge(
-    matches[["player", "surface", "avg_total_games", "three_set_rate"]],
-    left_on=["player_2_canon", "Surface"],
-    right_on=["player", "surface"],
+    latest_stats[["player_id", "surface", "avg_total_games", "three_set_rate", "close_set_rate"]],
+    left_on=["player_2_id", "Surface"],
+    right_on=["player_id", "surface"],
     how="left"
 ).rename(columns={
     "avg_total_games": "avg_total_games_2",
-    "three_set_rate": "three_set_rate_2"
-}).drop(columns=["player", "surface"])
+    "three_set_rate": "three_set_rate_2",
+    "close_set_rate": "close_set_rate_2"
+}).drop(columns=["surface"])
+
+print(upcoming[[
+    "player_1_canon", "avg_total_games_1", "close_set_rate_1",
+    "player_2_canon", "avg_total_games_2", "close_set_rate_2"
+]].head(10))
+
+print("\n=== MERGE SUCCESS RATE ===")
+print("Player 1 missing:", upcoming["avg_total_games_1"].isna().mean())
+print("Player 2 missing:", upcoming["avg_total_games_2"].isna().mean())
 
 # -------------------------
 # COMPUTE COMBINED METRICS
 # -------------------------
+global_avg_total = matches["avg_total_games"].mean()
+global_3set_rate = matches["three_set_rate"].mean()
+global_close_rate = matches["close_set_rate"].mean()
+
+# ✅ FIX 3: ACTUAL ASSIGNMENT
+upcoming["avg_total_games_1"] = upcoming["avg_total_games_1"].fillna(global_avg_total)
+upcoming["avg_total_games_2"] = upcoming["avg_total_games_2"].fillna(global_avg_total)
+upcoming["three_set_rate_1"] = upcoming["three_set_rate_1"].fillna(global_3set_rate)
+upcoming["three_set_rate_2"] = upcoming["three_set_rate_2"].fillna(global_3set_rate)
+upcoming["close_set_rate_1"] = upcoming["close_set_rate_1"].fillna(global_close_rate)
+upcoming["close_set_rate_2"] = upcoming["close_set_rate_2"].fillna(global_close_rate)
+
 upcoming["combined_total_games"] = (upcoming["avg_total_games_1"] + upcoming["avg_total_games_2"]) / 2
 upcoming["combined_3set_rate"] = (upcoming["three_set_rate_1"] + upcoming["three_set_rate_2"]) / 2
+upcoming["combined_close_set_rate"] = (upcoming["close_set_rate_1"] + upcoming["close_set_rate_2"]) / 2
 
 # -------------------------
-# INTERPOLATE PROBABILITIES BASED ON HISTORICAL ANALYSIS
+# INTERPOLATE PROBABILITIES
 # -------------------------
-# Make sure analysis_df is sorted
-analysis_sorted = analysis_df.sort_values("combined_total_games")
+bins = pd.qcut(analysis_df["combined_close_set_rate"], 20, duplicates="drop")
+
+prob_table = (
+    analysis_df
+    .groupby(bins)["is_over_22_5"]
+    .mean()
+    .reset_index()
+)
+
+prob_table.columns = ["close_set_bin", "prob"]
+prob_table["mid"] = prob_table["close_set_bin"].apply(lambda x: x.mid)
+prob_table = prob_table.sort_values("mid")
 
 upcoming["prob_over_22_5"] = np.interp(
-    upcoming["combined_total_games"],
-    analysis_sorted["combined_total_games"].values,
-    analysis_sorted["is_over_22_5"].values
+    upcoming["combined_close_set_rate"],
+    prob_table["mid"].values,
+    prob_table["prob"].values
 )
 
 # -------------------------
