@@ -7,10 +7,10 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-02,11:30,Grand Prix Hassan II,Rafael Jodar,Tomas Machac,atp_117,atp_31,ATP,Clay
 2026-04-02,13:00,Grand Prix Hassan II,Ignacio Buse,Camilo Ugo Carabelli,atp_91,atp_45,ATP,Clay
 2026-04-02,14:30,Grand Prix Hassan II,Luca Van Assche,Tallon Griekspoor,atp_130,atp_25,ATP,Clay
-2026-04-02,09:30,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Dino Prizmic,atp_54,atp_121,ATP,
-2026-04-02,10:00,Tiriac Open presented by UniCredit Bank,Stefanos Sakellaridis,Fabian Marozsan,atp_275,atp_47,ATP,
-2026-04-02,11:30,Tiriac Open presented by UniCredit Bank,Daniel Merida,Adrian Mannarino,atp_402,atp_48,ATP,
+2026-04-02,13:00,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Dino Prizmic,atp_54,atp_121,ATP,
+2026-04-02,13:00,Tiriac Open presented by UniCredit Bank,Stefanos Sakellaridis,Fabian Marozsan,atp_275,atp_47,ATP,
 2026-04-02,14:00,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Titouan Droguet,atp_33,atp_119,ATP,
+2026-04-02,14:00,Tiriac Open presented by UniCredit Bank,Daniel Merida,Adrian Mannarino,atp_402,atp_48,ATP,
 2026-04-02,16:00,Copa Colsanitas Colsubsidio,Guiomar Maristany Zuleta De Reales,Emiliana Arango,wta_165,wta_58,WTA,Clay
 2026-04-02,17:00,Copa Colsanitas Colsubsidio,Camila Osorio,Jazmin Ortenzi,wta_63,wta_216,WTA,Clay
 2026-04-02,18:30,Copa Colsanitas Colsubsidio,Marie Bouzkova,Hanne Vandewinkel,wta_39,wta_128,WTA,Clay
@@ -27,6 +27,6 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-03,TBD,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Ben Shelton,Thiago Agustin Tirante,atp_9,atp_92,ATP,Clay
 2026-04-03,TBD,Grand Prix Hassan II,Luciano Darderi,Yannick Hanfmann,atp_22,atp_90,ATP,Clay
 2026-04-03,TBD,Grand Prix Hassan II,Corentin Moutet,Marco Trungelliti,atp_34,atp_131,ATP,Clay
-2026-04-03,TBD,Tiriac Open presented by UniCredit Bank,Damir Dzumhur,Botic Van De Zandschulp,atp_61,atp_55,ATP,
 2026-04-03,TBD,Tiriac Open presented by UniCredit Bank,Alex Molcan,Mariano Navone,atp_199,atp_74,ATP,
+2026-04-03,TBD,Tiriac Open presented by UniCredit Bank,Damir Dzumhur,Botic Van De Zandschulp,atp_61,atp_55,ATP,
 2026-04-03,TBD,Copa Colsanitas Colsubsidio,Panna Udvardy,Katarzyna Kawa,wta_93,wta_143,WTA,Clay
