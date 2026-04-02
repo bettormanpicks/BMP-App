@@ -7,6 +7,7 @@ import requests
 from datetime import datetime, timedelta
 import pytz
 import re
+
 import sys
 import os
 
@@ -52,41 +53,6 @@ from tennis.tennishelpers import (
     load_tennis_defense
 )
 
-from streamlit_analytics import start_tracking, stop_tracking, track
-
-query_params = st.query_params
-is_admin = query_params.get("admin") == "true"
-
-if is_admin:
-    st.title("Analytics Dashboard")
-
-    import json
-    import pandas as pd
-
-    try:
-        with open(".streamlit/streamlit_analytics.json") as f:
-            data = json.load(f)
-
-        events = pd.DataFrame(data.get("events", []))
-
-        if not events.empty:
-            page_views = events[events["event_name"] == "page_view"]
-
-            page_counts = (
-                page_views["event_params"]
-                .apply(lambda x: x.get("page"))
-                .value_counts()
-            )
-
-            st.bar_chart(page_counts)
-        else:
-            st.info("No data yet.")
-
-    except:
-        st.info("No analytics file yet.")
-
-    st.stop()
-
 # ============================================================
 # PAGE CONFIG
 # ============================================================
@@ -95,14 +61,10 @@ st.set_page_config(
     layout="wide"
 )
 
-start_tracking(save_to_json=True)
-
 ############################################################
 # SPORT SELECTION
 ############################################################
 sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL", "Table Tennis", "Tennis"]) #, "NFL", "NHL"])
-
-track("page_view", {"page": sport_choice})
 
 nba_today = get_league_today()
 nhl_date = get_league_today()
@@ -1224,5 +1186,3 @@ if sport_choice == "Tennis":
                 width="stretch",
                 hide_index=True
             )
-
-stop_tracking()
