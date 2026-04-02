@@ -3,10 +3,10 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-02,20:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Learner Tien,Nishesh Basavareddy,atp_23,atp_190,ATP,Clay
 2026-04-02,23:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Rinky Hijikata,Frances Tiafoe,atp_112,atp_28,ATP,Clay
 2026-04-02,00:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Michelsen,Alexei Popyrin,atp_41,atp_51,ATP,Clay
-2026-04-02,10:00,Grand Prix Hassan II,Vit Kopriva,Alexandre Muller,atp_87,atp_50,ATP,Clay
-2026-04-02,11:30,Grand Prix Hassan II,Rafael Jodar,Tomas Machac,atp_117,atp_31,ATP,Clay
-2026-04-02,13:00,Grand Prix Hassan II,Ignacio Buse,Camilo Ugo Carabelli,atp_91,atp_45,ATP,Clay
-2026-04-02,14:30,Grand Prix Hassan II,Luca Van Assche,Tallon Griekspoor,atp_130,atp_25,ATP,Clay
+2026-04-02,Live,Grand Prix Hassan II,Rafael Jodar,Tomas Machac,atp_117,atp_31,ATP,Clay
+2026-04-02,13:30,Grand Prix Hassan II,Ignacio Buse,Camilo Ugo Carabelli,atp_91,atp_45,ATP,Clay
+2026-04-02,15:00,Grand Prix Hassan II,Luca Van Assche,Tallon Griekspoor,atp_130,atp_25,ATP,Clay
+2026-04-02,Final,Grand Prix Hassan II,Vit Kopriva,Alexandre Muller,atp_87,atp_50,ATP,Clay
 2026-04-02,13:00,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Dino Prizmic,atp_54,atp_121,ATP,
 2026-04-02,13:00,Tiriac Open presented by UniCredit Bank,Stefanos Sakellaridis,Fabian Marozsan,atp_275,atp_47,ATP,
 2026-04-02,14:00,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Titouan Droguet,atp_33,atp_119,ATP,
