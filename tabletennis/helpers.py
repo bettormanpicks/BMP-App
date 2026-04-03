@@ -19,11 +19,6 @@ LEAGUE_FILES = {
         "schedule": os.path.join(DATA_DIR, "tt_czech_schedule.csv"),
         "matchlogs": os.path.join(DATA_DIR, "tt_czech_matchlogs.csv"),
         "h2h": os.path.join(DATA_DIR, "tt_czech_h2h_summary.csv"),
-    },
-    "Setka": {
-        "schedule": os.path.join(DATA_DIR, "tt_setka_schedule.csv"),
-        "matchlogs": os.path.join(DATA_DIR, "tt_setka_matchlogs.csv"),
-        "h2h": os.path.join(DATA_DIR, "tt_setka_h2h_summary.csv"),
     }
 }
 
@@ -323,6 +318,13 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     a_sr_pct, a_sr_n = player_sr_pct(player_a)
     b_sr_pct, b_sr_n = player_sr_pct(player_b)
 
+    # --------------------------------------------------
+    # Exact set count percentages (3Set%, 4Set%, 5Set%)
+    # --------------------------------------------------
+    pct_3sets = sum(1 for m in matches if len(m["parsed_sets"]) == 3) / total
+    pct_4sets = sum(1 for m in matches if len(m["parsed_sets"]) == 4) / total
+    pct_5sets = sum(1 for m in matches if len(m["parsed_sets"]) == 5) / total
+
     return {
         "matches":        total,
         "a_wins":         a_wins,
@@ -378,6 +380,7 @@ def _empty_stats():
         "a_sr_n":         0,
         "b_sr_pct":       0,
         "b_sr_n":         0,
+        # Exact set count percentages
         "pct_3sets":      0,
         "pct_4sets":      0,
         "pct_5sets":      0,
