@@ -1,8 +1,8 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-02,Live,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Rinky Hijikata,Frances Tiafoe,atp_112,atp_28,ATP,Clay
-2026-04-02,01:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Michelsen,Alexei Popyrin,atp_41,atp_51,ATP,Clay
+2026-04-02,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Rinky Hijikata,Frances Tiafoe,atp_112,atp_28,ATP,Clay
 2026-04-02,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Learner Tien,Nishesh Basavareddy,atp_23,atp_190,ATP,Clay
 2026-04-02,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Roman Andres Burruchaga,Brandon Nakashima,atp_102,atp_29,ATP,Clay
+2026-04-02,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alex Michelsen,Alexei Popyrin,atp_41,atp_51,ATP,Clay
 2026-04-02,TBD,Grand Prix Hassan II,Luciano Darderi,Yannick Hanfmann,atp_22,atp_90,ATP,Clay
 2026-04-02,Final,Grand Prix Hassan II,Luca Van Assche,Tallon Griekspoor,atp_130,atp_25,ATP,Clay
 2026-04-02,Final,Grand Prix Hassan II,Rafael Jodar,Tomas Machac,atp_117,atp_31,ATP,Clay
@@ -12,11 +12,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-02,Final,Copa Colsanitas Colsubsidio,Varvara Lepchenko,Jessica Bouzas Maneiro,wta_149,wta_48,WTA,Clay
 2026-04-02,Final,Copa Colsanitas Colsubsidio,Camila Osorio,Jazmin Ortenzi,wta_63,wta_216,WTA,Clay
 2026-04-02,Final,Copa Colsanitas Colsubsidio,Guiomar Maristany Zuleta De Reales,Emiliana Arango,wta_165,wta_58,WTA,Clay
-2026-04-02,Live,Credit One Charleston Open,Paula Badosa,Anna Kalinskaya,wta_70,wta_24,WTA,Clay
 2026-04-02,Final,Credit One Charleston Open,Jessica Pegula,Elisabetta Cocciaretto,wta_5,wta_40,WTA,Clay
 2026-04-02,Final,Credit One Charleston Open,Sara Bejlek,Belinda Bencic,wta_41,wta_12,WTA,Clay
 2026-04-02,Final,Credit One Charleston Open,Iva Jovic,Sofia Kenin,wta_20,wta_32,WTA,Clay
 2026-04-02,Final,Credit One Charleston Open,Madison Keys,Anna Bondar,wta_17,wta_65,WTA,Clay
 2026-04-02,Final,Credit One Charleston Open,Leylah Fernandez,Diana Shnaider,wta_28,wta_21,WTA,Clay
+2026-04-02,Final,Credit One Charleston Open,Paula Badosa,Anna Kalinskaya,wta_70,wta_24,WTA,Clay
 2026-04-02,Final,Credit One Charleston Open,Peyton Stearns,McCartney Kessler,wta_59,wta_31,WTA,Clay
 2026-04-02,Final,Credit One Charleston Open,Renata Zarazua,Yuliia Starodubtseva,wta_87,wta_101,WTA,Clay
