@@ -19,6 +19,11 @@ LEAGUE_FILES = {
         "schedule": os.path.join(DATA_DIR, "tt_czech_schedule.csv"),
         "matchlogs": os.path.join(DATA_DIR, "tt_czech_matchlogs.csv"),
         "h2h": os.path.join(DATA_DIR, "tt_czech_h2h_summary.csv"),
+    },
+    "Setka": {
+        "schedule": os.path.join(DATA_DIR, "tt_setka_schedule.csv"),
+        "matchlogs": os.path.join(DATA_DIR, "tt_setka_matchlogs.csv"),
+        "h2h": os.path.join(DATA_DIR, "tt_setka_h2h_summary.csv"),
     }
 }
 
@@ -120,7 +125,7 @@ def load_tt_raw_data(league):
     matchlogs["parsed_sets"] = matchlogs["sets"].apply(parse_sets)
 
     # --- Drop bad parsed rows ---
-    matchlogs = matchlogs[matchlogs["parsed_sets"].apply(len) > 0]
+    matchlogs = matchlogs[matchlogs["parsed_sets"].apply(len) > 0].copy()
 
     # --- Compute stats ---
     matchlogs["sets1"], matchlogs["sets2"] = zip(*matchlogs["parsed_sets"].apply(compute_set_wins))
@@ -252,7 +257,6 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     # Bounce-back % per player
     # -------------------------
     def player_bounce_pct(player_name):
-        # Only matches where this player lost set 1
         lost_s1 = [
             m for m in matches
             if len(m["parsed_sets"]) >= 2 and (
@@ -261,17 +265,18 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
             )
         ]
         if not lost_s1:
-            return 0
-        # Count wins in set 2
+            return 0, 0
+
         won_s2 = sum(
             1 for m in lost_s1
             if (m["player1"] == player_name and m["parsed_sets"][1][0] > m["parsed_sets"][1][1]) or
                (m["player2"] == player_name and m["parsed_sets"][1][1] > m["parsed_sets"][1][0])
         )
-        return won_s2 / len(lost_s1)
 
-    a_bounce_pct = player_bounce_pct(player_a)
-    b_bounce_pct = player_bounce_pct(player_b)
+        return won_s2 / len(lost_s1), len(lost_s1)
+
+    a_bounce_pct, a_n = player_bounce_pct(player_a)
+    b_bounce_pct, b_n = player_bounce_pct(player_b)
 
     return {
         "matches": total,
@@ -285,6 +290,8 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         "one_all_pct": one_all_pct,
         "a_bounce_pct": a_bounce_pct,
         "b_bounce_pct": b_bounce_pct,
+        "a_bounce_n": a_n,
+        "b_bounce_n": b_n,
         "avg_total_sets": avg_total_sets,
         "ATP": avg_ATP,
         "PS": avg_PS,
