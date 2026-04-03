@@ -347,6 +347,10 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         "a_sr_n":         a_sr_n,
         "b_sr_pct":       b_sr_pct,
         "b_sr_n":         b_sr_n,
+        # Exact set count percentages
+        "pct_3sets":      pct_3sets,
+        "pct_4sets":      pct_4sets,
+        "pct_5sets":      pct_5sets,
     }
 
 
@@ -374,4 +378,7 @@ def _empty_stats():
         "a_sr_n":         0,
         "b_sr_pct":       0,
         "b_sr_n":         0,
+        "pct_3sets":      0,
+        "pct_4sets":      0,
+        "pct_5sets":      0,
     }
