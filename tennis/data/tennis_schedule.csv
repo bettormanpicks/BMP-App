@@ -1,24 +1,24 @@
 Date,Time,Tournament,Player 1,Player 2
 2026-04-04,16:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Thiago Agustin Tirante,Roman Andres Burruchaga
 2026-04-04,17:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tommy Paul,Frances Tiafoe
-2026-04-04,12:00,Grand Prix Hassan II,Luciano Darderi,Marco Trungelliti
+2026-04-04,Live,Grand Prix Hassan II,Luciano Darderi,Marco Trungelliti
 2026-04-04,13:30,Grand Prix Hassan II,Rafael Jodar,Camilo Ugo Carabelli
-2026-04-04,Live,Rolex Monte-Carlo Masters,Emilio Nava,Quentin Halys
-2026-04-04,Live,Rolex Monte-Carlo Masters,Pedro Martinez,Aleksandar Vukic
-2026-04-04,Live,Rolex Monte-Carlo Masters,Juan Manuel Cerundolo,Hugo Nys
-2026-04-04,10:30,Rolex Monte-Carlo Masters,Romain Arneodo,Francisco Comesana
-2026-04-04,10:30,Rolex Monte-Carlo Masters,Ignacio Buse,David Goffin
-2026-04-04,10:30,Rolex Monte-Carlo Masters,Benjamin Bonzi,Roberto Bautista Agut
-2026-04-04,11:00,Rolex Monte-Carlo Masters,Jan-Lennard Struff,Nikoloz Basilashvili
-2026-04-04,11:00,Rolex Monte-Carlo Masters,Cristian Garin,Jesper de Jong
-2026-04-04,12:00,Rolex Monte-Carlo Masters,Vit Kopriva,Matteo Arnaldi
-2026-04-04,12:00,Rolex Monte-Carlo Masters,Francesco Maestrelli,Alexander Blockx
-2026-04-04,12:00,Rolex Monte-Carlo Masters,Alexander Shevchenko,Andrea Pellegrino
-2026-04-04,12:30,Rolex Monte-Carlo Masters,Ethan Quinn,Otto Virtanen
+2026-04-04,Live,Rolex Monte-Carlo Masters,Benjamin Bonzi,Roberto Bautista Agut
+2026-04-04,Live,Rolex Monte-Carlo Masters,Ignacio Buse,David Goffin
+2026-04-04,Live,Rolex Monte-Carlo Masters,Cristian Garin,Jesper de Jong
+2026-04-04,12:35,Rolex Monte-Carlo Masters,Ethan Quinn,Otto Virtanen
+2026-04-04,12:35,Rolex Monte-Carlo Masters,Francesco Maestrelli,Alexander Blockx
+2026-04-04,12:40,Rolex Monte-Carlo Masters,Alexander Shevchenko,Andrea Pellegrino
+2026-04-04,12:50,Rolex Monte-Carlo Masters,Vit Kopriva,Matteo Arnaldi
 2026-04-04,13:30,Rolex Monte-Carlo Masters,Jan Choinski,Alexandre Muller
 2026-04-04,13:30,Rolex Monte-Carlo Masters,Damir Dzumhur,Nicolai Budkov Kjaer
-2026-04-04,10:00,Tiriac Open presented by UniCredit Bank,Mariano Navone,Botic Van De Zandschulp
-2026-04-04,12:00,Tiriac Open presented by UniCredit Bank,Fabian Marozsan,Daniel Merida
+2026-04-04,Final,Rolex Monte-Carlo Masters,Romain Arneodo,Francisco Comesana
+2026-04-04,Final,Rolex Monte-Carlo Masters,Jan-Lennard Struff,Nikoloz Basilashvili
+2026-04-04,Final,Rolex Monte-Carlo Masters,Pedro Martinez,Aleksandar Vukic
+2026-04-04,Final,Rolex Monte-Carlo Masters,Juan Manuel Cerundolo,Hugo Nys
+2026-04-04,Final,Rolex Monte-Carlo Masters,Emilio Nava,Quentin Halys
+2026-04-04,13:00,Tiriac Open presented by UniCredit Bank,Fabian Marozsan,Daniel Merida
+2026-04-04,TBD,Tiriac Open presented by UniCredit Bank,Mariano Navone,Botic Van De Zandschulp
 2026-04-04,16:00,Copa Colsanitas Colsubsidio,Marie Bouzkova,Jazmin Ortenzi
 2026-04-04,17:30,Copa Colsanitas Colsubsidio,Panna Udvardy,Emiliana Arango
 2026-04-04,17:00,Credit One Charleston Open,Jessica Pegula,Iva Jovic
@@ -40,3 +40,4 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-05,TBD,Rolex Monte-Carlo Masters,Hubert Hurkacz,Luciano Darderi
 2026-04-05,TBD,Rolex Monte-Carlo Masters,Jakub Mensik,Fabian Marozsan
 2026-04-05,TBD,Rolex Monte-Carlo Masters,Valentin Vacherot,Kamil Majchrzak
+2026-04-05,TBD,Rolex Monte-Carlo Masters,Juan Manuel Cerundolo,Pedro Martinez
