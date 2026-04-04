@@ -10,7 +10,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-04,Final,Rolex Monte-Carlo Masters,Ethan Quinn,Otto Virtanen,atp_70,atp_128,ATP,Clay
 2026-04-04,Final,Rolex Monte-Carlo Masters,Francesco Maestrelli,Alexander Blockx,atp_110,atp_104,ATP,Clay
 2026-04-04,Final,Rolex Monte-Carlo Masters,Romain Arneodo,Francisco Comesana,atp_905,atp_62,ATP,Clay
-2026-04-04,Final,Rolex Monte-Carlo Masters,Cristian Garin,Jesper de Jong,wta_38,atp_86,WTA,Clay
+2026-04-04,Final,Rolex Monte-Carlo Masters,Cristian Garin,Jesper de Jong,atp_89,atp_86,ATP,Clay
 2026-04-04,Final,Rolex Monte-Carlo Masters,Jan-Lennard Struff,Nikoloz Basilashvili,atp_77,atp_136,ATP,Clay
 2026-04-04,Final,Rolex Monte-Carlo Masters,Ignacio Buse,David Goffin,atp_91,atp_118,ATP,Clay
 2026-04-04,Final,Rolex Monte-Carlo Masters,Benjamin Bonzi,Roberto Bautista Agut,atp_123,atp_82,ATP,Clay
@@ -21,10 +21,10 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-04,Final,Tiriac Open presented by UniCredit Bank,Mariano Navone,Botic Van De Zandschulp,atp_74,atp_55,ATP,
 2026-04-04,Live,Copa Colsanitas Colsubsidio,Panna Udvardy,Emiliana Arango,wta_93,wta_58,WTA,Clay
 2026-04-04,Final,Copa Colsanitas Colsubsidio,Marie Bouzkova,Jazmin Ortenzi,wta_39,wta_216,WTA,Clay
-2026-04-04,Live,Credit One Charleston Open,Jessica Pegula,Iva Jovic,wta_5,wta_20,WTA,Clay
-2026-04-04,18:30,Credit One Charleston Open,Madison Keys,Yuliia Starodubtseva,wta_17,wta_101,WTA,Clay
+2026-04-04,Final,Credit One Charleston Open,Jessica Pegula,Iva Jovic,wta_5,wta_20,WTA,Clay
+2026-04-04,Final,Credit One Charleston Open,Madison Keys,Yuliia Starodubtseva,wta_17,wta_101,WTA,Clay
 2026-04-05,14:00,Grand Prix Hassan II,Marco Trungelliti,Rafael Jodar,atp_131,atp_117,ATP,Clay
-2026-04-05,09:00,Rolex Monte-Carlo Masters,Nikoloz Basilashvili,Cristian Garin,atp_136,wta_38,ATP,Clay
+2026-04-05,09:00,Rolex Monte-Carlo Masters,Nikoloz Basilashvili,Cristian Garin,atp_136,atp_89,ATP,Clay
 2026-04-05,09:00,Rolex Monte-Carlo Masters,Juan Manuel Cerundolo,Pedro Martinez,atp_19,atp_101,ATP,Clay
 2026-04-05,09:00,Rolex Monte-Carlo Masters,David Goffin,Emilio Nava,atp_118,atp_76,ATP,Clay
 2026-04-05,10:30,Rolex Monte-Carlo Masters,Matteo Arnaldi,Alexandre Muller,atp_85,atp_50,ATP,Clay
@@ -36,13 +36,14 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-05,13:00,Rolex Monte-Carlo Masters,Gael Monfils,Tallon Griekspoor,atp_168,atp_25,ATP,Clay
 2026-04-05,14:30,Rolex Monte-Carlo Masters,Moise Kouame,Ugo Humbert,atp_9040,atp_38,ATP,Clay
 2026-04-05,11:00,Tiriac Open presented by UniCredit Bank,Mariano Navone,Daniel Merida,atp_74,atp_402,ATP,
-2026-04-05,09:00,Grand Prix Open Villa de Madrid by Silverway,Sara Saito,Carmen Lopez Martinez,wta_236,atp_101,WTA,
+2026-04-05,17:00,Credit One Charleston Open,Jessica Pegula,Yuliia Starodubtseva,wta_5,wta_101,WTA,Clay
+2026-04-05,09:00,Grand Prix Open Villa de Madrid by Silverway,Sara Saito,Carmen Lopez Martinez,atp_9018,atp_101,WTA,
 2026-04-05,09:00,Grand Prix Open Villa de Madrid by Silverway,Selena Janicijevic,Carlota Lujan Jecalo,wta_261,wta_9100,WTA,
 2026-04-05,09:00,Grand Prix Open Villa de Madrid by Silverway,Carlota Corte,Miriana Tona,wta_9101,wta_384,ATP,
 2026-04-05,10:30,Grand Prix Open Villa de Madrid by Silverway,Mina Hodzic,Cristina Diaz Adrover,wta_471,wta_398,WTA,
 2026-04-05,10:30,Grand Prix Open Villa de Madrid by Silverway,Polona Hercog,Yvonne Cavalle-Reimers,wta_314,wta_9102,WTA,
 2026-04-05,10:30,Grand Prix Open Villa de Madrid by Silverway,Nadiia Kolb,Carlota Martinez Cirez,wta_754,wta_359,WTA,
-2026-04-05,12:00,Grand Prix Open Villa de Madrid by Silverway,Ekaterina Kazionova,Elina Avanesyan,wta_394,wta_178,WTA,
+2026-04-05,12:00,Grand Prix Open Villa de Madrid by Silverway,Ekaterina Kazionova,Elina Avanesyan,wta_494,wta_178,WTA,
 2026-04-05,12:00,Grand Prix Open Villa de Madrid by Silverway,Caroline Werner,Momoko Kobori,wta_234,wta_427,WTA,
 2026-04-05,09:00,Upper Austria Ladies Linz,Maria Timofeeva,Alina Charaeva,wta_154,wta_163,WTA,Clay
 2026-04-05,09:00,Upper Austria Ladies Linz,Katie Volynets,Oceane Dodin,wta_96,wta_9056,WTA,Clay
