@@ -200,7 +200,7 @@ def analyze_nhl_players(
     
         # Convert GAME_DATE to datetime.date
         nhlteamgames_df["game_date"] = pd.to_datetime(
-            nhlteamgames_df["GAME_DATE"], errors="coerce", infer_datetime_format=True
+            nhlteamgames_df["GAME_DATE"], errors="coerce"
         ).dt.date
 
         # Drop rows that couldn't be parsed
