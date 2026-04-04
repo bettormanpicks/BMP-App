@@ -1,43 +1,37 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-04,16:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Thiago Agustin Tirante,Roman Andres Burruchaga,atp_92,atp_102,ATP,Clay
 2026-04-04,17:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tommy Paul,Frances Tiafoe,atp_24,atp_28,ATP,Clay
-2026-04-04,Live,Grand Prix Hassan II,Luciano Darderi,Marco Trungelliti,atp_22,atp_131,ATP,Clay
-2026-04-04,13:30,Grand Prix Hassan II,Rafael Jodar,Camilo Ugo Carabelli,atp_117,atp_45,ATP,Clay
-2026-04-04,Live,Rolex Monte-Carlo Masters,Benjamin Bonzi,Roberto Bautista Agut,atp_123,atp_82,ATP,Clay
-2026-04-04,Live,Rolex Monte-Carlo Masters,Ignacio Buse,David Goffin,atp_91,atp_118,ATP,Clay
-2026-04-04,Live,Rolex Monte-Carlo Masters,Cristian Garin,Jesper de Jong,atp_89,atp_86,ATP,Clay
-2026-04-04,12:35,Rolex Monte-Carlo Masters,Ethan Quinn,Otto Virtanen,atp_70,atp_128,ATP,Clay
-2026-04-04,12:35,Rolex Monte-Carlo Masters,Francesco Maestrelli,Alexander Blockx,atp_110,atp_104,ATP,Clay
-2026-04-04,12:40,Rolex Monte-Carlo Masters,Alexander Shevchenko,Andrea Pellegrino,atp_79,atp_140,ATP,Clay
-2026-04-04,12:50,Rolex Monte-Carlo Masters,Vit Kopriva,Matteo Arnaldi,atp_87,atp_85,ATP,Clay
-2026-04-04,13:30,Rolex Monte-Carlo Masters,Jan Choinski,Alexandre Muller,atp_124,atp_50,ATP,Clay
-2026-04-04,13:30,Rolex Monte-Carlo Masters,Damir Dzumhur,Nicolai Budkov Kjaer,atp_61,atp_133,ATP,Clay
+2026-04-04,Live,Grand Prix Hassan II,Rafael Jodar,Camilo Ugo Carabelli,atp_117,atp_45,ATP,Clay
+2026-04-04,Final,Grand Prix Hassan II,Luciano Darderi,Marco Trungelliti,atp_22,atp_131,ATP,Clay
+2026-04-04,Live,Rolex Monte-Carlo Masters,Vit Kopriva,Matteo Arnaldi,atp_87,atp_85,ATP,Clay
+2026-04-04,Live,Rolex Monte-Carlo Masters,Jan Choinski,Alexandre Muller,atp_124,atp_50,ATP,Clay
+2026-04-04,15:30,Rolex Monte-Carlo Masters,Damir Dzumhur,Nicolai Budkov Kjaer,atp_61,atp_133,ATP,Clay
+2026-04-04,TBD,Rolex Monte-Carlo Masters,Alexander Shevchenko,Andrea Pellegrino,atp_79,atp_140,ATP,Clay
+2026-04-04,Final,Rolex Monte-Carlo Masters,Ethan Quinn,Otto Virtanen,atp_70,atp_128,ATP,Clay
+2026-04-04,Final,Rolex Monte-Carlo Masters,Francesco Maestrelli,Alexander Blockx,atp_110,atp_104,ATP,Clay
 2026-04-04,Final,Rolex Monte-Carlo Masters,Romain Arneodo,Francisco Comesana,atp_905,atp_62,ATP,Clay
+2026-04-04,Final,Rolex Monte-Carlo Masters,Cristian Garin,Jesper de Jong,wta_38,atp_86,WTA,Clay
 2026-04-04,Final,Rolex Monte-Carlo Masters,Jan-Lennard Struff,Nikoloz Basilashvili,atp_77,atp_136,ATP,Clay
+2026-04-04,Final,Rolex Monte-Carlo Masters,Ignacio Buse,David Goffin,atp_91,atp_118,ATP,Clay
+2026-04-04,Final,Rolex Monte-Carlo Masters,Benjamin Bonzi,Roberto Bautista Agut,atp_123,atp_82,ATP,Clay
 2026-04-04,Final,Rolex Monte-Carlo Masters,Pedro Martinez,Aleksandar Vukic,atp_101,atp_88,ATP,Clay
 2026-04-04,Final,Rolex Monte-Carlo Masters,Juan Manuel Cerundolo,Hugo Nys,atp_19,atp_191,ATP,Clay
 2026-04-04,Final,Rolex Monte-Carlo Masters,Emilio Nava,Quentin Halys,atp_76,atp_72,ATP,Clay
-2026-04-04,13:00,Tiriac Open presented by UniCredit Bank,Fabian Marozsan,Daniel Merida,atp_47,atp_402,ATP,
-2026-04-04,TBD,Tiriac Open presented by UniCredit Bank,Mariano Navone,Botic Van De Zandschulp,atp_74,atp_55,ATP,
+2026-04-04,Live,Tiriac Open presented by UniCredit Bank,Fabian Marozsan,Daniel Merida,atp_47,atp_402,ATP,
+2026-04-04,Final,Tiriac Open presented by UniCredit Bank,Mariano Navone,Botic Van De Zandschulp,atp_74,atp_55,ATP,
 2026-04-04,16:00,Copa Colsanitas Colsubsidio,Marie Bouzkova,Jazmin Ortenzi,wta_39,wta_216,WTA,Clay
 2026-04-04,17:30,Copa Colsanitas Colsubsidio,Panna Udvardy,Emiliana Arango,wta_93,wta_58,WTA,Clay
 2026-04-04,17:00,Credit One Charleston Open,Jessica Pegula,Iva Jovic,wta_5,wta_20,WTA,Clay
 2026-04-04,18:30,Credit One Charleston Open,Madison Keys,Yuliia Starodubtseva,wta_17,wta_101,WTA,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Sebastian Baez,Stan Wawrinka,atp_33,atp_98,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Marton Fucsovics,Alejandro Tabilo,atp_60,atp_67,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Cameron Norrie,Miomir Kecmanovic,atp_27,atp_83,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Arthur Rinderknech,Karen Khachanov,atp_30,atp_17,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Joao Fonseca,Gabriel Diallo,atp_37,atp_39,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Zizou Bergs,Adrian Mannarino,atp_43,atp_48,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Andrey Rublev,Nuno Borges,atp_14,atp_44,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Tomas Martin Etcheverry,Grigor Dimitrov,atp_53,atp_42,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Terence Atmane,Frances Tiafoe,atp_65,atp_28,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Moise Kouame,Ugo Humbert,atp_9040,atp_38,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Daniel Altmaier,Tomas Machac,atp_54,atp_31,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Gael Monfils,Tallon Griekspoor,atp_168,atp_25,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Francisco Cerundolo,Stefanos Tsitsipas,atp_62,atp_32,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Alexei Popyrin,Casper Ruud,atp_51,atp_13,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Hubert Hurkacz,Luciano Darderi,atp_71,atp_22,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Jakub Mensik,Fabian Marozsan,atp_16,atp_47,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Valentin Vacherot,Kamil Majchrzak,atp_26,atp_56,ATP,Clay
-2026-04-05,TBD,Rolex Monte-Carlo Masters,Juan Manuel Cerundolo,Pedro Martinez,atp_19,atp_101,ATP,Clay
+2026-04-05,11:30,Rolex Monte-Carlo Masters,Cameron Norrie,Miomir Kecmanovic,atp_27,atp_83,ATP,Clay
+2026-04-05,12:00,Rolex Monte-Carlo Masters,Marton Fucsovics,Alejandro Tabilo,atp_60,atp_67,ATP,Clay
+2026-04-05,13:00,Rolex Monte-Carlo Masters,Gael Monfils,Tallon Griekspoor,atp_168,atp_25,ATP,Clay
+2026-04-05,14:30,Rolex Monte-Carlo Masters,Moise Kouame,Ugo Humbert,atp_9040,atp_38,ATP,Clay
+2026-04-05,09:00,Upper Austria Ladies Linz,Maria Timofeeva,Alina Charaeva,wta_54,wta_163,WTA,Clay
+2026-04-05,09:00,Upper Austria Ladies Linz,Katie Volynets,Oceane Dodin,wta_96,wta_9056,WTA,Clay
+2026-04-05,10:30,Upper Austria Ladies Linz,Tamara Korpatsch,Jule Niemeier,wta_106,wta_302,WTA,Clay
+2026-04-05,10:30,Upper Austria Ladies Linz,Madison Brengle,Dominika Salkova,wta_400,wta_151,WTA,Clay
+2026-04-05,12:00,Upper Austria Ladies Linz,Victoria Jimenez Kasintseva,Iryna Shymanovich,wta_119,wta_156,WTA,Clay
+2026-04-05,12:00,Upper Austria Ladies Linz,Carole Monnet,Donna Vekic,wta_177,wta_99,WTA,Clay
+2026-04-05,13:30,Upper Austria Ladies Linz,Aliaksandra Sasnovich,Linda Fruhvirtova,wta_113,wta_118,WTA,Clay
+2026-04-05,13:30,Upper Austria Ladies Linz,Anna-Lena Friedsam,Anhelina Kalinina,wta_204,wta_191,WTA,Clay
