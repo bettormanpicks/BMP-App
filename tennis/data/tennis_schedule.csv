@@ -1,11 +1,11 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-04-04,16:00,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Thiago Agustin Tirante,Roman Andres Burruchaga
-2026-04-04,17:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tommy Paul,Frances Tiafoe
-2026-04-04,Live,Grand Prix Hassan II,Rafael Jodar,Camilo Ugo Carabelli
+2026-04-04,Live,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tommy Paul,Frances Tiafoe
+2026-04-04,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Thiago Agustin Tirante,Roman Andres Burruchaga
 2026-04-04,Final,Grand Prix Hassan II,Luciano Darderi,Marco Trungelliti
-2026-04-04,Live,Rolex Monte-Carlo Masters,Vit Kopriva,Matteo Arnaldi
-2026-04-04,Live,Rolex Monte-Carlo Masters,Jan Choinski,Alexandre Muller
-2026-04-04,15:30,Rolex Monte-Carlo Masters,Damir Dzumhur,Nicolai Budkov Kjaer
+2026-04-04,Final,Grand Prix Hassan II,Rafael Jodar,Camilo Ugo Carabelli
+2026-04-04,Final,Rolex Monte-Carlo Masters,Damir Dzumhur,Nicolai Budkov Kjaer
+2026-04-04,Final,Rolex Monte-Carlo Masters,Jan Choinski,Alexandre Muller
+2026-04-04,Final,Rolex Monte-Carlo Masters,Vit Kopriva,Matteo Arnaldi
 2026-04-04,TBD,Rolex Monte-Carlo Masters,Alexander Shevchenko,Andrea Pellegrino
 2026-04-04,Final,Rolex Monte-Carlo Masters,Ethan Quinn,Otto Virtanen
 2026-04-04,Final,Rolex Monte-Carlo Masters,Francesco Maestrelli,Alexander Blockx
@@ -17,16 +17,33 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-04,Final,Rolex Monte-Carlo Masters,Pedro Martinez,Aleksandar Vukic
 2026-04-04,Final,Rolex Monte-Carlo Masters,Juan Manuel Cerundolo,Hugo Nys
 2026-04-04,Final,Rolex Monte-Carlo Masters,Emilio Nava,Quentin Halys
-2026-04-04,Live,Tiriac Open presented by UniCredit Bank,Fabian Marozsan,Daniel Merida
+2026-04-04,Final,Tiriac Open presented by UniCredit Bank,Fabian Marozsan,Daniel Merida
 2026-04-04,Final,Tiriac Open presented by UniCredit Bank,Mariano Navone,Botic Van De Zandschulp
-2026-04-04,16:00,Copa Colsanitas Colsubsidio,Marie Bouzkova,Jazmin Ortenzi
-2026-04-04,17:30,Copa Colsanitas Colsubsidio,Panna Udvardy,Emiliana Arango
-2026-04-04,17:00,Credit One Charleston Open,Jessica Pegula,Iva Jovic
+2026-04-04,Live,Copa Colsanitas Colsubsidio,Panna Udvardy,Emiliana Arango
+2026-04-04,Final,Copa Colsanitas Colsubsidio,Marie Bouzkova,Jazmin Ortenzi
+2026-04-04,Live,Credit One Charleston Open,Jessica Pegula,Iva Jovic
 2026-04-04,18:30,Credit One Charleston Open,Madison Keys,Yuliia Starodubtseva
+2026-04-05,14:00,Grand Prix Hassan II,Marco Trungelliti,Rafael Jodar
+2026-04-05,09:00,Rolex Monte-Carlo Masters,Nikoloz Basilashvili,Cristian Garin
+2026-04-05,09:00,Rolex Monte-Carlo Masters,Juan Manuel Cerundolo,Pedro Martinez
+2026-04-05,09:00,Rolex Monte-Carlo Masters,David Goffin,Emilio Nava
+2026-04-05,10:30,Rolex Monte-Carlo Masters,Matteo Arnaldi,Alexandre Muller
+2026-04-05,10:30,Rolex Monte-Carlo Masters,Ethan Quinn,Francisco Comesana
+2026-04-05,10:30,Rolex Monte-Carlo Masters,Alexander Shevchenko,Roberto Bautista Agut
+2026-04-05,11:00,Rolex Monte-Carlo Masters,Damir Dzumhur,Alexander Blockx
 2026-04-05,11:30,Rolex Monte-Carlo Masters,Cameron Norrie,Miomir Kecmanovic
 2026-04-05,12:00,Rolex Monte-Carlo Masters,Marton Fucsovics,Alejandro Tabilo
 2026-04-05,13:00,Rolex Monte-Carlo Masters,Gael Monfils,Tallon Griekspoor
 2026-04-05,14:30,Rolex Monte-Carlo Masters,Moise Kouame,Ugo Humbert
+2026-04-05,11:00,Tiriac Open presented by UniCredit Bank,Mariano Navone,Daniel Merida
+2026-04-05,09:00,Grand Prix Open Villa de Madrid by Silverway,Sara Saito,Carmen Lopez Martinez
+2026-04-05,09:00,Grand Prix Open Villa de Madrid by Silverway,Selena Janicijevic,Carlota Lujan Jecalo
+2026-04-05,09:00,Grand Prix Open Villa de Madrid by Silverway,Carlota Corte,Miriana Tona
+2026-04-05,10:30,Grand Prix Open Villa de Madrid by Silverway,Mina Hodzic,Cristina Diaz Adrover
+2026-04-05,10:30,Grand Prix Open Villa de Madrid by Silverway,Polona Hercog,Yvonne Cavalle-Reimers
+2026-04-05,10:30,Grand Prix Open Villa de Madrid by Silverway,Nadiia Kolb,Carlota Martinez Cirez
+2026-04-05,12:00,Grand Prix Open Villa de Madrid by Silverway,Ekaterina Kazionova,Elina Avanesyan
+2026-04-05,12:00,Grand Prix Open Villa de Madrid by Silverway,Caroline Werner,Momoko Kobori
 2026-04-05,09:00,Upper Austria Ladies Linz,Maria Timofeeva,Alina Charaeva
 2026-04-05,09:00,Upper Austria Ladies Linz,Katie Volynets,Oceane Dodin
 2026-04-05,10:30,Upper Austria Ladies Linz,Tamara Korpatsch,Jule Niemeier
