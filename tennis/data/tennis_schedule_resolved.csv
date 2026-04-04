@@ -1,6 +1,6 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-03,Live,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alexei Popyrin,Frances Tiafoe,atp_51,atp_28,ATP,Clay
 2026-04-03,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Ben Shelton,Thiago Agustin Tirante,atp_9,atp_92,ATP,Clay
+2026-04-03,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Alexei Popyrin,Frances Tiafoe,atp_51,atp_28,ATP,Clay
 2026-04-03,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Learner Tien,Roman Andres Burruchaga,atp_23,atp_102,ATP,Clay
 2026-04-03,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tomas Martin Etcheverry,Tommy Paul,atp_53,atp_24,ATP,Clay
 2026-04-03,Final,Grand Prix Hassan II,Corentin Moutet,Marco Trungelliti,atp_34,atp_131,ATP,Clay
@@ -11,7 +11,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-03,Final,Tiriac Open presented by UniCredit Bank,Stefanos Sakellaridis,Fabian Marozsan,atp_275,atp_47,ATP,
 2026-04-03,Final,Tiriac Open presented by UniCredit Bank,Sebastian Baez,Titouan Droguet,atp_33,atp_119,ATP,
 2026-04-03,Final,Tiriac Open presented by UniCredit Bank,Daniel Altmaier,Dino Prizmic,atp_402,atp_121,ATP,
-2026-04-03,Final,Tiriac Open presented by UniCredit Bank,Alex Molcan,Mariano Navone,atp_415,atp_74,ATP,
+2026-04-03,Final,Tiriac Open presented by UniCredit Bank,Alex Molcan,Mariano Navone,atp_199,atp_74,ATP,
 2026-04-03,Final,Tiriac Open presented by UniCredit Bank,Damir Dzumhur,Botic Van De Zandschulp,atp_61,atp_55,ATP,
 2026-04-03,TBD,Tiriac Open presented by UniCredit Bank,Titouan Droguet,Daniel Merida,atp_119,atp_402,ATP,
 2026-04-03,Final,Copa Colsanitas Colsubsidio,Marie Bouzkova,Darja Semenistaja,wta_39,wta_97,WTA,Clay
