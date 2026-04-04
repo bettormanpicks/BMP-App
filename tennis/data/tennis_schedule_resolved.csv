@@ -3,9 +3,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-04,17:30,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Tommy Paul,Frances Tiafoe,atp_24,atp_28,ATP,Clay
 2026-04-04,12:00,Grand Prix Hassan II,Luciano Darderi,Marco Trungelliti,atp_22,atp_131,ATP,Clay
 2026-04-04,13:30,Grand Prix Hassan II,Rafael Jodar,Camilo Ugo Carabelli,atp_117,atp_45,ATP,Clay
-2026-04-04,09:00,Rolex Monte-Carlo Masters,Emilio Nava,Quentin Halys,atp_76,atp_72,ATP,Clay
-2026-04-04,09:00,Rolex Monte-Carlo Masters,Pedro Martinez,Aleksandar Vukic,atp_101,atp_88,ATP,Clay
-2026-04-04,09:00,Rolex Monte-Carlo Masters,Juan Manuel Cerundolo,Hugo Nys,atp_19,atp_191,ATP,Clay
+2026-04-04,Live,Rolex Monte-Carlo Masters,Emilio Nava,Quentin Halys,atp_76,atp_72,ATP,Clay
+2026-04-04,Live,Rolex Monte-Carlo Masters,Pedro Martinez,Aleksandar Vukic,atp_101,atp_75,ATP,Clay
+2026-04-04,Live,Rolex Monte-Carlo Masters,Juan Manuel Cerundolo,Hugo Nys,atp_19,atp_191,ATP,Clay
 2026-04-04,10:30,Rolex Monte-Carlo Masters,Romain Arneodo,Francisco Comesana,atp_905,atp_62,ATP,Clay
 2026-04-04,10:30,Rolex Monte-Carlo Masters,Ignacio Buse,David Goffin,atp_91,atp_118,ATP,Clay
 2026-04-04,10:30,Rolex Monte-Carlo Masters,Benjamin Bonzi,Roberto Bautista Agut,atp_123,atp_82,ATP,Clay
