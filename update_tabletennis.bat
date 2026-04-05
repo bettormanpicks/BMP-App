@@ -15,7 +15,7 @@ timeout /t 45
 echo Running Czech matchlogs...
 python tabletennis\getczechmatchlogs.py
 
-timout /t 45
+timeout /t 45
 echo Running Setka matchlogs...
 python tabletennis\getsetkamatchlogs.py
 
