@@ -19,6 +19,11 @@ LEAGUE_FILES = {
         "schedule": os.path.join(DATA_DIR, "tt_czech_schedule.csv"),
         "matchlogs": os.path.join(DATA_DIR, "tt_czech_matchlogs.csv"),
         "h2h": os.path.join(DATA_DIR, "tt_czech_h2h_summary.csv"),
+    },
+    "Setka": {
+        "schedule": os.path.join(DATA_DIR, "tt_setka_schedule.csv"),
+        "matchlogs": os.path.join(DATA_DIR, "tt_setka_matchlogs.csv"),
+        "h2h": os.path.join(DATA_DIR, "tt_setka_h2h_summary.csv"),
     }
 }
 
