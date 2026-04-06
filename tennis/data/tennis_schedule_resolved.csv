@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-06,Live,Rolex Monte-Carlo Masters,Flavio Cobolli,Francisco Comesana,atp_20,atp_62,ATP,Clay
+2026-04-06,Final,Rolex Monte-Carlo Masters,Flavio Cobolli,Francisco Comesana,atp_20,atp_62,ATP,Clay
 2026-04-06,Final,Rolex Monte-Carlo Masters,Jiri Lehecka,Emilio Nava,atp_21,atp_76,ATP,Clay
 2026-04-06,Final,Rolex Monte-Carlo Masters,Arthur Rinderknech,Karen Khachanov,atp_30,atp_17,ATP,Clay
 2026-04-06,Final,Rolex Monte-Carlo Masters,Andrey Rublev,Nuno Borges,atp_14,atp_44,ATP,Clay
@@ -11,22 +11,22 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-06,Final,Rolex Monte-Carlo Masters,Cristian Garin,Matteo Arnaldi,atp_89,atp_85,ATP,Clay
 2026-04-06,Final,Rolex Monte-Carlo Masters,Sebastian Baez,Stan Wawrinka,atp_33,atp_98,ATP,Clay
 2026-04-06,Final,Rolex Monte-Carlo Masters,Zizou Bergs,Adrian Mannarino,atp_43,atp_48,ATP,Clay
-2026-04-06,Live,Grand Prix Open Villa de Madrid by Silverway,Yuan Yue,Carmen Gallardo Guevara,wta_122,wta_9100,WTA,
 2026-04-06,Final,Grand Prix Open Villa de Madrid by Silverway,Francesca Jones,Elizabeth Mandlik,wta_72,wta_168,WTA,
 2026-04-06,Final,Grand Prix Open Villa de Madrid by Silverway,Polina Kudermetova,Mayar Sherif,wta_144,wta_108,WTA,
+2026-04-06,Final,Grand Prix Open Villa de Madrid by Silverway,Yuan Yue,Carmen Gallardo Guevara,wta_122,wta_9100,WTA,
 2026-04-06,Final,Grand Prix Open Villa de Madrid by Silverway,Ane Mintegi Del Olmo,Irene Burillo,wta_373,wta_249,WTA,
 2026-04-06,Final,Grand Prix Open Villa de Madrid by Silverway,Nuria Brancaccio,Jessika Ponchet,wta_164,wta_159,WTA,
 2026-04-06,Final,Grand Prix Open Villa de Madrid by Silverway,Caroline Werner,Miriana Tona,wta_234,wta_384,WTA,
 2026-04-06,Final,Grand Prix Open Villa de Madrid by Silverway,Sara Saito,Cristina Diaz Adrover,wta_236,wta_398,WTA,
 2026-04-06,Final,Grand Prix Open Villa de Madrid by Silverway,Selena Janicijevic,Elina Avanesyan,wta_261,wta_178,WTA,
 2026-04-06,Final,Grand Prix Open Villa de Madrid by Silverway,Polona Hercog,Carlota Martinez Cirez,wta_314,wta_359,WTA,
-2026-04-06,Live,Upper Austria Ladies Linz,Katie Boulter,Elena-Gabriela Ruse,wta_83,wta_79,WTA,Clay
-2026-04-06,Live,Upper Austria Ladies Linz,Sloane Stephens,Tatjana Maria,wta_775,wta_54,WTA,Clay
+2026-04-06,Final,Upper Austria Ladies Linz,Sloane Stephens,Tatjana Maria,wta_775,wta_54,WTA,Clay
+2026-04-06,Final,Upper Austria Ladies Linz,Katie Boulter,Elena-Gabriela Ruse,wta_83,wta_79,WTA,Clay
 2026-04-06,Final,Upper Austria Ladies Linz,Alycia Parks,Dalma Galfi,wta_76,wta_86,WTA,Clay
 2026-04-06,Final,Upper Austria Ladies Linz,Iryna Shymanovich,Donna Vekic,wta_156,wta_99,WTA,Clay
 2026-04-06,Final,Upper Austria Ladies Linz,Aliaksandra Sasnovich,Anhelina Kalinina,wta_113,wta_191,WTA,Clay
 2026-04-06,Final,Upper Austria Ladies Linz,Katie Volynets,Dominika Salkova,wta_96,wta_151,WTA,Clay
-2026-04-06,Final,Upper Austria Ladies Linz,Tamara Korpatsch,Maria Timofeeva,wta_106,wta_54,WTA,Clay
+2026-04-06,Final,Upper Austria Ladies Linz,Tamara Korpatsch,Maria Timofeeva,wta_106,wta_154,WTA,Clay
 2026-04-07,09:00,Rolex Monte-Carlo Masters,Roberto Bautista Agut,Matteo Berrettini,atp_82,atp_57,ATP,Clay
 2026-04-07,09:00,Rolex Monte-Carlo Masters,Tomas Martin Etcheverry,Grigor Dimitrov,atp_53,atp_42,ATP,Clay
 2026-04-07,09:00,Rolex Monte-Carlo Masters,Hubert Hurkacz,Luciano Darderi,atp_71,atp_22,ATP,Clay
@@ -42,12 +42,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-07,08:30,Grand Prix Open Villa de Madrid by Silverway,Caroline Werner,Nikola Bartunkova,wta_234,wta_104,WTA,
 2026-04-07,08:30,Grand Prix Open Villa de Madrid by Silverway,Laura Samson,Elena Pridankina,wta_212,wta_192,WTA,
 2026-04-07,09:30,Grand Prix Open Villa de Madrid by Silverway,Marina Bassols Ribera,Polona Hercog,wta_209,wta_314,WTA,
-2026-04-07,09:30,Grand Prix Open Villa de Madrid by Silverway,Lina Gjorcheska,Sara Saito,wta_9000,wta_236,WTA,
+2026-04-07,09:30,Grand Prix Open Villa de Madrid by Silverway,Lina Gjorcheska,Sara Saito,wta_181,wta_236,WTA,
 2026-04-07,11:00,Grand Prix Open Villa de Madrid by Silverway,Darja Semenistaja,Lisa Pigato,wta_97,wta_193,WTA,
 2026-04-07,11:00,Grand Prix Open Villa de Madrid by Silverway,Robin Montgomery,Elvina Kalieva,wta_293,wta_158,WTA,
 2026-04-07,11:00,Grand Prix Open Villa de Madrid by Silverway,Maria Garcia Cid,Alina Korneeva,wta_941,wta_146,WTA,
 2026-04-07,12:30,Grand Prix Open Villa de Madrid by Silverway,Whitney Osuigwe,Simona Waltert,wta_162,wta_81,WTA,
-2026-04-07,12:30,Grand Prix Open Villa de Madrid by Silverway,Arantxa Rus,Carol Young Suh Lee,wta_134,wta_170,WTA,
+2026-04-07,12:30,Grand Prix Open Villa de Madrid by Silverway,Arantxa Rus,Carol Young Suh Lee,wta_134,wta_352,WTA,
 2026-04-07,13:00,Grand Prix Open Villa de Madrid by Silverway,Elina Avanesyan,Andrea Lazaro Garcia,wta_178,wta_206,WTA,
 2026-04-07,14:30,Grand Prix Open Villa de Madrid by Silverway,Oksana Selekhmeteva,Selena Janicijevic,wta_74,wta_261,WTA,
 2026-04-07,10:00,Upper Austria Ladies Linz,Dayana Yastremska,Ann Li,wta_43,wta_36,WTA,Clay
