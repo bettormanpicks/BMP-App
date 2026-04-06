@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-05,Live,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Roman Andres Burruchaga,Tommy Paul,atp_102,atp_24,ATP,Clay
+2026-04-05,Final,Fayez Sarofim & Co. U.S. Men's Clay Court Championship,Roman Andres Burruchaga,Tommy Paul,atp_102,atp_24,ATP,Clay
 2026-04-05,Final,Grand Prix Hassan II,Marco Trungelliti,Rafael Jodar,atp_131,atp_117,ATP,Clay
 2026-04-05,Final,Rolex Monte-Carlo Masters,Moise Kouame,Ugo Humbert,atp_9040,atp_38,ATP,Clay
 2026-04-05,Final,Rolex Monte-Carlo Masters,Marton Fucsovics,Alejandro Tabilo,atp_60,atp_67,ATP,Clay
@@ -29,33 +29,5 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-05,Final,Upper Austria Ladies Linz,Carole Monnet,Donna Vekic,wta_177,wta_99,WTA,Clay
 2026-04-05,Final,Upper Austria Ladies Linz,Madison Brengle,Dominika Salkova,wta_400,wta_151,WTA,Clay
 2026-04-05,Final,Upper Austria Ladies Linz,Tamara Korpatsch,Jule Niemeier,wta_106,wta_302,WTA,Clay
-2026-04-05,Final,Upper Austria Ladies Linz,Maria Timofeeva,Alina Charaeva,wta_154,wta_163,WTA,Clay
+2026-04-05,Final,Upper Austria Ladies Linz,Maria Timofeeva,Alina Charaeva,wta_54,wta_163,WTA,Clay
 2026-04-05,Final,Upper Austria Ladies Linz,Katie Volynets,Oceane Dodin,wta_96,wta_9056,WTA,Clay
-2026-04-06,09:00,Rolex Monte-Carlo Masters,Arthur Rinderknech,Karen Khachanov,atp_30,atp_17,ATP,Clay
-2026-04-06,09:00,Rolex Monte-Carlo Masters,Andrey Rublev,Nuno Borges,atp_14,atp_44,ATP,Clay
-2026-04-06,10:30,Rolex Monte-Carlo Masters,Sebastian Baez,Stan Wawrinka,atp_33,atp_98,ATP,Clay
-2026-04-06,10:30,Rolex Monte-Carlo Masters,Zizou Bergs,Adrian Mannarino,atp_43,atp_48,ATP,Clay
-2026-04-06,10:30,Rolex Monte-Carlo Masters,Jiri Lehecka,Emilio Nava,atp_21,atp_76,ATP,Clay
-2026-04-06,12:00,Rolex Monte-Carlo Masters,Joao Fonseca,Gabriel Diallo,atp_37,atp_39,ATP,Clay
-2026-04-06,12:00,Rolex Monte-Carlo Masters,Cristian Garin,Matteo Arnaldi,wta_38,atp_85,WTA,Clay
-2026-04-06,12:00,Rolex Monte-Carlo Masters,Daniel Altmaier,Tomas Machac,atp_402,atp_31,ATP,Clay
-2026-04-06,12:00,Rolex Monte-Carlo Masters,Francisco Cerundolo,Stefanos Tsitsipas,atp_19,atp_32,ATP,Clay
-2026-04-06,13:30,Rolex Monte-Carlo Masters,Denis Shapovalov,Alexander Blockx,atp_36,atp_104,ATP,Clay
-2026-04-06,13:30,Rolex Monte-Carlo Masters,Flavio Cobolli,Francisco Comesana,atp_20,atp_62,ATP,Clay
-2026-04-06,13:30,Rolex Monte-Carlo Masters,Valentin Vacherot,Juan Manuel Cerundolo,atp_26,atp_19,ATP,Clay
-2026-04-06,08:30,Grand Prix Open Villa de Madrid by Silverway,Selena Janicijevic,Elina Avanesyan,wta_261,wta_178,WTA,
-2026-04-06,08:30,Grand Prix Open Villa de Madrid by Silverway,Polona Hercog,Carlota Martinez Cirez,wta_314,wta_359,WTA,
-2026-04-06,08:30,Grand Prix Open Villa de Madrid by Silverway,Sara Saito,Cristina Diaz Adrover,wta_236,wta_398,WTA,
-2026-04-06,10:00,Grand Prix Open Villa de Madrid by Silverway,Nuria Brancaccio,Jessika Ponchet,wta_164,wta_159,WTA,
-2026-04-06,10:00,Grand Prix Open Villa de Madrid by Silverway,Polina Kudermetova,Mayar Sherif,wta_144,wta_108,WTA,
-2026-04-06,10:00,Grand Prix Open Villa de Madrid by Silverway,Caroline Werner,Miriana Tona,wta_234,wta_384,WTA,
-2026-04-06,11:30,Grand Prix Open Villa de Madrid by Silverway,Francesca Jones,Elizabeth Mandlik,wta_72,wta_168,WTA,
-2026-04-06,13:30,Grand Prix Open Villa de Madrid by Silverway,Ane Mintegi Del Olmo,Irene Burillo,wta_373,wta_249,WTA,
-2026-04-06,15:00,Grand Prix Open Villa de Madrid by Silverway,Yuan Yue,Carmen Gallardo Guevara,wta_122,wta_9103,WTA,
-2026-04-06,09:00,Upper Austria Ladies Linz,Katie Volynets,Dominika Salkova,wta_96,wta_151,WTA,Clay
-2026-04-06,09:00,Upper Austria Ladies Linz,Tamara Korpatsch,Maria Timofeeva,wta_106,wta_154,WTA,Clay
-2026-04-06,10:00,Upper Austria Ladies Linz,Iryna Shymanovich,Donna Vekic,wta_156,wta_99,WTA,Clay
-2026-04-06,10:00,Upper Austria Ladies Linz,Aliaksandra Sasnovich,Anhelina Kalinina,wta_113,wta_191,WTA,Clay
-2026-04-06,12:00,Upper Austria Ladies Linz,Alycia Parks,Dalma Galfi,wta_76,wta_86,WTA,Clay
-2026-04-06,13:30,Upper Austria Ladies Linz,Sloane Stephens,Tatjana Maria,wta_775,wta_54,WTA,Clay
-2026-04-06,15:30,Upper Austria Ladies Linz,Katie Boulter,Elena-Gabriela Ruse,wta_83,wta_79,WTA,Clay
