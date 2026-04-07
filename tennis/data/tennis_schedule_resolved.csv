@@ -13,7 +13,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-07,Final,Rolex Monte-Carlo Masters,Tomas Martin Etcheverry,Grigor Dimitrov,atp_53,atp_42,ATP,Clay
 2026-04-07,Final,Grand Prix Open Villa de Madrid by Silverway,Whitney Osuigwe,Simona Waltert,wta_162,wta_81,WTA,
 2026-04-07,Final,Grand Prix Open Villa de Madrid by Silverway,Caroline Werner,Nikola Bartunkova,wta_234,wta_104,WTA,
-2026-04-07,Final,Grand Prix Open Villa de Madrid by Silverway,Darja Semenistaja,Lisa Pigato,wta_97,wta_466,WTA,
+2026-04-07,Final,Grand Prix Open Villa de Madrid by Silverway,Darja Semenistaja,Lisa Pigato,wta_97,wta_193,WTA,
 2026-04-07,Final,Grand Prix Open Villa de Madrid by Silverway,Maria Garcia Cid,Alina Korneeva,wta_941,wta_146,WTA,
 2026-04-07,Final,Grand Prix Open Villa de Madrid by Silverway,Arantxa Rus,Carol Young Suh Lee,wta_134,wta_352,WTA,
 2026-04-07,Final,Grand Prix Open Villa de Madrid by Silverway,Elina Avanesyan,Andrea Lazaro Garcia,wta_178,wta_206,WTA,
@@ -21,10 +21,10 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-07,Final,Grand Prix Open Villa de Madrid by Silverway,Lina Gjorcheska,Sara Saito,wta_181,wta_236,WTA,
 2026-04-07,TBD,Grand Prix Open Villa de Madrid by Silverway,Marina Bassols Ribera,Polona Hercog,wta_209,wta_314,WTA,
 2026-04-07,Final,Grand Prix Open Villa de Madrid by Silverway,Laura Samson,Elena Pridankina,wta_212,wta_192,WTA,
-2026-04-07,18:45,Upper Austria Ladies Linz,Karolina Pliskova,Aliaksandra Sasnovich,wta_267,wta_113,WTA,Clay
 2026-04-07,Final,Upper Austria Ladies Linz,Sinja Kraus,Sorana Cirstea,wta_105,wta_30,WTA,Clay
 2026-04-07,Final,Upper Austria Ladies Linz,Jaqueline Cristian,Tamara Korpatsch,wta_38,wta_106,WTA,Clay
 2026-04-07,Final,Upper Austria Ladies Linz,Dayana Yastremska,Ann Li,wta_43,wta_36,WTA,Clay
+2026-04-07,Final,Upper Austria Ladies Linz,Karolina Pliskova,Aliaksandra Sasnovich,wta_267,wta_113,WTA,Clay
 2026-04-07,Final,Upper Austria Ladies Linz,Julia Grabher,Alexandra Eala,wta_80,wta_45,WTA,Clay
 2026-04-07,Final,Upper Austria Ladies Linz,Paula Badosa,Lilli Tagger,wta_70,wta_114,WTA,Clay
 2026-04-07,Final,Upper Austria Ladies Linz,Katie Volynets,Donna Vekic,wta_96,wta_99,WTA,Clay
