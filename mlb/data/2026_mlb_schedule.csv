@@ -1,0 +1,37 @@
+date,game_id,home_team,away_team,home_pitcher,away_pitcher,status
+2026-04-07,19938b04-b148-5f50-97e7-b8552cbe1061,Cleveland Guardians,Kansas City Royals,Gavin Williams,Noah Cameron,Scheduled
+2026-04-07,545118b2-af90-5b99-8f12-b1a1596943ae,Chicago White Sox,Baltimore Orioles,Shane Smith,Trevor Rogers,Scheduled
+2026-04-07,05899dd9-52fb-54ed-9285-dc5c3bf758c4,New York Mets,Arizona Diamondbacks,Freddy Peralta,Zac Gallen,Scheduled
+2026-04-07,2ed614c9-b02b-5b1f-bb18-cc35aa76d736,Tampa Bay Rays,Chicago Cubs,Drew Rasmussen,Javier Assad,Scheduled
+2026-04-07,5a8bb957-2e73-5b08-a696-5655bb78201e,Miami Marlins,Cincinnati Reds,Sandy Alcantara,Andrew Abbott,Scheduled
+2026-04-07,a01f93f2-aebf-575a-9bab-682e23631c84,Pittsburgh Pirates,San Diego Padres,Paul Skenes,Nick Pivetta,Scheduled
+2026-04-07,f923eaa3-3301-56df-ac6a-8871621b268c,Boston Red Sox,Milwaukee Brewers,Garrett Crochet,Jacob Misiorowski,Scheduled
+2026-04-07,ae268ae6-0d4d-58e6-ab1c-2b754a85355b,Washington Nationals,St. Louis Cardinals,Cade Cavalli,Matthew Liberatore,Scheduled
+2026-04-07,2f173c1b-43fc-58fb-8806-ac6dfc2d98c7,New York Yankees,Athletics,Cam Schlittler,Aaron Civale,Scheduled
+2026-04-07,35dab09e-d1c8-5bdd-901b-2d0cc28f2e3f,Toronto Blue Jays,Los Angeles Dodgers,Kevin Gausman,Yoshinobu Yamamoto,Scheduled
+2026-04-07,df6221ae-0df9-51d4-a19a-50c74f454506,Minnesota Twins,Detroit Tigers,Taj Bradley,Tarik Skubal,Scheduled
+2026-04-08,1a7e6c6e-7c4c-5088-ba2c-ede981b9061d,Texas Rangers,Seattle Mariners,Nathan Eovaldi,George Kirby,Scheduled
+2026-04-08,4381e13f-6b3e-5e6c-8785-b57fc493e724,Colorado Rockies,Houston Astros,Kyle Freeland,Mike Burrows,Scheduled
+2026-04-08,3be6bd67-1586-5ccc-ac3f-a454e7c47229,Los Angeles Angels,Atlanta Braves,Yusei Kikuchi,Reynaldo López,Scheduled
+2026-04-08,cca1767d-aebe-514b-a686-4b713e7a5605,San Francisco Giants,Philadelphia Phillies,Robbie Ray,Cristopher Sánchez,Scheduled
+2026-04-08,842cd43b-4c23-5373-bf6f-1eafa99b597a,Pittsburgh Pirates,San Diego Padres,Mitch Keller,Michael King,Scheduled
+2026-04-08,f6ecaf90-8fb3-5e3a-955a-b8fce9da3880,Cleveland Guardians,Kansas City Royals,Joey Cantillo,Cole Ragans,Scheduled
+2026-04-08,aa0892d3-eecf-5198-bee5-c7973368d7dd,Boston Red Sox,Milwaukee Brewers,Sonny Gray,Chad Patrick,Scheduled
+2026-04-08,50d59a1f-5eef-5d6f-bec2-38a1438ff13f,Chicago White Sox,Baltimore Orioles,Sean Burke,Kyle Bradish,Scheduled
+2026-04-08,012c4e43-64f8-5e46-bea8-fc7e49dc91cc,Texas Rangers,Seattle Mariners,MacKenzie Gore,Bryan Woo,Scheduled
+2026-04-08,2c6c7f85-dd85-5925-898d-41ac5d0eaa78,Toronto Blue Jays,Los Angeles Dodgers,Dylan Cease,Shohei Ohtani,Scheduled
+2026-04-08,c6b71e1c-afa8-5bdb-a983-7c2eca7f7b16,Colorado Rockies,Houston Astros,,Cristian Javier,Scheduled
+2026-04-08,79fb1624-298d-5895-8141-b689a06719d8,San Francisco Giants,Philadelphia Phillies,Tyler Mahle,Aaron Nola,Scheduled
+2026-04-08,ffa2df3b-b049-5baa-b3be-9b460002130d,Washington Nationals,St. Louis Cardinals,Miles Mikolas,Michael McGreevy,Scheduled
+2026-04-08,6f6959e3-a319-5b73-820d-7990aadf27c9,Los Angeles Angels,Atlanta Braves,Reid Detmers,Grant Holmes,Scheduled
+2026-04-08,16adb46b-db14-5913-b986-67dfde2bb4e5,New York Mets,Arizona Diamondbacks,David Peterson,,Scheduled
+2026-04-08,7239db4a-2f36-57d2-a7a7-56043fec547e,Tampa Bay Rays,Chicago Cubs,Joe Boyle,,Scheduled
+2026-04-08,85684bd2-d93e-501b-9d6b-da689caeb585,Miami Marlins,Cincinnati Reds,Eury Pérez,Brady Singer,Scheduled
+2026-04-08,a8630e6b-4068-504c-b299-b0f806c934c0,New York Yankees,Athletics,Will Warren,Luis Severino,Scheduled
+2026-04-08,49e65052-cd1c-5c12-8e45-00bcbae26356,Minnesota Twins,Detroit Tigers,Bailey Ober,Framber Valdez,Scheduled
+2026-04-09,6a29e788-ce3e-500f-81ca-9b2e610b3eba,Miami Marlins,Cincinnati Reds,Max Meyer,Rhett Lowder,Scheduled
+2026-04-09,8025823e-15ff-5af3-bb9b-0b9062e83a00,New York Yankees,Athletics,Ryan Weathers,Jeffrey Springs,Scheduled
+2026-04-09,14736ca1-ed9c-560c-88ab-2df18f2316ad,Minnesota Twins,Detroit Tigers,Mick Abel,Jack Flaherty,Scheduled
+2026-04-09,1817fc42-a292-5544-9a74-c14d3aad515a,New York Mets,Arizona Diamondbacks,Nolan McLean,Eduardo Rodriguez,Scheduled
+2026-04-09,af3a4476-4d67-595b-a9f8-11bafb68ef0d,Kansas City Royals,Chicago White Sox,,,Scheduled
+2026-04-10,a42cd137-c11d-56fe-a620-d813df5cbc28,San Diego Padres,Colorado Rockies,,,Scheduled

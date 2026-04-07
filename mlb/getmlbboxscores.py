@@ -2,6 +2,7 @@ import requests
 import time
 import json
 import csv
+import pytz
 from datetime import datetime, timedelta
 
 # -------------------------
@@ -9,13 +10,27 @@ from datetime import datetime, timedelta
 # -------------------------
 API_KEY = "sbf0cxa6scw0hrykgk0c4cu"
 BASE_URL = "https://api.sportsblaze.com/mlb/v1"
-START_DATE = "2025-03-27"  # YYYY-MM-DD
-END_DATE = "2025-06-30"    # YYYY-MM-DD
-OUTPUT_CSV = "data/2025boxscores.csv"
+START_DATE = "2026-03-25"  # YYYY-MM-DD
+END_DATE = "2026-04-06"    # YYYY-MM-DD
+OUTPUT_CSV = "data/2026boxscores.csv"
+
+total_requests = 0
+last_request_time = 0
+MIN_DELAY = 6.2  # seconds (10 req/min = 6 sec, add buffer)
 
 # -------------------------
 # HELPER FUNCTIONS
 # -------------------------
+def rate_limit():
+    global last_request_time
+    now = time.time()
+    elapsed = now - last_request_time
+
+    if elapsed < MIN_DELAY:
+        time.sleep(MIN_DELAY - elapsed)
+
+    last_request_time = time.time()
+
 def append_to_csv(file_path, data):
     if not data:
         return
@@ -43,21 +58,42 @@ def daterange(start_date, end_date):
         yield start + timedelta(n)
 
 def fetch_daily_games(date_str):
+    global total_requests
     url = f"{BASE_URL}/boxscores/daily/{date_str}.json?key={API_KEY}"
-    resp = requests.get(url)
-    if resp.status_code != 200:
-        print(f"Error fetching {date_str}: {resp.status_code}")
-        return []
-    data = resp.json()
-    return data.get("games", [])
+
+    while True:
+        rate_limit()
+        resp = requests.get(url)
+        total_requests += 1
+
+        if resp.status_code == 200:
+            data = resp.json()
+            return data.get("games", [])
+
+        elif resp.status_code == 429:
+            print(f"⏳ Rate limited on {date_str}, sleeping 60s...")
+            time.sleep(60)
+
+        else:
+            print(f"❌ Error fetching {date_str}: {resp.status_code}")
+            return []
 
 def extract_players_from_game(game_data):
     players_list = []
     game_id = game_data["id"]
 
+    # Skip if game_data is missing 'rosters'
+    if "rosters" not in game_data:
+        print(f"⚠️ Skipping game {game_id}: no rosters available")
+        return []
+
     # Fix date here (correct place)
-    raw_date = game_data["date"]
-    game_date = datetime.fromisoformat(raw_date.replace("Z", "")).date()
+    raw_date = game_data["date"]  # e.g., "2025-10-29T20:00:00Z"
+    game_date_utc = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
+
+    # Convert to EST
+    eastern = pytz.timezone("US/Eastern")
+    game_date_local = game_date_utc.astimezone(eastern).date()
 
     for side in ["home", "away"]:
         opponent_side = "away" if side == "home" else "home"
@@ -104,6 +140,7 @@ def extract_players_from_game(game_data):
             strikeouts_pitching = stats.get("pitching_strikeouts")
 
             k_per_out = (strikeouts_pitching / outs) if outs else None
+            k_per_9 = (strikeouts_pitching * 9 / (outs / 3)) if outs else None
 
             # Pitcher Stats
             pitcher_stats = {
@@ -118,10 +155,11 @@ def extract_players_from_game(game_data):
                 "pitches": stats.get("pitching_pitches_thrown"),
                 "runs_allowed": stats.get("pitching_runs"),
                 "k_per_out": k_per_out,
+                "k_per_9": k_per_9,
             }
 
             row = {
-                "date": game_date,
+                "date": game_date_local,
                 "game_id": game_id,
                 "player": player["name"],
                 "player_id": player["id"],
@@ -143,51 +181,63 @@ def extract_players_from_game(game_data):
 # MAIN SCRIPT
 # -------------------------
 all_players = []
-request_count = 0
 
 for single_date in daterange(START_DATE, END_DATE):
     date_str = single_date.strftime("%Y-%m-%d")
     print(f"Fetching games for {date_str}...")
+    
     games = fetch_daily_games(date_str)
-    request_count += 1
 
+    # total_requests increment happens inside fetch_daily_games
+    print(f"{date_str} → {len(games)} games")
+
+    # Skip the day if no games
     if not games:
-        print(f"No games found for {date_str}")
+        print(f"No games found for {date_str}, skipping day.")
         continue
 
     for game in games:
-        game_id = game["id"]
+        game_id = game.get("id")
         game_url = f"{BASE_URL}/boxscores/game/{game_id}.json?key={API_KEY}"
-        game_resp = requests.get(game_url)
-        request_count += 1
 
-        if game_resp.status_code != 200:
-            print(f"Error fetching game {game_id}: {game_resp.status_code}")
+        game_data = None  # initialize cleanly
+
+        while True:
+            rate_limit()
+            game_resp = requests.get(game_url)
+            total_requests += 1
+
+            if game_resp.status_code == 200:
+                game_data = game_resp.json()
+                break
+
+            elif game_resp.status_code == 429:
+                print(f"⏳ Rate limited on game {game_id}, sleeping 60s...")
+                time.sleep(60)
+
+            else:
+                print(f"❌ Error fetching game {game_id}: {game_resp.status_code}")
+                break
+
+        # Skip if we never got valid data or rosters are missing
+        rosters = game_data.get("rosters", {})
+        if not rosters.get("home") or not rosters.get("away"):
+            print(f"⚠️ Skipping game {game_id}: rosters not ready")
             continue
 
-        game_data = game_resp.json()
         players_list = extract_players_from_game(game_data)
         all_players.extend(players_list)
 
         # Checkpoint save every 200 requests
-        if request_count % 200 == 0:
-            print(f"Checkpoint reached ({request_count} requests). Saving progress...")
+        if total_requests % 200 == 0:
+            print(f"Checkpoint reached ({total_requests} requests). Saving progress...")
             append_to_csv(OUTPUT_CSV, all_players)
             all_players = []  # clear memory
-
-        # Respect API limit
-        if request_count >= 10:
-            print("Reached 10 requests, sleeping 60 seconds...")
-            time.sleep(60)
-            request_count = 0
-        else:
-            time.sleep(6)  # small buffer to avoid hitting limit
 
 # Save all to CSV
 if all_players:
     print("Final save...")
     append_to_csv(OUTPUT_CSV, all_players)
-
     print(f"Saved {len(all_players)} player rows to {OUTPUT_CSV}")
 else:
     print("No player data collected.")

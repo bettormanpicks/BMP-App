@@ -1,0 +1,4419 @@
+[12:19:28] 🐍 Python dependencies were installed from /mount/src/bmp-app/requirements.txt using uv.
+
+Check if streamlit is installed
+
+Streamlit is already installed
+
+[12:19:29] 📦 Processed dependencies!
+
+[12:45:39] 🐙 Pulling code changes from Github...
+
+[12:45:41] 📦 Processing dependencies...
+
+[12:45:41] 📦 Processed dependencies!
+
+[12:45:43] 🔄 Updated app!
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1337                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1314                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1314                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1314                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:22 in <module>                                      
+
+                                                                                
+
+      19 # ============================================================         
+
+      20 # Remaining imports for your app logic                                 
+
+      21 # ============================================================         
+
+  ❱   22 from shared.utils import (                                             
+
+      23 │   get_central_today, get_league_today, hit_rate_threshold,           
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1337                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'shared'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1314                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1314                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+                                                                                
+
+  /mount/src/bmp-app/tennis/tennishelpers.py:6 in <module>                      
+
+                                                                                
+
+      3 import pandas as pd                                                     
+
+      4 import streamlit as st                                                  
+
+      5 from datetime import datetime, timedelta                                
+
+  ❱   6 from shared.utils import hit_rate_threshold                             
+
+      7                                                                         
+
+      8 import os                                                               
+
+      9 BASE_DIR = os.path.dirname(os.path.abspath(__file__))                   
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'shared'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:22 in <module>                                      
+
+                                                                                
+
+      19 # ============================================================         
+
+      20 # Remaining imports for your app logic                                 
+
+      21 # ============================================================         
+
+  ❱   22 from shared.utils import (                                             
+
+      23 │   get_central_today, get_league_today, hit_rate_threshold,           
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1337                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'shared'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1314                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:35 in <module>                                      
+
+                                                                                
+
+      32 │   normalize_nba_position, normalize_nba_position_display,            
+
+      33 │   add_combo_stats, load_nba_raw_data, load_defense_tables            
+
+      34 )                                                                      
+
+  ❱   35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1314                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1337                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1337                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:22 in <module>                                      
+
+                                                                                
+
+      19 # ============================================================         
+
+      20 # Remaining imports for your app logic                                 
+
+      21 # ============================================================         
+
+  ❱   22 from shared.utils import (                                             
+
+      23 │   get_central_today, get_league_today, hit_rate_threshold,           
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'shared.utils'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1337                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1337                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1337                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+                                                                                
+
+  /mount/src/bmp-app/nhl/helpers.py:7 in <module>                               
+
+                                                                                
+
+      4 import streamlit as st                                                  
+
+      5 from datetime import datetime, timedelta                                
+
+      6 import requests                                                         
+
+  ❱   7 from shared.utils import get_central_today, hit_rate_threshold, dedupe  
+
+      8                                                                         
+
+      9 # -------------------------------                                       
+
+     10 # Load NHL Data                                                         
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'shared.utils'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'load_nhl_raw_data' from 'nhl.helpers' 
+
+(/mount/src/bmp-app/nhl/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1337                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1337                                               
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+────────────────────────────────────────────────────────────────────────────────
+
+ImportError: cannot import name 'DEF_STAT_MAP' from 'nba.helpers' 
+
+(/mount/src/bmp-app/nba/helpers.py)
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+                                                                                
+
+  /mount/src/bmp-app/nba/helpers.py:17 in <module>                              
+
+                                                                                
+
+     14 │   strip_display_ids,                                                  
+
+     15 │   norm_name,                                                          
+
+     16 )                                                                       
+
+  ❱  17 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_p  
+
+     18                                                                         
+
+     19 DEF_STAT_MAP = {                                                        
+
+     20 │   "PTS": ("PaA", "PaR"),                                              
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.nbadefense'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:41 in <module>                                      
+
+                                                                                
+
+      38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+  ❱   41 from tabletennis.helpers import (                                      
+
+      42 │   load_tt_raw_data,                                                  
+
+      43 │   build_h2h_index,                                                   
+
+      44 │   compute_h2h_stats                                                  
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tabletennis.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:38 in <module>                                      
+
+                                                                                
+
+      35 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_  
+
+      36                                                                        
+
+      37 # NHL helper functions                                                 
+
+  ❱   38 from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, c  
+
+      39                                                                        
+
+      40 # Table Tennis helper functions                                        
+
+      41 from tabletennis.helpers import (                                      
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nhl'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:22 in <module>                                      
+
+                                                                                
+
+      19 # ============================================================         
+
+      20 # Remaining imports for your app logic                                 
+
+      21 # ============================================================         
+
+  ❱   22 from shared.utils import (                                             
+
+      23 │   get_central_today, get_league_today, hit_rate_threshold,           
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'shared.utils'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:48 in <module>                                      
+
+                                                                                
+
+      45 )                                                                      
+
+      46                                                                        
+
+      47 # Tennis helper functions                                              
+
+  ❱   48 from tennis.tennishelpers import (                                     
+
+      49 │   load_tennis_raw_data,                                              
+
+      50 │   load_tennis_schedule,                                              
+
+      51 │   load_tennis_players,                                               
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'tennis.tennishelpers'
+
+────────────────────── Traceback (most recent call last) ───────────────────────
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/exec_code.py:129 in exec_func_with_error_handling                        
+
+                                                                                
+
+  /home/adminuser/venv/lib/python3.13/site-packages/streamlit/runtime/scriptru  
+
+  nner/script_runner.py:689 in code_to_exec                                     
+
+                                                                                
+
+  /mount/src/bmp-app/app.py:27 in <module>                                      
+
+                                                                                
+
+      24 │   trim_df_to_recent_82, dedupe_columns, strip_display_ids,           
+
+      25 │   norm_name, get_teams_playing_on_date, sidebar_footer               
+
+      26 )                                                                      
+
+  ❱   27 from nba.helpers import (                                              
+
+      28 │   DEF_STAT_MAP, load_nba_schedule, load_today_matchups,              
+
+      29 │   load_nba_injury_status, parse_nba_matchup,                         
+
+      30 │   add_team_opponent_columns, compute_player_percentiles,             
+
+  in _find_and_load:1360                                                        
+
+  in _find_and_load_unlocked:1331                                               
+
+  in _load_unlocked:946                                                         
+
+────────────────────────────────────────────────────────────────────────────────
+
+KeyError: 'nba.helpers'
