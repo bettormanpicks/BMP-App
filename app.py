@@ -297,7 +297,6 @@ if sport_choice == "MLB":
 
         # --- Batters only options ---
         if player_type_choice == "Batters":
-
             stat_vs_choice = st.radio(
                 "Show Stats Vs",
                 ["Team", "Pitcher"]
@@ -360,13 +359,12 @@ if sport_choice == "MLB":
                 for player in home_players:
 
                     player_df = box_df[box_df["player"] == player]
-
                     if player_df.empty:
                         continue
 
                     is_pitcher = player_df["is_pitcher"].iloc[0]
 
-                    # ✅ FILTER HERE (correct place)
+                    # ✅ FILTER HERE
                     if player_type_choice == "Batters" and is_pitcher:
                         continue
                     if player_type_choice == "Pitchers" and not is_pitcher:
@@ -401,7 +399,6 @@ if sport_choice == "MLB":
                 for player in away_players:
 
                     player_df = box_df[box_df["player"] == player]
-
                     if player_df.empty:
                         continue
 
@@ -439,19 +436,22 @@ if sport_choice == "MLB":
                     })
 
             df = pd.DataFrame(rows)
-
             df = df.drop_duplicates(subset=["Date", "Player", "Team", "Pitcher"])
 
             if df.empty:
                 st.warning("No players found.")
             else:
-                st.dataframe(
-                    if player_type_choice == "Pitchers":
-                        sort_col = "k_per_9"
-                    else:
-                        sort_col = "hrr_per_game"
 
-                    df = df.sort_values(sort_col, ascending=False)
+                # --- Determine sort column ---
+                if player_type_choice == "Pitchers":
+                    sort_col = "k_per_9"
+                else:
+                    sort_col = "hrr_per_game"
+
+                df = df.sort_values(sort_col, ascending=False)
+
+                st.dataframe(
+                    df,
                     width="stretch",
                     hide_index=True
                 )
