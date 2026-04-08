@@ -449,7 +449,7 @@ if sport_choice == "MLB":
                     "Los Angeles Dodgers": "LAD",
                     "Toronto Blue Jays": "TOR",
                     "New York Yankees": "NYY",
-                    "Baltimore Orioles": "BAL"
+                    "Baltimore Orioles": "BAL",
                     "Boston Red Sox": "BOS",
                     "Chicago White Sox": "CWS",
                     "Chicago Cubs": "CHC",
