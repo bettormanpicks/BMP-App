@@ -377,7 +377,7 @@ if sport_choice == "MLB":
                         continue
 
                     rows.append({
-                        "GameDate": game["date"],
+                        "Date": game["date"],
                         "Player": player,
                         "Team": home_team,
                         "Opp": away_team,
@@ -419,7 +419,7 @@ if sport_choice == "MLB":
                         continue
 
                     rows.append({
-                        "GameDate": game["date"],
+                        "Date": game["date"],
                         "Player": player,
                         "Team": away_team,
                         "Opp": home_team,
@@ -438,10 +438,9 @@ if sport_choice == "MLB":
                 # -------------------------
                 # --- Clean Date & Teams ---
                 # -------------------------
-                eastern = pytz.timezone("America/New_York")
-                df["GameDate"] = df["GameDate"].dt.tz_convert(eastern)
-                df["Date"] = df["GameDate"].dt.strftime("%Y-%m-%d")
-                df["Time"] = df["GameDate"].dt.strftime("%H:%M")
+                local_tz = pytz.timezone("America/Chicago")  # your timezone (CDT/CST)
+                df["Date"] = df["Date"].dt.tz_convert(local_tz)
+                df["Date / Time"] = df["Date"].dt.strftime("%Y-%m-%d %H:%M")
 
                 TEAM_TRICODES = {
                     "Los Angeles Dodgers": "LAD",
@@ -478,19 +477,20 @@ if sport_choice == "MLB":
 
                 df["Team"] = df["Team"].map(TEAM_TRICODES).fillna(df["Team"])
                 df["Opp"] = df["Opp"].map(TEAM_TRICODES).fillna(df["Opp"])
+                df.rename(columns={"games": "Gms"}, inplace=True)
 
                 # -------------------------
                 # --- Display Table ---
                 # -------------------------
                 if player_type_choice == "Pitchers":
                     display_cols = [
-                        "Date", "Time", "Player", "Team", "Opp", "Pitcher",
-                        "games", "IP", "K", "Kp9", "ERA", "WHIP", "small_sample"
+                        "Date / Time", "Player", "Team", "Opp", "Pitcher",
+                        "Gms", "IP", "K", "Kp9", "ERA", "WHIP", "small_sample"
                     ]
                 else:  # Batters
                     display_cols = [
-                        "Date", "Time", "Player", "Team", "Opp", "Pitcher",
-                        "games", "AB", "PA", "H", "HR", "HRR", "AVG",
+                        "Date / Time", "Player", "Team", "Opp", "Pitcher",
+                        "Gms", "AB", "PA", "H", "HR", "HRR", "AVG",
                         "HR_rate", "HRRpg", "K_rate", "small_sample"
                     ]
 
