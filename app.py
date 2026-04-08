@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import json
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import pytz
 import re
 
@@ -346,7 +346,8 @@ if sport_choice == "MLB":
                 # Filter home players
                 home_players = box_df[
                     (box_df["team"] == home_team) &
-                    (box_df["date"] >= datetime.now(pytz.timezone("America/New_York")) - pd.Timedelta(days=7))
+                    seven_days_ago = datetime.now(timezone.utc) - pd.Timedelta(days=7)
+                    box_df[box_df["date"] >= seven_days_ago]
                 ]["player"].unique()
 
                 for player in home_players:
@@ -388,7 +389,8 @@ if sport_choice == "MLB":
                 # Filter away players
                 away_players = box_df[
                     (box_df["team"] == away_team) &
-                    (box_df["date"] >= datetime.now(pytz.timezone("America/New_York")) - pd.Timedelta(days=7))
+                    seven_days_ago = datetime.now(timezone.utc) - pd.Timedelta(days=7)
+                    box_df[box_df["date"] >= seven_days_ago]
                 ]["player"].unique()
 
                 for player in away_players:
@@ -439,8 +441,8 @@ if sport_choice == "MLB":
                 # --- Clean Date & Teams ---
                 # -------------------------
                 local_tz = pytz.timezone("America/Chicago")  # your timezone (CDT/CST)
-                df["Date"] = df["Date"].dt.tz_convert(local_tz)
-                df["Date / Time"] = df["Date"].dt.strftime("%Y-%m-%d %H:%M")
+                df["Date_local"] = df["Date"].dt.tz_convert(local_tz)  # keep original UTC
+                df["Date / Time"] = df["Date_local"].dt.strftime("%Y-%m-%d %H:%M")
 
                 TEAM_TRICODES = {
                     "Los Angeles Dodgers": "LAD",
