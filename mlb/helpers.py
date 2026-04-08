@@ -95,16 +95,16 @@ def compute_batter_stats(df):
     k = df["strikeouts"].sum()
 
     return {
-        "games": games,
-        "ab": ab,
-        "pa": pa,
-        "hits": hits,
-        "hr": hr,
-        "hrr": hrr,
-        "avg": (hits / ab) if ab else None,
-        "hr_rate": (hr / ab) if ab else None,
-        "hrr_per_game": (hrr / games) if games else None,
-        "k_rate": (k / pa) if pa else None
+        "Gms": games,
+        "AB": ab,
+        "PA": pa,
+        "H": hits,
+        "HR": hr,
+        "HRR": hrr,
+        "AVG": (hits / ab) if ab else None,
+        "HR_rate": (hr / ab) if ab else None,
+        "HRRpg": (hrr / games) if games else None,
+        "K_rate": (k / pa) if pa else None
     }
 
 
@@ -132,12 +132,12 @@ def compute_pitcher_stats(df):
     hits = df["hits_allowed"].sum()
 
     return {
-        "games": games,
-        "ip": ip,
-        "k": k,
-        "k_per_9": (k * 9 / ip) if ip else None,
-        "era": (er * 9 / ip) if ip else None,
-        "whip": ((walks + hits) / ip) if ip else None
+        "Gms": games,
+        "IP": ip,
+        "K": k,
+        "Kp9": (k * 9 / ip) if ip else None,
+        "ERA": (er * 9 / ip) if ip else None,
+        "WHIP": ((walks + hits) / ip) if ip else None
     }
 
 
