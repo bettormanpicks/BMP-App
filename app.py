@@ -19,7 +19,7 @@ if ROOT_DIR not in sys.path:
 # ============================================================
 # Remaining imports for your app logic
 # ============================================================
-from mlb.helpers import load_mlb_raw_data, get_todays_schedule, get_player_stats 
+from mlb.helpers import load_mlb_raw_data, get_today_schedule, get_player_stats 
 
 from shared.utils import (
     get_central_today, get_league_today, hit_rate_threshold,
