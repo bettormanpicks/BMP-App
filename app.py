@@ -377,7 +377,7 @@ if sport_choice == "MLB":
                         continue
 
                     rows.append({
-                        "Date": game["date"],
+                        "GameDate": game["date"],
                         "Player": player,
                         "Team": home_team,
                         "Opp": away_team,
@@ -419,7 +419,7 @@ if sport_choice == "MLB":
                         continue
 
                     rows.append({
-                        "Date": game["date"],
+                        "GameDate": game["date"],
                         "Player": player,
                         "Team": away_team,
                         "Opp": home_team,
@@ -439,9 +439,9 @@ if sport_choice == "MLB":
                 # --- Clean Date & Teams ---
                 # -------------------------
                 eastern = pytz.timezone("America/New_York")
-                df["Date"] = df["Date"].dt.tz_convert(eastern)
-                df["DateOnly"] = df["Date"].dt.strftime("%Y-%m-%d")
-                df["TimeOnly"] = df["Date"].dt.strftime("%H:%M")
+                df["GameDate"] = df["GameDate"].dt.tz_convert(eastern)
+                df["Date"] = df["GameDate"].dt.strftime("%Y-%m-%d")
+                df["Time"] = df["GameDate"].dt.strftime("%H:%M")
 
                 TEAM_TRICODES = {
                     "Los Angeles Dodgers": "LAD",
@@ -484,19 +484,19 @@ if sport_choice == "MLB":
                 # -------------------------
                 if player_type_choice == "Pitchers":
                     display_cols = [
-                        "DateOnly", "TimeOnly", "Player", "Team", "Opp", "Pitcher",
-                        "games", "ip", "k", "k_per_9", "era", "whip"  #, "small_sample"
+                        "Date", "Time", "Player", "Team", "Opp", "Pitcher",
+                        "Gms", "IP", "K", "Kp9", "ERA", "WHIP"  #, "small_sample"
                     ]
                 else:  # Batters
                     display_cols = [
-                        "DateOnly", "TimeOnly", "Player", "Team", "Opp", "Pitcher",
-                        "games", "ab", "pa", "hits", "hr", "hrr", "avg",
-                        "hr_rate", "hrr_per_game", "k_rate"  #, "small_sample"
+                        "Date", "Time", "Player", "Team", "Opp", "Pitcher",
+                        "Gms", "AB", "PA", "H", "HR", "HRR", "AVG",
+                        "HR_rate", "HRRpg", "K_rate"  #, "small_sample"
                     ]
 
                 df_to_display = df[display_cols]
 
-                sort_col = "k_per_9" if player_type_choice == "Pitchers" else "hrr_per_game"
+                sort_col = "Kp9" if player_type_choice == "Pitchers" else "HRRpg"
                 st.dataframe(
                     df_to_display.sort_values(sort_col, ascending=False),
                     hide_index=True
