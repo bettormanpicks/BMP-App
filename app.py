@@ -75,7 +75,7 @@ central_dt = datetime.strptime(central_today, "%Y-%m-%d")
 
 # Determine the title and date based on sport
 if sport_choice == "MLB":
-    hero_title = "MLB — Player Stats"
+    hero_title = "MLB — Player Analyzer"
     hero_date = f"MLB date: {central_dt.strftime('%b %d')} (rolls over at 3:00 AM CT)"
 elif sport_choice == "NBA":
     hero_title = "NBA — Player Hit Rates"
@@ -336,127 +336,68 @@ if sport_choice == "MLB":
 
             rows = []
 
-            eastern = pytz.timezone("US/Eastern")
-            now_et = pd.Timestamp(datetime.now(eastern))
-            cutoff = now_et - pd.Timedelta(days=7)
+            # -------------------------
+            # --- Clean Date & Teams ---
+            # -------------------------
 
-            for _, game in games_to_show.iterrows():
+            # Ensure datetime is tz-aware and in Eastern time
+            eastern = pytz.timezone("America/New_York")
+            df["Date"] = df["Date"].dt.tz_convert(eastern)
 
-                home_team = game["home_team"]
-                away_team = game["away_team"]
-                home_pitcher = game["home_pitcher"]
-                away_pitcher = game["away_pitcher"]
+            # Split Date into clean columns
+            df["DateOnly"] = df["Date"].dt.strftime("%Y-%m-%d")
+            df["TimeOnly"] = df["Date"].dt.strftime("%H:%M")
 
-                home_players = box_df[
-                    (box_df["team"] == home_team) &
-                    (box_df["date"] >= cutoff)
-                ]["player"].unique()
+            # Map full team names to tricodes
+            TEAM_TRICODES = {
+                "Los Angeles Dodgers": "LAD",
+                "Toronto Blue Jays": "TOR",
+                "New York Yankees": "NYY",
+                "Boston Red Sox": "BOS",
+                "Chicago White Sox": "CWS",
+                "Chicago Cubs": "CHC",
+                "San Francisco Giants": "SF",
+                "St. Louis Cardinals": "STL",
+                "Houston Astros": "HOU",
+                "Atlanta Braves": "ATL",
+                "Philadelphia Phillies": "PHI",
+                "Washington Nationals": "WSH",
+                "Miami Marlins": "MIA",
+                "New York Mets": "NYM",
+                "Cincinnati Reds": "CIN",
+                "Pittsburgh Pirates": "PIT",
+                "Milwaukee Brewers": "MIL",
+                "Minnesota Twins": "MIN",
+                "Kansas City Royals": "KC",
+                "Tampa Bay Rays": "TB",
+                "Oakland Athletics": "OAK",
+                "Los Angeles Angels": "LAA",
+                "Seattle Mariners": "SEA",
+                "Colorado Rockies": "COL",
+                "San Diego Padres": "SD",
+                "Detroit Tigers": "DET",
+                "Cleveland Guardians": "CLE",
+            }
 
-                away_players = box_df[
-                    (box_df["team"] == away_team) &
-                    (box_df["date"] >= cutoff)
-                ]["player"].unique()
+            df["Team"] = df["Team"].map(TEAM_TRICODES).fillna(df["Team"])
+            df["Opp"] = df["Opp"].map(TEAM_TRICODES).fillna(df["Opp"])
 
-                # --- HOME ---
-                for player in home_players:
+            # -------------------------
+            # --- Display Table ---
+            # -------------------------
+            display_cols = [
+                "DateOnly", "TimeOnly", "Player", "Team", "Opp", "Pitcher",
+                "games", "ab", "pa", "hits", "hr", "hrr", "avg",
+                "hr_rate", "hrr_per_game", "k_rate", "small_sample"
+            ]
 
-                    player_df = box_df[box_df["player"] == player]
-                    if player_df.empty:
-                        continue
-
-                    is_pitcher = player_df["is_pitcher"].iloc[0]
-
-                    # ✅ FILTER HERE
-                    if player_type_choice == "Batters" and is_pitcher:
-                        continue
-                    if player_type_choice == "Pitchers" and not is_pitcher:
-                        continue
-
-                    stats = get_player_stats(
-                        box_df=box_df,
-                        player=player,
-                        window=performance_window,
-                        opponent=None if all_opponents else (
-                            away_team if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
-                        ),
-                        pitcher=None if all_opponents else (
-                            away_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
-                        ),
-                        all_opponents=all_opponents
-                    )
-
-                    if not stats:
-                        continue
-
-                    rows.append({
-                        "Date": game["date"],
-                        "Player": player,
-                        "Team": home_team,
-                        "Opp": away_team,
-                        "Pitcher": away_pitcher,
-                        **stats
-                    })
-
-                # --- AWAY ---
-                for player in away_players:
-
-                    player_df = box_df[box_df["player"] == player]
-                    if player_df.empty:
-                        continue
-
-                    is_pitcher = player_df["is_pitcher"].iloc[0]
-
-                    # ✅ FILTER HERE TOO
-                    if player_type_choice == "Batters" and is_pitcher:
-                        continue
-                    if player_type_choice == "Pitchers" and not is_pitcher:
-                        continue
-
-                    stats = get_player_stats(
-                        box_df=box_df,
-                        player=player,
-                        window=performance_window,
-                        opponent=None if all_opponents else (
-                            home_team if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
-                        ),
-                        pitcher=None if all_opponents else (
-                            home_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
-                        ),
-                        all_opponents=all_opponents
-                    )
-
-                    if not stats:
-                        continue
-
-                    rows.append({
-                        "Date": game["date"],
-                        "Player": player,
-                        "Team": away_team,
-                        "Opp": home_team,
-                        "Pitcher": home_pitcher,
-                        **stats
-                    })
-
-            df = pd.DataFrame(rows)
-            df = df.drop_duplicates(subset=["Date", "Player", "Team", "Pitcher"])
-
-            if df.empty:
-                st.warning("No players found.")
-            else:
-
-                # --- Determine sort column ---
-                if player_type_choice == "Pitchers":
-                    sort_col = "k_per_9"
-                else:
-                    sort_col = "hrr_per_game"
-
-                df = df.sort_values(sort_col, ascending=False)
-
-                st.dataframe(
-                    df,
-                    width="stretch",
-                    hide_index=True
-                )
+            st.dataframe(
+                df[display_cols].sort_values(
+                    "k_per_9" if player_type_choice == "Pitchers" else "hrr_per_game",
+                    ascending=False
+                ),
+                hide_index=True
+            )
 
 ############################################################
 # ===== NBA SECTION (Multi-sport compatible) =====
