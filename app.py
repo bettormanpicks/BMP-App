@@ -64,7 +64,7 @@ st.set_page_config(
 ############################################################
 # SPORT SELECTION
 ############################################################
-sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL", "Table Tennis", "Tennis"]) #, "NFL", "NHL"])
+sport_choice = st.sidebar.selectbox("Select Sport", ["MLB", "NBA", "NHL", "Table Tennis", "Tennis"]) #, "NFL", "NHL"])
 
 nba_today = get_league_today()
 nhl_date = get_league_today()
@@ -72,7 +72,10 @@ central_today = get_central_today()
 central_dt = datetime.strptime(central_today, "%Y-%m-%d")
 
 # Determine the title and date based on sport
-if sport_choice == "NBA":
+if sport_choice == "MLB":
+    hero_title = "MLB — Player Stats"
+    hero_date = f"MLB date: {central_dt.strftime('%b %d')} (rolls over at 3:00 AM CT)"
+elif sport_choice == "NBA":
     hero_title = "NBA — Player Hit Rates"
     hero_date = f"NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)"
 elif sport_choice == "NHL":
@@ -266,6 +269,192 @@ st.sidebar.image("assets/logo.png", width=170)
 
 # Additional CSS tweaks
 
+
+############################################################
+# ===== MLB SECTION =====
+############################################################
+elif sport_choice == "MLB":
+
+    # --- Load MLB data ---
+    try:
+        box_df, schedule_df = load_raw_data()
+    except Exception as e:
+        st.error(f"Could not load MLB data: {e}")
+        box_df = pd.DataFrame()
+        schedule_df = pd.DataFrame()
+
+    stat_vs_choice = "Team"  # default fallback
+
+    # --- Player Type ---
+    player_type_choice = st.sidebar.radio(
+        "Player Type",
+        ["Batters", "Pitchers"],
+        key="mlb_player_type"
+    )
+
+    # --- Sidebar Form ---
+    with st.sidebar.form(key="mlb_form"):
+
+        # --- Batters only options ---
+        if player_type_choice == "Batters":
+
+            stat_vs_choice = st.radio(
+                "Show Stats Vs",
+                ["Team", "Pitcher"]
+            )
+
+        # --- Performance Window ---
+        performance_window = st.radio(
+            "Performance Window",
+            ["L5", "L10", "L30", "ALL"],
+            index=0
+        )
+
+        # --- Override ---
+        all_opponents = st.checkbox(
+            "Show Stats Vs All Opponents",
+            value=False
+        )
+
+        mlb_filter_today = st.checkbox("View Today's Games", value=False)
+
+        submit_btn = st.form_submit_button("Calculate")
+
+    sidebar_footer()
+
+    if submit_btn:
+
+        if mlb_filter_today:
+            games_to_show = get_today_schedule(schedule_df)
+        else:
+            games_to_show = schedule_df
+
+        if games_to_show.empty:
+            st.warning("No games found in schedule.")
+        else:
+
+            rows = []
+
+            eastern = pytz.timezone("US/Eastern")
+            now_et = pd.Timestamp(datetime.now(eastern))
+            cutoff = now_et - pd.Timedelta(days=7)
+
+            for _, game in games_to_show.iterrows():
+
+                home_team = game["home_team"]
+                away_team = game["away_team"]
+                home_pitcher = game["home_pitcher"]
+                away_pitcher = game["away_pitcher"]
+
+                home_players = box_df[
+                    (box_df["team"] == home_team) &
+                    (box_df["date"] >= cutoff)
+                ]["player"].unique()
+
+                away_players = box_df[
+                    (box_df["team"] == away_team) &
+                    (box_df["date"] >= cutoff)
+                ]["player"].unique()
+
+                # --- HOME ---
+                for player in home_players:
+
+                    player_df = box_df[box_df["player"] == player]
+
+                    if player_df.empty:
+                        continue
+
+                    is_pitcher = player_df["is_pitcher"].iloc[0]
+
+                    # ✅ FILTER HERE (correct place)
+                    if player_type_choice == "Batters" and is_pitcher:
+                        continue
+                    if player_type_choice == "Pitchers" and not is_pitcher:
+                        continue
+
+                    stats = get_player_stats(
+                        box_df=box_df,
+                        player=player,
+                        window=performance_window,
+                        opponent=None if all_opponents else (
+                            away_team if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
+                        ),
+                        pitcher=None if all_opponents else (
+                            away_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
+                        ),
+                        all_opponents=all_opponents
+                    )
+
+                    if not stats:
+                        continue
+
+                    rows.append({
+                        "Date": game["date"],
+                        "Player": player,
+                        "Team": home_team,
+                        "Opp": away_team,
+                        "Pitcher": away_pitcher,
+                        **stats
+                    })
+
+                # --- AWAY ---
+                for player in away_players:
+
+                    player_df = box_df[box_df["player"] == player]
+
+                    if player_df.empty:
+                        continue
+
+                    is_pitcher = player_df["is_pitcher"].iloc[0]
+
+                    # ✅ FILTER HERE TOO
+                    if player_type_choice == "Batters" and is_pitcher:
+                        continue
+                    if player_type_choice == "Pitchers" and not is_pitcher:
+                        continue
+
+                    stats = get_player_stats(
+                        box_df=box_df,
+                        player=player,
+                        window=performance_window,
+                        opponent=None if all_opponents else (
+                            home_team if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
+                        ),
+                        pitcher=None if all_opponents else (
+                            home_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
+                        ),
+                        all_opponents=all_opponents
+                    )
+
+                    if not stats:
+                        continue
+
+                    rows.append({
+                        "Date": game["date"],
+                        "Player": player,
+                        "Team": away_team,
+                        "Opp": home_team,
+                        "Pitcher": home_pitcher,
+                        **stats
+                    })
+
+            df = pd.DataFrame(rows)
+
+            df = df.drop_duplicates(subset=["Date", "Player", "Team", "Pitcher"])
+
+            if df.empty:
+                st.warning("No players found.")
+            else:
+                st.dataframe(
+                    if player_type_choice == "Pitchers":
+                        sort_col = "k_per_9"
+                    else:
+                        sort_col = "hrr_per_game"
+
+                    df = df.sort_values(sort_col, ascending=False)
+                    width="stretch",
+                    hide_index=True
+                )
 
 ############################################################
 # ===== NBA SECTION (Multi-sport compatible) =====
