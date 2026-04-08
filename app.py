@@ -441,12 +441,9 @@ if sport_choice == "MLB":
                 # -------------------------
                 # --- Clean Date & Teams ---
                 # -------------------------
-                # Ensure the datetime column is timezone-aware UTC first
-                df["Date"] = pd.to_datetime(df["Date"], utc=True)
-
-                # Convert to Chicago time
-                local_tz = pytz.timezone("America/Chicago")
-                df["DateLocal"] = df["Date"].dt.tz_convert(local_tz)
+                df["DateLocal"] = df["Date"].apply(
+                    lambda dt: dt.tz_convert("America/Chicago") if dt.tzinfo else dt.tz_localize("UTC").tz_convert("America/Chicago")
+                )
 
                 # Format exactly how you want
                 df["Date / Time"] = df["DateLocal"].dt.strftime("%Y-%m-%d %H:%M")
