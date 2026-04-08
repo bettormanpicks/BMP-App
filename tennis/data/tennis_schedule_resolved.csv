@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-08,Final,Rolex Monte-Carlo Masters,Cristian Garin,Alexander Zverev,wta_38,atp_4,WTA,Clay
+2026-04-08,Final,Rolex Monte-Carlo Masters,Cristian Garin,Alexander Zverev,atp_89,atp_4,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Lorenzo Musetti,Valentin Vacherot,atp_5,atp_26,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Felix Auger-Aliassime,Marin Cilic,atp_6,atp_52,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Daniil Medvedev,Matteo Berrettini,atp_11,atp_57,ATP,Clay
@@ -11,7 +11,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-08,Final,Rolex Monte-Carlo Masters,Fabian Marozsan,Hubert Hurkacz,atp_47,atp_71,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Tomas Martin Etcheverry,Terence Atmane,atp_53,atp_65,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Joao Fonseca,Arthur Rinderknech,atp_37,atp_30,ATP,Clay
-2026-04-08,Final,Grand Prix Open Villa de Madrid by Silverway,Oksana Selekhmeteva,Carol Young Suh Lee,wta_74,wta_170,WTA,
+2026-04-08,Final,Grand Prix Open Villa de Madrid by Silverway,Oksana Selekhmeteva,Carol Young Suh Lee,wta_74,wta_352,WTA,
 2026-04-08,Final,Grand Prix Open Villa de Madrid by Silverway,Oksana Selekhmeteva,Selena Janicijevic,wta_74,wta_261,WTA,
 2026-04-08,Final,Grand Prix Open Villa de Madrid by Silverway,Ane Mintegi Del Olmo,Nikola Bartunkova,wta_373,wta_104,WTA,
 2026-04-08,Final,Grand Prix Open Villa de Madrid by Silverway,Francesca Jones,Elina Avanesyan,wta_72,wta_178,WTA,
