@@ -7,7 +7,7 @@ from datetime import datetime
 # LOAD + CACHE DATA
 # -------------------------
 @st.cache_data
-def load_raw_data():
+def load_mlb_raw_data():
     box = pd.read_csv("data/mlb_cleaned_boxscores.csv")
     schedule = pd.read_csv("data/2026_mlb_schedule.csv")
 

@@ -19,6 +19,8 @@ if ROOT_DIR not in sys.path:
 # ============================================================
 # Remaining imports for your app logic
 # ============================================================
+from mlb.helpers import load_mlb_raw_data, get_todays_schedule, get_player_stats 
+
 from shared.utils import (
     get_central_today, get_league_today, hit_rate_threshold,
     trim_df_to_recent_82, dedupe_columns, strip_display_ids,
@@ -277,7 +279,7 @@ if sport_choice == "MLB":
 
     # --- Load MLB data ---
     try:
-        box_df, schedule_df = load_raw_data()
+        box_df, schedule_df = load_mlb_raw_data()
     except Exception as e:
         st.error(f"Could not load MLB data: {e}")
         box_df = pd.DataFrame()
