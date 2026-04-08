@@ -345,14 +345,8 @@ if sport_choice == "MLB":
                 home_pitcher = game["home_pitcher"]
                 away_pitcher = game["away_pitcher"]
 
-                # 7 days ago in UTC
-                seven_days_ago = datetime.now(timezone.utc) - pd.Timedelta(days=7)
-
-                # Filter home players
-                home_players = box_df[
-                    (box_df["team"] == home_team) &
-                    (box_df["date"] >= seven_days_ago)
-                ]["player"].unique()
+                # Filter home players (no date cutoff)
+                home_players = box_df[box_df["team"] == home_team]["player"].unique()
 
                 for player in home_players:
                     player_df = box_df[box_df["player"] == player]
@@ -390,11 +384,8 @@ if sport_choice == "MLB":
                         **stats
                     })
 
-                # Filter away players
-                away_players = box_df[
-                    (box_df["team"] == away_team) &
-                    (box_df["date"] >= seven_days_ago)
-                ]["player"].unique()
+                # Filter away players (no date cutoff)
+                away_players = box_df[box_df["team"] == away_team]["player"].unique()
 
                 for player in away_players:
                     player_df = box_df[box_df["player"] == player]
@@ -443,6 +434,7 @@ if sport_choice == "MLB":
                 # -------------------------
                 # --- Clean Date & Teams ---
                 # -------------------------
+                # Convert to Chicago time for display only
                 local_tz = pytz.timezone("America/Chicago")
                 df["DateLocal"] = df["DateUTC"].dt.tz_convert(local_tz)
                 df["Date / Time"] = df["DateLocal"].dt.strftime("%Y-%m-%d %H:%M")
