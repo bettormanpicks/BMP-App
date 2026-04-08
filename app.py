@@ -380,7 +380,7 @@ if sport_choice == "MLB":
                         continue
 
                     rows.append({
-                        "Date": game["date"],
+                        "DateUTC": game["date"],
                         "Player": player,
                         "Team": home_team,
                         "Opp": away_team,
@@ -422,7 +422,7 @@ if sport_choice == "MLB":
                         continue
 
                     rows.append({
-                        "Date": game["date"],
+                        "DateUTC": game["date"],
                         "Player": player,
                         "Team": away_team,
                         "Opp": home_team,
@@ -441,11 +441,8 @@ if sport_choice == "MLB":
                 # -------------------------
                 # --- Clean Date & Teams ---
                 # -------------------------
-                df["DateLocal"] = df["Date"].apply(
-                    lambda dt: dt.tz_convert("America/Chicago") if dt.tzinfo else dt.tz_localize("UTC").tz_convert("America/Chicago")
-                )
-
-                # Format exactly how you want
+                local_tz = pytz.timezone("America/Chicago")
+                df["DateLocal"] = df["DateUTC"].dt.tz_convert(local_tz)
                 df["Date / Time"] = df["DateLocal"].dt.strftime("%Y-%m-%d %H:%M")
 
                 TEAM_TRICODES = {
