@@ -482,17 +482,23 @@ if sport_choice == "MLB":
                 # -------------------------
                 # --- Display Table ---
                 # -------------------------
-                display_cols = [
-                    "DateOnly", "TimeOnly", "Player", "Team", "Opp", "Pitcher",
-                    "games", "ab", "pa", "hits", "hr", "hrr", "avg",
-                    "hr_rate", "hrr_per_game", "k_rate", "small_sample"
-                ]
+                if player_type_choice == "Pitchers":
+                    display_cols = [
+                        "DateOnly", "TimeOnly", "Player", "Team", "Opp", "Pitcher",
+                        "games", "ip", "k", "k_per_9", "era", "whip"  #, "small_sample"
+                    ]
+                else:  # Batters
+                    display_cols = [
+                        "DateOnly", "TimeOnly", "Player", "Team", "Opp", "Pitcher",
+                        "games", "ab", "pa", "hits", "hr", "hrr", "avg",
+                        "hr_rate", "hrr_per_game", "k_rate"  #, "small_sample"
+                    ]
 
+                df_to_display = df[display_cols]
+
+                sort_col = "k_per_9" if player_type_choice == "Pitchers" else "hrr_per_game"
                 st.dataframe(
-                    df[display_cols].sort_values(
-                        "k_per_9" if player_type_choice == "Pitchers" else "hrr_per_game",
-                        ascending=False
-                    ),
+                    df_to_display.sort_values(sort_col, ascending=False),
                     hide_index=True
                 )
 
