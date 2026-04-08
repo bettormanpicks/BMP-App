@@ -291,7 +291,8 @@ if sport_choice == "MLB":
     player_type_choice = st.sidebar.radio(
         "Player Type",
         ["Batters", "Pitchers"],
-        key="mlb_player_type"
+        key="mlb_player_type",
+        horizontal=True
     )
 
     # --- Sidebar Form ---
@@ -301,14 +302,15 @@ if sport_choice == "MLB":
         if player_type_choice == "Batters":
             stat_vs_choice = st.radio(
                 "Show Stats Vs",
-                ["Team", "Pitcher"]
+                ["Team", "Pitcher"],
+                horizontal=True
             )
 
         # --- Performance Window ---
         performance_window = st.radio(
             "Performance Window",
             ["L5", "L10", "L30", "ALL"],
-            index=0
+            horizontal=True, index=1
         )
 
         # --- Override ---
