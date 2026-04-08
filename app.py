@@ -441,9 +441,15 @@ if sport_choice == "MLB":
                 # -------------------------
                 # --- Clean Date & Teams ---
                 # -------------------------
-                local_tz = pytz.timezone("America/Chicago")  # your timezone (CDT/CST)
-                df["Date_local"] = df["Date"].dt.tz_convert(local_tz)  # keep original UTC
-                df["Date / Time"] = df["Date_local"].dt.strftime("%Y-%m-%d %H:%M")
+                # Ensure the datetime column is timezone-aware UTC first
+                df["Date"] = pd.to_datetime(df["Date"], utc=True)
+
+                # Convert to Chicago time
+                local_tz = pytz.timezone("America/Chicago")
+                df["DateLocal"] = df["Date"].dt.tz_convert(local_tz)
+
+                # Format exactly how you want
+                df["Date / Time"] = df["DateLocal"].dt.strftime("%Y-%m-%d %H:%M")
 
                 TEAM_TRICODES = {
                     "Los Angeles Dodgers": "LAD",
