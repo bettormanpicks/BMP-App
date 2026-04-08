@@ -273,7 +273,7 @@ st.sidebar.image("assets/logo.png", width=170)
 ############################################################
 # ===== MLB SECTION =====
 ############################################################
-elif sport_choice == "MLB":
+if sport_choice == "MLB":
 
     # --- Load MLB data ---
     try:
@@ -459,7 +459,7 @@ elif sport_choice == "MLB":
 ############################################################
 # ===== NBA SECTION (Multi-sport compatible) =====
 ############################################################
-if sport_choice == "NBA":
+elif sport_choice == "NBA":
 
     #st.subheader("NBA — Player Hit Rate Analysis")
     #nba_today = get_league_today()
