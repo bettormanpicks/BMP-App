@@ -195,9 +195,9 @@ def get_player_stats(
     # -------------------------
     # SMALL SAMPLE FLAG
     # -------------------------
-    if "pa" in stats:
-        stats["small_sample"] = stats["pa"] < 20
+    if "PA" in stats:
+        stats["small_sample"] = stats["PA"] < 20
     else:
-        stats["small_sample"] = stats["games"] < 5
+        stats["small_sample"] = stats["Gms"] < 5
 
     return stats
