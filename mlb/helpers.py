@@ -11,16 +11,15 @@ def load_mlb_raw_data():
     box = pd.read_csv("mlb/data/mlb_cleaned_boxscores.csv")
     schedule = pd.read_csv("mlb/data/2026_mlb_schedule.csv")
 
-    eastern = pytz.timezone("US/Eastern")
-    box["date"] = pd.to_datetime(box["date"]).dt.tz_localize(eastern)
-    schedule["date"] = pd.to_datetime(schedule["date"]).dt.tz_localize(eastern)
+    box["date"] = pd.to_datetime(box["date"], utc=True)
+    schedule["date"] = pd.to_datetime(schedule["date"], utc=True)
 
     return box, schedule
 
 @st.cache_data
 def get_today_schedule(schedule_df):
-    eastern = pytz.timezone("US/Eastern")
-    today = datetime.now(eastern).date()
+    local_tz = pytz.timezone("America/Chicago")
+    today = datetime.now(local_tz).date()
 
     return schedule_df[schedule_df["date"].dt.date == today]
 
