@@ -466,7 +466,7 @@ if sport_choice == "MLB":
                     "Minnesota Twins": "MIN",
                     "Kansas City Royals": "KC",
                     "Tampa Bay Rays": "TB",
-                    "Oakland Athletics": "OAK",
+                    "Athletics": "ATH",
                     "Los Angeles Angels": "LAA",
                     "Seattle Mariners": "SEA",
                     "Texas Rangers": "TEX",
