@@ -12,7 +12,7 @@ def load_mlb_raw_data():
     schedule = pd.read_csv("mlb/data/2026_mlb_schedule.csv")
 
     box["date"] = pd.to_datetime(box["date"], utc=True)
-    schedule["date"] = pd.to_datetime(schedule["date"], utc=True)
+    schedule["date"] = pd.to_datetime(schedule["date"])
 
     return box, schedule
 
