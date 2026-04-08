@@ -95,7 +95,7 @@ def compute_batter_stats(df):
     k = df["strikeouts"].sum()
 
     return {
-        "Gms": games,
+        "games": games,
         "AB": ab,
         "PA": pa,
         "H": hits,
@@ -132,7 +132,7 @@ def compute_pitcher_stats(df):
     hits = df["hits_allowed"].sum()
 
     return {
-        "Gms": games,
+        "games": games,
         "IP": ip,
         "K": k,
         "Kp9": (k * 9 / ip) if ip else None,
@@ -198,6 +198,6 @@ def get_player_stats(
     if "PA" in stats:
         stats["small_sample"] = stats["PA"] < 20
     else:
-        stats["small_sample"] = stats["Gms"] < 5
+        stats["small_sample"] = stats["games"] < 5
 
     return stats

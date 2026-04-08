@@ -485,12 +485,12 @@ if sport_choice == "MLB":
                 if player_type_choice == "Pitchers":
                     display_cols = [
                         "Date", "Time", "Player", "Team", "Opp", "Pitcher",
-                        "Gms", "IP", "K", "Kp9", "ERA", "WHIP", "small_sample"
+                        "games", "IP", "K", "Kp9", "ERA", "WHIP", "small_sample"
                     ]
                 else:  # Batters
                     display_cols = [
                         "Date", "Time", "Player", "Team", "Opp", "Pitcher",
-                        "Gms", "AB", "PA", "H", "HR", "HRR", "AVG",
+                        "games", "AB", "PA", "H", "HR", "HRR", "AVG",
                         "HR_rate", "HRRpg", "K_rate", "small_sample"
                     ]
 
