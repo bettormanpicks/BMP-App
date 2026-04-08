@@ -13,7 +13,7 @@ def load_mlb_raw_data():
 
     # Parse UTC
     box["date"] = pd.to_datetime(box["date"], utc=True)
-    schedule["date"] = pd.to_datetime(schedule["date"], utc=True)
+    schedule["date"] = pd.to_datetime(schedule["date"])
 
     return box, schedule
 
