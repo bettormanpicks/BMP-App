@@ -378,7 +378,6 @@ if sport_choice == "MLB":
 
                     rows.append({
                         "Date": game["date"],
-                        "Time": TimeOnly,
                         "Player": player,
                         "Team": home_team,
                         "Opp": away_team,
@@ -421,7 +420,6 @@ if sport_choice == "MLB":
 
                     rows.append({
                         "Date": game["date"],
-                        "Time": TimeOnly,
                         "Player": player,
                         "Team": away_team,
                         "Opp": home_team,
