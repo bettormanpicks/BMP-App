@@ -343,11 +343,13 @@ if sport_choice == "MLB":
                 home_pitcher = game["home_pitcher"]
                 away_pitcher = game["away_pitcher"]
 
+                # 7 days ago in UTC
+                seven_days_ago = datetime.now(timezone.utc) - pd.Timedelta(days=7)
+
                 # Filter home players
                 home_players = box_df[
                     (box_df["team"] == home_team) &
-                    seven_days_ago = datetime.now(timezone.utc) - pd.Timedelta(days=7)
-                    box_df[box_df["date"] >= seven_days_ago]
+                    (box_df["date"] >= seven_days_ago)
                 ]["player"].unique()
 
                 for player in home_players:
@@ -389,8 +391,7 @@ if sport_choice == "MLB":
                 # Filter away players
                 away_players = box_df[
                     (box_df["team"] == away_team) &
-                    seven_days_ago = datetime.now(timezone.utc) - pd.Timedelta(days=7)
-                    box_df[box_df["date"] >= seven_days_ago]
+                    (box_df["date"] >= seven_days_ago)
                 ]["player"].unique()
 
                 for player in away_players:
