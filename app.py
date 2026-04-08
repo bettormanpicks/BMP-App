@@ -336,68 +336,167 @@ if sport_choice == "MLB":
 
             rows = []
 
+            # --- LOOP OVER GAMES AND PLAYERS ---
+            for _, game in games_to_show.iterrows():
+                home_team = game["home_team"]
+                away_team = game["away_team"]
+                home_pitcher = game["home_pitcher"]
+                away_pitcher = game["away_pitcher"]
+
+                # Filter home players
+                home_players = box_df[
+                    (box_df["team"] == home_team) &
+                    (box_df["date"] >= datetime.now(pytz.timezone("America/New_York")) - pd.Timedelta(days=7))
+                ]["player"].unique()
+
+                for player in home_players:
+                    player_df = box_df[box_df["player"] == player]
+                    if player_df.empty:
+                        continue
+
+                    is_pitcher = player_df["is_pitcher"].iloc[0]
+                    if player_type_choice == "Batters" and is_pitcher:
+                        continue
+                    if player_type_choice == "Pitchers" and not is_pitcher:
+                        continue
+
+                    stats = get_player_stats(
+                        box_df=box_df,
+                        player=player,
+                        window=performance_window,
+                        opponent=None if all_opponents else (
+                            away_team if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
+                        ),
+                        pitcher=None if all_opponents else (
+                            away_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
+                        ),
+                        all_opponents=all_opponents
+                    )
+
+                    if not stats:
+                        continue
+
+                    rows.append({
+                        "Date": DateOnly,
+                        "Time": TimeOnly,
+                        "Player": player,
+                        "Team": home_team,
+                        "Opp": away_team,
+                        "Pitcher": away_pitcher,
+                        **stats
+                    })
+
+                # Filter away players
+                away_players = box_df[
+                    (box_df["team"] == away_team) &
+                    (box_df["date"] >= datetime.now(pytz.timezone("America/New_York")) - pd.Timedelta(days=7))
+                ]["player"].unique()
+
+                for player in away_players:
+                    player_df = box_df[box_df["player"] == player]
+                    if player_df.empty:
+                        continue
+
+                    is_pitcher = player_df["is_pitcher"].iloc[0]
+                    if player_type_choice == "Batters" and is_pitcher:
+                        continue
+                    if player_type_choice == "Pitchers" and not is_pitcher:
+                        continue
+
+                    stats = get_player_stats(
+                        box_df=box_df,
+                        player=player,
+                        window=performance_window,
+                        opponent=None if all_opponents else (
+                            home_team if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
+                        ),
+                        pitcher=None if all_opponents else (
+                            home_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
+                        ),
+                        all_opponents=all_opponents
+                    )
+
+                    if not stats:
+                        continue
+
+                    rows.append({
+                        "Date": DateOnly,
+                        "Time": TimeOnly,
+                        "Player": player,
+                        "Team": away_team,
+                        "Opp": home_team,
+                        "Pitcher": home_pitcher,
+                        **stats
+                    })
+
             # -------------------------
-            # --- Clean Date & Teams ---
+            # --- NOW CREATE DATAFRAME ---
             # -------------------------
+            df = pd.DataFrame(rows)
 
-            # Ensure datetime is tz-aware and in Eastern time
-            eastern = pytz.timezone("America/New_York")
-            df["Date"] = df["Date"].dt.tz_convert(eastern)
+            if df.empty:
+                st.warning("No players found.")
+            else:
+                # -------------------------
+                # --- Clean Date & Teams ---
+                # -------------------------
+                eastern = pytz.timezone("America/New_York")
+                df["Date"] = df["Date"].dt.tz_convert(eastern)
+                df["DateOnly"] = df["Date"].dt.strftime("%Y-%m-%d")
+                df["TimeOnly"] = df["Date"].dt.strftime("%H:%M")
 
-            # Split Date into clean columns
-            df["DateOnly"] = df["Date"].dt.strftime("%Y-%m-%d")
-            df["TimeOnly"] = df["Date"].dt.strftime("%H:%M")
+                TEAM_TRICODES = {
+                    "Los Angeles Dodgers": "LAD",
+                    "Toronto Blue Jays": "TOR",
+                    "New York Yankees": "NYY",
+                    "Baltimore Orioles": "BAL"
+                    "Boston Red Sox": "BOS",
+                    "Chicago White Sox": "CWS",
+                    "Chicago Cubs": "CHC",
+                    "San Francisco Giants": "SF",
+                    "St. Louis Cardinals": "STL",
+                    "Houston Astros": "HOU",
+                    "Atlanta Braves": "ATL",
+                    "Philadelphia Phillies": "PHI",
+                    "Washington Nationals": "WSH",
+                    "Arizona Diamondbacks": "ARI",
+                    "Miami Marlins": "MIA",
+                    "New York Mets": "NYM",
+                    "Cincinnati Reds": "CIN",
+                    "Pittsburgh Pirates": "PIT",
+                    "Milwaukee Brewers": "MIL",
+                    "Minnesota Twins": "MIN",
+                    "Kansas City Royals": "KC",
+                    "Tampa Bay Rays": "TB",
+                    "Oakland Athletics": "OAK",
+                    "Los Angeles Angels": "LAA",
+                    "Seattle Mariners": "SEA",
+                    "Texas Rangers": "TEX",
+                    "Colorado Rockies": "COL",
+                    "San Diego Padres": "SD",
+                    "Detroit Tigers": "DET",
+                    "Cleveland Guardians": "CLE",
+                }
 
-            # Map full team names to tricodes
-            TEAM_TRICODES = {
-                "Los Angeles Dodgers": "LAD",
-                "Toronto Blue Jays": "TOR",
-                "New York Yankees": "NYY",
-                "Boston Red Sox": "BOS",
-                "Chicago White Sox": "CWS",
-                "Chicago Cubs": "CHC",
-                "San Francisco Giants": "SF",
-                "St. Louis Cardinals": "STL",
-                "Houston Astros": "HOU",
-                "Atlanta Braves": "ATL",
-                "Philadelphia Phillies": "PHI",
-                "Washington Nationals": "WSH",
-                "Miami Marlins": "MIA",
-                "New York Mets": "NYM",
-                "Cincinnati Reds": "CIN",
-                "Pittsburgh Pirates": "PIT",
-                "Milwaukee Brewers": "MIL",
-                "Minnesota Twins": "MIN",
-                "Kansas City Royals": "KC",
-                "Tampa Bay Rays": "TB",
-                "Oakland Athletics": "OAK",
-                "Los Angeles Angels": "LAA",
-                "Seattle Mariners": "SEA",
-                "Colorado Rockies": "COL",
-                "San Diego Padres": "SD",
-                "Detroit Tigers": "DET",
-                "Cleveland Guardians": "CLE",
-            }
+                df["Team"] = df["Team"].map(TEAM_TRICODES).fillna(df["Team"])
+                df["Opp"] = df["Opp"].map(TEAM_TRICODES).fillna(df["Opp"])
 
-            df["Team"] = df["Team"].map(TEAM_TRICODES).fillna(df["Team"])
-            df["Opp"] = df["Opp"].map(TEAM_TRICODES).fillna(df["Opp"])
+                # -------------------------
+                # --- Display Table ---
+                # -------------------------
+                display_cols = [
+                    "DateOnly", "TimeOnly", "Player", "Team", "Opp", "Pitcher",
+                    "games", "ab", "pa", "hits", "hr", "hrr", "avg",
+                    "hr_rate", "hrr_per_game", "k_rate", "small_sample"
+                ]
 
-            # -------------------------
-            # --- Display Table ---
-            # -------------------------
-            display_cols = [
-                "DateOnly", "TimeOnly", "Player", "Team", "Opp", "Pitcher",
-                "games", "ab", "pa", "hits", "hr", "hrr", "avg",
-                "hr_rate", "hrr_per_game", "k_rate", "small_sample"
-            ]
-
-            st.dataframe(
-                df[display_cols].sort_values(
-                    "k_per_9" if player_type_choice == "Pitchers" else "hrr_per_game",
-                    ascending=False
-                ),
-                hide_index=True
-            )
+                st.dataframe(
+                    df[display_cols].sort_values(
+                        "k_per_9" if player_type_choice == "Pitchers" else "hrr_per_game",
+                        ascending=False
+                    ),
+                    hide_index=True
+                )
 
 ############################################################
 # ===== NBA SECTION (Multi-sport compatible) =====
