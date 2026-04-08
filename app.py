@@ -345,7 +345,7 @@ if sport_choice == "MLB":
                 home_pitcher = game["home_pitcher"]
                 away_pitcher = game["away_pitcher"]
 
-                # Filter home players (no date cutoff)
+                # --- Filter home players ---
                 home_players = box_df[box_df["team"] == home_team]["player"].unique()
 
                 for player in home_players:
@@ -376,7 +376,7 @@ if sport_choice == "MLB":
                         continue
 
                     rows.append({
-                        "DateUTC": game["date"],
+                        "DateUTC": game["date"],  # keep UTC
                         "Player": player,
                         "Team": home_team,
                         "Opp": away_team,
@@ -384,7 +384,7 @@ if sport_choice == "MLB":
                         **stats
                     })
 
-                # Filter away players (no date cutoff)
+                # --- Filter away players ---
                 away_players = box_df[box_df["team"] == away_team]["player"].unique()
 
                 for player in away_players:
@@ -415,7 +415,7 @@ if sport_choice == "MLB":
                         continue
 
                     rows.append({
-                        "DateUTC": game["date"],
+                        "DateUTC": game["date"],  # keep UTC
                         "Player": player,
                         "Team": away_team,
                         "Opp": home_team,
@@ -431,9 +431,9 @@ if sport_choice == "MLB":
             if df.empty:
                 st.warning("No players found.")
             else:
-                # -------------------------
-                # --- Clean Date & Teams ---
-                # -------------------------
+                # Ensure DateUTC is timezone-aware UTC
+                df["DateUTC"] = pd.to_datetime(df["DateUTC"], utc=True)
+
                 # Convert to Chicago time for display only
                 local_tz = pytz.timezone("America/Chicago")
                 df["DateLocal"] = df["DateUTC"].dt.tz_convert(local_tz)
