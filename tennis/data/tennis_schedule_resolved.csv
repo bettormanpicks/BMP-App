@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-08,Final,Rolex Monte-Carlo Masters,Cristian Garin,Alexander Zverev,wta_38,atp_4,WTA,Clay
+2026-04-08,Final,Rolex Monte-Carlo Masters,Cristian Garin,Alexander Zverev,atp_89,atp_4,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Lorenzo Musetti,Valentin Vacherot,atp_5,atp_26,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Felix Auger-Aliassime,Marin Cilic,atp_6,atp_52,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Daniil Medvedev,Matteo Berrettini,atp_11,atp_57,ATP,Clay
@@ -7,7 +7,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-08,Final,Rolex Monte-Carlo Masters,Flavio Cobolli,Alexander Blockx,atp_20,atp_104,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Jiri Lehecka,Alejandro Tabilo,atp_21,atp_67,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Andrey Rublev,Zizou Bergs,atp_14,atp_43,ATP,Clay
-2026-04-08,Final,Rolex Monte-Carlo Masters,Francisco Cerundolo,Tomas Machac,atp_62,atp_31,ATP,Clay
+2026-04-08,Final,Rolex Monte-Carlo Masters,Francisco Cerundolo,Tomas Machac,atp_19,atp_31,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Fabian Marozsan,Hubert Hurkacz,atp_47,atp_71,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Tomas Martin Etcheverry,Terence Atmane,atp_53,atp_65,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Joao Fonseca,Arthur Rinderknech,atp_37,atp_30,ATP,Clay
@@ -22,3 +22,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-08,Final,Upper Austria Ladies Linz,Anastasia Potapova,Zhang Shuai,wta_75,wta_85,WTA,Clay
 2026-04-08,Final,Upper Austria Ladies Linz,Anhelina Kalinina,Panna Udvardy,wta_191,wta_93,WTA,Clay
 2026-04-08,Final,Upper Austria Ladies Linz,Elena-Gabriela Ruse,Dayana Yastremska,wta_79,wta_43,WTA,Clay
+2026-04-10,TBD,Grand Prix Open Villa de Madrid by Silverway,Oksana Selekhmeteva,Polina Kudermetova,wta_74,wta_144,WTA,
+2026-04-10,TBD,Grand Prix Open Villa de Madrid by Silverway,Elina Avanesyan,Ane Mintegi Del Olmo,wta_178,wta_373,WTA,
+2026-04-10,TBD,Upper Austria Ladies Linz,Mirra Andreeva,Sorana Cirstea,wta_7,wta_30,WTA,Clay
+2026-04-10,TBD,Upper Austria Ladies Linz,Jelena Ostapenko,Elena-Gabriela Ruse,wta_27,wta_79,WTA,Clay
