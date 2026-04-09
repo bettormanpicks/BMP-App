@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-08,Final,Rolex Monte-Carlo Masters,Cristian Garin,Alexander Zverev,atp_89,atp_4,ATP,Clay
+2026-04-08,Final,Rolex Monte-Carlo Masters,Cristian Garin,Alexander Zverev,wta_38,atp_4,WTA,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Lorenzo Musetti,Valentin Vacherot,atp_5,atp_26,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Felix Auger-Aliassime,Marin Cilic,atp_6,atp_52,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Daniil Medvedev,Matteo Berrettini,atp_11,atp_57,ATP,Clay
@@ -7,7 +7,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-08,Final,Rolex Monte-Carlo Masters,Flavio Cobolli,Alexander Blockx,atp_20,atp_104,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Jiri Lehecka,Alejandro Tabilo,atp_21,atp_67,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Andrey Rublev,Zizou Bergs,atp_14,atp_43,ATP,Clay
-2026-04-08,Final,Rolex Monte-Carlo Masters,Francisco Cerundolo,Tomas Machac,atp_19,atp_31,ATP,Clay
+2026-04-08,Final,Rolex Monte-Carlo Masters,Francisco Cerundolo,Tomas Machac,atp_62,atp_31,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Fabian Marozsan,Hubert Hurkacz,atp_47,atp_71,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Tomas Martin Etcheverry,Terence Atmane,atp_53,atp_65,ATP,Clay
 2026-04-08,Final,Rolex Monte-Carlo Masters,Joao Fonseca,Arthur Rinderknech,atp_37,atp_30,ATP,Clay
@@ -22,19 +22,3 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-08,Final,Upper Austria Ladies Linz,Anastasia Potapova,Zhang Shuai,wta_75,wta_85,WTA,Clay
 2026-04-08,Final,Upper Austria Ladies Linz,Anhelina Kalinina,Panna Udvardy,wta_191,wta_93,WTA,Clay
 2026-04-08,Final,Upper Austria Ladies Linz,Elena-Gabriela Ruse,Dayana Yastremska,wta_79,wta_43,WTA,Clay
-2026-04-09,09:00,Rolex Monte-Carlo Masters,Matteo Berrettini,Joao Fonseca,atp_57,atp_37,ATP,Clay
-2026-04-09,09:00,Rolex Monte-Carlo Masters,Zizou Bergs,Alexander Zverev,atp_43,atp_4,ATP,Clay
-2026-04-09,10:30,Rolex Monte-Carlo Masters,Tomas Machac,Jannik Sinner,atp_31,atp_2,ATP,Clay
-2026-04-09,10:30,Rolex Monte-Carlo Masters,Felix Auger-Aliassime,Casper Ruud,atp_6,atp_13,ATP,Clay
-2026-04-09,12:00,Rolex Monte-Carlo Masters,Jiri Lehecka,Alexander Bublik,atp_21,atp_10,ATP,Clay
-2026-04-09,12:00,Rolex Monte-Carlo Masters,Carlos Alcaraz,Tomas Martin Etcheverry,atp_1,atp_53,ATP,Clay
-2026-04-09,13:30,Rolex Monte-Carlo Masters,Valentin Vacherot,Hubert Hurkacz,atp_26,atp_71,ATP,Clay
-2026-04-09,13:30,Rolex Monte-Carlo Masters,Alexander Blockx,Alex de Minaur,atp_104,atp_8,ATP,Clay
-2026-04-09,09:00,Grand Prix Open Villa de Madrid by Silverway,Yuan Yue,Marina Bassols Ribera,wta_122,wta_209,WTA,
-2026-04-09,09:00,Grand Prix Open Villa de Madrid by Silverway,Lisa Pigato,Laura Samson,wta_193,wta_212,WTA,
-2026-04-09,09:00,Grand Prix Open Villa de Madrid by Silverway,Elvina Kalieva,Whitney Osuigwe,wta_158,wta_162,WTA,
-2026-04-09,10:30,Grand Prix Open Villa de Madrid by Silverway,Lina Gjorcheska,Alina Korneeva,wta_9000,wta_146,WTA,
-2026-04-09,12:00,Upper Austria Ladies Linz,Anhelina Kalinina,Donna Vekic,wta_191,wta_99,WTA,Clay
-2026-04-09,14:00,Upper Austria Ladies Linz,Lilli Tagger,Liudmila Samsonova,wta_114,wta_18,WTA,Clay
-2026-04-09,16:00,Upper Austria Ladies Linz,Karolina Pliskova,Ekaterina Alexandrova,wta_267,wta_11,WTA,Clay
-2026-04-09,17:30,Upper Austria Ladies Linz,Tamara Korpatsch,Anastasia Potapova,wta_106,wta_75,WTA,Clay
