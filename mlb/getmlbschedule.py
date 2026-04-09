@@ -1,5 +1,7 @@
+import pandas as pd
 import requests
 import csv
+import json
 import time
 from datetime import datetime, timedelta
 
@@ -8,8 +10,8 @@ from datetime import datetime, timedelta
 # -------------------------
 API_KEY = "sbf0cxa6scw0hrykgk0c4cu"
 BASE_URL = "https://api.sportsblaze.com/mlb/v1"
-START_DATE = "2026-04-07"
-END_DATE = "2026-04-09"
+START_DATE = "2026-04-09"
+END_DATE = "2026-04-11"
 OUTPUT_CSV = "data/2026_mlb_schedule.csv"
 
 last_request_time = 0
@@ -74,7 +76,7 @@ def extract_schedule_games(games):
 
         # Convert date (same fix as boxscores)
         raw_date = game.get("date")
-        game_date = datetime.fromisoformat(raw_date.replace("Z", "+00:00")).date()
+        game_datetime = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
 
         home_team = game["teams"]["home"]["name"]
         away_team = game["teams"]["away"]["name"]
@@ -90,7 +92,7 @@ def extract_schedule_games(games):
         status = game.get("status")
 
         row = {
-            "date": game_date,
+            "date": game_datetime,
             "game_id": game_id,
             "home_team": home_team,
             "away_team": away_team,
@@ -110,10 +112,9 @@ def save_csv(file_path, data):
     if not data:
         return
 
-    with open(file_path, "w", newline="", encoding="utf-8") as csvfile:
-        writer = csv.DictWriter(csvfile, fieldnames=data[0].keys())
-        writer.writeheader()
-        writer.writerows(data)
+    df = pd.DataFrame(data)
+    df["date"] = df["date"].apply(lambda x: x.isoformat())  # explicit ISO format
+    df.to_csv(file_path, index=False, encoding="utf-8")
 
 # -------------------------
 # MAIN
