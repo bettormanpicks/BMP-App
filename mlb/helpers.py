@@ -19,7 +19,6 @@ def load_mlb_raw_data():
 
     return box, schedule
 
-@st.cache_data
 def get_today_schedule(schedule_df):
     from datetime import timezone
     today = datetime.now(timezone.utc).date()
