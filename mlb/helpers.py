@@ -9,10 +9,7 @@ from datetime import datetime
 @st.cache_data
 def load_mlb_raw_data():
     box = pd.read_csv("mlb/data/mlb_cleaned_boxscores.csv")
-    schedule = pd.read_csv(
-        "mlb/data/2026_mlb_schedule.csv",
-        dtype={"date": "string"}
-    )
+    schedule = pd.read_csv("mlb/data/2026_mlb_schedule.csv")  # ← remove dtype override
 
     box["date"] = pd.to_datetime(box["date"], utc=True)
     schedule["date"] = pd.to_datetime(schedule["date"], utc=True)
