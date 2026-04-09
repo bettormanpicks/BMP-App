@@ -281,10 +281,6 @@ if sport_choice == "MLB":
     try:
         box_df, schedule_df = load_mlb_raw_data()
 
-        st.write("dtype:", schedule_df["date"].dtype)
-        st.write("tz:", schedule_df["date"].dt.tz)
-        st.write("raw sample:", schedule_df["date"].head(3).tolist())
-
     except Exception as e:
         st.error(f"Could not load MLB data: {e}")
         box_df = pd.DataFrame()
