@@ -9,18 +9,14 @@ from datetime import datetime
 @st.cache_data
 def load_mlb_raw_data():
     box = pd.read_csv("mlb/data/mlb_cleaned_boxscores.csv")
-    schedule = pd.read_csv(
-        "mlb/data/2026_mlb_schedule.csv",
-        parse_dates=["date"],
-        date_parser=lambda x: pd.to_datetime(x, utc=True)
-    )
-
-    st.write(schedule["date"].head())
-    st.write(schedule["date"].dtype)
+    schedule = pd.read_csv("mlb/data/2026_mlb_schedule.csv")
 
     # Parse UTC
     box["date"] = pd.to_datetime(box["date"], utc=True)
-    schedule["date"] = pd.to_datetime(schedule["date"])
+    schedule["date"] = pd.to_datetime(schedule["date"], utc=True)
+
+    st.write(schedule["date"].head())
+    st.write(schedule["date"].dtype)
 
     return box, schedule
 
