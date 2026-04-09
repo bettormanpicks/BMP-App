@@ -1,4 +1,5 @@
 import streamlit as st
+import streamlit.components.v1 as components
 import base64
 import pandas as pd
 import numpy as np
@@ -10,18 +11,6 @@ import re
 
 import sys
 import os
-import streamlit.components.v1 as components
-
-components.html("""
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DG3DDELFYK"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-DG3DDELFYK');
-    </script>
-""", height=0)
 
 # Ensure project root is on Python path (Streamlit Cloud fix)
 ROOT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -74,6 +63,17 @@ st.set_page_config(
     page_title="Bettor Man Picks Stat Analyzer",
     layout="wide"
 )
+
+components.html("""
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DG3DDELFYK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DG3DDELFYK');
+</script>
+""", height=0)
 
 ############################################################
 # SPORT SELECTION
