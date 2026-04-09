@@ -14,20 +14,21 @@ def load_mlb_raw_data():
         dtype={"date": "string"}
     )
 
-    # Parse UTC
     box["date"] = pd.to_datetime(box["date"], utc=True)
     schedule["date"] = pd.to_datetime(schedule["date"], utc=True)
-
-    st.write(schedule["date"].head())
-    st.write(schedule["date"].dtype)
 
     return box, schedule
 
 @st.cache_data
 def get_today_schedule(schedule_df):
-    # Compare using UTC now
     from datetime import timezone
     today = datetime.now(timezone.utc).date()
+
+    # Ensure tz-awareness survived the cache round-trip
+    if schedule_df["date"].dt.tz is None:
+        schedule_df = schedule_df.copy()
+        schedule_df["date"] = schedule_df["date"].dt.tz_localize("UTC")
+
     return schedule_df[schedule_df["date"].dt.date == today]
 
 def build_today_matchups(schedule_df):
