@@ -11,7 +11,8 @@ def load_mlb_raw_data():
     box = pd.read_csv("mlb/data/mlb_cleaned_boxscores.csv")
     schedule = pd.read_csv("mlb/data/2026_mlb_schedule.csv")
 
-    print(schedule["date"].head())
+    st.write(schedule["date"].head())
+    st.write(schedule["date"].dtype)
 
     # Parse UTC
     box["date"] = pd.to_datetime(box["date"], utc=True)
