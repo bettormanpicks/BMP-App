@@ -428,8 +428,6 @@ if sport_choice == "MLB":
             # -------------------------
             df = pd.DataFrame(rows)
 
-            st.write(df["DateUTC"].head())
-
             if df.empty:
                 st.warning("No players found.")
             else:
