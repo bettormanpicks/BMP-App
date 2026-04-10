@@ -1,7 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-04-10,Live,Billie Jean King Cup Qualifying,Elise Mertens,McCartney Kessler
 2026-04-10,03:30,Billie Jean King Cup Qualifying,Talia Gibson,Harriet Dart
 2026-04-10,05:00,Billie Jean King Cup Qualifying,Kimberly Birrell,Mika Stojsavljevic
+2026-04-10,TBD,Billie Jean King Cup Qualifying,Elise Mertens,McCartney Kessler
 2026-04-10,Final,Billie Jean King Cup Qualifying,Katarzyna Kawa,Elina Svitolina
 2026-04-10,Final,Billie Jean King Cup Qualifying,Viktorija Golubic,Linda Noskova
 2026-04-10,Final,Billie Jean King Cup Qualifying,Magda Linette,Marta Kostyuk
@@ -21,9 +21,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-10,Final,Grand Prix Open Villa de Madrid by Silverway,Elina Avanesyan,Ane Mintegi Del Olmo
 2026-04-10,Final,Grand Prix Open Villa de Madrid by Silverway,Lisa Pigato,Lina Gjorcheska
 2026-04-10,Final,Grand Prix Open Villa de Madrid by Silverway,Marina Bassols Ribera,Elvina Kalieva
-2026-04-10,Live,Upper Austria Ladies Linz,Donna Vekic,Karolina Pliskova
 2026-04-10,Final,Upper Austria Ladies Linz,Mirra Andreeva,Sorana Cirstea
 2026-04-10,Final,Upper Austria Ladies Linz,Jelena Ostapenko,Elena-Gabriela Ruse
+2026-04-10,Final,Upper Austria Ladies Linz,Donna Vekic,Karolina Pliskova
 2026-04-10,Final,Upper Austria Ladies Linz,Anastasia Potapova,Lilli Tagger
 2026-04-11,09:00,BMW Open by Bitpanda,Jan Choinski,Marc-Andrea Huesler
 2026-04-11,09:00,BMW Open by Bitpanda,Damir Dzumhur,Vitaliy Sachko
@@ -82,3 +82,4 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-11,13:30,Porsche Tennis Grand Prix,Zeynep Sonmez,Victoria Pohle
 2026-04-11,14:00,Porsche Tennis Grand Prix,Gabriela Knutson,Carole Monnet
 2026-04-11,13:30,Upper Austria Ladies Linz,Mirra Andreeva,Elena-Gabriela Ruse
+2026-04-11,15:00,Upper Austria Ladies Linz,Anastasia Potapova,Donna Vekic
