@@ -63,7 +63,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.iframe("""
+st.html("""
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DG3DDELFYK"></script>
 <script>
@@ -72,7 +72,7 @@ st.iframe("""
   gtag('js', new Date());
   gtag('config', 'G-DG3DDELFYK');
 </script>
-""", height=0)
+""")
 
 ############################################################
 # SPORT SELECTION
