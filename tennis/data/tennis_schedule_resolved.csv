@@ -1,6 +1,6 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-10,09:00,Billie Jean King Cup Qualifying,Yulia Putintseva,Kayla Cross,wta_77,wta_197,WTA,
-2026-04-10,10:00,Billie Jean King Cup Qualifying,Elisabetta Cocciaretto,Moyuka Uchijima,wta_40,wta_90,WTA,
+2026-04-10,Live,Billie Jean King Cup Qualifying,Yulia Putintseva,Kayla Cross,wta_77,wta_197,WTA,
+2026-04-10,10:05,Billie Jean King Cup Qualifying,Elisabetta Cocciaretto,Moyuka Uchijima,wta_40,wta_90,WTA,
 2026-04-10,10:30,Billie Jean King Cup Qualifying,Sonja Zhiyenbayeva,Bianca Andreescu,wta_833,wta_161,WTA,
 2026-04-10,11:00,Billie Jean King Cup Qualifying,Tamara Zidansek,Kaitlin Quevedo,wta_145,wta_131,WTA,
 2026-04-10,11:00,Billie Jean King Cup Qualifying,Belinda Bencic,Marie Bouzkova,wta_12,wta_39,WTA,
@@ -13,11 +13,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-10,15:30,Billie Jean King Cup Qualifying,Katarzyna Kawa,Elina Svitolina,wta_143,wta_9,WTA,
 2026-04-10,03:30,Billie Jean King Cup Qualifying,Talia Gibson,Harriet Dart,wta_111,wta_169,WTA,
 2026-04-10,05:00,Billie Jean King Cup Qualifying,Kimberly Birrell,Mika Stojsavljevic,wta_94,wta_280,WTA,
-2026-04-10,09:00,Rolex Monte-Carlo Masters,Joao Fonseca,Alexander Zverev,atp_37,atp_4,ATP,Clay
+2026-04-10,Live,Rolex Monte-Carlo Masters,Joao Fonseca,Alexander Zverev,atp_37,atp_4,ATP,Clay
 2026-04-10,10:30,Rolex Monte-Carlo Masters,Felix Auger-Aliassime,Jannik Sinner,atp_6,atp_2,ATP,Clay
 2026-04-10,12:00,Rolex Monte-Carlo Masters,Carlos Alcaraz,Alexander Bublik,atp_1,atp_10,ATP,Clay
 2026-04-10,13:30,Rolex Monte-Carlo Masters,Valentin Vacherot,Alex de Minaur,atp_26,atp_8,ATP,Clay
-2026-04-10,09:00,Grand Prix Open Villa de Madrid by Silverway,Marina Bassols Ribera,Elvina Kalieva,wta_209,wta_158,WTA,
+2026-04-10,Live,Grand Prix Open Villa de Madrid by Silverway,Marina Bassols Ribera,Elvina Kalieva,wta_209,wta_158,WTA,
 2026-04-10,10:30,Grand Prix Open Villa de Madrid by Silverway,Oksana Selekhmeteva,Polina Kudermetova,wta_74,wta_144,WTA,
 2026-04-10,11:30,Grand Prix Open Villa de Madrid by Silverway,Elina Avanesyan,Ane Mintegi Del Olmo,wta_178,wta_373,WTA,
 2026-04-10,12:00,Grand Prix Open Villa de Madrid by Silverway,Lisa Pigato,Lina Gjorcheska,wta_193,wta_181,WTA,
