@@ -1,5 +1,4 @@
 import streamlit as st
-import streamlit.components.v1 as components
 import base64
 import pandas as pd
 import numpy as np
@@ -64,7 +63,7 @@ st.set_page_config(
     layout="wide"
 )
 
-components.html("""
+st.iframe("""
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-DG3DDELFYK"></script>
 <script>
