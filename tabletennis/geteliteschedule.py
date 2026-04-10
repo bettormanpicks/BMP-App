@@ -5,7 +5,7 @@ from urllib.parse import quote
 import pandas as pd
 import undetected_chromedriver as uc
 from selenium.webdriver.support.ui import WebDriverWait
-from datetime import datetime
+from datetime import datetime, UTC
 
 # -------------------------
 # Configuration
@@ -63,7 +63,7 @@ def scrape_schedule():
     options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
     options.add_argument("--disable-blink-features=AutomationControlled")
 
-    driver = uc.Chrome(options=options, version_main=145)
+    driver = uc.Chrome(options=options, version_main=146)
 
     driver.get(LEAGUE_URL)
     print("Solve Cloudflare if needed...")
@@ -74,21 +74,31 @@ def scrape_schedule():
     cursor = None
     buffer = []
 
-    start_date = datetime.utcnow().strftime("%Y-%m-%d %H:%M:%S")
-    start_date_encoded = quote(start_date)
+    start_date_encoded = quote(datetime.now(UTC).strftime("%Y-%m-%d %H:%M:%S"))
 
     while True:
-        query = f"{base_url}?lang=en&first=50&status=not_started&audience=us&date_between[]={start_date_encoded}"
+        # ✅ updated query format with start date in first bound
+        query = f"{base_url}?lang=en&first=50&status=not_started&audience=us&date_between[]={start_date_encoded}&date_between[]=&with_markets=false&with_statistics=false"
         if cursor:
             query += f"&after={quote(cursor)}"
 
         print("Fetching:", query)
 
+        timestamp = int(time.time())  # ✅ added headers
         data = driver.execute_script("""
-            return fetch(arguments[0])
-                .then(r => r.json())
-                .catch(e => null)
-        """, query)
+            return fetch(arguments[0], {
+                headers: {
+                    "accept": "*/*",
+                    "x-api-timestamp": String(arguments[1]),
+                    "x-api-token": "h57bsdl",
+                    "x-bot-identifier": "client",
+                    "x-country": "us",
+                    "referer": "https://scores24.live/en/table-tennis"
+                }
+            })
+            .then(r => r.json())
+            .catch(e => null)
+        """, query, timestamp)
 
         if not data:
             print("❌ Failed to fetch data")

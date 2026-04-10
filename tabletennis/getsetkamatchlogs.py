@@ -108,17 +108,31 @@ def scrape_api():
 
     while True:
         new_matches_found = False
-        query = f"{base_url}?lang=en&first=50&status=ended&audience=us&date_between[]={start_date_encoded}"
+        end_dt = datetime.now(UTC)
+        end_date_encoded = quote(end_dt.strftime("%Y-%m-%d %H:%M:%S"))
+
+        query = f"{base_url}?lang=en&first=50&status=ended&audience=us&date_between[]=&date_between[]={end_date_encoded}&with_markets=false&with_statistics=false"
         if cursor:
             query += f"&after={quote(cursor)}"
 
         print("Fetching:", query)
 
+        timestamp = int(time.time())
+
         data = driver.execute_script("""
-            return fetch(arguments[0])
-                .then(r => r.json())
-                .catch(e => null)
-        """, query)
+            return fetch(arguments[0], {
+                headers: {
+                    "accept": "*/*",
+                    "x-api-timestamp": String(arguments[1]),
+                    "x-api-token": "h57bsdl",
+                    "x-bot-identifier": "client",
+                    "x-country": "us",
+                    "referer": "https://scores24.live/en/table-tennis"
+                }
+            })
+            .then(r => r.json())
+            .catch(e => null)
+        """, query, timestamp)
 
         if not data:
             print("❌ Failed to fetch data")

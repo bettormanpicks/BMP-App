@@ -22,3 +22,10 @@ PS = Point Spread
 P1 W = Player 1 Wins
 P2 W = Player 2 Wins
 P1 W% = Player 1 Win %
+
+Player 1,Player 2,Ms,P1 BB%,P1 BB#,P2 BB%,P2 BB#,1ALL%,P1 SR%,P1 SR#,P2 SR%,P2 SR#,NS%,P1 S,P2 S,3Set%,4Set%,5Set%,ATS,SS,ATP,PS,P1 W, P2 W, P1 W%
+Jacek Oracz,Lukasz Pyda,30,50,2,7.1,28,10,100,1,11.5,26,23.3,23,0,76.7,20,3.3,3.27,2.73,58.73,13.13,29,1,96.7
+Sebastian Baran,Adrian Eliasz,30,66.7,3,3.7,27,10,100,1,19.2,26,30,21,0,70,23.3,6.7,3.37,2.63,57.53,14.27,28,2,93.3
+Alan Wos,Krystian Kolodziej,20,11.8,17,66.7,3,20,6.7,15,100,1,30,0,14,70,20,10,3.4,2.6,60.3,13.9,1,19,5,
+Robert Szymik,Jakub Michalski,30,40,5,16,25,20,33.3,3,9.5,21,30,19,2,70,16.7,13.3,3.43,2.57,61.47,12.73,26,4,86.7
+Robert Szymik,Grzegorz Sawicki,30,62.5,8,13.6,22,26.7,33.3,3,10.5,19,36.7,17,2,63.3,16.7,20,3.57,2.43,65.1,11.5,24,6,80
