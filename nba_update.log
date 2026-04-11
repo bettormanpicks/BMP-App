@@ -99,3 +99,100 @@ Saved 2430 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbatea
 2026-04-11 10:07:32 - ✅ nbateamgametotals.csv validation passed (2430 rows)
 2026-04-11 10:07:32 - === Git sync ===
 2026-04-11 10:07:33 - Repository on main and synced with GitHub.
+2026-04-11 10:07:33 - 📊 New NBA data detected — committing update
+2026-04-11 10:07:35 - 🚀 NBA data successfully pushed to GitHub!
+2026-04-11 10:07:35 - === NBA Data Update Finished Successfully ===
+
+2026-04-11 10:11:28 - === NBA Data Update Started ===
+2026-04-11 10:11:28 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Priming NBA session...
+[WARNING] Session priming failed: Failed to perform, curl: (47) Maximum (30) redirects followed. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[RESUME] Continuing from 2026-04-11
+[PULL] 04/11/2026
+
+Saved 26340 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbaplayergamelogs.csv
+=== NBA PLAYER GAME LOGS FINISHED ===
+2026-04-11 10:11:33 - ✅ getnbagamelogs.py completed successfully
+2026-04-11 10:11:33 - === Validating nbaplayergamelogs.csv ===
+2026-04-11 10:11:33 - ✅ nbaplayergamelogs.csv validation passed (26340 rows)
+2026-04-11 10:11:33 - === Running getnbateamtotals.py ===
+Saved 2430 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbateamgametotals.csv
+2026-04-11 10:11:36 - ✅ getnbateamtotals.py completed successfully
+2026-04-11 10:11:36 - === Validating nbateamgametotals.csv ===
+2026-04-11 10:11:36 - ✅ nbateamgametotals.csv validation passed (2430 rows)
+2026-04-11 10:11:36 - === Git sync ===
+2026-04-11 10:11:36 - ❌ Git operation failed:
+Traceback (most recent call last):
+  File "C:\users\n8roc\pythonscripts\streamlit\nbadataupdate.py", line 107, in git_sync
+    subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True, env=ENV)
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128.
+
+2026-04-11 10:12:08 - === NBA Data Update Started ===
+2026-04-11 10:12:08 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Priming NBA session...
+[WARNING] Session priming failed: Failed to perform, curl: (47) Maximum (30) redirects followed. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[RESUME] Continuing from 2026-04-11
+[PULL] 04/11/2026
+
+Saved 26340 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbaplayergamelogs.csv
+=== NBA PLAYER GAME LOGS FINISHED ===
+2026-04-11 10:12:14 - ✅ getnbagamelogs.py completed successfully
+2026-04-11 10:12:14 - === Validating nbaplayergamelogs.csv ===
+2026-04-11 10:12:14 - ✅ nbaplayergamelogs.csv validation passed (26340 rows)
+2026-04-11 10:12:14 - === Running getnbateamtotals.py ===
+Saved 2430 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbateamgametotals.csv
+2026-04-11 10:12:16 - ✅ getnbateamtotals.py completed successfully
+2026-04-11 10:12:16 - === Validating nbateamgametotals.csv ===
+2026-04-11 10:12:16 - ✅ nbateamgametotals.csv validation passed (2430 rows)
+2026-04-11 10:12:16 - === Git sync ===
+2026-04-11 10:12:17 - ❌ Git operation failed:
+Traceback (most recent call last):
+  File "C:\Users\n8roc\PythonScripts\Streamlit\nbadataupdate.py", line 107, in git_sync
+    subprocess.run(["git", "pull", "--rebase", "origin", "main"], check=True, env=ENV)
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', 'pull', '--rebase', 'origin', 'main']' returned non-zero exit status 128.
+
+2026-04-11 10:14:47 - === NBA Data Update Started ===
+2026-04-11 10:14:47 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Priming NBA session...
+[WARNING] Session priming failed: Failed to perform, curl: (47) Maximum (30) redirects followed. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[RESUME] Continuing from 2026-04-11
+[PULL] 04/11/2026
+
+Saved 26340 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbaplayergamelogs.csv
+=== NBA PLAYER GAME LOGS FINISHED ===
+2026-04-11 10:14:53 - ✅ getnbagamelogs.py completed successfully
+2026-04-11 10:14:53 - === Validating nbaplayergamelogs.csv ===
+2026-04-11 10:14:53 - ✅ nbaplayergamelogs.csv validation passed (26340 rows)
+2026-04-11 10:14:53 - === Running getnbateamtotals.py ===
+Saved 2430 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbateamgametotals.csv
+2026-04-11 10:14:55 - ✅ getnbateamtotals.py completed successfully
+2026-04-11 10:14:55 - === Validating nbateamgametotals.csv ===
+2026-04-11 10:14:55 - ✅ nbateamgametotals.csv validation passed (2430 rows)
+2026-04-11 10:14:55 - === Git sync ===
+2026-04-11 10:16:56 - === NBA Data Update Started ===
+2026-04-11 10:16:56 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Priming NBA session...
+[WARNING] Session priming failed: Failed to perform, curl: (47) Maximum (30) redirects followed. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[RESUME] Continuing from 2026-04-11
+[PULL] 04/11/2026
+
+Saved 26340 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbaplayergamelogs.csv
+=== NBA PLAYER GAME LOGS FINISHED ===
+2026-04-11 10:17:03 - ✅ getnbagamelogs.py completed successfully
+2026-04-11 10:17:03 - === Validating nbaplayergamelogs.csv ===
+2026-04-11 10:17:03 - ✅ nbaplayergamelogs.csv validation passed (26340 rows)
+2026-04-11 10:17:03 - === Running getnbateamtotals.py ===
+Saved 2430 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbateamgametotals.csv
+2026-04-11 10:17:06 - ✅ getnbateamtotals.py completed successfully
+2026-04-11 10:17:06 - === Validating nbateamgametotals.csv ===
+2026-04-11 10:17:06 - ✅ nbateamgametotals.csv validation passed (2430 rows)
+2026-04-11 10:17:06 - === Git sync ===
+2026-04-11 10:17:07 - Repository on main and synced with GitHub.
