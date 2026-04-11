@@ -19,7 +19,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-11,13:00,Barcelona Open Banc Sabadell,Hamad Medjedovic,Vilius Gaubas
 2026-04-11,13:00,Barcelona Open Banc Sabadell,Matteo Arnaldi,Quentin Halys
 2026-04-11,13:00,Barcelona Open Banc Sabadell,Arthur Gea,Patrick Kypson
-2026-04-11,09:30,Billie Jean King Cup Qualifying,Yulia Putintseva,Bianca Andreescu
+2026-04-11,09:45,Billie Jean King Cup Qualifying,Yulia Putintseva,Bianca Andreescu
 2026-04-11,10:30,Billie Jean King Cup Qualifying,Veronika Erjavec,Kaitlin Quevedo
 2026-04-11,10:30,Billie Jean King Cup Qualifying,Jasmine Paolini,Moyuka Uchijima
 2026-04-11,11:00,Billie Jean King Cup Qualifying,Sonja Zhiyenbayeva,Kayla Cross
@@ -33,12 +33,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-11,15:00,Billie Jean King Cup Qualifying,Hanne Vandewinkel,McCartney Kessler
 2026-04-11,11:30,Rolex Monte-Carlo Masters,Alexander Zverev,Jannik Sinner
 2026-04-11,13:30,Rolex Monte-Carlo Masters,Carlos Alcaraz,Valentin Vacherot
-2026-04-11,09:00,Grand Prix Open Villa de Madrid by Silverway,Polina Kudermetova,Lisa Pigato
+2026-04-11,Live,Grand Prix Open Villa de Madrid by Silverway,Polina Kudermetova,Lisa Pigato
 2026-04-11,11:30,Grand Prix Open Villa de Madrid by Silverway,Ane Mintegi Del Olmo,Marina Bassols Ribera
-2026-04-11,08:00,Open Capfinances Rouen Métropole,Oceane Babel,Jessica Pieri
-2026-04-11,08:00,Open Capfinances Rouen Métropole,Tiphanie Lemaitre,Chloe Paquet
-2026-04-11,09:30,Open Capfinances Rouen Métropole,Alina Charaeva,Mina Hodzic
-2026-04-11,09:30,Open Capfinances Rouen Métropole,Maria Timofeeva,Yara Bartashevich
+2026-04-11,Live,Open Capfinances Rouen Métropole,Oceane Babel,Jessica Pieri
+2026-04-11,Live,Open Capfinances Rouen Métropole,Maria Timofeeva,Yara Bartashevich
+2026-04-11,09:45,Open Capfinances Rouen Métropole,Alina Charaeva,Mina Hodzic
 2026-04-11,11:00,Open Capfinances Rouen Métropole,Wang Xinyu,Manon Leonard
 2026-04-11,11:00,Open Capfinances Rouen Métropole,Iryna Shymanovich,Diana Martynov
 2026-04-11,12:30,Open Capfinances Rouen Métropole,Alice Robbe,Harmony Tan
@@ -47,8 +46,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-11,14:00,Open Capfinances Rouen Métropole,Elvina Kalieva,Astrid Lew Yan Foon
 2026-04-11,15:30,Open Capfinances Rouen Métropole,Dominika Salkova,Yasmine Mansouri
 2026-04-11,15:30,Open Capfinances Rouen Métropole,Mariia Kozyreva,Julie Belgraver
-2026-04-11,09:00,Porsche Tennis Grand Prix,Aliaksandra Sasnovich,Julia Stusek
-2026-04-11,09:00,Porsche Tennis Grand Prix,Oceane Dodin,Kathinka von Deichmann
+2026-04-11,Final,Open Capfinances Rouen Métropole,Tiphanie Lemaitre,Chloe Paquet
+2026-04-11,Live,Porsche Tennis Grand Prix,Aliaksandra Sasnovich,Julia Stusek
+2026-04-11,Live,Porsche Tennis Grand Prix,Oceane Dodin,Kathinka von Deichmann
 2026-04-11,10:30,Porsche Tennis Grand Prix,Alycia Parks,Eva Bennemann
 2026-04-11,10:30,Porsche Tennis Grand Prix,Victoria Jimenez Kasintseva,Vera Zvonareva
 2026-04-11,12:00,Porsche Tennis Grand Prix,Jule Niemeier,Anna-Lena Friedsam
