@@ -1,15 +1,15 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-04-11,12:00,BMW Open by Bitpanda,Roberto Carballes Baena,Alex Molcan
 2026-04-11,TBD,BMW Open by Bitpanda,Lorenzo Giustino,Sumit Nagal
 2026-04-11,Final,BMW Open by Bitpanda,Emilio Nava,David Goffin
+2026-04-11,Final,BMW Open by Bitpanda,Roberto Carballes Baena,Alex Molcan
 2026-04-11,Final,BMW Open by Bitpanda,Max Hans Rehberg,Arthur Fery
 2026-04-11,Final,BMW Open by Bitpanda,Alexander Shevchenko,Diego Dedura
 2026-04-11,Final,BMW Open by Bitpanda,Marko Topo,Ugo Blanchet
 2026-04-11,Final,BMW Open by Bitpanda,Damir Dzumhur,Vitaliy Sachko
 2026-04-11,Final,BMW Open by Bitpanda,Jan Choinski,Marc-Andrea Huesler
-2026-04-11,13:00,Barcelona Open Banc Sabadell,Hamad Medjedovic,Vilius Gaubas
-2026-04-11,13:00,Barcelona Open Banc Sabadell,Matteo Arnaldi,Quentin Halys
-2026-04-11,13:00,Barcelona Open Banc Sabadell,Arthur Gea,Patrick Kypson
+2026-04-11,Final,Barcelona Open Banc Sabadell,Hamad Medjedovic,Vilius Gaubas
+2026-04-11,Final,Barcelona Open Banc Sabadell,Matteo Arnaldi,Quentin Halys
+2026-04-11,Final,Barcelona Open Banc Sabadell,Arthur Gea,Patrick Kypson
 2026-04-11,Final,Barcelona Open Banc Sabadell,Juan Manuel Cerundolo,Giulio Zeppieri
 2026-04-11,TBD,Barcelona Open Banc Sabadell,Pedro Martinez,Pablo Carreno Busta
 2026-04-11,Final,Barcelona Open Banc Sabadell,Sebastian Ofner,Alejo Sanchez Quilez
@@ -19,12 +19,12 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-11,Final,Barcelona Open Banc Sabadell,Francesco Maestrelli,Daniel Merida
 2026-04-11,Final,Barcelona Open Banc Sabadell,Ethan Quinn,Nikoloz Basilashvili
 2026-04-11,Final,Barcelona Open Banc Sabadell,Aleksandar Vukic,Otto Virtanen
-2026-04-11,Live,Billie Jean King Cup Qualifying,Belinda Bencic,Linda Noskova
-2026-04-11,Live,Billie Jean King Cup Qualifying,Greet Minnen,Iva Jovic
-2026-04-11,15:30,Billie Jean King Cup Qualifying,Viktorija Golubic,Marie Bouzkova
-2026-04-11,15:30,Billie Jean King Cup Qualifying,Hanne Vandewinkel,McCartney Kessler
+2026-04-11,Live,Billie Jean King Cup Qualifying,Viktorija Golubic,Marie Bouzkova
+2026-04-11,TBD,Billie Jean King Cup Qualifying,Hanne Vandewinkel,McCartney Kessler
 2026-04-11,TBD,Billie Jean King Cup Qualifying,Katarzyna Kawa,Marta Kostyuk
+2026-04-11,Final,Billie Jean King Cup Qualifying,Greet Minnen,Iva Jovic
 2026-04-11,TBD,Billie Jean King Cup Qualifying,Sonja Zhiyenbayeva,Kayla Cross
+2026-04-11,Final,Billie Jean King Cup Qualifying,Belinda Bencic,Linda Noskova
 2026-04-11,Final,Billie Jean King Cup Qualifying,Linda Klimovicova,Oleksandra Oliynykova
 2026-04-11,TBD,Billie Jean King Cup Qualifying,Dalila Jakupovic,Leyre Romero Gormaz
 2026-04-11,TBD,Billie Jean King Cup Qualifying,Elisabetta Cocciaretto,Himeno Sakatsume
@@ -35,11 +35,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-11,Final,Rolex Monte-Carlo Masters,Alexander Zverev,Jannik Sinner
 2026-04-11,Final,Grand Prix Open Villa de Madrid by Silverway,Ane Mintegi Del Olmo,Marina Bassols Ribera
 2026-04-11,Final,Grand Prix Open Villa de Madrid by Silverway,Polina Kudermetova,Lisa Pigato
-2026-04-11,Live,Open Capfinances Rouen Métropole,Ekaterina Kazionova,Selena Janicijevic
-2026-04-11,Live,Open Capfinances Rouen Métropole,Elvina Kalieva,Astrid Lew Yan Foon
-2026-04-11,15:30,Open Capfinances Rouen Métropole,Momoko Kobori,Veronika Podrez
-2026-04-11,15:30,Open Capfinances Rouen Métropole,Dominika Salkova,Yasmine Mansouri
-2026-04-11,17:00,Open Capfinances Rouen Métropole,Mariia Kozyreva,Julie Belgraver
+2026-04-11,Final,Open Capfinances Rouen Métropole,Mariia Kozyreva,Julie Belgraver
+2026-04-11,Final,Open Capfinances Rouen Métropole,Dominika Salkova,Yasmine Mansouri
+2026-04-11,Final,Open Capfinances Rouen Métropole,Momoko Kobori,Veronika Podrez
+2026-04-11,Final,Open Capfinances Rouen Métropole,Elvina Kalieva,Astrid Lew Yan Foon
+2026-04-11,Final,Open Capfinances Rouen Métropole,Ekaterina Kazionova,Selena Janicijevic
 2026-04-11,Final,Open Capfinances Rouen Métropole,Alice Robbe,Harmony Tan
 2026-04-11,Final,Open Capfinances Rouen Métropole,Iryna Shymanovich,Diana Martynov
 2026-04-11,Final,Open Capfinances Rouen Métropole,Wang Xinyu,Manon Leonard
@@ -47,26 +47,43 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-11,Final,Open Capfinances Rouen Métropole,Maria Timofeeva,Yara Bartashevich
 2026-04-11,Final,Open Capfinances Rouen Métropole,Oceane Babel,Jessica Pieri
 2026-04-11,Final,Open Capfinances Rouen Métropole,Tiphanie Lemaitre,Chloe Paquet
-2026-04-11,Live,Porsche Tennis Grand Prix,Zeynep Sonmez,Victoria Pohle
-2026-04-11,15:25,Porsche Tennis Grand Prix,Gabriela Knutson,Carole Monnet
+2026-04-11,Final,Porsche Tennis Grand Prix,Gabriela Knutson,Carole Monnet
+2026-04-11,Final,Porsche Tennis Grand Prix,Zeynep Sonmez,Victoria Pohle
 2026-04-11,Final,Porsche Tennis Grand Prix,Amandine Hesse,Viktoriya Tomova
 2026-04-11,Final,Porsche Tennis Grand Prix,Jule Niemeier,Anna-Lena Friedsam
 2026-04-11,Final,Porsche Tennis Grand Prix,Victoria Jimenez Kasintseva,Vera Zvonareva
 2026-04-11,Final,Porsche Tennis Grand Prix,Alycia Parks,Eva Bennemann
 2026-04-11,Final,Porsche Tennis Grand Prix,Oceane Dodin,Kathinka von Deichmann
 2026-04-11,Final,Porsche Tennis Grand Prix,Aliaksandra Sasnovich,Julia Stusek
-2026-04-11,15:30,Upper Austria Ladies Linz,Anastasia Potapova,Donna Vekic
 2026-04-11,Final,Upper Austria Ladies Linz,Mirra Andreeva,Elena-Gabriela Ruse
+2026-04-11,Final,Upper Austria Ladies Linz,Anastasia Potapova,Donna Vekic
 2026-04-12,09:00,BMW Open by Bitpanda,Marc-Andrea Huesler,Marko Topo
 2026-04-12,09:00,BMW Open by Bitpanda,Vitaliy Sachko,Max Hans Rehberg
+2026-04-12,10:30,BMW Open by Bitpanda,Emilio Nava,Alex Molcan
 2026-04-12,10:30,BMW Open by Bitpanda,Diego Dedura,Sumit Nagal
 2026-04-12,10:15,Barcelona Open Banc Sabadell,Ethan Quinn,Daniel Merida
 2026-04-12,10:15,Barcelona Open Banc Sabadell,Otto Virtanen,Alexandre Muller
 2026-04-12,10:15,Barcelona Open Banc Sabadell,Juan Manuel Cerundolo,Jesper de Jong
+2026-04-12,11:45,Barcelona Open Banc Sabadell,Sebastian Ofner,Patrick Kypson
+2026-04-12,11:45,Barcelona Open Banc Sabadell,Hamad Medjedovic,Quentin Halys
 2026-04-12,11:45,Barcelona Open Banc Sabadell,Marco Trungelliti,Pedro Martinez
-2026-04-12,Final,Rolex Monte-Carlo Masters,Carlos Alcaraz,Jannik Sinner
-2026-04-12,Final,Grand Prix Open Villa de Madrid by Silverway,Lisa Pigato,Marina Bassols Ribera
+2026-04-12,13:00,Rolex Monte-Carlo Masters,Carlos Alcaraz,Jannik Sinner
+2026-04-12,09:00,Grand Prix Open Villa de Madrid by Silverway,Lisa Pigato,Marina Bassols Ribera
+2026-04-12,09:30,Oeiras Jamor Ladies Open,Lea Boskovic,Mia Ristic
+2026-04-12,09:30,Oeiras Jamor Ladies Open,Carol Young Suh Lee,Gabriela Agra Amorim
+2026-04-12,09:30,Oeiras Jamor Ladies Open,Anouck Vrancken Peeters,Caroline Werner
+2026-04-12,10:30,Oeiras Jamor Ladies Open,Elena Ruxandra Bertea,Alisa Oktiabreva
+2026-04-12,10:30,Oeiras Jamor Ladies Open,Ekaterine Gorgodze,Angelina Voloshchuk
+2026-04-12,10:30,Oeiras Jamor Ladies Open,Jil Teichmann,Amarissa Toth
+2026-04-12,12:00,Oeiras Jamor Ladies Open,Barbora Palicova,Gabriela Lee
+2026-04-12,12:00,Oeiras Jamor Ladies Open,Analu Freitas,Tessa Johanna Brockmann
 2026-04-12,09:00,Open Capfinances Rouen Métropole,Maria Timofeeva,Chloe Paquet
 2026-04-12,09:00,Open Capfinances Rouen Métropole,Alina Charaeva,Jessica Pieri
+2026-04-12,10:30,Open Capfinances Rouen Métropole,Iryna Shymanovich,Ekaterina Kazionova
 2026-04-12,10:30,Open Capfinances Rouen Métropole,Wang Xinyu,Harmony Tan
+2026-04-12,12:00,Open Capfinances Rouen Métropole,Dominika Salkova,Veronika Podrez
+2026-04-12,09:00,Porsche Tennis Grand Prix,Alycia Parks,Viktoriya Tomova
 2026-04-12,09:00,Porsche Tennis Grand Prix,Aliaksandra Sasnovich,Oceane Dodin
+2026-04-12,11:00,Porsche Tennis Grand Prix,Zeynep Sonmez,Anna-Lena Friedsam
+2026-04-12,11:00,Porsche Tennis Grand Prix,Vera Zvonareva,Gabriela Knutson
+2026-04-12,12:00,Upper Austria Ladies Linz,Mirra Andreeva,Anastasia Potapova
