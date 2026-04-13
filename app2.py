@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 import json
 import requests
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 import pytz
 import re
 
@@ -19,6 +19,8 @@ if ROOT_DIR not in sys.path:
 # ============================================================
 # Remaining imports for your app logic
 # ============================================================
+from mlb.helpers import load_mlb_raw_data, get_today_schedule, get_player_stats 
+
 from shared.utils import (
     get_central_today, get_league_today, hit_rate_threshold,
     trim_df_to_recent_82, dedupe_columns, strip_display_ids,
@@ -61,10 +63,21 @@ st.set_page_config(
     layout="wide"
 )
 
+st.html("""
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-DG3DDELFYK"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-DG3DDELFYK');
+</script>
+""")
+
 ############################################################
 # SPORT SELECTION
 ############################################################
-sport_choice = st.sidebar.selectbox("Select Sport", ["NBA", "NHL", "Table Tennis", "Tennis"]) #, "NFL", "NHL"])
+sport_choice = st.sidebar.selectbox("Select Sport", ["MLB", "NBA", "NHL", "Table Tennis", "Tennis"]) #, "NFL", "NHL"])
 
 nba_today = get_league_today()
 nhl_date = get_league_today()
@@ -72,7 +85,10 @@ central_today = get_central_today()
 central_dt = datetime.strptime(central_today, "%Y-%m-%d")
 
 # Determine the title and date based on sport
-if sport_choice == "NBA":
+if sport_choice == "MLB":
+    hero_title = "MLB — Player Analyzer"
+    hero_date = f"MLB date: {central_dt.strftime('%b %d')} (rolls over at 3:00 AM CT)"
+elif sport_choice == "NBA":
     hero_title = "NBA — Player Hit Rates"
     hero_date = f"NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)"
 elif sport_choice == "NHL":
@@ -268,9 +284,237 @@ st.sidebar.image("assets/logo.png", width=170)
 
 
 ############################################################
+# ===== MLB SECTION =====
+############################################################
+if sport_choice == "MLB":
+
+    # --- Load MLB data ---
+    try:
+        box_df, schedule_df = load_mlb_raw_data()
+
+    except Exception as e:
+        st.error(f"Could not load MLB data: {e}")
+        box_df = pd.DataFrame()
+        schedule_df = pd.DataFrame()
+
+    stat_vs_choice = "Team"  # default fallback
+
+    # --- Player Type ---
+    player_type_choice = st.sidebar.radio(
+        "Player Type",
+        ["Batters", "Pitchers"],
+        key="mlb_player_type",
+        horizontal=True
+    )
+
+    # --- Sidebar Form ---
+    with st.sidebar.form(key="mlb_form"):
+
+        # --- Batters only options ---
+        if player_type_choice == "Batters":
+            stat_vs_choice = st.radio(
+                "Show Stats Vs",
+                ["Team", "Pitcher"],
+                horizontal=True
+            )
+
+        # --- Performance Window ---
+        performance_window = st.radio(
+            "Performance Window",
+            ["L5", "L10", "L30", "ALL"],
+            horizontal=True, index=1
+        )
+
+        # --- Override ---
+        all_opponents = st.checkbox(
+            "Show Stats Vs All Opponents",
+            value=False
+        )
+
+        mlb_filter_today = st.checkbox("View Today's Games", value=False)
+
+        submit_btn = st.form_submit_button("Calculate")
+
+    sidebar_footer()
+
+    if submit_btn:
+
+        if mlb_filter_today:
+            games_to_show = get_today_schedule(schedule_df)
+        else:
+            games_to_show = schedule_df
+
+        if games_to_show.empty:
+            st.warning("No games found in schedule.")
+        else:
+
+            rows = []
+
+            # --- LOOP OVER GAMES AND PLAYERS ---
+            for _, game in games_to_show.iterrows():
+                home_team = game["home_team"]
+                away_team = game["away_team"]
+                home_pitcher = game["home_pitcher"]
+                away_pitcher = game["away_pitcher"]
+
+                # --- Filter home players ---
+                home_players = box_df[box_df["team"] == home_team]["player"].unique()
+
+                for player in home_players:
+                    player_df = box_df[box_df["player"] == player]
+                    if player_df.empty:
+                        continue
+
+                    is_pitcher = player_df["is_pitcher"].iloc[0]
+                    if player_type_choice == "Batters" and is_pitcher:
+                        continue
+                    if player_type_choice == "Pitchers" and not is_pitcher:
+                        continue
+
+                    stats = get_player_stats(
+                        box_df=box_df,
+                        player=player,
+                        window=performance_window,
+                        opponent=None if all_opponents else (
+                            away_team if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
+                        ),
+                        pitcher=None if all_opponents else (
+                            away_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
+                        ),
+                        all_opponents=all_opponents
+                    )
+
+                    if not stats:
+                        continue
+
+                    rows.append({
+                        "DateUTC": game["date"],  # keep UTC
+                        "Player": player,
+                        "Team": home_team,
+                        "Opp": away_team,
+                        "Pitcher": away_pitcher,
+                        **stats
+                    })
+
+                # --- Filter away players ---
+                away_players = box_df[box_df["team"] == away_team]["player"].unique()
+
+                for player in away_players:
+                    player_df = box_df[box_df["player"] == player]
+                    if player_df.empty:
+                        continue
+
+                    is_pitcher = player_df["is_pitcher"].iloc[0]
+                    if player_type_choice == "Batters" and is_pitcher:
+                        continue
+                    if player_type_choice == "Pitchers" and not is_pitcher:
+                        continue
+
+                    stats = get_player_stats(
+                        box_df=box_df,
+                        player=player,
+                        window=performance_window,
+                        opponent=None if all_opponents else (
+                            home_team if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
+                        ),
+                        pitcher=None if all_opponents else (
+                            home_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
+                        ),
+                        all_opponents=all_opponents
+                    )
+
+                    if not stats:
+                        continue
+
+                    rows.append({
+                        "DateUTC": game["date"],  # keep UTC
+                        "Player": player,
+                        "Team": away_team,
+                        "Opp": home_team,
+                        "Pitcher": home_pitcher,
+                        **stats
+                    })
+
+            # -------------------------
+            # --- NOW CREATE DATAFRAME ---
+            # -------------------------
+            df = pd.DataFrame(rows)
+
+            if df.empty:
+                st.warning("No players found.")
+            else:
+                # Ensure DateUTC is timezone-aware UTC
+                df["DateUTC"] = pd.to_datetime(df["DateUTC"], utc=True)
+
+                # Convert to Chicago time for display only
+                local_tz = pytz.timezone("America/Chicago")
+                df["DateLocal"] = df["DateUTC"].dt.tz_convert(local_tz)
+                df["Date / Time"] = df["DateLocal"].dt.strftime("%Y-%m-%d %H:%M")
+
+                TEAM_TRICODES = {
+                    "Los Angeles Dodgers": "LAD",
+                    "Toronto Blue Jays": "TOR",
+                    "New York Yankees": "NYY",
+                    "Baltimore Orioles": "BAL",
+                    "Boston Red Sox": "BOS",
+                    "Chicago White Sox": "CWS",
+                    "Chicago Cubs": "CHC",
+                    "San Francisco Giants": "SF",
+                    "St. Louis Cardinals": "STL",
+                    "Houston Astros": "HOU",
+                    "Atlanta Braves": "ATL",
+                    "Philadelphia Phillies": "PHI",
+                    "Washington Nationals": "WSH",
+                    "Arizona Diamondbacks": "ARI",
+                    "Miami Marlins": "MIA",
+                    "New York Mets": "NYM",
+                    "Cincinnati Reds": "CIN",
+                    "Pittsburgh Pirates": "PIT",
+                    "Milwaukee Brewers": "MIL",
+                    "Minnesota Twins": "MIN",
+                    "Kansas City Royals": "KC",
+                    "Tampa Bay Rays": "TB",
+                    "Athletics": "ATH",
+                    "Los Angeles Angels": "LAA",
+                    "Seattle Mariners": "SEA",
+                    "Texas Rangers": "TEX",
+                    "Colorado Rockies": "COL",
+                    "San Diego Padres": "SD",
+                    "Detroit Tigers": "DET",
+                    "Cleveland Guardians": "CLE",
+                }
+
+                df["Team"] = df["Team"].map(TEAM_TRICODES).fillna(df["Team"])
+                df["Opp"] = df["Opp"].map(TEAM_TRICODES).fillna(df["Opp"])
+                df.rename(columns={"games": "Gms"}, inplace=True)
+
+                # -------------------------
+                # --- Display Table ---
+                # -------------------------
+                if player_type_choice == "Pitchers":
+                    display_cols = [
+                        "Date / Time", "Player", "Team", "Opp", "Pitcher",
+                        "Gms", "IP", "K", "Kp9", "ERA", "WHIP", "small_sample"
+                    ]
+                else:  # Batters
+                    display_cols = [
+                        "Date / Time", "Player", "Team", "Opp", "Pitcher",
+                        "Gms", "AB", "PA", "H", "HR", "HRR", "AVG",
+                        "HR_rate", "HRRpg", "K_rate", "small_sample"
+                    ]
+
+                df_to_display = df[display_cols]
+
+                sort_col = "Kp9" if player_type_choice == "Pitchers" else "HRRpg"
+                st.dataframe(
+                    df_to_display.sort_values(sort_col, ascending=False),
+                    hide_index=True
+                )
+
+############################################################
 # ===== NBA SECTION (Multi-sport compatible) =====
 ############################################################
-if sport_choice == "NBA":
+elif sport_choice == "NBA":
 
     #st.subheader("NBA — Player Hit Rate Analysis")
     #nba_today = get_league_today()
@@ -966,6 +1210,12 @@ if sport_choice == "Table Tennis":
                 "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
                 "P1 Sweeps": stats.get("sweeps_a", 0),
                 "P2 Sweeps": stats.get("sweeps_b", 0),
+                "P1 SS":    round(stats.get("a_ss_score", 0) * 100, 1),
+                "P1 Rec%":  round(stats.get("a_recovery_pct", 0) * 100, 1),
+                "P1 Rec#":  stats.get("a_recovery_n", 0),
+                "P2 SS":    round(stats.get("b_ss_score", 0) * 100, 1),
+                "P2 Rec%":  round(stats.get("b_recovery_pct", 0) * 100, 1),
+                "P2 Rec#":  stats.get("b_recovery_n", 0),
                 "3Set %":  round(stats.get("pct_3sets", 0) * 100, 1),
                 "4Set %":  round(stats.get("pct_4sets", 0) * 100, 1),
                 "5Set %":  round(stats.get("pct_5sets", 0) * 100, 1),
@@ -1006,6 +1256,12 @@ if sport_choice == "Table Tennis":
             "Non Sweep %": "NS%",
             "P1 Sweeps": "P1 S",
             "P2 Sweeps": "P2 S",
+            "P1 SS": "P1 SlowS",
+            "P1 Rec%": "P1 Rec%",
+            "P1 Rec#": "P1 Rec#",
+            "P2 SS": "P2 SlowS",
+            "P2 Rec%": "P2 Rec%",
+            "P2 Rec#": "P2 Rec#",
             "3Set %": "3Set%",
             "4Set %": "4Set%",
             "5Set %": "5Set%",
