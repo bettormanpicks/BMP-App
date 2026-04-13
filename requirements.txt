@@ -6,3 +6,4 @@ beautifulsoup4
 lxml
 unidecode
 pytz
+streamlit-analytics2
