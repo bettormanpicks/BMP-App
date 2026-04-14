@@ -8,18 +8,18 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-14,Final,BMW Open by Bitpanda,Marin Cilic,Daniel Altmaier
 2026-04-14,Final,BMW Open by Bitpanda,Justin Engel,Vit Kopriva
 2026-04-14,Final,BMW Open by Bitpanda,Alejandro Tabilo,Joao Fonseca
-2026-04-14,Live,Barcelona Open Banc Sabadell,Arthur Fils,Terence Atmane
 2026-04-14,Final,Barcelona Open Banc Sabadell,Carlos Alcaraz,Otto Virtanen
 2026-04-14,Final,Barcelona Open Banc Sabadell,Martin Landaluce,Lorenzo Musetti
 2026-04-14,Final,Barcelona Open Banc Sabadell,Alex de Minaur,Sebastian Ofner
 2026-04-14,Final,Barcelona Open Banc Sabadell,Camilo Ugo Carabelli,Karen Khachanov
 2026-04-14,Final,Barcelona Open Banc Sabadell,Mariano Navone,Andrey Rublev
+2026-04-14,Final,Barcelona Open Banc Sabadell,Arthur Fils,Terence Atmane
 2026-04-14,Final,Barcelona Open Banc Sabadell,Brandon Nakashima,Juan Manuel Cerundolo
 2026-04-14,Final,Barcelona Open Banc Sabadell,Tomas Machac,Sebastian Baez
 2026-04-14,Final,Barcelona Open Banc Sabadell,Pedro Martinez,Lorenzo Sonego
-2026-04-14,Live,Oeiras Jamor Ladies Open,Katarzyna Kawa,Simona Waltert
 2026-04-14,Final,Oeiras Jamor Ladies Open,Beatriz Haddad Maia,Francisca Jorge
 2026-04-14,Final,Oeiras Jamor Ladies Open,Moyuka Uchijima,Carol Young Suh Lee
+2026-04-14,Final,Oeiras Jamor Ladies Open,Katarzyna Kawa,Simona Waltert
 2026-04-14,Final,Oeiras Jamor Ladies Open,Veronika Erjavec,Milana Ivantsiv
 2026-04-14,Final,Oeiras Jamor Ladies Open,Darja Semenistaja,Leolia Jeanjean
 2026-04-14,Final,Oeiras Jamor Ladies Open,Rebeka Masarova,Elena Ruxandra Bertea
@@ -28,27 +28,25 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-14,Final,Oeiras Jamor Ladies Open,Whitney Osuigwe,Darja Vidmanova
 2026-04-14,Final,Oeiras Jamor Ladies Open,Greet Minnen,Anouck Vrancken Peeters
 2026-04-14,Final,Oeiras Jamor Ladies Open,Anouk Koevermans,Matilde Jorge
-2026-04-14,Live,Open Capfinances Rouen Métropole,Hailey Baptiste,Jessika Ponchet
 2026-04-14,Final,Open Capfinances Rouen Métropole,Marta Kostyuk,Diane Parry
 2026-04-14,Final,Open Capfinances Rouen Métropole,Tiantsoa Rakotomanga Rajaonah,Jaqueline Cristian
+2026-04-14,Final,Open Capfinances Rouen Métropole,Hailey Baptiste,Jessika Ponchet
 2026-04-14,Final,Open Capfinances Rouen Métropole,Elisabetta Cocciaretto,Alina Charaeva
 2026-04-14,Final,Open Capfinances Rouen Métropole,Chloe Paquet,Wang Xinyu
 2026-04-14,Final,Open Capfinances Rouen Métropole,Catherine McNally,Katie Volynets
 2026-04-14,Final,Open Capfinances Rouen Métropole,Iryna Shymanovich,Linda Fruhvirtova
 2026-04-14,Final,Open Capfinances Rouen Métropole,Anna Blinkova,Dominika Salkova
-2026-04-14,Live,Porsche Tennis Grand Prix,Eva Lys,Paula Badosa
-2026-04-14,19:10,Porsche Tennis Grand Prix,Tamara Korpatsch,Diana Shnaider
 2026-04-14,Final,Porsche Tennis Grand Prix,Karolina Muchova,Aliaksandra Sasnovich
 2026-04-14,Final,Porsche Tennis Grand Prix,Ekaterina Alexandrova,Gabriela Knutson
+2026-04-14,Final,Porsche Tennis Grand Prix,Tamara Korpatsch,Diana Shnaider
+2026-04-14,Final,Porsche Tennis Grand Prix,Eva Lys,Paula Badosa
 2026-04-14,Final,Porsche Tennis Grand Prix,Alexandra Eala,Leylah Fernandez
 2026-04-14,Final,Porsche Tennis Grand Prix,Elise Mertens,Ella Seidel
-2026-04-15,TBD,BMW Open by Bitpanda,Alexander Blockx,Ben Shelton
-2026-04-15,TBD,BMW Open by Bitpanda,Arthur Rinderknech,Joao Fonseca
-2026-04-15,TBD,BMW Open by Bitpanda,Daniel Altmaier,Alex Molcan
-2026-04-15,TBD,BMW Open by Bitpanda,Botic Van De Zandschulp,Francisco Cerundolo
-2026-04-15,TBD,BMW Open by Bitpanda,Alexander Zverev,Gabriel Diallo
-2026-04-15,TBD,BMW Open by Bitpanda,Vit Kopriva,Luciano Darderi
-2026-04-15,TBD,BMW Open by Bitpanda,Flavio Cobolli,Zizou Bergs
+2026-04-15,09:00,BMW Open by Bitpanda,Arthur Rinderknech,Joao Fonseca
+2026-04-15,10:00,BMW Open by Bitpanda,Fabian Marozsan,Stefanos Tsitsipas
+2026-04-15,11:30,BMW Open by Bitpanda,Alexander Blockx,Ben Shelton
+2026-04-15,13:00,BMW Open by Bitpanda,Flavio Cobolli,Zizou Bergs
+2026-04-15,14:30,BMW Open by Bitpanda,Vit Kopriva,Luciano Darderi
 2026-04-15,09:00,Barcelona Open Banc Sabadell,Nuno Borges,Tomas Martin Etcheverry
 2026-04-15,10:30,Barcelona Open Banc Sabadell,Alex de Minaur,Hamad Medjedovic
 2026-04-15,14:00,Barcelona Open Banc Sabadell,Rafael Jodar,Camilo Ugo Carabelli
@@ -56,7 +54,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-15,09:30,Oeiras Jamor Ladies Open,Veronika Erjavec,Rebecca Sramkova
 2026-04-15,10:00,Oeiras Jamor Ladies Open,Carol Young Suh Lee,Suzan Lamens
 2026-04-15,10:00,Oeiras Jamor Ladies Open,Anouk Koevermans,Robin Montgomery
-2026-04-15,12:00,Oeiras Jamor Ladies Open,Greet Minnen,Petra Marcinko
+2026-04-15,13:30,Oeiras Jamor Ladies Open,Greet Minnen,Petra Marcinko
 2026-04-15,09:30,Open Capfinances Rouen Métropole,Harmony Tan,Anna Bondar
 2026-04-15,09:30,Open Capfinances Rouen Métropole,Oleksandra Oliynykova,Lilli Tagger
 2026-04-15,11:00,Open Capfinances Rouen Métropole,Kamilla Rakhimova,Ann Li
@@ -69,3 +67,4 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-15,13:00,Porsche Tennis Grand Prix,Zhang Shuai,Linda Noskova
 2026-04-15,15:00,Porsche Tennis Grand Prix,Jelena Ostapenko,Mirra Andreeva
 2026-04-15,16:30,Porsche Tennis Grand Prix,Iga Swiatek,Laura Siegemund
+2026-04-15,18:00,Porsche Tennis Grand Prix,Eva Lys,Elina Svitolina
