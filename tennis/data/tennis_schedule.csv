@@ -1,7 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-04-14,09:00,BMW Open by Bitpanda,Alejandro Tabilo,Joao Fonseca
-2026-04-14,09:00,BMW Open by Bitpanda,Tallon Griekspoor,Denis Shapovalov
-2026-04-14,09:00,BMW Open by Bitpanda,Zhang Zhizhen,Luciano Darderi
+2026-04-14,Live,BMW Open by Bitpanda,Zhang Zhizhen,Luciano Darderi
+2026-04-14,Live,BMW Open by Bitpanda,Tallon Griekspoor,Denis Shapovalov
+2026-04-14,Live,BMW Open by Bitpanda,Alejandro Tabilo,Joao Fonseca
 2026-04-14,10:30,BMW Open by Bitpanda,Justin Engel,Vit Kopriva
 2026-04-14,10:30,BMW Open by Bitpanda,Flavio Cobolli,Diego Dedura
 2026-04-14,10:30,BMW Open by Bitpanda,Alexander Zverev,Miomir Kecmanovic
@@ -9,8 +9,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-14,12:00,BMW Open by Bitpanda,Zizou Bergs,Marko Topo
 2026-04-14,12:00,BMW Open by Bitpanda,Marin Cilic,Daniel Altmaier
 2026-04-14,13:30,BMW Open by Bitpanda,Fabian Marozsan,Stefanos Tsitsipas
-2026-04-14,09:00,Barcelona Open Banc Sabadell,Alex de Minaur,Sebastian Ofner
-2026-04-14,09:00,Barcelona Open Banc Sabadell,Pedro Martinez,Lorenzo Sonego
+2026-04-14,Live,Barcelona Open Banc Sabadell,Alex de Minaur,Sebastian Ofner
+2026-04-14,Live,Barcelona Open Banc Sabadell,Pedro Martinez,Lorenzo Sonego
 2026-04-14,10:30,Barcelona Open Banc Sabadell,Camilo Ugo Carabelli,Karen Khachanov
 2026-04-14,10:30,Barcelona Open Banc Sabadell,Martin Landaluce,Lorenzo Musetti
 2026-04-14,12:00,Barcelona Open Banc Sabadell,Tomas Machac,Sebastian Baez
@@ -18,9 +18,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-14,14:00,Barcelona Open Banc Sabadell,Carlos Alcaraz,Otto Virtanen
 2026-04-14,15:30,Barcelona Open Banc Sabadell,Arthur Fils,Terence Atmane
 2026-04-14,15:30,Barcelona Open Banc Sabadell,Mariano Navone,Andrey Rublev
-2026-04-14,09:30,Oeiras Jamor Ladies Open,Veronika Erjavec,Milana Ivantsiv
-2026-04-14,09:30,Oeiras Jamor Ladies Open,Anouk Koevermans,Matilde Jorge
-2026-04-14,09:30,Oeiras Jamor Ladies Open,Moyuka Uchijima,Carol Young Suh Lee
+2026-04-14,Live,Oeiras Jamor Ladies Open,Veronika Erjavec,Milana Ivantsiv
+2026-04-14,Live,Oeiras Jamor Ladies Open,Moyuka Uchijima,Carol Young Suh Lee
+2026-04-14,Live,Oeiras Jamor Ladies Open,Anouk Koevermans,Matilde Jorge
 2026-04-14,11:00,Oeiras Jamor Ladies Open,Whitney Osuigwe,Darja Vidmanova
 2026-04-14,11:00,Oeiras Jamor Ladies Open,Greet Minnen,Anouck Vrancken Peeters
 2026-04-14,12:00,Oeiras Jamor Ladies Open,Beatriz Haddad Maia,Francisca Jorge
@@ -29,8 +29,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-14,14:00,Oeiras Jamor Ladies Open,Maja Chwalinska,Kaitlin Quevedo
 2026-04-14,16:00,Oeiras Jamor Ladies Open,Katarzyna Kawa,Simona Waltert
 2026-04-14,16:00,Oeiras Jamor Ladies Open,Rebeka Masarova,Elena Ruxandra Bertea
-2026-04-14,09:30,Open Capfinances Rouen Métropole,Anna Blinkova,Dominika Salkova
-2026-04-14,09:30,Open Capfinances Rouen Métropole,Iryna Shymanovich,Linda Fruhvirtova
+2026-04-14,Live,Open Capfinances Rouen Métropole,Anna Blinkova,Dominika Salkova
+2026-04-14,Live,Open Capfinances Rouen Métropole,Iryna Shymanovich,Linda Fruhvirtova
 2026-04-14,11:00,Open Capfinances Rouen Métropole,Catherine McNally,Katie Volynets
 2026-04-14,11:00,Open Capfinances Rouen Métropole,Marta Kostyuk,Diane Parry
 2026-04-14,12:30,Open Capfinances Rouen Métropole,Chloe Paquet,Wang Xinyu
