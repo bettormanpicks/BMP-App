@@ -1337,19 +1337,27 @@ with streamlit_analytics.track():
 
             df_display = df.rename(columns=DISPLAY_NAMES)
 
-            # --- Apply stat filters ---
-            if selected_stats:
+            st.write("Before stat filters:", len(df_display))
+            st.write("Thresholds:", stat_thresholds)
+
+            if stat_thresholds:
+                mask = pd.Series(True, index=df_display.index)
+
                 for stat, threshold in stat_thresholds.items():
                     if stat in df_display.columns:
-                        df_display = df_display[df_display[stat] >= threshold]
+                        mask &= df_display[stat] >= threshold
+
+                df_display = df_display[mask]
 
                 if df_display.empty:
-                    st.info("No matches meet the selected stat filters.")
+                    st.warning("All rows filtered out — try lowering thresholds.")
                     st.stop()
+
+            st.write("After stat filters:", len(df_display))
 
             always_keep = ["Player 1", "Player 2", "Match Start", "Ms"]
 
-            display_cols = always_keep + selected_stats if selected_stats else df_display.columns.tolist()
+            display_cols = always_keep + [c for c in selected_stats if c in df_display.columns]
 
             pinned_cols = ["Player 1", "Player 2", "Match Start"]
 
