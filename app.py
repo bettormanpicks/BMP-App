@@ -1368,6 +1368,13 @@ with streamlit_analytics.track():
                 if c in display_cols
             }
 
+            st.dataframe(
+                df_display[display_cols].sort_values("Match Start"),
+                width="stretch",
+                hide_index=True,
+                column_config=col_config
+            )
+
 
     ############################################################
     # ===== Tennis Section =====
