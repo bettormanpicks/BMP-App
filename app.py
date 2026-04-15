@@ -1355,11 +1355,11 @@ with streamlit_analytics.track():
 
             st.write("After stat filters:", len(df_display))
 
-            always_keep = ["Player 1", "Player 2", "Match Start", "Ms"]
+            always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
 
             display_cols = always_keep + [c for c in selected_stats if c in df_display.columns]
 
-            pinned_cols = ["Player 1", "Player 2", "Match Start"]
+            pinned_cols = ["Match Start", "Player 1", "Player 2", "Ms"]
 
             # Only pin columns that actually exist in the current display
             col_config = {
