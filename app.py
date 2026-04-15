@@ -1133,7 +1133,7 @@ with streamlit_analytics.track():
         with st.sidebar.form("TT Filters"):
 
             recency_window = st.radio(
-                "Recency Window", ["L10", "L30", "L60", "ALL"], index=1
+                "Recency Window", ["L10", "L30", "L60", "ALL"], index=1, horizontal=True
             )
 
             min_matches = st.slider(
@@ -1143,6 +1143,59 @@ with streamlit_analytics.track():
                 step=5,
                 value=20
             )
+
+            # --- Stat Selection ---
+            stat_options = [
+                "P1 BB%",
+                "P1 BB#",
+                "P2 BB%",
+                "P2 BB#",
+                "1ALL%",
+                "P1 SR%",
+                "P2 SR%",
+                "P1 SR#",
+                "P2 SR#",
+                "NS%",
+                "P1 S",
+                "P2 S",
+                "P1 SlowS",
+                "P1 Rec%",
+                "P1 Rec#",
+                "P2 SlowS",
+                "P2 Rec%",
+                "P2 Rec#",
+                "3Set%",
+                "4Set%",
+                "5Set%",
+                "ATS",
+                "SS",
+                "ATP",
+                "PS",
+                "P1 W",
+                "P2 W",
+                "P1 W%",
+            ]
+
+            selected_stats = st.multiselect(
+                "Select Stats to Display / Filter",
+                stat_options
+            )
+
+            st.markdown("#### Min Thresholds (optional)")
+
+            stat_thresholds = {}
+
+            for stat in selected_stats:
+                col1, col2 = st.columns([2, 1])
+
+                col1.write(stat)
+                val = col2.text_input("", key=f"min_{stat}")
+
+                if val.strip() != "":
+                    try:
+                        stat_thresholds[stat] = float(val)
+                    except ValueError:
+                        pass  # ignore bad input
 
             calculate = st.form_submit_button("Calculate")
 
@@ -1280,12 +1333,21 @@ with streamlit_analytics.track():
 
             df_display = df.rename(columns=DISPLAY_NAMES)
 
-            # --- Display table ---
-            pinned_cols = ["Player 1", "Player 2", "Match Start"]
-            col_config = {c: st.column_config.Column(pinned="left") for c in pinned_cols}
+            # --- Apply stat filters ---
+            if selected_stats:
+                for stat, threshold in stat_thresholds.items():
+                    if stat in df_display.columns:
+                        df_display = df_display[df_display[stat] >= threshold]
+
+                if df_display.empty:
+                    st.info("No matches meet the selected stat filters.")
+                    st.stop()
+
+            base_cols = ["Player 1", "Player 2", "Match Start"]
+            display_cols = base_cols + selected_stats if selected_stats else df_display.columns.tolist()
 
             st.dataframe(
-                df_display.sort_values("Match Start"),
+                df_display[display_cols].sort_values("Match Start"),
                 width="stretch",
                 hide_index=True,
                 column_config=col_config
