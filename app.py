@@ -1189,7 +1189,11 @@ with streamlit_analytics.track():
                 col1, col2 = st.columns([2, 1])
 
                 col1.write(stat)
-                val = col2.text_input("", key=f"min_{stat}")
+                val = col2.text_input(
+                    "min_input",
+                    key=f"min_{stat}",
+                    label_visibility="collapsed"
+                )
 
                 if val.strip() != "":
                     try:
@@ -1343,15 +1347,18 @@ with streamlit_analytics.track():
                     st.info("No matches meet the selected stat filters.")
                     st.stop()
 
-            base_cols = ["Player 1", "Player 2", "Match Start"]
-            display_cols = base_cols + selected_stats if selected_stats else df_display.columns.tolist()
+            always_keep = ["Player 1", "Player 2", "Match Start", "Ms"]
 
-            st.dataframe(
-                df_display[display_cols].sort_values("Match Start"),
-                width="stretch",
-                hide_index=True,
-                column_config=col_config
-            )
+            display_cols = always_keep + selected_stats if selected_stats else df_display.columns.tolist()
+
+            pinned_cols = ["Player 1", "Player 2", "Match Start"]
+
+            # Only pin columns that actually exist in the current display
+            col_config = {
+                c: st.column_config.Column(pinned="left")
+                for c in pinned_cols
+                if c in display_cols
+            }
 
 
     ############################################################
