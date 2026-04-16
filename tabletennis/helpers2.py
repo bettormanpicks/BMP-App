@@ -209,7 +209,7 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
       a_sr_pct, a_sr_n
       b_sr_pct, b_sr_n
 
-    window = "ALL" | "L10" | "L30" | "L60"
+    window = "ALL" | "L10" | "L20" | "L30" | "L60"
     """
     key = tuple(sorted([player_a, player_b]))
     if key not in h2h_index:
@@ -220,6 +220,8 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     # Apply recency window (list is newest-first)
     if window == "L10":
         matches = matches[:10]
+    elif window == "L20":
+        matches = matches[:20]
     elif window == "L30":
         matches = matches[:30]
     elif window == "L60":
@@ -330,6 +332,48 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     pct_4sets = sum(1 for m in matches if len(m["parsed_sets"]) == 4) / total
     pct_5sets = sum(1 for m in matches if len(m["parsed_sets"]) == 5) / total
 
+    # --------------------------------------------------
+    # Slow starter stats
+    # S1W%: set 1 win rate vs this opponent
+    # Recovery%: win rate when losing set 1 (lost s1, won match)
+    # --------------------------------------------------
+    def player_slow_starter(player_name):
+        """
+        Returns:
+          s1w_pct      - % of matches where player won set 1
+          recovery_pct - % of set-1-loss matches where player still won
+          recovery_n   - denominator for recovery_pct (times player lost s1)
+        """
+        s1_wins = sum(
+            1 for m in matches
+            if (m["player1"] == player_name and m["s1_winner"] == 1) or
+               (m["player2"] == player_name and m["s1_winner"] == 2)
+        )
+        s1w_pct = s1_wins / total
+
+        lost_s1 = [
+            m for m in matches
+            if (m["player1"] == player_name and m["s1_winner"] == 2) or
+               (m["player2"] == player_name and m["s1_winner"] == 1)
+        ]
+        recovery_n = len(lost_s1)
+
+        if recovery_n == 0:
+            return s1w_pct, 0, 0
+
+        recovered = sum(1 for m in lost_s1 if m["winner"] == player_name)
+        recovery_pct = recovered / recovery_n
+
+        return s1w_pct, recovery_pct, recovery_n
+
+    a_s1w_pct, a_recovery_pct, a_recovery_n = player_slow_starter(player_a)
+    b_s1w_pct, b_recovery_pct, b_recovery_n = player_slow_starter(player_b)
+
+    # Slow starter score = P(loses s1) × P(wins match | lost s1)
+    # Represents the probability of the specific scenario: lose s1, win match
+    a_ss_score = (1 - a_s1w_pct) * a_recovery_pct
+    b_ss_score = (1 - b_s1w_pct) * b_recovery_pct
+
     return {
         "matches":        total,
         "a_wins":         a_wins,
@@ -358,6 +402,15 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         "pct_3sets":      pct_3sets,
         "pct_4sets":      pct_4sets,
         "pct_5sets":      pct_5sets,
+        # Slow starter
+        "a_s1w_pct":      a_s1w_pct,
+        "a_recovery_pct": a_recovery_pct,
+        "a_recovery_n":   a_recovery_n,
+        "a_ss_score":     a_ss_score,
+        "b_s1w_pct":      b_s1w_pct,
+        "b_recovery_pct": b_recovery_pct,
+        "b_recovery_n":   b_recovery_n,
+        "b_ss_score":     b_ss_score,
     }
 
 
@@ -389,4 +442,13 @@ def _empty_stats():
         "pct_3sets":      0,
         "pct_4sets":      0,
         "pct_5sets":      0,
+        # Slow starter
+        "a_s1w_pct":      0,
+        "a_recovery_pct": 0,
+        "a_recovery_n":   0,
+        "a_ss_score":     0,
+        "b_s1w_pct":      0,
+        "b_recovery_pct": 0,
+        "b_recovery_n":   0,
+        "b_ss_score":     0,
     }
