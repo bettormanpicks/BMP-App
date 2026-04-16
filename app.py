@@ -1180,7 +1180,7 @@ with streamlit_analytics.track():
             selected_stats = st.multiselect(
                 "Advanced Filters",
                 stat_options,
-                key="Advanced Filters"
+                key="stat_selector"
             )
 
             st.markdown("Filter Thresholds (optional)")
@@ -1213,8 +1213,8 @@ with streamlit_analytics.track():
 
         if reset:
             # Remove stat selection
-            if "Advanced Filters" in st.session_state:
-                del st.session_state["Advanced Filters"]
+            if "stat_selector" in st.session_state:
+                del st.session_state["stat_selector"]
 
             # Clear all threshold inputs
             for stat in stat_options:
@@ -1363,6 +1363,9 @@ with streamlit_analytics.track():
             }
 
             df_display = df.rename(columns=DISPLAY_NAMES)
+
+            for stat in stat_thresholds:
+                st.write(stat, df_display[stat].dtype)
 
             if stat_thresholds:
                 mask = pd.Series(True, index=df_display.index)
