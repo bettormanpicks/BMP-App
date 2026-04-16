@@ -1232,14 +1232,13 @@ with streamlit_analytics.track():
         else:
             # --- Load data inside Calculate (cached, safe, on-demand) ---
             with st.spinner("Loading and processing data..."):
-                if league == "All":
-                    schedule, matchlogs, h2h, h2h_index = load_tt_all_leagues()
-                else:
-                    schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
+                schedule, matchlogs, h2h, h2h_index = (
+                    load_tt_all_leagues() if league == "All" else load_tt_raw_data(league)
+                )
 
-                # Break link to cached objects so mutations are safe
                 schedule = schedule.copy()
-                matchlogs = matchlogs.copy()
+                if matchlogs is not None:
+                    matchlogs = matchlogs.copy()
 
             # --- Parse CSV dates and drop bad rows ---
             schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
