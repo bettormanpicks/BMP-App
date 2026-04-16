@@ -1279,7 +1279,6 @@ with streamlit_analytics.track():
 
                 rows.append({
                     "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
-                    "League": row.get("league", ""),
                     "Player 1": p1_display,
                     "Player 2": p2_display,
                     "Matches": stats["matches"],
@@ -1313,6 +1312,11 @@ with streamlit_analytics.track():
                     "Win % (P1)": round(stats["win_pct"] * 100, 1),
                     "Last Played": stats["last_played"]
                 })
+
+                if league == "All":
+                    row_dict["League"] = row["league"]
+
+                rows.append(row_dict)
 
             df = pd.DataFrame(rows)
 
