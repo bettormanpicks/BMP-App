@@ -76,7 +76,7 @@ def normalize_name(name):
 # -------------------------
 # Load Raw CSVs
 # -------------------------
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False, max_entries=4)
 def load_tt_raw_data(league):
     """
     Loads raw Table Tennis datasets and applies minimal cleaning.
@@ -141,7 +141,7 @@ def load_tt_raw_data(league):
 # -------------------------
 # Load all league data
 # -------------------------
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False, max_entries=1)
 def load_tt_all_leagues():
     all_schedules = []
     all_h2h_indexes = []
