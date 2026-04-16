@@ -1233,7 +1233,8 @@ with streamlit_analytics.track():
             # --- Load data inside Calculate (cached, safe, on-demand) ---
             with st.spinner("Loading and processing data..."):
                 if league == "All":
-                    schedule, matchlogs, h2h, h2h_index = load_all_tt_raw_data()
+                    schedule, matchlogs = load_all_tt_raw_data()
+                    h2h_index = build_h2h_index(matchlogs)  # 👈 build OUTSIDE cache
                 else:
                     schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
 
