@@ -1277,7 +1277,7 @@ with streamlit_analytics.track():
                         "SS": 0
                     }
 
-                rows.append({
+                row_dict = {
                     "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
                     "Player 1": p1_display,
                     "Player 2": p2_display,
@@ -1311,7 +1311,7 @@ with streamlit_analytics.track():
                     "P2 Wins": stats["b_wins"],
                     "Win % (P1)": round(stats["win_pct"] * 100, 1),
                     "Last Played": stats["last_played"]
-                })
+                }
 
                 if league == "All":
                     row_dict["League"] = row["league"]
