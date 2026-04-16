@@ -1256,7 +1256,6 @@ with streamlit_analytics.track():
             # --- Filter upcoming matches ---
             grace_period = pd.Timedelta(minutes=20)
             upcoming = schedule[schedule["date"] + grace_period >= now_ct]
-            upcoming = upcoming.head(50)
 
             rows = []
             for _, row in upcoming.iterrows():
@@ -1366,7 +1365,10 @@ with streamlit_analytics.track():
             df_display = df.rename(columns=DISPLAY_NAMES)
 
             for stat in stat_thresholds:
-                st.write(stat, df_display[stat].dtype)
+                if stat in df_display.columns:
+                    st.write(stat, df_display[stat].dtype)
+                else:
+                    st.write(f"Missing column: {stat}")
 
             if stat_thresholds:
                 mask = pd.Series(True, index=df_display.index)
@@ -1402,10 +1404,6 @@ with streamlit_analytics.track():
                     if not (league != "All" and c == "League")
                 ]                
                 st.caption("Showing all columns")
-
-                # remove League unless in All mode
-                if league != "All" and "League" in display_cols:
-                    display_cols.remove("League")
 
             pinned_cols = ["League", "Match Start", "Player 1", "Player 2", "Ms"]
 
