@@ -1180,7 +1180,7 @@ with streamlit_analytics.track():
             selected_stats = st.multiselect(
                 "Advanced Filters",
                 stat_options,
-                key="Advanced Filters"
+                key="tt_advanced_filters"
             )
 
             st.markdown("Filter Thresholds (optional)")
@@ -1212,12 +1212,14 @@ with streamlit_analytics.track():
                 reset = st.form_submit_button("Reset")
 
         if reset:
-            # Remove stat selection
-            if "Advanced Filters" in st.session_state:
-                del st.session_state["Advanced Filters"]
+            # Capture what was selected BEFORE clearing, so we can delete their threshold keys
+            prev_selected = st.session_state.get("tt_advanced_filters", [])
 
-            # Clear all threshold inputs
-            for stat in stat_options:
+            if "tt_advanced_filters" in st.session_state:
+                del st.session_state["tt_advanced_filters"]
+
+            # Clear threshold inputs for all previously selected stats
+            for stat in prev_selected:
                 key = f"min_{stat}"
                 if key in st.session_state:
                     del st.session_state[key]
@@ -1234,7 +1236,8 @@ with streamlit_analytics.track():
             with st.spinner("Loading and processing data..."):
                 if league == "All":
                     schedule, matchlogs = load_all_tt_raw_data()
-                    h2h_index = build_h2h_index(matchlogs)  # 👈 build OUTSIDE cache
+                    h2h_index = build_h2h_index(matchlogs)  # build OUTSIDE cache
+                    h2h = None
                 else:
                     schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
 
@@ -1416,7 +1419,7 @@ with streamlit_analytics.track():
 
             st.dataframe(
                 df_display[display_cols].sort_values("Match Start"),
-                width="stretch",
+                use_container_width=True,
                 height=350,
                 hide_index=True,
                 column_config=col_config
