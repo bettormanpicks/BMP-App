@@ -1414,9 +1414,6 @@ with streamlit_analytics.track():
                 st.error(f"Missing columns: {missing_cols}")
                 st.stop()
 
-            st.write("Columns:", df_display.columns.tolist())
-            st.write("Display cols:", display_cols)
-
             st.dataframe(
                 df_display[display_cols].sort_values("Match Start"),
                 width="stretch",
