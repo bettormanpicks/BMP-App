@@ -1374,10 +1374,10 @@ with streamlit_analytics.track():
 
             if selected_stats:
                 display_cols = always_keep + [c for c in selected_stats if c in df_display.columns]
-                st.sidebar.caption(f"Filtered view: {len(display_cols)} columns")
+                st.caption(f"Showing {len(display_cols)} columns (filtered view)")
             else:
                 display_cols = df_display.columns.tolist()
-                st.sidebar.caption("Showing all columns")
+                st.caption("Showing all columns")
 
             pinned_cols = ["Match Start", "Player 1", "Player 2", "Ms"]
 
