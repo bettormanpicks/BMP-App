@@ -152,6 +152,13 @@ def load_all_tt_raw_data():
     for lg in leagues:
         s, m, h2h, _ = load_tt_raw_data(lg)
 
+        # ADD LEAGUE TAG
+        s = s.copy()
+        m = m.copy()
+
+        s["league"] = lg
+        m["league"] = lg
+
         schedules.append(s)
         matchlogs.append(m)
 

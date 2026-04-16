@@ -1258,6 +1258,7 @@ with streamlit_analytics.track():
 
             rows = []
             for _, row in upcoming.iterrows():
+                league_tag = row.get("league", None)
                 p1, p2 = row["player1"], row["player2"]
                 p1_display, p2_display = row["player1_display"], row["player2_display"]
 
@@ -1280,6 +1281,7 @@ with streamlit_analytics.track():
 
                 rows.append({
                     "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
+                    "League": league_tag,
                     "Player 1": p1_display,
                     "Player 2": p2_display,
                     "Matches": stats["matches"],
@@ -1374,16 +1376,21 @@ with streamlit_analytics.track():
                     st.warning("All rows filtered out — try lowering thresholds.")
                     st.stop()
 
-            always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
+            if league == "All":
+                always_keep = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
+            else:
+                always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
 
             if selected_stats:
-                display_cols = always_keep + [c for c in selected_stats if c in df_display.columns]
-                st.caption(f"Showing {len(display_cols)} columns (filtered view)")
+                display_cols = always_keep + [
+                    c for c in selected_stats
+                    if c in df_display.columns and c not in always_keep
+                ]
             else:
                 display_cols = df_display.columns.tolist()
                 st.caption("Showing all columns")
 
-            pinned_cols = ["Match Start", "Player 1", "Player 2", "Ms"]
+            pinned_cols = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
 
             # Only pin columns that actually exist in the current display
             col_config = {
