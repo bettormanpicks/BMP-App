@@ -142,6 +142,7 @@ def load_tt_raw_data(league):
 # -------------------------
 # Load All League Data
 # -------------------------
+@st.cache_data(show_spinner=False)
 def load_all_tt_raw_data():
     leagues = list(LEAGUE_FILES.keys())
 
