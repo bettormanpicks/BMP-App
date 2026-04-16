@@ -138,33 +138,34 @@ def load_tt_raw_data(league):
 
     return schedule, matchlogs, h2h, h2h_index
 
-
 # -------------------------
-# Load All League Data
+# Load all league data
 # -------------------------
 @st.cache_data(show_spinner=False)
-def load_all_tt_raw_data():
-    leagues = list(LEAGUE_FILES.keys())
+def load_tt_all_leagues():
+    """
+    Loads and merges all four leagues. Each league is individually
+    cached, so this just concatenates already-cached DataFrames.
+    """
+    all_schedules  = []
+    all_matchlogs  = []
 
-    schedules = []
-    matchlogs = []
+    for league in LEAGUE_FILES:
+        schedule, matchlogs, _, _ = load_tt_raw_data(league)
+        schedule  = schedule.copy()
+        matchlogs = matchlogs.copy()
+        schedule["league"]  = league
+        matchlogs["league"] = league
+        all_schedules.append(schedule)
+        all_matchlogs.append(matchlogs)
 
-    for lg in leagues:
-        s, m, _, _ = load_tt_raw_data(lg)
+    combined_schedule  = pd.concat(all_schedules,  ignore_index=True)
+    combined_matchlogs = pd.concat(all_matchlogs, ignore_index=True)
+    combined_matchlogs.sort_values("date", ascending=False, inplace=True)
 
-        s = s.copy()
-        m = m.copy()
+    h2h_index = build_h2h_index(combined_matchlogs)
 
-        s["league"] = lg
-        m["league"] = lg
-
-        schedules.append(s)
-        matchlogs.append(m)
-
-    schedule = pd.concat(schedules, ignore_index=True)
-    matchlogs = pd.concat(matchlogs, ignore_index=True)
-
-    return schedule, matchlogs  # 👈 ONLY cache simple objects
+    return combined_schedule, combined_matchlogs, None, h2h_index
 
 # -------------------------
 # Build H2H index from matchlogs

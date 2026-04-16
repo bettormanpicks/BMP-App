@@ -42,7 +42,6 @@ from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, compute_nhl_
 # Table Tennis helper functions
 from tabletennis.helpers import (
     load_tt_raw_data,
-    load_all_tt_raw_data,
     build_h2h_index,
     compute_h2h_stats
 )
@@ -1180,7 +1179,7 @@ with streamlit_analytics.track():
             selected_stats = st.multiselect(
                 "Advanced Filters",
                 stat_options,
-                key="stat_selector"
+                key="Advanced Filters"
             )
 
             st.markdown("Filter Thresholds (optional)")
@@ -1213,8 +1212,8 @@ with streamlit_analytics.track():
 
         if reset:
             # Remove stat selection
-            if "stat_selector" in st.session_state:
-                del st.session_state["stat_selector"]
+            if "Advanced Filters" in st.session_state:
+                del st.session_state["Advanced Filters"]
 
             # Clear all threshold inputs
             for stat in stat_options:
@@ -1233,8 +1232,7 @@ with streamlit_analytics.track():
             # --- Load data inside Calculate (cached, safe, on-demand) ---
             with st.spinner("Loading and processing data..."):
                 if league == "All":
-                    schedule, matchlogs = load_all_tt_raw_data()
-                    h2h_index = build_h2h_index(matchlogs)  # 👈 build OUTSIDE cache
+                    schedule, matchlogs, h2h, h2h_index = load_tt_all_leagues()
                 else:
                     schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
 
@@ -1259,7 +1257,6 @@ with streamlit_analytics.track():
 
             rows = []
             for _, row in upcoming.iterrows():
-                league_tag = row["league"] if "league" in row else league
                 p1, p2 = row["player1"], row["player2"]
                 p1_display, p2_display = row["player1_display"], row["player2_display"]
 
@@ -1282,7 +1279,7 @@ with streamlit_analytics.track():
 
                 rows.append({
                     "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
-                    "League": league_tag if league == "All" else None,
+                    "League": row.get("league", ""),
                     "Player 1": p1_display,
                     "Player 2": p2_display,
                     "Matches": stats["matches"],
@@ -1314,7 +1311,7 @@ with streamlit_analytics.track():
                     "P1 Wins": stats["a_wins"],
                     "P2 Wins": stats["b_wins"],
                     "Win % (P1)": round(stats["win_pct"] * 100, 1),
-                    "Last Played": str(stats["last_played"]) if stats["last_played"] else None
+                    "Last Played": stats["last_played"]
                 })
 
             df = pd.DataFrame(rows)
@@ -1364,21 +1361,12 @@ with streamlit_analytics.track():
 
             df_display = df.rename(columns=DISPLAY_NAMES)
 
-            for stat in stat_thresholds:
-                if stat in df_display.columns:
-                    st.write(stat, df_display[stat].dtype)
-                else:
-                    st.write(f"Missing column: {stat}")
-
             if stat_thresholds:
                 mask = pd.Series(True, index=df_display.index)
 
                 for stat, threshold in stat_thresholds.items():
                     if stat in df_display.columns:
-                        # FORCE SAFE NUMERIC
-                        col = pd.to_numeric(df_display[stat], errors="coerce")
-
-                        mask &= col >= threshold
+                        mask &= df_display[stat] >= threshold
 
                 df_display = df_display[mask]
 
@@ -1386,38 +1374,27 @@ with streamlit_analytics.track():
                     st.warning("All rows filtered out — try lowering thresholds.")
                     st.stop()
 
-            if league == "All":
-                always_keep = ["League", "Match Start", "Player 1", "Player 2", "Ms"]
-            else:
-                always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
+            always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
 
             if selected_stats:
-                valid_stats = [c for c in selected_stats if c in df_display.columns]
-
-                display_cols = always_keep + [
-                    c for c in valid_stats if c not in always_keep
-                ]
+                display_cols = always_keep + [c for c in selected_stats if c in df_display.columns]
                 st.caption(f"Showing {len(display_cols)} columns (filtered view)")
             else:
-                display_cols = [
-                    c for c in df_display.columns
-                    if not (league != "All" and c == "League")
-                ]                
+                display_cols = df_display.columns.tolist()
                 st.caption("Showing all columns")
 
-            pinned_cols = ["League", "Match Start", "Player 1", "Player 2", "Ms"]
+            pinned_cols = ["Match Start", "Player 1", "Player 2", "Ms"]
 
+            if league == "All":
+                always_keep.insert(1, "League")
+                pinned_cols.insert(1, "League")
+
+            # Only pin columns that actually exist in the current display
             col_config = {
                 c: st.column_config.Column(pinned="left")
                 for c in pinned_cols
                 if c in display_cols
             }
-
-            missing_cols = [c for c in display_cols if c not in df_display.columns]
-
-            if missing_cols:
-                st.error(f"Missing columns: {missing_cols}")
-                st.stop()
 
             st.dataframe(
                 df_display[display_cols].sort_values("Match Start"),
