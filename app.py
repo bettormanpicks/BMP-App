@@ -1211,12 +1211,15 @@ with streamlit_analytics.track():
                 reset = st.form_submit_button("Reset")
 
         if reset:
-            st.session_state["Advanced Filters"] = []
+            # Remove stat selection
+            if "Advanced Filters" in st.session_state:
+                del st.session_state["Advanced Filters"]
 
+            # Clear all threshold inputs
             for stat in stat_options:
                 key = f"min_{stat}"
                 if key in st.session_state:
-                    st.session_state[key] = ""
+                    del st.session_state[key]
 
             st.rerun()
 
