@@ -1377,7 +1377,7 @@ with streamlit_analytics.track():
                     st.stop()
 
             if league == "All":
-                always_keep = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
+                always_keep = ["League", "Match Start", "Player 1", "Player 2", "Ms"]
             else:
                 always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
 
@@ -1388,11 +1388,9 @@ with streamlit_analytics.track():
                 ]
             else:
                 display_cols = df_display.columns.tolist()
-                st.caption("Showing all columns")
 
-            pinned_cols = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
+            pinned_cols = ["League", "Match Start", "Player 1", "Player 2", "Ms"]
 
-            # Only pin columns that actually exist in the current display
             col_config = {
                 c: st.column_config.Column(pinned="left")
                 for c in pinned_cols
