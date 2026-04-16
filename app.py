@@ -1208,7 +1208,7 @@ with streamlit_analytics.track():
                 calculate = st.form_submit_button("Calculate")
 
             with col2:
-                reset = st.form_submit_button("Reset Filters")
+                reset = st.form_submit_button("Reset")
 
         if reset:
             st.session_state["Select Stats to Display / Filter"] = []
