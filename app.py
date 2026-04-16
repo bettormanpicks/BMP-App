@@ -1178,7 +1178,8 @@ with streamlit_analytics.track():
 
             selected_stats = st.multiselect(
                 "Select Stats to Display / Filter",
-                stat_options
+                stat_options,
+                key="Select Stats to Display / Filter"
             )
 
             st.markdown("#### Min Thresholds (optional)")
@@ -1201,7 +1202,23 @@ with streamlit_analytics.track():
                     except ValueError:
                         pass  # ignore bad input
 
-            calculate = st.form_submit_button("Calculate")
+            col1, col2 = st.columns(2)
+
+            with col1:
+                calculate = st.form_submit_button("Calculate")
+
+            with col2:
+                reset = st.form_submit_button("Reset Filters")
+
+        if reset:
+            st.session_state["Select Stats to Display / Filter"] = []
+
+            for stat in stat_options:
+                key = f"min_{stat}"
+                if key in st.session_state:
+                    st.session_state[key] = ""
+
+            st.rerun()
 
         sidebar_footer()
 
