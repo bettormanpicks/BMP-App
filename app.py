@@ -1147,16 +1147,16 @@ with streamlit_analytics.track():
 
             # --- Stat Selection ---
             stat_options = [
+                "NS%",
+                "1ALL%",
                 "P1 BB%",
                 "P1 BB#",
                 "P2 BB%",
                 "P2 BB#",
-                "1ALL%",
                 "P1 SR%",
-                "P2 SR%",
                 "P1 SR#",
+                "P2 SR%",
                 "P2 SR#",
-                "NS%",
                 "P1 S",
                 "P2 S",
                 "P1 SlowS",
