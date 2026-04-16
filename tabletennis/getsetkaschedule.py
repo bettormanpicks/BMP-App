@@ -63,7 +63,7 @@ def scrape_schedule():
     options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
     options.add_argument("--disable-blink-features=AutomationControlled")
 
-    driver = uc.Chrome(options=options, version_main=146)
+    driver = uc.Chrome(options=options, version_main=147)
 
     driver.get(LEAGUE_URL)
     print("Solve Cloudflare if needed...")

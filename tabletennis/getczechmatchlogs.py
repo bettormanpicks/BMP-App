@@ -92,7 +92,7 @@ def scrape_api():
     options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
     options.add_argument("--disable-blink-features=AutomationControlled")
 
-    driver = uc.Chrome(options=options, version_main=145)
+    driver = uc.Chrome(options=options, version_main=147)
     wait = WebDriverWait(driver, 20)
 
     driver.get(LEAGUE_URL)

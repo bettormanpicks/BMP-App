@@ -138,34 +138,6 @@ def load_tt_raw_data(league):
 
     return schedule, matchlogs, h2h, h2h_index
 
-
-# -------------------------
-# Load All League Data
-# -------------------------
-@st.cache_data(show_spinner=False)
-def load_all_tt_raw_data():
-    leagues = list(LEAGUE_FILES.keys())
-
-    schedules = []
-    matchlogs = []
-
-    for lg in leagues:
-        s, m, _, _ = load_tt_raw_data(lg)
-
-        s = s.copy()
-        m = m.copy()
-
-        s["league"] = lg
-        m["league"] = lg
-
-        schedules.append(s)
-        matchlogs.append(m)
-
-    schedule = pd.concat(schedules, ignore_index=True)
-    matchlogs = pd.concat(matchlogs, ignore_index=True)
-
-    return schedule, matchlogs  # 👈 ONLY cache simple objects
-
 # -------------------------
 # Build H2H index from matchlogs
 # -------------------------
