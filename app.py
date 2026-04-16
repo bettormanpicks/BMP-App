@@ -1125,7 +1125,7 @@ with streamlit_analytics.track():
         # --- League selector (outside form so we know which CSVs to load) ---
         league = st.sidebar.radio(
             "Select League",
-            ["TT Elite", "Czech", "TT Cup", "Setka"],
+            ["TT Elite", "Czech", "TT Cup", "Setka", "All"],
             horizontal=True
         )
 
@@ -1231,7 +1231,10 @@ with streamlit_analytics.track():
         else:
             # --- Load data inside Calculate (cached, safe, on-demand) ---
             with st.spinner("Loading and processing data..."):
-                schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
+                if league == "All":
+                    schedule, matchlogs, h2h, h2h_index = load_all_tt_raw_data()
+                else:
+                    schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
 
                 # Break link to cached objects so mutations are safe
                 schedule = schedule.copy()
