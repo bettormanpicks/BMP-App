@@ -1177,12 +1177,12 @@ with streamlit_analytics.track():
             ]
 
             selected_stats = st.multiselect(
-                "Select Stats to Display / Filter",
+                "Advanced Filters",
                 stat_options,
-                key="Select Stats to Display / Filter"
+                key="Advanced Filters"
             )
 
-            st.markdown("#### Min Thresholds (optional)")
+            st.markdown("Filter Thresholds (optional)")
 
             stat_thresholds = {}
 
@@ -1211,7 +1211,7 @@ with streamlit_analytics.track():
                 reset = st.form_submit_button("Reset")
 
         if reset:
-            st.session_state["Select Stats to Display / Filter"] = []
+            st.session_state["Advanced Filters"] = []
 
             for stat in stat_options:
                 key = f"min_{stat}"
