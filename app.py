@@ -1256,6 +1256,7 @@ with streamlit_analytics.track():
             # --- Filter upcoming matches ---
             grace_period = pd.Timedelta(minutes=20)
             upcoming = schedule[schedule["date"] + grace_period >= now_ct]
+            upcoming = upcoming.head(50)
 
             rows = []
             for _, row in upcoming.iterrows():
@@ -1282,7 +1283,7 @@ with streamlit_analytics.track():
 
                 rows.append({
                     "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
-                    "League": league_tag,
+                    "League": league_tag if league == "All" else None,
                     "Player 1": p1_display,
                     "Player 2": p2_display,
                     "Matches": stats["matches"],
@@ -1314,7 +1315,7 @@ with streamlit_analytics.track():
                     "P1 Wins": stats["a_wins"],
                     "P2 Wins": stats["b_wins"],
                     "Win % (P1)": round(stats["win_pct"] * 100, 1),
-                    "Last Played": stats["last_played"]
+                    "Last Played": str(stats["last_played"]) if stats["last_played"] else None
                 })
 
             df = pd.DataFrame(rows)
