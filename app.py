@@ -1369,7 +1369,10 @@ with streamlit_analytics.track():
 
                 for stat, threshold in stat_thresholds.items():
                     if stat in df_display.columns:
-                        mask &= df_display[stat] >= threshold
+                        # FORCE SAFE NUMERIC
+                        col = pd.to_numeric(df_display[stat], errors="coerce")
+
+                        mask &= col >= threshold
 
                 df_display = df_display[mask]
 
