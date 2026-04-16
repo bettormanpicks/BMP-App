@@ -1383,8 +1383,8 @@ with streamlit_analytics.track():
             pinned_cols = ["Match Start", "Player 1", "Player 2", "Ms"]
 
             if league == "All":
-                always_keep.insert(1, "League")
-                pinned_cols.insert(1, "League")
+                always_keep = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
+                pinned_cols = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
 
             if selected_stats:
                 display_cols = always_keep + [c for c in selected_stats if c in df_display.columns]
