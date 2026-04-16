@@ -1391,7 +1391,7 @@ with streamlit_analytics.track():
             st.dataframe(
                 df_display[display_cols].sort_values("Match Start"),
                 width="stretch",
-                height=350,
+                height=375,
                 hide_index=True,
                 column_config=col_config
             )
