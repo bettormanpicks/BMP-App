@@ -42,6 +42,7 @@ from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, compute_nhl_
 # Table Tennis helper functions
 from tabletennis.helpers import (
     load_tt_raw_data,
+    load_all_tt_raw_data,
     build_h2h_index,
     compute_h2h_stats
 )
