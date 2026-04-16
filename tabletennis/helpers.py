@@ -139,22 +139,34 @@ def load_tt_raw_data(league):
     return schedule, matchlogs, h2h, h2h_index
 
 # -------------------------
-# Load all league data
+# Load merged h2h index
+# -------------------------
+@st.cache_data(show_spinner=False, max_entries=1)
+def load_tt_merged_h2h_index():
+    """
+    Builds and caches the merged h2h index independently of schedule loads.
+    Only rebuilt if evicted from cache, not on every rerun.
+    """
+    all_indexes = []
+    for league in LEAGUE_FILES:
+        _, _, _, h2h_index = load_tt_raw_data(league)
+        all_indexes.append(h2h_index)
+    return merge_h2h_indexes(all_indexes)
+
+# -------------------------
+# Build all league data
 # -------------------------
 @st.cache_data(show_spinner=False, max_entries=1)
 def load_tt_all_leagues():
     all_schedules = []
-    all_h2h_indexes = []
-
     for league in LEAGUE_FILES:
-        schedule, matchlogs, _, h2h_index = load_tt_raw_data(league)
+        schedule, _, _, _ = load_tt_raw_data(league)
         schedule = schedule.copy()
         schedule["league"] = league
         all_schedules.append(schedule)
-        all_h2h_indexes.append(h2h_index)
 
     combined_schedule = pd.concat(all_schedules, ignore_index=True)
-    combined_h2h_index = merge_h2h_indexes(all_h2h_indexes)
+    combined_h2h_index = load_tt_merged_h2h_index()  # ← separate cached call
 
     return combined_schedule, None, None, combined_h2h_index
 
