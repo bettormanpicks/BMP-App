@@ -143,68 +143,91 @@ def load_tt_raw_data(league):
 # -------------------------
 @st.cache_data(show_spinner=False)
 def load_tt_all_leagues():
-    """
-    Loads and merges all four leagues. Each league is individually
-    cached, so this just concatenates already-cached DataFrames.
-    """
-    all_schedules  = []
-    all_matchlogs  = []
+    all_schedules = []
+    all_h2h_indexes = []
 
     for league in LEAGUE_FILES:
-        schedule, matchlogs, _, _ = load_tt_raw_data(league)
-        schedule  = schedule.copy()
-        matchlogs = matchlogs.copy()
-        schedule["league"]  = league
-        matchlogs["league"] = league
+        schedule, matchlogs, _, h2h_index = load_tt_raw_data(league)
+        schedule = schedule.copy()
+        schedule["league"] = league
         all_schedules.append(schedule)
-        all_matchlogs.append(matchlogs)
+        all_h2h_indexes.append(h2h_index)
 
-    combined_schedule  = pd.concat(all_schedules,  ignore_index=True)
-    combined_matchlogs = pd.concat(all_matchlogs, ignore_index=True)
-    combined_matchlogs.sort_values("date", ascending=False, inplace=True)
+    combined_schedule = pd.concat(all_schedules, ignore_index=True)
+    combined_h2h_index = merge_h2h_indexes(all_h2h_indexes)
 
-    h2h_index = build_h2h_index(combined_matchlogs)
-
-    return combined_schedule, combined_matchlogs, None, h2h_index
+    return combined_schedule, None, None, combined_h2h_index
 
 # -------------------------
 # Build H2H index from matchlogs
 # -------------------------
 def build_h2h_index(matchlogs):
+    """
+    Creates a dictionary keyed by sorted player pair (tuple),
+    with a list of matches (newest first).
+
+    Each match entry now includes set-level winners to support
+    BB% (bounce-back: lost s1, won s2) and SR% (sweep resistance:
+    lost s1 and s2, won s3) calculations.
+    """
     h2h_index = {}
+    matchlogs_sorted = matchlogs.sort_values("date", ascending=False)
 
-    matchlogs = matchlogs.sort_values("date", ascending=False)
-    matchlogs["key"] = matchlogs.apply(
-        lambda r: tuple(sorted([r["player1"], r["player2"]])), axis=1
-    )
+    for _, row in matchlogs_sorted.iterrows():
+        p1  = row["player1"]
+        p2  = row["player2"]
+        key = tuple(sorted([p1, p2]))
 
-    for key, group in matchlogs.groupby("key", sort=False):
-        records = []
-        for _, row in group.iterrows():
-            parsed = row["parsed_sets"]
-            s1_winner = 1 if len(parsed) >= 1 and parsed[0][0] > parsed[0][1] else 2
-            s2_winner = 1 if len(parsed) >= 2 and parsed[1][0] > parsed[1][1] else 2
-            s3_winner = (1 if parsed[2][0] > parsed[2][1] else 2) if len(parsed) >= 3 else None
+        if key not in h2h_index:
+            h2h_index[key] = []
 
-            records.append({
-                "date":        row["date"],
-                "player1":     row["player1"],
-                "player2":     row["player2"],
-                "sets1":       row["sets1"],
-                "sets2":       row["sets2"],
-                "parsed_sets": parsed,
-                "winner":      row["winner"],
-                "ATP":         row["ATP"],
-                "PS":          row["PS"],
-                "SS":          row["SS"],
-                "s1_winner":   s1_winner,
-                "s2_winner":   s2_winner,
-                "s3_winner":   s3_winner,
-            })
-        h2h_index[key] = records
+        parsed = row["parsed_sets"]
 
-    matchlogs.drop(columns=["key"], inplace=True)
+        # Derive per-set winners (1 = player1 won that set, 2 = player2 won)
+        s1_winner = 1 if len(parsed) >= 1 and parsed[0][0] > parsed[0][1] else 2
+        s2_winner = 1 if len(parsed) >= 2 and parsed[1][0] > parsed[1][1] else 2
+        s3_winner = (1 if parsed[2][0] > parsed[2][1] else 2) if len(parsed) >= 3 else None
+
+        h2h_index[key].append({
+            "date":        row["date"],
+            "player1":     p1,
+            "player2":     p2,
+            "sets1":       row["sets1"],
+            "sets2":       row["sets2"],
+            "parsed_sets": parsed,
+            "winner":      row["winner"],
+            "ATP":         row["ATP"],
+            "PS":          row["PS"],
+            "SS":          row["SS"],
+            # Set-level winners for BB% / SR% computation
+            "s1_winner":   s1_winner,
+            "s2_winner":   s2_winner,
+            "s3_winner":   s3_winner,
+        })
+
     return h2h_index
+
+# -------------------------
+# Merge H2H indexes
+# -------------------------
+def merge_h2h_indexes(indexes):
+    """
+    Merges multiple h2h_index dicts by combining match lists for shared
+    keys and sorting merged lists newest-first.
+    """
+    merged = {}
+    for index in indexes:
+        for key, matches in index.items():
+            if key in merged:
+                merged[key].extend(matches)
+            else:
+                merged[key] = list(matches)
+
+    # Re-sort each pair's matches newest-first after merging
+    for key in merged:
+        merged[key].sort(key=lambda m: m["date"], reverse=True)
+
+    return merged
 
 # -------------------------
 # Compute H2H stats for a player pair
