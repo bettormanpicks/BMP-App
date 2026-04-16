@@ -1391,6 +1391,10 @@ with streamlit_analytics.track():
                 display_cols = df_display.columns.tolist()
                 st.caption("Showing all columns")
 
+                # remove League unless in All mode
+                if league != "All" and "League" in display_cols:
+                    display_cols.remove("League")
+
             pinned_cols = ["League", "Match Start", "Player 1", "Player 2", "Ms"]
 
             col_config = {
