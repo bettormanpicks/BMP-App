@@ -1259,7 +1259,7 @@ with streamlit_analytics.track():
 
             rows = []
             for _, row in upcoming.iterrows():
-                league_tag = row.get("league", None)
+                league_tag = row["league"] if "league" in row else league
                 p1, p2 = row["player1"], row["player2"]
                 p1_display, p2_display = row["player1_display"], row["player2_display"]
 
@@ -1383,13 +1383,17 @@ with streamlit_analytics.track():
                 always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
 
             if selected_stats:
+                valid_stats = [c for c in selected_stats if c in df_display.columns]
+
                 display_cols = always_keep + [
-                    c for c in selected_stats
-                    if c in df_display.columns and c not in always_keep
+                    c for c in valid_stats if c not in always_keep
                 ]
                 st.caption(f"Showing {len(display_cols)} columns (filtered view)")
             else:
-                display_cols = df_display.columns.tolist()
+                display_cols = [
+                    c for c in df_display.columns
+                    if not (league != "All" and c == "League")
+                ]                
                 st.caption("Showing all columns")
 
                 # remove League unless in All mode
@@ -1403,6 +1407,15 @@ with streamlit_analytics.track():
                 for c in pinned_cols
                 if c in display_cols
             }
+
+            missing_cols = [c for c in display_cols if c not in df_display.columns]
+
+            if missing_cols:
+                st.error(f"Missing columns: {missing_cols}")
+                st.stop()
+
+            st.write("Columns:", df_display.columns.tolist())
+            st.write("Display cols:", display_cols)
 
             st.dataframe(
                 df_display[display_cols].sort_values("Match Start"),
