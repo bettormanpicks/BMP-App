@@ -350,3 +350,7 @@ Saved 2460 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbatea
 2026-04-16 03:30:22 - ✅ nbateamgametotals.csv validation passed (2460 rows)
 2026-04-16 03:30:22 - === Git sync ===
 2026-04-16 03:30:25 - Repository on main and synced with GitHub.
+2026-04-16 03:30:25 - 📊 New NBA data detected — committing update
+2026-04-16 03:30:27 - 🚀 NBA data successfully pushed to GitHub!
+2026-04-16 03:30:27 - === NBA Data Update Finished Successfully ===
+
