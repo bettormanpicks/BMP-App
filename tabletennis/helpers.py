@@ -1,6 +1,8 @@
 import os
+import pickle
 import pandas as pd
 import streamlit as st
+import gzip
 
 DATA_DIR = os.path.join("tabletennis", "data")
 
@@ -139,36 +141,16 @@ def load_tt_raw_data(league):
     return schedule, matchlogs, h2h, h2h_index
 
 # -------------------------
-# Load merged h2h index
-# -------------------------
-@st.cache_data(show_spinner=False, max_entries=1)
-def load_tt_merged_h2h_index():
-    """
-    Builds and caches the merged h2h index independently of schedule loads.
-    Only rebuilt if evicted from cache, not on every rerun.
-    """
-    all_indexes = []
-    for league in LEAGUE_FILES:
-        _, _, _, h2h_index = load_tt_raw_data(league)
-        all_indexes.append(h2h_index)
-    return merge_h2h_indexes(all_indexes)
-
-# -------------------------
 # Build all league data
 # -------------------------
 @st.cache_data(show_spinner=False, max_entries=1)
 def load_tt_all_leagues():
-    all_schedules = []
-    for league in LEAGUE_FILES:
-        schedule, _, _, _ = load_tt_raw_data(league)
-        schedule = schedule.copy()
-        schedule["league"] = league
-        all_schedules.append(schedule)
+    schedule = pd.read_pickle(os.path.join(DATA_DIR, "tt_all_schedule.pkl"))
 
-    combined_schedule = pd.concat(all_schedules, ignore_index=True)
-    combined_h2h_index = load_tt_merged_h2h_index()  # ← separate cached call
+    with gzip.open(os.path.join(DATA_DIR, "tt_all_h2h_index.pkl.gz"), "rb") as f:
+        h2h_index = pickle.load(f)
 
-    return combined_schedule, None, None, combined_h2h_index
+    return schedule, None, None, h2h_index
 
 # -------------------------
 # Build H2H index from matchlogs
