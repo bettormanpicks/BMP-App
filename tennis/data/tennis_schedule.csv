@@ -11,11 +11,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-17,Final,Oeiras Jamor Ladies Open,Maja Chwalinska,Simona Waltert
 2026-04-17,Final,Oeiras Jamor Ladies Open,Darja Semenistaja,Sinja Kraus
 2026-04-17,Final,Oeiras Jamor Ladies Open,Suzan Lamens,Robin Montgomery
-2026-04-17,Live,Open Capfinances Rouen Métropole,Anna Bondar,Sorana Cirstea
 2026-04-17,Final,Open Capfinances Rouen Métropole,Marta Kostyuk,Ann Li
+2026-04-17,Final,Open Capfinances Rouen Métropole,Anna Bondar,Sorana Cirstea
 2026-04-17,Final,Open Capfinances Rouen Métropole,Veronika Podrez,Katie Boulter
 2026-04-17,Final,Open Capfinances Rouen Métropole,Iryna Shymanovich,Tatjana Maria
-2026-04-17,Live,Porsche Tennis Grand Prix,Elena Rybakina,Leylah Fernandez
+2026-04-17,Final,Porsche Tennis Grand Prix,Elena Rybakina,Leylah Fernandez
 2026-04-17,Final,Porsche Tennis Grand Prix,Karolina Muchova,Coco Gauff
 2026-04-17,Final,Porsche Tennis Grand Prix,Iga Swiatek,Mirra Andreeva
 2026-04-17,Final,Porsche Tennis Grand Prix,Linda Noskova,Elina Svitolina
@@ -26,4 +26,6 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-18,10:00,Oeiras Jamor Ladies Open,Petra Marcinko,Sinja Kraus
 2026-04-18,10:00,Oeiras Jamor Ladies Open,Maja Chwalinska,Robin Montgomery
 2026-04-18,13:30,Open Capfinances Rouen Métropole,Marta Kostyuk,Tatjana Maria
+2026-04-18,15:00,Open Capfinances Rouen Métropole,Veronika Podrez,Sorana Cirstea
 2026-04-18,12:00,Porsche Tennis Grand Prix,Elina Svitolina,Karolina Muchova
+2026-04-18,14:00,Porsche Tennis Grand Prix,Elena Rybakina,Mirra Andreeva
