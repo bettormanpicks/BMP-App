@@ -58,6 +58,9 @@ python tabletennis\buildsetkah2h.py
 echo Building TT Cup H2H...
 python tabletennis\buildttcuph2h.py
 
+echo Building All Leagues
+python buildallleagues.py
+
 echo Pushing updates to GitHub...
 git pull
 git add tabletennis/data/
