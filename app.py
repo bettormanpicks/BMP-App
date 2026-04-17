@@ -1165,6 +1165,9 @@ with streamlit_analytics.track():
                 "P2 SlowS",
                 "P2 Rec%",
                 "P2 Rec#",
+                "P1 W",
+                "P2 W",
+                "P1 W%",
                 "3Set%",
                 "4Set%",
                 "5Set%",
@@ -1172,9 +1175,6 @@ with streamlit_analytics.track():
                 "SS",
                 "ATP",
                 "PS",
-                "P1 W",
-                "P2 W",
-                "P1 W%",
             ]
 
             selected_stats = st.multiselect(
@@ -1282,16 +1282,16 @@ with streamlit_analytics.track():
                     "Player 1": p1_display,
                     "Player 2": p2_display,
                     "Matches": stats["matches"],
+                    "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
+                    "One-All %": round(stats.get("one_all_pct", 0) * 100, 1),
                     "P1 B%": round(stats.get("a_bounce_pct", 0) * 100, 1),
                     "P1 BB#": stats.get("a_bounce_n", 0),
                     "P2 B%": round(stats.get("b_bounce_pct", 0) * 100, 1),
                     "P2 BB#": stats.get("b_bounce_n", 0),
-                    "One-All %": round(stats.get("one_all_pct", 0) * 100, 1),
                     "P1 SR%": round(stats.get("a_sr_pct", 0) * 100, 1),
                     "P1 SR#": stats.get("a_sr_n", 0),
                     "P2 SR%": round(stats.get("b_sr_pct", 0) * 100, 1),
                     "P2 SR#": stats.get("b_sr_n", 0),
-                    "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
                     "P1 Sweeps": stats.get("sweeps_a", 0),
                     "P2 Sweeps": stats.get("sweeps_b", 0),
                     "P1 SS":    round(stats.get("a_ss_score", 0) * 100, 1),
@@ -1300,6 +1300,9 @@ with streamlit_analytics.track():
                     "P2 SS":    round(stats.get("b_ss_score", 0) * 100, 1),
                     "P2 Rec%":  round(stats.get("b_recovery_pct", 0) * 100, 1),
                     "P2 Rec#":  stats.get("b_recovery_n", 0),
+                    "P1 Wins": stats["a_wins"],
+                    "P2 Wins": stats["b_wins"],
+                    "Win % (P1)": round(stats["win_pct"] * 100, 1),
                     "3Set %":  round(stats.get("pct_3sets", 0) * 100, 1),
                     "4Set %":  round(stats.get("pct_4sets", 0) * 100, 1),
                     "5Set %":  round(stats.get("pct_5sets", 0) * 100, 1),
@@ -1307,9 +1310,6 @@ with streamlit_analytics.track():
                     "SS": round(stats.get("SS", 0), 2),
                     "ATP": round(stats.get("ATP", 0), 2),
                     "PS": round(stats.get("PS", 0), 2),
-                    "P1 Wins": stats["a_wins"],
-                    "P2 Wins": stats["b_wins"],
-                    "Win % (P1)": round(stats["win_pct"] * 100, 1),
                     "Last Played": stats["last_played"]
                 }
 
@@ -1334,16 +1334,16 @@ with streamlit_analytics.track():
                 "Date": "Match Start",
                 "League": "League",
                 "Matches": "Ms",
+                "Non Sweep %": "NS%",
+                "One-All %": "1ALL%",
                 "P1 B%": "P1 BB%",
                 "P1 BB#": "P1 BB#",
                 "P2 B%": "P2 BB%",
                 "P2 BB#": "P2 BB#",
-                "One-All %": "1ALL%",
                 "P1 SR%": "P1 SR%",
                 "P1 SR#": "P1 SR#",
                 "P2 SR%": "P2 SR%",
                 "P2 SR#": "P2 SR#",
-                "Non Sweep %": "NS%",
                 "P1 Sweeps": "P1 S",
                 "P2 Sweeps": "P2 S",
                 "P1 SS": "P1 SlowS",
@@ -1352,6 +1352,9 @@ with streamlit_analytics.track():
                 "P2 SS": "P2 SlowS",
                 "P2 Rec%": "P2 Rec%",
                 "P2 Rec#": "P2 Rec#",
+                "P1 Wins": "P1 W",
+                "P2 Wins": "P2 W",
+                "Win % (P1)": "P1 W%",
                 "3Set %": "3Set%",
                 "4Set %": "4Set%",
                 "5Set %": "5Set%",
@@ -1359,12 +1362,15 @@ with streamlit_analytics.track():
                 "SS": "SS",
                 "ATP": "ATP",
                 "PS": "PS",
-                "P1 Wins": "P1 W",
-                "P2 Wins": "P2 W",
-                "Win % (P1)": "P1 W%",
             }
 
             df_display = df.rename(columns=DISPLAY_NAMES)
+
+            if league == "All":
+                cols = df_display.columns.tolist()
+                cols.remove("League")
+                cols.insert(1, "League")
+                df_display = df_display[cols]
 
             if stat_thresholds:
                 mask = pd.Series(True, index=df_display.index)
