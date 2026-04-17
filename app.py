@@ -1232,9 +1232,12 @@ with streamlit_analytics.track():
         else:
             # --- Load data inside Calculate (cached, safe, on-demand) ---
             with st.spinner("Loading and processing data..."):
-                schedule, matchlogs, h2h, h2h_index = (
-                    load_tt_all_leagues() if league == "All" else load_tt_raw_data(league)
-                )
+                if league == "All":
+                    load_tt_raw_data.clear()
+                    schedule, matchlogs, h2h, h2h_index = load_tt_all_leagues()
+                else:
+                    load_tt_all_leagues.clear()
+                    schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
 
                 schedule = schedule.copy()
                 if matchlogs is not None:
