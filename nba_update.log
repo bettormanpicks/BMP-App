@@ -378,3 +378,37 @@ Saved 2460 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbatea
 2026-04-17 03:30:18 - ✅ nbateamgametotals.csv validation passed (2460 rows)
 2026-04-17 03:30:18 - === Git sync ===
 2026-04-17 03:30:21 - Repository on main and synced with GitHub.
+2026-04-17 03:30:22 - 📊 New NBA data detected — committing update
+2026-04-17 08:23:26 - ❌ Git operation failed:
+Traceback (most recent call last):
+  File "C:\users\n8roc\pythonscripts\streamlit\nbadataupdate.py", line 138, in git_sync
+    subprocess.run(["git", "push", "origin", "main"], check=True, env=ENV)
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', 'push', 'origin', 'main']' returned non-zero exit status 1.
+
+2026-04-18 03:30:02 - === NBA Data Update Started ===
+2026-04-18 03:30:02 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Priming NBA session...
+[WARNING] Session priming failed: Failed to perform, curl: (47) Maximum (30) redirects followed. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[RESUME] Continuing from 2026-04-13
+[PULL] 04/13/2026
+[PULL] 04/14/2026
+[PULL] 04/15/2026
+[PULL] 04/16/2026
+[PULL] 04/17/2026
+[PULL] 04/18/2026
+
+Saved 26651 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbaplayergamelogs.csv
+=== NBA PLAYER GAME LOGS FINISHED ===
+2026-04-18 03:30:17 - ✅ getnbagamelogs.py completed successfully
+2026-04-18 03:30:17 - === Validating nbaplayergamelogs.csv ===
+2026-04-18 03:30:17 - ✅ nbaplayergamelogs.csv validation passed (26651 rows)
+2026-04-18 03:30:17 - === Running getnbateamtotals.py ===
+Saved 2460 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbateamgametotals.csv
+2026-04-18 03:30:19 - ✅ getnbateamtotals.py completed successfully
+2026-04-18 03:30:19 - === Validating nbateamgametotals.csv ===
+2026-04-18 03:30:19 - ✅ nbateamgametotals.csv validation passed (2460 rows)
+2026-04-18 03:30:19 - === Git sync ===
+2026-04-18 03:30:22 - Repository on main and synced with GitHub.
