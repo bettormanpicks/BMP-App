@@ -15,13 +15,13 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,08:00,Mutua Madrid Open,Zachary Svajda,Rei Sakamoto,atp_106,atp_173,ATP,Clay
 2026-04-20,08:00,Mutua Madrid Open,Andrea Pellegrino,Martin Damm,atp_140,atp_383,ATP,Clay
 2026-04-20,08:00,Mutua Madrid Open,Arthur Gea,Vilius Gaubas,atp_160,atp_126,ATP,Clay
-2026-04-20,08:00,Mutua Madrid Open,Cristian Garin,Nicolas Jarry,atp_89,atp_143,ATP,Clay
+2026-04-20,08:00,Mutua Madrid Open,Cristian Garin,Nicolas Jarry,wta_38,atp_143,WTA,Clay
 2026-04-20,09:30,Mutua Madrid Open,Elmer Moller,Hugo Gaston,atp_120,atp_96,ATP,Clay
-2026-04-20,09:30,Mutua Madrid Open,Aleksandar Vukic,Pablo Llamas Ruiz,atp_75,atp_197,ATP,Clay
+2026-04-20,09:30,Mutua Madrid Open,Aleksandar Vukic,Pablo Llamas Ruiz,atp_88,atp_197,ATP,Clay
 2026-04-20,09:30,Mutua Madrid Open,Wu Yibing,Manas Dhamne,atp_145,atp_487,ATP,Clay
 2026-04-20,09:30,Mutua Madrid Open,Otto Virtanen,Titouan Droguet,atp_128,atp_119,ATP,Clay
 2026-04-20,11:00,Mutua Madrid Open,Marco Trungelliti,Borna Gojo,atp_131,atp_235,ATP,Clay
-2026-04-20,11:00,Mutua Madrid Open,Billy Harris,Daniel Merida,atp_179,atp_402,ATP,Clay
+2026-04-20,11:00,Mutua Madrid Open,Billy Harris,Daniel Merida,atp_144,atp_402,ATP,Clay
 2026-04-20,11:00,Mutua Madrid Open,Lloyd Harris,Mackenzie McDonald,atp_179,atp_115,ATP,Clay
 2026-04-20,11:00,Mutua Madrid Open,Quentin Halys,Jaime Faria,atp_72,atp_146,ATP,Clay
 2026-04-20,12:30,Mutua Madrid Open,Henrique Rocha,Jan Choinski,atp_170,atp_124,ATP,Clay
@@ -35,7 +35,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,15:30,Mutua Madrid Open,Dino Prizmic,Christopher O'Connell,atp_121,atp_95,ATP,Clay
 2026-04-20,15:30,Mutua Madrid Open,Stefano Travaglia,Nikoloz Basilashvili,atp_164,atp_136,ATP,Clay
 2026-04-20,15:30,Mutua Madrid Open,Patrick Kypson,Moise Kouame,atp_105,atp_9040,ATP,Clay
-2026-04-20,15:30,Mutua Madrid Open,Zsombor Piros,Tomas Barrios Vera,atp_177,atp_107,ATP,Clay
+2026-04-20,15:30,Mutua Madrid Open,Zsombor Piros,Tomas Barrios Vera,atp_177,wta_357,ATP,Clay
 2026-04-20,08:00,Mutua Madrid Open,Alina Charaeva,Aliaksandra Sasnovich,wta_163,wta_113,WTA,Clay
 2026-04-20,08:00,Mutua Madrid Open,Simona Waltert,Despina Papamichail,wta_81,wta_157,WTA,Clay
 2026-04-20,08:00,Mutua Madrid Open,Ruth Roura Llaverias,Dominika Salkova,wta_481,wta_151,WTA,Clay
