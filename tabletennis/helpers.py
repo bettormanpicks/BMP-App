@@ -172,6 +172,9 @@ def _build_all_leagues_cache():
         schedule, _, _, h2h_index = load_tt_raw_data(league)
         schedule = schedule.copy()
         schedule["league"] = league
+        # Restore original casing before saving to CSV
+        schedule["player1"] = schedule["player1_display"]
+        schedule["player2"] = schedule["player2_display"]
         all_schedules.append(schedule)
         all_indexes.append(h2h_index)
 
