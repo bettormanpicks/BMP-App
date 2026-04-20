@@ -593,6 +593,7 @@ with streamlit_analytics.track():
             schedule_data = load_nba_schedule()
             todays_teams, today_matchups = load_today_matchups()
             team_b2b_map = compute_team_b2b_from_schedule(schedule_data)
+            st.write("Today Teams (B2B func):", get_teams_playing_on_date(schedule_data, get_league_today()))
             st.write("B2B Map:", team_b2b_map)
 
             # Filter players to today's teams if selected
