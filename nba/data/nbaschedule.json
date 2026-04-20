@@ -1,0 +1,102 @@
+{
+  "league": {
+    "id": "nba",
+    "name": "NBA",
+    "sport": "Basketball"
+  },
+  "games": [
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "f4860f32-eea6-5279-ae11-76bd475490f5",
+      "teams": {
+        "away": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        },
+        "home": {
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
+        }
+      },
+      "date": "2026-04-19T17:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "TD Garden",
+        "location": "Boston, MA"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "873b9473-d134-5891-be2c-766ca682444e",
+      "teams": {
+        "away": {
+          "id": "c3c5dcbc-e238-541c-a3de-5862259f8f23",
+          "name": "Phoenix Suns"
+        },
+        "home": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        }
+      },
+      "date": "2026-04-19T19:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "256bc670-f516-5c84-b944-5b55eab64af1",
+      "teams": {
+        "away": {
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
+        },
+        "home": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        }
+      },
+      "date": "2026-04-19T22:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "0c1259be-323a-5e74-a31a-c47188cf7b93",
+      "teams": {
+        "away": {
+          "id": "4267f28a-0b73-50be-b46b-99d7caefa55f",
+          "name": "Portland Trail Blazers"
+        },
+        "home": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        }
+      },
+      "date": "2026-04-20T01:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
+      }
+    }
+  ],
+  "updated": "2026-04-19T06:00:01Z"
+}

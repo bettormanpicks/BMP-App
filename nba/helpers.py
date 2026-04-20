@@ -34,6 +34,50 @@ DEF_STAT_MAP = {
     "DREB": ("DRaA", "DRaR"),
 }
 
+TEAM_NAME_TO_TRI = {
+    "Atlanta Hawks": "ATL",
+    "Boston Celtics": "BOS",
+    "Brooklyn Nets": "BKN",
+    "Charlotte Hornets": "CHA",
+    "Chicago Bulls": "CHI",
+    "Cleveland Cavaliers": "CLE",
+    "Dallas Mavericks": "DAL",
+    "Denver Nuggets": "DEN",
+    "Detroit Pistons": "DET",
+    "Golden State Warriors": "GSW",
+    "Houston Rockets": "HOU",
+    "Indiana Pacers": "IND",
+    "Los Angeles Clippers: "LAC",
+    "Los Angeles Lakers": "LAL",
+    "Memphis Grizzlies": "MEM",
+    "Miami Heat": "MIA",
+    "Milwaukee Bucks": "MIL",
+    "Minnesota Timberwolves: "MIN",
+    "New Orleans Pelicans": "NOP",
+    "New York Knicks": "NYK",
+    "Oklahoma City Thunder": "OKC",
+    "Orlando Magic": "ORL",
+    "Philadelphia 76ers": "PHI",
+    "Phoenix Suns": "PHX",
+    "Portland Trail Blazers": "POR",
+    "Sacramento Kings": "SAC",
+    "San Antonio Spurs": "SAS",
+    "Toronto Raptors": "TOR",
+    "Utah Jazz": "UTA",
+    "Washington Wizards": "WAS"
+}
+
+def normalize_team(team):
+    if not team:
+        return None
+
+    team = team.strip()
+
+    if len(team) == 3:
+        return team.upper()
+
+    return TEAM_NAME_TO_TRI.get(team)
+
 @st.cache_data(ttl=3600)
 def load_nba_schedule(path="nba/data/nbaschedule.json"):
     with open(path, "r", encoding="utf-8") as f:
@@ -202,20 +246,41 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
                 continue
 
             try:
-                parsed = pd.to_datetime(game_date).strftime("%Y-%m-%d")
+                parsed = (
+                    pd.to_datetime(game_date, utc=True)
+                    .tz_convert("US/Central")
+                    .strftime("%Y-%m-%d")
+                )
+                st.write("Today's Teams:", todays_teams)
+                st.write("Today's Matchups:", today_matchups)
             except:
                 continue
 
             if parsed != today_str:
                 continue
 
-            home = g.get("home", "").upper()
-            away = g.get("away", "").upper()
+            # ---- NEW FORMAT SUPPORT ----
+            if "teams" in g:
+                home_raw = g["teams"]["home"].get("name")
+                away_raw = g["teams"]["away"].get("name")
+            else:
+                home_raw = g.get("home")
+                away_raw = g.get("away")
 
-            if home and away:
-                todays_teams.add(home)
-                todays_teams.add(away)
+            home = normalize_team(home_raw)
+            away = normalize_team(away_raw)
+
+            if not home or not away:
+                st.warning(f"Team mapping failed: {home_raw} vs {away_raw}")
+                continue
+
+            todays_teams.add(home)
+            todays_teams.add(away)
+
+            # safer assignment
+            if home not in today_matchups:
                 today_matchups[home] = away
+            if away not in today_matchups:
                 today_matchups[away] = home
 
         return todays_teams, today_matchups
