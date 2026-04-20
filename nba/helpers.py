@@ -13,6 +13,7 @@ from shared.utils import (
     dedupe_columns,
     strip_display_ids,
     norm_name,
+    normalize_team,
 )
 from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 
