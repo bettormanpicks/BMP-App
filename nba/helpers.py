@@ -251,9 +251,8 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
                     .tz_convert("US/Central")
                     .strftime("%Y-%m-%d")
                 )
-                st.write("Today's Teams:", todays_teams)
-                st.write("Today's Matchups:", today_matchups)
-            except:
+            except Exception as e:
+                st.warning(f"Date parse failed: {game_date} | {e}")
                 continue
 
             if parsed != today_str:
@@ -283,6 +282,9 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
             if away not in today_matchups:
                 today_matchups[away] = home
 
+        st.write("Today's Teams:", todays_teams)
+        st.write("Today's Matchups:", today_matchups)
+
         return todays_teams, today_matchups
 
     # ---- NBA API format ----
@@ -290,8 +292,11 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
         for day in data["leagueSchedule"]["gameDates"]:
             raw = day.get("gameDate", "")
             try:
-                parsed = pd.to_datetime(raw)
-                date_str = parsed.strftime("%Y-%m-%d")
+                parsed = (
+                    pd.to_datetime(raw, utc=True)
+                    .tz_convert("US/Central")
+                    .strftime("%Y-%m-%d")
+                )
             except:
                 continue
 

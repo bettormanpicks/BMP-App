@@ -593,6 +593,7 @@ with streamlit_analytics.track():
             schedule_data = load_nba_schedule()
             todays_teams, today_matchups = load_today_matchups()
             team_b2b_map = compute_team_b2b_from_schedule(schedule_data)
+            st.write("B2B Map:", team_b2b_map)
 
             # Filter players to today's teams if selected
             if filter_today and todays_teams:
@@ -695,7 +696,7 @@ with streamlit_analytics.track():
 
             st.dataframe(strip_display_ids(summary_df), width='stretch', hide_index=True, column_config=col_config)
 
-            csv_bytes = strip_display_ids(summary_df).to_csv(index=False).encode()
+            #csv_bytes = strip_display_ids(summary_df).to_csv(index=False).encode()
             #st.download_button("Download CSV", csv_bytes, "player_stats.csv")
 
     ############################################################
