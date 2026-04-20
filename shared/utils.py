@@ -198,11 +198,15 @@ def get_teams_playing_on_date(schedule_data, target_date):
                 continue
 
             try:
-                parsed = pd.to_datetime(game_date, utc=True).strftime("%Y-%m-%d")
+                parsed = (
+                    pd.to_datetime(game_date, utc=True)
+                    .tz_convert("America/Chicago")
+                    .date()
+                )
             except:
                 continue
 
-            if parsed != target_str:
+            if parsed != target_date:
                 continue
 
             # -------------------------
