@@ -4,7 +4,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,08:00,Mutua Madrid Open,Arthur Gea,Vilius Gaubas,atp_160,atp_126,ATP,Clay
 2026-04-20,08:00,Mutua Madrid Open,Cristian Garin,Nicolas Jarry,wta_38,atp_143,WTA,Clay
 2026-04-20,09:30,Mutua Madrid Open,Elmer Moller,Hugo Gaston,atp_120,atp_96,ATP,Clay
-2026-04-20,09:30,Mutua Madrid Open,Aleksandar Vukic,Pablo Llamas Ruiz,atp_75,atp_197,ATP,Clay
+2026-04-20,09:30,Mutua Madrid Open,Aleksandar Vukic,Pablo Llamas Ruiz,atp_88,atp_197,ATP,Clay
 2026-04-20,09:30,Mutua Madrid Open,Wu Yibing,Manas Dhamne,atp_145,atp_487,ATP,Clay
 2026-04-20,09:30,Mutua Madrid Open,Otto Virtanen,Titouan Droguet,atp_128,atp_119,ATP,Clay
 2026-04-20,11:00,Mutua Madrid Open,Marco Trungelliti,Borna Gojo,atp_131,atp_235,ATP,Clay
@@ -27,7 +27,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,08:00,Mutua Madrid Open,Simona Waltert,Despina Papamichail,wta_81,wta_157,WTA,Clay
 2026-04-20,08:00,Mutua Madrid Open,Ruth Roura Llaverias,Dominika Salkova,wta_481,wta_151,WTA,Clay
 2026-04-20,08:00,Mutua Madrid Open,Nikola Bartunkova,Katarzyna Kawa,wta_104,wta_143,WTA,Clay
-2026-04-20,09:30,Mutua Madrid Open,Anna Blinkova,Nuria Brancaccio,wta_82,wta_164,WTA,Clay
+2026-04-20,09:30,Mutua Madrid Open,Anna Blinkova,Nuria Brancaccio,wta_65,wta_164,WTA,Clay
 2026-04-20,09:30,Mutua Madrid Open,Elvina Kalieva,Suzan Lamens,wta_158,wta_109,WTA,Clay
 2026-04-20,09:30,Mutua Madrid Open,Rebeka Masarova,Rebecca Sramkova,wta_117,wta_102,WTA,Clay
 2026-04-20,09:30,Mutua Madrid Open,Donna Vekic,Leolia Jeanjean,wta_99,wta_115,WTA,Clay
@@ -43,7 +43,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,14:00,Mutua Madrid Open,Diane Parry,Sloane Stephens,wta_107,wta_775,WTA,Clay
 2026-04-20,14:00,Mutua Madrid Open,Nauhany Vitoria Leme Da Silva,Daria Snigur,wta_9042,wta_132,WTA,Clay
 2026-04-20,14:00,Mutua Madrid Open,Hanne Vandewinkel,Linda Fruhvirtova,wta_128,wta_118,WTA,Clay
-2026-04-20,15:30,Mutua Madrid Open,Alycia Parks,Elina Avanesyan,wta_243,wta_178,WTA,Clay
+2026-04-20,15:30,Mutua Madrid Open,Alycia Parks,Elina Avanesyan,wta_76,wta_178,WTA,Clay
 2026-04-20,15:30,Mutua Madrid Open,Ksenia Efremova,Lulu Sun,wta_595,wta_98,WTA,Clay
 2026-04-20,15:30,Mutua Madrid Open,Martina Trevisan,Sinja Kraus,wta_685,wta_105,WTA,Clay
 2026-04-20,15:30,Mutua Madrid Open,Anastasia Potapova,Teodora Kostovic,wta_75,wta_171,WTA,Clay
