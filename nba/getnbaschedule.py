@@ -10,7 +10,7 @@ API_KEY = "sbfgsoclqrtd9vpifqmxcyz"
 
 BASE_URL = "https://api.sportsblaze.com/nba/v1/schedule/daily/{date}.json?key={key}"
 
-OUTPUT_PATH = Path("data/nbaschedule.json")
+OUTPUT_PATH = Path("nba/data/nbaschedule.json")
 
 
 def get_today_str():
