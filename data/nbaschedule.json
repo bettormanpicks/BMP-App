@@ -1,0 +1,79 @@
+{
+  "league": {
+    "id": "nba",
+    "name": "NBA",
+    "sport": "Basketball"
+  },
+  "games": [
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "d38b9054-1187-517f-94a5-931a70858de4",
+      "teams": {
+        "away": {
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
+        },
+        "home": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        }
+      },
+      "date": "2026-04-20T23:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Rocket Arena",
+        "location": "Cleveland, OH"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "3bc256d9-338d-558f-9e54-2150b7d7d68c",
+      "teams": {
+        "away": {
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
+        },
+        "home": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        }
+      },
+      "date": "2026-04-21T00:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "fe0865ae-36d0-59a0-82b6-09a00cdff3c7",
+      "teams": {
+        "away": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        },
+        "home": {
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
+        }
+      },
+      "date": "2026-04-21T02:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Ball Arena",
+        "location": "Denver, CO"
+      }
+    }
+  ],
+  "updated": "2026-04-20T06:00:02Z"
+}

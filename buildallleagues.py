@@ -14,6 +14,9 @@ for league in LEAGUE_FILES:
     schedule, _, _, h2h_index = load_tt_raw_data(league)
     schedule = schedule.copy()
     schedule["league"] = league
+    # Restore display names from the display columns before saving
+    schedule["player1"] = schedule["player1_display"]
+    schedule["player2"] = schedule["player2_display"]
     all_schedules.append(schedule)
     all_indexes.append(h2h_index)
 

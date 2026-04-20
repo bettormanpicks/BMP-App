@@ -773,3 +773,113 @@ Saved 2456 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbatea
 2026-04-19 03:48:54 - ✅ nbateamgametotals.csv validation passed (2456 rows)
 2026-04-19 03:48:54 - === Git sync ===
 2026-04-19 03:48:57 - Repository on main and synced with GitHub.
+2026-04-19 03:48:57 - 📊 New NBA data detected — committing update
+2026-04-19 03:49:00 - 🚀 NBA data successfully pushed to GitHub!
+2026-04-19 03:49:00 - === NBA Data Update Finished Successfully ===
+
+2026-04-20 03:30:05 - === NBA Data Update Started ===
+2026-04-20 03:30:05 - === Running getnbaschedule.py ===
+Fetching NBA schedule for 2026-04-20...
+Saved schedule â†’ data\nbaschedule.json
+2026-04-20 03:30:06 - ✅ getnbaschedule.py completed successfully
+2026-04-20 03:30:06 - ❌ Failed to read schedule:
+Traceback (most recent call last):
+  File "C:\users\n8roc\pythonscripts\streamlit\nbadataupdate.py", line 163, in main
+    df_sched = pd.read_json(SCHEDULE_FILE)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py", line 815, in read_json
+    return json_reader.read()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py", line 1014, in read
+    obj = self._get_object_parser(self.data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py", line 1040, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py", line 1176, in parse
+    self._parse()
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py", line 1391, in _parse
+    self.obj = DataFrame(
+               ^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 782, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\construction.py", line 503, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\construction.py", line 114, in arrays_to_mgr
+    index = _extract_index(arrays)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\construction.py", line 680, in _extract_index
+    raise ValueError(
+ValueError: Mixing dicts with non-Series may lead to ambiguous ordering.
+
+2026-04-20 07:24:30 - === NBA Data Update Started ===
+2026-04-20 07:24:30 - === Running getnbaschedule.py ===
+Fetching NBA schedule for 2026-04-20...
+Saved schedule â†’ data\nbaschedule.json
+2026-04-20 07:24:31 - ✅ getnbaschedule.py completed successfully
+2026-04-20 07:24:31 - ❌ Failed to read schedule:
+Traceback (most recent call last):
+  File "C:\users\n8roc\pythonscripts\streamlit\nbadataupdate.py", line 163, in main
+    df_sched = pd.read_json(SCHEDULE_FILE)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py", line 815, in read_json
+    return json_reader.read()
+           ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py", line 1014, in read
+    obj = self._get_object_parser(self.data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py", line 1040, in _get_object_parser
+    obj = FrameParser(json, **kwargs).parse()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py", line 1176, in parse
+    self._parse()
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\io\json\_json.py", line 1391, in _parse
+    self.obj = DataFrame(
+               ^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\frame.py", line 782, in __init__
+    mgr = dict_to_mgr(data, index, columns, dtype=dtype, copy=copy, typ=manager)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\construction.py", line 503, in dict_to_mgr
+    return arrays_to_mgr(arrays, columns, index, dtype=dtype, typ=typ, consolidate=copy)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\construction.py", line 114, in arrays_to_mgr
+    index = _extract_index(arrays)
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\n8roc\AppData\Local\Programs\Python\Python312\Lib\site-packages\pandas\core\internals\construction.py", line 680, in _extract_index
+    raise ValueError(
+ValueError: Mixing dicts with non-Series may lead to ambiguous ordering.
+
+2026-04-20 07:32:25 - === NBA Data Update Started ===
+2026-04-20 07:32:25 - === Running getnbaschedule.py ===
+Fetching NBA schedule for 2026-04-20...
+Saved schedule â†’ data\nbaschedule.json
+2026-04-20 07:32:26 - ✅ getnbaschedule.py completed successfully
+2026-04-20 07:32:26 - ✅ Schedule loaded (4 games)
+2026-04-20 07:32:26 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Priming NBA session...
+[WARNING] Session priming failed: Failed to perform, curl: (47) Maximum (30) redirects followed. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[RESUME] Continuing from 2026-04-13
+[PULL] 04/13/2026
+[PULL] 04/14/2026
+[PULL] 04/15/2026
+[PULL] 04/16/2026
+[PULL] 04/17/2026
+[PULL] 04/18/2026
+[PULL] 04/19/2026
+[PULL] 04/20/2026
+
+Saved 26611 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbaplayergamelogs.csv
+=== NBA PLAYER GAME LOGS FINISHED ===
+2026-04-20 07:32:45 - ✅ getnbagamelogs.py completed successfully
+2026-04-20 07:32:45 - === Validating nbaplayergamelogs.csv ===
+2026-04-20 07:32:45 - ✅ nbaplayergamelogs.csv validation passed (26611 rows)
+2026-04-20 07:32:45 - === Running getnbateamtotals.py ===
+Saved 2456 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbateamgametotals.csv
+2026-04-20 07:32:48 - ✅ getnbateamtotals.py completed successfully
+2026-04-20 07:32:48 - === Validating nbateamgametotals.csv ===
+2026-04-20 07:32:48 - ✅ nbateamgametotals.csv validation passed (2456 rows)
+2026-04-20 07:32:48 - === Git sync ===
+2026-04-20 07:32:50 - Repository on main and synced with GitHub.
