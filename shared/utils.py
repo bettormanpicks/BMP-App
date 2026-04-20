@@ -144,26 +144,46 @@ def norm_name(s):
 
 @st.cache_data(ttl=3600)
 def get_teams_playing_on_date(schedule_data, target_date):
-    """
-    schedule_data: loaded JSON dict (full season)
-    target_date: datetime.date
-    Returns: set of team tricodes playing on that date
-    """
     teams = set()
     target_str = target_date.strftime("%Y-%m-%d")
 
-    # ---- Simple format ----
     if "games" in schedule_data:
         for g in schedule_data["games"]:
-            if g.get("gameDate") == target_str:
+            game_date = g.get("gameDate") or g.get("date")
+            if not game_date:
+                continue
+
+            try:
+                parsed = pd.to_datetime(game_date, utc=True).strftime("%Y-%m-%d")
+            except:
+                continue
+
+            if parsed != target_str:
+                continue
+
+            # -------------------------
+            # NEW API FORMAT (your case)
+            # -------------------------
+            if "teams" in g:
+                home = g["teams"]["home"].get("name")
+                away = g["teams"]["away"].get("name")
+
+            # -------------------------
+            # OLD SIMPLE FORMAT
+            # -------------------------
+            else:
                 home = g.get("home")
                 away = g.get("away")
-                if home and away:
-                    teams.add(home.upper())
-                    teams.add(away.upper())
+
+            if home and away:
+                teams.add(normalize_team(home))
+                teams.add(normalize_team(away))
+
         return teams
 
-    # ---- NBA API format ----
+    # -------------------------
+    # NBA API FORMAT (unchanged)
+    # -------------------------
     for day in schedule_data.get("leagueSchedule", {}).get("gameDates", []):
         raw = day.get("gameDate", "")
         try:
