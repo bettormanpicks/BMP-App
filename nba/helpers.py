@@ -283,9 +283,6 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
             if away not in today_matchups:
                 today_matchups[away] = home
 
-        st.write("Today's Teams:", todays_teams)
-        st.write("Today's Matchups:", today_matchups)
-
         return todays_teams, today_matchups
 
     # ---- NBA API format ----
