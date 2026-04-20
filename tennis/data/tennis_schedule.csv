@@ -1,10 +1,10 @@
 Date,Time,Tournament,Player 1,Player 2
 2026-04-20,Live,Mutua Madrid Open,Aleksandar Kovacevic,Moez Echargui
-2026-04-20,Live,Mutua Madrid Open,Dino Prizmic,Christopher O'Connell
-2026-04-20,Live,Mutua Madrid Open,Nicolai Budkov Kjaer,Francesco Maestrelli
-2026-04-20,Live,Mutua Madrid Open,Patrick Kypson,Moise Kouame
-2026-04-20,Live,Mutua Madrid Open,Zsombor Piros,Tomas Barrios Vera
+2026-04-20,Final,Mutua Madrid Open,Zsombor Piros,Tomas Barrios Vera
+2026-04-20,Final,Mutua Madrid Open,Patrick Kypson,Moise Kouame
+2026-04-20,Final,Mutua Madrid Open,Nicolai Budkov Kjaer,Francesco Maestrelli
 2026-04-20,Final,Mutua Madrid Open,Stefano Travaglia,Nikoloz Basilashvili
+2026-04-20,Final,Mutua Madrid Open,Dino Prizmic,Christopher O'Connell
 2026-04-20,Final,Mutua Madrid Open,Dusan Lajovic,Matteo Arnaldi
 2026-04-20,Final,Mutua Madrid Open,Rinky Hijikata,Chris Rodesch
 2026-04-20,Final,Mutua Madrid Open,Henrique Rocha,Jan Choinski
@@ -23,9 +23,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-20,Final,Mutua Madrid Open,Arthur Gea,Vilius Gaubas
 2026-04-20,Final,Mutua Madrid Open,Cristian Garin,Ugo Blanchet
 2026-04-20,Final,Mutua Madrid Open,Andrea Pellegrino,Martin Damm
-2026-04-20,Live,Mutua Madrid Open,Anastasia Potapova,Teodora Kostovic
-2026-04-20,Live,Mutua Madrid Open,Ksenia Efremova,Lulu Sun
+2026-04-20,Final,Mutua Madrid Open,Ksenia Efremova,Lulu Sun
 2026-04-20,Final,Mutua Madrid Open,Martina Trevisan,Sinja Kraus
+2026-04-20,Final,Mutua Madrid Open,Anastasia Potapova,Teodora Kostovic
 2026-04-20,Final,Mutua Madrid Open,Alycia Parks,Elina Avanesyan
 2026-04-20,Final,Mutua Madrid Open,Marina Bassols Ribera,Anhelina Kalinina
 2026-04-20,Final,Mutua Madrid Open,Hanne Vandewinkel,Linda Fruhvirtova
@@ -73,6 +73,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-21,12:00,Mutua Madrid Open,Sloane Stephens,Anhelina Kalinina
 2026-04-21,12:00,Mutua Madrid Open,Yuliia Starodubtseva,Anastasia Pavlyuchenkova
 2026-04-21,13:30,Mutua Madrid Open,Robin Montgomery,Magda Linette
+2026-04-21,13:30,Mutua Madrid Open,Anastasia Potapova,Sinja Kraus
+2026-04-21,13:30,Mutua Madrid Open,Alycia Parks,Ksenia Efremova
 2026-04-21,13:30,Mutua Madrid Open,Dalma Galfi,Darja Vidmanova
 2026-04-21,14:00,Mutua Madrid Open,Kaitlin Quevedo,Venus Williams
 2026-04-21,15:00,Mutua Madrid Open,Anastasia Zakharova,Camila Osorio
@@ -86,6 +88,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-21,12:00,Mutua Madrid Open,Adolfo Daniel Vallejo,Henrique Rocha
 2026-04-21,12:00,Mutua Madrid Open,Chris Rodesch,Dusan Lajovic
 2026-04-21,12:00,Mutua Madrid Open,Diego Dedura,Benjamin Bonzi
+2026-04-21,13:30,Mutua Madrid Open,Moez Echargui,Nicolai Budkov Kjaer
+2026-04-21,13:30,Mutua Madrid Open,Dino Prizmic,Zsombor Piros
+2026-04-21,13:30,Mutua Madrid Open,Patrick Kypson,Nikoloz Basilashvili
 2026-04-21,09:00,Oeiras Open CETO,Francesca Curmi,Alisa Oktiabreva
 2026-04-21,09:00,Oeiras Open CETO,Andrea Lazaro Garcia,Mona Barthel
 2026-04-21,09:00,Oeiras Open CETO,Fiona Ferro,Bianca Andreescu
