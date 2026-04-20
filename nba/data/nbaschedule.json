@@ -10,74 +10,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "f4860f32-eea6-5279-ae11-76bd475490f5",
+      "id": "d38b9054-1187-517f-94a5-931a70858de4",
       "teams": {
         "away": {
-          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
-          "name": "Philadelphia 76ers"
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
         },
         "home": {
-          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
-          "name": "Boston Celtics"
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
         }
       },
-      "date": "2026-04-19T17:00:00Z",
-      "status": "Final",
+      "date": "2026-04-20T23:00:00Z",
+      "status": "Scheduled",
       "venue": {
-        "name": "TD Garden",
-        "location": "Boston, MA"
-      },
-      "scores": {
-        "periods": [
-          {
-            "number": 1,
-            "type": "Regulation",
-            "away": {
-              "points": 18
-            },
-            "home": {
-              "points": 33
-            }
-          },
-          {
-            "number": 2,
-            "type": "Regulation",
-            "away": {
-              "points": 28
-            },
-            "home": {
-              "points": 31
-            }
-          },
-          {
-            "number": 3,
-            "type": "Regulation",
-            "away": {
-              "points": 25
-            },
-            "home": {
-              "points": 31
-            }
-          },
-          {
-            "number": 4,
-            "type": "Regulation",
-            "away": {
-              "points": 20
-            },
-            "home": {
-              "points": 28
-            }
-          }
-        ],
-        "total": {
-          "away": {
-            "points": 91
-          },
-          "home": {
-            "points": 123
-          }
-        }
+        "name": "Rocket Arena",
+        "location": "Cleveland, OH"
       }
     },
     {
@@ -85,74 +33,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "873b9473-d134-5891-be2c-766ca682444e",
+      "id": "3bc256d9-338d-558f-9e54-2150b7d7d68c",
       "teams": {
         "away": {
-          "id": "c3c5dcbc-e238-541c-a3de-5862259f8f23",
-          "name": "Phoenix Suns"
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
         },
         "home": {
-          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
-          "name": "Oklahoma City Thunder"
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         }
       },
-      "date": "2026-04-19T19:30:00Z",
-      "status": "Final",
+      "date": "2026-04-21T00:00:00Z",
+      "status": "Scheduled",
       "venue": {
-        "name": "Paycom Center",
-        "location": "Oklahoma City, OK"
-      },
-      "scores": {
-        "periods": [
-          {
-            "number": 1,
-            "type": "Regulation",
-            "away": {
-              "points": 20
-            },
-            "home": {
-              "points": 35
-            }
-          },
-          {
-            "number": 2,
-            "type": "Regulation",
-            "away": {
-              "points": 24
-            },
-            "home": {
-              "points": 30
-            }
-          },
-          {
-            "number": 3,
-            "type": "Regulation",
-            "away": {
-              "points": 22
-            },
-            "home": {
-              "points": 32
-            }
-          },
-          {
-            "number": 4,
-            "type": "Regulation",
-            "away": {
-              "points": 18
-            },
-            "home": {
-              "points": 22
-            }
-          }
-        ],
-        "total": {
-          "away": {
-            "points": 84
-          },
-          "home": {
-            "points": 119
-          }
-        }
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
       }
     },
     {
@@ -160,151 +56,24 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "256bc670-f516-5c84-b944-5b55eab64af1",
+      "id": "fe0865ae-36d0-59a0-82b6-09a00cdff3c7",
       "teams": {
         "away": {
-          "id": "985459e4-3a63-5133-bacf-703bed32095f",
-          "name": "Orlando Magic"
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
         },
         "home": {
-          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
-          "name": "Detroit Pistons"
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
         }
       },
-      "date": "2026-04-19T22:30:00Z",
-      "status": "Final",
+      "date": "2026-04-21T02:30:00Z",
+      "status": "Scheduled",
       "venue": {
-        "name": "Little Caesars Arena",
-        "location": "Detroit, MI"
-      },
-      "scores": {
-        "periods": [
-          {
-            "number": 1,
-            "type": "Regulation",
-            "away": {
-              "points": 35
-            },
-            "home": {
-              "points": 27
-            }
-          },
-          {
-            "number": 2,
-            "type": "Regulation",
-            "away": {
-              "points": 20
-            },
-            "home": {
-              "points": 24
-            }
-          },
-          {
-            "number": 3,
-            "type": "Regulation",
-            "away": {
-              "points": 26
-            },
-            "home": {
-              "points": 23
-            }
-          },
-          {
-            "number": 4,
-            "type": "Regulation",
-            "away": {
-              "points": 31
-            },
-            "home": {
-              "points": 27
-            }
-          }
-        ],
-        "total": {
-          "away": {
-            "points": 112
-          },
-          "home": {
-            "points": 101
-          }
-        }
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "0c1259be-323a-5e74-a31a-c47188cf7b93",
-      "teams": {
-        "away": {
-          "id": "4267f28a-0b73-50be-b46b-99d7caefa55f",
-          "name": "Portland Trail Blazers"
-        },
-        "home": {
-          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
-          "name": "San Antonio Spurs"
-        }
-      },
-      "date": "2026-04-20T01:00:00Z",
-      "status": "Final",
-      "venue": {
-        "name": "Frost Bank Center",
-        "location": "San Antonio, TX"
-      },
-      "scores": {
-        "periods": [
-          {
-            "number": 1,
-            "type": "Regulation",
-            "away": {
-              "points": 21
-            },
-            "home": {
-              "points": 30
-            }
-          },
-          {
-            "number": 2,
-            "type": "Regulation",
-            "away": {
-              "points": 28
-            },
-            "home": {
-              "points": 29
-            }
-          },
-          {
-            "number": 3,
-            "type": "Regulation",
-            "away": {
-              "points": 23
-            },
-            "home": {
-              "points": 28
-            }
-          },
-          {
-            "number": 4,
-            "type": "Regulation",
-            "away": {
-              "points": 26
-            },
-            "home": {
-              "points": 24
-            }
-          }
-        ],
-        "total": {
-          "away": {
-            "points": 98
-          },
-          "home": {
-            "points": 111
-          }
-        }
+        "name": "Ball Arena",
+        "location": "Denver, CO"
       }
     }
   ],
-  "updated": "2026-04-20T04:00:02Z"
+  "updated": "2026-04-20T06:00:02Z"
 }
