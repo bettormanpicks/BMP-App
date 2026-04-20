@@ -248,7 +248,7 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
             try:
                 parsed = (
                     pd.to_datetime(game_date, utc=True)
-                    .tz_convert("US/Central")
+                    .tz_convert("America/Chicago")
                     .strftime("%Y-%m-%d")
                 )
             except Exception as e:
@@ -294,7 +294,7 @@ def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
             try:
                 parsed = (
                     pd.to_datetime(raw, utc=True)
-                    .tz_convert("US/Central")
+                    .tz_convert("America/Chicago")
                     .strftime("%Y-%m-%d")
                 )
             except:
