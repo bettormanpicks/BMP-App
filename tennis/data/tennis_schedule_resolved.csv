@@ -11,7 +11,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,Final,Mutua Madrid Open,Adolfo Daniel Vallejo,Pedro Martinez,atp_9021,atp_101,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Darwin Blanch,Benjamin Bonzi,atp_446,atp_123,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Luca Van Assche,Diego Dedura,atp_130,atp_310,ATP,Clay
-2026-04-20,Final,Mutua Madrid Open,Billy Harris,Daniel Merida,atp_144,atp_402,ATP,Clay
+2026-04-20,Final,Mutua Madrid Open,Billy Harris,Daniel Merida,atp_179,atp_402,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Quentin Halys,Jaime Faria,atp_72,atp_146,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Marco Trungelliti,Borna Gojo,atp_131,atp_235,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Lloyd Harris,Mackenzie McDonald,atp_179,atp_115,ATP,Clay
@@ -22,7 +22,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,Final,Mutua Madrid Open,Zachary Svajda,Rei Sakamoto,atp_106,atp_173,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Arthur Gea,Vilius Gaubas,atp_160,atp_126,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Cristian Garin,Ugo Blanchet,atp_89,atp_162,ATP,Clay
-2026-04-20,Final,Mutua Madrid Open,Andrea Pellegrino,Martin Damm,atp_140,atp_125,ATP,Clay
+2026-04-20,Final,Mutua Madrid Open,Andrea Pellegrino,Martin Damm,atp_140,atp_383,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Ksenia Efremova,Lulu Sun,wta_595,wta_98,WTA,Clay
 2026-04-20,Final,Mutua Madrid Open,Martina Trevisan,Sinja Kraus,wta_685,wta_105,WTA,Clay
 2026-04-20,Final,Mutua Madrid Open,Anastasia Potapova,Teodora Kostovic,wta_75,wta_171,WTA,Clay
@@ -41,7 +41,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,Final,Mutua Madrid Open,Tyra Caterina Grant,Veronika Erjavec,wta_269,wta_112,WTA,Clay
 2026-04-20,Final,Mutua Madrid Open,Rebeka Masarova,Rebecca Sramkova,wta_117,wta_102,WTA,Clay
 2026-04-20,Final,Mutua Madrid Open,Donna Vekic,Leolia Jeanjean,wta_99,wta_115,WTA,Clay
-2026-04-20,Final,Mutua Madrid Open,Anna Blinkova,Nuria Brancaccio,wta_65,wta_164,WTA,Clay
+2026-04-20,Final,Mutua Madrid Open,Anna Blinkova,Nuria Brancaccio,wta_82,wta_164,WTA,Clay
 2026-04-20,Final,Mutua Madrid Open,Elvina Kalieva,Suzan Lamens,wta_158,wta_109,WTA,Clay
 2026-04-20,Final,Mutua Madrid Open,Alina Charaeva,Aliaksandra Sasnovich,wta_163,wta_113,WTA,Clay
 2026-04-20,Final,Mutua Madrid Open,Simona Waltert,Despina Papamichail,wta_81,wta_157,WTA,Clay
@@ -50,10 +50,41 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,TBD,Oeiras Open CETO,Francesca Jones,Guiomar Maristany Zuleta De Reales,wta_72,wta_165,WTA,
 2026-04-20,Final,Oeiras Open CETO,Ekaterine Gorgodze,Yuan Yue,wta_167,wta_122,WTA,
 2026-04-20,Final,Oeiras Open CETO,Sofia Costoulas,Anouk Koevermans,wta_142,wta_172,WTA,
-2026-04-20,Final,Oeiras Open CETO,Carol Young Suh Lee,Varvara Lepchenko,wta_352,wta_149,WTA,
+2026-04-20,Final,Oeiras Open CETO,Carol Young Suh Lee,Varvara Lepchenko,wta_170,wta_149,WTA,
 2026-04-20,TBD,Oeiras Open CETO,Greet Minnen,Carole Monnet,wta_129,wta_177,WTA,
 2026-04-20,Final,Oeiras Open CETO,Elena Ruxandra Bertea,Francesca Curmi,wta_300,wta_335,WTA,
 2026-04-20,Final,Oeiras Open CETO,Milana Ivantsiv,Elena Pridankina,wta_653,wta_192,WTA,
 2026-04-20,Final,Oeiras Open CETO,Alisa Oktiabreva,Ayana Akli,wta_329,wta_248,WTA,
 2026-04-20,Final,Oeiras Open CETO,Lucie Havlickova,Mia Ristic,wta_276,wta_273,WTA,
 2026-04-20,Final,Oeiras Open CETO,Polina Kudermetova,Lea Boskovic,wta_144,wta_311,WTA,
+2026-04-22,TBD,Mutua Madrid Open,Zhang Zhizhen,Vit Kopriva,atp_449,atp_87,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Zizou Bergs,Marin Cilic,atp_43,atp_52,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Martin Landaluce,Adam Walton,atp_158,atp_93,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Camilo Ugo Carabelli,Gael Monfils,atp_45,atp_168,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Raphael Collignon,Matteo Berrettini,atp_68,atp_57,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Rafael Jodar,Jesper de Jong,atp_117,atp_86,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Nuno Borges,Mariano Navone,atp_44,atp_74,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Terence Atmane,Miomir Kecmanovic,atp_65,atp_83,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Jenson Brooksby,Emilio Nava,atp_46,atp_76,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Ignacio Buse,Adrian Mannarino,atp_91,atp_48,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Alexandre Muller,Jan-Lennard Struff,atp_50,atp_77,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Alejandro Tabilo,Valentin Royer,atp_67,atp_59,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Damir Dzumhur,Mattia Bellucci,atp_61,atp_109,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Jaume Munar,Alexander Shevchenko,atp_35,atp_79,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Pablo Carreno Busta,Marton Fucsovics,atp_122,atp_60,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Fabian Marozsan,Ethan Quinn,atp_47,atp_70,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Daniel Altmaier,Juan Manuel Cerundolo,atp_54,atp_19,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Yannick Hanfmann,Marcos Giron,atp_90,atp_63,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Botic Van De Zandschulp,Alexander Blockx,atp_55,atp_104,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Roberto Bautista Agut,Thiago Agustin Tirante,atp_82,atp_92,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Tomas Machac,Francisco Comesana,atp_31,atp_62,ATP,Clay
+2026-04-22,TBD,Mutua Madrid Open,Zhang Shuai,Eva Lys,wta_85,wta_56,WTA,Clay
+2026-04-22,TBD,Mutua Madrid Open,Elena-Gabriela Ruse,Antonia Ruzic,wta_79,wta_67,WTA,Clay
+2026-04-22,TBD,Mutua Madrid Open,Ashlyn Krueger,Sofia Kenin,wta_100,wta_32,WTA,Clay
+2026-04-22,TBD,Mutua Madrid Open,Yulia Putintseva,Tereza Valentova,wta_77,wta_42,WTA,Clay
+2026-04-22,TBD,Mutua Madrid Open,Taylor Townsend,Katie Boulter,wta_116,wta_83,WTA,Clay
+2026-04-22,TBD,Mutua Madrid Open,Magdalena Frech,Katerina Siniakova,wta_55,wta_46,WTA,Clay
+2026-04-22,TBD,Mutua Madrid Open,Talia Gibson,Emiliana Arango,wta_111,wta_58,WTA,Clay
+2026-04-22,TBD,Mutua Madrid Open,Zeynep Sonmez,Carlota Martinez Cirez,wta_84,wta_359,WTA,Clay
+2026-04-22,TBD,Mutua Madrid Open,Dayana Yastremska,Solana Sierra,wta_43,wta_64,WTA,Clay
+2026-04-22,TBD,Oeiras Open CETO,Sofia Costoulas,Elena Pridankina,wta_142,wta_192,WTA,
