@@ -1,8 +1,23 @@
 import os
 import pickle
+import io
 import pandas as pd
 import streamlit as st
 import gzip
+from supabase import create_client
+
+BUCKET_NAME = "bmp-data"
+
+@st.cache_resource
+def get_supabase_client():
+    url = st.secrets["SUPABASE_URL"]
+    key = st.secrets["SUPABASE_KEY"]
+    return create_client(url, key)
+
+def download_from_supabase(filename):
+    supabase = get_supabase_client()
+    response = supabase.storage.from_(BUCKET_NAME).download(filename)
+    return io.BytesIO(response)
 
 DATA_DIR = os.path.join("tabletennis", "data")
 
@@ -86,9 +101,9 @@ def load_tt_raw_data(league):
     """
     paths = LEAGUE_FILES[league]
 
-    schedule  = pd.read_csv(paths["schedule"])
-    matchlogs = pd.read_csv(paths["matchlogs"])
-    h2h       = pd.read_csv(paths["h2h"])
+    schedule  = pd.read_csv(download_from_supabase(os.path.basename(paths["schedule"])))
+    matchlogs = pd.read_csv(download_from_supabase(os.path.basename(paths["matchlogs"])))
+    h2h       = pd.read_csv(download_from_supabase(os.path.basename(paths["h2h"])))
 
     # Keep originals for display
     matchlogs["player1_display"] = matchlogs["player1"]
@@ -145,47 +160,20 @@ def load_tt_raw_data(league):
 # -------------------------
 @st.cache_data(show_spinner=False, max_entries=1)
 def load_tt_all_leagues():
-    pkl_path = os.path.join(DATA_DIR, "tt_all_h2h_index.pkl.gz")
-    schedule_path = os.path.join(DATA_DIR, "tt_all_schedule.csv")
-
-    # Rebuild if missing
-    if not os.path.exists(pkl_path) or not os.path.exists(schedule_path):
-        _build_all_leagues_cache()
-
-    schedule = pd.read_csv(schedule_path)
+    # Download schedule from Supabase
+    schedule = pd.read_csv(download_from_supabase("tt_all_schedule.csv"))
     schedule["player1_display"] = schedule["player1"]
     schedule["player2_display"] = schedule["player2"]
     schedule["player1"] = schedule["player1"].apply(normalize_name)
     schedule["player2"] = schedule["player2"].apply(normalize_name)
     schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
 
-    with gzip.open(pkl_path, "rb") as f:
+    # Download h2h index from Supabase
+    pkl_buffer = download_from_supabase("tt_all_h2h_index.pkl.gz")
+    with gzip.open(pkl_buffer, "rb") as f:
         h2h_index = pickle.load(f)
 
     return schedule, None, None, h2h_index
-
-def _build_all_leagues_cache():
-    all_schedules = []
-    all_indexes = []
-
-    for league in LEAGUE_FILES:
-        schedule, _, _, h2h_index = load_tt_raw_data(league)
-        schedule = schedule.copy()
-        schedule["league"] = league
-        # Restore original casing before saving to CSV
-        schedule["player1"] = schedule["player1_display"]
-        schedule["player2"] = schedule["player2_display"]
-        all_schedules.append(schedule)
-        all_indexes.append(h2h_index)
-
-    combined_schedule = pd.concat(all_schedules, ignore_index=True)
-    combined_h2h_index = merge_h2h_indexes(all_indexes)
-
-    combined_schedule.to_csv(
-        os.path.join(DATA_DIR, "tt_all_schedule.csv"), index=False
-    )
-    with gzip.open(os.path.join(DATA_DIR, "tt_all_h2h_index.pkl.gz"), "wb") as f:
-        pickle.dump(combined_h2h_index, f, protocol=4)
 
 # -------------------------
 # Build H2H index from matchlogs
