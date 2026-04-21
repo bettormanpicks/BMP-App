@@ -1,6 +1,6 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,Live,Mutua Madrid Open,Aleksandar Kovacevic,Moez Echargui,atp_75,atp_139,ATP,Clay
-2026-04-20,Final,Mutua Madrid Open,Zsombor Piros,Tomas Barrios Vera,atp_177,wta_357,ATP,Clay
+2026-04-20,Final,Mutua Madrid Open,Zsombor Piros,Tomas Barrios Vera,atp_177,atp_107,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Patrick Kypson,Moise Kouame,atp_105,atp_9040,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Nicolai Budkov Kjaer,Francesco Maestrelli,atp_133,atp_110,ATP,Clay
 2026-04-20,Final,Mutua Madrid Open,Stefano Travaglia,Nikoloz Basilashvili,atp_164,atp_136,ATP,Clay
@@ -50,9 +50,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-20,TBD,Oeiras Open CETO,Francesca Jones,Guiomar Maristany Zuleta De Reales,wta_72,wta_165,WTA,
 2026-04-20,Final,Oeiras Open CETO,Ekaterine Gorgodze,Yuan Yue,wta_167,wta_122,WTA,
 2026-04-20,Final,Oeiras Open CETO,Sofia Costoulas,Anouk Koevermans,wta_142,wta_172,WTA,
-2026-04-20,Final,Oeiras Open CETO,Carol Young Suh Lee,Varvara Lepchenko,wta_170,wta_149,WTA,
+2026-04-20,Final,Oeiras Open CETO,Carol Young Suh Lee,Varvara Lepchenko,wta_352,wta_149,WTA,
 2026-04-20,TBD,Oeiras Open CETO,Greet Minnen,Carole Monnet,wta_129,wta_177,WTA,
-2026-04-20,Final,Oeiras Open CETO,Elena Ruxandra Bertea,Francesca Curmi,wta_300,wta_339,WTA,
+2026-04-20,Final,Oeiras Open CETO,Elena Ruxandra Bertea,Francesca Curmi,wta_300,wta_335,WTA,
 2026-04-20,Final,Oeiras Open CETO,Milana Ivantsiv,Elena Pridankina,wta_653,wta_192,WTA,
 2026-04-20,Final,Oeiras Open CETO,Alisa Oktiabreva,Ayana Akli,wta_329,wta_248,WTA,
 2026-04-20,Final,Oeiras Open CETO,Lucie Havlickova,Mia Ristic,wta_276,wta_273,WTA,
@@ -83,7 +83,6 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-22,TBD,Mutua Madrid Open,Ashlyn Krueger,Sofia Kenin,wta_100,wta_32,WTA,Clay
 2026-04-22,TBD,Mutua Madrid Open,Yulia Putintseva,Tereza Valentova,wta_77,wta_42,WTA,Clay
 2026-04-22,TBD,Mutua Madrid Open,Taylor Townsend,Katie Boulter,wta_116,wta_83,WTA,Clay
-2026-04-22,TBD,Mutua Madrid Open,Magdalena Frech,Katerina Siniakova,wta_55,wta_46,WTA,Clay
 2026-04-22,TBD,Mutua Madrid Open,Talia Gibson,Emiliana Arango,wta_111,wta_58,WTA,Clay
 2026-04-22,TBD,Mutua Madrid Open,Zeynep Sonmez,Carlota Martinez Cirez,wta_84,wta_359,WTA,Clay
 2026-04-22,TBD,Mutua Madrid Open,Dayana Yastremska,Solana Sierra,wta_43,wta_64,WTA,Clay
