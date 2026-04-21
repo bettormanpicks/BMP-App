@@ -7,3 +7,4 @@ lxml
 unidecode
 pytz
 streamlit-analytics2
+supabase
