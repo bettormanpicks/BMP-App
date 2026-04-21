@@ -23,7 +23,7 @@ for league in LEAGUE_FILES:
 combined_schedule = pd.concat(all_schedules, ignore_index=True)
 combined_h2h_index = merge_h2h_indexes(all_indexes)
 
-combined_schedule.to_pickle(os.path.join(DATA_DIR, "tt_all_schedule.pkl"))
+combined_schedule.to_csv(os.path.join(DATA_DIR, "tt_all_schedule.csv"), index=False)
 
 with gzip.open(os.path.join(DATA_DIR, "tt_all_h2h_index.pkl.gz"), "wb") as f:
     pickle.dump(combined_h2h_index, f)
