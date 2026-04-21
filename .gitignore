@@ -2,6 +2,7 @@ nba_update.log
 credentials.json
 tabletennis/data/tt_elite_matchlogs.csv
 tabletennis/data/tt_czech_matchlogs.csv
+tabletennis/data/tt_czech2023_matchlogs.csv
 tabletennis/data/tt_setka_matchlogs.csv
 tabletennis/data/tt_cup_matchlogs.csv
 tabletennis/data/tt_elite_h2h_summary.csv
