@@ -10,22 +10,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "a3fd95d7-6cb6-55c7-a081-636c49cd88d1",
+      "id": "6b55dce9-821d-594b-9cef-9e015889fc61",
       "teams": {
         "away": {
-          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
-          "name": "Philadelphia 76ers"
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
         },
         "home": {
-          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
-          "name": "Boston Celtics"
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
         }
       },
-      "date": "2026-04-21T23:00:00Z",
+      "date": "2026-04-22T23:00:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "TD Garden",
-        "location": "Boston, MA"
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
       }
     },
     {
@@ -33,47 +33,24 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "8074b66a-14c7-56c2-8521-f6ee50f3bfab",
+      "id": "b6e42657-c0b6-58e0-abed-93d97dc967ed",
       "teams": {
         "away": {
-          "id": "4267f28a-0b73-50be-b46b-99d7caefa55f",
-          "name": "Portland Trail Blazers"
+          "id": "c3c5dcbc-e238-541c-a3de-5862259f8f23",
+          "name": "Phoenix Suns"
         },
         "home": {
-          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
-          "name": "San Antonio Spurs"
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
         }
       },
-      "date": "2026-04-22T00:00:00Z",
+      "date": "2026-04-23T01:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Frost Bank Center",
-        "location": "San Antonio, TX"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "1f2b707f-3175-5025-9960-ae4ff93264d8",
-      "teams": {
-        "away": {
-          "id": "0d08bf4d-cd46-5bb3-b9fb-9ae5a8f07f6e",
-          "name": "Houston Rockets"
-        },
-        "home": {
-          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
-          "name": "Los Angeles Lakers"
-        }
-      },
-      "date": "2026-04-22T02:30:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Crypto.com Arena",
-        "location": "Los Angeles, CA"
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
       }
     }
   ],
-  "updated": "2026-04-21T06:00:03Z"
+  "updated": "2026-04-22T06:00:02Z"
 }
