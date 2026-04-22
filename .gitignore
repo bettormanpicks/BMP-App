@@ -19,3 +19,4 @@ tabletennis/data/tt_all_h2h_index.pkl
 tabletennis/data/tt_all_schedule.pkl
 upload_to_supabase.py
 .env
+.streamlit/secrets.toml
