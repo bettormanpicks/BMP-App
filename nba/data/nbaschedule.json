@@ -10,22 +10,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "6b55dce9-821d-594b-9cef-9e015889fc61",
+      "id": "9d0e5196-184f-583f-b32c-9c7635d78d9e",
       "teams": {
         "away": {
-          "id": "985459e4-3a63-5133-bacf-703bed32095f",
-          "name": "Orlando Magic"
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         },
         "home": {
-          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
-          "name": "Detroit Pistons"
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
         }
       },
-      "date": "2026-04-22T23:00:00Z",
+      "date": "2026-04-23T23:00:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Little Caesars Arena",
-        "location": "Detroit, MI"
+        "name": "State Farm Arena",
+        "location": "Atlanta, GA"
       }
     },
     {
@@ -33,24 +33,47 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "b6e42657-c0b6-58e0-abed-93d97dc967ed",
+      "id": "1f6dc349-a888-578f-89d5-304ad59f7286",
       "teams": {
         "away": {
-          "id": "c3c5dcbc-e238-541c-a3de-5862259f8f23",
-          "name": "Phoenix Suns"
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
         },
         "home": {
-          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
-          "name": "Oklahoma City Thunder"
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
         }
       },
-      "date": "2026-04-23T01:30:00Z",
+      "date": "2026-04-24T00:00:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Paycom Center",
-        "location": "Oklahoma City, OK"
+        "name": "Scotiabank Arena",
+        "location": "Toronto, ON"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "768dfe73-2b14-5094-9937-bf9877d9f586",
+      "teams": {
+        "away": {
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
+        },
+        "home": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        }
+      },
+      "date": "2026-04-24T01:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Target Center",
+        "location": "Minneapolis, MN"
       }
     }
   ],
-  "updated": "2026-04-22T06:00:02Z"
+  "updated": "2026-04-23T06:00:02Z"
 }
