@@ -1,8 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-04-24,09:00,Mutua Madrid Open,Hubert Hurkacz,Lorenzo Musetti
-2026-04-24,09:00,Mutua Madrid Open,Emilio Nava,Valentin Vacherot
-2026-04-24,09:00,Mutua Madrid Open,Tallon Griekspoor,Damir Dzumhur
-2026-04-24,09:00,Mutua Madrid Open,Jan-Lennard Struff,Alex Michelsen
+2026-04-24,Live,Mutua Madrid Open,Hubert Hurkacz,Lorenzo Musetti
+2026-04-24,Live,Mutua Madrid Open,Emilio Nava,Valentin Vacherot
+2026-04-24,Live,Mutua Madrid Open,Tallon Griekspoor,Damir Dzumhur
 2026-04-24,10:30,Mutua Madrid Open,Dusan Lajovic,Arthur Rinderknech
 2026-04-24,10:30,Mutua Madrid Open,Elmer Moller,Gabriel Diallo
 2026-04-24,10:30,Mutua Madrid Open,Ben Shelton,Dino Prizmic
@@ -15,10 +14,10 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-24,15:00,Mutua Madrid Open,Thiago Agustin Tirante,Tommy Paul
 2026-04-24,18:00,Mutua Madrid Open,Rafael Jodar,Alex de Minaur
 2026-04-24,18:30,Mutua Madrid Open,Joao Fonseca,Marin Cilic
-2026-04-24,09:00,Mutua Madrid Open,Magdalena Frech,Solana Sierra
-2026-04-24,09:00,Mutua Madrid Open,Madison Keys,Zhang Shuai
-2026-04-24,09:00,Mutua Madrid Open,Karolina Pliskova,Maria Sakkari
-2026-04-24,09:00,Mutua Madrid Open,Zheng Qinwen,Sofia Kenin
+2026-04-24,Final,Mutua Madrid Open,Jan-Lennard Struff,Alex Michelsen
+2026-04-24,Live,Mutua Madrid Open,Magdalena Frech,Solana Sierra
+2026-04-24,Live,Mutua Madrid Open,Karolina Pliskova,Maria Sakkari
+2026-04-24,Live,Mutua Madrid Open,Zheng Qinwen,Sofia Kenin
 2026-04-24,10:30,Mutua Madrid Open,Janice Tjen,Liudmila Samsonova
 2026-04-24,10:30,Mutua Madrid Open,Elise Mertens,Alexandra Eala
 2026-04-24,10:30,Mutua Madrid Open,Zeynep Sonmez,Cristina Bucsa
@@ -31,7 +30,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-24,13:30,Mutua Madrid Open,Yulia Putintseva,Marta Kostyuk
 2026-04-24,17:00,Mutua Madrid Open,Catherine McNally,Victoria Mboko
 2026-04-24,19:00,Mutua Madrid Open,Jessica Pegula,Katie Boulter
-2026-04-24,09:30,Oeiras Open CETO,Darja Semenistaja,Whitney Osuigwe
+2026-04-24,Final,Mutua Madrid Open,Anastasia Potapova,Zhang Shuai
+2026-04-24,Live,Oeiras Open CETO,Darja Semenistaja,Whitney Osuigwe
 2026-04-24,12:00,Oeiras Open CETO,Polina Kudermetova,Lucia Bronzetti
 2026-04-24,13:30,Oeiras Open CETO,Linda Klimovicova,Yuan Yue
 2026-04-24,15:00,Oeiras Open CETO,Elena Pridankina,Fiona Ferro
