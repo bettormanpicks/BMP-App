@@ -5,6 +5,9 @@ import pandas as pd
 from tabletennis.helpers import load_tt_raw_data, merge_h2h_indexes, LEAGUE_FILES
 import gzip
 
+# Clear cached data so we always fetch fresh CSVs from Supabase
+load_tt_raw_data.clear()
+
 DATA_DIR = os.path.join("tabletennis", "data")
 
 all_schedules = []
