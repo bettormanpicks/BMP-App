@@ -10,22 +10,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "d0cd1b82-aaeb-5cd2-971e-aa39eaaffbd4",
+      "id": "63c19492-392e-5d8e-8923-edcb2dd033d7",
       "teams": {
         "away": {
-          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
-          "name": "Cleveland Cavaliers"
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
         },
         "home": {
-          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
-          "name": "Toronto Raptors"
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
         }
       },
-      "date": "2026-04-26T17:00:00Z",
+      "date": "2026-04-28T00:00:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Scotiabank Arena",
-        "location": "Toronto, ON"
+        "name": "Kia Center",
+        "location": "Orlando, FL"
       }
     },
     {
@@ -33,22 +33,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "3b73d501-a6c8-5b3a-814d-f04b85857770",
+      "id": "3052f935-a83f-5ff5-8f8a-d62506e67e6c",
       "teams": {
         "away": {
-          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
-          "name": "San Antonio Spurs"
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
         },
         "home": {
-          "id": "4267f28a-0b73-50be-b46b-99d7caefa55f",
-          "name": "Portland Trail Blazers"
+          "id": "c3c5dcbc-e238-541c-a3de-5862259f8f23",
+          "name": "Phoenix Suns"
         }
       },
-      "date": "2026-04-26T19:30:00Z",
+      "date": "2026-04-28T01:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Moda Center",
-        "location": "Portland, OR"
+        "name": "Mortgage Matchup Center",
+        "location": "Phoenix, AZ"
       }
     },
     {
@@ -56,47 +56,24 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "3b4f4d7a-9797-5855-b794-93ab479f4b4f",
+      "id": "5bf95e82-1c1b-5e80-ad25-e0d6f95554c0",
       "teams": {
         "away": {
-          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
-          "name": "Boston Celtics"
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
         },
         "home": {
-          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
-          "name": "Philadelphia 76ers"
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
         }
       },
-      "date": "2026-04-26T23:00:00Z",
+      "date": "2026-04-28T02:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Xfinity Mobile Arena",
-        "location": "Philadelphia, PA"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "8b569f32-93b1-58d3-b107-17d0a8bafd77",
-      "teams": {
-        "away": {
-          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
-          "name": "Los Angeles Lakers"
-        },
-        "home": {
-          "id": "0d08bf4d-cd46-5bb3-b9fb-9ae5a8f07f6e",
-          "name": "Houston Rockets"
-        }
-      },
-      "date": "2026-04-27T01:30:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Toyota Center",
-        "location": "Houston, TX"
+        "name": "Ball Arena",
+        "location": "Denver, CO"
       }
     }
   ],
-  "updated": "2026-04-26T06:00:02Z"
+  "updated": "2026-04-27T06:00:02Z"
 }
