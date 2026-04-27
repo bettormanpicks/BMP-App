@@ -1,22 +1,21 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-27,09:00,Mutua Madrid Open,Alejandro Davidovich Fokina,Casper Ruud,atp_15,atp_13,ATP,Clay
-2026-04-27,10:30,Mutua Madrid Open,Stefanos Tsitsipas,Daniel Merida,atp_32,atp_402,ATP,Clay
-2026-04-27,12:00,Mutua Madrid Open,Daniil Medvedev,Nicolai Budkov Kjaer,atp_11,atp_133,ATP,Clay
-2026-04-27,13:00,Mutua Madrid Open,Francisco Cerundolo,Luciano Darderi,atp_19,atp_22,ATP,Clay
-2026-04-27,14:30,Mutua Madrid Open,Alexander Blockx,Felix Auger-Aliassime,atp_104,atp_6,ATP,Clay
-2026-04-27,16:00,Mutua Madrid Open,Adolfo Daniel Vallejo,Flavio Cobolli,atp_9021,atp_20,ATP,Clay
-2026-04-27,18:00,Mutua Madrid Open,Terence Atmane,Alexander Zverev,atp_65,atp_4,ATP,Clay
-2026-04-27,18:30,Mutua Madrid Open,Karen Khachanov,Jakub Mensik,atp_17,atp_16,ATP,Clay
-2026-04-27,09:00,Mutua Madrid Open,Ann Li,Leylah Fernandez,wta_36,wta_28,WTA,Clay
-2026-04-27,09:00,Mutua Madrid Open,Belinda Bencic,Hailey Baptiste,wta_12,wta_44,WTA,Clay
+2026-04-27,Live,Mutua Madrid Open,Belinda Bencic,Hailey Baptiste,wta_12,wta_44,WTA,Clay
 2026-04-27,11:00,Mutua Madrid Open,Aryna Sabalenka,Naomi Osaka,wta_1,wta_16,WTA,Clay
 2026-04-27,11:00,Mutua Madrid Open,Solana Sierra,Karolina Pliskova,wta_64,wta_267,WTA,Clay
 2026-04-27,13:00,Mutua Madrid Open,Mirra Andreeva,Anna Bondar,wta_7,wta_65,WTA,Clay
 2026-04-27,14:00,Mutua Madrid Open,Linda Noskova,Coco Gauff,wta_14,wta_4,WTA,Clay
 2026-04-27,17:00,Mutua Madrid Open,Marta Kostyuk,Catherine McNally,wta_26,wta_68,WTA,Clay
 2026-04-27,19:00,Mutua Madrid Open,Anastasia Potapova,Elena Rybakina,wta_75,wta_3,WTA,Clay
-2026-04-27,09:30,Catalonia Open Solgironès,Caroline Werner,Ruth Roura Llaverias,wta_234,wta_481,WTA,
-2026-04-27,10:00,Catalonia Open Solgironès,Carlota Martinez Cirez,Ekaterina Kazionova,wta_359,wta_494,WTA,
+2026-04-27,Final,Mutua Madrid Open,Ann Li,Leylah Fernandez,wta_36,wta_28,WTA,Clay
+2026-04-27,11:00,Mutua Madrid Open,Stefanos Tsitsipas,Daniel Merida,atp_32,atp_402,ATP,Clay
+2026-04-27,12:00,Mutua Madrid Open,Daniil Medvedev,Nicolai Budkov Kjaer,atp_11,atp_133,ATP,Clay
+2026-04-27,13:00,Mutua Madrid Open,Francisco Cerundolo,Luciano Darderi,atp_62,atp_22,ATP,Clay
+2026-04-27,14:30,Mutua Madrid Open,Alexander Blockx,Felix Auger-Aliassime,atp_104,atp_6,ATP,Clay
+2026-04-27,16:00,Mutua Madrid Open,Adolfo Daniel Vallejo,Flavio Cobolli,atp_9021,atp_20,ATP,Clay
+2026-04-27,18:00,Mutua Madrid Open,Terence Atmane,Alexander Zverev,atp_65,atp_4,ATP,Clay
+2026-04-27,18:30,Mutua Madrid Open,Karen Khachanov,Jakub Mensik,atp_17,atp_16,ATP,Clay
+2026-04-27,Final,Mutua Madrid Open,Alejandro Davidovich Fokina,Casper Ruud,atp_15,atp_13,ATP,Clay
+2026-04-27,Live,Catalonia Open Solgironès,Carlota Martinez Cirez,Ekaterina Kazionova,wta_359,wta_394,WTA,
 2026-04-27,11:00,Catalonia Open Solgironès,Victoria Bosio,Martina Vazquez Valles,wta_337,wta_9100,WTA,
 2026-04-27,11:30,Catalonia Open Solgironès,Laura Pigossi,Aran Teixido Garcia,wta_214,wta_206,WTA,
 2026-04-27,12:00,Catalonia Open Solgironès,Beatriz Haddad Maia,Andrea Lazaro Garcia,wta_66,wta_206,WTA,
@@ -24,25 +23,26 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-27,13:30,Catalonia Open Solgironès,Oksana Selekhmeteva,Rebecca Sramkova,wta_74,wta_102,WTA,
 2026-04-27,16:30,Catalonia Open Solgironès,Ashlyn Krueger,Storm Hunter,wta_100,wta_231,WTA,
 2026-04-27,16:30,Catalonia Open Solgironès,Marina Bassols Ribera,Anastasia Zakharova,wta_209,wta_103,WTA,
-2026-04-27,Live,Huzhou Open,Carol Zhao,Katarzyna Kawa,wta_333,wta_143,WTA,
-2026-04-27,08:15,Huzhou Open,Alevtina Ibragimova,Shi Han,wta_321,wta_330,WTA,
-2026-04-27,03:00,Huzhou Open,Veronika Erjavec,Wang Meiling,wta_112,wta_34,WTA,
-2026-04-27,03:00,Huzhou Open,Sara Saito,Yao Xinxin,wta_236,wta_468,WTA,
+2026-04-27,Final,Catalonia Open Solgironès,Caroline Werner,Ruth Roura Llaverias,wta_234,wta_481,WTA,
+2026-04-27,Live,Huzhou Open,Alevtina Ibragimova,Shi Han,wta_321,wta_330,WTA,
 2026-04-27,03:00,Huzhou Open,Dalila Spiteri,Varvara Panshina,wta_275,wta_489,WTA,
-2026-04-27,04:30,Huzhou Open,Anastasia Zolotareva,Chengyiyi Yuan,wta_443,wta_122,WTA,
+2026-04-27,03:00,Huzhou Open,Sara Saito,Yao Xinxin,wta_236,wta_468,WTA,
+2026-04-27,03:00,Huzhou Open,Veronika Erjavec,Wang Meiling,wta_112,wta_34,WTA,
 2026-04-27,04:30,Huzhou Open,Rada Zolotareva,Despina Papamichail,wta_295,wta_157,WTA,
+2026-04-27,04:30,Huzhou Open,Anastasia Zolotareva,Chengyiyi Yuan,wta_295,wta_122,WTA,
 2026-04-27,04:30,Huzhou Open,Wang Xiyu,Zhibek Kulambayeva,wta_34,wta_390,WTA,
 2026-04-27,06:00,Huzhou Open,Ren Yufei,Yang Yidi,wta_446,wta_9002,WTA,
 2026-04-27,06:00,Huzhou Open,Guo Hanyu,Dalila Jakupovic,wta_186,wta_385,WTA,
-2026-04-27,09:00,L'Open 35 de Saint Malo,Ayla Aksu,Ekaterina Ovcharenko,wta_304,wta_494,WTA,
-2026-04-27,09:00,L'Open 35 de Saint Malo,Tiantsoa Rakotomanga Rajaonah,Lilli Tagger,wta_120,wta_114,WTA,
-2026-04-27,09:00,L'Open 35 de Saint Malo,Weronika Falkowska,Amandine Monnot,wta_493,wta_402,WTA,
-2026-04-27,10:00,L'Open 35 de Saint Malo,Julie Belgraver,Yara Bartashevich,wta_266,wta_509,WTA,
-2026-04-27,10:00,L'Open 35 de Saint Malo,Lucie Nguyen Tan,Yasmine Kabbaj,wta_229,wta_361,WTA,
-2026-04-27,10:30,L'Open 35 de Saint Malo,Tereza Valentova,Sloane Stephens,wta_42,wta_775,WTA,
-2026-04-27,11:30,L'Open 35 de Saint Malo,Lulu Sun,Yuan Yue,wta_98,wta_122,WTA,
+2026-04-27,Final,Huzhou Open,Carol Zhao,Katarzyna Kawa,wta_333,wta_143,WTA,
+2026-04-27,Live,L'Open 35 de Saint Malo,Julie Belgraver,Yara Bartashevich,wta_266,wta_509,WTA,
+2026-04-27,Live,L'Open 35 de Saint Malo,Tereza Valentova,Sloane Stephens,wta_42,wta_775,WTA,
+2026-04-27,10:55,L'Open 35 de Saint Malo,Lucie Nguyen Tan,Yasmine Kabbaj,wta_229,wta_361,WTA,
+2026-04-27,12:00,L'Open 35 de Saint Malo,Lulu Sun,Yuan Yue,wta_98,wta_122,WTA,
 2026-04-27,12:00,L'Open 35 de Saint Malo,Moyuka Uchijima,Ksenia Efremova,wta_90,wta_595,WTA,
 2026-04-27,13:30,L'Open 35 de Saint Malo,Clara Burel,Viktorija Golubic,wta_15,wta_88,WTA,
+2026-04-27,Final,L'Open 35 de Saint Malo,Tiantsoa Rakotomanga Rajaonah,Lilli Tagger,wta_120,wta_114,WTA,
+2026-04-27,Final,L'Open 35 de Saint Malo,Ayla Aksu,Ekaterina Ovcharenko,wta_304,wta_494,WTA,
+2026-04-27,Final,L'Open 35 de Saint Malo,Weronika Falkowska,Amandine Monnot,wta_493,wta_374,WTA,
 2026-04-28,TBD,Mutua Madrid Open,Jannik Sinner,Cameron Norrie,atp_2,atp_27,ATP,Clay
 2026-04-28,TBD,Mutua Madrid Open,Jiri Lehecka,Lorenzo Musetti,atp_21,atp_5,ATP,Clay
 2026-04-28,TBD,Mutua Madrid Open,Tomas Martin Etcheverry,Arthur Fils,atp_53,atp_40,ATP,Clay
@@ -55,8 +55,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-28,TBD,Catalonia Open Solgironès,Aliona Bolsova,Peyton Stearns,wta_225,wta_59,WTA,
 2026-04-28,TBD,Catalonia Open Solgironès,Jil Teichmann,Jessica Bouzas Maneiro,wta_175,wta_48,WTA,
 2026-04-28,TBD,Catalonia Open Solgironès,Wang Xinyu,Kaitlin Quevedo,wta_34,wta_131,WTA,
-2026-04-28,07:00,Huzhou Open,Polona Hercog,Gao Xinyu,wta_314,wta_34,WTA,
-2026-04-28,07:30,Huzhou Open,Diletta Cherubini,Ekaterina Reyngold,wta_389,wta_494,WTA,
+2026-04-28,07:00,Huzhou Open,Polona Hercog,Gao Xinyu,wta_314,wta_262,WTA,
+2026-04-28,07:30,Huzhou Open,Diletta Cherubini,Ekaterina Reyngold,wta_389,wta_299,WTA,
 2026-04-28,TBD,L'Open 35 de Saint Malo,Claire Liu,Alice Rame,wta_213,wta_199,WTA,
 2026-04-28,TBD,L'Open 35 de Saint Malo,Jessika Ponchet,Fiona Ferro,wta_159,wta_239,WTA,
 2026-04-28,TBD,L'Open 35 de Saint Malo,Chloe Paquet,Whitney Osuigwe,wta_215,wta_162,WTA,
