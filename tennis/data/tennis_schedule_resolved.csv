@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-27,19:00,Mutua Madrid Open,Anastasia Potapova,Elena Rybakina,wta_75,wta_3,WTA,Clay
+2026-04-27,Live,Mutua Madrid Open,Anastasia Potapova,Elena Rybakina,wta_75,wta_3,WTA,Clay
 2026-04-27,Final,Mutua Madrid Open,Aryna Sabalenka,Naomi Osaka,wta_1,wta_16,WTA,Clay
 2026-04-27,Final,Mutua Madrid Open,Linda Noskova,Coco Gauff,wta_14,wta_4,WTA,Clay
 2026-04-27,Final,Mutua Madrid Open,Mirra Andreeva,Anna Bondar,wta_7,wta_65,WTA,Clay
@@ -7,12 +7,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-27,Final,Mutua Madrid Open,Ann Li,Leylah Fernandez,wta_36,wta_28,WTA,Clay
 2026-04-27,Final,Mutua Madrid Open,Marta Kostyuk,Catherine McNally,wta_26,wta_68,WTA,Clay
 2026-04-27,Final,Mutua Madrid Open,Solana Sierra,Karolina Pliskova,wta_64,wta_267,WTA,Clay
-2026-04-27,Live,Mutua Madrid Open,Terence Atmane,Alexander Zverev,atp_65,atp_4,ATP,Clay
-2026-04-27,Live,Mutua Madrid Open,Adolfo Daniel Vallejo,Flavio Cobolli,atp_9021,atp_20,ATP,Clay
-2026-04-27,19:05,Mutua Madrid Open,Karen Khachanov,Jakub Mensik,atp_17,atp_16,ATP,Clay
+2026-04-27,Final,Mutua Madrid Open,Terence Atmane,Alexander Zverev,atp_65,atp_4,ATP,Clay
 2026-04-27,Final,Mutua Madrid Open,Alexander Blockx,Felix Auger-Aliassime,atp_104,atp_6,ATP,Clay
 2026-04-27,Final,Mutua Madrid Open,Daniil Medvedev,Nicolai Budkov Kjaer,atp_11,atp_133,ATP,Clay
+2026-04-27,Final,Mutua Madrid Open,Adolfo Daniel Vallejo,Flavio Cobolli,atp_9021,atp_20,ATP,Clay
 2026-04-27,Final,Mutua Madrid Open,Alejandro Davidovich Fokina,Casper Ruud,atp_15,atp_13,ATP,Clay
+2026-04-27,Final,Mutua Madrid Open,Karen Khachanov,Jakub Mensik,atp_17,atp_16,ATP,Clay
 2026-04-27,Final,Mutua Madrid Open,Francisco Cerundolo,Luciano Darderi,atp_62,atp_22,ATP,Clay
 2026-04-27,Final,Mutua Madrid Open,Stefanos Tsitsipas,Daniel Merida,atp_32,atp_402,ATP,Clay
 2026-04-27,Final,Catalonia Open Solgironès,Beatriz Haddad Maia,Andrea Lazaro Garcia,wta_66,wta_206,WTA,
@@ -49,6 +49,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-04-28,12:00,Mutua Madrid Open,Stefanos Tsitsipas,Casper Ruud,atp_32,atp_13,ATP,Clay
 2026-04-28,14:00,Mutua Madrid Open,Vit Kopriva,Rafael Jodar,atp_87,atp_117,ATP,Clay
 2026-04-28,17:00,Mutua Madrid Open,Francisco Cerundolo,Alexander Blockx,atp_62,atp_104,ATP,Clay
+2026-04-28,18:30,Mutua Madrid Open,Daniil Medvedev,Flavio Cobolli,atp_11,atp_20,ATP,Clay
+2026-04-28,19:30,Mutua Madrid Open,Jakub Mensik,Alexander Zverev,atp_16,atp_4,ATP,Clay
 2026-04-28,11:00,Mutua Madrid Open,Leylah Fernandez,Mirra Andreeva,wta_28,wta_7,WTA,Clay
 2026-04-28,18:00,Mutua Madrid Open,Aryna Sabalenka,Hailey Baptiste,wta_1,wta_44,WTA,Clay
 2026-04-28,08:30,Catalonia Open Solgironès,Elena Pridankina,Kamilla Rakhimova,wta_192,wta_91,WTA,

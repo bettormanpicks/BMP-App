@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-04-27,19:00,Mutua Madrid Open,Anastasia Potapova,Elena Rybakina
+2026-04-27,Live,Mutua Madrid Open,Anastasia Potapova,Elena Rybakina
 2026-04-27,Final,Mutua Madrid Open,Aryna Sabalenka,Naomi Osaka
 2026-04-27,Final,Mutua Madrid Open,Linda Noskova,Coco Gauff
 2026-04-27,Final,Mutua Madrid Open,Mirra Andreeva,Anna Bondar
@@ -7,12 +7,12 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-27,Final,Mutua Madrid Open,Ann Li,Leylah Fernandez
 2026-04-27,Final,Mutua Madrid Open,Marta Kostyuk,Catherine McNally
 2026-04-27,Final,Mutua Madrid Open,Solana Sierra,Karolina Pliskova
-2026-04-27,Live,Mutua Madrid Open,Terence Atmane,Alexander Zverev
-2026-04-27,Live,Mutua Madrid Open,Adolfo Daniel Vallejo,Flavio Cobolli
-2026-04-27,19:05,Mutua Madrid Open,Karen Khachanov,Jakub Mensik
+2026-04-27,Final,Mutua Madrid Open,Terence Atmane,Alexander Zverev
 2026-04-27,Final,Mutua Madrid Open,Alexander Blockx,Felix Auger-Aliassime
 2026-04-27,Final,Mutua Madrid Open,Daniil Medvedev,Nicolai Budkov Kjaer
+2026-04-27,Final,Mutua Madrid Open,Adolfo Daniel Vallejo,Flavio Cobolli
 2026-04-27,Final,Mutua Madrid Open,Alejandro Davidovich Fokina,Casper Ruud
+2026-04-27,Final,Mutua Madrid Open,Karen Khachanov,Jakub Mensik
 2026-04-27,Final,Mutua Madrid Open,Francisco Cerundolo,Luciano Darderi
 2026-04-27,Final,Mutua Madrid Open,Stefanos Tsitsipas,Daniel Merida
 2026-04-27,Final,Catalonia Open Solgironès,Beatriz Haddad Maia,Andrea Lazaro Garcia
@@ -49,6 +49,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-04-28,12:00,Mutua Madrid Open,Stefanos Tsitsipas,Casper Ruud
 2026-04-28,14:00,Mutua Madrid Open,Vit Kopriva,Rafael Jodar
 2026-04-28,17:00,Mutua Madrid Open,Francisco Cerundolo,Alexander Blockx
+2026-04-28,18:30,Mutua Madrid Open,Daniil Medvedev,Flavio Cobolli
+2026-04-28,19:30,Mutua Madrid Open,Jakub Mensik,Alexander Zverev
 2026-04-28,11:00,Mutua Madrid Open,Leylah Fernandez,Mirra Andreeva
 2026-04-28,18:00,Mutua Madrid Open,Aryna Sabalenka,Hailey Baptiste
 2026-04-28,08:30,Catalonia Open Solgironès,Elena Pridankina,Kamilla Rakhimova
