@@ -10,22 +10,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "63c19492-392e-5d8e-8923-edcb2dd033d7",
+      "id": "5a31ed32-dc19-5a01-ba44-92b1a5cc748b",
       "teams": {
         "away": {
-          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
-          "name": "Detroit Pistons"
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
         },
         "home": {
-          "id": "985459e4-3a63-5133-bacf-703bed32095f",
-          "name": "Orlando Magic"
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
         }
       },
-      "date": "2026-04-28T00:00:00Z",
+      "date": "2026-04-28T23:00:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Kia Center",
-        "location": "Orlando, FL"
+        "name": "TD Garden",
+        "location": "Boston, MA"
       }
     },
     {
@@ -33,22 +33,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "3052f935-a83f-5ff5-8f8a-d62506e67e6c",
+      "id": "b2687b61-e8ec-5cbd-97b2-c8f09231baeb",
       "teams": {
         "away": {
-          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
-          "name": "Oklahoma City Thunder"
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
         },
         "home": {
-          "id": "c3c5dcbc-e238-541c-a3de-5862259f8f23",
-          "name": "Phoenix Suns"
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         }
       },
-      "date": "2026-04-28T01:30:00Z",
+      "date": "2026-04-29T00:00:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Mortgage Matchup Center",
-        "location": "Phoenix, AZ"
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
       }
     },
     {
@@ -56,24 +56,24 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "5bf95e82-1c1b-5e80-ad25-e0d6f95554c0",
+      "id": "976a5241-57cc-5ddc-893d-31a71c4c3744",
       "teams": {
         "away": {
-          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
-          "name": "Minnesota Timberwolves"
+          "id": "4267f28a-0b73-50be-b46b-99d7caefa55f",
+          "name": "Portland Trail Blazers"
         },
         "home": {
-          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
-          "name": "Denver Nuggets"
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
         }
       },
-      "date": "2026-04-28T02:30:00Z",
+      "date": "2026-04-29T01:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Ball Arena",
-        "location": "Denver, CO"
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
       }
     }
   ],
-  "updated": "2026-04-27T06:00:02Z"
+  "updated": "2026-04-28T06:00:02Z"
 }
