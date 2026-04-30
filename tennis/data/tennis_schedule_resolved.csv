@@ -1,23 +1,24 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-04-30,11:00,Mutua Madrid Open,Casper Ruud,Alexander Blockx,atp_13,atp_104,ATP,Clay
 2026-04-30,18:00,Mutua Madrid Open,Flavio Cobolli,Alexander Zverev,atp_20,atp_4,ATP,Clay
+2026-04-30,Final,Mutua Madrid Open,Casper Ruud,Alexander Blockx,atp_13,atp_104,ATP,Clay
 2026-04-30,14:00,Mutua Madrid Open,Hailey Baptiste,Mirra Andreeva,wta_44,wta_7,WTA,Clay
 2026-04-30,19:30,Mutua Madrid Open,Marta Kostyuk,Anastasia Potapova,wta_26,wta_75,WTA,Clay
-2026-04-30,Live,Catalonia Open Solgironès,Laura Pigossi,Daria Kasatkina,wta_214,wta_61,WTA,
-2026-04-30,11:30,Catalonia Open Solgironès,Wang Xinyu,Alina Charaeva,wta_34,wta_163,WTA,
-2026-04-30,13:00,Catalonia Open Solgironès,Rebeka Masarova,Elena Pridankina,wta_117,wta_192,WTA,
+2026-04-30,Live,Catalonia Open Solgironès,Wang Xinyu,Alina Charaeva,wta_34,wta_163,WTA,
+2026-04-30,Live,Catalonia Open Solgironès,Rebeka Masarova,Elena Pridankina,wta_117,wta_192,WTA,
 2026-04-30,16:30,Catalonia Open Solgironès,Antonia Ruzic,Sara Sorribes Tormo,wta_67,wta_451,WTA,
+2026-04-30,Final,Catalonia Open Solgironès,Laura Pigossi,Daria Kasatkina,wta_214,wta_61,WTA,
 2026-04-30,03:00,Huzhou Open,Veronika Erjavec,Zheng Wushuang,wta_112,wta_372,WTA,
 2026-04-30,04:30,Huzhou Open,Wang Xiyu,Polona Hercog,wta_34,wta_314,WTA,
 2026-04-30,04:30,Huzhou Open,Varvara Panshina,Katarzyna Kawa,wta_489,wta_143,WTA,
 2026-04-30,06:00,Huzhou Open,Guo Hanyu,Rada Zolotareva,wta_186,wta_295,WTA,
 2026-04-30,Final,Huzhou Open,Guo Hanyu,Diletta Cherubini,wta_186,wta_389,WTA,
-2026-04-30,10:50,L'Open 35 de Saint Malo,Whitney Osuigwe,Viktorija Golubic,wta_162,wta_88,WTA,
-2026-04-30,12:00,L'Open 35 de Saint Malo,Bianca Andreescu,Yuan Yue,wta_161,wta_122,WTA,
-2026-04-30,13:30,L'Open 35 de Saint Malo,Celine Naef,Anna Blinkova,wta_260,wta_82,WTA,
+2026-04-30,Live,L'Open 35 de Saint Malo,Bianca Andreescu,Yuan Yue,wta_161,wta_122,WTA,
+2026-04-30,14:30,L'Open 35 de Saint Malo,Celine Naef,Anna Blinkova,wta_260,wta_65,WTA,
+2026-04-30,Final,L'Open 35 de Saint Malo,Whitney Osuigwe,Viktorija Golubic,wta_162,wta_88,WTA,
 2026-04-30,Final,L'Open 35 de Saint Malo,Yasmine Kabbaj,Jessika Ponchet,wta_361,wta_159,WTA,
 2026-05-01,TBD,Mutua Madrid Open,Jannik Sinner,Arthur Fils,atp_2,atp_40,ATP,Clay
 2026-05-01,TBD,Catalonia Open Solgironès,Caroline Werner,Tamara Korpatsch,wta_234,wta_106,WTA,
 2026-05-01,TBD,Catalonia Open Solgironès,Beatriz Haddad Maia,Marina Bassols Ribera,wta_66,wta_209,WTA,
+2026-05-01,TBD,L'Open 35 de Saint Malo,Jessika Ponchet,Viktorija Golubic,wta_159,wta_88,WTA,
 2026-05-01,TBD,L'Open 35 de Saint Malo,Moyuka Uchijima,Sofia Costoulas,wta_90,wta_142,WTA,
 2026-05-01,TBD,L'Open 35 de Saint Malo,Tereza Valentova,Lilli Tagger,wta_42,wta_114,WTA,
