@@ -10,22 +10,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "cc24b1e3-f660-5a77-a0fb-52d958af63c8",
+      "id": "a94f5004-aad5-521b-a276-cf241ae69c80",
       "teams": {
         "away": {
-          "id": "985459e4-3a63-5133-bacf-703bed32095f",
-          "name": "Orlando Magic"
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         },
         "home": {
-          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
-          "name": "Detroit Pistons"
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
         }
       },
-      "date": "2026-04-29T23:00:00Z",
+      "date": "2026-04-30T23:00:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Little Caesars Arena",
-        "location": "Detroit, MI"
+        "name": "State Farm Arena",
+        "location": "Atlanta, GA"
       }
     },
     {
@@ -33,22 +33,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "7fad5705-3a5d-5bc6-9c55-f7429b6df72d",
+      "id": "115c7999-9137-5e5f-899a-05191f31ffdf",
       "teams": {
         "away": {
-          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
-          "name": "Toronto Raptors"
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
         },
         "home": {
-          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
-          "name": "Cleveland Cavaliers"
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
         }
       },
-      "date": "2026-04-29T23:30:00Z",
+      "date": "2026-05-01T00:00:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Rocket Arena",
-        "location": "Cleveland, OH"
+        "name": "Xfinity Mobile Arena",
+        "location": "Philadelphia, PA"
       }
     },
     {
@@ -56,24 +56,24 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "53c66934-d9d5-5f66-9df5-6881071ace82",
+      "id": "8fb76254-801e-5591-896a-a70d949b40b2",
       "teams": {
         "away": {
-          "id": "0d08bf4d-cd46-5bb3-b9fb-9ae5a8f07f6e",
-          "name": "Houston Rockets"
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
         },
         "home": {
-          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
-          "name": "Los Angeles Lakers"
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
         }
       },
-      "date": "2026-04-30T02:00:00Z",
+      "date": "2026-05-01T01:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Crypto.com Arena",
-        "location": "Los Angeles, CA"
+        "name": "Target Center",
+        "location": "Minneapolis, MN"
       }
     }
   ],
-  "updated": "2026-04-29T06:00:02Z"
+  "updated": "2026-04-30T06:00:01Z"
 }
