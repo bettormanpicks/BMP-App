@@ -1,9 +1,9 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-05-01,18:00,Mutua Madrid Open,Alexander Blockx,Alexander Zverev
+2026-05-01,Live,Mutua Madrid Open,Alexander Blockx,Alexander Zverev
 2026-05-01,Final,Mutua Madrid Open,Jannik Sinner,Arthur Fils
-2026-05-01,Live,Catalonia Open Solgironès,Beatriz Haddad Maia,Marina Bassols Ribera
-2026-05-01,15:50,Catalonia Open Solgironès,Caroline Werner,Tamara Korpatsch
+2026-05-01,Final,Catalonia Open Solgironès,Beatriz Haddad Maia,Marina Bassols Ribera
 2026-05-01,Final,Catalonia Open Solgironès,Alina Charaeva,Daria Kasatkina
+2026-05-01,Final,Catalonia Open Solgironès,Caroline Werner,Tamara Korpatsch
 2026-05-01,Final,Catalonia Open Solgironès,Sara Sorribes Tormo,Elena Pridankina
 2026-05-01,05:00,Huzhou Open,Veronika Erjavec,Wang Xiyu
 2026-05-01,06:30,Huzhou Open,Katarzyna Kawa,Guo Hanyu
@@ -12,13 +12,14 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-01,04:30,Jiangxi Open,Hong Yi Cody Wong,Chengyiyi Yuan
 2026-05-01,04:30,Jiangxi Open,Dang Yiming,Li Zongyu
 2026-05-01,05:30,Jiangxi Open,Ye Qiu Yu,Chenting Zhu
-2026-05-01,Live,L'Open 35 de Saint Malo,Tereza Valentova,Lilli Tagger
-2026-05-01,16:00,L'Open 35 de Saint Malo,Yuan Yue,Anna Blinkova
+2026-05-01,Live,L'Open 35 de Saint Malo,Yuan Yue,Anna Blinkova
+2026-05-01,Final,L'Open 35 de Saint Malo,Tereza Valentova,Lilli Tagger
 2026-05-01,Final,L'Open 35 de Saint Malo,Jessika Ponchet,Viktorija Golubic
 2026-05-01,Final,L'Open 35 de Saint Malo,Moyuka Uchijima,Sofia Costoulas
 2026-05-02,15:00,Mutua Madrid Open,Mirra Andreeva,Marta Kostyuk
-2026-05-02,TBD,Catalonia Open Solgironès,Daria Kasatkina,Sara Sorribes Tormo
+2026-05-02,09:00,Catalonia Open Solgironès,Daria Kasatkina,Sara Sorribes Tormo
+2026-05-02,10:30,Catalonia Open Solgironès,Tamara Korpatsch,Marina Bassols Ribera
 2026-05-02,08:00,Istanbul Open,Minel Naz Kaynak,Isabella Shinikova
 2026-05-02,08:00,Istanbul Open,Defne Cirpanli,Maria Sara Popa
 2026-05-02,08:00,Istanbul Open,Sude Ulueren,Lucia Cortez Llorca
-2026-05-02,TBD,L'Open 35 de Saint Malo,Jessika Ponchet,Moyuka Uchijima
+2026-05-02,09:00,L'Open 35 de Saint Malo,Jessika Ponchet,Moyuka Uchijima
