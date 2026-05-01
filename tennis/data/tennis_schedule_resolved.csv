@@ -1,13 +1,14 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-01,14:00,Mutua Madrid Open,Jannik Sinner,Arthur Fils,atp_2,atp_40,ATP,Clay
 2026-05-01,18:00,Mutua Madrid Open,Alexander Blockx,Alexander Zverev,atp_104,atp_4,ATP,Clay
-2026-05-01,09:00,Catalonia Open Solgironès,Alina Charaeva,Daria Kasatkina,wta_163,wta_61,WTA,
+2026-05-01,Live,Catalonia Open Solgironès,Alina Charaeva,Daria Kasatkina,wta_163,wta_61,WTA,
 2026-05-01,10:30,Catalonia Open Solgironès,Sara Sorribes Tormo,Elena Pridankina,wta_451,wta_192,WTA,
 2026-05-01,14:00,Catalonia Open Solgironès,Beatriz Haddad Maia,Marina Bassols Ribera,wta_66,wta_209,WTA,
 2026-05-01,15:30,Catalonia Open Solgironès,Caroline Werner,Tamara Korpatsch,wta_234,wta_106,WTA,
-2026-05-01,Live,Huzhou Open,Guo Hanyu,Rada Zolotareva,wta_186,wta_295,WTA,
 2026-05-01,05:00,Huzhou Open,Veronika Erjavec,Wang Xiyu,wta_112,wta_34,WTA,
-2026-05-01,09:00,L'Open 35 de Saint Malo,Moyuka Uchijima,Sofia Costoulas,wta_90,wta_142,WTA,
+2026-05-01,06:30,Huzhou Open,Katarzyna Kawa,Guo Hanyu,wta_143,wta_186,WTA,
+2026-05-01,Final,Huzhou Open,Guo Hanyu,Rada Zolotareva,wta_186,wta_295,WTA,
+2026-05-01,Live,L'Open 35 de Saint Malo,Moyuka Uchijima,Sofia Costoulas,wta_90,wta_142,WTA,
 2026-05-01,10:30,L'Open 35 de Saint Malo,Jessika Ponchet,Viktorija Golubic,wta_159,wta_88,WTA,
 2026-05-01,12:00,L'Open 35 de Saint Malo,Tereza Valentova,Lilli Tagger,wta_42,wta_114,WTA,
 2026-05-01,14:00,L'Open 35 de Saint Malo,Yuan Yue,Anna Blinkova,wta_122,wta_82,WTA,
