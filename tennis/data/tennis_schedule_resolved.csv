@@ -1,6 +1,6 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-05-01,Live,Mutua Madrid Open,Alexander Blockx,Alexander Zverev,atp_104,atp_4,ATP,Clay
 2026-05-01,Final,Mutua Madrid Open,Jannik Sinner,Arthur Fils,atp_2,atp_40,ATP,Clay
+2026-05-01,Final,Mutua Madrid Open,Alexander Blockx,Alexander Zverev,atp_104,atp_4,ATP,Clay
 2026-05-01,Final,Catalonia Open Solgironès,Beatriz Haddad Maia,Marina Bassols Ribera,wta_66,wta_209,WTA,
 2026-05-01,Final,Catalonia Open Solgironès,Alina Charaeva,Daria Kasatkina,wta_163,wta_61,WTA,
 2026-05-01,Final,Catalonia Open Solgironès,Caroline Werner,Tamara Korpatsch,wta_234,wta_106,WTA,
@@ -12,9 +12,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-01,04:30,Jiangxi Open,Hong Yi Cody Wong,Chengyiyi Yuan,atp_137,wta_122,ATP,Hard
 2026-05-01,04:30,Jiangxi Open,Dang Yiming,Li Zongyu,wta_778,wta_36,WTA,Hard
 2026-05-01,05:30,Jiangxi Open,Ye Qiu Yu,Chenting Zhu,wta_919,wta_9054,WTA,Hard
-2026-05-01,Live,L'Open 35 de Saint Malo,Yuan Yue,Anna Blinkova,wta_122,wta_82,WTA,
 2026-05-01,Final,L'Open 35 de Saint Malo,Tereza Valentova,Lilli Tagger,wta_42,wta_114,WTA,
 2026-05-01,Final,L'Open 35 de Saint Malo,Jessika Ponchet,Viktorija Golubic,wta_159,wta_88,WTA,
+2026-05-01,Final,L'Open 35 de Saint Malo,Yuan Yue,Anna Blinkova,wta_122,wta_82,WTA,
 2026-05-01,Final,L'Open 35 de Saint Malo,Moyuka Uchijima,Sofia Costoulas,wta_90,wta_142,WTA,
 2026-05-02,15:00,Mutua Madrid Open,Mirra Andreeva,Marta Kostyuk,wta_7,wta_26,WTA,Clay
 2026-05-02,09:00,Catalonia Open Solgironès,Daria Kasatkina,Sara Sorribes Tormo,wta_61,wta_451,WTA,
@@ -23,3 +23,4 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-02,08:00,Istanbul Open,Defne Cirpanli,Maria Sara Popa,wta_862,wta_9031,WTA,
 2026-05-02,08:00,Istanbul Open,Sude Ulueren,Lucia Cortez Llorca,wta_9101,wta_569,ATP,
 2026-05-02,09:00,L'Open 35 de Saint Malo,Jessika Ponchet,Moyuka Uchijima,wta_159,wta_90,WTA,
+2026-05-02,12:00,L'Open 35 de Saint Malo,Tereza Valentova,Anna Blinkova,wta_42,wta_82,WTA,
