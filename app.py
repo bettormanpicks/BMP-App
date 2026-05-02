@@ -1134,7 +1134,7 @@ with streamlit_analytics.track():
         with st.sidebar.form("TT Filters"):
 
             recency_window = st.radio(
-                "Recency Window", ["L10", "L20", "L30", "L60", "ALL"], index=2, horizontal=True
+                "Recency Window", ["L25", "L50", "ALL"], index=0, horizontal=True
             )
 
             min_matches = st.slider(

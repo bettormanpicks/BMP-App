@@ -268,7 +268,7 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
       a_sr_pct, a_sr_n
       b_sr_pct, b_sr_n
 
-    window = "ALL" | "L10" | "L20" | "L30" | "L60"
+    window = "L25" | "L50" | "ALL"
     """
     key = tuple(sorted([player_a, player_b]))
     if key not in h2h_index:
@@ -277,14 +277,10 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     matches = h2h_index[key]
 
     # Apply recency window (list is newest-first)
-    if window == "L10":
-        matches = matches[:10]
-    elif window == "L20":
-        matches = matches[:20]
-    elif window == "L30":
-        matches = matches[:30]
-    elif window == "L60":
-        matches = matches[:60]
+    if window == "L25":
+        matches = matches[:25]
+    elif window == "L50":
+        matches = matches[:50]
 
     total = len(matches)
     if total == 0:
