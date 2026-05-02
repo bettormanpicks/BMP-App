@@ -10,70 +10,24 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "5d5c67d8-b36f-5412-a75f-371d88e51108",
+      "id": "570663e7-db0b-5c5d-b62b-1174ba452965",
       "teams": {
         "away": {
-          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
-          "name": "Detroit Pistons"
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
         },
         "home": {
-          "id": "985459e4-3a63-5133-bacf-703bed32095f",
-          "name": "Orlando Magic"
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
         }
       },
-      "date": "2026-05-01T23:00:00Z",
+      "date": "2026-05-02T23:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Kia Center",
-        "location": "Orlando, FL"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "7867d3e6-11bb-5b60-b826-27c2c9915080",
-      "teams": {
-        "away": {
-          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
-          "name": "Cleveland Cavaliers"
-        },
-        "home": {
-          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
-          "name": "Toronto Raptors"
-        }
-      },
-      "date": "2026-05-01T23:30:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Scotiabank Arena",
-        "location": "Toronto, ON"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "a02de770-63b0-58aa-b9d2-82ecfd9c64b5",
-      "teams": {
-        "away": {
-          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
-          "name": "Los Angeles Lakers"
-        },
-        "home": {
-          "id": "0d08bf4d-cd46-5bb3-b9fb-9ae5a8f07f6e",
-          "name": "Houston Rockets"
-        }
-      },
-      "date": "2026-05-02T01:30:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Toyota Center",
-        "location": "Houston, TX"
+        "name": "TD Garden",
+        "location": "Boston, MA"
       }
     }
   ],
-  "updated": "2026-05-01T06:00:02Z"
+  "updated": "2026-05-02T06:00:02Z"
 }
