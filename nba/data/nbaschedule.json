@@ -10,24 +10,47 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "570663e7-db0b-5c5d-b62b-1174ba452965",
+      "id": "9c1870e6-fa4b-57b0-943d-ae790042c4c6",
       "teams": {
         "away": {
-          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
-          "name": "Philadelphia 76ers"
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
         },
         "home": {
-          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
-          "name": "Boston Celtics"
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
         }
       },
-      "date": "2026-05-02T23:30:00Z",
+      "date": "2026-05-03T19:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "TD Garden",
-        "location": "Boston, MA"
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "d31ee0f1-2c24-5ab7-a376-70f773531584",
+      "teams": {
+        "away": {
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
+        },
+        "home": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        }
+      },
+      "date": "2026-05-03T23:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Rocket Arena",
+        "location": "Cleveland, OH"
       }
     }
   ],
-  "updated": "2026-05-02T06:00:02Z"
+  "updated": "2026-05-03T06:00:05Z"
 }

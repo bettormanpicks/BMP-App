@@ -1,6 +1,23 @@
 import os
+import pickle
+import io
 import pandas as pd
 import streamlit as st
+import gzip
+from supabase import create_client
+
+BUCKET_NAME = "bmp-data"
+
+@st.cache_resource
+def get_supabase_client():
+    url = st.secrets["SUPABASE_URL"]
+    key = st.secrets["SUPABASE_KEY"]
+    return create_client(url, key)
+
+def download_from_supabase(filename):
+    supabase = get_supabase_client()
+    response = supabase.storage.from_(BUCKET_NAME).download(filename)
+    return io.BytesIO(response)
 
 DATA_DIR = os.path.join("tabletennis", "data")
 
@@ -76,7 +93,7 @@ def normalize_name(name):
 # -------------------------
 # Load Raw CSVs
 # -------------------------
-@st.cache_data(show_spinner=False)
+@st.cache_data(show_spinner=False, max_entries=4)
 def load_tt_raw_data(league):
     """
     Loads raw Table Tennis datasets and applies minimal cleaning.
@@ -84,9 +101,9 @@ def load_tt_raw_data(league):
     """
     paths = LEAGUE_FILES[league]
 
-    schedule  = pd.read_csv(paths["schedule"])
-    matchlogs = pd.read_csv(paths["matchlogs"])
-    h2h       = pd.read_csv(paths["h2h"])
+    schedule  = pd.read_csv(download_from_supabase(os.path.basename(paths["schedule"])))
+    matchlogs = pd.read_csv(download_from_supabase(os.path.basename(paths["matchlogs"])))
+    h2h       = pd.read_csv(download_from_supabase(os.path.basename(paths["h2h"])))
 
     # Keep originals for display
     matchlogs["player1_display"] = matchlogs["player1"]
@@ -138,33 +155,25 @@ def load_tt_raw_data(league):
 
     return schedule, matchlogs, h2h, h2h_index
 
-
 # -------------------------
-# Load All League Data
+# Build all league data
 # -------------------------
-@st.cache_data(show_spinner=False)
-def load_all_tt_raw_data():
-    leagues = list(LEAGUE_FILES.keys())
+@st.cache_data(show_spinner=False, max_entries=1)
+def load_tt_all_leagues():
+    # Download schedule from Supabase
+    schedule = pd.read_csv(download_from_supabase("tt_all_schedule.csv"))
+    schedule["player1_display"] = schedule["player1"]
+    schedule["player2_display"] = schedule["player2"]
+    schedule["player1"] = schedule["player1"].apply(normalize_name)
+    schedule["player2"] = schedule["player2"].apply(normalize_name)
+    schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
 
-    schedules = []
-    matchlogs = []
+    # Download h2h index from Supabase
+    pkl_buffer = download_from_supabase("tt_all_h2h_index.pkl.gz")
+    with gzip.open(pkl_buffer, "rb") as f:
+        h2h_index = pickle.load(f)
 
-    for lg in leagues:
-        s, m, _, _ = load_tt_raw_data(lg)
-
-        s = s.copy()
-        m = m.copy()
-
-        s["league"] = lg
-        m["league"] = lg
-
-        schedules.append(s)
-        matchlogs.append(m)
-
-    schedule = pd.concat(schedules, ignore_index=True)
-    matchlogs = pd.concat(matchlogs, ignore_index=True)
-
-    return schedule, matchlogs  # 👈 ONLY cache simple objects
+    return schedule, None, None, h2h_index
 
 # -------------------------
 # Build H2H index from matchlogs
@@ -214,6 +223,28 @@ def build_h2h_index(matchlogs):
         })
 
     return h2h_index
+
+# -------------------------
+# Merge H2H indexes
+# -------------------------
+def merge_h2h_indexes(indexes):
+    """
+    Merges multiple h2h_index dicts by combining match lists for shared
+    keys and sorting merged lists newest-first.
+    """
+    merged = {}
+    for index in indexes:
+        for key, matches in index.items():
+            if key in merged:
+                merged[key].extend(matches)
+            else:
+                merged[key] = list(matches)
+
+    # Re-sort each pair's matches newest-first after merging
+    for key in merged:
+        merged[key].sort(key=lambda m: m["date"], reverse=True)
+
+    return merged
 
 # -------------------------
 # Compute H2H stats for a player pair
