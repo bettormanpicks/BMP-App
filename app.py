@@ -1159,12 +1159,6 @@ with streamlit_analytics.track():
                 "P2 SR#",
                 "P1 S",
                 "P2 S",
-                "P1 SlowS",
-                "P1 Rec%",
-                "P1 Rec#",
-                "P2 SlowS",
-                "P2 Rec%",
-                "P2 Rec#",
                 "P1 W",
                 "P2 W",
                 "P1 W%",
@@ -1175,6 +1169,12 @@ with streamlit_analytics.track():
                 "SS",
                 "ATP",
                 "PS",
+                "P1 SlowS",
+                "P1 Rec%",
+                "P1 Rec#",
+                "P2 SlowS",
+                "P2 Rec%",
+                "P2 Rec#",
             ]
 
             selected_stats = st.multiselect(
@@ -1297,12 +1297,6 @@ with streamlit_analytics.track():
                     "P2 SR#": stats.get("b_sr_n", 0),
                     "P1 Sweeps": stats.get("sweeps_a", 0),
                     "P2 Sweeps": stats.get("sweeps_b", 0),
-                    "P1 SS":    round(stats.get("a_ss_score", 0) * 100, 1),
-                    "P1 Rec%":  round(stats.get("a_recovery_pct", 0) * 100, 1),
-                    "P1 Rec#":  stats.get("a_recovery_n", 0),
-                    "P2 SS":    round(stats.get("b_ss_score", 0) * 100, 1),
-                    "P2 Rec%":  round(stats.get("b_recovery_pct", 0) * 100, 1),
-                    "P2 Rec#":  stats.get("b_recovery_n", 0),
                     "P1 Wins": stats["a_wins"],
                     "P2 Wins": stats["b_wins"],
                     "Win % (P1)": round(stats["win_pct"] * 100, 1),
@@ -1313,6 +1307,12 @@ with streamlit_analytics.track():
                     "SS": round(stats.get("SS", 0), 2),
                     "ATP": round(stats.get("ATP", 0), 2),
                     "PS": round(stats.get("PS", 0), 2),
+                    "P1 SS":    round(stats.get("a_ss_score", 0) * 100, 1),
+                    "P1 Rec%":  round(stats.get("a_recovery_pct", 0) * 100, 1),
+                    "P1 Rec#":  stats.get("a_recovery_n", 0),
+                    "P2 SS":    round(stats.get("b_ss_score", 0) * 100, 1),
+                    "P2 Rec%":  round(stats.get("b_recovery_pct", 0) * 100, 1),
+                    "P2 Rec#":  stats.get("b_recovery_n", 0),
                     "Last Played": stats["last_played"]
                 }
 
@@ -1349,12 +1349,6 @@ with streamlit_analytics.track():
                 "P2 SR#": "P2 SR#",
                 "P1 Sweeps": "P1 S",
                 "P2 Sweeps": "P2 S",
-                "P1 SS": "P1 SlowS",
-                "P1 Rec%": "P1 Rec%",
-                "P1 Rec#": "P1 Rec#",
-                "P2 SS": "P2 SlowS",
-                "P2 Rec%": "P2 Rec%",
-                "P2 Rec#": "P2 Rec#",
                 "P1 Wins": "P1 W",
                 "P2 Wins": "P2 W",
                 "Win % (P1)": "P1 W%",
@@ -1365,6 +1359,12 @@ with streamlit_analytics.track():
                 "SS": "SS",
                 "ATP": "ATP",
                 "PS": "PS",
+                "P1 SS": "P1 SlowS",
+                "P1 Rec%": "P1 Rec%",
+                "P1 Rec#": "P1 Rec#",
+                "P2 SS": "P2 SlowS",
+                "P2 Rec%": "P2 Rec%",
+                "P2 Rec#": "P2 Rec#",
             }
 
             df_display = df.rename(columns=DISPLAY_NAMES)
