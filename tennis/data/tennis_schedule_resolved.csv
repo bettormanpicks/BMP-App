@@ -1,21 +1,23 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-03,15:00,Mutua Madrid Open,Jannik Sinner,Alexander Zverev,atp_2,atp_4,ATP,Clay
-2026-05-03,09:00,Catalonia Open Solgironès,Daria Kasatkina,Tamara Korpatsch,wta_61,wta_106,WTA,
-2026-05-03,08:00,Istanbul Open,Mia Ristic,Lucia Cortez Llorca,wta_273,wta_569,WTA,
-2026-05-03,08:00,Istanbul Open,Katherine Sebov,Dalila Jakupovic,wta_270,wta_385,WTA,
-2026-05-03,09:30,Istanbul Open,Raluka Serban,Maria Sara Popa,wta_244,wta_9031,WTA,
-2026-05-03,09:30,Istanbul Open,Tereza Martincova,Isabella Shinikova,wta_351,wta_340,WTA,
+2026-05-03,Live,Catalonia Open Solgironès,Daria Kasatkina,Tamara Korpatsch,wta_61,wta_106,WTA,
+2026-05-03,10:00,Istanbul Open,Tereza Martincova,Isabella Shinikova,wta_351,wta_340,WTA,
+2026-05-03,10:00,Istanbul Open,Mia Ristic,Lucia Cortez Llorca,wta_273,wta_569,WTA,
+2026-05-03,11:00,Istanbul Open,Raluka Serban,Maria Sara Popa,wta_244,wta_9031,WTA,
+2026-05-03,TBD,Istanbul Open,Katherine Sebov,Dalila Jakupovic,wta_270,wta_385,WTA,
+2026-05-03,03:00,Jiangxi Open,Bai Zhuoxuan,Lu Jia-Jing,wta_379,wta_431,WTA,Hard
+2026-05-03,04:30,Jiangxi Open,En-Shuo Liang,Ren Yufei,wta_360,wta_446,WTA,Hard
+2026-05-03,05:00,Jiangxi Open,Hong Yi Cody Wong,Yao Xinxin,atp_137,wta_468,ATP,Hard
+2026-05-03,06:00,Jiangxi Open,Li Zongyu,Zheng Wushuang,wta_36,wta_372,WTA,Hard
 2026-05-03,11:30,L'Open 35 de Saint Malo,Tereza Valentova,Moyuka Uchijima,wta_42,wta_90,WTA,
-2026-05-04,TBD,Jiangxi Open,Mananchaya Sawangkaew,Heather Watson,wta_198,wta_278,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Elena Micic,Taylah Preston,wta_375,wta_147,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Viktoria Morvayova,Ma YeXin,wta_328,wta_182,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Wang Jiaqi,You Xiaodi,wta_34,wta_252,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Bai Zhuoxuan,Lu Jia-Jing,wta_379,wta_431,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,En-Shuo Liang,Ren Yufei,wta_360,wta_446,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Anastasia Zolotareva,Mei Yamaguchi,wta_295,wta_285,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Hayu Kinoshita,Kristiana Sidorova,wta_417,wta_434,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Aoi Ito,Lizette Cabrera,wta_176,wta_274,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Haruka Kaji,Gao Xinyu,wta_301,wta_34,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Jessica Pieri,Shi Han,wta_383,wta_330,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Dalila Spiteri,Kyoka Okamura,wta_275,wta_297,WTA,Hard
-2026-05-04,TBD,Jiangxi Open,Lanlana Tararudee,Sofya Lansere,wta_124,wta_420,WTA,Hard
+2026-05-04,TBD,Istanbul Open,Donna Vekic,Aliona Falei,wta_99,wta_356,WTA,
+2026-05-04,TBD,Istanbul Open,Elena Pridankina,Sofia Costoulas,wta_192,wta_142,WTA,
+2026-05-04,TBD,Istanbul Open,Danka Kovinic,Adelina Lachinova,wta_9007,wta_589,WTA,
+2026-05-04,TBD,Istanbul Open,Ekaterine Gorgodze,Francesca Jones,wta_167,wta_72,WTA,
+2026-05-04,TBD,Istanbul Open,Maria Timofeeva,Noma Noha Akugue,wta_54,wta_255,WTA,
+2026-05-04,TBD,Istanbul Open,Anastasia Gasanova,Guo Hanyu,wta_189,wta_186,WTA,
+2026-05-04,TBD,Istanbul Open,Cagla Buyukakcay,Polina Kudermetova,wta_376,wta_144,WTA,
+2026-05-04,TBD,Istanbul Open,Polina Iatcenko,Storm Hunter,wta_160,wta_231,WTA,
+2026-05-04,TBD,Istanbul Open,Guiomar Maristany Zuleta De Reales,Anouk Koevermans,wta_165,wta_172,WTA,
+2026-05-04,TBD,Istanbul Open,Tiantsoa Rakotomanga Rajaonah,Alice Tubello,wta_120,wta_435,WTA,
+2026-05-04,TBD,Istanbul Open,Elizara Yaneva,Ayla Aksu,wta_228,wta_304,WTA,
