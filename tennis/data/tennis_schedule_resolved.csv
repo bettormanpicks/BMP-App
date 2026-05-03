@@ -1,15 +1,15 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-03,15:00,Mutua Madrid Open,Jannik Sinner,Alexander Zverev,atp_2,atp_4,ATP,Clay
-2026-05-03,Live,Catalonia Open Solgironès,Daria Kasatkina,Tamara Korpatsch,wta_61,wta_106,WTA,
-2026-05-03,10:00,Istanbul Open,Tereza Martincova,Isabella Shinikova,wta_351,wta_340,WTA,
-2026-05-03,10:00,Istanbul Open,Mia Ristic,Lucia Cortez Llorca,wta_273,wta_569,WTA,
-2026-05-03,11:00,Istanbul Open,Raluka Serban,Maria Sara Popa,wta_244,wta_9031,WTA,
+2026-05-03,Final,Catalonia Open Solgironès,Daria Kasatkina,Tamara Korpatsch,wta_61,wta_106,WTA,
+2026-05-03,12:45,Istanbul Open,Raluka Serban,Maria Sara Popa,wta_244,wta_9031,WTA,
+2026-05-03,12:45,Istanbul Open,Mia Ristic,Lucia Cortez Llorca,wta_273,wta_569,WTA,
+2026-05-03,14:15,Istanbul Open,Tereza Martincova,Isabella Shinikova,wta_351,wta_340,WTA,
 2026-05-03,TBD,Istanbul Open,Katherine Sebov,Dalila Jakupovic,wta_270,wta_385,WTA,
 2026-05-03,03:00,Jiangxi Open,Bai Zhuoxuan,Lu Jia-Jing,wta_379,wta_431,WTA,Hard
 2026-05-03,04:30,Jiangxi Open,En-Shuo Liang,Ren Yufei,wta_360,wta_446,WTA,Hard
 2026-05-03,05:00,Jiangxi Open,Hong Yi Cody Wong,Yao Xinxin,atp_137,wta_468,ATP,Hard
 2026-05-03,06:00,Jiangxi Open,Li Zongyu,Zheng Wushuang,wta_36,wta_372,WTA,Hard
-2026-05-03,11:30,L'Open 35 de Saint Malo,Tereza Valentova,Moyuka Uchijima,wta_42,wta_90,WTA,
+2026-05-03,Live,L'Open 35 de Saint Malo,Tereza Valentova,Moyuka Uchijima,wta_42,wta_90,WTA,
 2026-05-04,TBD,Istanbul Open,Donna Vekic,Aliona Falei,wta_99,wta_356,WTA,
 2026-05-04,TBD,Istanbul Open,Elena Pridankina,Sofia Costoulas,wta_192,wta_142,WTA,
 2026-05-04,TBD,Istanbul Open,Danka Kovinic,Adelina Lachinova,wta_9007,wta_589,WTA,
@@ -21,3 +21,4 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-04,TBD,Istanbul Open,Guiomar Maristany Zuleta De Reales,Anouk Koevermans,wta_165,wta_172,WTA,
 2026-05-04,TBD,Istanbul Open,Tiantsoa Rakotomanga Rajaonah,Alice Tubello,wta_120,wta_435,WTA,
 2026-05-04,TBD,Istanbul Open,Elizara Yaneva,Ayla Aksu,wta_228,wta_304,WTA,
+2026-05-04,TBD,Istanbul Open,Lina Gjorcheska,Xinran Sun,wta_181,wta_98,WTA,
