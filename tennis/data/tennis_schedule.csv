@@ -1,9 +1,9 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-05-04,08:00,Internazionali BNL d'Italia,Pedro Martinez,Jesper de Jong
-2026-05-04,08:00,Internazionali BNL d'Italia,Francisco Comesana,Billy Harris
-2026-05-04,08:00,Internazionali BNL d'Italia,Daniel Merida,Mackenzie McDonald
-2026-05-04,08:00,Internazionali BNL d'Italia,Jacopo Vasami,Tomas Barrios Vera
-2026-05-04,08:00,Internazionali BNL d'Italia,Cristian Garin,Moez Echargui
+2026-05-04,Live,Internazionali BNL d'Italia,Daniel Merida,Mackenzie McDonald
+2026-05-04,Live,Internazionali BNL d'Italia,Jacopo Vasami,Tomas Barrios Vera
+2026-05-04,Live,Internazionali BNL d'Italia,Pedro Martinez,Jesper de Jong
+2026-05-04,Live,Internazionali BNL d'Italia,Francisco Comesana,Billy Harris
+2026-05-04,Live,Internazionali BNL d'Italia,Cristian Garin,Moez Echargui
 2026-05-04,09:30,Internazionali BNL d'Italia,Luca Van Assche,Hugo Dellien
 2026-05-04,09:30,Internazionali BNL d'Italia,Stefano Travaglia,Stan Wawrinka
 2026-05-04,09:30,Internazionali BNL d'Italia,Dusan Lajovic,Jan Choinski
@@ -23,11 +23,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-04,14:00,Internazionali BNL d'Italia,Rinky Hijikata,Pierluigi Basile
 2026-05-04,14:00,Internazionali BNL d'Italia,Elmer Moller,Nikoloz Basilashvili
 2026-05-04,15:00,Internazionali BNL d'Italia,Adolfo Daniel Vallejo,Jaime Faria
-2026-05-04,08:00,Internazionali BNL d'Italia,Leolia Jeanjean,Diane Parry
-2026-05-04,08:00,Internazionali BNL d'Italia,Ajla Tomljanovic,Marta Lombardini
-2026-05-04,08:00,Internazionali BNL d'Italia,Anastasia Potapova,Irina-Camelia Begu
-2026-05-04,08:00,Internazionali BNL d'Italia,Ashlyn Krueger,Nikola Bartunkova
-2026-05-04,08:00,Internazionali BNL d'Italia,Dominika Salkova,Sinja Kraus
+2026-05-04,Live,Internazionali BNL d'Italia,Leolia Jeanjean,Diane Parry
+2026-05-04,Live,Internazionali BNL d'Italia,Ajla Tomljanovic,Marta Lombardini
+2026-05-04,Live,Internazionali BNL d'Italia,Anastasia Potapova,Irina-Camelia Begu
+2026-05-04,Live,Internazionali BNL d'Italia,Ashlyn Krueger,Nikola Bartunkova
+2026-05-04,Live,Internazionali BNL d'Italia,Dominika Salkova,Sinja Kraus
 2026-05-04,09:30,Internazionali BNL d'Italia,Samira De Stefano,Daria Snigur
 2026-05-04,09:30,Internazionali BNL d'Italia,Aliaksandra Sasnovich,Julia Grabher
 2026-05-04,09:30,Internazionali BNL d'Italia,Giorgia Pedone,Simona Waltert
@@ -47,32 +47,31 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-04,15:00,Internazionali BNL d'Italia,Taylor Townsend,Rebecca Sramkova
 2026-05-04,15:00,Internazionali BNL d'Italia,Beatrice Ricci,Tamara Korpatsch
 2026-05-04,15:00,Internazionali BNL d'Italia,Rebeka Masarova,Moyuka Uchijima
-2026-05-04,TBD,Istanbul Open,Danka Kovinic,Adelina Lachinova
-2026-05-04,TBD,Istanbul Open,Anastasia Gasanova,Guo Hanyu
-2026-05-04,07:00,Istanbul Open,Raluka Serban,Maria Sara Popa
-2026-05-04,07:00,Istanbul Open,Mia Ristic,Lucia Cortez Llorca
-2026-05-04,07:00,Istanbul Open,Katherine Sebov,Dalila Jakupovic
-2026-05-04,08:30,Istanbul Open,Tiantsoa Rakotomanga Rajaonah,Alice Tubello
+2026-05-04,Live,Istanbul Open,Raluka Serban,Maria Sara Popa
+2026-05-04,Live,Istanbul Open,Mia Ristic,Lucia Cortez Llorca
+2026-05-04,Live,Istanbul Open,Katherine Sebov,Dalila Jakupovic
 2026-05-04,08:30,Istanbul Open,Tereza Martincova,Isabella Shinikova
+2026-05-04,08:30,Istanbul Open,Tiantsoa Rakotomanga Rajaonah,Alice Tubello
 2026-05-04,09:00,Istanbul Open,Donna Vekic,Aliona Falei
 2026-05-04,10:00,Istanbul Open,Polina Iatcenko,Storm Hunter
 2026-05-04,10:30,Istanbul Open,Cagla Buyukakcay,Polina Kudermetova
-2026-05-04,12:00,Istanbul Open,Elizara Yaneva,Ayla Aksu
 2026-05-04,12:00,Istanbul Open,Guiomar Maristany Zuleta De Reales,Anouk Koevermans
-2026-05-04,07:00,Jiangxi Open,Li Zongyu,Zheng Wushuang
+2026-05-04,12:00,Istanbul Open,Elizara Yaneva,Ayla Aksu
+2026-05-04,03:00,Jiangxi Open,Haruka Kaji,Gao Xinyu
+2026-05-04,03:00,Jiangxi Open,Anastasia Zolotareva,Mei Yamaguchi
+2026-05-04,03:00,Jiangxi Open,Hayu Kinoshita,Kristiana Sidorova
+2026-05-04,04:30,Jiangxi Open,Elena Micic,Taylah Preston
+2026-05-04,04:30,Jiangxi Open,Jessica Pieri,Shi Han
+2026-05-04,04:30,Jiangxi Open,Lanlana Tararudee,Sofya Lansere
+2026-05-04,06:00,Jiangxi Open,Viktoria Morvayova,Ma YeXin
+2026-05-04,06:00,Jiangxi Open,Mananchaya Sawangkaew,Heather Watson
+2026-05-04,06:00,Jiangxi Open,Aoi Ito,Lizette Cabrera
+2026-05-05,TBD,Istanbul Open,Danka Kovinic,Adelina Lachinova
 2026-05-05,TBD,Istanbul Open,Ekaterine Gorgodze,Francesca Jones
 2026-05-05,TBD,Istanbul Open,Maria Timofeeva,Noma Noha Akugue
+2026-05-05,TBD,Istanbul Open,Anastasia Gasanova,Guo Hanyu
 2026-05-05,TBD,Istanbul Open,Lina Gjorcheska,Xinran Sun
 2026-05-05,TBD,Istanbul Open,Elena Pridankina,Sofia Costoulas
-2026-05-05,TBD,Jiangxi Open,Yang Yidi,Carol Zhao
-2026-05-05,TBD,Jiangxi Open,Mananchaya Sawangkaew,Heather Watson
-2026-05-05,TBD,Jiangxi Open,Elena Micic,Taylah Preston
-2026-05-05,TBD,Jiangxi Open,Viktoria Morvayova,Ma YeXin
-2026-05-05,TBD,Jiangxi Open,Wang Jiaqi,You Xiaodi
-2026-05-05,TBD,Jiangxi Open,Anastasia Zolotareva,Mei Yamaguchi
-2026-05-05,TBD,Jiangxi Open,Hayu Kinoshita,Kristiana Sidorova
-2026-05-05,TBD,Jiangxi Open,Aoi Ito,Lizette Cabrera
-2026-05-05,TBD,Jiangxi Open,Haruka Kaji,Gao Xinyu
-2026-05-05,TBD,Jiangxi Open,Jessica Pieri,Shi Han
-2026-05-05,TBD,Jiangxi Open,Dalila Spiteri,Kyoka Okamura
-2026-05-05,TBD,Jiangxi Open,Lanlana Tararudee,Sofya Lansere
+2026-05-05,07:30,Jiangxi Open,Yang Yidi,Carol Zhao
+2026-05-05,07:30,Jiangxi Open,Dalila Spiteri,Kyoka Okamura
+2026-05-05,07:30,Jiangxi Open,Wang Jiaqi,You Xiaodi
