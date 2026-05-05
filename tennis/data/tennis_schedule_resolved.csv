@@ -1,29 +1,27 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-05-05,08:00,Internazionali BNL d'Italia,Cristian Garin,Jan Choinski,atp_89,atp_124,ATP,Clay
-2026-05-05,08:00,Internazionali BNL d'Italia,Daniel Merida,Tomas Barrios Vera,atp_402,atp_107,ATP,Clay
-2026-05-05,08:00,Internazionali BNL d'Italia,Francisco Comesana,Leandro Riedi,atp_62,atp_171,ATP,Clay
-2026-05-05,09:30,Internazionali BNL d'Italia,Patrick Kypson,Titouan Droguet,atp_105,atp_119,ATP,Clay
-2026-05-05,09:30,Internazionali BNL d'Italia,Dalibor Svrcina,Nicolai Budkov Kjaer,atp_99,atp_133,ATP,Clay
-2026-05-05,09:30,Internazionali BNL d'Italia,Hugo Dellien,Jesper de Jong,atp_157,atp_86,ATP,Clay
+2026-05-05,Live,Internazionali BNL d'Italia,Daniel Merida,Tomas Barrios Vera,atp_402,atp_107,ATP,Clay
+2026-05-05,Live,Internazionali BNL d'Italia,Francisco Comesana,Leandro Riedi,atp_62,atp_171,ATP,Clay
+2026-05-05,10:30,Internazionali BNL d'Italia,Patrick Kypson,Titouan Droguet,atp_105,atp_119,ATP,Clay
+2026-05-05,10:30,Internazionali BNL d'Italia,Dalibor Svrcina,Nicolai Budkov Kjaer,atp_99,atp_133,ATP,Clay
+2026-05-05,10:30,Internazionali BNL d'Italia,Hugo Dellien,Jesper de Jong,atp_157,atp_86,ATP,Clay
+2026-05-05,10:45,Internazionali BNL d'Italia,Aleksandar Kovacevic,Jacob Fearnley,atp_75,atp_84,ATP,Clay
 2026-05-05,11:00,Internazionali BNL d'Italia,Dino Prizmic,Federico Bondioli,atp_121,atp_443,ATP,Clay
-2026-05-05,11:00,Internazionali BNL d'Italia,Aleksandar Kovacevic,Jacob Fearnley,atp_75,atp_84,ATP,Clay
 2026-05-05,11:00,Internazionali BNL d'Italia,Martin Landaluce,Andrea Pellegrino,atp_158,atp_140,ATP,Clay
 2026-05-05,12:30,Internazionali BNL d'Italia,Rinky Hijikata,Nikoloz Basilashvili,atp_112,atp_136,ATP,Clay
 2026-05-05,12:30,Internazionali BNL d'Italia,Jaime Faria,Pablo Llamas Ruiz,atp_146,atp_197,ATP,Clay
+2026-05-05,Final,Internazionali BNL d'Italia,Cristian Garin,Jan Choinski,wta_38,atp_124,WTA,Clay
 2026-05-05,TBD,Internazionali BNL d'Italia,Pablo Carreno Busta,Stan Wawrinka,atp_122,atp_98,ATP,Clay
-2026-05-05,08:00,Internazionali BNL d'Italia,Dalma Galfi,Julia Grabher,wta_86,wta_80,WTA,Clay
-2026-05-05,08:00,Internazionali BNL d'Italia,Anastasia Potapova,Nikola Bartunkova,wta_75,wta_104,WTA,Clay
-2026-05-05,08:00,Internazionali BNL d'Italia,Ajla Tomljanovic,Leolia Jeanjean,wta_73,wta_115,WTA,Clay
-2026-05-05,08:00,Internazionali BNL d'Italia,Elena-Gabriela Ruse,Sinja Kraus,wta_79,wta_105,WTA,Clay
-2026-05-05,09:00,Internazionali BNL d'Italia,Petra Marcinko,Oleksandra Oliynykova,wta_69,wta_71,WTA,Clay
-2026-05-05,09:00,Internazionali BNL d'Italia,Barbora Krejcikova,Elsa Jacquemot,wta_53,wta_57,WTA,Clay
-2026-05-05,09:00,Internazionali BNL d'Italia,Anna Bondar,Zheng Qinwen,wta_65,wta_23,WTA,Clay
-2026-05-05,09:30,Internazionali BNL d'Italia,Yuan Yue,Simona Waltert,wta_122,wta_81,WTA,Clay
-2026-05-05,09:30,Internazionali BNL d'Italia,Noemi Basiletti,Daria Snigur,wta_511,wta_132,WTA,Clay
-2026-05-05,09:30,Internazionali BNL d'Italia,Lilli Tagger,Alina Korneeva,wta_114,wta_146,WTA,Clay
+2026-05-05,Live,Internazionali BNL d'Italia,Ajla Tomljanovic,Leolia Jeanjean,wta_73,wta_115,WTA,Clay
+2026-05-05,Live,Internazionali BNL d'Italia,Anastasia Potapova,Nikola Bartunkova,wta_75,wta_104,WTA,Clay
+2026-05-05,Live,Internazionali BNL d'Italia,Yuan Yue,Simona Waltert,wta_122,wta_81,WTA,Clay
+2026-05-05,Live,Internazionali BNL d'Italia,Barbora Krejcikova,Elsa Jacquemot,wta_53,wta_57,WTA,Clay
+2026-05-05,Live,Internazionali BNL d'Italia,Lilli Tagger,Alina Korneeva,wta_114,wta_146,WTA,Clay
+2026-05-05,10:25,Internazionali BNL d'Italia,Anna Bondar,Zheng Qinwen,wta_65,wta_23,WTA,Clay
 2026-05-05,10:30,Internazionali BNL d'Italia,Sofia Kenin,Bianca Andreescu,wta_32,wta_161,WTA,Clay
+2026-05-05,10:30,Internazionali BNL d'Italia,Petra Marcinko,Oleksandra Oliynykova,wta_69,wta_71,WTA,Clay
 2026-05-05,10:30,Internazionali BNL d'Italia,McCartney Kessler,Lucia Bronzetti,wta_31,wta_138,WTA,Clay
 2026-05-05,10:30,Internazionali BNL d'Italia,Antonia Ruzic,Kamilla Rakhimova,wta_67,wta_91,WTA,Clay
+2026-05-05,10:35,Internazionali BNL d'Italia,Noemi Basiletti,Daria Snigur,wta_511,wta_132,WTA,Clay
 2026-05-05,11:00,Internazionali BNL d'Italia,Anhelina Kalinina,Katie Volynets,wta_191,wta_96,WTA,Clay
 2026-05-05,11:00,Internazionali BNL d'Italia,Mayar Sherif,Tamara Korpatsch,wta_108,wta_106,WTA,Clay
 2026-05-05,11:00,Internazionali BNL d'Italia,Federica Urgesi,Veronika Erjavec,wta_438,wta_112,WTA,Clay
@@ -33,19 +31,21 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-05,12:30,Internazionali BNL d'Italia,Taylor Townsend,Victoria Jimenez Kasintseva,wta_116,wta_119,WTA,Clay
 2026-05-05,12:30,Internazionali BNL d'Italia,Jil Teichmann,Rebeka Masarova,wta_175,wta_117,WTA,Clay
 2026-05-05,13:30,Internazionali BNL d'Italia,Ann Li,Zhang Shuai,wta_36,wta_85,WTA,Clay
-2026-05-05,08:00,Istanbul Open,Mia Ristic,Sofia Costoulas,wta_273,wta_142,WTA,
-2026-05-05,08:00,Istanbul Open,Anastasia Gasanova,Guo Hanyu,wta_189,wta_186,WTA,
-2026-05-05,08:00,Istanbul Open,Maria Timofeeva,Noma Noha Akugue,wta_154,wta_255,WTA,
-2026-05-05,09:30,Istanbul Open,Lina Gjorcheska,Xinran Sun,wta_181,wta_98,WTA,
-2026-05-05,09:30,Istanbul Open,Katherine Sebov,Berfu Cengiz,wta_270,wta_480,WTA,
-2026-05-05,09:30,Istanbul Open,Danka Kovinic,Adelina Lachinova,wta_9007,wta_589,WTA,
+2026-05-05,Final,Internazionali BNL d'Italia,Elena-Gabriela Ruse,Sinja Kraus,wta_79,wta_105,WTA,Clay
+2026-05-05,Final,Internazionali BNL d'Italia,Dalma Galfi,Julia Grabher,wta_86,wta_80,WTA,Clay
+2026-05-05,Live,Istanbul Open,Anastasia Gasanova,Guo Hanyu,wta_189,wta_186,WTA,
+2026-05-05,Live,Istanbul Open,Danka Kovinic,Adelina Lachinova,wta_9007,wta_589,WTA,
+2026-05-05,Live,Istanbul Open,Katherine Sebov,Berfu Cengiz,wta_270,wta_480,WTA,
+2026-05-05,10:30,Istanbul Open,Lina Gjorcheska,Xinran Sun,wta_181,wta_98,WTA,
 2026-05-05,11:00,Istanbul Open,Maria Sara Popa,Carole Monnet,wta_9031,wta_177,WTA,
 2026-05-05,11:00,Istanbul Open,Linda Fruhvirtova,Tereza Martincova,wta_118,wta_351,WTA,
 2026-05-05,11:00,Istanbul Open,Laura Pigossi,Lucia Cortez Llorca,wta_214,wta_569,WTA,
 2026-05-05,12:30,Istanbul Open,Ekaterine Gorgodze,Francesca Jones,wta_167,wta_72,WTA,
-2026-05-05,Live,Jiangxi Open,Yang Yidi,Carol Zhao,wta_9002,wta_333,WTA,Hard
-2026-05-05,Live,Jiangxi Open,Dalila Spiteri,Kyoka Okamura,wta_275,wta_297,WTA,Hard
-2026-05-05,08:00,Jiangxi Open,Wang Jiaqi,You Xiaodi,wta_34,wta_252,WTA,Hard
+2026-05-05,TBD,Istanbul Open,Mia Ristic,Sofia Costoulas,wta_273,wta_142,WTA,
+2026-05-05,Final,Istanbul Open,Maria Timofeeva,Noma Noha Akugue,wta_154,wta_255,WTA,
+2026-05-05,Live,Jiangxi Open,Wang Jiaqi,You Xiaodi,wta_34,wta_252,WTA,Hard
+2026-05-05,Final,Jiangxi Open,Dalila Spiteri,Kyoka Okamura,wta_275,wta_297,WTA,Hard
+2026-05-05,Final,Jiangxi Open,Yang Yidi,Carol Zhao,wta_9002,wta_333,WTA,Hard
 2026-05-06,TBD,Internazionali BNL d'Italia,Marco Trungelliti,Zachary Svajda,atp_131,atp_106,ATP,Clay
 2026-05-06,TBD,Internazionali BNL d'Italia,Alexandre Muller,Botic Van De Zandschulp,atp_50,atp_55,ATP,Clay
 2026-05-06,TBD,Internazionali BNL d'Italia,Camilo Ugo Carabelli,Alexander Shevchenko,atp_45,atp_79,ATP,Clay
@@ -68,7 +68,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-06,TBD,Internazionali BNL d'Italia,Stefanos Tsitsipas,Tomas Machac,atp_32,atp_31,ATP,Clay
 2026-05-06,TBD,Internazionali BNL d'Italia,Hamad Medjedovic,Valentin Royer,atp_97,atp_59,ATP,Clay
 2026-05-06,TBD,Internazionali BNL d'Italia,Catherine McNally,Daria Kasatkina,wta_68,wta_61,WTA,Clay
-2026-05-06,TBD,Internazionali BNL d'Italia,Lisa Pigato,Tyra Caterina Grant,wta_193,wta_269,WTA,Clay
+2026-05-06,TBD,Internazionali BNL d'Italia,Lisa Pigato,Tyra Caterina Grant,wta_466,wta_269,WTA,Clay
 2026-05-06,TBD,Internazionali BNL d'Italia,Peyton Stearns,Janice Tjen,wta_59,wta_47,WTA,Clay
 2026-05-06,TBD,Internazionali BNL d'Italia,Alexandra Eala,Magdalena Frech,wta_45,wta_55,WTA,Clay
 2026-05-06,TBD,Internazionali BNL d'Italia,Laura Siegemund,Sara Bejlek,wta_52,wta_41,WTA,Clay
@@ -77,11 +77,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-06,TBD,Internazionali BNL d'Italia,Lucrezia Stefanini,Jelena Ostapenko,wta_136,wta_27,WTA,Clay
 2026-05-06,TBD,Internazionali BNL d'Italia,Katerina Siniakova,Lois Boisson,wta_46,wta_35,WTA,Clay
 2026-05-06,TBD,Internazionali BNL d'Italia,Yulia Putintseva,Tereza Valentova,wta_77,wta_42,WTA,Clay
-2026-05-06,TBD,Internazionali BNL d'Italia,Jaqueline Cristian,Beatriz Haddad Maia,wta_38,wta_66,WTA,Clay
 2026-05-06,TBD,Internazionali BNL d'Italia,Katie Boulter,Eva Lys,wta_83,wta_56,WTA,Clay
 2026-05-06,TBD,Istanbul Open,Storm Hunter,Guiomar Maristany Zuleta De Reales,wta_231,wta_165,WTA,
 2026-05-06,TBD,Istanbul Open,Alice Tubello,Elizara Yaneva,wta_435,wta_228,WTA,
 2026-05-06,TBD,Jiangxi Open,Lizette Cabrera,Li Zongyu,wta_274,wta_36,WTA,Hard
+2026-05-06,TBD,Jiangxi Open,Heather Watson,Kyoka Okamura,wta_278,wta_297,WTA,Hard
+2026-05-06,TBD,Jiangxi Open,Bai Zhuoxuan,Viktoria Morvayova,wta_379,wta_328,WTA,Hard
 2026-05-06,TBD,Jiangxi Open,Mei Yamaguchi,Hayu Kinoshita,wta_285,wta_417,WTA,Hard
 2026-05-06,TBD,Jiangxi Open,Lanlana Tararudee,Shi Han,wta_124,wta_330,WTA,Hard
 2026-05-06,TBD,Jiangxi Open,Yao Xinxin,Haruka Kaji,wta_468,wta_301,WTA,Hard
