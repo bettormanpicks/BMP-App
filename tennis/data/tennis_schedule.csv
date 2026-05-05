@@ -66,50 +66,70 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-04,06:00,Jiangxi Open,Viktoria Morvayova,Ma YeXin
 2026-05-04,06:00,Jiangxi Open,Mananchaya Sawangkaew,Heather Watson
 2026-05-04,06:00,Jiangxi Open,Aoi Ito,Lizette Cabrera
-2026-05-05,08:00,Internazionali BNL d'Italia,Cristian Garin,Jan Choinski
-2026-05-05,08:00,Internazionali BNL d'Italia,Daniel Merida,Tomas Barrios Vera
-2026-05-05,08:00,Internazionali BNL d'Italia,Francisco Comesana,Leandro Riedi
-2026-05-05,08:00,Internazionali BNL d'Italia,Pablo Carreno Busta,Stan Wawrinka
-2026-05-05,09:30,Internazionali BNL d'Italia,Patrick Kypson,Titouan Droguet
-2026-05-05,09:30,Internazionali BNL d'Italia,Dalibor Svrcina,Nicolai Budkov Kjaer
-2026-05-05,09:30,Internazionali BNL d'Italia,Hugo Dellien,Jesper de Jong
-2026-05-05,11:00,Internazionali BNL d'Italia,Dino Prizmic,Federico Bondioli
-2026-05-05,11:00,Internazionali BNL d'Italia,Aleksandar Kovacevic,Jacob Fearnley
-2026-05-05,11:00,Internazionali BNL d'Italia,Martin Landaluce,Andrea Pellegrino
-2026-05-05,12:30,Internazionali BNL d'Italia,Rinky Hijikata,Nikoloz Basilashvili
-2026-05-05,12:30,Internazionali BNL d'Italia,Jaime Faria,Pablo Llamas Ruiz
-2026-05-05,08:00,Internazionali BNL d'Italia,Dalma Galfi,Julia Grabher
-2026-05-05,08:00,Internazionali BNL d'Italia,Anastasia Potapova,Nikola Bartunkova
-2026-05-05,08:00,Internazionali BNL d'Italia,Ajla Tomljanovic,Leolia Jeanjean
-2026-05-05,08:00,Internazionali BNL d'Italia,Elena-Gabriela Ruse,Sinja Kraus
-2026-05-05,09:00,Internazionali BNL d'Italia,Petra Marcinko,Oleksandra Oliynykova
-2026-05-05,09:00,Internazionali BNL d'Italia,Barbora Krejcikova,Elsa Jacquemot
-2026-05-05,09:00,Internazionali BNL d'Italia,Anna Bondar,Zheng Qinwen
-2026-05-05,09:30,Internazionali BNL d'Italia,Yuan Yue,Simona Waltert
-2026-05-05,09:30,Internazionali BNL d'Italia,Noemi Basiletti,Daria Snigur
-2026-05-05,09:30,Internazionali BNL d'Italia,Lilli Tagger,Alina Korneeva
-2026-05-05,10:30,Internazionali BNL d'Italia,Sofia Kenin,Bianca Andreescu
-2026-05-05,10:30,Internazionali BNL d'Italia,McCartney Kessler,Lucia Bronzetti
-2026-05-05,10:30,Internazionali BNL d'Italia,Antonia Ruzic,Kamilla Rakhimova
-2026-05-05,11:00,Internazionali BNL d'Italia,Anhelina Kalinina,Katie Volynets
-2026-05-05,11:00,Internazionali BNL d'Italia,Mayar Sherif,Tamara Korpatsch
-2026-05-05,11:00,Internazionali BNL d'Italia,Federica Urgesi,Veronika Erjavec
-2026-05-05,12:00,Internazionali BNL d'Italia,Martina Trevisan,Talia Gibson
-2026-05-05,12:00,Internazionali BNL d'Italia,Anastasia Zakharova,Dayana Yastremska
-2026-05-05,12:00,Internazionali BNL d'Italia,Zeynep Sonmez,Jennifer Ruggeri
-2026-05-05,12:30,Internazionali BNL d'Italia,Taylor Townsend,Victoria Jimenez Kasintseva
-2026-05-05,12:30,Internazionali BNL d'Italia,Jil Teichmann,Rebeka Masarova
-2026-05-05,13:30,Internazionali BNL d'Italia,Ann Li,Zhang Shuai
-2026-05-05,08:00,Istanbul Open,Elena Pridankina,Sofia Costoulas
-2026-05-05,08:00,Istanbul Open,Anastasia Gasanova,Guo Hanyu
-2026-05-05,08:00,Istanbul Open,Maria Timofeeva,Noma Noha Akugue
-2026-05-05,09:30,Istanbul Open,Lina Gjorcheska,Xinran Sun
-2026-05-05,09:30,Istanbul Open,Katherine Sebov,Berfu Cengiz
-2026-05-05,09:30,Istanbul Open,Danka Kovinic,Adelina Lachinova
-2026-05-05,11:00,Istanbul Open,Maria Sara Popa,Carole Monnet
-2026-05-05,11:00,Istanbul Open,Linda Fruhvirtova,Tereza Martincova
-2026-05-05,11:00,Istanbul Open,Laura Pigossi,Lucia Cortez Llorca
-2026-05-05,12:30,Istanbul Open,Ekaterine Gorgodze,Francesca Jones
-2026-05-05,07:30,Jiangxi Open,Yang Yidi,Carol Zhao
-2026-05-05,07:30,Jiangxi Open,Dalila Spiteri,Kyoka Okamura
-2026-05-05,07:30,Jiangxi Open,Wang Jiaqi,You Xiaodi
+2026-05-04,Final,Internazionali BNL d'Italia,Rinky Hijikata,Pierluigi Basile
+2026-05-04,Final,Internazionali BNL d'Italia,Elmer Moller,Nikoloz Basilashvili
+2026-05-04,Final,Internazionali BNL d'Italia,Adolfo Daniel Vallejo,Jaime Faria
+2026-05-04,Final,Internazionali BNL d'Italia,Pablo Llamas Ruiz,Henrique Rocha
+2026-05-04,Final,Internazionali BNL d'Italia,Benjamin Bonzi,Dalibor Svrcina
+2026-05-04,Final,Internazionali BNL d'Italia,Aleksandar Kovacevic,Lorenzo Carboni
+2026-05-04,Final,Internazionali BNL d'Italia,Dino Prizmic,Chris Rodesch
+2026-05-04,Final,Internazionali BNL d'Italia,Shintaro Mochizuki,Jacob Fearnley
+2026-05-04,Final,Internazionali BNL d'Italia,Martin Landaluce,Christopher O'Connell
+2026-05-04,Final,Internazionali BNL d'Italia,Federico Bondioli,Emilio Nava
+2026-05-04,Final,Internazionali BNL d'Italia,Nicolai Budkov Kjaer,Otto Virtanen
+2026-05-04,Final,Internazionali BNL d'Italia,Andrea Pellegrino,Hugo Gaston
+2026-05-04,Final,Internazionali BNL d'Italia,Juan Cruz Martin Manzano,Titouan Droguet
+2026-05-04,Final,Internazionali BNL d'Italia,Patrick Kypson,Jack Pinnington Jones
+2026-05-04,Final,Internazionali BNL d'Italia,Dusan Lajovic,Jan Choinski
+2026-05-04,Final,Internazionali BNL d'Italia,Luca Van Assche,Hugo Dellien
+2026-05-04,Final,Internazionali BNL d'Italia,Leandro Riedi,Vilius Gaubas
+2026-05-04,Final,Internazionali BNL d'Italia,Stefano Travaglia,Stan Wawrinka
+2026-05-04,Final,Internazionali BNL d'Italia,Pablo Carreno Busta,Martin Damm
+2026-05-04,Final,Internazionali BNL d'Italia,Pedro Martinez,Jesper de Jong
+2026-05-04,Final,Internazionali BNL d'Italia,Francisco Comesana,Billy Harris
+2026-05-04,Final,Internazionali BNL d'Italia,Cristian Garin,Moez Echargui
+2026-05-04,Final,Internazionali BNL d'Italia,Daniel Merida,Mackenzie McDonald
+2026-05-04,Final,Internazionali BNL d'Italia,Jacopo Vasami,Tomas Barrios Vera
+2026-05-04,Final,Internazionali BNL d'Italia,Taylor Townsend,Rebecca Sramkova
+2026-05-04,Final,Internazionali BNL d'Italia,Rebeka Masarova,Moyuka Uchijima
+2026-05-04,Final,Internazionali BNL d'Italia,Beatrice Ricci,Tamara Korpatsch
+2026-05-04,Final,Internazionali BNL d'Italia,Hanne Vandewinkel,Jil Teichmann
+2026-05-04,Final,Internazionali BNL d'Italia,Darja Semenistaja,Katie Volynets
+2026-05-04,TBD,Internazionali BNL d'Italia,Anastasia Pavlyuchenkova,Veronika Erjavec
+2026-05-04,Final,Internazionali BNL d'Italia,Renata Zarazua,Federica Urgesi
+2026-05-04,Final,Internazionali BNL d'Italia,Anna Blinkova,Mayar Sherif
+2026-05-04,Final,Internazionali BNL d'Italia,Victoria Jimenez Kasintseva,Lulu Sun
+2026-05-04,Final,Internazionali BNL d'Italia,Emiliana Arango,Noemi Basiletti
+2026-05-04,Final,Internazionali BNL d'Italia,Camila Osorio,Anhelina Kalinina
+2026-05-04,Final,Internazionali BNL d'Italia,Alycia Parks,Dalma Galfi
+2026-05-04,Final,Internazionali BNL d'Italia,Kimberly Birrell,Yuan Yue
+2026-05-04,Final,Internazionali BNL d'Italia,Lilli Tagger,Suzan Lamens
+2026-05-04,Final,Internazionali BNL d'Italia,Alina Korneeva,Ella Seidel
+2026-05-04,Final,Internazionali BNL d'Italia,Samira De Stefano,Daria Snigur
+2026-05-04,Final,Internazionali BNL d'Italia,Giorgia Pedone,Simona Waltert
+2026-05-04,Final,Internazionali BNL d'Italia,Aliaksandra Sasnovich,Julia Grabher
+2026-05-04,Final,Internazionali BNL d'Italia,Elena-Gabriela Ruse,Oceane Dodin
+2026-05-04,Final,Internazionali BNL d'Italia,Leolia Jeanjean,Diane Parry
+2026-05-04,Final,Internazionali BNL d'Italia,Ajla Tomljanovic,Marta Lombardini
+2026-05-04,Final,Internazionali BNL d'Italia,Anastasia Potapova,Irina-Camelia Begu
+2026-05-04,Final,Internazionali BNL d'Italia,Ashlyn Krueger,Nikola Bartunkova
+2026-05-04,Final,Internazionali BNL d'Italia,Dominika Salkova,Sinja Kraus
+2026-05-04,Final,Istanbul Open,Donna Vekic,Aliona Falei
+2026-05-04,Final,Istanbul Open,Cagla Buyukakcay,Polina Kudermetova
+2026-05-04,Final,Istanbul Open,Tiantsoa Rakotomanga Rajaonah,Alice Tubello
+2026-05-04,Final,Istanbul Open,Guiomar Maristany Zuleta De Reales,Anouk Koevermans
+2026-05-04,Final,Istanbul Open,Elizara Yaneva,Ayla Aksu
+2026-05-04,Final,Istanbul Open,Polina Iatcenko,Storm Hunter
+2026-05-04,Final,Istanbul Open,Tereza Martincova,Isabella Shinikova
+2026-05-04,Final,Istanbul Open,Raluka Serban,Maria Sara Popa
+2026-05-04,Final,Istanbul Open,Katherine Sebov,Dalila Jakupovic
+2026-05-04,Final,Istanbul Open,Mia Ristic,Lucia Cortez Llorca
+2026-05-04,03:00,Jiangxi Open,Haruka Kaji,Gao Xinyu
+2026-05-04,03:00,Jiangxi Open,Anastasia Zolotareva,Mei Yamaguchi
+2026-05-04,03:00,Jiangxi Open,Hayu Kinoshita,Kristiana Sidorova
+2026-05-04,04:30,Jiangxi Open,Elena Micic,Taylah Preston
+2026-05-04,04:30,Jiangxi Open,Jessica Pieri,Shi Han
+2026-05-04,04:30,Jiangxi Open,Lanlana Tararudee,Sofya Lansere
+2026-05-04,06:00,Jiangxi Open,Viktoria Morvayova,Ma YeXin
+2026-05-04,06:00,Jiangxi Open,Mananchaya Sawangkaew,Heather Watson
+2026-05-04,06:00,Jiangxi Open,Aoi Ito,Lizette Cabrera
