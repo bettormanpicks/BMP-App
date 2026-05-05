@@ -11,7 +11,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-05,Final,Internazionali BNL d'Italia,Daniel Merida,Tomas Barrios Vera,atp_402,atp_107,ATP,Clay
 2026-05-05,Final,Internazionali BNL d'Italia,Cristian Garin,Jan Choinski,atp_89,atp_124,ATP,Clay
 2026-05-05,TBD,Internazionali BNL d'Italia,Pablo Carreno Busta,Stan Wawrinka,atp_122,atp_98,ATP,Clay
-2026-05-05,Final,Internazionali BNL d'Italia,Ann Li,Zhang Shuai,wta_36,wta_85,WTA,Clay
+2026-05-05,Final,Internazionali BNL d'Italia,Ann Li,Zhang Shuai,wta_36,atp_449,WTA,Clay
 2026-05-05,Final,Internazionali BNL d'Italia,Martina Trevisan,Talia Gibson,wta_685,wta_111,WTA,Clay
 2026-05-05,Final,Internazionali BNL d'Italia,Zeynep Sonmez,Jennifer Ruggeri,wta_84,wta_315,WTA,Clay
 2026-05-05,Final,Internazionali BNL d'Italia,Anhelina Kalinina,Katie Volynets,wta_191,wta_96,WTA,Clay
@@ -39,7 +39,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-05,Final,Istanbul Open,Maria Timofeeva,Noma Noha Akugue,wta_54,wta_255,WTA,
 2026-05-05,Final,Istanbul Open,Laura Pigossi,Lucia Cortez Llorca,wta_214,wta_569,WTA,
 2026-05-05,Final,Istanbul Open,Maria Sara Popa,Carole Monnet,wta_9031,wta_177,WTA,
-2026-05-05,Final,Istanbul Open,Lina Gjorcheska,Xinran Sun,wta_181,wta_98,WTA,
+2026-05-05,Final,Istanbul Open,Lina Gjorcheska,Xinran Sun,wta_9000,wta_98,WTA,
 2026-05-05,Final,Istanbul Open,Katherine Sebov,Berfu Cengiz,wta_270,wta_480,WTA,
 2026-05-05,Final,Istanbul Open,Danka Kovinic,Adelina Lachinova,wta_9007,wta_589,WTA,
 2026-05-05,Final,Istanbul Open,Anastasia Gasanova,Guo Hanyu,wta_189,wta_186,WTA,
@@ -79,7 +79,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-06,10:30,Internazionali BNL d'Italia,Leolia Jeanjean,Beatriz Haddad Maia,wta_115,wta_66,WTA,Clay
 2026-05-06,10:30,Internazionali BNL d'Italia,Viktorija Golubic,Federica Urgesi,wta_88,wta_438,WTA,Clay
 2026-05-06,12:00,Internazionali BNL d'Italia,Peyton Stearns,Janice Tjen,wta_59,wta_47,WTA,Clay
-2026-05-06,12:00,Internazionali BNL d'Italia,Lilli Tagger,Maria Sakkari,wta_114,wta_54,WTA,Clay
+2026-05-06,12:00,Internazionali BNL d'Italia,Lilli Tagger,Maria Sakkari,wta_114,wta_33,WTA,Clay
 2026-05-06,12:00,Internazionali BNL d'Italia,Laura Siegemund,Sara Bejlek,wta_52,wta_41,WTA,Clay
 2026-05-06,12:00,Internazionali BNL d'Italia,Taylor Townsend,Nuria Brancaccio,wta_116,wta_164,WTA,Clay
 2026-05-06,12:00,Internazionali BNL d'Italia,Yulia Putintseva,Tereza Valentova,wta_77,wta_42,WTA,Clay
