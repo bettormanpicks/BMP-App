@@ -1,7 +1,4 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-05-06,Live,Internazionali BNL d'Italia,Marton Fucsovics,Dino Prizmic
-2026-05-06,Live,Internazionali BNL d'Italia,Jacob Fearnley,Giovanni Mpetshi Perricard
-2026-05-06,19:30,Internazionali BNL d'Italia,Federico Cina,Alexander Blockx
 2026-05-06,Final,Internazionali BNL d'Italia,Pablo Carreno Busta,Alejandro Tabilo
 2026-05-06,Final,Internazionali BNL d'Italia,Jesper de Jong,Nuno Borges
 2026-05-06,Final,Internazionali BNL d'Italia,Aleksandar Vukic,Patrick Kypson
@@ -15,11 +12,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-06,Final,Internazionali BNL d'Italia,Damir Dzumhur,Adrian Mannarino
 2026-05-06,Final,Internazionali BNL d'Italia,Zhang Zhizhen,Daniel Altmaier
 2026-05-06,Final,Internazionali BNL d'Italia,Fabian Marozsan,Vit Kopriva
-2026-05-06,Live,Internazionali BNL d'Italia,Yuliia Starodubtseva,Simona Waltert
-2026-05-06,Live,Internazionali BNL d'Italia,Karolina Pliskova,Jessica Bouzas Maneiro
-2026-05-06,Live,Internazionali BNL d'Italia,Elisabetta Cocciaretto,Sinja Kraus
-2026-05-06,Live,Internazionali BNL d'Italia,Catherine McNally,Daria Kasatkina
-2026-05-06,Live,Internazionali BNL d'Italia,Noemi Basiletti,Ajla Tomljanovic
+2026-05-06,Final,Internazionali BNL d'Italia,Catherine McNally,Daria Kasatkina
+2026-05-06,Final,Internazionali BNL d'Italia,Elisabetta Cocciaretto,Sinja Kraus
+2026-05-06,Final,Internazionali BNL d'Italia,Karolina Pliskova,Jessica Bouzas Maneiro
 2026-05-06,Final,Internazionali BNL d'Italia,Katie Boulter,Eva Lys
 2026-05-06,Final,Internazionali BNL d'Italia,Dalma Galfi,Anastasia Potapova
 2026-05-06,Final,Internazionali BNL d'Italia,Oksana Selekhmeteva,Rebeka Masarova
@@ -46,33 +41,38 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-07,09:00,Internazionali BNL d'Italia,Alexei Popyrin,Matteo Berrettini
 2026-05-07,09:00,Internazionali BNL d'Italia,Zizou Bergs,Terence Atmane
 2026-05-07,09:00,Internazionali BNL d'Italia,Nikoloz Basilashvili,Daniel Merida
-2026-05-07,10:30,Internazionali BNL d'Italia,Roman Andres Burruchaga,Mattia Bellucci
+2026-05-07,10:00,Internazionali BNL d'Italia,Marton Fucsovics,Dino Prizmic
+2026-05-07,10:00,Internazionali BNL d'Italia,Federico Cina,Alexander Blockx
+2026-05-07,10:00,Internazionali BNL d'Italia,Jacob Fearnley,Giovanni Mpetshi Perricard
 2026-05-07,10:30,Internazionali BNL d'Italia,Marcos Giron,Marin Cilic
-2026-05-07,12:00,Internazionali BNL d'Italia,Cristian Garin,Juan Manuel Cerundolo
-2026-05-07,12:00,Internazionali BNL d'Italia,Roberto Bautista Agut,Francesco Maestrelli
-2026-05-07,12:00,Internazionali BNL d'Italia,Ethan Quinn,Pablo Llamas Ruiz
-2026-05-07,12:00,Internazionali BNL d'Italia,Stefanos Tsitsipas,Tomas Machac
-2026-05-07,13:30,Internazionali BNL d'Italia,Sebastian Ofner,Alex Michelsen
-2026-05-07,13:30,Internazionali BNL d'Italia,Thiago Agustin Tirante,Gianluca Cadenasso
-2026-05-07,13:30,Internazionali BNL d'Italia,Hamad Medjedovic,Valentin Royer
-2026-05-07,15:00,Internazionali BNL d'Italia,Denis Shapovalov,Mariano Navone
+2026-05-07,11:30,Internazionali BNL d'Italia,Roman Andres Burruchaga,Mattia Bellucci
+2026-05-07,11:30,Internazionali BNL d'Italia,Roberto Bautista Agut,Francesco Maestrelli
+2026-05-07,13:00,Internazionali BNL d'Italia,Thiago Agustin Tirante,Gianluca Cadenasso
+2026-05-07,13:00,Internazionali BNL d'Italia,Ethan Quinn,Pablo Llamas Ruiz
+2026-05-07,13:00,Internazionali BNL d'Italia,Stefanos Tsitsipas,Tomas Machac
+2026-05-07,13:30,Internazionali BNL d'Italia,Cristian Garin,Juan Manuel Cerundolo
+2026-05-07,14:30,Internazionali BNL d'Italia,Sebastian Ofner,Alex Michelsen
+2026-05-07,14:30,Internazionali BNL d'Italia,Denis Shapovalov,Mariano Navone
+2026-05-07,15:00,Internazionali BNL d'Italia,Hamad Medjedovic,Valentin Royer
 2026-05-07,16:30,Internazionali BNL d'Italia,Andrea Pellegrino,Luca Nardi
 2026-05-07,17:00,Internazionali BNL d'Italia,Lorenzo Sonego,Ignacio Buse
 2026-05-07,09:00,Internazionali BNL d'Italia,Antonia Ruzic,Mirra Andreeva
 2026-05-07,09:00,Internazionali BNL d'Italia,Cristina Bucsa,Zheng Qinwen
 2026-05-07,09:00,Internazionali BNL d'Italia,Panna Udvardy,Elise Mertens
-2026-05-07,10:30,Internazionali BNL d'Italia,Anastasia Zakharova,Linda Noskova
-2026-05-07,10:30,Internazionali BNL d'Italia,Clara Tauson,Oleksandra Oliynykova
-2026-05-07,10:30,Internazionali BNL d'Italia,Maya Joint,Viktorija Golubic
-2026-05-07,10:30,Internazionali BNL d'Italia,Tatjana Maria,Sorana Cirstea
+2026-05-07,10:00,Internazionali BNL d'Italia,Noemi Basiletti,Ajla Tomljanovic
+2026-05-07,10:00,Internazionali BNL d'Italia,Yuliia Starodubtseva,Simona Waltert
 2026-05-07,11:00,Internazionali BNL d'Italia,Jasmine Paolini,Leolia Jeanjean
-2026-05-07,12:00,Internazionali BNL d'Italia,Katerina Siniakova,Anna Kalinskaya
-2026-05-07,12:00,Internazionali BNL d'Italia,Jelena Ostapenko,Amanda Anisimova
+2026-05-07,11:30,Internazionali BNL d'Italia,Anastasia Zakharova,Linda Noskova
+2026-05-07,11:30,Internazionali BNL d'Italia,Maya Joint,Viktorija Golubic
+2026-05-07,11:30,Internazionali BNL d'Italia,Tatjana Maria,Sorana Cirstea
+2026-05-07,12:00,Internazionali BNL d'Italia,Clara Tauson,Oleksandra Oliynykova
 2026-05-07,12:30,Internazionali BNL d'Italia,Coco Gauff,Tereza Valentova
-2026-05-07,13:30,Internazionali BNL d'Italia,Solana Sierra,Anhelina Kalinina
-2026-05-07,15:00,Internazionali BNL d'Italia,Marie Bouzkova,Taylor Townsend
-2026-05-07,15:00,Internazionali BNL d'Italia,McCartney Kessler,Iva Jovic
+2026-05-07,13:00,Internazionali BNL d'Italia,Katerina Siniakova,Anna Kalinskaya
+2026-05-07,13:00,Internazionali BNL d'Italia,Jelena Ostapenko,Amanda Anisimova
+2026-05-07,14:30,Internazionali BNL d'Italia,Solana Sierra,Anhelina Kalinina
 2026-05-07,15:00,Internazionali BNL d'Italia,Belinda Bencic,Bianca Andreescu
+2026-05-07,16:00,Internazionali BNL d'Italia,Marie Bouzkova,Taylor Townsend
+2026-05-07,16:00,Internazionali BNL d'Italia,McCartney Kessler,Iva Jovic
 2026-05-07,18:30,Internazionali BNL d'Italia,Aryna Sabalenka,Barbora Krejcikova
 2026-05-07,08:00,Istanbul Open,Maria Timofeeva,Adelina Lachinova
 2026-05-07,08:00,Istanbul Open,Linda Fruhvirtova,Laura Pigossi
