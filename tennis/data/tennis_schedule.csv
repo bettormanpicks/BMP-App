@@ -1,29 +1,26 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-05-07,09:00,Internazionali BNL d'Italia,Dalibor Svrcina,Miomir Kecmanovic
-2026-05-07,09:00,Internazionali BNL d'Italia,Alexei Popyrin,Matteo Berrettini
-2026-05-07,09:00,Internazionali BNL d'Italia,Zizou Bergs,Terence Atmane
-2026-05-07,09:00,Internazionali BNL d'Italia,Nikoloz Basilashvili,Daniel Merida
-2026-05-07,10:00,Internazionali BNL d'Italia,Marton Fucsovics,Dino Prizmic
-2026-05-07,10:00,Internazionali BNL d'Italia,Federico Cina,Alexander Blockx
-2026-05-07,10:00,Internazionali BNL d'Italia,Jacob Fearnley,Giovanni Mpetshi Perricard
-2026-05-07,10:30,Internazionali BNL d'Italia,Marcos Giron,Marin Cilic
+2026-05-07,Live,Internazionali BNL d'Italia,Nikoloz Basilashvili,Daniel Merida
+2026-05-07,Live,Internazionali BNL d'Italia,Marton Fucsovics,Dino Prizmic
+2026-05-07,Live,Internazionali BNL d'Italia,Jacob Fearnley,Giovanni Mpetshi Perricard
+2026-05-07,11:00,Internazionali BNL d'Italia,Marcos Giron,Marin Cilic
+2026-05-07,11:00,Internazionali BNL d'Italia,Federico Cina,Alexander Blockx
 2026-05-07,11:30,Internazionali BNL d'Italia,Roman Andres Burruchaga,Mattia Bellucci
-2026-05-07,11:30,Internazionali BNL d'Italia,Roberto Bautista Agut,Francesco Maestrelli
-2026-05-07,13:00,Internazionali BNL d'Italia,Thiago Agustin Tirante,Gianluca Cadenasso
+2026-05-07,12:30,Internazionali BNL d'Italia,Roberto Bautista Agut,Francesco Maestrelli
 2026-05-07,13:00,Internazionali BNL d'Italia,Ethan Quinn,Pablo Llamas Ruiz
 2026-05-07,13:00,Internazionali BNL d'Italia,Stefanos Tsitsipas,Tomas Machac
 2026-05-07,13:30,Internazionali BNL d'Italia,Cristian Garin,Juan Manuel Cerundolo
+2026-05-07,14:00,Internazionali BNL d'Italia,Thiago Agustin Tirante,Gianluca Cadenasso
 2026-05-07,14:30,Internazionali BNL d'Italia,Sebastian Ofner,Alex Michelsen
-2026-05-07,14:30,Internazionali BNL d'Italia,Denis Shapovalov,Mariano Navone
 2026-05-07,15:00,Internazionali BNL d'Italia,Hamad Medjedovic,Valentin Royer
+2026-05-07,15:30,Internazionali BNL d'Italia,Denis Shapovalov,Mariano Navone
 2026-05-07,16:30,Internazionali BNL d'Italia,Andrea Pellegrino,Luca Nardi
 2026-05-07,17:00,Internazionali BNL d'Italia,Lorenzo Sonego,Ignacio Buse
-2026-05-07,09:00,Internazionali BNL d'Italia,Antonia Ruzic,Mirra Andreeva
-2026-05-07,09:00,Internazionali BNL d'Italia,Cristina Bucsa,Zheng Qinwen
-2026-05-07,09:00,Internazionali BNL d'Italia,Panna Udvardy,Elise Mertens
-2026-05-07,10:00,Internazionali BNL d'Italia,Noemi Basiletti,Ajla Tomljanovic
-2026-05-07,10:00,Internazionali BNL d'Italia,Yuliia Starodubtseva,Simona Waltert
-2026-05-07,11:00,Internazionali BNL d'Italia,Jasmine Paolini,Leolia Jeanjean
+2026-05-07,Final,Internazionali BNL d'Italia,Alexei Popyrin,Matteo Berrettini
+2026-05-07,Final,Internazionali BNL d'Italia,Dalibor Svrcina,Miomir Kecmanovic
+2026-05-07,Final,Internazionali BNL d'Italia,Zizou Bergs,Terence Atmane
+2026-05-07,Live,Internazionali BNL d'Italia,Noemi Basiletti,Ajla Tomljanovic
+2026-05-07,11:05,Internazionali BNL d'Italia,Jasmine Paolini,Leolia Jeanjean
+2026-05-07,11:20,Internazionali BNL d'Italia,Yuliia Starodubtseva,Simona Waltert
 2026-05-07,11:30,Internazionali BNL d'Italia,Anastasia Zakharova,Linda Noskova
 2026-05-07,11:30,Internazionali BNL d'Italia,Maya Joint,Viktorija Golubic
 2026-05-07,11:30,Internazionali BNL d'Italia,Tatjana Maria,Sorana Cirstea
@@ -36,10 +33,13 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-07,16:00,Internazionali BNL d'Italia,Marie Bouzkova,Taylor Townsend
 2026-05-07,16:00,Internazionali BNL d'Italia,McCartney Kessler,Iva Jovic
 2026-05-07,18:30,Internazionali BNL d'Italia,Aryna Sabalenka,Barbora Krejcikova
-2026-05-07,Live,Istanbul Open,Maria Timofeeva,Adelina Lachinova
+2026-05-07,Final,Internazionali BNL d'Italia,Antonia Ruzic,Mirra Andreeva
+2026-05-07,Final,Internazionali BNL d'Italia,Panna Udvardy,Elise Mertens
+2026-05-07,Final,Internazionali BNL d'Italia,Cristina Bucsa,Zheng Qinwen
 2026-05-07,Live,Istanbul Open,Linda Fruhvirtova,Laura Pigossi
-2026-05-07,09:30,Istanbul Open,Carole Monnet,Francesca Jones
-2026-05-07,09:30,Istanbul Open,Xinran Sun,Mia Ristic
+2026-05-07,Live,Istanbul Open,Xinran Sun,Mia Ristic
+2026-05-07,11:10,Istanbul Open,Carole Monnet,Francesca Jones
+2026-05-07,Final,Istanbul Open,Maria Timofeeva,Adelina Lachinova
 2026-05-07,03:00,Jiangxi Open,Heather Watson,You Xiaodi
 2026-05-07,03:00,Jiangxi Open,Lizette Cabrera,Bai Zhuoxuan
 2026-05-07,04:30,Jiangxi Open,Lanlana Tararudee,Yao Xinxin
