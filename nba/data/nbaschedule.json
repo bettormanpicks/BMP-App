@@ -10,22 +10,22 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "c9bcae9f-bdba-5055-9b5b-537557ba23d9",
+      "id": "e65373ed-969f-5d2c-9c13-9f73a66c25f8",
       "teams": {
         "away": {
-          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
-          "name": "Philadelphia 76ers"
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
         },
         "home": {
-          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
-          "name": "New York Knicks"
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
         }
       },
-      "date": "2026-05-06T23:00:00Z",
+      "date": "2026-05-07T23:00:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Madison Square Garden",
-        "location": "New York, NY"
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
       }
     },
     {
@@ -33,24 +33,24 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "a97b0fc4-d387-5d76-a7dd-d0c15db2a89a",
+      "id": "0c150e45-3f81-575d-b21e-e601e916c8a1",
       "teams": {
         "away": {
-          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
-          "name": "Minnesota Timberwolves"
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
         },
         "home": {
-          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
-          "name": "San Antonio Spurs"
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
         }
       },
-      "date": "2026-05-07T01:30:00Z",
+      "date": "2026-05-08T01:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": "Frost Bank Center",
-        "location": "San Antonio, TX"
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
       }
     }
   ],
-  "updated": "2026-05-06T06:00:03Z"
+  "updated": "2026-05-07T06:00:02Z"
 }
