@@ -36,7 +36,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-08,09:30,Istanbul Open,Maria Timofeeva,Francesca Jones,wta_154,wta_72,WTA,
 2026-05-08,09:30,Istanbul Open,Donna Vekic,Mia Ristic,wta_99,wta_273,WTA,
 2026-05-09,TBD,Internazionali BNL d'Italia,Felix Auger-Aliassime,Mariano Navone,atp_6,atp_74,ATP,Clay
-2026-05-09,TBD,Internazionali BNL d'Italia,Marin Cilic,Martin Landaluce,atp_52,atp_158,ATP,Clay
+2026-05-09,TBD,Internazionali BNL d'Italia,Marin Cilic,Martin Landaluce,atp_52,atp_383,ATP,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Hamad Medjedovic,Joao Fonseca,atp_97,atp_37,ATP,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Tomas Martin Etcheverry,Mattia Bellucci,atp_53,atp_109,ATP,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Flavio Cobolli,Terence Atmane,atp_20,atp_65,ATP,Clay
@@ -51,11 +51,13 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-09,TBD,Internazionali BNL d'Italia,Nikoloz Basilashvili,Ben Shelton,atp_136,atp_9,ATP,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Cristian Garin,Alejandro Davidovich Fokina,atp_89,atp_15,ATP,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Brandon Nakashima,Roberto Bautista Agut,atp_29,atp_82,ATP,Clay
-2026-05-09,TBD,Internazionali BNL d'Italia,Belinda Bencic,Anna Kalinskaya,wta_12,wta_65,WTA,Clay
+2026-05-09,TBD,Internazionali BNL d'Italia,Belinda Bencic,Anna Kalinskaya,wta_12,wta_24,WTA,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Viktorija Golubic,Mirra Andreeva,wta_88,wta_7,WTA,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Oleksandra Oliynykova,Linda Noskova,wta_71,wta_14,WTA,Clay
-2026-05-09,TBD,Internazionali BNL d'Italia,Zheng Qinwen,Jelena Ostapenko,wta_372,wta_27,WTA,Clay
+2026-05-09,TBD,Internazionali BNL d'Italia,Zheng Qinwen,Jelena Ostapenko,wta_23,wta_27,WTA,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Aryna Sabalenka,Sorana Cirstea,wta_1,wta_30,WTA,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Jasmine Paolini,Elise Mertens,wta_8,wta_22,WTA,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Coco Gauff,Solana Sierra,wta_4,wta_64,WTA,Clay
 2026-05-09,TBD,Internazionali BNL d'Italia,Taylor Townsend,Iva Jovic,wta_116,wta_20,WTA,Clay
+2026-05-09,TBD,Jiangxi Open,Yao Xinxin,You Xiaodi,wta_468,wta_252,WTA,Hard
+2026-05-09,TBD,Jiangxi Open,Bai Zhuoxuan,En-Shuo Liang,wta_379,wta_360,WTA,Hard
