@@ -1,37 +1,41 @@
 date,game_id,home_team,away_team,home_pitcher,away_pitcher,status
-2026-04-09T16:10:00+00:00,6a29e788-ce3e-500f-81ca-9b2e610b3eba,Miami Marlins,Cincinnati Reds,Max Meyer,Rhett Lowder,Scheduled
-2026-04-09T17:35:00+00:00,8025823e-15ff-5af3-bb9b-0b9062e83a00,New York Yankees,Athletics,Ryan Weathers,Jeffrey Springs,Scheduled
-2026-04-09T17:40:00+00:00,14736ca1-ed9c-560c-88ab-2df18f2316ad,Minnesota Twins,Detroit Tigers,Mick Abel,Jack Flaherty,Scheduled
-2026-04-09T23:10:00+00:00,1817fc42-a292-5544-9a74-c14d3aad515a,New York Mets,Arizona Diamondbacks,Nolan McLean,Eduardo Rodriguez,Scheduled
-2026-04-09T23:40:00+00:00,af3a4476-4d67-595b-a9f8-11bafb68ef0d,Kansas City Royals,Chicago White Sox,Seth Lugo,Anthony Kay,Scheduled
-2026-04-10T01:40:00+00:00,a42cd137-c11d-56fe-a620-d813df5cbc28,San Diego Padres,Colorado Rockies,Randy Vásquez,,Scheduled
-2026-04-10T18:20:00+00:00,649f3f98-8299-50a2-8e8a-bf56a10ce44d,Chicago Cubs,Pittsburgh Pirates,Shota Imanaga,Carmen Mlodzinski,Scheduled
-2026-04-10T22:40:00+00:00,09418c3a-ac89-56ca-ab3e-0cd26002e390,Philadelphia Phillies,Arizona Diamondbacks,Jesús Luzardo,,Scheduled
-2026-04-10T22:40:00+00:00,ee45fa4b-1cdd-51fa-ac28-debfcdaaaba3,Detroit Tigers,Miami Marlins,,Chris Paddack,Scheduled
-2026-04-10T22:45:00+00:00,c17ed336-a006-5c14-892e-25d5a223b19c,Cincinnati Reds,Los Angeles Angels,Chase Burns,Jack Kochanowicz,Scheduled
-2026-04-10T23:07:00+00:00,225efc96-07a3-565a-a0d2-b750118eb9dc,Toronto Blue Jays,Minnesota Twins,Patrick Corbin,,Scheduled
-2026-04-10T23:10:00+00:00,b1151cea-3a53-52de-b648-6a87b176e65a,New York Mets,Athletics,Clay Holmes,,Scheduled
-2026-04-10T23:10:00+00:00,33194975-7453-56c5-8c62-e0a8413cd214,Tampa Bay Rays,New York Yankees,Steven Matz,,Scheduled
-2026-04-10T23:15:00+00:00,b6359cf1-7d98-5842-a2c2-181b29944214,Atlanta Braves,Cleveland Guardians,Bryce Elder,Slade Cecconi,Scheduled
-2026-04-10T23:15:00+00:00,ab5611d2-69d7-5cf0-a841-7b44f4e9e535,Baltimore Orioles,San Francisco Giants,Shane Baz,Landen Roupp,Scheduled
-2026-04-10T23:40:00+00:00,9c7c04fb-178b-5d54-bc5f-1bce9b4fd4e4,Kansas City Royals,Chicago White Sox,Kris Bubic,Davis Martin,Scheduled
-2026-04-10T23:40:00+00:00,3cbc4c30-0009-5957-bad5-caf739f201f3,Milwaukee Brewers,Washington Nationals,Chad Patrick,Jake Irvin,Scheduled
-2026-04-11T00:15:00+00:00,a52dc09b-2dac-5b80-af63-68c9a0f9f100,St. Louis Cardinals,Boston Red Sox,Dustin May,Connelly Early,Scheduled
-2026-04-11T01:40:00+00:00,34e05e28-2b3a-53ed-8881-d4baa170cb34,San Diego Padres,Colorado Rockies,,Tomoyuki Sugano,Scheduled
-2026-04-11T01:40:00+00:00,f5e71d61-5e57-5f8a-8547-5947fa9033c6,Seattle Mariners,Houston Astros,Emerson Hancock,Tatsuya Imai,Scheduled
-2026-04-11T02:10:00+00:00,27135a04-ba5f-50d2-aa12-b23c98e79479,Los Angeles Dodgers,Texas Rangers,Tyler Glasnow,Kumar Rocker,Scheduled
-2026-04-11T17:05:00+00:00,91164956-dc8f-5c34-bf46-c6e1cbad3e1d,Philadelphia Phillies,Arizona Diamondbacks,Taijuan Walker,,Scheduled
-2026-04-11T17:10:00+00:00,add3b53b-bb3e-578f-9235-528c95949c62,Detroit Tigers,Miami Marlins,,Janson Junk,Scheduled
-2026-04-11T18:20:00+00:00,81f0e2b9-8bca-5cbb-8a5a-c552c80f5b40,Chicago Cubs,Pittsburgh Pirates,Edward Cabrera,Braxton Ashcraft,Scheduled
-2026-04-11T19:07:00+00:00,8427c373-2e84-5c12-a018-4348c144e5dc,Toronto Blue Jays,Minnesota Twins,Eric Lauer,,Scheduled
-2026-04-11T20:10:00+00:00,bc0333e2-e44f-5f7b-a7ad-ecb540fe8202,New York Mets,Athletics,Kodai Senga,Jacob Lopez,Scheduled
-2026-04-11T20:10:00+00:00,9b740552-b45a-55a7-beeb-5391f2b6bc6b,Kansas City Royals,Chicago White Sox,Michael Wacha,Erick Fedde,Scheduled
-2026-04-11T20:10:00+00:00,0b9d9db4-e17a-556e-ba2c-ed423800f846,Cincinnati Reds,Los Angeles Angels,Brandon Williamson,George Klassen,Scheduled
-2026-04-11T22:10:00+00:00,edb05ac8-81c0-5e59-a924-b146fed0a667,Tampa Bay Rays,New York Yankees,Nick Martinez,,Scheduled
-2026-04-11T23:10:00+00:00,adf36edd-ee8f-5dd0-9402-311b12edc6fb,Milwaukee Brewers,Washington Nationals,Brandon Sproat,Foster Griffin,Scheduled
-2026-04-11T23:15:00+00:00,ddc063b2-e7df-593a-adb8-846e850892f7,St. Louis Cardinals,Boston Red Sox,Kyle Leahy,Ranger Suarez,Scheduled
-2026-04-11T23:15:00+00:00,885f2940-8174-59ef-b607-0720a5a2fe77,Atlanta Braves,Cleveland Guardians,Martín Pérez,Parker Messick,Scheduled
-2026-04-11T23:15:00+00:00,0e2a31f8-52c3-54b9-86c5-ee081530242a,Baltimore Orioles,San Francisco Giants,Chris Bassitt,Logan Webb,Scheduled
-2026-04-12T00:40:00+00:00,81d462c8-08e8-5500-840e-7b255d3cb68b,San Diego Padres,Colorado Rockies,,Ryan Feltner,Scheduled
-2026-04-12T01:10:00+00:00,5bbfc413-c207-53fd-89d0-8b310521fbff,Los Angeles Dodgers,Texas Rangers,Emmet Sheehan,Jack Leiter,Scheduled
-2026-04-12T01:40:00+00:00,27b707d4-834c-5866-875d-e31bac8af2e8,Seattle Mariners,Houston Astros,Luis Castillo,Lance McCullers Jr.,Scheduled
+2026-05-07T16:35:00+00:00,7a55a1b7-9fe7-563c-9449-77acfa8308ad,New York Yankees,Texas Rangers,Paul Blackburn,MacKenzie Gore,Final
+2026-05-07T17:05:00+00:00,3382532e-c2b2-597b-aad6-2847c4132144,Washington Nationals,Minnesota Twins,Jake Irvin,Simeon Woods Richardson,Final
+2026-05-07T18:10:00+00:00,4b2f6e55-cf7c-5024-a384-b90bcc5ba9fc,Kansas City Royals,Cleveland Guardians,Seth Lugo,Slade Cecconi,Final
+2026-05-07T18:20:00+00:00,b5f2634f-b0a4-502f-9404-5eff6ba6168b,Chicago Cubs,Cincinnati Reds,Shota Imanaga,Rhett Lowder,Final
+2026-05-07T19:10:00+00:00,751a3b82-13bf-5b28-8276-dfa01f2b43a6,Colorado Rockies,New York Mets,Jose Quintana,Christian Scott,Final
+2026-05-07T19:40:00+00:00,fbcc46c6-0abf-564f-b04b-fba799323470,Arizona Diamondbacks,Pittsburgh Pirates,Zac Gallen,Mitch Keller,Final
+2026-05-07T22:40:00+00:00,30e6a3a3-f6b4-50ee-8231-8ab2e5ced304,Philadelphia Phillies,Athletics,Andrew Painter,J.T. Ginn,Final
+2026-05-07T22:40:00+00:00,3ca552e1-71c8-5a90-97c3-0bde7ebfc562,Miami Marlins,Baltimore Orioles,Max Meyer,Cade Povich,Final
+2026-05-07T23:10:00+00:00,d823e15b-3855-579f-985a-18958e03935b,Boston Red Sox,Tampa Bay Rays,Jake Bennett,Griffin Jax,Final
+2026-05-08T02:10:00+00:00,d598b37f-1847-59dd-aca2-99849f3b8ec2,San Diego Padres,St. Louis Cardinals,Michael King,Matthew Liberatore,In Progress
+2026-05-08T22:10:00+00:00,b58a6fce-1745-5310-8ef5-bbba1319de0b,Cincinnati Reds,Houston Astros,Nick Lodolo,Mike Burrows,Scheduled
+2026-05-08T22:40:00+00:00,13e2fc8a-1876-555e-9cb6-abdb50516ea8,Philadelphia Phillies,Colorado Rockies,Jesús Luzardo,Chase Dollander,Scheduled
+2026-05-08T23:05:00+00:00,8ce9a3f9-b4dd-541a-93ac-5aecf4adaf02,Baltimore Orioles,Athletics,Kyle Bradish,Jacob Lopez,Scheduled
+2026-05-08T23:07:00+00:00,5438af00-41a5-536e-a8c5-57d12ff27e5b,Toronto Blue Jays,Los Angeles Angels,Dylan Cease,Reid Detmers,Scheduled
+2026-05-08T23:10:00+00:00,2d3c74f4-cc6c-5f2d-a6e4-bd739c40f352,Boston Red Sox,Tampa Bay Rays,Connelly Early,Jesse Scholtens,Scheduled
+2026-05-08T23:10:00+00:00,9701197c-8eff-52f7-b918-f97cb5beef3a,Miami Marlins,Washington Nationals,Robby Snelling,Foster Griffin,Scheduled
+2026-05-08T23:15:00+00:00,623ba53f-0b8b-5a38-a9aa-f7c13272d3a4,Cleveland Guardians,Minnesota Twins,Parker Messick,Connor Prielipp,Scheduled
+2026-05-08T23:40:00+00:00,28b49595-27fb-5237-b30b-47b6efea74af,Kansas City Royals,Detroit Tigers,Kris Bubic,Keider Montero,Scheduled
+2026-05-08T23:40:00+00:00,78057982-0ffa-5a58-8446-f2acf5f95092,Milwaukee Brewers,New York Yankees,Jacob Misiorowski,Max Fried,Scheduled
+2026-05-08T23:40:00+00:00,5f193964-2a78-5271-8886-1b5a445e45db,Chicago White Sox,Seattle Mariners,Sean Burke,Emerson Hancock,Scheduled
+2026-05-09T00:05:00+00:00,53b27148-46be-554f-9cf6-b3695c0cadda,Texas Rangers,Chicago Cubs,Kumar Rocker,Ben Brown,Scheduled
+2026-05-09T01:40:00+00:00,e2fed32b-0904-53dc-93da-98a3a5a140eb,Arizona Diamondbacks,New York Mets,Ryne Nelson,Nolan McLean,Scheduled
+2026-05-09T01:45:00+00:00,84199515-d4e6-5487-9963-947721eb1534,San Diego Padres,St. Louis Cardinals,Griffin Canning,Michael McGreevy,Scheduled
+2026-05-09T02:10:00+00:00,6a3043f5-f8ea-5d88-ba03-f565c3af05fe,Los Angeles Dodgers,Atlanta Braves,Emmet Sheehan,Chris Sale,Scheduled
+2026-05-09T02:15:00+00:00,bc841435-20c4-51e9-9197-f21b78a14a12,San Francisco Giants,Pittsburgh Pirates,,Carmen Mlodzinski,Scheduled
+2026-05-09T19:07:00+00:00,2f761c75-6c80-56be-9430-57f0b5eb64a3,Toronto Blue Jays,Los Angeles Angels,Trey Yesavage,Jack Kochanowicz,Scheduled
+2026-05-09T20:05:00+00:00,e1e0ef09-5367-565f-b8ca-403e014e65f8,Baltimore Orioles,Athletics,Shane Baz,Aaron Civale,Scheduled
+2026-05-09T20:10:00+00:00,4e74bd32-a48e-5874-9c40-8b4a76584f87,Cincinnati Reds,Houston Astros,Chase Burns,Spencer Arrighetti,Scheduled
+2026-05-09T20:10:00+00:00,cc923fdb-a455-5d58-a28e-272451129f92,Boston Red Sox,Tampa Bay Rays,,Nick Martinez,Scheduled
+2026-05-09T20:10:00+00:00,28d17205-1cbe-503e-b3f2-b78bed6aa521,Miami Marlins,Washington Nationals,Janson Junk,Zack Littell,Scheduled
+2026-05-09T22:05:00+00:00,c4b0be8e-f303-53af-9694-efb0c825b0fe,Philadelphia Phillies,Colorado Rockies,,Kyle Freeland,Scheduled
+2026-05-09T22:10:00+00:00,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Cleveland Guardians,Minnesota Twins,Tanner Bibee,Joe Ryan,Scheduled
+2026-05-09T23:05:00+00:00,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Texas Rangers,Chicago Cubs,Jack Leiter,Edward Cabrera,Scheduled
+2026-05-09T23:10:00+00:00,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Kansas City Royals,Detroit Tigers,Michael Wacha,,Scheduled
+2026-05-09T23:10:00+00:00,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Milwaukee Brewers,New York Yankees,Kyle Harrison,Cam Schlittler,Scheduled
+2026-05-09T23:10:00+00:00,07c93721-2cfb-55c9-9db6-833f834c7420,Chicago White Sox,Seattle Mariners,Anthony Kay,Luis Castillo,Scheduled
+2026-05-09T23:15:00+00:00,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Arizona Diamondbacks,New York Mets,Merrill Kelly,Clay Holmes,Scheduled
+2026-05-09T23:15:00+00:00,42802eda-1efd-5c29-9dd1-4ae6141dda2d,San Diego Padres,St. Louis Cardinals,Randy Vásquez,Dustin May,Scheduled
+2026-05-10T01:05:00+00:00,575e0063-9552-5e13-8330-84e497001ea1,San Francisco Giants,Pittsburgh Pirates,,Braxton Ashcraft,Scheduled
+2026-05-10T01:10:00+00:00,a417e82e-1114-54b3-b3a4-3f7289820419,Los Angeles Dodgers,Atlanta Braves,Roki Sasaki,Spencer Strider,Scheduled
