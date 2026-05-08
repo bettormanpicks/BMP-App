@@ -10,6 +10,4076 @@
         "year": 2025,
         "type": "Playoffs"
       },
+      "id": "b35d91c9-ec34-5ce9-9013-203b63a058e8",
+      "teams": {
+        "away": {
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
+        },
+        "home": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        }
+      },
+      "date": "2026-04-18T17:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Rocket Arena",
+        "location": "Cleveland, OH"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 35
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 36
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 37
+            },
+            "home": {
+              "points": 29
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 113
+          },
+          "home": {
+            "points": 126
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "299b427f-282b-5939-8226-3a2627d668bb",
+      "teams": {
+        "away": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        },
+        "home": {
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
+        }
+      },
+      "date": "2026-04-18T19:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Ball Arena",
+        "location": "Denver, CO"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 33
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 39
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 17
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 25
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 105
+          },
+          "home": {
+            "points": 116
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "77d3a041-0389-561c-a16d-2d2addbca410",
+      "teams": {
+        "away": {
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
+        },
+        "home": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        }
+      },
+      "date": "2026-04-18T22:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 27
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 19
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 30
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 102
+          },
+          "home": {
+            "points": 113
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "303c69c3-6ff5-522b-9936-c3ba7448f71f",
+      "teams": {
+        "away": {
+          "id": "0d08bf4d-cd46-5bb3-b9fb-9ae5a8f07f6e",
+          "name": "Houston Rockets"
+        },
+        "home": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        }
+      },
+      "date": "2026-04-19T00:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Crypto.com Arena",
+        "location": "Los Angeles, CA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 33
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 19
+            },
+            "home": {
+              "points": 17
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 18
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 32
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 98
+          },
+          "home": {
+            "points": 107
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "f4860f32-eea6-5279-ae11-76bd475490f5",
+      "teams": {
+        "away": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        },
+        "home": {
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
+        }
+      },
+      "date": "2026-04-19T17:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "TD Garden",
+        "location": "Boston, MA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 18
+            },
+            "home": {
+              "points": 33
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 20
+            },
+            "home": {
+              "points": 28
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 91
+          },
+          "home": {
+            "points": 123
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "873b9473-d134-5891-be2c-766ca682444e",
+      "teams": {
+        "away": {
+          "id": "c3c5dcbc-e238-541c-a3de-5862259f8f23",
+          "name": "Phoenix Suns"
+        },
+        "home": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        }
+      },
+      "date": "2026-04-19T19:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 20
+            },
+            "home": {
+              "points": 35
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 32
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 18
+            },
+            "home": {
+              "points": 22
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 84
+          },
+          "home": {
+            "points": 119
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "256bc670-f516-5c84-b944-5b55eab64af1",
+      "teams": {
+        "away": {
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
+        },
+        "home": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        }
+      },
+      "date": "2026-04-19T22:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 35
+            },
+            "home": {
+              "points": 27
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 20
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 27
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 112
+          },
+          "home": {
+            "points": 101
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "0c1259be-323a-5e74-a31a-c47188cf7b93",
+      "teams": {
+        "away": {
+          "id": "4267f28a-0b73-50be-b46b-99d7caefa55f",
+          "name": "Portland Trail Blazers"
+        },
+        "home": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        }
+      },
+      "date": "2026-04-20T01:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 24
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 98
+          },
+          "home": {
+            "points": 111
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "d38b9054-1187-517f-94a5-931a70858de4",
+      "teams": {
+        "away": {
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
+        },
+        "home": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        }
+      },
+      "date": "2026-04-20T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Rocket Arena",
+        "location": "Cleveland, OH"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 19
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 31
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 105
+          },
+          "home": {
+            "points": 115
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "3bc256d9-338d-558f-9e54-2150b7d7d68c",
+      "teams": {
+        "away": {
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
+        },
+        "home": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        }
+      },
+      "date": "2026-04-21T00:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 32
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 15
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 107
+          },
+          "home": {
+            "points": 106
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "fe0865ae-36d0-59a0-82b6-09a00cdff3c7",
+      "teams": {
+        "away": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        },
+        "home": {
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
+        }
+      },
+      "date": "2026-04-21T02:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Ball Arena",
+        "location": "Denver, CO"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 39
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 39
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 21
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 119
+          },
+          "home": {
+            "points": 114
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "a3fd95d7-6cb6-55c7-a081-636c49cd88d1",
+      "teams": {
+        "away": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        },
+        "home": {
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
+        }
+      },
+      "date": "2026-04-21T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "TD Garden",
+        "location": "Boston, MA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 37
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 20
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 111
+          },
+          "home": {
+            "points": 97
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "8074b66a-14c7-56c2-8521-f6ee50f3bfab",
+      "teams": {
+        "away": {
+          "id": "4267f28a-0b73-50be-b46b-99d7caefa55f",
+          "name": "Portland Trail Blazers"
+        },
+        "home": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        }
+      },
+      "date": "2026-04-22T00:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 23
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 106
+          },
+          "home": {
+            "points": 103
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "1f2b707f-3175-5025-9960-ae4ff93264d8",
+      "teams": {
+        "away": {
+          "id": "0d08bf4d-cd46-5bb3-b9fb-9ae5a8f07f6e",
+          "name": "Houston Rockets"
+        },
+        "home": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        }
+      },
+      "date": "2026-04-22T02:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Crypto.com Arena",
+        "location": "Los Angeles, CA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 33
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 21
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 17
+            },
+            "home": {
+              "points": 21
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 26
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 94
+          },
+          "home": {
+            "points": 101
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "6b55dce9-821d-594b-9cef-9e015889fc61",
+      "teams": {
+        "away": {
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
+        },
+        "home": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        }
+      },
+      "date": "2026-04-22T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 21
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 16
+            },
+            "home": {
+              "points": 38
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 14
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 83
+          },
+          "home": {
+            "points": 98
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "b6e42657-c0b6-58e0-abed-93d97dc967ed",
+      "teams": {
+        "away": {
+          "id": "c3c5dcbc-e238-541c-a3de-5862259f8f23",
+          "name": "Phoenix Suns"
+        },
+        "home": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        }
+      },
+      "date": "2026-04-23T01:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 35
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 20
+            },
+            "home": {
+              "points": 35
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 20
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 107
+          },
+          "home": {
+            "points": 120
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "9d0e5196-184f-583f-b32c-9c7635d78d9e",
+      "teams": {
+        "away": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        },
+        "home": {
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
+        }
+      },
+      "date": "2026-04-23T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "State Farm Arena",
+        "location": "Atlanta, GA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 33
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 21
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 108
+          },
+          "home": {
+            "points": 109
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "1f6dc349-a888-578f-89d5-304ad59f7286",
+      "teams": {
+        "away": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        },
+        "home": {
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
+        }
+      },
+      "date": "2026-04-24T00:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Scotiabank Arena",
+        "location": "Toronto, ON"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 43
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 104
+          },
+          "home": {
+            "points": 126
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "768dfe73-2b14-5094-9937-bf9877d9f586",
+      "teams": {
+        "away": {
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
+        },
+        "home": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        }
+      },
+      "date": "2026-04-24T01:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Target Center",
+        "location": "Minneapolis, MN"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 11
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 36
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 27
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 25
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 96
+          },
+          "home": {
+            "points": 113
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "22882a37-fc3c-5f0f-b7cd-f423e4b55c46",
+      "teams": {
+        "away": {
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
+        },
+        "home": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        }
+      },
+      "date": "2026-04-24T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Xfinity Mobile Arena",
+        "location": "Philadelphia, PA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 27
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 26
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 108
+          },
+          "home": {
+            "points": 100
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "b35339e8-2527-584d-81a4-0c26705333b4",
+      "teams": {
+        "away": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        },
+        "home": {
+          "id": "0d08bf4d-cd46-5bb3-b9fb-9ae5a8f07f6e",
+          "name": "Houston Rockets"
+        }
+      },
+      "date": "2026-04-25T00:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Toyota Center",
+        "location": "Houston, TX"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 39
+            },
+            "home": {
+              "points": 32
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 20
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 17
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 5,
+            "type": "Overtime",
+            "away": {
+              "points": 11
+            },
+            "home": {
+              "points": 7
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 112
+          },
+          "home": {
+            "points": 108
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "a881ee63-a3b5-5ce9-9a2d-380a289d2cfa",
+      "teams": {
+        "away": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        },
+        "home": {
+          "id": "4267f28a-0b73-50be-b46b-99d7caefa55f",
+          "name": "Portland Trail Blazers"
+        }
+      },
+      "date": "2026-04-25T02:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Moda Center",
+        "location": "Portland, OR"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 36
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 22
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 21
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 120
+          },
+          "home": {
+            "points": 108
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "b69695a9-7864-5c7e-9bb6-90f35fa1e024",
+      "teams": {
+        "away": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        },
+        "home": {
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
+        }
+      },
+      "date": "2026-04-25T17:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Kia Center",
+        "location": "Orlando, FL"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 35
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 26
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 105
+          },
+          "home": {
+            "points": 113
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "59d7dc3e-3ff2-58c8-b928-3304011eeb8a",
+      "teams": {
+        "away": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        },
+        "home": {
+          "id": "c3c5dcbc-e238-541c-a3de-5862259f8f23",
+          "name": "Phoenix Suns"
+        }
+      },
+      "date": "2026-04-25T19:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Mortgage Matchup Center",
+        "location": "Phoenix, AZ"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 33
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 34
+            },
+            "home": {
+              "points": 30
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 121
+          },
+          "home": {
+            "points": 109
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "5acdc7eb-a11c-5c75-8904-f76eaee58580",
+      "teams": {
+        "away": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        },
+        "home": {
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
+        }
+      },
+      "date": "2026-04-25T22:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "State Farm Arena",
+        "location": "Atlanta, GA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 20
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 21
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 33
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 114
+          },
+          "home": {
+            "points": 98
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "20ca2baa-661c-5bb0-9c98-feb6d426ac95",
+      "teams": {
+        "away": {
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
+        },
+        "home": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        }
+      },
+      "date": "2026-04-26T00:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Target Center",
+        "location": "Minneapolis, MN"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 22
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 32
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 18
+            },
+            "home": {
+              "points": 30
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 96
+          },
+          "home": {
+            "points": 112
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "d0cd1b82-aaeb-5cd2-971e-aa39eaaffbd4",
+      "teams": {
+        "away": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        },
+        "home": {
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
+        }
+      },
+      "date": "2026-04-26T17:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Scotiabank Arena",
+        "location": "Toronto, ON"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 17
+            },
+            "home": {
+              "points": 14
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 19
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 22
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 33
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 89
+          },
+          "home": {
+            "points": 93
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "3b73d501-a6c8-5b3a-814d-f04b85857770",
+      "teams": {
+        "away": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        },
+        "home": {
+          "id": "4267f28a-0b73-50be-b46b-99d7caefa55f",
+          "name": "Portland Trail Blazers"
+        }
+      },
+      "date": "2026-04-26T19:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Moda Center",
+        "location": "Portland, OR"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 18
+            },
+            "home": {
+              "points": 33
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 33
+            },
+            "home": {
+              "points": 16
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 40
+            },
+            "home": {
+              "points": 19
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 114
+          },
+          "home": {
+            "points": 93
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "3b4f4d7a-9797-5855-b794-93ab479f4b4f",
+      "teams": {
+        "away": {
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
+        },
+        "home": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        }
+      },
+      "date": "2026-04-26T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Xfinity Mobile Arena",
+        "location": "Philadelphia, PA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 34
+            },
+            "home": {
+              "points": 18
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 20
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 39
+            },
+            "home": {
+              "points": 36
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 33
+            },
+            "home": {
+              "points": 22
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 128
+          },
+          "home": {
+            "points": 96
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "8b569f32-93b1-58d3-b107-17d0a8bafd77",
+      "teams": {
+        "away": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        },
+        "home": {
+          "id": "0d08bf4d-cd46-5bb3-b9fb-9ae5a8f07f6e",
+          "name": "Houston Rockets"
+        }
+      },
+      "date": "2026-04-27T01:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Toyota Center",
+        "location": "Houston, TX"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 18
+            },
+            "home": {
+              "points": 34
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 25
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 96
+          },
+          "home": {
+            "points": 115
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "63c19492-392e-5d8e-8923-edcb2dd033d7",
+      "teams": {
+        "away": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        },
+        "home": {
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
+        }
+      },
+      "date": "2026-04-28T00:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Kia Center",
+        "location": "Orlando, FL"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 17
+            },
+            "home": {
+              "points": 21
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 19
+            },
+            "home": {
+              "points": 19
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 88
+          },
+          "home": {
+            "points": 94
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "3052f935-a83f-5ff5-8f8a-d62506e67e6c",
+      "teams": {
+        "away": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        },
+        "home": {
+          "id": "c3c5dcbc-e238-541c-a3de-5862259f8f23",
+          "name": "Phoenix Suns"
+        }
+      },
+      "date": "2026-04-28T01:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Mortgage Matchup Center",
+        "location": "Phoenix, AZ"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 37
+            },
+            "home": {
+              "points": 33
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 38
+            },
+            "home": {
+              "points": 34
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 24
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 131
+          },
+          "home": {
+            "points": 122
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "5bf95e82-1c1b-5e80-ad25-e0d6f95554c0",
+      "teams": {
+        "away": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        },
+        "home": {
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
+        }
+      },
+      "date": "2026-04-28T02:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Ball Arena",
+        "location": "Denver, CO"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 34
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 37
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 38
+            },
+            "home": {
+              "points": 28
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 113
+          },
+          "home": {
+            "points": 125
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "5a31ed32-dc19-5a01-ba44-92b1a5cc748b",
+      "teams": {
+        "away": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        },
+        "home": {
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
+        }
+      },
+      "date": "2026-04-28T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "TD Garden",
+        "location": "Boston, MA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 34
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 35
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 11
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 113
+          },
+          "home": {
+            "points": 97
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "b2687b61-e8ec-5cbd-97b2-c8f09231baeb",
+      "teams": {
+        "away": {
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
+        },
+        "home": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        }
+      },
+      "date": "2026-04-29T00:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 35
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 36
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 97
+          },
+          "home": {
+            "points": 126
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "976a5241-57cc-5ddc-893d-31a71c4c3744",
+      "teams": {
+        "away": {
+          "id": "4267f28a-0b73-50be-b46b-99d7caefa55f",
+          "name": "Portland Trail Blazers"
+        },
+        "home": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        }
+      },
+      "date": "2026-04-29T01:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 36
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 20
+            },
+            "home": {
+              "points": 21
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 28
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 95
+          },
+          "home": {
+            "points": 114
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "cc24b1e3-f660-5a77-a0fb-52d958af63c8",
+      "teams": {
+        "away": {
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
+        },
+        "home": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        }
+      },
+      "date": "2026-04-29T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 38
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 34
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 19
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 27
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 109
+          },
+          "home": {
+            "points": 116
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "7fad5705-3a5d-5bc6-9c55-f7429b6df72d",
+      "teams": {
+        "away": {
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
+        },
+        "home": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        }
+      },
+      "date": "2026-04-29T23:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Rocket Arena",
+        "location": "Cleveland, OH"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 34
+            },
+            "home": {
+              "points": 38
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 40
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 33
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 17
+            },
+            "home": {
+              "points": 25
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 120
+          },
+          "home": {
+            "points": 125
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "53c66934-d9d5-5f66-9df5-6881071ace82",
+      "teams": {
+        "away": {
+          "id": "0d08bf4d-cd46-5bb3-b9fb-9ae5a8f07f6e",
+          "name": "Houston Rockets"
+        },
+        "home": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        }
+      },
+      "date": "2026-04-30T02:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Crypto.com Arena",
+        "location": "Los Angeles, CA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 19
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 20
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 26
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 99
+          },
+          "home": {
+            "points": 93
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "a94f5004-aad5-521b-a276-cf241ae69c80",
+      "teams": {
+        "away": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        },
+        "home": {
+          "id": "2ebace8a-c831-50fa-9fb0-32817fe10ce4",
+          "name": "Atlanta Hawks"
+        }
+      },
+      "date": "2026-04-30T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "State Farm Arena",
+        "location": "Atlanta, GA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 40
+            },
+            "home": {
+              "points": 15
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 43
+            },
+            "home": {
+              "points": 21
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 34
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 25
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 140
+          },
+          "home": {
+            "points": 89
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "115c7999-9137-5e5f-899a-05191f31ffdf",
+      "teams": {
+        "away": {
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
+        },
+        "home": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        }
+      },
+      "date": "2026-05-01T00:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Xfinity Mobile Arena",
+        "location": "Philadelphia, PA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 20
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 38
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 14
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 24
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 93
+          },
+          "home": {
+            "points": 106
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "8fb76254-801e-5591-896a-a70d949b40b2",
+      "teams": {
+        "away": {
+          "id": "ca73f639-ade6-5c28-84cb-1aacf9f635b3",
+          "name": "Denver Nuggets"
+        },
+        "home": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        }
+      },
+      "date": "2026-05-01T01:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Target Center",
+        "location": "Minneapolis, MN"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 20
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 28
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 98
+          },
+          "home": {
+            "points": 110
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "5d5c67d8-b36f-5412-a75f-371d88e51108",
+      "teams": {
+        "away": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        },
+        "home": {
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
+        }
+      },
+      "date": "2026-05-01T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Kia Center",
+        "location": "Orlando, FL"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 12
+            },
+            "home": {
+              "points": 35
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 11
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 8
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 93
+          },
+          "home": {
+            "points": 79
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "7867d3e6-11bb-5b60-b826-27c2c9915080",
+      "teams": {
+        "away": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        },
+        "home": {
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
+        }
+      },
+      "date": "2026-05-01T23:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Scotiabank Arena",
+        "location": "Toronto, ON"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 32
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 19
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 12
+            }
+          },
+          {
+            "number": 5,
+            "type": "Overtime",
+            "away": {
+              "points": 6
+            },
+            "home": {
+              "points": 8
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 110
+          },
+          "home": {
+            "points": 112
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "a02de770-63b0-58aa-b9d2-82ecfd9c64b5",
+      "teams": {
+        "away": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        },
+        "home": {
+          "id": "0d08bf4d-cd46-5bb3-b9fb-9ae5a8f07f6e",
+          "name": "Houston Rockets"
+        }
+      },
+      "date": "2026-05-02T01:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Toyota Center",
+        "location": "Houston, TX"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 18
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 13
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 23
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 98
+          },
+          "home": {
+            "points": 78
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "570663e7-db0b-5c5d-b62b-1174ba452965",
+      "teams": {
+        "away": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        },
+        "home": {
+          "id": "bd127d0b-14fd-5670-ac98-5bc983ca96b7",
+          "name": "Boston Celtics"
+        }
+      },
+      "date": "2026-05-02T23:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "TD Garden",
+        "location": "Boston, MA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 19
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 33
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 25
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 109
+          },
+          "home": {
+            "points": 100
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "9c1870e6-fa4b-57b0-943d-ae790042c4c6",
+      "teams": {
+        "away": {
+          "id": "985459e4-3a63-5133-bacf-703bed32095f",
+          "name": "Orlando Magic"
+        },
+        "home": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        }
+      },
+      "date": "2026-05-03T19:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 20
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 40
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 15
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 33
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 94
+          },
+          "home": {
+            "points": 116
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "d31ee0f1-2c24-5ab7-a376-70f773531584",
+      "teams": {
+        "away": {
+          "id": "4200c796-863d-5083-bd6e-53ac21adc056",
+          "name": "Toronto Raptors"
+        },
+        "home": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        }
+      },
+      "date": "2026-05-03T23:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Rocket Arena",
+        "location": "Cleveland, OH"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 19
+            },
+            "home": {
+              "points": 38
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 34
+            },
+            "home": {
+              "points": 27
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 102
+          },
+          "home": {
+            "points": 114
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "adfb1a3c-1d7b-5574-9a77-72098ae8ecaf",
+      "teams": {
+        "away": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        },
+        "home": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        }
+      },
+      "date": "2026-05-05T00:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 33
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 41
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 35
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 20
+            },
+            "home": {
+              "points": 28
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 98
+          },
+          "home": {
+            "points": 137
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "386bf16c-bebc-50ac-a9ac-c8a284111a37",
+      "teams": {
+        "away": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        },
+        "home": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        }
+      },
+      "date": "2026-05-05T01:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 22
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 27
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 35
+            },
+            "home": {
+              "points": 30
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 104
+          },
+          "home": {
+            "points": 102
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "eb2edbe5-9b16-5883-aa69-9cedae22fd38",
+      "teams": {
+        "away": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        },
+        "home": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        }
+      },
+      "date": "2026-05-05T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 37
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 22
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 28
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 101
+          },
+          "home": {
+            "points": 111
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "8aad1d48-1a3c-5614-b4a8-c8ccc3cbb8df",
+      "teams": {
+        "away": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        },
+        "home": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        }
+      },
+      "date": "2026-05-06T00:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 19
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 18
+            },
+            "home": {
+              "points": 24
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 90
+          },
+          "home": {
+            "points": 108
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "c9bcae9f-bdba-5055-9b5b-537557ba23d9",
+      "teams": {
+        "away": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        },
+        "home": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        }
+      },
+      "date": "2026-05-06T23:00:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 33
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 12
+            },
+            "home": {
+              "points": 19
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 102
+          },
+          "home": {
+            "points": 108
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "a97b0fc4-d387-5d76-a7dd-d0c15db2a89a",
+      "teams": {
+        "away": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        },
+        "home": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        }
+      },
+      "date": "2026-05-07T01:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 17
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 18
+            },
+            "home": {
+              "points": 35
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 39
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 35
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 95
+          },
+          "home": {
+            "points": 133
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
       "id": "e65373ed-969f-5d2c-9c13-9f73a66c25f8",
       "teams": {
         "away": {
@@ -22,10 +4092,62 @@
         }
       },
       "date": "2026-05-07T23:00:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Little Caesars Arena",
         "location": "Detroit, MI"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 18
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 28
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 97
+          },
+          "home": {
+            "points": 107
+          }
+        }
       }
     },
     {
@@ -45,12 +4167,685 @@
         }
       },
       "date": "2026-05-08T01:30:00Z",
+      "status": "Final",
+      "venue": {
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 27
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 35
+            },
+            "home": {
+              "points": 30
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 36
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 32
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 107
+          },
+          "home": {
+            "points": 125
+          }
+        }
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "bf9d6992-66e3-555c-9763-8f57b19d7d37",
+      "teams": {
+        "away": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        },
+        "home": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        }
+      },
+      "date": "2026-05-08T23:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Xfinity Mobile Arena",
+        "location": "Philadelphia, PA"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "d00b5e55-9a0a-5b22-8d87-4489f23fa07f",
+      "teams": {
+        "away": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        },
+        "home": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        }
+      },
+      "date": "2026-05-09T01:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Target Center",
+        "location": "Minneapolis, MN"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "e031b33d-77ab-5cff-a4fc-40d5a652e80f",
+      "teams": {
+        "away": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        },
+        "home": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        }
+      },
+      "date": "2026-05-09T19:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Rocket Arena",
+        "location": "Cleveland, OH"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "044916d3-b511-5072-bb01-50c7ad2acd5d",
+      "teams": {
+        "away": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        },
+        "home": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        }
+      },
+      "date": "2026-05-10T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Crypto.com Arena",
+        "location": "Los Angeles, CA"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "b138a015-8020-5288-aa29-08c831fb7459",
+      "teams": {
+        "away": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        },
+        "home": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        }
+      },
+      "date": "2026-05-10T19:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Xfinity Mobile Arena",
+        "location": "Philadelphia, PA"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "2d80b183-cbc7-520c-90dc-890f56ff8f61",
+      "teams": {
+        "away": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        },
+        "home": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        }
+      },
+      "date": "2026-05-10T23:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Target Center",
+        "location": "Minneapolis, MN"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "4a40066d-1511-5ba3-97b8-c64507b25fe3",
+      "teams": {
+        "away": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        },
+        "home": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        }
+      },
+      "date": "2026-05-12T00:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Rocket Arena",
+        "location": "Cleveland, OH"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "b1576b38-8370-5304-bd17-ec9e30efa6b5",
+      "teams": {
+        "away": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        },
+        "home": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        }
+      },
+      "date": "2026-05-12T02:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Crypto.com Arena",
+        "location": "Los Angeles, CA"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "c32e0881-2326-55c4-9f21-8df411aeac60",
+      "teams": {
+        "away": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        },
+        "home": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        }
+      },
+      "date": "2026-05-12T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "3caa04f5-952a-559d-9357-b5707dffafce",
+      "teams": {
+        "away": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        },
+        "home": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        }
+      },
+      "date": "2026-05-12T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "ccd65186-74a6-5a9f-b5e7-211bd7c1e8cd",
+      "teams": {
+        "away": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        },
+        "home": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        }
+      },
+      "date": "2026-05-13T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "135903c8-943e-5f38-a1b1-906e7c9c36f7",
+      "teams": {
+        "away": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        },
+        "home": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        }
+      },
+      "date": "2026-05-13T04:00:00Z",
       "status": "Scheduled",
       "venue": {
         "name": "Paycom Center",
         "location": "Oklahoma City, OK"
       }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "3b4583b8-69cc-5ada-874e-75a23f518d9d",
+      "teams": {
+        "away": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        },
+        "home": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        }
+      },
+      "date": "2026-05-14T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Xfinity Mobile Arena",
+        "location": "Philadelphia, PA"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "bb1ac91f-5dba-5bc7-9f18-e6e64f0cfbab",
+      "teams": {
+        "away": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        },
+        "home": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        }
+      },
+      "date": "2026-05-15T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Rocket Arena",
+        "location": "Cleveland, OH"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "425ee991-59b8-5875-a560-bc883438e137",
+      "teams": {
+        "away": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        },
+        "home": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        }
+      },
+      "date": "2026-05-15T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Target Center",
+        "location": "Minneapolis, MN"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "986640b5-9c9b-5e8d-9f15-9f4d9f6920df",
+      "teams": {
+        "away": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        },
+        "home": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        }
+      },
+      "date": "2026-05-16T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Crypto.com Arena",
+        "location": "Los Angeles, CA"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "3706dde1-5377-59c3-8f7b-dbfb5cf845a4",
+      "teams": {
+        "away": {
+          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
+          "name": "Cleveland Cavaliers"
+        },
+        "home": {
+          "id": "e28ec1ba-41b7-5ad6-b595-9adceec95212",
+          "name": "Detroit Pistons"
+        }
+      },
+      "date": "2026-05-17T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Little Caesars Arena",
+        "location": "Detroit, MI"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "1bcd6e53-42f0-57c0-9e71-8d47159f3b9a",
+      "teams": {
+        "away": {
+          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
+          "name": "Minnesota Timberwolves"
+        },
+        "home": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        }
+      },
+      "date": "2026-05-17T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "0be4e15b-b7a9-574a-9e35-fb6be541e46d",
+      "teams": {
+        "away": {
+          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
+          "name": "Philadelphia 76ers"
+        },
+        "home": {
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
+        }
+      },
+      "date": "2026-05-17T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "f8bcdda7-7f23-5bda-9a73-b53a4f6753d5",
+      "teams": {
+        "away": {
+          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
+          "name": "Los Angeles Lakers"
+        },
+        "home": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        }
+      },
+      "date": "2026-05-18T04:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "86907b71-4f89-515a-9254-e932f0a8ac0e",
+      "teams": {
+        "away": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        },
+        "home": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        }
+      },
+      "date": "2026-06-04T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": null,
+        "location": null
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "d3fcc64e-d86b-5c90-ae99-6a4034cec209",
+      "teams": {
+        "away": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        },
+        "home": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        }
+      },
+      "date": "2026-06-06T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": null,
+        "location": null
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "ec52e3cb-b7a7-5e9b-b31a-b05fec003583",
+      "teams": {
+        "away": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        },
+        "home": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        }
+      },
+      "date": "2026-06-09T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": null,
+        "location": null
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "5506deec-2372-5269-8e18-3c68d588e7d7",
+      "teams": {
+        "away": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        },
+        "home": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        }
+      },
+      "date": "2026-06-11T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": null,
+        "location": null
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "f14ca7e9-947a-5ec2-a198-eb8b7d951875",
+      "teams": {
+        "away": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        },
+        "home": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        }
+      },
+      "date": "2026-06-14T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": null,
+        "location": null
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "596e466b-2a19-5070-ad1b-abacfe2b248b",
+      "teams": {
+        "away": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        },
+        "home": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        }
+      },
+      "date": "2026-06-17T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": null,
+        "location": null
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "778baa87-fac9-56d0-8898-09d1c864877a",
+      "teams": {
+        "away": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        },
+        "home": {
+          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
+          "name": " "
+        }
+      },
+      "date": "2026-06-20T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": null,
+        "location": null
+      }
     }
   ],
-  "updated": "2026-05-07T06:00:02Z"
+  "updated": "2026-05-08T08:00:02Z"
 }
