@@ -93,13 +93,11 @@ def normalize_name(name):
 # -------------------------
 # Load Raw CSVs
 # -------------------------
-@st.cache_data(show_spinner=False, max_entries=4, ttl=3600)
+@st.cache_data(show_spinner=False, max_entries=4)
 def load_tt_raw_data(league):
     """
     Loads raw Table Tennis datasets and applies minimal cleaning.
-    Cached per league (max_entries=4, one per league).
-    ttl=3600 ensures a manual Supabase push is picked up within an hour
-    rather than being invisible until the app is restarted.
+    Cached for performance.
     """
     paths = LEAGUE_FILES[league]
 
@@ -185,17 +183,14 @@ def build_h2h_index(matchlogs):
     Creates a dictionary keyed by sorted player pair (tuple),
     with a list of matches (newest first).
 
-    Each match entry includes set-level winners to support
+    Each match entry now includes set-level winners to support
     BB% (bounce-back: lost s1, won s2) and SR% (sweep resistance:
     lost s1 and s2, won s3) calculations.
-
-    Assumes matchlogs is already sorted newest-first — load_tt_raw_data
-    does this immediately before calling this function, so the redundant
-    internal sort has been removed.
     """
     h2h_index = {}
+    matchlogs_sorted = matchlogs.sort_values("date", ascending=False)
 
-    for _, row in matchlogs.iterrows():
+    for _, row in matchlogs_sorted.iterrows():
         p1  = row["player1"]
         p2  = row["player2"]
         key = tuple(sorted([p1, p2]))

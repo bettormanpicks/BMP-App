@@ -20,22 +20,14 @@ def get_today_schedule(schedule_df):
     from datetime import timezone
     today = datetime.now(timezone.utc).date()
 
-    # Always copy before any mutation so we never modify the cached DataFrame.
-    # Previously the copy was conditional, which left the cached object exposed
-    # when tz was already set.
-    schedule_df = schedule_df.copy()
-
+    # Ensure tz-awareness survived the cache round-trip
     if schedule_df["date"].dt.tz is None:
+        schedule_df = schedule_df.copy()
         schedule_df["date"] = schedule_df["date"].dt.tz_localize("UTC")
 
     return schedule_df[schedule_df["date"].dt.date == today]
 
-@st.cache_data
 def build_today_matchups(schedule_df):
-    """
-    Build a {team: {opp, pitcher}} lookup from today's schedule slice.
-    Cached so the DataFrame iteration only runs once per unique schedule input.
-    """
     matchups = {}
 
     for _, row in schedule_df.iterrows():

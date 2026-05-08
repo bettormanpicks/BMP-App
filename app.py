@@ -17,18 +17,44 @@ if ROOT_DIR not in sys.path:
     sys.path.insert(0, ROOT_DIR)
 
 # ============================================================
-# Shared utilities — always needed regardless of sport
+# Remaining imports for your app logic
 # ============================================================
+from mlb.helpers import load_mlb_raw_data, get_today_schedule, get_player_stats 
+
 from shared.utils import (
     get_central_today, get_league_today, hit_rate_threshold,
     trim_df_to_recent_82, dedupe_columns, strip_display_ids,
     norm_name, get_teams_playing_on_date, sidebar_footer
 )
+from nba.helpers import (
+    DEF_STAT_MAP, load_nba_schedule, load_today_matchups,
+    load_nba_injury_status, parse_nba_matchup,
+    add_team_opponent_columns, compute_player_percentiles,
+    load_todays_schedule, compute_team_b2b_from_schedule,
+    normalize_nba_position, normalize_nba_position_display,
+    add_combo_stats, load_nba_raw_data, load_defense_tables
+)
+from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
 
-# ============================================================
-# Sport-specific imports are deferred to each sport's block
-# below to avoid loading all helpers on every session.
-# ============================================================
+# NHL helper functions
+from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date, get_nhl_injuries
+
+# Table Tennis helper functions
+from tabletennis.helpers import (
+    load_tt_raw_data,
+    load_tt_all_leagues,
+    build_h2h_index,
+    compute_h2h_stats
+)
+
+# Tennis helper functions
+from tennis.tennishelpers import (
+    load_tennis_raw_data,
+    load_tennis_schedule,
+    load_tennis_players,
+    compute_tennis_percentiles,
+    load_tennis_defense
+)
 
 import streamlit_analytics2 as streamlit_analytics
 
@@ -83,12 +109,6 @@ with streamlit_analytics.track():
     # ============================================================
     # HEADER BANNER (hero header with title + date)
     # ============================================================
-    @st.cache_data
-    def _encode_banner(image_path):
-        """Read and base64-encode the banner once per session."""
-        with open(image_path, "rb") as f:
-            return base64.b64encode(f.read()).decode()
-
     def set_header_banner(image_path, image_width=1500, image_height=150):
         """
         Sets a full-width hero banner at the top of the page, preserving the entire image.
@@ -97,7 +117,8 @@ with streamlit_analytics.track():
         """
         aspect_ratio_pct = (image_height / image_width) * 100  # padding-top % to preserve aspect ratio
 
-        data = _encode_banner(image_path)  # cached — only reads disk once per session
+        with open(image_path, "rb") as f:
+            data = base64.b64encode(f.read()).decode()
 
         st.markdown(f"""
         <style>
@@ -259,6 +280,8 @@ with streamlit_analytics.track():
 
     set_header_banner("assets/banner.png", image_width=1500, image_height=150)
 
+    nba_today = get_league_today()
+
     # Sidebar logo
     st.sidebar.image("assets/logo.png", width=170)
 
@@ -268,45 +291,7 @@ with streamlit_analytics.track():
     ############################################################
     # ===== MLB SECTION =====
     ############################################################
-
-    # Module-level constant — built once, not on every submit
-    MLB_TEAM_TRICODES = {
-        "Los Angeles Dodgers": "LAD",
-        "Toronto Blue Jays": "TOR",
-        "New York Yankees": "NYY",
-        "Baltimore Orioles": "BAL",
-        "Boston Red Sox": "BOS",
-        "Chicago White Sox": "CWS",
-        "Chicago Cubs": "CHC",
-        "San Francisco Giants": "SF",
-        "St. Louis Cardinals": "STL",
-        "Houston Astros": "HOU",
-        "Atlanta Braves": "ATL",
-        "Philadelphia Phillies": "PHI",
-        "Washington Nationals": "WSH",
-        "Arizona Diamondbacks": "ARI",
-        "Miami Marlins": "MIA",
-        "New York Mets": "NYM",
-        "Cincinnati Reds": "CIN",
-        "Pittsburgh Pirates": "PIT",
-        "Milwaukee Brewers": "MIL",
-        "Minnesota Twins": "MIN",
-        "Kansas City Royals": "KC",
-        "Tampa Bay Rays": "TB",
-        "Athletics": "ATH",
-        "Los Angeles Angels": "LAA",
-        "Seattle Mariners": "SEA",
-        "Texas Rangers": "TEX",
-        "Colorado Rockies": "COL",
-        "San Diego Padres": "SD",
-        "Detroit Tigers": "DET",
-        "Cleveland Guardians": "CLE",
-    }
-
     if sport_choice == "MLB":
-
-        # --- Lazy imports: only loaded when MLB is selected ---
-        from mlb.helpers import load_mlb_raw_data, get_today_schedule, get_player_stats
 
         # --- Load MLB data ---
         try:
@@ -471,8 +456,41 @@ with streamlit_analytics.track():
                     df["DateLocal"] = df["DateUTC"].dt.tz_convert(local_tz)
                     df["Date / Time"] = df["DateLocal"].dt.strftime("%Y-%m-%d %H:%M")
 
-                    df["Team"] = df["Team"].map(MLB_TEAM_TRICODES).fillna(df["Team"])
-                    df["Opp"] = df["Opp"].map(MLB_TEAM_TRICODES).fillna(df["Opp"])
+                    TEAM_TRICODES = {
+                        "Los Angeles Dodgers": "LAD",
+                        "Toronto Blue Jays": "TOR",
+                        "New York Yankees": "NYY",
+                        "Baltimore Orioles": "BAL",
+                        "Boston Red Sox": "BOS",
+                        "Chicago White Sox": "CWS",
+                        "Chicago Cubs": "CHC",
+                        "San Francisco Giants": "SF",
+                        "St. Louis Cardinals": "STL",
+                        "Houston Astros": "HOU",
+                        "Atlanta Braves": "ATL",
+                        "Philadelphia Phillies": "PHI",
+                        "Washington Nationals": "WSH",
+                        "Arizona Diamondbacks": "ARI",
+                        "Miami Marlins": "MIA",
+                        "New York Mets": "NYM",
+                        "Cincinnati Reds": "CIN",
+                        "Pittsburgh Pirates": "PIT",
+                        "Milwaukee Brewers": "MIL",
+                        "Minnesota Twins": "MIN",
+                        "Kansas City Royals": "KC",
+                        "Tampa Bay Rays": "TB",
+                        "Athletics": "ATH",
+                        "Los Angeles Angels": "LAA",
+                        "Seattle Mariners": "SEA",
+                        "Texas Rangers": "TEX",
+                        "Colorado Rockies": "COL",
+                        "San Diego Padres": "SD",
+                        "Detroit Tigers": "DET",
+                        "Cleveland Guardians": "CLE",
+                    }
+
+                    df["Team"] = df["Team"].map(TEAM_TRICODES).fillna(df["Team"])
+                    df["Opp"] = df["Opp"].map(TEAM_TRICODES).fillna(df["Opp"])
                     df.rename(columns={"games": "Gms"}, inplace=True)
 
                     # -------------------------
@@ -503,16 +521,9 @@ with streamlit_analytics.track():
     ############################################################
     elif sport_choice == "NBA":
 
-        # --- Lazy imports: only loaded when NBA is selected ---
-        from nba.helpers import (
-            DEF_STAT_MAP, load_nba_schedule, load_today_matchups,
-            load_nba_injury_status, parse_nba_matchup,
-            add_team_opponent_columns, compute_player_percentiles,
-            load_todays_schedule, compute_team_b2b_from_schedule,
-            normalize_nba_position, normalize_nba_position_display,
-            add_combo_stats, load_nba_raw_data, load_defense_tables
-        )
-        from nba.nbadefense import get_team_def_ranks, get_team_def_ranks_by_position
+        #st.subheader("NBA — Player Hit Rate Analysis")
+        #nba_today = get_league_today()
+        #st.caption(f"NBA date: {nba_today.strftime('%b %d')} (rolls over at 3:00 AM CT)")
 
         # --- Load core NBA data (cached) ---
         df, team_totals_df, pos_df = load_nba_raw_data()
@@ -561,9 +572,7 @@ with streamlit_analytics.track():
             df_calc = trim_df_to_recent_82(df)
 
             # --- Cached Defense Tables ---
-            # Pass the already-loaded DataFrames so load_defense_tables never
-            # re-reads the CSVs internally.
-            overall_def, pos_def_df = load_defense_tables(defense_window, df, team_totals_df)
+            overall_def, pos_def_df = load_defense_tables(defense_window)
 
             # Pivot overall_def to create lookup table by opponent
             opponent_def = pd.DataFrame(index=overall_def["OPP_TEAM"].unique())
@@ -581,11 +590,9 @@ with streamlit_analytics.track():
                 #pos_def_df.to_csv("debug_nba_defense_positional.csv", index=False)
 
             # --- Load schedule & compute B2B map ---
-            # schedule_data is still loaded for load_today_matchups; B2B now
-            # uses the path-based signature so no dict is passed to the cache.
             schedule_data = load_nba_schedule()
             todays_teams, today_matchups = load_today_matchups()
-            team_b2b_map = compute_team_b2b_from_schedule()
+            team_b2b_map = compute_team_b2b_from_schedule(schedule_data)
 
             # Filter players to today's teams if selected
             if filter_today and todays_teams:
@@ -692,31 +699,252 @@ with streamlit_analytics.track():
             #st.download_button("Download CSV", csv_bytes, "player_stats.csv")
 
     ############################################################
+    # ===== NFL SECTION (PFR CLEAN DATA ONLY) =====
+    ############################################################
+    elif sport_choice == "NFL":
+
+        st.subheader("NFL — Player Hit Rate Analysis")
+
+        # ---------- Upload ----------
+        uploaded_nfl = st.file_uploader(
+            "Upload NFL Game Logs CSV",
+            type=["csv"],
+            key="nfl"
+        )
+
+        if uploaded_nfl is None:
+            st.stop()
+
+        # ---------- Load CSV ----------
+        nfl_df = pd.read_csv(uploaded_nfl, low_memory=False)
+
+        nfl_df["Team"] = nfl_df["Team"].apply(normalize_team_code)
+        nfl_df["Opp"] = nfl_df["Opp"].apply(normalize_team_code)
+
+        # ---------- Required columns (CANONICAL) ----------
+        required_cols = {"Name", "Team", "Opp", "Week"}
+        missing = required_cols - set(nfl_df.columns)
+        if missing:
+            st.error(f"Missing required columns: {missing}")
+            st.stop()
+
+        st.caption(f"Loaded {len(nfl_df):,} game rows")
+
+    # ---------- Stat configuration (CANONICAL NFL) ----------
+        default_stat_config = {
+            # passing
+            "PaCmp": "PaCmp",
+            "PaAtt": "PaAtt",
+            "PaYds": "PaYds",
+            "PaTD": "PaTD",
+
+            # rushing
+            "RuAtt": "RuAtt",
+            "RuYds": "RuYds",
+            "RuTD": "RuTD",
+
+            # receiving
+            "Rec": "Rec",
+            "RecYds": "RecYds",
+            "RecTD": "RecTD",
+
+            # defense
+            "DefSk": "Sk",
+            "TckComb": "Tck",
+
+            # kicking
+            "Fgm": "Fgm",
+            "Fga": "Fga",
+        }
+
+        #------------Stat Types--------------
+        STAT_TYPE_TO_STATS = {
+            "Passing": {"PaCmp", "PaAtt", "PaYds", "PaTD"},
+            "Rushing": {"RuAtt", "RuYds", "RuTD"},
+            "Receiving": {"Rec", "RecYds", "RecTD"},
+            "Defense": {"DefSk", "TckComb"},
+            "Kicking": {"Fgm", "Fga"},
+        }
+
+        # Only keep stats that exist in CSV
+        stat_config = {
+            col: abbr
+            for col, abbr in default_stat_config.items()
+            if col in nfl_df.columns
+        }
+
+        if not stat_config:
+            st.error("No known NFL stat columns found in this CSV.")
+            st.stop()
+
+        # ---------- Sidebar controls ----------
+        stat_type = st.sidebar.radio(
+            "Stat Type",
+            ["Passing", "Rushing", "Receiving", "Defense", "Kicking"],
+            horizontal=True
+        )
+
+        allowed_stats = STAT_TYPE_TO_STATS[stat_type]
+
+        stat_config = {
+            col: abbr
+            for col, abbr in default_stat_config.items()
+            if col in nfl_df.columns and col in allowed_stats
+        }
+
+        stats_selected = st.sidebar.multiselect(
+            "Stats to include",
+            list(stat_config.values()),
+            default=list(stat_config.values())
+        )
+
+        stat_config = {
+            col: abbr
+            for col, abbr in stat_config.items()
+            if abbr in stats_selected
+        }
+
+        if not stat_config:
+            st.error(f"No {stat_type} stats found in this CSV.")
+            st.stop()
+
+        # Percentile thresholds
+        pct_input = st.sidebar.text_input("Hit Rate Percentage", "80")
+        try:
+            percentages = sorted({float(x) for x in pct_input.split()})
+        except Exception:
+            percentages = [75.0, 80.0, 85.0]
+
+        player_window = st.sidebar.radio("Player Performance Window", ["L5", "L10", "ALL"], index=0)
+        recent_n = 5 if player_window == "L5" else 10 if player_window == "L10" else None
+
+        filter_today = st.sidebar.checkbox("Only upcoming games (next 3 days)", value=False)
+        schedule_path = st.sidebar.text_input("Local NFL schedule JSON", "nflschedule.json")
+        teams_window, opp_map_window, _ = load_nfl_games_next_3_days(schedule_path)
+
+        show_debug = st.sidebar.checkbox("Show recent-game debug table", value=False)
+
+        if not stat_config:
+            st.warning("Select at least one stat.")
+            st.stop()
+
+        # ---------- Calculate ----------
+        if st.sidebar.button("Calculate NFL Hit Rates"):
+
+            if "Pos" not in nfl_df.columns:
+                st.error("CSV is missing 'Pos' column required for stat-type filtering.")
+                st.stop()
+
+            allowed_positions = STAT_TYPE_TO_POSITIONS[stat_type]
+            nfl_df_filtered = nfl_df[nfl_df["Pos"].isin(allowed_positions)]
+
+            restrict_to = set(teams_window) if filter_today else None
+
+    #        nfl_def = compute_nfl_defensive_rankings(nfl_df)
+    #
+    #        globals()["nfl_def"] = nfl_def
+
+            results = calc_nfl_pfr_hit_rates(
+                df=nfl_df_filtered,
+                stat_cols=stat_config,
+                percentages=percentages,
+                recent_n=recent_n,
+                restrict_to_teams=restrict_to,
+                opp_map=opp_map_window
+            )
+
+            if results.empty:
+                st.warning("No players matched the current filters.")
+                st.stop()
+
+            base_cols = ["Player", "Pos", "Team", "Gms", "Opp"]
+
+    #        opp_cols = [
+    #            "Pa", "Pa_R",
+    #            "RuYdsa", "RuYdsa_R",
+    #            "PaYdsa", "PaYdsa_R"
+    #        ]
+
+            stat_cols = [c for c in results.columns if "@" in c]
+
+            ordered_cols = base_cols + stat_cols
+            ordered_cols = [c for c in ordered_cols if c in results.columns]
+
+            results = results[ordered_cols]
+
+            # ---------- Determine primary sort column ----------
+            top_pct = int(percentages[-1])
+            first_abbr = next(iter(stat_config.values()))
+            sort_col = f"{first_abbr}@{top_pct}"
+
+            # ---------- Drop players with no contribution ----------
+            if sort_col in results.columns:
+                results = results[results[sort_col] > 0]
+                results = results.sort_values(sort_col, ascending=False)
+
+            st.subheader("NFL Player Hit-Rate Thresholds")
+
+            st.data_editor(
+                results.head(200),
+                width='stretch',
+                hide_index=True,
+                disabled=True,
+                column_config={
+                    "Player": st.column_config.TextColumn(pinned=True),
+                    "Pos": st.column_config.TextColumn(pinned=True),
+                    "Team": st.column_config.TextColumn(pinned=True),
+                },
+            )
+
+            # ✅ MUST be aligned with st.data_editor (same indentation)
+            st.download_button(
+                "Download NFL Results CSV",
+                results.to_csv(index=False).encode("utf-8"),
+                "nfl_hit_rates.csv"
+            )
+
+            # ---------- Debug recent games ----------
+            if show_debug:
+                debug_rows = []
+                for player, g in nfl_df_filtered.groupby("Name", sort=False):
+                    if player not in set(results["Player"]):
+                        continue
+                    g = g.sort_values("Week").tail(recent_n)
+                    for _, r in g.iterrows():
+                        row = {
+                            "Player": player,
+                            "Team": r.get("Team"),
+                            "Week": r.get("Week"),
+                            "Opp": r.get("Opp"),
+                        }
+                        for c in stat_config.keys():
+                            row[c] = r.get(c)
+                        debug_rows.append(row)
+
+                if debug_rows:
+                    dbg = pd.DataFrame(debug_rows)
+                    st.subheader("Debug — Games Used in Calculation")
+                    st.dataframe(dbg, width='stretch')
+
+                    st.download_button(
+                        "Download Debug CSV",
+                        dbg.to_csv(index=False).encode("utf-8"),
+                        "nfl_debug_recent_games.csv"
+                    )
+
+    ############################################################
     # ===== NHL SECTION =====
     ############################################################
     elif sport_choice == "NHL":
 
-        # --- Lazy imports: only loaded when NHL is selected ---
-        from nhl.helpers import (
-            load_nhl_raw_data, load_nhl_injuries, get_nhl_todays_schedule,
-            compute_nhl_b2b, analyze_nhl_players, get_nhl_teams_on_date,
-            get_nhl_injuries
-        )
-
-        # --- Load NHL static data (game logs + team games, no TTL) ---
+        # --- Load NHL data (cached like NBA) ---
         try:
-            nhl_df, nhlteamgames_df = load_nhl_raw_data()
+            nhl_df, nhlteamgames_df, injuries_df = load_nhl_raw_data()
             nhl_df.columns = dedupe_columns(nhl_df.columns)
         except Exception as e:
             st.error(f"Could not load NHL data: {e}")
             nhl_df = pd.DataFrame()
             nhlteamgames_df = pd.DataFrame()
-
-        # --- Load NHL injuries separately (TTL=900 so it refreshes mid-session) ---
-        try:
-            injuries_df = load_nhl_injuries()
-        except Exception as e:
-            st.warning(f"Could not load NHL injuries: {e}")
             injuries_df = pd.DataFrame()
 
         # --- Player Type (REACTIVE) ---
@@ -894,14 +1122,6 @@ with streamlit_analytics.track():
     # ===== Table Tennis Section =====
     ############################################################
     if sport_choice == "Table Tennis":
-
-        # --- Lazy imports: only loaded when Table Tennis is selected ---
-        from tabletennis.helpers import (
-            load_tt_raw_data,
-            load_tt_all_leagues,
-            build_h2h_index,
-            compute_h2h_stats
-        )
 
         # --- League selector (outside form so we know which CSVs to load) ---
         league = st.sidebar.radio(
@@ -1202,15 +1422,6 @@ with streamlit_analytics.track():
     # ===== Tennis Section =====
     ############################################################
     if sport_choice == "Tennis":
-
-        # --- Lazy imports: only loaded when Tennis is selected ---
-        from tennis.tennishelpers import (
-            load_tennis_raw_data,
-            load_tennis_schedule,
-            load_tennis_players,
-            compute_tennis_percentiles,
-            load_tennis_defense
-        )
 
         # --- ATP / WTA selection ---
         tour_choice = st.sidebar.radio("Tour", ["ATP", "WTA"])

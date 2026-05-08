@@ -35,17 +35,58 @@ DEF_STAT_MAP = {
     "DREB": ("DRaA", "DRaR"),
 }
 
+TEAM_NAME_TO_TRI = {
+    "Atlanta Hawks": "ATL",
+    "Boston Celtics": "BOS",
+    "Brooklyn Nets": "BKN",
+    "Charlotte Hornets": "CHA",
+    "Chicago Bulls": "CHI",
+    "Cleveland Cavaliers": "CLE",
+    "Dallas Mavericks": "DAL",
+    "Denver Nuggets": "DEN",
+    "Detroit Pistons": "DET",
+    "Golden State Warriors": "GSW",
+    "Houston Rockets": "HOU",
+    "Indiana Pacers": "IND",
+    "Los Angeles Clippers": "LAC",
+    "Los Angeles Lakers": "LAL",
+    "Memphis Grizzlies": "MEM",
+    "Miami Heat": "MIA",
+    "Milwaukee Bucks": "MIL",
+    "Minnesota Timberwolves": "MIN",
+    "New Orleans Pelicans": "NOP",
+    "New York Knicks": "NYK",
+    "Oklahoma City Thunder": "OKC",
+    "Orlando Magic": "ORL",
+    "Philadelphia 76ers": "PHI",
+    "Phoenix Suns": "PHX",
+    "Portland Trail Blazers": "POR",
+    "Sacramento Kings": "SAC",
+    "San Antonio Spurs": "SAS",
+    "Toronto Raptors": "TOR",
+    "Utah Jazz": "UTA",
+    "Washington Wizards": "WAS"
+}
+
+def normalize_team(team):
+    if not team:
+        return None
+
+    team = team.strip()
+
+    if len(team) == 3:
+        return team.upper()
+
+    return TEAM_NAME_TO_TRI.get(team)
 
 @st.cache_data(ttl=3600)
 def load_nba_schedule(path="nba/data/nbaschedule.json"):
-    """Load and cache the raw schedule JSON. Single source of truth for all callers."""
     with open(path, "r", encoding="utf-8") as f:
         return json.load(f)
 
+@st.cache_data(ttl=3600)
 def load_today_matchups(path="nba/data/nbaschedule.json"):
-    """Return (todays_teams, today_matchups) by reusing the cached schedule JSON."""
-    data = load_nba_schedule(path)
-    return _parse_todays_schedule(data)
+    return load_todays_schedule(path)
 
 @st.cache_data(ttl=300)
 def load_nba_injury_status():
@@ -108,7 +149,7 @@ def compute_player_percentiles(
 
     for pid, group in df.groupby("player_id", sort=False):
 
-        group = group.sort_values("GAME_DATE", ascending=False)
+        group = group.sort_values("GAME_DATE", ascending=False).head(82)
         if group.empty:
             continue
 
@@ -184,15 +225,14 @@ def compute_player_percentiles(
 
     return pd.DataFrame(results)
 
-def _parse_todays_schedule(data):
-    """
-    Parse today's teams and matchups from an already-loaded schedule dict.
-    Supports both the simple {"games": [...]} format and the NBA API
-    {"leagueSchedule": {"gameDates": [...]}} format.
+def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
+    try:
+        with open(schedule_path, "r", encoding="utf-8") as f:
+            data = json.load(f)
+    except Exception as e:
+        st.warning(f"Could not load {schedule_path}: {e}")
+        return set(), {}
 
-    Called by load_today_matchups (which gets the dict from the cached
-    load_nba_schedule), so the JSON file is never opened twice.
-    """
     nba_today = get_league_today()
     today_str = nba_today.strftime("%Y-%m-%d")
 
@@ -237,6 +277,7 @@ def _parse_todays_schedule(data):
             todays_teams.add(home)
             todays_teams.add(away)
 
+            # safer assignment
             if home not in today_matchups:
                 today_matchups[home] = away
             if away not in today_matchups:
@@ -254,12 +295,13 @@ def _parse_todays_schedule(data):
                     .tz_convert("America/Chicago")
                     .strftime("%Y-%m-%d")
                 )
-            except Exception:
+            except:
                 continue
 
-            if parsed != today_str:   # fixed: was referencing undefined `date_str`
+            if date_str != today_str:
                 continue
 
+            # Extract today's games
             for g in day.get("games", []):
                 home = g["homeTeam"]["teamTricode"].upper()
                 away = g["awayTeam"]["teamTricode"].upper()
@@ -267,37 +309,19 @@ def _parse_todays_schedule(data):
                 todays_teams.add(away)
                 today_matchups[home] = away
                 today_matchups[away] = home
-    except Exception:
+    except:
         pass
 
     return todays_teams, today_matchups
 
-def load_todays_schedule(schedule_path="nba/data/nbaschedule.json"):
-    """
-    Legacy entry point kept for any callers that use the old signature.
-    Delegates to the cached loader + parser.
-    """
-    data = load_nba_schedule(schedule_path)
-    return _parse_todays_schedule(data)
-
-NBA_SCHEDULE_PATH = "nba/data/nbaschedule.json"
-
-def compute_team_b2b_from_schedule(schedule_path=NBA_SCHEDULE_PATH):
-    """
-    Compute back-to-back status for every team playing today.
-
-    Previously accepted the full schedule dict and passed it into
-    get_teams_playing_on_date three times, forcing Streamlit to hash a large
-    nested dict on each of those three cache lookups. Now passes the file path
-    (a cheap string scalar) so cache keying is fast and reliable.
-    """
+def compute_team_b2b_from_schedule(schedule_data):
     today = get_league_today()
     yesterday = today - timedelta(days=1)
     tomorrow = today + timedelta(days=1)
 
-    today_teams = get_teams_playing_on_date(schedule_path, today)
-    yesterday_teams = get_teams_playing_on_date(schedule_path, yesterday)
-    tomorrow_teams = get_teams_playing_on_date(schedule_path, tomorrow)
+    today_teams = get_teams_playing_on_date(schedule_data, today)
+    yesterday_teams = get_teams_playing_on_date(schedule_data, yesterday)
+    tomorrow_teams = get_teams_playing_on_date(schedule_data, tomorrow)
 
     b2b = {}
 
@@ -400,17 +424,13 @@ def load_nba_raw_data():
     return df, team_totals_df, pos_df
 
 @st.cache_data(ttl=3600)
-def load_defense_tables(window, player_logs_df, team_totals_df):
+def load_defense_tables(window):
     """
-    Compute overall + positional defensive tables from already-loaded DataFrames.
-
-    Accepts the DataFrames returned by load_nba_raw_data() so that the CSV
-    files are never read a second time. Callers should do:
-
-        df, team_totals_df, pos_df = load_nba_raw_data()
-        overall_def, pos_def_df = load_defense_tables(window, df, team_totals_df)
+    Load raw NBA data and compute overall + positional defensive tables.
     """
-    # Ensure opponent column is present
+    player_logs_df, team_totals_df, pos_df = load_nba_raw_data()
+
+    # Ensure player logs have opponent column
     if "Opp" not in player_logs_df.columns:
         player_logs_df = add_team_opponent_columns(player_logs_df)
 
