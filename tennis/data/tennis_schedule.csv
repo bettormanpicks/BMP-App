@@ -1,13 +1,13 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-05-08,Live,Internazionali BNL d'Italia,Lorenzo Musetti,Giovanni Mpetshi Perricard
-2026-05-08,Live,Internazionali BNL d'Italia,Yannick Hanfmann,Luciano Darderi
 2026-05-08,Final,Internazionali BNL d'Italia,Daniel Altmaier,Alexander Zverev
 2026-05-08,Final,Internazionali BNL d'Italia,Dino Prizmic,Novak Djokovic
 2026-05-08,Final,Internazionali BNL d'Italia,Alex de Minaur,Matteo Arnaldi
+2026-05-08,Final,Internazionali BNL d'Italia,Lorenzo Musetti,Giovanni Mpetshi Perricard
 2026-05-08,Final,Internazionali BNL d'Italia,Sebastian Baez,Alexander Bublik
 2026-05-08,Final,Internazionali BNL d'Italia,Jan-Lennard Struff,Jiri Lehecka
 2026-05-08,Final,Internazionali BNL d'Italia,Karen Khachanov,Alexander Shevchenko
 2026-05-08,Final,Internazionali BNL d'Italia,Tommy Paul,Aleksandar Vukic
+2026-05-08,Final,Internazionali BNL d'Italia,Yannick Hanfmann,Luciano Darderi
 2026-05-08,Final,Internazionali BNL d'Italia,Learner Tien,Damir Dzumhur
 2026-05-08,Final,Internazionali BNL d'Italia,Casper Ruud,Zachary Svajda
 2026-05-08,Final,Internazionali BNL d'Italia,Alejandro Tabilo,Francisco Cerundolo
@@ -37,29 +37,41 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-08,Final,Istanbul Open,Laura Pigossi,Guiomar Maristany Zuleta De Reales
 2026-05-08,04:30,Jiangxi Open,Yao Xinxin,You Xiaodi
 2026-05-08,06:00,Jiangxi Open,Bai Zhuoxuan,En-Shuo Liang
-2026-05-09,09:00,Internazionali BNL d'Italia,Thiago Agustin Tirante,Cameron Norrie
-2026-05-09,09:00,Internazionali BNL d'Italia,Tomas Machac,Daniil Medvedev
-2026-05-09,09:00,Internazionali BNL d'Italia,Corentin Moutet,Pablo Llamas Ruiz
-2026-05-09,09:00,Internazionali BNL d'Italia,Andrey Rublev,Miomir Kecmanovic
-2026-05-09,10:30,Internazionali BNL d'Italia,Felix Auger-Aliassime,Mariano Navone
-2026-05-09,10:30,Internazionali BNL d'Italia,Marin Cilic,Martin Landaluce
-2026-05-09,10:30,Internazionali BNL d'Italia,Tomas Martin Etcheverry,Mattia Bellucci
-2026-05-09,12:00,Internazionali BNL d'Italia,Flavio Cobolli,Terence Atmane
-2026-05-09,12:00,Internazionali BNL d'Italia,Nikoloz Basilashvili,Ben Shelton
-2026-05-09,12:00,Internazionali BNL d'Italia,Cristian Garin,Alejandro Davidovich Fokina
-2026-05-09,13:30,Internazionali BNL d'Italia,Hamad Medjedovic,Joao Fonseca
-2026-05-09,13:30,Internazionali BNL d'Italia,Frances Tiafoe,Ignacio Buse
-2026-05-09,13:30,Internazionali BNL d'Italia,Brandon Nakashima,Roberto Bautista Agut
-2026-05-09,15:00,Internazionali BNL d'Italia,Alexei Popyrin,Jakub Mensik
-2026-05-09,16:30,Internazionali BNL d'Italia,Andrea Pellegrino,Arthur Fils
-2026-05-09,17:00,Internazionali BNL d'Italia,Jannik Sinner,Sebastian Ofner
-2026-05-09,09:00,Internazionali BNL d'Italia,Coco Gauff,Solana Sierra
-2026-05-09,10:30,Internazionali BNL d'Italia,Oleksandra Oliynykova,Linda Noskova
-2026-05-09,11:00,Internazionali BNL d'Italia,Jasmine Paolini,Elise Mertens
-2026-05-09,12:00,Internazionali BNL d'Italia,Zheng Qinwen,Jelena Ostapenko
-2026-05-09,12:30,Internazionali BNL d'Italia,Aryna Sabalenka,Sorana Cirstea
-2026-05-09,15:00,Internazionali BNL d'Italia,Viktorija Golubic,Mirra Andreeva
-2026-05-09,15:00,Internazionali BNL d'Italia,Taylor Townsend,Iva Jovic
-2026-05-09,18:30,Internazionali BNL d'Italia,Belinda Bencic,Anna Kalinskaya
-2026-05-09,10:30,Istanbul Open,Donna Vekic,Guiomar Maristany Zuleta De Reales
-2026-05-09,12:00,Istanbul Open,Alice Tubello,Maria Timofeeva
+2026-05-08,Final,Internazionali BNL d'Italia,Daniel Altmaier,Alexander Zverev
+2026-05-08,Final,Internazionali BNL d'Italia,Dino Prizmic,Novak Djokovic
+2026-05-08,Final,Internazionali BNL d'Italia,Alex de Minaur,Matteo Arnaldi
+2026-05-08,Final,Internazionali BNL d'Italia,Lorenzo Musetti,Giovanni Mpetshi Perricard
+2026-05-08,Final,Internazionali BNL d'Italia,Sebastian Baez,Alexander Bublik
+2026-05-08,Final,Internazionali BNL d'Italia,Jan-Lennard Struff,Jiri Lehecka
+2026-05-08,Final,Internazionali BNL d'Italia,Karen Khachanov,Alexander Shevchenko
+2026-05-08,Final,Internazionali BNL d'Italia,Tommy Paul,Aleksandar Vukic
+2026-05-08,Final,Internazionali BNL d'Italia,Yannick Hanfmann,Luciano Darderi
+2026-05-08,Final,Internazionali BNL d'Italia,Learner Tien,Damir Dzumhur
+2026-05-08,Final,Internazionali BNL d'Italia,Casper Ruud,Zachary Svajda
+2026-05-08,Final,Internazionali BNL d'Italia,Alejandro Tabilo,Francisco Cerundolo
+2026-05-08,Final,Internazionali BNL d'Italia,Tallon Griekspoor,Alexander Blockx
+2026-05-08,Final,Internazionali BNL d'Italia,Ugo Humbert,Vit Kopriva
+2026-05-08,Final,Internazionali BNL d'Italia,Nuno Borges,Rafael Jodar
+2026-05-08,Final,Internazionali BNL d'Italia,Botic Van De Zandschulp,Aleksandar Kovacevic
+2026-05-08,Final,Internazionali BNL d'Italia,Maria Sakkari,Elena Rybakina
+2026-05-08,Final,Internazionali BNL d'Italia,Catherine McNally,Iga Swiatek
+2026-05-08,Final,Internazionali BNL d'Italia,Jessica Pegula,Zeynep Sonmez
+2026-05-08,Final,Internazionali BNL d'Italia,Elina Svitolina,Noemi Basiletti
+2026-05-08,Final,Internazionali BNL d'Italia,Anastasia Potapova,Karolina Muchova
+2026-05-08,Final,Internazionali BNL d'Italia,Ekaterina Alexandrova,Laura Siegemund
+2026-05-08,Final,Internazionali BNL d'Italia,Naomi Osaka,Eva Lys
+2026-05-08,Final,Internazionali BNL d'Italia,Madison Keys,Peyton Stearns
+2026-05-08,Final,Internazionali BNL d'Italia,Talia Gibson,Diana Shnaider
+2026-05-08,Final,Internazionali BNL d'Italia,Liudmila Samsonova,Ann Li
+2026-05-08,Final,Internazionali BNL d'Italia,Rebeka Masarova,Leylah Fernandez
+2026-05-08,Final,Internazionali BNL d'Italia,Emma Navarro,Elisabetta Cocciaretto
+2026-05-08,Final,Internazionali BNL d'Italia,Wang Xinyu,Alexandra Eala
+2026-05-08,Final,Internazionali BNL d'Italia,Simona Waltert,Hailey Baptiste
+2026-05-08,Final,Internazionali BNL d'Italia,Karolina Pliskova,Jaqueline Cristian
+2026-05-08,Final,Internazionali BNL d'Italia,Tyra Caterina Grant,Nikola Bartunkova
+2026-05-08,Final,Istanbul Open,Donna Vekic,Mia Ristic
+2026-05-08,Final,Istanbul Open,Maria Timofeeva,Francesca Jones
+2026-05-08,Final,Istanbul Open,Alice Tubello,Polina Kudermetova
+2026-05-08,Final,Istanbul Open,Laura Pigossi,Guiomar Maristany Zuleta De Reales
+2026-05-08,04:30,Jiangxi Open,Yao Xinxin,You Xiaodi
+2026-05-08,06:00,Jiangxi Open,Bai Zhuoxuan,En-Shuo Liang
