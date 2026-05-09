@@ -8,7 +8,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-09,10:30,Internazionali BNL d'Italia,Tomas Martin Etcheverry,Mattia Bellucci,atp_53,atp_109,ATP,Clay
 2026-05-09,12:00,Internazionali BNL d'Italia,Flavio Cobolli,Terence Atmane,atp_20,atp_65,ATP,Clay
 2026-05-09,12:00,Internazionali BNL d'Italia,Nikoloz Basilashvili,Ben Shelton,atp_136,atp_9,ATP,Clay
-2026-05-09,12:00,Internazionali BNL d'Italia,Cristian Garin,Alejandro Davidovich Fokina,atp_89,atp_15,ATP,Clay
+2026-05-09,12:00,Internazionali BNL d'Italia,Cristian Garin,Alejandro Davidovich Fokina,wta_38,atp_15,WTA,Clay
 2026-05-09,13:30,Internazionali BNL d'Italia,Hamad Medjedovic,Joao Fonseca,atp_97,atp_37,ATP,Clay
 2026-05-09,13:30,Internazionali BNL d'Italia,Frances Tiafoe,Ignacio Buse,atp_28,atp_91,ATP,Clay
 2026-05-09,13:30,Internazionali BNL d'Italia,Brandon Nakashima,Roberto Bautista Agut,atp_29,atp_82,ATP,Clay
@@ -18,7 +18,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-09,09:00,Internazionali BNL d'Italia,Coco Gauff,Solana Sierra,wta_4,wta_64,WTA,Clay
 2026-05-09,10:30,Internazionali BNL d'Italia,Oleksandra Oliynykova,Linda Noskova,wta_71,wta_14,WTA,Clay
 2026-05-09,11:00,Internazionali BNL d'Italia,Jasmine Paolini,Elise Mertens,wta_8,wta_22,WTA,Clay
-2026-05-09,12:00,Internazionali BNL d'Italia,Zheng Qinwen,Jelena Ostapenko,wta_372,wta_27,WTA,Clay
+2026-05-09,12:00,Internazionali BNL d'Italia,Zheng Qinwen,Jelena Ostapenko,wta_23,wta_27,WTA,Clay
 2026-05-09,12:30,Internazionali BNL d'Italia,Aryna Sabalenka,Sorana Cirstea,wta_1,wta_30,WTA,Clay
 2026-05-09,15:00,Internazionali BNL d'Italia,Viktorija Golubic,Mirra Andreeva,wta_88,wta_7,WTA,Clay
 2026-05-09,15:00,Internazionali BNL d'Italia,Taylor Townsend,Iva Jovic,wta_116,wta_20,WTA,Clay
