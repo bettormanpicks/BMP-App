@@ -4242,10 +4242,62 @@
         }
       },
       "date": "2026-05-08T23:00:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Xfinity Mobile Arena",
         "location": "Philadelphia, PA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 33
+            },
+            "home": {
+              "points": 21
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 18
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 108
+          },
+          "home": {
+            "points": 94
+          }
+        }
       }
     },
     {
@@ -4265,10 +4317,62 @@
         }
       },
       "date": "2026-05-09T01:30:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Target Center",
         "location": "Minneapolis, MN"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 22
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 35
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 29
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 115
+          },
+          "home": {
+            "points": 108
+          }
+        }
       }
     },
     {
@@ -4847,5 +4951,5 @@
       }
     }
   ],
-  "updated": "2026-05-08T08:00:02Z"
+  "updated": "2026-05-09T08:00:02Z"
 }

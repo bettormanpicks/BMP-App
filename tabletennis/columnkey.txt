@@ -1,17 +1,20 @@
 COLUMN KEY:
 Ms = Matches
+NS% = Non-sweep % (matches that last 4+ sets)
+1ALL% = Tied 1-1 % (matches tied 1-1 after 2 sets)
 P1 BB% = Player 1 Bounce Back % (lose set 1, win set 2)
 P1 BB# = Player 1 Bounce Back # (lose set 1 sample size)
 P2 BB% = Player 2 Bounce Back % (lose set 1, win set 2)
 P2 BB# = Player 2 Bounce Back # (lose set 1 sample size)
-1ALL% = Tied 1-1 % (matches tied 1-1 after 2 sets)
 P1 SR% = Player 1 Sweep Resistance % (lose sets 1 and 2, win set 3)
 P1 SR# = Player 1 Sweep Resistance # (lose sets 1 and 2 sample size)
 P2 SR% = Player 2 Sweep Resistance % (lose sets 1 and 2, win set 3)
 P2 SR# = Player 2 Sweep Resistance # (lose sets 1 and 2 sample size)
-NS% = Non-sweep % (matches that don't end with a 3-0 score)
 P1 S = Player 1 Sweeps (matches won 3-0)
 P2 S = Player 2 Sweeps (matches won 3-0)
+P1 W = Player 1 Wins
+P2 W = Player 2 Wins
+P1 W% = Player 1 Win %
 3Set% = matches that lasted exactly 3 sets
 4Set% = matches that lasted exactly 4 sets
 5Set% = matches that lasted exactly 5 sets
@@ -19,9 +22,13 @@ ATS = Average Total Sets
 SS = Set Spread
 ATP = Average Total Points
 PS = Point Spread
-P1 W = Player 1 Wins
-P2 W = Player 2 Wins
-P1 W% = Player 1 Win %
+P1 SlowS = Player 1 Slow Score (Chance of Player 1 losing set 1, but winning match)
+P1 Rec% = Player 1 Recovery % (lose set 1, but win match)
+P1 Rec# = Player 1 Recovery # (lose set 1 sample size)
+P2 SlowS = Player 2 Slow Score (Chance of Player 2 losing set 1, but winning match)
+P2 Rec% = Player 2 Recovery % (lose set 1, but win match)
+P2 Rec# = Player 2 Recovery # (lose set 1 sample size)
+
 
 Player 1,Player 2,Ms,P1 BB%,P1 BB#,P2 BB%,P2 BB#,1ALL%,P1 SR%,P1 SR#,P2 SR%,P2 SR#,NS%,P1 S,P2 S,3Set%,4Set%,5Set%,ATS,SS,ATP,PS,P1 W, P2 W, P1 W%
 Jacek Oracz,Lukasz Pyda,30,50,2,7.1,28,10,100,1,11.5,26,23.3,23,0,76.7,20,3.3,3.27,2.73,58.73,13.13,29,1,96.7
