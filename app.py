@@ -382,9 +382,9 @@ with streamlit_analytics.track():
                 # -------------------------
                 BATTER_STAT_MAP = {
                     "H":    "hits",
-                    "S":    "singles",
-                    "D":    "doubles",
-                    "T":    "triples",
+                    "1B":    "singles",
+                    "2B":    "doubles",
+                    "3B":    "triples",
                     "HR":   "home_runs",
                     "TB":   "total_bases",
                     "RBI":  "rbi",
