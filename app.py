@@ -306,7 +306,7 @@ with streamlit_analytics.track():
     if sport_choice == "MLB":
 
         # --- Lazy imports: only loaded when MLB is selected ---
-        from mlb.helpers import load_mlb_raw_data, get_today_schedule, get_player_stats
+        from mlb.helpers import load_mlb_raw_data, get_today_schedule, get_player_game_log
 
         # --- Load MLB data ---
         try:
@@ -345,6 +345,15 @@ with streamlit_analytics.track():
                 horizontal=True, index=1
             )
 
+            # --- Hit Rate ---
+            hit_rate_pct = st.slider(
+                "Hit Rate %",
+                min_value=40,
+                max_value=100,
+                value=80,
+                step=5
+            )
+
             # --- Override ---
             all_opponents = st.checkbox(
                 "Show Stats Vs All Opponents",
@@ -368,6 +377,31 @@ with streamlit_analytics.track():
                 st.warning("No games found in schedule.")
             else:
 
+                # -------------------------
+                # STAT MAPS
+                # -------------------------
+                BATTER_STAT_MAP = {
+                    "H":    "hits",
+                    "S":    "singles",
+                    "D":    "doubles",
+                    "T":    "triples",
+                    "HR":   "home_runs",
+                    "TB":   "total_bases",
+                    "RBI":  "rbi",
+                    "R":    "runs",
+                    "SB":   "stolen_bases",
+                    "HRR":  "hrr",
+                    "W(B)": "walks",
+                    "K(B)": "strikeouts",
+                }
+
+                PITCHER_STAT_MAP = {
+                    "K":  "strikeouts_pitching",
+                    "HA": "hits_allowed",
+                    "ER": "earned_runs",
+                    "W":  "walks_pitching",
+                }
+
                 rows = []
 
                 # --- LOOP OVER GAMES AND PLAYERS ---
@@ -377,10 +411,10 @@ with streamlit_analytics.track():
                     home_pitcher = game["home_pitcher"]
                     away_pitcher = game["away_pitcher"]
 
-                    # --- Filter home players ---
-                    home_players = box_df[box_df["team"] == home_team]["player"].unique()
-
-                    for player in home_players:
+                    for player, team, opp, opp_pitcher in [
+                        *[(p, home_team, away_team, away_pitcher) for p in box_df[box_df["team"] == home_team]["player"].unique()],
+                        *[(p, away_team, home_team, home_pitcher) for p in box_df[box_df["team"] == away_team]["player"].unique()],
+                    ]:
                         player_df = box_df[box_df["player"] == player]
                         if player_df.empty:
                             continue
@@ -391,72 +425,63 @@ with streamlit_analytics.track():
                         if player_type_choice == "Pitchers" and not is_pitcher:
                             continue
 
-                        stats = get_player_stats(
+                        game_log = get_player_game_log(
                             box_df=box_df,
                             player=player,
                             window=performance_window,
                             opponent=None if all_opponents else (
-                                away_team if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
+                                opp if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
                             ),
                             pitcher=None if all_opponents else (
-                                away_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
+                                opp_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
                             ),
                             all_opponents=all_opponents
                         )
 
-                        if not stats:
+                        if game_log.empty:
                             continue
 
-                        rows.append({
-                            "DateUTC": game["date"],  # keep UTC
+                        # For pitchers, skip non-starters
+                        if player_type_choice == "Pitchers":
+                            if not game_log["is_starter"].any():
+                                continue
+                            game_log = game_log[game_log["is_starter"] == True]
+
+                        # EBH is derived — add it to the game log
+                        if player_type_choice == "Batters":
+                            game_log = game_log.copy()
+                            game_log["ebh"] = game_log["doubles"] + game_log["triples"] + game_log["home_runs"]
+
+                        stat_map = BATTER_STAT_MAP if player_type_choice == "Batters" else PITCHER_STAT_MAP
+                        gms = game_log["game_id"].nunique()
+
+                        stat_floors = {}
+                        for stat, col in stat_map.items():
+                            if col in game_log.columns:
+                                stat_floors[stat] = hit_rate_threshold(game_log[col], hit_rate_pct)
+                            else:
+                                stat_floors[stat] = 0
+
+                        # Handle EBH separately for batters
+                        if player_type_choice == "Batters":
+                            stat_floors["EBH"] = hit_rate_threshold(game_log["ebh"], hit_rate_pct)
+
+                        row = {
+                            "DateUTC": game["date"],
                             "Player": player,
-                            "Team": home_team,
-                            "Opp": away_team,
-                            "Pitcher": away_pitcher,
-                            **stats
-                        })
+                            "Team": team,
+                            "Opp": opp,
+                            "Gms": gms,
+                            **stat_floors
+                        }
 
-                    # --- Filter away players ---
-                    away_players = box_df[box_df["team"] == away_team]["player"].unique()
+                        if player_type_choice == "Batters":
+                            row["Pitcher"] = opp_pitcher
 
-                    for player in away_players:
-                        player_df = box_df[box_df["player"] == player]
-                        if player_df.empty:
-                            continue
-
-                        is_pitcher = player_df["is_pitcher"].iloc[0]
-                        if player_type_choice == "Batters" and is_pitcher:
-                            continue
-                        if player_type_choice == "Pitchers" and not is_pitcher:
-                            continue
-
-                        stats = get_player_stats(
-                            box_df=box_df,
-                            player=player,
-                            window=performance_window,
-                            opponent=None if all_opponents else (
-                                home_team if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
-                            ),
-                            pitcher=None if all_opponents else (
-                                home_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
-                            ),
-                            all_opponents=all_opponents
-                        )
-
-                        if not stats:
-                            continue
-
-                        rows.append({
-                            "DateUTC": game["date"],  # keep UTC
-                            "Player": player,
-                            "Team": away_team,
-                            "Opp": home_team,
-                            "Pitcher": home_pitcher,
-                            **stats
-                        })
+                        rows.append(row)
 
                 # -------------------------
-                # --- NOW CREATE DATAFRAME ---
+                # --- BUILD DATAFRAME ---
                 # -------------------------
                 df = pd.DataFrame(rows)
 
@@ -473,26 +498,26 @@ with streamlit_analytics.track():
 
                     df["Team"] = df["Team"].map(MLB_TEAM_TRICODES).fillna(df["Team"])
                     df["Opp"] = df["Opp"].map(MLB_TEAM_TRICODES).fillna(df["Opp"])
-                    df.rename(columns={"games": "Gms"}, inplace=True)
 
                     # -------------------------
                     # --- Display Table ---
                     # -------------------------
                     if player_type_choice == "Pitchers":
                         display_cols = [
-                            "Date / Time", "Player", "Team", "Opp", "Pitcher",
-                            "Gms", "IP", "K", "Kp9", "ERA", "WHIP", "small_sample"
+                            "Date / Time", "Player", "Team", "Opp",
+                            "Gms", "K", "HA", "ER", "W"
                         ]
+                        sort_col = "K"
                     else:  # Batters
                         display_cols = [
                             "Date / Time", "Player", "Team", "Opp", "Pitcher",
-                            "Gms", "AB", "PA", "H", "HR", "HRR", "AVG",
-                            "HR_rate", "HRRpg", "K_rate", "small_sample"
+                            "Gms", "H", "S", "D", "T", "HR", "TB",
+                            "RBI", "R", "SB", "EBH", "HRR", "W(B)", "K(B)"
                         ]
+                        sort_col = "HRR"
 
-                    df_to_display = df[display_cols]
+                    df_to_display = df[[c for c in display_cols if c in df.columns]]
 
-                    sort_col = "Kp9" if player_type_choice == "Pitchers" else "HRRpg"
                     st.dataframe(
                         df_to_display.sort_values(sort_col, ascending=False),
                         hide_index=True
