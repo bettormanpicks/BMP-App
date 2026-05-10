@@ -396,6 +396,7 @@ with streamlit_analytics.track():
                 }
 
                 PITCHER_STAT_MAP = {
+                    "O": "outs",
                     "K":  "strikeouts_pitching",
                     "HA": "hits_allowed",
                     "ER": "earned_runs",
@@ -505,13 +506,13 @@ with streamlit_analytics.track():
                     if player_type_choice == "Pitchers":
                         display_cols = [
                             "Date / Time", "Player", "Team", "Opp",
-                            "Gms", "K", "HA", "ER", "W"
+                            "Gms", "O", "K", "HA", "ER", "W"
                         ]
                         sort_col = "K"
                     else:  # Batters
                         display_cols = [
                             "Date / Time", "Player", "Team", "Opp", "Pitcher",
-                            "Gms", "H", "S", "D", "T", "HR", "TB",
+                            "Gms", "H", "1B", "2B", "3B", "HR", "TB",
                             "RBI", "R", "SB", "EBH", "HRR", "W(B)", "K(B)"
                         ]
                         sort_col = "HRR"
