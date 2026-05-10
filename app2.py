@@ -42,7 +42,7 @@ from nhl.helpers import load_nhl_raw_data, get_nhl_todays_schedule, compute_nhl_
 # Table Tennis helper functions
 from tabletennis.helpers import (
     load_tt_raw_data,
-    load_all_tt_raw_data,
+    load_tt_all_leagues,
     build_h2h_index,
     compute_h2h_stats
 )
@@ -695,7 +695,7 @@ with streamlit_analytics.track():
 
             st.dataframe(strip_display_ids(summary_df), width='stretch', hide_index=True, column_config=col_config)
 
-            csv_bytes = strip_display_ids(summary_df).to_csv(index=False).encode()
+            #csv_bytes = strip_display_ids(summary_df).to_csv(index=False).encode()
             #st.download_button("Download CSV", csv_bytes, "player_stats.csv")
 
     ############################################################
@@ -1134,7 +1134,7 @@ with streamlit_analytics.track():
         with st.sidebar.form("TT Filters"):
 
             recency_window = st.radio(
-                "Recency Window", ["L10", "L20", "L30", "L60", "ALL"], index=2, horizontal=True
+                "Recency Window", ["L25", "L50", "ALL"], index=0, horizontal=True
             )
 
             min_matches = st.slider(
@@ -1147,24 +1147,21 @@ with streamlit_analytics.track():
 
             # --- Stat Selection ---
             stat_options = [
+                "NS%",
+                "1ALL%",
                 "P1 BB%",
                 "P1 BB#",
                 "P2 BB%",
                 "P2 BB#",
-                "1ALL%",
                 "P1 SR%",
-                "P2 SR%",
                 "P1 SR#",
+                "P2 SR%",
                 "P2 SR#",
-                "NS%",
                 "P1 S",
                 "P2 S",
-                "P1 SlowS",
-                "P1 Rec%",
-                "P1 Rec#",
-                "P2 SlowS",
-                "P2 Rec%",
-                "P2 Rec#",
+                "P1 W",
+                "P2 W",
+                "P1 W%",
                 "3Set%",
                 "4Set%",
                 "5Set%",
@@ -1172,15 +1169,18 @@ with streamlit_analytics.track():
                 "SS",
                 "ATP",
                 "PS",
-                "P1 W",
-                "P2 W",
-                "P1 W%",
+                "P1 SlowS",
+                "P1 Rec%",
+                "P1 Rec#",
+                "P2 SlowS",
+                "P2 Rec%",
+                "P2 Rec#",
             ]
 
             selected_stats = st.multiselect(
                 "Advanced Filters",
                 stat_options,
-                key="stat_selector"
+                key="Advanced Filters"
             )
 
             st.markdown("Filter Thresholds (optional)")
@@ -1213,8 +1213,8 @@ with streamlit_analytics.track():
 
         if reset:
             # Remove stat selection
-            if "stat_selector" in st.session_state:
-                del st.session_state["stat_selector"]
+            if "Advanced Filters" in st.session_state:
+                del st.session_state["Advanced Filters"]
 
             # Clear all threshold inputs
             for stat in stat_options:
@@ -1233,14 +1233,15 @@ with streamlit_analytics.track():
             # --- Load data inside Calculate (cached, safe, on-demand) ---
             with st.spinner("Loading and processing data..."):
                 if league == "All":
-                    schedule, matchlogs = load_all_tt_raw_data()
-                    h2h_index = build_h2h_index(matchlogs)  # 👈 build OUTSIDE cache
+                    load_tt_raw_data.clear()
+                    schedule, matchlogs, h2h, h2h_index = load_tt_all_leagues()
                 else:
+                    load_tt_all_leagues.clear()
                     schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
 
-                # Break link to cached objects so mutations are safe
                 schedule = schedule.copy()
-                matchlogs = matchlogs.copy()
+                if matchlogs is not None:
+                    matchlogs = matchlogs.copy()
 
             # --- Parse CSV dates and drop bad rows ---
             schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
@@ -1259,7 +1260,6 @@ with streamlit_analytics.track():
 
             rows = []
             for _, row in upcoming.iterrows():
-                league_tag = row["league"] if "league" in row else league
                 p1, p2 = row["player1"], row["player2"]
                 p1_display, p2_display = row["player1_display"], row["player2_display"]
 
@@ -1280,30 +1280,26 @@ with streamlit_analytics.track():
                         "SS": 0
                     }
 
-                rows.append({
+                row_dict = {
                     "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
-                    "League": league_tag if league == "All" else None,
                     "Player 1": p1_display,
                     "Player 2": p2_display,
                     "Matches": stats["matches"],
+                    "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
+                    "One-All %": round(stats.get("one_all_pct", 0) * 100, 1),
                     "P1 B%": round(stats.get("a_bounce_pct", 0) * 100, 1),
                     "P1 BB#": stats.get("a_bounce_n", 0),
                     "P2 B%": round(stats.get("b_bounce_pct", 0) * 100, 1),
                     "P2 BB#": stats.get("b_bounce_n", 0),
-                    "One-All %": round(stats.get("one_all_pct", 0) * 100, 1),
                     "P1 SR%": round(stats.get("a_sr_pct", 0) * 100, 1),
                     "P1 SR#": stats.get("a_sr_n", 0),
                     "P2 SR%": round(stats.get("b_sr_pct", 0) * 100, 1),
                     "P2 SR#": stats.get("b_sr_n", 0),
-                    "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
                     "P1 Sweeps": stats.get("sweeps_a", 0),
                     "P2 Sweeps": stats.get("sweeps_b", 0),
-                    "P1 SS":    round(stats.get("a_ss_score", 0) * 100, 1),
-                    "P1 Rec%":  round(stats.get("a_recovery_pct", 0) * 100, 1),
-                    "P1 Rec#":  stats.get("a_recovery_n", 0),
-                    "P2 SS":    round(stats.get("b_ss_score", 0) * 100, 1),
-                    "P2 Rec%":  round(stats.get("b_recovery_pct", 0) * 100, 1),
-                    "P2 Rec#":  stats.get("b_recovery_n", 0),
+                    "P1 Wins": stats["a_wins"],
+                    "P2 Wins": stats["b_wins"],
+                    "Win % (P1)": round(stats["win_pct"] * 100, 1),
                     "3Set %":  round(stats.get("pct_3sets", 0) * 100, 1),
                     "4Set %":  round(stats.get("pct_4sets", 0) * 100, 1),
                     "5Set %":  round(stats.get("pct_5sets", 0) * 100, 1),
@@ -1311,11 +1307,19 @@ with streamlit_analytics.track():
                     "SS": round(stats.get("SS", 0), 2),
                     "ATP": round(stats.get("ATP", 0), 2),
                     "PS": round(stats.get("PS", 0), 2),
-                    "P1 Wins": stats["a_wins"],
-                    "P2 Wins": stats["b_wins"],
-                    "Win % (P1)": round(stats["win_pct"] * 100, 1),
-                    "Last Played": str(stats["last_played"]) if stats["last_played"] else None
-                })
+                    "P1 SS":    round(stats.get("a_ss_score", 0) * 100, 1),
+                    "P1 Rec%":  round(stats.get("a_recovery_pct", 0) * 100, 1),
+                    "P1 Rec#":  stats.get("a_recovery_n", 0),
+                    "P2 SS":    round(stats.get("b_ss_score", 0) * 100, 1),
+                    "P2 Rec%":  round(stats.get("b_recovery_pct", 0) * 100, 1),
+                    "P2 Rec#":  stats.get("b_recovery_n", 0),
+                    "Last Played": stats["last_played"]
+                }
+
+                if league == "All":
+                    row_dict["League"] = row["league"]
+
+                rows.append(row_dict)
 
             df = pd.DataFrame(rows)
 
@@ -1331,25 +1335,23 @@ with streamlit_analytics.track():
 
             DISPLAY_NAMES = {
                 "Date": "Match Start",
+                "League": "League",
                 "Matches": "Ms",
+                "Non Sweep %": "NS%",
+                "One-All %": "1ALL%",
                 "P1 B%": "P1 BB%",
                 "P1 BB#": "P1 BB#",
                 "P2 B%": "P2 BB%",
                 "P2 BB#": "P2 BB#",
-                "One-All %": "1ALL%",
                 "P1 SR%": "P1 SR%",
                 "P1 SR#": "P1 SR#",
                 "P2 SR%": "P2 SR%",
                 "P2 SR#": "P2 SR#",
-                "Non Sweep %": "NS%",
                 "P1 Sweeps": "P1 S",
                 "P2 Sweeps": "P2 S",
-                "P1 SS": "P1 SlowS",
-                "P1 Rec%": "P1 Rec%",
-                "P1 Rec#": "P1 Rec#",
-                "P2 SS": "P2 SlowS",
-                "P2 Rec%": "P2 Rec%",
-                "P2 Rec#": "P2 Rec#",
+                "P1 Wins": "P1 W",
+                "P2 Wins": "P2 W",
+                "Win % (P1)": "P1 W%",
                 "3Set %": "3Set%",
                 "4Set %": "4Set%",
                 "5Set %": "5Set%",
@@ -1357,28 +1359,28 @@ with streamlit_analytics.track():
                 "SS": "SS",
                 "ATP": "ATP",
                 "PS": "PS",
-                "P1 Wins": "P1 W",
-                "P2 Wins": "P2 W",
-                "Win % (P1)": "P1 W%",
+                "P1 SS": "P1 SlowS",
+                "P1 Rec%": "P1 Rec%",
+                "P1 Rec#": "P1 Rec#",
+                "P2 SS": "P2 SlowS",
+                "P2 Rec%": "P2 Rec%",
+                "P2 Rec#": "P2 Rec#",
             }
 
             df_display = df.rename(columns=DISPLAY_NAMES)
 
-            for stat in stat_thresholds:
-                if stat in df_display.columns:
-                    st.write(stat, df_display[stat].dtype)
-                else:
-                    st.write(f"Missing column: {stat}")
+            if league == "All":
+                cols = df_display.columns.tolist()
+                cols.remove("League")
+                cols.insert(1, "League")
+                df_display = df_display[cols]
 
             if stat_thresholds:
                 mask = pd.Series(True, index=df_display.index)
 
                 for stat, threshold in stat_thresholds.items():
                     if stat in df_display.columns:
-                        # FORCE SAFE NUMERIC
-                        col = pd.to_numeric(df_display[stat], errors="coerce")
-
-                        mask &= col >= threshold
+                        mask &= df_display[stat] >= threshold
 
                 df_display = df_display[mask]
 
@@ -1386,38 +1388,26 @@ with streamlit_analytics.track():
                     st.warning("All rows filtered out — try lowering thresholds.")
                     st.stop()
 
+            always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
+            pinned_cols = ["Match Start", "Player 1", "Player 2", "Ms"]
+
             if league == "All":
-                always_keep = ["League", "Match Start", "Player 1", "Player 2", "Ms"]
-            else:
-                always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
+                always_keep = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
+                pinned_cols = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
 
             if selected_stats:
-                valid_stats = [c for c in selected_stats if c in df_display.columns]
-
-                display_cols = always_keep + [
-                    c for c in valid_stats if c not in always_keep
-                ]
+                display_cols = always_keep + [c for c in selected_stats if c in df_display.columns]
                 st.caption(f"Showing {len(display_cols)} columns (filtered view)")
             else:
-                display_cols = [
-                    c for c in df_display.columns
-                    if not (league != "All" and c == "League")
-                ]                
+                display_cols = df_display.columns.tolist()
                 st.caption("Showing all columns")
 
-            pinned_cols = ["League", "Match Start", "Player 1", "Player 2", "Ms"]
-
+            # Only pin columns that actually exist in the current display
             col_config = {
                 c: st.column_config.Column(pinned="left")
                 for c in pinned_cols
                 if c in display_cols
             }
-
-            missing_cols = [c for c in display_cols if c not in df_display.columns]
-
-            if missing_cols:
-                st.error(f"Missing columns: {missing_cols}")
-                st.stop()
 
             st.dataframe(
                 df_display[display_cols].sort_values("Match Start"),

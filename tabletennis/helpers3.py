@@ -93,16 +93,11 @@ def normalize_name(name):
 # -------------------------
 # Load Raw CSVs
 # -------------------------
-@st.cache_data(show_spinner=False, max_entries=4, ttl=3600)
+@st.cache_data(show_spinner=False, max_entries=4)
 def load_tt_raw_data(league):
     """
     Loads raw Table Tennis datasets and applies minimal cleaning.
-    Cached per league (max_entries=4, one per league).
-    ttl=3600 ensures a manual Supabase push is picked up within an hour
-    rather than being invisible until the app is restarted.
-
-    Matchlogs are filtered to only pairs on the current schedule before
-    any processing, so we never compute stats for rows we'll never use.
+    Cached for performance.
     """
     paths = LEAGUE_FILES[league]
 
@@ -135,20 +130,6 @@ def load_tt_raw_data(league):
 
     schedule.dropna(subset=["match_id", "date"], inplace=True)
     matchlogs.dropna(subset=["match_id", "date"], inplace=True)
-
-    # --- Filter matchlogs to only scheduled pairs before any processing ---
-    # This avoids computing parse_sets/stats for rows we'll never query.
-    scheduled_pairs = set()
-    for _, row in schedule.iterrows():
-        key = tuple(sorted([row["player1"], row["player2"]]))
-        scheduled_pairs.add(key)
-
-    matchlogs = matchlogs[
-        matchlogs.apply(
-            lambda r: tuple(sorted([r["player1"], r["player2"]])) in scheduled_pairs,
-            axis=1
-        )
-    ].copy()
 
     # Parse sets
     matchlogs["parsed_sets"] = matchlogs["sets"].apply(parse_sets)
@@ -197,34 +178,25 @@ def load_tt_all_leagues():
 # -------------------------
 # Build H2H index from matchlogs
 # -------------------------
-def build_h2h_index(matchlogs, max_per_pair=50):
+def build_h2h_index(matchlogs):
     """
     Creates a dictionary keyed by sorted player pair (tuple),
-    with a list of matches (newest first), capped at max_per_pair
-    per pair.
+    with a list of matches (newest first).
 
-    The cap defaults to 50 — matching the maximum recency window (L50)
-    the app ever queries. Storing more than 50 matches per pair wastes
-    memory without ever being used. For the All leagues view this alone
-    can cut h2h_index memory by 80-90%.
-
-    Assumes matchlogs is already sorted newest-first — load_tt_raw_data
-    does this immediately before calling this function.
+    Each match entry now includes set-level winners to support
+    BB% (bounce-back: lost s1, won s2) and SR% (sweep resistance:
+    lost s1 and s2, won s3) calculations.
     """
     h2h_index = {}
+    matchlogs_sorted = matchlogs.sort_values("date", ascending=False)
 
-    for _, row in matchlogs.iterrows():
+    for _, row in matchlogs_sorted.iterrows():
         p1  = row["player1"]
         p2  = row["player2"]
         key = tuple(sorted([p1, p2]))
 
         if key not in h2h_index:
             h2h_index[key] = []
-
-        # Skip once we have enough history for this pair —
-        # matchlogs is newest-first so we always keep the most recent matches
-        if len(h2h_index[key]) >= max_per_pair:
-            continue
 
         parsed = row["parsed_sets"]
 
@@ -255,14 +227,10 @@ def build_h2h_index(matchlogs, max_per_pair=50):
 # -------------------------
 # Merge H2H indexes
 # -------------------------
-def merge_h2h_indexes(indexes, max_per_pair=50):
+def merge_h2h_indexes(indexes):
     """
     Merges multiple h2h_index dicts by combining match lists for shared
     keys and sorting merged lists newest-first.
-
-    Applies the same max_per_pair cap as build_h2h_index after merging,
-    since combining leagues can push a pair's total above the cap.
-    We keep the most recent max_per_pair matches across all leagues.
     """
     merged = {}
     for index in indexes:
@@ -272,11 +240,9 @@ def merge_h2h_indexes(indexes, max_per_pair=50):
             else:
                 merged[key] = list(matches)
 
-    # Re-sort newest-first and enforce cap
+    # Re-sort each pair's matches newest-first after merging
     for key in merged:
         merged[key].sort(key=lambda m: m["date"], reverse=True)
-        if len(merged[key]) > max_per_pair:
-            merged[key] = merged[key][:max_per_pair]
 
     return merged
 

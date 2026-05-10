@@ -8,10 +8,10 @@ from datetime import datetime, timedelta
 # -------------------------
 # CONFIG
 # -------------------------
-API_KEY = "sbf0cxa6scw0hrykgk0c4cu"
+API_KEY = "sbfgsoclqrtd9vpifqmxcyz"
 BASE_URL = "https://api.sportsblaze.com/mlb/v1"
-START_DATE = "2026-03-25"  # YYYY-MM-DD
-END_DATE = "2026-04-06"    # YYYY-MM-DD
+START_DATE = "2026-05-07"  # YYYY-MM-DD
+END_DATE = "2026-05-08"    # YYYY-MM-DD
 OUTPUT_CSV = "data/2026boxscores.csv"
 
 total_requests = 0
