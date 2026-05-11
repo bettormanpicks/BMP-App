@@ -4542,10 +4542,62 @@
         }
       },
       "date": "2026-05-10T19:30:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Xfinity Mobile Arena",
         "location": "Philadelphia, PA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 43
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 38
+            },
+            "home": {
+              "points": 33
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 41
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 22
+            },
+            "home": {
+              "points": 31
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 144
+          },
+          "home": {
+            "points": 114
+          }
+        }
       }
     },
     {
@@ -4565,10 +4617,62 @@
         }
       },
       "date": "2026-05-10T23:30:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Target Center",
         "location": "Minneapolis, MN"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 34
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 20
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 34
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 109
+          },
+          "home": {
+            "points": 114
+          }
+        }
       }
     },
     {
@@ -4633,34 +4737,11 @@
           "name": "San Antonio Spurs"
         }
       },
-      "date": "2026-05-12T04:00:00Z",
+      "date": "2026-05-13T00:00:00Z",
       "status": "Scheduled",
       "venue": {
         "name": "Frost Bank Center",
         "location": "San Antonio, TX"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "3caa04f5-952a-559d-9357-b5707dffafce",
-      "teams": {
-        "away": {
-          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
-          "name": "Philadelphia 76ers"
-        },
-        "home": {
-          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
-          "name": "New York Knicks"
-        }
-      },
-      "date": "2026-05-12T04:00:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Madison Square Garden",
-        "location": "New York, NY"
       }
     },
     {
@@ -4707,29 +4788,6 @@
       "venue": {
         "name": "Paycom Center",
         "location": "Oklahoma City, OK"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "3b4583b8-69cc-5ada-874e-75a23f518d9d",
-      "teams": {
-        "away": {
-          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
-          "name": "New York Knicks"
-        },
-        "home": {
-          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
-          "name": "Philadelphia 76ers"
-        }
-      },
-      "date": "2026-05-14T04:00:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Xfinity Mobile Arena",
-        "location": "Philadelphia, PA"
       }
     },
     {
@@ -4845,29 +4903,6 @@
       "venue": {
         "name": "Frost Bank Center",
         "location": "San Antonio, TX"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "0be4e15b-b7a9-574a-9e35-fb6be541e46d",
-      "teams": {
-        "away": {
-          "id": "14f361a6-8a7c-5815-b296-d6ed97569edb",
-          "name": "Philadelphia 76ers"
-        },
-        "home": {
-          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
-          "name": "New York Knicks"
-        }
-      },
-      "date": "2026-05-17T04:00:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Madison Square Garden",
-        "location": "New York, NY"
       }
     },
     {
@@ -5055,5 +5090,5 @@
       }
     }
   ],
-  "updated": "2026-05-10T08:00:02Z"
+  "updated": "2026-05-11T08:00:02Z"
 }
