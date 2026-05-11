@@ -344,9 +344,9 @@ with streamlit_analytics.track():
                 step=5
             )
 
-            vs_today_pitcher = st.checkbox("Stats vs Today's Pitcher", value=False)
-
             mlb_filter_today = st.checkbox("View Today's Games", value=False)
+
+            vs_today_pitcher = st.checkbox("Stats vs Today's Pitcher", value=False)
 
             submit_btn = st.form_submit_button("Calculate")
 
