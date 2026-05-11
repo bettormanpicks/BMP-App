@@ -494,7 +494,7 @@ with streamlit_analytics.track():
                     else:  # Batters
                         display_cols = [
                             "Date / Time", "Player", "Team", "Opp", "Pitcher",
-                            "Gms", "H", "1B", "2B", "2B", "HR", "TB",
+                            "Gms", "H", "1B", "2B", "3B", "HR", "TB",
                             "RBI", "R", "SB", "EBH", "HRR", "W(B)", "K(B)"
                         ]
                         sort_col = "HRR"
