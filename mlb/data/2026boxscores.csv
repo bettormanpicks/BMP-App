@@ -17606,3 +17606,865 @@ date,game_id,player,player_id,position,is_pitcher,is_starter,team,opponent,side,
 2026-05-08,bc841435-20c4-51e9-9197-f21b78a14a12,Ryan O'Hearn,bffaa283-7254-53ef-91d3-5520a44d1888,PH,False,False,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
 2026-05-08,bc841435-20c4-51e9-9197-f21b78a14a12,Nick Gonzales,874ea46d-0569-5ecc-85e6-b448bfe30555,3B,False,True,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,0,4,0,3,0,1,0,0,0,0,,,,,,,,,,,,
 2026-05-08,bc841435-20c4-51e9-9197-f21b78a14a12,Marcell Ozuna,bef29d2e-a08c-5c3f-8b74-f3c204725a37,DH,False,False,Pittsburgh Pirates,San Francisco Giants,away,1,0,0,1,4,2,1,0,0,1,1,4,5,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Tommy Nance,e74d4474-8c98-5fef-8972-71eef86e19f6,P,True,False,Toronto Blue Jays,Los Angeles Angels,home,,,,,,,,,,,,,,1,3,1,0,3,0,0,,9,0,0.3333333333333333,9.0
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Lenyn Sosa,63526b54-bb98-5442-a5ec-b6f09cb03c58,1B,False,False,Toronto Blue Jays,Los Angeles Angels,home,0,0,0,0,2,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Joe Mantiply,0998deb1-9768-5225-a213-be227770cdef,P,True,False,Toronto Blue Jays,Los Angeles Angels,home,,,,,,,,,,,,,,1,3,0,0,0,0,0,,10,0,0.0,0.0
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Ernie Clement,988f69d3-1ea5-5410-b27c-6ff47e783156,3B,False,True,Toronto Blue Jays,Los Angeles Angels,home,4,0,0,1,5,5,0,0,0,3,2,10,8,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Daulton Varsho,c87cf210-4b8f-50d7-bfd9-fa6cf7616329,CF,False,True,Toronto Blue Jays,Los Angeles Angels,home,3,0,0,0,5,3,0,0,0,2,0,5,3,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Andrés Giménez,0fa89082-0ded-58c2-8fab-9feb8319955a,SS,False,True,Toronto Blue Jays,Los Angeles Angels,home,0,0,0,0,5,0,0,0,0,0,1,1,0,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Brandon Valenzuela,55c81b4d-28b7-5626-b105-8359f07dae3b,C,False,True,Toronto Blue Jays,Los Angeles Angels,home,2,1,0,1,5,4,0,0,0,3,4,11,8,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Trey Yesavage,e349ebc3-3785-5a8b-8973-f53f9ff3ecf4,P,True,True,Toronto Blue Jays,Los Angeles Angels,home,,,,,,,,,,,,,,4,12,6,2,4,0,0,,87,0,0.5,13.5
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Davis Schneider,eac368f3-49d7-52aa-8a4a-5ada98dd9f58,2B,False,False,Toronto Blue Jays,Los Angeles Angels,home,1,0,0,0,1,1,0,0,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Addison Barger,acbb27ca-7bd0-5f3b-8d74-1400045fb79c,RF,False,True,Toronto Blue Jays,Los Angeles Angels,home,0,0,0,0,5,0,2,1,0,1,0,1,0,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,George Springer,b12c925d-b511-5331-a994-839ab4c086ad,DH,False,False,Toronto Blue Jays,Los Angeles Angels,home,1,1,0,0,5,2,0,0,0,0,0,2,3,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Mason Fluharty,355806ec-5636-5f28-a2f9-8f47f66f8c1b,P,True,False,Toronto Blue Jays,Los Angeles Angels,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,12,0,0.6666666666666666,18.0
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Braydon Fisher,b15b9955-da2a-5033-9ac6-6dc1d732925d,P,True,False,Toronto Blue Jays,Los Angeles Angels,home,,,,,,,,,,,,,,1,3,0,0,0,0,0,,12,0,0.0,0.0
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Tyler Heineman,6685aac3-5a12-5745-963c-5c43af83f729,DH,False,False,Toronto Blue Jays,Los Angeles Angels,home,0,0,0,0,1,0,0,0,0,0,1,1,0,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Tyler Rogers,c9270751-0889-57fe-8766-f58a19b2dbda,P,True,False,Toronto Blue Jays,Los Angeles Angels,home,,,,,,,,,,,,,,1,3,0,0,3,0,1,,25,1,0.0,0.0
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Vladimir Guerrero Jr.,c652a6fb-0803-556b-a03b-9fed12cedf9b,1B,False,True,Toronto Blue Jays,Los Angeles Angels,home,2,0,0,0,5,2,0,0,0,1,1,4,2,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Jesús Sánchez,62480674-d120-5cd2-bdd3-05c3cbecd240,LF,False,True,Toronto Blue Jays,Los Angeles Angels,home,1,0,0,1,5,2,0,1,0,3,2,7,5,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Myles Straw,51c4113b-ff8e-5728-b588-d6a0be2f776a,RF,False,False,Toronto Blue Jays,Los Angeles Angels,home,0,0,0,0,1,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Kazuma Okamoto,d79d11dd-a762-5962-aed1-9e87c656e5fc,3B,False,True,Toronto Blue Jays,Los Angeles Angels,home,1,0,0,0,4,1,0,0,0,1,1,3,1,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Adam Frazier,1d730493-bfd7-5d16-9a8a-88e20b779754,P,True,False,Los Angeles Angels,Toronto Blue Jays,away,0,1,0,0,1,1,0,0,0,0,1,2,2,1,3,0,1,5,1,4,,29,4,0.0,0.0
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Oswald Peraza,98bdfab1-07ea-5c61-bd44-7c17670a08b1,3B,False,False,Los Angeles Angels,Toronto Blue Jays,away,1,0,0,0,2,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Zach Neto,01ac6fe3-6ace-59c9-a15b-1ad3a0af1eb1,SS,False,True,Los Angeles Angels,Toronto Blue Jays,away,1,0,0,0,5,1,0,3,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Jorge Soler,ebc19873-2e2c-5767-9b19-409c5e887630,DH,False,False,Los Angeles Angels,Toronto Blue Jays,away,0,1,0,0,3,1,0,0,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Yoán Moncada,59501cf0-fc05-5b1c-b3f0-78b4422a24da,3B,False,True,Los Angeles Angels,Toronto Blue Jays,away,2,0,0,0,2,2,0,0,0,0,0,2,2,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Jack Kochanowicz,04561541-27c5-5534-a3b5-b20f29738f8e,P,True,True,Los Angeles Angels,Toronto Blue Jays,away,,,,,,,,,,,,,,4,12,0,2,9,0,6,,84,7,0.0,0.0
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Mitch Farris,cff216d3-1578-5a57-ba66-7ad37414d490,P,True,False,Los Angeles Angels,Toronto Blue Jays,away,,,,,,,,,,,,,,3,9,2,0,6,2,3,,58,3,0.2222222222222222,6.0
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Mike Trout,062d3e7f-e32e-55bc-aa40-403df7f9ec05,CF,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,3,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Jo Adell,c3ca91f9-2d30-5cf8-aae3-a5e7339f5788,RF,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Vaughn Grissom,5af312b7-68e4-5add-943d-780ff1dc8d39,2B,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Nolan Schanuel,88862c38-1493-5b40-9c6b-6660a4ce4654,1B,False,True,Los Angeles Angels,Toronto Blue Jays,away,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Josh Lowe,ef406577-04d5-511f-9202-5f9a1b54addb,LF,False,True,Los Angeles Angels,Toronto Blue Jays,away,2,0,0,0,4,2,0,1,0,0,0,2,2,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Omar Martinez,98f6db48-2b5f-5ba0-ac38-9df2336617e8,PH,False,False,Los Angeles Angels,Toronto Blue Jays,away,1,0,0,0,1,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Sebastián Rivero,6c7b3cc4-b0c6-50fa-b998-bee507b351da,C,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,3,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,2f761c75-6c80-56be-9430-57f0b5eb64a3,Bryce Teodosio,2e92cd67-6ffe-5f76-b1f5-83b535ba679a,CF,False,False,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,1,0,0,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Jeremiah Jackson,79a8c5e7-b511-5a4a-a093-00ac948ae519,2B,False,True,Baltimore Orioles,Athletics,home,1,0,0,0,3,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Lou Trivino,234e9ea9-6d87-5a8c-9e2b-4d9a17733946,P,True,False,Baltimore Orioles,Athletics,home,,,,,,,,,,,,,,2.1,7,3,0,2,0,0,,31,0,0.42857142857142855,11.571428571428571
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Samuel Basallo,e2832358-42f4-5d2e-b14c-498693dbb679,DH,False,False,Baltimore Orioles,Athletics,home,2,0,0,0,4,2,0,1,0,0,0,2,2,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Weston Wilson,8138f92c-5424-5bfb-8e09-b02741b7e7cc,3B,False,False,Baltimore Orioles,Athletics,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Gunnar Henderson,8dd2ac6f-561c-5af1-b076-5e81f0f4e199,SS,False,True,Baltimore Orioles,Athletics,home,1,1,0,0,5,2,0,1,0,0,0,2,3,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Leody Taveras,3ec5beae-5884-53b2-80db-f719fafea82c,CF,False,True,Baltimore Orioles,Athletics,home,1,0,0,0,4,1,0,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Shane Baz,591fa7e0-9ba3-5756-9efd-1520cab122a6,P,True,True,Baltimore Orioles,Athletics,home,,,,,,,,,,,,,,4.2,14,5,3,5,1,5,,100,5,0.35714285714285715,9.642857142857142
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Taylor Ward,ecd13d9a-09c8-5341-a9c1-42cd969b9bfd,LF,False,True,Baltimore Orioles,Athletics,home,0,0,0,0,5,0,3,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Dylan Beavers,6713c09d-171a-5996-8551-2d6cbdcc460f,RF,False,True,Baltimore Orioles,Athletics,home,0,1,0,0,4,1,1,2,0,1,0,2,2,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Adley Rutschman,641d20de-7b25-5610-a12b-aa8c9cf6fdb5,C,False,True,Baltimore Orioles,Athletics,home,0,1,0,0,5,1,0,2,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Tyler O'Neill,22618000-6c22-5a37-9298-4ff8d51174b1,PH,False,False,Baltimore Orioles,Athletics,home,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Blaze Alexander,06fa37f7-11f0-5e44-b028-6e4b58efaaa5,2B,False,False,Baltimore Orioles,Athletics,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Pete Alonso,a706e53c-3e74-5675-9f67-a2114ac0ab94,1B,False,True,Baltimore Orioles,Athletics,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Andrew Kittredge,5a9a2349-d9ef-519c-b202-65d6add86518,P,True,False,Baltimore Orioles,Athletics,home,,,,,,,,,,,,,,1,3,1,1,2,0,1,,16,1,0.3333333333333333,9.0
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Dietrich Enns,ef9207e2-4db6-5311-b1e8-2264567c81af,P,True,False,Baltimore Orioles,Athletics,home,,,,,,,,,,,,,,1,3,1,0,2,0,0,,20,0,0.3333333333333333,9.0
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Colton Cowser,7c1a36d9-f8ba-5ebe-9fd2-58b788cc84b6,PH,False,False,Baltimore Orioles,Athletics,home,1,0,0,0,1,1,0,0,0,0,2,3,1,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Coby Mayo,3fa3b427-6995-5a99-b9df-39c34bfe5217,3B,False,True,Baltimore Orioles,Athletics,home,0,0,0,0,3,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Lawrence Butler,84b3c88a-5eef-5848-9e2c-a9f0eabd6386,CF,False,True,Athletics,Baltimore Orioles,away,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Brent Rooker,9d82601b-b14e-5a63-a224-362d63a93501,DH,False,False,Athletics,Baltimore Orioles,away,1,0,0,1,5,2,1,0,0,1,3,6,5,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Zack Gelof,52199e3d-6b1f-5c3f-9810-4d82fc7dc03f,3B,False,True,Athletics,Baltimore Orioles,away,1,0,0,0,4,1,1,2,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Jeff McNeil,3ef9318f-5a03-5a7f-8df9-f326e49cfb1e,2B,False,True,Athletics,Baltimore Orioles,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Scott Barlow,d4592618-113b-5443-8c2c-302d9651a818,P,True,False,Athletics,Baltimore Orioles,away,,,,,,,,,,,,,,1,3,2,1,0,0,0,,16,0,0.6666666666666666,18.0
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Carlos Cortes,b10e4d13-0c9b-592c-99f9-974bebe386f0,RF,False,True,Athletics,Baltimore Orioles,away,0,1,0,0,3,1,0,0,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Joel Kuhnel,c1905ade-7a83-54c2-85ae-6708daf468f5,P,True,False,Athletics,Baltimore Orioles,away,,,,,,,,,,,,,,1,3,0,0,0,0,0,,13,0,0.0,0.0
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Tyler Soderstrom,1a12af09-5e6b-518c-9285-c9f3e9156573,LF,False,True,Athletics,Baltimore Orioles,away,0,0,0,0,5,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Aaron Civale,fd9ff6ea-c86b-506a-8ffa-3349c8a26de7,P,True,True,Athletics,Baltimore Orioles,away,,,,,,,,,,,,,,5,15,6,3,6,0,0,,97,0,0.4,10.8
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Nick Kurtz,0ee3ade6-1739-552d-b4eb-8eb38b8ba6a0,1B,False,True,Athletics,Baltimore Orioles,away,0,2,0,0,5,2,1,0,1,3,0,5,4,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Hogan Harris,a9269342-dc5e-51d7-a959-d0c967ea3679,P,True,False,Athletics,Baltimore Orioles,away,,,,,,,,,,,,,,1,3,2,0,0,0,0,,14,0,0.6666666666666666,18.0
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Colby Thomas,a8e92b76-05ee-5514-ba8e-1ffd0023ae36,RF,False,False,Athletics,Baltimore Orioles,away,2,0,0,0,2,2,0,0,0,0,1,3,2,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Shea Langeliers,3de34bb4-e20b-541b-ba54-b22612a81656,C,False,True,Athletics,Baltimore Orioles,away,2,0,0,0,5,2,1,0,0,2,2,6,2,,,,,,,,,,,,
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Mark Leiter Jr.,02bb1eaf-b760-5bf8-98a1-b15859a368d4,P,True,False,Athletics,Baltimore Orioles,away,,,,,,,,,,,,,,1,3,1,0,3,0,2,,19,2,0.3333333333333333,9.0
+2026-05-09,e1e0ef09-5367-565f-b8ca-403e014e65f8,Jacob Wilson,bbc991c4-1055-56ae-af55-57b957f437a3,SS,False,True,Athletics,Baltimore Orioles,away,0,0,0,0,5,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Elly De La Cruz,7fd536ef-9553-5c83-9d6b-4584793b4a26,SS,False,True,Cincinnati Reds,Houston Astros,home,2,0,0,0,4,2,0,1,0,0,1,3,2,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Dane Myers,4afd868e-eb1d-5af8-bff0-99ce9b1bf670,CF,False,False,Cincinnati Reds,Houston Astros,home,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Sal Stewart,87ada644-a3be-5013-bfc9-a696f4bfb4ee,3B,False,True,Cincinnati Reds,Houston Astros,home,1,0,0,0,4,1,0,2,1,0,0,1,1,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Pierce Johnson,aa72972c-95f9-58b9-b589-36f13f6e6dc6,P,True,False,Cincinnati Reds,Houston Astros,home,,,,,,,,,,,,,,1,3,0,0,0,0,0,,12,0,0.0,0.0
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Nathaniel Lowe,4bc7650f-1ad3-5a2c-a3b7-6a07ed97b9f7,DH,False,False,Cincinnati Reds,Houston Astros,home,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Matt McLain,f7624c99-f5cf-56e9-8b5d-cdc4402e8af7,2B,False,True,Cincinnati Reds,Houston Astros,home,1,0,0,0,3,1,0,1,0,0,2,3,1,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Ke'Bryan Hayes,5ac4617a-322b-54c3-97a6-21a85177db00,3B,False,False,Cincinnati Reds,Houston Astros,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Will Benson,3af6fc09-0d15-5805-832b-1e331a51fd8f,RF,False,True,Cincinnati Reds,Houston Astros,home,0,0,0,0,3,0,2,1,0,1,0,1,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,TJ Friedl,0a711a2b-282c-5649-94b9-8b048f484f0b,CF,False,True,Cincinnati Reds,Houston Astros,home,0,0,0,0,3,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Spencer Steer,2e1a3d24-542e-5cd2-b6ac-11416bb79c96,1B,False,True,Cincinnati Reds,Houston Astros,home,1,0,0,0,3,1,0,0,1,1,0,2,1,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Jose Trevino,3930dcf9-e9c2-536d-822f-07c8c4203342,C,False,True,Cincinnati Reds,Houston Astros,home,0,0,0,0,3,0,0,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Graham Ashcraft,ae98a0ca-c804-56c2-9e38-be2f024c449c,P,True,False,Cincinnati Reds,Houston Astros,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,19,0,0.6666666666666666,18.0
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,JJ Bleday,3bc53ddb-f7ca-5986-a29c-78c3ce9e25a4,LF,False,True,Cincinnati Reds,Houston Astros,home,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Brock Burke,b138f008-4777-5189-a7cc-178fb793ea9d,P,True,False,Cincinnati Reds,Houston Astros,home,,,,,,,,,,,,,,1,3,1,0,0,0,0,,8,0,0.3333333333333333,9.0
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Chase Burns,d92449d1-6654-5412-a41a-55c308d3760b,P,True,True,Cincinnati Reds,Houston Astros,home,,,,,,,,,,,,,,6,18,2,3,4,1,1,,87,1,0.1111111111111111,3.0
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Isaac Paredes,c94533e4-26a4-59a8-ae9e-1b0d54853c93,3B,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Bryan Abreu,679a7fe9-1603-5710-ba17-ce4ca61dfa79,P,True,False,Houston Astros,Cincinnati Reds,away,,,,,,,,,,,,,,0.1,1,0,0,0,0,0,,5,0,0.0,0.0
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Cam Smith,6c7292a3-abca-5a73-9e4b-cec25e9d20b8,RF,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Braden Shewmake,612976a3-cd5b-5f4b-b37d-c82bebe6768f,SS,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,1,3,1,0,0,0,1,1,3,4,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Zach Cole,66fa952c-f505-5973-a43c-209b10923a54,LF,False,True,Houston Astros,Cincinnati Reds,away,0,1,0,0,2,1,0,0,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Enyel De Los Santos,6dab6ec3-cf50-5af8-9a0d-5c8a8af535c0,P,True,False,Houston Astros,Cincinnati Reds,away,,,,,,,,,,,,,,1,3,2,0,0,0,0,,9,0,0.6666666666666666,18.0
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Steven Okert,bbee3817-3c94-5f70-bf14-8f8f4a22a1f6,P,True,False,Houston Astros,Cincinnati Reds,away,,,,,,,,,,,,,,1,3,0,0,0,0,0,,10,0,0.0,0.0
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Brice Matthews,bee000c4-433a-55d5-b97f-a284fe330fee,CF,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Jose Altuve,99c9db0b-d7a9-5462-94f3-28f3661714ab,2B,False,True,Houston Astros,Cincinnati Reds,away,1,0,0,0,4,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Zach Dezenzo,b3e5582d-a8bc-542e-b9b4-7382854ff442,LF,False,False,Houston Astros,Cincinnati Reds,away,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Christian Walker,4ebdbcc5-84ea-5866-b7b6-1d61cbac193f,1B,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Spencer Arrighetti,62b53297-38cc-50ca-bbd5-19657ca42525,P,True,True,Houston Astros,Cincinnati Reds,away,,,,,,,,,,,,,,5.2,17,5,3,5,0,1,,93,3,0.29411764705882354,7.941176470588235
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Christian Vázquez,2ce448a3-c599-538e-b2dd-6a39dcfde984,C,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,0,3,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4e74bd32-a48e-5874-9c40-8b4a76584f87,Yordan Alvarez,b4e60652-8d7e-569f-8e5a-4aa9a713da9c,DH,False,False,Houston Astros,Cincinnati Reds,away,0,1,0,0,4,1,2,1,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Lake Bachar,758500f8-3a4b-57cf-81b8-dccf3310c44a,P,True,False,Miami Marlins,Washington Nationals,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,13,0,0.6666666666666666,18.0
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Esteury Ruiz,2109b44b-f104-5d94-b0aa-64d757de2af2,RF,False,False,Miami Marlins,Washington Nationals,home,0,1,0,0,1,1,0,0,1,1,0,2,2,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Jakob Marsee,0af43782-4c0c-52a9-94e2-9d9a6da68ce7,CF,False,True,Miami Marlins,Washington Nationals,home,0,0,0,1,4,1,1,1,0,1,3,5,4,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,John King,1e82ccc2-5545-5f6f-bbf4-4331954cd078,P,True,False,Miami Marlins,Washington Nationals,home,,,,,,,,,,,,,,0.1,1,0,0,0,0,0,,3,0,0.0,0.0
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Xavier Edwards,c495c968-61ae-5861-89a0-df7170538ff7,2B,False,True,Miami Marlins,Washington Nationals,home,0,0,0,1,5,1,0,1,0,1,1,3,4,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Michael Petersen,f955d93e-111b-59a6-963b-8112b68d110b,P,True,False,Miami Marlins,Washington Nationals,home,,,,,,,,,,,,,,0.2,2,0,0,4,0,3,,16,3,0.0,0.0
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Kyle Stowers,c87991a1-a7cc-51a8-a223-048d5b8e1e29,LF,False,True,Miami Marlins,Washington Nationals,home,1,1,0,1,4,3,0,0,0,2,2,7,7,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Liam Hicks,0d5739d9-0891-5f5a-b4f5-07b6afa2f305,DH,False,False,Miami Marlins,Washington Nationals,home,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Owen Caissie,6ae28905-0bc7-52c6-ba9c-af2410655745,RF,False,True,Miami Marlins,Washington Nationals,home,0,0,0,0,3,0,0,1,0,0,1,1,0,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Leo Jiménez,d883d559-2f58-547e-a01d-c1cd265c7486,3B,False,True,Miami Marlins,Washington Nationals,home,1,0,0,0,4,1,0,0,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Janson Junk,62610e54-3541-56c7-b590-c8aab16bf16f,P,True,True,Miami Marlins,Washington Nationals,home,,,,,,,,,,,,,,6,18,6,2,7,1,4,,94,4,0.3333333333333333,9.0
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Connor Norby,5ca1b2d6-2131-5835-989f-db6fc411a6b8,1B,False,True,Miami Marlins,Washington Nationals,home,0,1,0,0,4,1,1,0,2,2,0,3,2,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Andrew Nardi,2478f896-56e6-548d-ae94-b92ae1afd232,P,True,False,Miami Marlins,Washington Nationals,home,,,,,,,,,,,,,,1,3,0,0,0,0,0,,9,0,0.0,0.0
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Joe Mack,5e106d1a-3624-5bc2-8e27-db4fa7db1d8a,C,False,True,Miami Marlins,Washington Nationals,home,0,2,0,0,4,2,0,1,0,0,0,2,4,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Otto Lopez,5fd2366a-e489-58b4-8ad3-0c6eaaff57c9,SS,False,True,Miami Marlins,Washington Nationals,home,1,1,0,0,5,2,0,1,0,1,0,3,3,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Brady House,9feee2d5-f011-5be3-91f0-b7e2597e0107,3B,False,True,Washington Nationals,Miami Marlins,away,0,1,0,0,4,1,0,2,0,1,0,2,2,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,CJ Abrams,41388dc3-6936-557e-b1ee-d12bd42cb0ef,SS,False,True,Washington Nationals,Miami Marlins,away,1,0,1,0,5,2,0,0,0,1,2,5,4,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Nasim Nuñez,30523871-5578-5f5a-850f-d3e42eaec507,2B,False,True,Washington Nationals,Miami Marlins,away,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Drew Millas,4ed01cdc-a11e-5925-ae16-e8eef2ecabea,C,False,True,Washington Nationals,Miami Marlins,away,1,0,0,0,4,1,0,2,0,1,1,3,1,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Jorbit Vivas,fdbd86ba-3c8c-5410-8547-5624b69d521e,PH,False,False,Washington Nationals,Miami Marlins,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Joey Wiemer,25dc5f48-c6df-51d8-9751-71b23bc9ae81,PR,False,False,Washington Nationals,Miami Marlins,away,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Richard Lovelady,382fd23a-b370-5cf8-b5a6-a3735cacac73,P,True,True,Washington Nationals,Miami Marlins,away,,,,,,,,,,,,,,2,6,3,1,1,0,0,,30,0,0.5,13.5
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Daylen Lile,3b2cb564-a3bb-5ec4-8464-227b212049f9,LF,False,True,Washington Nationals,Miami Marlins,away,0,1,0,0,4,1,0,0,0,0,1,2,2,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,José Tena,f88f88e8-a622-5f2d-95ca-0973e791aca0,DH,False,False,Washington Nationals,Miami Marlins,away,0,1,0,0,4,1,1,1,0,1,0,2,2,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,James Wood,3089b190-81f6-5e6c-ba91-a8d4cdf0be3a,RF,False,True,Washington Nationals,Miami Marlins,away,0,1,0,1,5,2,1,0,0,2,1,5,6,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Jacob Young,d263f19b-c5d6-523a-bc57-bce7884eb99a,CF,False,True,Washington Nationals,Miami Marlins,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Zack Littell,2c70667e-378f-5f38-82d2-88c0c3bd55ee,P,True,False,Washington Nationals,Miami Marlins,away,,,,,,,,,,,,,,4,12,0,1,5,1,2,,69,3,0.0,0.0
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Mitchell Parker,e5fb68dc-3ed7-5f19-93bd-815477a0f6e6,P,True,False,Washington Nationals,Miami Marlins,away,,,,,,,,,,,,,,1,3,1,1,5,2,5,,39,5,0.3333333333333333,9.0
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Zak Kent,4b451b2b-277a-5bcf-889b-2adac9928fac,P,True,False,Washington Nationals,Miami Marlins,away,,,,,,,,,,,,,,1,3,1,0,1,0,0,,14,0,0.3333333333333333,9.0
+2026-05-09,28d17205-1cbe-503e-b3f2-b78bed6aa521,Luis García Jr.,a615adb8-655d-531d-a63e-5a267e66845b,1B,False,True,Washington Nationals,Miami Marlins,away,3,0,0,0,5,3,0,0,0,1,2,6,3,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Brandon Marsh,428a913a-6990-5ebc-a53f-fe331b036c25,LF,False,True,Philadelphia Phillies,Colorado Rockies,home,1,0,0,0,4,1,0,2,0,1,1,3,1,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Justin Crawford,656815ea-b9fd-59e0-8461-3bdf7f7e3131,CF,False,False,Philadelphia Phillies,Colorado Rockies,home,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Bryce Harper,c9b6441c-da6d-5f6d-bb63-857c121017fa,1B,False,True,Philadelphia Phillies,Colorado Rockies,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,J.T. Realmuto,0d9765bd-d345-5aaf-b9ad-1a15792ac037,C,False,True,Philadelphia Phillies,Colorado Rockies,home,1,0,0,0,4,1,0,0,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Edmundo Sosa,4fbe024f-4d5b-5042-8ca2-06f8ecd6d580,LF,False,True,Philadelphia Phillies,Colorado Rockies,home,1,0,0,0,3,1,0,0,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Orion Kerkering,3c3bfee1-23b5-5e4b-86b8-4cf5fd348ed2,P,True,False,Philadelphia Phillies,Colorado Rockies,home,,,,,,,,,,,,,,1,3,1,0,0,0,0,,14,0,0.3333333333333333,9.0
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Alec Bohm,9bbc34c0-5769-5c7f-8cf4-607f25730d26,3B,False,True,Philadelphia Phillies,Colorado Rockies,home,0,1,0,2,4,3,0,0,0,2,4,9,10,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Chase Shugart,86597a0e-ed7f-5d48-8887-6bc6cb4d363c,P,True,False,Philadelphia Phillies,Colorado Rockies,home,,,,,,,,,,,,,,1,3,3,0,0,0,0,,18,0,1.0,27.0
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Tim Mayza,0601d6fa-5723-5116-a76f-298c86d49662,P,True,False,Philadelphia Phillies,Colorado Rockies,home,,,,,,,,,,,,,,0.1,1,0,0,0,0,0,,3,0,0.0,0.0
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Bryson Stott,c063d114-6426-54da-a28d-bd4eb1d1d948,2B,False,True,Philadelphia Phillies,Colorado Rockies,home,1,0,0,0,4,1,0,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Kyle Schwarber,a60a2cbf-f012-56e9-acc4-184d76ff8219,DH,False,False,Philadelphia Phillies,Colorado Rockies,home,0,0,0,1,5,1,0,3,0,1,3,5,4,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Felix Reyes,af3a5db1-8df4-55cd-a4b9-b71fd9665522,1B,False,False,Philadelphia Phillies,Colorado Rockies,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Tanner Banks,624b586b-5e1a-59c6-bfb3-3751272c2fb3,P,True,False,Philadelphia Phillies,Colorado Rockies,home,,,,,,,,,,,,,,2,6,3,0,0,0,0,,18,0,0.5,13.5
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Adolis García,2c62b85f-73e6-5aff-af94-15901f508fb2,RF,False,True,Philadelphia Phillies,Colorado Rockies,home,1,1,0,0,4,2,0,0,0,2,0,4,3,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Aaron Nola,30fcc27e-bc10-5865-a3e7-9cb3e186515b,P,True,True,Philadelphia Phillies,Colorado Rockies,home,,,,,,,,,,,,,,4.2,14,4,2,6,1,3,,94,3,0.2857142857142857,7.7142857142857135
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Trea Turner,f38b6d42-2ac2-5480-adbc-729df0f14126,SS,False,True,Philadelphia Phillies,Colorado Rockies,home,4,0,0,0,5,4,0,0,1,1,0,5,4,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Mickey Moniak,3f0fdd53-717e-5b5d-97af-38f6cc224d92,CF,False,True,Colorado Rockies,Philadelphia Phillies,away,0,0,0,0,4,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Jake McCarthy,6997ae3d-a342-5d04-a267-91d371938d45,LF,False,True,Colorado Rockies,Philadelphia Phillies,away,1,0,0,0,4,1,1,0,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Troy Johnston,09dd2789-8b43-5f74-a5fd-89e6f73d1d86,RF,False,True,Colorado Rockies,Philadelphia Phillies,away,1,0,0,0,4,1,0,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Kyle Freeland,959b4f31-bf93-5a03-9fdb-dd6decc91a03,P,True,True,Colorado Rockies,Philadelphia Phillies,away,,,,,,,,,,,,,,5,15,4,0,10,3,6,,87,7,0.26666666666666666,7.2
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Willi Castro,1f049a5e-1a31-56fd-813c-95bc75d37525,SS,False,True,Colorado Rockies,Philadelphia Phillies,away,0,0,0,1,4,1,0,2,0,1,1,3,4,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Tyler Freeman,036c78c9-9b82-5ed4-b05d-c855e0b3ab5c,2B,False,False,Colorado Rockies,Philadelphia Phillies,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Edouard Julien,acdd1046-d6e4-53f4-90bb-fde2916b38bf,2B,False,True,Colorado Rockies,Philadelphia Phillies,away,1,0,0,0,3,1,1,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Hunter Goodman,6144567b-eae1-58fa-9b5d-d2351f51c9e5,DH,False,False,Colorado Rockies,Philadelphia Phillies,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Tanner Gordon,54a6585a-df2e-5428-9d0e-9f2fba3f5ca9,P,True,False,Colorado Rockies,Philadelphia Phillies,away,,,,,,,,,,,,,,3,9,3,0,4,0,2,,52,2,0.3333333333333333,9.0
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Brett Sullivan,472c8c37-5a62-5577-b307-c676e02d7f52,C,False,True,Colorado Rockies,Philadelphia Phillies,away,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,TJ Rumfield,8fbfa07a-ea2e-592e-9520-5bf531ada10d,1B,False,True,Colorado Rockies,Philadelphia Phillies,away,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,c4b0be8e-f303-53af-9694-efb0c825b0fe,Kyle Karros,5aeefc0d-9862-57c9-b58f-ab21c2ce4404,3B,False,True,Colorado Rockies,Philadelphia Phillies,away,0,1,0,0,4,1,0,1,0,0,2,3,2,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Chase DeLauter,6df4c8fa-ba98-5c7a-ad19-cf86a2049392,DH,False,False,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,5,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Austin Hedges,c7c1d348-de1b-5e14-a0fb-84e7470489fa,C,False,True,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,3,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Travis Bazzana,f7c2501a-ab2e-5a6d-aa3d-74f4819ada07,2B,False,True,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,5,0,1,0,1,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Daniel Schneemann,44aa2c31-5c71-54d6-bd89-c75f77599832,RF,False,True,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,5,0,2,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Brayan Rocchio,19d4d33d-50bf-55d7-9885-40f4738e6983,SS,False,True,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,5,0,1,0,1,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Petey Halpin,574da9d5-f083-5976-aeb3-907c321abd6d,CF,False,False,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Colin Holderman,fec97e32-5565-5ded-b188-8b4281f88f08,P,True,False,Cleveland Guardians,Minnesota Twins,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,16,0,0.6666666666666666,18.0
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,David Fry,d0cdb034-814f-5d43-a16a-052464de2541,C,False,False,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,2,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,José Ramírez,edd283fa-acd6-56e6-a171-35d869385530,3B,False,True,Cleveland Guardians,Minnesota Twins,home,1,0,0,0,5,1,2,1,1,1,0,2,1,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Steven Kwan,64af661f-a572-5a07-8797-70964b4dbcb2,LF,False,True,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,5,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Peyton Pallette,4f2a60b1-6ced-5a28-8ee3-8303b092a9de,P,True,False,Cleveland Guardians,Minnesota Twins,home,,,,,,,,,,,,,,2,6,3,1,1,0,0,,37,1,0.5,13.5
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Angel Martínez,a1a79e19-4dd8-5d43-8cf7-324e82cc4a92,LF,False,True,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,5,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Kyle Manzardo,1f4ed7ba-eda9-5a00-b87f-9c005e0a44a8,1B,False,True,Cleveland Guardians,Minnesota Twins,home,1,0,0,0,3,1,0,1,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Erik Sabrowski,f440cc49-e1e7-5622-8971-bc07b4313d0d,P,True,False,Cleveland Guardians,Minnesota Twins,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,14,0,0.6666666666666666,18.0
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Hunter Gaddis,a0a7f1f7-4f3b-5168-82b5-75a9011484a4,P,True,False,Cleveland Guardians,Minnesota Twins,home,,,,,,,,,,,,,,1,3,1,0,0,0,0,,13,0,0.3333333333333333,9.0
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Tanner Bibee,c61004d6-b9ea-59d4-b6a6-c887c844fb6e,P,True,True,Cleveland Guardians,Minnesota Twins,home,,,,,,,,,,,,,,6,18,9,2,1,1,1,,98,1,0.5,13.5
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Rhys Hoskins,1c22ec74-00f6-5b13-b698-eeaaf10c7523,1B,False,False,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,2,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Victor Caratini,118b5526-726c-567a-b410-9c4d39d4dfe8,C,False,True,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Kody Clemens,388afaec-b241-58d7-8b05-1e0292aaa5ce,1B,False,True,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,4,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Brooks Lee,9e5151e5-7ca3-54b5-906a-035ac2bd117b,SS,False,True,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,5,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Austin Martin,2b621d0f-36d2-5e85-800f-c9ea62645109,LF,False,False,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,2,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Josh Bell,9c4f9447-e182-53d1-9468-d5eed9b0e0f7,DH,False,False,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,4,0,0,4,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,James Outman,ecd5e641-3869-57f2-af87-7b030fcc7f7b,DH,False,False,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Taylor Rogers,c74a9c59-bc65-5c6a-9529-7f69ff407ca5,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,1,3,1,0,0,0,0,,17,0,0.3333333333333333,9.0
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Kody Funderburk,194f8ff2-a54d-5d6f-b29f-4ada5ae3629b,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,0.1,1,0,2,0,0,0,,10,0,0.0,0.0
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Royce Lewis,ed8d10fa-59d5-527e-9c7f-0eb7ba2f1a36,3B,False,True,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Trevor Larnach,acc8d7d3-6cc6-5ddb-82f7-c51950746185,LF,False,True,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Luis García,baa208d8-722e-5538-8130-3d9bc63869a0,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,1,3,0,0,0,0,0,,13,0,0.0,0.0
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Byron Buxton,f324ed45-2be1-5593-9601-8a1caeabe988,CF,False,True,Minnesota Twins,Cleveland Guardians,away,0,1,0,1,5,2,0,2,0,1,2,5,6,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Yoendrys Gómez,626d56c2-e478-5409-8de4-eb4e138b153c,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,0.1,1,0,0,0,0,0,,5,0,0.0,0.0
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Joe Ryan,a541cdbd-7ec7-5134-80d1-b806a38f4b2c,P,True,True,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,6,18,5,3,2,0,1,,107,1,0.2777777777777778,7.5
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Matt Wallner,d29b50b9-0e28-5d0d-b368-6cecc0a7d512,RF,False,True,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,4,0,0,4,0,1,0,1,0,,,,,,,,,,,,
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Eric Orze,bf0a6099-e6a8-5e3c-992f-bf9bf6aca93d,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,1.2,5,0,3,0,0,0,,15,0,0.0,0.0
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Andrew Morris,0adf2ff8-b0c4-5935-a6c7-db106b2c45a9,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,0.2,2,1,1,0,0,0,,11,0,0.5,13.5
+2026-05-09,4455c55c-b6ce-5a33-9d62-7984dc2dd74e,Luke Keaschall,cd5f4708-4e8f-5a0f-8347-a323178f906f,2B,False,True,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,4,0,2,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Evan Carter,f35e83f3-06d6-5c07-b669-1e0cd310d86e,CF,False,True,Texas Rangers,Chicago Cubs,home,0,0,0,0,4,0,2,0,1,2,0,2,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Alejandro Osuna,1aa0e741-9738-5836-bfd4-28f059db6304,RF,False,True,Texas Rangers,Chicago Cubs,home,2,0,0,0,4,2,0,0,0,0,2,4,2,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Jack Leiter,b1ffa751-b44b-5409-9e5b-51b1dd5654b7,P,True,True,Texas Rangers,Chicago Cubs,home,,,,,,,,,,,,,,4.2,14,6,5,3,0,0,,97,0,0.42857142857142855,11.571428571428571
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Joc Pederson,a8accc9b-5d7c-5c48-b5dc-24a6f0b7b652,DH,False,False,Texas Rangers,Chicago Cubs,home,1,1,0,0,4,2,1,1,0,1,1,4,3,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Jalen Beeks,1b0188a9-51e8-5aab-98ab-689bb43d883c,P,True,False,Texas Rangers,Chicago Cubs,home,,,,,,,,,,,,,,1.1,4,1,0,0,0,0,,13,0,0.25,6.75
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Corey Seager,0a8aa1ff-7f96-5ea3-91c5-f80c15eed600,SS,False,True,Texas Rangers,Chicago Cubs,home,0,0,0,0,4,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Josh Jung,c0339e5b-fadd-5807-97d2-084bf40ec3f0,3B,False,True,Texas Rangers,Chicago Cubs,home,2,0,0,1,4,3,0,0,0,2,1,6,6,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Justin Foscue,7d50c8d1-9108-51da-9157-f75d3e301f10,1B,False,True,Texas Rangers,Chicago Cubs,home,0,0,0,1,3,1,0,0,0,1,1,3,4,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Kyle Higashioka,aed03174-10a2-5ebe-adfa-83b14b307c24,C,False,True,Texas Rangers,Chicago Cubs,home,1,0,0,0,3,1,0,1,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Ezequiel Duran,3e6051c8-4c13-582e-ad57-c600a7c2174b,2B,False,True,Texas Rangers,Chicago Cubs,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Gavin Collyer,e8ae58a8-c682-5ddb-b512-f95bbbc6477a,P,True,False,Texas Rangers,Chicago Cubs,home,,,,,,,,,,,,,,2,6,1,1,1,0,0,,35,0,0.16666666666666666,4.5
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Brandon Nimmo,8954e7a7-4f31-5f8f-9888-a809b7b43d88,RF,False,True,Texas Rangers,Chicago Cubs,home,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Sam Haggerty,93c872f8-31f7-553c-8c85-82ababe848a2,LF,False,False,Texas Rangers,Chicago Cubs,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Cole Winn,4104cc07-5e4a-58a3-9b5f-e374581c9e62,P,True,False,Texas Rangers,Chicago Cubs,home,,,,,,,,,,,,,,1,3,1,0,0,0,0,,11,0,0.3333333333333333,9.0
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Michael Conforto,90e43863-2a50-529e-b3b9-ef4aeb4736de,DH,False,False,Chicago Cubs,Texas Rangers,away,0,1,0,0,5,1,1,1,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Edward Cabrera,850f8e96-e9c3-586e-8ab0-be97da68efa3,P,True,True,Chicago Cubs,Texas Rangers,away,,,,,,,,,,,,,,5,15,6,1,7,2,5,,88,5,0.4,10.8
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Ian Happ,b809f60b-8331-5fd0-ab24-ee3b8538eabe,LF,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,4,0,1,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Ethan Roberts,0d35c159-4a8f-54c9-a724-aeee71dd199d,P,True,False,Chicago Cubs,Texas Rangers,away,,,,,,,,,,,,,,2,6,0,2,0,0,0,,29,0,0.0,0.0
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Alex Bregman,57215789-8702-5d78-8c77-21a23c10f033,3B,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Michael Busch,6b4e85c9-9b0c-5203-9474-01388c3cb9e8,1B,False,True,Chicago Cubs,Texas Rangers,away,1,0,0,0,4,1,1,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Carson Kelly,43b2a60b-2ced-5c09-beab-347f4863ab11,C,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,3,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Pete Crow-Armstrong,6e75f4ef-3025-5851-bb55-3a587c5f54a5,CF,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Jacob Webb,ca8696cb-c1cb-5236-87ba-e060231053af,P,True,False,Chicago Cubs,Texas Rangers,away,,,,,,,,,,,,,,1,3,1,1,2,0,1,,26,1,0.3333333333333333,9.0
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Moisés Ballesteros,c41e0ec5-9f1c-57a3-96c5-193ca0c2275e,C,False,False,Chicago Cubs,Texas Rangers,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Nicky Lopez,339ab8b8-49e0-53bd-bbaf-e3d6fb44d617,PH,False,False,Chicago Cubs,Texas Rangers,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Seiya Suzuki,6b73f23f-a654-50fe-b4dd-3fa3ded653cc,RF,False,True,Chicago Cubs,Texas Rangers,away,1,0,0,0,4,1,1,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Dansby Swanson,e20a9fc7-6766-5d06-b4c8-8cf51b6d7308,SS,False,True,Chicago Cubs,Texas Rangers,away,0,1,0,0,3,1,0,1,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Nico Hoerner,b69bc55a-ea5c-59ee-bf5a-3a765fe9aa2a,2B,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,666a30a1-2424-539f-a7c5-8d7b7a8cb83e,Matt Shaw,0e584e95-3d75-5986-9cb2-4451b4d945cf,PH,False,False,Chicago Cubs,Texas Rangers,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Carter Jensen,add60a5c-95dc-503b-a5b7-79f454562e86,C,False,True,Kansas City Royals,Detroit Tigers,home,0,1,0,0,3,1,1,0,0,1,0,2,2,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Salvador Perez,fd9f5eef-c0a3-5e7e-9097-e558c01c50b1,DH,False,False,Kansas City Royals,Detroit Tigers,home,0,0,0,0,3,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Michael Massey,1b04e04b-b439-534c-b445-c87e6d4ebba8,2B,False,True,Kansas City Royals,Detroit Tigers,home,0,0,0,1,3,1,0,0,0,1,3,5,4,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Matt Strahm,0266d0bc-ec47-5b30-a8cd-d7a2b46b4ea6,P,True,False,Kansas City Royals,Detroit Tigers,home,,,,,,,,,,,,,,1,3,1,0,2,0,1,,18,1,0.3333333333333333,9.0
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Vinnie Pasquantino,160d1ebf-e65f-5f8e-a25b-00b8001bc198,1B,False,True,Kansas City Royals,Detroit Tigers,home,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Kyle Isbel,cf2183c9-e138-5f3a-8d67-6dedd3b07bfb,CF,False,True,Kansas City Royals,Detroit Tigers,home,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Michael Wacha,a9ec8092-b211-5193-8320-69a4a711a894,P,True,True,Kansas City Royals,Detroit Tigers,home,,,,,,,,,,,,,,7,21,6,2,2,0,0,,89,0,0.2857142857142857,7.714285714285714
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Maikel Garcia,31857688-327f-5f07-8b02-bc706fd384b8,3B,False,True,Kansas City Royals,Detroit Tigers,home,0,1,0,0,4,1,1,0,0,1,0,2,2,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Lane Thomas,92cdc2c8-b253-592c-b50a-1e77572b6053,LF,False,True,Kansas City Royals,Detroit Tigers,home,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Jac Caglianone,ec14685d-e1f1-5cf3-8532-ae72ed66c00b,RF,False,True,Kansas City Royals,Detroit Tigers,home,1,0,0,0,3,1,0,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Steven Cruz,8094ad84-13c4-5253-8f03-e78cc14cae96,P,True,False,Kansas City Royals,Detroit Tigers,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,15,0,0.6666666666666666,18.0
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Bobby Witt Jr.,355275f4-ce4a-5c49-a0e4-cadfa2e8a083,SS,False,True,Kansas City Royals,Detroit Tigers,home,0,0,0,1,4,1,0,0,0,1,2,4,4,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Zach McKinstry,fac18760-19d9-5b9e-9954-2f9442ed2b6a,2B,False,True,Detroit Tigers,Kansas City Royals,away,0,0,0,0,4,0,1,1,1,0,0,0,0,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Hao-Yu  Lee,eda57f37-5ed7-563c-a8e6-f9248cf2ab02,3B,False,False,Detroit Tigers,Kansas City Royals,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Ty Madden,ed685134-42d2-581d-9480-ee49a15b7fdf,P,True,False,Detroit Tigers,Kansas City Royals,away,,,,,,,,,,,,,,6,18,5,2,2,1,3,,87,3,0.2777777777777778,7.5
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Riley Greene,bbee493e-0329-5be6-8cd9-78d86c4bba58,LF,False,True,Detroit Tigers,Kansas City Royals,away,0,1,0,0,4,1,1,1,0,0,1,2,2,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Tyler Holton,89032a74-1422-5c27-86cd-461d059aad94,P,True,False,Detroit Tigers,Kansas City Royals,away,,,,,,,,,,,,,,1.2,5,0,0,1,0,0,,13,0,0.0,0.0
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Kevin McGonigle,564bb172-7dfb-573e-b0f7-7f5cbdd0d547,SS,False,True,Detroit Tigers,Kansas City Royals,away,1,0,0,0,4,1,0,0,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Kerry Carpenter,fcfcc870-05a3-58ad-ae0a-2ed6a6964125,RF,False,True,Detroit Tigers,Kansas City Royals,away,1,0,0,0,1,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Burch Smith,f5f097eb-3cac-5345-816b-6dd1306f9461,P,True,True,Detroit Tigers,Kansas City Royals,away,,,,,,,,,,,,,,0.1,1,0,0,3,1,2,,11,2,0.0,0.0
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Spencer Torkelson,c12eb080-7e57-5145-9dc7-97b7b4c97921,1B,False,True,Detroit Tigers,Kansas City Royals,away,0,1,0,0,4,1,0,2,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Jake Rogers,a453eaa6-83a1-5a3d-a91f-ed4bebd865c9,C,False,True,Detroit Tigers,Kansas City Royals,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Matt Vierling,89a3e61c-5176-5488-8084-f6d7dcdbeb37,CF,False,True,Detroit Tigers,Kansas City Royals,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Dillon Dingler,ddcd399c-63b6-5add-9222-5d69a6f9b45d,DH,False,False,Detroit Tigers,Kansas City Royals,away,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Colt Keith,cadc4708-5d0a-56ac-84d0-feced1704a81,3B,False,True,Detroit Tigers,Kansas City Royals,away,0,0,0,0,3,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,190a82d5-067b-5c73-ae30-92fa2af7ac0a,Wenceel Pérez,2bdf2cf8-d4bf-52bc-ad2c-0775e85e014b,RF,False,False,Detroit Tigers,Kansas City Royals,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Chad Patrick,07d269f1-363e-54eb-b704-7da30e241cbb,P,True,False,Milwaukee Brewers,New York Yankees,home,,,,,,,,,,,,,,3,9,5,1,2,0,0,,48,0,0.5555555555555556,15.0
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Luis Rengifo,34a19134-3072-5658-be7e-16d1c8533083,3B,False,True,Milwaukee Brewers,New York Yankees,home,0,0,0,0,4,0,1,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Jackson Chourio,e7320035-4486-5dc5-8661-0d7cee152983,LF,False,True,Milwaukee Brewers,New York Yankees,home,1,0,0,0,5,1,0,1,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Jake Bauers,1edd13e9-ec6a-5f79-8552-5d5fc7103f60,1B,False,True,Milwaukee Brewers,New York Yankees,home,0,0,0,1,4,1,0,2,0,1,1,3,4,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Sal Frelick,fbeddaa0-1580-5140-bb70-6bb9ea57a062,RF,False,True,Milwaukee Brewers,New York Yankees,home,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Andrew Vaughn,b3581b74-f59a-5e18-98d1-2f2893fe2284,PH,False,False,Milwaukee Brewers,New York Yankees,home,0,0,0,0,1,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Kyle Harrison,9e5e3c90-f681-5f6b-a390-9bd266333c23,P,True,True,Milwaukee Brewers,New York Yankees,home,,,,,,,,,,,,,,4,12,6,4,4,1,2,,77,2,0.5,13.5
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Tyler Black,86f0fda2-953d-5d1d-8a74-eb5969bf196b,DH,False,False,Milwaukee Brewers,New York Yankees,home,0,0,0,0,2,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Aaron Ashby,a179f3a3-8e06-5673-b70c-d3a3a48bb33f,P,True,False,Milwaukee Brewers,New York Yankees,home,,,,,,,,,,,,,,2,6,3,1,1,0,0,,27,1,0.5,13.5
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Garrett Mitchell,b17ada3b-673f-55c3-b967-d8543791af21,CF,False,True,Milwaukee Brewers,New York Yankees,home,1,0,0,0,4,1,0,2,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,David Hamilton,02280a6a-1789-5079-b10f-1509ff8850e3,SS,False,True,Milwaukee Brewers,New York Yankees,home,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Blake Perkins,02511963-abbe-57ce-8d51-ad04cd9689b7,DH,False,False,Milwaukee Brewers,New York Yankees,home,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,William Contreras,3453e023-6f8f-5212-8105-189c90757865,C,False,True,Milwaukee Brewers,New York Yankees,home,2,0,0,0,5,2,0,0,0,0,2,4,2,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Brice Turang,8b7764c4-ff5a-5daf-9dc5-044259e0b377,2B,False,True,Milwaukee Brewers,New York Yankees,home,1,0,0,0,5,1,0,0,1,1,0,2,1,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Gary Sánchez,9122c697-55df-5827-bf89-d1705013c3f7,PH,False,False,Milwaukee Brewers,New York Yankees,home,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,DL Hall,04d83ed6-df90-5751-a202-d96d250bd2bb,P,True,False,Milwaukee Brewers,New York Yankees,home,,,,,,,,,,,,,,1,3,1,1,0,0,0,,16,0,0.3333333333333333,9.0
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,José Caballero,3f93b7e1-37f4-53fe-bb17-5a7915995b76,SS,False,True,New York Yankees,Milwaukee Brewers,away,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Spencer Jones,536d996f-8e83-56d0-87ba-99aa979badf3,CF,False,True,New York Yankees,Milwaukee Brewers,away,0,0,0,0,3,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Max Schuemann,6f791aa7-58de-57cb-9344-2e9cbfd76077,LF,False,False,New York Yankees,Milwaukee Brewers,away,0,0,0,0,0,0,0,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Amed Rosario,18dd22ed-d387-5bf0-957d-c3cff4edde3c,3B,False,True,New York Yankees,Milwaukee Brewers,away,0,1,0,0,4,1,1,1,0,1,0,2,2,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Aaron Judge,e0e52a0f-4e54-5f0c-b584-6ec85c33c7f7,RF,False,True,New York Yankees,Milwaukee Brewers,away,0,0,0,0,5,0,3,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Ryan McMahon,d0d749e6-fb57-548c-9393-e889a94c8291,3B,False,False,New York Yankees,Milwaukee Brewers,away,1,0,0,0,1,1,0,0,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Tim Hill,384dc4b2-51ff-5793-aac7-63641d20da3f,P,True,False,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,0.1,1,0,0,0,0,0,,7,0,0.0,0.0
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Paul Goldschmidt,f846be2d-cc6b-5f1a-b6f1-d5c84b8ed6a2,1B,False,True,New York Yankees,Milwaukee Brewers,away,2,0,0,1,5,3,0,1,0,1,2,6,6,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Austin Wells,2e880dd6-2476-55d3-990b-4d3f66d3f496,C,False,True,New York Yankees,Milwaukee Brewers,away,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Ben Rice,f7714f04-8c9d-5c9a-b8bb-0f423271af17,DH,False,False,New York Yankees,Milwaukee Brewers,away,0,0,0,0,5,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Brent Headrick,bbf3b86d-c5c5-5f37-a0c5-be6d962c31e1,P,True,False,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,1.1,4,1,1,1,1,1,,20,1,0.25,6.75
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Fernando Cruz,d385d787-f0ae-5bba-bf3f-b2fc35d2781a,P,True,False,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,0.1,1,0,1,1,0,1,,10,2,0.0,0.0
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Cody Bellinger,04e3eefb-9d41-548f-ba06-60abe4b82454,1B,False,True,New York Yankees,Milwaukee Brewers,away,1,0,0,0,5,1,1,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Jazz Chisholm Jr.,bce3e6ee-1f99-5f80-90fb-c8d538c9d546,2B,False,True,New York Yankees,Milwaukee Brewers,away,1,0,0,0,4,1,1,2,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Camilo Doval,500f93ca-4d1a-5dcb-a2ab-d8efb6dcc204,P,True,False,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,0.2,2,0,0,2,0,1,,17,1,0.0,0.0
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Trent Grisham,6c818210-215a-5a0f-94c1-d805ae6b416f,CF,False,False,New York Yankees,Milwaukee Brewers,away,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,David Bednar,ee6f3fb6-e2c4-5de3-b7ed-9df513957989,P,True,False,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,1,3,1,0,0,0,0,,12,0,0.3333333333333333,9.0
+2026-05-09,7ca70d18-6fdd-507a-8a9d-bd9c18970965,Cam Schlittler,9cb33611-8908-54d9-ad1c-286244aeb890,P,True,True,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,6,18,6,0,2,0,0,,97,0,0.3333333333333333,9.0
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Tristan Peters,574e45bf-8e75-5762-ba59-2684060d441c,CF,False,True,Chicago White Sox,Seattle Mariners,home,1,1,0,0,4,2,0,1,0,0,0,2,3,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Anthony Kay,6e7bbac2-aaaa-5fbc-bf7f-feb053be3e6f,P,True,True,Chicago White Sox,Seattle Mariners,home,,,,,,,,,,,,,,5,15,5,2,3,0,0,,88,1,0.3333333333333333,9.0
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Randal Grichuk,e524f871-8bd6-58ff-95f9-a86b2ab2af66,DH,False,False,Chicago White Sox,Seattle Mariners,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Munetaka Murakami,5ef6bdd4-00f0-5b87-b02a-2ad78752c1aa,1B,False,True,Chicago White Sox,Seattle Mariners,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Chase Meidroth,b8e78229-a743-53a4-9be9-92e7b52d24ee,2B,False,True,Chicago White Sox,Seattle Mariners,home,0,1,0,0,4,1,0,1,0,1,0,2,2,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Grant Taylor,11686577-42f6-53e3-981a-46181cd1ba91,P,True,False,Chicago White Sox,Seattle Mariners,home,,,,,,,,,,,,,,2,6,3,1,0,0,0,,35,0,0.5,13.5
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Colson Montgomery,e16341a7-cdfb-58eb-93e1-88a182b5acbb,SS,False,True,Chicago White Sox,Seattle Mariners,home,0,0,0,1,4,1,0,1,0,1,2,4,4,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Tyler Schweitzer,7394b946-a09f-59db-b644-ff9ea30137a2,P,True,False,Chicago White Sox,Seattle Mariners,home,,,,,,,,,,,,,,1,3,0,0,0,0,0,,8,0,0.0,0.0
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Edgar Quero,3a107cbc-e2a4-581e-a7a7-4062370df3ac,C,False,True,Chicago White Sox,Seattle Mariners,home,1,0,0,0,4,1,0,1,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Bryan Hudson,e9a3576d-6bce-5b77-acba-80405f9e0c78,P,True,False,Chicago White Sox,Seattle Mariners,home,,,,,,,,,,,,,,1,3,1,1,1,0,0,,19,0,0.3333333333333333,9.0
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Sam Antonacci,d0e8ccdf-7ff2-5891-963f-d28eb1905e42,LF,False,True,Chicago White Sox,Seattle Mariners,home,1,0,0,0,5,1,0,2,1,2,0,3,1,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Jarred Kelenic,3affb85b-84bc-56b5-a5af-022e84b0c434,RF,False,True,Chicago White Sox,Seattle Mariners,home,1,0,0,0,4,1,1,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Miguel Vargas,62addef8-7bda-57cd-a2aa-6821f9ad6427,3B,False,True,Chicago White Sox,Seattle Mariners,home,0,0,0,2,4,2,1,1,0,2,3,7,8,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Josh Naylor,b882f91d-40d1-58ad-bd6a-b321477642c0,1B,False,True,Seattle Mariners,Chicago White Sox,away,1,0,0,0,4,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Cole Young,bef5f9c5-6df7-5ede-9aac-4b5ba8731f4b,2B,False,True,Seattle Mariners,Chicago White Sox,away,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Nick Davila,7a47a238-a0a9-57b6-916d-d0e2f89eb4c6,P,True,False,Seattle Mariners,Chicago White Sox,away,,,,,,,,,,,,,,1,3,0,0,1,0,0,,13,0,0.0,0.0
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Randy Arozarena,0f2b9cc8-a738-5f1e-be0e-5c0ae5a3ac57,LF,False,True,Seattle Mariners,Chicago White Sox,away,1,0,0,0,4,1,0,2,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,J.P. Crawford,ce4a3d59-2b69-5bf7-80a5-33fdb5ce7363,SS,False,True,Seattle Mariners,Chicago White Sox,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,José Suarez,c3d5918c-0f50-5d42-84dd-152553f1173d,P,True,False,Seattle Mariners,Chicago White Sox,away,,,,,,,,,,,,,,2,6,3,2,2,0,1,,42,1,0.5,13.5
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Cal Raleigh,21b31397-a06c-5238-83b3-90eee447e28e,DH,False,False,Seattle Mariners,Chicago White Sox,away,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Rob Refsnyder,d50036b6-f9c6-5e61-b1e5-98692a43657e,RF,False,True,Seattle Mariners,Chicago White Sox,away,0,0,0,0,4,0,0,1,0,0,1,1,0,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Luis Castillo,9d824fe2-4c47-5b73-8c22-afa12b58659f,P,True,True,Seattle Mariners,Chicago White Sox,away,,,,,,,,,,,,,,4,12,6,0,5,2,4,,84,4,0.5,13.5
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Mitch Garver,b98e67ae-d1c9-52de-bc51-5adff2b71c14,C,False,True,Seattle Mariners,Chicago White Sox,away,0,0,0,0,4,0,1,1,0,1,0,1,0,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Josh Simpson,77222525-8de9-5656-831f-164de7764d69,P,True,False,Seattle Mariners,Chicago White Sox,away,,,,,,,,,,,,,,1,3,1,0,1,1,1,,19,1,0.3333333333333333,9.0
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Leo Rivas,13efd7e6-1b6a-509b-8348-f3f74df6fce9,3B,False,True,Seattle Mariners,Chicago White Sox,away,0,0,0,0,3,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,07c93721-2cfb-55c9-9db6-833f834c7420,Julio Rodríguez,fffe4545-0e86-5407-906a-645035a15435,CF,False,True,Seattle Mariners,Chicago White Sox,away,2,0,0,0,4,2,1,1,0,0,0,2,2,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Adrian Del Castillo,f14a5267-dcfe-5df7-938c-0f94dda1ddef,DH,False,False,Arizona Diamondbacks,New York Mets,home,0,1,0,0,4,1,2,1,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Nolan Arenado,aa4157df-7915-5251-83c1-0c1f931c43f0,3B,False,True,Arizona Diamondbacks,New York Mets,home,1,0,0,0,4,1,1,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Merrill Kelly,ef587042-0434-5ddb-8c81-9ea791d10369,P,True,True,Arizona Diamondbacks,New York Mets,home,,,,,,,,,,,,,,7,21,6,3,3,0,1,,96,1,0.2857142857142857,7.714285714285714
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Ryan Waldschmidt,9664cd41-cafb-593a-be3c-71354fd30ed7,LF,False,True,Arizona Diamondbacks,New York Mets,home,0,0,0,0,3,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Ketel Marte,c81e5c80-cc33-537b-b75e-e43d4baeefd8,2B,False,True,Arizona Diamondbacks,New York Mets,home,0,1,0,0,4,1,0,0,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Ildemaro Vargas,e20d8cb6-0ba2-5399-9d20-541d1cfce0e7,1B,False,True,Arizona Diamondbacks,New York Mets,home,1,0,0,0,4,1,0,0,0,0,2,3,1,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Geraldo Perdomo,f16aabac-5df9-5d25-854f-705f0f9b265a,SS,False,True,Arizona Diamondbacks,New York Mets,home,1,0,0,0,4,1,1,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Paul Sewald,7dc315ea-efc2-5c83-be43-b52bb30e7944,P,True,False,Arizona Diamondbacks,New York Mets,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,17,0,0.6666666666666666,18.0
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Gabriel Moreno,18e63c5c-4632-5dbc-9084-71bfa57a99c7,C,False,True,Arizona Diamondbacks,New York Mets,home,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Corbin Carroll,3b6210c9-3db8-5b34-9af5-e972d0b61b99,RF,False,True,Arizona Diamondbacks,New York Mets,home,1,0,0,0,4,1,0,0,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Taylor Clarke,ee4ac798-96a7-5034-946b-19e82de3d346,P,True,False,Arizona Diamondbacks,New York Mets,home,,,,,,,,,,,,,,1,3,0,0,0,0,0,,12,0,0.0,0.0
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Lourdes Gurriel Jr.,2fcb0c8e-c212-509a-a6c5-379cd814c9a4,LF,False,True,Arizona Diamondbacks,New York Mets,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Jorge Barrosa,a7bb2eb0-3405-55cc-a5f2-d51828ea32dd,CF,False,False,Arizona Diamondbacks,New York Mets,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Bo Bichette,33496f7a-3b83-59ef-b119-01d0d2437f28,SS,False,True,New York Mets,Arizona Diamondbacks,away,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Tyrone Taylor,8fc7ace9-e93d-58ba-b637-cdf5daaef922,CF,False,True,New York Mets,Arizona Diamondbacks,away,0,1,0,0,3,1,0,0,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Francisco Alvarez,f87397a4-f111-5de9-bdd5-ccb027f66a9c,C,False,True,New York Mets,Arizona Diamondbacks,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Mark Vientos,a659963f-2607-5990-8edb-583d390591c8,1B,False,True,New York Mets,Arizona Diamondbacks,away,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Austin Warren,d4561c32-c350-5c49-b5f6-fe4418142c25,P,True,False,New York Mets,Arizona Diamondbacks,away,,,,,,,,,,,,,,1.1,4,1,0,1,0,0,,17,0,0.25,6.75
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Brett Baty,aa321d05-4b90-5b2d-823f-5fe77a11ec6c,3B,False,True,New York Mets,Arizona Diamondbacks,away,0,1,0,0,3,1,0,1,0,0,1,2,2,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Carson Benge,631e3061-0f1e-5f0c-b1d3-ebbdfd16f053,RF,False,True,New York Mets,Arizona Diamondbacks,away,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Marcus Semien,ea54830a-4412-565e-8199-20eca49f0dd0,2B,False,True,New York Mets,Arizona Diamondbacks,away,1,0,0,0,3,1,0,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,MJ Melendez,012e9c76-38a2-593a-9308-d8732fa78288,DH,False,False,New York Mets,Arizona Diamondbacks,away,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Clay Holmes,422aea09-aa2d-5124-886c-7f45c5910bf9,P,True,True,New York Mets,Arizona Diamondbacks,away,,,,,,,,,,,,,,5.2,17,6,2,5,0,2,,103,2,0.35294117647058826,9.529411764705882
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Craig Kimbrel,e171bb4c-ebfd-540c-a7af-2c5afc88deb3,P,True,False,New York Mets,Arizona Diamondbacks,away,,,,,,,,,,,,,,1,3,1,2,0,0,0,,19,0,0.3333333333333333,9.0
+2026-05-09,da18d3a3-e30e-5fbb-a420-b9d4a8605df6,Juan Soto,c49ab650-1d5f-5066-83e1-ff734f609942,LF,False,True,New York Mets,Arizona Diamondbacks,away,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Freddy Fermin,37406aad-ae18-5be2-8439-0a0b3ab54a22,C,False,True,San Diego Padres,St. Louis Cardinals,home,2,0,0,0,3,2,0,0,0,1,0,3,2,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Mason Miller,aa48482d-99f3-59cc-89f4-84b9eb7d405e,P,True,False,San Diego Padres,St. Louis Cardinals,home,,,,,,,,,,,,,,1.1,4,4,2,0,0,0,,29,0,1.0,27.0
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Jackson Merrill,0b80ef12-9566-5b94-973d-d1151b0e69ac,CF,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Jason Adam,a4f0982b-d6ee-58e2-9934-fef8c2337ad1,P,True,False,San Diego Padres,St. Louis Cardinals,home,,,,,,,,,,,,,,1,3,0,0,0,0,0,,11,0,0.0,0.0
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Sung-Mun Song,73e944ec-453d-5c36-8a02-543b5dc7f8b7,2B,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,3,0,1,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Jeremiah Estrada,ee6fb957-7f4c-5dfe-ae02-b44359338c92,P,True,False,San Diego Padres,St. Louis Cardinals,home,,,,,,,,,,,,,,1,3,1,0,0,0,0,,15,0,0.3333333333333333,9.0
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Gavin Sheets,5f058b73-019c-573c-b5f2-d01f2e56cd0b,DH,False,False,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Ramón Laureano,dabca3a1-56c7-5218-8ab7-31a707ea9795,LF,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,3,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Adrian Morejon,311a75d7-a828-50c4-b614-a72d2ff657a3,P,True,False,San Diego Padres,St. Louis Cardinals,home,,,,,,,,,,,,,,0.2,2,1,0,1,0,1,,14,1,0.5,13.5
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Manny Machado,a9385e18-b1c3-52e8-b03b-b70d1f8a34af,3B,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,1,4,1,0,2,0,1,1,3,4,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Ty France,e151e020-3f09-5095-83ad-b79d0d4dcfc2,1B,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,1,3,1,0,1,0,1,1,3,4,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Fernando Tatis Jr.,ac1ed075-5e29-5566-994f-09b1af7af1b9,RF,False,True,San Diego Padres,St. Louis Cardinals,home,1,0,0,0,4,1,0,2,0,0,2,3,1,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Xander Bogaerts,c2029f6d-a0ef-5980-850b-3d9f8f0ec784,SS,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,4,0,0,1,1,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Randy Vásquez,002db510-3cfc-5c2a-b0c2-ed47c0da0a47,P,True,True,San Diego Padres,St. Louis Cardinals,home,,,,,,,,,,,,,,5,15,6,0,6,0,1,,94,1,0.4,10.8
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Nolan Gorman,be501aad-9273-5dd4-a194-dcbebb3849ba,3B,False,True,St. Louis Cardinals,San Diego Padres,away,1,0,0,0,4,1,1,2,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Matt Svanson,88304b64-9d4b-50f4-91e1-07fd0bab795d,P,True,False,St. Louis Cardinals,San Diego Padres,away,,,,,,,,,,,,,,1,3,1,0,1,1,1,,16,1,0.3333333333333333,9.0
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Jordan Walker,e10767c9-8f24-56db-9597-f92e37c6514d,RF,False,True,St. Louis Cardinals,San Diego Padres,away,1,0,0,0,4,1,0,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Nathan Church,b5df23ff-260a-5bc9-b5d7-884ca21ef688,CF,False,True,St. Louis Cardinals,San Diego Padres,away,1,1,0,0,4,2,1,0,0,0,1,3,3,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Victor Scott II,4505d0dc-de10-56ef-ab3f-29ed1056473f,DH,False,False,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,José Fermín,1a68501f-5654-55ab-9262-74e5a153a9f7,PH,False,False,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,JJ Wetherholt,c0507a84-2f5c-53c7-8260-93f2e7bc2162,2B,False,True,St. Louis Cardinals,San Diego Padres,away,1,0,0,0,5,1,0,1,1,1,0,2,1,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Justin Bruihl,133de3fb-6d64-5e4e-8774-81d2b394a7f0,P,True,False,St. Louis Cardinals,San Diego Padres,away,,,,,,,,,,,,,,1,3,2,0,1,0,0,,15,0,0.6666666666666666,18.0
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Alec Burleson,68452ca8-6fdd-5413-a220-a1e5177c8deb,1B,False,True,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Thomas Saggese,2799ba82-8b39-5d8b-b88f-ad038b5979a6,LF,False,True,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Yohel Pozo,b28de7f2-302d-5255-b984-df263811211b,C,False,False,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Pedro Pagés,719006eb-d990-515a-9cb3-2a4186659958,C,False,True,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,2,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Dustin May,65d08fee-54e0-591e-80cb-a1ff09f1060f,P,True,True,St. Louis Cardinals,San Diego Padres,away,,,,,,,,,,,,,,6,18,7,2,3,1,2,,97,3,0.3888888888888889,10.5
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Masyn Winn,ddea3cbf-3275-5d72-a43d-5899f5fa2390,SS,False,True,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,42802eda-1efd-5c29-9dd1-4ae6141dda2d,Iván Herrera,2b86e80e-433d-54c4-a2c1-a0d16d28e3dc,DH,False,False,St. Louis Cardinals,San Diego Padres,away,1,1,0,0,4,2,0,1,0,0,1,3,3,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,JT Brubaker,38205866-ae17-547a-b000-5b6b1cb1e0e7,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,0.2,2,1,0,4,0,3,,30,4,0.5,13.5
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Heliot Ramos,521d9176-c734-5b63-9285-a4ab783f6edd,LF,False,True,San Francisco Giants,Pittsburgh Pirates,home,2,0,0,0,4,2,1,0,0,1,0,3,2,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Ryan Walker,9692f352-63be-5068-b624-e61be6dd9643,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,0.2,2,1,1,3,0,2,,26,2,0.5,13.5
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Gregory Santos,56ae308b-b51e-515d-bc01-7f520cbb9674,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,1.1,4,0,1,2,0,0,,32,2,0.0,0.0
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Matt Chapman,2c47b345-ac3d-53c1-b77e-6c5fa7a469bb,3B,False,True,San Francisco Giants,Pittsburgh Pirates,home,1,0,0,0,4,1,1,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Ryan Borucki,a704f31f-a733-515e-a72b-c7063003b288,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,0.2,2,0,0,2,0,1,,16,1,0.0,0.0
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Drew Gilbert,01bdd52f-0286-5f20-88e2-428d2bff776a,CF,False,True,San Francisco Giants,Pittsburgh Pirates,home,0,0,0,0,4,0,1,1,0,0,1,1,0,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Jung Hoo Lee,5233b094-55d5-5790-9af1-e92aeb0a3f2a,RF,False,True,San Francisco Giants,Pittsburgh Pirates,home,1,0,0,0,5,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Rafael Devers,c9835c18-6f1f-57cd-a2ff-0ff6d821b16c,1B,False,True,San Francisco Giants,Pittsburgh Pirates,home,0,0,0,0,3,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Logan Porter,122e7664-f81b-58d8-bc3f-21e760de517c,PR,False,False,San Francisco Giants,Pittsburgh Pirates,home,0,0,0,0,0,0,0,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Eric Haase,1c6c58c5-5362-5ff7-99c1-ca0cf9ab02f0,C,False,True,San Francisco Giants,Pittsburgh Pirates,home,1,0,0,0,4,1,0,1,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Christian Koss,0a846ded-a34c-5373-8d5f-cd3048928b3d,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,0,0,0,0,1,0,0,0,0,0,0,0,0,1,3,0,0,5,0,3,,19,3,0.0,0.0
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Willy Adames,78cc8077-60d2-554c-b37f-99c3e17b50a1,SS,False,True,San Francisco Giants,Pittsburgh Pirates,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Landen Roupp,d87458fb-d1cc-5b8c-a760-cb24413ddd33,P,True,True,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,4,12,8,3,3,0,1,,94,1,0.6666666666666666,18.0
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Luis Arraez,b0939c49-253b-5c8b-b011-386ee0b6e0bc,2B,False,True,San Francisco Giants,Pittsburgh Pirates,home,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Bryce Eldridge,dd4f319b-4be1-561c-b14a-cbbad889380d,1B,False,False,San Francisco Giants,Pittsburgh Pirates,home,0,0,0,1,4,1,0,0,0,1,1,3,4,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Matt Gage,79ab18d4-d05e-5433-9b36-3615c6d9c396,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,0.2,2,1,0,1,0,0,,15,0,0.5,13.5
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Nick Yorke,1ec28c26-6eac-5cd2-a2ff-00200609c539,LF,False,False,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Spencer Horwitz,d94f34aa-a84a-53a8-b552-cc31e58a6ff4,1B,False,True,Pittsburgh Pirates,San Francisco Giants,away,0,1,0,0,5,1,2,1,0,2,1,4,2,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Brandon Lowe,01a36894-6133-59b2-8a70-8948f1acd43b,2B,False,True,Pittsburgh Pirates,San Francisco Giants,away,0,1,1,0,6,2,1,1,0,2,4,8,5,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Joey Bart,c6f87aba-136b-52a1-a62d-fc18d3372db4,C,False,True,Pittsburgh Pirates,San Francisco Giants,away,4,0,0,0,5,4,0,0,0,3,2,9,4,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Bryan Reynolds,141b2899-de5b-5dc9-b9f4-e519b8211bb2,LF,False,True,Pittsburgh Pirates,San Francisco Giants,away,1,0,0,0,5,1,1,1,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Oneil Cruz,508aae39-e756-5c0b-aceb-61dcb5848fe3,CF,False,True,Pittsburgh Pirates,San Francisco Giants,away,3,0,0,0,6,3,0,2,1,3,0,6,3,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Evan Sisk,585da913-eb35-5786-99ca-c05ca0762b1f,P,True,False,Pittsburgh Pirates,San Francisco Giants,away,,,,,,,,,,,,,,1,3,1,0,0,0,0,,10,0,0.3333333333333333,9.0
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Jared Triolo,b3830745-d362-5cb9-9a24-395ac01a9fa6,SS,False,False,Pittsburgh Pirates,San Francisco Giants,away,1,0,0,0,1,1,0,0,0,0,1,2,1,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Billy Cook,5b749f94-01ec-5c92-96f9-666b6cb896c7,RF,False,False,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Konnor Griffin,5a897113-adf9-5343-8f9d-15a2e37ba682,SS,False,True,Pittsburgh Pirates,San Francisco Giants,away,1,0,0,0,5,1,0,2,0,1,2,4,1,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Cam Sanders,9cc3f0ea-4bef-5813-8052-e9a050538c18,P,True,False,Pittsburgh Pirates,San Francisco Giants,away,,,,,,,,,,,,,,1,3,0,3,1,0,2,,34,2,0.0,0.0
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Ryan O'Hearn,bffaa283-7254-53ef-91d3-5520a44d1888,RF,False,True,Pittsburgh Pirates,San Francisco Giants,away,2,0,0,0,6,2,1,0,0,1,1,4,2,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Nick Gonzales,874ea46d-0569-5ecc-85e6-b448bfe30555,3B,False,True,Pittsburgh Pirates,San Francisco Giants,away,3,1,0,0,6,4,0,1,0,1,0,5,5,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Marcell Ozuna,bef29d2e-a08c-5c3f-8b74-f3c204725a37,DH,False,False,Pittsburgh Pirates,San Francisco Giants,away,0,1,0,0,6,1,0,3,0,0,0,1,2,,,,,,,,,,,,
+2026-05-09,575e0063-9552-5e13-8330-84e497001ea1,Braxton Ashcraft,2c711a83-35d1-5a49-94c8-b4be78da7ddd,P,True,True,Pittsburgh Pirates,San Francisco Giants,away,,,,,,,,,,,,,,7,21,6,0,6,1,1,,80,1,0.2857142857142857,7.714285714285714
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Will Smith,a99e1cc5-b7ce-57f3-b25f-a35eb434a138,C,False,True,Los Angeles Dodgers,Atlanta Braves,home,1,0,0,0,4,1,1,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Dalton Rushing,d49e7d8f-8d2e-518f-a9d4-502538f99c0d,1B,False,False,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Kyle Tucker,2de01d55-4dd3-5bc3-b8e2-7859bbfdb79f,RF,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,2,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Max Muncy,8d258a66-1273-5363-89c6-87933a281e74,3B,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,2,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Freddie Freeman,6ddad2d6-c3a0-5592-8632-a05db59af193,1B,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Edgardo Henriquez,dacef558-1255-5f2b-819c-8fc3f6464d4d,P,True,False,Los Angeles Dodgers,Atlanta Braves,home,,,,,,,,,,,,,,1.2,5,1,1,1,0,1,,34,1,0.2,5.3999999999999995
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Hyeseong Kim,f479d901-69d0-5cad-b7c8-aed3bc6d86d7,SS,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Santiago Espinal,a6051a2b-8e43-5f32-94c1-a080049150ea,3B,False,False,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,2,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Shohei Ohtani,c4531087-0c95-5e6e-8d3c-604e0b0fc776,DH,False,False,Los Angeles Dodgers,Atlanta Braves,home,1,0,0,0,4,1,0,2,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Teoscar Hernández,963905ee-cf72-5886-afd2-4e77a95c6134,LF,False,True,Los Angeles Dodgers,Atlanta Braves,home,1,0,0,0,4,1,1,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Andy Pages,1057dfe8-f4c3-58d4-be2b-63d4efdf2228,CF,False,True,Los Angeles Dodgers,Atlanta Braves,home,1,0,0,1,4,2,0,1,0,1,2,5,5,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Alex Call,5f08248b-5277-5287-86f6-a8b1f95cd171,RF,False,False,Los Angeles Dodgers,Atlanta Braves,home,0,1,0,0,2,1,0,0,0,1,0,2,2,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Blake Snell,b445247a-b236-51b0-a7ff-ecee61feb0ac,P,True,True,Los Angeles Dodgers,Atlanta Braves,home,,,,,,,,,,,,,,3,9,5,2,6,0,4,,77,5,0.5555555555555556,15.0
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Jack Dreyer,484819ba-27e1-5084-a8c3-a36e35b180f4,P,True,False,Los Angeles Dodgers,Atlanta Braves,home,,,,,,,,,,,,,,1.1,4,0,0,1,0,0,,11,0,0.0,0.0
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Alex Freeland,ba5ee049-6fb5-5806-9480-5a14650880ba,2B,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,3,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Paul Gervase,c2ef4a95-0816-53db-aa9e-7768d395263e,P,True,False,Los Angeles Dodgers,Atlanta Braves,home,,,,,,,,,,,,,,3,9,5,1,4,0,1,,50,1,0.5555555555555556,15.0
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Spencer Strider,79d892a2-c8bf-53aa-ad22-d6452dee98b9,P,True,True,Atlanta Braves,Los Angeles Dodgers,away,,,,,,,,,,,,,,6,18,8,2,1,0,0,,91,0,0.4444444444444444,12.0
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Dylan Lee,b6a9d913-8436-591d-a9cd-80087848a2ad,P,True,False,Atlanta Braves,Los Angeles Dodgers,away,,,,,,,,,,,,,,1,3,0,0,1,0,0,,18,0,0.0,0.0
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Michael Harris II,cff14015-b6ae-555e-a442-60e9ddb08b61,CF,False,True,Atlanta Braves,Los Angeles Dodgers,away,0,1,0,0,5,1,0,2,0,0,1,2,2,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Jorge Mateo,9599b336-e628-59ce-ad5c-a8e26c743dc4,SS,False,True,Atlanta Braves,Los Angeles Dodgers,away,2,0,0,0,4,2,0,1,0,2,0,4,2,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Mauricio Dubón,47d09ee0-3ea8-5df2-b34c-c6fd76faa3fb,LF,False,True,Atlanta Braves,Los Angeles Dodgers,away,2,0,0,0,5,2,1,0,0,1,0,3,2,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Drake Baldwin,1e5f1f08-e9ec-57db-b15f-c1ec8d14d85e,DH,False,False,Atlanta Braves,Los Angeles Dodgers,away,1,0,0,0,5,1,2,1,0,1,1,3,1,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Matt Olson,fa607d2a-7f47-5352-8330-cb074e809054,1B,False,True,Atlanta Braves,Los Angeles Dodgers,away,2,0,0,0,5,2,0,2,1,0,2,4,2,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Dominic Smith,a71b9e93-42ca-5a21-9c07-6aa70b6b9bae,PH,False,False,Atlanta Braves,Los Angeles Dodgers,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Sean Murphy,8734b2e9-b1b0-5750-87c2-7a9d74e7c990,C,False,True,Atlanta Braves,Los Angeles Dodgers,away,0,0,0,0,5,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Reynaldo López,6a84d7bc-7ed4-5fa4-9aaa-a01abdd81b6b,P,True,False,Atlanta Braves,Los Angeles Dodgers,away,,,,,,,,,,,,,,2,6,1,1,4,1,2,,42,2,0.16666666666666666,4.5
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Eli White,834441df-51be-58ee-b9ae-8897115e2079,RF,False,True,Atlanta Braves,Los Angeles Dodgers,away,1,0,0,0,2,1,0,0,1,1,0,2,1,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Ozzie Albies,360c17ce-8588-52bd-b86a-6621a43f1bac,2B,False,True,Atlanta Braves,Los Angeles Dodgers,away,2,0,0,0,5,2,0,0,0,1,2,5,2,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Austin Riley,3ae0fd65-efd0-5a3b-872b-7150b0c699aa,3B,False,True,Atlanta Braves,Los Angeles Dodgers,away,1,0,0,0,5,1,1,1,0,1,1,3,1,,,,,,,,,,,,
+2026-05-09,a417e82e-1114-54b3-b3a4-3f7289820419,Mike Yastrzemski,1a244f8f-82ee-555a-b1af-aa44b0f2ff31,RF,False,False,Atlanta Braves,Los Angeles Dodgers,away,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Josh Ekness,5d9d0e96-1193-55d4-9c53-bee482330eca,P,True,False,Miami Marlins,Washington Nationals,home,,,,,,,,,,,,,,0.1,1,0,0,0,0,0,,3,0,0.0,0.0
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Heriberto Hernández,4be49799-348b-535b-b44d-1a42d82eb903,LF,False,True,Miami Marlins,Washington Nationals,home,2,0,0,0,4,2,0,0,0,0,2,4,2,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Christopher Morel,0dc01b9f-0fcd-51a9-b766-c7b906f98555,DH,False,False,Miami Marlins,Washington Nationals,home,1,0,0,0,4,1,0,2,1,1,1,3,1,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Sandy Alcantara,ff45d73c-8c81-5f15-af71-8955fedab81a,P,True,True,Miami Marlins,Washington Nationals,home,,,,,,,,,,,,,,6,18,3,2,5,0,2,,89,2,0.16666666666666666,4.5
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Esteury Ruiz,2109b44b-f104-5d94-b0aa-64d757de2af2,RF,False,False,Miami Marlins,Washington Nationals,home,0,0,0,0,0,0,0,0,1,1,0,1,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Jakob Marsee,0af43782-4c0c-52a9-94e2-9d9a6da68ce7,CF,False,True,Miami Marlins,Washington Nationals,home,1,0,0,0,4,1,1,1,2,1,0,2,1,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Calvin Faucher,c8a18109-5049-5421-abbc-a265039766c8,P,True,False,Miami Marlins,Washington Nationals,home,,,,,,,,,,,,,,2,6,0,1,0,0,0,,25,0,0.0,0.0
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Javier Sanoja,acccf65d-36f3-5f61-99bf-e798a2a4f76d,3B,False,True,Miami Marlins,Washington Nationals,home,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Xavier Edwards,c495c968-61ae-5861-89a0-df7170538ff7,2B,False,True,Miami Marlins,Washington Nationals,home,1,0,0,0,4,1,0,2,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Kyle Stowers,c87991a1-a7cc-51a8-a223-048d5b8e1e29,RF,False,True,Miami Marlins,Washington Nationals,home,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Liam Hicks,0d5739d9-0891-5f5a-b4f5-07b6afa2f305,1B,False,True,Miami Marlins,Washington Nationals,home,1,0,0,0,4,1,0,0,0,0,1,2,1,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Andrew Nardi,2478f896-56e6-548d-ae94-b92ae1afd232,P,True,False,Miami Marlins,Washington Nationals,home,,,,,,,,,,,,,,0.2,2,2,0,1,0,0,,16,0,1.0,27.0
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Joe Mack,5e106d1a-3624-5bc2-8e27-db4fa7db1d8a,C,False,True,Miami Marlins,Washington Nationals,home,0,0,0,0,4,0,1,1,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Otto Lopez,5fd2366a-e489-58b4-8ad3-0c6eaaff57c9,SS,False,True,Miami Marlins,Washington Nationals,home,0,0,0,0,4,0,0,1,0,0,1,1,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Brady House,9feee2d5-f011-5be3-91f0-b7e2597e0107,3B,False,True,Washington Nationals,Miami Marlins,away,0,0,0,0,4,0,0,0,0,0,1,1,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,CJ Abrams,41388dc3-6936-557e-b1ee-d12bd42cb0ef,DH,False,False,Washington Nationals,Miami Marlins,away,0,0,0,0,4,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Nasim Nuñez,30523871-5578-5f5a-850f-d3e42eaec507,SS,False,True,Washington Nationals,Miami Marlins,away,0,0,0,0,3,0,2,0,1,0,0,0,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Drew Millas,4ed01cdc-a11e-5925-ae16-e8eef2ecabea,C,False,True,Washington Nationals,Miami Marlins,away,0,0,0,0,3,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Jorbit Vivas,fdbd86ba-3c8c-5410-8547-5624b69d521e,2B,False,True,Washington Nationals,Miami Marlins,away,1,0,0,0,3,1,0,0,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,PJ Poulin,2aa6d4e2-dd19-565e-bf81-e69997422391,P,True,False,Washington Nationals,Miami Marlins,away,,,,,,,,,,,,,,0.1,1,0,0,0,0,0,,6,0,0.0,0.0
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Curtis Mead,de63b36a-f5df-5a64-8245-6fab9e96c9d5,PH,False,False,Washington Nationals,Miami Marlins,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Daylen Lile,3b2cb564-a3bb-5ec4-8464-227b212049f9,LF,False,True,Washington Nationals,Miami Marlins,away,1,1,0,0,4,2,0,1,0,0,0,2,3,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,James Wood,3089b190-81f6-5e6c-ba91-a8d4cdf0be3a,RF,False,True,Washington Nationals,Miami Marlins,away,0,1,0,0,4,1,0,0,0,0,0,1,2,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Cade Cavalli,802d91c6-b4e2-5c8d-90dd-d67f67a4445d,P,True,True,Washington Nationals,Miami Marlins,away,,,,,,,,,,,,,,5.2,17,4,1,4,0,2,,95,2,0.23529411764705882,6.352941176470588
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Jacob Young,d263f19b-c5d6-523a-bc57-bce7884eb99a,CF,False,True,Washington Nationals,Miami Marlins,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Orlando Ribalta,ee8b6ca5-80f4-5c3b-9982-3519dec59506,P,True,False,Washington Nationals,Miami Marlins,away,,,,,,,,,,,,,,1,3,1,0,0,0,0,,10,0,0.3333333333333333,9.0
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Gus Varland,d80159ca-3062-5587-8a54-9592c50b4423,P,True,False,Washington Nationals,Miami Marlins,away,,,,,,,,,,,,,,0.1,1,1,2,2,0,3,,28,3,1.0,27.0
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Paxton Schultz,737d598a-1603-5f47-bb7f-28761c623cdb,P,True,False,Washington Nationals,Miami Marlins,away,,,,,,,,,,,,,,0.2,2,1,0,0,0,0,,7,0,0.5,13.5
+2026-05-10,bec5a396-e172-58d0-97c0-21a8c2ad5e96,Luis García Jr.,a615adb8-655d-531d-a63e-5a267e66845b,1B,False,True,Washington Nationals,Miami Marlins,away,0,1,1,0,4,2,0,0,0,1,1,4,5,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Jeremiah Jackson,79a8c5e7-b511-5a4a-a093-00ac948ae519,2B,False,False,Baltimore Orioles,Athletics,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Keegan Akin,66a5923d-f643-55af-9639-28e38c392e74,P,True,True,Baltimore Orioles,Athletics,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,13,0,0.6666666666666666,18.0
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Samuel Basallo,e2832358-42f4-5d2e-b14c-498693dbb679,C,False,True,Baltimore Orioles,Athletics,home,0,1,0,0,4,1,0,2,0,1,0,2,2,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Rico Garcia,bf7d81c5-2227-5bb3-947e-5a93eb72d466,P,True,False,Baltimore Orioles,Athletics,home,,,,,,,,,,,,,,1,3,1,1,0,0,0,,17,0,0.3333333333333333,9.0
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Weston Wilson,8138f92c-5424-5bfb-8e09-b02741b7e7cc,3B,False,True,Baltimore Orioles,Athletics,home,0,0,0,0,3,0,2,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Gunnar Henderson,8dd2ac6f-561c-5af1-b076-5e81f0f4e199,SS,False,True,Baltimore Orioles,Athletics,home,2,0,0,0,4,2,0,1,0,0,1,3,2,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Leody Taveras,3ec5beae-5884-53b2-80db-f719fafea82c,CF,False,True,Baltimore Orioles,Athletics,home,1,0,0,0,4,1,0,0,1,0,0,1,1,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Taylor Ward,ecd13d9a-09c8-5341-a9c1-42cd969b9bfd,LF,False,True,Baltimore Orioles,Athletics,home,0,0,0,0,4,0,2,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Dylan Beavers,6713c09d-171a-5996-8551-2d6cbdcc460f,RF,False,True,Baltimore Orioles,Athletics,home,1,1,0,0,4,2,0,0,0,1,1,4,3,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Chris Bassitt,a9dc42ef-c20a-51ef-99f4-67881760bd44,P,True,False,Baltimore Orioles,Athletics,home,,,,,,,,,,,,,,6,18,6,1,4,0,1,,94,1,0.3333333333333333,9.0
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Adley Rutschman,641d20de-7b25-5610-a12b-aa8c9cf6fdb5,DH,False,False,Baltimore Orioles,Athletics,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Blaze Alexander,06fa37f7-11f0-5e44-b028-6e4b58efaaa5,3B,False,True,Baltimore Orioles,Athletics,home,0,0,0,0,3,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Anthony Nunez,e21e4fcc-ccb4-515c-bf3a-fb9b09d362ee,P,True,False,Baltimore Orioles,Athletics,home,,,,,,,,,,,,,,1,3,1,2,0,0,0,,23,0,0.3333333333333333,9.0
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Pete Alonso,a706e53c-3e74-5675-9f67-a2114ac0ab94,1B,False,True,Baltimore Orioles,Athletics,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Lawrence Butler,84b3c88a-5eef-5848-9e2c-a9f0eabd6386,CF,False,True,Athletics,Baltimore Orioles,away,0,0,0,0,4,0,1,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Jonah Heim,32bb2e46-6246-54f8-ab11-2bc1428519db,PH,False,False,Athletics,Baltimore Orioles,away,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Luis Severino,f3e77bdd-d33f-5f7c-86fc-83501e27e5a5,P,True,True,Athletics,Baltimore Orioles,away,,,,,,,,,,,,,,5.1,16,4,4,6,0,2,,102,2,0.25,6.75
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Brent Rooker,9d82601b-b14e-5a63-a224-362d63a93501,DH,False,False,Athletics,Baltimore Orioles,away,0,0,0,0,4,0,1,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Zack Gelof,52199e3d-6b1f-5c3f-9810-4d82fc7dc03f,3B,False,True,Athletics,Baltimore Orioles,away,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Jeff McNeil,3ef9318f-5a03-5a7f-8df9-f326e49cfb1e,2B,False,True,Athletics,Baltimore Orioles,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Justin Sterner,88c53013-e5f7-5271-bb17-7e64ce8a9cf9,P,True,False,Athletics,Baltimore Orioles,away,,,,,,,,,,,,,,0.2,2,2,1,0,0,0,,12,0,1.0,27.0
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Carlos Cortes,b10e4d13-0c9b-592c-99f9-974bebe386f0,RF,False,True,Athletics,Baltimore Orioles,away,1,0,0,0,4,1,0,0,1,0,1,2,1,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Tyler Soderstrom,1a12af09-5e6b-518c-9285-c9f3e9156573,LF,False,True,Athletics,Baltimore Orioles,away,0,1,0,0,4,1,0,0,0,1,0,2,2,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Darell Hernaiz,5d2fcaf4-b36e-566e-b677-c7bd72404047,SS,False,False,Athletics,Baltimore Orioles,away,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Nick Kurtz,0ee3ade6-1739-552d-b4eb-8eb38b8ba6a0,1B,False,True,Athletics,Baltimore Orioles,away,0,0,0,0,4,0,1,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Luis Medina,39f49f33-26d1-5ef0-ad45-465b5699ade9,P,True,False,Athletics,Baltimore Orioles,away,,,,,,,,,,,,,,2,6,4,0,0,0,0,,23,0,0.6666666666666666,18.0
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Shea Langeliers,3de34bb4-e20b-541b-ba54-b22612a81656,C,False,True,Athletics,Baltimore Orioles,away,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,7399d89f-9a2e-5f18-aa3d-6c79eea3c8a2,Jacob Wilson,bbc991c4-1055-56ae-af55-57b957f437a3,SS,False,True,Athletics,Baltimore Orioles,away,1,0,0,0,2,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Brandon Marsh,428a913a-6990-5ebc-a53f-fe331b036c25,LF,False,True,Philadelphia Phillies,Colorado Rockies,home,4,0,0,0,4,4,0,0,0,1,0,5,4,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Justin Crawford,656815ea-b9fd-59e0-8461-3bdf7f7e3131,CF,False,True,Philadelphia Phillies,Colorado Rockies,home,0,0,0,0,3,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Cristopher Sánchez,a7504add-9ed5-5359-9bac-3c3e12272909,P,True,True,Philadelphia Phillies,Colorado Rockies,home,,,,,,,,,,,,,,7,21,7,0,6,0,0,,103,0,0.3333333333333333,9.0
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Bryce Harper,c9b6441c-da6d-5f6d-bb63-857c121017fa,1B,False,True,Philadelphia Phillies,Colorado Rockies,home,0,0,0,1,4,1,0,1,0,1,1,3,4,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,J.T. Realmuto,0d9765bd-d345-5aaf-b9ad-1a15792ac037,C,False,True,Philadelphia Phillies,Colorado Rockies,home,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Jhoan Duran,cbc3e25d-643b-56fc-9abf-1dbb02b584f3,P,True,False,Philadelphia Phillies,Colorado Rockies,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,15,0,0.6666666666666666,18.0
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Alec Bohm,9bbc34c0-5769-5c7f-8cf4-607f25730d26,3B,False,True,Philadelphia Phillies,Colorado Rockies,home,1,0,0,0,4,1,1,0,0,1,1,3,1,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Jonathan Bowlan,1cdb12e1-607f-5f88-a956-1e42c389d1a3,P,True,False,Philadelphia Phillies,Colorado Rockies,home,,,,,,,,,,,,,,1,3,1,0,0,0,0,,9,0,0.3333333333333333,9.0
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Bryson Stott,c063d114-6426-54da-a28d-bd4eb1d1d948,2B,False,True,Philadelphia Phillies,Colorado Rockies,home,0,1,0,0,4,1,0,0,1,1,0,2,2,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Kyle Schwarber,a60a2cbf-f012-56e9-acc4-184d76ff8219,DH,False,False,Philadelphia Phillies,Colorado Rockies,home,1,0,0,2,4,3,0,0,0,2,2,7,9,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Adolis García,2c62b85f-73e6-5aff-af94-15901f508fb2,RF,False,True,Philadelphia Phillies,Colorado Rockies,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Trea Turner,f38b6d42-2ac2-5480-adbc-729df0f14126,SS,False,True,Philadelphia Phillies,Colorado Rockies,home,0,0,0,0,4,0,0,1,0,0,1,1,0,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Mickey Moniak,3f0fdd53-717e-5b5d-97af-38f6cc224d92,DH,False,False,Colorado Rockies,Philadelphia Phillies,away,1,0,0,0,4,1,0,2,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Jake McCarthy,6997ae3d-a342-5d04-a267-91d371938d45,LF,False,True,Colorado Rockies,Philadelphia Phillies,away,1,0,0,0,3,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Troy Johnston,09dd2789-8b43-5f74-a5fd-89e6f73d1d86,PH,False,False,Colorado Rockies,Philadelphia Phillies,away,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Willi Castro,1f049a5e-1a31-56fd-813c-95bc75d37525,1B,False,True,Colorado Rockies,Philadelphia Phillies,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Tyler Freeman,036c78c9-9b82-5ed4-b05d-c855e0b3ab5c,RF,False,True,Colorado Rockies,Philadelphia Phillies,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Edouard Julien,acdd1046-d6e4-53f4-90bb-fde2916b38bf,2B,False,False,Colorado Rockies,Philadelphia Phillies,away,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Hunter Goodman,6144567b-eae1-58fa-9b5d-d2351f51c9e5,C,False,True,Colorado Rockies,Philadelphia Phillies,away,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Tomoyuki Sugano,4b1ba1f7-0428-5aef-9742-307453b38b50,P,True,True,Colorado Rockies,Philadelphia Phillies,away,,,,,,,,,,,,,,5,15,2,1,7,3,5,,81,5,0.13333333333333333,3.6
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Zach Agnos,4bad8986-95e0-54ce-baf1-c93f3d03b6ee,P,True,False,Colorado Rockies,Philadelphia Phillies,away,,,,,,,,,,,,,,2,6,1,0,1,0,0,,28,0,0.16666666666666666,4.5
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Jordan Beck,04d7ca3f-26de-5185-b982-e8a46a8c16e5,RF,False,True,Colorado Rockies,Philadelphia Phillies,away,1,0,0,0,3,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Brenton Doyle,35509183-6eb7-5366-8a93-d9e7405d24ff,CF,False,True,Colorado Rockies,Philadelphia Phillies,away,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Ezequiel Tovar,973d0ea7-2ba4-58b5-95ce-ce6704416d1a,SS,False,True,Colorado Rockies,Philadelphia Phillies,away,2,0,0,0,3,2,0,0,0,0,0,2,2,,,,,,,,,,,,
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Seth Halvorsen,ee2f7ca8-5bcf-5061-869b-0b5047ae6d57,P,True,False,Colorado Rockies,Philadelphia Phillies,away,,,,,,,,,,,,,,1,3,0,1,2,0,1,,22,1,0.0,0.0
+2026-05-10,a7d25f5b-9332-5bff-b006-6f1decf04cd4,Kyle Karros,5aeefc0d-9862-57c9-b58f-ab21c2ce4404,3B,False,True,Colorado Rockies,Philadelphia Phillies,away,0,0,0,0,3,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Willson Contreras,34477b91-95c5-5159-8fc0-73e01ae1d6d9,1B,False,True,Boston Red Sox,Tampa Bay Rays,home,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Greg Weissert,faea39b8-a624-5a6f-8b3d-3d1b4a74906a,P,True,False,Boston Red Sox,Tampa Bay Rays,home,,,,,,,,,,,,,,0.2,2,0,1,0,0,0,,10,0,0.0,0.0
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Trevor Story,cd09b8ad-73fb-5669-8db1-98c5b8a8164a,SS,False,True,Boston Red Sox,Tampa Bay Rays,home,0,1,0,0,4,1,0,3,0,1,0,2,2,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Zack Kelly,217c2b64-3d1e-5112-8f21-e9fc91143b99,P,True,False,Boston Red Sox,Tampa Bay Rays,home,,,,,,,,,,,,,,0.1,1,0,1,1,0,1,,16,1,0.0,0.0
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Wilyer Abreu,e89e04e9-6e91-5ee7-ae12-04853566c53f,RF,False,True,Boston Red Sox,Tampa Bay Rays,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Andruw Monasterio,47cb14eb-4fd3-52f4-b557-bb0feea1ebba,1B,False,False,Boston Red Sox,Tampa Bay Rays,home,1,1,0,0,3,2,0,0,0,0,0,2,3,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Justin Slaten,73553363-7fba-5e17-b5b9-76266815ed0d,P,True,False,Boston Red Sox,Tampa Bay Rays,home,,,,,,,,,,,,,,1,3,1,0,0,0,0,,15,0,0.3333333333333333,9.0
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Mickey Gasper,bf75a42d-89e5-5254-82a5-0573fb73b5c9,C,False,True,Boston Red Sox,Tampa Bay Rays,home,1,2,0,0,4,3,0,0,0,0,1,4,5,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Caleb Durbin,bd9f542f-cb6e-5ce8-b85a-8ff891d266f7,3B,False,True,Boston Red Sox,Tampa Bay Rays,home,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Carlos Narváez,1322ee1c-36ba-5e0c-a487-1a0e94fe483b,DH,False,False,Boston Red Sox,Tampa Bay Rays,home,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Jarren Duran,3ac99586-15b6-50c1-816f-075959ebead2,LF,False,True,Boston Red Sox,Tampa Bay Rays,home,1,0,0,0,5,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Tyler Samaniego,a30f60fd-a0d9-5d26-ae1a-702ae433245d,P,True,False,Boston Red Sox,Tampa Bay Rays,home,,,,,,,,,,,,,,0.2,2,0,0,0,0,0,,5,0,0.0,0.0
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Payton Tolle,a877a8ba-ec3a-5710-a330-2d0edb664c58,P,True,True,Boston Red Sox,Tampa Bay Rays,home,,,,,,,,,,,,,,5,15,4,0,7,1,3,,81,3,0.26666666666666666,7.2
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Ceddanne Rafaela,15788154-f587-5625-bece-d4a10d870640,CF,False,True,Boston Red Sox,Tampa Bay Rays,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Jovani Morán,18eadc63-34da-5829-821b-4d45ee385228,P,True,False,Boston Red Sox,Tampa Bay Rays,home,,,,,,,,,,,,,,1.1,4,0,1,0,0,0,,16,0,0.0,0.0
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Masataka Yoshida,ba7252d5-bd01-5d4a-afe2-2252480e2987,DH,False,False,Boston Red Sox,Tampa Bay Rays,home,1,0,0,0,3,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Marcelo Mayer,143aaf24-c832-5e23-b59f-4934230805d1,2B,False,True,Boston Red Sox,Tampa Bay Rays,home,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Taylor Walls,ebebbbc1-e682-5c23-9e53-6d03319ebf2b,SS,False,True,Tampa Bay Rays,Boston Red Sox,away,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Ryan Vilade,7f7f7e5d-479b-5d2a-a4bc-2c1278490861,1B,False,True,Tampa Bay Rays,Boston Red Sox,away,1,0,0,0,2,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Chandler Simpson,e8a47c28-d0c4-55d9-8402-e290b94ba76d,LF,False,True,Tampa Bay Rays,Boston Red Sox,away,1,0,0,0,4,1,0,0,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Nick Martinez,cd66fce5-f7f2-52c2-97b4-5bc435b978c9,P,True,True,Tampa Bay Rays,Boston Red Sox,away,,,,,,,,,,,,,,5.2,17,3,0,7,0,1,,80,1,0.17647058823529413,4.764705882352941
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Jonny DeLuca,18e76306-3c90-58e3-8beb-27a4572e4c71,RF,False,True,Tampa Bay Rays,Boston Red Sox,away,0,0,0,0,4,0,1,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Garrett Cleavinger,6aa2d35e-ad97-5f5e-a2b8-71cdceaf0b31,P,True,False,Tampa Bay Rays,Boston Red Sox,away,,,,,,,,,,,,,,1,3,3,0,0,0,0,,25,0,1.0,27.0
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Kevin Kelly,6a952a95-8d80-57ba-a5fe-a4daa53fa456,P,True,False,Tampa Bay Rays,Boston Red Sox,away,,,,,,,,,,,,,,1.1,4,1,0,0,0,0,,20,0,0.25,6.75
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Jonathan Aranda,f3e0ad1f-94c2-5388-8f31-9baa1e72f471,1B,False,False,Tampa Bay Rays,Boston Red Sox,away,1,0,0,0,2,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Nick Fortes,f24e024c-1c51-502c-8866-34dbafb91126,C,False,True,Tampa Bay Rays,Boston Red Sox,away,1,0,0,0,4,1,0,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Yandy Díaz,382a432b-7569-5972-a70e-6270ec94a244,DH,False,False,Tampa Bay Rays,Boston Red Sox,away,1,0,0,0,4,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Ben Williamson,ac1660ef-9f73-5523-b351-97539670590b,2B,False,True,Tampa Bay Rays,Boston Red Sox,away,1,0,0,0,4,1,2,0,0,1,1,3,1,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Bryan Baker,7a01b0da-fab6-5b88-b784-f7bb9c401c72,P,True,False,Tampa Bay Rays,Boston Red Sox,away,,,,,,,,,,,,,,1,3,1,1,1,0,0,,15,0,0.3333333333333333,9.0
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Junior Caminero,00646ce3-90a0-5f44-9b75-d7f277143ba5,3B,False,True,Tampa Bay Rays,Boston Red Sox,away,0,0,0,1,4,1,0,1,0,1,1,3,4,,,,,,,,,,,,
+2026-05-10,4abfa8d2-54ef-51a1-bac8-e6a58bb285ab,Cedric Mullins,88cf2c8c-311c-568d-90a3-428db492786f,CF,False,True,Tampa Bay Rays,Boston Red Sox,away,1,0,0,0,4,1,0,0,0,0,1,2,1,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Spencer Miles,58ef192a-29d2-5ab4-b3c3-e23d56fe1dd3,P,True,True,Toronto Blue Jays,Los Angeles Angels,home,,,,,,,,,,,,,,3,9,2,0,2,0,0,,38,0,0.2222222222222222,6.0
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Tommy Nance,e74d4474-8c98-5fef-8972-71eef86e19f6,P,True,False,Toronto Blue Jays,Los Angeles Angels,home,,,,,,,,,,,,,,1,3,0,0,0,0,0,,8,0,0.0,0.0
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Lenyn Sosa,63526b54-bb98-5442-a5ec-b6f09cb03c58,1B,False,True,Toronto Blue Jays,Los Angeles Angels,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Ernie Clement,988f69d3-1ea5-5410-b27c-6ff47e783156,2B,False,True,Toronto Blue Jays,Los Angeles Angels,home,1,0,0,0,4,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Daulton Varsho,c87cf210-4b8f-50d7-bfd9-fa6cf7616329,CF,False,True,Toronto Blue Jays,Los Angeles Angels,home,2,0,0,0,4,2,0,2,0,1,0,3,2,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Andrés Giménez,0fa89082-0ded-58c2-8fab-9feb8319955a,SS,False,True,Toronto Blue Jays,Los Angeles Angels,home,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Eric Lauer,9a6dc57b-e8a4-50e0-a1b7-c2664754a3ee,P,True,False,Toronto Blue Jays,Los Angeles Angels,home,,,,,,,,,,,,,,5,15,4,2,5,3,6,,80,6,0.26666666666666666,7.2
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Tyler Heineman,6685aac3-5a12-5745-963c-5c43af83f729,C,False,True,Toronto Blue Jays,Los Angeles Angels,home,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Vladimir Guerrero Jr.,c652a6fb-0803-556b-a03b-9fed12cedf9b,DH,False,False,Toronto Blue Jays,Los Angeles Angels,home,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Jesús Sánchez,62480674-d120-5cd2-bdd3-05c3cbecd240,RF,False,True,Toronto Blue Jays,Los Angeles Angels,home,0,0,0,0,4,0,1,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Myles Straw,51c4113b-ff8e-5728-b588-d6a0be2f776a,LF,False,True,Toronto Blue Jays,Los Angeles Angels,home,1,0,0,0,3,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Kazuma Okamoto,d79d11dd-a762-5962-aed1-9e87c656e5fc,3B,False,True,Toronto Blue Jays,Los Angeles Angels,home,0,1,0,0,4,1,0,1,0,0,1,2,2,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Oswald Peraza,98bdfab1-07ea-5c61-bd44-7c17670a08b1,2B,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,1,4,1,0,0,0,1,2,4,4,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Zach Neto,01ac6fe3-6ace-59c9-a15b-1ad3a0af1eb1,SS,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,1,0,0,4,1,0,1,0,1,0,2,2,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Jorge Soler,ebc19873-2e2c-5767-9b19-409c5e887630,RF,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,José Soriano,c9cc3b6d-f223-5329-bf0f-4455116c1f2a,P,True,True,Los Angeles Angels,Toronto Blue Jays,away,,,,,,,,,,,,,,7.2,23,7,1,5,0,1,,103,1,0.30434782608695654,8.217391304347826
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Mike Trout,062d3e7f-e32e-55bc-aa40-403df7f9ec05,DH,False,False,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,4,0,1,1,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Jo Adell,c3ca91f9-2d30-5cf8-aae3-a5e7339f5788,RF,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,1,0,2,4,3,0,0,0,2,2,7,10,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Vaughn Grissom,5af312b7-68e4-5add-943d-780ff1dc8d39,3B,False,True,Los Angeles Angels,Toronto Blue Jays,away,1,1,0,0,4,2,0,1,0,0,2,4,3,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Sam Bachman,cf9060ab-bd03-5198-a0a5-175b17f19e62,P,True,False,Los Angeles Angels,Toronto Blue Jays,away,,,,,,,,,,,,,,0.1,1,0,0,0,0,0,,5,0,0.0,0.0
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Ryan Zeferjahn,1c701ecc-f73c-5d02-8d31-8c3301ff60cb,P,True,False,Los Angeles Angels,Toronto Blue Jays,away,,,,,,,,,,,,,,1,3,2,0,0,0,0,,15,0,0.6666666666666666,18.0
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Nolan Schanuel,88862c38-1493-5b40-9c6b-6660a4ce4654,1B,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,4,0,1,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Josh Lowe,ef406577-04d5-511f-9202-5f9a1b54addb,LF,False,False,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Sebastián Rivero,6c7b3cc4-b0c6-50fa-b998-bee507b351da,C,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,ed771f80-ad4a-5a54-bd23-871f6cecbb01,Bryce Teodosio,2e92cd67-6ffe-5f76-b1f5-83b535ba679a,CF,False,True,Los Angeles Angels,Toronto Blue Jays,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Elly De La Cruz,7fd536ef-9553-5c83-9d6b-4584793b4a26,SS,False,True,Cincinnati Reds,Houston Astros,home,3,0,0,0,4,3,0,0,1,2,0,5,3,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Sal Stewart,87ada644-a3be-5013-bfc9-a696f4bfb4ee,DH,False,False,Cincinnati Reds,Houston Astros,home,0,1,0,0,4,1,0,2,0,1,0,2,2,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Tejay Antone,76ef0ca5-7631-59cd-8873-9ddc2256cc0d,P,True,False,Cincinnati Reds,Houston Astros,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,13,0,0.6666666666666666,18.0
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Matt McLain,f7624c99-f5cf-56e9-8b5d-cdc4402e8af7,2B,False,True,Cincinnati Reds,Houston Astros,home,0,0,0,0,4,0,2,0,0,0,1,1,0,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Ke'Bryan Hayes,5ac4617a-322b-54c3-97a6-21a85177db00,3B,False,True,Cincinnati Reds,Houston Astros,home,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Will Benson,3af6fc09-0d15-5805-832b-1e331a51fd8f,RF,False,True,Cincinnati Reds,Houston Astros,home,0,0,0,0,5,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Blake Dunn,d100139f-36bf-52c9-b9da-b8abed379e7d,CF,False,True,Cincinnati Reds,Houston Astros,home,0,1,0,0,4,1,1,0,0,0,0,1,2,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Spencer Steer,2e1a3d24-542e-5cd2-b6ac-11416bb79c96,1B,False,True,Cincinnati Reds,Houston Astros,home,0,0,0,1,5,1,0,0,0,1,1,3,4,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Graham Ashcraft,ae98a0ca-c804-56c2-9e38-be2f024c449c,P,True,False,Cincinnati Reds,Houston Astros,home,,,,,,,,,,,,,,1,3,2,0,0,0,0,,12,0,0.6666666666666666,18.0
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Tyler Stephenson,84ffb64d-831d-5b54-bb2d-dbc37cb5cb5c,C,False,True,Cincinnati Reds,Houston Astros,home,1,0,0,0,4,1,0,1,0,0,1,2,1,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Sam Moll,1cbefb65-74f2-5448-b353-d021fbe984dd,P,True,False,Cincinnati Reds,Houston Astros,home,,,,,,,,,,,,,,1,3,1,0,0,0,0,,17,0,0.3333333333333333,9.0
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,JJ Bleday,3bc53ddb-f7ca-5986-a29c-78c3ce9e25a4,LF,False,True,Cincinnati Reds,Houston Astros,home,0,0,1,0,4,1,2,0,1,1,2,4,3,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Andrew Abbott,73c409b5-2bee-5db0-81a3-47111c3524d8,P,True,True,Cincinnati Reds,Houston Astros,home,,,,,,,,,,,,,,6,18,5,1,3,0,0,,85,0,0.2777777777777778,7.5
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Isaac Paredes,c94533e4-26a4-59a8-ae9e-1b0d54853c93,3B,False,True,Houston Astros,Cincinnati Reds,away,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Nick Allen,d47542cc-ed4c-5335-840e-aeecb6811ad7,SS,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Kai-Wei Teng,cc9220fe-0567-544a-81b1-84992549a6bf,P,True,True,Houston Astros,Cincinnati Reds,away,,,,,,,,,,,,,,3,9,1,1,5,0,3,,63,3,0.1111111111111111,3.0
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Cam Smith,6c7292a3-abca-5a73-9e4b-cec25e9d20b8,RF,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,0,3,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Zach Cole,66fa952c-f505-5973-a43c-209b10923a54,LF,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,0,2,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,César Salazar,98a36874-d91d-5354-a255-e5a851c5030d,C,False,True,Houston Astros,Cincinnati Reds,away,1,0,0,0,3,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Brice Matthews,bee000c4-433a-55d5-b97f-a284fe330fee,CF,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,AJ Blubaugh,4d6a4525-5979-5429-9481-9e4f708a7bb1,P,True,False,Houston Astros,Cincinnati Reds,away,,,,,,,,,,,,,,1,3,0,1,1,0,0,,21,0,0.0,0.0
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Logan VanWey,d2790aa3-361f-54e0-ac16-bf40ecaaf51c,P,True,False,Houston Astros,Cincinnati Reds,away,,,,,,,,,,,,,,1,3,1,0,0,0,0,,8,0,0.3333333333333333,9.0
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Jose Altuve,99c9db0b-d7a9-5462-94f3-28f3661714ab,2B,False,True,Houston Astros,Cincinnati Reds,away,1,0,0,0,4,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Cody Bolton,612a0829-a344-5917-9eaf-0de20a9c3295,P,True,False,Houston Astros,Cincinnati Reds,away,,,,,,,,,,,,,,2,6,4,3,2,1,2,,50,2,0.6666666666666666,18.0
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Zach Dezenzo,b3e5582d-a8bc-542e-b9b4-7382854ff442,LF,False,False,Houston Astros,Cincinnati Reds,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Christian Walker,4ebdbcc5-84ea-5866-b7b6-1d61cbac193f,1B,False,True,Houston Astros,Cincinnati Reds,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Jayden Murray,8ef15da9-4c41-5d76-b50b-606f2ef7f49c,P,True,False,Houston Astros,Cincinnati Reds,away,,,,,,,,,,,,,,1,3,0,0,1,0,0,,11,0,0.0,0.0
+2026-05-10,f2b1dc49-bb5c-5c50-9ba3-8bcd7e431793,Yordan Alvarez,b4e60652-8d7e-569f-8e5a-4aa9a713da9c,DH,False,False,Houston Astros,Cincinnati Reds,away,0,0,0,0,4,0,0,4,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Chase DeLauter,6df4c8fa-ba98-5c7a-ad19-cf86a2049392,RF,False,True,Cleveland Guardians,Minnesota Twins,home,2,0,0,0,5,2,0,0,0,0,2,4,2,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Travis Bazzana,f7c2501a-ab2e-5a6d-aa3d-74f4819ada07,2B,False,True,Cleveland Guardians,Minnesota Twins,home,1,0,0,0,5,1,2,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Daniel Schneemann,44aa2c31-5c71-54d6-bd89-c75f77599832,3B,False,True,Cleveland Guardians,Minnesota Twins,home,1,0,0,0,5,1,1,2,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Patrick Bailey,7497fb23-555e-57a8-86b0-f3106d26ac72,C,False,True,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Brayan Rocchio,19d4d33d-50bf-55d7-9885-40f4738e6983,SS,False,True,Cleveland Guardians,Minnesota Twins,home,3,1,0,0,4,4,0,0,0,2,0,6,5,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Franco Aleman,d0f9139a-f3c4-588c-981e-395244a2da8a,P,True,False,Cleveland Guardians,Minnesota Twins,home,,,,,,,,,,,,,,2,6,1,0,2,0,0,,28,0,0.16666666666666666,4.5
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,David Fry,d0cdb034-814f-5d43-a16a-052464de2541,C,False,False,Cleveland Guardians,Minnesota Twins,home,1,0,0,0,1,1,0,0,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,José Ramírez,edd283fa-acd6-56e6-a171-35d869385530,DH,False,False,Cleveland Guardians,Minnesota Twins,home,1,0,0,0,5,1,1,1,1,0,1,2,1,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Steven Kwan,64af661f-a572-5a07-8797-70964b4dbcb2,CF,False,True,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,5,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Angel Martínez,a1a79e19-4dd8-5d43-8cf7-324e82cc4a92,LF,False,True,Cleveland Guardians,Minnesota Twins,home,1,0,0,0,5,1,0,2,0,0,1,2,1,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Kyle Manzardo,1f4ed7ba-eda9-5a00-b87f-9c005e0a44a8,1B,False,True,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,3,0,2,1,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Gavin Williams,156bc1ff-0f10-5ace-87e9-867777537784,P,True,True,Cleveland Guardians,Minnesota Twins,home,,,,,,,,,,,,,,6,18,6,1,10,0,5,,101,5,0.3333333333333333,9.0
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Tim Herrin,6165b4a1-ab46-5b99-b9bc-6d2d6743f203,P,True,False,Cleveland Guardians,Minnesota Twins,home,,,,,,,,,,,,,,1,3,1,1,1,0,0,,14,0,0.3333333333333333,9.0
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Rhys Hoskins,1c22ec74-00f6-5b13-b698-eeaaf10c7523,1B,False,False,Cleveland Guardians,Minnesota Twins,home,0,0,0,0,2,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Victor Caratini,118b5526-726c-567a-b410-9c4d39d4dfe8,PH,False,False,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Kody Clemens,388afaec-b241-58d7-8b05-1e0292aaa5ce,1B,False,True,Minnesota Twins,Cleveland Guardians,away,1,2,0,0,4,3,0,0,1,2,0,5,5,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Brooks Lee,9e5151e5-7ca3-54b5-906a-035ac2bd117b,SS,False,True,Minnesota Twins,Cleveland Guardians,away,2,0,0,0,4,2,0,0,1,1,1,4,2,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Austin Martin,2b621d0f-36d2-5e85-800f-c9ea62645109,RF,False,True,Minnesota Twins,Cleveland Guardians,away,2,0,0,0,4,2,1,0,0,0,1,3,2,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Kendry Rojas,78be7013-7817-5991-b477-623bee0d9d78,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,3.1,10,5,3,5,0,1,,60,1,0.5,13.5
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Anthony Banda,ca44db94-5d9e-525f-a405-9de2e4448bbf,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,1.1,4,2,0,0,0,0,,19,0,0.5,13.5
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Josh Bell,9c4f9447-e182-53d1-9468-d5eed9b0e0f7,DH,False,False,Minnesota Twins,Cleveland Guardians,away,2,0,0,0,4,2,0,2,0,0,1,3,2,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Ryan Jeffers,9fa0a7d3-5db7-5110-b162-2933bae5edac,C,False,True,Minnesota Twins,Cleveland Guardians,away,0,1,0,0,4,1,0,0,0,0,0,1,2,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,James Outman,ecd5e641-3869-57f2-af87-7b030fcc7f7b,LF,False,False,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Travis Adams,fb640d9c-ce7b-5f16-9809-ec8410424622,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,1.1,4,2,2,4,0,2,,43,2,0.5,13.5
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Royce Lewis,ed8d10fa-59d5-527e-9c7f-0eb7ba2f1a36,3B,False,True,Minnesota Twins,Cleveland Guardians,away,0,1,0,0,4,1,0,2,0,1,1,3,2,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Trevor Larnach,acc8d7d3-6cc6-5ddb-82f7-c51950746185,LF,False,True,Minnesota Twins,Cleveland Guardians,away,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Luis García,baa208d8-722e-5538-8130-3d9bc63869a0,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,1,3,0,1,2,0,1,,20,1,0.0,0.0
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Byron Buxton,f324ed45-2be1-5593-9601-8a1caeabe988,CF,False,True,Minnesota Twins,Cleveland Guardians,away,1,0,0,0,5,1,1,2,1,1,0,2,1,,,,,,,,,,,,
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Yoendrys Gómez,626d56c2-e478-5409-8de4-eb4e138b153c,P,True,False,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,1,3,0,0,0,0,0,,10,0,0.0,0.0
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Andrew Morris,0adf2ff8-b0c4-5935-a6c7-db106b2c45a9,P,True,True,Minnesota Twins,Cleveland Guardians,away,,,,,,,,,,,,,,1,3,0,0,0,0,0,,6,0,0.0,0.0
+2026-05-10,5876c5a0-c4a4-575c-8c2a-0a6c87931cd4,Luke Keaschall,cd5f4708-4e8f-5a0f-8347-a323178f906f,2B,False,True,Minnesota Twins,Cleveland Guardians,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Luis Rengifo,34a19134-3072-5658-be7e-16d1c8533083,3B,False,True,Milwaukee Brewers,New York Yankees,home,1,0,0,0,4,1,0,1,1,1,0,2,1,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Logan Henderson,736e45d7-3a0e-55cc-aa06-58ac5068884a,P,True,True,Milwaukee Brewers,New York Yankees,home,,,,,,,,,,,,,,5,15,5,1,4,1,2,,74,2,0.3333333333333333,9.0
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Joey Ortiz,ebc5a190-639c-5d2c-916f-f393fd5d2c1e,SS,False,True,Milwaukee Brewers,New York Yankees,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Jackson Chourio,e7320035-4486-5dc5-8661-0d7cee152983,LF,False,True,Milwaukee Brewers,New York Yankees,home,0,0,0,0,5,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Sal Frelick,fbeddaa0-1580-5140-bb70-6bb9ea57a062,RF,False,False,Milwaukee Brewers,New York Yankees,home,0,0,0,0,2,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Abner Uribe,972f6b83-1d18-51f9-ada6-ff947e2760b7,P,True,False,Milwaukee Brewers,New York Yankees,home,,,,,,,,,,,,,,1,3,1,1,0,0,0,,14,0,0.3333333333333333,9.0
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Andrew Vaughn,b3581b74-f59a-5e18-98d1-2f2893fe2284,1B,False,True,Milwaukee Brewers,New York Yankees,home,0,0,0,0,4,0,1,2,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Aaron Ashby,a179f3a3-8e06-5673-b70c-d3a3a48bb33f,P,True,False,Milwaukee Brewers,New York Yankees,home,,,,,,,,,,,,,,1,3,3,0,1,0,0,,18,0,1.0,27.0
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Garrett Mitchell,b17ada3b-673f-55c3-b967-d8543791af21,CF,False,True,Milwaukee Brewers,New York Yankees,home,0,0,0,0,4,0,0,2,0,0,1,1,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,David Hamilton,02280a6a-1789-5079-b10f-1509ff8850e3,3B,False,False,Milwaukee Brewers,New York Yankees,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Blake Perkins,02511963-abbe-57ce-8d51-ad04cd9689b7,RF,False,True,Milwaukee Brewers,New York Yankees,home,1,0,0,0,2,1,0,0,0,0,2,3,1,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,William Contreras,3453e023-6f8f-5212-8105-189c90757865,DH,False,False,Milwaukee Brewers,New York Yankees,home,1,0,0,0,4,1,2,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Brice Turang,8b7764c4-ff5a-5daf-9dc5-044259e0b377,2B,False,True,Milwaukee Brewers,New York Yankees,home,1,0,0,1,5,2,0,1,0,1,1,4,5,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Gary Sánchez,9122c697-55df-5827-bf89-d1705013c3f7,C,False,True,Milwaukee Brewers,New York Yankees,home,0,0,0,0,4,0,1,3,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,DL Hall,04d83ed6-df90-5751-a202-d96d250bd2bb,P,True,False,Milwaukee Brewers,New York Yankees,home,,,,,,,,,,,,,,1,3,0,2,1,0,1,,20,1,0.0,0.0
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Trevor Megill,6580e536-d23b-51c7-9a77-e4189bd19115,P,True,False,Milwaukee Brewers,New York Yankees,home,,,,,,,,,,,,,,1,3,1,1,0,0,0,,13,0,0.3333333333333333,9.0
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Paul Blackburn,39dae647-d62d-51b9-8fc8-5bd16a784c0c,P,True,False,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,0.2,2,1,1,0,0,0,,18,0,0.5,13.5
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,José Caballero,3f93b7e1-37f4-53fe-bb17-5a7915995b76,SS,False,True,New York Yankees,Milwaukee Brewers,away,0,1,0,0,4,1,1,0,0,1,0,2,2,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Carlos Rodón,fa025a8a-b863-53ef-bb84-b2a0c5c17a6b,P,True,True,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,4.1,13,4,5,2,0,3,,78,3,0.3076923076923077,8.307692307692308
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Spencer Jones,536d996f-8e83-56d0-87ba-99aa979badf3,RF,False,True,New York Yankees,Milwaukee Brewers,away,1,0,0,0,4,1,0,1,0,0,1,2,1,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Aaron Judge,e0e52a0f-4e54-5f0c-b584-6ec85c33c7f7,DH,False,False,New York Yankees,Milwaukee Brewers,away,0,0,0,1,4,1,1,2,0,1,1,3,4,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Ryan McMahon,d0d749e6-fb57-548c-9393-e889a94c8291,3B,False,True,New York Yankees,Milwaukee Brewers,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Tim Hill,384dc4b2-51ff-5793-aac7-63641d20da3f,P,True,False,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,1,3,0,0,1,0,0,,7,0,0.0,0.0
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Ben Rice,f7714f04-8c9d-5c9a-b8bb-0f423271af17,1B,False,True,New York Yankees,Milwaukee Brewers,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Fernando Cruz,d385d787-f0ae-5bba-bf3f-b2fc35d2781a,P,True,False,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,1.1,4,3,0,1,0,0,,20,0,0.75,20.25
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,J.C. Escarra,7aa8e492-d58d-5b4b-887e-3b5ed373a5eb,C,False,True,New York Yankees,Milwaukee Brewers,away,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Cody Bellinger,04e3eefb-9d41-548f-ba06-60abe4b82454,LF,False,True,New York Yankees,Milwaukee Brewers,away,1,0,0,0,4,1,2,0,1,1,0,2,1,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Jazz Chisholm Jr.,bce3e6ee-1f99-5f80-90fb-c8d538c9d546,2B,False,True,New York Yankees,Milwaukee Brewers,away,0,1,0,0,4,1,0,2,0,0,1,2,2,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Jake Bird,d2ef55af-9ebd-515d-b27b-ccb1e987a57a,P,True,False,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,0.2,2,2,0,0,0,0,,9,0,1.0,27.0
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,Trent Grisham,6c818210-215a-5a0f-94c1-d805ae6b416f,CF,False,True,New York Yankees,Milwaukee Brewers,away,1,0,0,0,4,1,0,2,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,8ce3bd37-0151-5f8d-b82e-e6ee654f65d3,David Bednar,ee6f3fb6-e2c4-5de3-b7ed-9df513957989,P,True,False,New York Yankees,Milwaukee Brewers,away,,,,,,,,,,,,,,0.2,2,2,0,1,1,1,,8,1,1.0,27.0
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Tristan Peters,574e45bf-8e75-5762-ba59-2684060d441c,RF,False,True,Chicago White Sox,Seattle Mariners,home,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Davis Martin,06ecda0b-a813-521c-86de-3c028e79cae9,P,True,True,Chicago White Sox,Seattle Mariners,home,,,,,,,,,,,,,,6,18,9,2,3,0,1,,105,1,0.5,13.5
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Luisangel Acuña,02ae1abb-7737-5f3c-97fa-343ed56b2a95,CF,False,False,Chicago White Sox,Seattle Mariners,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Randal Grichuk,e524f871-8bd6-58ff-95f9-a86b2ab2af66,DH,False,False,Chicago White Sox,Seattle Mariners,home,0,0,0,1,3,1,0,1,0,1,1,3,4,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Munetaka Murakami,5ef6bdd4-00f0-5b87-b02a-2ad78752c1aa,1B,False,True,Chicago White Sox,Seattle Mariners,home,1,0,0,0,4,1,1,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Chase Meidroth,b8e78229-a743-53a4-9be9-92e7b52d24ee,2B,False,True,Chicago White Sox,Seattle Mariners,home,1,0,0,0,3,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Colson Montgomery,e16341a7-cdfb-58eb-93e1-88a182b5acbb,SS,False,True,Chicago White Sox,Seattle Mariners,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Drew Romo,7837c88f-9276-5691-96fc-64beae9ff1ed,C,False,True,Chicago White Sox,Seattle Mariners,home,0,1,0,0,3,1,0,1,0,1,0,2,2,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Seranthony Domínguez,bdefbbc2-8201-5f7b-8b57-91738da5cf78,P,True,False,Chicago White Sox,Seattle Mariners,home,,,,,,,,,,,,,,1,3,1,1,2,0,0,,23,0,0.3333333333333333,9.0
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Edgar Quero,3a107cbc-e2a4-581e-a7a7-4062370df3ac,PH,False,False,Chicago White Sox,Seattle Mariners,home,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Bryan Hudson,e9a3576d-6bce-5b77-acba-80405f9e0c78,P,True,False,Chicago White Sox,Seattle Mariners,home,,,,,,,,,,,,,,1,3,1,0,1,0,0,,9,0,0.3333333333333333,9.0
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Sean Newcomb,c03e558f-dd6f-5180-8a00-f64b635bf442,P,True,False,Chicago White Sox,Seattle Mariners,home,,,,,,,,,,,,,,1,3,1,0,1,0,0,,15,0,0.3333333333333333,9.0
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Sam Antonacci,d0e8ccdf-7ff2-5891-963f-d28eb1905e42,LF,False,True,Chicago White Sox,Seattle Mariners,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Jarred Kelenic,3affb85b-84bc-56b5-a5af-022e84b0c434,RF,False,True,Chicago White Sox,Seattle Mariners,home,0,0,0,0,2,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Miguel Vargas,62addef8-7bda-57cd-a2aa-6821f9ad6427,3B,False,True,Chicago White Sox,Seattle Mariners,home,0,1,0,0,4,1,0,0,0,0,1,2,2,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Josh Naylor,b882f91d-40d1-58ad-bd6a-b321477642c0,1B,False,True,Seattle Mariners,Chicago White Sox,away,1,1,0,0,4,2,1,0,0,0,0,2,3,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Cole Young,bef5f9c5-6df7-5ede-9aac-4b5ba8731f4b,2B,False,True,Seattle Mariners,Chicago White Sox,away,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,José A. Ferrer,809651af-1bb9-5a30-ba76-7760606da2fb,P,True,False,Seattle Mariners,Chicago White Sox,away,,,,,,,,,,,,,,1,3,0,0,2,0,0,,25,0,0.0,0.0
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Randy Arozarena,0f2b9cc8-a738-5f1e-be0e-5c0ae5a3ac57,LF,False,True,Seattle Mariners,Chicago White Sox,away,1,0,0,0,4,1,0,2,0,0,1,2,1,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,J.P. Crawford,ce4a3d59-2b69-5bf7-80a5-33fdb5ce7363,SS,False,True,Seattle Mariners,Chicago White Sox,away,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Dominic Canzone,73e2b2be-5ea8-5904-9683-089b46807bab,DH,False,False,Seattle Mariners,Chicago White Sox,away,0,0,0,0,2,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Cal Raleigh,21b31397-a06c-5238-83b3-90eee447e28e,C,False,True,Seattle Mariners,Chicago White Sox,away,0,0,0,0,4,0,1,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Connor Joe,944713bb-806a-53b3-85d4-949be15cbeb1,RF,False,False,Seattle Mariners,Chicago White Sox,away,1,1,0,0,2,2,0,0,0,0,0,2,3,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Rob Refsnyder,d50036b6-f9c6-5e61-b1e5-98692a43657e,DH,False,False,Seattle Mariners,Chicago White Sox,away,0,0,0,0,2,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Logan Gilbert,8a640625-71a1-5037-8332-4427ea90660f,P,True,True,Seattle Mariners,Chicago White Sox,away,,,,,,,,,,,,,,6,18,9,0,1,0,0,,87,0,0.5,13.5
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Brendan Donovan,9d05e499-95d1-5224-b19c-323801b2463e,3B,False,True,Seattle Mariners,Chicago White Sox,away,0,0,0,0,5,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Leo Rivas,13efd7e6-1b6a-509b-8348-f3f74df6fce9,PR,False,False,Seattle Mariners,Chicago White Sox,away,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Julio Rodríguez,fffe4545-0e86-5407-906a-645035a15435,CF,False,True,Seattle Mariners,Chicago White Sox,away,0,1,0,0,4,1,0,2,0,1,0,2,2,,,,,,,,,,,,
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Eduard Bazardo,c59ea29b-45e3-5f5d-8eab-5e27543e83cd,P,True,False,Seattle Mariners,Chicago White Sox,away,,,,,,,,,,,,,,1,3,1,1,2,1,2,,15,2,0.3333333333333333,9.0
+2026-05-10,726e9399-ca4a-5d58-8a54-dfefbe6e601d,Luke Raley,27e77a8c-1c02-50cc-b8c2-06d1e891fc5d,RF,False,True,Seattle Mariners,Chicago White Sox,away,0,0,0,0,2,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Evan Carter,f35e83f3-06d6-5c07-b669-1e0cd310d86e,CF,False,True,Texas Rangers,Chicago Cubs,home,0,0,0,1,4,1,0,1,0,1,2,4,4,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Alejandro Osuna,1aa0e741-9738-5836-bfd4-28f059db6304,LF,False,True,Texas Rangers,Chicago Cubs,home,1,0,0,0,3,1,0,1,0,0,1,2,1,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Joc Pederson,a8accc9b-5d7c-5c48-b5dc-24a6f0b7b652,DH,False,False,Texas Rangers,Chicago Cubs,home,0,1,0,0,4,1,1,1,0,0,0,1,2,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Jacob Latz,f9230adb-f4e9-5750-b5b4-7e0777a7cf39,P,True,False,Texas Rangers,Chicago Cubs,home,,,,,,,,,,,,,,2,6,1,0,0,0,0,,20,0,0.16666666666666666,4.5
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Corey Seager,0a8aa1ff-7f96-5ea3-91c5-f80c15eed600,SS,False,True,Texas Rangers,Chicago Cubs,home,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Josh Jung,c0339e5b-fadd-5807-97d2-084bf40ec3f0,3B,False,True,Texas Rangers,Chicago Cubs,home,3,0,0,0,4,3,0,0,0,2,0,5,3,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Justin Foscue,7d50c8d1-9108-51da-9157-f75d3e301f10,1B,False,True,Texas Rangers,Chicago Cubs,home,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Ezequiel Duran,3e6051c8-4c13-582e-ad57-c600a7c2174b,2B,False,True,Texas Rangers,Chicago Cubs,home,1,0,0,0,4,1,0,2,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Jacob deGrom,77d2ec46-f9b0-500b-bf78-6d9addd6b3ca,P,True,True,Texas Rangers,Chicago Cubs,home,,,,,,,,,,,,,,7,21,10,0,3,0,0,,94,0,0.47619047619047616,12.857142857142858
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Brandon Nimmo,8954e7a7-4f31-5f8f-9888-a809b7b43d88,RF,False,True,Texas Rangers,Chicago Cubs,home,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Danny Jansen,40547d59-1eb3-5e24-9ee7-9609f66e218a,C,False,True,Texas Rangers,Chicago Cubs,home,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Daniel Palencia,708eb6ed-cc9d-5037-8b38-0d1fa47c46d4,P,True,False,Chicago Cubs,Texas Rangers,away,,,,,,,,,,,,,,0.2,2,1,0,2,1,2,,15,2,0.5,13.5
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Hoby Milner,bbd22cf6-c5e7-555d-a190-f9f2eb837f9d,P,True,False,Chicago Cubs,Texas Rangers,away,,,,,,,,,,,,,,0.2,2,0,0,1,0,0,,11,0,0.0,0.0
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Ian Happ,b809f60b-8331-5fd0-ab24-ee3b8538eabe,LF,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,3,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Michael Busch,6b4e85c9-9b0c-5203-9474-01388c3cb9e8,1B,False,True,Chicago Cubs,Texas Rangers,away,1,0,0,0,3,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Carson Kelly,43b2a60b-2ced-5c09-beab-347f4863ab11,C,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Jameson Taillon,0f8a2bfc-f51b-58d4-99c0-8e4f372425bf,P,True,True,Chicago Cubs,Texas Rangers,away,,,,,,,,,,,,,,5.1,16,4,2,4,0,1,,90,1,0.25,6.75
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Pete Crow-Armstrong,6e75f4ef-3025-5851-bb55-3a587c5f54a5,CF,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Moisés Ballesteros,c41e0ec5-9f1c-57a3-96c5-193ca0c2275e,DH,False,False,Chicago Cubs,Texas Rangers,away,0,0,0,0,4,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Seiya Suzuki,6b73f23f-a654-50fe-b4dd-3fa3ded653cc,RF,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,4,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Dansby Swanson,e20a9fc7-6766-5d06-b4c8-8cf51b6d7308,SS,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Phil Maton,d98006c2-9f61-5d93-b102-2c9f2c8c4cc9,P,True,False,Chicago Cubs,Texas Rangers,away,,,,,,,,,,,,,,1.1,4,2,0,0,0,0,,13,0,0.5,13.5
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Nico Hoerner,b69bc55a-ea5c-59ee-bf5a-3a765fe9aa2a,2B,False,True,Chicago Cubs,Texas Rangers,away,1,1,0,0,4,2,0,0,1,0,0,2,3,,,,,,,,,,,,
+2026-05-10,3263e7a7-c7ff-519f-b2db-d6c9f3cc7f37,Matt Shaw,0e584e95-3d75-5986-9cb2-4451b4d945cf,3B,False,True,Chicago Cubs,Texas Rangers,away,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Casey Schmitt,e4311142-3ace-57e1-a7f1-cdc5d6796151,1B,False,True,San Francisco Giants,Pittsburgh Pirates,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Heliot Ramos,521d9176-c734-5b63-9285-a4ab783f6edd,LF,False,True,San Francisco Giants,Pittsburgh Pirates,home,0,1,0,1,6,2,0,0,0,3,2,7,6,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Dylan Smith,14a06645-0ad9-5e0b-85ea-495f241e9632,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,0.2,2,0,1,0,0,0,,9,0,0.0,0.0
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Tyler Mahle,784bfea5-0d16-52ca-90d9-5741a8022995,P,True,True,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,5.2,17,8,2,5,2,4,,97,4,0.47058823529411764,12.705882352941176
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Jesus Rodriguez,5851178e-1f4d-528f-a36c-fd2bbf72e1f0,C,False,True,San Francisco Giants,Pittsburgh Pirates,home,1,0,0,0,6,1,0,2,0,0,1,2,1,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Keaton Winn,99b4c5de-929d-5557-ac30-13ec44ddb0bd,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,1,3,0,0,1,0,0,,7,0,0.0,0.0
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Matt Chapman,2c47b345-ac3d-53c1-b77e-6c5fa7a469bb,3B,False,True,San Francisco Giants,Pittsburgh Pirates,home,0,2,0,0,6,2,0,1,0,0,1,3,4,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Caleb Kilian,70c33a7e-9125-5928-9ee2-a792ac2793ee,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,1,3,0,2,0,0,0,,19,0,0.0,0.0
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Ryan Borucki,a704f31f-a733-515e-a72b-c7063003b288,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,2,6,1,2,0,0,0,,24,0,0.16666666666666666,4.5
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Drew Gilbert,01bdd52f-0286-5f20-88e2-428d2bff776a,CF,False,True,San Francisco Giants,Pittsburgh Pirates,home,0,0,0,0,6,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Jung Hoo Lee,5233b094-55d5-5790-9af1-e92aeb0a3f2a,RF,False,True,San Francisco Giants,Pittsburgh Pirates,home,1,1,0,0,6,2,0,1,0,1,0,3,3,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Sam Hentges,34de55b3-feaa-5589-be4d-417f4a2157c0,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,0.1,1,0,1,0,0,0,,9,0,0.0,0.0
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Rafael Devers,c9835c18-6f1f-57cd-a2ff-0ff6d821b16c,DH,False,False,San Francisco Giants,Pittsburgh Pirates,home,0,2,0,0,5,2,1,0,0,1,0,3,4,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Joel Peguero,ff1c92d7-f547-514b-89d8-107f69d75441,P,True,False,San Francisco Giants,Pittsburgh Pirates,home,,,,,,,,,,,,,,1.1,4,0,1,1,0,1,,30,2,0.0,0.0
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Christian Koss,0a846ded-a34c-5373-8d5f-cd3048928b3d,DH,False,False,San Francisco Giants,Pittsburgh Pirates,home,0,0,0,0,1,0,0,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Willy Adames,78cc8077-60d2-554c-b37f-99c3e17b50a1,SS,False,True,San Francisco Giants,Pittsburgh Pirates,home,2,1,0,0,6,3,0,1,0,0,2,5,4,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Luis Arraez,b0939c49-253b-5c8b-b011-386ee0b6e0bc,2B,False,True,San Francisco Giants,Pittsburgh Pirates,home,1,0,0,0,6,1,2,0,0,1,1,3,1,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Bryce Eldridge,dd4f319b-4be1-561c-b14a-cbbad889380d,1B,False,False,San Francisco Giants,Pittsburgh Pirates,home,0,0,0,0,2,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Nick Yorke,1ec28c26-6eac-5cd2-a2ff-00200609c539,LF,False,True,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Spencer Horwitz,d94f34aa-a84a-53a8-b552-cc31e58a6ff4,1B,False,True,Pittsburgh Pirates,San Francisco Giants,away,0,2,0,0,6,2,1,1,0,0,3,5,4,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Brandon Lowe,01a36894-6133-59b2-8a70-8948f1acd43b,2B,False,True,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,0,6,0,1,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Bryan Reynolds,141b2899-de5b-5dc9-b9f4-e519b8211bb2,PH,False,False,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Oneil Cruz,508aae39-e756-5c0b-aceb-61dcb5848fe3,CF,False,True,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,1,6,1,1,2,1,2,1,4,4,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Gregory Soto,b138fbb2-8c7e-57d8-8888-1b12c05f2f78,P,True,False,Pittsburgh Pirates,San Francisco Giants,away,,,,,,,,,,,,,,1.1,4,1,0,0,0,0,,15,0,0.25,6.75
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Mason Montgomery,bf255648-f3aa-5cc8-887d-d43df9b2d453,P,True,False,Pittsburgh Pirates,San Francisco Giants,away,,,,,,,,,,,,,,1.2,5,1,0,0,0,0,,19,0,0.2,5.3999999999999995
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Jared Triolo,b3830745-d362-5cb9-9a24-395ac01a9fa6,DH,False,False,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Yohan Ramírez,e44b5811-3bad-5c98-8894-3a41b359705c,P,True,False,Pittsburgh Pirates,San Francisco Giants,away,,,,,,,,,,,,,,2,6,2,3,1,0,1,,34,2,0.3333333333333333,9.0
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Isaac Mattson,8e8ee4ae-fa01-5f8d-a428-70b224343805,P,True,False,Pittsburgh Pirates,San Francisco Giants,away,,,,,,,,,,,,,,0.1,1,0,0,3,0,2,,18,2,0.0,0.0
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Bubba Chandler,a03ef631-e213-598b-9374-6af29396a1a4,P,True,True,Pittsburgh Pirates,San Francisco Giants,away,,,,,,,,,,,,,,5,15,3,1,5,1,2,,77,2,0.2,5.4
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Billy Cook,5b749f94-01ec-5c92-96f9-666b6cb896c7,LF,False,False,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Dennis Santana,e472520d-2660-5d3d-bc45-5ed27573556d,P,True,False,Pittsburgh Pirates,San Francisco Giants,away,,,,,,,,,,,,,,0.2,2,0,0,2,0,0,,19,0,0.0,0.0
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Henry Davis,0f944710-fb93-58f9-bdbf-2ecc18548deb,C,False,True,Pittsburgh Pirates,San Francisco Giants,away,1,0,0,0,5,1,2,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Justin Lawrence,ea05ee5a-4383-5989-ae85-5a30169627c9,P,True,False,Pittsburgh Pirates,San Francisco Giants,away,,,,,,,,,,,,,,0.1,1,1,1,2,0,0,,14,1,1.0,27.0
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Konnor Griffin,5a897113-adf9-5343-8f9d-15a2e37ba682,SS,False,True,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,1,6,1,1,1,0,1,1,3,4,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Ryan O'Hearn,bffaa283-7254-53ef-91d3-5520a44d1888,RF,False,True,Pittsburgh Pirates,San Francisco Giants,away,1,0,0,0,6,1,0,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Nick Gonzales,874ea46d-0569-5ecc-85e6-b448bfe30555,3B,False,True,Pittsburgh Pirates,San Francisco Giants,away,1,0,0,0,6,1,0,0,0,1,1,3,1,,,,,,,,,,,,
+2026-05-10,73988ec7-e4ec-5cc6-824f-3fad1b34b7c8,Marcell Ozuna,bef29d2e-a08c-5c3f-8b74-f3c204725a37,DH,False,False,Pittsburgh Pirates,San Francisco Giants,away,0,0,0,0,6,0,3,1,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Dalton Rushing,d49e7d8f-8d2e-518f-a9d4-502538f99c0d,C,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Kyle Tucker,2de01d55-4dd3-5bc3-b8e2-7859bbfdb79f,RF,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,4,0,3,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Max Muncy,8d258a66-1273-5363-89c6-87933a281e74,3B,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,1,4,1,0,1,0,1,2,4,4,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Wyatt Mills,77e22b93-a701-598b-954a-56c1371f261d,P,True,False,Los Angeles Dodgers,Atlanta Braves,home,,,,,,,,,,,,,,0.1,1,0,0,2,0,0,,11,0,0.0,0.0
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Freddie Freeman,6ddad2d6-c3a0-5592-8632-a05db59af193,1B,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Hyeseong Kim,f479d901-69d0-5cad-b7c8-aed3bc6d86d7,SS,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,4,0,0,3,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Shohei Ohtani,c4531087-0c95-5e6e-8d3c-604e0b0fc776,DH,False,False,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Justin Wrobleski,b48583dd-9754-5bd1-87ad-95cf87fb3591,P,True,True,Los Angeles Dodgers,Atlanta Braves,home,,,,,,,,,,,,,,8.2,26,7,1,7,2,7,,100,7,0.2692307692307692,7.26923076923077
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Andy Pages,1057dfe8-f4c3-58d4-be2b-63d4efdf2228,CF,False,True,Los Angeles Dodgers,Atlanta Braves,home,1,0,0,0,4,1,1,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Alex Call,5f08248b-5277-5287-86f6-a8b1f95cd171,LF,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,4,0,1,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Alex Freeland,ba5ee049-6fb5-5806-9480-5a14650880ba,2B,False,True,Los Angeles Dodgers,Atlanta Braves,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Robert Suarez,210de3d9-d0ff-5632-a4a4-6ab9221794db,P,True,False,Atlanta Braves,Los Angeles Dodgers,away,,,,,,,,,,,,,,1.1,4,0,1,0,0,0,,30,0,0.0,0.0
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Michael Harris II,cff14015-b6ae-555e-a442-60e9ddb08b61,CF,False,True,Atlanta Braves,Los Angeles Dodgers,away,1,0,0,0,4,1,0,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Jorge Mateo,9599b336-e628-59ce-ad5c-a8e26c743dc4,SS,False,True,Atlanta Braves,Los Angeles Dodgers,away,2,0,0,0,4,2,1,0,0,1,1,4,2,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Mauricio Dubón,47d09ee0-3ea8-5df2-b34c-c6fd76faa3fb,LF,False,True,Atlanta Braves,Los Angeles Dodgers,away,0,1,0,0,5,1,0,0,0,0,3,4,2,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Drake Baldwin,1e5f1f08-e9ec-57db-b15f-c1ec8d14d85e,C,False,False,Atlanta Braves,Los Angeles Dodgers,away,0,0,0,1,4,1,0,1,0,1,1,3,4,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Matt Olson,fa607d2a-7f47-5352-8330-cb074e809054,1B,False,True,Atlanta Braves,Los Angeles Dodgers,away,0,0,0,1,4,1,0,3,0,1,1,3,4,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Dominic Smith,a71b9e93-42ca-5a21-9c07-6aa70b6b9bae,PH,False,False,Atlanta Braves,Los Angeles Dodgers,away,1,0,0,0,1,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Sean Murphy,8734b2e9-b1b0-5750-87c2-7a9d74e7c990,C,False,True,Atlanta Braves,Los Angeles Dodgers,away,0,0,0,0,3,0,0,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Tyler Kinley,42de22d0-6456-596f-848b-5cf21ea6f7cc,P,True,False,Atlanta Braves,Los Angeles Dodgers,away,,,,,,,,,,,,,,1,3,1,1,1,1,2,,19,2,0.3333333333333333,9.0
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Eli White,834441df-51be-58ee-b9ae-8897115e2079,RF,False,True,Atlanta Braves,Los Angeles Dodgers,away,1,0,0,0,3,1,0,1,0,0,1,2,1,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Ozzie Albies,360c17ce-8588-52bd-b86a-6621a43f1bac,2B,False,True,Atlanta Braves,Los Angeles Dodgers,away,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Raisel Iglesias,9ce53798-a3c9-5d3d-ace5-e7568226d255,P,True,False,Atlanta Braves,Los Angeles Dodgers,away,0,0,0,0,0,0,0,0,0,0,0,0,0,1,3,1,0,0,0,0,,6,0,0.3333333333333333,9.0
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Austin Riley,3ae0fd65-efd0-5a3b-872b-7150b0c699aa,3B,False,True,Atlanta Braves,Los Angeles Dodgers,away,1,0,0,0,4,1,0,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Mike Yastrzemski,1a244f8f-82ee-555a-b1af-aa44b0f2ff31,RF,False,False,Atlanta Braves,Los Angeles Dodgers,away,0,0,0,0,1,0,0,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,29e9ad27-b339-5648-87d6-bdc1828ccd16,Bryce Elder,7e2a3aa0-9770-5681-8913-e01ab254ef8e,P,True,True,Atlanta Braves,Los Angeles Dodgers,away,,,,,,,,,,,,,,5.2,17,8,4,1,0,0,,83,0,0.47058823529411764,12.705882352941176
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Eduardo Rodriguez,f4447981-3674-5cdb-ad06-30d7c6b84025,P,True,True,Arizona Diamondbacks,New York Mets,home,,,,,,,,,,,,,,8.1,25,4,3,4,0,1,,100,1,0.16,4.319999999999999
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Juan Morillo,cd151ec4-bdc0-50ea-bac1-6dee6b1199a9,P,True,False,Arizona Diamondbacks,New York Mets,home,,,,,,,,,,,,,,0.2,2,0,1,0,0,0,,9,0,0.0,0.0
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Adrian Del Castillo,f14a5267-dcfe-5df7-938c-0f94dda1ddef,DH,False,False,Arizona Diamondbacks,New York Mets,home,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Nolan Arenado,aa4157df-7915-5251-83c1-0c1f931c43f0,3B,False,True,Arizona Diamondbacks,New York Mets,home,0,0,0,0,4,0,1,1,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Ryan Waldschmidt,9664cd41-cafb-593a-be3c-71354fd30ed7,LF,False,True,Arizona Diamondbacks,New York Mets,home,1,1,0,0,4,2,0,1,0,1,3,6,3,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Ketel Marte,c81e5c80-cc33-537b-b75e-e43d4baeefd8,2B,False,True,Arizona Diamondbacks,New York Mets,home,0,0,1,0,4,1,1,1,0,0,2,3,3,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Ildemaro Vargas,e20d8cb6-0ba2-5399-9d20-541d1cfce0e7,1B,False,True,Arizona Diamondbacks,New York Mets,home,0,0,0,0,4,0,1,0,1,2,0,2,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Geraldo Perdomo,f16aabac-5df9-5d25-854f-705f0f9b265a,SS,False,True,Arizona Diamondbacks,New York Mets,home,0,0,0,0,4,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Jose Fernandez,24ee4058-1b78-50fa-92c9-0ebeb3bfad17,DH,False,False,Arizona Diamondbacks,New York Mets,home,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Corbin Carroll,3b6210c9-3db8-5b34-9af5-e972d0b61b99,RF,False,True,Arizona Diamondbacks,New York Mets,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,James McCann,03983b89-44f4-5d46-a8af-e1aeb9219a7a,C,False,True,Arizona Diamondbacks,New York Mets,home,1,0,0,0,4,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Jorge Barrosa,a7bb2eb0-3405-55cc-a5f2-d51828ea32dd,CF,False,True,Arizona Diamondbacks,New York Mets,home,1,0,0,0,4,1,1,1,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Luis Torrens,5e3e8f7f-e1be-5314-a232-9a77a9237e0e,C,False,True,New York Mets,Arizona Diamondbacks,away,1,1,0,0,3,2,0,0,0,0,1,3,3,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Bo Bichette,33496f7a-3b83-59ef-b119-01d0d2437f28,SS,False,True,New York Mets,Arizona Diamondbacks,away,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Tyrone Taylor,8fc7ace9-e93d-58ba-b637-cdf5daaef922,CF,False,True,New York Mets,Arizona Diamondbacks,away,0,0,0,0,3,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Sean Manaea,3767ce45-7072-57bd-93ad-bab621dbb442,P,True,False,New York Mets,Arizona Diamondbacks,away,,,,,,,,,,,,,,1,3,2,1,0,0,0,,20,0,0.6666666666666666,18.0
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Mark Vientos,a659963f-2607-5990-8edb-583d390591c8,1B,False,True,New York Mets,Arizona Diamondbacks,away,1,0,0,0,4,1,0,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Tobias Myers,c08513fe-42b7-58d5-9c38-93726a5d42a5,P,True,False,New York Mets,Arizona Diamondbacks,away,,,,,,,,,,,,,,1,3,2,0,1,0,0,,12,0,0.6666666666666666,18.0
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Brett Baty,aa321d05-4b90-5b2d-823f-5fe77a11ec6c,PH,False,False,New York Mets,Arizona Diamondbacks,away,0,0,0,0,1,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Huascar Brazobán,5dd5dec5-24b4-580c-bba6-fefb17c0dfd7,P,True,True,New York Mets,Arizona Diamondbacks,away,,,,,,,,,,,,,,1,3,0,3,0,0,2,,30,2,0.0,0.0
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Carson Benge,631e3061-0f1e-5f0c-b1d3-ebbdfd16f053,RF,False,True,New York Mets,Arizona Diamondbacks,away,1,0,0,0,3,1,0,0,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Marcus Semien,ea54830a-4412-565e-8199-20eca49f0dd0,2B,False,True,New York Mets,Arizona Diamondbacks,away,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,MJ Melendez,012e9c76-38a2-593a-9308-d8732fa78288,PH,False,False,New York Mets,Arizona Diamondbacks,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,David Peterson,a581b102-d8dd-507d-8847-f452b715b2d7,P,True,False,New York Mets,Arizona Diamondbacks,away,,,,,,,,,,,,,,5,15,3,0,4,0,0,,77,3,0.2,5.4
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Juan Soto,c49ab650-1d5f-5066-83e1-ff734f609942,DH,False,False,New York Mets,Arizona Diamondbacks,away,0,0,0,0,4,0,1,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Andy Ibáñez,5f0fddfb-0e64-523a-84e5-5dc41735e837,3B,False,True,New York Mets,Arizona Diamondbacks,away,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,8e81a8ca-ee26-56f3-8afd-c85827324f2d,Austin Slater,c3be49f3-e4ef-52f8-b306-784ed1be703e,LF,False,True,New York Mets,Arizona Diamondbacks,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Freddy Fermin,37406aad-ae18-5be2-8439-0a0b3ab54a22,C,False,False,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,0,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Nick Castellanos,95dea803-893e-5754-9f60-c470b45cd25b,RF,False,False,San Diego Padres,St. Louis Cardinals,home,0,0,0,1,2,1,0,0,0,1,2,4,4,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Walker Buehler,2add6adf-3ed7-5112-82d7-3abce8492d11,P,True,True,San Diego Padres,St. Louis Cardinals,home,,,,,,,,,,,,,,6,18,2,0,3,1,2,,89,2,0.1111111111111111,3.0
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Jackson Merrill,0b80ef12-9566-5b94-973d-d1151b0e69ac,CF,False,True,San Diego Padres,St. Louis Cardinals,home,1,0,0,0,5,1,3,0,1,0,0,1,1,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Rodolfo Durán,4edce805-ce27-51cb-9d8b-6b453f67e910,C,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,3,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Bradgley Rodriguez,8092bd40-b0b9-55be-8319-2473dec40230,P,True,False,San Diego Padres,St. Louis Cardinals,home,,,,,,,,,,,,,,1,3,0,0,0,0,0,,5,0,0.0,0.0
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Sung-Mun Song,73e944ec-453d-5c36-8a02-543b5dc7f8b7,2B,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,2,0,1,1,1,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Jeremiah Estrada,ee6fb957-7f4c-5dfe-ae02-b44359338c92,P,True,False,San Diego Padres,St. Louis Cardinals,home,,,,,,,,,,,,,,0.2,2,2,1,0,0,0,,17,0,1.0,27.0
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Gavin Sheets,5f058b73-019c-573c-b5f2-d01f2e56cd0b,LF,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Ramón Laureano,dabca3a1-56c7-5218-8ab7-31a707ea9795,RF,False,False,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,1,0,0,1,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Adrian Morejon,311a75d7-a828-50c4-b614-a72d2ff657a3,P,True,False,San Diego Padres,St. Louis Cardinals,home,,,,,,,,,,,,,,0.1,1,0,0,0,0,0,,1,0,0.0,0.0
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Manny Machado,a9385e18-b1c3-52e8-b03b-b70d1f8a34af,3B,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,5,0,0,2,0,0,1,1,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Miguel Andujar,48554c1a-0b60-5739-aad2-0ff058b6d880,DH,False,False,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Ty France,e151e020-3f09-5095-83ad-b79d0d4dcfc2,1B,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,4,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Fernando Tatis Jr.,ac1ed075-5e29-5566-994f-09b1af7af1b9,2B,False,True,San Diego Padres,St. Louis Cardinals,home,0,0,0,0,5,0,2,1,1,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Xander Bogaerts,c2029f6d-a0ef-5980-850b-3d9f8f0ec784,SS,False,True,San Diego Padres,St. Louis Cardinals,home,1,1,0,0,4,2,0,1,0,1,0,3,3,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Ron Marinaccio,94b4c4ed-724a-50f0-8035-92f01e4aa182,P,True,False,San Diego Padres,St. Louis Cardinals,home,,,,,,,,,,,,,,2,6,3,0,0,0,0,,32,0,0.5,13.5
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Nolan Gorman,be501aad-9273-5dd4-a194-dcbebb3849ba,3B,False,True,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Jordan Walker,e10767c9-8f24-56db-9597-f92e37c6514d,RF,False,True,St. Louis Cardinals,San Diego Padres,away,0,0,0,1,4,1,0,1,0,1,2,4,4,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Nathan Church,b5df23ff-260a-5bc9-b5d7-884ca21ef688,LF,False,True,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Victor Scott II,4505d0dc-de10-56ef-ab3f-29ed1056473f,CF,False,False,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Kyle Leahy,a176548a-6558-513c-b3f4-ae9a2d19945e,P,True,True,St. Louis Cardinals,San Diego Padres,away,,,,,,,,,,,,,,5,15,5,4,2,0,0,,95,0,0.3333333333333333,9.0
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,José Fermín,1a68501f-5654-55ab-9262-74e5a153a9f7,LF,False,False,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Gordon Graceffo,86095d7c-a67d-5287-922c-9951860ae0ce,P,True,False,St. Louis Cardinals,San Diego Padres,away,,,,,,,,,,,,,,0.1,1,0,2,0,0,0,,7,1,0.0,0.0
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,JoJo Romero,e2a9f27c-148d-5202-bb6b-c34a5ba5ecee,P,True,False,St. Louis Cardinals,San Diego Padres,away,,,,,,,,,,,,,,1.1,4,2,0,0,0,0,,20,0,0.5,13.5
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,JJ Wetherholt,c0507a84-2f5c-53c7-8260-93f2e7bc2162,2B,False,True,St. Louis Cardinals,San Diego Padres,away,1,0,0,0,4,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Alec Burleson,68452ca8-6fdd-5413-a220-a1e5177c8deb,1B,False,True,St. Louis Cardinals,San Diego Padres,away,1,0,0,0,4,1,0,0,1,1,0,2,1,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Thomas Saggese,2799ba82-8b39-5d8b-b88f-ad038b5979a6,LF,False,True,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,2,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Riley O'Brien,7d05e862-eaea-58b0-8549-ac099c30e7cd,P,True,False,St. Louis Cardinals,San Diego Padres,away,,,,,,,,,,,,,,1,3,3,0,2,1,2,,31,2,1.0,27.0
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,George Soriano,6b90d6da-2ede-5a03-8567-b1abfe357bb4,P,True,False,St. Louis Cardinals,San Diego Padres,away,,,,,,,,,,,,,,0.2,2,1,1,0,0,0,,10,0,0.5,13.5
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Pedro Pagés,719006eb-d990-515a-9cb3-2a4186659958,C,False,True,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,3,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Ryne Stanek,8e7700b0-aad6-5c4a-90df-68e5c18db9a8,P,True,False,St. Louis Cardinals,San Diego Padres,away,,,,,,,,,,,,,,1,3,2,0,0,0,0,,10,0,0.6666666666666666,18.0
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Masyn Winn,ddea3cbf-3275-5d72-a43d-5899f5fa2390,SS,False,True,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,4,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,1394dc5c-faca-562c-b57e-463a798aaea7,Iván Herrera,2b86e80e-433d-54c4-a2c1-a0d16d28e3dc,DH,False,False,St. Louis Cardinals,San Diego Padres,away,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Carter Jensen,add60a5c-95dc-503b-a5b7-79f454562e86,DH,False,False,Kansas City Royals,Detroit Tigers,home,0,0,0,0,4,0,1,0,0,0,1,1,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Isaac Collins,c926f529-9700-5e4c-b204-5e60f55503df,LF,False,True,Kansas City Royals,Detroit Tigers,home,0,0,0,0,4,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Nick Loftin,7decf98a-4daf-5621-aed4-0ed96927b001,2B,False,True,Kansas City Royals,Detroit Tigers,home,0,0,0,0,3,0,1,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Michael Massey,1b04e04b-b439-534c-b445-c87e6d4ebba8,2B,False,False,Kansas City Royals,Detroit Tigers,home,0,0,0,0,1,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Starling Marte,5d70b9e7-89bf-591f-995a-1a0d74f841a2,PH,False,False,Kansas City Royals,Detroit Tigers,home,0,0,0,0,1,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Nick Mears,70f533f5-9733-5aeb-b8b8-28907be04653,P,True,False,Kansas City Royals,Detroit Tigers,home,,,,,,,,,,,,,,0.2,2,1,0,2,1,2,,12,2,0.5,13.5
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Vinnie Pasquantino,160d1ebf-e65f-5f8e-a25b-00b8001bc198,1B,False,True,Kansas City Royals,Detroit Tigers,home,2,0,0,0,4,2,0,0,0,0,1,3,2,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Kyle Isbel,cf2183c9-e138-5f3a-8d67-6dedd3b07bfb,CF,False,True,Kansas City Royals,Detroit Tigers,home,0,0,0,0,2,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Daniel Lynch IV,1ce7aa75-f8f9-5806-add0-1e2084d76c53,P,True,False,Kansas City Royals,Detroit Tigers,home,,,,,,,,,,,,,,0.2,2,1,1,2,0,1,,24,1,0.5,13.5
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Elias Díaz,bcd62fce-8731-5eb9-95d4-54a06e0d2a9f,C,False,True,Kansas City Royals,Detroit Tigers,home,0,0,0,0,3,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Maikel Garcia,31857688-327f-5f07-8b02-bc706fd384b8,3B,False,True,Kansas City Royals,Detroit Tigers,home,2,1,0,0,4,3,1,0,0,1,1,5,4,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Lane Thomas,92cdc2c8-b253-592c-b50a-1e77572b6053,CF,False,False,Kansas City Royals,Detroit Tigers,home,0,0,0,0,2,0,0,2,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Noah Cameron,bf1ef469-5a47-55dd-adc1-5c72795acd59,P,True,True,Kansas City Royals,Detroit Tigers,home,,,,,,,,,,,,,,4,12,4,3,5,0,3,,95,3,0.3333333333333333,9.0
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Alex Lange,1b2bab6d-3544-540b-8d29-30e54038bb92,P,True,False,Kansas City Royals,Detroit Tigers,home,,,,,,,,,,,,,,1.2,5,0,1,0,0,0,,17,0,0.0,0.0
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Jac Caglianone,ec14685d-e1f1-5cf3-8532-ae72ed66c00b,RF,False,True,Kansas City Royals,Detroit Tigers,home,0,1,0,0,4,1,0,0,0,1,0,2,2,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Steven Cruz,8094ad84-13c4-5253-8f03-e78cc14cae96,P,True,False,Kansas City Royals,Detroit Tigers,home,,,,,,,,,,,,,,1,3,2,1,1,0,0,,21,0,0.6666666666666666,18.0
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,John Schreiber,af846716-0751-55d2-a0de-04178c31615c,P,True,False,Kansas City Royals,Detroit Tigers,home,,,,,,,,,,,,,,1,3,1,1,0,0,0,,21,0,0.3333333333333333,9.0
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Bobby Witt Jr.,355275f4-ce4a-5c49-a0e4-cadfa2e8a083,SS,False,True,Kansas City Royals,Detroit Tigers,home,2,0,0,0,4,2,0,0,0,1,0,3,2,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Gage Workman,e4bfd208-db39-5818-992b-50b44934ae10,3B,False,False,Detroit Tigers,Kansas City Royals,away,0,0,0,1,2,1,0,0,0,1,2,4,4,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Brant Hurter,39cfef9d-dfdf-5ab3-969a-8125225bba98,P,True,False,Detroit Tigers,Kansas City Royals,away,,,,,,,,,,,,,,1.1,4,1,1,0,0,0,,18,0,0.25,6.75
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Zach McKinstry,fac18760-19d9-5b9e-9954-2f9442ed2b6a,2B,False,False,Detroit Tigers,Kansas City Royals,away,0,0,0,0,2,0,0,0,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Hao-Yu  Lee,eda57f37-5ed7-563c-a8e6-f9248cf2ab02,2B,False,True,Detroit Tigers,Kansas City Royals,away,0,0,1,0,2,1,0,0,0,1,1,3,3,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Drew Anderson,f7e48447-09b1-5a8d-8427-35c519041f6a,P,True,False,Detroit Tigers,Kansas City Royals,away,,,,,,,,,,,,,,2,6,4,0,5,0,3,,39,3,0.6666666666666666,18.0
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Jahmai Jones,f37c716e-e0f5-5725-aba6-6f855690f0c8,DH,False,False,Detroit Tigers,Kansas City Royals,away,1,0,0,0,2,1,0,1,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Riley Greene,bbee493e-0329-5be6-8cd9-78d86c4bba58,LF,False,True,Detroit Tigers,Kansas City Royals,away,1,1,0,0,5,2,2,1,0,1,0,3,3,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Kevin McGonigle,564bb172-7dfb-573e-b0f7-7f5cbdd0d547,SS,False,True,Detroit Tigers,Kansas City Royals,away,1,0,0,0,5,1,1,0,0,0,0,1,1,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Kyle Finnegan,0a6158d8-6cc7-58ea-b56c-45fed333f327,P,True,False,Detroit Tigers,Kansas City Royals,away,,,,,,,,,,,,,,1.2,5,0,2,1,0,0,,19,0,0.0,0.0
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Kenley Jansen,921a5787-c4d6-5ff2-b887-1b9808d8533a,P,True,False,Detroit Tigers,Kansas City Royals,away,,,,,,,,,,,,,,1,3,2,0,0,0,0,,12,0,0.6666666666666666,18.0
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Zack Short,f549a631-c8b5-54e9-80ab-53643f997c69,SS,False,True,Detroit Tigers,Kansas City Royals,away,0,0,0,0,2,0,1,0,0,1,0,1,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Spencer Torkelson,c12eb080-7e57-5145-9dc7-97b7b4c97921,1B,False,True,Detroit Tigers,Kansas City Royals,away,1,0,0,0,5,1,1,3,0,1,0,2,1,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Enmanuel De Jesus,3e1d8d47-3c70-5063-bc60-72aa374012c5,P,True,False,Detroit Tigers,Kansas City Royals,away,,,,,,,,,,,,,,2.1,7,1,0,0,0,0,,22,0,0.14285714285714285,3.8571428571428568
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Brenan Hanifee,bce54f45-d6f3-5b7d-a287-789a175d28c9,P,True,True,Detroit Tigers,Kansas City Royals,away,,,,,,,,,,,,,,0.2,2,0,0,2,0,0,,10,0,0.0,0.0
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Matt Vierling,89a3e61c-5176-5488-8084-f6d7dcdbeb37,CF,False,True,Detroit Tigers,Kansas City Royals,away,0,1,0,0,5,1,1,1,0,0,2,3,2,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Dillon Dingler,ddcd399c-63b6-5add-9222-5d69a6f9b45d,C,False,True,Detroit Tigers,Kansas City Royals,away,0,1,0,0,5,1,1,2,0,0,0,1,2,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Colt Keith,cadc4708-5d0a-56ac-84d0-feced1704a81,DH,False,False,Detroit Tigers,Kansas City Royals,away,0,0,0,0,3,0,0,1,0,0,0,0,0,,,,,,,,,,,,
+2026-05-10,e77dc696-b849-59d3-9bca-4400a71914b6,Wenceel Pérez,2bdf2cf8-d4bf-52bc-ad2c-0775e85e014b,RF,False,True,Detroit Tigers,Kansas City Royals,away,1,0,0,0,5,1,0,0,0,1,1,3,1,,,,,,,,,,,,
