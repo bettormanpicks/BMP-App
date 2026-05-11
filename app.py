@@ -317,8 +317,6 @@ with streamlit_analytics.track():
             box_df = pd.DataFrame()
             schedule_df = pd.DataFrame()
 
-        stat_vs_choice = "Team"  # default fallback
-
         # --- Player Type ---
         player_type_choice = st.sidebar.radio(
             "Player Type",
@@ -329,14 +327,6 @@ with streamlit_analytics.track():
 
         # --- Sidebar Form ---
         with st.sidebar.form(key="mlb_form"):
-
-            # --- Batters only options ---
-            if player_type_choice == "Batters":
-                stat_vs_choice = st.radio(
-                    "Show Stats Vs",
-                    ["Team", "Pitcher"],
-                    horizontal=True
-                )
 
             # --- Performance Window ---
             performance_window = st.radio(
@@ -354,11 +344,7 @@ with streamlit_analytics.track():
                 step=5
             )
 
-            # --- Override ---
-            all_opponents = st.checkbox(
-                "Show Stats Vs All Opponents",
-                value=False
-            )
+            vs_today_pitcher = st.checkbox("Stats vs Today's Pitcher", value=False)
 
             mlb_filter_today = st.checkbox("View Today's Games", value=False)
 
@@ -430,13 +416,9 @@ with streamlit_analytics.track():
                             box_df=box_df,
                             player=player,
                             window=performance_window,
-                            opponent=None if all_opponents else (
-                                opp if player_type_choice == "Pitchers" or stat_vs_choice == "Team" else None
-                            ),
-                            pitcher=None if all_opponents else (
-                                opp_pitcher if player_type_choice == "Batters" and stat_vs_choice == "Pitcher" else None
-                            ),
-                            all_opponents=all_opponents
+                            opponent=opp if (vs_today_pitcher and player_type_choice == "Pitchers") else None,
+                            pitcher=opp_pitcher if (vs_today_pitcher and player_type_choice == "Batters") else None,
+                            all_opponents=not vs_today_pitcher
                         )
 
                         if game_log.empty:
@@ -512,7 +494,7 @@ with streamlit_analytics.track():
                     else:  # Batters
                         display_cols = [
                             "Date / Time", "Player", "Team", "Opp", "Pitcher",
-                            "Gms", "H", "1B", "2B", "3B", "HR", "TB",
+                            "Gms", "H", "1B", "2B", "2B", "HR", "TB",
                             "RBI", "R", "SB", "EBH", "HRR", "W(B)", "K(B)"
                         ]
                         sort_col = "HRR"
