@@ -377,7 +377,7 @@ with streamlit_analytics.track():
                     "R":    "runs",
                     "SB":   "stolen_bases",
                     "HRR":  "hrr",
-                    "W(B)": "walks",
+                    "BB(B)": "walks",
                     "K(B)": "strikeouts",
                 }
 
@@ -386,7 +386,7 @@ with streamlit_analytics.track():
                     "K":  "strikeouts_pitching",
                     "HA": "hits_allowed",
                     "ER": "earned_runs",
-                    "W":  "walks_pitching",
+                    "BB":  "walks_pitching",
                 }
 
                 rows = []
@@ -488,14 +488,14 @@ with streamlit_analytics.track():
                     if player_type_choice == "Pitchers":
                         display_cols = [
                             "Date / Time", "Player", "Team", "Opp",
-                            "Gms", "O", "K", "HA", "ER", "W"
+                            "Gms", "O", "K", "HA", "ER", "BB"
                         ]
                         sort_col = "K"
                     else:  # Batters
                         display_cols = [
                             "Date / Time", "Player", "Team", "Opp", "Pitcher",
                             "Gms", "H", "1B", "2B", "3B", "HR", "TB",
-                            "RBI", "R", "SB", "EBH", "HRR", "W(B)", "K(B)"
+                            "RBI", "R", "SB", "EBH", "HRR", "BB(B)", "K(B)"
                         ]
                         sort_col = "HRR"
 
