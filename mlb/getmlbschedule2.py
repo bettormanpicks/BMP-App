@@ -1,16 +1,18 @@
 import pandas as pd
 import requests
+import csv
+import json
 import time
-from datetime import datetime
+from datetime import datetime, timedelta
 
 # -------------------------
 # CONFIG
 # -------------------------
 API_KEY = "sbfgsoclqrtd9vpifqmxcyz"
 BASE_URL = "https://api.sportsblaze.com/mlb/v1"
+START_DATE = "2026-05-11"
+END_DATE = "2026-05-13"
 OUTPUT_CSV = "data/2026_mlb_schedule.csv"
-
-TODAY = datetime.utcnow().strftime("%Y-%m-%d")
 
 last_request_time = 0
 MIN_DELAY = 6.2  # respect 10 req/min
@@ -29,7 +31,16 @@ def rate_limit():
     last_request_time = time.time()
 
 # -------------------------
-# FETCH TODAY'S SCHEDULE
+# DATE LOOP
+# -------------------------
+def daterange(start_date, end_date):
+    start = datetime.strptime(start_date, "%Y-%m-%d")
+    end = datetime.strptime(end_date, "%Y-%m-%d")
+    for n in range((end - start).days + 1):
+        yield start + timedelta(n)
+
+# -------------------------
+# FETCH DAILY SCHEDULE
 # -------------------------
 def fetch_schedule(date_str):
     url = f"{BASE_URL}/schedule/daily/{date_str}.json?key={API_KEY}"
@@ -63,12 +74,14 @@ def extract_schedule_games(games):
     for game in games:
         game_id = game.get("id")
 
+        # Convert date (same fix as boxscores)
         raw_date = game.get("date")
         game_datetime = datetime.fromisoformat(raw_date.replace("Z", "+00:00"))
 
         home_team = game["teams"]["home"]["name"]
         away_team = game["teams"]["away"]["name"]
 
+        # Probable pitchers (may not exist)
         home_pitcher = None
         away_pitcher = None
 
@@ -78,7 +91,7 @@ def extract_schedule_games(games):
 
         status = game.get("status")
 
-        rows.append({
+        row = {
             "date": game_datetime,
             "game_id": game_id,
             "home_team": home_team,
@@ -86,32 +99,40 @@ def extract_schedule_games(games):
             "home_pitcher": home_pitcher,
             "away_pitcher": away_pitcher,
             "status": status
-        })
+        }
+
+        rows.append(row)
 
     return rows
 
 # -------------------------
-# SAVE CSV (overwrites each run)
+# SAVE CSV
 # -------------------------
 def save_csv(file_path, data):
     if not data:
-        print("No games found, CSV not updated.")
         return
 
     df = pd.DataFrame(data)
-    df["date"] = df["date"].apply(lambda x: x.isoformat())
+    df["date"] = df["date"].apply(lambda x: x.isoformat())  # explicit ISO format
     df.to_csv(file_path, index=False, encoding="utf-8")
 
 # -------------------------
 # MAIN
 # -------------------------
-print(f"Fetching schedule for {TODAY}...")
+all_games = []
 
-games = fetch_schedule(TODAY)
+for single_date in daterange(START_DATE, END_DATE):
+    date_str = single_date.strftime("%Y-%m-%d")
+    print(f"Fetching schedule for {date_str}...")
 
-if not games:
-    print("No games found.")
-else:
+    games = fetch_schedule(date_str)
+
+    if not games:
+        continue
+
     rows = extract_schedule_games(games)
-    save_csv(OUTPUT_CSV, rows)
-    print(f"Saved {len(rows)} games to {OUTPUT_CSV}")
+    all_games.extend(rows)
+
+# Save
+save_csv(OUTPUT_CSV, all_games)
+print(f"Saved {len(all_games)} games to {OUTPUT_CSV}")

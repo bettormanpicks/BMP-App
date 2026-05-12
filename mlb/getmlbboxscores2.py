@@ -1,5 +1,3 @@
-import os
-import pandas as pd
 import requests
 import time
 import json
@@ -12,31 +10,9 @@ from datetime import datetime, timedelta
 # -------------------------
 API_KEY = "sbfgsoclqrtd9vpifqmxcyz"
 BASE_URL = "https://api.sportsblaze.com/mlb/v1"
+START_DATE = "2026-05-09"  # YYYY-MM-DD
+END_DATE = "2026-05-10"    # YYYY-MM-DD
 OUTPUT_CSV = "data/2026boxscores.csv"
-
-def get_date_range(csv_path):
-    """
-    Determine start and end dates automatically.
-    - Start: day after the most recent date already in the CSV.
-             Falls back to the current season opener if CSV doesn't exist.
-    - End: yesterday (today's games aren't finished yet).
-    """
-    yesterday = (datetime.utcnow() - timedelta(days=1)).strftime("%Y-%m-%d")
-
-    if os.path.exists(csv_path):
-        try:
-            existing = pd.read_csv(csv_path, usecols=["date"])
-            if not existing.empty:
-                latest = pd.to_datetime(existing["date"]).max().date()
-                start = (latest + timedelta(days=1)).strftime("%Y-%m-%d")
-                return start, yesterday
-        except Exception:
-            pass
-
-    # Fallback: start of 2026 MLB season
-    return "2026-03-26", yesterday
-
-START_DATE, END_DATE = get_date_range(OUTPUT_CSV)
 
 total_requests = 0
 last_request_time = 0
@@ -202,20 +178,6 @@ def extract_players_from_game(game_data):
     return players_list
 
 # -------------------------
-# LOAD EXISTING GAME IDs
-# -------------------------
-existing_game_ids = set()
-if os.path.exists(OUTPUT_CSV):
-    try:
-        existing = pd.read_csv(OUTPUT_CSV, usecols=["game_id"])
-        existing_game_ids = set(existing["game_id"].dropna().unique())
-        print(f"Loaded {len(existing_game_ids)} existing game IDs from CSV.")
-    except Exception as e:
-        print(f"⚠️ Could not load existing game IDs: {e}")
-
-print(f"Fetching from {START_DATE} to {END_DATE}...")
-
-# -------------------------
 # MAIN SCRIPT
 # -------------------------
 all_players = []
@@ -236,12 +198,6 @@ for single_date in daterange(START_DATE, END_DATE):
 
     for game in games:
         game_id = game.get("id")
-
-        # Skip games already in the CSV
-        if game_id in existing_game_ids:
-            print(f"⏭️ Skipping game {game_id}: already in CSV.")
-            continue
-
         game_url = f"{BASE_URL}/boxscores/game/{game_id}.json?key={API_KEY}"
 
         game_data = None  # initialize cleanly
