@@ -23,24 +23,28 @@ DATA_DIR = os.path.join("tabletennis", "data")
 
 LEAGUE_FILES = {
     "TT Cup": {
-        "schedule": os.path.join(DATA_DIR, "tt_cup_schedule.csv"),
+        "schedule":  os.path.join(DATA_DIR, "tt_cup_schedule.csv"),
         "matchlogs": os.path.join(DATA_DIR, "tt_cup_matchlogs.csv"),
-        "h2h": os.path.join(DATA_DIR, "tt_cup_h2h_summary.csv"),
+        "h2h":       os.path.join(DATA_DIR, "tt_cup_h2h_summary.csv"),
+        "h2h_index": os.path.join(DATA_DIR, "tt_cup_h2h_index.pkl.gz"),
     },
     "TT Elite": {
-        "schedule": os.path.join(DATA_DIR, "tt_elite_schedule.csv"),
+        "schedule":  os.path.join(DATA_DIR, "tt_elite_schedule.csv"),
         "matchlogs": os.path.join(DATA_DIR, "tt_elite_matchlogs.csv"),
-        "h2h": os.path.join(DATA_DIR, "tt_elite_h2h_summary.csv"),
+        "h2h":       os.path.join(DATA_DIR, "tt_elite_h2h_summary.csv"),
+        "h2h_index": os.path.join(DATA_DIR, "tt_elite_h2h_index.pkl.gz"),
     },
     "Czech": {
-        "schedule": os.path.join(DATA_DIR, "tt_czech_schedule.csv"),
+        "schedule":  os.path.join(DATA_DIR, "tt_czech_schedule.csv"),
         "matchlogs": os.path.join(DATA_DIR, "tt_czech_matchlogs.csv"),
-        "h2h": os.path.join(DATA_DIR, "tt_czech_h2h_summary.csv"),
+        "h2h":       os.path.join(DATA_DIR, "tt_czech_h2h_summary.csv"),
+        "h2h_index": os.path.join(DATA_DIR, "tt_czech_h2h_index.pkl.gz"),
     },
     "Setka": {
-        "schedule": os.path.join(DATA_DIR, "tt_setka_schedule.csv"),
+        "schedule":  os.path.join(DATA_DIR, "tt_setka_schedule.csv"),
         "matchlogs": os.path.join(DATA_DIR, "tt_setka_matchlogs.csv"),
-        "h2h": os.path.join(DATA_DIR, "tt_setka_h2h_summary.csv"),
+        "h2h":       os.path.join(DATA_DIR, "tt_setka_h2h_summary.csv"),
+        "h2h_index": os.path.join(DATA_DIR, "tt_setka_h2h_index.pkl.gz"),
     }
 }
 
@@ -96,83 +100,41 @@ def normalize_name(name):
 @st.cache_data(show_spinner=False, max_entries=4, ttl=3600)
 def load_tt_raw_data(league):
     """
-    Loads raw Table Tennis datasets and applies minimal cleaning.
+    Loads schedule, h2h summary, and pre-built h2h_index for a single league.
     Cached per league (max_entries=4, one per league).
-    ttl=3600 ensures a manual Supabase push is picked up within an hour
-    rather than being invisible until the app is restarted.
+    ttl=3600 ensures a manual Supabase push is picked up within an hour.
 
-    Matchlogs are filtered to only pairs on the current schedule before
-    any processing, so we never compute stats for rows we'll never use.
+    Matchlogs are no longer downloaded at runtime — buildallleagues.py
+    reads them locally and saves a slim per-league pickle containing only
+    scheduled pairs. This eliminates 22-30MB of Supabase egress per cache miss.
     """
     paths = LEAGUE_FILES[league]
 
-    schedule  = pd.read_csv(download_from_supabase(os.path.basename(paths["schedule"])))
-    matchlogs = pd.read_csv(download_from_supabase(os.path.basename(paths["matchlogs"])))
-    h2h       = pd.read_csv(download_from_supabase(os.path.basename(paths["h2h"])))
+    schedule = pd.read_csv(download_from_supabase(os.path.basename(paths["schedule"])))
+    h2h      = pd.read_csv(download_from_supabase(os.path.basename(paths["h2h"])))
 
     # Keep originals for display
-    matchlogs["player1_display"] = matchlogs["player1"]
-    matchlogs["player2_display"] = matchlogs["player2"]
-    schedule["player1_display"]  = schedule["player1"]
-    schedule["player2_display"]  = schedule["player2"]
+    schedule["player1_display"] = schedule["player1"]
+    schedule["player2_display"] = schedule["player2"]
 
     # Normalize for logic
-    matchlogs["player1"] = matchlogs["player1"].apply(normalize_name)
-    matchlogs["player2"] = matchlogs["player2"].apply(normalize_name)
-    schedule["player1"]  = schedule["player1"].apply(normalize_name)
-    schedule["player2"]  = schedule["player2"].apply(normalize_name)
+    schedule["player1"] = schedule["player1"].apply(normalize_name)
+    schedule["player2"] = schedule["player2"].apply(normalize_name)
 
     # Normalize column naming
-    if "match_date" in matchlogs.columns:
-        matchlogs.rename(columns={"match_date": "date"}, inplace=True)
     if "match_date" in schedule.columns:
         schedule.rename(columns={"match_date": "date"}, inplace=True)
 
     # Date parsing
-    for df, col in [(schedule, "date"), (matchlogs, "date")]:
-        if col in df.columns:
-            df[col] = pd.to_datetime(df[col], errors="coerce")
-
+    schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
     schedule.dropna(subset=["match_id", "date"], inplace=True)
-    matchlogs.dropna(subset=["match_id", "date"], inplace=True)
 
-    # --- Filter matchlogs to only scheduled pairs before any processing ---
-    # This avoids computing parse_sets/stats for rows we'll never query.
-    scheduled_pairs = set()
-    for _, row in schedule.iterrows():
-        key = tuple(sorted([row["player1"], row["player2"]]))
-        scheduled_pairs.add(key)
+    # Load pre-built slim h2h index (built offline by buildallleagues.py)
+    pkl_buffer = download_from_supabase(os.path.basename(paths["h2h_index"]))
+    with gzip.open(pkl_buffer, "rb") as f:
+        h2h_index = pickle.load(f)
 
-    matchlogs = matchlogs[
-        matchlogs.apply(
-            lambda r: tuple(sorted([r["player1"], r["player2"]])) in scheduled_pairs,
-            axis=1
-        )
-    ].copy()
-
-    # Parse sets
-    matchlogs["parsed_sets"] = matchlogs["sets"].apply(parse_sets)
-
-    # Drop bad parsed rows
-    matchlogs = matchlogs[matchlogs["parsed_sets"].apply(len) > 0].copy()
-
-    # Compute stats
-    matchlogs["sets1"], matchlogs["sets2"] = zip(*matchlogs["parsed_sets"].apply(compute_set_wins))
-    matchlogs["ATP"]    = matchlogs["parsed_sets"].apply(total_points_match)
-    matchlogs["PS"]     = matchlogs["parsed_sets"].apply(point_spread)
-    matchlogs["SS"]     = matchlogs["parsed_sets"].apply(set_spread)
-    matchlogs["winner"] = matchlogs.apply(
-        lambda r: r["player1"] if r["sets1"] > r["sets2"] else r["player2"],
-        axis=1
-    )
-    matchlogs["four_plus"] = matchlogs["parsed_sets"].apply(lambda x: int(len(x) >= 4))
-
-    # Newest first
-    matchlogs.sort_values("date", ascending=False, inplace=True)
-
-    h2h_index = build_h2h_index(matchlogs)
-
-    return schedule, matchlogs, h2h, h2h_index
+    return schedule, None, h2h, h2h_index
 
 # -------------------------
 # Build all league data
