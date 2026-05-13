@@ -148,7 +148,8 @@ def load_tt_all_leagues():
     schedule["player1"] = schedule["player1"].apply(normalize_name)
     schedule["player2"] = schedule["player2"].apply(normalize_name)
     # Rename to keep the rest of the app from breaking
-    schedule = schedule.rename(columns={"match_date": "date"})
+    if "match_date" in schedule.columns:
+        schedule = schedule.rename(columns={"match_date": "date"})
     schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
 
     # Download h2h index from Supabase
