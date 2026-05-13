@@ -1,18 +1,11 @@
 import time
 import csv
-import json
 import os
 from urllib.parse import quote
 from datetime import datetime, timedelta, UTC
 import pandas as pd
 import undetected_chromedriver as uc
 from selenium.webdriver.support.ui import WebDriverWait
-from dotenv import load_dotenv
-
-# Load .env from project root (one level up from this script's folder)
-load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env"))
-
-API_TOKEN = os.environ.get("SCORES24_API_TOKEN", "h57bsdl")
 
 # -------------------------
 # Configuration
@@ -98,7 +91,6 @@ def scrape_api():
     options.add_argument("--start-maximized")
     options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
     options.add_argument("--disable-blink-features=AutomationControlled")
-    options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
     driver = uc.Chrome(options=options, version_main=147)
     wait = WebDriverWait(driver, 20)
@@ -106,39 +98,6 @@ def scrape_api():
     driver.get(LEAGUE_URL)
     print("Solve Cloudflare if needed...")
     time.sleep(15)
-
-    # Extract token directly from page JavaScript context
-    api_token = driver.execute_script("""
-        try {
-            // Try common locations where SPAs store API config
-            const nuxt = window.__NUXT__;
-            if (nuxt) {
-                const str = JSON.stringify(nuxt);
-                const match = str.match(/"x-api-token"\s*:\s*"([^"]+)"/);
-                if (match) return match[1];
-                const match2 = str.match(/apiToken['":\s]+['"]([a-z0-9]+)['"]/i);
-                if (match2) return match2[1];
-            }
-        } catch(e) {}
-    
-        // Try localStorage
-        try {
-            for (let i = 0; i < localStorage.length; i++) {
-                const key = localStorage.key(i);
-                const val = localStorage.getItem(key);
-                if (val && val.match(/^[a-z0-9]{6,8}$/)) return val;
-            }
-        } catch(e) {}
-    
-        return null;
-    """)
-
-    if api_token:
-        print(f"Using live token: {api_token}")
-    else:
-        print("Could not extract token from page — trying cookie approach")
-        # Last resort: trigger a real page navigation to a match and capture from there
-        api_token = API_TOKEN
 
     base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/tt-elite-series-1/matches"
 
@@ -165,7 +124,7 @@ def scrape_api():
                 headers: {
                     "accept": "*/*",
                     "x-api-timestamp": String(arguments[1]),
-                    "x-api-token": arguments[2],
+                    "x-api-token": "v3qoze",
                     "x-bot-identifier": "client",
                     "x-country": "us",
                     "referer": "https://scores24.live/en/table-tennis"
@@ -173,7 +132,7 @@ def scrape_api():
             })
             .then(r => r.json())
             .catch(e => null)
-        """, query, timestamp, api_token)
+        """, query, timestamp)
 
         print(f"Raw response keys: {list(data.keys()) if data else 'None'}")
         print(f"Edges count: {len(data.get('data', {}).get('edges', []))}")

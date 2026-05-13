@@ -10,18 +10,25 @@ BUCKET_NAME = "bmp-data"
 DATA_DIR = os.path.join("tabletennis", "data")
 
 FILES_TO_UPLOAD = [
-    "tt_elite_matchlogs.csv",
-    "tt_czech_matchlogs.csv",
-    "tt_setka_matchlogs.csv",
-    "tt_cup_matchlogs.csv",
+    # Per-league h2h indexes (pre-built slim pickles, replaces matchlog CSVs)
+    "tt_elite_h2h_index.pkl.gz",
+    "tt_czech_h2h_index.pkl.gz",
+    "tt_setka_h2h_index.pkl.gz",
+    "tt_cup_h2h_index.pkl.gz",
+    # H2H summary CSVs
     "tt_elite_h2h_summary.csv",
     "tt_czech_h2h_summary.csv",
     "tt_setka_h2h_summary.csv",
     "tt_cup_h2h_summary.csv",
+    # Schedule CSVs
     "tt_elite_schedule.csv",
     "tt_czech_schedule.csv",
     "tt_setka_schedule.csv",
     "tt_cup_schedule.csv",
+    # Matchlog CSVs removed — no longer downloaded at runtime.
+    # buildallleagues.py reads them locally to build the slim pickles.
+    # If you want to keep them in Supabase as a backup, you can add them
+    # back here, but they will count against your egress quota if downloaded.
 ]
 
 def upload_file(supabase, filepath, filename):

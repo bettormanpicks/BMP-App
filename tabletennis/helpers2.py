@@ -197,19 +197,13 @@ def load_tt_all_leagues():
 # -------------------------
 # Build H2H index from matchlogs
 # -------------------------
-def build_h2h_index(matchlogs, max_per_pair=50):
+def build_h2h_index(matchlogs):
     """
     Creates a dictionary keyed by sorted player pair (tuple),
-    with a list of matches (newest first), capped at max_per_pair
-    per pair.
+    with a list of matches (newest first).
 
-    The cap defaults to 50 — matching the maximum recency window (L50)
-    the app ever queries. Storing more than 50 matches per pair wastes
-    memory without ever being used. For the All leagues view this alone
-    can cut h2h_index memory by 80-90%.
-
-    Assumes matchlogs is already sorted newest-first — load_tt_raw_data
-    does this immediately before calling this function.
+    Assumes matchlogs is already filtered to scheduled pairs and sorted
+    newest-first — load_tt_raw_data does both before calling this function.
     """
     h2h_index = {}
 
@@ -220,11 +214,6 @@ def build_h2h_index(matchlogs, max_per_pair=50):
 
         if key not in h2h_index:
             h2h_index[key] = []
-
-        # Skip once we have enough history for this pair —
-        # matchlogs is newest-first so we always keep the most recent matches
-        if len(h2h_index[key]) >= max_per_pair:
-            continue
 
         parsed = row["parsed_sets"]
 
@@ -244,7 +233,6 @@ def build_h2h_index(matchlogs, max_per_pair=50):
             "ATP":         row["ATP"],
             "PS":          row["PS"],
             "SS":          row["SS"],
-            # Set-level winners for BB% / SR% computation
             "s1_winner":   s1_winner,
             "s2_winner":   s2_winner,
             "s3_winner":   s3_winner,
@@ -255,14 +243,13 @@ def build_h2h_index(matchlogs, max_per_pair=50):
 # -------------------------
 # Merge H2H indexes
 # -------------------------
-def merge_h2h_indexes(indexes, max_per_pair=50):
+def merge_h2h_indexes(indexes):
     """
     Merges multiple h2h_index dicts by combining match lists for shared
     keys and sorting merged lists newest-first.
 
-    Applies the same max_per_pair cap as build_h2h_index after merging,
-    since combining leagues can push a pair's total above the cap.
-    We keep the most recent max_per_pair matches across all leagues.
+    No per-pair cap is applied — since indexes are already filtered to
+    scheduled pairs, storing full history per pair is fine memory-wise.
     """
     merged = {}
     for index in indexes:
@@ -272,11 +259,9 @@ def merge_h2h_indexes(indexes, max_per_pair=50):
             else:
                 merged[key] = list(matches)
 
-    # Re-sort newest-first and enforce cap
+    # Re-sort newest-first after merging
     for key in merged:
         merged[key].sort(key=lambda m: m["date"], reverse=True)
-        if len(merged[key]) > max_per_pair:
-            merged[key] = merged[key][:max_per_pair]
 
     return merged
 

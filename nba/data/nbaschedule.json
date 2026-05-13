@@ -4692,10 +4692,62 @@
         }
       },
       "date": "2026-05-12T00:00:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Rocket Arena",
         "location": "Cleveland, OH"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 21
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 38
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 22
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 103
+          },
+          "home": {
+            "points": 112
+          }
+        }
       }
     },
     {
@@ -4715,10 +4767,62 @@
         }
       },
       "date": "2026-05-12T02:30:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Crypto.com Arena",
         "location": "Los Angeles, CA"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 19
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 39
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 35
+            },
+            "home": {
+              "points": 26
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 115
+          },
+          "home": {
+            "points": 110
+          }
+        }
       }
     },
     {
@@ -4738,7 +4842,7 @@
         }
       },
       "date": "2026-05-13T00:00:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Frost Bank Center",
         "location": "San Antonio, TX"
@@ -4760,34 +4864,11 @@
           "name": "Detroit Pistons"
         }
       },
-      "date": "2026-05-13T04:00:00Z",
+      "date": "2026-05-14T00:00:00Z",
       "status": "Scheduled",
       "venue": {
         "name": "Little Caesars Arena",
         "location": "Detroit, MI"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "135903c8-943e-5f38-a1b1-906e7c9c36f7",
-      "teams": {
-        "away": {
-          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
-          "name": "Los Angeles Lakers"
-        },
-        "home": {
-          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
-          "name": "Oklahoma City Thunder"
-        }
-      },
-      "date": "2026-05-13T04:00:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Paycom Center",
-        "location": "Oklahoma City, OK"
       }
     },
     {
@@ -4806,7 +4887,7 @@
           "name": "Cleveland Cavaliers"
         }
       },
-      "date": "2026-05-15T04:00:00Z",
+      "date": "2026-05-15T23:00:00Z",
       "status": "Scheduled",
       "venue": {
         "name": "Rocket Arena",
@@ -4829,34 +4910,11 @@
           "name": "Minnesota Timberwolves"
         }
       },
-      "date": "2026-05-15T04:00:00Z",
+      "date": "2026-05-16T01:30:00Z",
       "status": "Scheduled",
       "venue": {
         "name": "Target Center",
         "location": "Minneapolis, MN"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "986640b5-9c9b-5e8d-9f15-9f4d9f6920df",
-      "teams": {
-        "away": {
-          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
-          "name": "Oklahoma City Thunder"
-        },
-        "home": {
-          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
-          "name": "Los Angeles Lakers"
-        }
-      },
-      "date": "2026-05-16T04:00:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Crypto.com Arena",
-        "location": "Los Angeles, CA"
       }
     },
     {
@@ -4903,29 +4961,6 @@
       "venue": {
         "name": "Frost Bank Center",
         "location": "San Antonio, TX"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "f8bcdda7-7f23-5bda-9a73-b53a4f6753d5",
-      "teams": {
-        "away": {
-          "id": "fa62a1a5-2e7d-541f-8e96-e52b64f25a07",
-          "name": "Los Angeles Lakers"
-        },
-        "home": {
-          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
-          "name": "Oklahoma City Thunder"
-        }
-      },
-      "date": "2026-05-18T04:00:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Paycom Center",
-        "location": "Oklahoma City, OK"
       }
     },
     {
@@ -5090,5 +5125,5 @@
       }
     }
   ],
-  "updated": "2026-05-11T13:00:02Z"
+  "updated": "2026-05-13T08:00:02Z"
 }
