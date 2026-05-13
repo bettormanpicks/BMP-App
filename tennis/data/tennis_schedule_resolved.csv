@@ -6,15 +6,15 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-12,Final,Internazionali BNL d'Italia,Andrey Rublev,Nikoloz Basilashvili,atp_14,atp_136,ATP,Clay
 2026-05-12,Final,Internazionali BNL d'Italia,Karen Khachanov,Dino Prizmic,atp_17,atp_121,ATP,Clay
 2026-05-12,Final,Internazionali BNL d'Italia,Rafael Jodar,Learner Tien,atp_117,atp_23,ATP,Clay
-2026-05-12,Final,Internazionali BNL d'Italia,Hamad Medjedovic,Martin Landaluce,atp_97,atp_158,ATP,Clay
+2026-05-12,Final,Internazionali BNL d'Italia,Hamad Medjedovic,Martin Landaluce,atp_97,atp_383,ATP,Clay
 2026-05-12,Final,Internazionali BNL d'Italia,Coco Gauff,Mirra Andreeva,wta_4,wta_7,WTA,Clay
 2026-05-12,Final,Internazionali BNL d'Italia,Sorana Cirstea,Jelena Ostapenko,wta_30,wta_27,WTA,Clay
-2026-05-12,Final,Parma Ladies Open presented by Iren,Victoria Bosio,Dayana Yastremska,wta_442,wta_43,WTA,
+2026-05-12,Final,Parma Ladies Open presented by Iren,Victoria Bosio,Dayana Yastremska,wta_337,wta_43,WTA,
 2026-05-12,Final,Parma Ladies Open presented by Iren,Solana Sierra,Carole Monnet,wta_64,wta_177,WTA,
 2026-05-12,Final,Parma Ladies Open presented by Iren,Deborah Chiesa,Camila Osorio,wta_539,wta_63,WTA,
 2026-05-12,Final,Parma Ladies Open presented by Iren,Varvara Lepchenko,Viktorija Golubic,wta_149,wta_88,WTA,
 2026-05-12,Final,Parma Ladies Open presented by Iren,Yuan Yue,Mayar Sherif,wta_122,wta_108,WTA,
-2026-05-12,Final,Parma Ladies Open presented by Iren,Noemi Basiletti,Lilli Tagger,wta_511,wta_114,WTA,
+2026-05-12,Final,Parma Ladies Open presented by Iren,Noemi Basiletti,Lilli Tagger,wta_768,wta_114,WTA,
 2026-05-12,Final,Parma Ladies Open presented by Iren,Priscilla Hon,Susan Bandecchi,wta_130,wta_233,WTA,
 2026-05-12,Final,Parma Ladies Open presented by Iren,Zhibek Kulambayeva,Anna-Lena Friedsam,wta_390,wta_204,WTA,
 2026-05-12,Final,Trophée Clarins,Madison Keys,Fiona Ferro,wta_17,wta_239,WTA,
@@ -27,20 +27,3 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-12,Final,Trophée Clarins,Zhang Shuai,Himeno Sakatsume,wta_85,wta_135,WTA,
 2026-05-12,Final,Trophée Clarins,Beatriz Haddad Maia,Diane Parry,wta_66,wta_107,WTA,
 2026-05-12,Final,Trophée Clarins,Veronika Podrez,Sloane Stephens,wta_232,wta_775,WTA,
-2026-05-13,11:00,Internazionali BNL d'Italia,Jessica Pegula,Iga Swiatek,wta_5,wta_2,WTA,Clay
-2026-05-13,17:00,Internazionali BNL d'Italia,Elina Svitolina,Elena Rybakina,wta_9,wta_3,WTA,Clay
-2026-05-13,13:00,Internazionali BNL d'Italia,Casper Ruud,Karen Khachanov,atp_13,atp_17,ATP,Clay
-2026-05-13,18:30,Internazionali BNL d'Italia,Rafael Jodar,Luciano Darderi,atp_117,atp_22,ATP,Clay
-2026-05-13,09:00,Parma Ladies Open presented by Iren,Barbora Krejcikova,Anna-Lena Friedsam,wta_53,wta_204,WTA,
-2026-05-13,09:00,Parma Ladies Open presented by Iren,Solana Sierra,Kaja Juvan,wta_64,wta_92,WTA,
-2026-05-13,10:30,Parma Ladies Open presented by Iren,Hanne Vandewinkel,Dayana Yastremska,wta_128,wta_43,WTA,
-2026-05-13,10:30,Parma Ladies Open presented by Iren,Lucia Bronzetti,Camila Osorio,wta_138,wta_63,WTA,
-2026-05-13,13:00,Parma Ladies Open presented by Iren,Dominika Salkova,Mayar Sherif,wta_151,wta_108,WTA,
-2026-05-13,13:00,Parma Ladies Open presented by Iren,Federica Urgesi,Viktorija Golubic,wta_438,wta_88,WTA,
-2026-05-13,14:30,Parma Ladies Open presented by Iren,Alycia Parks,Susan Bandecchi,wta_243,wta_233,WTA,
-2026-05-13,15:00,Parma Ladies Open presented by Iren,Lilli Tagger,Jessica Bouzas Maneiro,wta_114,wta_48,WTA,
-2026-05-13,08:00,Trophée Clarins,Yulia Putintseva,Veronika Podrez,wta_77,wta_232,WTA,
-2026-05-13,09:30,Trophée Clarins,Anastasia Zakharova,Katie Boulter,wta_103,wta_83,WTA,
-2026-05-13,10:00,Trophée Clarins,Zhang Shuai,Yuliia Starodubtseva,wta_85,wta_101,WTA,
-2026-05-13,11:00,Trophée Clarins,Diane Parry,Chloe Paquet,wta_107,wta_215,WTA,
-2026-05-13,12:50,Trophée Clarins,Emma Navarro,Katie Volynets,wta_19,wta_96,WTA,
