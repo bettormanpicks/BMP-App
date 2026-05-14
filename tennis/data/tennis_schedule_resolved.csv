@@ -1,15 +1,16 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-05-14,11:10,Internazionali BNL d'Italia,Jannik Sinner,Andrey Rublev,atp_2,atp_14,ATP,Clay
 2026-05-14,17:00,Internazionali BNL d'Italia,Martin Landaluce,Daniil Medvedev,atp_158,atp_11,ATP,Clay
-2026-05-14,13:00,Internazionali BNL d'Italia,Sorana Cirstea,Coco Gauff,wta_30,wta_4,WTA,Clay
+2026-05-14,Final,Internazionali BNL d'Italia,Jannik Sinner,Andrey Rublev,atp_2,atp_14,ATP,Clay
+2026-05-14,Live,Internazionali BNL d'Italia,Sorana Cirstea,Coco Gauff,wta_30,wta_4,WTA,Clay
 2026-05-14,18:30,Internazionali BNL d'Italia,Iga Swiatek,Elina Svitolina,wta_2,wta_9,WTA,Clay
 2026-05-14,Live,Parma Ladies Open presented by Iren,Barbora Krejcikova,Viktorija Golubic,wta_53,wta_88,WTA,
-2026-05-14,12:00,Parma Ladies Open presented by Iren,Solana Sierra,Dayana Yastremska,wta_64,wta_43,WTA,
-2026-05-14,14:30,Parma Ladies Open presented by Iren,Susan Bandecchi,Jessica Bouzas Maneiro,wta_233,wta_48,WTA,
+2026-05-14,13:30,Parma Ladies Open presented by Iren,Solana Sierra,Dayana Yastremska,wta_64,wta_43,WTA,
+2026-05-14,15:00,Parma Ladies Open presented by Iren,Susan Bandecchi,Jessica Bouzas Maneiro,wta_233,wta_48,WTA,
 2026-05-14,Final,Parma Ladies Open presented by Iren,Dominika Salkova,Camila Osorio,wta_151,wta_63,WTA,
-2026-05-14,Live,Trophée Clarins,Alina Charaeva,Tamara Korpatsch,wta_163,wta_106,WTA,
-2026-05-14,Live,Trophée Clarins,Emma Navarro,Katie Volynets,wta_19,wta_96,WTA,
-2026-05-14,11:20,Trophée Clarins,Diane Parry,Chloe Paquet,wta_107,wta_215,WTA,
-2026-05-14,11:50,Trophée Clarins,Madison Keys,Tiantsoa Rakotomanga Rajaonah,wta_17,wta_120,WTA,
-2026-05-14,Final,Trophée Clarins,Aliaksandra Sasnovich,Anna Blinkova,wta_113,wta_82,WTA,
+2026-05-14,13:35,Trophée Clarins,Madison Keys,Tiantsoa Rakotomanga Rajaonah,wta_17,wta_120,WTA,
+2026-05-14,13:45,Trophée Clarins,Diane Parry,Chloe Paquet,wta_107,wta_215,WTA,
+2026-05-14,Final,Trophée Clarins,Emma Navarro,Katie Volynets,wta_19,wta_96,WTA,
+2026-05-14,Final,Trophée Clarins,Aliaksandra Sasnovich,Anna Blinkova,wta_113,wta_65,WTA,
+2026-05-14,TBD,Trophée Clarins,Alina Charaeva,Tamara Korpatsch,wta_163,wta_106,WTA,
 2026-05-15,TBD,Internazionali BNL d'Italia,Casper Ruud,Luciano Darderi,atp_13,atp_22,ATP,Clay
+2026-05-15,TBD,Trophée Clarins,Katie Volynets,Yuliia Starodubtseva,wta_96,wta_101,WTA,
