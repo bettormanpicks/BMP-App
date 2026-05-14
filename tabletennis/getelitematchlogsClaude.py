@@ -1,7 +1,7 @@
 import time
 import csv
-import os
 import json
+import os
 from urllib.parse import quote
 from datetime import datetime, timedelta, UTC
 import pandas as pd
@@ -98,47 +98,53 @@ def scrape_api():
     options.add_argument("--start-maximized")
     options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
     options.add_argument("--disable-blink-features=AutomationControlled")
-    
-    # Critical: Ensure performance logging is active
     options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
     driver = uc.Chrome(options=options, version_main=147)
-    
+    wait = WebDriverWait(driver, 20)
+
     driver.get(LEAGUE_URL)
     print("Solve Cloudflare if needed...")
     time.sleep(15)
 
-    # --- NEW TOKEN EXTRACTION LOGIC ---
-    def get_live_session(driver):
-        logs = driver.get_log("performance")
-        for log in reversed(logs):
-            try:
-                msg = json.loads(log["message"])["message"]
-                if msg.get("method") == "Network.requestWillBeSent":
-                    headers = msg.get("params", {}).get("request", {}).get("headers", {})
-                    token = headers.get("x-api-token") or headers.get("X-Api-Token")
-                    timestamp = headers.get("x-api-timestamp") or headers.get("X-Api-Timestamp")
-                    
-                    if token and len(token) == 6:
-                        return {"token": token, "timestamp": timestamp}
-            except:
-                continue
-        return None
+    # Extract token directly from page JavaScript context
+    api_token = driver.execute_script("""
+        try {
+            // Try common locations where SPAs store API config
+            const nuxt = window.__NUXT__;
+            if (nuxt) {
+                const str = JSON.stringify(nuxt);
+                const match = str.match(/"x-api-token"\s*:\s*"([^"]+)"/);
+                if (match) return match[1];
+                const match2 = str.match(/apiToken['":\s]+['"]([a-z0-9]+)['"]/i);
+                if (match2) return match2[1];
+            }
+        } catch(e) {}
+    
+        // Try localStorage
+        try {
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                const val = localStorage.getItem(key);
+                if (val && val.match(/^[a-z0-9]{6,8}$/)) return val;
+            }
+        } catch(e) {}
+    
+        return null;
+    """)
 
-    # Force the scroll as before
-    driver.execute_script("window.scrollTo(0, 400);")
-    time.sleep(2)
-    session = get_live_session(driver)
-
-    if session:
-        print(f"✅ Extracted live session! Token: {session['token']}, TS: {session['timestamp']}")
+    if api_token:
+        print(f"Using live token: {api_token}")
     else:
-        print("⚠️ Could not extract session. Check browser.")
-        session = {"token": API_TOKEN, "timestamp": str(int(time.time()))}
+        print("Could not extract token from page — trying cookie approach")
+        # Last resort: trigger a real page navigation to a match and capture from there
+        api_token = API_TOKEN
 
     base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/tt-elite-series-1/matches"
+
     cursor = None
     buffer = []
+
     start_date_encoded = quote(START_DATE)
 
     while True:
@@ -151,39 +157,30 @@ def scrape_api():
             query += f"&after={quote(cursor)}"
 
         print("Fetching:", query)
+
         timestamp = int(time.time())
 
-        # NEW: Check if we need a fresh session every few minutes 
-        # Or just refresh it every loop to be safe
-        new_session = get_live_session(driver)
-        if new_session:
-            session = new_session
-            print(f"🔄 Session updated: {session['token']}")
-
-        # Use the intercepted timestamp and token
         data = driver.execute_script("""
-            const url = arguments[0];
-            const ts = arguments[1];    // Intercepted TS
-            const token = arguments[2]; // Intercepted Token
-
-            return fetch(url, {
-                method: 'GET',
+            return fetch(arguments[0], {
                 headers: {
                     "accept": "*/*",
-                    "x-api-timestamp": ts, 
-                    "x-api-token": token,
+                    "x-api-timestamp": String(arguments[1]),
+                    "x-api-token": arguments[2],
                     "x-bot-identifier": "client",
                     "x-country": "us",
-                    "referer": "https://scores24.live/en/table-tennis/l-tt-elite-series-1"
-                },
-                credentials: "include" 
+                    "referer": "https://scores24.live/en/table-tennis"
+                }
             })
             .then(r => r.json())
-            .catch(e => ({error: e.message}));
-        """, query, session['timestamp'], session['token'])
+            .catch(e => null)
+        """, query, timestamp, api_token)
 
-        if not data or "data" not in data:
-            print(f"❌ Failed to fetch data. Response: {data}")
+        print(f"Raw response keys: {list(data.keys()) if data else 'None'}")
+        print(f"Edges count: {len(data.get('data', {}).get('edges', []))}")
+        print(f"Raw response: {data}")
+
+        if not data:
+            print("❌ Failed to fetch data")
             break
 
         edges = data.get("data", {}).get("edges", [])
@@ -196,12 +193,15 @@ def scrape_api():
         for idx, edge in enumerate(edges):
             try:
                 node = edge["node"]
+
                 match_id = node["slug"]
 
+                # ✅ SKIP duplicates HERE
                 if match_id in existing_ids:
                     continue
 
                 new_matches_found = True
+
                 existing_ids.add(match_id)
 
                 player1 = normalize_name(node["teams"][0]["name"])
@@ -224,9 +224,11 @@ def scrape_api():
                     "match_winner": match_winner,
                     "four_plus": four_plus
                 })
+
             except Exception as e:
                 print(f"Parse error at index {idx}: {e}")
 
+        # ✅ Flush every loop (safe + prevents data loss)
         if buffer:
             append_to_csv(buffer)
             print(f"Saved {len(buffer)} matches")
@@ -241,7 +243,7 @@ def scrape_api():
             print("No next cursor. Done.")
             break
 
-        time.sleep(1) # Slightly more polite delay
+        time.sleep(0.5)
 
     driver.quit()
     resort_csv()

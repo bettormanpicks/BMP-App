@@ -1,6 +1,7 @@
 import time
 import csv
 import os
+import json
 from urllib.parse import quote
 import pandas as pd
 import undetected_chromedriver as uc
@@ -24,34 +25,6 @@ def normalize_name(name):
         return f"{first.strip()} {last.strip()}"
     return name.strip()
 
-def append_to_csv(matches):
-    if not matches:
-        return
-    file_exists = os.path.exists(OUTPUT_CSV)
-    with open(OUTPUT_CSV, "a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(
-            f,
-            fieldnames=[
-                "match_id", "match_date", "player1", "player2", "match_link"
-            ],
-            quoting=csv.QUOTE_MINIMAL
-        )
-        if not file_exists:
-            writer.writeheader()
-        writer.writerows(matches)
-
-def resort_csv():
-    if not os.path.exists(OUTPUT_CSV):
-        return
-    df = pd.read_csv(OUTPUT_CSV)
-    if "match_date" not in df.columns:
-        print("CSV empty or missing match_date, skipping sort")
-        return
-    df["match_date"] = pd.to_datetime(df["match_date"], errors="coerce")
-    df = df.dropna(subset=["match_date"])
-    df.sort_values("match_date", ascending=True, inplace=True)
-    df.to_csv(OUTPUT_CSV, index=False)
-
 # -------------------------
 # Main Scraper
 # -------------------------
@@ -62,6 +35,9 @@ def scrape_schedule():
     options.add_argument("--start-maximized")
     options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
     options.add_argument("--disable-blink-features=AutomationControlled")
+    
+    # ✅ Critical: Enable performance logging to sniff headers
+    options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
     driver = uc.Chrome(options=options, version_main=147)
 
@@ -69,39 +45,70 @@ def scrape_schedule():
     print("Solve Cloudflare if needed...")
     time.sleep(15)
 
-    base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/international-tt-cup/matches"
+    # ✅ Helper to grab the rotating token and timestamp
+    def get_live_session(driver):
+        logs = driver.get_log("performance")
+        for log in reversed(logs):
+            try:
+                msg = json.loads(log["message"])["message"]
+                if msg.get("method") == "Network.requestWillBeSent":
+                    headers = msg.get("params", {}).get("request", {}).get("headers", {})
+                    token = headers.get("x-api-token") or headers.get("X-Api-Token")
+                    timestamp = headers.get("x-api-timestamp") or headers.get("X-Api-Timestamp")
+                    
+                    if token and len(token) == 6:
+                        return {"token": token, "timestamp": timestamp}
+            except:
+                continue
+        return None
 
+    # Initial session catch
+    driver.execute_script("window.scrollTo(0, 400);")
+    time.sleep(2)
+    session = get_live_session(driver)
+    
+    if session:
+        print(f"✅ Extracted schedule session: {session['token']}")
+    else:
+        print("⚠️ Session not found, using fallbacks...")
+        session = {"token": "h57bsdl", "timestamp": str(int(time.time()))}
+
+    base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/international-tt-cup/matches"
     cursor = None
     buffer = []
-
     start_date_encoded = quote(datetime.now(UTC).strftime("%Y-%m-%d %H:%M:%S"))
 
     while True:
-        # ✅ updated query format with start date in first bound
+        # Refresh session each loop to ensure we don't time out
+        new_session = get_live_session(driver)
+        if new_session:
+            session = new_session
+
         query = f"{base_url}?lang=en&first=50&status=not_started&audience=us&date_between[]={start_date_encoded}&date_between[]=&with_markets=false&with_statistics=false"
         if cursor:
             query += f"&after={quote(cursor)}"
 
         print("Fetching:", query)
 
-        timestamp = int(time.time())  # ✅ added headers
+        # ✅ Updated Fetch with credentials and dynamic headers
         data = driver.execute_script("""
             return fetch(arguments[0], {
                 headers: {
                     "accept": "*/*",
                     "x-api-timestamp": String(arguments[1]),
-                    "x-api-token": "h57bsdl",
+                    "x-api-token": arguments[2],
                     "x-bot-identifier": "client",
                     "x-country": "us",
-                    "referer": "https://scores24.live/en/table-tennis"
-                }
+                    "referer": "https://scores24.live/en/table-tennis/l-international-tt-cup"
+                },
+                credentials: "include"
             })
             .then(r => r.json())
             .catch(e => null)
-        """, query, timestamp)
+        """, query, session['timestamp'], session['token'])
 
-        if not data:
-            print("❌ Failed to fetch data")
+        if not data or "data" not in data:
+            print("❌ Failed to fetch data or session expired.")
             break
 
         edges = data.get("data", {}).get("edges", [])
@@ -114,7 +121,6 @@ def scrape_schedule():
         for edge in edges:
             try:
                 node = edge["node"]
-
                 match_id = node["slug"]
                 player1 = normalize_name(node["teams"][0]["name"])
                 player2 = normalize_name(node["teams"][1]["name"])
@@ -128,7 +134,6 @@ def scrape_schedule():
                     "player2": player2,
                     "match_link": match_link
                 })
-
             except Exception as e:
                 print("Parse error:", e)
 
@@ -136,13 +141,19 @@ def scrape_schedule():
         if not cursor:
             break
 
-        time.sleep(0.5)
+        time.sleep(1)
 
     driver.quit()
 
-    os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
-    pd.DataFrame(buffer).to_csv(OUTPUT_CSV, index=False)
-    print("✅ Schedule scraping complete.")
+    if buffer:
+        os.makedirs(os.path.dirname(OUTPUT_CSV), exist_ok=True)
+        # Using pandas to overwrite with fresh upcoming data
+        df = pd.DataFrame(buffer)
+        df.sort_values("match_date", ascending=True, inplace=True)
+        df.to_csv(OUTPUT_CSV, index=False)
+        print(f"✅ Schedule scraping complete. Saved {len(buffer)} matches.")
+    else:
+        print("No matches found to save.")
 
 # -------------------------
 if __name__ == "__main__":

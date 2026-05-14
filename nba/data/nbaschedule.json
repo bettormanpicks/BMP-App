@@ -4846,6 +4846,58 @@
       "venue": {
         "name": "Frost Bank Center",
         "location": "San Antonio, TX"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 34
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 17
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 26
+            },
+            "home": {
+              "points": 32
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 35
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 97
+          },
+          "home": {
+            "points": 126
+          }
+        }
       }
     },
     {
@@ -4865,10 +4917,72 @@
         }
       },
       "date": "2026-05-14T00:00:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Little Caesars Arena",
         "location": "Detroit, MI"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 31
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 20
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 19
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 5,
+            "type": "Overtime",
+            "away": {
+              "points": 14
+            },
+            "home": {
+              "points": 10
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 117
+          },
+          "home": {
+            "points": 113
+          }
+        }
       }
     },
     {
@@ -5125,5 +5239,5 @@
       }
     }
   ],
-  "updated": "2026-05-13T08:00:02Z"
+  "updated": "2026-05-14T08:00:02Z"
 }
