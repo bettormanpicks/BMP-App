@@ -1,10 +1,10 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-15,13:30,Internazionali BNL d'Italia,Casper Ruud,Luciano Darderi,atp_13,atp_22,ATP,Clay
 2026-05-15,17:00,Internazionali BNL d'Italia,Jannik Sinner,Daniil Medvedev,atp_2,atp_11,ATP,Clay
-2026-05-15,11:30,Parma Ladies Open presented by Iren,Camila Osorio,Barbora Krejcikova,wta_63,wta_53,WTA,
+2026-05-15,Live,Parma Ladies Open presented by Iren,Camila Osorio,Barbora Krejcikova,wta_63,wta_53,WTA,
 2026-05-15,13:30,Parma Ladies Open presented by Iren,Dayana Yastremska,Jessica Bouzas Maneiro,wta_43,wta_48,WTA,
-2026-05-15,Live,Trophée Clarins,Katie Volynets,Yuliia Starodubtseva,wta_96,wta_101,WTA,
-2026-05-15,11:30,Trophée Clarins,Alina Charaeva,Aliaksandra Sasnovich,wta_163,wta_113,WTA,
-2026-05-15,12:30,Trophée Clarins,Madison Keys,Anastasia Zakharova,wta_17,wta_103,WTA,
+2026-05-15,13:30,Trophée Clarins,Madison Keys,Anastasia Zakharova,wta_17,wta_103,WTA,
+2026-05-15,Final,Trophée Clarins,Katie Volynets,Yuliia Starodubtseva,wta_96,wta_101,WTA,
+2026-05-15,TBD,Trophée Clarins,Alina Charaeva,Aliaksandra Sasnovich,wta_163,wta_113,WTA,
 2026-05-15,TBD,Trophée Clarins,Yulia Putintseva,Diane Parry,wta_77,wta_107,WTA,
 2026-05-16,Final,Internazionali BNL d'Italia,Coco Gauff,Elina Svitolina,wta_4,wta_9,WTA,Clay
