@@ -43,7 +43,13 @@ def scrape_schedule():
 
     driver.get(LEAGUE_URL)
     print("Solve Cloudflare if needed...")
-    time.sleep(15)
+    time.sleep(20)
+
+    # Force the site to make a request by scrolling down AND up
+    driver.execute_script("window.scrollTo(0, 500);")
+    time.sleep(2)
+    driver.execute_script("window.scrollTo(0, 0);")
+    time.sleep(2)
 
     # ✅ Helper to grab the rotating token and timestamp
     def get_live_session(driver):

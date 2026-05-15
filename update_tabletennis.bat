@@ -7,35 +7,35 @@ echo ===============================
 echo Running TT Elite matchlogs...
 python tabletennis\getelitematchlogs.py
 taskkill /F /IM chrome.exe /T >nul 2>&1
-timeout /t 10
+timeout /t 20
 echo Running Czech matchlogs...
 python tabletennis\getczechmatchlogs.py
 taskkill /F /IM chrome.exe /T >nul 2>&1
-timeout /t 10
+timeout /t 20
 echo Running Setka matchlogs...
 python tabletennis\getsetkamatchlogs.py
 taskkill /F /IM chrome.exe /T >nul 2>&1
-timeout /t 10
+timeout /t 20
 echo Running TT Cup matchlogs...
 python tabletennis\getttcupmatchlogs.py
 taskkill /F /IM chrome.exe /T >nul 2>&1
-timeout /t 10
+timeout /t 20
 echo Running TT Elite schedule...
 python tabletennis\geteliteschedule.py
 taskkill /F /IM chrome.exe /T >nul 2>&1
-timeout /t 10
+timeout /t 20
 echo Running Czech schedule...
 python tabletennis\getczechschedule.py
 taskkill /F /IM chrome.exe /T >nul 2>&1
-timeout /t 10
+timeout /t 20
 echo Running Setka schedule...
 python tabletennis\getsetkaschedule.py
 taskkill /F /IM chrome.exe /T >nul 2>&1
-timeout /t 10
+timeout /t 20
 echo Running TT Cup schedule...
 python tabletennis\getttcupschedule.py
 taskkill /F /IM chrome.exe /T >nul 2>&1
-timeout /t 10
+timeout /t 20
 echo Building TT Elite H2H...
 python tabletennis\buildeliteh2h.py
 echo Building Czech H2H...
