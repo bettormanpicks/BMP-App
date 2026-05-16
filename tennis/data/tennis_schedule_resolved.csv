@@ -1,6 +1,6 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-16,09:00,Bitpanda Hamburg Open,Max Schoenhaus,Luca Van Assche,atp_454,atp_130,ATP,
-2026-05-16,09:00,Bitpanda Hamburg Open,Henri Squire,Cristian Garin,atp_261,wta_38,ATP,
+2026-05-16,09:00,Bitpanda Hamburg Open,Henri Squire,Cristian Garin,atp_261,atp_89,ATP,
 2026-05-16,10:00,Bitpanda Hamburg Open,Rinky Hijikata,Taro Daniel,atp_112,atp_402,ATP,
 2026-05-16,10:30,Bitpanda Hamburg Open,Ignacio Buse,Niels McDonald,atp_91,atp_115,ATP,
 2026-05-16,10:30,Bitpanda Hamburg Open,Marcos Giron,Sumit Nagal,atp_63,atp_297,ATP,
@@ -16,7 +16,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-16,12:00,Gonet Geneva Open,Zachary Svajda,Max Hans Rehberg,atp_106,atp_572,ATP,Clay
 2026-05-16,13:00,Internazionali BNL d'Italia,Jannik Sinner,Daniil Medvedev,atp_2,atp_11,ATP,Clay
 2026-05-16,15:00,Internazionali BNL d'Italia,Coco Gauff,Elina Svitolina,wta_4,wta_9,WTA,Clay
-2026-05-16,10:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Dalila Spiteri,Georgina Garcia Perez,wta_275,atp_389,WTA,
+2026-05-16,10:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Dalila Spiteri,Georgina Garcia Perez,wta_385,atp_389,WTA,
 2026-05-16,10:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Diletta Cherubini,Vera Zvonareva,wta_389,wta_357,WTA,
 2026-05-16,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Aran Teixido Garcia,Caijsa Hennemann,wta_206,wta_377,WTA,
 2026-05-16,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Carolina Alves,Lisa Zaar,wta_230,wta_466,WTA,
