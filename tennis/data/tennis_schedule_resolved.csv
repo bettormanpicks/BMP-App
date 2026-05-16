@@ -5,7 +5,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-16,Final,Bitpanda Hamburg Open,Ignacio Buse,Niels McDonald,atp_91,atp_115,ATP,
 2026-05-16,Final,Bitpanda Hamburg Open,Marcos Giron,Sumit Nagal,atp_63,atp_297,ATP,
 2026-05-16,Final,Bitpanda Hamburg Open,Rinky Hijikata,Taro Daniel,atp_112,atp_402,ATP,
-2026-05-16,Final,Bitpanda Hamburg Open,Henri Squire,Cristian Garin,atp_261,atp_89,ATP,
+2026-05-16,Final,Bitpanda Hamburg Open,Henri Squire,Cristian Garin,atp_261,wta_38,ATP,
 2026-05-16,Final,Bitpanda Hamburg Open,Max Schoenhaus,Luca Van Assche,atp_454,atp_130,ATP,
 2026-05-16,Final,Gonet Geneva Open,Zachary Svajda,Max Hans Rehberg,atp_106,atp_572,ATP,Clay
 2026-05-16,Final,Gonet Geneva Open,Marc-Andrea Huesler,Clement Tabur,atp_9002,atp_204,ATP,Clay
@@ -16,8 +16,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-16,Final,Gonet Geneva Open,Edas Butvilas,Alexandre Muller,atp_250,atp_50,ATP,Clay
 2026-05-16,Final,Gonet Geneva Open,James Duckworth,Miguel Damas,atp_80,atp_9037,ATP,Clay
 2026-05-16,Final,Internazionali BNL d'Italia,Jannik Sinner,Daniil Medvedev,atp_2,atp_11,ATP,Clay
-2026-05-16,Live,Internazionali BNL d'Italia,Coco Gauff,Elina Svitolina,wta_4,wta_9,WTA,Clay
-2026-05-16,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Anastasia Zolotareva,Zhibek Kulambayeva,wta_295,wta_390,WTA,
+2026-05-16,Final,Internazionali BNL d'Italia,Coco Gauff,Elina Svitolina,wta_4,wta_9,WTA,Clay
+2026-05-16,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Anastasia Zolotareva,Zhibek Kulambayeva,wta_443,wta_390,WTA,
 2026-05-16,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Amandine Hesse,Elina Avanesyan,wta_402,wta_178,WTA,
 2026-05-16,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Alana Smith,Victoria Bosio,atp_141,wta_337,ATP,
 2026-05-16,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Carolina Alves,Lisa Zaar,wta_230,wta_466,WTA,
@@ -51,7 +51,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-17,15:00,Internazionali BNL d'Italia,Jannik Sinner,Casper Ruud,atp_2,atp_13,ATP,Clay
 2026-05-17,11:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Fiona Ferro,Elina Avanesyan,wta_239,wta_178,WTA,
 2026-05-17,11:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Dalila Spiteri,Caijsa Hennemann,wta_275,wta_377,WTA,
-2026-05-17,12:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Anastasia Zolotareva,Vera Zvonareva,wta_295,wta_357,WTA,
+2026-05-17,12:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Anastasia Zolotareva,Vera Zvonareva,wta_443,wta_357,WTA,
 2026-05-17,12:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Lisa Zaar,Alana Smith,wta_466,atp_141,WTA,
 2026-05-17,08:30,Internationaux de Strasbourg presented by Mammotion,McCartney Kessler,Oksana Selekhmeteva,wta_31,wta_74,WTA,
 2026-05-17,08:30,Internationaux de Strasbourg presented by Mammotion,Yulia Putintseva,Oleksandra Oliynykova,wta_77,wta_71,WTA,
