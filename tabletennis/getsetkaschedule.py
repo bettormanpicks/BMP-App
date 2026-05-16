@@ -29,38 +29,50 @@ def normalize_name(name):
 # Main Scraper
 # -------------------------
 def scrape_schedule():
-    print("Launching browser...")
+    print("Ensuring clean environment...")
+    # Force kill any lingering or background zombie processes
+    os.system("taskkill /F /IM chrome.exe /T >nul 2>&1")
+    os.system("taskkill /F /IM chromedriver.exe /T >nul 2>&1")
+    time.sleep(3) # Give the OS a brief moment to clear the profile file-locks
 
+    print("Launching browser...")
     options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
     options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
     options.add_argument("--disable-blink-features=AutomationControlled")
     
-    # ✅ Critical: Enable performance logging to sniff headers
-    options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
+    # --- FIX 1: FILTER DOWN PERFORMANCE LOGGING ENTRY SIZES ---
+    # This prevents the log buffer from filling up and dropping requests
+    logging_prefs = {
+        "performance": "ALL"
+    }
+    options.set_capability("goog:loggingPrefs", logging_prefs)
+    
+    # Restrict the performance logging categories strictly to Network
+    perf_logging_prefs = {
+        "enableNetwork": True,
+        "enablePage": False,
+    }
+    options.set_capability("goog:chromeOptions", {"perfLoggingPrefs": perf_logging_prefs})
 
     driver = uc.Chrome(options=options, version_main=147)
 
     driver.get(LEAGUE_URL)
-    print("Solve Cloudflare if needed...")
+    print("Solve Cloudflare if needed (Waiting 20s)...")
     time.sleep(20)
 
-    # Force the site to make a request by scrolling down AND up
-    driver.execute_script("window.scrollTo(0, 500);")
-    time.sleep(2)
-    driver.execute_script("window.scrollTo(0, 0);")
-    time.sleep(2)
-
-    # ✅ Helper to grab the rotating token and timestamp
-    def get_live_session(driver):
-        logs = driver.get_log("performance")
-        for log in reversed(logs):
+    # ✅ Helper to grab the rotating token and timestamp (Standardized Version)
+    def get_live_session(driver, current_logs):
+        for log in reversed(current_logs):
             try:
                 msg = json.loads(log["message"])["message"]
-                if msg.get("method") == "Network.requestWillBeSent":
-                    headers = msg.get("params", {}).get("request", {}).get("headers", {})
-                    token = headers.get("x-api-token") or headers.get("X-Api-Token")
-                    timestamp = headers.get("x-api-timestamp") or headers.get("X-Api-Timestamp")
+                if "request" in msg.get("params", {}):
+                    headers = msg["params"]["request"].get("headers", {})
+                    # Case-insensitive mapping
+                    headers_lower = {k.lower(): v for k, v in headers.items()}
+                    
+                    token = headers_lower.get("x-api-token")
+                    timestamp = headers_lower.get("x-api-timestamp")
                     
                     if token and len(token) == 6:
                         return {"token": token, "timestamp": timestamp}
@@ -68,15 +80,31 @@ def scrape_schedule():
                 continue
         return None
 
-    # Initial session catch
-    driver.execute_script("window.scrollTo(0, 400);")
-    time.sleep(2)
-    session = get_live_session(driver)
-    
-    if session:
-        print(f"✅ Extracted schedule session: {session['token']}")
-    else:
-        print("⚠️ Session not found, using fallbacks...")
+    # ✅ Robust Extraction Loop
+    print("Searching for live session token...")
+    session = None
+    all_captured_logs = []
+
+    for attempt in range(15):
+        # Trigger network activity with varying scroll distances
+        scroll_amount = 400 + (attempt * 100)
+        driver.execute_script(f"window.scrollTo(0, {scroll_amount});")
+        
+        # Accumulate logs to ensure we don't miss the specific frame
+        new_logs = driver.get_log("performance")
+        all_captured_logs.extend(new_logs)
+        
+        session = get_live_session(driver, all_captured_logs)
+        if session:
+            print(f"✅ Extracted schedule session: {session['token']}")
+            break
+        
+        print(f"  Attempt {attempt + 1}: Token not found yet, retrying...")
+        time.sleep(2)
+
+    if not session:
+        print("⚠️ Session not found after retries, using fallbacks...")
+        # Using your existing fallback token
         session = {"token": "h57bsdl", "timestamp": str(int(time.time()))}
 
     base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/setka-cup-0/matches"
@@ -85,10 +113,12 @@ def scrape_schedule():
     start_date_encoded = quote(datetime.now(UTC).strftime("%Y-%m-%d %H:%M:%S"))
 
     while True:
-        # Refresh session each loop to ensure we don't time out
-        new_session = get_live_session(driver)
-        if new_session:
-            session = new_session
+        # Refresh session each loop using the miner approach
+        new_logs = driver.get_log("performance")
+        fresh_session = get_live_session(driver, new_logs)
+        if fresh_session:
+            session = fresh_session
+            # print(f"🔄 Session updated: {session['token']}") # Optional: uncomment for verbose logs
 
         query = f"{base_url}?lang=en&first=50&status=not_started&audience=us&date_between[]={start_date_encoded}&date_between[]=&with_markets=false&with_statistics=false"
         if cursor:
@@ -96,7 +126,7 @@ def scrape_schedule():
 
         print("Fetching:", query)
 
-        # ✅ Updated Fetch with credentials and dynamic headers
+        # ✅ Execute the fetch
         data = driver.execute_script("""
             return fetch(arguments[0], {
                 headers: {

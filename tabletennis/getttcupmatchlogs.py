@@ -92,15 +92,31 @@ def scrape_api():
         except:
             print("Could not load existing CSV, continuing fresh")
 
-    print("Launching browser...")
+    print("Ensuring clean environment...")
+    # Force kill any lingering or background zombie processes
+    os.system("taskkill /F /IM chrome.exe /T >nul 2>&1")
+    os.system("taskkill /F /IM chromedriver.exe /T >nul 2>&1")
+    time.sleep(3) # Give the OS a brief moment to clear the profile file-locks
 
+    print("Launching browser...")
     options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
     options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
     options.add_argument("--disable-blink-features=AutomationControlled")
     
-    # Critical: Ensure performance logging is active
-    options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
+    # --- FIX 1: FILTER DOWN PERFORMANCE LOGGING ENTRY SIZES ---
+    # This prevents the log buffer from filling up and dropping requests
+    logging_prefs = {
+        "performance": "ALL"
+    }
+    options.set_capability("goog:loggingPrefs", logging_prefs)
+    
+    # Restrict the performance logging categories strictly to Network
+    perf_logging_prefs = {
+        "enableNetwork": True,
+        "enablePage": False,
+    }
+    options.set_capability("goog:chromeOptions", {"perfLoggingPrefs": perf_logging_prefs})
 
     driver = uc.Chrome(options=options, version_main=147)
     
@@ -108,14 +124,9 @@ def scrape_api():
     print("Solve Cloudflare if needed...")
     time.sleep(20)
 
-    # Force the site to make a request by scrolling down AND up
-    driver.execute_script("window.scrollTo(0, 500);")
-    time.sleep(2)
-    driver.execute_script("window.scrollTo(0, 0);")
-    time.sleep(2)
-
-    # --- NEW TOKEN EXTRACTION LOGIC ---
+    # --- NEW ROBUST TOKEN EXTRACTION LOGIC ---
     def get_live_session(driver):
+        # We grab the logs; reversed() ensures we get the most recent valid token
         logs = driver.get_log("performance")
         for log in reversed(logs):
             try:
@@ -131,15 +142,47 @@ def scrape_api():
                 continue
         return None
 
-    # Force the scroll as before
-    driver.execute_script("window.scrollTo(0, 400);")
-    time.sleep(2)
-    session = get_live_session(driver)
+    # --- UPDATED EXTRACTION LOGIC ---
+    print("Searching for live session token...")
+    session = None
+    all_captured_logs = [] # Keep a running list of logs
 
-    if session:
-        print(f"✅ Extracted live session! Token: {session['token']}, TS: {session['timestamp']}")
-    else:
-        print("⚠️ Could not extract session. Check browser.")
+    for attempt in range(15):
+        # Trigger a fresh request by clicking a non-link element or scrolling
+        driver.execute_script(f"window.scrollTo(0, {400 + (attempt * 100)});")
+        
+        # Collect new logs and add to our pile
+        new_logs = driver.get_log("performance")
+        all_captured_logs.extend(new_logs)
+        
+        # Search the entire pile
+        for log in reversed(all_captured_logs):
+            try:
+                msg = json.loads(log["message"])["message"]
+                # Look for ANY network activity that might have headers
+                if "request" in msg.get("params", {}):
+                    headers = msg["params"]["request"].get("headers", {})
+                    # Standardize keys to lowercase for matching
+                    headers_lower = {k.lower(): v for k, v in headers.items()}
+                    
+                    token = headers_lower.get("x-api-token")
+                    timestamp = headers_lower.get("x-api-timestamp")
+                    
+                    if token and len(token) == 6:
+                        session = {"token": token, "timestamp": timestamp}
+                        break
+            except:
+                continue
+        
+        if session:
+            print(f"✅ Extracted live session! Token: {session['token']}")
+            break
+        
+        print(f"  Attempt {attempt + 1}: Token not found yet...")
+        time.sleep(2)
+
+    if not session:
+        print("⚠️ Still could not extract session after retries. Using fallback.")
         session = {"token": API_TOKEN, "timestamp": str(int(time.time()))}
 
     base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/international-tt-cup/matches"

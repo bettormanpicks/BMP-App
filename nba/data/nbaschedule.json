@@ -5002,10 +5002,62 @@
         }
       },
       "date": "2026-05-15T23:00:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Rocket Arena",
         "location": "Cleveland, OH"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 19
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 24
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 115
+          },
+          "home": {
+            "points": 94
+          }
+        }
       }
     },
     {
@@ -5025,10 +5077,62 @@
         }
       },
       "date": "2026-05-16T01:30:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Target Center",
         "location": "Minneapolis, MN"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 36
+            },
+            "home": {
+              "points": 27
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 38
+            },
+            "home": {
+              "points": 34
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 36
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 29
+            },
+            "home": {
+              "points": 25
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 139
+          },
+          "home": {
+            "points": 109
+          }
+        }
       }
     },
     {
@@ -5047,7 +5151,7 @@
           "name": "Detroit Pistons"
         }
       },
-      "date": "2026-05-17T04:00:00Z",
+      "date": "2026-05-18T00:00:00Z",
       "status": "Scheduled",
       "venue": {
         "name": "Little Caesars Arena",
@@ -5059,22 +5163,160 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "1bcd6e53-42f0-57c0-9e71-8d47159f3b9a",
+      "id": "17822afd-53d6-5b10-81f4-efb56648e12d",
       "teams": {
         "away": {
-          "id": "4e3d950b-764a-5d1c-8fb8-6500478f6e36",
-          "name": "Minnesota Timberwolves"
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        },
+        "home": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        }
+      },
+      "date": "2026-05-19T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "4e7ee0ea-4c99-55f5-9c0a-5ccf1031f2a5",
+      "teams": {
+        "away": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        },
+        "home": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        }
+      },
+      "date": "2026-05-21T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "0fa3c568-2f31-52c4-a153-c1118b0069a9",
+      "teams": {
+        "away": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
         },
         "home": {
           "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
           "name": "San Antonio Spurs"
         }
       },
-      "date": "2026-05-17T04:00:00Z",
+      "date": "2026-05-23T00:30:00Z",
       "status": "Scheduled",
       "venue": {
         "name": "Frost Bank Center",
         "location": "San Antonio, TX"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "715e4f3f-272d-5aa2-b699-254065ad50fd",
+      "teams": {
+        "away": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        },
+        "home": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        }
+      },
+      "date": "2026-05-25T00:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "399de921-0507-5e34-a57b-78481b6cc27c",
+      "teams": {
+        "away": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        },
+        "home": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        }
+      },
+      "date": "2026-05-27T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "3f92fc90-ec2a-5518-a520-4eb9eb0dd80e",
+      "teams": {
+        "away": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        },
+        "home": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        }
+      },
+      "date": "2026-05-29T00:30:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
+      }
+    },
+    {
+      "season": {
+        "year": 2025,
+        "type": "Playoffs"
+      },
+      "id": "681805f6-0696-5646-b149-6f0227988c60",
+      "teams": {
+        "away": {
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
+        },
+        "home": {
+          "id": "37ffb4f5-0877-5d04-8bd2-3590c16ed025",
+          "name": "Oklahoma City Thunder"
+        }
+      },
+      "date": "2026-05-31T00:00:00Z",
+      "status": "Scheduled",
+      "venue": {
+        "name": "Paycom Center",
+        "location": "Oklahoma City, OK"
       }
     },
     {
@@ -5239,5 +5481,5 @@
       }
     }
   ],
-  "updated": "2026-05-15T08:00:03Z"
+  "updated": "2026-05-16T08:00:02Z"
 }
