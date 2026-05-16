@@ -1,41 +1,56 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-05-16,09:00,Bitpanda Hamburg Open,Max Schoenhaus,Luca Van Assche,atp_454,atp_130,ATP,
-2026-05-16,09:00,Bitpanda Hamburg Open,Henri Squire,Cristian Garin,atp_261,atp_89,ATP,
-2026-05-16,10:00,Bitpanda Hamburg Open,Rinky Hijikata,Taro Daniel,atp_112,atp_402,ATP,
-2026-05-16,10:30,Bitpanda Hamburg Open,Ignacio Buse,Niels McDonald,atp_91,atp_115,ATP,
-2026-05-16,10:30,Bitpanda Hamburg Open,Marcos Giron,Sumit Nagal,atp_63,atp_297,ATP,
 2026-05-16,11:30,Bitpanda Hamburg Open,Aleksandar Kovacevic,Zhang Zhizhen,atp_75,atp_449,ATP,
 2026-05-16,12:00,Bitpanda Hamburg Open,Marko Topo,Hugo Gaston,atp_237,atp_96,ATP,
 2026-05-16,12:00,Bitpanda Hamburg Open,Mika Petkovic,Arthur Gea,wta_280,atp_160,WTA,
-2026-05-16,09:00,Gonet Geneva Open,Edas Butvilas,Alexandre Muller,atp_250,atp_50,ATP,Clay
+2026-05-16,Final,Bitpanda Hamburg Open,Ignacio Buse,Niels McDonald,atp_91,atp_115,ATP,
+2026-05-16,Final,Bitpanda Hamburg Open,Marcos Giron,Sumit Nagal,atp_63,atp_297,ATP,
+2026-05-16,Final,Bitpanda Hamburg Open,Rinky Hijikata,Taro Daniel,atp_112,atp_402,ATP,
+2026-05-16,Final,Bitpanda Hamburg Open,Max Schoenhaus,Luca Van Assche,atp_454,atp_130,ATP,
+2026-05-16,Final,Bitpanda Hamburg Open,Henri Squire,Cristian Garin,atp_261,atp_89,ATP,
 2026-05-16,09:00,Gonet Geneva Open,James Duckworth,Miguel Damas,atp_80,atp_9037,ATP,Clay
-2026-05-16,09:00,Gonet Geneva Open,Sebastian Ofner,Kilian Feldbausch,atp_132,atp_412,ATP,Clay
 2026-05-16,10:30,Gonet Geneva Open,Daniel Elahi Galan,Nishesh Basavareddy,atp_183,atp_190,ATP,Clay
 2026-05-16,10:30,Gonet Geneva Open,Raul Brancaccio,Tyler Zink,wta_164,atp_327,WTA,Clay
 2026-05-16,10:30,Gonet Geneva Open,Henry Bernet,Francisco Comesana,atp_9036,atp_62,ATP,Clay
 2026-05-16,12:00,Gonet Geneva Open,Zachary Svajda,Max Hans Rehberg,atp_106,atp_572,ATP,Clay
 2026-05-16,12:00,Gonet Geneva Open,Marc-Andrea Huesler,Clement Tabur,atp_9002,atp_204,ATP,Clay
-2026-05-16,13:00,Internazionali BNL d'Italia,Jannik Sinner,Daniil Medvedev,atp_2,atp_11,ATP,Clay
+2026-05-16,Final,Gonet Geneva Open,Edas Butvilas,Alexandre Muller,atp_250,atp_50,ATP,Clay
+2026-05-16,Final,Gonet Geneva Open,Sebastian Ofner,Kilian Feldbausch,atp_132,atp_412,ATP,Clay
+2026-05-16,13:15,Internazionali BNL d'Italia,Jannik Sinner,Daniil Medvedev,atp_2,atp_11,ATP,Clay
 2026-05-16,15:00,Internazionali BNL d'Italia,Coco Gauff,Elina Svitolina,wta_4,wta_9,WTA,Clay
-2026-05-16,10:05,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Dalila Spiteri,Georgina Garcia Perez,wta_275,atp_389,WTA,
-2026-05-16,10:05,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Diletta Cherubini,Vera Zvonareva,wta_389,wta_357,WTA,
-2026-05-16,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Aran Teixido Garcia,Caijsa Hennemann,wta_206,wta_377,WTA,
-2026-05-16,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Carolina Alves,Lisa Zaar,wta_230,wta_466,WTA,
-2026-05-16,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Fiona Ferro,Ekaterina Kazionova,wta_239,wta_394,WTA,
+2026-05-16,Live,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Carolina Alves,Lisa Zaar,wta_230,wta_466,WTA,
 2026-05-16,13:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Amandine Hesse,Elina Avanesyan,wta_402,wta_178,WTA,
 2026-05-16,13:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Alana Smith,Victoria Bosio,atp_141,wta_337,ATP,
 2026-05-16,13:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Anastasia Zolotareva,Zhibek Kulambayeva,wta_295,wta_390,WTA,
-2026-05-16,Live,Internationaux de Strasbourg presented by Mammotion,Oksana Selekhmeteva,Sofia Kenin,wta_74,wta_32,WTA,
-2026-05-16,Live,Internationaux de Strasbourg presented by Mammotion,McCartney Kessler,Renata Zarazua,wta_31,wta_87,WTA,
-2026-05-16,10:10,Internationaux de Strasbourg presented by Mammotion,Talia Gibson,Eva Lys,wta_111,wta_56,WTA,
-2026-05-16,10:30,Internationaux de Strasbourg presented by Mammotion,Antonia Ruzic,Yulia Putintseva,wta_67,wta_77,WTA,
-2026-05-16,10:30,Internationaux de Strasbourg presented by Mammotion,Ksenia Efremova,Oleksandra Oliynykova,wta_595,wta_71,WTA,
-2026-05-16,11:30,Internationaux de Strasbourg presented by Mammotion,Valentina Steiner,Daria Kasatkina,wta_9030,wta_61,WTA,
-2026-05-16,12:00,Internationaux de Strasbourg presented by Mammotion,Elsa Jacquemot,Anastasia Zakharova,wta_57,wta_103,WTA,
+2026-05-16,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Fiona Ferro,Ekaterina Kazionova,wta_239,wta_394,WTA,
+2026-05-16,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Aran Teixido Garcia,Caijsa Hennemann,wta_206,wta_377,WTA,
+2026-05-16,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Dalila Spiteri,Georgina Garcia Perez,wta_275,atp_389,WTA,
+2026-05-16,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Diletta Cherubini,Vera Zvonareva,wta_389,wta_357,WTA,
+2026-05-16,Live,Internationaux de Strasbourg presented by Mammotion,Elsa Jacquemot,Anastasia Zakharova,wta_57,wta_103,WTA,
+2026-05-16,Live,Internationaux de Strasbourg presented by Mammotion,Valentina Steiner,Daria Kasatkina,wta_9030,wta_61,WTA,
+2026-05-16,Final,Internationaux de Strasbourg presented by Mammotion,Antonia Ruzic,Yulia Putintseva,wta_67,wta_77,WTA,
+2026-05-16,Final,Internationaux de Strasbourg presented by Mammotion,Ksenia Efremova,Oleksandra Oliynykova,wta_595,wta_71,WTA,
+2026-05-16,Final,Internationaux de Strasbourg presented by Mammotion,Talia Gibson,Eva Lys,wta_111,wta_56,WTA,
 2026-05-16,Final,Internationaux de Strasbourg presented by Mammotion,Beatriz Haddad Maia,Zhang Shuai,wta_66,wta_85,WTA,
-2026-05-16,Live,Parma Ladies Open presented by Iren,Dayana Yastremska,Jessica Bouzas Maneiro,wta_43,wta_48,WTA,
-2026-05-16,12:00,Trophée Clarins,Madison Keys,Yuliia Starodubtseva,wta_17,wta_101,WTA,
+2026-05-16,Final,Internationaux de Strasbourg presented by Mammotion,Oksana Selekhmeteva,Sofia Kenin,wta_74,wta_32,WTA,
+2026-05-16,Final,Internationaux de Strasbourg presented by Mammotion,McCartney Kessler,Renata Zarazua,wta_31,wta_87,WTA,
+2026-05-16,13:00,Parma Ladies Open presented by Iren,Barbora Krejcikova,Dayana Yastremska,wta_53,wta_43,WTA,
+2026-05-16,Final,Parma Ladies Open presented by Iren,Dayana Yastremska,Jessica Bouzas Maneiro,wta_43,wta_48,WTA,
+2026-05-16,Live,Trophée Clarins,Madison Keys,Yuliia Starodubtseva,wta_17,wta_101,WTA,
 2026-05-16,13:30,Trophée Clarins,Diane Parry,Alina Charaeva,wta_107,wta_163,WTA,
+2026-05-17,TBD,Bitpanda Hamburg Open,Kamil Majchrzak,Camilo Ugo Carabelli,atp_56,atp_45,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Rinky Hijikata,Henri Squire,atp_112,atp_261,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Marcos Giron,Max Schoenhaus,atp_63,atp_454,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Francisco Cerundolo,Alex de Minaur,atp_19,atp_8,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Diego Dedura,Frances Tiafoe,atp_310,atp_28,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Luciano Darderi,Roman Andres Burruchaga,atp_22,atp_102,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Jakub Mensik,Jan-Lennard Struff,atp_16,atp_77,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Miomir Kecmanovic,Karen Khachanov,atp_83,atp_17,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Tommy Paul,Ethan Quinn,atp_24,atp_70,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Justin Engel,Ugo Humbert,atp_192,atp_38,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Alejandro Davidovich Fokina,Corentin Moutet,atp_15,atp_34,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Terence Atmane,Tomas Martin Etcheverry,atp_65,atp_53,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Yannick Hanfmann,Joao Fonseca,atp_90,atp_37,ATP,
+2026-05-17,TBD,Bitpanda Hamburg Open,Felix Auger-Aliassime,Vit Kopriva,atp_6,atp_87,ATP,
 2026-05-17,TBD,Gonet Geneva Open,Marco Trungelliti,Mariano Navone,atp_131,atp_74,ATP,Clay
 2026-05-17,TBD,Gonet Geneva Open,Laslo Djere,Juan Manuel Cerundolo,atp_113,atp_19,ATP,Clay
 2026-05-17,TBD,Gonet Geneva Open,Adrian Mannarino,Raphael Collignon,atp_48,atp_68,ATP,Clay
@@ -44,3 +59,13 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-17,TBD,Gonet Geneva Open,Alejandro Tabilo,Stan Wawrinka,atp_67,atp_98,ATP,Clay
 2026-05-17,TBD,Gonet Geneva Open,Arthur Rinderknech,Thiago Agustin Tirante,atp_30,atp_92,ATP,Clay
 2026-05-17,TBD,Gonet Geneva Open,Jenson Brooksby,Casper Ruud,atp_46,atp_13,ATP,Clay
+2026-05-17,TBD,Internationaux de Strasbourg presented by Mammotion,Maya Joint,Ann Li,wta_29,wta_36,WTA,
+2026-05-17,TBD,Internationaux de Strasbourg presented by Mammotion,Talia Gibson,Zhang Shuai,wta_111,wta_85,WTA,
+2026-05-17,TBD,Internationaux de Strasbourg presented by Mammotion,McCartney Kessler,Oksana Selekhmeteva,wta_31,wta_74,WTA,
+2026-05-17,TBD,Internationaux de Strasbourg presented by Mammotion,Diane Parry,Emma Raducanu,wta_107,wta_25,WTA,
+2026-05-17,TBD,Internationaux de Strasbourg presented by Mammotion,Wang Xinyu,Lois Boisson,wta_34,wta_35,WTA,
+2026-05-17,TBD,Internationaux de Strasbourg presented by Mammotion,Maria Sakkari,Peyton Stearns,wta_33,wta_59,WTA,
+2026-05-17,TBD,Internationaux de Strasbourg presented by Mammotion,Madison Keys,Cristina Bucsa,wta_17,wta_62,WTA,
+2026-05-17,TBD,Internationaux de Strasbourg presented by Mammotion,Sara Bejlek,Emma Navarro,wta_41,wta_19,WTA,
+2026-05-17,TBD,Internationaux de Strasbourg presented by Mammotion,Marie Bouzkova,Katerina Siniakova,wta_39,wta_46,WTA,
+2026-05-17,TBD,Internationaux de Strasbourg presented by Mammotion,Leolia Jeanjean,Leylah Fernandez,wta_115,wta_28,WTA,
