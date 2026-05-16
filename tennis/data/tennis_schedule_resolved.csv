@@ -5,39 +5,3 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-15,Final,Trophée Clarins,Katie Volynets,Yuliia Starodubtseva,wta_96,wta_101,WTA,
 2026-05-15,Final,Trophée Clarins,Alina Charaeva,Aliaksandra Sasnovich,wta_163,wta_113,WTA,
 2026-05-15,TBD,Trophée Clarins,Yulia Putintseva,Diane Parry,wta_77,wta_107,WTA,
-2026-05-16,09:00,Bitpanda Hamburg Open,Max Schoenhaus,Luca Van Assche,atp_454,atp_130,ATP,
-2026-05-16,09:00,Bitpanda Hamburg Open,Henri Squire,Cristian Garin,atp_261,atp_89,ATP,
-2026-05-16,10:00,Bitpanda Hamburg Open,Rinky Hijikata,Taro Daniel,atp_112,atp_402,ATP,
-2026-05-16,10:30,Bitpanda Hamburg Open,Ignacio Buse,Niels McDonald,atp_91,atp_115,ATP,
-2026-05-16,10:30,Bitpanda Hamburg Open,Marcos Giron,Sumit Nagal,atp_63,atp_297,ATP,
-2026-05-16,11:30,Bitpanda Hamburg Open,Aleksandar Kovacevic,Zhang Zhizhen,atp_75,atp_449,ATP,
-2026-05-16,12:00,Bitpanda Hamburg Open,Marko Topo,Hugo Gaston,atp_237,atp_96,ATP,
-2026-05-16,12:00,Bitpanda Hamburg Open,Mika Petkovic,Arthur Gea,wta_280,atp_160,WTA,
-2026-05-16,09:00,Gonet Geneva Open,Edas Butvilas,Alexandre Muller,atp_250,atp_50,ATP,Clay
-2026-05-16,09:00,Gonet Geneva Open,James Duckworth,Miguel Damas,atp_80,atp_9037,ATP,Clay
-2026-05-16,09:00,Gonet Geneva Open,Sebastian Ofner,Kilian Feldbausch,atp_132,atp_412,ATP,Clay
-2026-05-16,10:30,Gonet Geneva Open,Daniel Elahi Galan,Nishesh Basavareddy,atp_183,atp_190,ATP,Clay
-2026-05-16,10:30,Gonet Geneva Open,Raul Brancaccio,Tyler Zink,wta_164,atp_327,WTA,Clay
-2026-05-16,10:30,Gonet Geneva Open,Henry Bernet,Francisco Comesana,atp_9036,atp_62,ATP,Clay
-2026-05-16,12:00,Gonet Geneva Open,Zachary Svajda,Max Hans Rehberg,atp_106,atp_572,ATP,Clay
-2026-05-16,13:00,Internazionali BNL d'Italia,Jannik Sinner,Daniil Medvedev,atp_2,atp_11,ATP,Clay
-2026-05-16,15:00,Internazionali BNL d'Italia,Coco Gauff,Elina Svitolina,wta_4,wta_9,WTA,Clay
-2026-05-16,10:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Dalila Spiteri,Georgina Garcia Perez,wta_275,atp_389,WTA,
-2026-05-16,10:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Diletta Cherubini,Vera Zvonareva,wta_389,wta_357,WTA,
-2026-05-16,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Aran Teixido Garcia,Caijsa Hennemann,wta_206,wta_377,WTA,
-2026-05-16,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Carolina Alves,Lisa Zaar,wta_230,wta_466,WTA,
-2026-05-16,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Fiona Ferro,Ekaterina Kazionova,wta_239,wta_494,WTA,
-2026-05-16,13:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Anastasia Zolotareva,Zhibek Kulambayeva,wta_295,wta_390,WTA,
-2026-05-16,13:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Amandine Hesse,Elina Avanesyan,wta_402,wta_178,WTA,
-2026-05-16,13:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Alana Smith,Victoria Bosio,atp_141,wta_337,ATP,
-2026-05-16,08:30,Internationaux de Strasbourg presented by Mammotion,Oksana Selekhmeteva,Sofia Kenin,wta_74,wta_32,WTA,
-2026-05-16,08:30,Internationaux de Strasbourg presented by Mammotion,Beatriz Haddad Maia,Zhang Shuai,wta_66,wta_85,WTA,
-2026-05-16,08:30,Internationaux de Strasbourg presented by Mammotion,McCartney Kessler,Renata Zarazua,wta_31,wta_87,WTA,
-2026-05-16,10:00,Internationaux de Strasbourg presented by Mammotion,Antonia Ruzic,Yulia Putintseva,wta_67,wta_77,WTA,
-2026-05-16,10:00,Internationaux de Strasbourg presented by Mammotion,Talia Gibson,Eva Lys,wta_111,wta_56,WTA,
-2026-05-16,10:00,Internationaux de Strasbourg presented by Mammotion,Ksenia Efremova,Oleksandra Oliynykova,wta_595,wta_71,WTA,
-2026-05-16,11:30,Internationaux de Strasbourg presented by Mammotion,Valentina Steiner,Daria Kasatkina,wta_9030,wta_61,WTA,
-2026-05-16,12:00,Internationaux de Strasbourg presented by Mammotion,Elsa Jacquemot,Anastasia Zakharova,wta_57,wta_103,WTA,
-2026-05-16,09:00,Parma Ladies Open presented by Iren,Dayana Yastremska,Jessica Bouzas Maneiro,wta_43,wta_48,WTA,
-2026-05-16,12:00,Trophée Clarins,Madison Keys,Yuliia Starodubtseva,wta_17,wta_101,WTA,
-2026-05-16,13:30,Trophée Clarins,Diane Parry,Alina Charaeva,wta_107,wta_163,WTA,
