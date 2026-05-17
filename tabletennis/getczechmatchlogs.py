@@ -92,31 +92,15 @@ def scrape_api():
         except:
             print("Could not load existing CSV, continuing fresh")
 
-    print("Ensuring clean environment...")
-    # Force kill any lingering or background zombie processes
-    os.system("taskkill /F /IM chrome.exe /T >nul 2>&1")
-    os.system("taskkill /F /IM chromedriver.exe /T >nul 2>&1")
-    time.sleep(3) # Give the OS a brief moment to clear the profile file-locks
-
     print("Launching browser...")
+
     options = uc.ChromeOptions()
     options.add_argument("--start-maximized")
     options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
     options.add_argument("--disable-blink-features=AutomationControlled")
     
-    # --- FIX 1: FILTER DOWN PERFORMANCE LOGGING ENTRY SIZES ---
-    # This prevents the log buffer from filling up and dropping requests
-    logging_prefs = {
-        "performance": "ALL"
-    }
-    options.set_capability("goog:loggingPrefs", logging_prefs)
-    
-    # Restrict the performance logging categories strictly to Network
-    perf_logging_prefs = {
-        "enableNetwork": True,
-        "enablePage": False,
-    }
-    options.set_capability("goog:chromeOptions", {"perfLoggingPrefs": perf_logging_prefs})
+    # Critical: Ensure performance logging is active
+    options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
 
     driver = uc.Chrome(options=options, version_main=147)
     
@@ -124,65 +108,58 @@ def scrape_api():
     print("Solve Cloudflare if needed...")
     time.sleep(20)
 
-    # --- NEW ROBUST TOKEN EXTRACTION LOGIC ---
+    # Force the site to make API requests by scrolling down and back up
+    driver.execute_script("window.scrollTo(0, 500);")
+    time.sleep(2)
+    driver.execute_script("window.scrollTo(0, 0);")
+    time.sleep(2)
+
+    import re
+
     def get_live_session(driver):
-        # We grab the logs; reversed() ensures we get the most recent valid token
-        logs = driver.get_log("performance")
-        for log in reversed(logs):
-            try:
-                msg = json.loads(log["message"])["message"]
-                if msg.get("method") == "Network.requestWillBeSent":
-                    headers = msg.get("params", {}).get("request", {}).get("headers", {})
-                    token = headers.get("x-api-token") or headers.get("X-Api-Token")
-                    timestamp = headers.get("x-api-timestamp") or headers.get("X-Api-Timestamp")
-                    
-                    if token and len(token) == 6:
-                        return {"token": token, "timestamp": timestamp}
-            except:
-                continue
+        """
+        Extract API token and timestamp using two approaches:
+        1. Performance logs (captures token from live network requests)
+        2. Page source regex (token is embedded in __REACT_QUERY_STATE__)
+        """
+        # --- Approach 1: Performance logs ---
+        try:
+            logs = driver.get_log("performance")
+            for log in reversed(logs):
+                try:
+                    msg = json.loads(log["message"])["message"]
+                    if msg.get("method") == "Network.requestWillBeSent":
+                        headers = msg.get("params", {}).get("request", {}).get("headers", {})
+                        token = headers.get("x-api-token") or headers.get("X-Api-Token")
+                        timestamp = headers.get("x-api-timestamp") or headers.get("X-Api-Timestamp")
+                        if token:
+                            return {"token": token, "timestamp": timestamp}
+                except Exception:
+                    continue
+        except Exception:
+            pass
+
+        # --- Approach 2: Page source regex ---
+        try:
+            source = driver.page_source
+            token_match = re.search(r'"x-api-token"\s*:\s*"([a-z0-9]+)"', source)
+            ts_match = re.search(r'"x-api-timestamp"\s*:\s*"([0-9]+)"', source)
+            if token_match:
+                token = token_match.group(1)
+                timestamp = ts_match.group(1) if ts_match else str(int(time.time()))
+                print(f"✅ Extracted token from page source: {token}")
+                return {"token": token, "timestamp": timestamp}
+        except Exception:
+            pass
+
         return None
 
-    # --- UPDATED EXTRACTION LOGIC ---
-    print("Searching for live session token...")
-    session = None
-    all_captured_logs = [] # Keep a running list of logs
+    session = get_live_session(driver)
 
-    for attempt in range(15):
-        # Trigger a fresh request by clicking a non-link element or scrolling
-        driver.execute_script(f"window.scrollTo(0, {400 + (attempt * 100)});")
-        
-        # Collect new logs and add to our pile
-        new_logs = driver.get_log("performance")
-        all_captured_logs.extend(new_logs)
-        
-        # Search the entire pile
-        for log in reversed(all_captured_logs):
-            try:
-                msg = json.loads(log["message"])["message"]
-                # Look for ANY network activity that might have headers
-                if "request" in msg.get("params", {}):
-                    headers = msg["params"]["request"].get("headers", {})
-                    # Standardize keys to lowercase for matching
-                    headers_lower = {k.lower(): v for k, v in headers.items()}
-                    
-                    token = headers_lower.get("x-api-token")
-                    timestamp = headers_lower.get("x-api-timestamp")
-                    
-                    if token and len(token) == 6:
-                        session = {"token": token, "timestamp": timestamp}
-                        break
-            except:
-                continue
-        
-        if session:
-            print(f"✅ Extracted live session! Token: {session['token']}")
-            break
-        
-        print(f"  Attempt {attempt + 1}: Token not found yet...")
-        time.sleep(2)
-
-    if not session:
-        print("⚠️ Still could not extract session after retries. Using fallback.")
+    if session:
+        print(f"✅ Extracted live session! Token: {session['token']}, TS: {session['timestamp']}")
+    else:
+        print("⚠️ Could not extract session. Falling back to .env token.")
         session = {"token": API_TOKEN, "timestamp": str(int(time.time()))}
 
     base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/czech-liga-pro-1/matches"
