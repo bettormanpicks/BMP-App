@@ -71,26 +71,17 @@ def scrape_schedule():
 
     driver = uc.Chrome(options=options, version_main=147)
     driver.get(LEAGUE_URL)
-    print("Waiting for page and token to initialize (Checking dynamically)...")
-    
-    session = None
-    # Check every 3 seconds, up to 12 times (36 seconds maximum wait)
-    for attempt in range(12):
-        time.sleep(3)
-        
-        # Give the page a slight scroll nudge to wake up network bindings
-        if attempt == 2:
-            driver.execute_script("window.scrollTo(0, 300);")
-            
-        session = get_live_session(driver)
-        if session:
-            print(f"✅ Extracted schedule session on attempt {attempt + 1}: {session['token']}")
-            break
-        else:
-            print(f"  Attempt {attempt + 1}: Token not ready yet...")
+    print("Solve Cloudflare if needed (Waiting 20s)...")
+    time.sleep(20)
 
-    if not session:
-        print("⚠️ Session not found after dynamic retries, using fallbacks...")
+    driver.execute_script("window.scrollTo(0, 400);")
+    time.sleep(2)
+    
+    session = get_live_session(driver)
+    if session:
+        print(f"✅ Extracted schedule session: {session['token']}")
+    else:
+        print("⚠️ Session not found, using fallbacks...")
         session = {"token": "h57bsdl", "timestamp": str(int(time.time()))}
 
     base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/tt-elite-series-1/matches"
