@@ -6,8 +6,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-19,Final,Roland Garros,Lucrezia Stefanini,Alina Charaeva,wta_136,wta_163,WTA,Clay
 2026-05-19,Final,Roland Garros,Tahlia Kokkinis,Storm Hunter,wta_490,wta_231,WTA,Clay
 2026-05-19,Final,Roland Garros,Lucia Bronzetti,Varvara Lepchenko,wta_138,wta_149,WTA,Clay
-2026-05-19,Final,Roland Garros,Cadence Brace,Maria Timofeeva,wta_202,wta_54,WTA,Clay
-2026-05-19,Final,Roland Garros,Darja Vidmanova,Gao Xinyu,wta_127,wta_34,WTA,Clay
+2026-05-19,Final,Roland Garros,Cadence Brace,Maria Timofeeva,wta_202,wta_154,WTA,Clay
+2026-05-19,Final,Roland Garros,Darja Vidmanova,Gao Xinyu,wta_127,wta_262,WTA,Clay
 2026-05-19,Final,Roland Garros,Rebeka Masarova,Maria Lourdes Carle,wta_117,wta_155,WTA,Clay
 2026-05-19,Final,Roland Garros,Linda Fruhvirtova,Lucie Havlickova,wta_118,wta_276,WTA,Clay
 2026-05-19,Final,Roland Garros,Harmony Tan,Karman Thandi,wta_229,wta_9100,WTA,Clay
@@ -17,7 +17,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-19,Final,Roland Garros,Jessika Ponchet,Priscilla Hon,wta_159,wta_130,WTA,Clay
 2026-05-19,Final,Roland Garros,Darja Semenistaja,Iryna Shymanovich,wta_97,wta_156,WTA,Clay
 2026-05-19,Final,Roland Garros,Laura Pigossi,Claire Liu,wta_214,wta_213,WTA,Clay
-2026-05-19,Final,Roland Garros,Kaja Juvan,Anna Siskova,wta_92,wta_65,WTA,Clay
+2026-05-19,Final,Roland Garros,Kaja Juvan,Anna Siskova,wta_92,wta_227,WTA,Clay
 2026-05-19,Final,Roland Garros,Lulu Sun,Ma YeXin,wta_98,wta_182,WTA,Clay
 2026-05-19,Final,Roland Garros,Jeline Vandromme,Aoi Ito,wta_291,wta_176,WTA,Clay
 2026-05-19,Final,Roland Garros,Teodora Kostovic,Elizabeth Mandlik,wta_171,wta_168,WTA,Clay
@@ -26,23 +26,23 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-19,Final,Roland Garros,Julia Riera,Laura Samson,wta_187,wta_212,WTA,Clay
 2026-05-19,Final,Roland Garros,Robin Montgomery,Maddison Inglis,wta_293,wta_123,WTA,Clay
 2026-05-19,Final,Roland Garros,Ashlyn Krueger,Margaux Rouvroy,wta_100,wta_316,WTA,Clay
-2026-05-19,Final,Roland Garros,Luisina Giovannini,Eva Guerrero Alvarez,wta_240,wta_263,WTA,Clay
+2026-05-19,Final,Roland Garros,Luisina Giovannini,Eva Guerrero Alvarez,wta_240,wta_9029,WTA,Clay
 2026-05-19,Final,Roland Garros,Katherine Sebov,Viktoria Hruncakova,wta_270,wta_218,WTA,Clay
 2026-05-19,Final,Roland Garros,Yeonwoo Ku,Karolina Pliskova,wta_188,wta_267,WTA,Clay
-2026-05-19,Final,Roland Garros,Amandine Monnot,Marina Bassols Ribera,wta_402,wta_209,WTA,Clay
+2026-05-19,Final,Roland Garros,Amandine Monnot,Marina Bassols Ribera,wta_374,wta_209,WTA,Clay
 2026-05-19,Final,Roland Garros,Daphnée Mpetshi Perricard,Bianca Andreescu,atp_58,wta_161,ATP,Clay
 2026-05-19,Final,Roland Garros,Darwin Blanch,Timofey Skatov,atp_446,atp_193,ATP,Clay
 2026-05-19,Final,Roland Garros,Jerome Kym,Tom Gentzsch,atp_195,atp_243,ATP,Clay
 2026-05-19,Final,Roland Garros,Nicolai Budkov Kjaer,Gilles Arnaud Bailly,atp_133,atp_211,ATP,Clay
 2026-05-19,Final,Roland Garros,Tristan Schoolkate,Kimmer Coppejans,atp_108,atp_248,ATP,Clay
 2026-05-19,Final,Roland Garros,Luka Pavlovic,Harry Wendelken,atp_209,atp_276,ATP,Clay
-2026-05-19,Final,Roland Garros,Elias Ymer,Arthur Fery,atp_187,atp_156,ATP,Clay
+2026-05-19,Final,Roland Garros,Elias Ymer,Arthur Fery,atp_9026,atp_156,ATP,Clay
 2026-05-19,Final,Roland Garros,Harold Mayot,Tomas Barrios Vera,atp_172,atp_107,ATP,Clay
-2026-05-19,Final,Roland Garros,Emilio Nava,Bu Yunchaokete,atp_76,atp_147,ATP,Clay
+2026-05-19,Final,Roland Garros,Emilio Nava,Bu Yunchaokete,atp_76,atp_162,ATP,Clay
 2026-05-19,Final,Roland Garros,Joel Josef Schwaerzler,Clement Chidekh,atp_9030,atp_205,ATP,Clay
 2026-05-19,Final,Roland Garros,Liam Broady,Gianluca Cadenasso,atp_282,atp_306,ATP,Clay
 2026-05-19,Final,Roland Garros,Thiago Seyboth Wild,Yu Hsiou Hsu,atp_219,atp_221,ATP,Clay
-2026-05-19,Final,Roland Garros,Nerman Fatic,Luka Mikrut,atp_223,atp_209,ATP,Clay
+2026-05-19,Final,Roland Garros,Nerman Fatic,Luka Mikrut,atp_223,atp_163,ATP,Clay
 2026-05-19,Final,Roland Garros,Rei Sakamoto,Pedro Martinez,atp_173,atp_101,ATP,Clay
 2026-05-19,Final,Roland Garros,Mark Lajal,Roman Safiullin,atp_159,atp_185,ATP,Clay
 2026-05-19,Final,Roland Garros,Jan Choinski,Andy Andrade,atp_124,atp_252,ATP,Clay
@@ -59,12 +59,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-19,Final,Roland Garros,Jaime Faria,Grigor Dimitrov,atp_146,atp_42,ATP,Clay
 2026-05-19,Final,Roland Garros,Gustavo Heide,Dan Added,atp_256,atp_200,ATP,Clay
 2026-05-19,Final,Roland Garros,James McCabe,Zdenek Kolar,atp_210,atp_194,ATP,Clay
-2026-05-19,Final,Roland Garros,Chak Lam Coleman Wong,Billy Harris,atp_137,atp_144,ATP,Clay
+2026-05-19,Final,Roland Garros,Chak Lam Coleman Wong,Billy Harris,atp_137,atp_179,ATP,Clay
 2026-05-19,Final,Roland Garros,Jurij Rodionov,Dusan Lajovic,atp_175,atp_129,ATP,Clay
 2026-05-19,Final,Roland Garros,Borna Gojo,Sascha Gueymard Wayenburg,atp_235,atp_266,ATP,Clay
 2026-05-19,Final,Roland Garros,Colton Smith,Alvaro Guillen Meza,atp_141,atp_201,ATP,Clay
 2026-05-19,Final,Bitpanda Hamburg Open,Felix Auger-Aliassime,Vit Kopriva,atp_6,atp_87,ATP,
-2026-05-19,Final,Bitpanda Hamburg Open,Daniel Altmaier,Ben Shelton,atp_54,atp_9,ATP,
+2026-05-19,Final,Bitpanda Hamburg Open,Daniel Altmaier,Ben Shelton,atp_402,atp_9,ATP,
 2026-05-19,Final,Bitpanda Hamburg Open,Flavio Cobolli,Ignacio Buse,atp_20,atp_91,ATP,
 2026-05-19,Final,Bitpanda Hamburg Open,Hugo Gaston,Karen Khachanov,atp_96,atp_17,ATP,
 2026-05-19,Final,Bitpanda Hamburg Open,Luciano Darderi,Roman Andres Burruchaga,atp_22,atp_102,ATP,
@@ -89,95 +89,4 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-19,Final,Internationaux de Strasbourg presented by Mammotion,Magdalena Frech,Leylah Fernandez,wta_55,wta_28,WTA,
 2026-05-19,Final,Internationaux de Strasbourg presented by Mammotion,Peyton Stearns,Daria Kasatkina,wta_59,wta_61,WTA,
 2026-05-19,Final,Internationaux de Strasbourg presented by Mammotion,Diane Parry,Emma Raducanu,wta_107,wta_25,WTA,
-2026-05-19,Final,Internationaux de Strasbourg presented by Mammotion,Zhang Shuai,Cristina Bucsa,wta_85,wta_62,WTA,
-2026-05-20,08:00,Roland Garros,Sofia Costoulas,Mai Hontama,wta_142,wta_220,WTA,Clay
-2026-05-20,08:00,Roland Garros,Despina Papamichail,Guo Hanyu,wta_157,wta_186,WTA,Clay
-2026-05-20,08:00,Roland Garros,Maja Chwalinska,Carole Monnet,wta_126,wta_177,WTA,Clay
-2026-05-20,08:00,Roland Garros,Irina-Camelia Begu,Suzan Lamens,wta_148,wta_109,WTA,Clay
-2026-05-20,08:00,Roland Garros,Sinja Kraus,Noma Noha Akugue,wta_105,wta_255,WTA,Clay
-2026-05-20,08:00,Roland Garros,Anna-Lena Friedsam,Tamara Zidansek,wta_204,wta_145,WTA,Clay
-2026-05-20,09:30,Roland Garros,Kathinka von Deichmann,Himeno Sakatsume,wta_226,wta_135,WTA,Clay
-2026-05-20,09:30,Roland Garros,Mayar Sherif,Martina Trevisan,wta_108,wta_685,WTA,Clay
-2026-05-20,09:30,Roland Garros,Sloane Stephens,Lisa Pigato,wta_775,wta_193,WTA,Clay
-2026-05-20,09:30,Roland Garros,Harriet Dart,Leyre Romero Gormaz,wta_169,wta_140,WTA,Clay
-2026-05-20,09:30,Roland Garros,Kaja Juvan,Guiomar Maristany Zuleta De Reales,wta_92,wta_165,WTA,Clay
-2026-05-20,09:30,Roland Garros,Greet Minnen,Lola Radivojevic,wta_129,wta_139,WTA,Clay
-2026-05-20,09:30,Roland Garros,Teodora Kostovic,Kaitlin Quevedo,wta_171,wta_131,WTA,Clay
-2026-05-20,09:30,Roland Garros,Elena Pridankina,Julia Avdeeva,wta_192,wta_457,WTA,Clay
-2026-05-20,11:00,Roland Garros,Julia Riera,Robin Montgomery,wta_187,wta_293,WTA,Clay
-2026-05-20,11:00,Roland Garros,Dominika Salkova,Susan Bandecchi,wta_151,wta_233,WTA,Clay
-2026-05-20,11:00,Roland Garros,Mary Stoiana,Matilde Jorge,wta_185,wta_256,WTA,Clay
-2026-05-20,11:00,Roland Garros,Viktoria Hruncakova,Bianca Andreescu,wta_218,wta_161,WTA,Clay
-2026-05-20,11:00,Roland Garros,Marina Bassols Ribera,Karolina Pliskova,wta_209,wta_267,WTA,Clay
-2026-05-20,11:00,Roland Garros,Ashlyn Krueger,Luisina Giovannini,wta_100,wta_240,WTA,Clay
-2026-05-20,11:00,Roland Garros,Alina Korneeva,Jazmin Ortenzi,wta_146,wta_216,WTA,Clay
-2026-05-20,12:00,Roland Garros,Aliaksandra Sasnovich,Oceane Dodin,wta_113,wta_9056,WTA,Clay
-2026-05-20,12:30,Roland Garros,Claire Liu,Katarzyna Kawa,wta_213,wta_143,WTA,Clay
-2026-05-20,12:30,Roland Garros,Gao Xinyu,Harmony Tan,wta_34,wta_229,WTA,Clay
-2026-05-20,12:30,Roland Garros,Storm Hunter,Wang Xiyu,wta_231,wta_34,WTA,Clay
-2026-05-20,12:30,Roland Garros,Lulu Sun,Aoi Ito,wta_98,wta_176,WTA,Clay
-2026-05-20,12:30,Roland Garros,Darja Semenistaja,Katarina Zavatska,wta_97,wta_310,WTA,Clay
-2026-05-20,12:30,Roland Garros,Linda Fruhvirtova,Jessika Ponchet,wta_118,wta_159,WTA,Clay
-2026-05-20,14:00,Roland Garros,Rebecca Sramkova,Francisca Jorge,wta_102,wta_207,WTA,Clay
-2026-05-20,14:00,Roland Garros,Lucia Bronzetti,Lucrezia Stefanini,wta_138,wta_136,WTA,Clay
-2026-05-20,14:00,Roland Garros,Polina Kudermetova,Viktoriya Tomova,wta_144,wta_153,WTA,Clay
-2026-05-20,14:00,Roland Garros,Maria Lourdes Carle,Maria Timofeeva,wta_155,wta_54,WTA,Clay
-2026-05-20,08:00,Roland Garros,Dalibor Svrcina,Federico Agustin Gomez,atp_99,atp_188,ATP,Clay
-2026-05-20,08:00,Roland Garros,Stefanos Sakellaridis,Marco Cecchinato,atp_275,atp_215,ATP,Clay
-2026-05-20,08:00,Roland Garros,Facundo Diaz Acosta,Remy Bertola,atp_284,atp_213,ATP,Clay
-2026-05-20,08:00,Roland Garros,Andrea Pellegrino,Lloyd Harris,atp_140,atp_179,ATP,Clay
-2026-05-20,08:00,Roland Garros,Jesper de Jong,Liam Draxl,atp_86,atp_148,ATP,Clay
-2026-05-20,08:00,Roland Garros,Michael Zheng,Stefano Travaglia,atp_152,wta_290,ATP,Clay
-2026-05-20,08:00,Roland Garros,Thomas Faurel,Jay Clarke,atp_457,atp_184,ATP,Clay
-2026-05-20,08:00,Roland Garros,August Holmgren,Daniel Jade,atp_198,atp_402,ATP,Clay
-2026-05-20,09:30,Roland Garros,Federico Cina,Bernard Tomic,atp_224,atp_186,ATP,Clay
-2026-05-20,09:30,Roland Garros,Pedro Boscardin Dias,Alexis Galarneau,atp_253,atp_242,ATP,Clay
-2026-05-20,09:30,Roland Garros,Ugo Blanchet,Pablo Llamas Ruiz,atp_162,atp_197,ATP,Clay
-2026-05-20,09:30,Roland Garros,Daniil Glinka,Juan Carlos Prado Angelo,atp_169,atp_212,ATP,Clay
-2026-05-20,09:30,Roland Garros,Gonzalo Bueno,Vitaliy Sachko,atp_218,atp_181,ATP,Clay
-2026-05-20,10:30,Roland Garros,Toby Samuel,David Goffin,atp_241,atp_118,ATP,Clay
-2026-05-20,11:00,Roland Garros,Chak Lam Coleman Wong,Zdenek Kolar,atp_137,atp_194,ATP,Clay
-2026-05-20,11:00,Roland Garros,Jaime Faria,Colton Smith,atp_146,atp_141,ATP,Clay
-2026-05-20,11:00,Roland Garros,Henrique Rocha,Borna Gojo,atp_170,atp_235,ATP,Clay
-2026-05-20,11:00,Roland Garros,Alejandro Moro Canas,Lukas Neumayer,atp_271,atp_222,ATP,Clay
-2026-05-20,11:00,Roland Garros,Vilius Gaubas,Joao Lucas Reis Da Silva,atp_126,atp_207,ATP,Clay
-2026-05-20,11:00,Roland Garros,Gustavo Heide,Jurij Rodionov,atp_256,atp_175,ATP,Clay
-2026-05-20,12:30,Roland Garros,Emilio Nava,Thiago Seyboth Wild,atp_76,atp_219,ATP,Clay
-2026-05-20,12:30,Roland Garros,Nerman Fatic,Kyrian Jacquet,atp_223,atp_153,ATP,Clay
-2026-05-20,12:30,Roland Garros,Alex Molcan,Felix Gill,atp_199,atp_321,ATP,Clay
-2026-05-20,12:30,Roland Garros,Matej Dodig,Hugo Dellien,atp_230,atp_157,ATP,Clay
-2026-05-20,12:30,Roland Garros,Francesco Maestrelli,Roberto Carballes Baena,atp_110,atp_174,ATP,Clay
-2026-05-20,12:30,Roland Garros,Gianluca Cadenasso,Leandro Riedi,atp_306,atp_171,ATP,Clay
-2026-05-20,12:30,Roland Garros,Arthur Fery,Pedro Martinez,atp_156,atp_101,ATP,Clay
-2026-05-20,13:30,Roland Garros,Jan Choinski,Pierre-Hugues Herbert,atp_124,atp_189,ATP,Clay
-2026-05-20,14:00,Roland Garros,Tristan Schoolkate,Darwin Blanch,atp_108,atp_446,ATP,Clay
-2026-05-20,14:00,Roland Garros,Nicolai Budkov Kjaer,Tom Gentzsch,atp_133,atp_243,ATP,Clay
-2026-05-20,14:00,Roland Garros,Luka Pavlovic,Tomas Barrios Vera,atp_209,atp_107,ATP,Clay
-2026-05-20,14:00,Roland Garros,Joel Josef Schwaerzler,Roman Safiullin,atp_9030,atp_185,ATP,Clay
-2026-05-20,10:00,Bitpanda Hamburg Open,Ignacio Buse,Jakub Mensik,atp_91,atp_16,ATP,
-2026-05-20,10:00,Bitpanda Hamburg Open,Felix Auger-Aliassime,Aleksandar Kovacevic,atp_6,atp_75,ATP,
-2026-05-20,11:00,Bitpanda Hamburg Open,Tommy Paul,Tomas Martin Etcheverry,atp_24,atp_53,ATP,
-2026-05-20,11:30,Bitpanda Hamburg Open,Ugo Humbert,Karen Khachanov,atp_38,atp_17,ATP,
-2026-05-20,12:30,Bitpanda Hamburg Open,Camilo Ugo Carabelli,Frances Tiafoe,atp_45,atp_28,ATP,
-2026-05-20,13:00,Bitpanda Hamburg Open,Alejandro Davidovich Fokina,Alex de Minaur,atp_15,atp_8,ATP,
-2026-05-20,16:00,Bitpanda Hamburg Open,Luciano Darderi,Yannick Hanfmann,atp_22,atp_90,ATP,
-2026-05-20,08:30,Gonet Geneva Open,Stefanos Tsitsipas,Learner Tien,atp_32,atp_23,ATP,Clay
-2026-05-20,09:00,Gonet Geneva Open,Cameron Norrie,Mariano Navone,atp_27,atp_74,ATP,Clay
-2026-05-20,10:00,Gonet Geneva Open,Taylor Fritz,Alexei Popyrin,atp_7,atp_51,ATP,Clay
-2026-05-20,10:30,Gonet Geneva Open,Francisco Comesana,Jaume Munar,atp_62,atp_35,ATP,Clay
-2026-05-20,11:30,Gonet Geneva Open,Raphael Collignon,Casper Ruud,atp_68,atp_13,ATP,Clay
-2026-05-20,13:30,Gonet Geneva Open,Arthur Rinderknech,Laslo Djere,atp_30,atp_113,ATP,Clay
-2026-05-20,16:00,Gonet Geneva Open,Stan Wawrinka,Alex Michelsen,atp_98,atp_41,ATP,Clay
-2026-05-20,17:30,Gonet Geneva Open,Edas Butvilas,Alexander Bublik,atp_250,atp_10,ATP,Clay
-2026-05-20,10:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Fiona Ferro,Jessica Bouzas Maneiro,wta_239,wta_48,WTA,
-2026-05-20,10:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Alycia Parks,Jil Teichmann,wta_76,wta_175,WTA,
-2026-05-20,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Petra Marcinko,Yelyzaveta Kotliar,wta_69,wta_499,WTA,
-2026-05-20,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Yasmine Kabbaj,Tatjana Maria,wta_361,wta_54,WTA,
-2026-05-20,11:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Sada Nahimana,Panna Udvardy,wta_219,wta_93,WTA,
-2026-05-20,13:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Emiliana Arango,Anna Bondar,wta_58,wta_65,WTA,
-2026-05-20,13:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Janice Tjen,Camila Osorio,wta_47,wta_63,WTA,
-2026-05-20,14:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Yuliia Starodubtseva,Anhelina Kalinina,wta_101,wta_191,WTA,
-2026-05-20,08:30,Internationaux de Strasbourg presented by Mammotion,Marie Bouzkova,Oleksandra Oliynykova,wta_39,wta_71,WTA,
-2026-05-20,10:00,Internationaux de Strasbourg presented by Mammotion,Clara Tauson,Jaqueline Cristian,wta_15,wta_38,WTA,
-2026-05-20,11:30,Internationaux de Strasbourg presented by Mammotion,Zhang Shuai,Diane Parry,wta_85,wta_107,WTA,
-2026-05-20,15:30,Internationaux de Strasbourg presented by Mammotion,Emma Navarro,Iva Jovic,wta_19,wta_20,WTA,
+2026-05-19,Final,Internationaux de Strasbourg presented by Mammotion,Zhang Shuai,Cristina Bucsa,atp_449,wta_62,ATP,
