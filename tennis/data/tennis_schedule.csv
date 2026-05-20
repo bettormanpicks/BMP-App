@@ -1,11 +1,11 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-05-20,Live,Roland Garros,Gao Xinyu,Harmony Tan
-2026-05-20,Live,Roland Garros,Darja Semenistaja,Katarina Zavatska
-2026-05-20,Live,Roland Garros,Maria Lourdes Carle,Maria Timofeeva
-2026-05-20,Live,Roland Garros,Polina Kudermetova,Viktoriya Tomova
-2026-05-20,Live,Roland Garros,Lucia Bronzetti,Lucrezia Stefanini
-2026-05-20,Live,Roland Garros,Rebecca Sramkova,Francisca Jorge
+2026-05-20,Final,Roland Garros,Rebecca Sramkova,Francisca Jorge
+2026-05-20,Final,Roland Garros,Lucia Bronzetti,Lucrezia Stefanini
+2026-05-20,Final,Roland Garros,Polina Kudermetova,Viktoriya Tomova
+2026-05-20,Final,Roland Garros,Maria Lourdes Carle,Maria Timofeeva
 2026-05-20,Final,Roland Garros,Claire Liu,Katarzyna Kawa
+2026-05-20,Final,Roland Garros,Darja Semenistaja,Katarina Zavatska
+2026-05-20,Final,Roland Garros,Gao Xinyu,Harmony Tan
 2026-05-20,Final,Roland Garros,Lulu Sun,Aoi Ito
 2026-05-20,Final,Roland Garros,Aliaksandra Sasnovich,Oceane Dodin
 2026-05-20,Final,Roland Garros,Linda Fruhvirtova,Jessika Ponchet
@@ -31,10 +31,10 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-20,Final,Roland Garros,Maja Chwalinska,Carole Monnet
 2026-05-20,Final,Roland Garros,Sinja Kraus,Noma Noha Akugue
 2026-05-20,Final,Roland Garros,Anna-Lena Friedsam,Tamara Zidansek
-2026-05-20,Live,Roland Garros,Luka Pavlovic,Tomas Barrios Vera
-2026-05-20,Live,Roland Garros,Gianluca Cadenasso,Leandro Riedi
-2026-05-20,Live,Roland Garros,Tristan Schoolkate,Darwin Blanch
+2026-05-20,Final,Roland Garros,Tristan Schoolkate,Darwin Blanch
+2026-05-20,Final,Roland Garros,Gianluca Cadenasso,Leandro Riedi
 2026-05-20,Final,Roland Garros,Emilio Nava,Thiago Seyboth Wild
+2026-05-20,Final,Roland Garros,Luka Pavlovic,Tomas Barrios Vera
 2026-05-20,Final,Roland Garros,Nicolai Budkov Kjaer,Tom Gentzsch
 2026-05-20,Final,Roland Garros,Joel Josef Schwaerzler,Roman Safiullin
 2026-05-20,Final,Roland Garros,Vilius Gaubas,Joao Lucas Reis Da Silva
@@ -63,30 +63,30 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-20,Final,Roland Garros,Jesper de Jong,Liam Draxl
 2026-05-20,Final,Roland Garros,Michael Zheng,Stefano Travaglia
 2026-05-20,Final,Roland Garros,Thomas Faurel,Jay Clarke
-2026-05-20,Live,Bitpanda Hamburg Open,Alejandro Davidovich Fokina,Alex de Minaur
-2026-05-20,18:30,Bitpanda Hamburg Open,Luciano Darderi,Yannick Hanfmann
+2026-05-20,Live,Bitpanda Hamburg Open,Luciano Darderi,Yannick Hanfmann
 2026-05-20,Final,Bitpanda Hamburg Open,Felix Auger-Aliassime,Aleksandar Kovacevic
+2026-05-20,Final,Bitpanda Hamburg Open,Alejandro Davidovich Fokina,Alex de Minaur
 2026-05-20,Final,Bitpanda Hamburg Open,Ugo Humbert,Karen Khachanov
 2026-05-20,Final,Bitpanda Hamburg Open,Tommy Paul,Tomas Martin Etcheverry
-2026-05-20,TBD,Bitpanda Hamburg Open,Camilo Ugo Carabelli,Frances Tiafoe
+2026-05-20,Final,Bitpanda Hamburg Open,Camilo Ugo Carabelli,Frances Tiafoe
 2026-05-20,Final,Bitpanda Hamburg Open,Ignacio Buse,Jakub Mensik
-2026-05-20,Live,Gonet Geneva Open,Stan Wawrinka,Alex Michelsen
-2026-05-20,18:00,Gonet Geneva Open,Edas Butvilas,Alexander Bublik
 2026-05-20,Final,Gonet Geneva Open,Taylor Fritz,Alexei Popyrin
+2026-05-20,Final,Gonet Geneva Open,Edas Butvilas,Alexander Bublik
 2026-05-20,Final,Gonet Geneva Open,Cameron Norrie,Mariano Navone
 2026-05-20,Final,Gonet Geneva Open,Stefanos Tsitsipas,Learner Tien
 2026-05-20,Final,Gonet Geneva Open,Arthur Rinderknech,Laslo Djere
 2026-05-20,Final,Gonet Geneva Open,Raphael Collignon,Casper Ruud
 2026-05-20,Final,Gonet Geneva Open,Francisco Comesana,Jaume Munar
-2026-05-20,Live,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Yuliia Starodubtseva,Anhelina Kalinina
+2026-05-20,Final,Gonet Geneva Open,Stan Wawrinka,Alex Michelsen
 2026-05-20,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Janice Tjen,Camila Osorio
 2026-05-20,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Fiona Ferro,Jessica Bouzas Maneiro
 2026-05-20,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Yasmine Kabbaj,Tatjana Maria
+2026-05-20,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Yuliia Starodubtseva,Anhelina Kalinina
 2026-05-20,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Emiliana Arango,Anna Bondar
 2026-05-20,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Petra Marcinko,Yelyzaveta Kotliar
 2026-05-20,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Sada Nahimana,Panna Udvardy
 2026-05-20,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Alycia Parks,Jil Teichmann
-2026-05-20,Live,Internationaux de Strasbourg presented by Mammotion,Emma Navarro,Iva Jovic
+2026-05-20,Final,Internationaux de Strasbourg presented by Mammotion,Emma Navarro,Iva Jovic
 2026-05-20,Final,Internationaux de Strasbourg presented by Mammotion,Clara Tauson,Jaqueline Cristian
 2026-05-20,TBD,Internationaux de Strasbourg presented by Mammotion,Marie Bouzkova,Oleksandra Oliynykova
 2026-05-20,Final,Internationaux de Strasbourg presented by Mammotion,Zhang Shuai,Diane Parry
@@ -105,13 +105,18 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-21,11:30,Roland Garros,Dalibor Svrcina,Thomas Faurel
 2026-05-21,12:00,Roland Garros,Chak Lam Coleman Wong,Juan Carlos Prado Angelo
 2026-05-21,13:00,Roland Garros,Jaime Faria,Lukas Neumayer
-2026-05-21,TBD,Bitpanda Hamburg Open,Ignacio Buse,Ugo Humbert
-2026-05-21,TBD,Bitpanda Hamburg Open,Tommy Paul,Daniel Altmaier
+2026-05-21,10:00,Bitpanda Hamburg Open,Ignacio Buse,Ugo Humbert
+2026-05-21,11:30,Bitpanda Hamburg Open,Tommy Paul,Daniel Altmaier
+2026-05-21,13:00,Bitpanda Hamburg Open,Aleksandar Kovacevic,Camilo Ugo Carabelli
 2026-05-21,11:00,Gonet Geneva Open,Mariano Navone,Jaume Munar
 2026-05-21,12:30,Gonet Geneva Open,Alexei Popyrin,Casper Ruud
+2026-05-21,16:00,Gonet Geneva Open,Alex Michelsen,Learner Tien
+2026-05-21,17:30,Gonet Geneva Open,Arthur Rinderknech,Alexander Bublik
 2026-05-21,10:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Camila Osorio,Panna Udvardy
 2026-05-21,11:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Petra Marcinko,Jessica Bouzas Maneiro
+2026-05-21,12:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Anhelina Kalinina,Anna Bondar
 2026-05-21,14:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Jil Teichmann,Yasmine Kabbaj
 2026-05-21,08:30,Internationaux de Strasbourg presented by Mammotion,Marie Bouzkova,Ann Li
 2026-05-21,10:00,Internationaux de Strasbourg presented by Mammotion,Jaqueline Cristian,Daria Kasatkina
+2026-05-21,13:00,Internationaux de Strasbourg presented by Mammotion,Zhang Shuai,Emma Navarro
 2026-05-21,15:30,Internationaux de Strasbourg presented by Mammotion,Victoria Mboko,Leylah Fernandez
