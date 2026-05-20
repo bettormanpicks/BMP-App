@@ -63,11 +63,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-20,Final,Roland Garros,Jesper de Jong,Liam Draxl
 2026-05-20,Final,Roland Garros,Michael Zheng,Stefano Travaglia
 2026-05-20,Final,Roland Garros,Thomas Faurel,Jay Clarke
-2026-05-20,Live,Bitpanda Hamburg Open,Luciano Darderi,Yannick Hanfmann
 2026-05-20,Final,Bitpanda Hamburg Open,Felix Auger-Aliassime,Aleksandar Kovacevic
 2026-05-20,Final,Bitpanda Hamburg Open,Alejandro Davidovich Fokina,Alex de Minaur
 2026-05-20,Final,Bitpanda Hamburg Open,Ugo Humbert,Karen Khachanov
 2026-05-20,Final,Bitpanda Hamburg Open,Tommy Paul,Tomas Martin Etcheverry
+2026-05-20,Final,Bitpanda Hamburg Open,Luciano Darderi,Yannick Hanfmann
 2026-05-20,Final,Bitpanda Hamburg Open,Camilo Ugo Carabelli,Frances Tiafoe
 2026-05-20,Final,Bitpanda Hamburg Open,Ignacio Buse,Jakub Mensik
 2026-05-20,Final,Gonet Geneva Open,Taylor Fritz,Alexei Popyrin
@@ -108,6 +108,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-21,10:00,Bitpanda Hamburg Open,Ignacio Buse,Ugo Humbert
 2026-05-21,11:30,Bitpanda Hamburg Open,Tommy Paul,Daniel Altmaier
 2026-05-21,13:00,Bitpanda Hamburg Open,Aleksandar Kovacevic,Camilo Ugo Carabelli
+2026-05-21,16:00,Bitpanda Hamburg Open,Luciano Darderi,Alex de Minaur
 2026-05-21,11:00,Gonet Geneva Open,Mariano Navone,Jaume Munar
 2026-05-21,12:30,Gonet Geneva Open,Alexei Popyrin,Casper Ruud
 2026-05-21,16:00,Gonet Geneva Open,Alex Michelsen,Learner Tien
