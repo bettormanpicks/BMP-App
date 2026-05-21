@@ -14,11 +14,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-21,Final,Roland Garros,Jesper de Jong,Michael Zheng
 2026-05-21,Final,Roland Garros,Marco Cecchinato,Andrea Pellegrino
 2026-05-21,Final,Roland Garros,August Holmgren,Facundo Diaz Acosta
-2026-05-21,Live,Bitpanda Hamburg Open,Luciano Darderi,Alex de Minaur
+2026-05-21,Final,Bitpanda Hamburg Open,Luciano Darderi,Alex de Minaur
 2026-05-21,Final,Bitpanda Hamburg Open,Tommy Paul,Daniel Altmaier
 2026-05-21,Final,Bitpanda Hamburg Open,Aleksandar Kovacevic,Camilo Ugo Carabelli
 2026-05-21,Final,Bitpanda Hamburg Open,Ignacio Buse,Ugo Humbert
-2026-05-21,Live,Gonet Geneva Open,Arthur Rinderknech,Alexander Bublik
+2026-05-21,Final,Gonet Geneva Open,Arthur Rinderknech,Alexander Bublik
 2026-05-21,Final,Gonet Geneva Open,Alex Michelsen,Learner Tien
 2026-05-21,Final,Gonet Geneva Open,Alexei Popyrin,Casper Ruud
 2026-05-21,Final,Gonet Geneva Open,Mariano Navone,Jaume Munar
@@ -46,7 +46,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-05-22,12:00,Roland Garros,Darwin Blanch,Luka Pavlovic
 2026-05-22,12:30,Roland Garros,Felix Gill,Kyrian Jacquet
 2026-05-22,13:30,Bitpanda Hamburg Open,Aleksandar Kovacevic,Ignacio Buse
+2026-05-22,15:30,Bitpanda Hamburg Open,Alex de Minaur,Tommy Paul
 2026-05-22,12:00,Gonet Geneva Open,Casper Ruud,Mariano Navone
+2026-05-22,13:30,Gonet Geneva Open,Learner Tien,Alexander Bublik
 2026-05-22,12:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Panna Udvardy,Anhelina Kalinina
 2026-05-22,13:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Jil Teichmann,Petra Marcinko
 2026-05-22,12:30,Internationaux de Strasbourg presented by Mammotion,Emma Navarro,Ann Li

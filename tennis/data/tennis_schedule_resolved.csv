@@ -10,15 +10,15 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-21,Final,Roland Garros,Jaime Faria,Lukas Neumayer,atp_146,atp_222,ATP,Clay
 2026-05-21,Final,Roland Garros,Chak Lam Coleman Wong,Juan Carlos Prado Angelo,atp_137,atp_212,ATP,Clay
 2026-05-21,Final,Roland Garros,Dalibor Svrcina,Thomas Faurel,atp_99,atp_457,ATP,Clay
-2026-05-21,Final,Roland Garros,Toby Samuel,Gonzalo Bueno,atp_241,atp_218,ATP,Clay
+2026-05-21,Final,Roland Garros,Toby Samuel,Gonzalo Bueno,atp_241,atp_351,ATP,Clay
 2026-05-21,Final,Roland Garros,Jesper de Jong,Michael Zheng,atp_86,atp_152,ATP,Clay
 2026-05-21,Final,Roland Garros,Marco Cecchinato,Andrea Pellegrino,atp_215,atp_140,ATP,Clay
 2026-05-21,Final,Roland Garros,August Holmgren,Facundo Diaz Acosta,atp_198,atp_284,ATP,Clay
-2026-05-21,Live,Bitpanda Hamburg Open,Luciano Darderi,Alex de Minaur,atp_22,atp_8,ATP,
+2026-05-21,Final,Bitpanda Hamburg Open,Luciano Darderi,Alex de Minaur,atp_22,atp_8,ATP,
 2026-05-21,Final,Bitpanda Hamburg Open,Tommy Paul,Daniel Altmaier,atp_24,atp_54,ATP,
 2026-05-21,Final,Bitpanda Hamburg Open,Aleksandar Kovacevic,Camilo Ugo Carabelli,atp_75,atp_45,ATP,
 2026-05-21,Final,Bitpanda Hamburg Open,Ignacio Buse,Ugo Humbert,atp_91,atp_38,ATP,
-2026-05-21,Live,Gonet Geneva Open,Arthur Rinderknech,Alexander Bublik,atp_30,atp_10,ATP,Clay
+2026-05-21,Final,Gonet Geneva Open,Arthur Rinderknech,Alexander Bublik,atp_30,atp_10,ATP,Clay
 2026-05-21,Final,Gonet Geneva Open,Alex Michelsen,Learner Tien,atp_41,atp_23,ATP,Clay
 2026-05-21,Final,Gonet Geneva Open,Alexei Popyrin,Casper Ruud,atp_51,atp_13,ATP,Clay
 2026-05-21,Final,Gonet Geneva Open,Mariano Navone,Jaume Munar,atp_74,atp_35,ATP,Clay
@@ -46,7 +46,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-22,12:00,Roland Garros,Darwin Blanch,Luka Pavlovic,atp_446,atp_209,ATP,Clay
 2026-05-22,12:30,Roland Garros,Felix Gill,Kyrian Jacquet,atp_321,atp_153,ATP,Clay
 2026-05-22,13:30,Bitpanda Hamburg Open,Aleksandar Kovacevic,Ignacio Buse,atp_75,atp_91,ATP,
+2026-05-22,15:30,Bitpanda Hamburg Open,Alex de Minaur,Tommy Paul,atp_8,atp_24,ATP,
 2026-05-22,12:00,Gonet Geneva Open,Casper Ruud,Mariano Navone,atp_13,atp_74,ATP,Clay
+2026-05-22,13:30,Gonet Geneva Open,Learner Tien,Alexander Bublik,atp_23,atp_10,ATP,Clay
 2026-05-22,12:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Panna Udvardy,Anhelina Kalinina,wta_93,wta_191,WTA,
 2026-05-22,13:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Jil Teichmann,Petra Marcinko,wta_175,wta_69,WTA,
 2026-05-22,12:30,Internationaux de Strasbourg presented by Mammotion,Emma Navarro,Ann Li,wta_19,wta_36,WTA,
