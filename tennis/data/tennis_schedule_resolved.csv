@@ -14,13 +14,15 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-22,Final,Roland Garros,Vilius Gaubas,Pablo Llamas Ruiz,atp_126,atp_197,ATP,Clay
 2026-05-22,Final,Roland Garros,Borna Gojo,Jurij Rodionov,atp_235,atp_175,ATP,Clay
 2026-05-22,Final,Roland Garros,Roberto Carballes Baena,Hugo Dellien,atp_174,atp_157,ATP,Clay
-2026-05-22,Live,Bitpanda Hamburg Open,Alex de Minaur,Tommy Paul,atp_8,atp_24,ATP,
+2026-05-22,Final,Bitpanda Hamburg Open,Alex de Minaur,Tommy Paul,atp_8,atp_24,ATP,
 2026-05-22,Final,Bitpanda Hamburg Open,Aleksandar Kovacevic,Ignacio Buse,atp_75,atp_91,ATP,
 2026-05-22,Final,Gonet Geneva Open,Learner Tien,Alexander Bublik,atp_23,atp_10,ATP,Clay
 2026-05-22,Final,Gonet Geneva Open,Casper Ruud,Mariano Navone,atp_13,atp_74,ATP,Clay
 2026-05-22,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Jil Teichmann,Petra Marcinko,wta_175,wta_69,WTA,
 2026-05-22,Final,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Panna Udvardy,Anhelina Kalinina,wta_93,wta_191,WTA,
-2026-05-22,Live,Internationaux de Strasbourg presented by Mammotion,Victoria Mboko,Jaqueline Cristian,wta_10,wta_38,WTA,
+2026-05-22,Final,Internationaux de Strasbourg presented by Mammotion,Victoria Mboko,Jaqueline Cristian,wta_10,wta_38,WTA,
 2026-05-22,Final,Internationaux de Strasbourg presented by Mammotion,Emma Navarro,Ann Li,wta_19,wta_36,WTA,
+2026-05-23,12:30,Bitpanda Hamburg Open,Ignacio Buse,Tommy Paul,atp_91,atp_24,ATP,
 2026-05-23,13:00,Gonet Geneva Open,Mariano Navone,Learner Tien,atp_74,atp_23,ATP,Clay
 2026-05-23,12:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Anhelina Kalinina,Petra Marcinko,wta_191,wta_69,WTA,
+2026-05-23,12:00,Internationaux de Strasbourg presented by Mammotion,Victoria Mboko,Emma Navarro,wta_10,wta_19,WTA,
