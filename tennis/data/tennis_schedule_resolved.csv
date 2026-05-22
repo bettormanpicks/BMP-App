@@ -10,7 +10,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-21,Final,Roland Garros,Jaime Faria,Lukas Neumayer,atp_146,atp_222,ATP,Clay
 2026-05-21,Final,Roland Garros,Chak Lam Coleman Wong,Juan Carlos Prado Angelo,atp_137,atp_212,ATP,Clay
 2026-05-21,Final,Roland Garros,Dalibor Svrcina,Thomas Faurel,atp_99,atp_457,ATP,Clay
-2026-05-21,Final,Roland Garros,Toby Samuel,Gonzalo Bueno,atp_241,atp_351,ATP,Clay
+2026-05-21,Final,Roland Garros,Toby Samuel,Gonzalo Bueno,atp_241,atp_218,ATP,Clay
 2026-05-21,Final,Roland Garros,Jesper de Jong,Michael Zheng,atp_86,atp_152,ATP,Clay
 2026-05-21,Final,Roland Garros,Marco Cecchinato,Andrea Pellegrino,atp_215,atp_140,ATP,Clay
 2026-05-21,Final,Roland Garros,August Holmgren,Facundo Diaz Acosta,atp_198,atp_284,ATP,Clay
@@ -30,26 +30,3 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-21,Final,Internationaux de Strasbourg presented by Mammotion,Marie Bouzkova,Ann Li,wta_39,wta_36,WTA,
 2026-05-21,Final,Internationaux de Strasbourg presented by Mammotion,Zhang Shuai,Emma Navarro,wta_85,wta_19,WTA,
 2026-05-21,Final,Internationaux de Strasbourg presented by Mammotion,Jaqueline Cristian,Daria Kasatkina,wta_38,wta_61,WTA,
-2026-05-22,09:00,Roland Garros,Harmony Tan,Linda Fruhvirtova,wta_229,wta_118,WTA,Clay
-2026-05-22,09:00,Roland Garros,Aliaksandra Sasnovich,Marina Bassols Ribera,wta_113,wta_209,WTA,Clay
-2026-05-22,09:00,Roland Garros,Susan Bandecchi,Viktoria Hruncakova,wta_233,wta_218,WTA,Clay
-2026-05-22,09:00,Roland Garros,Guiomar Maristany Zuleta De Reales,Kaitlin Quevedo,wta_165,wta_131,WTA,Clay
-2026-05-22,10:30,Roland Garros,Katarina Zavatska,Lucia Bronzetti,wta_310,wta_138,WTA,Clay
-2026-05-22,10:30,Roland Garros,Lulu Sun,Claire Liu,wta_98,wta_213,WTA,Clay
-2026-05-22,12:00,Roland Garros,Rebecca Sramkova,Maria Lourdes Carle,wta_102,wta_155,WTA,Clay
-2026-05-22,12:00,Roland Garros,Polina Kudermetova,Wang Xiyu,wta_144,wta_34,WTA,Clay
-2026-05-22,09:00,Roland Garros,Roberto Carballes Baena,Hugo Dellien,atp_174,atp_157,ATP,Clay
-2026-05-22,09:00,Roland Garros,Borna Gojo,Jurij Rodionov,atp_235,atp_175,ATP,Clay
-2026-05-22,10:30,Roland Garros,Emilio Nava,Pedro Martinez,atp_76,atp_101,ATP,Clay
-2026-05-22,10:30,Roland Garros,Tom Gentzsch,Roman Safiullin,atp_243,atp_185,ATP,Clay
-2026-05-22,10:30,Roland Garros,Vilius Gaubas,Pablo Llamas Ruiz,atp_126,atp_197,ATP,Clay
-2026-05-22,12:00,Roland Garros,Darwin Blanch,Luka Pavlovic,atp_446,atp_209,ATP,Clay
-2026-05-22,12:30,Roland Garros,Felix Gill,Kyrian Jacquet,atp_321,atp_153,ATP,Clay
-2026-05-22,13:30,Bitpanda Hamburg Open,Aleksandar Kovacevic,Ignacio Buse,atp_75,atp_91,ATP,
-2026-05-22,15:30,Bitpanda Hamburg Open,Alex de Minaur,Tommy Paul,atp_8,atp_24,ATP,
-2026-05-22,12:00,Gonet Geneva Open,Casper Ruud,Mariano Navone,atp_13,atp_74,ATP,Clay
-2026-05-22,13:30,Gonet Geneva Open,Learner Tien,Alexander Bublik,atp_23,atp_10,ATP,Clay
-2026-05-22,12:00,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Panna Udvardy,Anhelina Kalinina,wta_93,wta_191,WTA,
-2026-05-22,13:30,Grand Prix Son Altesse Royale  La Princesse Lalla Meryem,Jil Teichmann,Petra Marcinko,wta_175,wta_69,WTA,
-2026-05-22,12:30,Internationaux de Strasbourg presented by Mammotion,Emma Navarro,Ann Li,wta_19,wta_36,WTA,
-2026-05-22,14:30,Internationaux de Strasbourg presented by Mammotion,Victoria Mboko,Jaqueline Cristian,wta_10,wta_38,WTA,
