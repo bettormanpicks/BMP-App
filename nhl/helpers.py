@@ -7,22 +7,41 @@ import requests
 from shared.utils import get_central_today, hit_rate_threshold, dedupe_columns, norm_name
 
 # -------------------------------
-# Load NHL Data
+# Load NHL Static Data (game logs + team games)
+# No TTL — these CSVs only change when your GitHub Action pushes a new file.
+# Bundling injuries here was wrong: injuries need to refresh mid-session.
 # -------------------------------
 @st.cache_data
 def load_nhl_raw_data():
     player_df = pd.read_csv("nhl/data/nhlplayergamelogs.csv").fillna(0)
     team_games_df = pd.read_csv("nhl/data/nhlteamgames.csv").fillna(0)
-    injuries_df = pd.read_csv("nhl/data/nhlplayerstatus.csv").fillna(0)
-
-    return player_df, team_games_df, injuries_df
+    return player_df, team_games_df
 
 # -------------------------------
-# Fetch NHL Injuries
+# Load NHL Injury Data (separate, TTL-cached so it refreshes mid-session)
+# TTL matches the GitHub Action cadence (~15 min). Injuries are served from
+# the local CSV written by the action, no Selenium scrape needed at runtime.
+# -------------------------------
+@st.cache_data(ttl=900)
+def load_nhl_injuries():
+    try:
+        df = pd.read_csv("nhl/data/nhlplayerstatus.csv").fillna(0)
+        return df
+    except Exception:
+        return pd.DataFrame()
+
+# -------------------------------
+# Legacy Selenium-based fetcher kept for reference but not called at runtime.
+# The GitHub Action writes nhlplayerstatus.csv; load_nhl_injuries() reads that.
 # -------------------------------
 @st.cache_data(ttl=900)
 def get_nhl_injuries(headless=True):
-    return fetch_nhl_injuries_selenium(headless=headless)
+    try:
+        return fetch_nhl_injuries_selenium(headless=headless)
+    except Exception:
+        # fetch_nhl_injuries_selenium is only available when Selenium deps are
+        # installed (not on Streamlit Community Cloud). Fall back to the CSV.
+        return load_nhl_injuries()
 
 # -------------------------------
 # Schedule / Teams
@@ -86,65 +105,71 @@ def compute_nhl_b2b(teams_today, teams_yesterday, teams_tomorrow):
     return b2b
 
 # -----------------------------
-# Reactive Opponent Windows
+# Opponent Window Stats (cached)
 # -----------------------------
+@st.cache_data
 def compute_opponent_window_stats(nhlteamgames_df, player_type="Skaters", window_n=None):
     """
-    Returns a DataFrame indexed by TEAM with averages and ranks for the opponent window.
-    
-    Parameters:
-    - nhlteamgames_df: DataFrame with columns ['GAME_ID','GAME_DATE','TEAM','OPP_TEAM','GF','GA','SF','SA']
-    - player_type: "Skaters" or "Goalies"
-    - window_n: number of recent games to consider (L5, L10), None = ALL
-    
-    Returns:
-    - team_def_df: DataFrame indexed by TEAM, with columns:
-        Skaters → GA_A, GA_R, SA_A, SA_R
-        Goalies → GF_A, GF_R, SF_A, SF_R
-    """
+    Compute and CACHE per-team defensive (Skaters) or offensive (Goalies) averages
+    and ranks for a given game window.
 
+    Previously this logic lived uncached inside analyze_nhl_players and ran on
+    every UI interaction. Now it is cached keyed on (player_type, window_n) so
+    the heavy team-loop only re-runs when those inputs change.
+
+    Parameters:
+    - nhlteamgames_df: DataFrame with columns GAME_DATE, TEAM, GF, GA, SF, SA
+    - player_type: "Skaters" or "Goalies"
+    - window_n: number of recent games per team (5, 10, or None = ALL)
+
+    Returns a dict {team: {stat_avg: float, stat_rank: int, ...}}
+    """
     df = nhlteamgames_df.copy()
-    df["GAME_DATE"] = pd.to_datetime(df["GAME_DATE"])
-    
-    records = []
+    df["game_date"] = pd.to_datetime(df["GAME_DATE"], errors="coerce").dt.date
+    df = df.dropna(subset=["game_date"])
 
     teams = df["TEAM"].unique()
-    for team in teams:
-        if player_type == "Skaters":
-            # For skaters, opponent window is defensive → we look at GA/SA allowed by the team
-            team_games = df[df["TEAM"] == team].sort_values("GAME_DATE", ascending=False)
-            if window_n is not None:
-                team_games = team_games.head(window_n)
-            GA_A = team_games["GA"].mean()
-            SA_A = team_games["SA"].mean()
-            GA_R = team_games["GA"].rank(method="min").mean()  # optional: can rank all teams after loop
-            SA_R = team_games["SA"].rank(method="min").mean()
-            records.append({
-                "Team": team,
-                "GA_A": GA_A,
-                "GA_R": int(GA_R),
-                "SA_A": SA_A,
-                "SA_R": int(SA_R)
-            })
-        else:
-            # For goalies, opponent window is offensive → look at GF/SF scored by opponent
-            team_games = df[df["TEAM"] == team].sort_values("GAME_DATE", ascending=False)
-            if window_n is not None:
-                team_games = team_games.head(window_n)
-            GF_A = team_games["GF"].mean()
-            SF_A = team_games["SF"].mean()
-            GF_R = team_games["GF"].rank(method="min").mean()
-            SF_R = team_games["SF"].rank(method="min").mean()
-            records.append({
-                "Team": team,
-                "GF_A": GF_A,
-                "GF_R": int(GF_R),
-                "SF_A": SF_A,
-                "SF_R": int(SF_R)
-            })
+    opp_avgs = {}
 
-    team_def_df = pd.DataFrame(records).set_index("Team")
-    return team_def_df
+    for team in teams:
+        team_games = df[df["TEAM"] == team].sort_values("game_date", ascending=False)
+        if window_n is not None:
+            team_games = team_games.head(int(window_n))
+
+        if player_type == "Skaters":
+            opp_avgs[team] = {
+                "GA_A": team_games["GA"].mean(),
+                "SA_A": team_games["SA"].mean(),
+            }
+        else:
+            opp_avgs[team] = {
+                "GF_A": team_games["GF"].mean(),
+                "SF_A": team_games["SF"].mean(),
+            }
+
+    # Compute cross-team ranks in one vectorised pass
+    if player_type == "Skaters":
+        ga_s = pd.Series({t: v["GA_A"] for t, v in opp_avgs.items()})
+        sa_s = pd.Series({t: v["SA_A"] for t, v in opp_avgs.items()})
+        ga_r = ga_s.rank(method="min", ascending=True).astype(int)
+        sa_r = sa_s.rank(method="min", ascending=True).astype(int)
+        for t in teams:
+            opp_avgs[t]["GA_R"] = ga_r[t]
+            opp_avgs[t]["SA_R"] = sa_r[t]
+            opp_avgs[t]["GA_A"] = round(opp_avgs[t]["GA_A"], 2)
+            opp_avgs[t]["SA_A"] = round(opp_avgs[t]["SA_A"], 2)
+    else:
+        gf_s = pd.Series({t: v["GF_A"] for t, v in opp_avgs.items()})
+        sf_s = pd.Series({t: v["SF_A"] for t, v in opp_avgs.items()})
+        gf_r = gf_s.rank(method="min", ascending=False).astype(int)
+        sf_r = sf_s.rank(method="min", ascending=False).astype(int)
+        for t in teams:
+            opp_avgs[t]["GF_R"] = gf_r[t]
+            opp_avgs[t]["SF_R"] = sf_r[t]
+            opp_avgs[t]["GF_A"] = round(opp_avgs[t]["GF_A"], 2)
+            opp_avgs[t]["SF_A"] = round(opp_avgs[t]["SF_A"], 2)
+
+    return opp_avgs
 
 # -------------------------------
 # Player Analysis (with reactive opponent window)
@@ -193,71 +218,12 @@ def analyze_nhl_players(
     rows = []
     grouped = df_players.groupby(["player_id", "player_name", "team", "position"])
 
-    # --- Precompute opponent stats if nhlteamgames_df and opp_recent_n are provided ---
+    # --- Opponent window stats: delegate to the cached function ---
+    # compute_opponent_window_stats is @st.cache_data keyed on (df hash, player_type, window_n)
+    # so this heavy team-loop only re-runs when those inputs change, not on every UI rerun.
     opp_stats = {}
     if nhlteamgames_df is not None:
-        nhlteamgames_df = nhlteamgames_df.copy()
-    
-        # Convert GAME_DATE to datetime.date
-        nhlteamgames_df["game_date"] = pd.to_datetime(
-            nhlteamgames_df["GAME_DATE"], errors="coerce"
-        ).dt.date
-
-        # Drop rows that couldn't be parsed
-        nhlteamgames_df = nhlteamgames_df.dropna(subset=["game_date"])
-
-        teams = nhlteamgames_df["TEAM"].unique()
-        opp_avgs = {}
-
-        # Compute averages and ranks for each team
-        for team in teams:
-            team_games = nhlteamgames_df[nhlteamgames_df["TEAM"] == team].sort_values(
-                "game_date", ascending=False
-            )
-
-            # Slice for L5/L10; ALL uses all games
-            if opp_recent_n is not None:
-                team_games = team_games.head(int(opp_recent_n))
-
-            if player_type == "Skaters":
-                ga_avg = team_games["GA"].mean()
-                sa_avg = team_games["SA"].mean()
-                opp_avgs[team] = {"GA_A": ga_avg, "SA_A": sa_avg}
-            else:
-                gf_avg = team_games["GF"].mean()
-                sf_avg = team_games["SF"].mean()
-                opp_avgs[team] = {"GF_A": gf_avg, "SF_A": sf_avg}
-
-        # Compute ranks across all teams
-        if player_type == "Skaters":
-            ga_series = pd.Series({t: v["GA_A"] for t, v in opp_avgs.items()})
-            sa_series = pd.Series({t: v["SA_A"] for t, v in opp_avgs.items()})
-            ga_rank = ga_series.rank(method="min", ascending=True).astype(int)
-            sa_rank = sa_series.rank(method="min", ascending=True).astype(int)
-            for t in teams:
-                opp_avgs[t]["GA_R"] = ga_rank[t]
-                opp_avgs[t]["SA_R"] = sa_rank[t]
-        else:
-            gf_series = pd.Series({t: v["GF_A"] for t, v in opp_avgs.items()})
-            sf_series = pd.Series({t: v["SF_A"] for t, v in opp_avgs.items()})
-            gf_rank = gf_series.rank(method="min", ascending=False).astype(int)
-            sf_rank = sf_series.rank(method="min", ascending=False).astype(int)
-            for t in teams:
-                opp_avgs[t]["GF_R"] = gf_rank[t]
-                opp_avgs[t]["SF_R"] = sf_rank[t]
-
-        # Round ranks to int (already int, just to be safe)
-        for t in teams:
-            for key in opp_avgs[t]:
-                if "R" not in key:  # Only averages
-                    opp_avgs[t][key] = round(opp_avgs[t][key], 2)
-
-        opp_stats = opp_avgs
-
-    # --- Optional: format floats as strings for Streamlit display ---
-#    for col in ["GA_A","SA_A","GF_A","SF_A"]:
-#        if col in nhl_df.columns:
-#            nhl_df[col] = nhl_df[col].map(lambda x: f"{x:.2f}" if pd.notnull(x) else "")
+        opp_stats = compute_opponent_window_stats(nhlteamgames_df, player_type, opp_recent_n)
 
     # --- Iterate players ---
     for (pid, name, team, pos), g in grouped:
