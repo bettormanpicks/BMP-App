@@ -187,7 +187,30 @@ def norm_name(s):
     return f"{first_initial} {last}"
 
 @st.cache_data(ttl=3600)
-def get_teams_playing_on_date(schedule_data, target_date):
+def get_teams_playing_on_date(schedule_path, target_date):
+    """
+    Return the set of team tricodes playing on target_date.
+
+    Previously accepted the full schedule dict as an argument, which forced
+    Streamlit to hash a large nested dict on every call — expensive and prone
+    to cache misses. Now accepts a file path (a cheap string) and loads the
+    data internally via load_nba_schedule, which is itself cached. The cache
+    key is just (schedule_path, target_date) — two scalars.
+    """
+    # Inline import avoids a circular dependency (nba_helpers imports utils)
+    import json
+    try:
+        with open(schedule_path, "r", encoding="utf-8") as f:
+            schedule_data = json.load(f)
+        # Guard against double-serialized JSON (file contains a JSON string
+        # whose value is itself a JSON object, e.g. produced by json.dumps twice)
+        if isinstance(schedule_data, str):
+            schedule_data = json.loads(schedule_data)
+        if not isinstance(schedule_data, dict):
+            return set()
+    except Exception:
+        return set()
+
     teams = set()
     target_str = target_date.strftime("%Y-%m-%d")
 
@@ -203,22 +226,15 @@ def get_teams_playing_on_date(schedule_data, target_date):
                     .tz_convert("America/Chicago")
                     .date()
                 )
-            except:
+            except Exception:
                 continue
 
             if parsed != target_date:
                 continue
 
-            # -------------------------
-            # NEW API FORMAT (your case)
-            # -------------------------
             if "teams" in g:
                 home = g["teams"]["home"].get("name")
                 away = g["teams"]["away"].get("name")
-
-            # -------------------------
-            # OLD SIMPLE FORMAT
-            # -------------------------
             else:
                 home = g.get("home")
                 away = g.get("away")
@@ -229,14 +245,12 @@ def get_teams_playing_on_date(schedule_data, target_date):
 
         return teams
 
-    # -------------------------
-    # NBA API FORMAT (unchanged)
-    # -------------------------
+    # NBA API format
     for day in schedule_data.get("leagueSchedule", {}).get("gameDates", []):
         raw = day.get("gameDate", "")
         try:
             parsed = pd.to_datetime(raw).date()
-        except:
+        except Exception:
             continue
 
         if parsed != target_date:
@@ -247,9 +261,3 @@ def get_teams_playing_on_date(schedule_data, target_date):
             teams.add(g["awayTeam"]["teamTricode"].upper())
 
     return teams
-
-
-
-
-
-
