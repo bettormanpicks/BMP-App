@@ -40,12 +40,16 @@ def get_opponent_return_tier(opponent_id, surface):
 
     return row.iloc[0]["return_tier"]
 
+@st.cache_data
 def load_tennis_players():
+    """Static lookup table — cached with no TTL (never changes mid-session)."""
     players_path = os.path.join(DATA_DIR, "tennisplayers.csv")
     return pd.read_csv(players_path, dtype=str)
 
-@st.cache_data(ttl=300)
+@st.cache_data(ttl=3600)
 def load_tennis_schedule():
+    """TTL raised from 300s to 3600s — schedule is updated manually via bat file,
+    not mid-session, so a 5-min TTL was causing unnecessary disk reads."""
     schedule_path = os.path.join(DATA_DIR, "tennis_schedule_resolved.csv")
     df = pd.read_csv(schedule_path, dtype=str)
     df["Date"] = pd.to_datetime(df["Date"], errors="coerce").dt.date
@@ -63,7 +67,6 @@ def load_tennis_raw_data(tour="ATP"):
         "ATP" or "WTA". Determines which gamelog CSV to load.
     """
     gamelog_path = os.path.join(DATA_DIR, f"{tour.lower()}_player_gamelogs.csv")
-    players_path = os.path.join(DATA_DIR, "tennisplayers.csv")
 
     # --- Load gamelogs ---
     df = pd.read_csv(gamelog_path, dtype=str)
@@ -74,8 +77,8 @@ def load_tennis_raw_data(tour="ATP"):
         if col in df.columns:
             df[col] = pd.to_numeric(df[col], errors="coerce").fillna(0)
 
-    # --- Load players for display names ---
-    players = pd.read_csv(players_path, dtype=str)
+    # --- Load players for display names (reuse the cached loader) ---
+    players = load_tennis_players()
     players_lookup = dict(zip(players["player_id"], players["player_name"]))
 
     df["Player"] = df["player_id"].map(players_lookup).fillna(df["player_id"])
@@ -117,26 +120,17 @@ def normalize_surface(s):
 
 def compute_tennis_percentiles(df: pd.DataFrame, stats_selected: list, percentages: list,
                                recent_n=None, upcoming_only=True, schedule_df=None, surface_filter=None):
-
-    #st.write("Incoming DF rows:", len(df))
-    #st.write("Unique players in DF:", df["player_id"].nunique())
-
     """
     Compute tennis percentiles for players.
-    """
-    df = df.copy()
 
-    # Be tolerant to column casing from CSVs (e.g., 'game_date' vs 'GAME_DATE')
-    date_col = None
-    for c in df.columns:
-        if c.lower() == "game_date":
-            date_col = c
-            break
-    if date_col is not None:
-        df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
-    else:
-        # fallback – do nothing if not present
-        pass
+    Performance notes vs original:
+    - Surface pre-filtering and player-ID filtering now happen BEFORE groupby so
+      we only copy and iterate the rows we actually need.
+    - df.copy() is deferred until after filtering so the copied object is as
+      small as possible.
+    - The per-player surface filter inside the loop is eliminated for historical
+      mode when a specific surface is selected.
+    """
 
     # Normalize surface_filter: treat None/''/'All' as no filter
     def _no_surface_filter(val):
@@ -145,6 +139,28 @@ def compute_tennis_percentiles(df: pd.DataFrame, stats_selected: list, percentag
         if isinstance(val, str) and val.strip().lower() in {"", "all"}:
             return True
         return False
+
+    # --- Resolve the date column name once (tolerant to CSV casing) ---
+    date_col = next((c for c in df.columns if c.lower() == "game_date"), None)
+
+    # --- PRE-FILTER: keep only players who appear in today's schedule ---
+    if upcoming_only:
+        if schedule_df is None:
+            raise ValueError("schedule_df is required when upcoming_only=True")
+        scheduled_ids = set(schedule_df["player_id"]).union(set(schedule_df["opponent_id"]))
+        df = df[df["player_id"].isin(scheduled_ids)]
+
+    # --- PRE-FILTER: surface (historical mode only, when a specific surface is chosen) ---
+    if not upcoming_only and not _no_surface_filter(surface_filter):
+        surface_col = "PosBucket" if "PosBucket" in df.columns else ("surface" if "surface" in df.columns else None)
+        if surface_col:
+            df = df[df[surface_col].astype(str).str.strip().str.casefold() == str(surface_filter).strip().casefold()]
+
+    # --- Copy only the filtered subset (much cheaper than copying the full DF) ---
+    df = df.copy()
+
+    if date_col is not None:
+        df[date_col] = pd.to_datetime(df[date_col], errors="coerce")
 
     results = []
 
@@ -156,9 +172,6 @@ def compute_tennis_percentiles(df: pd.DataFrame, stats_selected: list, percentag
 
         # --- Determine surface & opponent ---
         if upcoming_only:
-            if schedule_df is None:
-                raise ValueError("schedule_df is required when upcoming_only=True")
-
             match = schedule_df[(schedule_df["player_id"] == pid) |
                                 (schedule_df["opponent_id"] == pid)]
             if match.empty:
@@ -168,34 +181,21 @@ def compute_tennis_percentiles(df: pd.DataFrame, stats_selected: list, percentag
             opponent_id = match["opponent_id"] if match["player_id"] == pid else match["player_id"]
             next_surface = normalize_surface(match["Surface"])
 
-            # Prefer PosBucket if present, else fall back to 'surface'
-            if "PosBucket" in group.columns:
-                surface_group = group[group["PosBucket"].astype(str).str.strip().str.casefold() == str(next_surface).strip().casefold()]
-            elif "surface" in group.columns:
-                surface_group = group[group["surface"].astype(str).str.strip().str.casefold() == str(next_surface).strip().casefold()]
+            # Filter this player's rows to the upcoming surface
+            surface_col = "PosBucket" if "PosBucket" in group.columns else ("surface" if "surface" in group.columns else None)
+            if surface_col:
+                surface_group = group[group[surface_col].astype(str).str.strip().str.casefold() == str(next_surface).strip().casefold()]
             else:
                 surface_group = group
 
             if surface_group.empty:
                 continue
         else:
-            # Historical mode
+            # Historical mode — surface already pre-filtered above for specific surfaces
             opponent_id = None
             next_surface = None
-
-            if _no_surface_filter(surface_filter):
-                # 'All' -> use every row for the player
-                surface_group = group
-                display_surface = "All"
-            else:
-                # Filter by the selected surface (case-insensitive)
-                if "PosBucket" in group.columns:
-                    surface_group = group[group["PosBucket"].astype(str).str.strip().str.casefold() == str(surface_filter).strip().casefold()]
-                elif "surface" in group.columns:
-                    surface_group = group[group["surface"].astype(str).str.strip().str.casefold() == str(surface_filter).strip().casefold()]
-                else:
-                    surface_group = group
-                display_surface = surface_filter
+            surface_group = group
+            display_surface = "All" if _no_surface_filter(surface_filter) else surface_filter
 
         row = {
             "player_id": pid,
