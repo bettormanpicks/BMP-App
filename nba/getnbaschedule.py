@@ -6,7 +6,7 @@ from pathlib import Path
 # ----------------------------
 # CONFIG
 # ----------------------------
-API_KEY = "sbfgsoclqrtd9vpifqmxcyz"
+API_KEY = "sbfz4jp8sasou2ux1wrov7w"
 
 # Season endpoint returns ALL games for the season (or filtered by type).
 # Much better than the daily endpoint for B2B detection, which needs

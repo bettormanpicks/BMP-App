@@ -6,7 +6,7 @@ from datetime import datetime
 # -------------------------
 # CONFIG
 # -------------------------
-API_KEY = "sbfgsoclqrtd9vpifqmxcyz"
+API_KEY = "sbfz4jp8sasou2ux1wrov7w"
 BASE_URL = "https://api.sportsblaze.com/mlb/v1"
 OUTPUT_CSV = "data/2026_mlb_schedule.csv"
 
