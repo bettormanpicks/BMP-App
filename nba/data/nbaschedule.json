@@ -5632,10 +5632,62 @@
         }
       },
       "date": "2026-05-24T00:00:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Rocket Arena",
         "location": "Cleveland, OH"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 37
+            },
+            "home": {
+              "points": 27
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 27
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 26
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 121
+          },
+          "home": {
+            "points": 108
+          }
+        }
       }
     },
     {
@@ -5984,5 +6036,5 @@
       }
     }
   ],
-  "updated": "2026-05-23T08:00:01Z"
+  "updated": "2026-05-24T08:00:02Z"
 }
