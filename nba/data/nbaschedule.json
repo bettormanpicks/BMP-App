@@ -5782,10 +5782,62 @@
         }
       },
       "date": "2026-05-26T00:00:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Rocket Arena",
         "location": "Cleveland, OH"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 38
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 30
+            },
+            "home": {
+              "points": 22
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 22
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 130
+          },
+          "home": {
+            "points": 93
+          }
+        }
       }
     },
     {
@@ -5816,29 +5868,6 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "3d05de02-85a7-561b-8a98-cab7bf6c6300",
-      "teams": {
-        "away": {
-          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
-          "name": "Cleveland Cavaliers"
-        },
-        "home": {
-          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
-          "name": "New York Knicks"
-        }
-      },
-      "date": "2026-05-28T00:00:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Madison Square Garden",
-        "location": "New York, NY"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
       "id": "3f92fc90-ec2a-5518-a520-4eb9eb0dd80e",
       "teams": {
         "away": {
@@ -5855,29 +5884,6 @@
       "venue": {
         "name": "Frost Bank Center",
         "location": "San Antonio, TX"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
-      "id": "0d4dce3a-25f1-5382-b9a2-b613fb99db24",
-      "teams": {
-        "away": {
-          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
-          "name": "New York Knicks"
-        },
-        "home": {
-          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
-          "name": "Cleveland Cavaliers"
-        }
-      },
-      "date": "2026-05-30T00:00:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Rocket Arena",
-        "location": "Cleveland, OH"
       }
     },
     {
@@ -5908,34 +5914,11 @@
         "year": 2025,
         "type": "Playoffs"
       },
-      "id": "57822927-6ee6-5db0-ba4d-0eb446fc98a7",
-      "teams": {
-        "away": {
-          "id": "7dbc43be-c9c5-5dc9-86ff-076fdc482d45",
-          "name": "Cleveland Cavaliers"
-        },
-        "home": {
-          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
-          "name": "New York Knicks"
-        }
-      },
-      "date": "2026-06-01T00:00:00Z",
-      "status": "Scheduled",
-      "venue": {
-        "name": "Madison Square Garden",
-        "location": "New York, NY"
-      }
-    },
-    {
-      "season": {
-        "year": 2025,
-        "type": "Playoffs"
-      },
       "id": "86907b71-4f89-515a-9254-e932f0a8ac0e",
       "teams": {
         "away": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         },
         "home": {
           "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
@@ -5957,8 +5940,8 @@
       "id": "d3fcc64e-d86b-5c90-ae99-6a4034cec209",
       "teams": {
         "away": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         },
         "home": {
           "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
@@ -5984,15 +5967,15 @@
           "name": " "
         },
         "home": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         }
       },
       "date": "2026-06-09T00:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": null,
-        "location": null
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
       }
     },
     {
@@ -6007,15 +5990,15 @@
           "name": " "
         },
         "home": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         }
       },
       "date": "2026-06-11T00:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": null,
-        "location": null
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
       }
     },
     {
@@ -6026,8 +6009,8 @@
       "id": "f14ca7e9-947a-5ec2-a198-eb8b7d951875",
       "teams": {
         "away": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         },
         "home": {
           "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
@@ -6053,15 +6036,15 @@
           "name": " "
         },
         "home": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         }
       },
       "date": "2026-06-17T00:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": null,
-        "location": null
+        "name": "Madison Square Garden",
+        "location": "New York, NY"
       }
     },
     {
@@ -6072,8 +6055,8 @@
       "id": "778baa87-fac9-56d0-8898-09d1c864877a",
       "teams": {
         "away": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
+          "name": "New York Knicks"
         },
         "home": {
           "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
@@ -6088,5 +6071,5 @@
       }
     }
   ],
-  "updated": "2026-05-25T08:00:02Z"
+  "updated": "2026-05-26T08:00:02Z"
 }
