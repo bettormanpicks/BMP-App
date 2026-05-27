@@ -1,278 +1,165 @@
-import time
-import csv
 import os
-import json
-from urllib.parse import quote
-from datetime import datetime, timedelta, UTC
+import re
 import pandas as pd
-import undetected_chromedriver as uc
-from selenium.webdriver.support.ui import WebDriverWait
-from dotenv import load_dotenv
+from datetime import datetime, timedelta
+from curl_cffi import requests
 
-# Load .env from project root (one level up from this script's folder)
-load_dotenv(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", ".env"))
-
-API_TOKEN = os.environ.get("SCORES24_API_TOKEN", "h57bsdl")
-
-# -------------------------
-# Configuration
-# -------------------------
-LEAGUE_URL = "https://scores24.live/en/table-tennis/l-international-tt-cup"
-CHROME_PROFILE_PATH = r"C:\selenium_profiles\scores24"
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-OUTPUT_CSV = os.path.join(BASE_DIR, "data", "tt_cup_matchlogs.csv")
-LOOKBACK_DAYS = 2
-
-start_dt = datetime.now(UTC) - timedelta(days=LOOKBACK_DAYS)
-START_DATE = start_dt.strftime("%Y-%m-%d %H:%M:%S")
-
-# -------------------------
-# Helpers
-# -------------------------
-def normalize_name(name):
-    if "," in name:
-        last, first = name.split(",", 1)
-        return f"{first.strip()} {last.strip()}"
-    return name.strip()
-
-def append_to_csv(matches):
-    if not matches:
-        return
-    file_exists = os.path.exists(OUTPUT_CSV)
-    with open(OUTPUT_CSV, "a", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(
-            f,
-            fieldnames=[
-                "match_id","match_date","player1","player2","sets",
-                "total_points","match_winner","four_plus"
-            ],
-            quoting=csv.QUOTE_MINIMAL
-        )
-        if not file_exists:
-            writer.writeheader()
-        writer.writerows(matches)
+# --- HELPER FUNCTIONS ---
+def append_to_csv(new_rows):
+    df_new = pd.DataFrame(new_rows)
+    if not os.path.exists("data"): os.makedirs("data")
+    if not os.path.exists("data/tt_cup_matchlogs.csv"):
+        df_new.to_csv("data/tt_cup_matchlogs.csv", index=False)
+    else:
+        df_new.to_csv("data/tt_cup_matchlogs.csv", mode='a', header=False, index=False)
 
 def resort_csv():
-    if not os.path.exists(OUTPUT_CSV):
-        return
+    if os.path.exists("data/tt_cup_matchlogs.csv"):
+        df = pd.read_csv("data/tt_cup_matchlogs.csv")
+        df.drop_duplicates(subset=["match_id"], keep="first", inplace=True)
+        df["match_date"] = pd.to_datetime(df["match_date"])
+        df.sort_values(by="match_date", ascending=False, inplace=True)
+        df.to_csv("data/tt_cup_matchlogs.csv", index=False)
 
-    df = pd.read_csv(OUTPUT_CSV)
+def get_session_from_curl():
+    with open("curl_command.txt", "r") as f:
+        cmd = f.read()
+    headers = {}
+    cookies = {}
+    for line in cmd.split("-H"):
+        match = re.search(r"'([^']+)'", line)
+        if match:
+            h = match.group(1).split(": ", 1)
+            if len(h) == 2 and h[0].lower() != 'referer': headers[h[0]] = h[1]
+    cookie_match = re.search(r"-b '([^']+)'", cmd)
+    if cookie_match:
+        for c in cookie_match.group(1).split('; '):
+            if '=' in c:
+                k, v = c.split('=', 1)
+                cookies[k] = v
+    return headers, cookies
 
-    if "match_date" not in df.columns:
-        print("CSV empty or missing match_date, skipping sort")
-        return
-
-    # --- Parse date ---
-    df["match_date"] = pd.to_datetime(df["match_date"], errors="coerce")
-    df = df.dropna(subset=["match_date"])
-
-    # ✅ NEW: Drop duplicates by match_id
-    before = len(df)
-    df = df.drop_duplicates(subset=["match_id"], keep="last")
-    df.reset_index(drop=True, inplace=True)
-    after = len(df)
-
-    print(f"Removed {before - after} duplicate rows")
-
-    # --- Sort ---
-    df.sort_values("match_date", ascending=False, inplace=True)
-
-    df.to_csv(OUTPUT_CSV, index=False)
-
-# -------------------------
-# Main Scraper
-# -------------------------
-def scrape_api():
+# --- MAIN EXECUTION ---
+def main():
+    headers, cookies = get_session_from_curl()
+    buffer = []
     existing_ids = set()
-    if os.path.exists(OUTPUT_CSV):
-        try:
-            df_existing = pd.read_csv(OUTPUT_CSV)
-            existing_ids = set(df_existing["match_id"].astype(str))
-            print(f"Loaded {len(existing_ids)} existing match IDs")
-        except:
-            print("Could not load existing CSV, continuing fresh")
-
-    print("Launching browser...")
-
-    options = uc.ChromeOptions()
-    options.add_argument("--start-maximized")
-    options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
-    options.add_argument("--disable-blink-features=AutomationControlled")
     
-    # Critical: Ensure performance logging is active
-    options.set_capability("goog:loggingPrefs", {"performance": "ALL"})
-
-    driver = uc.Chrome(options=options, version_main=147)
-    
-    driver.get(LEAGUE_URL)
-    print("Solve Cloudflare if needed...")
-    time.sleep(20)
-
-    # Force the site to make API requests by scrolling down and back up
-    driver.execute_script("window.scrollTo(0, 500);")
-    time.sleep(2)
-    driver.execute_script("window.scrollTo(0, 0);")
-    time.sleep(2)
-
-    import re
-
-    def get_live_session(driver):
-        """
-        Extract API token and timestamp using two approaches:
-        1. Performance logs (captures token from live network requests)
-        2. Page source regex (token is embedded in __REACT_QUERY_STATE__)
-        """
-        # --- Approach 1: Performance logs ---
-        try:
-            logs = driver.get_log("performance")
-            for log in reversed(logs):
-                try:
-                    msg = json.loads(log["message"])["message"]
-                    if msg.get("method") == "Network.requestWillBeSent":
-                        headers = msg.get("params", {}).get("request", {}).get("headers", {})
-                        token = headers.get("x-api-token") or headers.get("X-Api-Token")
-                        timestamp = headers.get("x-api-timestamp") or headers.get("X-Api-Timestamp")
-                        if token:
-                            return {"token": token, "timestamp": timestamp}
-                except Exception:
-                    continue
-        except Exception:
-            pass
-
-        # --- Approach 2: Page source regex ---
-        try:
-            source = driver.page_source
-            token_match = re.search(r'"x-api-token"\s*:\s*"([a-z0-9]+)"', source)
-            ts_match = re.search(r'"x-api-timestamp"\s*:\s*"([0-9]+)"', source)
-            if token_match:
-                token = token_match.group(1)
-                timestamp = ts_match.group(1) if ts_match else str(int(time.time()))
-                print(f"✅ Extracted token from page source: {token}")
-                return {"token": token, "timestamp": timestamp}
-        except Exception:
-            pass
-
-        return None
-
-    session = get_live_session(driver)
-
-    if session:
-        print(f"✅ Extracted live session! Token: {session['token']}, TS: {session['timestamp']}")
-    else:
-        print("⚠️ Could not extract session. Falling back to .env token.")
-        session = {"token": API_TOKEN, "timestamp": str(int(time.time()))}
+    if os.path.exists("data/tt_cup_matchlogs.csv"):
+        existing_ids = set(pd.read_csv("data/tt_cup_matchlogs.csv")["match_id"].astype(str))
 
     base_url = "https://scores24.live/rapi/localized/leagues/table-tennis/international-tt-cup/matches"
-    cursor = None
-    buffer = []
-    start_date_encoded = quote(START_DATE)
 
+    # Calculate dates dynamically
+    # Start: 3 days ago (to ensure coverage)
+    # End: Tomorrow (to ensure we capture everything through today)
+    start_date = (datetime.now() - timedelta(days=3)).strftime("%Y-%m-%d 00:00:00")
+    end_date = (datetime.now() + timedelta(days=1)).strftime("%Y-%m-%d 23:59:59")
+    
+    params = {
+        'lang': 'en', 'first': '20', 'status': 'ended', 'audience': 'us',
+        'date_between[]': [start_date, end_date]
+    }
+
+    # Set the cutoff to 72 hours ago to ensure no gaps
+    cutoff_date = datetime.now() - timedelta(hours=72)
+    print(f"Scraping matches since: {cutoff_date.strftime('%Y-%m-%d %H:%M:%S')}")
+
+    # Time-Aware Loop
     while True:
-        new_matches_found = False
-        end_dt = datetime.now(UTC)
-        end_date_encoded = quote(end_dt.strftime("%Y-%m-%d %H:%M:%S"))
+        response = requests.get(base_url, headers=headers, cookies=cookies, params=params, impersonate="chrome")
+        
+        if response.status_code != 200:
+            print(f"❌ Error {response.status_code}")
+            break
+            
+        payload = response.json()
+        data_block = payload.get("data", {}) or {}
+        edges_list = data_block.get("edges", [])
+        
+        if not edges_list: break
 
-        query = f"{base_url}?lang=en&first=50&status=ended&audience=us&date_between[]={start_date_encoded}&date_between[]={end_date_encoded}&with_markets=false&with_statistics=false"
-        if cursor:
-            query += f"&after={quote(cursor)}"
+        stop_loop = False
+        for edge in edges_list:
+            node = edge.get("node", {})
+            match_id = node.get("slug", "").strip("/")
+            
+            # 1. HARDENED DATE PARSING
+            raw_date = node.get("match_date", "")
+            match_date_str = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            dt = datetime.now()
+            
+            if raw_date:
+                try:
+                    # We split by '.' to ignore the microseconds part entirely
+                    clean_date = raw_date.split('.')[0] 
+                    dt = datetime.strptime(clean_date, "%Y-%m-%dT%H:%M:%S")
+                    match_date_str = dt.strftime("%Y-%m-%d %H:%M:%S")
+                except Exception as e:
+                    print(f"DEBUG: Date parsing failed for {raw_date}: {e}")
 
-        print("Fetching:", query)
-        timestamp = int(time.time())
+            if dt < cutoff_date:
+                stop_loop = True
+                continue
+            
+            if match_id in existing_ids: continue
+            
+            # 2. HARDENED NAME AND SET CLEANING
+            # NEW: Filtered Set Cleaning
+            raw_scores = node.get("result_scores", [])
+            sets_list = []
+            total_pts = 0
+            
+            for s in raw_scores:
+                val = s.get('value', '')
+                if ':' in val:
+                    try:
+                        p1_s, p2_s = map(int, val.split(':'))
+                        # Only keep scores where it looks like an actual set (at least one score > 3)
+                        # This automatically excludes final match scores like '3:0' or '0:3'
+                        if p1_s > 3 or p2_s > 3:
+                            sets_list.append(val)
+                            total_pts += (p1_s + p2_s)
+                    except ValueError:
+                        continue
 
-        # NEW: Check if we need a fresh session every few minutes 
-        # Or just refresh it every loop to be safe
-        new_session = get_live_session(driver)
-        if new_session:
-            session = new_session
-            print(f"🔄 Session updated: {session['token']}")
+            def clean_name(name):
+                # Remove quotes
+                name = name.replace('"', '').replace("'", "")
+                # If name is "Last, First", convert to "First Last"
+                if ',' in name:
+                    parts = name.split(',')
+                    name = f"{parts[1].strip()} {parts[0].strip()}"
+                return name.title()
 
-        # Use the intercepted timestamp and token
-        data = driver.execute_script("""
-            const url = arguments[0];
-            const ts = arguments[1];    // Intercepted TS
-            const token = arguments[2]; // Intercepted Token
-
-            return fetch(url, {
-                method: 'GET',
-                headers: {
-                    "accept": "*/*",
-                    "x-api-timestamp": ts, 
-                    "x-api-token": token,
-                    "x-bot-identifier": "client",
-                    "x-country": "us",
-                    "referer": "https://scores24.live/en/table-tennis/l-international-tt-cup"
-                },
-                credentials: "include" 
+            p1 = clean_name(node['teams'][0].get("name", "Unknown"))
+            p2 = clean_name(node['teams'][1].get("name", "Unknown"))
+            
+            four_plus = 1.0 if len(sets_list) >= 4 else 0.0
+            
+            buffer.append({
+                "match_id": match_id, "match_date": match_date_str, "player1": p1, "player2": p2,
+                "sets": "|".join(sets_list), "total_points": float(total_pts),
+                "match_winner": float(node.get("winner", 1)), "four_plus": four_plus
             })
-            .then(r => r.json())
-            .catch(e => ({error: e.message}));
-        """, query, session['timestamp'], session['token'])
+            existing_ids.add(match_id)
 
-        if not data or "data" not in data:
-            print(f"❌ Failed to fetch data. Response: {data}")
+        if stop_loop:
+            print("  🏁 Reached historical data. Stopping.")
             break
 
-        edges = data.get("data", {}).get("edges", [])
-        if not edges:
-            print("No more matches.")
-            break
+        # Pagination check
+        page_info = data_block.get("pageInfo", {})
+        if page_info.get("hasNextPage"):
+            params['after'] = page_info.get("endCursor")
+        else: break
 
-        print(f"Fetched {len(edges)} matches")
+    if buffer:
+        append_to_csv(buffer)
+        resort_csv()
+        print(f"🚀 Success! Logged {len(buffer)} new matches.")
+    else:
+        print("✅ No new matches found.")
 
-        for idx, edge in enumerate(edges):
-            try:
-                node = edge["node"]
-                match_id = node["slug"]
-
-                if match_id in existing_ids:
-                    continue
-
-                new_matches_found = True
-                existing_ids.add(match_id)
-
-                player1 = normalize_name(node["teams"][0]["name"])
-                player2 = normalize_name(node["teams"][1]["name"])
-                match_date = pd.to_datetime(node["match_date"]).strftime("%Y-%m-%d %H:%M:%S")
-                winner_raw = node.get("winner")
-                match_winner = int(winner_raw) if winner_raw else 0
-
-                sets = [s["value"] for s in node.get("result_scores", []) if s["type"] != "FT"]
-                total_points = sum(sum(map(int, x.split(":"))) for x in sets if ":" in x)
-                four_plus = 1 if len(sets) >= 4 else 0
-
-                buffer.append({
-                    "match_id": match_id,
-                    "match_date": match_date,
-                    "player1": player1,
-                    "player2": player2,
-                    "sets": "|".join(sets),
-                    "total_points": total_points,
-                    "match_winner": match_winner,
-                    "four_plus": four_plus
-                })
-            except Exception as e:
-                print(f"Parse error at index {idx}: {e}")
-
-        if buffer:
-            append_to_csv(buffer)
-            print(f"Saved {len(buffer)} matches")
-            buffer.clear()
-
-        if not new_matches_found:
-            print("No new matches found on this page. Stopping early.")
-            break
-
-        cursor = edges[-1].get("cursor")
-        if not cursor:
-            print("No next cursor. Done.")
-            break
-
-        time.sleep(1) # Slightly more polite delay
-
-    driver.quit()
-    resort_csv()
-    print("✅ Scraping complete.")
-
-# -------------------------
 if __name__ == "__main__":
-    scrape_api()
+    main()

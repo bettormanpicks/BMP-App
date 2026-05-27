@@ -1,0 +1,19 @@
+curl 'https://scores24.live/rapi/localized/leagues/table-tennis/tt-elite-series-1/matches?lang=en&first=10&status=ended&after=MjAyNjA1MjcwMDQwMDBfdHNfMjN4bXZldDIyZTgycWc4&date_between\[\]=&date_between\[\]=2026-05-27%2001%3A00%3A00&with_markets=false&with_statistics=false&audience=us' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -b 'testValue=2; userOddFormat=US; machineTimezone=GMT-5; user_id=10114102; promo-proxy-_subid=2js4jc113pb9ej; promo-proxy-9d962=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoie1wic3RyZWFtc1wiOntcIjE2NzU0XCI6MTc3OTg0NjQ3OX0sXCJjYW1wYWlnbnNcIjp7XCI0XCI6MTc3OTg0NjQ3OX0sXCJ0aW1lXCI6MTc3OTg0NjQ3OX0ifQ.o0qEjzCHaCatpStuHbir_sfjwSwV1M7qEEUzqwIoQv8; promo-proxy-_token=uuid_2js4jc113pb9ej_2js4jc113pb9ej6a164d4f9ccf54.91412579; promo-proxy-click-token=uuid_2js4jc113pb9ej_2js4jc113pb9ej6a164d4f9ccf54.91412579; _ga=GA1.1.2067524108.1779846482; _ga_L002PTBYML=GS2.1.s1779846482$o1$g0$t1779846482$j60$l0$h0; _ga_ZPJ1YWQ2Z0=GS2.1.s1779846482$o1$g0$t1779846482$j60$l0$h0; s24-session=F7iePhIyK2264fuFqMVyx1gDmqRf3BinOo5HMwZV; _ym_uid=1779846483341009331; _ym_d=1779846483; _ym_isad=2; latestWidth=357; adScriptNew=2; _subid=2js4jc113pb9ej; 9d962=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoie1wic3RyZWFtc1wiOntcIjE2NzU0XCI6MTc3OTg0NjQ3OX0sXCJjYW1wYWlnbnNcIjp7XCI0XCI6MTc3OTg0NjQ3OX0sXCJ0aW1lXCI6MTc3OTg0NjQ3OX0ifQ.o0qEjzCHaCatpStuHbir_sfjwSwV1M7qEEUzqwIoQv8' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://scores24.live/en/table-tennis/l-tt-elite-series-1' \
+  -H 'sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36' \
+  -H 'x-api-token: eyJpYXQiOjE3Nzk4NDY0NzcsImV4cCI6MTc3OTg0ODI3NywiZnAiOiIwMTczMDNjNTFjOTIyY2EyMTI3MTBlM2FmYWVhMzRkZDdjY2I1MDFkNTYyM2NiOWI0Y2QwMDgzNWZjZGUyODk5In0=.0ef647cd510d2515b921bb42e1b8c49884f8dcf4d4fff41a4748dc04982d18b1' \
+  -H 'x-bot-identifier: client' \
+  -H 'x-country: us-tn' \
+  -H 'x-ssr-ip: 71.203.208.35' \
+  -H 'x-user-cache: W2ZO6w9f6OdiBrEL9DMG' \
+  -H 'x-user-ip: 71.203.208.35'

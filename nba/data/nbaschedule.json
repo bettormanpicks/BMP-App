@@ -5857,10 +5857,62 @@
         }
       },
       "date": "2026-05-27T00:30:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Paycom Center",
         "location": "Oklahoma City, OK"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 27
+            },
+            "home": {
+              "points": 29
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 40
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 33
+            },
+            "home": {
+              "points": 32
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 23
+            },
+            "home": {
+              "points": 26
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 114
+          },
+          "home": {
+            "points": 127
+          }
+        }
       }
     },
     {
@@ -6071,5 +6123,5 @@
       }
     }
   ],
-  "updated": "2026-05-26T08:00:02Z"
+  "updated": "2026-05-27T08:00:02Z"
 }
