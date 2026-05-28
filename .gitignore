@@ -3,6 +3,7 @@ mlb/getmlbboxscores.py
 mlb/getmlbboxscores2.py
 mlb/getmlbschedule.py
 mlb/getmlbschedule2.py
+tabletennis/curl_command.txt
 tabletennis/buildczechh2h.py
 tabletennis/builseliteh2h.py
 tabletennis/buildsetkah2h.py
@@ -41,6 +42,7 @@ nba_update.log
 credentials.json
 buildallleagues.py
 buildallleagues2.py
+curl_command.txt
 upload_tt_all_to_supabase.py
 upload_tt_leagues_to_supabase.py
 update_tabletennis.bat
