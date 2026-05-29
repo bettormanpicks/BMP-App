@@ -4,9 +4,15 @@ import pandas as pd
 from datetime import datetime, timedelta
 from curl_cffi import requests
 
+# --- PATH ANCHORING ---
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+DATA_DIR = os.path.join(SCRIPT_DIR, "data")
+CSV_PATH = os.path.join(DATA_DIR, "tt_cup_schedule.csv")
+CURL_PATH = os.path.join(SCRIPT_DIR, "curl_command.txt")
+
 # --- HELPER FUNCTIONS ---
 def get_session_from_curl():
-    with open("curl_command.txt", "r") as f:
+    with open(CURL_PATH, "r") as f:
         cmd = f.read()
     headers = {}
     cookies = {}
@@ -62,7 +68,10 @@ def main():
             node = edge["node"]
             # Clean Date
             raw_date = node.get("match_date", "").split('.')[0]
-            match_date = datetime.strptime(raw_date, "%Y-%m-%dT%H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
+            try:
+                match_date = datetime.strptime(raw_date, "%Y-%m-%dT%H:%M:%S").strftime("%Y-%m-%d %H:%M:%S")
+            except:
+                match_date = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
             
             buffer.append({
                 "match_id": node["slug"].strip("/"),
@@ -79,10 +88,10 @@ def main():
         else: break
 
     if buffer:
-        os.makedirs("data", exist_ok=True)
+        if not os.path.exists(DATA_DIR): os.makedirs(DATA_DIR)
         df = pd.DataFrame(buffer)
         df.sort_values("match_date", inplace=True)
-        df.to_csv("data/tt_cup_schedule.csv", index=False)
+        df.to_csv(CSV_PATH, index=False)
         print(f"✅ Schedule complete. Saved {len(buffer)} upcoming matches.")
 
 if __name__ == "__main__":

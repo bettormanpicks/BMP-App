@@ -4,6 +4,11 @@ echo ===============================
 echo TABLE TENNIS DATA UPDATE START
 echo %date% %time%
 echo ===============================
+echo.
+echo REMINDER: Have you updated curl_command.txt?
+echo Copy as cURL (bash) from DevTools before continuing.
+echo.
+pause
 echo Running TT Elite matchlogs...
 python tabletennis\getelitematchlogs.py
 taskkill /F /IM chrome.exe /T >nul 2>&1

@@ -1,12 +1,19 @@
 curl 'https://scores24.live/rapi/localized/leagues/table-tennis/tt-elite-series-1/matches
-  -H 'x-api-token: eyJpYXQiOjE3Nzk5MzcxNjEsImV4cCI6MTc3OTkzODk2MSwiZnAiOiI5NjQyOTMyZDM0OGU0MjI1OGZiMTJmY2FmMzE1NzU4ZGFlYmJiM2ExMWI0NmE5NDVlYzNlNDdiYmQ4Nzk0MzI4In0=.b204fed42724ee4c1238d26e923d54b6e25f740c8f7839bcbcda0a9e2b0e2683' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'Referer: https://scores24.live/en/table-tennis/l-tt-elite-series-1' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -b 'testValue=2; userOddFormat=US; machineTimezone=GMT-5; user_id=10723100; promo-proxy-_subid=3ag4v04141gsng; promo-proxy-9d962=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoie1wic3RyZWFtc1wiOntcIjQ5MTZcIjoxNzgwMDI0OTkyfSxcImNhbXBhaWduc1wiOntcIjRcIjoxNzgwMDI0OTkyfSxcInRpbWVcIjoxNzgwMDI0OTkyfSJ9.DUJh57SvtEJYGkXASnCuugq9AiDG1ZfpCXlMzNT57Rs; promo-proxy-_token=uuid_3ag4v04141gsng_3ag4v04141gsng6a1906a01a40f8.84352065; promo-proxy-click-token=uuid_3ag4v04141gsng_3ag4v04141gsng6a1906a01a40f8.84352065; s24-session=yqzgTFoPCWUYGLt4GYaGa88qkZLG4HwvWc3dVjml; _ga=GA1.1.450307663.1780024996; _ga_L002PTBYML=GS2.1.s1780024995$o1$g0$t1780024995$j60$l0$h0; _ga_ZPJ1YWQ2Z0=GS2.1.s1780024995$o1$g0$t1780024996$j59$l0$h0; _ym_uid=1780024997666553314; _ym_d=1780024997; _ym_isad=2; latestWidth=456; adScriptNew=2' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://scores24.live/en/table-tennis/l-tt-elite-series-1' \
   -H 'sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'x-user-ip: 151.240.66.187' \
-  -H 'X-User-Cache: W2ZO6w9f6OdiBrEL9DMG' \
-  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36' \
-  -H 'X-Country: us-ar' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36' \
+  -H 'x-api-token: eyJpYXQiOjE3ODAwMjQ5ODksImV4cCI6MTc4MDAyNjc4OSwiZnAiOiI2ZmE1OTg0ZTBiOTAyMDBlOWI4MTUxOTI3ODQyMDlhODc2OThkMWYxYzNhYzIyYjNkMTVjY2YyYTEzNTdkMzE2In0=.d8690db091a0fa332adf4bdd240366248a8cdd23d81625e11afe188c92b53c97' \
   -H 'x-bot-identifier: client' \
-  -H 'x-ssr-ip: 151.240.66.187'
+  -H 'x-country: us-ar' \
+  -H 'x-ssr-ip: 151.240.66.129' \
+  -H 'x-user-cache: W2ZO6w9f6OdiBrEL9DMG' \
+  -H 'x-user-ip: 151.240.66.129'
