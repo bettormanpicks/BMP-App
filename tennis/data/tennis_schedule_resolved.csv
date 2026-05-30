@@ -7,7 +7,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-29,Final,Roland Garros,Marta Kostyuk,Viktorija Golubic,wta_26,wta_88,WTA,Clay
 2026-05-29,Final,Roland Garros,Solana Sierra,Sorana Cirstea,wta_64,wta_30,WTA,Clay
 2026-05-29,Final,Roland Garros,Wang Xiyu,Yuliia Starodubtseva,wta_34,wta_101,WTA,Clay
-2026-05-29,Live,Roland Garros,Quentin Halys,Alexander Zverev,atp_72,atp_4,ATP,Clay
+2026-05-29,Final,Roland Garros,Quentin Halys,Alexander Zverev,atp_72,atp_4,ATP,Clay
 2026-05-29,Final,Roland Garros,Joao Fonseca,Novak Djokovic,atp_37,atp_3,ATP,Clay
 2026-05-29,Final,Roland Garros,Alex de Minaur,Jakub Mensik,atp_8,atp_16,ATP,Clay
 2026-05-29,Final,Roland Garros,Nuno Borges,Andrey Rublev,atp_44,atp_14,ATP,Clay
@@ -15,31 +15,3 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-29,Final,Roland Garros,Casper Ruud,Tommy Paul,atp_13,atp_24,ATP,Clay
 2026-05-29,Final,Roland Garros,Alex Michelsen,Rafael Jodar,atp_41,atp_117,ATP,Clay
 2026-05-29,Final,Roland Garros,Thiago Agustin Tirante,Pablo Carreno Busta,atp_92,atp_122,ATP,Clay
-2026-05-30,09:00,Roland Garros,Maria Sakkari,Maja Chwalinska,wta_54,wta_126,WTA,Clay
-2026-05-30,09:00,Roland Garros,Iva Jovic,Naomi Osaka,wta_20,wta_16,WTA,Clay
-2026-05-30,10:00,Roland Garros,Diana Shnaider,Oleksandra Oliynykova,wta_21,wta_71,WTA,Clay
-2026-05-30,10:30,Roland Garros,Aryna Sabalenka,Daria Kasatkina,wta_1,wta_61,WTA,Clay
-2026-05-30,11:00,Roland Garros,Anna Kalinskaya,Camila Osorio,wta_24,wta_63,WTA,Clay
-2026-05-30,12:00,Roland Garros,Diane Parry,Amanda Anisimova,wta_107,wta_6,WTA,Clay
-2026-05-30,13:00,Roland Garros,Victoria Mboko,Madison Keys,wta_10,wta_17,WTA,Clay
-2026-05-30,14:00,Roland Garros,Coco Gauff,Anastasia Potapova,wta_4,wta_75,WTA,Clay
-2026-05-30,09:00,Roland Garros,Francisco Cerundolo,Zachary Svajda,atp_62,atp_106,ATP,Clay
-2026-05-30,10:00,Roland Garros,Flavio Cobolli,Learner Tien,atp_20,atp_23,ATP,Clay
-2026-05-30,11:00,Roland Garros,Matteo Berrettini,Francisco Comesana,atp_57,atp_62,ATP,Clay
-2026-05-30,11:30,Roland Garros,Juan Manuel Cerundolo,Martin Landaluce,atp_19,atp_158,ATP,Clay
-2026-05-30,12:00,Roland Garros,Moise Kouame,Alejandro Tabilo,atp_9040,atp_67,ATP,Clay
-2026-05-30,12:30,Roland Garros,Matteo Arnaldi,Raphael Collignon,atp_85,atp_68,ATP,Clay
-2026-05-30,14:00,Roland Garros,Jaime Faria,Frances Tiafoe,atp_146,atp_28,ATP,Clay
-2026-05-30,18:15,Roland Garros,Felix Auger-Aliassime,Brandon Nakashima,atp_6,atp_29,ATP,Clay
-2026-05-30,09:30,Lexus Birmingham Open,Anouck Vrancken Peeters,Gabriela Knutson,wta_294,wta_184,WTA,
-2026-05-30,09:30,Lexus Birmingham Open,Mingge Xu,Kayla Cross,wta_238,wta_197,WTA,
-2026-05-30,09:30,Lexus Birmingham Open,Ashlyn Krueger,Hannah Klugman,wta_100,wta_9027,WTA,
-2026-05-30,09:30,Lexus Birmingham Open,Rebeka Masarova,Emily Appleton,wta_117,wta_425,WTA,
-2026-05-30,09:30,Lexus Birmingham Open,Sayaka Ishii,Vendula Valdmannova,wta_9011,wta_286,WTA,
-2026-05-30,11:00,Lexus Birmingham Open,Greet Minnen,Jodie Burrage,wta_129,wta_399,WTA,
-2026-05-30,11:00,Lexus Birmingham Open,Heather Watson,Viktoria Hruncakova,wta_278,wta_218,WTA,
-2026-05-30,11:00,Lexus Birmingham Open,Linda Klimovicova,Tereza Martincova,wta_133,wta_351,WTA,
-2026-05-30,11:00,Lexus Birmingham Open,Mananchaya Sawangkaew,Yuriko Lily Miyazaki,wta_198,wta_272,WTA,
-2026-05-30,11:00,Lexus Birmingham Open,Nao Hibino,Mariam Bolkvadze,wta_196,wta_388,WTA,
-2026-05-30,12:30,Lexus Birmingham Open,Carol Zhao,Celine Naef,wta_333,wta_260,WTA,
-2026-05-30,12:30,Lexus Birmingham Open,Amelia Rajecki,Aoi Ito,wta_439,wta_176,WTA,
