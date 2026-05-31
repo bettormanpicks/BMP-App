@@ -11,27 +11,36 @@ echo.
 pause
 echo Running TT Elite matchlogs...
 python tabletennis\getelitematchlogs.py
-timeout /t 8
+taskkill /F /IM chrome.exe /T >nul 2>&1
+timeout /t 20
 echo Running Czech matchlogs...
 python tabletennis\getczechmatchlogs.py
-timeout /t 10
+taskkill /F /IM chrome.exe /T >nul 2>&1
+timeout /t 20
 echo Running Setka matchlogs...
 python tabletennis\getsetkamatchlogs.py
-timeout /t 9
+taskkill /F /IM chrome.exe /T >nul 2>&1
+timeout /t 20
 echo Running TT Cup matchlogs...
 python tabletennis\getttcupmatchlogs.py
-timeout /t 7
+taskkill /F /IM chrome.exe /T >nul 2>&1
+timeout /t 20
 echo Running TT Elite schedule...
 python tabletennis\geteliteschedule.py
-timeout /t 10
+taskkill /F /IM chrome.exe /T >nul 2>&1
+timeout /t 20
 echo Running Czech schedule...
 python tabletennis\getczechschedule.py
-timeout /t 11
+taskkill /F /IM chrome.exe /T >nul 2>&1
+timeout /t 20
 echo Running Setka schedule...
 python tabletennis\getsetkaschedule.py
-timeout /t 8
+taskkill /F /IM chrome.exe /T >nul 2>&1
+timeout /t 20
 echo Running TT Cup schedule...
 python tabletennis\getttcupschedule.py
+taskkill /F /IM chrome.exe /T >nul 2>&1
+timeout /t 20
 echo Building TT Elite H2H...
 python tabletennis\buildeliteh2h.py
 echo Building Czech H2H...

@@ -6007,10 +6007,62 @@
         }
       },
       "date": "2026-05-31T00:00:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Paycom Center",
         "location": "Oklahoma City, OK"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 32
+            },
+            "home": {
+              "points": 25
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 28
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 24
+            },
+            "home": {
+              "points": 24
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 26
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 111
+          },
+          "home": {
+            "points": 103
+          }
+        }
       }
     },
     {
@@ -6025,15 +6077,15 @@
           "name": "New York Knicks"
         },
         "home": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
         }
       },
       "date": "2026-06-04T00:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": null,
-        "location": null
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
       }
     },
     {
@@ -6048,15 +6100,15 @@
           "name": "New York Knicks"
         },
         "home": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
         }
       },
       "date": "2026-06-06T00:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": null,
-        "location": null
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
       }
     },
     {
@@ -6067,8 +6119,8 @@
       "id": "ec52e3cb-b7a7-5e9b-b31a-b05fec003583",
       "teams": {
         "away": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
         },
         "home": {
           "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
@@ -6090,8 +6142,8 @@
       "id": "5506deec-2372-5269-8e18-3c68d588e7d7",
       "teams": {
         "away": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
         },
         "home": {
           "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
@@ -6117,15 +6169,15 @@
           "name": "New York Knicks"
         },
         "home": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
         }
       },
       "date": "2026-06-14T00:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": null,
-        "location": null
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
       }
     },
     {
@@ -6136,8 +6188,8 @@
       "id": "596e466b-2a19-5070-ad1b-abacfe2b248b",
       "teams": {
         "away": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
         },
         "home": {
           "id": "08cd7372-5b3d-55ae-b308-8412fd0065d1",
@@ -6163,17 +6215,17 @@
           "name": "New York Knicks"
         },
         "home": {
-          "id": "4b7086eb-4d0c-5560-9e6e-0986ffbf562d",
-          "name": " "
+          "id": "ae4b78ae-c2a7-53f7-9372-a3731336aeb7",
+          "name": "San Antonio Spurs"
         }
       },
       "date": "2026-06-20T00:30:00Z",
       "status": "Scheduled",
       "venue": {
-        "name": null,
-        "location": null
+        "name": "Frost Bank Center",
+        "location": "San Antonio, TX"
       }
     }
   ],
-  "updated": "2026-05-30T08:00:02Z"
+  "updated": "2026-05-31T08:00:01Z"
 }
