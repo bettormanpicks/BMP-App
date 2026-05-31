@@ -3,9 +3,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-05-31,Final,Roland Garros,Elina Svitolina,Belinda Bencic,wta_9,wta_12,WTA,Clay
 2026-05-31,Final,Roland Garros,Mirra Andreeva,Jil Teichmann,wta_7,wta_175,WTA,Clay
 2026-05-31,Final,Roland Garros,Sorana Cirstea,Wang Xiyu,wta_30,wta_34,WTA,Clay
-2026-05-31,Live,Roland Garros,Jakub Mensik,Andrey Rublev,atp_16,atp_14,ATP,Clay
 2026-05-31,Live,Roland Garros,Casper Ruud,Joao Fonseca,atp_13,atp_37,ATP,Clay
 2026-05-31,Final,Roland Garros,Jesper de Jong,Alexander Zverev,atp_86,atp_4,ATP,Clay
+2026-05-31,Final,Roland Garros,Jakub Mensik,Andrey Rublev,atp_16,atp_14,ATP,Clay
 2026-05-31,Final,Roland Garros,Rafael Jodar,Pablo Carreno Busta,atp_117,atp_122,ATP,Clay
 2026-05-31,Final,Lexus Birmingham Open,Tereza Martincova,Mingge Xu,wta_351,wta_238,WTA,
 2026-05-31,Final,Lexus Birmingham Open,Rebeka Masarova,Celine Naef,wta_117,wta_260,WTA,
@@ -24,7 +24,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-01,09:30,Lexus Birmingham Open,Elvina Kalieva,Talia Gibson,wta_158,wta_111,WTA,
 2026-06-01,11:00,Lexus Birmingham Open,Mary Stoiana,Lulu Sun,wta_185,wta_98,WTA,
 2026-06-01,11:00,Lexus Birmingham Open,Mananchaya Sawangkaew,Linda Klimovicova,wta_198,wta_133,WTA,
-2026-06-01,11:00,Lexus Birmingham Open,Mika Stojsavljevic,Emerson Jones,wta_280,wta_152,WTA,
+2026-06-01,11:00,Lexus Birmingham Open,Mika Stojsavljevic,Emerson Jones,wta_280,wta_72,WTA,
 2026-06-01,12:30,Lexus Birmingham Open,Gabriela Knutson,Joanna Garland,wta_184,wta_125,WTA,
 2026-06-01,13:00,Lexus Birmingham Open,Celine Naef,Maddison Inglis,wta_260,wta_123,WTA,
 2026-06-01,09:00,Open delle Puglie Trofeo,Dang Yiming,Eleonora Alvisi,wta_778,wta_981,WTA,
