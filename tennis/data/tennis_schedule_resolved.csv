@@ -3,12 +3,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-01,Final,Roland Garros,Felix Auger-Aliassime,Alejandro Tabilo,atp_6,atp_67,ATP,Clay
 2026-06-01,Final,Roland Garros,Flavio Cobolli,Zachary Svajda,atp_20,atp_106,ATP,Clay
 2026-06-01,Final,Roland Garros,Juan Manuel Cerundolo,Matteo Berrettini,atp_19,atp_57,ATP,Clay
-2026-06-01,Live,Roland Garros,Aryna Sabalenka,Naomi Osaka,wta_1,wta_16,WTA,Clay
+2026-06-01,Final,Roland Garros,Aryna Sabalenka,Naomi Osaka,wta_1,wta_16,WTA,Clay
 2026-06-01,Final,Roland Garros,Madison Keys,Diana Shnaider,wta_17,wta_21,WTA,Clay
-2026-06-01,Final,Roland Garros,Anastasia Potapova,Anna Kalinskaya,wta_75,wta_65,WTA,Clay
+2026-06-01,Final,Roland Garros,Anastasia Potapova,Anna Kalinskaya,wta_75,wta_24,WTA,Clay
 2026-06-01,Final,Roland Garros,Maja Chwalinska,Diane Parry,wta_126,wta_107,WTA,Clay
 2026-06-01,Final,Lexus Birmingham Open,Elvina Kalieva,Talia Gibson,wta_158,wta_111,WTA,
-2026-06-01,Final,Lexus Birmingham Open,Mananchaya Sawangkaew,Linda Klimovicova,wta_198,wta_118,WTA,
+2026-06-01,Final,Lexus Birmingham Open,Mananchaya Sawangkaew,Linda Klimovicova,wta_198,wta_133,WTA,
 2026-06-01,Final,Open delle Puglie Trofeo,Elizara Yaneva,Lisa Pigato,wta_228,wta_193,WTA,
 2026-06-01,Final,Open delle Puglie Trofeo,Sapfo Sakellaridi,Sofia Costoulas,atp_275,wta_142,ATP,
 2026-06-01,Final,Open delle Puglie Trofeo,Varvara Lepchenko,Iryna Shymanovich,wta_149,wta_156,WTA,
@@ -36,7 +36,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-02,15:00,Lexus Birmingham Open,Taylah Preston,Alicia Dudeney,wta_147,wta_440,WTA,
 2026-06-02,15:30,Lexus Birmingham Open,Ashlyn Krueger,Himeno Sakatsume,wta_100,wta_135,WTA,
 2026-06-02,15:30,Lexus Birmingham Open,Tatjana Maria,Linda Fruhvirtova,wta_54,wta_118,WTA,
-2026-06-02,12:00,Makarska Open,Erika Andreeva,Elina Avanesyan,wta_362,wta_178,WTA,
+2026-06-02,12:00,Makarska Open,Erika Andreeva,Elina Avanesyan,wta_7,wta_178,WTA,
 2026-06-02,12:00,Makarska Open,Yasmine Kabbaj,Dalila Jakupovic,wta_361,wta_385,WTA,
 2026-06-02,13:00,Makarska Open,Akasha Urhobo,Lea Boskovic,wta_307,wta_311,WTA,
 2026-06-02,13:30,Makarska Open,Caijsa Hennemann,Jule Niemeier,wta_377,wta_302,WTA,
