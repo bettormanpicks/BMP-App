@@ -1,23 +1,19 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-06-01,Live,Roland Garros,Juan Manuel Cerundolo,Matteo Berrettini,atp_19,atp_57,ATP,Clay
-2026-06-01,15:00,Roland Garros,Felix Auger-Aliassime,Alejandro Tabilo,atp_6,atp_67,ATP,Clay
-2026-06-01,16:30,Roland Garros,Frances Tiafoe,Matteo Arnaldi,atp_28,atp_85,ATP,Clay
+2026-06-01,Live,Roland Garros,Frances Tiafoe,Matteo Arnaldi,atp_28,atp_85,ATP,Clay
+2026-06-01,Final,Roland Garros,Felix Auger-Aliassime,Alejandro Tabilo,atp_6,atp_67,ATP,Clay
 2026-06-01,Final,Roland Garros,Flavio Cobolli,Zachary Svajda,atp_20,atp_106,ATP,Clay
-2026-06-01,18:15,Roland Garros,Aryna Sabalenka,Naomi Osaka,wta_1,wta_16,WTA,Clay
+2026-06-01,Final,Roland Garros,Juan Manuel Cerundolo,Matteo Berrettini,atp_19,atp_57,ATP,Clay
+2026-06-01,Live,Roland Garros,Aryna Sabalenka,Naomi Osaka,wta_1,wta_16,WTA,Clay
 2026-06-01,Final,Roland Garros,Madison Keys,Diana Shnaider,wta_17,wta_21,WTA,Clay
-2026-06-01,Final,Roland Garros,Anastasia Potapova,Anna Kalinskaya,wta_75,wta_24,WTA,Clay
+2026-06-01,Final,Roland Garros,Anastasia Potapova,Anna Kalinskaya,wta_75,wta_65,WTA,Clay
 2026-06-01,Final,Roland Garros,Maja Chwalinska,Diane Parry,wta_126,wta_107,WTA,Clay
-2026-06-01,15:00,Lexus Birmingham Open,Celine Naef,Maddison Inglis,wta_260,wta_123,WTA,
-2026-06-01,15:00,Lexus Birmingham Open,Gabriela Knutson,Joanna Garland,wta_184,wta_125,WTA,
 2026-06-01,Final,Lexus Birmingham Open,Elvina Kalieva,Talia Gibson,wta_158,wta_111,WTA,
-2026-06-01,TBD,Lexus Birmingham Open,Mary Stoiana,Lulu Sun,wta_185,wta_98,WTA,
-2026-06-01,TBD,Lexus Birmingham Open,Mika Stojsavljevic,Emerson Jones,wta_280,wta_152,WTA,
-2026-06-01,Final,Lexus Birmingham Open,Mananchaya Sawangkaew,Linda Klimovicova,wta_198,wta_133,WTA,
-2026-06-01,Live,Open delle Puglie Trofeo,Elizara Yaneva,Lisa Pigato,wta_228,wta_193,WTA,
-2026-06-01,Live,Open delle Puglie Trofeo,Tatiana Pieri,Victoria Bosio,wta_383,wta_337,WTA,
-2026-06-01,Live,Open delle Puglie Trofeo,Gao Xinyu,Darya Astakhova,wta_262,wta_380,WTA,
-2026-06-01,15:00,Open delle Puglie Trofeo,Sapfo Sakellaridi,Sofia Costoulas,atp_275,wta_142,ATP,
-2026-06-01,15:00,Open delle Puglie Trofeo,Varvara Lepchenko,Iryna Shymanovich,wta_149,wta_156,WTA,
+2026-06-01,Final,Lexus Birmingham Open,Mananchaya Sawangkaew,Linda Klimovicova,wta_198,wta_118,WTA,
+2026-06-01,Final,Open delle Puglie Trofeo,Elizara Yaneva,Lisa Pigato,wta_228,wta_193,WTA,
+2026-06-01,Final,Open delle Puglie Trofeo,Sapfo Sakellaridi,Sofia Costoulas,atp_275,wta_142,ATP,
+2026-06-01,Final,Open delle Puglie Trofeo,Varvara Lepchenko,Iryna Shymanovich,wta_149,wta_156,WTA,
+2026-06-01,Final,Open delle Puglie Trofeo,Gao Xinyu,Darya Astakhova,wta_262,wta_380,WTA,
+2026-06-01,Final,Open delle Puglie Trofeo,Tatiana Pieri,Victoria Bosio,wta_383,wta_337,WTA,
 2026-06-01,Final,Open delle Puglie Trofeo,Mariia Kozyreva,Nika Radisic,wta_454,wta_823,WTA,
 2026-06-01,Final,Open delle Puglie Trofeo,Andreea Prisacariu,Francesca Dell'Edera,wta_441,wta_339,WTA,
 2026-06-01,Final,Open delle Puglie Trofeo,Dang Yiming,Eleonora Alvisi,wta_778,wta_981,WTA,
@@ -26,16 +22,30 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-02,10:30,Roland Garros,Elina Svitolina,Marta Kostyuk,wta_9,wta_26,WTA,Clay
 2026-06-02,12:00,Roland Garros,Rafael Jodar,Alexander Zverev,atp_117,atp_4,ATP,Clay
 2026-06-02,18:15,Roland Garros,Jakub Mensik,Joao Fonseca,atp_16,atp_37,ATP,Clay
-2026-06-02,TBD,Lexus Birmingham Open,Greet Minnen,Alina Charaeva,wta_129,wta_163,WTA,
-2026-06-02,TBD,Lexus Birmingham Open,Tatjana Maria,Linda Fruhvirtova,wta_54,wta_118,WTA,
-2026-06-02,TBD,Lexus Birmingham Open,Alexandra Eala,Priscilla Hon,wta_45,wta_130,WTA,
-2026-06-02,TBD,Lexus Birmingham Open,Ajla Tomljanovic,Katie Swan,wta_73,wta_271,WTA,
-2026-06-02,TBD,Lexus Birmingham Open,Nikola Bartunkova,Harriet Dart,wta_104,wta_169,WTA,
-2026-06-02,TBD,Lexus Birmingham Open,Ashlyn Krueger,Himeno Sakatsume,wta_100,wta_135,WTA,
-2026-06-02,TBD,Lexus Birmingham Open,Nao Hibino,Janice Tjen,wta_196,wta_47,WTA,
-2026-06-02,TBD,Lexus Birmingham Open,Kayla Day,Hanne Vandewinkel,wta_194,wta_128,WTA,
-2026-06-02,TBD,Lexus Birmingham Open,Rebeka Masarova,Tereza Martincova,wta_117,wta_351,WTA,
-2026-06-02,TBD,Lexus Birmingham Open,Taylah Preston,Alicia Dudeney,wta_147,wta_440,WTA,
+2026-06-02,09:30,Lexus Birmingham Open,Alexandra Eala,Priscilla Hon,wta_45,wta_130,WTA,
+2026-06-02,09:30,Lexus Birmingham Open,Rebeka Masarova,Tereza Martincova,wta_117,wta_351,WTA,
+2026-06-02,09:30,Lexus Birmingham Open,Nikola Bartunkova,Harriet Dart,wta_104,wta_169,WTA,
+2026-06-02,10:30,Lexus Birmingham Open,Mary Stoiana,Lulu Sun,wta_185,wta_98,WTA,
+2026-06-02,10:30,Lexus Birmingham Open,Mika Stojsavljevic,Emerson Jones,wta_280,wta_152,WTA,
+2026-06-02,11:00,Lexus Birmingham Open,Greet Minnen,Alina Charaeva,wta_129,wta_163,WTA,
+2026-06-02,12:00,Lexus Birmingham Open,Nao Hibino,Janice Tjen,wta_196,wta_47,WTA,
+2026-06-02,12:30,Lexus Birmingham Open,Kayla Day,Hanne Vandewinkel,wta_194,wta_128,WTA,
+2026-06-02,13:30,Lexus Birmingham Open,Ajla Tomljanovic,Katie Swan,wta_73,wta_271,WTA,
+2026-06-02,14:00,Lexus Birmingham Open,Gabriela Knutson,Joanna Garland,wta_184,wta_125,WTA,
+2026-06-02,14:00,Lexus Birmingham Open,Celine Naef,Maddison Inglis,wta_260,wta_123,WTA,
+2026-06-02,15:00,Lexus Birmingham Open,Taylah Preston,Alicia Dudeney,wta_147,wta_440,WTA,
+2026-06-02,15:30,Lexus Birmingham Open,Ashlyn Krueger,Himeno Sakatsume,wta_100,wta_135,WTA,
+2026-06-02,15:30,Lexus Birmingham Open,Tatjana Maria,Linda Fruhvirtova,wta_54,wta_118,WTA,
+2026-06-02,12:00,Makarska Open,Erika Andreeva,Elina Avanesyan,wta_362,wta_178,WTA,
+2026-06-02,12:00,Makarska Open,Yasmine Kabbaj,Dalila Jakupovic,wta_361,wta_385,WTA,
+2026-06-02,13:00,Makarska Open,Akasha Urhobo,Lea Boskovic,wta_307,wta_311,WTA,
+2026-06-02,13:30,Makarska Open,Caijsa Hennemann,Jule Niemeier,wta_377,wta_302,WTA,
+2026-06-02,13:30,Makarska Open,Leolia Jeanjean,Kajsa Rinaldo Persson,wta_115,wta_264,WTA,
+2026-06-02,14:30,Makarska Open,Ana Konjuh,Dominika Salkova,wta_9020,wta_151,WTA,
+2026-06-02,15:00,Makarska Open,Simona Waltert,Teodora Kostovic,wta_81,wta_171,WTA,
+2026-06-02,15:00,Makarska Open,Miriam Bulgaru,Noma Noha Akugue,wta_208,wta_255,WTA,
+2026-06-02,16:00,Makarska Open,Tamara Zidansek,Polona Hercog,wta_145,wta_314,WTA,
+2026-06-02,18:00,Makarska Open,Sara Sorribes Tormo,Victoria Jimenez Kasintseva,wta_451,wta_119,WTA,
 2026-06-02,11:00,Open delle Puglie Trofeo,Alice Tubello,Carole Monnet,wta_435,wta_177,WTA,
 2026-06-02,11:00,Open delle Puglie Trofeo,Despina Papamichail,Chloe Paquet,wta_157,wta_215,WTA,
 2026-06-02,12:00,Open delle Puglie Trofeo,Tatiana Prozorova,Nuria Brancaccio,wta_166,wta_164,WTA,
