@@ -1,7 +1,7 @@
 curl 'https://scores24.live/rapi/localized/leagues/table-tennis/tt-elite-series-1/matches
   -H 'accept: */*' \
   -H 'accept-language: en-US,en;q=0.9' \
-  -b 'testValue=1; userOddFormat=US; machineTimezone=GMT-5; s24-session=MIciblNaTDbH8tUVqgRmV7Oa6wwDAGZjWYZaku9H; _ga=GA1.1.1867334754.1780154169; _ym_uid=178015416962401010; _ym_d=1780154169; _ym_isad=2; latestWidth=456; adScriptNew=3; _ym_uid=178015416962401010; user_id=11385208; promo-proxy-_subid=chk0lf149ilf0; promo-proxy-9d962=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoie1wic3RyZWFtc1wiOntcIjE2NzU0XCI6MTc4MDE1NDE2NyxcIjQ5MTZcIjoxNzgwMTU0MTY3fSxcImNhbXBhaWduc1wiOntcIjRcIjoxNzgwMTU0MTY3fSxcInRpbWVcIjoxNzgwMTU0MTY3fSJ9.QZWUZJXTGAXtdgxUBzpD4eKyYzWbYdK8IQqiEoDAbRs; promo-proxy-_token=uuid_chk0lf149ilf0_chk0lf149ilf06a1ba83c499e45.23106979; promo-proxy-click-token=uuid_chk0lf149ilf0_chk0lf149ilf06a1ba83c499e45.23106979; _ga_L002PTBYML=GS2.1.s1780197437$o2$g1$t1780197439$j58$l0$h0; _ga_ZPJ1YWQ2Z0=GS2.1.s1780197437$o2$g1$t1780197439$j58$l0$h0; clever-counter-86866=0-1' \
+  -b 'testValue=1; userOddFormat=US; machineTimezone=GMT-5; _ga=GA1.1.1867334754.1780154169; _ym_uid=178015416962401010; _ym_d=1780154169; latestWidth=456; _ym_uid=178015416962401010; adScriptNew=4; user_id=11748172; promo-proxy-_subid=15dd7fn14dntmu; promo-proxy-9d962=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoie1wic3RyZWFtc1wiOntcIjE2NzU0XCI6MTc4MDE1NDE2NyxcIjQ5MTZcIjoxNzgwMjg0ODY5LFwiMTY3NTdcIjoxNzgwMTk3NDUxfSxcImNhbXBhaWduc1wiOntcIjRcIjoxNzgwMjQwNTgwfSxcInRpbWVcIjoxNzgwMjQwNTgwfSJ9.eoLKqLs73AsRtnSzmkLxPkbspi4Rjw0RlkPsNmtt9_4; promo-proxy-_token=uuid_15dd7fn14dntmu_15dd7fn14dntmu6a1cfdc5d04f92.18905869; promo-proxy-click-token=uuid_15dd7fn14dntmu_15dd7fn14dntmu6a1cfdc5d04f92.18905869; s24-session=kk3cGt3rgkeMojNIR1HuSEtmfrG5nYiWlFpYkl6L; _ga_L002PTBYML=GS2.1.s1780284870$o3$g1$t1780284873$j57$l0$h0; _ga_ZPJ1YWQ2Z0=GS2.1.s1780284870$o3$g1$t1780284873$j57$l0$h0; clever-counter-86866=0-1; _ym_isad=2' \
   -H 'priority: u=1, i' \
   -H 'referer: https://scores24.live/en/table-tennis/l-tt-elite-series-1' \
   -H 'sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"' \
@@ -11,9 +11,9 @@ curl 'https://scores24.live/rapi/localized/leagues/table-tennis/tt-elite-series-
   -H 'sec-fetch-mode: cors' \
   -H 'sec-fetch-site: same-origin' \
   -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36' \
-  -H 'x-api-token: eyJpYXQiOjE3ODAxOTc0MzQsImV4cCI6MTc4MDE5OTIzNCwiZnAiOiI5ZjIyYzNiMDg3YWZhODgyMDc0ZTMwZWU3NjkzMmJmZmJjYzMzZmQ5NjY5ZTJhYmViYjA3NDBlNTcwMGJmNTYwIn0=.924bd77acaf710992e9f4a61b30d644a758a221fc53c5969fe73157b14f08bac' \
+  -H 'x-api-token: eyJpYXQiOjE3ODAyODQ4NjcsImV4cCI6MTc4MDI4NjY2NywiZnAiOiIwZTJjZjg3YWRiNWMzNjY5NTk3ZjNjMDM2NzNkZWU4ZDgyMjVmNWE4M2VlMjdiNDg2OGMxZjJlZTQ3MWU4ZTMwIn0=.a6c10e22f66e83a9a91746a6fec9dc00e544bbcc1dcbd633d103d5cc1bbe2b95' \
   -H 'x-bot-identifier: client' \
   -H 'x-country: us-ar' \
-  -H 'x-ssr-ip: 151.240.66.179' \
+  -H 'x-ssr-ip: 151.240.66.135' \
   -H 'x-user-cache: W2ZO6w9f6OdiBrEL9DMG' \
-  -H 'x-user-ip: 151.240.66.179'
+  -H 'x-user-ip: 151.240.66.135'
