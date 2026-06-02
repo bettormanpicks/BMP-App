@@ -1,24 +1,24 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-06-02,09:00,Roland Garros,Mirra Andreeva,Sorana Cirstea
-2026-06-02,10:30,Roland Garros,Elina Svitolina,Marta Kostyuk
-2026-06-02,12:00,Roland Garros,Rafael Jodar,Alexander Zverev
+2026-06-02,Final,Roland Garros,Elina Svitolina,Marta Kostyuk
+2026-06-02,Final,Roland Garros,Mirra Andreeva,Sorana Cirstea
+2026-06-02,12:40,Roland Garros,Rafael Jodar,Alexander Zverev
 2026-06-02,18:15,Roland Garros,Jakub Mensik,Joao Fonseca
-2026-06-02,09:30,Lexus Birmingham Open,Alexandra Eala,Priscilla Hon
-2026-06-02,09:30,Lexus Birmingham Open,Rebeka Masarova,Tereza Martincova
-2026-06-02,09:30,Lexus Birmingham Open,Nikola Bartunkova,Harriet Dart
-2026-06-02,10:30,Lexus Birmingham Open,Mary Stoiana,Lulu Sun
-2026-06-02,10:30,Lexus Birmingham Open,Mika Stojsavljevic,Emerson Jones
-2026-06-02,11:00,Lexus Birmingham Open,Greet Minnen,Alina Charaeva
-2026-06-02,12:00,Lexus Birmingham Open,Nao Hibino,Janice Tjen
-2026-06-02,12:30,Lexus Birmingham Open,Kayla Day,Hanne Vandewinkel
+2026-06-02,Live,Lexus Birmingham Open,Nikola Bartunkova,Harriet Dart
+2026-06-02,Live,Lexus Birmingham Open,Greet Minnen,Alina Charaeva
+2026-06-02,12:45,Lexus Birmingham Open,Mary Stoiana,Lulu Sun
+2026-06-02,13:00,Lexus Birmingham Open,Kayla Day,Hanne Vandewinkel
+2026-06-02,13:10,Lexus Birmingham Open,Nao Hibino,Janice Tjen
 2026-06-02,13:30,Lexus Birmingham Open,Ajla Tomljanovic,Katie Swan
 2026-06-02,14:00,Lexus Birmingham Open,Gabriela Knutson,Joanna Garland
 2026-06-02,14:00,Lexus Birmingham Open,Celine Naef,Maddison Inglis
 2026-06-02,15:00,Lexus Birmingham Open,Taylah Preston,Alicia Dudeney
 2026-06-02,15:30,Lexus Birmingham Open,Ashlyn Krueger,Himeno Sakatsume
 2026-06-02,15:30,Lexus Birmingham Open,Tatjana Maria,Linda Fruhvirtova
-2026-06-02,12:00,Makarska Open,Erika Andreeva,Elina Avanesyan
-2026-06-02,12:00,Makarska Open,Yasmine Kabbaj,Dalila Jakupovic
+2026-06-02,Final,Lexus Birmingham Open,Alexandra Eala,Priscilla Hon
+2026-06-02,Final,Lexus Birmingham Open,Mika Stojsavljevic,Emerson Jones
+2026-06-02,Final,Lexus Birmingham Open,Rebeka Masarova,Tereza Martincova
+2026-06-02,Live,Makarska Open,Yasmine Kabbaj,Dalila Jakupovic
+2026-06-02,Live,Makarska Open,Erika Andreeva,Elina Avanesyan
 2026-06-02,13:00,Makarska Open,Akasha Urhobo,Lea Boskovic
 2026-06-02,13:30,Makarska Open,Caijsa Hennemann,Jule Niemeier
 2026-06-02,13:30,Makarska Open,Leolia Jeanjean,Kajsa Rinaldo Persson
@@ -27,21 +27,22 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-02,15:00,Makarska Open,Miriam Bulgaru,Noma Noha Akugue
 2026-06-02,16:00,Makarska Open,Tamara Zidansek,Polona Hercog
 2026-06-02,18:00,Makarska Open,Sara Sorribes Tormo,Victoria Jimenez Kasintseva
-2026-06-02,11:00,Open delle Puglie Trofeo,Alice Tubello,Carole Monnet
-2026-06-02,11:00,Open delle Puglie Trofeo,Despina Papamichail,Chloe Paquet
-2026-06-02,12:00,Open delle Puglie Trofeo,Tatiana Prozorova,Nuria Brancaccio
-2026-06-02,12:30,Open delle Puglie Trofeo,Andreea Prisacariu,Nika Radisic
-2026-06-02,12:30,Open delle Puglie Trofeo,Giorgia Pedone,Ekaterine Gorgodze
+2026-06-02,Live,Open delle Puglie Trofeo,Despina Papamichail,Chloe Paquet
+2026-06-02,Live,Open delle Puglie Trofeo,Tatiana Prozorova,Nuria Brancaccio
+2026-06-02,12:35,Open delle Puglie Trofeo,Andreea Prisacariu,Nika Radisic
+2026-06-02,12:55,Open delle Puglie Trofeo,Giorgia Pedone,Ekaterine Gorgodze
 2026-06-02,13:30,Open delle Puglie Trofeo,Mayar Sherif,Carlota Martinez Cirez
 2026-06-02,14:00,Open delle Puglie Trofeo,Leyre Romero Gormaz,You Xiaodi
 2026-06-02,14:00,Open delle Puglie Trofeo,Miriana Tona,Viola Turini
 2026-06-02,15:00,Open delle Puglie Trofeo,Lisa Zaar,Tyra Caterina Grant
 2026-06-02,15:30,Open delle Puglie Trofeo,Laura Mair,Dang Yiming
 2026-06-02,18:00,Open delle Puglie Trofeo,Vittoria Paganetti,Lucia Bronzetti
-2026-06-03,TBD,Roland Garros,Anna Kalinskaya,Maja Chwalinska
-2026-06-03,TBD,Roland Garros,Aryna Sabalenka,Diana Shnaider
-2026-06-03,TBD,Roland Garros,Matteo Berrettini,Matteo Arnaldi
-2026-06-03,TBD,Roland Garros,Felix Auger-Aliassime,Flavio Cobolli
+2026-06-02,Final,Open delle Puglie Trofeo,Alice Tubello,Carole Monnet
+2026-06-03,09:00,Roland Garros,Anna Kalinskaya,Maja Chwalinska
+2026-06-03,10:30,Roland Garros,Aryna Sabalenka,Diana Shnaider
+2026-06-03,12:00,Roland Garros,Felix Auger-Aliassime,Flavio Cobolli
+2026-06-03,18:15,Roland Garros,Matteo Berrettini,Matteo Arnaldi
+2026-06-03,TBD,Lexus Birmingham Open,Mika Stojsavljevic,Elvina Kalieva
 2026-06-03,TBD,Makarska Open,Katarzyna Kawa,Maya Joint
 2026-06-03,TBD,Makarska Open,Lola Radivojevic,Mia Ristic
 2026-06-03,TBD,Makarska Open,Rebecca Sramkova,Tara Wuerth
