@@ -1,17 +1,16 @@
 date,game_id,home_team,away_team,home_pitcher,away_pitcher,status
-2026-05-23T17:10:00+00:00,d091e882-7480-55c7-930a-04ce8c60b2dc,Cincinnati Reds,St. Louis Cardinals,Chris Paddack,Andre Pallante,Scheduled
-2026-05-23T17:35:00+00:00,0e9aed48-11b9-5a54-b678-7301ce1cb699,New York Yankees,Tampa Bay Rays,Ryan Weathers,Drew Rasmussen,Scheduled
-2026-05-23T18:20:00+00:00,328c6875-21dc-53c9-9d43-6307a4a87bed,Chicago Cubs,Houston Astros,Colin Rea,Kai-Wei Teng,Scheduled
-2026-05-23T19:07:00+00:00,6bb6670a-f526-539a-be16-66d3a0b920d4,Toronto Blue Jays,Pittsburgh Pirates,Patrick Corbin,Paul Skenes,Scheduled
-2026-05-23T20:05:00+00:00,c8af8af7-f3ed-5c16-b35f-01437cb1005d,San Francisco Giants,Chicago White Sox,Adrian Houser,Erick Fedde,Scheduled
-2026-05-23T20:05:00+00:00,da177051-ae33-5b24-9e83-f2c6739c0be8,Philadelphia Phillies,Cleveland Guardians,Zack Wheeler,Slade Cecconi,Scheduled
-2026-05-23T20:05:00+00:00,82b4ee6e-337a-57ad-8bc3-1fc1f08bf8e7,Baltimore Orioles,Detroit Tigers,Brandon Young,Framber Valdez,Scheduled
-2026-05-23T20:10:00+00:00,acfc0057-b349-599d-aaf7-9029c259d138,Boston Red Sox,Minnesota Twins,,,Scheduled
-2026-05-23T20:10:00+00:00,5c807d48-571a-563b-8051-eb6028cc1abc,Miami Marlins,New York Mets,Max Meyer,Freddy Peralta,Scheduled
-2026-05-23T20:10:00+00:00,342ea90b-74fa-5db4-9f56-89ef0af19e3e,Kansas City Royals,Seattle Mariners,Stephen Kolek,George Kirby,Scheduled
-2026-05-23T20:10:00+00:00,52bc68b9-420c-5c38-8e17-cdab1d93295b,Atlanta Braves,Washington Nationals,Grant Holmes,Jake Irvin,Scheduled
-2026-05-23T23:15:00+00:00,31d57898-6545-5508-96cb-9784fca84fca,Milwaukee Brewers,Los Angeles Dodgers,Robert Gasser,Roki Sasaki,Scheduled
-2026-05-23T23:15:00+00:00,1df70855-ff48-5f3c-8358-b65fe8949e80,Cincinnati Reds,St. Louis Cardinals,Chase Petty,Kyle Leahy,Scheduled
-2026-05-24T01:40:00+00:00,3004b5b9-5573-502f-8b33-b3e709ab6fcc,San Diego Padres,Athletics,Lucas Giolito,J.T. Ginn,Scheduled
-2026-05-24T02:05:00+00:00,847cd17e-27c2-523c-b3f4-84df02f19212,Los Angeles Angels,Texas Rangers,Walbert Ureña,Nathan Eovaldi,Scheduled
-2026-05-24T02:10:00+00:00,ada5ddc1-7c57-5a83-9ebb-69263705db7e,Arizona Diamondbacks,Colorado Rockies,Zac Gallen,Michael Lorenzen,Scheduled
+2026-06-02T22:40:00+00:00,24b74db3-571b-50fd-9e7a-090f7bc78032,Tampa Bay Rays,Detroit Tigers,Steven Matz,Jack Flaherty,Scheduled
+2026-06-02T22:40:00+00:00,94e05ace-8011-57bd-8dc5-18374ff88dfe,Philadelphia Phillies,San Diego Padres,Aaron Nola,Randy Vásquez,Scheduled
+2026-06-02T22:45:00+00:00,6446b56a-ee83-594f-93cf-c1ba5e39388b,Boston Red Sox,Baltimore Orioles,Connelly Early,Shane Baz,Scheduled
+2026-06-02T22:45:00+00:00,3f3abbde-76f7-52d4-9537-b49a7a96db05,Washington Nationals,Miami Marlins,Richard Lovelady,Lake Bachar,Scheduled
+2026-06-02T23:05:00+00:00,aeb06073-f684-53c9-97ee-701abbac1e19,New York Yankees,Cleveland Guardians,Cam Schlittler,Joey Cantillo,Scheduled
+2026-06-02T23:10:00+00:00,6d8d1098-0ab2-5aa9-ab54-ca224517355f,Cincinnati Reds,Kansas City Royals,Andrew Abbott,Noah Cameron,Scheduled
+2026-06-02T23:15:00+00:00,035a5212-7c41-569c-9c4b-fbe1a4150064,Atlanta Braves,Toronto Blue Jays,Bryce Elder,Kevin Gausman,Scheduled
+2026-06-02T23:40:00+00:00,4aa279f8-e9da-5f8e-873f-05c9befab7ac,Minnesota Twins,Chicago White Sox,Connor Prielipp,Davis Martin,Scheduled
+2026-06-02T23:40:00+00:00,c26a170b-4e8f-51d7-abd8-b0d82fd24b7a,Milwaukee Brewers,San Francisco Giants,Kyle Harrison,Trevor McDonald,Scheduled
+2026-06-02T23:45:00+00:00,be786caa-1277-59d4-b80f-ba166779c929,St. Louis Cardinals,Texas Rangers,Dustin May,Nathan Eovaldi,Scheduled
+2026-06-03T00:05:00+00:00,b3864105-e40a-5a52-84ae-b0f47ebc4cd1,Chicago Cubs,Athletics,Jameson Taillon,Gage Jump,Scheduled
+2026-06-03T00:10:00+00:00,a6a6fa7b-4d57-51c4-8f6b-9c574ce81665,Houston Astros,Pittsburgh Pirates,Mike Burrows,Bubba Chandler,Scheduled
+2026-06-03T01:38:00+00:00,ee422b73-82d9-5460-827e-1f0dd5b7286a,Los Angeles Angels,Colorado Rockies,Grayson Rodriguez,Tomoyuki Sugano,Scheduled
+2026-06-03T01:40:00+00:00,af53ae17-ee8d-5b72-8d07-6f8299f7b362,Arizona Diamondbacks,Los Angeles Dodgers,Michael Soroka,Eric Lauer,Scheduled
+2026-06-03T01:40:00+00:00,ede68a5d-9848-5096-accb-97a46fb647b0,Seattle Mariners,New York Mets,Logan Gilbert,,Scheduled
