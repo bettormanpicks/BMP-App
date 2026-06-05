@@ -1,16 +1,16 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-06-05,12:30,Roland Garros,Jakub Mensik,Alexander Zverev,atp_16,atp_4,ATP,Clay
+2026-06-05,Live,Roland Garros,Jakub Mensik,Alexander Zverev,atp_16,atp_4,ATP,Clay
 2026-06-05,17:00,Roland Garros,Matteo Arnaldi,Flavio Cobolli,atp_85,atp_20,ATP,Clay
-2026-06-05,Live,Lexus Birmingham Open,Rebeka Masarova,Mary Stoiana,wta_117,wta_185,WTA,
-2026-06-05,12:30,Lexus Birmingham Open,Nikola Bartunkova,Mika Stojsavljevic,wta_104,wta_280,WTA,
-2026-06-05,14:00,Lexus Birmingham Open,Alexandra Eala,Mananchaya Sawangkaew,wta_45,wta_198,WTA,
+2026-06-05,Live,Lexus Birmingham Open,Nikola Bartunkova,Mika Stojsavljevic,wta_104,wta_280,WTA,
+2026-06-05,14:30,Lexus Birmingham Open,Alexandra Eala,Mananchaya Sawangkaew,wta_45,wta_198,WTA,
+2026-06-05,Final,Lexus Birmingham Open,Rebeka Masarova,Mary Stoiana,wta_117,wta_185,WTA,
 2026-06-05,Final,Lexus Birmingham Open,Taylah Preston,Ashlyn Krueger,wta_147,wta_100,WTA,
-2026-06-05,14:00,Makarska Open,Barbora Palicova,Elina Avanesyan,wta_221,wta_178,WTA,
-2026-06-05,14:00,Makarska Open,Andrea Lazaro Garcia,Darja Semenistaja,wta_206,wta_97,WTA,
+2026-06-05,Live,Makarska Open,Barbora Palicova,Elina Avanesyan,wta_221,wta_178,WTA,
+2026-06-05,Live,Makarska Open,Andrea Lazaro Garcia,Darja Semenistaja,wta_206,wta_97,WTA,
 2026-06-05,15:30,Makarska Open,Maria Timofeeva,Yasmine Kabbaj,wta_154,wta_361,WTA,
 2026-06-05,15:30,Makarska Open,Noma Noha Akugue,Sara Sorribes Tormo,wta_255,wta_451,WTA,
-2026-06-05,12:00,Open delle Puglie Trofeo,Chloe Paquet,Darya Astakhova,wta_215,wta_380,WTA,
-2026-06-05,13:30,Open delle Puglie Trofeo,Leyre Romero Gormaz,Carole Monnet,wta_140,wta_177,WTA,
+2026-06-05,14:20,Open delle Puglie Trofeo,Leyre Romero Gormaz,Carole Monnet,wta_140,wta_177,WTA,
 2026-06-05,16:00,Open delle Puglie Trofeo,Tyra Caterina Grant,Tatiana Pieri,wta_269,wta_383,WTA,
 2026-06-05,18:00,Open delle Puglie Trofeo,Giorgia Pedone,Lucia Bronzetti,wta_367,wta_138,WTA,
+2026-06-05,Final,Open delle Puglie Trofeo,Chloe Paquet,Darya Astakhova,wta_215,wta_380,WTA,
 2026-06-06,13:00,Roland Garros,Maja Chwalinska,Mirra Andreeva,wta_126,wta_7,WTA,Clay
