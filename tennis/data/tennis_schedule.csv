@@ -1,17 +1,17 @@
 Date,Time,Tournament,Player 1,Player 2
 2026-06-05,Final,Roland Garros,Jakub Mensik,Alexander Zverev
 2026-06-05,TBD,Roland Garros,Matteo Arnaldi,Flavio Cobolli
-2026-06-05,Live,Lexus Birmingham Open,Alexandra Eala,Mananchaya Sawangkaew
+2026-06-05,Final,Lexus Birmingham Open,Alexandra Eala,Mananchaya Sawangkaew
 2026-06-05,Final,Lexus Birmingham Open,Nikola Bartunkova,Mika Stojsavljevic
 2026-06-05,Final,Lexus Birmingham Open,Rebeka Masarova,Mary Stoiana
 2026-06-05,Final,Lexus Birmingham Open,Taylah Preston,Ashlyn Krueger
-2026-06-05,Live,Makarska Open,Andrea Lazaro Garcia,Darja Semenistaja
-2026-06-05,Live,Makarska Open,Maria Timofeeva,Yasmine Kabbaj
-2026-06-05,17:15,Makarska Open,Noma Noha Akugue,Sara Sorribes Tormo
+2026-06-05,Final,Makarska Open,Andrea Lazaro Garcia,Darja Semenistaja
+2026-06-05,Final,Makarska Open,Maria Timofeeva,Yasmine Kabbaj
+2026-06-05,Final,Makarska Open,Noma Noha Akugue,Sara Sorribes Tormo
 2026-06-05,Final,Makarska Open,Barbora Palicova,Elina Avanesyan
-2026-06-05,Live,Open delle Puglie Trofeo,Tyra Caterina Grant,Tatiana Pieri
-2026-06-05,18:00,Open delle Puglie Trofeo,Giorgia Pedone,Lucia Bronzetti
+2026-06-05,Live,Open delle Puglie Trofeo,Giorgia Pedone,Lucia Bronzetti
 2026-06-05,Final,Open delle Puglie Trofeo,Leyre Romero Gormaz,Carole Monnet
+2026-06-05,Final,Open delle Puglie Trofeo,Tyra Caterina Grant,Tatiana Pieri
 2026-06-05,Final,Open delle Puglie Trofeo,Chloe Paquet,Darya Astakhova
 2026-06-06,13:00,Roland Garros,Maja Chwalinska,Mirra Andreeva
 2026-06-06,09:00,Boss Open,Nikoloz Basilashvili,Marc-Andrea Huesler
@@ -28,7 +28,19 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-06,10:30,Libéma Open,Carol Young Suh Lee,Zhu Lin
 2026-06-06,10:30,Libéma Open,Hanne Vandewinkel,Mona Barthel
 2026-06-06,11:00,Libéma Open,Yuan Yue,Robin Montgomery
-2026-06-06,TBD,Lexus Birmingham Open,Nikola Bartunkova,Ashlyn Krueger
+2026-06-06,09:00,Libéma Open,Martin Damm,Max Houkes
+2026-06-06,09:00,Libéma Open,Thijmen Loof,Juan Pablo Ficovich
+2026-06-06,10:30,Libéma Open,Mackenzie McDonald,Niels Visker
+2026-06-06,10:30,Libéma Open,Michael Geerts,Elias Ymer
+2026-06-06,12:00,Libéma Open,Alec Deckers,Bernard Tomic
+2026-06-06,12:00,Libéma Open,Benjamin Bonzi,Marc Polmans
+2026-06-06,12:00,Libéma Open,Sander Jong,Shintaro Mochizuki
+2026-06-06,12:00,Libéma Open,Chak Lam Coleman Wong,James McCabe
+2026-06-06,10:00,Lexus Birmingham Open,Nikola Bartunkova,Ashlyn Krueger
+2026-06-06,10:00,Lexus Birmingham Open,Alexandra Eala,Rebeka Masarova
+2026-06-06,TBD,Makarska Open,Sara Sorribes Tormo,Maria Timofeeva
+2026-06-06,TBD,Makarska Open,Elina Avanesyan,Darja Semenistaja
+2026-06-06,15:30,Open delle Puglie Trofeo,Tyra Caterina Grant,Darya Astakhova
 2026-06-06,10:00,The HSBC Championships,Antonia Ruzic,Aoi Ito
 2026-06-06,10:00,The HSBC Championships,Storm Hunter,Aliaksandra Sasnovich
 2026-06-06,10:00,The HSBC Championships,Heather Watson,Beatriz Haddad Maia
