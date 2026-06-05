@@ -1,10 +1,10 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-05,12:30,Roland Garros,Jakub Mensik,Alexander Zverev,atp_16,atp_4,ATP,Clay
 2026-06-05,17:00,Roland Garros,Matteo Arnaldi,Flavio Cobolli,atp_85,atp_20,ATP,Clay
-2026-06-05,09:30,Lexus Birmingham Open,Taylah Preston,Ashlyn Krueger,wta_147,wta_100,WTA,
-2026-06-05,11:00,Lexus Birmingham Open,Rebeka Masarova,Mary Stoiana,wta_117,wta_185,WTA,
+2026-06-05,Live,Lexus Birmingham Open,Rebeka Masarova,Mary Stoiana,wta_117,wta_185,WTA,
 2026-06-05,12:30,Lexus Birmingham Open,Nikola Bartunkova,Mika Stojsavljevic,wta_104,wta_280,WTA,
 2026-06-05,14:00,Lexus Birmingham Open,Alexandra Eala,Mananchaya Sawangkaew,wta_45,wta_198,WTA,
+2026-06-05,Final,Lexus Birmingham Open,Taylah Preston,Ashlyn Krueger,wta_147,wta_100,WTA,
 2026-06-05,14:00,Makarska Open,Barbora Palicova,Elina Avanesyan,wta_221,wta_178,WTA,
 2026-06-05,14:00,Makarska Open,Andrea Lazaro Garcia,Darja Semenistaja,wta_206,wta_97,WTA,
 2026-06-05,15:30,Makarska Open,Maria Timofeeva,Yasmine Kabbaj,wta_154,wta_361,WTA,
