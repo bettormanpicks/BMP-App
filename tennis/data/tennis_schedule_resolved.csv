@@ -1,15 +1,43 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-06-05,Final,Roland Garros,Jakub Mensik,Alexander Zverev,atp_16,atp_4,ATP,Clay
-2026-06-05,TBD,Roland Garros,Matteo Arnaldi,Flavio Cobolli,atp_85,atp_20,ATP,Clay
-2026-06-05,Final,Lexus Birmingham Open,Alexandra Eala,Mananchaya Sawangkaew,wta_45,wta_198,WTA,
-2026-06-05,Final,Lexus Birmingham Open,Nikola Bartunkova,Mika Stojsavljevic,wta_104,wta_280,WTA,
-2026-06-05,Final,Lexus Birmingham Open,Rebeka Masarova,Mary Stoiana,wta_117,wta_185,WTA,
-2026-06-05,Final,Lexus Birmingham Open,Taylah Preston,Ashlyn Krueger,wta_147,wta_100,WTA,
-2026-06-05,Final,Makarska Open,Andrea Lazaro Garcia,Darja Semenistaja,wta_206,wta_97,WTA,
-2026-06-05,Final,Makarska Open,Maria Timofeeva,Yasmine Kabbaj,wta_54,wta_361,WTA,
-2026-06-05,Final,Makarska Open,Noma Noha Akugue,Sara Sorribes Tormo,wta_255,wta_451,WTA,
-2026-06-05,Final,Makarska Open,Barbora Palicova,Elina Avanesyan,wta_221,wta_178,WTA,
-2026-06-05,Final,Open delle Puglie Trofeo,Leyre Romero Gormaz,Carole Monnet,wta_140,wta_177,WTA,
-2026-06-05,Final,Open delle Puglie Trofeo,Giorgia Pedone,Lucia Bronzetti,wta_367,wta_138,WTA,
-2026-06-05,Final,Open delle Puglie Trofeo,Tyra Caterina Grant,Tatiana Pieri,wta_269,wta_383,WTA,
-2026-06-05,Final,Open delle Puglie Trofeo,Chloe Paquet,Darya Astakhova,wta_215,wta_380,WTA,
+2026-06-06,13:00,Roland Garros,Maja Chwalinska,Mirra Andreeva,wta_126,wta_7,WTA,Clay
+2026-06-06,09:00,Boss Open,Nikoloz Basilashvili,Marc-Andrea Huesler,atp_136,atp_9002,ATP,Grass
+2026-06-06,09:00,Boss Open,Tom Gentzsch,Gauthier Onclin,atp_243,atp_312,ATP,Grass
+2026-06-06,10:30,Boss Open,Sho Shimabukuro,Stefanos Sakellaridis,atp_135,atp_275,ATP,Grass
+2026-06-06,10:30,Boss Open,Luca Castelnuovo,Jurij Rodionov,atp_413,atp_175,ATP,Grass
+2026-06-06,12:00,Boss Open,Pierre-Hugues Herbert,Daniil Glinka,atp_189,atp_169,ATP,Grass
+2026-06-06,12:00,Boss Open,Yu Hsiou Hsu,Alexis Galarneau,atp_221,atp_242,ATP,Grass
+2026-06-06,13:30,Boss Open,Roman Safiullin,Petr Bar Biryukov,atp_185,atp_303,ATP,Grass
+2026-06-06,13:30,Boss Open,Lorenzo Sonego,Mert Alkaya,atp_64,atp_379,ATP,Grass
+2026-06-06,09:00,Libéma Open,Katie Volynets,Nao Hibino,wta_96,wta_196,WTA,
+2026-06-06,09:00,Libéma Open,Greet Minnen,Viktoriya Tomova,wta_129,wta_153,WTA,
+2026-06-06,09:00,Libéma Open,Ella Seidel,Claire Liu,wta_95,wta_213,WTA,
+2026-06-06,10:30,Libéma Open,Carol Young Suh Lee,Zhu Lin,wta_170,wta_141,WTA,
+2026-06-06,10:30,Libéma Open,Hanne Vandewinkel,Mona Barthel,wta_128,wta_203,WTA,
+2026-06-06,11:00,Libéma Open,Yuan Yue,Robin Montgomery,wta_122,wta_293,WTA,
+2026-06-06,09:00,Libéma Open,Martin Damm,Max Houkes,atp_125,atp_233,ATP,
+2026-06-06,09:00,Libéma Open,Thijmen Loof,Juan Pablo Ficovich,atp_9100,atp_182,ATP,
+2026-06-06,10:30,Libéma Open,Mackenzie McDonald,Niels Visker,atp_115,atp_565,ATP,
+2026-06-06,10:30,Libéma Open,Michael Geerts,Elias Ymer,atp_299,atp_9026,ATP,
+2026-06-06,12:00,Libéma Open,Alec Deckers,Bernard Tomic,atp_618,atp_186,ATP,
+2026-06-06,12:00,Libéma Open,Benjamin Bonzi,Marc Polmans,atp_123,atp_366,ATP,
+2026-06-06,12:00,Libéma Open,Sander Jong,Shintaro Mochizuki,atp_86,atp_116,ATP,
+2026-06-06,12:00,Libéma Open,Chak Lam Coleman Wong,James McCabe,atp_137,atp_210,ATP,
+2026-06-06,10:00,Lexus Birmingham Open,Nikola Bartunkova,Ashlyn Krueger,wta_104,wta_100,WTA,
+2026-06-06,10:00,Lexus Birmingham Open,Alexandra Eala,Rebeka Masarova,wta_45,wta_117,WTA,
+2026-06-06,15:00,Makarska Open,Sara Sorribes Tormo,Maria Timofeeva,wta_451,wta_54,WTA,
+2026-06-06,15:00,Makarska Open,Elina Avanesyan,Darja Semenistaja,wta_178,wta_97,WTA,
+2026-06-06,15:30,Open delle Puglie Trofeo,Tyra Caterina Grant,Darya Astakhova,wta_269,wta_380,WTA,
+2026-06-06,17:00,Open delle Puglie Trofeo,Lucia Bronzetti,Leyre Romero Gormaz,wta_138,wta_140,WTA,
+2026-06-06,10:00,The HSBC Championships,Antonia Ruzic,Aoi Ito,wta_67,wta_176,WTA,Grass
+2026-06-06,10:00,The HSBC Championships,Storm Hunter,Aliaksandra Sasnovich,wta_231,wta_113,WTA,Grass
+2026-06-06,10:00,The HSBC Championships,Heather Watson,Beatriz Haddad Maia,wta_278,wta_66,WTA,Grass
+2026-06-06,10:00,The HSBC Championships,Zhang Shuai,Hannah Klugman,wta_85,wta_9027,WTA,Grass
+2026-06-06,11:30,The HSBC Championships,Maddison Inglis,Alycia Parks,wta_123,wta_76,WTA,Grass
+2026-06-06,11:30,The HSBC Championships,Elsa Jacquemot,Guo Hanyu,wta_57,wta_186,WTA,Grass
+2026-06-06,11:30,The HSBC Championships,Tatjana Maria,Yuriko Lily Miyazaki,wta_54,wta_272,WTA,Grass
+2026-06-06,11:30,The HSBC Championships,Ekaterine Gorgodze,Kamilla Rakhimova,wta_167,wta_91,WTA,Grass
+2026-06-06,13:00,The HSBC Championships,Donna Vekic,Carole Monnet,wta_99,wta_177,WTA,Grass
+2026-06-06,13:00,The HSBC Championships,Jodie Burrage,Anna Blinkova,wta_399,wta_65,WTA,Grass
+2026-06-06,13:00,The HSBC Championships,Priscilla Hon,Polina Kudermetova,wta_130,wta_144,WTA,Grass
+2026-06-06,13:00,The HSBC Championships,Talia Gibson,Alina Charaeva,wta_111,wta_163,WTA,Grass
+2026-06-07,13:00,Roland Garros,Flavio Cobolli,Alexander Zverev,atp_20,atp_4,ATP,Clay
