@@ -6157,10 +6157,62 @@
         }
       },
       "date": "2026-06-06T00:30:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Frost Bank Center",
         "location": "San Antonio, TX"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 25
+            },
+            "home": {
+              "points": 34
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 31
+            },
+            "home": {
+              "points": 18
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 28
+            },
+            "home": {
+              "points": 23
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 21
+            },
+            "home": {
+              "points": 29
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 105
+          },
+          "home": {
+            "points": 104
+          }
+        }
       }
     },
     {
@@ -6279,5 +6331,5 @@
       }
     }
   ],
-  "updated": "2026-06-05T08:00:02Z"
+  "updated": "2026-06-06T08:00:02Z"
 }
