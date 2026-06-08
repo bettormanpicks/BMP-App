@@ -48,40 +48,52 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-07,Final,The HSBC Championships,Priscilla Hon,Polina Kudermetova
 2026-06-07,Final,The HSBC Championships,Talia Gibson,Alina Charaeva
 2026-06-07,Final,The HSBC Championships,Jodie Burrage,Anna Blinkova
-2026-06-08,09:00,Boss Open,Alejandro Davidovich Fokina,Mattia Bellucci
-2026-06-08,10:30,Boss Open,Pierre-Hugues Herbert,Martin Landaluce
-2026-06-08,13:00,Boss Open,Tommy Paul,Giovanni Mpetshi Perricard
-2026-06-08,14:00,Boss Open,Gauthier Onclin,Fabian Marozsan
-2026-06-08,09:00,Libéma Open,Nuno Borges,Terence Atmane
-2026-06-08,10:30,Libéma Open,Benjamin Bonzi,Mees Rottgering
-2026-06-08,12:30,Libéma Open,Marin Cilic,Denis Shapovalov
-2026-06-08,14:00,Libéma Open,Ugo Humbert,Elias Ymer
-2026-06-08,09:00,Libéma Open,Ekaterina Alexandrova,Panna Udvardy
-2026-06-08,09:00,Libéma Open,Magda Linette,Kimberly Birrell
-2026-06-08,10:30,Libéma Open,Bianca Andreescu,Elise Mertens
-2026-06-08,10:30,Libéma Open,Daria Kasatkina,Robin Montgomery
-2026-06-08,12:30,Libéma Open,Daria Snigur,Paula Badosa
-2026-06-08,14:00,Libéma Open,Mia Pohankova,Clara Tauson
-2026-06-08,09:30,Lexus Ilkley Open,Edie Griffiths,Naiktha Bains
-2026-06-08,10:00,Lexus Ilkley Open,Harmony Tan,Emily Appleton
-2026-06-08,10:00,Lexus Ilkley Open,Ella McDonald,Ranah Stoiber
-2026-06-08,10:30,Lexus Ilkley Open,Celine Naef,Momoko Kobori
-2026-06-08,11:30,Lexus Ilkley Open,Kayla Cross,Tereza Martincova
-2026-06-08,12:00,Lexus Ilkley Open,Iryna Shymanovich,Clervie Ngounoue
-2026-06-08,12:30,Lexus Ilkley Open,Alicia Dudeney,Himeno Sakatsume
-2026-06-08,12:30,Lexus Ilkley Open,Viktorija Golubic,Daniella Britton
-2026-06-08,13:30,Lexus Ilkley Open,Veronika Podrez,Tatiana Prozorova
-2026-06-08,14:00,Lexus Ilkley Open,Linda Klimovicova,Sinja Kraus
-2026-06-08,14:00,Lexus Ilkley Open,Darja Vidmanova,Linda Fruhvirtova
-2026-06-08,15:00,Lexus Ilkley Open,Mananchaya Sawangkaew,Akasha Urhobo
-2026-06-08,10:30,Memorial Eugenio Fontana,Wang Xiyu,Laura Samson
-2026-06-08,12:00,Memorial Eugenio Fontana,Kaitlin Quevedo,Jazmin Ortenzi
-2026-06-08,13:30,Memorial Eugenio Fontana,Noma Noha Akugue,Tiantsoa Rakotomanga Rajaonah
-2026-06-08,16:00,Memorial Eugenio Fontana,Jeline Vandromme,Angela Fita Boluda
-2026-06-08,16:00,Memorial Eugenio Fontana,Martina Trevisan,Jennifer Ruggeri
-2026-06-08,18:30,Memorial Eugenio Fontana,Katarzyna Kawa,Lisa Pigato
-2026-06-08,11:00,The HSBC Championships,Harriet Dart,Liudmila Samsonova
-2026-06-08,11:00,The HSBC Championships,Karolina Pliskova,McCartney Kessler
-2026-06-08,12:00,The HSBC Championships,Zheng Qinwen,Jaqueline Cristian
-2026-06-08,13:30,The HSBC Championships,Katie Boulter,Leylah Fernandez
-2026-06-08,14:00,The HSBC Championships,Laura Siegemund,Francesca Jones
+2026-06-07,Final,Roland Garros,Flavio Cobolli,Alexander Zverev
+2026-06-07,Final,Boss Open,Mert Alkaya,Pierre-Hugues Herbert
+2026-06-07,Final,Boss Open,Roman Safiullin,Alexis Galarneau
+2026-06-07,Final,Boss Open,Sho Shimabukuro,Jurij Rodionov
+2026-06-07,Final,Boss Open,Marc-Andrea Huesler,Gauthier Onclin
+2026-06-07,Final,Libéma Open,Benjamin Bonzi,Bernard Tomic
+2026-06-07,Final,Libéma Open,James McCabe,Sander Jong
+2026-06-07,Final,Libéma Open,Niels Visker,Elias Ymer
+2026-06-07,Final,Libéma Open,Martin Damm,Juan Pablo Ficovich
+2026-06-07,Final,Libéma Open,Robin Montgomery,Joanna Garland
+2026-06-07,Final,Libéma Open,Katie Volynets,Zhu Lin
+2026-06-07,Final,Libéma Open,Hanne Vandewinkel,Anouk Koevermans
+2026-06-07,Final,Libéma Open,Ella Seidel,Greet Minnen
+2026-06-07,Final,Lexus Birmingham Open,Alexandra Eala,Nikola Bartunkova
+2026-06-07,Final,Lexus Ilkley Open,Kayla Cross,Megan Knight
+2026-06-07,Final,Lexus Ilkley Open,Vendula Valdmannova,Sayaka Ishii
+2026-06-07,Final,Lexus Ilkley Open,Iryna Shymanovich,Savannah Dada-Mascoll
+2026-06-07,Final,Lexus Ilkley Open,Mariia Kozyreva,Clervie Ngounoue
+2026-06-07,Final,Lexus Ilkley Open,Brooke Anna Black,Tereza Martincova
+2026-06-07,Final,Lexus Ilkley Open,Katy Dunne,Momoko Kobori
+2026-06-07,Final,Lexus Ilkley Open,Ranah Stoiber,Victoria Allen
+2026-06-07,Final,Lexus Ilkley Open,Celine Naef,Hiroko Kuwata
+2026-06-07,Final,Lexus Ilkley Open,Elena Pridankina,Ella McDonald
+2026-06-07,Final,Lexus Ilkley Open,Harmony Tan,Amelia Rajecki
+2026-06-07,Final,Lexus Ilkley Open,Tegan Bush,Emily Appleton
+2026-06-07,Final,Makarska Open,Darja Semenistaja,Maria Timofeeva
+2026-06-07,Final,Memorial Eugenio Fontana,Noemi Basiletti,Beatrice Ricci
+2026-06-07,Final,Memorial Eugenio Fontana,Victoria Bosio,Francesca Pace
+2026-06-07,Final,Memorial Eugenio Fontana,Tiantsoa Rakotomanga Rajaonah,Chloe Paquet
+2026-06-07,Final,Memorial Eugenio Fontana,Jazmin Ortenzi,Viola Turini
+2026-06-07,Final,Open delle Puglie Trofeo,Leyre Romero Gormaz,Tyra Caterina Grant
+2026-06-07,Final,The HSBC Championships,Guo Hanyu,Maddison Inglis
+2026-06-07,Final,The HSBC Championships,Tatjana Maria,Kamilla Rakhimova
+2026-06-07,Final,The HSBC Championships,Antonia Ruzic,Storm Hunter
+2026-06-07,Final,The HSBC Championships,Zhang Shuai,Heather Watson
+2026-06-07,Final,The HSBC Championships,Alina Charaeva,Polina Kudermetova
+2026-06-07,Final,The HSBC Championships,Donna Vekic,Anna Blinkova
+2026-06-07,Final,The HSBC Championships,Ekaterine Gorgodze,Kamilla Rakhimova
+2026-06-07,Final,The HSBC Championships,Elsa Jacquemot,Guo Hanyu
+2026-06-07,Final,The HSBC Championships,Maddison Inglis,Alycia Parks
+2026-06-07,Final,The HSBC Championships,Tatjana Maria,Yuriko Lily Miyazaki
+2026-06-07,Final,The HSBC Championships,Storm Hunter,Aliaksandra Sasnovich
+2026-06-07,Final,The HSBC Championships,Antonia Ruzic,Aoi Ito
+2026-06-07,Final,The HSBC Championships,Zhang Shuai,Hannah Klugman
+2026-06-07,Final,The HSBC Championships,Heather Watson,Beatriz Haddad Maia
+2026-06-07,Final,The HSBC Championships,Donna Vekic,Carole Monnet
+2026-06-07,Final,The HSBC Championships,Priscilla Hon,Polina Kudermetova
+2026-06-07,Final,The HSBC Championships,Talia Gibson,Alina Charaeva
+2026-06-07,Final,The HSBC Championships,Jodie Burrage,Anna Blinkova
