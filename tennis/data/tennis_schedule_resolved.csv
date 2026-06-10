@@ -1,43 +1,53 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-06-09,Final,Boss Open,Daniel Altmaier,Frances Tiafoe,atp_54,atp_28,ATP,Grass
-2026-06-09,Final,Boss Open,Nick Kyrgios,Corentin Moutet,atp_9001,atp_34,ATP,Grass
-2026-06-09,Final,Boss Open,Diego Dedura,James Duckworth,atp_310,atp_80,ATP,Grass
-2026-06-09,Final,Boss Open,Tom Gentzsch,Rinky Hijikata,atp_243,atp_112,ATP,Grass
-2026-06-09,Final,Boss Open,Jan-Lennard Struff,Alexis Galarneau,atp_77,atp_242,ATP,Grass
-2026-06-09,Final,Boss Open,Roman Safiullin,Giovanni Mpetshi Perricard,atp_185,atp_58,ATP,Grass
-2026-06-09,Final,Boss Open,Quentin Halys,Sho Shimabukuro,atp_72,atp_135,ATP,Grass
-2026-06-09,Final,Boss Open,Roberto Bautista Agut,Marcos Giron,atp_82,atp_63,ATP,Grass
-2026-06-09,Final,Boss Open,Yannick Hanfmann,Aleksandar Kovacevic,atp_90,atp_75,ATP,Grass
-2026-06-09,Final,Libéma Open,Zhang Zhizhen,Jenson Brooksby,atp_449,atp_46,ATP,
-2026-06-09,Final,Libéma Open,Jaume Munar,Martin Damm,atp_35,atp_383,ATP,
-2026-06-09,Final,Libéma Open,Gabriel Diallo,Adrian Mannarino,atp_39,atp_48,ATP,
-2026-06-09,Final,Libéma Open,Dayana Yastremska,Sara Bejlek,wta_43,wta_41,WTA,
-2026-06-09,Final,Libéma Open,Greet Minnen,Janice Tjen,wta_129,wta_47,WTA,
-2026-06-09,Final,Libéma Open,Barbora Krejcikova,Renata Zarazua,wta_53,wta_87,WTA,
-2026-06-09,Final,Libéma Open,Tamara Korpatsch,Elena-Gabriela Ruse,wta_106,wta_79,WTA,
-2026-06-09,Final,Libéma Open,Katie Volynets,Zeynep Sonmez,wta_96,wta_84,WTA,
-2026-06-09,Final,Lexus Ilkley Open,Darja Vidmanova,Linda Fruhvirtova,wta_127,wta_118,WTA,
-2026-06-09,Final,Lexus Ilkley Open,Lulu Sun,Ella McDonald,wta_98,atp_115,WTA,
-2026-06-09,Final,Lexus Ilkley Open,Alina Korneeva,Celine Naef,wta_146,wta_260,WTA,
-2026-06-09,Final,Lexus Ilkley Open,Elvina Kalieva,Ashlyn Krueger,wta_158,wta_100,WTA,
-2026-06-09,Final,Lexus Ilkley Open,Kayla Day,Mary Stoiana,wta_194,wta_185,WTA,
-2026-06-09,Final,Lexus Ilkley Open,Lucrezia Stefanini,Vendula Valdmannova,wta_136,wta_286,WTA,
-2026-06-09,Final,Memorial Eugenio Fontana,Victoria Jimenez Kasintseva,Jessica Pieri,wta_119,wta_383,WTA,
-2026-06-09,Final,Memorial Eugenio Fontana,Marina Bassols Ribera,Darja Semenistaja,wta_209,wta_97,WTA,
-2026-06-09,Final,Memorial Eugenio Fontana,Dominika Salkova,Alice Tubello,wta_151,wta_435,WTA,
-2026-06-09,Final,Memorial Eugenio Fontana,Andrea Lazaro Garcia,Julia Grabher,wta_206,wta_80,WTA,
-2026-06-09,Final,Memorial Eugenio Fontana,Giorgia Pedone,Mayar Sherif,wta_367,wta_108,WTA,
-2026-06-09,Final,Memorial Eugenio Fontana,Tamara Zidansek,Federica Urgesi,wta_145,wta_438,WTA,
-2026-06-09,Final,Memorial Eugenio Fontana,Noemi Basiletti,Varvara Lepchenko,wta_511,wta_149,WTA,
-2026-06-09,Final,Memorial Eugenio Fontana,Leyre Romero Gormaz,You Xiaodi,wta_140,wta_252,WTA,
-2026-06-09,Final,Memorial Eugenio Fontana,Victoria Bosio,Nuria Brancaccio,wta_337,wta_164,WTA,
-2026-06-09,Final,Memorial Eugenio Fontana,Gao Xinyu,Lucia Bronzetti,wta_262,wta_138,WTA,
-2026-06-09,Final,The HSBC Championships,Iva Jovic,Antonia Ruzic,wta_20,wta_67,WTA,Grass
-2026-06-09,Final,The HSBC Championships,Sorana Cirstea,Maddison Inglis,wta_30,wta_123,WTA,Grass
-2026-06-09,Final,The HSBC Championships,Katie Boulter,Leylah Fernandez,wta_83,wta_28,WTA,Grass
-2026-06-09,Final,The HSBC Championships,Mika Stojsavljevic,Donna Vekic,wta_280,wta_99,WTA,Grass
-2026-06-09,Final,The HSBC Championships,Marie Bouzkova,Polina Kudermetova,wta_39,wta_144,WTA,Grass
-2026-06-09,Final,The HSBC Championships,Maria Sakkari,Tatjana Maria,wta_33,wta_54,WTA,Grass
-2026-06-09,Final,The HSBC Championships,Zhang Shuai,Alexandra Eala,wta_85,wta_45,WTA,Grass
-2026-06-09,Final,The HSBC Championships,Laura Siegemund,Francesca Jones,wta_52,wta_72,WTA,Grass
-2026-06-09,Final,The HSBC Championships,Emma Raducanu,Anna Blinkova,wta_25,wta_82,WTA,Grass
+2026-06-10,09:00,Boss Open,Giovanni Mpetshi Perricard,Gauthier Onclin,atp_58,atp_312,ATP,Grass
+2026-06-10,09:00,Boss Open,Mattia Bellucci,Yannick Hanfmann,atp_109,atp_90,ATP,Grass
+2026-06-10,10:30,Boss Open,Jan-Lennard Struff,Alexander Bublik,atp_77,atp_10,ATP,Grass
+2026-06-10,13:00,Boss Open,Martin Landaluce,Taylor Fritz,atp_158,atp_7,ATP,Grass
+2026-06-10,09:00,Libéma Open,James McCabe,Zizou Bergs,atp_210,atp_43,ATP,
+2026-06-10,09:00,Libéma Open,Otto Virtanen,Kamil Majchrzak,atp_128,atp_56,ATP,
+2026-06-10,09:00,Libéma Open,Thijs Boogaard,Wu Yibing,atp_9041,atp_145,ATP,
+2026-06-10,10:00,Libéma Open,Hubert Hurkacz,Marton Fucsovics,atp_71,atp_60,ATP,
+2026-06-10,11:00,Libéma Open,Tallon Griekspoor,Botic Van De Zandschulp,atp_25,atp_55,ATP,
+2026-06-10,12:30,Libéma Open,Martin Damm,Alex de Minaur,atp_125,atp_8,ATP,
+2026-06-10,14:00,Libéma Open,Ugo Humbert,Benjamin Bonzi,atp_38,atp_123,ATP,
+2026-06-10,09:00,Libéma Open,Lois Boisson,Solana Sierra,wta_35,wta_64,WTA,
+2026-06-10,09:00,Libéma Open,Anastasia Potapova,Suzan Lamens,wta_75,wta_109,WTA,
+2026-06-10,10:00,Libéma Open,Nikola Bartunkova,Hanne Vandewinkel,wta_104,wta_128,WTA,
+2026-06-10,10:00,Libéma Open,Emma Navarro,Catherine McNally,wta_19,wta_68,WTA,
+2026-06-10,10:30,Libéma Open,Jessica Bouzas Maneiro,Ajla Tomljanovic,wta_48,wta_73,WTA,
+2026-06-10,11:30,Libéma Open,Panna Udvardy,Daria Snigur,wta_93,wta_132,WTA,
+2026-06-10,13:00,Libéma Open,Robin Montgomery,Greet Minnen,wta_293,wta_129,WTA,
+2026-06-10,09:30,Lexus Ilkley Open,Tereza Martincova,Katie Swan,wta_351,wta_271,WTA,
+2026-06-10,09:30,Lexus Ilkley Open,Emerson Jones,Dalma Galfi,wta_72,wta_86,WTA,
+2026-06-10,11:00,Lexus Ilkley Open,Iryna Shymanovich,Lanlana Tararudee,wta_156,wta_124,WTA,
+2026-06-10,11:00,Lexus Ilkley Open,Taylah Preston,Harmony Tan,wta_147,wta_229,WTA,
+2026-06-10,11:00,Lexus Ilkley Open,Mingge Xu,Elizabeth Mandlik,wta_238,wta_168,WTA,
+2026-06-10,12:30,Lexus Ilkley Open,Lulu Sun,Mary Stoiana,wta_98,wta_185,WTA,
+2026-06-10,12:30,Lexus Ilkley Open,Alicia Dudeney,Ashlyn Krueger,wta_440,wta_100,WTA,
+2026-06-10,12:30,Lexus Ilkley Open,Tatiana Prozorova,Sinja Kraus,wta_166,wta_105,WTA,
+2026-06-10,14:00,Lexus Ilkley Open,Celine Naef,Akasha Urhobo,wta_260,wta_307,WTA,
+2026-06-10,10:00,Memorial Eugenio Fontana,Noma Noha Akugue,Katarzyna Kawa,wta_255,wta_143,WTA,
+2026-06-10,11:30,Memorial Eugenio Fontana,Kaitlin Quevedo,Jeline Vandromme,wta_131,wta_291,WTA,
+2026-06-10,14:00,Memorial Eugenio Fontana,Laura Samson,Darja Semenistaja,wta_212,wta_97,WTA,
+2026-06-10,14:30,Memorial Eugenio Fontana,Dominika Salkova,Martina Trevisan,wta_151,wta_685,WTA,
+2026-06-10,10:30,The HSBC Championships,Iva Jovic,Alexandra Eala,wta_20,wta_45,WTA,Grass
+2026-06-10,11:30,The HSBC Championships,Laura Siegemund,Amanda Anisimova,wta_52,wta_6,WTA,Grass
+2026-06-10,12:30,The HSBC Championships,Victoria Mboko,Karolina Pliskova,wta_10,wta_267,WTA,Grass
+2026-06-10,16:30,The HSBC Championships,Marie Bouzkova,Donna Vekic,wta_39,wta_99,WTA,Grass
+2026-06-11,TBD,Boss Open,Sho Shimabukuro,Nick Kyrgios,atp_135,atp_9001,ATP,Grass
+2026-06-11,TBD,Boss Open,Jiri Lehecka,James Duckworth,atp_21,atp_80,ATP,Grass
+2026-06-11,TBD,Boss Open,Ben Shelton,Marcos Giron,atp_9,atp_63,ATP,Grass
+2026-06-11,TBD,Boss Open,Rinky Hijikata,Frances Tiafoe,atp_112,atp_28,ATP,Grass
+2026-06-11,TBD,Libéma Open,Nuno Borges,Marin Cilic,atp_44,atp_52,ATP,
+2026-06-11,TBD,Libéma Open,Adrian Mannarino,Arthur Rinderknech,atp_48,atp_30,ATP,
+2026-06-11,TBD,Libéma Open,Elena-Gabriela Ruse,Elise Mertens,wta_79,wta_22,WTA,
+2026-06-11,TBD,Libéma Open,Magda Linette,Mia Pohankova,wta_50,wta_273,WTA,
+2026-06-11,TBD,Lexus Ilkley Open,Darja Vidmanova,Lucrezia Stefanini,wta_127,wta_136,WTA,
+2026-06-11,TBD,Memorial Eugenio Fontana,Lucia Bronzetti,Julia Grabher,wta_138,wta_80,WTA,
+2026-06-11,TBD,Memorial Eugenio Fontana,Tamara Zidansek,Nuria Brancaccio,wta_145,wta_164,WTA,
+2026-06-11,TBD,Memorial Eugenio Fontana,Leyre Romero Gormaz,Mayar Sherif,wta_140,wta_108,WTA,
+2026-06-11,TBD,Memorial Eugenio Fontana,Victoria Jimenez Kasintseva,Varvara Lepchenko,wta_119,wta_149,WTA,
+2026-06-11,TBD,The HSBC Championships,Elena Rybakina,Tatjana Maria,wta_3,wta_54,WTA,Grass
+2026-06-11,TBD,The HSBC Championships,Jaqueline Cristian,Katie Boulter,wta_38,wta_83,WTA,Grass
+2026-06-11,TBD,The HSBC Championships,Sorana Cirstea,Emma Raducanu,wta_30,wta_25,WTA,Grass
+2026-06-11,TBD,The HSBC Championships,Harriet Dart,Belinda Bencic,wta_169,wta_12,WTA,Grass
