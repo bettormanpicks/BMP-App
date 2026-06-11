@@ -6307,10 +6307,62 @@
         }
       },
       "date": "2026-06-11T00:30:00Z",
-      "status": "Scheduled",
+      "status": "Final",
       "venue": {
         "name": "Madison Square Garden",
         "location": "New York, NY"
+      },
+      "scores": {
+        "periods": [
+          {
+            "number": 1,
+            "type": "Regulation",
+            "away": {
+              "points": 41
+            },
+            "home": {
+              "points": 22
+            }
+          },
+          {
+            "number": 2,
+            "type": "Regulation",
+            "away": {
+              "points": 35
+            },
+            "home": {
+              "points": 27
+            }
+          },
+          {
+            "number": 3,
+            "type": "Regulation",
+            "away": {
+              "points": 14
+            },
+            "home": {
+              "points": 26
+            }
+          },
+          {
+            "number": 4,
+            "type": "Regulation",
+            "away": {
+              "points": 16
+            },
+            "home": {
+              "points": 32
+            }
+          }
+        ],
+        "total": {
+          "away": {
+            "points": 106
+          },
+          "home": {
+            "points": 107
+          }
+        }
       }
     },
     {
@@ -6383,5 +6435,5 @@
       }
     }
   ],
-  "updated": "2026-06-10T08:00:02Z"
+  "updated": "2026-06-11T08:00:02Z"
 }
