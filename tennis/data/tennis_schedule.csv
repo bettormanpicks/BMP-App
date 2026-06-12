@@ -1,34 +1,58 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-06-12,12:15,Boss Open,Ben Shelton,Marcos Giron
-2026-06-12,12:15,Boss Open,Giovanni Mpetshi Perricard,Alexander Bublik
-2026-06-12,13:45,Boss Open,Mattia Bellucci,Taylor Fritz
-2026-06-12,16:45,Boss Open,Jiri Lehecka,Frances Tiafoe
-2026-06-12,Live,Libéma Open,Ajla Tomljanovic,Dayana Yastremska
-2026-06-12,12:20,Libéma Open,Zeynep Sonmez,Magda Linette
-2026-06-12,12:30,Libéma Open,Daria Snigur,Robin Montgomery
+2026-06-12,Live,Boss Open,Mattia Bellucci,Taylor Fritz
+2026-06-12,17:30,Boss Open,Ben Shelton,Sho Shimabukuro
+2026-06-12,Final,Boss Open,Ben Shelton,Marcos Giron
+2026-06-12,Final,Boss Open,Giovanni Mpetshi Perricard,Alexander Bublik
+2026-06-12,Final,Boss Open,Jiri Lehecka,Frances Tiafoe
+2026-06-12,Live,Libéma Open,Catherine McNally,Ajla Tomljanovic
 2026-06-12,Final,Libéma Open,Barbora Krejcikova,Elena-Gabriela Ruse
+2026-06-12,Final,Libéma Open,Daria Snigur,Robin Montgomery
+2026-06-12,Final,Libéma Open,Zeynep Sonmez,Magda Linette
+2026-06-12,Final,Libéma Open,Ajla Tomljanovic,Dayana Yastremska
 2026-06-12,Final,Libéma Open,Catherine McNally,Solana Sierra
-2026-06-12,Live,Libéma Open,Daniil Medvedev,Thijs Boogaard
-2026-06-12,Live,Libéma Open,Nuno Borges,Marin Cilic
-2026-06-12,12:30,Libéma Open,Benjamin Bonzi,Alex de Minaur
-2026-06-12,13:45,Libéma Open,Felix Auger-Aliassime,Kamil Majchrzak
+2026-06-12,Final,Libéma Open,Felix Auger-Aliassime,Kamil Majchrzak
+2026-06-12,Final,Libéma Open,Benjamin Bonzi,Alex de Minaur
+2026-06-12,TBD,Libéma Open,Daniil Medvedev,Marin Cilic
+2026-06-12,Final,Libéma Open,Daniil Medvedev,Thijs Boogaard
+2026-06-12,Final,Libéma Open,Nuno Borges,Marin Cilic
 2026-06-12,Final,Libéma Open,Zhang Zhizhen,Adrian Mannarino
-2026-06-12,Live,Lexus Ilkley Open,Lulu Sun,Mary Stoiana
-2026-06-12,Live,Lexus Ilkley Open,Tatiana Prozorova,Sinja Kraus
-2026-06-12,12:30,Lexus Ilkley Open,Elizabeth Mandlik,Dalma Galfi
-2026-06-12,12:30,Lexus Ilkley Open,Alicia Dudeney,Ashlyn Krueger
-2026-06-12,12:30,Lexus Ilkley Open,Darja Vidmanova,Lucrezia Stefanini
-2026-06-12,12:30,Lexus Ilkley Open,Viktorija Golubic,Katie Swan
-2026-06-12,14:00,Lexus Ilkley Open,Harmony Tan,Lanlana Tararudee
-2026-06-12,14:00,Lexus Ilkley Open,Celine Naef,Akasha Urhobo
-2026-06-12,12:20,Memorial Eugenio Fontana,Victoria Jimenez Kasintseva,Leyre Romero Gormaz
-2026-06-12,16:00,Memorial Eugenio Fontana,Nuria Brancaccio,Lucia Bronzetti
+2026-06-12,Live,Lexus Ilkley Open,Darja Vidmanova,Elizabeth Mandlik
+2026-06-12,Live,Lexus Ilkley Open,Katie Swan,Ashlyn Krueger
+2026-06-12,17:35,Lexus Ilkley Open,Celine Naef,Harmony Tan
+2026-06-12,Final,Lexus Ilkley Open,Viktorija Golubic,Katie Swan
+2026-06-12,Final,Lexus Ilkley Open,Harmony Tan,Lanlana Tararudee
+2026-06-12,Final,Lexus Ilkley Open,Tatiana Prozorova,Sinja Kraus
+2026-06-12,Final,Lexus Ilkley Open,Darja Vidmanova,Lucrezia Stefanini
+2026-06-12,Final,Lexus Ilkley Open,Lulu Sun,Mary Stoiana
+2026-06-12,Final,Lexus Ilkley Open,Elizabeth Mandlik,Dalma Galfi
+2026-06-12,Final,Lexus Ilkley Open,Alicia Dudeney,Ashlyn Krueger
+2026-06-12,Final,Lexus Ilkley Open,Mary Stoiana,Tatiana Prozorova
+2026-06-12,Final,Lexus Ilkley Open,Celine Naef,Akasha Urhobo
+2026-06-12,Live,Memorial Eugenio Fontana,Nuria Brancaccio,Lucia Bronzetti
 2026-06-12,18:30,Memorial Eugenio Fontana,Kaitlin Quevedo,Laura Samson
+2026-06-12,Final,Memorial Eugenio Fontana,Victoria Jimenez Kasintseva,Leyre Romero Gormaz
 2026-06-12,Final,Memorial Eugenio Fontana,Dominika Salkova,Katarzyna Kawa
-2026-06-12,Live,The HSBC Championships,Elena Rybakina,Tatjana Maria
-2026-06-12,Live,The HSBC Championships,Harriet Dart,Kamilla Rakhimova
-2026-06-12,12:20,The HSBC Championships,Sorana Cirstea,Emma Raducanu
-2026-06-12,13:00,The HSBC Championships,Iva Jovic,Amanda Anisimova
-2026-06-12,13:30,The HSBC Championships,Karolina Pliskova,Donna Vekic
+2026-06-12,Live,The HSBC Championships,Elena Rybakina,Katie Boulter
+2026-06-12,17:30,The HSBC Championships,Emma Raducanu,Kamilla Rakhimova
+2026-06-12,Final,The HSBC Championships,Elena Rybakina,Tatjana Maria
+2026-06-12,Final,The HSBC Championships,Iva Jovic,Amanda Anisimova
+2026-06-12,Final,The HSBC Championships,Sorana Cirstea,Emma Raducanu
+2026-06-12,Final,The HSBC Championships,Karolina Pliskova,Donna Vekic
+2026-06-12,Final,The HSBC Championships,Harriet Dart,Kamilla Rakhimova
 2026-06-12,Final,The HSBC Championships,Marie Bouzkova,Donna Vekic
 2026-06-12,Final,The HSBC Championships,Jaqueline Cristian,Katie Boulter
+2026-06-13,09:00,Libéma Open,Barbora Krejcikova,Magda Linette
+2026-06-13,13:00,Libéma Open,Adrian Mannarino,Alex de Minaur
+2026-06-13,16:30,Memorial Eugenio Fontana,Victoria Jimenez Kasintseva,Katarzyna Kawa
+2026-06-13,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Nikola Bartunkova,Noma Noha Akugue
+2026-06-13,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Milena Steinkamp,Zhang Shuai
+2026-06-13,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Magdalena Frech,Aliaksandra Sasnovich
+2026-06-13,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Mia Pohankova,Tamara Korpatsch
+2026-06-13,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Petra Marcinko,Aoi Ito
+2026-06-13,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Tessa Johanna Brockmann,Alycia Parks
+2026-06-13,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Diane Parry,Ella Seidel
+2026-06-13,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Maria Timofeeva,Renata Zarazua
+2026-06-13,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Katerina Siniakova,Yuan Yue
+2026-06-13,14:00,VANDA Pharmaceuticals Berlin Tennis Open,Lulu Sun,Anhelina Kalinina
+2026-06-13,14:00,VANDA Pharmaceuticals Berlin Tennis Open,Polina Kudermetova,Sinja Kraus
+2026-06-13,14:00,VANDA Pharmaceuticals Berlin Tennis Open,Wang Xinyu,Dalma Galfi
