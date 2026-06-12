@@ -25,9 +25,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-12,Final,Lexus Ilkley Open,Celine Naef,Harmony Tan,wta_260,wta_229,WTA,
 2026-06-12,Final,Lexus Ilkley Open,Mary Stoiana,Tatiana Prozorova,wta_185,wta_166,WTA,
 2026-06-12,Final,Lexus Ilkley Open,Celine Naef,Akasha Urhobo,wta_260,wta_307,WTA,
-2026-06-12,Live,Memorial Eugenio Fontana,Kaitlin Quevedo,Laura Samson,wta_131,wta_212,WTA,
 2026-06-12,Final,Memorial Eugenio Fontana,Victoria Jimenez Kasintseva,Leyre Romero Gormaz,wta_119,wta_140,WTA,
 2026-06-12,Final,Memorial Eugenio Fontana,Dominika Salkova,Katarzyna Kawa,wta_151,wta_143,WTA,
+2026-06-12,Final,Memorial Eugenio Fontana,Kaitlin Quevedo,Laura Samson,wta_131,wta_212,WTA,
 2026-06-12,Final,Memorial Eugenio Fontana,Nuria Brancaccio,Lucia Bronzetti,wta_164,wta_138,WTA,
 2026-06-12,Final,The HSBC Championships,Elena Rybakina,Katie Boulter,wta_3,wta_83,WTA,Grass
 2026-06-12,Final,The HSBC Championships,Elena Rybakina,Tatjana Maria,wta_3,wta_54,WTA,Grass
@@ -49,6 +49,14 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-13,09:00,Libéma Open,Barbora Krejcikova,Magda Linette,wta_53,wta_50,WTA,
 2026-06-13,10:30,Libéma Open,Daniil Medvedev,Marin Cilic,atp_11,atp_52,ATP,
 2026-06-13,13:00,Libéma Open,Adrian Mannarino,Alex de Minaur,atp_48,atp_8,ATP,
+2026-06-13,09:00,Terra Wortmann Open,Diego Dedura,Nikoloz Basilashvili,atp_310,atp_136,ATP,
+2026-06-13,09:00,Terra Wortmann Open,Lorenzo Sonego,Filip Cristian Jianu,atp_64,atp_245,ATP,
+2026-06-13,10:30,Terra Wortmann Open,Jamie Mackenzie,Alex Bolt,atp_9017,atp_167,WTA,
+2026-06-13,10:30,Terra Wortmann Open,Tiago Pereira,Tom Gentzsch,atp_268,atp_330,ATP,
+2026-06-13,10:30,Terra Wortmann Open,Benito Sanchez Martinez,Roberto Bautista Agut,atp_101,atp_82,ATP,
+2026-06-13,12:30,Terra Wortmann Open,Mattia Bellucci,Mikhail Kukushkin,atp_109,atp_262,ATP,
+2026-06-13,12:30,Terra Wortmann Open,Martin Landaluce,Marc-Andrea Huesler,atp_383,atp_9002,ATP,
+2026-06-13,12:30,Terra Wortmann Open,Raphael Collignon,Aziz Dougaz,atp_68,atp_400,ATP,
 2026-06-13,12:00,Lexus Ilkley Open,Ashlyn Krueger,Darja Vidmanova,wta_100,wta_127,WTA,
 2026-06-13,13:00,Lexus Ilkley Open,Mary Stoiana,Celine Naef,wta_185,wta_260,WTA,
 2026-06-13,10:00,Lexus Nottingham Open,Emiliana Arango,Anna Bondar,wta_58,wta_65,WTA,Grass
@@ -63,7 +71,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-13,14:30,Lexus Nottingham Open,Oksana Selekhmeteva,Kamilla Rakhimova,wta_74,wta_91,WTA,Grass
 2026-06-13,14:30,Lexus Nottingham Open,Zeynep Sonmez,Lanlana Tararudee,wta_84,wta_124,WTA,Grass
 2026-06-13,16:30,Memorial Eugenio Fontana,Victoria Jimenez Kasintseva,Katarzyna Kawa,wta_119,wta_143,WTA,
-2026-06-13,TBD,The HSBC Championships,Katie Boulter,Donna Vekic,wta_83,wta_99,WTA,Grass
+2026-06-13,18:00,Memorial Eugenio Fontana,Lucia Bronzetti,Laura Samson,wta_138,wta_212,WTA,
+2026-06-13,11:30,The HSBC Championships,Emma Raducanu,Kamilla Rakhimova,wta_25,wta_91,WTA,Grass
+2026-06-13,12:30,The HSBC Championships,Katie Boulter,Donna Vekic,wta_83,wta_99,WTA,Grass
 2026-06-13,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Nikola Bartunkova,Noma Noha Akugue,wta_104,wta_255,WTA,Grass
 2026-06-13,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Milena Steinkamp,Zhang Shuai,wta_9100,wta_85,ATP,Grass
 2026-06-13,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Magdalena Frech,Aliaksandra Sasnovich,wta_55,wta_113,WTA,Grass
@@ -71,7 +81,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-13,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Petra Marcinko,Aoi Ito,wta_69,wta_176,WTA,Grass
 2026-06-13,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Tessa Johanna Brockmann,Alycia Parks,wta_289,wta_76,WTA,Grass
 2026-06-13,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Diane Parry,Ella Seidel,wta_107,wta_95,WTA,Grass
-2026-06-13,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Maria Timofeeva,Renata Zarazua,wta_154,wta_87,WTA,Grass
+2026-06-13,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Maria Timofeeva,Renata Zarazua,wta_54,wta_87,WTA,Grass
 2026-06-13,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Katerina Siniakova,Yuan Yue,wta_46,wta_122,WTA,Grass
 2026-06-13,14:00,VANDA Pharmaceuticals Berlin Tennis Open,Lulu Sun,Anhelina Kalinina,wta_98,wta_191,WTA,Grass
 2026-06-13,14:00,VANDA Pharmaceuticals Berlin Tennis Open,Polina Kudermetova,Sinja Kraus,wta_144,wta_105,WTA,Grass
