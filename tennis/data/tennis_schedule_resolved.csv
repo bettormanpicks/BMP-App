@@ -18,25 +18,25 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-13,Final,Terra Wortmann Open,Martin Landaluce,Marc-Andrea Huesler,atp_158,atp_9002,ATP,
 2026-06-13,Final,Terra Wortmann Open,Raphael Collignon,Aziz Dougaz,atp_68,atp_400,ATP,
 2026-06-13,Final,Terra Wortmann Open,Benito Sanchez Martinez,Roberto Bautista Agut,atp_101,atp_82,ATP,
-2026-06-13,Final,Terra Wortmann Open,Jamie Mackenzie,Alex Bolt,atp_115,atp_167,ATP,
+2026-06-13,Final,Terra Wortmann Open,Jamie Mackenzie,Alex Bolt,atp_9017,atp_167,WTA,
 2026-06-13,Final,Terra Wortmann Open,Tiago Pereira,Tom Gentzsch,atp_268,atp_243,ATP,
 2026-06-13,Final,Terra Wortmann Open,Diego Dedura,Nikoloz Basilashvili,atp_310,atp_136,ATP,
 2026-06-13,Final,Terra Wortmann Open,Lorenzo Sonego,Filip Cristian Jianu,atp_64,atp_245,ATP,
 2026-06-13,Final,Lexus Ilkley Open,Ashlyn Krueger,Darja Vidmanova,wta_100,wta_127,WTA,
 2026-06-13,Final,Lexus Ilkley Open,Mary Stoiana,Celine Naef,wta_185,wta_260,WTA,
-2026-06-13,Live,Lexus Nottingham Open,Oksana Selekhmeteva,Taylah Preston,wta_74,wta_147,WTA,Grass
-2026-06-13,Live,Lexus Nottingham Open,Zeynep Sonmez,Lanlana Tararudee,wta_84,wta_124,WTA,Grass
+2026-06-13,Final,Lexus Nottingham Open,Zeynep Sonmez,Lanlana Tararudee,wta_84,wta_124,WTA,Grass
+2026-06-13,Final,Lexus Nottingham Open,Oksana Selekhmeteva,Taylah Preston,wta_74,wta_147,WTA,Grass
 2026-06-13,Final,Lexus Nottingham Open,Alicia Dudeney,Yulia Putintseva,wta_440,wta_77,WTA,Grass
 2026-06-13,Final,Lexus Nottingham Open,Viktorija Golubic,Veronika Erjavec,wta_88,wta_112,WTA,Grass
 2026-06-13,Final,Lexus Nottingham Open,Himeno Sakatsume,Mika Stojsavljevic,wta_135,wta_280,WTA,Grass
 2026-06-13,Final,Lexus Nottingham Open,Panna Udvardy,Katie Volynets,wta_93,wta_96,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Daria Kasatkina,Anna Blinkova,wta_61,wta_65,WTA,Grass
+2026-06-13,Final,Lexus Nottingham Open,Daria Kasatkina,Anna Blinkova,wta_61,wta_82,WTA,Grass
 2026-06-13,Final,Lexus Nottingham Open,Hannah Klugman,Anastasia Zakharova,wta_9027,wta_103,WTA,Grass
 2026-06-13,Final,Lexus Nottingham Open,Antonia Ruzic,Kaja Juvan,wta_67,wta_92,WTA,Grass
 2026-06-13,Final,Lexus Nottingham Open,Mingge Xu,Kimberly Birrell,wta_238,wta_94,WTA,Grass
 2026-06-13,Final,Lexus Nottingham Open,Emiliana Arango,Anna Bondar,wta_58,wta_65,WTA,Grass
-2026-06-13,19:10,Memorial Eugenio Fontana,Lucia Bronzetti,Laura Samson,wta_138,wta_212,WTA,
 2026-06-13,Final,Memorial Eugenio Fontana,Victoria Jimenez Kasintseva,Katarzyna Kawa,wta_119,wta_143,WTA,
+2026-06-13,Final,Memorial Eugenio Fontana,Lucia Bronzetti,Laura Samson,wta_138,wta_212,WTA,
 2026-06-13,Final,The HSBC Championships,Emma Raducanu,Iva Jovic,wta_25,wta_20,WTA,Grass
 2026-06-13,Final,The HSBC Championships,Katie Boulter,Donna Vekic,wta_83,wta_99,WTA,Grass
 2026-06-13,Final,The HSBC Championships,Emma Raducanu,Kamilla Rakhimova,wta_25,wta_91,WTA,Grass
@@ -69,11 +69,14 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-14,11:30,Internazionali Femminili Di Brescia,Chloe Paquet,Amy Zhu,wta_215,wta_9054,WTA,
 2026-06-14,11:30,Internazionali Femminili Di Brescia,Mia Ristic,Verena Meliss,wta_273,wta_570,WTA,
 2026-06-14,14:00,Internazionali Femminili Di Brescia,Lara Salden,Amarissa Toth,wta_9102,wta_250,ATP,
-2026-06-14,14:00,Internazionali Femminili Di Brescia,Radka Zelnickova,Noemi Basiletti,wta_497,wta_511,WTA,
+2026-06-14,14:00,Internazionali Femminili Di Brescia,Radka Zelnickova,Noemi Basiletti,wta_497,wta_768,WTA,
 2026-06-14,10:30,Lexus Ilkley Open,Ashlyn Krueger,Celine Naef,wta_100,wta_260,WTA,
 2026-06-14,10:00,Lexus Nottingham Open,Katie Volynets,Kimberly Birrell,wta_96,wta_94,WTA,Grass
+2026-06-14,12:00,Lexus Nottingham Open,Antonia Ruzic,Taylah Preston,wta_67,wta_147,WTA,Grass
 2026-06-14,12:30,Lexus Nottingham Open,Himeno Sakatsume,Alicia Dudeney,wta_135,wta_440,WTA,Grass
 2026-06-14,12:30,Lexus Nottingham Open,Viktorija Golubic,Sofia Kenin,wta_88,wta_32,WTA,Grass
+2026-06-14,13:00,Lexus Nottingham Open,Zeynep Sonmez,Hannah Klugman,wta_84,wta_9027,WTA,Grass
+2026-06-14,18:00,Memorial Eugenio Fontana,Katarzyna Kawa,Lucia Bronzetti,wta_143,wta_138,WTA,
 2026-06-14,12:30,The HSBC Championships,Donna Vekic,Emma Raducanu,wta_99,wta_25,WTA,Grass
 2026-06-14,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Diane Parry,Ella Seidel,wta_107,wta_95,WTA,Grass
 2026-06-14,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Lulu Sun,Anhelina Kalinina,wta_98,wta_191,WTA,Grass

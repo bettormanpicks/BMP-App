@@ -24,8 +24,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-13,Final,Terra Wortmann Open,Lorenzo Sonego,Filip Cristian Jianu
 2026-06-13,Final,Lexus Ilkley Open,Ashlyn Krueger,Darja Vidmanova
 2026-06-13,Final,Lexus Ilkley Open,Mary Stoiana,Celine Naef
-2026-06-13,Live,Lexus Nottingham Open,Oksana Selekhmeteva,Taylah Preston
-2026-06-13,Live,Lexus Nottingham Open,Zeynep Sonmez,Lanlana Tararudee
+2026-06-13,Final,Lexus Nottingham Open,Zeynep Sonmez,Lanlana Tararudee
+2026-06-13,Final,Lexus Nottingham Open,Oksana Selekhmeteva,Taylah Preston
 2026-06-13,Final,Lexus Nottingham Open,Alicia Dudeney,Yulia Putintseva
 2026-06-13,Final,Lexus Nottingham Open,Viktorija Golubic,Veronika Erjavec
 2026-06-13,Final,Lexus Nottingham Open,Himeno Sakatsume,Mika Stojsavljevic
@@ -35,8 +35,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-13,Final,Lexus Nottingham Open,Antonia Ruzic,Kaja Juvan
 2026-06-13,Final,Lexus Nottingham Open,Mingge Xu,Kimberly Birrell
 2026-06-13,Final,Lexus Nottingham Open,Emiliana Arango,Anna Bondar
-2026-06-13,19:10,Memorial Eugenio Fontana,Lucia Bronzetti,Laura Samson
 2026-06-13,Final,Memorial Eugenio Fontana,Victoria Jimenez Kasintseva,Katarzyna Kawa
+2026-06-13,Final,Memorial Eugenio Fontana,Lucia Bronzetti,Laura Samson
 2026-06-13,Final,The HSBC Championships,Emma Raducanu,Iva Jovic
 2026-06-13,Final,The HSBC Championships,Katie Boulter,Donna Vekic
 2026-06-13,Final,The HSBC Championships,Emma Raducanu,Kamilla Rakhimova
@@ -72,8 +72,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-14,14:00,Internazionali Femminili Di Brescia,Radka Zelnickova,Noemi Basiletti
 2026-06-14,10:30,Lexus Ilkley Open,Ashlyn Krueger,Celine Naef
 2026-06-14,10:00,Lexus Nottingham Open,Katie Volynets,Kimberly Birrell
+2026-06-14,12:00,Lexus Nottingham Open,Antonia Ruzic,Taylah Preston
 2026-06-14,12:30,Lexus Nottingham Open,Himeno Sakatsume,Alicia Dudeney
 2026-06-14,12:30,Lexus Nottingham Open,Viktorija Golubic,Sofia Kenin
+2026-06-14,13:00,Lexus Nottingham Open,Zeynep Sonmez,Hannah Klugman
+2026-06-14,18:00,Memorial Eugenio Fontana,Katarzyna Kawa,Lucia Bronzetti
 2026-06-14,12:30,The HSBC Championships,Donna Vekic,Emma Raducanu
 2026-06-14,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Diane Parry,Ella Seidel
 2026-06-14,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Lulu Sun,Anhelina Kalinina
