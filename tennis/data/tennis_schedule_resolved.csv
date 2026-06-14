@@ -1,46 +1,82 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-06-13,Final,Boss Open,Ben Shelton,Jiri Lehecka,atp_9,atp_21,ATP,Grass
-2026-06-13,Final,Boss Open,Ben Shelton,Sho Shimabukuro,atp_9,atp_135,ATP,Grass
-2026-06-13,Final,Boss Open,Alexander Bublik,Taylor Fritz,atp_10,atp_7,ATP,Grass
-2026-06-13,Final,HSBC Championships,Johannus Monday,Giovanni Mpetshi Perricard,atp_238,atp_58,ATP,Grass
-2026-06-13,Final,HSBC Championships,Dino Prizmic,Rinky Hijikata,atp_121,atp_112,ATP,Grass
-2026-06-13,Final,HSBC Championships,Aleksandar Kovacevic,Michael Mmoh,atp_75,atp_353,ATP,Grass
-2026-06-13,Final,HSBC Championships,Harry Wendelken,Adam Walton,atp_276,atp_93,ATP,Grass
-2026-06-13,Final,HSBC Championships,James Duckworth,Aleksandar Vukic,atp_80,atp_88,ATP,Grass
-2026-06-13,Final,HSBC Championships,Zachary Svajda,Liam Broady,atp_106,atp_282,ATP,Grass
-2026-06-13,Final,Libéma Open,Barbora Krejcikova,Magda Linette,wta_53,wta_50,WTA,
-2026-06-13,Final,Libéma Open,Robin Montgomery,Ajla Tomljanovic,wta_293,wta_73,WTA,
-2026-06-13,Final,Libéma Open,Catherine McNally,Ajla Tomljanovic,wta_68,wta_73,WTA,
-2026-06-13,Final,Libéma Open,Adrian Mannarino,Alex de Minaur,atp_48,atp_8,ATP,
-2026-06-13,Final,Libéma Open,Kamil Majchrzak,Daniil Medvedev,atp_56,atp_11,ATP,
-2026-06-13,Final,Libéma Open,Daniil Medvedev,Marin Cilic,atp_11,atp_52,ATP,
-2026-06-13,Final,Terra Wortmann Open,Mattia Bellucci,Mikhail Kukushkin,atp_109,atp_262,ATP,
-2026-06-13,Final,Terra Wortmann Open,Martin Landaluce,Marc-Andrea Huesler,atp_383,atp_9002,ATP,
-2026-06-13,Final,Terra Wortmann Open,Raphael Collignon,Aziz Dougaz,atp_68,atp_400,ATP,
-2026-06-13,Final,Terra Wortmann Open,Benito Sanchez Martinez,Roberto Bautista Agut,atp_101,atp_82,ATP,
-2026-06-13,Final,Terra Wortmann Open,Jamie Mackenzie,Alex Bolt,atp_9017,atp_167,WTA,
-2026-06-13,Final,Terra Wortmann Open,Tiago Pereira,Tom Gentzsch,atp_268,atp_243,ATP,
-2026-06-13,Final,Terra Wortmann Open,Diego Dedura,Nikoloz Basilashvili,atp_310,atp_136,ATP,
-2026-06-13,Final,Terra Wortmann Open,Lorenzo Sonego,Filip Cristian Jianu,atp_64,atp_245,ATP,
-2026-06-13,Final,Lexus Ilkley Open,Ashlyn Krueger,Darja Vidmanova,wta_100,wta_127,WTA,
-2026-06-13,Final,Lexus Ilkley Open,Mary Stoiana,Celine Naef,wta_185,wta_260,WTA,
-2026-06-13,Final,Lexus Nottingham Open,Zeynep Sonmez,Lanlana Tararudee,wta_84,wta_124,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Oksana Selekhmeteva,Taylah Preston,wta_74,wta_147,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Alicia Dudeney,Yulia Putintseva,wta_440,wta_77,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Viktorija Golubic,Veronika Erjavec,wta_88,wta_112,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Himeno Sakatsume,Mika Stojsavljevic,wta_135,wta_280,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Panna Udvardy,Katie Volynets,wta_93,wta_96,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Daria Kasatkina,Anna Blinkova,wta_61,wta_82,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Hannah Klugman,Anastasia Zakharova,wta_9027,wta_103,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Antonia Ruzic,Kaja Juvan,wta_67,wta_92,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Mingge Xu,Kimberly Birrell,wta_238,wta_94,WTA,Grass
-2026-06-13,Final,Lexus Nottingham Open,Emiliana Arango,Anna Bondar,wta_58,wta_65,WTA,Grass
-2026-06-13,Final,Memorial Eugenio Fontana,Victoria Jimenez Kasintseva,Katarzyna Kawa,wta_119,wta_143,WTA,
-2026-06-13,Final,Memorial Eugenio Fontana,Lucia Bronzetti,Laura Samson,wta_138,wta_212,WTA,
-2026-06-13,Final,The HSBC Championships,Emma Raducanu,Iva Jovic,wta_25,wta_20,WTA,Grass
-2026-06-13,Final,The HSBC Championships,Katie Boulter,Donna Vekic,wta_83,wta_99,WTA,Grass
-2026-06-13,Final,The HSBC Championships,Emma Raducanu,Kamilla Rakhimova,wta_25,wta_91,WTA,Grass
-2026-06-13,Final,VANDA Pharmaceuticals Berlin Tennis Open,Mia Pohankova,Tamara Korpatsch,wta_346,wta_106,WTA,Grass
-2026-06-13,Final,VANDA Pharmaceuticals Berlin Tennis Open,Rebeka Masarova,Noma Noha Akugue,wta_117,wta_255,WTA,Grass
-2026-06-13,Final,VANDA Pharmaceuticals Berlin Tennis Open,Milena Steinkamp,Zhang Shuai,wta_9100,wta_85,ATP,Grass
-2026-06-13,Final,VANDA Pharmaceuticals Berlin Tennis Open,Magdalena Frech,Aliaksandra Sasnovich,wta_55,wta_113,WTA,Grass
+2026-06-14,12:00,Boss Open,Ben Shelton,Taylor Fritz,atp_9,atp_7,ATP,Grass
+2026-06-14,11:00,HSBC Championships,Zachary Svajda,Martin Damm,atp_106,atp_125,ATP,Grass
+2026-06-14,11:00,HSBC Championships,Aleksandar Vukic,Harry Wendelken,atp_88,atp_276,ATP,Grass
+2026-06-14,12:30,HSBC Championships,Rinky Hijikata,Marcos Giron,atp_112,atp_63,ATP,Grass
+2026-06-14,12:30,HSBC Championships,Aleksandar Kovacevic,Giovanni Mpetshi Perricard,atp_75,atp_58,ATP,Grass
+2026-06-14,10:00,Libéma Open,Robin Montgomery,Barbora Krejcikova,wta_293,wta_53,WTA,
+2026-06-14,12:30,Libéma Open,Kamil Majchrzak,Alex de Minaur,atp_56,atp_8,ATP,
+2026-06-14,09:00,Terra Wortmann Open,Lorenzo Sonego,Nikoloz Basilashvili,atp_64,atp_136,ATP,
+2026-06-14,09:00,Terra Wortmann Open,Raphael Collignon,Roberto Bautista Agut,atp_68,atp_82,ATP,
+2026-06-14,11:00,Terra Wortmann Open,Mattia Bellucci,Alex Bolt,atp_109,atp_167,ATP,
+2026-06-14,09:00,Figueira Da Foz Ladies Open,Carmen Lopez Martinez,Momoko Kobori,atp_101,wta_427,ATP,
+2026-06-14,09:00,Figueira Da Foz Ladies Open,Manon Leonard,Anastasia Kulikova,wta_253,wta_443,WTA,
+2026-06-14,10:30,Figueira Da Foz Ladies Open,Valentina Losciale,Angelina Voloshchuk,wta_9030,wta_401,WTA,
+2026-06-14,10:30,Figueira Da Foz Ladies Open,Whitney Osuigwe,Carla Tomai,wta_162,wta_477,WTA,
+2026-06-14,12:00,Figueira Da Foz Ladies Open,Min Liu,Alana Smith,wta_213,atp_141,WTA,
+2026-06-14,12:00,Figueira Da Foz Ladies Open,Maria Martinez Vaquero,Elena Micic,wta_479,wta_375,WTA,
+2026-06-14,13:30,Figueira Da Foz Ladies Open,Valentina Ryser,Sana Garakani,atp_9030,atp_9100,WTA,
+2026-06-14,13:30,Figueira Da Foz Ladies Open,Katherine Sebov,Allura Zamarripa,wta_270,wta_999,WTA,
+2026-06-14,08:30,Internazionali Femminili Di Brescia,Tatiana Pieri,Diletta Cherubini,wta_383,wta_389,WTA,
+2026-06-14,08:30,Internazionali Femminili Di Brescia,Jennifer Ruggeri,Yelyzaveta Kotliar,wta_315,wta_499,WTA,
+2026-06-14,10:00,Internazionali Femminili Di Brescia,Lucija Ciric Bagaric,Deborah Chiesa,wta_448,wta_539,WTA,
+2026-06-14,10:00,Internazionali Femminili Di Brescia,Julie Struplova,Ekaterina Kazionova,wta_320,wta_394,WTA,
+2026-06-14,11:30,Internazionali Femminili Di Brescia,Chloe Paquet,Amy Zhu,wta_215,wta_9054,WTA,
+2026-06-14,11:30,Internazionali Femminili Di Brescia,Mia Ristic,Verena Meliss,wta_273,wta_570,WTA,
+2026-06-14,14:00,Internazionali Femminili Di Brescia,Lara Salden,Amarissa Toth,wta_9101,wta_250,ATP,
+2026-06-14,14:00,Internazionali Femminili Di Brescia,Radka Zelnickova,Noemi Basiletti,wta_497,wta_768,WTA,
+2026-06-14,10:30,Lexus Ilkley Open,Ashlyn Krueger,Celine Naef,wta_100,wta_260,WTA,
+2026-06-14,10:00,Lexus Nottingham Open,Katie Volynets,Kimberly Birrell,wta_96,wta_94,WTA,Grass
+2026-06-14,12:00,Lexus Nottingham Open,Antonia Ruzic,Taylah Preston,wta_67,wta_147,WTA,Grass
+2026-06-14,12:30,Lexus Nottingham Open,Himeno Sakatsume,Alicia Dudeney,wta_135,wta_440,WTA,Grass
+2026-06-14,12:30,Lexus Nottingham Open,Viktorija Golubic,Sofia Kenin,wta_88,wta_32,WTA,Grass
+2026-06-14,13:00,Lexus Nottingham Open,Zeynep Sonmez,Hannah Klugman,wta_84,wta_9027,WTA,Grass
+2026-06-14,18:00,Memorial Eugenio Fontana,Katarzyna Kawa,Lucia Bronzetti,wta_143,wta_138,WTA,
+2026-06-14,12:30,The HSBC Championships,Donna Vekic,Emma Raducanu,wta_99,wta_25,WTA,Grass
+2026-06-14,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Diane Parry,Ella Seidel,wta_107,wta_95,WTA,Grass
+2026-06-14,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Lulu Sun,Anhelina Kalinina,wta_98,wta_191,WTA,Grass
+2026-06-14,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Suzan Lamens,Dalma Galfi,wta_109,wta_86,WTA,Grass
+2026-06-14,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Petra Marcinko,Aoi Ito,wta_69,wta_176,WTA,Grass
+2026-06-14,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Katerina Siniakova,Yuan Yue,wta_46,wta_122,WTA,Grass
+2026-06-14,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Tessa Johanna Brockmann,Alycia Parks,wta_289,wta_243,WTA,Grass
+2026-06-14,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Magdalena Frech,Zhang Shuai,wta_55,wta_85,WTA,Grass
+2026-06-14,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Maria Timofeeva,Renata Zarazua,wta_54,wta_87,WTA,Grass
+2026-06-14,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Polina Kudermetova,Sinja Kraus,wta_144,wta_105,WTA,Grass
+2026-06-14,13:30,VANDA Pharmaceuticals Berlin Tennis Open,Rebeka Masarova,Mia Pohankova,wta_117,wta_346,WTA,Grass
+2026-06-15,TBD,HSBC Championships,Ugo Humbert,Marin Cilic,atp_38,atp_52,ATP,Grass
+2026-06-15,TBD,HSBC Championships,Arthur Fery,Toby Samuel,atp_156,atp_241,ATP,Grass
+2026-06-15,TBD,HSBC Championships,Jakub Mensik,Adrian Mannarino,atp_16,atp_48,ATP,Grass
+2026-06-15,TBD,HSBC Championships,Kamil Majchrzak,Jiri Lehecka,atp_56,atp_21,ATP,Grass
+2026-06-15,TBD,HSBC Championships,Jack Pinnington Jones,Denis Shapovalov,atp_138,atp_36,ATP,Grass
+2026-06-15,TBD,HSBC Championships,Arthur Rinderknech,Hamad Medjedovic,atp_30,atp_97,ATP,Grass
+2026-06-15,TBD,HSBC Championships,Alex de Minaur,Gabriel Diallo,atp_8,atp_39,ATP,Grass
+2026-06-15,TBD,HSBC Championships,Cameron Norrie,Alejandro Davidovich Fokina,atp_27,atp_15,ATP,Grass
+2026-06-15,TBD,HSBC Championships,Ignacio Buse,Rafael Jodar,atp_91,atp_117,ATP,Grass
+2026-06-15,TBD,HSBC Championships,Brandon Nakashima,Marton Fucsovics,atp_29,atp_60,ATP,Grass
+2026-06-15,TBD,Terra Wortmann Open,Fabian Marozsan,Miomir Kecmanovic,atp_47,atp_83,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Alexander Zverev,Vit Kopriva,atp_4,atp_87,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Nuno Borges,Felix Auger-Aliassime,atp_44,atp_6,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Joao Fonseca,Yannick Hanfmann,atp_37,atp_90,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Tallon Griekspoor,Sho Shimabukuro,atp_25,atp_135,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Max Schoenhaus,Learner Tien,atp_454,atp_23,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Ben Shelton,Nick Kyrgios,atp_9,atp_9001,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Flavio Cobolli,Frances Tiafoe,atp_20,atp_28,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Tomas Martin Etcheverry,Daniil Medvedev,atp_53,atp_11,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Karen Khachanov,Ethan Quinn,atp_17,atp_70,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Andrey Rublev,Hubert Hurkacz,atp_14,atp_71,ATP,
+2026-06-15,TBD,Terra Wortmann Open,Zizou Bergs,Taylor Fritz,atp_43,atp_7,ATP,
+2026-06-15,TBD,Lexus Nottingham Open,Lois Boisson,Dayana Yastremska,wta_35,wta_43,WTA,Grass
+2026-06-15,TBD,Lexus Nottingham Open,Sara Bejlek,Emma Navarro,wta_41,wta_19,WTA,Grass
+2026-06-15,TBD,Lexus Nottingham Open,Iva Jovic,Karolina Pliskova,wta_20,wta_267,WTA,Grass
+2026-06-15,TBD,Lexus Nottingham Open,Maya Joint,Yuliia Starodubtseva,wta_29,wta_101,WTA,Grass
+2026-06-15,TBD,Lexus Nottingham Open,Tatjana Maria,Janice Tjen,wta_54,wta_47,WTA,Grass
+2026-06-15,TBD,Lexus Nottingham Open,Zheng Qinwen,Maria Sakkari,wta_23,wta_33,WTA,Grass
+2026-06-15,TBD,Lexus Nottingham Open,Marie Bouzkova,Tereza Valentova,wta_39,wta_42,WTA,Grass
+2026-06-15,TBD,Lexus Nottingham Open,Talia Gibson,Francesca Jones,wta_111,wta_72,WTA,Grass
+2026-06-15,TBD,Lexus Nottingham Open,Harriet Dart,Katie Boulter,wta_169,wta_83,WTA,Grass
+2026-06-15,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Madison Keys,Wang Xinyu,wta_17,wta_34,WTA,Grass
+2026-06-15,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Donna Vekic,Alexandra Eala,wta_99,wta_45,WTA,Grass
+2026-06-15,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Elina Svitolina,Anna Kalinskaya,wta_9,wta_65,WTA,Grass
+2026-06-15,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Ekaterina Alexandrova,Anastasia Potapova,wta_11,wta_75,WTA,Grass
+2026-06-15,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Elise Mertens,Liudmila Samsonova,wta_22,wta_18,WTA,Grass
+2026-06-15,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Nikola Bartunkova,Coco Gauff,wta_104,wta_4,WTA,Grass
