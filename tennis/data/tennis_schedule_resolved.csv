@@ -1,53 +1,53 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-06-15,15:05,HSBC Championships,Jack Pinnington Jones,Denis Shapovalov,atp_138,atp_36,ATP,Grass
-2026-06-15,16:00,HSBC Championships,Giovanni Mpetshi Perricard,Corentin Moutet,atp_58,atp_34,ATP,Grass
+2026-06-15,Live,HSBC Championships,Giovanni Mpetshi Perricard,Corentin Moutet,atp_58,atp_34,ATP,Grass
 2026-06-15,Final,HSBC Championships,Tommy Paul,Zachary Svajda,atp_24,atp_106,ATP,Grass
+2026-06-15,Final,HSBC Championships,Jack Pinnington Jones,Denis Shapovalov,wta_72,atp_36,WTA,Grass
 2026-06-15,Final,HSBC Championships,Botic Van De Zandschulp,Harry Wendelken,atp_55,atp_276,ATP,Grass
-2026-06-15,15:00,Terra Wortmann Open,Flavio Cobolli,Frances Tiafoe,atp_20,atp_28,ATP,
 2026-06-15,Final,Terra Wortmann Open,Nuno Borges,Felix Auger-Aliassime,atp_44,atp_6,ATP,
-2026-06-15,Final,Terra Wortmann Open,Terence Atmane,Martin Landaluce,atp_65,atp_158,ATP,
+2026-06-15,Final,Terra Wortmann Open,Flavio Cobolli,Frances Tiafoe,atp_20,atp_28,ATP,
+2026-06-15,Final,Terra Wortmann Open,Terence Atmane,Martin Landaluce,atp_65,atp_383,ATP,
 2026-06-15,Final,Terra Wortmann Open,Nikoloz Basilashvili,Daniel Altmaier,atp_136,atp_54,ATP,
 2026-06-15,Final,Terra Wortmann Open,Max Schoenhaus,Learner Tien,atp_454,atp_23,ATP,
-2026-06-15,Live,Figueira Da Foz Ladies Open,Sachia Vickery,Beatriz Haddad Maia,wta_696,wta_66,WTA,
-2026-06-15,Live,Figueira Da Foz Ladies Open,Ayla Aksu,Ana Sofia Sanchez,wta_304,wta_195,WTA,
-2026-06-15,15:30,Figueira Da Foz Ladies Open,Susan Bandecchi,Vera Zvonareva,wta_233,wta_357,WTA,
-2026-06-15,15:30,Figueira Da Foz Ladies Open,Carolyn Ansari,Barbora Palicova,wta_287,wta_221,WTA,
+2026-06-15,Final,Figueira Da Foz Ladies Open,Sachia Vickery,Beatriz Haddad Maia,wta_696,wta_66,WTA,
 2026-06-15,Final,Figueira Da Foz Ladies Open,Manon Leonard,Alina Charaeva,wta_253,wta_163,WTA,
+2026-06-15,Final,Figueira Da Foz Ladies Open,Susan Bandecchi,Vera Zvonareva,wta_233,wta_357,WTA,
+2026-06-15,Final,Figueira Da Foz Ladies Open,Carolyn Ansari,Barbora Palicova,wta_287,wta_221,WTA,
+2026-06-15,Final,Figueira Da Foz Ladies Open,Ayla Aksu,Ana Sofia Sanchez,wta_304,wta_195,WTA,
 2026-06-15,Final,Figueira Da Foz Ladies Open,Hayu Kinoshita,Viktoria Hruncakova,wta_417,wta_218,WTA,
 2026-06-15,Final,Figueira Da Foz Ladies Open,Allura Zamarripa,Maria Martinez Vaquero,wta_999,wta_479,WTA,
 2026-06-15,Final,Figueira Da Foz Ladies Open,Valentina Ryser,Alana Smith,wta_323,atp_141,WTA,
 2026-06-15,Final,Figueira Da Foz Ladies Open,Anastasia Kulikova,Momoko Kobori,wta_443,wta_427,WTA,
 2026-06-15,Final,Figueira Da Foz Ladies Open,Whitney Osuigwe,Angelina Voloshchuk,wta_162,wta_401,WTA,
-2026-06-15,Live,Internazionali Femminili Di Brescia,Alessandra Mazzola,Luisina Giovannini,wta_495,wta_240,WTA,
-2026-06-15,Live,Internazionali Femminili Di Brescia,Kathinka von Deichmann,Anastasiia Sobolieva,wta_226,wta_268,WTA,
-2026-06-15,15:00,Internazionali Femminili Di Brescia,Ekaterine Gorgodze,Nuria Brancaccio,wta_167,wta_164,WTA,
-2026-06-15,15:15,Internazionali Femminili Di Brescia,Raluka Serban,Mayar Sherif,wta_244,wta_108,WTA,
-2026-06-15,16:30,Internazionali Femminili Di Brescia,Tiantsoa Rakotomanga Rajaonah,Yuliana Lizarazo,wta_120,wta_733,WTA,
+2026-06-15,Live,Internazionali Femminili Di Brescia,Tiantsoa Rakotomanga Rajaonah,Yuliana Lizarazo,wta_120,wta_733,WTA,
+2026-06-15,Final,Internazionali Femminili Di Brescia,Raluka Serban,Mayar Sherif,wta_244,wta_108,WTA,
+2026-06-15,Final,Internazionali Femminili Di Brescia,Alessandra Mazzola,Luisina Giovannini,wta_495,wta_240,WTA,
+2026-06-15,Final,Internazionali Femminili Di Brescia,Ekaterine Gorgodze,Nuria Brancaccio,wta_167,wta_164,WTA,
+2026-06-15,Final,Internazionali Femminili Di Brescia,Kathinka von Deichmann,Anastasiia Sobolieva,wta_226,wta_268,WTA,
 2026-06-15,Final,Internazionali Femminili Di Brescia,Chloe Paquet,Amarissa Toth,wta_215,wta_250,WTA,
 2026-06-15,Final,Internazionali Femminili Di Brescia,Mia Ristic,Noemi Basiletti,wta_273,wta_511,WTA,
 2026-06-15,Final,Internazionali Femminili Di Brescia,Ekaterina Kazionova,Deborah Chiesa,wta_394,wta_539,WTA,
 2026-06-15,Final,Internazionali Femminili Di Brescia,Elizara Yaneva,Giorgia Pedone,wta_228,wta_367,WTA,
 2026-06-15,Final,Internazionali Femminili Di Brescia,Jennifer Ruggeri,Tatiana Pieri,wta_315,wta_383,WTA,
-2026-06-15,Live,Lexus Nottingham Open,Maya Joint,Yuliia Starodubtseva,wta_29,wta_101,WTA,Grass
-2026-06-15,Live,Lexus Nottingham Open,Talia Gibson,Francesca Jones,wta_111,wta_72,WTA,Grass
-2026-06-15,Live,Lexus Nottingham Open,Himeno Sakatsume,Jessica Bouzas Maneiro,wta_135,wta_48,WTA,Grass
-2026-06-15,15:30,Lexus Nottingham Open,Anna Blinkova,Taylah Preston,wta_65,wta_147,WTA,Grass
 2026-06-15,Final,Lexus Nottingham Open,Anna Bondar,Emma Navarro,wta_65,wta_19,WTA,Grass
 2026-06-15,Final,Lexus Nottingham Open,Marie Bouzkova,Tereza Valentova,wta_39,wta_42,WTA,Grass
 2026-06-15,Final,Lexus Nottingham Open,Zheng Qinwen,Maria Sakkari,wta_372,wta_33,WTA,Grass
 2026-06-15,Final,Lexus Nottingham Open,Tatjana Maria,Janice Tjen,wta_54,wta_47,WTA,Grass
-2026-06-15,Live,VANDA Pharmaceuticals Berlin Tennis Open,Ekaterina Alexandrova,Anastasia Potapova,wta_11,wta_75,WTA,Grass
-2026-06-15,Live,VANDA Pharmaceuticals Berlin Tennis Open,Nikola Bartunkova,Diana Shnaider,wta_104,wta_21,WTA,Grass
-2026-06-15,Live,VANDA Pharmaceuticals Berlin Tennis Open,Diane Parry,Anhelina Kalinina,wta_107,wta_191,WTA,Grass
-2026-06-15,Live,VANDA Pharmaceuticals Berlin Tennis Open,Rebeka Masarova,Mia Pohankova,wta_117,wta_346,WTA,Grass
-2026-06-15,15:00,VANDA Pharmaceuticals Berlin Tennis Open,Katerina Siniakova,Zhu Lin,wta_46,wta_141,WTA,Grass
-2026-06-15,15:00,VANDA Pharmaceuticals Berlin Tennis Open,Petra Marcinko,Renata Zarazua,wta_69,wta_87,WTA,Grass
-2026-06-15,15:30,VANDA Pharmaceuticals Berlin Tennis Open,Elise Mertens,Liudmila Samsonova,wta_22,wta_18,WTA,Grass
+2026-06-15,Final,Lexus Nottingham Open,Anna Blinkova,Taylah Preston,wta_82,wta_147,WTA,Grass
+2026-06-15,Final,Lexus Nottingham Open,Himeno Sakatsume,Jessica Bouzas Maneiro,wta_135,wta_48,WTA,Grass
+2026-06-15,Final,Lexus Nottingham Open,Talia Gibson,Francesca Jones,wta_111,wta_72,WTA,Grass
+2026-06-15,Final,Lexus Nottingham Open,Maya Joint,Yuliia Starodubtseva,wta_29,wta_101,WTA,Grass
+2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Nikola Bartunkova,Diana Shnaider,wta_104,wta_21,WTA,Grass
+2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Elise Mertens,Liudmila Samsonova,wta_22,wta_18,WTA,Grass
+2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Katerina Siniakova,Zhu Lin,wta_46,wta_141,WTA,Grass
+2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Petra Marcinko,Renata Zarazua,wta_69,wta_87,WTA,Grass
+2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Rebeka Masarova,Mia Pohankova,wta_117,wta_346,WTA,Grass
+2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Diane Parry,Anhelina Kalinina,wta_107,wta_191,WTA,Grass
 2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Petra Marcinko,Aoi Ito,wta_69,wta_176,WTA,Grass
 2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Suzan Lamens,Tessa Johanna Brockmann,wta_109,wta_289,WTA,Grass
+2026-06-15,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Ekaterina Alexandrova,Anastasia Potapova,wta_11,wta_75,WTA,Grass
 2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Katerina Siniakova,Yuan Yue,wta_46,wta_122,WTA,Grass
-2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Maria Timofeeva,Renata Zarazua,wta_54,wta_87,WTA,Grass
-2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Magdalena Frech,Zhang Shuai,wta_55,atp_449,WTA,Grass
+2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Maria Timofeeva,Renata Zarazua,wta_154,wta_87,WTA,Grass
+2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Magdalena Frech,Zhang Shuai,wta_55,wta_85,WTA,Grass
 2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Zhu Lin,Sinja Kraus,wta_141,wta_105,WTA,Grass
 2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Tessa Johanna Brockmann,Alycia Parks,wta_289,wta_76,WTA,Grass
 2026-06-15,Final,VANDA Pharmaceuticals Berlin Tennis Open,Lulu Sun,Anhelina Kalinina,wta_98,wta_191,WTA,Grass
@@ -101,7 +101,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-16,12:00,Lexus Nottingham Open,Zeynep Sonmez,Leylah Fernandez,wta_84,wta_28,WTA,Grass
 2026-06-16,13:00,Lexus Nottingham Open,Viktorija Golubic,Sofia Kenin,wta_88,wta_32,WTA,Grass
 2026-06-16,13:00,Lexus Nottingham Open,Sara Bejlek,Karolina Pliskova,wta_41,wta_267,WTA,Grass
-2026-06-16,13:30,Lexus Nottingham Open,Harriet Dart,Katie Boulter,wta_169,wta_83,WTA,Grass
-2026-06-16,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Madison Keys,Wang Xinyu,wta_17,wta_34,WTA,Grass
-2026-06-16,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Donna Vekic,Alexandra Eala,wta_99,wta_45,WTA,Grass
-2026-06-16,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Elina Svitolina,Anna Kalinskaya,wta_9,wta_65,WTA,Grass
+2026-06-16,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Madison Keys,Wang Xinyu,wta_17,wta_34,WTA,Grass
+2026-06-16,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Magdalena Frech,Eva Lys,wta_55,wta_56,WTA,Grass
+2026-06-16,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Zhang Shuai,Karolina Muchova,wta_85,wta_13,WTA,Grass
+2026-06-16,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Linda Noskova,Renata Zarazua,wta_14,wta_87,WTA,Grass
+2026-06-16,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Katerina Siniakova,Rebeka Masarova,wta_46,wta_117,WTA,Grass
+2026-06-16,13:30,VANDA Pharmaceuticals Berlin Tennis Open,Clara Tauson,Diane Parry,wta_15,wta_107,WTA,Grass
+2026-06-16,13:30,VANDA Pharmaceuticals Berlin Tennis Open,Elina Svitolina,Anna Kalinskaya,wta_9,wta_24,WTA,Grass
+2026-06-16,15:00,VANDA Pharmaceuticals Berlin Tennis Open,Suzan Lamens,Paula Badosa,wta_109,wta_70,WTA,Grass
