@@ -1,12 +1,19 @@
 curl 'https://scores24.live/rapi/localized/leagues/table-tennis/tt-elite-series-1/matches
-  -H 'x-api-token: eyJpYXQiOjE3ODE0MDg0NDAsImV4cCI6MTc4MTQxMDI0MCwiZnAiOiI3MDE2OTBlMzIzMmE2ZTFjMThhMjc4OWQ0M2EzMTA2NjBjNGM4NTBjMWQ3MDhkODYyZjE3M2NiOWNkMzg2OGY2In0=.3c0a73683040628b8afd1731f1ea2cdb6e629344313e8104abd1812e06950f6c' \
-  -H 'sec-ch-ua-platform: "Windows"' \
-  -H 'Referer: https://scores24.live/en/table-tennis/l-tt-elite-series-1' \
+  -H 'accept: */*' \
+  -H 'accept-language: en-US,en;q=0.9' \
+  -b 'testValue=1; userOddFormat=US; machineTimezone=GMT-5; _ga=GA1.1.1867334754.1780154169; _ym_uid=178015416962401010; _ym_d=1780154169; latestWidth=456; _ym_uid=178015416962401010; s24-session=IFGKzanLftcfUbiKXLBlatgs6pI5pFRQc05UvkLO; user_id=15888532; promo-proxy-_subid=30utgdd164n0k3; promo-proxy-9d962=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJkYXRhIjoie1wic3RyZWFtc1wiOntcIjQ5MTZcIjoxNzgxNDkzOTc4LFwiMTY3NTdcIjoxNzgxNDEwMzc5LFwiMTY3NThcIjoxNzgxNDEwMzgzfSxcImNhbXBhaWduc1wiOntcIjRcIjoxNzgxNDEwMzc5fSxcInRpbWVcIjoxNzgxNDEwMzc5fSJ9.QkPVM2yw2iuIHYjPm1Mw7Qh4atcOzkG5li7YvdFZ_-I; promo-proxy-_token=uuid_30utgdd164n0k3_30utgdd164n0k36a2f70dad059d4.12485221; promo-proxy-click-token=uuid_30utgdd164n0k3_30utgdd164n0k36a2f70dad059d4.12485221; _ga_L002PTBYML=GS2.1.s1781493979$o19$g1$t1781493982$j57$l0$h0; _ga_ZPJ1YWQ2Z0=GS2.1.s1781493979$o19$g1$t1781493982$j57$l0$h0; _ym_isad=2; adScriptNew=2' \
+  -H 'priority: u=1, i' \
+  -H 'referer: https://scores24.live/en/table-tennis/l-tt-elite-series-1' \
   -H 'sec-ch-ua: "Chromium";v="148", "Google Chrome";v="148", "Not/A)Brand";v="99"' \
   -H 'sec-ch-ua-mobile: ?0' \
-  -H 'x-user-ip: 151.240.66.119' \
-  -H 'X-User-Cache: W2ZO6w9f6OdiBrEL9DMG' \
-  -H 'User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36' \
-  -H 'X-Country: us-ar' \
+  -H 'sec-ch-ua-platform: "Windows"' \
+  -H 'sec-fetch-dest: empty' \
+  -H 'sec-fetch-mode: cors' \
+  -H 'sec-fetch-site: same-origin' \
+  -H 'user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/148.0.0.0 Safari/537.36' \
+  -H 'x-api-token: eyJpYXQiOjE3ODE0OTM5NzUsImV4cCI6MTc4MTQ5NTc3NSwiZnAiOiJjZjQ3OWFmMWJiNzlkMTVhMWVjYmY2MGExYzg2MjUyZDgxODcxMjY1NmJiMDlmMjNiYTQxY2IyZTY5ZTBlODU1In0=.399464795a55497ac7474cb4a805205607054fb51e4514b049f23568eaaf4643' \
   -H 'x-bot-identifier: client' \
-  -H 'x-ssr-ip: 151.240.66.119'
+  -H 'x-country: us-ar' \
+  -H 'x-ssr-ip: 151.240.66.145' \
+  -H 'x-user-cache: W2ZO6w9f6OdiBrEL9DMG' \
+  -H 'x-user-ip: 151.240.66.145'
