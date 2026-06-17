@@ -57,31 +57,61 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-16,Final,VANDA Pharmaceuticals Berlin Tennis Open,Katerina Siniakova,Rebeka Masarova
 2026-06-16,Final,VANDA Pharmaceuticals Berlin Tennis Open,Madison Keys,Wang Xinyu
 2026-06-16,Final,VANDA Pharmaceuticals Berlin Tennis Open,Magdalena Frech,Eva Lys
-2026-06-17,10:30,HSBC Championships,Brandon Nakashima,Ignacio Buse
-2026-06-17,12:00,HSBC Championships,Alex de Minaur,Denis Shapovalov
-2026-06-17,13:30,HSBC Championships,Adrian Mannarino,Arthur Fery
-2026-06-17,15:00,HSBC Championships,Jenson Brooksby,Francisco Cerundolo
-2026-06-17,09:30,Terra Wortmann Open,Zizou Bergs,Taylor Fritz
-2026-06-17,11:00,Terra Wortmann Open,Ben Shelton,Lorenzo Sonego
-2026-06-17,11:00,Terra Wortmann Open,Frances Tiafoe,Sho Shimabukuro
-2026-06-17,12:30,Terra Wortmann Open,Learner Tien,Felix Auger-Aliassime
-2026-06-17,12:30,Terra Wortmann Open,Hubert Hurkacz,Daniel Altmaier
-2026-06-17,14:00,Terra Wortmann Open,Terence Atmane,Daniil Medvedev
-2026-06-17,10:00,Figueira Da Foz Ladies Open,Barbora Palicova,Jil Teichmann
-2026-06-17,10:00,Figueira Da Foz Ladies Open,Ayla Aksu,Sachia Vickery
-2026-06-17,11:30,Figueira Da Foz Ladies Open,Anastasia Kulikova,Alina Charaeva
-2026-06-17,11:30,Figueira Da Foz Ladies Open,Viktoria Hruncakova,Yeonwoo Ku
-2026-06-17,12:00,Figueira Da Foz Ladies Open,Susan Bandecchi,Katarina Kuzmova
-2026-06-17,08:30,Internazionali Femminili Di Brescia,Darya Astakhova,Luisina Giovannini
-2026-06-17,10:00,Internazionali Femminili Di Brescia,Julia Grabher,Anastasiia Sobolieva
-2026-06-17,11:30,Internazionali Femminili Di Brescia,Fiona Ferro,Ekaterine Gorgodze
-2026-06-17,16:00,Internazionali Femminili Di Brescia,Tiantsoa Rakotomanga Rajaonah,Mia Ristic
-2026-06-17,10:00,Lexus Nottingham Open,Yuliia Starodubtseva,Emma Navarro
-2026-06-17,11:30,Lexus Nottingham Open,Katie Volynets,Jessica Bouzas Maneiro
-2026-06-17,13:30,Lexus Nottingham Open,Dayana Yastremska,Tatjana Maria
-2026-06-17,15:00,Lexus Nottingham Open,Talia Gibson,Zheng Qinwen
-2026-06-17,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Donna Vekic,Alexandra Eala
-2026-06-17,09:00,VANDA Pharmaceuticals Berlin Tennis Open,Elise Mertens,Nikola Bartunkova
-2026-06-17,10:30,VANDA Pharmaceuticals Berlin Tennis Open,Jessica Pegula,Katerina Siniakova
-2026-06-17,13:30,VANDA Pharmaceuticals Berlin Tennis Open,Paula Badosa,Coco Gauff
-2026-06-17,15:30,VANDA Pharmaceuticals Berlin Tennis Open,Aryna Sabalenka,Ekaterina Alexandrova
+2026-06-16,Final,HSBC Championships,Alex de Minaur,Gabriel Diallo
+2026-06-16,Final,HSBC Championships,Kamil Majchrzak,Jiri Lehecka
+2026-06-16,Final,HSBC Championships,Jakub Mensik,Adrian Mannarino
+2026-06-16,Final,HSBC Championships,Cameron Norrie,Alejandro Davidovich Fokina
+2026-06-16,Final,HSBC Championships,Arthur Rinderknech,Hamad Medjedovic
+2026-06-16,Final,HSBC Championships,Aleksandar Kovacevic,Francisco Cerundolo
+2026-06-16,Final,HSBC Championships,Rinky Hijikata,Alejandro Tabilo
+2026-06-16,Final,HSBC Championships,Ugo Humbert,Marin Cilic
+2026-06-16,Final,HSBC Championships,Giovanni Mpetshi Perricard,Corentin Moutet
+2026-06-16,Final,HSBC Championships,Jenson Brooksby,Martin Damm
+2026-06-16,Final,HSBC Championships,Arthur Fery,Toby Samuel
+2026-06-16,Final,HSBC Championships,Ignacio Buse,Marcos Giron
+2026-06-16,Final,HSBC Championships,Brandon Nakashima,Marton Fucsovics
+2026-06-16,Final,Terra Wortmann Open,Alexander Zverev,Vit Kopriva
+2026-06-16,Final,Terra Wortmann Open,Tomas Martin Etcheverry,Daniil Medvedev
+2026-06-16,Final,Terra Wortmann Open,Mattia Bellucci,Alexander Bublik
+2026-06-16,Final,Terra Wortmann Open,Andrey Rublev,Hubert Hurkacz
+2026-06-16,Final,Terra Wortmann Open,Fabian Marozsan,Miomir Kecmanovic
+2026-06-16,Final,Terra Wortmann Open,Joao Fonseca,Yannick Hanfmann
+2026-06-16,Final,Terra Wortmann Open,Tallon Griekspoor,Sho Shimabukuro
+2026-06-16,Final,Terra Wortmann Open,Alexei Popyrin,Raphael Collignon
+2026-06-16,Final,Terra Wortmann Open,Karen Khachanov,Ethan Quinn
+2026-06-16,Final,Figueira Da Foz Ladies Open,Alina Korneeva,Tian Fangran
+2026-06-16,Final,Figueira Da Foz Ladies Open,Darja Vidmanova,Angelina Voloshchuk
+2026-06-16,Final,Figueira Da Foz Ladies Open,Matilde Jorge,Jil Teichmann
+2026-06-16,Final,Figueira Da Foz Ladies Open,Yeonwoo Ku,Lucrezia Stefanini
+2026-06-16,Final,Figueira Da Foz Ladies Open,Jeline Vandromme,Allura Zamarripa
+2026-06-16,TBD,Figueira Da Foz Ladies Open,Martyna Kubka,Aliona Falei
+2026-06-16,Final,Figueira Da Foz Ladies Open,Kristina Mladenovic,Valentina Ryser
+2026-06-16,Final,Figueira Da Foz Ladies Open,Anastasia Kulikova,Mai Hontama
+2026-06-16,Final,Figueira Da Foz Ladies Open,Katarina Kuzmova,Viktoria Morvayova
+2026-06-16,Final,Figueira Da Foz Ladies Open,Elena Micic,Francisca Jorge
+2026-06-16,Final,Internazionali Femminili Di Brescia,Wang Xiyu,Gao Xinyu
+2026-06-16,Final,Internazionali Femminili Di Brescia,Julia Grabher,Chloe Paquet
+2026-06-16,Final,Internazionali Femminili Di Brescia,Jazmin Ortenzi,Francesca Pace
+2026-06-16,Final,Internazionali Femminili Di Brescia,Ane Mintegi Del Olmo,You Xiaodi
+2026-06-16,Final,Internazionali Femminili Di Brescia,Carole Monnet,Martina Trevisan
+2026-06-16,Final,Internazionali Femminili Di Brescia,Fiona Ferro,Kajsa Rinaldo Persson
+2026-06-16,Final,Internazionali Femminili Di Brescia,Jennifer Ruggeri,Elena Ruxandra Bertea
+2026-06-16,Final,Internazionali Femminili Di Brescia,Danka Kovinic,Miriam Bulgaru
+2026-06-16,Final,Internazionali Femminili Di Brescia,Mia Ristic,Deborah Chiesa
+2026-06-16,Final,Internazionali Femminili Di Brescia,Darya Astakhova,Noemi Basiletti
+2026-06-16,Final,Lexus Nottingham Open,Zeynep Sonmez,Leylah Fernandez
+2026-06-16,Final,Lexus Nottingham Open,Ann Li,Kimberly Birrell
+2026-06-16,Final,Lexus Nottingham Open,McCartney Kessler,Katie Volynets
+2026-06-16,Final,Lexus Nottingham Open,Sara Bejlek,Karolina Pliskova
+2026-06-16,Final,Lexus Nottingham Open,Viktorija Golubic,Sofia Kenin
+2026-06-16,Final,Lexus Nottingham Open,Harriet Dart,Hannah Klugman
+2026-06-16,Final,Lexus Nottingham Open,Catherine McNally,Antonia Ruzic
+2026-06-16,Final,Lexus Nottingham Open,Alicia Dudeney,Dayana Yastremska
+2026-06-16,TBD,VANDA Pharmaceuticals Berlin Tennis Open,Elina Svitolina,Anna Kalinskaya
+2026-06-16,Final,VANDA Pharmaceuticals Berlin Tennis Open,Zhang Shuai,Karolina Muchova
+2026-06-16,Final,VANDA Pharmaceuticals Berlin Tennis Open,Linda Noskova,Renata Zarazua
+2026-06-16,Final,VANDA Pharmaceuticals Berlin Tennis Open,Suzan Lamens,Paula Badosa
+2026-06-16,Final,VANDA Pharmaceuticals Berlin Tennis Open,Clara Tauson,Diane Parry
+2026-06-16,Final,VANDA Pharmaceuticals Berlin Tennis Open,Katerina Siniakova,Rebeka Masarova
+2026-06-16,Final,VANDA Pharmaceuticals Berlin Tennis Open,Madison Keys,Wang Xinyu
+2026-06-16,Final,VANDA Pharmaceuticals Berlin Tennis Open,Magdalena Frech,Eva Lys
