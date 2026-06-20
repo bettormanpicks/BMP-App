@@ -1,26 +1,56 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-06-19,Final,HSBC Championships,Alex de Minaur,Brandon Nakashima,atp_8,atp_29,ATP,Grass
-2026-06-19,Final,HSBC Championships,Tommy Paul,Alejandro Davidovich Fokina,atp_24,atp_15,ATP,Grass
-2026-06-19,Final,HSBC Championships,Arthur Fery,Francisco Cerundolo,atp_156,atp_19,ATP,Grass
-2026-06-19,Final,HSBC Championships,Ugo Humbert,Rinky Hijikata,atp_38,atp_112,ATP,Grass
-2026-06-19,Final,HSBC Championships,Hamad Medjedovic,Ugo Humbert,atp_97,atp_38,ATP,Grass
-2026-06-19,Final,Terra Wortmann Open,Alexander Zverev,Raphael Collignon,atp_4,atp_68,ATP,
-2026-06-19,Final,Terra Wortmann Open,Frances Tiafoe,Felix Auger-Aliassime,atp_28,atp_6,ATP,
-2026-06-19,Final,Terra Wortmann Open,Ben Shelton,Taylor Fritz,atp_9,atp_7,ATP,
-2026-06-19,Final,Terra Wortmann Open,Daniel Altmaier,Daniil Medvedev,atp_54,atp_11,ATP,
-2026-06-19,Final,Figueira Da Foz Ladies Open,Darja Vidmanova,Jil Teichmann,wta_127,wta_175,WTA,
-2026-06-19,Final,Figueira Da Foz Ladies Open,Susan Bandecchi,Alina Charaeva,wta_233,wta_163,WTA,
-2026-06-19,Final,Figueira Da Foz Ladies Open,Jeline Vandromme,Ayla Aksu,wta_291,wta_304,WTA,
-2026-06-19,Final,Figueira Da Foz Ladies Open,Martyna Kubka,Yeonwoo Ku,wta_338,wta_188,WTA,
-2026-06-19,Final,Internazionali Femminili Di Brescia,Wang Xiyu,Luisina Giovannini,wta_34,wta_240,WTA,
-2026-06-19,Final,Internazionali Femminili Di Brescia,Tiantsoa Rakotomanga Rajaonah,Mayar Sherif,wta_120,wta_108,WTA,
-2026-06-19,Final,Internazionali Femminili Di Brescia,Elizara Yaneva,Ekaterine Gorgodze,wta_228,wta_167,WTA,
-2026-06-19,Final,Internazionali Femminili Di Brescia,Anastasiia Sobolieva,Ane Mintegi Del Olmo,wta_268,wta_373,WTA,
-2026-06-19,Final,Lexus Nottingham Open,Jessica Bouzas Maneiro,Emma Navarro,wta_48,wta_19,WTA,Grass
-2026-06-19,Final,Lexus Nottingham Open,Marie Bouzkova,Tatjana Maria,wta_39,wta_54,WTA,Grass
-2026-06-19,Final,Lexus Nottingham Open,Ann Li,Viktorija Golubic,wta_36,wta_88,WTA,Grass
-2026-06-19,Final,Lexus Nottingham Open,Karolina Pliskova,Talia Gibson,wta_267,wta_111,WTA,Grass
-2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Aryna Sabalenka,Nikola Bartunkova,wta_1,wta_104,WTA,Grass
-2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Jessica Pegula,Madison Keys,wta_5,wta_17,WTA,Grass
-2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Elina Svitolina,Alexandra Eala,wta_9,wta_45,WTA,Grass
-2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Linda Noskova,Paula Badosa,wta_118,wta_70,WTA,Grass
+2026-06-20,12:00,HSBC Championships,Brandon Nakashima,Francisco Cerundolo,atp_29,atp_19,ATP,Grass
+2026-06-20,13:30,HSBC Championships,Tommy Paul,Ugo Humbert,atp_24,atp_38,ATP,Grass
+2026-06-20,10:00,Lexus Eastbourne Open,Mingge Xu,Elsa Jacquemot,wta_238,wta_57,WTA,Grass
+2026-06-20,10:00,Lexus Eastbourne Open,Camila Osorio,Ajla Tomljanovic,wta_63,wta_73,WTA,Grass
+2026-06-20,10:00,Lexus Eastbourne Open,Lanlana Tararudee,Veronika Erjavec,wta_124,wta_112,WTA,Grass
+2026-06-20,11:30,Lexus Eastbourne Open,Zeynep Sonmez,Hanne Vandewinkel,wta_84,wta_128,WTA,Grass
+2026-06-20,11:30,Lexus Eastbourne Open,Peyton Stearns,Emily Appleton,wta_59,wta_425,WTA,Grass
+2026-06-20,11:30,Lexus Eastbourne Open,Anastasia Zakharova,Lilli Tagger,wta_103,wta_114,WTA,Grass
+2026-06-20,13:00,Lexus Eastbourne Open,Oleksandra Oliynykova,Sofia Johnson,wta_71,wta_407,WTA,Grass
+2026-06-20,13:00,Lexus Eastbourne Open,Kamilla Rakhimova,Oksana Selekhmeteva,wta_91,wta_74,WTA,Grass
+2026-06-20,13:00,Lexus Eastbourne Open,Indianna Spink,Kimberly Birrell,wta_916,wta_94,WTA,Grass
+2026-06-20,14:30,Lexus Eastbourne Open,Emiliana Arango,Alycia Parks,wta_58,wta_76,WTA,Grass
+2026-06-20,14:30,Lexus Eastbourne Open,Sofia Kenin,Daria Snigur,wta_32,wta_132,WTA,Grass
+2026-06-20,14:30,Lexus Eastbourne Open,Petra Marcinko,Simona Waltert,wta_69,wta_81,WTA,Grass
+2026-06-20,10:00,Lexus Eastbourne Open,Toby Samuel,Quentin Halys,atp_241,atp_72,ATP,Grass
+2026-06-20,10:00,Lexus Eastbourne Open,Matteo Arnaldi,Alastair Gray,atp_85,atp_406,ATP,Grass
+2026-06-20,11:30,Lexus Eastbourne Open,Harry Wendelken,Aleksandar Vukic,atp_276,atp_88,ATP,Grass
+2026-06-20,11:30,Lexus Eastbourne Open,Emilio Nava,Hamish Stewart,atp_76,atp_338,ATP,Grass
+2026-06-20,13:00,Lexus Eastbourne Open,Felix Gill,Marco Trungelliti,atp_321,atp_131,ATP,Grass
+2026-06-20,13:00,Lexus Eastbourne Open,James Duckworth,Giles Hussey,atp_80,atp_326,ATP,Grass
+2026-06-20,14:30,Lexus Eastbourne Open,Jan Choinski,Wu Yibing,atp_124,atp_145,ATP,Grass
+2026-06-20,14:30,Lexus Eastbourne Open,Marcos Giron,Charles Broom,atp_63,atp_257,ATP,Grass
+2026-06-20,13:00,Terra Wortmann Open,Alexander Zverev,Taylor Fritz,atp_4,atp_7,ATP,
+2026-06-20,14:30,Terra Wortmann Open,Daniel Altmaier,Frances Tiafoe,atp_54,atp_28,ATP,
+2026-06-20,09:00,Vanda Pharmaceuticals Mallorca Championships,Alex Molcan,Ziga Sesko,atp_199,atp_986,ATP,
+2026-06-20,09:00,Vanda Pharmaceuticals Mallorca Championships,Antoine Ghibaudo,Petr Bar Biryukov,atp_342,atp_303,ATP,
+2026-06-20,10:30,Vanda Pharmaceuticals Mallorca Championships,Alexandr Shevchenko,Abdullah Shelbayh,atp_79,atp_318,ATP,
+2026-06-20,10:30,Vanda Pharmaceuticals Mallorca Championships,Adam Walton,Federico Bondioli,atp_93,atp_443,ATP,
+2026-06-20,11:00,Vanda Pharmaceuticals Mallorca Championships,Filippo Romano,Murphy Cassone,atp_477,atp_239,ATP,
+2026-06-20,12:30,Vanda Pharmaceuticals Mallorca Championships,Mikhail Kukushkin,Damir Dzumhur,atp_262,atp_61,ATP,
+2026-06-20,13:00,Vanda Pharmaceuticals Mallorca Championships,Zachary Svajda,Marc-Andrea Huesler,atp_106,atp_9002,ATP,
+2026-06-20,09:00,Bad Homburg Open powered by Solarwatt,Irina-Camelia Begu,Tamara Korpatsch,wta_148,wta_106,WTA,
+2026-06-20,09:00,Bad Homburg Open powered by Solarwatt,Diane Parry,Aoi Ito,wta_107,wta_176,WTA,
+2026-06-20,10:30,Bad Homburg Open powered by Solarwatt,Anna Blinkova,Yulia Putintseva,wta_65,wta_77,WTA,
+2026-06-20,10:30,Bad Homburg Open powered by Solarwatt,Solana Sierra,Ella Seidel,wta_64,wta_95,WTA,
+2026-06-20,12:00,Bad Homburg Open powered by Solarwatt,Martina Trevisan,Taylor Townsend,wta_685,wta_116,WTA,
+2026-06-20,12:00,Bad Homburg Open powered by Solarwatt,Renata Zarazua,Mariella Thamm,wta_87,wta_674,WTA,
+2026-06-20,13:30,Bad Homburg Open powered by Solarwatt,Paula Badosa,Sinja Kraus,wta_70,wta_105,WTA,
+2026-06-20,13:30,Bad Homburg Open powered by Solarwatt,Zhang Shuai,Elena-Gabriela Ruse,wta_85,wta_79,WTA,
+2026-06-20,10:00,Figueira Da Foz Ladies Open,Yeonwoo Ku,Darja Vidmanova,wta_188,wta_127,WTA,
+2026-06-20,11:30,Figueira Da Foz Ladies Open,Alina Charaeva,Ayla Aksu,wta_163,wta_304,WTA,
+2026-06-20,14:00,Internazionali Femminili Di Brescia,Wang Xiyu,Anastasiia Sobolieva,wta_34,wta_268,WTA,
+2026-06-20,15:30,Internazionali Femminili Di Brescia,Mayar Sherif,Elizara Yaneva,wta_108,wta_228,WTA,
+2026-06-20,10:00,Lexus Nottingham Open,Karolina Pliskova,Marie Bouzkova,wta_267,wta_39,WTA,Grass
+2026-06-20,11:30,Lexus Nottingham Open,Emma Navarro,Viktorija Golubic,wta_19,wta_88,WTA,Grass
+2026-06-20,10:00,VANDA Pharmaceuticals Berlin Tennis Open,Aryna Sabalenka,Jessica Pegula,wta_1,wta_5,WTA,Grass
+2026-06-20,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Linda Noskova,Alexandra Eala,wta_14,wta_45,WTA,Grass
+2026-06-21,TBD,Bad Homburg Open powered by Solarwatt,Eva Lys,Emma Navarro,wta_56,wta_19,WTA,
+2026-06-21,TBD,Bad Homburg Open powered by Solarwatt,Ann Li,Ekaterina Alexandrova,wta_36,wta_11,WTA,
+2026-06-21,TBD,Bad Homburg Open powered by Solarwatt,Iva Jovic,Wang Xinyu,wta_20,wta_34,WTA,
+2026-06-21,TBD,Bad Homburg Open powered by Solarwatt,Katie Boulter,Leylah Fernandez,wta_83,wta_28,WTA,
+2026-06-21,TBD,Bad Homburg Open powered by Solarwatt,Clara Tauson,Diana Shnaider,wta_15,wta_21,WTA,
+2026-06-21,TBD,Bad Homburg Open powered by Solarwatt,Alexandra Eala,Elise Mertens,wta_45,wta_22,WTA,
+2026-06-21,TBD,Bad Homburg Open powered by Solarwatt,Naomi Osaka,Magdalena Frech,wta_16,wta_55,WTA,
+2026-06-21,TBD,Bad Homburg Open powered by Solarwatt,Liudmila Samsonova,Katerina Siniakova,wta_18,wta_46,WTA,
