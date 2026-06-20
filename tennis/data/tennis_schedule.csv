@@ -24,50 +24,28 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Jessica Pegula,Madison Keys
 2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Elina Svitolina,Alexandra Eala
 2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Linda Noskova,Paula Badosa
-2026-06-20,12:00,HSBC Championships,Brandon Nakashima,Francisco Cerundolo
-2026-06-20,13:30,HSBC Championships,Tommy Paul,Ugo Humbert
-2026-06-20,10:00,Lexus Eastbourne Open,Mingge Xu,Elsa Jacquemot
-2026-06-20,10:00,Lexus Eastbourne Open,Camila Osorio,Ajla Tomljanovic
-2026-06-20,10:00,Lexus Eastbourne Open,Lanlana Tararudee,Veronika Erjavec
-2026-06-20,11:30,Lexus Eastbourne Open,Zeynep Sonmez,Hanne Vandewinkel
-2026-06-20,11:30,Lexus Eastbourne Open,Peyton Stearns,Emily Appleton
-2026-06-20,11:30,Lexus Eastbourne Open,Anastasia Zakharova,Lilli Tagger
-2026-06-20,13:00,Lexus Eastbourne Open,Oleksandra Oliynykova,Sofia Johnson
-2026-06-20,13:00,Lexus Eastbourne Open,Kamilla Rakhimova,Oksana Selekhmeteva
-2026-06-20,13:00,Lexus Eastbourne Open,Indianna Spink,Kimberly Birrell
-2026-06-20,14:30,Lexus Eastbourne Open,Emiliana Arango,Alycia Parks
-2026-06-20,14:30,Lexus Eastbourne Open,Sofia Kenin,Daria Snigur
-2026-06-20,14:30,Lexus Eastbourne Open,Petra Marcinko,Simona Waltert
-2026-06-20,10:00,Lexus Eastbourne Open,Toby Samuel,Quentin Halys
-2026-06-20,10:00,Lexus Eastbourne Open,Matteo Arnaldi,Alastair Gray
-2026-06-20,11:30,Lexus Eastbourne Open,Harry Wendelken,Aleksandar Vukic
-2026-06-20,11:30,Lexus Eastbourne Open,Emilio Nava,Hamish Stewart
-2026-06-20,13:00,Lexus Eastbourne Open,Felix Gill,Marco Trungelliti
-2026-06-20,13:00,Lexus Eastbourne Open,James Duckworth,Giles Hussey
-2026-06-20,14:30,Lexus Eastbourne Open,Jan Choinski,Wu Yibing
-2026-06-20,14:30,Lexus Eastbourne Open,Marcos Giron,Charles Broom
-2026-06-20,13:00,Terra Wortmann Open,Alexander Zverev,Taylor Fritz
-2026-06-20,14:30,Terra Wortmann Open,Daniel Altmaier,Frances Tiafoe
-2026-06-20,09:00,Vanda Pharmaceuticals Mallorca Championships,Alex Molcan,Ziga Sesko
-2026-06-20,09:00,Vanda Pharmaceuticals Mallorca Championships,Antoine Ghibaudo,Petr Bar Biryukov
-2026-06-20,10:30,Vanda Pharmaceuticals Mallorca Championships,Alexandr Shevchenko,Abdullah Shelbayh
-2026-06-20,10:30,Vanda Pharmaceuticals Mallorca Championships,Adam Walton,Federico Bondioli
-2026-06-20,11:00,Vanda Pharmaceuticals Mallorca Championships,Filippo Romano,Murphy Cassone
-2026-06-20,12:30,Vanda Pharmaceuticals Mallorca Championships,Mikhail Kukushkin,Damir Dzumhur
-2026-06-20,13:00,Vanda Pharmaceuticals Mallorca Championships,Zachary Svajda,Marc-Andrea Huesler
-2026-06-20,09:00,Bad Homburg Open powered by Solarwatt,Irina-Camelia Begu,Tamara Korpatsch
-2026-06-20,09:00,Bad Homburg Open powered by Solarwatt,Diane Parry,Aoi Ito
-2026-06-20,10:30,Bad Homburg Open powered by Solarwatt,Anna Blinkova,Yulia Putintseva
-2026-06-20,10:30,Bad Homburg Open powered by Solarwatt,Solana Sierra,Ella Seidel
-2026-06-20,12:00,Bad Homburg Open powered by Solarwatt,Martina Trevisan,Taylor Townsend
-2026-06-20,12:00,Bad Homburg Open powered by Solarwatt,Renata Zarazua,Mariella Thamm
-2026-06-20,13:30,Bad Homburg Open powered by Solarwatt,Paula Badosa,Sinja Kraus
-2026-06-20,13:30,Bad Homburg Open powered by Solarwatt,Zhang Shuai,Elena-Gabriela Ruse
-2026-06-20,10:00,Figueira Da Foz Ladies Open,Yeonwoo Ku,Darja Vidmanova
-2026-06-20,11:30,Figueira Da Foz Ladies Open,Alina Charaeva,Ayla Aksu
-2026-06-20,14:00,Internazionali Femminili Di Brescia,Wang Xiyu,Anastasiia Sobolieva
-2026-06-20,15:30,Internazionali Femminili Di Brescia,Mayar Sherif,Elizara Yaneva
-2026-06-20,10:00,Lexus Nottingham Open,Karolina Pliskova,Marie Bouzkova
-2026-06-20,11:30,Lexus Nottingham Open,Emma Navarro,Viktorija Golubic
-2026-06-20,10:00,VANDA Pharmaceuticals Berlin Tennis Open,Aryna Sabalenka,Jessica Pegula
-2026-06-20,12:00,VANDA Pharmaceuticals Berlin Tennis Open,Linda Noskova,Alexandra Eala
+2026-06-19,Final,HSBC Championships,Alex de Minaur,Brandon Nakashima
+2026-06-19,Final,HSBC Championships,Tommy Paul,Alejandro Davidovich Fokina
+2026-06-19,Final,HSBC Championships,Arthur Fery,Francisco Cerundolo
+2026-06-19,Final,HSBC Championships,Ugo Humbert,Rinky Hijikata
+2026-06-19,Final,HSBC Championships,Hamad Medjedovic,Ugo Humbert
+2026-06-19,Final,Terra Wortmann Open,Alexander Zverev,Raphael Collignon
+2026-06-19,Final,Terra Wortmann Open,Frances Tiafoe,Felix Auger-Aliassime
+2026-06-19,Final,Terra Wortmann Open,Ben Shelton,Taylor Fritz
+2026-06-19,Final,Terra Wortmann Open,Daniel Altmaier,Daniil Medvedev
+2026-06-19,Final,Figueira Da Foz Ladies Open,Darja Vidmanova,Jil Teichmann
+2026-06-19,Final,Figueira Da Foz Ladies Open,Susan Bandecchi,Alina Charaeva
+2026-06-19,Final,Figueira Da Foz Ladies Open,Jeline Vandromme,Ayla Aksu
+2026-06-19,Final,Figueira Da Foz Ladies Open,Martyna Kubka,Yeonwoo Ku
+2026-06-19,Final,Internazionali Femminili Di Brescia,Wang Xiyu,Luisina Giovannini
+2026-06-19,Final,Internazionali Femminili Di Brescia,Tiantsoa Rakotomanga Rajaonah,Mayar Sherif
+2026-06-19,Final,Internazionali Femminili Di Brescia,Elizara Yaneva,Ekaterine Gorgodze
+2026-06-19,Final,Internazionali Femminili Di Brescia,Anastasiia Sobolieva,Ane Mintegi Del Olmo
+2026-06-19,Final,Lexus Nottingham Open,Jessica Bouzas Maneiro,Emma Navarro
+2026-06-19,Final,Lexus Nottingham Open,Marie Bouzkova,Tatjana Maria
+2026-06-19,Final,Lexus Nottingham Open,Ann Li,Viktorija Golubic
+2026-06-19,Final,Lexus Nottingham Open,Karolina Pliskova,Talia Gibson
+2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Aryna Sabalenka,Nikola Bartunkova
+2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Jessica Pegula,Madison Keys
+2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Elina Svitolina,Alexandra Eala
+2026-06-19,Final,VANDA Pharmaceuticals Berlin Tennis Open,Linda Noskova,Paula Badosa
