@@ -4271,3 +4271,104 @@ Saved 2456 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbatea
 2026-06-20 04:03:20 - ✅ nbateamgametotals.csv validation passed (2456 rows)
 2026-06-20 04:03:20 - === Git sync ===
 2026-06-20 04:03:24 - Repository on main and synced with GitHub.
+2026-06-20 04:03:24 - 📊 New NBA data detected — committing update
+2026-06-20 04:03:28 - 🚀 NBA data successfully pushed to GitHub!
+2026-06-20 04:03:28 - === NBA Data Update Finished Successfully ===
+
+2026-06-21 04:00:02 - === NBA Data Update Started ===
+2026-06-21 04:00:02 - === Running getnbaschedule.py ===
+Fetching NBA Playoffs schedule for 2026 season...
+  Season key 2026 returned 404, trying 2025...
+  Using season key: 2025
+Saved schedule â†’ nba\data\nbaschedule.json
+  85 games in file
+2026-06-21 04:00:03 - ✅ getnbaschedule.py completed successfully
+2026-06-21 04:00:03 - ✅ Schedule loaded (85 games)
+2026-06-21 04:00:03 - === Running getnbagamelogs.py ===
+=== NBA PLAYER GAME LOGS START ===
+[INFO] Priming NBA session...
+[WARNING] Session priming failed: Failed to perform, curl: (47) Maximum (30) redirects followed. See https://curl.se/libcurl/c/libcurl-errors.html first for more details.
+[RESUME] Continuing from 2026-04-13
+[PULL] 04/13/2026
+[PULL] 04/14/2026
+[PULL] 04/15/2026
+[PULL] 04/16/2026
+[PULL] 04/17/2026
+[PULL] 04/18/2026
+[PULL] 04/19/2026
+[PULL] 04/20/2026
+[PULL] 04/21/2026
+[PULL] 04/22/2026
+[PULL] 04/23/2026
+[PULL] 04/24/2026
+[PULL] 04/25/2026
+[PULL] 04/26/2026
+[PULL] 04/27/2026
+[PULL] 04/28/2026
+[PULL] 04/29/2026
+[PULL] 04/30/2026
+[PULL] 05/01/2026
+[PULL] 05/02/2026
+[PULL] 05/03/2026
+[PULL] 05/04/2026
+[PULL] 05/05/2026
+[PULL] 05/06/2026
+[PULL] 05/07/2026
+[PULL] 05/08/2026
+[PULL] 05/09/2026
+[PULL] 05/10/2026
+[PULL] 05/11/2026
+[PULL] 05/12/2026
+[PULL] 05/13/2026
+[PULL] 05/14/2026
+[PULL] 05/15/2026
+[PULL] 05/16/2026
+[PULL] 05/17/2026
+[PULL] 05/18/2026
+[PULL] 05/19/2026
+[PULL] 05/20/2026
+[PULL] 05/21/2026
+[PULL] 05/22/2026
+[PULL] 05/23/2026
+[PULL] 05/24/2026
+[PULL] 05/25/2026
+[PULL] 05/26/2026
+[PULL] 05/27/2026
+[PULL] 05/28/2026
+[PULL] 05/29/2026
+[PULL] 05/30/2026
+[PULL] 05/31/2026
+[PULL] 06/01/2026
+[PULL] 06/02/2026
+[PULL] 06/03/2026
+[PULL] 06/04/2026
+[PULL] 06/05/2026
+[PULL] 06/06/2026
+[PULL] 06/07/2026
+[PULL] 06/08/2026
+[PULL] 06/09/2026
+[PULL] 06/10/2026
+[PULL] 06/11/2026
+[PULL] 06/12/2026
+[PULL] 06/13/2026
+[PULL] 06/14/2026
+[PULL] 06/15/2026
+[PULL] 06/16/2026
+[PULL] 06/17/2026
+[PULL] 06/18/2026
+[PULL] 06/19/2026
+[PULL] 06/20/2026
+[PULL] 06/21/2026
+
+Saved 26611 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbaplayergamelogs.csv
+=== NBA PLAYER GAME LOGS FINISHED ===
+2026-06-21 04:03:11 - ✅ getnbagamelogs.py completed successfully
+2026-06-21 04:03:11 - === Validating nbaplayergamelogs.csv ===
+2026-06-21 04:03:11 - ✅ nbaplayergamelogs.csv validation passed (26611 rows)
+2026-06-21 04:03:11 - === Running getnbateamtotals.py ===
+Saved 2456 rows -> C:\Users\n8roc\PythonScripts\Streamlit\GitHub\nba\data\nbateamgametotals.csv
+2026-06-21 04:03:14 - ✅ getnbateamtotals.py completed successfully
+2026-06-21 04:03:14 - === Validating nbateamgametotals.csv ===
+2026-06-21 04:03:14 - ✅ nbateamgametotals.csv validation passed (2456 rows)
+2026-06-21 04:03:14 - === Git sync ===
+2026-06-21 04:03:19 - Repository on main and synced with GitHub.
