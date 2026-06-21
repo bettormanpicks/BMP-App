@@ -1,35 +1,35 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-06-21,12:30,HSBC Championships,Francisco Cerundolo,Tommy Paul,atp_19,atp_24,ATP,Grass
-2026-06-21,10:00,Lexus Eastbourne Open,Ajla Tomljanovic,Veronika Erjavec,wta_73,wta_112,WTA,Grass
-2026-06-21,11:00,Lexus Eastbourne Open,Oksana Selekhmeteva,Anastasia Zakharova,wta_74,wta_103,WTA,Grass
-2026-06-21,11:00,Lexus Eastbourne Open,Zeynep Sonmez,Elsa Jacquemot,wta_84,wta_57,WTA,Grass
-2026-06-21,11:00,Lexus Eastbourne Open,Peyton Stearns,Kimberly Birrell,wta_59,wta_94,WTA,Grass
-2026-06-21,12:30,Lexus Eastbourne Open,Sofia Johnson,Emiliana Arango,wta_407,wta_58,WTA,Grass
-2026-06-21,13:00,Lexus Eastbourne Open,Petra Marcinko,Daria Snigur,wta_69,wta_132,WTA,Grass
+2026-06-21,12:30,HSBC Championships,Francisco Cerundolo,Tommy Paul,atp_62,atp_24,ATP,Grass
 2026-06-21,10:00,Lexus Eastbourne Open,Hamish Stewart,Aleksandar Vukic,atp_338,atp_88,ATP,Grass
 2026-06-21,11:30,Lexus Eastbourne Open,Matteo Arnaldi,Toby Samuel,atp_85,atp_241,ATP,Grass
 2026-06-21,12:30,Lexus Eastbourne Open,Giles Hussey,Marco Trungelliti,atp_326,atp_131,ATP,Grass
 2026-06-21,12:30,Lexus Eastbourne Open,Marcos Giron,Jan Choinski,atp_63,atp_124,ATP,Grass
+2026-06-21,Live,Lexus Eastbourne Open,Oksana Selekhmeteva,Anastasia Zakharova,wta_74,wta_103,WTA,Grass
+2026-06-21,Live,Lexus Eastbourne Open,Zeynep Sonmez,Elsa Jacquemot,wta_84,wta_57,WTA,Grass
+2026-06-21,Live,Lexus Eastbourne Open,Peyton Stearns,Kimberly Birrell,wta_59,wta_94,WTA,Grass
+2026-06-21,12:30,Lexus Eastbourne Open,Sofia Johnson,Emiliana Arango,wta_407,wta_58,WTA,Grass
+2026-06-21,13:00,Lexus Eastbourne Open,Petra Marcinko,Daria Snigur,wta_69,wta_132,WTA,Grass
+2026-06-21,Final,Lexus Eastbourne Open,Ajla Tomljanovic,Veronika Erjavec,wta_73,wta_112,WTA,Grass
 2026-06-21,13:30,Terra Wortmann Open,Taylor Fritz,Frances Tiafoe,atp_7,atp_28,ATP,
-2026-06-21,10:00,Vanda Pharmaceuticals Mallorca Championships,Alex Molcan,Murphy Cassone,atp_415,atp_239,ATP,
+2026-06-21,Live,Vanda Pharmaceuticals Mallorca Championships,Nuno Borges,Adrian Mannarino,atp_44,atp_48,ATP,
+2026-06-21,10:00,Vanda Pharmaceuticals Mallorca Championships,Alex Molcan,Murphy Cassone,atp_199,atp_239,ATP,
 2026-06-21,10:00,Vanda Pharmaceuticals Mallorca Championships,Adam Walton,Antoine Ghibaudo,atp_93,atp_342,ATP,
-2026-06-21,10:30,Vanda Pharmaceuticals Mallorca Championships,Nuno Borges,Adrian Mannarino,atp_44,atp_48,ATP,
 2026-06-21,11:30,Vanda Pharmaceuticals Mallorca Championships,Abdullah Shelbayh,Marc Polmans,atp_318,atp_366,ATP,
 2026-06-21,11:30,Vanda Pharmaceuticals Mallorca Championships,Zachary Svajda,Damir Dzumhur,atp_106,atp_61,ATP,
 2026-06-21,13:00,Vanda Pharmaceuticals Mallorca Championships,Mariano Navone,Lorenzo Sonego,atp_74,atp_64,ATP,
 2026-06-21,15:30,Vanda Pharmaceuticals Mallorca Championships,Yannick Hanfmann,Adolfo Daniel Vallejo,atp_90,atp_9021,ATP,
-2026-06-21,09:00,Bad Homburg Open powered by Solarwatt,Liudmila Samsonova,Katerina Siniakova,wta_18,wta_46,WTA,
-2026-06-21,09:00,Bad Homburg Open powered by Solarwatt,Solana Sierra,Anna Blinkova,wta_64,wta_82,WTA,
-2026-06-21,09:00,Bad Homburg Open powered by Solarwatt,Diane Parry,Irina-Camelia Begu,wta_107,wta_148,WTA,
-2026-06-21,10:00,Bad Homburg Open powered by Solarwatt,Elena-Gabriela Ruse,Taylor Townsend,wta_79,wta_116,WTA,
-2026-06-21,10:00,Bad Homburg Open powered by Solarwatt,Renata Zarazua,Sinja Kraus,wta_87,wta_105,WTA,
-2026-06-21,11:00,Bad Homburg Open powered by Solarwatt,Katie Boulter,Leylah Fernandez,wta_83,wta_28,WTA,
+2026-06-21,Live,Bad Homburg Open powered by Solarwatt,Renata Zarazua,Sinja Kraus,wta_87,wta_105,WTA,
+2026-06-21,Live,Bad Homburg Open powered by Solarwatt,Katie Boulter,Leylah Fernandez,wta_83,wta_28,WTA,
+2026-06-21,11:45,Bad Homburg Open powered by Solarwatt,Elena-Gabriela Ruse,Taylor Townsend,wta_79,wta_116,WTA,
 2026-06-21,13:30,Bad Homburg Open powered by Solarwatt,Naomi Osaka,Magdalena Frech,wta_16,wta_55,WTA,
 2026-06-21,15:30,Bad Homburg Open powered by Solarwatt,Iva Jovic,Wang Xinyu,wta_20,wta_34,WTA,
-2026-06-21,10:00,Figueira Da Foz Ladies Open,Darja Vidmanova,Ayla Aksu,wta_127,wta_304,WTA,
+2026-06-21,Final,Bad Homburg Open powered by Solarwatt,Liudmila Samsonova,Katerina Siniakova,wta_18,wta_46,WTA,
+2026-06-21,Final,Bad Homburg Open powered by Solarwatt,Solana Sierra,Anna Blinkova,wta_64,wta_65,WTA,
+2026-06-21,Final,Bad Homburg Open powered by Solarwatt,Diane Parry,Irina-Camelia Begu,wta_107,wta_148,WTA,
+2026-06-21,Final,Figueira Da Foz Ladies Open,Darja Vidmanova,Ayla Aksu,wta_127,wta_304,WTA,
 2026-06-21,15:30,Internazionali Femminili Di Brescia,Wang Xiyu,Mayar Sherif,wta_34,wta_108,WTA,
-2026-06-21,11:00,Lexus Nottingham Open,Marie Bouzkova,Emma Navarro,wta_39,wta_19,WTA,Grass
-2026-06-21,10:00,VANDA Pharmaceuticals Berlin Tennis Open,Jessica Pegula,Linda Noskova,wta_5,wta_14,WTA,Grass
+2026-06-21,Live,Lexus Nottingham Open,Marie Bouzkova,Emma Navarro,wta_39,wta_19,WTA,Grass
+2026-06-21,14:00,VANDA Pharmaceuticals Berlin Tennis Open,Jessica Pegula,Linda Noskova,wta_5,wta_14,WTA,Grass
 2026-06-22,TBD,Lexus Eastbourne Open,Roman Andres Burruchaga,Arthur Fery,atp_102,atp_156,ATP,Grass
 2026-06-22,TBD,Lexus Eastbourne Open,Ugo Humbert,Mattia Bellucci,atp_38,atp_109,ATP,Grass
 2026-06-22,TBD,Lexus Eastbourne Open,Zizou Bergs,Jaume Munar,atp_43,atp_35,ATP,Grass
@@ -37,7 +37,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-06-22,TBD,Lexus Eastbourne Open,Brandon Nakashima,Jack Draper,atp_29,atp_12,ATP,Grass
 2026-06-22,TBD,Lexus Eastbourne Open,Raphael Collignon,Juan Manuel Cerundolo,atp_68,atp_19,ATP,Grass
 2026-06-22,TBD,Lexus Eastbourne Open,Gabriel Diallo,Terence Atmane,atp_39,atp_65,ATP,Grass
-2026-06-22,TBD,Lexus Eastbourne Open,Jack Pinnington Jones,Camilo Ugo Carabelli,atp_138,atp_45,ATP,Grass
+2026-06-22,TBD,Lexus Eastbourne Open,Jack Pinnington Jones,Camilo Ugo Carabelli,wta_72,atp_45,WTA,Grass
 2026-06-22,TBD,Lexus Eastbourne Open,Thiago Agustin Tirante,Jacob Fearnley,atp_92,atp_84,ATP,Grass
 2026-06-22,TBD,Lexus Eastbourne Open,Jelena Ostapenko,Francesca Jones,wta_27,wta_72,WTA,Grass
 2026-06-22,TBD,Lexus Eastbourne Open,Panna Udvardy,Anna Bondar,wta_93,wta_65,WTA,Grass
