@@ -63,7 +63,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-22,Final,Wimbledon,Andy Andrade,Colton Smith
 2026-06-22,Final,Wimbledon,Mark Lajal,Luka Pavlovic
 2026-06-22,Final,Wimbledon,Clement Chidekh,Aziz Dougaz
-2026-06-22,Live,Lexus Eastbourne Open,Zizou Bergs,Jaume Munar
+2026-06-22,Final,Lexus Eastbourne Open,Zizou Bergs,Jaume Munar
 2026-06-22,Final,Lexus Eastbourne Open,Raphael Collignon,Juan Manuel Cerundolo
 2026-06-22,Final,Lexus Eastbourne Open,Jan Choinski,Alexei Popyrin
 2026-06-22,Final,Lexus Eastbourne Open,Marcos Giron,Jack Draper
@@ -82,9 +82,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-22,Final,Vanda Pharmaceuticals Mallorca Championships,Jan-Lennard Struff,Martin Landaluce
 2026-06-22,Final,Vanda Pharmaceuticals Mallorca Championships,Fabian Marozsan,Alex Molcan
 2026-06-22,Final,Vanda Pharmaceuticals Mallorca Championships,Ethan Quinn,Valentin Royer
-2026-06-22,Live,Bad Homburg Open powered by Solarwatt,Alexandra Eala,Elise Mertens
 2026-06-22,Final,Bad Homburg Open powered by Solarwatt,Naomi Osaka,Magdalena Frech
 2026-06-22,Final,Bad Homburg Open powered by Solarwatt,Clara Tauson,Diana Shnaider
+2026-06-22,Final,Bad Homburg Open powered by Solarwatt,Alexandra Eala,Elise Mertens
 2026-06-22,Final,Bad Homburg Open powered by Solarwatt,Venus Williams,Irina-Camelia Begu
 2026-06-22,Final,Bad Homburg Open powered by Solarwatt,Solana Sierra,Zheng Qinwen
 2026-06-22,Final,Bad Homburg Open powered by Solarwatt,Sinja Kraus,Anna Kalinskaya
@@ -179,4 +179,5 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-23,09:30,Bad Homburg Open powered by Solarwatt,Elena-Gabriela Ruse,Linda Noskova
 2026-06-23,09:30,Bad Homburg Open powered by Solarwatt,Ann Li,Ekaterina Alexandrova
 2026-06-23,10:30,Bad Homburg Open powered by Solarwatt,Wang Xinyu,Leylah Fernandez
+2026-06-23,13:30,Bad Homburg Open powered by Solarwatt,Naomi Osaka,Elise Mertens
 2026-06-23,15:30,Bad Homburg Open powered by Solarwatt,Liudmila Samsonova,Elina Svitolina
