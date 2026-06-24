@@ -31,10 +31,10 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-24,Final,Wimbledon,Remy Bertola,Jurij Rodionov
 2026-06-24,Final,Wimbledon,Stefano Travaglia,Zhou Yi
 2026-06-24,Final,Wimbledon,Zsombor Piros,Billy Harris
-2026-06-24,Live,Wimbledon,Caroline Werner,Alina Charaeva
-2026-06-24,Live,Wimbledon,Polina Iatcenko,Bai Zhuoxuan
 2026-06-24,Final,Wimbledon,Mariam Bolkvadze,Hayu Kinoshita
+2026-06-24,Final,Wimbledon,Polina Iatcenko,Bai Zhuoxuan
 2026-06-24,Final,Wimbledon,Maria Timofeeva,Veronika Podrez
+2026-06-24,Final,Wimbledon,Caroline Werner,Alina Charaeva
 2026-06-24,Final,Wimbledon,Polina Kudermetova,Clervie Ngounoue
 2026-06-24,TBD,Wimbledon,Wang Xiyu,Marina Bassols Ribera
 2026-06-24,Final,Wimbledon,Robin Montgomery,Elvina Kalieva
@@ -110,11 +110,14 @@ Date,Time,Tournament,Player 1,Player 2
 2026-06-25,10:00,Wimbledon,Claire Liu,Elena Pridankina
 2026-06-25,10:00,Wimbledon,Iryna Shymanovich,Katherine Sebov
 2026-06-25,10:00,Wimbledon,Oceane Dodin,Mananchaya Sawangkaew
+2026-06-25,12:00,Wimbledon,Ashlyn Krueger,Polina Iatcenko
 2026-06-25,12:00,Wimbledon,Marina Bassols Ribera,Robin Montgomery
 2026-06-25,12:00,Wimbledon,Darja Semenistaja,Anastasia Gasanova
 2026-06-25,12:00,Wimbledon,Katie Volynets,Leolia Jeanjean
 2026-06-25,12:00,Wimbledon,Aliaksandra Sasnovich,Bianca Andreescu
 2026-06-25,12:00,Wimbledon,Lina Gjorcheska,Lucia Bronzetti
+2026-06-25,12:00,Wimbledon,Maria Timofeeva,Heather Watson
+2026-06-25,12:00,Wimbledon,Polina Kudermetova,Alina Charaeva
 2026-06-25,12:00,Wimbledon,Mariam Bolkvadze,Jeline Vandromme
 2026-06-25,12:00,Wimbledon,Teodora Kostovic,Zhu Lin
 2026-06-25,10:00,Lexus Eastbourne Open,Toby Samuel,Juan Manuel Cerundolo
