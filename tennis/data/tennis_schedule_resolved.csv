@@ -1,9 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-06-26,TBD,Lexus Eastbourne Open,Petra Marcinko,Madison Keys,wta_69,wta_17,WTA,Grass
-2026-06-26,TBD,Lexus Eastbourne Open,Tatjana Maria,Jelena Ostapenko,wta_54,wta_27,WTA,Grass
-2026-06-26,Final,Lexus Eastbourne Open,Jack Draper,Ugo Humbert,atp_12,atp_38,ATP,Grass
-2026-06-26,Final,Lexus Eastbourne Open,Zizou Bergs,Toby Samuel,atp_43,atp_241,ATP,Grass
-2026-06-26,Final,Vanda Pharmaceuticals Mallorca Championships,Fabian Marozsan,Alejandro Davidovich Fokina,atp_47,atp_15,ATP,
-2026-06-26,Final,Vanda Pharmaceuticals Mallorca Championships,Nuno Borges,Ethan Quinn,atp_44,atp_70,ATP,
-2026-06-26,Final,Bad Homburg Open powered by Solarwatt,Elena-Gabriela Ruse,Karolina Muchova,wta_79,wta_13,WTA,
-2026-06-26,Final,Bad Homburg Open powered by Solarwatt,Wang Xinyu,Naomi Osaka,wta_34,wta_16,WTA,
+2026-06-27,11:00,Lexus Eastbourne Open,Tatjana Maria,Madison Keys,wta_54,wta_17,WTA,Grass
+2026-06-27,13:30,Lexus Eastbourne Open,Zizou Bergs,Ugo Humbert,atp_43,atp_38,ATP,Grass
+2026-06-27,13:00,Vanda Pharmaceuticals Mallorca Championships,Ethan Quinn,Alejandro Davidovich Fokina,atp_70,atp_15,ATP,
+2026-06-27,09:00,Bad Homburg Open powered by Solarwatt,Karolina Muchova,Naomi Osaka,wta_13,wta_16,WTA,
