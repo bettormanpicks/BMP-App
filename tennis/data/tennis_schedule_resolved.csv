@@ -1,16 +1,16 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-04,Live,Wimbledon,Karen Khachanov,Flavio Cobolli,atp_17,atp_20,ATP,Grass
-2026-07-04,Live,Wimbledon,Zizou Bergs,Arthur Fery,atp_43,atp_156,ATP,Grass
-2026-07-04,Live,Wimbledon,Jiri Lehecka,Jaume Munar,atp_21,atp_35,ATP,Grass
-2026-07-04,Live,Wimbledon,Marcos Giron,Alexander Zverev,atp_63,atp_4,ATP,Grass
-2026-07-04,16:00,Wimbledon,Frances Tiafoe,Alexander Bublik,atp_28,atp_10,ATP,Grass
-2026-07-04,16:00,Wimbledon,Taylor Fritz,Lorenzo Sonego,atp_7,atp_64,ATP,Grass
-2026-07-04,16:30,Wimbledon,Grigor Dimitrov,Matteo Berrettini,atp_42,atp_57,ATP,Grass
+2026-07-04,Live,Wimbledon,Taylor Fritz,Lorenzo Sonego,atp_7,atp_64,ATP,Grass
+2026-07-04,Live,Wimbledon,Frances Tiafoe,Alexander Bublik,atp_28,atp_10,ATP,Grass
+2026-07-04,Live,Wimbledon,Grigor Dimitrov,Matteo Berrettini,atp_42,atp_57,ATP,Grass
+2026-07-04,Final,Wimbledon,Marcos Giron,Alexander Zverev,atp_63,atp_4,ATP,Grass
 2026-07-04,Final,Wimbledon,Alex de Minaur,Zachary Svajda,atp_8,atp_106,ATP,Grass
-2026-07-04,Live,Wimbledon,Sorana Cirstea,Linda Noskova,wta_30,wta_14,WTA,Grass
-2026-07-04,Live,Wimbledon,Amanda Anisimova,Madison Keys,wta_6,wta_17,WTA,Grass
+2026-07-04,Final,Wimbledon,Karen Khachanov,Flavio Cobolli,atp_17,atp_20,ATP,Grass
+2026-07-04,Final,Wimbledon,Jiri Lehecka,Jaume Munar,atp_21,atp_35,ATP,Grass
+2026-07-04,Final,Wimbledon,Zizou Bergs,Arthur Fery,atp_43,atp_156,ATP,Grass
 2026-07-04,Final,Wimbledon,Elise Mertens,Elena Rybakina,wta_22,wta_3,WTA,Grass
 2026-07-04,Final,Wimbledon,Alexandra Eala,Iga Swiatek,wta_45,wta_2,WTA,Grass
+2026-07-04,Final,Wimbledon,Amanda Anisimova,Madison Keys,wta_6,wta_17,WTA,Grass
+2026-07-04,Final,Wimbledon,Sorana Cirstea,Linda Noskova,wta_30,wta_14,WTA,Grass
 2026-07-04,Final,Wimbledon,Emma Navarro,Marta Kostyuk,wta_19,wta_26,WTA,Grass
 2026-07-04,Final,Wimbledon,Jasmine Paolini,Maria Sakkari,wta_8,wta_33,WTA,Grass
 2026-07-04,Final,Wimbledon,Liudmila Samsonova,Marie Bouzkova,wta_18,wta_39,WTA,Grass
