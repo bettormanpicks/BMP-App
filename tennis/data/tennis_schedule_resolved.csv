@@ -1,18 +1,18 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-04,Live,Wimbledon,Taylor Fritz,Lorenzo Sonego,atp_7,atp_64,ATP,Grass
-2026-07-04,Live,Wimbledon,Frances Tiafoe,Alexander Bublik,atp_28,atp_10,ATP,Grass
-2026-07-04,Live,Wimbledon,Grigor Dimitrov,Matteo Berrettini,atp_42,atp_57,ATP,Grass
 2026-07-04,Final,Wimbledon,Marcos Giron,Alexander Zverev,atp_63,atp_4,ATP,Grass
 2026-07-04,Final,Wimbledon,Alex de Minaur,Zachary Svajda,atp_8,atp_106,ATP,Grass
+2026-07-04,Final,Wimbledon,Taylor Fritz,Lorenzo Sonego,atp_7,atp_64,ATP,Grass
 2026-07-04,Final,Wimbledon,Karen Khachanov,Flavio Cobolli,atp_17,atp_20,ATP,Grass
+2026-07-04,Final,Wimbledon,Frances Tiafoe,Alexander Bublik,atp_28,atp_10,ATP,Grass
 2026-07-04,Final,Wimbledon,Jiri Lehecka,Jaume Munar,atp_21,atp_35,ATP,Grass
+2026-07-04,Final,Wimbledon,Grigor Dimitrov,Matteo Berrettini,atp_42,atp_57,ATP,Grass
 2026-07-04,Final,Wimbledon,Zizou Bergs,Arthur Fery,atp_43,atp_156,ATP,Grass
 2026-07-04,Final,Wimbledon,Elise Mertens,Elena Rybakina,wta_22,wta_3,WTA,Grass
 2026-07-04,Final,Wimbledon,Alexandra Eala,Iga Swiatek,wta_45,wta_2,WTA,Grass
 2026-07-04,Final,Wimbledon,Amanda Anisimova,Madison Keys,wta_6,wta_17,WTA,Grass
-2026-07-04,Final,Wimbledon,Sorana Cirstea,Linda Noskova,wta_30,wta_14,WTA,Grass
+2026-07-04,Final,Wimbledon,Sorana Cirstea,Linda Noskova,wta_30,wta_118,WTA,Grass
 2026-07-04,Final,Wimbledon,Emma Navarro,Marta Kostyuk,wta_19,wta_26,WTA,Grass
-2026-07-04,Final,Wimbledon,Jasmine Paolini,Maria Sakkari,wta_8,wta_33,WTA,Grass
+2026-07-04,Final,Wimbledon,Jasmine Paolini,Maria Sakkari,wta_8,wta_54,WTA,Grass
 2026-07-04,Final,Wimbledon,Liudmila Samsonova,Marie Bouzkova,wta_18,wta_39,WTA,Grass
 2026-07-04,Final,Wimbledon,Daria Snigur,Ashlyn Krueger,wta_132,wta_100,WTA,Grass
 2026-07-05,11:30,Wimbledon,Karolina Muchova,Barbora Krejcikova,wta_13,wta_53,WTA,Grass
@@ -23,11 +23,15 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-05,13:00,Wimbledon,Hubert Hurkacz,Jan-Lennard Struff,atp_71,atp_77,ATP,Grass
 2026-07-05,13:30,Wimbledon,Felix Auger-Aliassime,Alejandro Davidovich Fokina,atp_6,atp_15,ATP,Grass
 2026-07-05,16:00,Wimbledon,Jannik Sinner,Shintaro Mochizuki,atp_2,atp_116,ATP,Grass
+2026-07-05,14:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Momoko Kobori,Mary Lewis,wta_427,wta_185,WTA,
+2026-07-05,16:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sahaja Yamalapalli,Ekaterina Ovcharenko,wta_416,wta_494,WTA,
+2026-07-05,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Alana Smith,Sydney Jara,atp_141,atp_9100,ATP,
+2026-07-05,18:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Ariana Arseneault,Victoria Osuigwe,wta_476,wta_162,WTA,
 2026-07-05,09:00,Grand Est Open 88,Alicia Herrero Linana,Dune Vaissaud,wta_308,wta_745,WTA,
 2026-07-05,09:00,Grand Est Open 88,Amandine Monnot,Jasmijn Gimbrere,wta_374,wta_450,WTA,
-2026-07-05,09:00,Grand Est Open 88,Polina Kudermetova,Liv Boulard,wta_144,wta_9100,WTA,
-2026-07-05,10:30,Grand Est Open 88,Yana Morderger,Lucie Nguyen Tan,wta_9101,wta_229,ATP,
-2026-07-05,10:30,Grand Est Open 88,Tayisiya Morderger,Yelyzaveta Kotliar,wta_9102,wta_499,ATP,
+2026-07-05,09:00,Grand Est Open 88,Polina Kudermetova,Liv Boulard,wta_144,wta_9101,WTA,
+2026-07-05,10:30,Grand Est Open 88,Yana Morderger,Lucie Nguyen Tan,wta_9102,wta_229,ATP,
+2026-07-05,10:30,Grand Est Open 88,Tayisiya Morderger,Yelyzaveta Kotliar,wta_9103,wta_499,ATP,
 2026-07-05,10:30,Grand Est Open 88,Yara Bartashevich,Maria Sara Popa,wta_509,wta_9031,WTA,
 2026-07-05,12:00,Grand Est Open 88,Gina Dittmann,Astrid Lew Yan Foon,wta_522,wta_410,WTA,
 2026-07-05,12:00,Grand Est Open 88,Michaela Bayerlova,Diana Martynov,wta_804,wta_21,WTA,
