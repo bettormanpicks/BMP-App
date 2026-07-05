@@ -11,14 +11,14 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-05,16:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sahaja Yamalapalli,Ekaterina Ovcharenko,wta_416,wta_494,WTA,
 2026-07-05,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Alana Smith,Sydney Jara,atp_141,atp_9100,ATP,
 2026-07-05,18:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Ariana Arseneault,Victoria Osuigwe,wta_476,wta_162,WTA,
-2026-07-05,09:00,Grand Est Open 88,Alicia Herrero Linana,Dune Vaissaud,wta_308,wta_745,WTA,
-2026-07-05,09:00,Grand Est Open 88,Amandine Monnot,Jasmijn Gimbrere,wta_374,wta_450,WTA,
-2026-07-05,09:00,Grand Est Open 88,Polina Kudermetova,Liv Boulard,wta_144,wta_9101,WTA,
-2026-07-05,10:30,Grand Est Open 88,Yana Morderger,Lucie Nguyen Tan,wta_9102,wta_229,ATP,
-2026-07-05,10:30,Grand Est Open 88,Tayisiya Morderger,Yelyzaveta Kotliar,wta_9103,wta_499,ATP,
-2026-07-05,10:30,Grand Est Open 88,Yara Bartashevich,Maria Sara Popa,wta_509,wta_9031,WTA,
+2026-07-05,Live,Grand Est Open 88,Alicia Herrero Linana,Dune Vaissaud,wta_308,wta_745,WTA,
+2026-07-05,11:00,Grand Est Open 88,Yara Bartashevich,Maria Sara Popa,wta_509,wta_9031,WTA,
+2026-07-05,11:05,Grand Est Open 88,Yana Morderger,Lucie Nguyen Tan,wta_9101,wta_229,ATP,
+2026-07-05,11:10,Grand Est Open 88,Tayisiya Morderger,Yelyzaveta Kotliar,wta_9102,wta_499,ATP,
 2026-07-05,12:00,Grand Est Open 88,Gina Dittmann,Astrid Lew Yan Foon,wta_522,wta_410,WTA,
 2026-07-05,12:00,Grand Est Open 88,Michaela Bayerlova,Diana Martynov,wta_804,wta_21,WTA,
+2026-07-05,Final,Grand Est Open 88,Amandine Monnot,Jasmijn Gimbrere,wta_374,wta_450,WTA,
+2026-07-05,Final,Grand Est Open 88,Polina Kudermetova,Liv Boulard,wta_144,wta_9103,WTA,
 2026-07-06,TBD,Wimbledon,Taylor Fritz,Alexander Bublik,atp_7,atp_10,ATP,Grass
 2026-07-06,TBD,Wimbledon,Grigor Dimitrov,Arthur Fery,atp_42,atp_156,ATP,Grass
 2026-07-06,TBD,Wimbledon,Jiri Lehecka,Alexander Zverev,atp_21,atp_4,ATP,Grass
