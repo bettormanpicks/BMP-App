@@ -3,10 +3,10 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-06,Final,Wimbledon,Ashlyn Krueger,Marta Kostyuk
 2026-07-06,Final,Wimbledon,Jasmine Paolini,Alexandra Eala
 2026-07-06,Final,Wimbledon,Marie Bouzkova,Elise Mertens
-2026-07-06,Live,Wimbledon,Grigor Dimitrov,Arthur Fery
-2026-07-06,Live,Wimbledon,Taylor Fritz,Alexander Bublik
-2026-07-06,17:40,Wimbledon,Jiri Lehecka,Alexander Zverev
+2026-07-06,19:45,Wimbledon,Jiri Lehecka,Alexander Zverev
 2026-07-06,Final,Wimbledon,Alex de Minaur,Flavio Cobolli
+2026-07-06,Final,Wimbledon,Taylor Fritz,Alexander Bublik
+2026-07-06,Final,Wimbledon,Grigor Dimitrov,Arthur Fery
 2026-07-06,Final,Nordea Open,Oleksandra Oliynykova,Moyuka Uchijima
 2026-07-06,Final,Nordea Open,Martha Matoula,Yulia Putintseva
 2026-07-06,Final,Nordea Open,Simona Waltert,Katarzyna Kawa
@@ -16,9 +16,6 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-06,Final,Nordea Open,Marina Bassols Ribera,Paula Badosa
 2026-07-06,Final,Nordea Open,Noma Noha Akugue,Irene Burillo
 2026-07-06,Final,Nordea Open,Miriam Bulgaru,Valeriya Strakhova
-2026-07-06,19:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sayaka Ishii,Kayla Cross
-2026-07-06,19:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Olivia Lincer,Tatjana Maria
-2026-07-06,20:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Kylie Collins,Alana Smith
 2026-07-06,Final,Grand Est Open 88,Anna Blinkova,Erika Andreeva
 2026-07-06,Final,Grand Est Open 88,Julia Grabher,Rebeka Masarova
 2026-07-06,Final,Grand Est Open 88,Caroline Werner,Dominika Salkova
@@ -39,19 +36,18 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-07,10:30,Nordea Open,Sinja Kraus,Claire Liu
 2026-07-07,11:30,Nordea Open,Dalma Galfi,Kajsa Rinaldo Persson
 2026-07-07,13:00,Nordea Open,Lisa Zaar,Varvara Lepchenko
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Lucrezia Stefanini,Carol Zhao
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Darja Vidmanova,Carolyn Ansari
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Lea Ma,Clervie Ngounoue
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katherine Sebov,Cadence Brace
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Mei Yamaguchi,Greet Minnen
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Madison Brengle,Ana Sofia Sanchez
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katie Volynets,Ariana Arseneault
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sachia Vickery,Reese Brantmeier
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Momoko Kobori,Elizabeth Mandlik
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Mananchaya Sawangkaew,Caroline Dolehide
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Iryna Shymanovich,Hayu Kinoshita
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katrina Scott,Mary Stoiana
-2026-07-07,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sahaja Yamalapalli,Anna Rogers
+2026-07-07,15:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Olivia Lincer,Tatjana Maria
+2026-07-07,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katie Volynets,Ariana Arseneault
+2026-07-07,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sayaka Ishii,Kayla Cross
+2026-07-07,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katherine Sebov,Cadence Brace
+2026-07-07,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Madison Brengle,Ana Sofia Sanchez
+2026-07-07,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Kylie Collins,Alana Smith
+2026-07-07,18:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Momoko Kobori,Elizabeth Mandlik
+2026-07-07,18:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Iryna Shymanovich,Hayu Kinoshita
+2026-07-07,18:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katrina Scott,Mary Stoiana
+2026-07-07,19:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sachia Vickery,Reese Brantmeier
+2026-07-07,19:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Mananchaya Sawangkaew,Caroline Dolehide
+2026-07-07,19:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Lea Ma,Clervie Ngounoue
 2026-07-07,09:00,Grand Est Open 88,Amandine Monnot,Leolia Jeanjean
 2026-07-07,09:00,Grand Est Open 88,Maria Lourdes Carle,Laura Pigossi
 2026-07-07,09:00,Grand Est Open 88,Yasmine Kabbaj,Mayar Sherif
