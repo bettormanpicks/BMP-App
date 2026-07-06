@@ -3,7 +3,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-06,Final,Wimbledon,Ashlyn Krueger,Marta Kostyuk,wta_100,wta_26,WTA,Grass
 2026-07-06,Final,Wimbledon,Jasmine Paolini,Alexandra Eala,wta_8,wta_45,WTA,Grass
 2026-07-06,Final,Wimbledon,Marie Bouzkova,Elise Mertens,wta_39,wta_22,WTA,Grass
-2026-07-06,19:45,Wimbledon,Jiri Lehecka,Alexander Zverev,atp_21,atp_4,ATP,Grass
+2026-07-06,TBD,Wimbledon,Jiri Lehecka,Alexander Zverev,atp_21,atp_4,ATP,Grass
 2026-07-06,Final,Wimbledon,Alex de Minaur,Flavio Cobolli,atp_8,atp_20,ATP,Grass
 2026-07-06,Final,Wimbledon,Taylor Fritz,Alexander Bublik,atp_7,atp_10,ATP,Grass
 2026-07-06,Final,Wimbledon,Grigor Dimitrov,Arthur Fery,atp_42,atp_156,ATP,Grass
@@ -52,7 +52,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-07,09:00,Grand Est Open 88,Maria Lourdes Carle,Laura Pigossi,wta_155,wta_214,WTA,
 2026-07-07,09:00,Grand Est Open 88,Yasmine Kabbaj,Mayar Sherif,wta_361,wta_108,WTA,
 2026-07-07,10:30,Grand Est Open 88,Alice Tubello,Ren Yufei,wta_435,wta_446,WTA,
-2026-07-07,10:30,Grand Est Open 88,Francesca Jones,Alice Rame,wta_72,wta_435,WTA,
+2026-07-07,10:30,Grand Est Open 88,Francesca Jones,Alice Rame,wta_72,wta_199,WTA,
 2026-07-07,10:30,Grand Est Open 88,Jeline Vandromme,Diana Martynov,wta_291,wta_21,WTA,
 2026-07-07,12:00,Grand Est Open 88,Yelyzaveta Kotliar,Oksana Selekhmeteva,wta_499,wta_74,WTA,
 2026-07-07,12:00,Grand Est Open 88,Aurora Zantedeschi,Elsa Jacquemot,wta_325,wta_57,WTA,
