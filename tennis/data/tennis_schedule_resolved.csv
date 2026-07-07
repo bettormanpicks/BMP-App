@@ -1,26 +1,47 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-06,Final,Wimbledon,Madison Keys,Linda Noskova,wta_17,wta_14,WTA,Grass
-2026-07-06,Final,Wimbledon,Ashlyn Krueger,Marta Kostyuk,wta_100,wta_26,WTA,Grass
-2026-07-06,Final,Wimbledon,Jasmine Paolini,Alexandra Eala,wta_8,wta_45,WTA,Grass
-2026-07-06,Final,Wimbledon,Marie Bouzkova,Elise Mertens,wta_39,wta_22,WTA,Grass
-2026-07-06,Final,Wimbledon,Alex de Minaur,Flavio Cobolli,atp_8,atp_20,ATP,Grass
-2026-07-06,Final,Wimbledon,Taylor Fritz,Alexander Bublik,atp_7,atp_10,ATP,Grass
-2026-07-06,Final,Wimbledon,Grigor Dimitrov,Arthur Fery,atp_42,atp_156,ATP,Grass
-2026-07-06,Final,Nordea Open,Oleksandra Oliynykova,Moyuka Uchijima,wta_71,wta_90,WTA,Clay
-2026-07-06,Final,Nordea Open,Martha Matoula,Yulia Putintseva,wta_371,wta_77,WTA,Clay
-2026-07-06,Final,Nordea Open,Simona Waltert,Katarzyna Kawa,wta_81,wta_143,WTA,Clay
-2026-07-06,Final,Nordea Open,Emiliana Arango,Lea Nilsson,wta_58,wta_326,WTA,Clay
-2026-07-06,Final,Nordea Open,Leyre Romero Gormaz,Darja Semenistaja,wta_140,wta_97,WTA,Clay
-2026-07-06,Final,Nordea Open,Tiana Tian Deng,Kaitlin Quevedo,wta_922,wta_131,WTA,Clay
-2026-07-06,Final,Nordea Open,Marina Bassols Ribera,Paula Badosa,wta_209,wta_70,WTA,Clay
-2026-07-06,Final,Nordea Open,Noma Noha Akugue,Irene Burillo,wta_255,wta_249,WTA,Clay
-2026-07-06,Final,Nordea Open,Miriam Bulgaru,Valeriya Strakhova,wta_208,wta_405,WTA,Clay
-2026-07-06,Final,Grand Est Open 88,Anna Blinkova,Erika Andreeva,wta_82,wta_7,WTA,
-2026-07-06,Final,Grand Est Open 88,Julia Grabher,Rebeka Masarova,wta_80,wta_117,WTA,
-2026-07-06,Final,Grand Est Open 88,Caroline Werner,Dominika Salkova,wta_234,wta_151,WTA,
-2026-07-06,Final,Grand Est Open 88,Francesca Curmi,Oceane Dodin,wta_335,wta_9056,WTA,
-2026-07-06,Final,Grand Est Open 88,Amandine Hesse,Barbora Palicova,wta_402,wta_221,WTA,
-2026-07-06,Final,Grand Est Open 88,Astrid Lew Yan Foon,Diana Martynov,wta_410,wta_21,WTA,
-2026-07-06,Final,Grand Est Open 88,Alicia Herrero Linana,Lucie Nguyen Tan,wta_308,wta_229,WTA,
-2026-07-06,Final,Grand Est Open 88,Amandine Monnot,Maria Sara Popa,wta_402,wta_9031,WTA,
-2026-07-06,Final,Grand Est Open 88,Liv Boulard,Yelyzaveta Kotliar,wta_9100,wta_499,ATP,
+2026-07-07,12:00,Wimbledon,Jannik Sinner,Jan-Lennard Struff,atp_2,atp_77,ATP,Grass
+2026-07-07,13:30,Wimbledon,Jiri Lehecka,Alexander Zverev,atp_21,atp_4,ATP,Grass
+2026-07-07,15:30,Wimbledon,Felix Auger-Aliassime,Novak Djokovic,atp_6,atp_3,ATP,Grass
+2026-07-07,12:30,Wimbledon,Jessica Pegula,Coco Gauff,wta_5,wta_4,WTA,Grass
+2026-07-07,14:00,Wimbledon,Naomi Osaka,Karolina Muchova,wta_16,wta_13,WTA,Grass
+2026-07-07,09:00,Nordea Open,June Bjork,Caijsa Hennemann,wta_9100,wta_377,ATP,Clay
+2026-07-07,09:00,Nordea Open,Mona Barthel,Lola Radivojevic,wta_203,wta_139,WTA,Clay
+2026-07-07,09:00,Nordea Open,Aneta Laboutkova,Grace Bernstein,wta_426,wta_9101,WTA,Clay
+2026-07-07,10:00,Nordea Open,Linea Bajraliu,Tamara Korpatsch,wta_835,wta_106,WTA,Clay
+2026-07-07,10:30,Nordea Open,Sinja Kraus,Claire Liu,wta_105,wta_213,WTA,Clay
+2026-07-07,11:30,Nordea Open,Dalma Galfi,Kajsa Rinaldo Persson,wta_86,wta_264,WTA,Clay
+2026-07-07,13:00,Nordea Open,Lisa Zaar,Varvara Lepchenko,wta_466,wta_149,WTA,Clay
+2026-07-07,15:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Olivia Lincer,Tatjana Maria,wta_179,wta_54,WTA,
+2026-07-07,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katie Volynets,Ariana Arseneault,wta_96,wta_476,WTA,
+2026-07-07,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sayaka Ishii,Kayla Cross,wta_9011,wta_197,WTA,
+2026-07-07,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katherine Sebov,Cadence Brace,wta_270,wta_202,WTA,
+2026-07-07,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Madison Brengle,Ana Sofia Sanchez,wta_400,wta_195,WTA,
+2026-07-07,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Kylie Collins,Alana Smith,wta_78,atp_141,WTA,
+2026-07-07,18:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Momoko Kobori,Elizabeth Mandlik,wta_427,wta_168,WTA,
+2026-07-07,18:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Iryna Shymanovich,Hayu Kinoshita,wta_156,wta_417,WTA,
+2026-07-07,18:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katrina Scott,Mary Stoiana,wta_282,wta_185,WTA,
+2026-07-07,19:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sachia Vickery,Reese Brantmeier,wta_696,wta_9102,WTA,
+2026-07-07,19:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Mananchaya Sawangkaew,Caroline Dolehide,wta_198,wta_121,WTA,
+2026-07-07,19:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Lea Ma,Clervie Ngounoue,wta_182,wta_259,WTA,
+2026-07-07,09:00,Grand Est Open 88,Amandine Monnot,Leolia Jeanjean,wta_402,wta_115,WTA,
+2026-07-07,09:00,Grand Est Open 88,Maria Lourdes Carle,Laura Pigossi,wta_155,wta_214,WTA,
+2026-07-07,09:00,Grand Est Open 88,Yasmine Kabbaj,Mayar Sherif,wta_361,wta_108,WTA,
+2026-07-07,10:30,Grand Est Open 88,Alice Tubello,Ren Yufei,wta_435,wta_446,WTA,
+2026-07-07,10:30,Grand Est Open 88,Francesca Jones,Alice Rame,wta_72,wta_435,WTA,
+2026-07-07,10:30,Grand Est Open 88,Jeline Vandromme,Diana Martynov,wta_291,wta_21,WTA,
+2026-07-07,12:00,Grand Est Open 88,Yelyzaveta Kotliar,Oksana Selekhmeteva,wta_499,wta_74,WTA,
+2026-07-07,12:00,Grand Est Open 88,Aurora Zantedeschi,Elsa Jacquemot,wta_325,wta_57,WTA,
+2026-07-07,12:00,Grand Est Open 88,Elina Avanesyan,Alicia Herrero Linana,wta_178,wta_308,WTA,
+2026-07-07,13:30,Grand Est Open 88,Angela Fita Boluda,Lisa Pigato,wta_242,wta_193,WTA,
+2026-07-07,15:30,Grand Est Open 88,Petra Marcinko,Clara Burel,wta_69,wta_15,WTA,
+2026-07-08,TBD,Wimbledon,Flavio Cobolli,Arthur Fery,atp_20,atp_156,ATP,Grass
+2026-07-08,TBD,Wimbledon,Marta Kostyuk,Jasmine Paolini,wta_26,wta_8,WTA,Grass
+2026-07-08,TBD,Wimbledon,Linda Noskova,Elise Mertens,wta_14,wta_22,WTA,Grass
+2026-07-08,TBD,Nordea Open,Moyuka Uchijima,Irene Burillo,wta_90,wta_249,WTA,Clay
+2026-07-08,TBD,Nordea Open,Emiliana Arango,Paula Badosa,wta_58,wta_70,WTA,Clay
+2026-07-08,TBD,Nordea Open,Miriam Bulgaru,Leyre Romero Gormaz,wta_208,wta_140,WTA,Clay
+2026-07-08,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Mei Yamaguchi,Greet Minnen,wta_285,wta_129,WTA,
+2026-07-08,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Lucrezia Stefanini,Carol Zhao,wta_136,wta_333,WTA,
+2026-07-08,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Darja Vidmanova,Carolyn Ansari,wta_127,wta_287,WTA,
+2026-07-08,TBD,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sahaja Yamalapalli,Anna Rogers,wta_416,wta_65,WTA,
+2026-07-08,TBD,Grand Est Open 88,Rebeka Masarova,Francesca Curmi,wta_117,wta_335,WTA,
