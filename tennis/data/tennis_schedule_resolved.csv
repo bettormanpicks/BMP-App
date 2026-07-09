@@ -1,7 +1,12 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-09,Live,Grand Est Open 88,Clara Burel,Alicia Herrero Linana,wta_15,wta_308,WTA,
-2026-07-09,12:00,Grand Est Open 88,Lisa Pigato,Aurora Zantedeschi,wta_193,wta_325,WTA,
-2026-07-09,15:30,Grand Est Open 88,Francesca Jones,Leolia Jeanjean,wta_72,wta_115,WTA,
-2026-07-09,Final,Grand Est Open 88,Jeline Vandromme,Oksana Selekhmeteva,wta_291,wta_74,WTA,
-2026-07-09,Live,Nordea Open,Irene Burillo,Kaitlin Quevedo,wta_249,wta_131,WTA,Clay
-2026-07-10,TBD,Grand Est Open 88,Francesca Curmi,Jeline Vandromme,wta_335,wta_291,WTA,
+2026-07-09,Live,Wimbledon,Karolina Muchova,Coco Gauff,wta_13,wta_4,WTA,Grass
+2026-07-09,14:00,Wimbledon,Marta Kostyuk,Linda Noskova,wta_26,wta_14,WTA,Grass
+2026-07-09,Live,Grand Est Open 88,Lisa Pigato,Aurora Zantedeschi,wta_466,wta_325,WTA,
+2026-07-09,Live,Nordea Open,Paula Badosa,Varvara Lepchenko,wta_70,wta_149,WTA,Clay
+2026-07-09,14:40,Nordea Open,Sinja Kraus,Yulia Putintseva,wta_105,wta_77,WTA,Clay
+2026-07-09,Final,Nordea Open,Irene Burillo,Kaitlin Quevedo,wta_249,wta_131,WTA,Clay
+2026-07-10,TBD,Wimbledon,Arthur Fery,Alexander Zverev,atp_156,atp_4,ATP,Grass
+2026-07-10,TBD,Wimbledon,Jannik Sinner,Novak Djokovic,atp_2,atp_3,ATP,Grass
+2026-07-10,09:00,Grand Est Open 88,Francesca Curmi,Jeline Vandromme,wta_335,wta_291,WTA,
+2026-07-10,10:30,Grand Est Open 88,Alicia Herrero Linana,Mayar Sherif,wta_308,wta_108,WTA,
+2026-07-10,09:00,Nordea Open,Kaitlin Quevedo,Simona Waltert,wta_131,wta_81,WTA,Clay
