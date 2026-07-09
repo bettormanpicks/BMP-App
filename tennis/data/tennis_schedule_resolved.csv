@@ -1,12 +1,20 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-09,Live,Wimbledon,Karolina Muchova,Coco Gauff,wta_13,wta_4,WTA,Grass
-2026-07-09,14:00,Wimbledon,Marta Kostyuk,Linda Noskova,wta_26,wta_14,WTA,Grass
-2026-07-09,Live,Grand Est Open 88,Lisa Pigato,Aurora Zantedeschi,wta_466,wta_325,WTA,
-2026-07-09,Live,Nordea Open,Paula Badosa,Varvara Lepchenko,wta_70,wta_149,WTA,Clay
-2026-07-09,14:40,Nordea Open,Sinja Kraus,Yulia Putintseva,wta_105,wta_77,WTA,Clay
+2026-07-09,Final,Wimbledon,Karolina Muchova,Coco Gauff,wta_13,wta_4,WTA,Grass
+2026-07-09,Final,Wimbledon,Marta Kostyuk,Linda Noskova,wta_26,wta_14,WTA,Grass
+2026-07-09,Live,Nordea Open,Sinja Kraus,Yulia Putintseva,wta_105,wta_77,WTA,Clay
+2026-07-09,Final,Nordea Open,Simona Waltert,Leyre Romero Gormaz,wta_81,wta_140,WTA,Clay
 2026-07-09,Final,Nordea Open,Irene Burillo,Kaitlin Quevedo,wta_249,wta_131,WTA,Clay
-2026-07-10,TBD,Wimbledon,Arthur Fery,Alexander Zverev,atp_156,atp_4,ATP,Grass
-2026-07-10,TBD,Wimbledon,Jannik Sinner,Novak Djokovic,atp_2,atp_3,ATP,Grass
-2026-07-10,09:00,Grand Est Open 88,Francesca Curmi,Jeline Vandromme,wta_335,wta_291,WTA,
-2026-07-10,10:30,Grand Est Open 88,Alicia Herrero Linana,Mayar Sherif,wta_308,wta_108,WTA,
-2026-07-10,09:00,Nordea Open,Kaitlin Quevedo,Simona Waltert,wta_131,wta_81,WTA,Clay
+2026-07-09,Final,Nordea Open,Paula Badosa,Varvara Lepchenko,wta_70,wta_149,WTA,Clay
+2026-07-09,Live,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Darja Vidmanova,Carolyn Ansari,wta_127,wta_287,WTA,
+2026-07-09,Live,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Sahaja Yamalapalli,Anna Rogers,wta_416,wta_65,WTA,
+2026-07-09,Live,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Mananchaya Sawangkaew,Lea Ma,wta_198,wta_182,WTA,
+2026-07-09,17:20,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Mei Yamaguchi,Greet Minnen,wta_285,wta_129,WTA,
+2026-07-09,Final,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katherine Sebov,Tatjana Maria,wta_270,wta_54,WTA,
+2026-07-09,Final,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katie Volynets,Kylie Collins,wta_96,wta_78,WTA,
+2026-07-09,Final,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Madison Brengle,Kayla Cross,wta_400,wta_197,WTA,
+2026-07-09,Live,Grand Est Open 88,Francesca Jones,Leolia Jeanjean,wta_72,wta_115,WTA,
+2026-07-09,Final,Grand Est Open 88,Jeline Vandromme,Oksana Selekhmeteva,wta_291,wta_74,WTA,
+2026-07-09,TBD,Grand Est Open 88,Lisa Pigato,Aurora Zantedeschi,wta_193,wta_325,WTA,
+2026-07-09,Final,Grand Est Open 88,Clara Burel,Alicia Herrero Linana,wta_15,wta_308,WTA,
+2026-07-10,12:30,Wimbledon,Arthur Fery,Alexander Zverev,atp_156,atp_4,ATP,Grass
+2026-07-10,14:30,Wimbledon,Jannik Sinner,Novak Djokovic,atp_2,atp_3,ATP,Grass
