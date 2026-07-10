@@ -1,13 +1,15 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-10,12:30,Wimbledon,Arthur Fery,Alexander Zverev,atp_156,atp_4,ATP,Grass
+2026-07-10,Live,Wimbledon,Arthur Fery,Alexander Zverev,atp_156,atp_4,ATP,Grass
 2026-07-10,14:30,Wimbledon,Jannik Sinner,Novak Djokovic,atp_2,atp_3,ATP,Grass
-2026-07-10,Live,Nordea Open,Yulia Putintseva,Paula Badosa,wta_77,wta_70,WTA,Clay
+2026-07-10,Final,Nordea Open,Yulia Putintseva,Paula Badosa,wta_77,wta_70,WTA,Clay
 2026-07-10,Final,Nordea Open,Kaitlin Quevedo,Simona Waltert,wta_131,wta_81,WTA,Clay
 2026-07-10,15:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Mananchaya Sawangkaew,Mary Stoiana,wta_198,wta_185,WTA,
 2026-07-10,16:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Katie Volynets,Elizabeth Mandlik,wta_96,wta_168,WTA,
 2026-07-10,18:00,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Lucrezia Stefanini,Tatjana Maria,wta_136,wta_54,WTA,
 2026-07-10,19:30,Cerity Partners Hall of Fame Open for the Van Alen Cup Presented by the Margaret Fund,Greet Minnen,Madison Brengle,wta_129,wta_400,WTA,
-2026-07-10,Live,Grand Est Open 88,Alicia Herrero Linana,Mayar Sherif,wta_308,wta_108,WTA,
+2026-07-10,Live,Grand Est Open 88,Anna Blinkova,Aurora Zantedeschi,wta_82,wta_325,WTA,
 2026-07-10,15:30,Grand Est Open 88,Leolia Jeanjean,Alice Tubello,wta_115,wta_435,WTA,
+2026-07-10,Final,Grand Est Open 88,Alicia Herrero Linana,Mayar Sherif,wta_308,wta_108,WTA,
 2026-07-10,Final,Grand Est Open 88,Francesca Curmi,Jeline Vandromme,wta_335,wta_291,WTA,
-2026-07-11,15:00,Wimbledon,Karolina Muchova,Linda Noskova,wta_13,wta_14,WTA,Grass
+2026-07-11,15:00,Wimbledon,Karolina Muchova,Linda Noskova,wta_13,wta_118,WTA,Grass
+2026-07-11,Final,Nordea Open,Simona Waltert,Paula Badosa,wta_81,wta_70,WTA,Clay
