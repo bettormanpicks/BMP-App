@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-13,08:30,EFG Swiss Open Gstaad,Lorenzo Sonego,Joel Josef Schwaerzler,atp_64,atp_9030,ATP,
+2026-07-13,Live,EFG Swiss Open Gstaad,Lorenzo Sonego,Joel Josef Schwaerzler,atp_64,atp_9030,ATP,
 2026-07-13,10:00,EFG Swiss Open Gstaad,Kilian Feldbausch,Miomir Kecmanovic,atp_412,atp_83,ATP,
 2026-07-13,10:30,EFG Swiss Open Gstaad,Clement Tabur,Jurij Rodionov,atp_204,atp_175,ATP,
 2026-07-13,12:00,EFG Swiss Open Gstaad,Raphael Collignon,Timofey Skatov,atp_68,atp_193,ATP,
@@ -13,8 +13,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-13,16:00,Plava Laguna Croatia Open Umag,Kyrian Jacquet,Marco Trungelliti,atp_153,atp_131,ATP,
 2026-07-13,16:00,Plava Laguna Croatia Open Umag,Dusan Lajovic,Luca Van Assche,atp_129,atp_130,ATP,
 2026-07-13,19:00,Plava Laguna Croatia Open Umag,Vit Kopriva,Dino Prizmic,atp_87,atp_121,ATP,
-2026-07-13,08:30,ATV Bancomat Tennis Open,Lola Radivojevic,Ren Yufei,wta_139,wta_446,WTA,
-2026-07-13,08:30,ATV Bancomat Tennis Open,Francesca Jones,Dalila Spiteri,wta_72,wta_385,WTA,
+2026-07-13,Live,ATV Bancomat Tennis Open,Lola Radivojevic,Ren Yufei,wta_139,wta_446,WTA,
+2026-07-13,Live,ATV Bancomat Tennis Open,Francesca Jones,Dalila Spiteri,wta_72,wta_385,WTA,
 2026-07-13,14:00,ATV Bancomat Tennis Open,Kajsa Rinaldo Persson,Darya Astakhova,wta_264,wta_380,WTA,
 2026-07-13,14:00,ATV Bancomat Tennis Open,Lina Gjorcheska,Deborah Chiesa,wta_181,wta_539,WTA,
 2026-07-13,15:30,ATV Bancomat Tennis Open,Alice Rame,Noma Noha Akugue,wta_199,wta_255,WTA,
@@ -25,7 +25,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-13,10:00,Enka Open,Varvara Panshina,Weronika Falkowska,wta_489,wta_493,WTA,
 2026-07-13,10:00,Enka Open,Daria Khomutsianskaya,Zhang Ying,wta_324,atp_449,WTA,
 2026-07-13,11:30,Enka Open,Kristina Penickova,Karman Thandi,wta_364,wta_9100,WTA,
-2026-07-13,11:30,Enka Open,Hanne Vandewinkel,Carol Young Suh Lee,wta_128,wta_352,WTA,
+2026-07-13,11:30,Enka Open,Hanne Vandewinkel,Carol Young Suh Lee,wta_128,wta_170,WTA,
 2026-07-13,11:30,Enka Open,Rina Saigo,Priska Nugroho,wta_298,wta_428,WTA,
 2026-07-13,13:00,Enka Open,Bai Zhuoxuan,Tatiana Prozorova,wta_379,wta_166,WTA,
 2026-07-13,13:00,Enka Open,Gabriela Knutson,Irem Kurt,wta_184,wta_863,WTA,
@@ -35,12 +35,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-13,09:00,Generali Open Ladies Kitzbühel,Despina Papamichail,Erika Andreeva,wta_157,wta_362,WTA,
 2026-07-13,10:30,Generali Open Ladies Kitzbühel,Mia Ristic,Mia Pohankova,wta_273,wta_346,WTA,
 2026-07-13,10:30,Generali Open Ladies Kitzbühel,Yasmine Kabbaj,Ekaterina Perelygina,wta_361,wta_494,WTA,
-2026-07-13,12:00,Generali Open Ladies Kitzbühel,Anastasia Tikhonova,Eva Bennemann,wta_257,wta_363,WTA,
-2026-07-13,13:00,Generali Open Ladies Kitzbühel,Julia Avdeeva,Gina Feistel,wta_457,wta_650,WTA,
+2026-07-13,12:00,Generali Open Ladies Kitzbühel,Anastasia Tikhonova,Eva Bennemann,wta_443,wta_363,WTA,
+2026-07-13,13:00,Generali Open Ladies Kitzbühel,Julia Avdeeva,Gina Feistel,wta_265,wta_650,WTA,
 2026-07-13,13:30,Generali Open Ladies Kitzbühel,Veronika Erjavec,Victoria Bosio,wta_112,wta_337,WTA,
 2026-07-13,14:30,Generali Open Ladies Kitzbühel,Polona Hercog,Dalila Jakupovic,wta_314,wta_385,WTA,
-2026-07-13,08:00,Unicredit Iasi Open,Ilinca Amariei,Carmen Andreea Herea,wta_484,wta_567,WTA,Clay
-2026-07-13,08:00,Unicredit Iasi Open,Elena Pridankina,Georgina Garcia Perez,wta_192,atp_389,WTA,Clay
+2026-07-13,Live,Unicredit Iasi Open,Ilinca Amariei,Carmen Andreea Herea,wta_484,wta_567,WTA,Clay
+2026-07-13,Live,Unicredit Iasi Open,Elena Pridankina,Georgina Garcia Perez,wta_192,atp_389,WTA,Clay
 2026-07-13,09:30,Unicredit Iasi Open,Leyre Romero Gormaz,Zhibek Kulambayeva,wta_140,wta_390,WTA,Clay
 2026-07-13,09:30,Unicredit Iasi Open,Elina Avanesyan,Irina Fetecau,wta_178,wta_386,WTA,Clay
 2026-07-13,10:30,Unicredit Iasi Open,Claire Liu,Ipek Oz,wta_213,wta_523,WTA,Clay
@@ -54,9 +54,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-13,14:30,Vanda Pharmaceuticals Athens Open,Marianne Argyrokastriti,Lilli Tagger,wta_820,wta_114,WTA,
 2026-07-13,16:00,Vanda Pharmaceuticals Athens Open,Viktoria Morvayova,Sara Bejlek,wta_328,wta_41,WTA,
 2026-07-13,16:00,Vanda Pharmaceuticals Athens Open,Mina Hodzic,Harriet Dart,wta_471,wta_169,WTA,
-2026-07-13,16:30,Vanda Pharmaceuticals Athens Open,Polina Kudermetova,Maria Sakkari,wta_144,wta_54,WTA,
+2026-07-13,16:30,Vanda Pharmaceuticals Athens Open,Polina Kudermetova,Maria Sakkari,wta_144,wta_33,WTA,
 2026-07-13,17:30,Vanda Pharmaceuticals Athens Open,Martha Matoula,Elena Micic,wta_371,wta_375,WTA,
-2026-07-13,18:00,Vanda Pharmaceuticals Athens Open,Valentini Grammatikopoulou,Alycia Parks,wta_470,wta_76,WTA,
+2026-07-13,18:00,Vanda Pharmaceuticals Athens Open,Valentini Grammatikopoulou,Alycia Parks,wta_470,wta_243,WTA,
 2026-07-14,TBD,EFG Swiss Open Gstaad,Alexandre Muller,Aleksandr Shevchenko,atp_50,atp_79,ATP,
 2026-07-14,TBD,EFG Swiss Open Gstaad,Jaime Faria,Stan Wawrinka,atp_146,atp_98,ATP,
 2026-07-14,TBD,EFG Swiss Open Gstaad,Federico Cina,Quentin Halys,atp_224,atp_72,ATP,
