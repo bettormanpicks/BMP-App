@@ -1,19 +1,18 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-15,Live,EFG Swiss Open Gstaad,Jerome Kym,Stefanos Tsitsipas,atp_195,atp_32,ATP,
 2026-07-15,Final,EFG Swiss Open Gstaad,Yannick Hanfmann,Valentin Vacherot,atp_90,atp_26,ATP,
 2026-07-15,Final,EFG Swiss Open Gstaad,Arthur Rinderknech,Clement Tabur,atp_30,atp_204,ATP,
 2026-07-15,Final,EFG Swiss Open Gstaad,Raphael Collignon,Lorenzo Sonego,atp_68,atp_64,ATP,
-2026-07-15,Final,Nordea Open,Daniel Altmaier,Luciano Darderi,atp_54,atp_22,ATP,Clay
+2026-07-15,Final,Nordea Open,Daniel Altmaier,Luciano Darderi,atp_402,atp_22,ATP,Clay
 2026-07-15,Final,Nordea Open,Stefano Travaglia,Mariano Navone,atp_164,atp_74,ATP,Clay
 2026-07-15,Final,Nordea Open,Nuno Borges,Grigor Dimitrov,atp_44,atp_42,ATP,Clay
 2026-07-15,Final,Nordea Open,Botic Van De Zandschulp,Adolfo Daniel Vallejo,atp_55,atp_9021,ATP,Clay
-2026-07-15,Live,Plava Laguna Croatia Open Umag,Pablo Carreno Busta,Camilo Ugo Carabelli,atp_122,atp_45,ATP,
-2026-07-15,Live,Plava Laguna Croatia Open Umag,Luca Van Assche,Titouan Droguet,atp_130,atp_119,ATP,
-2026-07-15,19:00,Plava Laguna Croatia Open Umag,Dino Prizmic,Alex Molcan,atp_121,atp_199,ATP,
 2026-07-15,Final,Plava Laguna Croatia Open Umag,Flavio Cobolli,Roman Andres Burruchaga,atp_20,atp_102,ATP,
 2026-07-15,Final,Plava Laguna Croatia Open Umag,Marco Trungelliti,Alejandro Davidovich Fokina,atp_131,atp_15,ATP,
 2026-07-15,Final,Plava Laguna Croatia Open Umag,Tomas Martin Etcheverry,Daniel Merida,atp_53,atp_402,ATP,
 2026-07-15,Final,Plava Laguna Croatia Open Umag,Federico Agustin Gomez,Matteo Arnaldi,atp_188,atp_85,ATP,
+2026-07-15,Final,Plava Laguna Croatia Open Umag,Pablo Carreno Busta,Camilo Ugo Carabelli,atp_122,atp_45,ATP,
+2026-07-15,TBD,Plava Laguna Croatia Open Umag,Dino Prizmic,Alex Molcan,atp_121,atp_199,ATP,
+2026-07-15,Final,Plava Laguna Croatia Open Umag,Luca Van Assche,Titouan Droguet,atp_130,atp_119,ATP,
 2026-07-15,Final,Plava Laguna Croatia Open Umag,Juan Carlos Prado Angelo,Damir Dzumhur,atp_212,atp_61,ATP,
 2026-07-15,Final,ATV Bancomat Tennis Open,Francesca Jones,Federica Urgesi,wta_72,wta_438,WTA,
 2026-07-15,Final,ATV Bancomat Tennis Open,Lola Radivojevic,Deborah Chiesa,wta_139,wta_619,WTA,
@@ -26,31 +25,35 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-15,Final,Generali Open Ladies Kitzbühel,Veronika Erjavec,Mona Barthel,wta_112,wta_203,WTA,
 2026-07-15,Final,Generali Open Ladies Kitzbühel,Julia Grabher,Ekaterina Perelygina,wta_80,wta_494,WTA,
 2026-07-15,Final,Generali Open Ladies Kitzbühel,Erika Andreeva,Mia Ristic,wta_362,wta_273,WTA,
-2026-07-15,Live,Unicredit Iasi Open,Elina Avanesyan,Petra Marcinko,wta_178,wta_69,WTA,Clay
+2026-07-15,Final,Unicredit Iasi Open,Elina Avanesyan,Petra Marcinko,wta_178,wta_69,WTA,Clay
 2026-07-15,Final,Unicredit Iasi Open,Anna Bondar,Tamara Zidansek,wta_65,wta_145,WTA,Clay
 2026-07-15,Final,Unicredit Iasi Open,Clara Burel,Elsa Jacquemot,wta_15,wta_57,WTA,Clay
 2026-07-15,Final,Unicredit Iasi Open,Ilinca Amariei,Elsa Jacquemot,wta_484,wta_57,WTA,Clay
 2026-07-15,Final,Unicredit Iasi Open,Yulia Putintseva,Alina Charaeva,wta_77,wta_163,WTA,Clay
-2026-07-15,Live,Vanda Pharmaceuticals Athens Open,Mai Hontama,Alycia Parks,wta_220,wta_243,WTA,
-2026-07-15,Live,Vanda Pharmaceuticals Athens Open,Lilli Tagger,Sara Bejlek,wta_114,wta_41,WTA,
 2026-07-15,Final,Vanda Pharmaceuticals Athens Open,Harriet Dart,Maria Sakkari,wta_169,wta_33,WTA,
-2026-07-15,Final,Vanda Pharmaceuticals Athens Open,Elena Micic,Zheng Qinwen,wta_375,wta_372,WTA,
+2026-07-15,Final,Vanda Pharmaceuticals Athens Open,Lilli Tagger,Sara Bejlek,wta_114,wta_41,WTA,
+2026-07-15,Final,Vanda Pharmaceuticals Athens Open,Mai Hontama,Alycia Parks,wta_220,wta_76,WTA,
+2026-07-15,Final,Vanda Pharmaceuticals Athens Open,Elena Micic,Zheng Qinwen,wta_375,wta_23,WTA,
 2026-07-16,08:30,EFG Swiss Open Gstaad,Juan Manuel Cerundolo,Miomir Kecmanovic,atp_19,atp_83,ATP,
 2026-07-16,10:00,EFG Swiss Open Gstaad,Jaime Faria,Casper Ruud,atp_146,atp_13,ATP,
+2026-07-16,12:00,EFG Swiss Open Gstaad,Jerome Kym,Stefanos Tsitsipas,atp_195,atp_32,ATP,
 2026-07-16,13:00,EFG Swiss Open Gstaad,Alexander Bublik,Quentin Halys,atp_10,atp_72,ATP,
 2026-07-16,15:30,EFG Swiss Open Gstaad,Aleksandr Shevchenko,Dominic Stricker,atp_79,atp_372,ATP,
 2026-07-16,09:00,Nordea Open,Nikoloz Basilashvili,Thiago Agustin Tirante,atp_136,atp_92,ATP,Clay
 2026-07-16,10:30,Nordea Open,Andrey Rublev,Andrea Pellegrino,atp_14,atp_140,ATP,Clay
 2026-07-16,12:00,Nordea Open,Alejandro Tabilo,Lautaro Midon,atp_67,atp_225,ATP,Clay
 2026-07-16,13:30,Nordea Open,Jesper de Jong,Sebastian Baez,atp_86,atp_33,ATP,Clay
-2026-07-16,TBD,Plava Laguna Croatia Open Umag,Damir Dzumhur,Matteo Arnaldi,atp_61,atp_85,ATP,
+2026-07-16,14:00,Plava Laguna Croatia Open Umag,Daniel Merida,Titouan Droguet,atp_402,atp_119,ATP,
+2026-07-16,16:00,Plava Laguna Croatia Open Umag,Damir Dzumhur,Matteo Arnaldi,atp_61,atp_85,ATP,
+2026-07-16,16:30,Plava Laguna Croatia Open Umag,Roman Andres Burruchaga,Camilo Ugo Carabelli,atp_102,atp_45,ATP,
+2026-07-16,19:00,Plava Laguna Croatia Open Umag,Alex Molcan,Alejandro Davidovich Fokina,atp_199,atp_15,ATP,
 2026-07-16,15:00,ATV Bancomat Tennis Open,Danka Kovinic,Julia Riera,wta_9007,wta_187,WTA,
 2026-07-16,15:00,ATV Bancomat Tennis Open,Aurora Zantedeschi,Martina Trevisan,wta_325,wta_685,WTA,
 2026-07-16,16:30,ATV Bancomat Tennis Open,Teodora Kostovic,Lucia Bronzetti,wta_171,wta_138,WTA,
 2026-07-16,16:30,ATV Bancomat Tennis Open,Nuria Brancaccio,Eva Vedder,wta_164,wta_254,WTA,
 2026-07-16,12:00,Enka Open,Vera Zvonareva,Viktoria Hruncakova,wta_357,wta_218,WTA,
 2026-07-16,12:00,Enka Open,Darya Khamutsianskaya,Tatiana Prozorova,wta_380,wta_166,WTA,
-2026-07-16,13:30,Enka Open,Gao Xinyu,Vendula Valdmannova,wta_34,wta_286,WTA,
+2026-07-16,13:30,Enka Open,Gao Xinyu,Vendula Valdmannova,wta_262,wta_286,WTA,
 2026-07-16,14:00,Enka Open,Anastasia Zakharova,Alexandra Shubladze,wta_103,wta_344,WTA,
 2026-07-16,09:00,Generali Open Ladies Kitzbühel,Eva Bennemann,Sinja Kraus,wta_363,wta_105,WTA,
 2026-07-16,10:30,Generali Open Ladies Kitzbühel,Gina Feistel,Laura Samson,wta_650,wta_212,WTA,
