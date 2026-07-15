@@ -11,7 +11,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-14,Final,Nordea Open,Sebastian Ofner,Thiago Agustin Tirante,atp_132,atp_92,ATP,Clay
 2026-07-14,Final,Nordea Open,Max Dahlin,Sebastian Baez,atp_454,atp_33,ATP,Clay
 2026-07-14,Final,Nordea Open,Daniel Altmaier,Hugo Gaston,atp_54,atp_96,ATP,Clay
-2026-07-14,Final,Nordea Open,Stefano Travaglia,Martin Krumich,atp_164,atp_383,ATP,Clay
+2026-07-14,Final,Nordea Open,Stefano Travaglia,Martin Krumich,wta_290,atp_383,WTA,Clay
 2026-07-14,Final,Nordea Open,Jan Choinski,Nikoloz Basilashvili,atp_124,atp_136,ATP,Clay
 2026-07-14,Final,Nordea Open,Dalibor Svrcina,Grigor Dimitrov,atp_99,atp_42,ATP,Clay
 2026-07-14,Final,Nordea Open,Adolfo Daniel Vallejo,Miguel Damas,atp_9021,atp_9037,ATP,Clay
@@ -36,7 +36,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-14,Final,Enka Open,Anastasia Zakharova,Mariia Tkacheva,wta_103,wta_454,WTA,
 2026-07-14,Final,Enka Open,Aliona Falei,Yuan Yue,wta_356,wta_122,WTA,
 2026-07-14,Final,Enka Open,Polina Iatcenko,Vera Zvonareva,wta_160,wta_357,WTA,
-2026-07-14,Final,Enka Open,Linda Fruhvirtova,Gao Xinyu,wta_118,wta_262,WTA,
+2026-07-14,Final,Enka Open,Linda Fruhvirtova,Gao Xinyu,wta_118,wta_34,WTA,
 2026-07-14,Final,Enka Open,Viktoria Hruncakova,Cagla Buyukakcay,wta_218,wta_376,WTA,
 2026-07-14,Final,Enka Open,Ayla Aksu,Vendula Valdmannova,wta_304,wta_286,WTA,
 2026-07-14,Final,Enka Open,Deniz Dilek,Weronika Falkowska,wta_9114,wta_493,WTA,
@@ -70,3 +70,30 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-14,Final,Vanda Pharmaceuticals Athens Open,Sapfo Sakellaridi,Miriana Tona,atp_275,wta_384,ATP,
 2026-07-14,Final,Vanda Pharmaceuticals Athens Open,Carole Monnet,Rebeka Masarova,wta_177,wta_117,WTA,
 2026-07-14,Final,Vanda Pharmaceuticals Athens Open,Aoi Ito,Alina Korneeva,wta_176,wta_146,WTA,
+2026-07-16,TBD,EFG Swiss Open Gstaad,Aleksandr Shevchenko,Dominic Stricker,atp_79,atp_372,ATP,
+2026-07-16,TBD,EFG Swiss Open Gstaad,Juan Manuel Cerundolo,Miomir Kecmanovic,atp_19,atp_83,ATP,
+2026-07-16,TBD,EFG Swiss Open Gstaad,Jaime Faria,Casper Ruud,atp_146,atp_13,ATP,
+2026-07-16,TBD,EFG Swiss Open Gstaad,Alexander Bublik,Quentin Halys,atp_10,atp_72,ATP,
+2026-07-16,TBD,Nordea Open,Alejandro Tabilo,Lautaro Midon,atp_67,atp_225,ATP,Clay
+2026-07-16,TBD,Nordea Open,Nikoloz Basilashvili,Thiago Agustin Tirante,atp_136,atp_92,ATP,Clay
+2026-07-16,TBD,Nordea Open,Andrey Rublev,Andrea Pellegrino,atp_14,atp_140,ATP,Clay
+2026-07-16,TBD,Nordea Open,Jesper de Jong,Sebastian Baez,atp_86,atp_33,ATP,Clay
+2026-07-16,TBD,ATV Bancomat Tennis Open,Danka Kovinic,Julia Riera,wta_9007,wta_187,WTA,
+2026-07-16,TBD,ATV Bancomat Tennis Open,Nuria Brancaccio,Eva Vedder,wta_164,wta_254,WTA,
+2026-07-16,TBD,ATV Bancomat Tennis Open,Teodora Kostovic,Lucia Bronzetti,wta_171,wta_138,WTA,
+2026-07-16,TBD,Enka Open,Gao Xinyu,Vendula Valdmannova,wta_34,wta_286,WTA,
+2026-07-16,TBD,Enka Open,Vera Zvonareva,Viktoria Hruncakova,wta_357,wta_218,WTA,
+2026-07-16,TBD,Enka Open,Daria Khomutsianskaya,Tatiana Prozorova,wta_324,wta_166,WTA,
+2026-07-16,TBD,Enka Open,Anastasia Zakharova,Alexandra Shubladze,wta_103,wta_344,WTA,
+2026-07-16,TBD,Generali Open Ladies Kitzbühel,Gina Feistel,Laura Samson,wta_650,wta_212,WTA,
+2026-07-16,TBD,Generali Open Ladies Kitzbühel,Eva Bennemann,Sinja Kraus,wta_363,wta_105,WTA,
+2026-07-16,TBD,Generali Open Ladies Kitzbühel,Marina Bassols Ribera,Arantxa Rus,wta_209,wta_134,WTA,
+2026-07-16,TBD,Generali Open Ladies Kitzbühel,Polona Hercog,Jeline Vandromme,wta_314,wta_291,WTA,
+2026-07-16,TBD,Unicredit Iasi Open,Panna Udvardy,Katarzyna Kawa,wta_93,wta_143,WTA,Clay
+2026-07-16,TBD,Unicredit Iasi Open,Alevtina Ibragimova,Paula Badosa,wta_321,wta_70,WTA,Clay
+2026-07-16,TBD,Unicredit Iasi Open,Mayar Sherif,Kaitlin Quevedo,wta_108,wta_131,WTA,Clay
+2026-07-16,TBD,Unicredit Iasi Open,Oleksandra Oliynykova,Elena Pridankina,wta_71,wta_192,WTA,Clay
+2026-07-16,TBD,Vanda Pharmaceuticals Athens Open,Alina Korneeva,Ann Li,wta_146,wta_36,WTA,
+2026-07-16,TBD,Vanda Pharmaceuticals Athens Open,Clara Tauson,Miriana Tona,wta_15,wta_384,WTA,
+2026-07-16,TBD,Vanda Pharmaceuticals Athens Open,Barbora Krejcikova,Carole Monnet,wta_53,wta_177,WTA,
+2026-07-16,TBD,Vanda Pharmaceuticals Athens Open,Tereza Valentova,Aliaksandra Sasnovich,wta_42,wta_113,WTA,
