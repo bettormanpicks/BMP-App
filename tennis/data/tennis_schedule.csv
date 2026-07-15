@@ -1,12 +1,12 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-07-15,Live,EFG Swiss Open Gstaad,Raphael Collignon,Lorenzo Sonego
-2026-07-15,10:50,EFG Swiss Open Gstaad,Arthur Rinderknech,Clement Tabur
-2026-07-15,13:00,EFG Swiss Open Gstaad,Yannick Hanfmann,Valentin Vacherot
+2026-07-15,13:30,EFG Swiss Open Gstaad,Yannick Hanfmann,Valentin Vacherot
 2026-07-15,15:30,EFG Swiss Open Gstaad,Jerome Kym,Stefanos Tsitsipas
-2026-07-15,Live,Nordea Open,Botic Van De Zandschulp,Adolfo Daniel Vallejo
-2026-07-15,10:50,Nordea Open,Nuno Borges,Grigor Dimitrov
-2026-07-15,12:00,Nordea Open,Stefano Travaglia,Mariano Navone
-2026-07-15,13:30,Nordea Open,Daniel Altmaier,Luciano Darderi
+2026-07-15,TBD,EFG Swiss Open Gstaad,Arthur Rinderknech,Clement Tabur
+2026-07-15,Final,EFG Swiss Open Gstaad,Raphael Collignon,Lorenzo Sonego
+2026-07-15,Live,Nordea Open,Nuno Borges,Grigor Dimitrov
+2026-07-15,13:30,Nordea Open,Stefano Travaglia,Mariano Navone
+2026-07-15,14:30,Nordea Open,Daniel Altmaier,Luciano Darderi
+2026-07-15,Final,Nordea Open,Botic Van De Zandschulp,Adolfo Daniel Vallejo
 2026-07-15,14:00,Plava Laguna Croatia Open Umag,Juan Carlos Prado Angelo,Damir Dzumhur
 2026-07-15,14:00,Plava Laguna Croatia Open Umag,Tomas Martin Etcheverry,Daniel Merida
 2026-07-15,14:00,Plava Laguna Croatia Open Umag,Federico Agustin Gomez,Matteo Arnaldi
@@ -19,18 +19,19 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-15,14:00,ATV Bancomat Tennis Open,Darya Astakhova,Noma Noha Akugue
 2026-07-15,Final,ATV Bancomat Tennis Open,Lola Radivojevic,Deborah Chiesa
 2026-07-15,Final,ATV Bancomat Tennis Open,Elizara Yaneva,Sofya Lansere
-2026-07-15,11:00,Enka Open,Hanne Vandewinkel,Weronika Falkowska
-2026-07-15,11:00,Enka Open,Harmony Tan,Anastasia Gasanova
-2026-07-15,12:30,Enka Open,Kristina Penickova,Aliona Falei
-2026-07-15,13:00,Enka Open,Gabriela Knutson,Lanlana Tararudee
-2026-07-15,10:45,Generali Open Ladies Kitzbühel,Veronika Erjavec,Mona Barthel
-2026-07-15,12:00,Generali Open Ladies Kitzbühel,Erika Andreeva,Mia Ristic
+2026-07-15,Live,Enka Open,Hanne Vandewinkel,Weronika Falkowska
+2026-07-15,Live,Enka Open,Harmony Tan,Anastasia Gasanova
+2026-07-15,13:10,Enka Open,Kristina Penickova,Aliona Falei
+2026-07-15,13:20,Enka Open,Gabriela Knutson,Lanlana Tararudee
+2026-07-15,Live,Generali Open Ladies Kitzbühel,Erika Andreeva,Mia Ristic
 2026-07-15,13:30,Generali Open Ladies Kitzbühel,Maria Lourdes Carle,Barbora Palicova
+2026-07-15,Final,Generali Open Ladies Kitzbühel,Veronika Erjavec,Mona Barthel
 2026-07-15,Final,Generali Open Ladies Kitzbühel,Julia Grabher,Ekaterina Perelygina
-2026-07-15,Live,Unicredit Iasi Open,Yulia Putintseva,Alina Charaeva
-2026-07-15,12:00,Unicredit Iasi Open,Ilinca Amariei,Elsa Jacquemot
-2026-07-15,13:30,Unicredit Iasi Open,Anna Bondar,Tamara Zidansek
+2026-07-15,Live,Unicredit Iasi Open,Anna Bondar,Tamara Zidansek
+2026-07-15,14:30,Unicredit Iasi Open,Clara Burel,Elsa Jacquemot
 2026-07-15,16:00,Unicredit Iasi Open,Elina Avanesyan,Petra Marcinko
+2026-07-15,Final,Unicredit Iasi Open,Ilinca Amariei,Elsa Jacquemot
+2026-07-15,Final,Unicredit Iasi Open,Yulia Putintseva,Alina Charaeva
 2026-07-15,14:30,Vanda Pharmaceuticals Athens Open,Elena Micic,Zheng Qinwen
 2026-07-15,16:30,Vanda Pharmaceuticals Athens Open,Harriet Dart,Maria Sakkari
 2026-07-15,17:30,Vanda Pharmaceuticals Athens Open,Mai Hontama,Alycia Parks
@@ -39,10 +40,10 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-16,TBD,EFG Swiss Open Gstaad,Juan Manuel Cerundolo,Miomir Kecmanovic
 2026-07-16,TBD,EFG Swiss Open Gstaad,Jaime Faria,Casper Ruud
 2026-07-16,TBD,EFG Swiss Open Gstaad,Alexander Bublik,Quentin Halys
-2026-07-16,TBD,Nordea Open,Alejandro Tabilo,Lautaro Midon
-2026-07-16,TBD,Nordea Open,Nikoloz Basilashvili,Thiago Agustin Tirante
-2026-07-16,TBD,Nordea Open,Andrey Rublev,Andrea Pellegrino
-2026-07-16,TBD,Nordea Open,Jesper de Jong,Sebastian Baez
+2026-07-16,09:00,Nordea Open,Nikoloz Basilashvili,Thiago Agustin Tirante
+2026-07-16,10:30,Nordea Open,Andrey Rublev,Andrea Pellegrino
+2026-07-16,12:00,Nordea Open,Alejandro Tabilo,Lautaro Midon
+2026-07-16,13:30,Nordea Open,Jesper de Jong,Sebastian Baez
 2026-07-16,TBD,ATV Bancomat Tennis Open,Danka Kovinic,Julia Riera
 2026-07-16,TBD,ATV Bancomat Tennis Open,Nuria Brancaccio,Eva Vedder
 2026-07-16,TBD,ATV Bancomat Tennis Open,Teodora Kostovic,Lucia Bronzetti
