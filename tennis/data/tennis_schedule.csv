@@ -2,17 +2,17 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-16,Final,EFG Swiss Open Gstaad,Jaime Faria,Casper Ruud
 2026-07-16,Final,EFG Swiss Open Gstaad,Juan Manuel Cerundolo,Miomir Kecmanovic
 2026-07-16,Final,EFG Swiss Open Gstaad,Jerome Kym,Stefanos Tsitsipas
-2026-07-16,Live,Nordea Open,Jesper de Jong,Sebastian Baez
 2026-07-16,Final,Nordea Open,Andrey Rublev,Andrea Pellegrino
 2026-07-16,Final,Nordea Open,Alejandro Tabilo,Lautaro Midon
 2026-07-16,Final,Nordea Open,Nikoloz Basilashvili,Thiago Agustin Tirante
-2026-07-16,Live,Plava Laguna Croatia Open Umag,Damir Dzumhur,Matteo Arnaldi
-2026-07-16,19:20,Plava Laguna Croatia Open Umag,Alex Molcan,Alejandro Davidovich Fokina
+2026-07-16,Final,Nordea Open,Jesper de Jong,Sebastian Baez
+2026-07-16,Final,Plava Laguna Croatia Open Umag,Alex Molcan,Alejandro Davidovich Fokina
+2026-07-16,Final,Plava Laguna Croatia Open Umag,Damir Dzumhur,Matteo Arnaldi
 2026-07-16,Final,Plava Laguna Croatia Open Umag,Roman Andres Burruchaga,Camilo Ugo Carabelli
 2026-07-16,Final,Plava Laguna Croatia Open Umag,Daniel Merida,Titouan Droguet
-2026-07-16,Live,ATV Bancomat Tennis Open,Danka Kovinic,Julia Riera
-2026-07-16,Live,ATV Bancomat Tennis Open,Teodora Kostovic,Lucia Bronzetti
-2026-07-16,19:10,ATV Bancomat Tennis Open,Nuria Brancaccio,Eva Vedder
+2026-07-16,Final,ATV Bancomat Tennis Open,Teodora Kostovic,Lucia Bronzetti
+2026-07-16,Final,ATV Bancomat Tennis Open,Nuria Brancaccio,Eva Vedder
+2026-07-16,Final,ATV Bancomat Tennis Open,Danka Kovinic,Julia Riera
 2026-07-16,Final,ATV Bancomat Tennis Open,Aurora Zantedeschi,Martina Trevisan
 2026-07-16,Final,Enka Open,Anastasia Zakharova,Alexandra Shubladze
 2026-07-16,Final,Enka Open,Darya Khamutsianskaya,Tatiana Prozorova
@@ -23,11 +23,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-16,Final,Generali Open Ladies Kitzbühel,Gina Feistel,Laura Samson
 2026-07-16,TBD,Generali Open Ladies Kitzbühel,Polona Hercog,Jeline Vandromme
 2026-07-16,Final,Generali Open Ladies Kitzbühel,Maria Lourdes Carle,Barbora Palicova
-2026-07-16,Live,Unicredit Iasi Open,Panna Udvardy,Katarzyna Kawa
 2026-07-16,Final,Unicredit Iasi Open,Oleksandra Oliynykova,Elena Pridankina
+2026-07-16,Final,Unicredit Iasi Open,Panna Udvardy,Katarzyna Kawa
 2026-07-16,Final,Unicredit Iasi Open,Alevtina Ibragimova,Paula Badosa
 2026-07-16,Final,Unicredit Iasi Open,Mayar Sherif,Kaitlin Quevedo
-2026-07-16,Live,Vanda Pharmaceuticals Athens Open,Clara Tauson,Miriana Tona
+2026-07-16,Final,Vanda Pharmaceuticals Athens Open,Clara Tauson,Miriana Tona
 2026-07-16,Final,Vanda Pharmaceuticals Athens Open,Alina Korneeva,Ann Li
 2026-07-16,Final,Vanda Pharmaceuticals Athens Open,Barbora Krejcikova,Carole Monnet
 2026-07-16,Final,Vanda Pharmaceuticals Athens Open,Tereza Valentova,Aliaksandra Sasnovich
@@ -38,10 +38,13 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-17,15:30,EFG Swiss Open Gstaad,Arthur Rinderknech,Stefanos Tsitsipas
 2026-07-17,09:00,Nordea Open,Adolfo Daniel Vallejo,Stefano Travaglia
 2026-07-17,10:30,Nordea Open,Nuno Borges,Luciano Darderi
+2026-07-17,12:00,Nordea Open,Andrey Rublev,Sebastian Baez
 2026-07-17,13:30,Nordea Open,Alejandro Tabilo,Thiago Agustin Tirante
-2026-07-17,TBD,Plava Laguna Croatia Open Umag,Roman Andres Burruchaga,Daniel Merida
+2026-07-17,16:30,Plava Laguna Croatia Open Umag,Roman Andres Burruchaga,Daniel Merida
+2026-07-17,19:00,Plava Laguna Croatia Open Umag,Damir Dzumhur,Alex Molcan
 2026-07-17,14:00,ATV Bancomat Tennis Open,Francesca Jones,Noma Noha Akugue
 2026-07-17,15:30,ATV Bancomat Tennis Open,Elizara Yaneva,Martina Trevisan
+2026-07-17,15:30,ATV Bancomat Tennis Open,Nuria Brancaccio,Julia Riera
 2026-07-17,12:00,Enka Open,Anastasia Zakharova,Tatiana Prozorova
 2026-07-17,12:00,Enka Open,Vera Zvonareva,Lanlana Tararudee
 2026-07-17,13:30,Enka Open,Vendula Valdmannova,Aliona Falei
@@ -52,7 +55,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-17,12:30,Generali Open Ladies Kitzbühel,Veronika Erjavec,Gina Feistel
 2026-07-17,10:00,Unicredit Iasi Open,Yulia Putintseva,Mayar Sherif
 2026-07-17,11:30,Unicredit Iasi Open,Oleksandra Oliynykova,Clara Burel
+2026-07-17,14:30,Unicredit Iasi Open,Panna Udvardy,Paula Badosa
 2026-07-17,16:00,Unicredit Iasi Open,Tamara Zidansek,Petra Marcinko
 2026-07-17,14:30,Vanda Pharmaceuticals Athens Open,Tereza Valentova,Alina Korneeva
 2026-07-17,14:30,Vanda Pharmaceuticals Athens Open,Barbora Krejcikova,Zheng Qinwen
 2026-07-17,16:30,Vanda Pharmaceuticals Athens Open,Alycia Parks,Maria Sakkari
+2026-07-17,18:00,Vanda Pharmaceuticals Athens Open,Clara Tauson,Sara Bejlek
