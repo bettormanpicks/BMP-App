@@ -9,7 +9,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-17,Final,Nordea Open,Nuno Borges,Luciano Darderi
 2026-07-17,TBD,Nordea Open,Alejandro Tabilo,Thiago Agustin Tirante
 2026-07-17,Final,Nordea Open,Adolfo Daniel Vallejo,Stefano Travaglia
-2026-07-17,Live,Plava Laguna Croatia Open Umag,Damir Dzumhur,Alex Molcan
+2026-07-17,Final,Plava Laguna Croatia Open Umag,Damir Dzumhur,Alex Molcan
 2026-07-17,Final,Plava Laguna Croatia Open Umag,Roman Andres Burruchaga,Daniel Merida
 2026-07-17,Final,ATV Bancomat Tennis Open,Francesca Jones,Noma Noha Akugue
 2026-07-17,Final,ATV Bancomat Tennis Open,Deborah Chiesa,Lucia Bronzetti
@@ -31,53 +31,35 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Barbora Krejcikova,Zheng Qinwen
 2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Alycia Parks,Maria Sakkari
 2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Tereza Valentova,Alina Korneeva
-2026-07-18,09:00,EFG Swiss Open Gstaad,Raphael Collignon,Juan Manuel Cerundolo
-2026-07-18,11:30,EFG Swiss Open Gstaad,Aleksandr Shevchenko,Stefanos Tsitsipas
-2026-07-18,09:30,Generali Open,Federico Cina,Daniel Michalski
-2026-07-18,09:30,Generali Open,Nico Hipfl,Lorenzo Giustino
-2026-07-18,11:00,Generali Open,Federico Coria,Vitaliy Sachko
-2026-07-18,11:00,Generali Open,Niklas Waldner,Laslo Djere
-2026-07-18,12:00,Generali Open,Jurij Rodionov,Andrey Chepelev
-2026-07-18,12:30,Generali Open,Gustavo Heide,Kilian Feldbausch
-2026-07-18,13:30,Generali Open,Sandro Kopp,Pierre-Hugues Herbert
-2026-07-18,14:30,Generali Open,Hugo Dellien,Michele Ribecai
-2026-07-18,11:00,Millennium Estoril Open,Edas Butvilas,Clement Tabur
-2026-07-18,11:00,Millennium Estoril Open,Taro Daniel,Juan Carlos Prado Angelo
-2026-07-18,11:00,Millennium Estoril Open,Kyrian Jacquet,Goncalo Da Rosa Castro
-2026-07-18,12:30,Millennium Estoril Open,Pedro Martinez,David Jorda Sanchis
-2026-07-18,12:30,Millennium Estoril Open,Francisco Rocha,Gonzalo Bueno
-2026-07-18,12:30,Millennium Estoril Open,Vilius Gaubas,Chun-Hsin Tseng
-2026-07-18,14:00,Millennium Estoril Open,Andrea Pellegrino,Joao Silva
-2026-07-18,14:00,Millennium Estoril Open,Joao Domingues,Timofey Skatov
-2026-07-18,11:00,Nordea Open,Adolfo Daniel Vallejo,Luciano Darderi
-2026-07-18,12:30,Nordea Open,Andrey Rublev,Alejandro Tabilo
-2026-07-18,14:00,ATV Bancomat Tennis Open,Lucia Bronzetti,Nuria Brancaccio
-2026-07-18,15:30,ATV Bancomat Tennis Open,Martina Trevisan,Francesca Jones
-2026-07-18,13:30,Enka Open,Vendula Valdmannova,Lanlana Tararudee
-2026-07-18,15:00,Enka Open,Anastasia Zakharova,Hanne Vandewinkel
-2026-07-18,09:30,Generali Open Ladies Kitzbühel,Marina Bassols Ribera,Sinja Kraus
-2026-07-18,11:00,Generali Open Ladies Kitzbühel,Veronika Erjavec,Julia Grabher
-2026-07-18,09:00,Livesport Prague Open,Susan Bandecchi,Gao Xinyu
-2026-07-18,09:00,Livesport Prague Open,Elena Micic,Linda Fruhvirtova
-2026-07-18,09:00,Livesport Prague Open,Priscilla Hon,Karman Thandi
-2026-07-18,10:30,Livesport Prague Open,Dominika Salkova,Denisa Zoldakova
-2026-07-18,10:30,Livesport Prague Open,Kyoka Okamura,Carol Young Suh Lee
-2026-07-18,10:30,Livesport Prague Open,Aoi Ito,Gabriela Knutson
-2026-07-18,12:00,Livesport Prague Open,Sofia Costoulas,Nao Hibino
-2026-07-18,12:00,Livesport Prague Open,Rebeka Masarova,Valentina Ryser
-2026-07-18,12:00,Livesport Prague Open,Barbora Palicova,Mai Hontama
-2026-07-18,13:30,Livesport Prague Open,Veronika Podrez,Tereza Krejcova
-2026-07-18,13:30,Livesport Prague Open,Victoria Bervid,Rina Saigo
-2026-07-18,13:30,Livesport Prague Open,Viktoria Morvayova,Ayla Aksu
-2026-07-18,15:00,Palermo Ladies Open,Federica Urgesi,Yelyzaveta Kotliar
-2026-07-18,15:00,Palermo Ladies Open,Miriana Tona,Dalila Spiteri
-2026-07-18,15:00,Palermo Ladies Open,Ren Yufei,Carla Giambelli
-2026-07-18,16:00,Palermo Ladies Open,Raluka Serban,Anastasia Bertacchi
-2026-07-18,16:00,Palermo Ladies Open,Rasheeda McAdoo,Isabella Shinikova
-2026-07-18,16:00,Palermo Ladies Open,Emily Webley-Smith,Mina Hodzic
-2026-07-18,17:30,Palermo Ladies Open,Lucija Ciric Bagaric,Amarissa Toth
-2026-07-18,17:30,Palermo Ladies Open,Noemi Basiletti,Laura Bohner
-2026-07-18,14:00,Unicredit Iasi Open,Mayar Sherif,Oleksandra Oliynykova
-2026-07-18,15:30,Unicredit Iasi Open,Paula Badosa,Tamara Zidansek
-2026-07-18,16:30,Vanda Pharmaceuticals Athens Open,Maria Sakkari,Alina Korneeva
-2026-07-18,18:00,Vanda Pharmaceuticals Athens Open,Clara Tauson,Barbora Krejcikova
+2026-07-17,Final,EFG Swiss Open Gstaad,Alexander Bublik,Quentin Halys
+2026-07-17,Final,EFG Swiss Open Gstaad,Juan Manuel Cerundolo,Casper Ruud
+2026-07-17,Final,EFG Swiss Open Gstaad,Raphael Collignon,Valentin Vacherot
+2026-07-17,Final,EFG Swiss Open Gstaad,Arthur Rinderknech,Stefanos Tsitsipas
+2026-07-17,Final,EFG Swiss Open Gstaad,Quentin Halys,Aleksandr Shevchenko
+2026-07-17,Final,EFG Swiss Open Gstaad,Aleksandr Shevchenko,Dominic Stricker
+2026-07-17,Final,Nordea Open,Andrey Rublev,Sebastian Baez
+2026-07-17,Final,Nordea Open,Nuno Borges,Luciano Darderi
+2026-07-17,TBD,Nordea Open,Alejandro Tabilo,Thiago Agustin Tirante
+2026-07-17,Final,Nordea Open,Adolfo Daniel Vallejo,Stefano Travaglia
+2026-07-17,Final,Plava Laguna Croatia Open Umag,Damir Dzumhur,Alex Molcan
+2026-07-17,Final,Plava Laguna Croatia Open Umag,Roman Andres Burruchaga,Daniel Merida
+2026-07-17,Final,ATV Bancomat Tennis Open,Francesca Jones,Noma Noha Akugue
+2026-07-17,Final,ATV Bancomat Tennis Open,Deborah Chiesa,Lucia Bronzetti
+2026-07-17,Final,ATV Bancomat Tennis Open,Nuria Brancaccio,Julia Riera
+2026-07-17,Final,ATV Bancomat Tennis Open,Elizara Yaneva,Martina Trevisan
+2026-07-17,Final,Enka Open,Anastasia Zakharova,Tatiana Prozorova
+2026-07-17,Final,Enka Open,Vera Zvonareva,Lanlana Tararudee
+2026-07-17,TBD,Enka Open,Hanne Vandewinkel,Harmony Tan
+2026-07-17,Final,Enka Open,Vendula Valdmannova,Aliona Falei
+2026-07-17,Final,Generali Open Ladies Kitzbühel,Veronika Erjavec,Gina Feistel
+2026-07-17,Final,Generali Open Ladies Kitzbühel,Erika Andreeva,Sinja Kraus
+2026-07-17,Final,Generali Open Ladies Kitzbühel,Julia Grabher,Jeline Vandromme
+2026-07-17,Final,Generali Open Ladies Kitzbühel,Marina Bassols Ribera,Maria Lourdes Carle
+2026-07-17,Final,Unicredit Iasi Open,Tamara Zidansek,Petra Marcinko
+2026-07-17,Final,Unicredit Iasi Open,Oleksandra Oliynykova,Clara Burel
+2026-07-17,Final,Unicredit Iasi Open,Panna Udvardy,Paula Badosa
+2026-07-17,Final,Unicredit Iasi Open,Yulia Putintseva,Mayar Sherif
+2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Clara Tauson,Sara Bejlek
+2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Barbora Krejcikova,Zheng Qinwen
+2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Alycia Parks,Maria Sakkari
+2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Tereza Valentova,Alina Korneeva

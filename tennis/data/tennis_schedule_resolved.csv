@@ -9,7 +9,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-17,Final,Nordea Open,Nuno Borges,Luciano Darderi,atp_44,atp_22,ATP,Clay
 2026-07-17,TBD,Nordea Open,Alejandro Tabilo,Thiago Agustin Tirante,atp_67,atp_92,ATP,Clay
 2026-07-17,Final,Nordea Open,Adolfo Daniel Vallejo,Stefano Travaglia,atp_9021,atp_164,ATP,Clay
-2026-07-17,Live,Plava Laguna Croatia Open Umag,Damir Dzumhur,Alex Molcan,atp_61,atp_199,ATP,
+2026-07-17,Final,Plava Laguna Croatia Open Umag,Damir Dzumhur,Alex Molcan,atp_61,atp_199,ATP,
 2026-07-17,Final,Plava Laguna Croatia Open Umag,Roman Andres Burruchaga,Daniel Merida,atp_102,atp_402,ATP,
 2026-07-17,Final,ATV Bancomat Tennis Open,Francesca Jones,Noma Noha Akugue,wta_72,wta_255,WTA,
 2026-07-17,Final,ATV Bancomat Tennis Open,Deborah Chiesa,Lucia Bronzetti,wta_539,wta_138,WTA,
@@ -20,7 +20,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-17,TBD,Enka Open,Hanne Vandewinkel,Harmony Tan,wta_128,wta_229,WTA,
 2026-07-17,Final,Enka Open,Vendula Valdmannova,Aliona Falei,wta_286,wta_356,WTA,
 2026-07-17,Final,Generali Open Ladies Kitzbühel,Veronika Erjavec,Gina Feistel,wta_112,wta_650,WTA,
-2026-07-17,Final,Generali Open Ladies Kitzbühel,Erika Andreeva,Sinja Kraus,wta_362,wta_105,WTA,
+2026-07-17,Final,Generali Open Ladies Kitzbühel,Erika Andreeva,Sinja Kraus,wta_7,wta_105,WTA,
 2026-07-17,Final,Generali Open Ladies Kitzbühel,Julia Grabher,Jeline Vandromme,wta_80,wta_291,WTA,
 2026-07-17,Final,Generali Open Ladies Kitzbühel,Marina Bassols Ribera,Maria Lourdes Carle,wta_209,wta_155,WTA,
 2026-07-17,Final,Unicredit Iasi Open,Tamara Zidansek,Petra Marcinko,wta_145,wta_69,WTA,Clay
@@ -28,56 +28,6 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-17,Final,Unicredit Iasi Open,Panna Udvardy,Paula Badosa,wta_93,wta_70,WTA,Clay
 2026-07-17,Final,Unicredit Iasi Open,Yulia Putintseva,Mayar Sherif,wta_77,wta_108,WTA,Clay
 2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Clara Tauson,Sara Bejlek,wta_15,wta_41,WTA,
-2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Barbora Krejcikova,Zheng Qinwen,wta_53,wta_23,WTA,
-2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Alycia Parks,Maria Sakkari,wta_76,wta_33,WTA,
+2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Barbora Krejcikova,Zheng Qinwen,wta_53,wta_372,WTA,
+2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Alycia Parks,Maria Sakkari,wta_243,wta_54,WTA,
 2026-07-17,Final,Vanda Pharmaceuticals Athens Open,Tereza Valentova,Alina Korneeva,wta_42,wta_146,WTA,
-2026-07-18,09:00,EFG Swiss Open Gstaad,Raphael Collignon,Juan Manuel Cerundolo,atp_68,atp_19,ATP,
-2026-07-18,11:30,EFG Swiss Open Gstaad,Aleksandr Shevchenko,Stefanos Tsitsipas,atp_79,atp_32,ATP,
-2026-07-18,09:30,Generali Open,Federico Cina,Daniel Michalski,atp_224,atp_402,ATP,Clay
-2026-07-18,09:30,Generali Open,Nico Hipfl,Lorenzo Giustino,atp_9100,atp_206,ATP,Clay
-2026-07-18,11:00,Generali Open,Federico Coria,Vitaliy Sachko,atp_377,atp_181,ATP,Clay
-2026-07-18,11:00,Generali Open,Niklas Waldner,Laslo Djere,atp_881,atp_113,ATP,Clay
-2026-07-18,12:00,Generali Open,Jurij Rodionov,Andrey Chepelev,atp_175,atp_463,ATP,Clay
-2026-07-18,12:30,Generali Open,Gustavo Heide,Kilian Feldbausch,atp_256,atp_412,ATP,Clay
-2026-07-18,13:30,Generali Open,Sandro Kopp,Pierre-Hugues Herbert,atp_304,atp_189,ATP,Clay
-2026-07-18,14:30,Generali Open,Hugo Dellien,Michele Ribecai,atp_157,atp_410,ATP,Clay
-2026-07-18,11:00,Millennium Estoril Open,Edas Butvilas,Clement Tabur,atp_250,atp_204,ATP,Clay
-2026-07-18,11:00,Millennium Estoril Open,Taro Daniel,Juan Carlos Prado Angelo,atp_402,atp_212,ATP,Clay
-2026-07-18,11:00,Millennium Estoril Open,Kyrian Jacquet,Goncalo Da Rosa Castro,atp_153,atp_9101,ATP,Clay
-2026-07-18,12:30,Millennium Estoril Open,Pedro Martinez,David Jorda Sanchis,atp_101,atp_381,ATP,Clay
-2026-07-18,12:30,Millennium Estoril Open,Francisco Rocha,Gonzalo Bueno,atp_170,atp_218,ATP,Clay
-2026-07-18,12:30,Millennium Estoril Open,Vilius Gaubas,Chun-Hsin Tseng,atp_126,atp_114,ATP,Clay
-2026-07-18,14:00,Millennium Estoril Open,Andrea Pellegrino,Joao Silva,atp_140,atp_207,ATP,Clay
-2026-07-18,14:00,Millennium Estoril Open,Joao Domingues,Timofey Skatov,atp_37,atp_193,ATP,Clay
-2026-07-18,11:00,Nordea Open,Adolfo Daniel Vallejo,Luciano Darderi,atp_9021,atp_22,ATP,Clay
-2026-07-18,12:30,Nordea Open,Andrey Rublev,Alejandro Tabilo,atp_14,atp_67,ATP,Clay
-2026-07-18,14:00,ATV Bancomat Tennis Open,Lucia Bronzetti,Nuria Brancaccio,wta_138,wta_164,WTA,
-2026-07-18,15:30,ATV Bancomat Tennis Open,Martina Trevisan,Francesca Jones,wta_685,wta_72,WTA,
-2026-07-18,13:30,Enka Open,Vendula Valdmannova,Lanlana Tararudee,wta_286,wta_124,WTA,
-2026-07-18,15:00,Enka Open,Anastasia Zakharova,Hanne Vandewinkel,wta_103,wta_128,WTA,
-2026-07-18,09:30,Generali Open Ladies Kitzbühel,Marina Bassols Ribera,Sinja Kraus,wta_209,wta_105,WTA,
-2026-07-18,11:00,Generali Open Ladies Kitzbühel,Veronika Erjavec,Julia Grabher,wta_112,wta_80,WTA,
-2026-07-18,09:00,Livesport Prague Open,Susan Bandecchi,Gao Xinyu,wta_233,wta_262,WTA,Hard
-2026-07-18,09:00,Livesport Prague Open,Elena Micic,Linda Fruhvirtova,wta_375,wta_118,WTA,Hard
-2026-07-18,09:00,Livesport Prague Open,Priscilla Hon,Karman Thandi,wta_130,wta_9102,WTA,Hard
-2026-07-18,10:30,Livesport Prague Open,Dominika Salkova,Denisa Zoldakova,wta_151,wta_9103,WTA,Hard
-2026-07-18,10:30,Livesport Prague Open,Kyoka Okamura,Carol Young Suh Lee,wta_297,wta_352,WTA,Hard
-2026-07-18,10:30,Livesport Prague Open,Aoi Ito,Gabriela Knutson,wta_176,wta_184,WTA,Hard
-2026-07-18,12:00,Livesport Prague Open,Sofia Costoulas,Nao Hibino,wta_142,wta_196,WTA,Hard
-2026-07-18,12:00,Livesport Prague Open,Rebeka Masarova,Valentina Ryser,wta_117,wta_323,WTA,Hard
-2026-07-18,12:00,Livesport Prague Open,Barbora Palicova,Mai Hontama,wta_221,wta_220,WTA,Hard
-2026-07-18,13:30,Livesport Prague Open,Veronika Podrez,Tereza Krejcova,wta_232,wta_351,WTA,Hard
-2026-07-18,13:30,Livesport Prague Open,Victoria Bervid,Rina Saigo,wta_337,wta_298,WTA,Hard
-2026-07-18,13:30,Livesport Prague Open,Viktoria Morvayova,Ayla Aksu,wta_328,wta_304,WTA,Hard
-2026-07-18,15:00,Palermo Ladies Open,Federica Urgesi,Yelyzaveta Kotliar,wta_438,wta_499,WTA,
-2026-07-18,15:00,Palermo Ladies Open,Miriana Tona,Dalila Spiteri,wta_384,wta_275,WTA,
-2026-07-18,15:00,Palermo Ladies Open,Ren Yufei,Carla Giambelli,wta_446,wta_477,WTA,
-2026-07-18,16:00,Palermo Ladies Open,Raluka Serban,Anastasia Bertacchi,wta_244,wta_443,WTA,
-2026-07-18,16:00,Palermo Ladies Open,Rasheeda McAdoo,Isabella Shinikova,wta_529,wta_340,WTA,
-2026-07-18,16:00,Palermo Ladies Open,Emily Webley-Smith,Mina Hodzic,atp_141,wta_471,ATP,
-2026-07-18,17:30,Palermo Ladies Open,Lucija Ciric Bagaric,Amarissa Toth,wta_448,wta_250,WTA,
-2026-07-18,17:30,Palermo Ladies Open,Noemi Basiletti,Laura Bohner,wta_511,wta_306,WTA,
-2026-07-18,14:00,Unicredit Iasi Open,Mayar Sherif,Oleksandra Oliynykova,wta_108,wta_71,WTA,Clay
-2026-07-18,15:30,Unicredit Iasi Open,Paula Badosa,Tamara Zidansek,wta_70,wta_145,WTA,Clay
-2026-07-18,16:30,Vanda Pharmaceuticals Athens Open,Maria Sakkari,Alina Korneeva,wta_33,wta_146,WTA,
-2026-07-18,18:00,Vanda Pharmaceuticals Athens Open,Clara Tauson,Barbora Krejcikova,wta_15,wta_53,WTA,
