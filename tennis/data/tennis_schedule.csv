@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-07-19,Live,EFG Swiss Open Gstaad,Stefanos Tsitsipas,Raphael Collignon
+2026-07-19,Final,EFG Swiss Open Gstaad,Stefanos Tsitsipas,Raphael Collignon
 2026-07-19,10:30,Generali Open,Federico Cina,Lorenzo Giustino
 2026-07-19,10:30,Generali Open,Hugo Dellien,Laslo Djere
 2026-07-19,11:30,Generali Open,Jurij Rodionov,Vitaliy Sachko
@@ -8,25 +8,25 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-19,11:00,Millennium Estoril Open,Andrea Pellegrino,Gonzalo Bueno
 2026-07-19,12:30,Millennium Estoril Open,Pedro Martinez,Timofey Skatov
 2026-07-19,12:30,Millennium Estoril Open,Orlando Luz,Clement Tabur
-2026-07-19,12:00,Nordea Open,Andrey Rublev,Luciano Darderi
+2026-07-19,Live,Nordea Open,Andrey Rublev,Luciano Darderi
 2026-07-19,16:00,ATV Bancomat Tennis Open,Francesca Jones,Lucia Bronzetti
 2026-07-19,14:00,Enka Open,Hanne Vandewinkel,Lanlana Tararudee
-2026-07-19,Live,Generali Open Ladies Kitzbühel,Julia Grabher,Sinja Kraus
-2026-07-19,Live,Livesport Prague Open,Priscilla Hon,Carol Young Suh Lee
-2026-07-19,Live,Livesport Prague Open,Gao Xinyu,Linda Fruhvirtova
-2026-07-19,10:30,Livesport Prague Open,Sofia Costoulas,Ayla Aksu
-2026-07-19,10:30,Livesport Prague Open,Dominika Salkova,Gabriela Knutson
-2026-07-19,10:30,Livesport Prague Open,Veronika Podrez,Rina Saigo
+2026-07-19,Final,Generali Open Ladies Kitzbühel,Julia Grabher,Sinja Kraus
+2026-07-19,13:10,Livesport Prague Open,Dominika Salkova,Gabriela Knutson
+2026-07-19,TBD,Livesport Prague Open,Sofia Costoulas,Ayla Aksu
+2026-07-19,TBD,Livesport Prague Open,Veronika Podrez,Rina Saigo
 2026-07-19,Final,Livesport Prague Open,Valentina Ryser,Mai Hontama
-2026-07-19,Live,MSC Hamburg Ladies Open,Julia Avdeeva,Jule Niemeier
-2026-07-19,11:00,MSC Hamburg Ladies Open,Emily Victoria Eigelsbach,Maria Lourdes Carle
-2026-07-19,11:30,MSC Hamburg Ladies Open,Valeriya Strakhova,Chloe Paquet
-2026-07-19,11:30,MSC Hamburg Ladies Open,Victoria Brand,Kathinka von Deichmann
-2026-07-19,12:30,MSC Hamburg Ladies Open,Ekaterina Yashina,Mona Barthel
-2026-07-19,12:30,MSC Hamburg Ladies Open,Eva Vedder,Georgina Garcia Perez
-2026-07-19,12:30,MSC Hamburg Ladies Open,Elena Pridankina,Diana Martynov
+2026-07-19,Final,Livesport Prague Open,Priscilla Hon,Carol Young Suh Lee
+2026-07-19,TBD,Livesport Prague Open,Gao Xinyu,Linda Fruhvirtova
+2026-07-19,Live,MSC Hamburg Ladies Open,Victoria Brand,Kathinka von Deichmann
+2026-07-19,Live,MSC Hamburg Ladies Open,Valeriya Strakhova,Chloe Paquet
+2026-07-19,Live,MSC Hamburg Ladies Open,Emily Victoria Eigelsbach,Maria Lourdes Carle
+2026-07-19,13:00,MSC Hamburg Ladies Open,Ekaterina Yashina,Mona Barthel
+2026-07-19,13:00,MSC Hamburg Ladies Open,Eva Vedder,Georgina Garcia Perez
+2026-07-19,13:00,MSC Hamburg Ladies Open,Elena Pridankina,Diana Martynov
 2026-07-19,TBD,MSC Hamburg Ladies Open,Carole Monnet,Jessica Pieri
-2026-07-19,TBD,MSC Hamburg Ladies Open,Arantxa Rus,Ekaterina Kazionova
+2026-07-19,Final,MSC Hamburg Ladies Open,Julia Avdeeva,Jule Niemeier
+2026-07-19,Final,MSC Hamburg Ladies Open,Arantxa Rus,Ekaterina Kazionova
 2026-07-19,Final,MSC Hamburg Ladies Open,Varvara Lepchenko,Anna Petkovic
 2026-07-19,TBD,MSC Hamburg Ladies Open,Dalila Jakupovic,Elina Avanesyan
 2026-07-19,Final,MSC Hamburg Ladies Open,Elena Malygina,Lisa Zaar
@@ -55,7 +55,6 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-20,TBD,Livesport Prague Open,Marie Bouzkova,Jessica Bouzas Maneiro
 2026-07-20,TBD,Livesport Prague Open,Ella Seidel,Daria Snigur
 2026-07-20,TBD,Livesport Prague Open,Maria Timofeeva,Aliaksandra Sasnovich
-2026-07-20,TBD,Livesport Prague Open,Polina Kudermetova,Alina Korneeva
 2026-07-20,TBD,Livesport Prague Open,Alisa Oktiabreva,Oceane Dodin
 2026-07-20,TBD,Livesport Prague Open,Nikola Bartunkova,Yuan Yue
 2026-07-20,TBD,Livesport Prague Open,Jana Kovackova,Lanlana Tararudee
@@ -63,16 +62,29 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-20,TBD,Livesport Prague Open,Alycia Parks,Lucie Havlickova
 2026-07-20,TBD,Livesport Prague Open,Eva Lys,Tereza Valentova
 2026-07-20,TBD,Livesport Prague Open,Laura Samson,Maya Joint
+2026-07-20,TBD,MSC Hamburg Ladies Open,Darja Semenistaja,Sinja Kraus
+2026-07-20,TBD,MSC Hamburg Ladies Open,Jule Niemeier,Elena Malygina
 2026-07-20,TBD,MSC Hamburg Ladies Open,Varvara Lepchenko,Elina Avanesyan
+2026-07-20,TBD,MSC Hamburg Ladies Open,Leyre Romero Gormaz,Veronika Erjavec
+2026-07-20,TBD,MSC Hamburg Ladies Open,Kaitlin Quevedo,Anhelina Kalinina
+2026-07-20,TBD,MSC Hamburg Ladies Open,Tessa Johanna Brockmann,Elsa Jacquemot
+2026-07-20,TBD,MSC Hamburg Ladies Open,Nadia Podoroska,Julia Stusek
+2026-07-20,TBD,MSC Hamburg Ladies Open,Oleksandra Oliynykova,Nastasja Schunk
+2026-07-20,TBD,MSC Hamburg Ladies Open,Katarzyna Kawa,Paula Badosa
+2026-07-20,TBD,MSC Hamburg Ladies Open,Simona Waltert,Mayar Sherif
+2026-07-20,TBD,MSC Hamburg Ladies Open,Anna Bondar,Moyuka Uchijima
+2026-07-20,TBD,MSC Hamburg Ladies Open,Tamara Korpatsch,Victoria Jimenez Kasintseva
+2026-07-20,TBD,MSC Hamburg Ladies Open,Valentina Steiner,Noma Noha Akugue
+2026-07-20,TBD,MSC Hamburg Ladies Open,Sara Sorribes Tormo,Alina Charaeva
 2026-07-20,TBD,Palermo Ladies Open,Ilary Pistola,Lucia Bronzetti
-2026-07-20,TBD,Palermo Ladies Open,Alessandra Mazzola,Dalila Spiteri
 2026-07-20,TBD,Palermo Ladies Open,Yasmine Kabbaj,Deborah Chiesa
+2026-07-20,TBD,Palermo Ladies Open,Alessandra Mazzola,Dalila Spiteri
+2026-07-20,TBD,Palermo Ladies Open,Anastasia Abbagnato,Clara Burel
 2026-07-20,TBD,Palermo Ladies Open,Alice Rame,Anastasia Tikhonova
 2026-07-20,TBD,Palermo Ladies Open,Ekaterine Gorgodze,Ane Mintegi Del Olmo
 2026-07-20,TBD,Palermo Ladies Open,Tamara Zidansek,Alevtina Ibragimova
-2026-07-20,TBD,Palermo Ladies Open,Francesca Jones,Darya Astakhova
-2026-07-20,TBD,Palermo Ladies Open,Miriam Bulgaru,Caijsa Hennemann
-2026-07-20,TBD,Palermo Ladies Open,Sofya Lansere,Lola Radivojevic
-2026-07-20,TBD,Palermo Ladies Open,Anastasia Abbagnato,Clara Burel
-2026-07-20,TBD,Palermo Ladies Open,Federica Urgesi,Elizara Yaneva
 2026-07-20,TBD,Palermo Ladies Open,Lina Gjorcheska,Erika Andreeva
+2026-07-20,TBD,Palermo Ladies Open,Federica Urgesi,Elizara Yaneva
+2026-07-20,TBD,Palermo Ladies Open,Sofya Lansere,Lola Radivojevic
+2026-07-20,TBD,Palermo Ladies Open,Miriam Bulgaru,Caijsa Hennemann
+2026-07-20,TBD,Palermo Ladies Open,Francesca Jones,Darya Astakhova
