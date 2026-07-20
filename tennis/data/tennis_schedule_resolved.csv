@@ -1,37 +1,37 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-20,Live,Generali Open,Vit Kopriva,Ignacio Buse,atp_87,atp_91,ATP,Clay
+2026-07-20,Final,Generali Open,Vit Kopriva,Ignacio Buse,atp_87,atp_91,ATP,Clay
 2026-07-20,Final,Generali Open,Facundo Diaz Acosta,Federico Cina,atp_284,atp_224,ATP,Clay
 2026-07-20,Final,Generali Open,Joel Josef Schwaerzler,Jurij Rodionov,atp_9030,atp_175,ATP,Clay
 2026-07-20,Final,Generali Open,Lukas Neumayer,Yannick Hanfmann,atp_222,atp_90,ATP,Clay
 2026-07-20,Final,Generali Open,Alexandre Muller,Mariano Navone,atp_50,atp_74,ATP,Clay
-2026-07-20,Live,Millennium Estoril Open,Frederico Ferreira Silva,Luca Van Assche,atp_254,atp_130,ATP,Clay
-2026-07-20,16:30,Millennium Estoril Open,Henrique Rocha,Pedro Martinez,atp_170,atp_101,ATP,Clay
+2026-07-20,Live,Millennium Estoril Open,Henrique Rocha,Pedro Martinez,atp_170,atp_101,ATP,Clay
 2026-07-20,Final,Millennium Estoril Open,Titouan Droguet,Camilo Ugo Carabelli,atp_119,atp_45,ATP,Clay
-2026-07-20,Final,Millennium Estoril Open,Tiago Torres,Nikoloz Basilashvili,atp_268,atp_136,ATP,Clay
-2026-07-20,Live,Livesport Prague Open,Antonia Ruzic,Dominika Salkova,wta_67,wta_151,WTA,Hard
+2026-07-20,Final,Millennium Estoril Open,Frederico Ferreira Silva,Luca Van Assche,atp_254,atp_130,ATP,Clay
+2026-07-20,Final,Millennium Estoril Open,Tiago Torres,Nikoloz Basilashvili,atp_354,atp_136,ATP,Clay
 2026-07-20,Final,Livesport Prague Open,Marie Bouzkova,Jessica Bouzas Maneiro,wta_39,wta_48,WTA,Hard
+2026-07-20,Final,Livesport Prague Open,Antonia Ruzic,Dominika Salkova,wta_67,wta_151,WTA,Hard
 2026-07-20,Final,Livesport Prague Open,Ella Seidel,Daria Snigur,wta_95,wta_132,WTA,Hard
 2026-07-20,Final,Livesport Prague Open,Ayla Aksu,Sofia Costoulas,wta_304,wta_142,WTA,Hard
 2026-07-20,Final,Livesport Prague Open,Alycia Parks,Lucie Havlickova,wta_76,wta_276,WTA,Hard
 2026-07-20,Final,Livesport Prague Open,Veronika Podrez,Carol Young Suh Lee,wta_232,wta_170,WTA,Hard
 2026-07-20,Final,Livesport Prague Open,Alisa Oktiabreva,Oceane Dodin,wta_329,wta_9056,WTA,Hard
-2026-07-20,Live,MSC Hamburg Ladies Open,Nadia Podoroska,Julia Stusek,wta_9006,wta_457,WTA,Clay
-2026-07-20,16:30,MSC Hamburg Ladies Open,Anna Bondar,Moyuka Uchijima,wta_65,wta_90,WTA,Clay
+2026-07-20,Live,MSC Hamburg Ladies Open,Anna Bondar,Moyuka Uchijima,wta_65,wta_90,WTA,Clay
 2026-07-20,Final,MSC Hamburg Ladies Open,Kaitlin Quevedo,Anhelina Kalinina,wta_131,wta_191,WTA,Clay
+2026-07-20,Final,MSC Hamburg Ladies Open,Nadia Podoroska,Julia Stusek,wta_9006,wta_457,WTA,Clay
 2026-07-20,Final,MSC Hamburg Ladies Open,Elena Pridankina,Victoria Brand,wta_192,wta_337,WTA,Clay
 2026-07-20,Final,MSC Hamburg Ladies Open,Eva Vedder,Mona Barthel,wta_254,wta_203,WTA,Clay
 2026-07-20,Final,MSC Hamburg Ladies Open,Arantxa Rus,Chloe Paquet,wta_134,wta_215,WTA,Clay
 2026-07-20,Final,MSC Hamburg Ladies Open,Jessica Pieri,Maria Lourdes Carle,wta_383,wta_155,WTA,Clay
 2026-07-20,Final,MSC Hamburg Ladies Open,Jule Niemeier,Elena Malygina,wta_302,wta_375,WTA,Clay
 2026-07-20,Final,MSC Hamburg Ladies Open,Varvara Lepchenko,Elina Avanesyan,wta_149,wta_178,WTA,Clay
-2026-07-20,Live,Palermo Ladies Open,Sofya Lansere,Lola Radivojevic,wta_420,wta_139,WTA,
-2026-07-20,Live,Palermo Ladies Open,Lina Gjorcheska,Erika Andreeva,wta_181,wta_7,WTA,
-2026-07-20,Live,Palermo Ladies Open,Yasmine Kabbaj,Deborah Chiesa,wta_361,wta_539,WTA,
-2026-07-20,16:30,Palermo Ladies Open,Amarissa Toth,Jennifer Ruggeri,wta_250,wta_315,WTA,
-2026-07-20,17:00,Palermo Ladies Open,Ekaterine Gorgodze,Ane Mintegi Del Olmo,wta_167,wta_373,WTA,
-2026-07-20,18:00,Palermo Ladies Open,Federica Urgesi,Elizara Yaneva,wta_438,wta_228,WTA,
-2026-07-20,18:30,Palermo Ladies Open,Fiona Ferro,Ren Yufei,wta_239,wta_446,WTA,
+2026-07-20,Live,Palermo Ladies Open,Amarissa Toth,Jennifer Ruggeri,wta_250,wta_315,WTA,
+2026-07-20,Live,Palermo Ladies Open,Ekaterine Gorgodze,Ane Mintegi Del Olmo,wta_167,wta_373,WTA,
+2026-07-20,Live,Palermo Ladies Open,Federica Urgesi,Elizara Yaneva,wta_438,wta_228,WTA,
 2026-07-20,19:30,Palermo Ladies Open,Alessandra Mazzola,Dalila Spiteri,wta_495,wta_275,WTA,
+2026-07-20,19:40,Palermo Ladies Open,Fiona Ferro,Ren Yufei,wta_239,wta_446,WTA,
+2026-07-20,Final,Palermo Ladies Open,Sofya Lansere,Lola Radivojevic,wta_420,wta_139,WTA,
+2026-07-20,Final,Palermo Ladies Open,Yasmine Kabbaj,Deborah Chiesa,wta_361,wta_539,WTA,
+2026-07-20,Final,Palermo Ladies Open,Lina Gjorcheska,Erika Andreeva,wta_181,wta_7,WTA,
 2026-07-20,TBD,Unicredit Iasi Open,Mayar Sherif,Paula Badosa,wta_108,wta_70,WTA,Clay
 2026-07-21,09:00,Generali Open,Juan Manuel Cerundolo,Marco Trungelliti,atp_19,atp_131,ATP,Clay
 2026-07-21,09:00,Generali Open,Jan-Lennard Struff,Aleksandr Shevchenko,atp_77,atp_79,ATP,Clay
@@ -54,7 +54,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-21,10:30,Livesport Prague Open,Laura Samson,Maya Joint,wta_212,wta_29,WTA,Hard
 2026-07-21,10:30,Livesport Prague Open,Priscilla Hon,Tereza Valentova,wta_130,wta_42,WTA,Hard
 2026-07-21,10:30,Livesport Prague Open,Gao Xinyu,Lilli Tagger,wta_262,wta_114,WTA,Hard
-2026-07-21,12:00,Livesport Prague Open,Anna Blinkova,Sara Bejlek,wta_82,wta_41,WTA,Hard
+2026-07-21,12:00,Livesport Prague Open,Anna Blinkova,Sara Bejlek,wta_65,wta_41,WTA,Hard
 2026-07-21,12:00,Livesport Prague Open,Jana Kovackova,Lanlana Tararudee,wta_9036,wta_124,WTA,Hard
 2026-07-21,13:30,Livesport Prague Open,Linda Fruhvirtova,Barbora Krejcikova,wta_118,wta_53,WTA,Hard
 2026-07-21,08:00,MSC Hamburg Ladies Open,Elena Pridankina,Panna Udvardy,wta_192,wta_93,WTA,Clay
@@ -68,11 +68,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-21,13:00,MSC Hamburg Ladies Open,Arantxa Rus,Elina Avanesyan,wta_134,wta_178,WTA,Clay
 2026-07-21,14:00,MSC Hamburg Ladies Open,Oleksandra Oliynykova,Nastasja Schunk,wta_71,wta_365,WTA,Clay
 2026-07-21,15:30,MSC Hamburg Ladies Open,Tessa Johanna Brockmann,Elsa Jacquemot,wta_289,wta_57,WTA,Clay
-2026-07-21,TBD,Palermo Ladies Open,Ilary Pistola,Lucia Bronzetti,wta_9100,wta_138,ATP,
-2026-07-21,TBD,Palermo Ladies Open,Miriam Bulgaru,Caijsa Hennemann,wta_208,wta_377,WTA,
-2026-07-21,TBD,Palermo Ladies Open,Alice Rame,Anastasia Tikhonova,wta_199,wta_257,WTA,
-2026-07-21,TBD,Palermo Ladies Open,Noemi Basiletti,Tyra Caterina Grant,wta_511,wta_269,WTA,
-2026-07-21,TBD,Palermo Ladies Open,Tamara Zidansek,Alevtina Ibragimova,wta_145,wta_321,WTA,
-2026-07-21,TBD,Palermo Ladies Open,Caroline Werner,Mina Hodzic,wta_234,wta_471,WTA,
-2026-07-21,TBD,Palermo Ladies Open,Anastasia Abbagnato,Clara Burel,wta_443,wta_15,WTA,
-2026-07-21,TBD,Palermo Ladies Open,Francesca Jones,Darya Astakhova,wta_72,wta_380,WTA,
+2026-07-21,15:00,Palermo Ladies Open,Francesca Jones,Darya Astakhova,wta_72,wta_380,WTA,
+2026-07-21,15:00,Palermo Ladies Open,Caroline Werner,Mina Hodzic,wta_234,wta_471,WTA,
+2026-07-21,15:00,Palermo Ladies Open,Noemi Basiletti,Tyra Caterina Grant,wta_511,wta_269,WTA,
+2026-07-21,16:30,Palermo Ladies Open,Ilary Pistola,Lucia Bronzetti,wta_9100,wta_138,ATP,
+2026-07-21,16:30,Palermo Ladies Open,Alice Rame,Anastasia Tikhonova,wta_199,wta_257,WTA,
+2026-07-21,16:30,Palermo Ladies Open,Tamara Zidansek,Alevtina Ibragimova,wta_145,wta_321,WTA,
+2026-07-21,18:00,Palermo Ladies Open,Anastasia Abbagnato,Clara Burel,wta_443,wta_15,WTA,
+2026-07-21,18:00,Palermo Ladies Open,Miriam Bulgaru,Caijsa Hennemann,wta_208,wta_377,WTA,
