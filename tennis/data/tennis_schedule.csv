@@ -1,20 +1,20 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-07-21,Live,Generali Open,Daniel Altmaier,Raphael Collignon
 2026-07-21,Final,Generali Open,Jan-Lennard Struff,Aleksandr Shevchenko
+2026-07-21,Final,Generali Open,Daniel Altmaier,Raphael Collignon
 2026-07-21,Final,Generali Open,Juan Manuel Cerundolo,Marco Trungelliti
 2026-07-21,Final,Generali Open,Alex Molcan,Sebastian Ofner
 2026-07-21,Final,Generali Open,Adolfo Daniel Vallejo,Kilian Feldbausch
 2026-07-21,Final,Generali Open,Laslo Djere,Quentin Halys
 2026-07-21,Final,Generali Open,Sebastian Baez,Miomir Kecmanovic
-2026-07-21,Live,Millennium Estoril Open,Stan Wawrinka,Roman Andres Burruchaga
-2026-07-21,16:30,Millennium Estoril Open,Botic Van De Zandschulp,Jaime Faria
 2026-07-21,Final,Millennium Estoril Open,Nuno Borges,Orlando Luz
+2026-07-21,Final,Millennium Estoril Open,Botic Van De Zandschulp,Jaime Faria
 2026-07-21,Final,Millennium Estoril Open,Vilius Gaubas,Pablo Carreno Busta
+2026-07-21,Final,Millennium Estoril Open,Stan Wawrinka,Roman Andres Burruchaga
 2026-07-21,TBD,Millennium Estoril Open,Hugo Gaston,Damir Dzumhur
 2026-07-21,Final,Millennium Estoril Open,Daniel Merida,Kyrian Jacquet
-2026-07-21,Final,Millennium Estoril Open,Timofey Skatov,Jesper de Jong
 2026-07-21,Final,Millennium Estoril Open,Gonzalo Bueno,Tiago Pereira
-2026-07-21,Live,Livesport Prague Open,Linda Fruhvirtova,Barbora Krejcikova
+2026-07-21,Final,Millennium Estoril Open,Timofey Skatov,Jesper de Jong
+2026-07-21,Final,Livesport Prague Open,Linda Fruhvirtova,Barbora Krejcikova
 2026-07-21,Final,Livesport Prague Open,Anna Blinkova,Sara Bejlek
 2026-07-21,Final,Livesport Prague Open,Nikola Bartunkova,Yuan Yue
 2026-07-21,Final,Livesport Prague Open,Priscilla Hon,Tereza Valentova
@@ -23,8 +23,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-21,Final,Livesport Prague Open,Gao Xinyu,Lilli Tagger
 2026-07-21,Final,Livesport Prague Open,Laura Samson,Maya Joint
 2026-07-21,Final,Livesport Prague Open,Maria Timofeeva,Aliaksandra Sasnovich
-2026-07-21,Live,MSC Hamburg Ladies Open,Oleksandra Oliynykova,Nastasja Schunk
-2026-07-21,17:15,MSC Hamburg Ladies Open,Tessa Johanna Brockmann,Elsa Jacquemot
+2026-07-21,Final,MSC Hamburg Ladies Open,Oleksandra Oliynykova,Nastasja Schunk
 2026-07-21,Final,MSC Hamburg Ladies Open,Elena Pridankina,Panna Udvardy
 2026-07-21,TBD,MSC Hamburg Ladies Open,Tamara Korpatsch,Victoria Jimenez Kasintseva
 2026-07-21,Final,MSC Hamburg Ladies Open,Mona Barthel,Yulia Putintseva
@@ -34,35 +33,35 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-21,Final,MSC Hamburg Ladies Open,Maria Lourdes Carle,Jule Niemeier
 2026-07-21,Final,MSC Hamburg Ladies Open,Valentina Steiner,Noma Noha Akugue
 2026-07-21,Final,MSC Hamburg Ladies Open,Leyre Romero Gormaz,Veronika Erjavec
-2026-07-21,16:20,Palermo Ladies Open,Francesca Jones,Darya Astakhova
-2026-07-21,16:20,Palermo Ladies Open,Caroline Werner,Mina Hodzic
-2026-07-21,16:20,Palermo Ladies Open,Noemi Basiletti,Raluka Serban
-2026-07-21,17:30,Palermo Ladies Open,Ilary Pistola,Lucia Bronzetti
-2026-07-21,17:30,Palermo Ladies Open,Alice Rame,Anastasia Tikhonova
-2026-07-21,17:30,Palermo Ladies Open,Tamara Zidansek,Alevtina Ibragimova
-2026-07-21,18:00,Palermo Ladies Open,Anastasia Abbagnato,Clara Burel
-2026-07-21,19:00,Palermo Ladies Open,Miriam Bulgaru,Caijsa Hennemann
+2026-07-21,Live,Palermo Ladies Open,Caroline Werner,Mina Hodzic
+2026-07-21,Live,Palermo Ladies Open,Alice Rame,Anastasia Tikhonova
+2026-07-21,Live,Palermo Ladies Open,Ilary Pistola,Lucia Bronzetti
+2026-07-21,19:00,Palermo Ladies Open,Tamara Zidansek,Alevtina Ibragimova
+2026-07-21,20:00,Palermo Ladies Open,Anastasia Abbagnato,Clara Burel
+2026-07-21,20:00,Palermo Ladies Open,Miriam Bulgaru,Caijsa Hennemann
+2026-07-21,Final,Palermo Ladies Open,Francesca Jones,Darya Astakhova
+2026-07-21,Final,Palermo Ladies Open,Noemi Basiletti,Raluka Serban
 2026-07-22,09:00,Generali Open,Quentin Halys,Valentin Vacherot
 2026-07-22,09:00,Generali Open,Sebastian Baez,Arthur Rinderknech
 2026-07-22,10:30,Generali Open,Jan-Lennard Struff,Mariano Navone
 2026-07-22,10:30,Generali Open,Marco Trungelliti,Yannick Hanfmann
 2026-07-22,10:30,Generali Open,Kilian Feldbausch,Ignacio Buse
+2026-07-22,12:00,Generali Open,Alex Molcan,Daniel Altmaier
 2026-07-22,12:00,Generali Open,Tomas Martin Etcheverry,Jurij Rodionov
 2026-07-22,13:30,Generali Open,Alexander Bublik,Facundo Diaz Acosta
-2026-07-22,TBD,Millennium Estoril Open,Pedro Martinez,Luciano Darderi
-2026-07-22,TBD,Millennium Estoril Open,Kyrian Jacquet,Alexander Blockx
-2026-07-22,TBD,Millennium Estoril Open,Hugo Gaston,Titouan Droguet
-2026-07-22,TBD,Millennium Estoril Open,Alejandro Tabilo,Tiago Torres
-2026-07-22,TBD,Millennium Estoril Open,Luca Van Assche,Pablo Carreno Busta
-2026-07-22,TBD,Millennium Estoril Open,Andrey Rublev,Timofey Skatov
+2026-07-22,11:00,Millennium Estoril Open,Hugo Gaston,Titouan Droguet
+2026-07-22,13:30,Millennium Estoril Open,Nuno Borges,Roman Andres Burruchaga
+2026-07-22,16:00,Millennium Estoril Open,Alejandro Tabilo,Tiago Torres
+2026-07-22,17:30,Millennium Estoril Open,Kyrian Jacquet,Alexander Blockx
 2026-07-22,09:00,Livesport Prague Open,Ayla Aksu,Daria Snigur
 2026-07-22,10:30,Livesport Prague Open,Marie Bouzkova,Carol Young Suh Lee
 2026-07-22,12:00,Livesport Prague Open,Maya Joint,Tereza Valentova
 2026-07-22,13:30,Livesport Prague Open,Dominika Salkova,Oceane Dodin
 2026-07-22,08:00,MSC Hamburg Ladies Open,Maria Lourdes Carle,Anhelina Kalinina
+2026-07-22,09:00,MSC Hamburg Ladies Open,Tessa Johanna Brockmann,Elsa Jacquemot
 2026-07-22,09:00,MSC Hamburg Ladies Open,Simona Waltert,Mayar Sherif
-2026-07-22,09:30,MSC Hamburg Ladies Open,Alina Charaeva,Sinja Kraus
 2026-07-22,10:30,MSC Hamburg Ladies Open,Katarzyna Kawa,Paula Badosa
+2026-07-22,10:30,MSC Hamburg Ladies Open,Alina Charaeva,Sinja Kraus
 2026-07-22,12:00,MSC Hamburg Ladies Open,Tamara Korpatsch,Julia Stusek
 2026-07-22,15:00,MSC Hamburg Ladies Open,Anna Bondar,Noma Noha Akugue
 2026-07-22,TBD,Palermo Ladies Open,Jennifer Ruggeri,Lola Radivojevic
