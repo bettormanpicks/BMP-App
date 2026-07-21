@@ -5,7 +5,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-21,10:30,Generali Open,Laslo Djere,Quentin Halys,atp_113,atp_72,ATP,Clay
 2026-07-21,12:00,Generali Open,Alex Molcan,Sebastian Ofner,atp_415,atp_132,ATP,Clay
 2026-07-21,12:00,Generali Open,Adolfo Daniel Vallejo,Kilian Feldbausch,atp_9021,atp_412,ATP,Clay
-2026-07-21,13:30,Generali Open,Daniel Altmaier,Raphael Collignon,atp_402,atp_68,ATP,Clay
+2026-07-21,13:30,Generali Open,Daniel Altmaier,Raphael Collignon,atp_54,atp_68,ATP,Clay
 2026-07-21,11:00,Millennium Estoril Open,Vilius Gaubas,Pablo Carreno Busta,atp_126,atp_122,ATP,Clay
 2026-07-21,11:00,Millennium Estoril Open,Jan Choinski,Jesper de Jong,atp_124,atp_86,ATP,Clay
 2026-07-21,11:00,Millennium Estoril Open,Gonzalo Bueno,Tiago Pereira,atp_218,atp_268,ATP,Clay
@@ -14,16 +14,16 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-21,12:30,Millennium Estoril Open,Daniel Merida,Kyrian Jacquet,atp_402,atp_153,ATP,Clay
 2026-07-21,14:00,Millennium Estoril Open,Stan Wawrinka,Roman Andres Burruchaga,atp_98,atp_102,ATP,Clay
 2026-07-21,15:30,Millennium Estoril Open,Botic Van De Zandschulp,Jaime Faria,atp_55,atp_146,ATP,Clay
-2026-07-21,09:00,Livesport Prague Open,Nikola Bartunkova,Yuan Yue,wta_104,wta_122,WTA,Hard
-2026-07-21,09:00,Livesport Prague Open,Maria Timofeeva,Aliaksandra Sasnovich,wta_54,wta_113,WTA,Hard
 2026-07-21,09:00,Livesport Prague Open,Diane Parry,Mai Hontama,wta_107,wta_220,WTA,Hard
+2026-07-21,09:00,Livesport Prague Open,Maria Timofeeva,Aliaksandra Sasnovich,wta_154,wta_113,WTA,Hard
+2026-07-21,09:00,Livesport Prague Open,Nikola Bartunkova,Yuan Yue,wta_104,wta_122,WTA,Hard
 2026-07-21,10:30,Livesport Prague Open,Laura Samson,Maya Joint,wta_212,wta_29,WTA,Hard
-2026-07-21,10:30,Livesport Prague Open,Priscilla Hon,Tereza Valentova,wta_130,wta_42,WTA,Hard
 2026-07-21,10:30,Livesport Prague Open,Gao Xinyu,Lilli Tagger,wta_262,wta_114,WTA,Hard
-2026-07-21,12:00,Livesport Prague Open,Anna Blinkova,Sara Bejlek,wta_65,wta_41,WTA,Hard
+2026-07-21,10:30,Livesport Prague Open,Priscilla Hon,Tereza Valentova,wta_130,wta_42,WTA,Hard
 2026-07-21,12:00,Livesport Prague Open,Jana Kovackova,Lanlana Tararudee,wta_9036,wta_124,WTA,Hard
+2026-07-21,12:00,Livesport Prague Open,Anna Blinkova,Sara Bejlek,wta_82,wta_41,WTA,Hard
 2026-07-21,13:30,Livesport Prague Open,Linda Fruhvirtova,Barbora Krejcikova,wta_118,wta_53,WTA,Hard
-2026-07-21,08:00,MSC Hamburg Ladies Open,Elena Pridankina,Panna Udvardy,wta_192,wta_93,WTA,Clay
+2026-07-21,08:05,MSC Hamburg Ladies Open,Elena Pridankina,Panna Udvardy,wta_192,wta_93,WTA,Clay
 2026-07-21,09:00,MSC Hamburg Ladies Open,Darja Semenistaja,Sinja Kraus,wta_97,wta_105,WTA,Clay
 2026-07-21,09:30,MSC Hamburg Ladies Open,Mona Barthel,Yulia Putintseva,wta_203,wta_77,WTA,Clay
 2026-07-21,09:30,MSC Hamburg Ladies Open,Leyre Romero Gormaz,Veronika Erjavec,wta_140,wta_112,WTA,Clay
@@ -46,11 +46,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-22,TBD,Generali Open,Tomas Martin Etcheverry,Jurij Rodionov,atp_53,atp_175,ATP,Clay
 2026-07-22,TBD,Millennium Estoril Open,Pedro Martinez,Luciano Darderi,atp_101,atp_22,ATP,Clay
 2026-07-22,TBD,Millennium Estoril Open,Alejandro Tabilo,Tiago Torres,atp_67,atp_268,ATP,Clay
-2026-07-22,TBD,Livesport Prague Open,Marie Bouzkova,Carol Young Suh Lee,wta_39,wta_352,WTA,Hard
+2026-07-22,TBD,Livesport Prague Open,Marie Bouzkova,Carol Young Suh Lee,wta_39,wta_170,WTA,Hard
 2026-07-22,TBD,Livesport Prague Open,Dominika Salkova,Oceane Dodin,wta_151,wta_9056,WTA,Hard
 2026-07-22,TBD,Livesport Prague Open,Ayla Aksu,Daria Snigur,wta_304,wta_132,WTA,Hard
 2026-07-22,TBD,MSC Hamburg Ladies Open,Katarzyna Kawa,Paula Badosa,wta_143,wta_70,WTA,Clay
 2026-07-22,TBD,MSC Hamburg Ladies Open,Simona Waltert,Mayar Sherif,wta_81,wta_108,WTA,Clay
 2026-07-22,TBD,Palermo Ladies Open,Jennifer Ruggeri,Lola Radivojevic,wta_315,wta_139,WTA,
 2026-07-22,TBD,Palermo Ladies Open,Ekaterine Gorgodze,Yasmine Kabbaj,wta_167,wta_361,WTA,
-2026-07-22,TBD,Palermo Ladies Open,Fiona Ferro,Erika Andreeva,wta_239,wta_7,WTA,
+2026-07-22,TBD,Palermo Ladies Open,Fiona Ferro,Erika Andreeva,wta_239,wta_362,WTA,
