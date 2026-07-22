@@ -15,7 +15,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-22,10:30,Livesport Prague Open,Marie Bouzkova,Carol Young Suh Lee,wta_39,wta_352,WTA,Hard
 2026-07-22,12:00,Livesport Prague Open,Maya Joint,Tereza Valentova,wta_29,wta_42,WTA,Hard
 2026-07-22,13:30,Livesport Prague Open,Dominika Salkova,Oceane Dodin,wta_151,wta_9056,WTA,Hard
-2026-07-22,08:00,MSC Hamburg Ladies Open,Maria Lourdes Carle,Anhelina Kalinina,wta_155,wta_191,WTA,Clay
+2026-07-22,08:05,MSC Hamburg Ladies Open,Maria Lourdes Carle,Anhelina Kalinina,wta_155,wta_191,WTA,Clay
 2026-07-22,09:00,MSC Hamburg Ladies Open,Tessa Johanna Brockmann,Elsa Jacquemot,wta_289,wta_57,WTA,Clay
 2026-07-22,09:00,MSC Hamburg Ladies Open,Simona Waltert,Mayar Sherif,wta_81,wta_108,WTA,Clay
 2026-07-22,10:30,MSC Hamburg Ladies Open,Katarzyna Kawa,Paula Badosa,wta_143,wta_70,WTA,Clay
@@ -26,7 +26,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-22,16:30,Palermo Ladies Open,Clara Burel,Federica Urgesi,wta_15,wta_438,WTA,
 2026-07-22,16:30,Palermo Ladies Open,Ekaterine Gorgodze,Yasmine Kabbaj,wta_167,wta_361,WTA,
 2026-07-22,18:00,Palermo Ladies Open,Fiona Ferro,Erika Andreeva,wta_239,wta_362,WTA,
-2026-07-23,TBD,Millennium Estoril Open,Jaime Faria,Gonzalo Bueno,atp_146,atp_351,ATP,Clay
+2026-07-23,TBD,Millennium Estoril Open,Jaime Faria,Gonzalo Bueno,atp_146,atp_218,ATP,Clay
 2026-07-23,TBD,Millennium Estoril Open,Luca Van Assche,Pablo Carreno Busta,atp_130,atp_122,ATP,Clay
 2026-07-23,TBD,Millennium Estoril Open,Pedro Martinez,Luciano Darderi,atp_101,atp_22,ATP,Clay
 2026-07-23,TBD,Millennium Estoril Open,Andrey Rublev,Timofey Skatov,atp_14,atp_193,ATP,Clay
@@ -37,6 +37,6 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-23,TBD,MSC Hamburg Ladies Open,Oleksandra Oliynykova,Leyre Romero Gormaz,wta_71,wta_140,WTA,Clay
 2026-07-23,TBD,MSC Hamburg Ladies Open,Elina Avanesyan,Yulia Putintseva,wta_178,wta_77,WTA,Clay
 2026-07-23,TBD,Palermo Ladies Open,Dalila Spiteri,Lucia Bronzetti,wta_275,wta_138,WTA,
-2026-07-23,TBD,Palermo Ladies Open,Mina Hodzic,Noemi Basiletti,wta_471,wta_768,WTA,
+2026-07-23,TBD,Palermo Ladies Open,Mina Hodzic,Noemi Basiletti,wta_471,wta_511,WTA,
 2026-07-23,TBD,Palermo Ladies Open,Alevtina Ibragimova,Alice Rame,wta_321,wta_199,WTA,
 2026-07-23,TBD,Palermo Ladies Open,Francesca Jones,Miriam Bulgaru,wta_72,wta_208,WTA,
