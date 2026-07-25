@@ -4,7 +4,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-24,Final,Millennium Estoril Open,Andrey Rublev,Luca Van Assche,atp_14,atp_130,ATP,Clay
 2026-07-24,Final,Millennium Estoril Open,Jaime Faria,Luciano Darderi,atp_146,atp_22,ATP,Clay
 2026-07-24,Final,Millennium Estoril Open,Roman Andres Burruchaga,Alexander Blockx,atp_102,atp_104,ATP,Clay
-2026-07-24,Final,Millennium Estoril Open,Tiago Torres,Hugo Gaston,atp_268,atp_96,ATP,Clay
+2026-07-24,Final,Millennium Estoril Open,Tiago Torres,Hugo Gaston,atp_354,atp_96,ATP,Clay
 2026-07-24,Final,Livesport Prague Open,Marie Bouzkova,Tereza Valentova,wta_39,wta_42,WTA,Hard
 2026-07-24,Final,Livesport Prague Open,Dominika Salkova,Barbora Krejcikova,wta_151,wta_53,WTA,Hard
 2026-07-24,Final,Livesport Prague Open,Lilli Tagger,Sara Bejlek,wta_114,wta_41,WTA,Hard
@@ -17,26 +17,3 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-24,Final,Palermo Ladies Open,Yasmine Kabbaj,Lucia Bronzetti,wta_361,wta_138,WTA,
 2026-07-24,Final,Palermo Ladies Open,Fiona Ferro,Mina Hodzic,wta_239,wta_471,WTA,
 2026-07-24,Final,Palermo Ladies Open,Alevtina Ibragimova,Clara Burel,wta_321,wta_15,WTA,
-2026-07-25,11:00,Generali Open,Alexander Bublik,Quentin Halys,atp_10,atp_72,ATP,Clay
-2026-07-25,16:30,Millennium Estoril Open,Luca Van Assche,Hugo Gaston,atp_130,atp_96,ATP,Clay
-2026-07-25,18:00,Millennium Estoril Open,Alexander Blockx,Luciano Darderi,atp_104,atp_22,ATP,Clay
-2026-07-25,14:00,Mubadala Citi DC Open,Julieta Pareja,Polina Iatcenko,wta_349,wta_160,WTA,Hard
-2026-07-25,14:00,Mubadala Citi DC Open,Kamilla Rakhimova,Heather Watson,wta_91,wta_278,WTA,Hard
-2026-07-25,15:30,Mubadala Citi DC Open,Clervie Ngounoue,Varvara Lepchenko,wta_259,wta_149,WTA,Hard
-2026-07-25,15:30,Mubadala Citi DC Open,Polina Kudermetova,Mei Yamaguchi,wta_144,wta_285,WTA,Hard
-2026-07-25,17:00,Mubadala Citi DC Open,Daria Kasatkina,Mariam Bolkvadze,wta_61,wta_388,WTA,Hard
-2026-07-25,17:00,Mubadala Citi DC Open,Carolyn Ansari,Rebecca Sramkova,wta_287,wta_102,WTA,Hard
-2026-07-25,18:30,Mubadala Citi DC Open,Zhang Shuai,Gabriela Knutson,wta_85,wta_184,WTA,Hard
-2026-07-25,18:30,Mubadala Citi DC Open,Lea Ma,Katie Swan,wta_182,wta_271,WTA,Hard
-2026-07-25,11:30,Livesport Prague Open,Tereza Valentova,Daria Snigur,wta_42,wta_132,WTA,Hard
-2026-07-25,13:00,Livesport Prague Open,Lilli Tagger,Barbora Krejcikova,wta_114,wta_53,WTA,Hard
-2026-07-25,12:00,MSC Hamburg Ladies Open,Elina Avanesyan,Anna Bondar,wta_178,wta_65,WTA,Clay
-2026-07-25,13:30,MSC Hamburg Ladies Open,Mayar Sherif,Tamara Korpatsch,wta_108,wta_106,WTA,Clay
-2026-07-25,17:00,Palermo Ladies Open,Francesca Jones,Alevtina Ibragimova,wta_72,wta_321,WTA,
-2026-07-25,18:30,Palermo Ladies Open,Fiona Ferro,Lucia Bronzetti,wta_239,wta_138,WTA,
-2026-07-25,TBD,The Memphis Classic,Eri Hozumi,Mariia Kozyreva,wta_378,wta_454,WTA,
-2026-07-25,TBD,The Memphis Classic,Anna Frey,Aran Teixido Garcia,wta_65,wta_206,WTA,
-2026-07-25,TBD,The Memphis Classic,Karman Thandi,Sofia Johnson,wta_9100,wta_407,ATP,
-2026-07-25,TBD,The Memphis Classic,Astra Sharma,Aoi Ito,wta_190,wta_176,WTA,
-2026-07-25,TBD,The Memphis Classic,Ankita Raina,Ekaterina Ovcharenko,wta_665,wta_494,WTA,
-2026-07-25,TBD,The Memphis Classic,Kennedy Drenser-Hagmann,Bella Payne,wta_9101,wta_776,ATP,
