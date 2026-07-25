@@ -27,9 +27,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-25,17:00,Mubadala Citi DC Open,Marcos Giron,Aryan Shah,atp_63,atp_409,ATP,Hard
 2026-07-25,17:00,Mubadala Citi DC Open,Cruz Hewitt,Dusan Lajovic,atp_670,atp_129,ATP,Hard
 2026-07-25,17:00,Mubadala Citi DC Open,Jordan Lee,Moez Echargui,atp_111,atp_139,ATP,Hard
-2026-07-25,18:30,Mubadala Citi DC Open,Trevor Svajda,Elias Ymer,atp_106,atp_9026,ATP,Hard
+2026-07-25,18:30,Mubadala Citi DC Open,Trevor Svajda,Elias Ymer,atp_359,atp_9026,ATP,Hard
 2026-07-25,18:30,Mubadala Citi DC Open,Mackenzie McDonald,Edas Butvilas,atp_115,atp_250,ATP,Hard
-2026-07-25,19:00,Mubadala Citi DC Open,Christopher O'Connell,Andres Martin,atp_95,wta_685,ATP,Hard
+2026-07-25,19:00,Mubadala Citi DC Open,Christopher O'Connell,Andres Martin,atp_95,atp_383,ATP,Hard
 2026-07-25,11:30,Livesport Prague Open,Tereza Valentova,Daria Snigur,wta_42,wta_132,WTA,Hard
 2026-07-25,13:00,Livesport Prague Open,Lilli Tagger,Barbora Krejcikova,wta_114,wta_53,WTA,Hard
 2026-07-25,12:00,MSC Hamburg Ladies Open,Elina Avanesyan,Anna Bondar,wta_178,wta_65,WTA,Clay
@@ -39,8 +39,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-25,17:00,Odlum Brown VanOpen,Katrina Scott,Sabastiani Leon,wta_282,wta_876,WTA,
 2026-07-25,18:00,Odlum Brown VanOpen,Ena Shibahara,Emma Si Yu Dong,wta_200,wta_9101,WTA,
 2026-07-25,18:00,Odlum Brown VanOpen,Mia Kupres,Valeria Savinykh,wta_273,wta_633,WTA,
-2026-07-25,18:30,Odlum Brown VanOpen,Avery Alexander,Martina Okalova,wta_9015,wta_685,ATP,
-2026-07-25,19:30,Odlum Brown VanOpen,Dasha Plekhanova,Hong Yi Cody Wong,wta_621,atp_137,WTA,
+2026-07-25,18:30,Odlum Brown VanOpen,Avery Alexander,Martina Okalova,wta_9015,wta_421,ATP,
+2026-07-25,19:30,Odlum Brown VanOpen,Dasha Plekhanova,Hong Yi Cody Wong,wta_618,atp_137,WTA,
 2026-07-25,19:30,Odlum Brown VanOpen,Miho Kuramochi,Hiroko Kuwata,wta_327,wta_667,WTA,
 2026-07-25,17:00,Palermo Ladies Open,Francesca Jones,Alevtina Ibragimova,wta_72,wta_321,WTA,
 2026-07-25,18:30,Palermo Ladies Open,Fiona Ferro,Lucia Bronzetti,wta_239,wta_138,WTA,
