@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-25,11:00,Generali Open,Alexander Bublik,Quentin Halys,atp_10,atp_72,ATP,Clay
+2026-07-25,Final,Generali Open,Alexander Bublik,Quentin Halys,atp_10,atp_72,ATP,Clay
 2026-07-25,01:00,Mifel Tennis Open by Telcel Oppo,Miguel Tobon,Bernard Tomic,atp_9037,atp_186,ATP,
 2026-07-25,01:00,Mifel Tennis Open by Telcel Oppo,Alan Magadan,Garrett Johns,atp_9028,atp_307,ATP,
 2026-07-25,01:00,Mifel Tennis Open by Telcel Oppo,Luis Carlos Alvarez,Edward Winter,atp_9029,atp_494,ATP,
@@ -18,8 +18,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-25,17:00,Mubadala Citi DC Open,Carolyn Ansari,Rebecca Sramkova,wta_287,wta_102,WTA,Hard
 2026-07-25,18:30,Mubadala Citi DC Open,Zhang Shuai,Gabriela Knutson,wta_85,wta_184,WTA,Hard
 2026-07-25,18:30,Mubadala Citi DC Open,Lea Ma,Katie Swan,wta_182,wta_271,WTA,Hard
-2026-07-25,14:00,Mubadala Citi DC Open,Aleksandar Vukic,Aziz Dougaz,atp_88,atp_400,ATP,Hard
-2026-07-25,14:00,Mubadala Citi DC Open,Martin Damm,Kimmer Coppejans,atp_125,atp_248,ATP,Hard
+2026-07-25,14:00,Mubadala Citi DC Open,Aleksandar Vukic,Aziz Dougaz,atp_75,atp_400,ATP,Hard
+2026-07-25,14:00,Mubadala Citi DC Open,Martin Damm,Kimmer Coppejans,atp_383,atp_248,ATP,Hard
 2026-07-25,14:00,Mubadala Citi DC Open,James McCabe,Alex Bolt,atp_210,atp_167,ATP,Hard
 2026-07-25,15:30,Mubadala Citi DC Open,Zachary Svajda,Stefan Kozlov,atp_106,atp_272,ATP,Hard
 2026-07-25,15:30,Mubadala Citi DC Open,Andre Ilagan,Remy Bertola,atp_382,atp_213,ATP,Hard
@@ -27,12 +27,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-25,17:00,Mubadala Citi DC Open,Marcos Giron,Aryan Shah,atp_63,atp_409,ATP,Hard
 2026-07-25,17:00,Mubadala Citi DC Open,Cruz Hewitt,Dusan Lajovic,atp_670,atp_129,ATP,Hard
 2026-07-25,17:00,Mubadala Citi DC Open,Jordan Lee,Moez Echargui,atp_111,atp_139,ATP,Hard
-2026-07-25,18:30,Mubadala Citi DC Open,Trevor Svajda,Elias Ymer,atp_106,atp_9026,ATP,Hard
+2026-07-25,18:30,Mubadala Citi DC Open,Trevor Svajda,Elias Ymer,atp_359,atp_187,ATP,Hard
 2026-07-25,18:30,Mubadala Citi DC Open,Mackenzie McDonald,Edas Butvilas,atp_115,atp_250,ATP,Hard
 2026-07-25,19:00,Mubadala Citi DC Open,Christopher O'Connell,Andres Martin,atp_95,wta_685,ATP,Hard
-2026-07-25,11:30,Livesport Prague Open,Tereza Valentova,Daria Snigur,wta_42,wta_132,WTA,Hard
-2026-07-25,13:00,Livesport Prague Open,Lilli Tagger,Barbora Krejcikova,wta_114,wta_53,WTA,Hard
-2026-07-25,12:00,MSC Hamburg Ladies Open,Elina Avanesyan,Anna Bondar,wta_178,wta_65,WTA,Clay
+2026-07-25,Live,Livesport Prague Open,Tereza Valentova,Daria Snigur,wta_42,wta_132,WTA,Hard
+2026-07-25,13:20,Livesport Prague Open,Lilli Tagger,Barbora Krejcikova,wta_114,wta_53,WTA,Hard
+2026-07-25,Live,MSC Hamburg Ladies Open,Elina Avanesyan,Anna Bondar,wta_178,wta_65,WTA,Clay
 2026-07-25,13:30,MSC Hamburg Ladies Open,Mayar Sherif,Tamara Korpatsch,wta_108,wta_106,WTA,Clay
 2026-07-25,17:00,Odlum Brown VanOpen,Ellie Schoppe,Ana Grubor,wta_622,wta_9046,WTA,
 2026-07-25,17:00,Odlum Brown VanOpen,Wei Sijia,Havana Kadi,wta_358,wta_9100,WTA,
