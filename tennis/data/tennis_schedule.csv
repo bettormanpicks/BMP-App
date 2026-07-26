@@ -4,26 +4,26 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-26,02:30,Mifel Tennis Open by Telcel Oppo,Alex Hernandez,Alan Magadan
 2026-07-26,02:30,Mifel Tennis Open by Telcel Oppo,Aidan Mayo,Roger Pascual Ferra
 2026-07-26,16:30,Millennium Estoril Open,Luca Van Assche,Alexander Blockx
-2026-07-26,14:00,Mubadala DC Open,Polina Kudermetova,Varvara Lepchenko
-2026-07-26,14:00,Mubadala DC Open,Heather Watson,Julieta Pareja
-2026-07-26,16:00,Mubadala DC Open,Gabriela Knutson,Rebecca Sramkova
-2026-07-26,17:30,Mubadala DC Open,Daria Kasatkina,Alana Smith
 2026-07-26,14:00,Mubadala DC Open,Martin Damm,Abdullah Shelbayh
-2026-07-26,14:00,Mubadala DC Open,Aleksandar Vukic,Alex Bolt
 2026-07-26,15:30,Mubadala DC Open,Zachary Svajda,Cruz Hewitt
 2026-07-26,15:30,Mubadala DC Open,Marcos Giron,Andre Ilagan
 2026-07-26,16:00,Mubadala DC Open,Andres Martin,Moez Echargui
 2026-07-26,17:00,Mubadala DC Open,Mackenzie McDonald,Trevor Svajda
-2026-07-26,Live,Axeria Open 2026 powered by Intaro Sport,Gina Feistel,Briana Szabo
+2026-07-26,Final,Mubadala DC Open,Aleksandar Vukic,Alex Bolt
+2026-07-26,Live,Mubadala DC Open,Polina Kudermetova,Varvara Lepchenko
+2026-07-26,Live,Mubadala DC Open,Heather Watson,Julieta Pareja
+2026-07-26,16:00,Mubadala DC Open,Gabriela Knutson,Rebecca Sramkova
+2026-07-26,17:30,Mubadala DC Open,Daria Kasatkina,Alana Smith
+2026-07-26,TBD,Axeria Open 2026 powered by Intaro Sport,Gina Feistel,Briana Szabo
 2026-07-26,Final,Axeria Open 2026 powered by Intaro Sport,Diana Ilie,Margaux Rouvroy
 2026-07-26,Final,Axeria Open 2026 powered by Intaro Sport,Isabella Shinikova,Miriana Tona
 2026-07-26,TBD,Axeria Open 2026 powered by Intaro Sport,Maria Sara Popa,Amarissa Toth
 2026-07-26,Final,Axeria Open 2026 powered by Intaro Sport,Amandine Monnot,Lucija Ciric Bagaric
+2026-07-26,Final,Axeria Open 2026 powered by Intaro Sport,Deborah Chiesa,Andreea Prisacariu
 2026-07-26,Final,Axeria Open 2026 powered by Intaro Sport,Yelyzaveta Kotliar,Alessandra Mazzola
 2026-07-26,Final,Axeria Open 2026 powered by Intaro Sport,Ekaterina Yashina,Ekaterina Kazionova
-2026-07-26,Final,Axeria Open 2026 powered by Intaro Sport,Deborah Chiesa,Andreea Prisacariu
-2026-07-26,Live,Livesport Prague Open,Daria Snigur,Lilli Tagger
-2026-07-26,Live,MSC Hamburg Ladies Open,Anna Bondar,Tamara Korpatsch
+2026-07-26,Final,Livesport Prague Open,Daria Snigur,Lilli Tagger
+2026-07-26,Final,MSC Hamburg Ladies Open,Anna Bondar,Tamara Korpatsch
 2026-07-26,18:00,Odlum Brown VanOpen,Katrina Scott,Ellie Schoppe
 2026-07-26,20:00,Odlum Brown VanOpen,Miho Kuramochi,Avery Alexander
 2026-07-26,20:00,Odlum Brown VanOpen,Emma Si Yu Dong,Valeria Savinykh
@@ -66,20 +66,17 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-27,TBD,Mubadala DC Open,Liudmila Samsonova,Madison Keys
 2026-07-27,TBD,Mubadala DC Open,Alexandra Eala,Zheng Qinwen
 2026-07-27,TBD,Mubadala DC Open,Leylah Fernandez,Magda Linette
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Andreea Prisacariu,Yelyzaveta Kotliar
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Lucija Ciric Bagaric,Maria Sara Popa
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Irene Burillo,Sofya Lansere
 2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Mia Ristic,Darja Semenistaja
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Kaitlin Quevedo,Irina Fetecau
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Elena Malygina,Elena Ruxandra Bertea
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Miriam Bulgaru,Carole Monnet
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Francesca Jones,Chloe Paquet
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Alice Rame,Julie Struplova
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Leyre Romero Gormaz,Sara Sorribes Tormo
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Caijsa Hennemann,Mia Pohankova
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Alevtina Ibragimova,Maia Ilinca Burcescu
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Laura Samson,Alesia Breaz
-2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Selena Janicijevic,Anastasiia Sobolieva
+2026-07-27,08:00,Axeria Open 2026 powered by Intaro Sport,Ekaterina Kazionova,Margaux Rouvroy
+2026-07-27,08:00,Axeria Open 2026 powered by Intaro Sport,Andreea Prisacariu,Yelyzaveta Kotliar
+2026-07-27,08:00,Axeria Open 2026 powered by Intaro Sport,Lucija Ciric Bagaric,Maria Sara Popa
+2026-07-27,09:30,Axeria Open 2026 powered by Intaro Sport,Caijsa Hennemann,Mia Pohankova
+2026-07-27,09:30,Axeria Open 2026 powered by Intaro Sport,Briana Szabo,Miriana Tona
+2026-07-27,09:30,Axeria Open 2026 powered by Intaro Sport,Elena Malygina,Elena Ruxandra Bertea
+2026-07-27,11:00,Axeria Open 2026 powered by Intaro Sport,Alice Rame,Julie Struplova
+2026-07-27,11:00,Axeria Open 2026 powered by Intaro Sport,Kaitlin Quevedo,Irina Fetecau
+2026-07-27,11:00,Axeria Open 2026 powered by Intaro Sport,Irene Burillo,Sofya Lansere
+2026-07-27,12:30,Axeria Open 2026 powered by Intaro Sport,Leyre Romero Gormaz,Sara Sorribes Tormo
 2026-07-27,TBD,Odlum Brown VanOpen,Lizette Cabrera,Sofia Costoulas
 2026-07-27,TBD,Odlum Brown VanOpen,Harriet Dart,Kayla Cross
 2026-07-27,TBD,Odlum Brown VanOpen,Ariana Arseneault,Annabelle Xu
