@@ -1,53 +1,83 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-25,Final,Generali Open,Alexander Bublik,Quentin Halys,atp_10,atp_72,ATP,Clay
-2026-07-25,01:00,Mifel Tennis Open by Telcel Oppo,Miguel Tobon,Bernard Tomic,atp_9037,atp_186,ATP,
-2026-07-25,01:00,Mifel Tennis Open by Telcel Oppo,Alan Magadan,Garrett Johns,atp_9028,atp_307,ATP,
-2026-07-25,01:00,Mifel Tennis Open by Telcel Oppo,Luis Carlos Alvarez,Edward Winter,atp_9029,atp_494,ATP,
-2026-07-25,02:30,Mifel Tennis Open by Telcel Oppo,Nicolas Mejia,Alex Hernandez,atp_178,atp_414,ATP,
-2026-07-25,02:30,Mifel Tennis Open by Telcel Oppo,SoonWoo Kwon,Alan Fernando Rubio Fierros,atp_334,atp_585,ATP,
-2026-07-25,02:30,Mifel Tennis Open by Telcel Oppo,Tristan Boyer,Lorenzo Claverie,atp_216,atp_441,ATP,
-2026-07-25,04:00,Mifel Tennis Open by Telcel Oppo,Borna Gojo,Aidan Mayo,atp_235,atp_384,ATP,
-2026-07-25,04:00,Mifel Tennis Open by Telcel Oppo,Roger Pascual Ferra,Colton Smith,atp_787,atp_141,ATP,
-2026-07-25,Final,Millennium Estoril Open,Alexander Blockx,Luciano Darderi,atp_104,atp_22,ATP,Clay
-2026-07-25,Final,Millennium Estoril Open,Luca Van Assche,Hugo Gaston,atp_130,atp_96,ATP,Clay
-2026-07-25,Final,Mubadala DC Open,Mackenzie McDonald,Edas Butvilas,atp_115,atp_250,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,Christopher O'Connell,Andres Martin,atp_95,wta_685,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,Trevor Svajda,Elias Ymer,atp_106,atp_187,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,Marcos Giron,Aryan Shah,atp_63,atp_409,ATP,Hard
-2026-07-25,TBD,Mubadala DC Open,Cruz Hewitt,Dusan Lajovic,atp_670,atp_129,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,Jordan Lee,Moez Echargui,atp_111,atp_139,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,Zachary Svajda,Stefan Kozlov,atp_106,atp_272,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,Andre Ilagan,Remy Bertola,atp_382,atp_213,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,Abdullah Shelbayh,Billy Harris,atp_318,atp_144,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,Aleksandar Vukic,Aziz Dougaz,atp_75,atp_400,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,Martin Damm,Kimmer Coppejans,atp_125,atp_248,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,James McCabe,Alex Bolt,atp_210,atp_167,ATP,Hard
-2026-07-25,Final,Mubadala DC Open,Lea Ma,Alana Smith,wta_182,atp_141,WTA,Hard
-2026-07-25,Final,Mubadala DC Open,Zhang Shuai,Gabriela Knutson,wta_85,wta_184,WTA,Hard
-2026-07-25,Final,Mubadala DC Open,Daria Kasatkina,Mariam Bolkvadze,wta_61,wta_388,WTA,Hard
-2026-07-25,Final,Mubadala DC Open,Carolyn Ansari,Rebecca Sramkova,wta_287,wta_102,WTA,Hard
-2026-07-25,Final,Mubadala DC Open,Polina Kudermetova,Mei Yamaguchi,wta_144,wta_285,WTA,Hard
-2026-07-25,Final,Mubadala DC Open,Clervie Ngounoue,Varvara Lepchenko,wta_259,wta_149,WTA,Hard
-2026-07-25,Final,Mubadala DC Open,Kamilla Rakhimova,Heather Watson,wta_91,wta_278,WTA,Hard
-2026-07-25,Final,Mubadala DC Open,Julieta Pareja,Polina Iatcenko,wta_349,wta_160,WTA,Hard
-2026-07-25,Final,Livesport Prague Open,Lilli Tagger,Barbora Krejcikova,wta_114,wta_53,WTA,Hard
-2026-07-25,Final,Livesport Prague Open,Tereza Valentova,Daria Snigur,wta_42,wta_132,WTA,Hard
-2026-07-25,Final,MSC Hamburg Ladies Open,Elina Avanesyan,Anna Bondar,wta_178,wta_65,WTA,Clay
-2026-07-25,TBD,MSC Hamburg Ladies Open,Mayar Sherif,Tamara Korpatsch,wta_108,wta_106,WTA,Clay
-2026-07-25,Live,Odlum Brown VanOpen,Ellie Schoppe,Ana Grubor,wta_622,wta_9046,WTA,
-2026-07-25,Live,Odlum Brown VanOpen,Ena Shibahara,Emma Si Yu Dong,wta_200,wta_9100,WTA,
-2026-07-25,Live,Odlum Brown VanOpen,Avery Alexander,Martina Okalova,wta_9015,wta_685,ATP,
-2026-07-25,Live,Odlum Brown VanOpen,Miho Kuramochi,Hiroko Kuwata,wta_327,wta_667,WTA,
-2026-07-25,01:50,Odlum Brown VanOpen,Dasha Plekhanova,Hong Yi Cody Wong,wta_618,atp_137,WTA,
-2026-07-25,01:50,Odlum Brown VanOpen,Mia Kupres,Valeria Savinykh,wta_273,wta_633,WTA,
-2026-07-25,Final,Odlum Brown VanOpen,Wei Sijia,Havana Kadi,wta_358,wta_9101,WTA,
-2026-07-25,Final,Odlum Brown VanOpen,Katrina Scott,Sabastiani Leon,wta_282,wta_876,WTA,
-2026-07-25,Final,Palermo Ladies Open,Francesca Jones,Alevtina Ibragimova,wta_72,wta_321,WTA,
-2026-07-25,Final,Palermo Ladies Open,Fiona Ferro,Lucia Bronzetti,wta_239,wta_138,WTA,
-2026-07-25,Live,The Memphis Classic,Ankita Raina,Ekaterina Ovcharenko,wta_665,wta_494,WTA,
-2026-07-25,Final,The Memphis Classic,Kennedy Drenser-Hagmann,Bella Payne,wta_9102,wta_776,ATP,
-2026-07-25,Final,The Memphis Classic,Eri Hozumi,Mariia Kozyreva,wta_378,wta_454,WTA,
-2026-07-25,Final,The Memphis Classic,Karman Thandi,Sofia Johnson,wta_9103,wta_407,ATP,
-2026-07-25,Final,The Memphis Classic,Anna Frey,Aran Teixido Garcia,wta_65,wta_206,WTA,
-2026-07-25,Final,The Memphis Classic,Katherine Sebov,Camila Soares,wta_270,wta_63,WTA,
-2026-07-25,Final,The Memphis Classic,Astra Sharma,Aoi Ito,wta_190,wta_176,WTA,
+2026-07-26,01:00,Mifel Tennis Open by Telcel Oppo,Alex Hernandez,Edward Winter,atp_414,atp_494,ATP,
+2026-07-26,16:30,Millennium Estoril Open,Luca Van Assche,Alexander Blockx,atp_130,atp_104,ATP,Clay
+2026-07-26,14:00,Mubadala DC Open,Polina Kudermetova,Varvara Lepchenko,wta_144,wta_149,WTA,Hard
+2026-07-26,14:00,Mubadala DC Open,Heather Watson,Julieta Pareja,wta_278,wta_349,WTA,Hard
+2026-07-26,16:00,Mubadala DC Open,Gabriela Knutson,Rebecca Sramkova,wta_184,wta_102,WTA,Hard
+2026-07-26,17:30,Mubadala DC Open,Daria Kasatkina,Alana Smith,wta_61,atp_141,WTA,Hard
+2026-07-26,14:00,Mubadala DC Open,Martin Damm,Abdullah Shelbayh,atp_383,atp_318,ATP,Hard
+2026-07-26,14:00,Mubadala DC Open,Aleksandar Vukic,Alex Bolt,atp_88,atp_167,ATP,Hard
+2026-07-26,15:30,Mubadala DC Open,Zachary Svajda,Cruz Hewitt,atp_106,atp_670,ATP,Hard
+2026-07-26,15:30,Mubadala DC Open,Marcos Giron,Andre Ilagan,atp_63,atp_382,ATP,Hard
+2026-07-26,16:00,Mubadala DC Open,Andres Martin,Moez Echargui,atp_383,atp_139,ATP,Hard
+2026-07-26,17:00,Mubadala DC Open,Mackenzie McDonald,Trevor Svajda,atp_115,atp_106,ATP,Hard
+2026-07-26,08:00,Axeria Open 2026 powered by Intaro Sport,Yelyzaveta Kotliar,Alessandra Mazzola,wta_499,wta_495,WTA,
+2026-07-26,08:00,Axeria Open 2026 powered by Intaro Sport,Elena Malygina,Ekaterina Kazionova,wta_375,wta_494,WTA,
+2026-07-26,08:00,Axeria Open 2026 powered by Intaro Sport,Deborah Chiesa,Andreea Prisacariu,wta_539,wta_441,WTA,
+2026-07-26,09:30,Axeria Open 2026 powered by Intaro Sport,Amandine Monnot,Lucija Ciric Bagaric,wta_374,wta_448,WTA,
+2026-07-26,09:30,Axeria Open 2026 powered by Intaro Sport,Maria Sara Popa,Amarissa Toth,wta_9031,wta_250,WTA,
+2026-07-26,09:30,Axeria Open 2026 powered by Intaro Sport,Isabella Shinikova,Miriana Tona,wta_340,wta_384,WTA,
+2026-07-26,11:00,Axeria Open 2026 powered by Intaro Sport,Diana Ilie,Margaux Rouvroy,wta_21,wta_316,WTA,
+2026-07-26,11:00,Axeria Open 2026 powered by Intaro Sport,Gina Feistel,Briana Szabo,wta_650,wta_699,WTA,
+2026-07-26,12:00,Livesport Prague Open,Daria Snigur,Lilli Tagger,wta_132,wta_114,WTA,Hard
+2026-07-26,12:00,MSC Hamburg Ladies Open,Anna Bondar,Tamara Korpatsch,wta_65,wta_106,WTA,Clay
+2026-07-26,18:00,Odlum Brown VanOpen,Katrina Scott,Ellie Schoppe,wta_282,wta_622,WTA,
+2026-07-26,20:00,Odlum Brown VanOpen,Miho Kuramochi,Avery Alexander,wta_327,wta_9015,WTA,
+2026-07-26,20:00,Odlum Brown VanOpen,Emma Si Yu Dong,Valeria Savinykh,wta_9100,wta_633,ATP,
+2026-07-26,20:00,Odlum Brown VanOpen,Wei Sijia,Hong Yi Cody Wong,wta_358,atp_137,WTA,
+2026-07-26,21:30,Odlum Brown VanOpen,Haruka Kaji,Taylah Preston,wta_301,wta_147,WTA,
+2026-07-26,21:30,Odlum Brown VanOpen,Hayu Kinoshita,Kyoka Okamura,wta_417,wta_297,WTA,
+2026-07-26,22:00,Odlum Brown VanOpen,Kayla Day,Mai Hontama,wta_197,wta_220,WTA,
+2026-07-26,23:30,Odlum Brown VanOpen,Madison Brengle,Alexandra Vagramov,wta_400,wta_344,WTA,
+2026-07-26,18:30,Palermo Ladies Open,Francesca Jones,Fiona Ferro,wta_72,wta_239,WTA,
+2026-07-26,16:00,The Memphis Classic,Storm Hunter,Sofia Johnson,wta_231,wta_407,WTA,
+2026-07-26,16:00,The Memphis Classic,Ma YeXin,Aoi Ito,wta_182,wta_176,WTA,
+2026-07-26,17:30,The Memphis Classic,Kristina Liutova,Mariia Kozyreva,wta_364,wta_454,WTA,
+2026-07-26,17:30,The Memphis Classic,Katherine Sebov,Aran Teixido Garcia,wta_270,wta_206,WTA,
+2026-07-26,19:00,The Memphis Classic,Tatiana Prozorova,Kennedy Drenser-Hagmann,wta_166,wta_9101,WTA,
+2026-07-26,19:30,The Memphis Classic,Iryna Shymanovich,Ankita Raina,wta_156,wta_665,WTA,
+2026-07-27,TBD,Mifel Tennis Open by Telcel Oppo,Dalibor Svrcina,Adam Walton,atp_99,atp_93,ATP,
+2026-07-27,TBD,Mifel Tennis Open by Telcel Oppo,Sho Shimabukuro,Rodrigo Pacheco Mendez,atp_135,atp_227,ATP,
+2026-07-27,TBD,Mifel Tennis Open by Telcel Oppo,Denis Shapovalov,Rinky Hijikata,atp_36,atp_112,ATP,
+2026-07-27,TBD,Mifel Tennis Open by Telcel Oppo,Cameron Norrie,Aleksandar Kovacevic,atp_27,atp_75,ATP,
+2026-07-27,TBD,Mifel Tennis Open by Telcel Oppo,Michael Zheng,Martin Landaluce,wta_372,atp_158,WTA,
+2026-07-27,TBD,Mifel Tennis Open by Telcel Oppo,Jenson Brooksby,Corentin Moutet,atp_46,atp_34,ATP,
+2026-07-27,TBD,Mifel Tennis Open by Telcel Oppo,Moise Kouame,Grigor Dimitrov,atp_9040,atp_42,ATP,
+2026-07-27,TBD,Mifel Tennis Open by Telcel Oppo,Chak Lam Coleman Wong,Darwin Blanch,atp_137,atp_446,ATP,
+2026-07-27,TBD,Mubadala DC Open,Kei Nishikori,Shang Juncheng,atp_283,atp_259,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Arthur Fils,Rafael Jodar,atp_40,atp_117,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Adrian Mannarino,Learner Tien,atp_48,atp_23,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Alex Michelsen,Jack Draper,atp_41,atp_12,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Kamil Majchrzak,Tommy Paul,atp_56,atp_24,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Taylor Fritz,Zizou Bergs,atp_7,atp_43,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Brandon Nakashima,Tomas Martin Etcheverry,atp_29,atp_53,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Frances Tiafoe,Terence Atmane,atp_28,atp_65,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Alex de Minaur,Stefanos Tsitsipas,atp_8,atp_32,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Alejandro Tabilo,Tallon Griekspoor,atp_67,atp_25,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Matteo Arnaldi,Lorenzo Musetti,atp_85,atp_5,ATP,Hard
+2026-07-27,TBD,Mubadala DC Open,Anastasia Potapova,Venus Williams,wta_75,wta_555,WTA,Hard
+2026-07-27,TBD,Mubadala DC Open,Magdalena Frech,Ann Li,wta_55,wta_36,WTA,Hard
+2026-07-27,TBD,Mubadala DC Open,Ashlyn Krueger,Katie Boulter,wta_100,wta_83,WTA,Hard
+2026-07-27,TBD,Mubadala DC Open,Elisabetta Cocciaretto,Clara Tauson,wta_40,wta_15,WTA,Hard
+2026-07-27,TBD,Mubadala DC Open,Emma Navarro,Sofia Kenin,wta_19,wta_32,WTA,Hard
+2026-07-27,TBD,Mubadala DC Open,Liudmila Samsonova,Madison Keys,wta_18,wta_17,WTA,Hard
+2026-07-27,TBD,Mubadala DC Open,Alexandra Eala,Zheng Qinwen,wta_45,wta_372,WTA,Hard
+2026-07-27,TBD,Mubadala DC Open,Leylah Fernandez,Magda Linette,wta_28,wta_50,WTA,Hard
+2026-07-27,TBD,Odlum Brown VanOpen,Lizette Cabrera,Sofia Costoulas,wta_274,wta_142,WTA,
+2026-07-27,TBD,Odlum Brown VanOpen,Harriet Dart,Kayla Cross,wta_169,wta_197,WTA,
+2026-07-27,TBD,Odlum Brown VanOpen,Ariana Arseneault,Annabelle Xu,wta_476,wta_238,WTA,
+2026-07-27,TBD,Odlum Brown VanOpen,Teah Chavez,Nao Hibino,wta_920,wta_196,WTA,
+2026-07-27,TBD,Odlum Brown VanOpen,Lu Jia-Jing,Caroline Dolehide,wta_431,wta_121,WTA,
+2026-07-27,TBD,Odlum Brown VanOpen,Greet Minnen,Maddison Inglis,wta_129,wta_123,WTA,
+2026-07-27,TBD,Odlum Brown VanOpen,Emerson Jones,Carol Zhao,wta_72,wta_333,WTA,
+2026-07-27,TBD,Odlum Brown VanOpen,En-Shuo Liang,Mananchaya Sawangkaew,wta_360,wta_198,WTA,
+2026-07-27,TBD,The Memphis Classic,Mary Stoiana,Peyton Stearns,wta_185,wta_59,WTA,
+2026-07-27,TBD,The Memphis Classic,Renata Zarazua,McCartney Kessler,wta_87,wta_31,WTA,
+2026-07-27,TBD,The Memphis Classic,Talia Gibson,Tatjana Maria,wta_111,wta_54,WTA,
+2026-07-27,TBD,The Memphis Classic,Anastasia Zakharova,Linda Fruhvirtova,wta_103,wta_118,WTA,
+2026-07-27,TBD,The Memphis Classic,Yuliia Starodubtseva,Sloane Stephens,wta_101,wta_775,WTA,
+2026-07-27,TBD,The Memphis Classic,Darja Vidmanova,Marina Bassols Ribera,wta_127,wta_209,WTA,
+2026-07-27,TBD,The Memphis Classic,Katie Volynets,Viktorija Golubic,wta_96,wta_88,WTA,
+2026-07-27,TBD,The Memphis Classic,Maya Joint,Whitney Osuigwe,wta_29,wta_162,WTA,
+2026-07-27,TBD,The Memphis Classic,Zeynep Sonmez,Cadence Brace,wta_84,wta_202,WTA,
+2026-07-27,TBD,The Memphis Classic,Wang Xiyu,Catherine McNally,wta_34,wta_68,WTA,
