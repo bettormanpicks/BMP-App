@@ -3,14 +3,14 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-26,01:00,Mifel Tennis Open by Telcel Oppo,Tristan Boyer,Bernard Tomic
 2026-07-26,02:30,Mifel Tennis Open by Telcel Oppo,Alex Hernandez,Alan Magadan
 2026-07-26,02:30,Mifel Tennis Open by Telcel Oppo,Aidan Mayo,Roger Pascual Ferra
-2026-07-26,Live,Millennium Estoril Open,Luca Van Assche,Alexander Blockx
-2026-07-26,17:00,Mubadala DC Open,Mackenzie McDonald,Trevor Svajda
+2026-07-26,Final,Millennium Estoril Open,Luca Van Assche,Alexander Blockx
+2026-07-26,Final,Mubadala DC Open,Mackenzie McDonald,Trevor Svajda
 2026-07-26,Final,Mubadala DC Open,Andres Martin,Moez Echargui
 2026-07-26,TBD,Mubadala DC Open,Zachary Svajda,Cruz Hewitt
 2026-07-26,Final,Mubadala DC Open,Marcos Giron,Andre Ilagan
 2026-07-26,Final,Mubadala DC Open,Martin Damm,Abdullah Shelbayh
 2026-07-26,Final,Mubadala DC Open,Aleksandar Vukic,Alex Bolt
-2026-07-26,Live,Mubadala DC Open,Daria Kasatkina,Alana Smith
+2026-07-26,Final,Mubadala DC Open,Daria Kasatkina,Alana Smith
 2026-07-26,Final,Mubadala DC Open,Gabriela Knutson,Rebecca Sramkova
 2026-07-26,Final,Mubadala DC Open,Polina Kudermetova,Varvara Lepchenko
 2026-07-26,Final,Mubadala DC Open,Heather Watson,Julieta Pareja
@@ -24,40 +24,29 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-26,Final,Axeria Open 2026 powered by Intaro Sport,Ekaterina Yashina,Ekaterina Kazionova
 2026-07-26,Final,Livesport Prague Open,Daria Snigur,Lilli Tagger
 2026-07-26,Final,MSC Hamburg Ladies Open,Anna Bondar,Tamara Korpatsch
-2026-07-26,20:00,Odlum Brown VanOpen,Miho Kuramochi,Avery Alexander
-2026-07-26,21:30,Odlum Brown VanOpen,Katrina Scott,Ellie Schoppe
-2026-07-26,21:30,Odlum Brown VanOpen,Emma Si Yu Dong,Valeria Savinykh
-2026-07-26,22:00,Odlum Brown VanOpen,Kayla Day,Mai Hontama
-2026-07-26,23:00,Odlum Brown VanOpen,Wei Sijia,Hong Yi Cody Wong
-2026-07-26,23:00,Odlum Brown VanOpen,Hayu Kinoshita,Kyoka Okamura
-2026-07-26,23:30,Odlum Brown VanOpen,Madison Brengle,Alexandra Vagramov
-2026-07-26,00:30,Odlum Brown VanOpen,Haruka Kaji,Taylah Preston
-2026-07-26,Live,Palermo Ladies Open,Francesca Jones,Fiona Ferro
-2026-07-26,19:00,The Memphis Classic,Kristina Liutova,Mariia Kozyreva
-2026-07-26,19:00,The Memphis Classic,Katherine Sebov,Aran Teixido Garcia
-2026-07-26,20:00,The Memphis Classic,Iryna Shymanovich,Ankita Raina
-2026-07-26,20:00,The Memphis Classic,Tatiana Prozorova,Kennedy Drenser-Hagmann
+2026-07-26,00:30,Odlum Brown VanOpen,Miho Kuramochi,Avery Alexander
+2026-07-26,00:30,Odlum Brown VanOpen,Katrina Scott,Ellie Schoppe
+2026-07-26,00:30,Odlum Brown VanOpen,Emma Si Yu Dong,Valeria Savinykh
+2026-07-26,00:30,Odlum Brown VanOpen,Wei Sijia,Hong Yi Cody Wong
+2026-07-26,Final,Palermo Ladies Open,Francesca Jones,Fiona Ferro
+2026-07-26,22:00,The Memphis Classic,Tatiana Prozorova,Kennedy Drenser-Hagmann
+2026-07-26,22:00,The Memphis Classic,Kristina Liutova,Mariia Kozyreva
+2026-07-26,22:00,The Memphis Classic,Katherine Sebov,Aran Teixido Garcia
+2026-07-26,23:30,The Memphis Classic,Iryna Shymanovich,Ankita Raina
 2026-07-26,TBD,The Memphis Classic,Ma YeXin,Aoi Ito
 2026-07-26,TBD,The Memphis Classic,Storm Hunter,Sofia Johnson
-2026-07-27,TBD,Mubadala DC Open,Kei Nishikori,Shang Juncheng
-2026-07-27,TBD,Mubadala DC Open,Arthur Fils,Rafael Jodar
-2026-07-27,TBD,Mubadala DC Open,Adrian Mannarino,Learner Tien
-2026-07-27,TBD,Mubadala DC Open,Alex Michelsen,Jack Draper
-2026-07-27,TBD,Mubadala DC Open,Kamil Majchrzak,Tommy Paul
-2026-07-27,TBD,Mubadala DC Open,Taylor Fritz,Zizou Bergs
-2026-07-27,TBD,Mubadala DC Open,Brandon Nakashima,Tomas Martin Etcheverry
-2026-07-27,TBD,Mubadala DC Open,Frances Tiafoe,Terence Atmane
-2026-07-27,TBD,Mubadala DC Open,Alex de Minaur,Stefanos Tsitsipas
-2026-07-27,TBD,Mubadala DC Open,Alejandro Tabilo,Tallon Griekspoor
-2026-07-27,TBD,Mubadala DC Open,Matteo Arnaldi,Lorenzo Musetti
-2026-07-27,TBD,Mubadala DC Open,Anastasia Potapova,Venus Williams
-2026-07-27,TBD,Mubadala DC Open,Magdalena Frech,Ann Li
-2026-07-27,TBD,Mubadala DC Open,Ashlyn Krueger,Katie Boulter
-2026-07-27,TBD,Mubadala DC Open,Elisabetta Cocciaretto,Clara Tauson
-2026-07-27,TBD,Mubadala DC Open,Emma Navarro,Sofia Kenin
-2026-07-27,TBD,Mubadala DC Open,Liudmila Samsonova,Madison Keys
-2026-07-27,TBD,Mubadala DC Open,Alexandra Eala,Zheng Qinwen
-2026-07-27,TBD,Mubadala DC Open,Leylah Fernandez,Magda Linette
+2026-07-27,15:00,Mubadala DC Open,Alejandro Tabilo,Tallon Griekspoor
+2026-07-27,16:30,Mubadala DC Open,Matteo Arnaldi,Lorenzo Musetti
+2026-07-27,19:00,Mubadala DC Open,Taylor Fritz,Zizou Bergs
+2026-07-27,19:30,Mubadala DC Open,Aleksandar Vukic,Zachary Svajda
+2026-07-27,21:00,Mubadala DC Open,Kei Nishikori,Shang Juncheng
+2026-07-27,23:30,Mubadala DC Open,Frances Tiafoe,Terence Atmane
+2026-07-27,15:00,Mubadala DC Open,Elisabetta Cocciaretto,Clara Tauson
+2026-07-27,15:00,Mubadala DC Open,Leylah Fernandez,Magda Linette
+2026-07-27,16:30,Mubadala DC Open,Emma Navarro,Sofia Kenin
+2026-07-27,21:00,Mubadala DC Open,Janice Tjen,Rebecca Sramkova
+2026-07-27,22:00,Mubadala DC Open,Liudmila Samsonova,Madison Keys
+2026-07-27,22:30,Mubadala DC Open,Ashlyn Krueger,Katie Boulter
 2026-07-27,TBD,Axeria Open 2026 powered by Intaro Sport,Mia Ristic,Darja Semenistaja
 2026-07-27,08:00,Axeria Open 2026 powered by Intaro Sport,Ekaterina Kazionova,Margaux Rouvroy
 2026-07-27,08:00,Axeria Open 2026 powered by Intaro Sport,Andreea Prisacariu,Yelyzaveta Kotliar
@@ -69,21 +58,19 @@ Date,Time,Tournament,Player 1,Player 2
 2026-07-27,11:00,Axeria Open 2026 powered by Intaro Sport,Kaitlin Quevedo,Irina Fetecau
 2026-07-27,11:00,Axeria Open 2026 powered by Intaro Sport,Irene Burillo,Sofya Lansere
 2026-07-27,12:30,Axeria Open 2026 powered by Intaro Sport,Leyre Romero Gormaz,Sara Sorribes Tormo
-2026-07-27,TBD,Odlum Brown VanOpen,Lizette Cabrera,Sofia Costoulas
-2026-07-27,TBD,Odlum Brown VanOpen,Harriet Dart,Kayla Cross
-2026-07-27,TBD,Odlum Brown VanOpen,Ariana Arseneault,Annabelle Xu
 2026-07-27,TBD,Odlum Brown VanOpen,Teah Chavez,Nao Hibino
-2026-07-27,TBD,Odlum Brown VanOpen,Lu Jia-Jing,Caroline Dolehide
-2026-07-27,TBD,Odlum Brown VanOpen,Greet Minnen,Maddison Inglis
-2026-07-27,TBD,Odlum Brown VanOpen,Emerson Jones,Carol Zhao
 2026-07-27,TBD,Odlum Brown VanOpen,En-Shuo Liang,Mananchaya Sawangkaew
-2026-07-27,TBD,The Memphis Classic,Renata Zarazua,McCartney Kessler
-2026-07-27,TBD,The Memphis Classic,Mary Stoiana,Peyton Stearns
-2026-07-27,TBD,The Memphis Classic,Talia Gibson,Tatjana Maria
-2026-07-27,TBD,The Memphis Classic,Anastasia Zakharova,Linda Fruhvirtova
-2026-07-27,TBD,The Memphis Classic,Yuliia Starodubtseva,Sloane Stephens
-2026-07-27,TBD,The Memphis Classic,Darja Vidmanova,Marina Bassols Ribera
-2026-07-27,TBD,The Memphis Classic,Katie Volynets,Viktorija Golubic
-2026-07-27,TBD,The Memphis Classic,Maya Joint,Whitney Osuigwe
-2026-07-27,TBD,The Memphis Classic,Zeynep Sonmez,Cadence Brace
-2026-07-27,TBD,The Memphis Classic,Wang Xiyu,Catherine McNally
+2026-07-27,TBD,Odlum Brown VanOpen,Lizette Cabrera,Sofia Costoulas
+2026-07-27,TBD,Odlum Brown VanOpen,Haruka Kaji,Taylah Preston
+2026-07-27,TBD,Odlum Brown VanOpen,Emerson Jones,Carol Zhao
+2026-07-27,TBD,Odlum Brown VanOpen,Madison Brengle,Alexandra Vagramov
+2026-07-27,TBD,Odlum Brown VanOpen,Greet Minnen,Maddison Inglis
+2026-07-27,TBD,Odlum Brown VanOpen,Kayla Day,Mai Hontama
+2026-07-27,TBD,Odlum Brown VanOpen,Lu Jia-Jing,Caroline Dolehide
+2026-07-27,TBD,Odlum Brown VanOpen,Ariana Arseneault,Annabelle Xu
+2026-07-27,TBD,Odlum Brown VanOpen,Harriet Dart,Kayla Cross
+2026-07-27,TBD,Odlum Brown VanOpen,Hayu Kinoshita,Kyoka Okamura
+2026-07-27,15:00,The Memphis Classic,Anastasia Zakharova,Linda Fruhvirtova
+2026-07-27,15:00,The Memphis Classic,Maya Joint,Whitney Osuigwe
+2026-07-27,15:00,The Memphis Classic,Katie Volynets,Viktorija Golubic
+2026-07-27,22:00,The Memphis Classic,Talia Gibson,Tatjana Maria
