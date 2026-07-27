@@ -905,18 +905,23 @@ with streamlit_analytics.track():
 
         # --- Lazy imports: only loaded when Table Tennis is selected ---
         from tabletennis.helpers import (
-            load_tt_raw_data,
             load_tt_all_leagues,
-            build_h2h_index,
             compute_h2h_stats
         )
 
-        # --- League selector (outside form so we know which CSVs to load) ---
-        league = st.sidebar.radio(
-            "Select League",
-            ["TT Elite", "Czech", "TT Cup", "Setka", "All"],
-            horizontal=True
-        )
+        # --- League selector ---
+        st.sidebar.markdown("**Select Leagues**")
+        col1, col2 = st.sidebar.columns(2)
+        show_elite = col1.checkbox("TT Elite", value=True, key="show_elite")
+        show_czech = col2.checkbox("Czech", value=True, key="show_czech")
+        show_setka = col1.checkbox("Setka", value=True, key="show_setka")
+        show_cup = col2.checkbox("TT Cup", value=True, key="show_cup")
+
+        selected_leagues = []
+        if show_elite: selected_leagues.append("TT Elite")
+        if show_czech: selected_leagues.append("Czech")
+        if show_setka: selected_leagues.append("Setka")
+        if show_cup: selected_leagues.append("TT Cup")
 
         # --- Sidebar Filters ---
         with st.sidebar.form("TT Filters"):
@@ -1023,98 +1028,96 @@ with streamlit_analytics.track():
 
         # --- Show info if user hasn't clicked Calculate yet ---
         if not calculate:
-            st.info("Select a league and click Calculate to load upcoming matches.")
+            st.info("Select leagues and click Calculate to load upcoming matches.")
         else:
-            # --- Load data inside Calculate (cached, safe, on-demand) ---
             with st.spinner("Loading and processing data..."):
-                if league == "All":
-                    schedule, matchlogs, h2h, h2h_index = load_tt_all_leagues()
-                else:
-                    schedule, matchlogs, h2h, h2h_index = load_tt_raw_data(league)
+                if not selected_leagues:
+                    st.warning("Please select at least one league.")
+                    st.stop()
 
-                schedule = schedule.copy()
-                if matchlogs is not None:
-                    matchlogs = matchlogs.copy()
+                schedule, _, _, h2h_index = load_tt_all_leagues()
 
-            # --- Parse CSV dates and drop bad rows ---
-            schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
-            schedule = schedule.dropna(subset=["date"])
+                # Filter schedule to selected leagues
+                schedule = schedule[schedule["league"].isin(selected_leagues)].copy()
 
-            # --- Localize schedule dates to CST ---
-            central = pytz.timezone("America/Chicago")
-            schedule["date"] = schedule["date"].dt.tz_localize("UTC").dt.tz_convert(central)
+                # --- Parse CSV dates and drop bad rows ---
+                schedule["date"] = pd.to_datetime(schedule["date"], errors="coerce")
+                schedule = schedule.dropna(subset=["date"])
 
-            # --- Current CST time ---
-            now_ct = pd.Timestamp.now(central)
+                # --- Localize schedule dates to CST ---
+                central = pytz.timezone("America/Chicago")
+                schedule["date"] = schedule["date"].dt.tz_localize("UTC").dt.tz_convert(central)
 
-            # --- Filter upcoming matches ---
-            grace_period = pd.Timedelta(minutes=20)
-            upcoming = schedule[schedule["date"] + grace_period >= now_ct]
+                # --- Current CST time ---
+                now_ct = pd.Timestamp.now(central)
 
-            rows = []
-            for _, row in upcoming.iterrows():
-                p1, p2 = row["player1"], row["player2"]
-                p1_display, p2_display = row["player1_display"], row["player2_display"]
+                # --- Filter upcoming matches ---
+                grace_period = pd.Timedelta(minutes=20)
+                upcoming = schedule[schedule["date"] + grace_period >= now_ct]
 
-                stats = compute_h2h_stats(h2h_index, p1, p2, window=recency_window)
-                if stats is None:
-                    stats = {
-                        "matches": 0,
-                        "a_wins": 0,
-                        "b_wins": 0,
-                        "win_pct": 0,
-                        "last_played": None,
-                        "sweeps_a": 0,
-                        "sweeps_b": 0,
-                        "non_sweep_pct": 0,
-                        "avg_total_sets": 0,
-                        "ATP": 0,
-                        "PS": 0,
-                        "SS": 0
+                rows = []
+                for _, row in upcoming.iterrows():
+                    p1, p2 = row["player1"], row["player2"]
+                    p1_display, p2_display = row["player1_display"], row["player2_display"]
+
+                    stats = compute_h2h_stats(h2h_index, p1, p2, window=recency_window)
+                    if stats is None:
+                        stats = {
+                            "matches": 0,
+                            "a_wins": 0,
+                            "b_wins": 0,
+                            "win_pct": 0,
+                            "last_played": None,
+                            "sweeps_a": 0,
+                            "sweeps_b": 0,
+                            "non_sweep_pct": 0,
+                            "avg_total_sets": 0,
+                            "ATP": 0,
+                            "PS": 0,
+                            "SS": 0
+                        }
+
+                    row_dict = {
+                        "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
+                        "Player 1": p1_display,
+                        "Player 2": p2_display,
+                        "Matches": stats["matches"],
+                        "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
+                        "One-All %": round(stats.get("one_all_pct", 0) * 100, 1),
+                        "P1 B%": round(stats.get("a_bounce_pct", 0) * 100, 1),
+                        "P1 BB#": stats.get("a_bounce_n", 0),
+                        "P2 B%": round(stats.get("b_bounce_pct", 0) * 100, 1),
+                        "P2 BB#": stats.get("b_bounce_n", 0),
+                        "P1 SR%": round(stats.get("a_sr_pct", 0) * 100, 1),
+                        "P1 SR#": stats.get("a_sr_n", 0),
+                        "P2 SR%": round(stats.get("b_sr_pct", 0) * 100, 1),
+                        "P2 SR#": stats.get("b_sr_n", 0),
+                        "P1 Sweeps": stats.get("sweeps_a", 0),
+                        "P2 Sweeps": stats.get("sweeps_b", 0),
+                        "P1 Wins": stats["a_wins"],
+                        "P2 Wins": stats["b_wins"],
+                        "Win % (P1)": round(stats["win_pct"] * 100, 1),
+                        "3Set %": round(stats.get("pct_3sets", 0) * 100, 1),
+                        "4Set %": round(stats.get("pct_4sets", 0) * 100, 1),
+                        "5Set %": round(stats.get("pct_5sets", 0) * 100, 1),
+                        "Avg Total Sets": round(stats.get("avg_total_sets", 0), 2),
+                        "SS": round(stats.get("SS", 0), 2),
+                        "ATP": round(stats.get("ATP", 0), 2),
+                        "PS": round(stats.get("PS", 0), 2),
+                        "P1 SS": round(stats.get("a_ss_score", 0) * 100, 1),
+                        "P1 Rec%": round(stats.get("a_recovery_pct", 0) * 100, 1),
+                        "P1 Rec#": stats.get("a_recovery_n", 0),
+                        "P2 SS": round(stats.get("b_ss_score", 0) * 100, 1),
+                        "P2 Rec%": round(stats.get("b_recovery_pct", 0) * 100, 1),
+                        "P2 Rec#": stats.get("b_recovery_n", 0),
+                        "Last Played": stats["last_played"]
                     }
 
-                row_dict = {
-                    "Date": row["date"].strftime("%Y-%m-%d %H:%M"),
-                    "Player 1": p1_display,
-                    "Player 2": p2_display,
-                    "Matches": stats["matches"],
-                    "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
-                    "One-All %": round(stats.get("one_all_pct", 0) * 100, 1),
-                    "P1 B%": round(stats.get("a_bounce_pct", 0) * 100, 1),
-                    "P1 BB#": stats.get("a_bounce_n", 0),
-                    "P2 B%": round(stats.get("b_bounce_pct", 0) * 100, 1),
-                    "P2 BB#": stats.get("b_bounce_n", 0),
-                    "P1 SR%": round(stats.get("a_sr_pct", 0) * 100, 1),
-                    "P1 SR#": stats.get("a_sr_n", 0),
-                    "P2 SR%": round(stats.get("b_sr_pct", 0) * 100, 1),
-                    "P2 SR#": stats.get("b_sr_n", 0),
-                    "P1 Sweeps": stats.get("sweeps_a", 0),
-                    "P2 Sweeps": stats.get("sweeps_b", 0),
-                    "P1 Wins": stats["a_wins"],
-                    "P2 Wins": stats["b_wins"],
-                    "Win % (P1)": round(stats["win_pct"] * 100, 1),
-                    "3Set %":  round(stats.get("pct_3sets", 0) * 100, 1),
-                    "4Set %":  round(stats.get("pct_4sets", 0) * 100, 1),
-                    "5Set %":  round(stats.get("pct_5sets", 0) * 100, 1),
-                    "Avg Total Sets": round(stats.get("avg_total_sets", 0), 2),
-                    "SS": round(stats.get("SS", 0), 2),
-                    "ATP": round(stats.get("ATP", 0), 2),
-                    "PS": round(stats.get("PS", 0), 2),
-                    "P1 SS":    round(stats.get("a_ss_score", 0) * 100, 1),
-                    "P1 Rec%":  round(stats.get("a_recovery_pct", 0) * 100, 1),
-                    "P1 Rec#":  stats.get("a_recovery_n", 0),
-                    "P2 SS":    round(stats.get("b_ss_score", 0) * 100, 1),
-                    "P2 Rec%":  round(stats.get("b_recovery_pct", 0) * 100, 1),
-                    "P2 Rec#":  stats.get("b_recovery_n", 0),
-                    "Last Played": stats["last_played"]
-                }
+                    if len(selected_leagues) > 1:
+                        row_dict["League"] = row["league"]
+                    rows.append(row_dict)
 
-                if league == "All":
-                    row_dict["League"] = row["league"]
-
-                rows.append(row_dict)
-
-            df = pd.DataFrame(rows)
+                df = pd.DataFrame(rows)
 
             # --- Apply minimum match filter ---
             if df.empty or "Matches" not in df.columns:
@@ -1162,11 +1165,17 @@ with streamlit_analytics.track():
 
             df_display = df.rename(columns=DISPLAY_NAMES)
 
-            if league == "All":
+            if len(selected_leagues) > 1:
                 cols = df_display.columns.tolist()
                 cols.remove("League")
                 cols.insert(1, "League")
                 df_display = df_display[cols]
+
+            always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
+            pinned_cols = ["Match Start", "Player 1", "Player 2", "Ms"]
+            if len(selected_leagues) > 1:
+                always_keep = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
+                pinned_cols = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
 
             if stat_thresholds:
                 mask = pd.Series(True, index=df_display.index)
@@ -1180,13 +1189,6 @@ with streamlit_analytics.track():
                 if df_display.empty:
                     st.warning("All rows filtered out — try adjusting thresholds.")
                     st.stop()
-
-            always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
-            pinned_cols = ["Match Start", "Player 1", "Player 2", "Ms"]
-
-            if league == "All":
-                always_keep = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
-                pinned_cols = ["Match Start", "League", "Player 1", "Player 2", "Ms"]
 
             if selected_stats:
                 display_cols = always_keep + [c for c in selected_stats if c in df_display.columns]
