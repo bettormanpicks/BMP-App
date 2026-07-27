@@ -972,24 +972,35 @@ with streamlit_analytics.track():
             )
 
             st.markdown("Filter Thresholds (optional)")
-
             stat_thresholds = {}
-
             for stat in selected_stats:
-                col1, col2 = st.columns([2, 1])
-
+                col1, col2, col3 = st.columns([2, 1, 1])
                 col1.write(stat)
-                val = col2.text_input(
-                    "min_input",
+                min_val = col2.text_input(
+                    "min",
                     key=f"min_{stat}",
-                    label_visibility="collapsed"
+                    label_visibility="collapsed",
+                    placeholder="min"
                 )
-
-                if val.strip() != "":
+                max_val = col3.text_input(
+                    "max",
+                    key=f"max_{stat}",
+                    label_visibility="collapsed",
+                    placeholder="max"
+                )
+                threshold = {}
+                if min_val.strip() != "":
                     try:
-                        stat_thresholds[stat] = float(val)
+                        threshold["min"] = float(min_val)
                     except ValueError:
-                        pass  # ignore bad input
+                        pass
+                if max_val.strip() != "":
+                    try:
+                        threshold["max"] = float(max_val)
+                    except ValueError:
+                        pass
+                if threshold:
+                    stat_thresholds[stat] = threshold
 
             col1, col2 = st.columns(2)
 
@@ -1000,16 +1011,12 @@ with streamlit_analytics.track():
                 reset = st.form_submit_button("Reset")
 
         if reset:
-            # Remove stat selection
             if "Advanced Filters" in st.session_state:
                 del st.session_state["Advanced Filters"]
-
-            # Clear all threshold inputs
             for stat in stat_options:
-                key = f"min_{stat}"
-                if key in st.session_state:
-                    del st.session_state[key]
-
+                for key in [f"min_{stat}", f"max_{stat}"]:
+                    if key in st.session_state:
+                        del st.session_state[key]
             st.rerun()
 
         sidebar_footer()
@@ -1163,15 +1170,15 @@ with streamlit_analytics.track():
 
             if stat_thresholds:
                 mask = pd.Series(True, index=df_display.index)
-
                 for stat, threshold in stat_thresholds.items():
                     if stat in df_display.columns:
-                        mask &= df_display[stat] >= threshold
-
+                        if "min" in threshold:
+                            mask &= df_display[stat] >= threshold["min"]
+                        if "max" in threshold:
+                            mask &= df_display[stat] <= threshold["max"]
                 df_display = df_display[mask]
-
                 if df_display.empty:
-                    st.warning("All rows filtered out — try lowering thresholds.")
+                    st.warning("All rows filtered out — try adjusting thresholds.")
                     st.stop()
 
             always_keep = ["Match Start", "Player 1", "Player 2", "Ms"]
