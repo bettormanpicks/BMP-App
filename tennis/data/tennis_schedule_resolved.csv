@@ -8,7 +8,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-28,04:00,Mifel Tennis Open by Telcel Oppo,Michael Zheng,Martin Landaluce,atp_152,atp_158,ATP,
 2026-07-28,04:00,Mifel Tennis Open by Telcel Oppo,Dalibor Svrcina,Adam Walton,atp_99,atp_93,ATP,
 2026-07-28,15:00,Mubadala DC Open,Kamil Majchrzak,Tommy Paul,atp_56,atp_24,ATP,Hard
-2026-07-28,15:00,Mubadala DC Open,Ugo Humbert,Andres Martin,atp_38,wta_685,ATP,Hard
+2026-07-28,15:00,Mubadala DC Open,Ugo Humbert,Andres Martin,atp_38,atp_383,ATP,Hard
 2026-07-28,16:30,Mubadala DC Open,Arthur Fils,Rafael Jodar,atp_40,atp_117,ATP,Hard
 2026-07-28,16:30,Mubadala DC Open,Adrian Mannarino,Learner Tien,atp_48,atp_23,ATP,Hard
 2026-07-28,16:30,Mubadala DC Open,Alex Michelsen,Mackenzie McDonald,atp_41,atp_115,ATP,Hard
@@ -23,16 +23,16 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-28,19:00,Mubadala DC Open,Daria Kasatkina,Anna Kalinskaya,wta_61,wta_24,WTA,Hard
 2026-07-28,20:30,Mubadala DC Open,Magdalena Frech,Ann Li,wta_55,wta_36,WTA,Hard
 2026-07-28,23:30,Mubadala DC Open,Anastasia Potapova,Venus Williams,wta_75,wta_555,WTA,Hard
-2026-07-28,Live,Axeria Open 2026 powered by Intaro Sport,Laura Samson,Alesia Breaz,wta_212,wta_974,WTA,
-2026-07-28,Live,Axeria Open 2026 powered by Intaro Sport,Yelyzaveta Kotliar,Dalila Spiteri,wta_499,wta_275,WTA,
-2026-07-28,Live,Axeria Open 2026 powered by Intaro Sport,Mia Ristic,Darja Semenistaja,wta_273,wta_97,WTA,
-2026-07-28,09:30,Axeria Open 2026 powered by Intaro Sport,Miriana Tona,Lucia Bronzetti,wta_384,wta_138,WTA,
-2026-07-28,10:00,Axeria Open 2026 powered by Intaro Sport,Lucija Ciric Bagaric,Rachel Gailis,wta_448,wta_663,WTA,
-2026-07-28,10:00,Axeria Open 2026 powered by Intaro Sport,Margaux Rouvroy,Lola Radivojevic,wta_316,wta_139,WTA,
-2026-07-28,11:00,Axeria Open 2026 powered by Intaro Sport,Francesca Jones,Chloe Paquet,wta_72,wta_215,WTA,
-2026-07-28,11:00,Axeria Open 2026 powered by Intaro Sport,Alevtina Ibragimova,Maia Ilinca Burcescu,wta_321,wta_807,WTA,
-2026-07-28,11:00,Axeria Open 2026 powered by Intaro Sport,Selena Janicijevic,Anastasiia Sobolieva,wta_261,wta_268,WTA,
+2026-07-28,Live,Axeria Open 2026 powered by Intaro Sport,Miriana Tona,Lucia Bronzetti,wta_384,wta_138,WTA,
+2026-07-28,Live,Axeria Open 2026 powered by Intaro Sport,Margaux Rouvroy,Lola Radivojevic,wta_316,wta_139,WTA,
+2026-07-28,Live,Axeria Open 2026 powered by Intaro Sport,Lucija Ciric Bagaric,Rachel Gailis,wta_448,wta_663,WTA,
+2026-07-28,11:30,Axeria Open 2026 powered by Intaro Sport,Francesca Jones,Chloe Paquet,wta_72,wta_215,WTA,
+2026-07-28,11:30,Axeria Open 2026 powered by Intaro Sport,Alevtina Ibragimova,Maia Ilinca Burcescu,wta_321,wta_807,WTA,
+2026-07-28,12:00,Axeria Open 2026 powered by Intaro Sport,Selena Janicijevic,Anastasiia Sobolieva,wta_261,wta_268,WTA,
 2026-07-28,14:00,Axeria Open 2026 powered by Intaro Sport,Miriam Bulgaru,Carole Monnet,wta_208,wta_177,WTA,
+2026-07-28,Final,Axeria Open 2026 powered by Intaro Sport,Mia Ristic,Darja Semenistaja,wta_273,wta_97,WTA,
+2026-07-28,Final,Axeria Open 2026 powered by Intaro Sport,Laura Samson,Alesia Breaz,wta_212,wta_974,WTA,
+2026-07-28,Final,Axeria Open 2026 powered by Intaro Sport,Yelyzaveta Kotliar,Dalila Spiteri,wta_499,wta_275,WTA,
 2026-07-28,17:00,Odlum Brown VanOpen,Kayla Day,Mai Hontama,wta_194,wta_220,WTA,
 2026-07-28,17:00,Odlum Brown VanOpen,En-Shuo Liang,Mananchaya Sawangkaew,wta_360,wta_198,WTA,
 2026-07-28,18:30,Odlum Brown VanOpen,Lu Jia-Jing,Caroline Dolehide,wta_431,wta_121,WTA,
@@ -59,11 +59,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-28,23:30,The Memphis Classic,Renata Zarazua,McCartney Kessler,wta_87,wta_31,WTA,
 2026-07-29,TBD,Mifel Tennis Open by Telcel Oppo,Bernard Tomic,Karen Khachanov,atp_186,atp_17,ATP,
 2026-07-29,TBD,Mifel Tennis Open by Telcel Oppo,Jiri Lehecka,Chak Lam Coleman Wong,atp_21,atp_137,ATP,
-2026-07-29,TBD,Mifel Tennis Open by Telcel Oppo,Francisco Cerundolo,Tristan Boyer,atp_19,atp_216,ATP,
+2026-07-29,TBD,Mifel Tennis Open by Telcel Oppo,Francisco Cerundolo,Tristan Boyer,atp_62,atp_216,ATP,
 2026-07-29,TBD,Mubadala DC Open,Terence Atmane,Alejandro Tabilo,atp_65,atp_67,ATP,Hard
 2026-07-29,TBD,Mubadala DC Open,Aleksandar Vukic,Lorenzo Musetti,atp_88,atp_5,ATP,Hard
 2026-07-29,TBD,Mubadala DC Open,Ashlyn Krueger,Naomi Osaka,wta_100,wta_16,WTA,Hard
 2026-07-29,TBD,Mubadala DC Open,Emma Navarro,Elisabetta Cocciaretto,wta_19,wta_40,WTA,Hard
+2026-07-29,TBD,Axeria Open 2026 powered by Intaro Sport,Yelyzaveta Kotliar,Mia Ristic,wta_499,wta_273,WTA,
 2026-07-29,TBD,Axeria Open 2026 powered by Intaro Sport,Kaitlin Quevedo,Irene Burillo,wta_131,wta_249,WTA,
 2026-07-29,TBD,Axeria Open 2026 powered by Intaro Sport,Sara Sorribes Tormo,Caijsa Hennemann,wta_451,wta_377,WTA,
 2026-07-29,TBD,The Memphis Classic,Camila Osorio,Anastasia Zakharova,wta_63,wta_103,WTA,
