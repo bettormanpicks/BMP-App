@@ -1,21 +1,21 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-30,01:00,Mifel Tennis Open by Telcel Oppo,Francisco Cerundolo,Arthur Gea,atp_19,atp_160,ATP,
+2026-07-30,01:00,Mifel Tennis Open by Telcel Oppo,Francisco Cerundolo,Arthur Gea,atp_62,atp_160,ATP,
 2026-07-30,02:00,Mifel Tennis Open by Telcel Oppo,Chak Lam Coleman Wong,Jenson Brooksby,atp_137,atp_46,ATP,
 2026-07-30,02:30,Mifel Tennis Open by Telcel Oppo,Denis Shapovalov,Dalibor Svrcina,atp_36,atp_99,ATP,
 2026-07-30,04:00,Mifel Tennis Open by Telcel Oppo,Cameron Norrie,Bernard Tomic,atp_27,atp_186,ATP,
 2026-07-30,15:00,Mubadala DC Open,Brandon Nakashima,Jakub Mensik,atp_29,atp_16,ATP,Hard
-2026-07-30,17:00,Mubadala DC Open,Alex de Minaur,Cruz Hewitt,atp_8,atp_670,ATP,Hard
+2026-07-30,17:00,Mubadala DC Open,Alex de Minaur,Cruz Hewitt,atp_8,wta_641,ATP,Hard
 2026-07-30,20:30,Mubadala DC Open,Terence Atmane,Alejandro Tabilo,atp_65,atp_67,ATP,Hard
 2026-07-30,22:30,Mubadala DC Open,Ugo Humbert,Ben Shelton,atp_38,atp_9,ATP,Hard
 2026-07-30,17:00,Mubadala DC Open,Janice Tjen,Anna Kalinskaya,wta_47,wta_24,WTA,Hard
 2026-07-30,19:00,Mubadala DC Open,Jessica Pegula,Magdalena Frech,wta_5,wta_55,WTA,Hard
 2026-07-30,22:00,Mubadala DC Open,Diana Shnaider,Anastasia Potapova,wta_21,wta_75,WTA,Hard
 2026-07-30,00:00,Mubadala DC Open,Polina Kudermetova,Elina Svitolina,wta_144,wta_9,WTA,Hard
-2026-07-30,09:00,Axeria Open 2026 powered by Intaro Sport,Yelyzaveta Kotliar,Mia Ristic,wta_499,wta_273,WTA,
-2026-07-30,10:30,Axeria Open 2026 powered by Intaro Sport,Laura Samson,Anastasiia Sobolieva,wta_212,wta_268,WTA,
-2026-07-30,10:30,Axeria Open 2026 powered by Intaro Sport,Francesca Jones,Lucija Ciric Bagaric,wta_72,wta_448,WTA,
+2026-07-30,Live,Axeria Open 2026 powered by Intaro Sport,Yelyzaveta Kotliar,Mia Ristic,wta_499,wta_273,WTA,
+2026-07-30,Live,Axeria Open 2026 powered by Intaro Sport,Laura Samson,Anastasiia Sobolieva,wta_212,wta_268,WTA,
+2026-07-30,11:10,Axeria Open 2026 powered by Intaro Sport,Francesca Jones,Lucija Ciric Bagaric,wta_72,wta_448,WTA,
 2026-07-30,14:00,Axeria Open 2026 powered by Intaro Sport,Alevtina Ibragimova,Lucia Bronzetti,wta_321,wta_138,WTA,
-2026-07-30,18:00,Odlum Brown VanOpen,Emerson Jones,Mananchaya Sawangkaew,wta_72,wta_198,WTA,
+2026-07-30,18:00,Odlum Brown VanOpen,Emerson Jones,Mananchaya Sawangkaew,wta_152,wta_198,WTA,
 2026-07-30,18:30,Odlum Brown VanOpen,Mai Hontama,Himeno Sakatsume,wta_220,wta_135,WTA,
 2026-07-30,18:30,Odlum Brown VanOpen,Moyuka Uchijima,Maddison Inglis,wta_90,wta_123,WTA,
 2026-07-30,19:30,Odlum Brown VanOpen,Harriet Dart,Taylah Preston,wta_169,wta_147,WTA,
