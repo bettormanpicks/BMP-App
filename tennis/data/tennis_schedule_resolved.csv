@@ -1,37 +1,29 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-07-29,Live,Mifel Tennis Open by Telcel Oppo,Edward Winter,Jenson Brooksby,atp_494,atp_46,ATP,
-2026-07-29,Live,Mifel Tennis Open by Telcel Oppo,Francisco Cerundolo,Tristan Boyer,atp_62,atp_216,ATP,
-2026-07-29,Live,Mifel Tennis Open by Telcel Oppo,Jiri Lehecka,Chak Lam Coleman Wong,atp_21,atp_137,ATP,
-2026-07-29,02:30,Mifel Tennis Open by Telcel Oppo,Denis Shapovalov,Rodrigo Pacheco Mendez,atp_36,atp_227,ATP,
-2026-07-29,02:30,Mifel Tennis Open by Telcel Oppo,Arthur Gea,Michael Zheng,atp_160,wta_372,ATP,
-2026-07-29,02:30,Mifel Tennis Open by Telcel Oppo,Bernard Tomic,Karen Khachanov,atp_186,atp_17,ATP,
-2026-07-29,04:00,Mifel Tennis Open by Telcel Oppo,Dalibor Svrcina,Luciano Darderi,atp_99,atp_22,ATP,
-2026-07-29,04:00,Mifel Tennis Open by Telcel Oppo,Cameron Norrie,James Duckworth,atp_27,atp_80,ATP,
-2026-07-29,TBD,Mubadala DC Open,Ashlyn Krueger,Naomi Osaka,wta_100,wta_16,WTA,Hard
-2026-07-29,Final,Mubadala DC Open,Leylah Fernandez,Alexandra Eala,wta_28,wta_45,WTA,Hard
-2026-07-29,Final,Mubadala DC Open,Emma Navarro,Elisabetta Cocciaretto,wta_19,wta_40,WTA,Hard
-2026-07-29,Final,Mubadala DC Open,Wang Xinyu,Liudmila Samsonova,wta_34,wta_18,WTA,Hard
-2026-07-29,Live,Mubadala DC Open,Alex Michelsen,Adrian Mannarino,atp_41,atp_48,ATP,Hard
-2026-07-29,Final,Mubadala DC Open,Alex de Minaur,Stefanos Tsitsipas,atp_8,atp_32,ATP,Hard
-2026-07-29,Final,Mubadala DC Open,Taylor Fritz,Kamil Majchrzak,atp_7,atp_56,ATP,Hard
-2026-07-29,Final,Mubadala DC Open,Aleksandar Vukic,Lorenzo Musetti,atp_75,atp_5,ATP,Hard
-2026-07-29,Final,Mubadala DC Open,Rafael Jodar,Kei Nishikori,atp_117,atp_283,ATP,Hard
-2026-07-29,Final,Axeria Open 2026 powered by Intaro Sport,Kaitlin Quevedo,Irene Burillo,wta_131,wta_249,WTA,
-2026-07-29,Final,Axeria Open 2026 powered by Intaro Sport,Elena Ruxandra Bertea,Carole Monnet,wta_300,wta_177,WTA,
-2026-07-29,Final,Axeria Open 2026 powered by Intaro Sport,Sara Sorribes Tormo,Caijsa Hennemann,wta_451,wta_377,WTA,
-2026-07-29,Final,Axeria Open 2026 powered by Intaro Sport,Alice Rame,Margaux Rouvroy,wta_199,wta_316,WTA,
-2026-07-29,Live,Odlum Brown VanOpen,Ariana Arseneault,Himeno Sakatsume,wta_476,wta_135,WTA,
-2026-07-29,02:00,Odlum Brown VanOpen,Emerson Jones,Madison Brengle,wta_152,wta_400,WTA,
-2026-07-29,02:00,Odlum Brown VanOpen,Harriet Dart,Emma Si Yu Dong,wta_169,wta_9100,WTA,
-2026-07-29,03:00,Odlum Brown VanOpen,Priscilla Hon,Taylah Preston,wta_130,wta_147,WTA,
-2026-07-29,Final,Odlum Brown VanOpen,Moyuka Uchijima,Hayu Kinoshita,wta_90,wta_417,WTA,
-2026-07-29,Final,Odlum Brown VanOpen,Nao Hibino,Mananchaya Sawangkaew,wta_196,wta_198,WTA,
-2026-07-29,Final,Odlum Brown VanOpen,Hong Yi Cody Wong,Himeno Sakatsume,atp_137,wta_135,ATP,
-2026-07-29,Final,Odlum Brown VanOpen,Sofia Costoulas,Maddison Inglis,wta_142,wta_123,WTA,
-2026-07-29,Final,Odlum Brown VanOpen,Greet Minnen,Maddison Inglis,wta_129,wta_123,WTA,
-2026-07-29,Final,Odlum Brown VanOpen,Mai Hontama,Lu Jia-Jing,wta_220,wta_431,WTA,
-2026-07-29,Final,Odlum Brown VanOpen,Lizette Cabrera,Sofia Costoulas,wta_274,wta_142,WTA,
-2026-07-29,Final,The Memphis Classic,Zeynep Sonmez,Elvina Kalieva,wta_84,wta_158,WTA,
-2026-07-29,Final,The Memphis Classic,Camila Osorio,Anastasia Zakharova,wta_63,wta_103,WTA,
-2026-07-29,Final,The Memphis Classic,Tatjana Maria,Renata Zarazua,wta_54,wta_87,WTA,
-2026-07-29,Final,The Memphis Classic,Iryna Shymanovich,Katie Volynets,wta_156,wta_96,WTA,
+2026-07-30,TBD,Mifel Tennis Open by Telcel Oppo,Francisco Cerundolo,Arthur Gea,atp_62,atp_160,ATP,
+2026-07-30,TBD,Mifel Tennis Open by Telcel Oppo,Chak Lam Coleman Wong,Jenson Brooksby,atp_137,atp_46,ATP,
+2026-07-30,TBD,Mifel Tennis Open by Telcel Oppo,Denis Shapovalov,Dalibor Svrcina,atp_36,atp_99,ATP,
+2026-07-30,15:00,Mubadala DC Open,Brandon Nakashima,Jakub Mensik,atp_29,atp_16,ATP,Hard
+2026-07-30,17:00,Mubadala DC Open,Alex de Minaur,Cruz Hewitt,atp_8,atp_670,ATP,Hard
+2026-07-30,20:30,Mubadala DC Open,Terence Atmane,Alejandro Tabilo,atp_65,atp_67,ATP,Hard
+2026-07-30,22:30,Mubadala DC Open,Ugo Humbert,Ben Shelton,atp_38,atp_9,ATP,Hard
+2026-07-30,17:00,Mubadala DC Open,Janice Tjen,Anna Kalinskaya,wta_47,wta_24,WTA,Hard
+2026-07-30,19:00,Mubadala DC Open,Jessica Pegula,Magdalena Frech,wta_5,wta_55,WTA,Hard
+2026-07-30,22:00,Mubadala DC Open,Diana Shnaider,Anastasia Potapova,wta_21,wta_75,WTA,Hard
+2026-07-30,00:00,Mubadala DC Open,Polina Kudermetova,Elina Svitolina,wta_144,wta_9,WTA,Hard
+2026-07-30,09:00,Axeria Open 2026 powered by Intaro Sport,Yelyzaveta Kotliar,Mia Ristic,wta_499,wta_273,WTA,
+2026-07-30,10:30,Axeria Open 2026 powered by Intaro Sport,Laura Samson,Anastasiia Sobolieva,wta_212,wta_268,WTA,
+2026-07-30,10:30,Axeria Open 2026 powered by Intaro Sport,Francesca Jones,Lucija Ciric Bagaric,wta_72,wta_448,WTA,
+2026-07-30,14:00,Axeria Open 2026 powered by Intaro Sport,Alevtina Ibragimova,Lucia Bronzetti,wta_321,wta_138,WTA,
+2026-07-30,18:00,Odlum Brown VanOpen,Emerson Jones,Mananchaya Sawangkaew,wta_152,wta_198,WTA,
+2026-07-30,18:30,Odlum Brown VanOpen,Mai Hontama,Himeno Sakatsume,wta_220,wta_135,WTA,
+2026-07-30,18:30,Odlum Brown VanOpen,Moyuka Uchijima,Maddison Inglis,wta_90,wta_123,WTA,
+2026-07-30,19:30,Odlum Brown VanOpen,Harriet Dart,Taylah Preston,wta_169,wta_147,WTA,
+2026-07-30,16:00,The Memphis Classic,Kristina Liutova,Maya Joint,wta_364,wta_29,WTA,
+2026-07-30,17:30,The Memphis Classic,Ma YeXin,Catherine McNally,wta_182,wta_68,WTA,
+2026-07-30,19:00,The Memphis Classic,Tatiana Prozorova,Peyton Stearns,wta_166,wta_59,WTA,
+2026-07-30,23:00,The Memphis Classic,Sloane Stephens,Darja Vidmanova,wta_775,wta_127,WTA,
+2026-07-31,TBD,Mubadala DC Open,Rafael Jodar,Lorenzo Musetti,atp_117,atp_5,ATP,Hard
+2026-07-31,TBD,Mubadala DC Open,Taylor Fritz,Alex Michelsen,atp_7,atp_41,ATP,Hard
+2026-07-31,TBD,Mubadala DC Open,Elisabetta Cocciaretto,Naomi Osaka,wta_40,wta_16,WTA,Hard
+2026-07-31,TBD,Axeria Open 2026 powered by Intaro Sport,Kaitlin Quevedo,Carole Monnet,wta_131,wta_177,WTA,
+2026-07-31,TBD,The Memphis Classic,Anastasia Zakharova,Renata Zarazua,wta_103,wta_87,WTA,
