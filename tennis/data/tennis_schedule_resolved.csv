@@ -1,7 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-31,02:30,Mifel Tennis Open by Telcel Oppo,Chak Lam Coleman Wong,Arthur Gea,atp_137,atp_160,ATP,
 2026-07-31,04:00,Mifel Tennis Open by Telcel Oppo,Cameron Norrie,Denis Shapovalov,atp_27,atp_36,ATP,
-2026-07-31,16:00,Mubadala DC Open,Jessica Pegula,Anna Kalinskaya,wta_5,wta_24,WTA,Hard
+2026-07-31,Live,Mubadala DC Open,Jessica Pegula,Anna Kalinskaya,wta_5,wta_24,WTA,Hard
 2026-07-31,18:00,Mubadala DC Open,Elisabetta Cocciaretto,Naomi Osaka,wta_40,wta_16,WTA,Hard
 2026-07-31,19:00,Mubadala DC Open,Diana Shnaider,Liudmila Samsonova,wta_21,wta_18,WTA,Hard
 2026-07-31,22:30,Mubadala DC Open,Alexandra Eala,Elina Svitolina,wta_45,wta_9,WTA,Hard
@@ -9,14 +9,14 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-07-31,19:30,Mubadala DC Open,Taylor Fritz,Alex Michelsen,atp_7,atp_41,ATP,Hard
 2026-07-31,22:00,Mubadala DC Open,Rafael Jodar,Lorenzo Musetti,atp_117,atp_5,ATP,Hard
 2026-07-31,00:00,Mubadala DC Open,Alejandro Tabilo,Ben Shelton,atp_67,atp_9,ATP,Hard
-2026-07-31,14:00,Axeria Open 2026 powered by Intaro Sport,Sara Sorribes Tormo,Lucia Bronzetti,wta_451,wta_138,WTA,
+2026-07-31,Live,Axeria Open 2026 powered by Intaro Sport,Sara Sorribes Tormo,Lucia Bronzetti,wta_451,wta_138,WTA,
 2026-07-31,Final,Axeria Open 2026 powered by Intaro Sport,Kaitlin Quevedo,Carole Monnet,wta_131,wta_177,WTA,
-2026-07-31,Final,Axeria Open 2026 powered by Intaro Sport,Francesca Jones,Alice Rame,wta_72,wta_199,WTA,
+2026-07-31,Final,Axeria Open 2026 powered by Intaro Sport,Francesca Jones,Alice Rame,wta_72,wta_435,WTA,
 2026-07-31,Final,Axeria Open 2026 powered by Intaro Sport,Laura Samson,Mia Ristic,wta_212,wta_273,WTA,
 2026-07-31,18:00,Odlum Brown VanOpen,Maddison Inglis,Mai Hontama,wta_123,wta_220,WTA,
 2026-07-31,19:30,Odlum Brown VanOpen,Taylah Preston,Mananchaya Sawangkaew,wta_147,wta_198,WTA,
-2026-07-31,16:00,The Memphis Classic,Kristina Liutova,Catherine McNally,wta_364,wta_68,WTA,
+2026-07-31,Live,The Memphis Classic,Kristina Liutova,Catherine McNally,wta_364,wta_68,WTA,
 2026-07-31,17:30,The Memphis Classic,Elvina Kalieva,Peyton Stearns,wta_158,wta_59,WTA,
 2026-07-31,19:00,The Memphis Classic,Anastasia Zakharova,Renata Zarazua,wta_103,wta_87,WTA,
 2026-07-31,23:00,The Memphis Classic,Darja Vidmanova,Katie Volynets,wta_127,wta_96,WTA,
-2026-08-01,TBD,Axeria Open 2026 powered by Intaro Sport,Kaitlin Quevedo,Francesca Jones,wta_131,wta_72,WTA,
+2026-08-01,13:00,Axeria Open 2026 powered by Intaro Sport,Kaitlin Quevedo,Francesca Jones,wta_131,wta_72,WTA,
