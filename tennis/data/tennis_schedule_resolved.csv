@@ -1,4 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
+2026-08-01,03:00,Mifel Tennis Open by Telcel Oppo,Arthur Gea,Denis Shapovalov,atp_160,atp_36,ATP,
 2026-08-01,18:00,Mubadala DC Open,Jessica Pegula,Diana Shnaider,wta_5,wta_21,WTA,Hard
 2026-08-01,19:30,Mubadala DC Open,Naomi Osaka,Alexandra Eala,wta_16,wta_45,WTA,Hard
 2026-08-01,22:30,Mubadala DC Open,Brandon Nakashima,Taylor Fritz,atp_29,atp_7,ATP,Hard
@@ -13,18 +14,18 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-01,16:00,National Bank Open presented by Rogers,Alexei Popyrin,Thanasi Kokkinakis,atp_51,atp_9003,ATP,
 2026-08-01,16:00,National Bank Open presented by Rogers,Jacob Fearnley,Sebastian Ofner,atp_84,atp_132,ATP,
 2026-08-01,16:00,National Bank Open presented by Rogers,Aleksandar Vukic,Tomas Barrios Vera,atp_88,atp_107,ATP,
-2026-08-01,17:30,National Bank Open presented by Rogers,Hugo Gaston,Duncan Chan,atp_96,wta_960,ATP,
+2026-08-01,17:30,National Bank Open presented by Rogers,Hugo Gaston,Duncan Chan,atp_96,atp_667,ATP,
 2026-08-01,17:30,National Bank Open presented by Rogers,Benjamin Bonzi,Hugo Dellien,atp_123,atp_157,ATP,
 2026-08-01,17:30,National Bank Open presented by Rogers,Shintaro Mochizuki,Dane Sweeny,atp_116,atp_134,ATP,
 2026-08-01,17:30,National Bank Open presented by Rogers,Jaime Faria,Christopher O'Connell,atp_146,atp_95,ATP,
 2026-08-01,19:30,National Bank Open presented by Rogers,Dalibor Svrcina,Titouan Droguet,atp_99,atp_119,ATP,
 2026-08-01,15:00,National Bank Open presented by Rogers,Oksana Selekhmeteva,Aoi Ito,wta_74,wta_176,WTA,
 2026-08-01,15:00,National Bank Open presented by Rogers,Emiliana Arango,Lois Boisson,wta_58,wta_35,WTA,
-2026-08-01,15:00,National Bank Open presented by Rogers,Leolia Jeanjean,Zhu Lin,wta_115,wta_9054,WTA,
+2026-08-01,15:00,National Bank Open presented by Rogers,Leolia Jeanjean,Zhu Lin,wta_115,wta_141,WTA,
 2026-08-01,15:00,National Bank Open presented by Rogers,Victoria Jimenez Kasintseva,Marina Bassols Ribera,wta_119,wta_209,WTA,
 2026-08-01,16:30,National Bank Open presented by Rogers,Lanlana Tararudee,Zheng Qinwen,wta_124,wta_23,WTA,
 2026-08-01,16:30,National Bank Open presented by Rogers,Alina Korneeva,Mary Stoiana,wta_146,wta_185,WTA,
-2026-08-01,16:30,National Bank Open presented by Rogers,Tatjana Maria,Isabella Marton,wta_54,wta_340,WTA,
+2026-08-01,16:30,National Bank Open presented by Rogers,Tatjana Maria,Isabella Marton,wta_54,atp_60,WTA,
 2026-08-01,16:30,National Bank Open presented by Rogers,Moyuka Uchijima,Himeno Sakatsume,wta_90,wta_135,WTA,
 2026-08-01,18:00,National Bank Open presented by Rogers,Sofia Kenin,Lucrezia Stefanini,wta_32,wta_136,WTA,
 2026-08-01,18:00,National Bank Open presented by Rogers,Polina Kudermetova,Avery Alexander,wta_144,wta_9015,WTA,
