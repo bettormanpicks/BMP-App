@@ -37,15 +37,15 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-04,22:30,National Bank Open presented by Rogers,Clara Tauson,Nikola Bartunkova
 2026-08-04,23:00,National Bank Open presented by Rogers,Aryna Sabalenka,Moyuka Uchijima
 2026-08-04,00:30,National Bank Open presented by Rogers,Lanlana Tararudee,Amanda Anisimova
-2026-08-04,09:00,Warsaw T-Mobile Polish Open,Weronika Ewald,Justina Mikulskyte
-2026-08-04,09:00,Warsaw T-Mobile Polish Open,Elsa Jacquemot,Carol Young Suh Lee
-2026-08-04,09:00,Warsaw T-Mobile Polish Open,Viktoria Hruncakova,Susan Bandecchi
-2026-08-04,10:30,Warsaw T-Mobile Polish Open,Marcelina Podlinska,Vendula Valdmannova
-2026-08-04,10:30,Warsaw T-Mobile Polish Open,Dalma Galfi,Ella Seidel
-2026-08-04,10:30,Warsaw T-Mobile Polish Open,Linda Klimovicova,Elizara Yaneva
-2026-08-04,12:00,Warsaw T-Mobile Polish Open,Laura Samson,Mona Barthel
-2026-08-04,12:00,Warsaw T-Mobile Polish Open,Zuzanna Pawlikowska,Lia Karatancheva
-2026-08-04,12:00,Warsaw T-Mobile Polish Open,Gabriela Knutson,Sofia Costoulas
+2026-08-04,Live,Warsaw T-Mobile Polish Open,Dalma Galfi,Ella Seidel
+2026-08-04,Live,Warsaw T-Mobile Polish Open,Linda Klimovicova,Elizara Yaneva
+2026-08-04,11:20,Warsaw T-Mobile Polish Open,Marcelina Podlinska,Vendula Valdmannova
+2026-08-04,12:20,Warsaw T-Mobile Polish Open,Gabriela Knutson,Sofia Costoulas
+2026-08-04,12:30,Warsaw T-Mobile Polish Open,Laura Samson,Mona Barthel
+2026-08-04,12:30,Warsaw T-Mobile Polish Open,Zuzanna Pawlikowska,Lia Karatancheva
+2026-08-04,Final,Warsaw T-Mobile Polish Open,Elsa Jacquemot,Carol Young Suh Lee
+2026-08-04,Final,Warsaw T-Mobile Polish Open,Viktoria Hruncakova,Susan Bandecchi
+2026-08-04,Final,Warsaw T-Mobile Polish Open,Weronika Ewald,Justina Mikulskyte
 2026-08-05,TBD,National Bank Open presented by Rogers,Nuno Borges,Tomas Martin Etcheverry
 2026-08-05,TBD,National Bank Open presented by Rogers,Ignacio Buse,Cameron Norrie
 2026-08-05,TBD,National Bank Open presented by Rogers,Nicolas Mejia,Lorenzo Musetti
@@ -72,4 +72,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-05,TBD,National Bank Open presented by Rogers,Daria Kasatkina,Elena Rybakina
 2026-08-05,TBD,National Bank Open presented by Rogers,Ann Li,Kayla Cross
 2026-08-05,TBD,National Bank Open presented by Rogers,Marie Bouzkova,Taylor Townsend
+2026-08-05,TBD,Warsaw T-Mobile Polish Open,Susan Bandecchi,Veronika Podrez
 2026-08-05,TBD,Warsaw T-Mobile Polish Open,Weronika Falkowska,Noma Noha Akugue
+2026-08-05,TBD,Warsaw T-Mobile Polish Open,Carol Young Suh Lee,Aliona Falei
+2026-08-05,TBD,Warsaw T-Mobile Polish Open,Katarzyna Kawa,Justina Mikulskyte
