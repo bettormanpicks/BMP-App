@@ -1,14 +1,13 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-08-05,15:00,National Bank Open presented by Rogers,Nuno Borges,Tomas Martin Etcheverry
-2026-08-05,15:00,National Bank Open presented by Rogers,Zizou Bergs,Sebastian Baez
-2026-08-05,15:00,National Bank Open presented by Rogers,Stefanos Tsitsipas,Joao Fonseca
-2026-08-05,15:00,National Bank Open presented by Rogers,Nicolas Mejia,Lorenzo Musetti
-2026-08-05,15:00,National Bank Open presented by Rogers,Valentin Vacherot,Mariano Navone
-2026-08-05,16:30,National Bank Open presented by Rogers,Casper Ruud,Juan Manuel Cerundolo
-2026-08-05,16:30,National Bank Open presented by Rogers,Ignacio Buse,Cameron Norrie
-2026-08-05,16:30,National Bank Open presented by Rogers,Miomir Kecmanovic,Arthur Rinderknech
-2026-08-05,16:30,National Bank Open presented by Rogers,Zachary Svajda,Arthur Fils
-2026-08-05,16:30,National Bank Open presented by Rogers,Jenson Brooksby,Ben Shelton
+2026-08-05,Live,National Bank Open presented by Rogers,Nuno Borges,Tomas Martin Etcheverry
+2026-08-05,Live,National Bank Open presented by Rogers,Nicolas Mejia,Lorenzo Musetti
+2026-08-05,Live,National Bank Open presented by Rogers,Valentin Vacherot,Mariano Navone
+2026-08-05,Live,National Bank Open presented by Rogers,Stefanos Tsitsipas,Joao Fonseca
+2026-08-05,16:50,National Bank Open presented by Rogers,Casper Ruud,Juan Manuel Cerundolo
+2026-08-05,16:50,National Bank Open presented by Rogers,Ignacio Buse,Cameron Norrie
+2026-08-05,16:50,National Bank Open presented by Rogers,Miomir Kecmanovic,Arthur Rinderknech
+2026-08-05,16:50,National Bank Open presented by Rogers,Zachary Svajda,Arthur Fils
+2026-08-05,16:50,National Bank Open presented by Rogers,Jenson Brooksby,Ben Shelton
 2026-08-05,18:00,National Bank Open presented by Rogers,Raphael Collignon,Alexei Popyrin
 2026-08-05,18:00,National Bank Open presented by Rogers,Thiago Agustin Tirante,Taylor Fritz
 2026-08-05,18:00,National Bank Open presented by Rogers,Hubert Hurkacz,Alejandro Tabilo
@@ -23,7 +22,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-05,23:00,National Bank Open presented by Rogers,Titouan Droguet,Felix Auger-Aliassime
 2026-08-05,23:30,National Bank Open presented by Rogers,Valentin Royer,Tommy Paul
 2026-08-05,00:30,National Bank Open presented by Rogers,Learner Tien,Gael Monfils
-2026-08-05,15:00,National Bank Open presented by Rogers,Ann Li,Kayla Cross
+2026-08-05,TBD,National Bank Open presented by Rogers,Zizou Bergs,Sebastian Baez
+2026-08-05,Live,National Bank Open presented by Rogers,Ann Li,Kayla Cross
 2026-08-05,16:30,National Bank Open presented by Rogers,Jessica Pegula,Magdalena Frech
 2026-08-05,16:30,National Bank Open presented by Rogers,Sloane Stephens,Belinda Bencic
 2026-08-05,16:30,National Bank Open presented by Rogers,Daria Kasatkina,Elena Rybakina
@@ -40,14 +40,15 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-05,22:30,National Bank Open presented by Rogers,Linda Noskova,Catherine McNally
 2026-08-05,23:00,National Bank Open presented by Rogers,Renata Zarazua,Leylah Fernandez
 2026-08-05,00:30,National Bank Open presented by Rogers,Alycia Parks,Alexandra Eala
-2026-08-05,Live,Warsaw T-Mobile Polish Open,Elizara Yaneva,Yuan Yue
 2026-08-05,Live,Warsaw T-Mobile Polish Open,Weronika Falkowska,Noma Noha Akugue
-2026-08-05,14:00,Warsaw T-Mobile Polish Open,Susan Bandecchi,Veronika Podrez
-2026-08-05,14:30,Warsaw T-Mobile Polish Open,Vendula Valdmannova,Zuzanna Pawlikowska
+2026-08-05,Live,Warsaw T-Mobile Polish Open,Vendula Valdmannova,Zuzanna Pawlikowska
 2026-08-05,Final,Warsaw T-Mobile Polish Open,Gabriela Knutson,Ella Seidel
+2026-08-05,Final,Warsaw T-Mobile Polish Open,Elizara Yaneva,Yuan Yue
 2026-08-05,Final,Warsaw T-Mobile Polish Open,Katarzyna Kawa,Justina Mikulskyte
+2026-08-05,Final,Warsaw T-Mobile Polish Open,Susan Bandecchi,Veronika Podrez
 2026-08-05,Final,Warsaw T-Mobile Polish Open,Martyna Kubka,Mona Barthel
 2026-08-05,Final,Warsaw T-Mobile Polish Open,Carol Young Suh Lee,Aliona Falei
 2026-08-06,TBD,National Bank Open presented by Rogers,Jiri Lehecka,Alexander Blockx
 2026-08-06,TBD,National Bank Open presented by Rogers,Luciano Darderi,Shang Juncheng
+2026-08-06,TBD,Warsaw T-Mobile Polish Open,Mona Barthel,Elizara Yaneva
 2026-08-06,TBD,Warsaw T-Mobile Polish Open,Justina Mikulskyte,Gabriela Knutson
