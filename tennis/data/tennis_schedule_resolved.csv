@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-07,15:00,National Bank Open presented by Rogers,Iva Jovic,Alina Korneeva,wta_20,wta_146,WTA,
+2026-08-07,Live,National Bank Open presented by Rogers,Iva Jovic,Alina Korneeva,wta_20,wta_146,WTA,
 2026-08-07,16:30,National Bank Open presented by Rogers,Ann Li,Elena Rybakina,wta_36,wta_3,WTA,
 2026-08-07,17:30,National Bank Open presented by Rogers,Mirra Andreeva,Leylah Fernandez,wta_7,wta_28,WTA,
 2026-08-07,19:00,National Bank Open presented by Rogers,Maya Joint,Liudmila Samsonova,wta_29,wta_18,WTA,
@@ -15,9 +15,10 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-07,23:00,National Bank Open presented by Rogers,Casper Ruud,Joao Fonseca,atp_13,atp_37,ATP,
 2026-08-07,23:30,National Bank Open presented by Rogers,Alexei Popyrin,Thiago Agustin Tirante,atp_51,atp_92,ATP,
 2026-08-07,00:30,National Bank Open presented by Rogers,Learner Tien,Tommy Paul,atp_23,atp_24,ATP,
-2026-08-07,Live,Warsaw T-Mobile Polish Open,Carol Young Suh Lee,Vendula Valdmannova,wta_352,wta_286,WTA,
+2026-08-07,Final,Warsaw T-Mobile Polish Open,Carol Young Suh Lee,Vendula Valdmannova,wta_170,wta_286,WTA,
 2026-08-07,Final,Warsaw T-Mobile Polish Open,Elizara Yaneva,Gabriela Knutson,wta_228,wta_184,WTA,
 2026-08-08,TBD,National Bank Open presented by Rogers,Arthur Fils,Cameron Norrie,atp_40,atp_27,ATP,
 2026-08-08,TBD,National Bank Open presented by Rogers,Nuno Borges,Luciano Darderi,atp_44,atp_22,ATP,
 2026-08-08,TBD,National Bank Open presented by Rogers,Arthur Rinderknech,Brandon Nakashima,atp_30,atp_29,ATP,
 2026-08-08,TBD,National Bank Open presented by Rogers,Jiri Lehecka,Rafael Jodar,atp_21,atp_117,ATP,
+2026-08-08,Final,Warsaw T-Mobile Polish Open,Carol Young Suh Lee,Gabriela Knutson,wta_170,wta_184,WTA,
