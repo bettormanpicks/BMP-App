@@ -1,3 +1,56 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-10,Final,National Bank Open presented by Rogers,Diana Shnaider,Iga Swiatek,wta_21,wta_2,WTA,
-2026-08-10,Final,National Bank Open presented by Rogers,Ekaterina Alexandrova,Elina Svitolina,wta_11,wta_9,WTA,
+2026-08-11,14:30,Cincinnati Open,Aleksandr Shevchenko,Pablo Llamas Ruiz,atp_79,atp_197,ATP,Hard
+2026-08-11,14:30,Cincinnati Open,Christopher O'Connell,Dane Sweeny,atp_95,atp_134,ATP,Hard
+2026-08-11,14:30,Cincinnati Open,Chak Lam Coleman Wong,SeongChan Hong,atp_137,atp_9100,ATP,Hard
+2026-08-11,14:30,Cincinnati Open,Vignesh Gogineni,Otto Virtanen,atp_9101,atp_128,ATP,Hard
+2026-08-11,16:00,Cincinnati Open,Giovanni Mpetshi Perricard,Trevor Svajda,atp_58,atp_359,ATP,Hard
+2026-08-11,16:00,Cincinnati Open,Dusan Lajovic,Benjamin Bonzi,atp_129,atp_123,ATP,Hard
+2026-08-11,16:00,Cincinnati Open,Luca Van Assche,Gustavo Heide,atp_130,atp_256,ATP,Hard
+2026-08-11,16:00,Cincinnati Open,Quentin Halys,SoonWoo Kwon,atp_72,atp_334,ATP,Hard
+2026-08-11,17:30,Cincinnati Open,Mackenzie McDonald,Wu Yibing,atp_115,atp_145,ATP,Hard
+2026-08-11,17:30,Cincinnati Open,Kei Nishikori,Francisco Comesana,atp_283,atp_62,ATP,Hard
+2026-08-11,17:30,Cincinnati Open,Marco Trungelliti,Sebastian Ofner,atp_131,atp_132,ATP,Hard
+2026-08-11,17:30,Cincinnati Open,Moez Echargui,Michael Zheng,atp_139,wta_372,ATP,Hard
+2026-08-11,17:30,Cincinnati Open,Jaime Faria,Nikoloz Basilashvili,atp_146,atp_136,ATP,Hard
+2026-08-11,17:30,Cincinnati Open,Francesco Maestrelli,Bu Yunchaokete,atp_110,atp_162,ATP,Hard
+2026-08-11,19:00,Cincinnati Open,Billy Harris,Kyrian Jacquet,atp_144,atp_153,ATP,Hard
+2026-08-11,19:00,Cincinnati Open,Hugo Gaston,Nicolai Budkov Kjaer,atp_96,atp_133,ATP,Hard
+2026-08-11,19:00,Cincinnati Open,J.J. Wolf,Toby Samuel,atp_9102,atp_241,ATP,Hard
+2026-08-11,19:00,Cincinnati Open,Sho Shimabukuro,Hugo Dellien,atp_135,atp_157,ATP,Hard
+2026-08-11,19:00,Cincinnati Open,Alexei Popyrin,Titouan Droguet,atp_51,atp_119,ATP,Hard
+2026-08-11,19:00,Cincinnati Open,Martin Damm,Stefanos Sakellaridis,atp_125,atp_275,ATP,Hard
+2026-08-11,20:30,Cincinnati Open,Nicolas Mejia,Jacob Fearnley,atp_178,atp_84,ATP,Hard
+2026-08-11,20:30,Cincinnati Open,Marcos Giron,Henrique Rocha,atp_63,atp_170,ATP,Hard
+2026-08-11,20:30,Cincinnati Open,Mark Lajal,Dalibor Svrcina,atp_159,atp_99,ATP,Hard
+2026-08-11,20:30,Cincinnati Open,Aleksandar Vukic,Darwin Blanch,atp_88,atp_446,ATP,Hard
+2026-08-11,14:30,Cincinnati Open,Lilli Tagger,Zhu Lin,wta_114,wta_141,WTA,Hard
+2026-08-11,14:30,Cincinnati Open,Robin Montgomery,Julia Grabher,wta_293,wta_80,WTA,Hard
+2026-08-11,14:30,Cincinnati Open,Victoria Jimenez Kasintseva,Mananchaya Sawangkaew,wta_119,wta_198,WTA,Hard
+2026-08-11,14:30,Cincinnati Open,Lanlana Tararudee,Emerson Jones,wta_124,wta_152,WTA,Hard
+2026-08-11,14:30,Cincinnati Open,Kayla Day,Taylah Preston,wta_194,wta_147,WTA,Hard
+2026-08-11,14:30,Cincinnati Open,Renata Zarazua,Yuan Yue,wta_87,wta_122,WTA,Hard
+2026-08-11,16:00,Cincinnati Open,Anastasia Zakharova,Lucrezia Stefanini,wta_103,wta_136,WTA,Hard
+2026-08-11,16:00,Cincinnati Open,Mary Stoiana,Veronika Erjavec,wta_185,wta_112,WTA,Hard
+2026-08-11,16:00,Cincinnati Open,Oksana Selekhmeteva,Elizabeth Mandlik,wta_74,wta_168,WTA,Hard
+2026-08-11,16:00,Cincinnati Open,Himeno Sakatsume,Leolia Jeanjean,wta_135,wta_115,WTA,Hard
+2026-08-11,16:00,Cincinnati Open,Polina Iatcenko,Claire Liu,wta_160,wta_213,WTA,Hard
+2026-08-11,16:00,Cincinnati Open,Sinja Kraus,Marina Bassols Ribera,wta_105,wta_209,WTA,Hard
+2026-08-11,17:30,Cincinnati Open,Rebecca Marino,Alina Charaeva,wta_246,wta_163,WTA,Hard
+2026-08-11,17:30,Cincinnati Open,Alina Korneeva,Varvara Lepchenko,wta_146,wta_149,WTA,Hard
+2026-08-11,17:30,Cincinnati Open,Rebecca Sramkova,Elsa Jacquemot,wta_102,wta_57,WTA,Hard
+2026-08-11,17:30,Cincinnati Open,Hanne Vandewinkel,Akasha Urhobo,wta_128,wta_307,WTA,Hard
+2026-08-11,19:00,Cincinnati Open,Dominika Salkova,Anna Blinkova,wta_151,wta_82,WTA,Hard
+2026-08-11,19:00,Cincinnati Open,Harriet Dart,Moyuka Uchijima,wta_169,wta_90,WTA,Hard
+2026-08-11,19:00,Cincinnati Open,Solana Sierra,Aoi Ito,wta_64,wta_176,WTA,Hard
+2026-08-11,19:00,Cincinnati Open,Eva Lys,Katarzyna Kawa,wta_56,wta_143,WTA,Hard
+2026-08-11,20:30,Cincinnati Open,Carol Young Suh Lee,Polina Kudermetova,wta_352,wta_144,WTA,Hard
+2026-08-11,20:30,Cincinnati Open,Wang Xiyu,Bianca Andreescu,wta_34,wta_161,WTA,Hard
+2026-08-11,20:30,Cincinnati Open,Emiliana Arango,Aliaksandra Sasnovich,wta_58,wta_113,WTA,Hard
+2026-08-11,20:30,Cincinnati Open,Nadia Podoroska,Ella Seidel,wta_9006,wta_95,WTA,Hard
+2026-08-11,16:30,National Bank Open presented by Rogers,Luciano Darderi,Brandon Nakashima,atp_22,atp_29,ATP,
+2026-08-11,18:00,National Bank Open presented by Rogers,Rafael Jodar,Arthur Fils,atp_117,atp_40,ATP,
+2026-08-11,22:00,National Bank Open presented by Rogers,Jakub Mensik,Ben Shelton,atp_16,atp_9,ATP,
+2026-08-11,23:30,National Bank Open presented by Rogers,Daniel Merida,Learner Tien,atp_402,atp_23,ATP,
+2026-08-11,23:00,National Bank Open presented by Rogers,Belinda Bencic,Coco Gauff,wta_12,wta_4,WTA,
+2026-08-11,00:30,National Bank Open presented by Rogers,Naomi Osaka,Elena Rybakina,wta_16,wta_3,WTA,
+2026-08-12,TBD,National Bank Open presented by Rogers,Elina Svitolina,Iga Swiatek,wta_9,wta_2,WTA,
