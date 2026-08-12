@@ -7,13 +7,13 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-12,15:30,Cincinnati Open,Luca Van Assche,Dusan Lajovic,atp_130,atp_129,ATP,Hard
 2026-08-12,15:30,Cincinnati Open,Chak Lam Coleman Wong,Otto Virtanen,atp_137,atp_128,ATP,Hard
 2026-08-12,17:00,Cincinnati Open,Jaime Faria,Wu Yibing,atp_146,atp_145,ATP,Hard
-2026-08-12,17:00,Cincinnati Open,Quentin Halys,Bu Yunchaokete,atp_72,atp_147,ATP,Hard
+2026-08-12,17:00,Cincinnati Open,Quentin Halys,Bu Yunchaokete,atp_72,atp_162,ATP,Hard
 2026-08-12,17:00,Cincinnati Open,Trevor Svajda,Michael Zheng,atp_359,atp_152,ATP,Hard
 2026-08-12,17:00,Cincinnati Open,Marco Trungelliti,Kei Nishikori,atp_131,atp_283,ATP,Hard
 2026-08-12,17:30,Cincinnati Open,Nicolai Budkov Kjaer,Kyrian Jacquet,atp_133,atp_153,ATP,Hard
 2026-08-12,18:00,Cincinnati Open,Stefanos Sakellaridis,Titouan Droguet,atp_275,atp_119,ATP,Hard
 2026-08-12,18:30,Cincinnati Open,Sho Shimabukuro,J.J. Wolf,atp_135,atp_9100,ATP,Hard
-2026-08-12,14:00,Cincinnati Open,Carol Young Suh Lee,Polina Kudermetova,wta_170,wta_144,WTA,Hard
+2026-08-12,14:00,Cincinnati Open,Carol Young Suh Lee,Polina Kudermetova,wta_352,wta_144,WTA,Hard
 2026-08-12,14:00,Cincinnati Open,Wang Xiyu,Bianca Andreescu,wta_34,wta_161,WTA,Hard
 2026-08-12,14:00,Cincinnati Open,Emiliana Arango,Aliaksandra Sasnovich,wta_58,wta_113,WTA,Hard
 2026-08-12,14:00,Cincinnati Open,Nadia Podoroska,Ella Seidel,wta_9006,wta_95,WTA,Hard
@@ -64,7 +64,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-13,TBD,Cincinnati Open,Kamilla Rakhimova,Kimberly Birrell,wta_91,wta_94,WTA,Hard
 2026-08-13,TBD,Cincinnati Open,Jessica Bouzas Maneiro,Anna Bondar,wta_48,wta_65,WTA,Hard
 2026-08-13,TBD,Cincinnati Open,Daria Snigur,Yuliia Starodubtseva,wta_132,wta_101,WTA,Hard
-2026-08-13,TBD,Cincinnati Open,Maria Timofeeva,Katerina Siniakova,wta_54,wta_46,WTA,Hard
+2026-08-13,TBD,Cincinnati Open,Maria Timofeeva,Katerina Siniakova,wta_154,wta_46,WTA,Hard
 2026-08-13,TBD,Cincinnati Open,Cristina Bucsa,Panna Udvardy,wta_62,wta_93,WTA,Hard
 2026-08-13,TBD,Cincinnati Open,Tatjana Maria,Dayana Yastremska,wta_54,wta_43,WTA,Hard
 2026-08-13,TBD,Cincinnati Open,Antonia Ruzic,Magdalena Frech,wta_67,wta_55,WTA,Hard
