@@ -1,14 +1,14 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-11,Live,Cincinnati Open,Mackenzie McDonald,Wu Yibing,atp_115,atp_145,ATP,Hard
-2026-08-11,Live,Cincinnati Open,Francesco Maestrelli,Bu Yunchaokete,atp_110,atp_147,ATP,Hard
-2026-08-11,Live,Cincinnati Open,Moez Echargui,Michael Zheng,atp_139,wta_372,ATP,Hard
-2026-08-11,Live,Cincinnati Open,Marco Trungelliti,Sebastian Ofner,atp_131,atp_132,ATP,Hard
-2026-08-11,Live,Cincinnati Open,Hugo Gaston,Nicolai Budkov Kjaer,atp_96,atp_133,ATP,Hard
-2026-08-11,01:00,Cincinnati Open,Billy Harris,Kyrian Jacquet,atp_144,atp_153,ATP,Hard
-2026-08-11,01:00,Cincinnati Open,Martin Damm,Stefanos Sakellaridis,atp_383,atp_275,ATP,Hard
-2026-08-11,01:05,Cincinnati Open,Alexei Popyrin,Titouan Droguet,atp_51,atp_119,ATP,Hard
-2026-08-11,01:30,Cincinnati Open,J.J. Wolf,Shintaro Mochizuki,atp_9100,atp_116,ATP,Hard
-2026-08-11,02:00,Cincinnati Open,Sho Shimabukuro,Hugo Dellien,atp_135,atp_157,ATP,Hard
+2026-08-11,Final,Cincinnati Open,Sho Shimabukuro,Hugo Dellien,atp_135,atp_157,ATP,Hard
+2026-08-11,Final,Cincinnati Open,J.J. Wolf,Shintaro Mochizuki,atp_9100,atp_116,ATP,Hard
+2026-08-11,Final,Cincinnati Open,Martin Damm,Stefanos Sakellaridis,atp_383,atp_275,ATP,Hard
+2026-08-11,Final,Cincinnati Open,Billy Harris,Kyrian Jacquet,atp_144,atp_153,ATP,Hard
+2026-08-11,Final,Cincinnati Open,Alexei Popyrin,Titouan Droguet,atp_51,atp_119,ATP,Hard
+2026-08-11,Final,Cincinnati Open,Hugo Gaston,Nicolai Budkov Kjaer,atp_96,atp_133,ATP,Hard
+2026-08-11,Final,Cincinnati Open,Marco Trungelliti,Sebastian Ofner,atp_131,atp_132,ATP,Hard
+2026-08-11,Final,Cincinnati Open,Moez Echargui,Michael Zheng,atp_139,wta_372,ATP,Hard
+2026-08-11,Final,Cincinnati Open,Francesco Maestrelli,Bu Yunchaokete,atp_110,atp_147,ATP,Hard
+2026-08-11,Final,Cincinnati Open,Mackenzie McDonald,Wu Yibing,atp_115,atp_145,ATP,Hard
 2026-08-11,Final,Cincinnati Open,Jaime Faria,Nikoloz Basilashvili,atp_146,atp_136,ATP,Hard
 2026-08-11,Final,Cincinnati Open,Kei Nishikori,Francisco Comesana,atp_283,atp_62,ATP,Hard
 2026-08-11,Final,Cincinnati Open,Quentin Halys,SoonWoo Kwon,atp_72,atp_334,ATP,Hard
@@ -19,12 +19,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-11,Final,Cincinnati Open,Vignesh Gogineni,Otto Virtanen,atp_9101,atp_128,ATP,Hard
 2026-08-11,Final,Cincinnati Open,Christopher O'Connell,Dane Sweeny,atp_95,atp_134,ATP,Hard
 2026-08-11,Final,Cincinnati Open,Chak Lam Coleman Wong,SeongChan Hong,atp_137,atp_9102,ATP,Hard
-2026-08-11,Live,Cincinnati Open,Solana Sierra,Aoi Ito,wta_64,wta_176,WTA,Hard
-2026-08-11,Live,Cincinnati Open,Eva Lys,Katarzyna Kawa,wta_56,wta_143,WTA,Hard
-2026-08-11,Live,Cincinnati Open,Harriet Dart,Moyuka Uchijima,wta_169,wta_90,WTA,Hard
-2026-08-11,01:00,Cincinnati Open,Dominika Salkova,Anna Blinkova,wta_151,wta_82,WTA,Hard
+2026-08-11,Final,Cincinnati Open,Dominika Salkova,Anna Blinkova,wta_151,wta_65,WTA,Hard
+2026-08-11,Final,Cincinnati Open,Harriet Dart,Moyuka Uchijima,wta_169,wta_90,WTA,Hard
+2026-08-11,Final,Cincinnati Open,Eva Lys,Katarzyna Kawa,wta_56,wta_143,WTA,Hard
+2026-08-11,Final,Cincinnati Open,Solana Sierra,Aoi Ito,wta_64,wta_176,WTA,Hard
 2026-08-11,Final,Cincinnati Open,Rebecca Marino,Alina Charaeva,wta_246,wta_163,WTA,Hard
-2026-08-11,TBD,Cincinnati Open,Rebecca Sramkova,Elsa Jacquemot,wta_102,wta_57,WTA,Hard
 2026-08-11,Final,Cincinnati Open,Alina Korneeva,Varvara Lepchenko,wta_146,wta_149,WTA,Hard
 2026-08-11,Final,Cincinnati Open,Hanne Vandewinkel,Akasha Urhobo,wta_128,wta_307,WTA,Hard
 2026-08-11,Final,Cincinnati Open,Mary Stoiana,Veronika Erjavec,wta_185,wta_112,WTA,Hard
@@ -43,5 +42,5 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-11,Final,National Bank Open presented by Rogers,Daniel Merida,Learner Tien,atp_402,atp_23,ATP,
 2026-08-11,Final,National Bank Open presented by Rogers,Rafael Jodar,Arthur Fils,atp_117,atp_40,ATP,
 2026-08-11,Final,National Bank Open presented by Rogers,Luciano Darderi,Brandon Nakashima,atp_22,atp_29,ATP,
-2026-08-11,Live,National Bank Open presented by Rogers,Naomi Osaka,Elena Rybakina,wta_16,wta_3,WTA,
+2026-08-11,Final,National Bank Open presented by Rogers,Naomi Osaka,Elena Rybakina,wta_16,wta_3,WTA,
 2026-08-11,TBD,National Bank Open presented by Rogers,Belinda Bencic,Coco Gauff,wta_12,wta_4,WTA,
