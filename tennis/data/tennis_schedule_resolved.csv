@@ -1,33 +1,33 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-12,Live,Cincinnati Open,Mark Lajal,Dalibor Svrcina,atp_159,atp_99,ATP,Hard
-2026-08-12,Live,Cincinnati Open,Aleksandr Shevchenko,Christopher O'Connell,atp_79,atp_95,ATP,Hard
-2026-08-12,Live,Cincinnati Open,Luca Van Assche,Dusan Lajovic,atp_130,atp_129,ATP,Hard
-2026-08-12,01:10,Cincinnati Open,Trevor Svajda,Michael Zheng,atp_106,wta_372,ATP,Hard
-2026-08-12,01:10,Cincinnati Open,Chak Lam Coleman Wong,Otto Virtanen,atp_137,atp_128,ATP,Hard
-2026-08-12,01:45,Cincinnati Open,Marco Trungelliti,Kei Nishikori,atp_131,atp_283,ATP,Hard
-2026-08-12,01:50,Cincinnati Open,Jaime Faria,Wu Yibing,atp_146,atp_145,ATP,Hard
-2026-08-12,02:10,Cincinnati Open,Stefanos Sakellaridis,Titouan Droguet,atp_275,atp_119,ATP,Hard
-2026-08-12,02:10,Cincinnati Open,Sho Shimabukuro,J.J. Wolf,atp_135,atp_9100,ATP,Hard
-2026-08-12,02:15,Cincinnati Open,Quentin Halys,Bu Yunchaokete,atp_72,atp_147,ATP,Hard
-2026-08-12,02:30,Cincinnati Open,Nicolai Budkov Kjaer,Kyrian Jacquet,atp_133,atp_153,ATP,Hard
+2026-08-12,Live,Cincinnati Open,Quentin Halys,Bu Yunchaokete,atp_72,atp_162,ATP,Hard
+2026-08-12,Live,Cincinnati Open,Nicolai Budkov Kjaer,Kyrian Jacquet,atp_133,atp_153,ATP,Hard
+2026-08-12,Live,Cincinnati Open,Sho Shimabukuro,J.J. Wolf,atp_135,atp_9100,ATP,Hard
+2026-08-12,Final,Cincinnati Open,Stefanos Sakellaridis,Titouan Droguet,atp_275,atp_119,ATP,Hard
+2026-08-12,Final,Cincinnati Open,Marco Trungelliti,Kei Nishikori,atp_131,atp_283,ATP,Hard
+2026-08-12,Final,Cincinnati Open,Jaime Faria,Wu Yibing,atp_146,atp_145,ATP,Hard
+2026-08-12,Final,Cincinnati Open,Trevor Svajda,Michael Zheng,atp_106,atp_152,ATP,Hard
+2026-08-12,Final,Cincinnati Open,Chak Lam Coleman Wong,Otto Virtanen,atp_137,atp_128,ATP,Hard
+2026-08-12,Final,Cincinnati Open,Luca Van Assche,Dusan Lajovic,atp_130,atp_129,ATP,Hard
+2026-08-12,Final,Cincinnati Open,Aleksandr Shevchenko,Christopher O'Connell,atp_79,atp_95,ATP,Hard
 2026-08-12,Final,Cincinnati Open,Nicolas Mejia,Jacob Fearnley,atp_178,atp_84,ATP,Hard
+2026-08-12,Final,Cincinnati Open,Mark Lajal,Dalibor Svrcina,atp_159,atp_99,ATP,Hard
 2026-08-12,Final,Cincinnati Open,Aleksandar Vukic,Darwin Blanch,atp_88,atp_446,ATP,Hard
 2026-08-12,Final,Cincinnati Open,Marcos Giron,Henrique Rocha,atp_63,atp_170,ATP,Hard
-2026-08-12,Live,Cincinnati Open,Emiliana Arango,Aliaksandra Sasnovich,wta_58,wta_113,WTA,Hard
-2026-08-12,Live,Cincinnati Open,Yuan Yue,Kayla Day,wta_122,wta_194,WTA,Hard
-2026-08-12,Live,Cincinnati Open,Carol Young Suh Lee,Polina Kudermetova,wta_352,wta_144,WTA,Hard
-2026-08-12,Live,Cincinnati Open,Lanlana Tararudee,Mananchaya Sawangkaew,wta_124,wta_198,WTA,Hard
-2026-08-12,Live,Cincinnati Open,Lucrezia Stefanini,Leolia Jeanjean,wta_136,wta_115,WTA,Hard
-2026-08-12,01:10,Cincinnati Open,Sinja Kraus,Claire Liu,wta_105,wta_213,WTA,Hard
-2026-08-12,01:10,Cincinnati Open,Oksana Selekhmeteva,Mary Stoiana,wta_74,wta_185,WTA,Hard
-2026-08-12,01:10,Cincinnati Open,Lilli Tagger,Robin Montgomery,wta_114,wta_293,WTA,Hard
-2026-08-12,02:00,Cincinnati Open,Aoi Ito,Harriet Dart,wta_176,wta_169,WTA,Hard
-2026-08-12,02:15,Cincinnati Open,Eva Lys,Anna Blinkova,wta_56,wta_65,WTA,Hard
+2026-08-12,Live,Cincinnati Open,Eva Lys,Anna Blinkova,wta_56,wta_65,WTA,Hard
+2026-08-12,Final,Cincinnati Open,Aoi Ito,Harriet Dart,wta_176,wta_169,WTA,Hard
 2026-08-12,TBD,Cincinnati Open,Alina Korneeva,Alina Charaeva,wta_146,wta_163,WTA,Hard
+2026-08-12,Final,Cincinnati Open,Sinja Kraus,Claire Liu,wta_105,wta_213,WTA,Hard
+2026-08-12,Final,Cincinnati Open,Lilli Tagger,Robin Montgomery,wta_114,wta_293,WTA,Hard
+2026-08-12,Final,Cincinnati Open,Oksana Selekhmeteva,Mary Stoiana,wta_74,wta_185,WTA,Hard
+2026-08-12,Final,Cincinnati Open,Lucrezia Stefanini,Leolia Jeanjean,wta_136,wta_115,WTA,Hard
+2026-08-12,Final,Cincinnati Open,Lanlana Tararudee,Mananchaya Sawangkaew,wta_124,wta_198,WTA,Hard
+2026-08-12,Final,Cincinnati Open,Carol Young Suh Lee,Polina Kudermetova,wta_352,wta_144,WTA,Hard
 2026-08-12,Final,Cincinnati Open,Wang Xiyu,Bianca Andreescu,wta_34,wta_161,WTA,Hard
 2026-08-12,Final,Cincinnati Open,Nadia Podoroska,Ella Seidel,wta_9006,wta_95,WTA,Hard
 2026-08-12,Final,Cincinnati Open,Rebecca Sramkova,Elsa Jacquemot,wta_102,wta_57,WTA,Hard
-2026-08-12,Live,National Bank Open presented by Rogers,Learner Tien,Ben Shelton,atp_23,atp_9,ATP,
+2026-08-12,Final,Cincinnati Open,Emiliana Arango,Aliaksandra Sasnovich,wta_58,wta_113,WTA,Hard
+2026-08-12,Final,Cincinnati Open,Yuan Yue,Kayla Day,wta_122,wta_194,WTA,Hard
+2026-08-12,Final,National Bank Open presented by Rogers,Learner Tien,Ben Shelton,atp_23,atp_9,ATP,
 2026-08-12,Final,National Bank Open presented by Rogers,Rafael Jodar,Brandon Nakashima,atp_117,atp_29,ATP,
-2026-08-12,Live,National Bank Open presented by Rogers,Elina Svitolina,Iga Swiatek,wta_9,wta_2,WTA,
-2026-08-12,01:45,National Bank Open presented by Rogers,Coco Gauff,Elena Rybakina,wta_4,wta_3,WTA,
+2026-08-12,Live,National Bank Open presented by Rogers,Coco Gauff,Elena Rybakina,wta_4,wta_3,WTA,
+2026-08-12,Final,National Bank Open presented by Rogers,Elina Svitolina,Iga Swiatek,wta_9,wta_2,WTA,
