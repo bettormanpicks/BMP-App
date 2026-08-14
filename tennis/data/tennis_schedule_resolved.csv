@@ -1,6 +1,6 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-13,Live,Cincinnati Open,Katie Boulter,Katie Volynets,wta_83,wta_96,WTA,Hard
-2026-08-13,01:10,Cincinnati Open,Catherine McNally,McCartney Kessler,wta_68,wta_31,WTA,Hard
+2026-08-13,Live,Cincinnati Open,Catherine McNally,McCartney Kessler,wta_68,wta_31,WTA,Hard
+2026-08-13,Final,Cincinnati Open,Katie Boulter,Katie Volynets,wta_83,wta_96,WTA,Hard
 2026-08-13,Final,Cincinnati Open,Cristina Bucsa,Panna Udvardy,wta_62,wta_93,WTA,Hard
 2026-08-13,Final,Cincinnati Open,Tatjana Maria,Dayana Yastremska,wta_54,wta_43,WTA,Hard
 2026-08-13,Final,Cincinnati Open,Diane Parry,Caroline Dolehide,wta_107,wta_121,WTA,Hard
@@ -15,8 +15,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-13,Final,Cincinnati Open,Kamilla Rakhimova,Kimberly Birrell,wta_91,wta_94,WTA,Hard
 2026-08-13,Final,Cincinnati Open,Taylor Townsend,Camila Osorio,wta_116,wta_63,WTA,Hard
 2026-08-13,Final,Cincinnati Open,Hanne Vandewinkel,Rebecca Sramkova,wta_128,wta_102,WTA,Hard
-2026-08-13,Live,Cincinnati Open,Rinky Hijikata,Gael Monfils,atp_112,atp_168,ATP,Hard
-2026-08-13,01:30,Cincinnati Open,Zachary Svajda,Mattia Bellucci,atp_106,atp_109,ATP,Hard
+2026-08-13,Live,Cincinnati Open,Zachary Svajda,Mattia Bellucci,atp_106,atp_109,ATP,Hard
+2026-08-13,Final,Cincinnati Open,Rinky Hijikata,Gael Monfils,atp_112,atp_168,ATP,Hard
 2026-08-13,TBD,Cincinnati Open,Marton Fucsovics,Terence Atmane,atp_60,atp_65,ATP,Hard
 2026-08-13,Final,Cincinnati Open,Mariano Navone,Raphael Collignon,atp_74,atp_68,ATP,Hard
 2026-08-13,Final,Cincinnati Open,Camilo Ugo Carabelli,Miomir Kecmanovic,atp_45,atp_83,ATP,Hard
@@ -28,4 +28,4 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-13,Final,Cincinnati Open,Aleksandar Vukic,Mark Lajal,atp_88,atp_159,ATP,Hard
 2026-08-13,Final,Cincinnati Open,Martin Landaluce,Jack Draper,atp_158,atp_12,ATP,Hard
 2026-08-13,Final,National Bank Open presented by Rogers,Iga Swiatek,Elena Rybakina,wta_2,wta_3,WTA,
-2026-08-13,Live,National Bank Open presented by Rogers,Ben Shelton,Brandon Nakashima,atp_9,atp_29,ATP,
+2026-08-13,Final,National Bank Open presented by Rogers,Ben Shelton,Brandon Nakashima,atp_9,atp_29,ATP,

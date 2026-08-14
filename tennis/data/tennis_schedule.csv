@@ -1,6 +1,6 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-08-13,Live,Cincinnati Open,Katie Boulter,Katie Volynets
-2026-08-13,01:10,Cincinnati Open,Catherine McNally,McCartney Kessler
+2026-08-13,Live,Cincinnati Open,Catherine McNally,McCartney Kessler
+2026-08-13,Final,Cincinnati Open,Katie Boulter,Katie Volynets
 2026-08-13,Final,Cincinnati Open,Cristina Bucsa,Panna Udvardy
 2026-08-13,Final,Cincinnati Open,Tatjana Maria,Dayana Yastremska
 2026-08-13,Final,Cincinnati Open,Diane Parry,Caroline Dolehide
@@ -15,8 +15,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-13,Final,Cincinnati Open,Kamilla Rakhimova,Kimberly Birrell
 2026-08-13,Final,Cincinnati Open,Taylor Townsend,Camila Osorio
 2026-08-13,Final,Cincinnati Open,Hanne Vandewinkel,Rebecca Sramkova
-2026-08-13,Live,Cincinnati Open,Rinky Hijikata,Gael Monfils
-2026-08-13,01:30,Cincinnati Open,Zachary Svajda,Mattia Bellucci
+2026-08-13,Live,Cincinnati Open,Zachary Svajda,Mattia Bellucci
+2026-08-13,Final,Cincinnati Open,Rinky Hijikata,Gael Monfils
 2026-08-13,TBD,Cincinnati Open,Marton Fucsovics,Terence Atmane
 2026-08-13,Final,Cincinnati Open,Mariano Navone,Raphael Collignon
 2026-08-13,Final,Cincinnati Open,Camilo Ugo Carabelli,Miomir Kecmanovic
@@ -28,9 +28,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-13,Final,Cincinnati Open,Aleksandar Vukic,Mark Lajal
 2026-08-13,Final,Cincinnati Open,Martin Landaluce,Jack Draper
 2026-08-13,Final,National Bank Open presented by Rogers,Iga Swiatek,Elena Rybakina
-2026-08-13,Live,National Bank Open presented by Rogers,Ben Shelton,Brandon Nakashima
-2026-08-13,Live,Cincinnati Open,Katie Boulter,Katie Volynets
-2026-08-13,01:10,Cincinnati Open,Catherine McNally,McCartney Kessler
+2026-08-13,Final,National Bank Open presented by Rogers,Ben Shelton,Brandon Nakashima
+2026-08-13,Live,Cincinnati Open,Catherine McNally,McCartney Kessler
+2026-08-13,Final,Cincinnati Open,Katie Boulter,Katie Volynets
 2026-08-13,Final,Cincinnati Open,Cristina Bucsa,Panna Udvardy
 2026-08-13,Final,Cincinnati Open,Tatjana Maria,Dayana Yastremska
 2026-08-13,Final,Cincinnati Open,Diane Parry,Caroline Dolehide
@@ -45,8 +45,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-13,Final,Cincinnati Open,Kamilla Rakhimova,Kimberly Birrell
 2026-08-13,Final,Cincinnati Open,Taylor Townsend,Camila Osorio
 2026-08-13,Final,Cincinnati Open,Hanne Vandewinkel,Rebecca Sramkova
-2026-08-13,Live,Cincinnati Open,Rinky Hijikata,Gael Monfils
-2026-08-13,01:30,Cincinnati Open,Zachary Svajda,Mattia Bellucci
+2026-08-13,Live,Cincinnati Open,Zachary Svajda,Mattia Bellucci
+2026-08-13,Final,Cincinnati Open,Rinky Hijikata,Gael Monfils
 2026-08-13,TBD,Cincinnati Open,Marton Fucsovics,Terence Atmane
 2026-08-13,Final,Cincinnati Open,Mariano Navone,Raphael Collignon
 2026-08-13,Final,Cincinnati Open,Camilo Ugo Carabelli,Miomir Kecmanovic
@@ -58,4 +58,4 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-13,Final,Cincinnati Open,Aleksandar Vukic,Mark Lajal
 2026-08-13,Final,Cincinnati Open,Martin Landaluce,Jack Draper
 2026-08-13,Final,National Bank Open presented by Rogers,Iga Swiatek,Elena Rybakina
-2026-08-13,Live,National Bank Open presented by Rogers,Ben Shelton,Brandon Nakashima
+2026-08-13,Final,National Bank Open presented by Rogers,Ben Shelton,Brandon Nakashima
