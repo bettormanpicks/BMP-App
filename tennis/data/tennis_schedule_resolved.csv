@@ -2,7 +2,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-14,15:00,Cincinnati Open,Valentin Royer,Stefanos Tsitsipas,atp_59,atp_32,ATP,Hard
 2026-08-14,15:00,Cincinnati Open,Sho Shimabukuro,Hubert Hurkacz,atp_135,atp_71,ATP,Hard
 2026-08-14,15:00,Cincinnati Open,Kyrian Jacquet,Adolfo Daniel Vallejo,atp_153,atp_9021,ATP,Hard
-2026-08-14,15:00,Cincinnati Open,Chak Lam Coleman Wong,Daniel Altmaier,atp_137,atp_54,ATP,Hard
+2026-08-14,15:00,Cincinnati Open,Chak Lam Coleman Wong,Daniel Altmaier,atp_137,atp_402,ATP,Hard
 2026-08-14,15:00,Cincinnati Open,Vit Kopriva,Quentin Halys,atp_87,atp_72,ATP,Hard
 2026-08-14,16:30,Cincinnati Open,Tomas Machac,Pablo Carreno Busta,atp_31,atp_122,ATP,Hard
 2026-08-14,16:30,Cincinnati Open,Titouan Droguet,Matteo Berrettini,atp_119,atp_57,ATP,Hard
@@ -33,7 +33,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-14,17:00,Cincinnati Open,Emiliana Arango,Venus Williams,wta_58,wta_555,WTA,Hard
 2026-08-14,18:00,Cincinnati Open,Elvina Kalieva,Oleksandra Oliynykova,wta_158,wta_71,WTA,Hard
 2026-08-14,18:00,Cincinnati Open,Wang Xinyu,Hanne Vandewinkel,wta_34,wta_128,WTA,Hard
-2026-08-14,18:30,Cincinnati Open,Alycia Parks,Viktorija Golubic,wta_243,wta_88,WTA,Hard
+2026-08-14,18:30,Cincinnati Open,Alycia Parks,Viktorija Golubic,wta_76,wta_88,WTA,Hard
 2026-08-14,19:30,Cincinnati Open,Maria Timofeeva,Wang Xiyu,wta_54,wta_34,WTA,Hard
 2026-08-14,19:30,Cincinnati Open,Mary Stoiana,Tereza Valentova,wta_185,wta_42,WTA,Hard
 2026-08-14,19:30,Cincinnati Open,Yulia Putintseva,Liudmila Samsonova,wta_77,wta_18,WTA,Hard
@@ -42,7 +42,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-15,TBD,Cincinnati Open,Novak Djokovic,Thiago Agustin Tirante,atp_3,atp_92,ATP,Hard
 2026-08-15,TBD,Cincinnati Open,Miomir Kecmanovic,Flavio Cobolli,atp_83,atp_20,ATP,Hard
 2026-08-15,TBD,Cincinnati Open,Luciano Darderi,Rinky Hijikata,atp_22,atp_112,ATP,Hard
-2026-08-15,TBD,Cincinnati Open,Martin Landaluce,Matteo Arnaldi,atp_158,atp_85,ATP,Hard
+2026-08-15,TBD,Cincinnati Open,Martin Landaluce,Matteo Arnaldi,atp_383,atp_85,ATP,Hard
 2026-08-15,TBD,Cincinnati Open,Mattia Bellucci,Jakub Mensik,atp_109,atp_16,ATP,Hard
 2026-08-15,TBD,Cincinnati Open,Alexander Blockx,Mariano Navone,atp_104,atp_74,ATP,Hard
 2026-08-15,TBD,Cincinnati Open,Jan-Lennard Struff,Alejandro Tabilo,atp_77,atp_67,ATP,Hard
