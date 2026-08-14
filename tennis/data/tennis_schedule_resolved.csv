@@ -27,13 +27,13 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-14,15:00,Cincinnati Open,Sara Bejlek,Karolina Pliskova,wta_41,wta_267,WTA,Hard
 2026-08-14,15:00,Cincinnati Open,Elisabetta Cocciaretto,Lucrezia Stefanini,wta_40,wta_136,WTA,Hard
 2026-08-14,16:30,Cincinnati Open,Peyton Stearns,Harriet Dart,wta_59,wta_169,WTA,Hard
-2026-08-14,16:30,Cincinnati Open,Mananchaya Sawangkaew,Anna Blinkova,wta_198,wta_65,WTA,Hard
+2026-08-14,16:30,Cincinnati Open,Mananchaya Sawangkaew,Anna Blinkova,wta_198,wta_82,WTA,Hard
 2026-08-14,16:30,Cincinnati Open,Lilli Tagger,Talia Gibson,wta_114,wta_111,WTA,Hard
 2026-08-14,16:30,Cincinnati Open,Maya Joint,Tamara Korpatsch,wta_29,wta_106,WTA,Hard
 2026-08-14,17:00,Cincinnati Open,Emiliana Arango,Venus Williams,wta_58,wta_555,WTA,Hard
 2026-08-14,18:00,Cincinnati Open,Elvina Kalieva,Oleksandra Oliynykova,wta_158,wta_71,WTA,Hard
 2026-08-14,18:00,Cincinnati Open,Wang Xinyu,Hanne Vandewinkel,wta_34,wta_128,WTA,Hard
-2026-08-14,18:30,Cincinnati Open,Alycia Parks,Viktorija Golubic,wta_76,wta_88,WTA,Hard
+2026-08-14,18:30,Cincinnati Open,Alycia Parks,Viktorija Golubic,wta_243,wta_88,WTA,Hard
 2026-08-14,19:30,Cincinnati Open,Maria Timofeeva,Wang Xiyu,wta_54,wta_34,WTA,Hard
 2026-08-14,19:30,Cincinnati Open,Mary Stoiana,Tereza Valentova,wta_185,wta_42,WTA,Hard
 2026-08-14,19:30,Cincinnati Open,Yulia Putintseva,Liudmila Samsonova,wta_77,wta_18,WTA,Hard
@@ -49,7 +49,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-15,TBD,Cincinnati Open,Alexander Zverev,Cameron Norrie,atp_4,atp_27,ATP,Hard
 2026-08-15,TBD,Cincinnati Open,Terence Atmane,Tomas Martin Etcheverry,atp_65,atp_53,ATP,Hard
 2026-08-15,TBD,Cincinnati Open,Rafael Jodar,Denis Shapovalov,atp_117,atp_36,ATP,Hard
-2026-08-15,TBD,Cincinnati Open,Kamilla Rakhimova,Maria Sakkari,wta_91,wta_54,WTA,Hard
+2026-08-15,TBD,Cincinnati Open,Kamilla Rakhimova,Maria Sakkari,wta_91,wta_33,WTA,Hard
 2026-08-15,TBD,Cincinnati Open,Elise Mertens,Diane Parry,wta_22,wta_107,WTA,Hard
 2026-08-15,TBD,Cincinnati Open,Linda Noskova,Katie Boulter,wta_14,wta_83,WTA,Hard
 2026-08-15,TBD,Cincinnati Open,Simona Waltert,Jessica Pegula,wta_81,wta_5,WTA,Hard
