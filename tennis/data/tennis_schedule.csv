@@ -1,12 +1,12 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-08-14,Live,Cincinnati Open,Nuno Borges,Thanasi Kokkinakis
-2026-08-14,Live,Cincinnati Open,Adam Walton,Nicolas Mejia
-2026-08-14,Live,Cincinnati Open,Shang Juncheng,Lorenzo Sonego
-2026-08-14,Live,Cincinnati Open,Hamad Medjedovic,Marco Trungelliti
-2026-08-14,Live,Cincinnati Open,Fabian Marozsan,Michael Zheng
-2026-08-14,21:20,Cincinnati Open,Daniel Merida,Marin Cilic
-2026-08-14,23:00,Cincinnati Open,Jaime Faria,Jenson Brooksby
-2026-08-14,00:30,Cincinnati Open,Aleksandar Kovacevic,Karen Khachanov
+2026-08-14,00:50,Cincinnati Open,Aleksandar Kovacevic,Karen Khachanov
+2026-08-14,Final,Cincinnati Open,Jaime Faria,Jenson Brooksby
+2026-08-14,Final,Cincinnati Open,Daniel Merida,Marin Cilic
+2026-08-14,Final,Cincinnati Open,Hamad Medjedovic,Marco Trungelliti
+2026-08-14,Final,Cincinnati Open,Fabian Marozsan,Michael Zheng
+2026-08-14,Final,Cincinnati Open,Adam Walton,Nicolas Mejia
+2026-08-14,Final,Cincinnati Open,Shang Juncheng,Lorenzo Sonego
+2026-08-14,Final,Cincinnati Open,Nuno Borges,Thanasi Kokkinakis
 2026-08-14,Final,Cincinnati Open,Mark Lajal,Juan Manuel Cerundolo
 2026-08-14,Final,Cincinnati Open,Botic Van De Zandschulp,Aleksandr Shevchenko
 2026-08-14,Final,Cincinnati Open,Alex Michelsen,Jesper de Jong
@@ -21,11 +21,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-14,Final,Cincinnati Open,Vit Kopriva,Quentin Halys
 2026-08-14,Final,Cincinnati Open,Kyrian Jacquet,Adolfo Daniel Vallejo
 2026-08-14,Final,Cincinnati Open,Chak Lam Coleman Wong,Daniel Altmaier
-2026-08-14,Live,Cincinnati Open,Wang Xinyu,Hanne Vandewinkel
-2026-08-14,Live,Cincinnati Open,Yulia Putintseva,Liudmila Samsonova
-2026-08-14,21:15,Cincinnati Open,Mary Stoiana,Tereza Valentova
-2026-08-14,23:00,Cincinnati Open,Sloane Stephens,Sinja Kraus
-2026-08-14,00:30,Cincinnati Open,Sofia Kenin,Eva Lys
+2026-08-14,Live,Cincinnati Open,Sloane Stephens,Sinja Kraus
+2026-08-14,00:45,Cincinnati Open,Sofia Kenin,Eva Lys
+2026-08-14,Final,Cincinnati Open,Mary Stoiana,Tereza Valentova
+2026-08-14,Final,Cincinnati Open,Yulia Putintseva,Liudmila Samsonova
+2026-08-14,Final,Cincinnati Open,Wang Xinyu,Hanne Vandewinkel
 2026-08-14,TBD,Cincinnati Open,Maria Timofeeva,Wang Xiyu
 2026-08-14,Final,Cincinnati Open,Alycia Parks,Viktorija Golubic
 2026-08-14,Final,Cincinnati Open,Elvina Kalieva,Oleksandra Oliynykova
@@ -39,34 +39,43 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-14,Final,Cincinnati Open,Daria Snigur,Yuliia Starodubtseva
 2026-08-14,TBD,Cincinnati Open,Elisabetta Cocciaretto,Lucrezia Stefanini
 2026-08-14,Final,Cincinnati Open,Sara Bejlek,Karolina Pliskova
-2026-08-15,15:00,Cincinnati Open,Miomir Kecmanovic,Flavio Cobolli
-2026-08-15,15:00,Cincinnati Open,Martin Landaluce,Matteo Arnaldi
-2026-08-15,15:00,Cincinnati Open,Alexander Blockx,Mariano Navone
-2026-08-15,16:30,Cincinnati Open,Novak Djokovic,Thiago Agustin Tirante
-2026-08-15,16:30,Cincinnati Open,Mattia Bellucci,Jakub Mensik
-2026-08-15,17:00,Cincinnati Open,Adolfo Daniel Vallejo,Valentin Vacherot
-2026-08-15,18:00,Cincinnati Open,Arthur Fery,James Duckworth
-2026-08-15,18:00,Cincinnati Open,Luciano Darderi,Rinky Hijikata
-2026-08-15,18:00,Cincinnati Open,Quentin Halys,Alex de Minaur
-2026-08-15,18:00,Cincinnati Open,Tommy Paul,Hubert Hurkacz
-2026-08-15,18:30,Cincinnati Open,Jan-Lennard Struff,Alejandro Tabilo
-2026-08-15,19:30,Cincinnati Open,Yannick Hanfmann,Arthur Fils
-2026-08-15,19:30,Cincinnati Open,Jiri Lehecka,Matteo Berrettini
-2026-08-15,20:00,Cincinnati Open,Terence Atmane,Tomas Martin Etcheverry
-2026-08-15,23:00,Cincinnati Open,Rafael Jodar,Denis Shapovalov
-2026-08-15,00:30,Cincinnati Open,Alexander Zverev,Cameron Norrie
-2026-08-15,15:00,Cincinnati Open,Alexandra Eala,Elena-Gabriela Ruse
-2026-08-15,15:00,Cincinnati Open,Zeynep Sonmez,Amanda Anisimova
-2026-08-15,15:00,Cincinnati Open,Cristina Bucsa,Maja Chwalinska
-2026-08-15,15:00,Cincinnati Open,Zhang Shuai,Kayla Day
-2026-08-15,16:30,Cincinnati Open,Jelena Ostapenko,Magdalena Frech
-2026-08-15,16:30,Cincinnati Open,Catherine McNally,Anna Kalinskaya
-2026-08-15,16:30,Cincinnati Open,Diana Shnaider,Tatjana Maria
-2026-08-15,16:30,Cincinnati Open,Sorana Cirstea,Nikola Bartunkova
-2026-08-15,17:00,Cincinnati Open,Linda Noskova,Katie Boulter
-2026-08-15,18:00,Cincinnati Open,Emma Navarro,Anhelina Kalinina
-2026-08-15,18:30,Cincinnati Open,Simona Waltert,Jessica Pegula
-2026-08-15,19:30,Cincinnati Open,Kamilla Rakhimova,Maria Sakkari
-2026-08-15,19:30,Cincinnati Open,Elise Mertens,Diane Parry
-2026-08-15,23:00,Cincinnati Open,Peyton Stearns,Clara Tauson
-2026-08-15,00:30,Cincinnati Open,Lois Boisson,Belinda Bencic
+2026-08-14,00:50,Cincinnati Open,Aleksandar Kovacevic,Karen Khachanov
+2026-08-14,Final,Cincinnati Open,Jaime Faria,Jenson Brooksby
+2026-08-14,Final,Cincinnati Open,Daniel Merida,Marin Cilic
+2026-08-14,Final,Cincinnati Open,Hamad Medjedovic,Marco Trungelliti
+2026-08-14,Final,Cincinnati Open,Fabian Marozsan,Michael Zheng
+2026-08-14,Final,Cincinnati Open,Adam Walton,Nicolas Mejia
+2026-08-14,Final,Cincinnati Open,Shang Juncheng,Lorenzo Sonego
+2026-08-14,Final,Cincinnati Open,Nuno Borges,Thanasi Kokkinakis
+2026-08-14,Final,Cincinnati Open,Mark Lajal,Juan Manuel Cerundolo
+2026-08-14,Final,Cincinnati Open,Botic Van De Zandschulp,Aleksandr Shevchenko
+2026-08-14,Final,Cincinnati Open,Alex Michelsen,Jesper de Jong
+2026-08-14,Final,Cincinnati Open,Christopher O'Connell,Kamil Majchrzak
+2026-08-14,Final,Cincinnati Open,J.J. Wolf,James Duckworth
+2026-08-14,Final,Cincinnati Open,Tomas Machac,Pablo Carreno Busta
+2026-08-14,Final,Cincinnati Open,Titouan Droguet,Matteo Berrettini
+2026-08-14,Final,Cincinnati Open,Yannick Hanfmann,Luca Van Assche
+2026-08-14,Final,Cincinnati Open,Sebastian Baez,Grigor Dimitrov
+2026-08-14,Final,Cincinnati Open,Valentin Royer,Stefanos Tsitsipas
+2026-08-14,Final,Cincinnati Open,Sho Shimabukuro,Hubert Hurkacz
+2026-08-14,Final,Cincinnati Open,Vit Kopriva,Quentin Halys
+2026-08-14,Final,Cincinnati Open,Kyrian Jacquet,Adolfo Daniel Vallejo
+2026-08-14,Final,Cincinnati Open,Chak Lam Coleman Wong,Daniel Altmaier
+2026-08-14,Live,Cincinnati Open,Sloane Stephens,Sinja Kraus
+2026-08-14,00:45,Cincinnati Open,Sofia Kenin,Eva Lys
+2026-08-14,Final,Cincinnati Open,Mary Stoiana,Tereza Valentova
+2026-08-14,Final,Cincinnati Open,Yulia Putintseva,Liudmila Samsonova
+2026-08-14,Final,Cincinnati Open,Wang Xinyu,Hanne Vandewinkel
+2026-08-14,TBD,Cincinnati Open,Maria Timofeeva,Wang Xiyu
+2026-08-14,Final,Cincinnati Open,Alycia Parks,Viktorija Golubic
+2026-08-14,Final,Cincinnati Open,Elvina Kalieva,Oleksandra Oliynykova
+2026-08-14,Final,Cincinnati Open,Lilli Tagger,Talia Gibson
+2026-08-14,Final,Cincinnati Open,Emiliana Arango,Venus Williams
+2026-08-14,Final,Cincinnati Open,Peyton Stearns,Harriet Dart
+2026-08-14,Final,Cincinnati Open,Maya Joint,Tamara Korpatsch
+2026-08-14,Final,Cincinnati Open,Mananchaya Sawangkaew,Anna Blinkova
+2026-08-14,Final,Cincinnati Open,Nikola Bartunkova,Alina Charaeva
+2026-08-14,Final,Cincinnati Open,Jessica Bouzas Maneiro,Anna Bondar
+2026-08-14,Final,Cincinnati Open,Daria Snigur,Yuliia Starodubtseva
+2026-08-14,TBD,Cincinnati Open,Elisabetta Cocciaretto,Lucrezia Stefanini
+2026-08-14,Final,Cincinnati Open,Sara Bejlek,Karolina Pliskova
