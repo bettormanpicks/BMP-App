@@ -1,10 +1,10 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-14,00:50,Cincinnati Open,Aleksandar Kovacevic,Karen Khachanov,atp_75,atp_17,ATP,Hard
+2026-08-14,Live,Cincinnati Open,Aleksandar Kovacevic,Karen Khachanov,atp_75,atp_17,ATP,Hard
 2026-08-14,Final,Cincinnati Open,Jaime Faria,Jenson Brooksby,atp_146,atp_46,ATP,Hard
 2026-08-14,Final,Cincinnati Open,Daniel Merida,Marin Cilic,atp_402,atp_52,ATP,Hard
 2026-08-14,Final,Cincinnati Open,Hamad Medjedovic,Marco Trungelliti,atp_97,atp_131,ATP,Hard
-2026-08-14,Final,Cincinnati Open,Fabian Marozsan,Michael Zheng,atp_47,wta_372,ATP,Hard
-2026-08-14,Final,Cincinnati Open,Adam Walton,Nicolas Mejia,atp_93,atp_143,ATP,Hard
+2026-08-14,Final,Cincinnati Open,Fabian Marozsan,Michael Zheng,atp_47,atp_152,ATP,Hard
+2026-08-14,Final,Cincinnati Open,Adam Walton,Nicolas Mejia,atp_93,atp_178,ATP,Hard
 2026-08-14,Final,Cincinnati Open,Shang Juncheng,Lorenzo Sonego,atp_259,atp_64,ATP,Hard
 2026-08-14,Final,Cincinnati Open,Nuno Borges,Thanasi Kokkinakis,atp_44,atp_9003,ATP,Hard
 2026-08-14,Final,Cincinnati Open,Mark Lajal,Juan Manuel Cerundolo,atp_159,atp_19,ATP,Hard
@@ -20,14 +20,14 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-14,Final,Cincinnati Open,Sho Shimabukuro,Hubert Hurkacz,atp_135,atp_71,ATP,Hard
 2026-08-14,Final,Cincinnati Open,Vit Kopriva,Quentin Halys,atp_87,atp_72,ATP,Hard
 2026-08-14,Final,Cincinnati Open,Kyrian Jacquet,Adolfo Daniel Vallejo,atp_153,atp_9021,ATP,Hard
-2026-08-14,Final,Cincinnati Open,Chak Lam Coleman Wong,Daniel Altmaier,atp_137,atp_54,ATP,Hard
-2026-08-14,Live,Cincinnati Open,Sloane Stephens,Sinja Kraus,wta_775,wta_105,WTA,Hard
-2026-08-14,00:45,Cincinnati Open,Sofia Kenin,Eva Lys,wta_32,wta_56,WTA,Hard
+2026-08-14,Final,Cincinnati Open,Chak Lam Coleman Wong,Daniel Altmaier,atp_137,atp_402,ATP,Hard
+2026-08-14,Final,Cincinnati Open,Sofia Kenin,Eva Lys,wta_32,wta_56,WTA,Hard
+2026-08-14,Final,Cincinnati Open,Sloane Stephens,Sinja Kraus,wta_775,wta_105,WTA,Hard
 2026-08-14,Final,Cincinnati Open,Mary Stoiana,Tereza Valentova,wta_185,wta_42,WTA,Hard
 2026-08-14,Final,Cincinnati Open,Yulia Putintseva,Liudmila Samsonova,wta_77,wta_18,WTA,Hard
 2026-08-14,Final,Cincinnati Open,Wang Xinyu,Hanne Vandewinkel,wta_34,wta_128,WTA,Hard
 2026-08-14,TBD,Cincinnati Open,Maria Timofeeva,Wang Xiyu,wta_54,wta_34,WTA,Hard
-2026-08-14,Final,Cincinnati Open,Alycia Parks,Viktorija Golubic,wta_243,wta_88,WTA,Hard
+2026-08-14,Final,Cincinnati Open,Alycia Parks,Viktorija Golubic,wta_76,wta_88,WTA,Hard
 2026-08-14,Final,Cincinnati Open,Elvina Kalieva,Oleksandra Oliynykova,wta_158,wta_71,WTA,Hard
 2026-08-14,Final,Cincinnati Open,Lilli Tagger,Talia Gibson,wta_114,wta_111,WTA,Hard
 2026-08-14,Final,Cincinnati Open,Emiliana Arango,Venus Williams,wta_58,wta_555,WTA,Hard
