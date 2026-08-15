@@ -20,7 +20,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-15,15:00,Cincinnati Open,Cristina Bucsa,Maja Chwalinska,wta_62,wta_126,WTA,Hard
 2026-08-15,15:00,Cincinnati Open,Zhang Shuai,Kayla Day,wta_85,wta_194,WTA,Hard
 2026-08-15,16:30,Cincinnati Open,Jelena Ostapenko,Magdalena Frech,wta_27,wta_55,WTA,Hard
-2026-08-15,16:30,Cincinnati Open,Catherine McNally,Anna Kalinskaya,wta_68,wta_24,WTA,Hard
+2026-08-15,16:30,Cincinnati Open,Catherine McNally,Anna Kalinskaya,wta_68,wta_65,WTA,Hard
 2026-08-15,16:30,Cincinnati Open,Diana Shnaider,Tatjana Maria,wta_21,wta_54,WTA,Hard
 2026-08-15,16:30,Cincinnati Open,Sorana Cirstea,Nikola Bartunkova,wta_30,wta_104,WTA,Hard
 2026-08-15,17:00,Cincinnati Open,Linda Noskova,Katie Boulter,wta_14,wta_83,WTA,Hard
@@ -31,7 +31,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-15,23:00,Cincinnati Open,Peyton Stearns,Clara Tauson,wta_59,wta_15,WTA,Hard
 2026-08-15,00:30,Cincinnati Open,Lois Boisson,Belinda Bencic,wta_35,wta_12,WTA,Hard
 2026-08-16,TBD,Cincinnati Open,Adam Walton,Ignacio Buse,atp_93,atp_91,ATP,Hard
-2026-08-16,TBD,Cincinnati Open,Ugo Humbert,Michael Zheng,atp_38,wta_372,ATP,Hard
+2026-08-16,TBD,Cincinnati Open,Ugo Humbert,Michael Zheng,atp_38,atp_152,ATP,Hard
 2026-08-16,TBD,Cincinnati Open,Brandon Nakashima,Aleksandar Kovacevic,atp_29,atp_75,ATP,Hard
 2026-08-16,TBD,Cincinnati Open,Marco Trungelliti,Daniil Medvedev,atp_131,atp_11,ATP,Hard
 2026-08-16,TBD,Cincinnati Open,Ben Shelton,Jaime Faria,atp_9,atp_146,ATP,Hard
@@ -62,4 +62,4 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-16,TBD,Cincinnati Open,Wang Xinyu,Donna Vekic,wta_34,wta_99,WTA,Hard
 2026-08-16,TBD,Cincinnati Open,Barbora Krejcikova,Sara Bejlek,wta_53,wta_41,WTA,Hard
 2026-08-16,TBD,Cincinnati Open,Katerina Siniakova,Jessica Bouzas Maneiro,wta_46,wta_48,WTA,Hard
-2026-08-16,TBD,Cincinnati Open,Anna Blinkova,Ekaterina Alexandrova,wta_82,wta_11,WTA,Hard
+2026-08-16,TBD,Cincinnati Open,Anna Blinkova,Ekaterina Alexandrova,wta_65,wta_11,WTA,Hard
