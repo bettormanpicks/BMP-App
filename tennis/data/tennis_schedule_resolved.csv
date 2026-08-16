@@ -1,66 +1,32 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-15,Live,Cincinnati Open,Mattia Bellucci,Jakub Mensik,atp_109,atp_16,ATP,Hard
-2026-08-15,Live,Cincinnati Open,Quentin Halys,Alex de Minaur,atp_72,atp_8,ATP,Hard
-2026-08-15,Live,Cincinnati Open,Luciano Darderi,Rinky Hijikata,atp_22,atp_112,ATP,Hard
-2026-08-15,Live,Cincinnati Open,Terence Atmane,Tomas Martin Etcheverry,atp_65,atp_53,ATP,Hard
-2026-08-15,21:20,Cincinnati Open,Arthur Fery,James Duckworth,atp_156,atp_80,ATP,Hard
-2026-08-15,21:20,Cincinnati Open,Tommy Paul,Hubert Hurkacz,atp_24,atp_71,ATP,Hard
-2026-08-15,21:30,Cincinnati Open,Jiri Lehecka,Matteo Berrettini,atp_21,atp_57,ATP,Hard
-2026-08-15,22:00,Cincinnati Open,Yannick Hanfmann,Arthur Fils,atp_90,atp_40,ATP,Hard
-2026-08-15,23:00,Cincinnati Open,Rafael Jodar,Denis Shapovalov,atp_117,atp_36,ATP,Hard
-2026-08-15,00:30,Cincinnati Open,Alexander Zverev,Cameron Norrie,atp_4,atp_27,ATP,Hard
+2026-08-15,Live,Cincinnati Open,Jiri Lehecka,Matteo Berrettini,atp_21,atp_57,ATP,Hard
+2026-08-15,Live,Cincinnati Open,Rafael Jodar,Denis Shapovalov,atp_117,atp_36,ATP,Hard
+2026-08-15,Live,Cincinnati Open,Yannick Hanfmann,Arthur Fils,atp_90,atp_40,ATP,Hard
+2026-08-15,01:30,Cincinnati Open,Alexander Zverev,Cameron Norrie,atp_4,atp_27,ATP,Hard
 2026-08-15,Final,Cincinnati Open,Novak Djokovic,Thiago Agustin Tirante,atp_3,atp_92,ATP,Hard
+2026-08-15,Final,Cincinnati Open,Quentin Halys,Alex de Minaur,atp_72,atp_8,ATP,Hard
 2026-08-15,Final,Cincinnati Open,Miomir Kecmanovic,Flavio Cobolli,atp_83,atp_20,ATP,Hard
+2026-08-15,Final,Cincinnati Open,Mattia Bellucci,Jakub Mensik,atp_109,atp_16,ATP,Hard
 2026-08-15,Final,Cincinnati Open,Adolfo Daniel Vallejo,Valentin Vacherot,atp_9021,atp_26,ATP,Hard
+2026-08-15,Final,Cincinnati Open,Tommy Paul,Hubert Hurkacz,atp_24,atp_71,ATP,Hard
+2026-08-15,Final,Cincinnati Open,Luciano Darderi,Rinky Hijikata,atp_22,atp_112,ATP,Hard
 2026-08-15,Final,Cincinnati Open,Jan-Lennard Struff,Alejandro Tabilo,atp_77,atp_67,ATP,Hard
+2026-08-15,Final,Cincinnati Open,Terence Atmane,Tomas Martin Etcheverry,atp_65,atp_53,ATP,Hard
 2026-08-15,Final,Cincinnati Open,Alexander Blockx,Mariano Navone,atp_104,atp_74,ATP,Hard
 2026-08-15,Final,Cincinnati Open,Martin Landaluce,Matteo Arnaldi,atp_158,atp_85,ATP,Hard
-2026-08-15,Live,Cincinnati Open,Sorana Cirstea,Nikola Bartunkova,wta_30,wta_104,WTA,Hard
-2026-08-15,Live,Cincinnati Open,Simona Waltert,Jessica Pegula,wta_81,wta_5,WTA,Hard
-2026-08-15,21:15,Cincinnati Open,Kamilla Rakhimova,Maria Sakkari,wta_91,wta_33,WTA,Hard
-2026-08-15,21:15,Cincinnati Open,Emma Navarro,Anhelina Kalinina,wta_19,wta_191,WTA,Hard
-2026-08-15,21:30,Cincinnati Open,Elise Mertens,Diane Parry,wta_22,wta_107,WTA,Hard
-2026-08-15,23:00,Cincinnati Open,Peyton Stearns,Clara Tauson,wta_59,wta_15,WTA,Hard
-2026-08-15,00:30,Cincinnati Open,Lois Boisson,Belinda Bencic,wta_35,wta_12,WTA,Hard
+2026-08-15,Final,Cincinnati Open,Arthur Fery,James Duckworth,atp_156,atp_80,ATP,Hard
+2026-08-15,Live,Cincinnati Open,Elise Mertens,Diane Parry,wta_22,wta_107,WTA,Hard
+2026-08-15,Live,Cincinnati Open,Peyton Stearns,Clara Tauson,wta_59,wta_15,WTA,Hard
+2026-08-15,01:00,Cincinnati Open,Lois Boisson,Belinda Bencic,wta_35,wta_12,WTA,Hard
+2026-08-15,Final,Cincinnati Open,Simona Waltert,Jessica Pegula,wta_81,wta_5,WTA,Hard
 2026-08-15,Final,Cincinnati Open,Linda Noskova,Katie Boulter,wta_14,wta_83,WTA,Hard
 2026-08-15,Final,Cincinnati Open,Zeynep Sonmez,Amanda Anisimova,wta_84,wta_6,WTA,Hard
 2026-08-15,Final,Cincinnati Open,Diana Shnaider,Tatjana Maria,wta_21,wta_54,WTA,Hard
+2026-08-15,Final,Cincinnati Open,Sorana Cirstea,Nikola Bartunkova,wta_30,wta_104,WTA,Hard
 2026-08-15,TBD,Cincinnati Open,Alexandra Eala,Elena-Gabriela Ruse,wta_45,wta_79,WTA,Hard
 2026-08-15,Final,Cincinnati Open,Catherine McNally,Anna Kalinskaya,wta_68,wta_24,WTA,Hard
 2026-08-15,Final,Cincinnati Open,Cristina Bucsa,Maja Chwalinska,wta_62,wta_126,WTA,Hard
+2026-08-15,Final,Cincinnati Open,Emma Navarro,Anhelina Kalinina,wta_19,wta_191,WTA,Hard
 2026-08-15,Final,Cincinnati Open,Jelena Ostapenko,Magdalena Frech,wta_27,wta_55,WTA,Hard
+2026-08-15,Final,Cincinnati Open,Kamilla Rakhimova,Maria Sakkari,wta_91,wta_33,WTA,Hard
 2026-08-15,Final,Cincinnati Open,Zhang Shuai,Kayla Day,wta_85,wta_194,WTA,Hard
-2026-08-16,15:00,Cincinnati Open,Ugo Humbert,Michael Zheng,atp_38,atp_152,ATP,Hard
-2026-08-16,15:00,Cincinnati Open,Marco Trungelliti,Daniil Medvedev,atp_131,atp_11,ATP,Hard
-2026-08-16,15:00,Cincinnati Open,Christopher O'Connell,Casper Ruud,atp_95,atp_13,ATP,Hard
-2026-08-16,16:30,Cincinnati Open,Stefanos Tsitsipas,Felix Auger-Aliassime,atp_32,atp_6,ATP,Hard
-2026-08-16,16:30,Cincinnati Open,Daniel Altmaier,Lorenzo Musetti,atp_54,atp_5,ATP,Hard
-2026-08-16,16:30,Cincinnati Open,Joao Fonseca,Botic Van De Zandschulp,atp_37,atp_55,ATP,Hard
-2026-08-16,16:30,Cincinnati Open,Arthur Rinderknech,Juan Manuel Cerundolo,atp_30,atp_19,ATP,Hard
-2026-08-16,18:00,Cincinnati Open,Brandon Nakashima,Aleksandar Kovacevic,atp_29,atp_75,ATP,Hard
-2026-08-16,18:00,Cincinnati Open,Andrey Rublev,Pablo Carreno Busta,atp_14,atp_122,ATP,Hard
-2026-08-16,18:00,Cincinnati Open,Nuno Borges,Francisco Cerundolo,atp_44,atp_62,ATP,Hard
-2026-08-16,18:00,Cincinnati Open,Taylor Fritz,Alex Michelsen,atp_7,atp_41,ATP,Hard
-2026-08-16,19:30,Cincinnati Open,Adam Walton,Ignacio Buse,atp_93,atp_91,ATP,Hard
-2026-08-16,19:30,Cincinnati Open,Learner Tien,Sebastian Baez,atp_23,atp_33,ATP,Hard
-2026-08-16,19:30,Cincinnati Open,Daniel Merida,Zizou Bergs,atp_402,atp_43,ATP,Hard
-2026-08-16,23:00,Cincinnati Open,Ben Shelton,Jaime Faria,atp_9,atp_146,ATP,Hard
-2026-08-16,00:30,Cincinnati Open,Lorenzo Sonego,Frances Tiafoe,atp_64,atp_28,ATP,Hard
-2026-08-16,15:00,Cincinnati Open,Janice Tjen,Viktorija Golubic,wta_47,wta_88,WTA,Hard
-2026-08-16,15:00,Cincinnati Open,Oleksandra Oliynykova,Mirra Andreeva,wta_71,wta_7,WTA,Hard
-2026-08-16,15:00,Cincinnati Open,Taylor Townsend,Elena Rybakina,wta_116,wta_3,WTA,Hard
-2026-08-16,15:00,Cincinnati Open,Wang Xinyu,Donna Vekic,wta_34,wta_99,WTA,Hard
-2026-08-16,15:00,Cincinnati Open,Barbora Krejcikova,Sara Bejlek,wta_53,wta_41,WTA,Hard
-2026-08-16,16:30,Cincinnati Open,Iga Swiatek,Emiliana Arango,wta_2,wta_58,WTA,Hard
-2026-08-16,16:30,Cincinnati Open,Daria Snigur,Madison Keys,wta_132,wta_17,WTA,Hard
-2026-08-16,16:30,Cincinnati Open,Marie Bouzkova,Lucrezia Stefanini,wta_39,wta_136,WTA,Hard
-2026-08-16,16:30,Cincinnati Open,Zhang Shuai,Ann Li,wta_85,wta_36,WTA,Hard
-2026-08-16,18:00,Cincinnati Open,Marta Kostyuk,Sofia Kenin,wta_26,wta_32,WTA,Hard
-2026-08-16,18:00,Cincinnati Open,Katerina Siniakova,Jessica Bouzas Maneiro,wta_46,wta_48,WTA,Hard
-2026-08-16,18:00,Cincinnati Open,Anna Blinkova,Ekaterina Alexandrova,wta_82,wta_11,WTA,Hard
-2026-08-16,19:00,Cincinnati Open,Aryna Sabalenka,Talia Gibson,wta_1,wta_111,WTA,Hard
-2026-08-16,19:30,Cincinnati Open,Tamara Korpatsch,Iva Jovic,wta_106,wta_20,WTA,Hard
-2026-08-16,19:30,Cincinnati Open,Leylah Fernandez,Wang Xiyu,wta_28,wta_34,WTA,Hard
-2026-08-16,21:00,Cincinnati Open,Sloane Stephens,Anastasia Potapova,wta_775,wta_75,WTA,Hard
-2026-08-16,23:00,Cincinnati Open,Coco Gauff,Liudmila Samsonova,wta_4,wta_18,WTA,Hard
-2026-08-16,00:30,Cincinnati Open,Tereza Valentova,Elina Svitolina,wta_42,wta_9,WTA,Hard
