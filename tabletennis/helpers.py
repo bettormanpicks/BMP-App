@@ -413,6 +413,18 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
     a_ss_score = (1 - a_s1w_pct) * a_recovery_pct
     b_ss_score = (1 - b_s1w_pct) * b_recovery_pct
 
+    # --------------------------------------------------
+    # Matches since last sweep (uses full history, ignores window)
+    # Counts consecutive non-sweep matches from newest-first
+    # Returns None if no sweep has ever occurred
+    # --------------------------------------------------
+    all_matches = h2h_index[key]  # full history, not windowed
+    matches_since_last_sweep = None
+    for i, m in enumerate(all_matches):
+        if is_sweep_by(m, player_a) or is_sweep_by(m, player_b):
+            matches_since_last_sweep = i
+            break
+
     return {
         "matches":        total,
         "a_wins":         a_wins,
@@ -421,6 +433,7 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         "last_played":    last_played,
         "sweeps_a":       sweeps_a,
         "sweeps_b":       sweeps_b,
+        "matches_since_last_sweep": matches_since_last_sweep,
         "non_sweep_pct":  non_sweep_pct,
         "one_all_pct":    one_all_pct,
         "avg_total_sets": avg_total_sets,
@@ -463,6 +476,7 @@ def _empty_stats():
         "last_played":    None,
         "sweeps_a":       0,
         "sweeps_b":       0,
+        "matches_since_last_sweep": None,
         "non_sweep_pct":  0,
         "one_all_pct":    0,
         "avg_total_sets": 0,
