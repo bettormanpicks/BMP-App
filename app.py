@@ -952,7 +952,7 @@ with streamlit_analytics.track():
                 "P2 SR#",
                 "P1 S",
                 "P2 S",
-                "Last S"
+                "Last S",
                 "P1 W",
                 "P2 W",
                 "P1 W%",
