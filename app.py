@@ -1056,6 +1056,13 @@ with streamlit_analytics.track():
                 grace_period = pd.Timedelta(minutes=20)
                 upcoming = schedule[schedule["date"] + grace_period >= now_ct]
 
+                def fmt_pct(val, n):
+                    """Return formatted percentage string, or '--' if denominator is 0."""
+                    if n == 0:
+                        return "--"
+                    rounded = round(val * 100, 1)
+                    return str(int(rounded)) if rounded % 1 == 0 else str(rounded)
+
                 rows = []
                 for _, row in upcoming.iterrows():
                     p1, p2 = row["player1"], row["player2"]
@@ -1085,13 +1092,13 @@ with streamlit_analytics.track():
                         "Matches": stats["matches"],
                         "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
                         "One-All %": round(stats.get("one_all_pct", 0) * 100, 1),
-                        "P1 B%": round(stats.get("a_bounce_pct", 0) * 100, 1) if stats.get("a_bounce_n", 0) > 0 else "--",
+                        "P1 B%": fmt_pct(stats.get("a_bounce_pct", 0), stats.get("a_bounce_n", 0)),
                         "P1 BB#": stats.get("a_bounce_n", 0) if stats.get("a_bounce_n", 0) > 0 else "--",
-                        "P2 B%": round(stats.get("b_bounce_pct", 0) * 100, 1) if stats.get("b_bounce_n", 0) > 0 else "--",
+                        "P2 B%": fmt_pct(stats.get("b_bounce_pct", 0), stats.get("b_bounce_n", 0)),
                         "P2 BB#": stats.get("b_bounce_n", 0) if stats.get("b_bounce_n", 0) > 0 else "--",
-                        "P1 SR%": round(stats.get("a_sr_pct", 0) * 100, 1) if stats.get("a_sr_n", 0) > 0 else "--",
+                        "P1 SR%": fmt_pct(stats.get("a_sr_pct", 0), stats.get("a_sr_n", 0)),
                         "P1 SR#": stats.get("a_sr_n", 0) if stats.get("a_sr_n", 0) > 0 else "--",
-                        "P2 SR%": round(stats.get("b_sr_pct", 0) * 100, 1) if stats.get("b_sr_n", 0) > 0 else "--",
+                        "P2 SR%": fmt_pct(stats.get("b_sr_pct", 0), stats.get("b_sr_n", 0)),
                         "P2 SR#": stats.get("b_sr_n", 0) if stats.get("b_sr_n", 0) > 0 else "--",
                         "P1 Sweeps": stats.get("sweeps_a", 0),
                         "P2 Sweeps": stats.get("sweeps_b", 0),
@@ -1106,12 +1113,12 @@ with streamlit_analytics.track():
                         "SS": round(stats.get("SS", 0), 2),
                         "ATP": round(stats.get("ATP", 0), 2),
                         "PS": round(stats.get("PS", 0), 2),
-                        "P1 SS": round(stats.get("a_ss_score", 0) * 100, 1),
-                        "P1 Rec%": round(stats.get("a_recovery_pct", 0) * 100, 1),
-                        "P1 Rec#": stats.get("a_recovery_n", 0),
-                        "P2 SS": round(stats.get("b_ss_score", 0) * 100, 1),
-                        "P2 Rec%": round(stats.get("b_recovery_pct", 0) * 100, 1),
-                        "P2 Rec#": stats.get("b_recovery_n", 0),
+                        "P1 SS": fmt_pct(stats.get("a_ss_score", 0), stats.get("a_recovery_n", 0)),
+                        "P1 Rec%": fmt_pct(stats.get("a_recovery_pct", 0), stats.get("a_recovery_n", 0)),
+                        "P1 Rec#": stats.get("a_recovery_n", 0) if stats.get("a_recovery_n", 0) > 0 else "--",
+                        "P2 SS": fmt_pct(stats.get("b_ss_score", 0), stats.get("b_recovery_n", 0)),
+                        "P2 Rec%": fmt_pct(stats.get("b_recovery_pct", 0), stats.get("b_recovery_n", 0)),
+                        "P2 Rec#": stats.get("b_recovery_n", 0) if stats.get("b_recovery_n", 0) > 0 else "--",
                         "Last Played": stats["last_played"]
                     }
 
