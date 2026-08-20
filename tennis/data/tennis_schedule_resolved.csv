@@ -1,17 +1,17 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-19,Live,Cincinnati Open,Madison Keys,Wang Xiyu,wta_17,wta_34,WTA,Hard
-2026-08-19,01:30,Cincinnati Open,Aryna Sabalenka,Sara Bejlek,wta_1,wta_41,WTA,Hard
+2026-08-19,Live,Cincinnati Open,Aryna Sabalenka,Sara Bejlek,wta_1,wta_41,WTA,Hard
 2026-08-19,Final,Cincinnati Open,Diana Shnaider,Elena Rybakina,wta_21,wta_3,WTA,Hard
 2026-08-19,Final,Cincinnati Open,Sorana Cirstea,Jessica Pegula,wta_30,wta_5,WTA,Hard
 2026-08-19,Final,Cincinnati Open,Coco Gauff,Marie Bouzkova,wta_4,wta_39,WTA,Hard
 2026-08-19,Final,Cincinnati Open,Marta Kostyuk,Mirra Andreeva,wta_26,wta_7,WTA,Hard
-2026-08-19,Final,Cincinnati Open,Linda Noskova,Amanda Anisimova,wta_118,wta_6,WTA,Hard
+2026-08-19,Final,Cincinnati Open,Linda Noskova,Amanda Anisimova,wta_14,wta_6,WTA,Hard
 2026-08-19,Final,Cincinnati Open,Iga Swiatek,Diane Parry,wta_2,wta_107,WTA,Hard
-2026-08-19,Live,Cincinnati Open,Nuno Borges,Brandon Nakashima,atp_44,atp_29,ATP,Hard
-2026-08-19,Live,Cincinnati Open,Taylor Fritz,Christopher O'Connell,atp_7,atp_95,ATP,Hard
-2026-08-19,01:00,Cincinnati Open,Frances Tiafoe,Felix Auger-Aliassime,atp_28,atp_6,ATP,Hard
-2026-08-19,01:00,Cincinnati Open,Jaime Faria,Lorenzo Musetti,atp_146,atp_5,ATP,Hard
+2026-08-19,Final,Cincinnati Open,Madison Keys,Wang Xiyu,wta_17,wta_34,WTA,Hard
 2026-08-19,Final,Cincinnati Open,Alexander Zverev,Tommy Paul,atp_4,atp_24,ATP,Hard
+2026-08-19,Final,Cincinnati Open,Frances Tiafoe,Felix Auger-Aliassime,atp_28,atp_6,ATP,Hard
 2026-08-19,Final,Cincinnati Open,Arthur Fils,Alex de Minaur,atp_40,atp_8,ATP,Hard
+2026-08-19,Final,Cincinnati Open,Taylor Fritz,Christopher O'Connell,atp_7,atp_95,ATP,Hard
 2026-08-19,Final,Cincinnati Open,Rafael Jodar,Flavio Cobolli,atp_117,atp_20,ATP,Hard
+2026-08-19,Final,Cincinnati Open,Jaime Faria,Lorenzo Musetti,atp_146,atp_5,ATP,Hard
 2026-08-19,Final,Cincinnati Open,Thiago Agustin Tirante,Jakub Mensik,atp_92,atp_16,ATP,Hard
+2026-08-19,Final,Cincinnati Open,Nuno Borges,Brandon Nakashima,atp_44,atp_29,ATP,Hard
