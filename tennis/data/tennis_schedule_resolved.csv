@@ -1,9 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-20,23:00,Cincinnati Open,Iga Swiatek,Elena Rybakina,wta_2,wta_3,WTA,Hard
+2026-08-20,TBD,Cincinnati Open,Iga Swiatek,Elena Rybakina,wta_2,wta_3,WTA,Hard
 2026-08-20,Final,Cincinnati Open,Amanda Anisimova,Jessica Pegula,wta_6,wta_5,WTA,Hard
-2026-08-20,Live,Cincinnati Open,Tommy Paul,Flavio Cobolli,atp_24,atp_20,ATP,Hard
-2026-08-20,00:30,Cincinnati Open,Thiago Agustin Tirante,Arthur Fils,atp_92,atp_40,ATP,Hard
-2026-08-21,17:00,Cincinnati Open,Sara Bejlek,Madison Keys,wta_41,wta_17,WTA,Hard
-2026-08-21,00:30,Cincinnati Open,Coco Gauff,Marta Kostyuk,wta_4,wta_26,WTA,Hard
-2026-08-21,19:00,Cincinnati Open,Taylor Fritz,Brandon Nakashima,atp_7,atp_29,ATP,Hard
-2026-08-21,23:00,Cincinnati Open,Lorenzo Musetti,Frances Tiafoe,atp_5,atp_28,ATP,Hard
+2026-08-20,00:40,Cincinnati Open,Thiago Agustin Tirante,Arthur Fils,atp_92,atp_40,ATP,Hard
+2026-08-20,Final,Cincinnati Open,Tommy Paul,Flavio Cobolli,atp_24,atp_20,ATP,Hard
