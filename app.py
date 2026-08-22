@@ -1093,16 +1093,18 @@ with streamlit_analytics.track():
                         "Non Sweep %": round(stats.get("non_sweep_pct", 0) * 100, 1),
                         "One-All %": round(stats.get("one_all_pct", 0) * 100, 1),
                         "P1 B%": fmt_pct(stats.get("a_bounce_pct", 0), stats.get("a_bounce_n", 0)),
-                        "P1 BB#": stats.get("a_bounce_n", 0) if stats.get("a_bounce_n", 0) > 0 else "--",
+                        "P1 BB#": str(stats.get("a_bounce_n", 0)) if stats.get("a_bounce_n", 0) > 0 else "--",
+
                         "P2 B%": fmt_pct(stats.get("b_bounce_pct", 0), stats.get("b_bounce_n", 0)),
-                        "P2 BB#": stats.get("b_bounce_n", 0) if stats.get("b_bounce_n", 0) > 0 else "--",
+                        "P2 BB#": str(stats.get("b_bounce_n", 0)) if stats.get("b_bounce_n", 0) > 0 else "--",
+
                         "P1 SR%": fmt_pct(stats.get("a_sr_pct", 0), stats.get("a_sr_n", 0)),
-                        "P1 SR#": stats.get("a_sr_n", 0) if stats.get("a_sr_n", 0) > 0 else "--",
+                        "P1 SR#": str(stats.get("a_sr_n", 0)) if stats.get("a_sr_n", 0) > 0 else "--",
                         "P2 SR%": fmt_pct(stats.get("b_sr_pct", 0), stats.get("b_sr_n", 0)),
-                        "P2 SR#": stats.get("b_sr_n", 0) if stats.get("b_sr_n", 0) > 0 else "--",
+                        "P2 SR#": str(stats.get("b_sr_n", 0)) if stats.get("b_sr_n", 0) > 0 else "--",
                         "P1 Sweeps": stats.get("sweeps_a", 0),
                         "P2 Sweeps": stats.get("sweeps_b", 0),
-                        "Sweep Gap": stats.get("matches_since_last_sweep") if stats.get("matches_since_last_sweep") is not None else "--",
+                        "Sweep Gap": str(stats.get("matches_since_last_sweep")) if stats.get("matches_since_last_sweep") is not None else "--",
                         "P1 Wins": stats["a_wins"],
                         "P2 Wins": stats["b_wins"],
                         "Win % (P1)": round(stats["win_pct"] * 100, 1),
@@ -1115,10 +1117,10 @@ with streamlit_analytics.track():
                         "PS": round(stats.get("PS", 0), 2),
                         "P1 SS": fmt_pct(stats.get("a_ss_score", 0), stats.get("a_recovery_n", 0)),
                         "P1 Rec%": fmt_pct(stats.get("a_recovery_pct", 0), stats.get("a_recovery_n", 0)),
-                        "P1 Rec#": stats.get("a_recovery_n", 0) if stats.get("a_recovery_n", 0) > 0 else "--",
+                        "P1 Rec#": str(stats.get("a_recovery_n", 0)) if stats.get("a_recovery_n", 0) > 0 else "--",
                         "P2 SS": fmt_pct(stats.get("b_ss_score", 0), stats.get("b_recovery_n", 0)),
                         "P2 Rec%": fmt_pct(stats.get("b_recovery_pct", 0), stats.get("b_recovery_n", 0)),
-                        "P2 Rec#": stats.get("b_recovery_n", 0) if stats.get("b_recovery_n", 0) > 0 else "--",
+                        "P2 Rec#": str(stats.get("b_recovery_n", 0)) if stats.get("b_recovery_n", 0) > 0 else "--",
                         "Last Played": stats["last_played"]
                     }
 
@@ -1191,10 +1193,12 @@ with streamlit_analytics.track():
                 mask = pd.Series(True, index=df_display.index)
                 for stat, threshold in stat_thresholds.items():
                     if stat in df_display.columns:
+                        # Convert to numeric, coercing '--' to NaN, then filter
+                        col_numeric = pd.to_numeric(df_display[stat], errors="coerce")
                         if "min" in threshold:
-                            mask &= df_display[stat] >= threshold["min"]
+                            mask &= col_numeric >= threshold["min"]
                         if "max" in threshold:
-                            mask &= df_display[stat] <= threshold["max"]
+                            mask &= col_numeric <= threshold["max"]
                 df_display = df_display[mask]
                 if df_display.empty:
                     st.warning("All rows filtered out — try adjusting thresholds.")
