@@ -1,21 +1,21 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-22,Live,Cincinnati Open,Brandon Nakashima,Frances Tiafoe,atp_29,atp_28,ATP,Hard
 2026-08-22,Final,Cincinnati Open,Flavio Cobolli,Arthur Fils,atp_20,atp_40,ATP,Hard
-2026-08-22,01:00,Cincinnati Open,Sara Bejlek,Coco Gauff,wta_41,wta_4,WTA,Hard
+2026-08-22,Final,Cincinnati Open,Brandon Nakashima,Frances Tiafoe,atp_29,atp_28,ATP,Hard
 2026-08-22,Final,Cincinnati Open,Jessica Pegula,Iga Swiatek,wta_5,wta_2,WTA,Hard
+2026-08-22,Final,Cincinnati Open,Sara Bejlek,Coco Gauff,wta_41,wta_4,WTA,Hard
 2026-08-22,Final,Winston-Salem Open,Abdullah Shelbayh,Ryan Seggerman,atp_318,atp_232,ATP,Hard
 2026-08-22,Final,Winston-Salem Open,Roger Pascual Ferra,Dhakshineswar Suresh,atp_787,atp_470,ATP,Hard
-2026-08-22,Final,Winston-Salem Open,Li Tu,Quinn Vandecasteele,wta_36,atp_70,WTA,Hard
+2026-08-22,Final,Winston-Salem Open,Li Tu,Quinn Vandecasteele,atp_371,atp_70,ATP,Hard
 2026-08-22,Final,Winston-Salem Open,Hunter Heck,Mees Rottgering,wta_231,wta_9010,WTA,Hard
 2026-08-22,Final,Winston-Salem Open,Sebastian Gorzny,Marc Polmans,atp_132,atp_366,ATP,Hard
 2026-08-22,Final,Winston-Salem Open,Pierre-Hugues Herbert,Kenta Miyoshi,atp_189,atp_637,ATP,Hard
 2026-08-22,Final,Winston-Salem Open,Felix Balshaw,Luca Pow,atp_321,atp_428,ATP,Hard
 2026-08-22,Final,Winston-Salem Open,Hugo Grenier,Neil Oberleitner,atp_191,atp_427,ATP,Hard
-2026-08-22,Live,Abierto GNP Seguros,Lanlana Tararudee,Maria Timofeeva,wta_124,wta_154,WTA,Hard
-2026-08-22,00:35,Abierto GNP Seguros,Anna Bondar,Elsa Jacquemot,wta_65,wta_57,WTA,Hard
+2026-08-22,Final,Abierto GNP Seguros,Anna Bondar,Elsa Jacquemot,wta_65,wta_57,WTA,Hard
 2026-08-22,Final,Abierto GNP Seguros,Maya Joint,Jessica Hinojosa Gomez,wta_29,atp_188,WTA,Hard
 2026-08-22,Final,Abierto GNP Seguros,Victoria Rodriguez,Yulia Putintseva,wta_418,wta_77,WTA,Hard
+2026-08-22,Final,Abierto GNP Seguros,Lanlana Tararudee,Maria Timofeeva,wta_124,wta_154,WTA,Hard
 2026-08-22,Final,Abierto GNP Seguros,En-Shuo Liang,Sinja Kraus,wta_360,wta_105,WTA,Hard
-2026-08-22,Final,Abierto GNP Seguros,Caroline Werner,Darja Vidmanova,wta_234,wta_127,WTA,Hard
-2026-08-22,Final,Abierto GNP Seguros,Panna Udvardy,Emiliana Arango,wta_93,wta_58,WTA,Hard
 2026-08-22,Final,Abierto GNP Seguros,Leolia Jeanjean,Kamilla Rakhimova,wta_115,wta_91,WTA,Hard
+2026-08-22,Final,Abierto GNP Seguros,Panna Udvardy,Emiliana Arango,wta_93,wta_58,WTA,Hard
+2026-08-22,Final,Abierto GNP Seguros,Caroline Werner,Darja Vidmanova,wta_234,wta_127,WTA,Hard
