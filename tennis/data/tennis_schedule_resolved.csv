@@ -8,11 +8,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-23,19:00,Winston-Salem Open,Sho Shimabukuro,Miomir Kecmanovic,atp_135,atp_83,ATP,Hard
 2026-08-23,19:00,Winston-Salem Open,Dino Prizmic,Cruz Hewitt,atp_121,atp_670,ATP,Hard
 2026-08-23,19:00,Winston-Salem Open,Giovanni Mpetshi Perricard,Jenson Brooksby,atp_58,atp_46,ATP,Hard
-2026-08-23,20:30,Winston-Salem Open,Martin Landaluce,Mattia Bellucci,atp_158,atp_109,ATP,Hard
+2026-08-23,20:30,Winston-Salem Open,Martin Landaluce,Mattia Bellucci,atp_383,atp_109,ATP,Hard
 2026-08-23,20:30,Winston-Salem Open,Francisco Comesana,Wu Yibing,atp_62,atp_145,ATP,Hard
 2026-08-23,22:30,Winston-Salem Open,Pablo Carreno Busta,Adolfo Daniel Vallejo,atp_122,atp_9021,ATP,Hard
 2026-08-23,00:00,Winston-Salem Open,Rinky Hijikata,Darwin Blanch,atp_112,atp_446,ATP,Hard
-2026-08-23,21:00,Abierto GNP Seguros,Maria Timofeeva,Kamilla Rakhimova,wta_54,wta_91,WTA,Hard
+2026-08-23,21:00,Abierto GNP Seguros,Maria Timofeeva,Kamilla Rakhimova,wta_154,wta_91,WTA,Hard
 2026-08-23,21:00,Abierto GNP Seguros,Panna Udvardy,Darja Vidmanova,wta_93,wta_127,WTA,Hard
 2026-08-23,22:30,Abierto GNP Seguros,Anna Bondar,En-Shuo Liang,wta_65,wta_360,WTA,Hard
 2026-08-23,22:30,Abierto GNP Seguros,Maya Joint,Yulia Putintseva,wta_29,wta_77,WTA,Hard
@@ -28,7 +28,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-23,17:00,Ennoble Care Philly Open,Hong Yi Cody Wong,Katie Volynets,atp_137,wta_96,ATP,
 2026-08-23,17:30,Ennoble Care Philly Open,Mia Pohankova,Mell Reasco Gonzalez,wta_346,wta_461,WTA,
 2026-08-23,17:30,Ennoble Care Philly Open,Liudmila Samsonova,Taylah Preston,wta_18,wta_147,WTA,
-2026-08-23,19:00,Ennoble Care Philly Open,Anastasia Zakharova,Anna Blinkova,wta_103,wta_82,WTA,
+2026-08-23,19:00,Ennoble Care Philly Open,Anastasia Zakharova,Anna Blinkova,wta_103,wta_65,WTA,
 2026-08-24,TBD,Winston-Salem Open,Kamil Majchrzak,Benjamin Bonzi,atp_56,atp_123,ATP,Hard
 2026-08-24,TBD,Winston-Salem Open,Valentin Royer,Marcos Giron,atp_59,atp_63,ATP,Hard
 2026-08-24,TBD,Winston-Salem Open,Adam Walton,Jesper de Jong,atp_93,atp_86,ATP,Hard
