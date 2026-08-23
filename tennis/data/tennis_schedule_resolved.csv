@@ -6,10 +6,9 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-23,17:00,Winston-Salem Open,Hugo Grenier,Mees Rottgering,atp_191,atp_9010,ATP,Hard
 2026-08-23,17:00,Winston-Salem Open,Pierre-Hugues Herbert,Quinn Vandecasteele,atp_189,atp_70,ATP,Hard
 2026-08-23,19:00,Winston-Salem Open,Sho Shimabukuro,Miomir Kecmanovic,atp_135,atp_83,ATP,Hard
-2026-08-23,19:00,Winston-Salem Open,Dino Prizmic,Cruz Hewitt,atp_121,atp_670,ATP,Hard
 2026-08-23,19:00,Winston-Salem Open,Giovanni Mpetshi Perricard,Jenson Brooksby,atp_58,atp_46,ATP,Hard
-2026-08-23,20:30,Winston-Salem Open,Martin Landaluce,Mattia Bellucci,atp_383,atp_109,ATP,Hard
-2026-08-23,20:30,Winston-Salem Open,Francisco Comesana,Wu Yibing,atp_62,atp_145,ATP,Hard
+2026-08-23,20:00,Winston-Salem Open,Francisco Comesana,Wu Yibing,atp_62,atp_145,ATP,Hard
+2026-08-23,20:30,Winston-Salem Open,Martin Landaluce,Mattia Bellucci,atp_158,atp_109,ATP,Hard
 2026-08-23,22:30,Winston-Salem Open,Pablo Carreno Busta,Adolfo Daniel Vallejo,atp_122,atp_9021,ATP,Hard
 2026-08-23,00:00,Winston-Salem Open,Rinky Hijikata,Darwin Blanch,atp_112,atp_446,ATP,Hard
 2026-08-23,21:00,Abierto GNP Seguros,Maria Timofeeva,Kamilla Rakhimova,wta_54,wta_91,WTA,Hard
@@ -19,18 +18,18 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-23,01:00,Abierto GNP Seguros,Antonia Ruzic,Nikola Bartunkova,wta_67,wta_104,WTA,Hard
 2026-08-23,01:30,Abierto GNP Seguros,Lilli Tagger,Yuliia Starodubtseva,wta_114,wta_101,WTA,Hard
 2026-08-23,03:00,Abierto GNP Seguros,Mayar Sherif,Oleksandra Oliynykova,wta_108,wta_71,WTA,Hard
-2026-08-23,Live,Ennoble Care Philly Open,Ariana Arseneault,Alexandra Osborne,wta_476,wta_344,WTA,
-2026-08-23,Live,Ennoble Care Philly Open,Jaeda Daniel,Dang Yiming,atp_402,wta_778,ATP,
-2026-08-23,Live,Ennoble Care Philly Open,Ekaterina Ovcharenko,Esha Velaga,wta_494,wta_9100,WTA,
-2026-08-23,15:30,Ennoble Care Philly Open,Ella Seidel,Capucine Jauffret,wta_95,wta_9101,WTA,
-2026-08-23,16:00,Ennoble Care Philly Open,Anna Frey,Ashlyn Krueger,wta_65,wta_100,WTA,
-2026-08-23,16:00,Ennoble Care Philly Open,Wang Xiyu,Ena Koike,wta_34,wta_200,WTA,
-2026-08-23,17:00,Ennoble Care Philly Open,Hong Yi Cody Wong,Katie Volynets,atp_137,wta_96,ATP,
-2026-08-23,17:30,Ennoble Care Philly Open,Mia Pohankova,Mell Reasco Gonzalez,wta_346,wta_461,WTA,
-2026-08-23,17:30,Ennoble Care Philly Open,Liudmila Samsonova,Taylah Preston,wta_18,wta_147,WTA,
-2026-08-23,19:00,Ennoble Care Philly Open,Anastasia Zakharova,Anna Blinkova,wta_103,wta_65,WTA,
+2026-08-23,Live,Ennoble Care Philly Open,Hong Yi Cody Wong,Katie Volynets,atp_137,wta_96,ATP,
+2026-08-23,Live,Ennoble Care Philly Open,Mia Pohankova,Mell Reasco Gonzalez,wta_346,wta_461,WTA,
+2026-08-23,19:00,Ennoble Care Philly Open,Anastasia Zakharova,Anna Blinkova,wta_103,wta_82,WTA,
+2026-08-23,Final,Ennoble Care Philly Open,Anna Frey,Ashlyn Krueger,wta_65,wta_100,WTA,
+2026-08-23,Final,Ennoble Care Philly Open,Wang Xiyu,Ena Koike,wta_34,wta_200,WTA,
+2026-08-23,Final,Ennoble Care Philly Open,Ella Seidel,Capucine Jauffret,wta_95,wta_9100,WTA,
+2026-08-23,Final,Ennoble Care Philly Open,Ariana Arseneault,Alexandra Osborne,wta_476,wta_344,WTA,
+2026-08-23,Final,Ennoble Care Philly Open,Jaeda Daniel,Dang Yiming,atp_402,wta_778,ATP,
+2026-08-23,Final,Ennoble Care Philly Open,Ekaterina Ovcharenko,Esha Velaga,wta_494,wta_9101,WTA,
 2026-08-24,TBD,Winston-Salem Open,Kamil Majchrzak,Benjamin Bonzi,atp_56,atp_123,ATP,Hard
 2026-08-24,TBD,Winston-Salem Open,Adam Walton,Jesper de Jong,atp_93,atp_86,ATP,Hard
+2026-08-24,TBD,Winston-Salem Open,Dino Prizmic,Cruz Hewitt,atp_121,atp_670,ATP,Hard
 2026-08-24,TBD,Winston-Salem Open,Lorenzo Sonego,Vit Kopriva,atp_64,atp_87,ATP,Hard
 2026-08-24,TBD,Abierto GNP Seguros,Clara Tauson,Renata Zarazua,wta_15,wta_87,WTA,Hard
 2026-08-24,TBD,Abierto GNP Seguros,Janice Tjen,Dayana Yastremska,wta_47,wta_43,WTA,Hard
@@ -42,4 +41,4 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-24,TBD,Ennoble Care Philly Open,Mananchaya Sawangkaew,Sloane Stephens,wta_198,wta_775,WTA,
 2026-08-24,TBD,Ennoble Care Philly Open,Tian Fangran,Lucciana Perez Alarcon,wta_277,wta_381,WTA,
 2026-08-24,TBD,Ennoble Care Philly Open,Simona Waltert,Fiona Crawley,wta_81,wta_201,WTA,
-2026-08-24,TBD,Ennoble Care Philly Open,Lois Boisson,Oksana Selekhmeteva,wta_35,wta_74,WTA,
+2026-08-24,TBD,Ennoble Care Philly Open,Oksana Selekhmeteva,Taylah Preston,wta_74,wta_147,WTA,
