@@ -1193,8 +1193,8 @@ with streamlit_analytics.track():
                 mask = pd.Series(True, index=df_display.index)
                 for stat, threshold in stat_thresholds.items():
                     if stat in df_display.columns:
-                        # Convert to numeric, coercing '--' to NaN, then filter
-                        col_numeric = pd.to_numeric(df_display[stat], errors="coerce")
+                        col = df_display[stat]
+                        col_numeric = pd.to_numeric(col, errors="coerce")
                         # Rows with "--" always pass the filter
                         is_dash = col == "--"
                         if "min" in threshold:
