@@ -1206,8 +1206,6 @@ with streamlit_analytics.track():
                     st.warning("All rows filtered out — try adjusting thresholds.")
                     st.stop()
 
-The is_dash | (col_numeric >= threshold["min"]) means: pass the filter if the value is "--" OR if the numeric value meets the threshold. So a pairing with "--" for Sweep Gap will always pass regardless of what min/max you set.
-
             if selected_stats:
                 display_cols = always_keep + [c for c in selected_stats if c in df_display.columns]
                 st.caption(f"Showing {len(display_cols)} columns (filtered view)")
