@@ -1195,14 +1195,18 @@ with streamlit_analytics.track():
                     if stat in df_display.columns:
                         # Convert to numeric, coercing '--' to NaN, then filter
                         col_numeric = pd.to_numeric(df_display[stat], errors="coerce")
+                        # Rows with "--" always pass the filter
+                        is_dash = col == "--"
                         if "min" in threshold:
-                            mask &= col_numeric >= threshold["min"]
+                            mask &= is_dash | (col_numeric >= threshold["min"])
                         if "max" in threshold:
-                            mask &= col_numeric <= threshold["max"]
+                            mask &= is_dash | (col_numeric <= threshold["max"])
                 df_display = df_display[mask]
                 if df_display.empty:
                     st.warning("All rows filtered out — try adjusting thresholds.")
                     st.stop()
+
+The is_dash | (col_numeric >= threshold["min"]) means: pass the filter if the value is "--" OR if the numeric value meets the threshold. So a pairing with "--" for Sweep Gap will always pass regardless of what min/max you set.
 
             if selected_stats:
                 display_cols = always_keep + [c for c in selected_stats if c in df_display.columns]
