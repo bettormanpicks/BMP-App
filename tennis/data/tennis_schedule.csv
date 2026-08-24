@@ -1,7 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2
 2026-08-23,Final,Cincinnati Open,Arthur Fils,Frances Tiafoe
 2026-08-23,Final,Cincinnati Open,Coco Gauff,Jessica Pegula
-2026-08-23,Live,Winston-Salem Open,Rinky Hijikata,Darwin Blanch
+2026-08-23,Final,Winston-Salem Open,Rinky Hijikata,Darwin Blanch
 2026-08-23,TBD,Winston-Salem Open,Pablo Carreno Busta,Adolfo Daniel Vallejo
 2026-08-23,Final,Winston-Salem Open,Martin Landaluce,Mattia Bellucci
 2026-08-23,Final,Winston-Salem Open,Francisco Comesana,Wu Yibing
@@ -11,11 +11,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-23,Final,Winston-Salem Open,Felix Balshaw,Sebastian Gorzny
 2026-08-23,Final,Winston-Salem Open,Hugo Grenier,Mees Rottgering
 2026-08-23,Final,Winston-Salem Open,Pierre-Hugues Herbert,Quinn Vandecasteele
-2026-08-23,Live,Abierto GNP Seguros,Anna Bondar,En-Shuo Liang
-2026-08-23,Live,Abierto GNP Seguros,Maya Joint,Yulia Putintseva
-2026-08-23,01:30,Abierto GNP Seguros,Lilli Tagger,Yuliia Starodubtseva
-2026-08-23,02:30,Abierto GNP Seguros,Antonia Ruzic,Nikola Bartunkova
-2026-08-23,03:00,Abierto GNP Seguros,Mayar Sherif,Oleksandra Oliynykova
+2026-08-23,Live,Abierto GNP Seguros,Antonia Ruzic,Nikola Bartunkova
+2026-08-23,Live,Abierto GNP Seguros,Mayar Sherif,Oleksandra Oliynykova
+2026-08-23,Final,Abierto GNP Seguros,Lilli Tagger,Yuliia Starodubtseva
+2026-08-23,Final,Abierto GNP Seguros,Maya Joint,Yulia Putintseva
+2026-08-23,Final,Abierto GNP Seguros,Anna Bondar,En-Shuo Liang
 2026-08-23,Final,Abierto GNP Seguros,Maria Timofeeva,Kamilla Rakhimova
 2026-08-23,Final,Abierto GNP Seguros,Panna Udvardy,Darja Vidmanova
 2026-08-23,Final,Ennoble Care Philly Open,Anna Frey,Ashlyn Krueger
@@ -29,7 +29,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-23,Final,Ennoble Care Philly Open,Ekaterina Ovcharenko,Esha Velaga
 2026-08-23,Final,Cincinnati Open,Arthur Fils,Frances Tiafoe
 2026-08-23,Final,Cincinnati Open,Coco Gauff,Jessica Pegula
-2026-08-23,Live,Winston-Salem Open,Rinky Hijikata,Darwin Blanch
+2026-08-23,Final,Winston-Salem Open,Rinky Hijikata,Darwin Blanch
 2026-08-23,TBD,Winston-Salem Open,Pablo Carreno Busta,Adolfo Daniel Vallejo
 2026-08-23,Final,Winston-Salem Open,Martin Landaluce,Mattia Bellucci
 2026-08-23,Final,Winston-Salem Open,Francisco Comesana,Wu Yibing
@@ -39,11 +39,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-23,Final,Winston-Salem Open,Felix Balshaw,Sebastian Gorzny
 2026-08-23,Final,Winston-Salem Open,Hugo Grenier,Mees Rottgering
 2026-08-23,Final,Winston-Salem Open,Pierre-Hugues Herbert,Quinn Vandecasteele
-2026-08-23,Live,Abierto GNP Seguros,Anna Bondar,En-Shuo Liang
-2026-08-23,Live,Abierto GNP Seguros,Maya Joint,Yulia Putintseva
-2026-08-23,01:30,Abierto GNP Seguros,Lilli Tagger,Yuliia Starodubtseva
-2026-08-23,02:30,Abierto GNP Seguros,Antonia Ruzic,Nikola Bartunkova
-2026-08-23,03:00,Abierto GNP Seguros,Mayar Sherif,Oleksandra Oliynykova
+2026-08-23,Live,Abierto GNP Seguros,Antonia Ruzic,Nikola Bartunkova
+2026-08-23,Live,Abierto GNP Seguros,Mayar Sherif,Oleksandra Oliynykova
+2026-08-23,Final,Abierto GNP Seguros,Lilli Tagger,Yuliia Starodubtseva
+2026-08-23,Final,Abierto GNP Seguros,Maya Joint,Yulia Putintseva
+2026-08-23,Final,Abierto GNP Seguros,Anna Bondar,En-Shuo Liang
 2026-08-23,Final,Abierto GNP Seguros,Maria Timofeeva,Kamilla Rakhimova
 2026-08-23,Final,Abierto GNP Seguros,Panna Udvardy,Darja Vidmanova
 2026-08-23,Final,Ennoble Care Philly Open,Anna Frey,Ashlyn Krueger

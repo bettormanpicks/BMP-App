@@ -1,7 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-23,Final,Cincinnati Open,Arthur Fils,Frances Tiafoe,atp_40,atp_28,ATP,Hard
 2026-08-23,Final,Cincinnati Open,Coco Gauff,Jessica Pegula,wta_4,wta_5,WTA,Hard
-2026-08-23,Live,Winston-Salem Open,Rinky Hijikata,Darwin Blanch,atp_112,atp_446,ATP,Hard
+2026-08-23,Final,Winston-Salem Open,Rinky Hijikata,Darwin Blanch,atp_112,atp_446,ATP,Hard
 2026-08-23,TBD,Winston-Salem Open,Pablo Carreno Busta,Adolfo Daniel Vallejo,atp_122,atp_9021,ATP,Hard
 2026-08-23,Final,Winston-Salem Open,Martin Landaluce,Mattia Bellucci,atp_158,atp_109,ATP,Hard
 2026-08-23,Final,Winston-Salem Open,Francisco Comesana,Wu Yibing,atp_62,atp_145,ATP,Hard
@@ -11,17 +11,17 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-23,Final,Winston-Salem Open,Felix Balshaw,Sebastian Gorzny,atp_321,atp_132,ATP,Hard
 2026-08-23,Final,Winston-Salem Open,Hugo Grenier,Mees Rottgering,atp_191,atp_9010,ATP,Hard
 2026-08-23,Final,Winston-Salem Open,Pierre-Hugues Herbert,Quinn Vandecasteele,atp_189,atp_70,ATP,Hard
-2026-08-23,Live,Abierto GNP Seguros,Anna Bondar,En-Shuo Liang,wta_65,wta_360,WTA,Hard
-2026-08-23,Live,Abierto GNP Seguros,Maya Joint,Yulia Putintseva,wta_29,wta_77,WTA,Hard
-2026-08-23,01:30,Abierto GNP Seguros,Lilli Tagger,Yuliia Starodubtseva,wta_114,wta_101,WTA,Hard
-2026-08-23,02:30,Abierto GNP Seguros,Antonia Ruzic,Nikola Bartunkova,wta_67,wta_104,WTA,Hard
-2026-08-23,03:00,Abierto GNP Seguros,Mayar Sherif,Oleksandra Oliynykova,wta_108,wta_71,WTA,Hard
+2026-08-23,Live,Abierto GNP Seguros,Antonia Ruzic,Nikola Bartunkova,wta_67,wta_104,WTA,Hard
+2026-08-23,Live,Abierto GNP Seguros,Mayar Sherif,Oleksandra Oliynykova,wta_108,wta_71,WTA,Hard
+2026-08-23,Final,Abierto GNP Seguros,Lilli Tagger,Yuliia Starodubtseva,wta_114,wta_101,WTA,Hard
+2026-08-23,Final,Abierto GNP Seguros,Maya Joint,Yulia Putintseva,wta_29,wta_77,WTA,Hard
+2026-08-23,Final,Abierto GNP Seguros,Anna Bondar,En-Shuo Liang,wta_65,wta_360,WTA,Hard
 2026-08-23,Final,Abierto GNP Seguros,Maria Timofeeva,Kamilla Rakhimova,wta_54,wta_91,WTA,Hard
 2026-08-23,Final,Abierto GNP Seguros,Panna Udvardy,Darja Vidmanova,wta_93,wta_127,WTA,Hard
 2026-08-23,Final,Ennoble Care Philly Open,Anna Frey,Ashlyn Krueger,wta_65,wta_100,WTA,
 2026-08-23,Final,Ennoble Care Philly Open,Hong Yi Cody Wong,Katie Volynets,atp_137,wta_96,ATP,
 2026-08-23,Final,Ennoble Care Philly Open,Anastasia Zakharova,Anna Blinkova,wta_103,wta_65,WTA,
-2026-08-23,Final,Ennoble Care Philly Open,Mia Pohankova,Mell Reasco Gonzalez,wta_273,wta_461,WTA,
+2026-08-23,Final,Ennoble Care Philly Open,Mia Pohankova,Mell Reasco Gonzalez,wta_346,wta_461,WTA,
 2026-08-23,Final,Ennoble Care Philly Open,Wang Xiyu,Ena Koike,wta_34,wta_200,WTA,
 2026-08-23,Final,Ennoble Care Philly Open,Ella Seidel,Capucine Jauffret,wta_95,wta_9100,WTA,
 2026-08-23,Final,Ennoble Care Philly Open,Ariana Arseneault,Alexandra Osborne,wta_476,wta_344,WTA,
