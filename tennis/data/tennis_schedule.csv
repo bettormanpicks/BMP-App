@@ -1,10 +1,10 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-08-24,15:00,US Open,Jacob Fearnley,Roberto Carballes Baena
-2026-08-24,15:00,US Open,Luka Pavlovic,Juan Pablo Varillas
-2026-08-24,15:00,US Open,Kimmer Coppejans,Jurij Rodionov
-2026-08-24,15:00,US Open,Diego Dedura,Frederico Ferreira Silva
-2026-08-24,15:00,US Open,Titouan Droguet,Daniel Rincon
-2026-08-24,15:00,US Open,Mark Lajal,Jordan Lee
+2026-08-24,Live,US Open,Jacob Fearnley,Roberto Carballes Baena
+2026-08-24,Live,US Open,Kimmer Coppejans,Jurij Rodionov
+2026-08-24,Live,US Open,Mark Lajal,Jordan Lee
+2026-08-24,Live,US Open,Luka Pavlovic,Juan Pablo Varillas
+2026-08-24,Live,US Open,Diego Dedura,Frederico Ferreira Silva
+2026-08-24,Live,US Open,Titouan Droguet,Daniel Rincon
 2026-08-24,16:30,US Open,Franco Roncadelli,Elias Ymer
 2026-08-24,16:30,US Open,Spencer Johnson,Cristian Garin
 2026-08-24,16:30,US Open,Guy Den Ouden,Genaro Alberto Olivieri
@@ -31,14 +31,14 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-24,21:00,US Open,Laslo Djere,Alexandre Muller
 2026-08-24,21:00,US Open,Otto Virtanen,Ugo Blanchet
 2026-08-24,21:00,US Open,Jack Pinnington Jones,Trevor Svajda
-2026-08-24,15:00,US Open,Zheng Qinwen,You Xiaodi
-2026-08-24,15:00,US Open,Clara Burel,Ma YeXin
-2026-08-24,15:00,US Open,Elena Pridankina,Aliona Falei
-2026-08-24,15:00,US Open,Rebecca Marino,Fiona Ferro
-2026-08-24,15:00,US Open,Rebecca Sramkova,Alevtina Ibragimova
-2026-08-24,15:00,US Open,Erika Andreeva,Mariam Bolkvadze
-2026-08-24,15:00,US Open,Kayla Day,Julieta Pareja
-2026-08-24,15:00,US Open,Rebeka Masarova,Iryna Shymanovich
+2026-08-24,Live,US Open,Clara Burel,Ma YeXin
+2026-08-24,Live,US Open,Rebecca Marino,Fiona Ferro
+2026-08-24,Live,US Open,Rebecca Sramkova,Alevtina Ibragimova
+2026-08-24,Live,US Open,Erika Andreeva,Mariam Bolkvadze
+2026-08-24,Live,US Open,Kayla Day,Julieta Pareja
+2026-08-24,Live,US Open,Rebeka Masarova,Iryna Shymanovich
+2026-08-24,Live,US Open,Zheng Qinwen,You Xiaodi
+2026-08-24,Live,US Open,Elena Pridankina,Aliona Falei
 2026-08-24,16:30,US Open,Anouk Koevermans,Carole Monnet
 2026-08-24,16:30,US Open,Linda Klimovicova,Lisa Pigato
 2026-08-24,16:30,US Open,Madison Brengle,Anastasia Gasanova
@@ -80,9 +80,9 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-24,22:30,Abierto GNP Seguros,Janice Tjen,Dayana Yastremska
 2026-08-24,01:30,Abierto GNP Seguros,Clara Tauson,Renata Zarazua
 2026-08-24,03:00,Abierto GNP Seguros,Diane Parry,Donna Vekic
-2026-08-24,15:00,Ennoble Care Philly Open,Ella Seidel,Jessica Bouzas Maneiro
-2026-08-24,15:00,Ennoble Care Philly Open,Veronika Erjavec,Julia Grabher
-2026-08-24,15:00,Ennoble Care Philly Open,Jaeda Daniel,Kylie Collins
+2026-08-24,Live,Ennoble Care Philly Open,Ella Seidel,Jessica Bouzas Maneiro
+2026-08-24,Live,Ennoble Care Philly Open,Veronika Erjavec,Julia Grabher
+2026-08-24,Live,Ennoble Care Philly Open,Jaeda Daniel,Kylie Collins
 2026-08-24,16:30,Ennoble Care Philly Open,Oksana Selekhmeteva,Taylah Preston
 2026-08-24,16:30,Ennoble Care Philly Open,Lois Boisson,Capucine Jauffret
 2026-08-24,16:30,Ennoble Care Philly Open,Tian Fangran,Lucciana Perez Alarcon
