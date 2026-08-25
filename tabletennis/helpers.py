@@ -444,6 +444,65 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         deuce_pct = None
         avg_set_margin = None
 
+    # --------------------------------------------------
+    # Big Loss Recovery % (BLR%)
+    # BLR2%: lost set 1 by 5+ points, how often won set 2
+    # BLR3%: lost set 1 (any margin) AND lost set 2 by 5+, how often won set 3
+    # --------------------------------------------------
+    def player_blr(player_name):
+        # BLR2: lost set 1 by 5+ points
+        blr2_denom = [
+            m for m in matches
+            if len(m["parsed_sets"]) >= 2 and (
+                (m["player1"] == player_name and m["s1_winner"] == 2 and
+                 abs(m["parsed_sets"][0][0] - m["parsed_sets"][0][1]) >= 5) or
+                (m["player2"] == player_name and m["s1_winner"] == 1 and
+                 abs(m["parsed_sets"][0][0] - m["parsed_sets"][0][1]) >= 5)
+            )
+        ]
+        blr2_n = len(blr2_denom)
+        if blr2_n > 0:
+            blr2_num = sum(
+                1 for m in blr2_denom
+                if (m["player1"] == player_name and m["s2_winner"] == 1) or
+                   (m["player2"] == player_name and m["s2_winner"] == 2)
+            )
+            blr2_pct = blr2_num / blr2_n
+        else:
+            blr2_pct = None
+
+        # BLR3: lost set 1 (any margin) AND lost set 2 by 5+
+        blr3_denom = [
+            m for m in matches
+            if len(m["parsed_sets"]) >= 3 and (
+                (m["player1"] == player_name and
+                 m["s1_winner"] == 2 and
+                 m["s2_winner"] == 2 and
+                 abs(m["parsed_sets"][1][0] - m["parsed_sets"][1][1]) >= 5) or
+                (m["player2"] == player_name and
+                 m["s1_winner"] == 1 and
+                 m["s2_winner"] == 1 and
+                 abs(m["parsed_sets"][1][0] - m["parsed_sets"][1][1]) >= 5)
+            )
+        ]
+        blr3_n = len(blr3_denom)
+        if blr3_n > 0:
+            blr3_num = sum(
+                1 for m in blr3_denom
+                if m["s3_winner"] is not None and (
+                    (m["player1"] == player_name and m["s3_winner"] == 1) or
+                    (m["player2"] == player_name and m["s3_winner"] == 2)
+                )
+            )
+            blr3_pct = blr3_num / blr3_n
+        else:
+            blr3_pct = None
+
+        return blr2_pct, blr2_n, blr3_pct, blr3_n
+
+    a_blr2_pct, a_blr2_n, a_blr3_pct, a_blr3_n = player_blr(player_a)
+    b_blr2_pct, b_blr2_n, b_blr3_pct, b_blr3_n = player_blr(player_b)
+
     return {
         "matches":        total,
         "a_wins":         a_wins,
@@ -471,6 +530,15 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         "a_sr_n":         a_sr_n,
         "b_sr_pct":       b_sr_pct,
         "b_sr_n":         b_sr_n,
+        # Big loss recovery
+        "a_blr2_pct": a_blr2_pct,
+        "a_blr2_n":   a_blr2_n,
+        "a_blr3_pct": a_blr3_pct,
+        "a_blr3_n":   a_blr3_n,
+        "b_blr2_pct": b_blr2_pct,
+        "b_blr2_n":   b_blr2_n,
+        "b_blr3_pct": b_blr3_pct,
+        "b_blr3_n":   b_blr3_n,
         # Exact set count percentages
         "pct_3sets":      pct_3sets,
         "pct_4sets":      pct_4sets,
@@ -514,6 +582,14 @@ def _empty_stats():
         "a_sr_n":         0,
         "b_sr_pct":       0,
         "b_sr_n":         0,
+        "a_blr2_pct": None,
+        "a_blr2_n":   0,
+        "a_blr3_pct": None,
+        "a_blr3_n":   0,
+        "b_blr2_pct": None,
+        "b_blr2_n":   0,
+        "b_blr3_pct": None,
+        "b_blr3_n":   0,
         # Exact set count percentages
         "pct_3sets":      0,
         "pct_4sets":      0,
