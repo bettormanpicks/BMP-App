@@ -425,6 +425,25 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
             matches_since_last_sweep = i
             break
 
+    # --------------------------------------------------
+    # Deuce Frequency (D%) and Average Set Margin (ASM)
+    # Only uses completed sets: max(p1,p2) >= 11 AND abs(p1-p2) >= 2
+    # Both use the windowed matches (L25/L50/ALL)
+    # --------------------------------------------------
+    all_sets = []
+    for m in matches:
+        for p1_pts, p2_pts in m["parsed_sets"]:
+            if max(p1_pts, p2_pts) >= 11 and abs(p1_pts - p2_pts) >= 2:
+                all_sets.append((p1_pts, p2_pts))
+
+    if all_sets:
+        deuce_sets = sum(1 for p1_pts, p2_pts in all_sets if p1_pts >= 10 and p2_pts >= 10)
+        deuce_pct = deuce_sets / len(all_sets)
+        avg_set_margin = sum(abs(p1_pts - p2_pts) for p1_pts, p2_pts in all_sets) / len(all_sets)
+    else:
+        deuce_pct = None
+        avg_set_margin = None
+
     return {
         "matches":        total,
         "a_wins":         a_wins,
@@ -434,6 +453,8 @@ def compute_h2h_stats(h2h_index, player_a, player_b, window="ALL"):
         "sweeps_a":       sweeps_a,
         "sweeps_b":       sweeps_b,
         "matches_since_last_sweep": matches_since_last_sweep,
+        "deuce_pct":       deuce_pct,
+        "avg_set_margin":  avg_set_margin,
         "non_sweep_pct":  non_sweep_pct,
         "one_all_pct":    one_all_pct,
         "avg_total_sets": avg_total_sets,
@@ -477,6 +498,8 @@ def _empty_stats():
         "sweeps_a":       0,
         "sweeps_b":       0,
         "matches_since_last_sweep": None,
+        "deuce_pct":       None,
+        "avg_set_margin":  None,
         "non_sweep_pct":  0,
         "one_all_pct":    0,
         "avg_total_sets": 0,
