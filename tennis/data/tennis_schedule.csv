@@ -1,11 +1,11 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-08-25,15:00,US Open,SoonWoo Kwon,Dusan Lajovic
-2026-08-25,15:00,US Open,Henri Squire,David Jorda Sanchis
-2026-08-25,15:00,US Open,Sebastian Ofner,Kei Nishikori
-2026-08-25,15:00,US Open,Michael Antonius,Henry Searle
-2026-08-25,15:00,US Open,Timofey Skatov,Gilles Arnaud Bailly
-2026-08-25,15:00,US Open,Braden Shick,Clement Tabur
-2026-08-25,15:00,US Open,Shintaro Mochizuki,Daniel Milavsky
+2026-08-25,Live,US Open,SoonWoo Kwon,Dusan Lajovic
+2026-08-25,Live,US Open,Henri Squire,David Jorda Sanchis
+2026-08-25,Live,US Open,Michael Antonius,Henry Searle
+2026-08-25,Live,US Open,Timofey Skatov,Gilles Arnaud Bailly
+2026-08-25,Live,US Open,Braden Shick,Clement Tabur
+2026-08-25,Live,US Open,Shintaro Mochizuki,Daniel Milavsky
+2026-08-25,Live,US Open,Sebastian Ofner,Kei Nishikori
 2026-08-25,16:30,US Open,Arthur Gea,Sumit Nagal
 2026-08-25,16:30,US Open,Moise Kouame,Nishesh Basavareddy
 2026-08-25,16:30,US Open,Clement Chidekh,Federico Coria
@@ -31,13 +31,13 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-25,21:00,US Open,Taro Daniel,Andrew Johnson
 2026-08-25,21:00,US Open,Jack Secord,Tristan Schoolkate
 2026-08-25,21:00,US Open,Nicolas Mejia,Liam Draxl
-2026-08-25,15:00,US Open,Jodie Burrage,Guiomar Maristany Zuleta De Reales
-2026-08-25,15:00,US Open,Elizabeth Mandlik,Kristina Penickova
-2026-08-25,15:00,US Open,Lucie Havlickova,Elizara Yaneva
-2026-08-25,15:00,US Open,Janae Preston,Nao Hibino
-2026-08-25,15:00,US Open,Moyuka Uchijima,Polona Hercog
-2026-08-25,15:00,US Open,Laura Samson,Tamara Zidansek
-2026-08-25,15:00,US Open,Jordyn Hazelitt,Harriet Dart
+2026-08-25,Live,US Open,Jodie Burrage,Guiomar Maristany Zuleta De Reales
+2026-08-25,Live,US Open,Elizabeth Mandlik,Kristina Penickova
+2026-08-25,Live,US Open,Lucie Havlickova,Elizara Yaneva
+2026-08-25,Live,US Open,Janae Preston,Nao Hibino
+2026-08-25,Live,US Open,Moyuka Uchijima,Polona Hercog
+2026-08-25,Live,US Open,Laura Samson,Tamara Zidansek
+2026-08-25,Live,US Open,Jordyn Hazelitt,Harriet Dart
 2026-08-25,16:30,US Open,Alina Charaeva,Susan Bandecchi
 2026-08-25,16:30,US Open,Suzan Lamens,Emerson Jones
 2026-08-25,16:30,US Open,Viktoria Hruncakova,Julia Riera
@@ -84,7 +84,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-25,23:00,Abierto GNP Seguros,Panna Udvardy,Maya Joint
 2026-08-25,01:30,Abierto GNP Seguros,Oleksandra Oliynykova,Diane Parry
 2026-08-25,03:00,Abierto GNP Seguros,Nikola Bartunkova,Anastasia Potapova
-2026-08-25,15:00,Ennoble Care Philly Open,Wang Xiyu,Jessica Bouzas Maneiro
+2026-08-25,Live,Ennoble Care Philly Open,Wang Xiyu,Jessica Bouzas Maneiro
 2026-08-25,16:30,Ennoble Care Philly Open,Mia Pohankova,Katie Volynets
 2026-08-25,18:00,Ennoble Care Philly Open,Anastasia Zakharova,Kylie Collins
 2026-08-25,22:00,Ennoble Care Philly Open,Julia Grabher,Ashlyn Krueger
