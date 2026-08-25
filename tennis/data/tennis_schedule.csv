@@ -1,17 +1,17 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-08-24,Live,US Open,Dalibor Svrcina,Felipe Meligeni Alves
-2026-08-24,Live,US Open,Harry Wendelken,Stefano Travaglia
-2026-08-24,Live,US Open,Raul Brancaccio,Thiago Seyboth Wild
-2026-08-24,Live,US Open,Keegan Smith,Alexis Galarneau
-2026-08-24,Live,US Open,Francesco Passaro,Felix Gill
-2026-08-24,21:25,US Open,Lukas Neumayer,James McCabe
-2026-08-24,21:30,US Open,Stefano Napolitano,Mackenzie McDonald
-2026-08-24,21:30,US Open,Pol Martin Tiffon,Tom Gentzsch
-2026-08-24,21:35,US Open,Chak Lam Coleman Wong,Elmer Moller
-2026-08-24,21:40,US Open,Otto Virtanen,Ugo Blanchet
-2026-08-24,22:00,US Open,Jay Clarke,Rei Sakamoto
-2026-08-24,22:00,US Open,Laslo Djere,Alexandre Muller
-2026-08-24,22:30,US Open,Jack Pinnington Jones,Trevor Svajda
+2026-08-24,Live,US Open,Jack Pinnington Jones,Trevor Svajda
+2026-08-24,Final,US Open,Laslo Djere,Alexandre Muller
+2026-08-24,Final,US Open,Jay Clarke,Rei Sakamoto
+2026-08-24,Final,US Open,Stefano Napolitano,Mackenzie McDonald
+2026-08-24,Final,US Open,Chak Lam Coleman Wong,Elmer Moller
+2026-08-24,Final,US Open,Pol Martin Tiffon,Tom Gentzsch
+2026-08-24,Final,US Open,Otto Virtanen,Ugo Blanchet
+2026-08-24,Final,US Open,Lukas Neumayer,James McCabe
+2026-08-24,Final,US Open,Francesco Passaro,Felix Gill
+2026-08-24,Final,US Open,Keegan Smith,Alexis Galarneau
+2026-08-24,Final,US Open,Raul Brancaccio,Thiago Seyboth Wild
+2026-08-24,Final,US Open,Harry Wendelken,Stefano Travaglia
+2026-08-24,Final,US Open,Dalibor Svrcina,Felipe Meligeni Alves
 2026-08-24,Final,US Open,Gonzalo Bueno,Billy Harris
 2026-08-24,Final,US Open,Toby Samuel,Francesco Maestrelli
 2026-08-24,Final,US Open,Remy Bertola,Alejandro Moro Canas
@@ -31,22 +31,22 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-24,Final,US Open,Jacob Fearnley,Roberto Carballes Baena
 2026-08-24,Final,US Open,Kimmer Coppejans,Jurij Rodionov
 2026-08-24,Final,US Open,Mark Lajal,Jordan Lee
-2026-08-24,Live,US Open,Claire Liu,Heather Watson
-2026-08-24,Live,US Open,Victoria Jimenez Kasintseva,Francisca Jorge
-2026-08-24,Live,US Open,Angela Fita Boluda,Zhu Lin
-2026-08-24,Live,US Open,Jazmin Ortenzi,Himeno Sakatsume
-2026-08-24,Live,US Open,Greet Minnen,Jeline Vandromme
-2026-08-24,Live,US Open,Robin Montgomery,Kayla Cross
-2026-08-24,Live,US Open,Polina Kudermetova,Linda Fruhvirtova
-2026-08-24,Live,US Open,Carson Branstine,Clervie Ngounoue
-2026-08-24,Live,US Open,Savannah Broadus,Tyra Caterina Grant
-2026-08-24,21:30,US Open,Gabriela Knutson,Varvara Lepchenko
-2026-08-24,21:30,US Open,Laura Pigossi,Despina Papamichail
-2026-08-24,21:30,US Open,Dominika Salkova,Akasha Urhobo
-2026-08-24,21:50,US Open,Caroline Dolehide,Veronika Podrez
-2026-08-24,22:30,US Open,Ekaterine Gorgodze,Katarzyna Kawa
-2026-08-24,22:30,US Open,Eva Vedder,Bianca Andreescu
+2026-08-24,Live,US Open,Eva Vedder,Bianca Andreescu
+2026-08-24,Final,US Open,Gabriela Knutson,Varvara Lepchenko
+2026-08-24,Final,US Open,Caroline Dolehide,Veronika Podrez
+2026-08-24,Final,US Open,Dominika Salkova,Akasha Urhobo
+2026-08-24,Final,US Open,Ekaterine Gorgodze,Katarzyna Kawa
+2026-08-24,Final,US Open,Laura Pigossi,Despina Papamichail
+2026-08-24,Final,US Open,Savannah Broadus,Tyra Caterina Grant
+2026-08-24,Final,US Open,Carson Branstine,Clervie Ngounoue
+2026-08-24,Final,US Open,Polina Kudermetova,Linda Fruhvirtova
+2026-08-24,Final,US Open,Robin Montgomery,Kayla Cross
+2026-08-24,Final,US Open,Jazmin Ortenzi,Himeno Sakatsume
+2026-08-24,Final,US Open,Greet Minnen,Jeline Vandromme
+2026-08-24,Final,US Open,Victoria Jimenez Kasintseva,Francisca Jorge
+2026-08-24,Final,US Open,Angela Fita Boluda,Zhu Lin
 2026-08-24,TBD,US Open,Lucia Bronzetti,Luisina Giovannini
+2026-08-24,Final,US Open,Claire Liu,Heather Watson
 2026-08-24,Final,US Open,Polina Iatcenko,Julie Struplova
 2026-08-24,Final,US Open,Mia Ristic,Ayana Akli
 2026-08-24,Final,US Open,Anouk Koevermans,Carole Monnet
@@ -63,112 +63,123 @@ Date,Time,Tournament,Player 1,Player 2
 2026-08-24,Final,US Open,Rebecca Marino,Fiona Ferro
 2026-08-24,Final,US Open,Rebecca Sramkova,Alevtina Ibragimova
 2026-08-24,Final,US Open,Erika Andreeva,Mariam Bolkvadze
-2026-08-24,Live,Winston-Salem Open,Sebastian Gorzny,Cruz Hewitt
-2026-08-24,Live,Winston-Salem Open,Martin Damm,Abdullah Shelbayh
-2026-08-24,Live,Winston-Salem Open,Jan Choinski,Mees Rottgering
-2026-08-24,21:30,Winston-Salem Open,Roman Safiullin,Hugo Grenier
-2026-08-24,22:00,Winston-Salem Open,Felix Balshaw,Aleksandar Kovacevic
-2026-08-24,22:30,Winston-Salem Open,Jenson Brooksby,Stefanos Tsitsipas
-2026-08-24,00:00,Winston-Salem Open,Daniel Altmaier,Francisco Comesana
+2026-08-24,Live,Winston-Salem Open,Felix Balshaw,Aleksandar Kovacevic
+2026-08-24,00:45,Winston-Salem Open,Daniel Altmaier,Francisco Comesana
+2026-08-24,Final,Winston-Salem Open,Jenson Brooksby,Stefanos Tsitsipas
+2026-08-24,Final,Winston-Salem Open,Roman Safiullin,Hugo Grenier
+2026-08-24,Final,Winston-Salem Open,Jan Choinski,Mees Rottgering
+2026-08-24,Final,Winston-Salem Open,Martin Damm,Abdullah Shelbayh
 2026-08-24,Final,Winston-Salem Open,Adam Walton,Jesper de Jong
+2026-08-24,Final,Winston-Salem Open,Sebastian Gorzny,Cruz Hewitt
 2026-08-24,Final,Winston-Salem Open,Kamil Majchrzak,Benjamin Bonzi
 2026-08-24,Final,Winston-Salem Open,Dhakshineswar Suresh,Marcos Giron
 2026-08-24,Final,Winston-Salem Open,Quinn Vandecasteele,James Duckworth
 2026-08-24,Final,Winston-Salem Open,Lorenzo Sonego,Pierre-Hugues Herbert
-2026-08-24,Live,Abierto GNP Seguros,Camila Osorio,Ann Li
-2026-08-24,22:30,Abierto GNP Seguros,Alycia Parks,Petra Marcinko
-2026-08-24,22:30,Abierto GNP Seguros,Janice Tjen,Dayana Yastremska
+2026-08-24,Live,Abierto GNP Seguros,Janice Tjen,Dayana Yastremska
+2026-08-24,Live,Abierto GNP Seguros,Alycia Parks,Petra Marcinko
 2026-08-24,01:30,Abierto GNP Seguros,Clara Tauson,Renata Zarazua
 2026-08-24,03:00,Abierto GNP Seguros,Diane Parry,Donna Vekic
-2026-08-24,Live,Ennoble Care Philly Open,Talia Gibson,Lizette Cabrera
-2026-08-24,Live,Ennoble Care Philly Open,Ekaterina Ovcharenko,Kaitlin Quevedo
-2026-08-24,Live,Ennoble Care Philly Open,Simona Waltert,Fiona Crawley
-2026-08-24,22:00,Ennoble Care Philly Open,Mananchaya Sawangkaew,Sloane Stephens
+2026-08-24,Final,Abierto GNP Seguros,Camila Osorio,Ann Li
+2026-08-24,Live,Ennoble Care Philly Open,Mananchaya Sawangkaew,Sloane Stephens
 2026-08-24,Final,Ennoble Care Philly Open,Ariana Arseneault,Tereza Valentova
+2026-08-24,Final,Ennoble Care Philly Open,Talia Gibson,Lizette Cabrera
+2026-08-24,Final,Ennoble Care Philly Open,Simona Waltert,Fiona Crawley
 2026-08-24,Final,Ennoble Care Philly Open,Ella Seidel,Jessica Bouzas Maneiro
 2026-08-24,Final,Ennoble Care Philly Open,Oksana Selekhmeteva,Taylah Preston
+2026-08-24,Final,Ennoble Care Philly Open,Ekaterina Ovcharenko,Kaitlin Quevedo
 2026-08-24,TBD,Ennoble Care Philly Open,Lois Boisson,Capucine Jauffret
 2026-08-24,Final,Ennoble Care Philly Open,Tian Fangran,Lucciana Perez Alarcon
 2026-08-24,Final,Ennoble Care Philly Open,Jaeda Daniel,Kylie Collins
 2026-08-24,Final,Ennoble Care Philly Open,Veronika Erjavec,Julia Grabher
-2026-08-25,TBD,US Open,Arthur Gea,Sumit Nagal
-2026-08-25,TBD,US Open,SoonWoo Kwon,Dusan Lajovic
-2026-08-25,TBD,US Open,Hugo Gaston,Guido Ivan Justo
-2026-08-25,TBD,US Open,Moise Kouame,Nishesh Basavareddy
-2026-08-25,TBD,US Open,Henri Squire,David Jorda Sanchis
-2026-08-25,TBD,US Open,Jerome Kym,Dan Added
-2026-08-25,TBD,US Open,Colton Smith,Andrea Pellegrino
-2026-08-25,TBD,US Open,Andre Ilagan,Tristan Boyer
-2026-08-25,TBD,US Open,Clement Chidekh,Federico Coria
-2026-08-25,TBD,US Open,Luka Mikrut,Nikolas Sanchez Izquierdo
-2026-08-25,TBD,US Open,Alex Bolt,Pablo Llamas Ruiz
-2026-08-25,TBD,US Open,Sebastian Ofner,Kei Nishikori
-2026-08-25,TBD,US Open,Michael Antonius,Henry Searle
-2026-08-25,TBD,US Open,Timofey Skatov,Gilles Arnaud Bailly
-2026-08-25,TBD,US Open,Lorenzo Giustino,Grigor Dimitrov
-2026-08-25,TBD,US Open,SeongChan Hong,Nikoloz Basilashvili
-2026-08-25,TBD,US Open,Taro Daniel,Andrew Johnson
-2026-08-25,TBD,US Open,Jack Secord,Tristan Schoolkate
-2026-08-25,TBD,US Open,Henrique Rocha,Michael Mmoh
-2026-08-25,TBD,US Open,Bernard Tomic,Lloyd Harris
-2026-08-25,TBD,US Open,Gauthier Onclin,Vitaliy Sachko
-2026-08-25,TBD,US Open,Braden Shick,Clement Tabur
-2026-08-25,TBD,US Open,Shintaro Mochizuki,Daniel Milavsky
-2026-08-25,TBD,US Open,Stefanos Sakellaridis,Christopher O'Connell
-2026-08-25,TBD,US Open,Nicolas Mejia,Liam Draxl
-2026-08-25,TBD,US Open,Moez Echargui,Hugo Dellien
-2026-08-25,TBD,US Open,Zsombor Piros,Max Alcala Gurri
-2026-08-25,TBD,US Open,Pedro Martinez,Daniil Glinka
-2026-08-25,TBD,US Open,Maks Kasnikowski,Nicolai Budkov Kjaer
-2026-08-25,TBD,US Open,Bu Yunchaokete,Rio Noguchi
-2026-08-25,TBD,US Open,Zdenek Kolar,Borna Gojo
-2026-08-25,TBD,US Open,Luca Nardi,Federico Cina
-2026-08-25,TBD,US Open,Yuan Yue,Guo Hanyu
-2026-08-25,TBD,US Open,Julia Avdeeva,Katherine Sebov
-2026-08-25,TBD,US Open,Katie Swan,Katrina Scott
-2026-08-25,TBD,US Open,Harmony Tan,Mary Stoiana
-2026-08-25,TBD,US Open,Jodie Burrage,Guiomar Maristany Zuleta De Reales
-2026-08-25,TBD,US Open,Alina Charaeva,Susan Bandecchi
-2026-08-25,TBD,US Open,Darja Semenistaja,Hayu Kinoshita
-2026-08-25,TBD,US Open,Anastasiia Sobolieva,Alexandra Shubladze
-2026-08-25,TBD,US Open,Yeonwoo Ku,Astra Sharma
-2026-08-25,TBD,US Open,Storm Hunter,Maddison Inglis
-2026-08-25,TBD,US Open,Suzan Lamens,Emerson Jones
-2026-08-25,TBD,US Open,Elizabeth Mandlik,Kristina Penickova
-2026-08-25,TBD,US Open,Viktoria Hruncakova,Julia Riera
-2026-08-25,TBD,US Open,Arantxa Rus,Teodora Kostovic
-2026-08-25,TBD,US Open,Lucie Havlickova,Elizara Yaneva
-2026-08-25,TBD,US Open,Janae Preston,Nao Hibino
-2026-08-25,TBD,US Open,Moyuka Uchijima,Polona Hercog
-2026-08-25,TBD,US Open,Francesca Jones,Nuria Brancaccio
-2026-08-25,TBD,US Open,Darya Astakhova,Marina Bassols Ribera
-2026-08-25,TBD,US Open,Whitney Osuigwe,Mona Barthel
-2026-08-25,TBD,US Open,Alice Tubello,Priscilla Hon
-2026-08-25,TBD,US Open,Joanna Garland,Leyre Romero Gormaz
-2026-08-25,TBD,US Open,Kristina Liutova,Tatiana Prozorova
-2026-08-25,TBD,US Open,Lola Radivojevic,Kajsa Rinaldo Persson
-2026-08-25,TBD,US Open,Sara Sorribes Tormo,Noma Noha Akugue
-2026-08-25,TBD,US Open,Martyna Kubka,Annika Penickova
-2026-08-25,TBD,US Open,Laura Samson,Tamara Zidansek
-2026-08-25,TBD,US Open,Jordyn Hazelitt,Harriet Dart
-2026-08-25,TBD,US Open,Vendula Valdmannova,Maria Lourdes Carle
-2026-08-25,TBD,US Open,Dalma Galfi,Aliaksandra Sasnovich
-2026-08-25,TBD,US Open,Elvina Kalieva,Kristina Mladenovic
-2026-08-25,TBD,US Open,Sofia Costoulas,Jennifer Ruggeri
-2026-08-25,18:00,Winston-Salem Open,Benjamin Bonzi,Quentin Halys
-2026-08-25,18:00,Winston-Salem Open,Adam Walton,Ignacio Buse
-2026-08-25,18:00,Winston-Salem Open,Botic Van De Zandschulp,Adolfo Daniel Vallejo
-2026-08-25,18:00,Winston-Salem Open,Mattia Bellucci,Luciano Darderi
-2026-08-25,19:30,Winston-Salem Open,Raphael Collignon,Rinky Hijikata
-2026-08-25,19:30,Winston-Salem Open,Juan Manuel Cerundolo,Dhakshineswar Suresh
-2026-08-25,21:00,Winston-Salem Open,James Duckworth,Mariano Navone
-2026-08-25,22:30,Winston-Salem Open,Adrian Mannarino,Lorenzo Sonego
-2026-08-25,00:00,Winston-Salem Open,Miomir Kecmanovic,Fabian Marozsan
-2026-08-25,TBD,Abierto GNP Seguros,Anhelina Kalinina,Maya Joint
-2026-08-25,TBD,Abierto GNP Seguros,Cristina Bucsa,Anna Bondar
-2026-08-25,TBD,Abierto GNP Seguros,Zhang Shuai,Maria Timofeeva
-2026-08-25,TBD,Abierto GNP Seguros,Darja Vidmanova,Kimberly Birrell
-2026-08-25,15:00,Ennoble Care Philly Open,Wang Xiyu,Jessica Bouzas Maneiro
-2026-08-25,16:30,Ennoble Care Philly Open,Mia Pohankova,Katie Volynets
-2026-08-25,18:00,Ennoble Care Philly Open,Anastasia Zakharova,Kylie Collins
-2026-08-25,22:00,Ennoble Care Philly Open,Julia Grabher,Ashlyn Krueger
+2026-08-24,Live,US Open,Jack Pinnington Jones,Trevor Svajda
+2026-08-24,Final,US Open,Laslo Djere,Alexandre Muller
+2026-08-24,Final,US Open,Jay Clarke,Rei Sakamoto
+2026-08-24,Final,US Open,Stefano Napolitano,Mackenzie McDonald
+2026-08-24,Final,US Open,Chak Lam Coleman Wong,Elmer Moller
+2026-08-24,Final,US Open,Pol Martin Tiffon,Tom Gentzsch
+2026-08-24,Final,US Open,Otto Virtanen,Ugo Blanchet
+2026-08-24,Final,US Open,Lukas Neumayer,James McCabe
+2026-08-24,Final,US Open,Francesco Passaro,Felix Gill
+2026-08-24,Final,US Open,Keegan Smith,Alexis Galarneau
+2026-08-24,Final,US Open,Raul Brancaccio,Thiago Seyboth Wild
+2026-08-24,Final,US Open,Harry Wendelken,Stefano Travaglia
+2026-08-24,Final,US Open,Dalibor Svrcina,Felipe Meligeni Alves
+2026-08-24,Final,US Open,Gonzalo Bueno,Billy Harris
+2026-08-24,Final,US Open,Toby Samuel,Francesco Maestrelli
+2026-08-24,Final,US Open,Remy Bertola,Alejandro Moro Canas
+2026-08-24,Final,US Open,Andrea Guerrieri,August Holmgren
+2026-08-24,Final,US Open,Franco Roncadelli,Elias Ymer
+2026-08-24,Final,US Open,Kyrian Jacquet,Lautaro Midon
+2026-08-24,Final,US Open,Joel Josef Schwaerzler,Gustavo Heide
+2026-08-24,Final,US Open,Marco Cecchinato,Liam Broady
+2026-08-24,Final,US Open,Vilius Gaubas,Kilian Feldbausch
+2026-08-24,Final,US Open,Spencer Johnson,Cristian Garin
+2026-08-24,Final,US Open,Guy Den Ouden,Genaro Alberto Olivieri
+2026-08-24,Final,US Open,Federico Agustin Gomez,Aziz Dougaz
+2026-08-24,Final,US Open,Juan Carlos Prado Angelo,Tomas Barrios Vera
+2026-08-24,Final,US Open,Luka Pavlovic,Juan Pablo Varillas
+2026-08-24,Final,US Open,Diego Dedura,Frederico Ferreira Silva
+2026-08-24,Final,US Open,Titouan Droguet,Daniel Rincon
+2026-08-24,Final,US Open,Jacob Fearnley,Roberto Carballes Baena
+2026-08-24,Final,US Open,Kimmer Coppejans,Jurij Rodionov
+2026-08-24,Final,US Open,Mark Lajal,Jordan Lee
+2026-08-24,Live,US Open,Eva Vedder,Bianca Andreescu
+2026-08-24,Final,US Open,Gabriela Knutson,Varvara Lepchenko
+2026-08-24,Final,US Open,Caroline Dolehide,Veronika Podrez
+2026-08-24,Final,US Open,Dominika Salkova,Akasha Urhobo
+2026-08-24,Final,US Open,Ekaterine Gorgodze,Katarzyna Kawa
+2026-08-24,Final,US Open,Laura Pigossi,Despina Papamichail
+2026-08-24,Final,US Open,Savannah Broadus,Tyra Caterina Grant
+2026-08-24,Final,US Open,Carson Branstine,Clervie Ngounoue
+2026-08-24,Final,US Open,Polina Kudermetova,Linda Fruhvirtova
+2026-08-24,Final,US Open,Robin Montgomery,Kayla Cross
+2026-08-24,Final,US Open,Jazmin Ortenzi,Himeno Sakatsume
+2026-08-24,Final,US Open,Greet Minnen,Jeline Vandromme
+2026-08-24,Final,US Open,Victoria Jimenez Kasintseva,Francisca Jorge
+2026-08-24,Final,US Open,Angela Fita Boluda,Zhu Lin
+2026-08-24,TBD,US Open,Lucia Bronzetti,Luisina Giovannini
+2026-08-24,Final,US Open,Claire Liu,Heather Watson
+2026-08-24,Final,US Open,Polina Iatcenko,Julie Struplova
+2026-08-24,Final,US Open,Mia Ristic,Ayana Akli
+2026-08-24,Final,US Open,Anouk Koevermans,Carole Monnet
+2026-08-24,Final,US Open,Linda Klimovicova,Lisa Pigato
+2026-08-24,Final,US Open,Elina Avanesyan,Andrea Lazaro Garcia
+2026-08-24,Final,US Open,Madison Brengle,Anastasia Gasanova
+2026-08-24,Final,US Open,Mai Hontama,Lina Gjorcheska
+2026-08-24,Final,US Open,Ayla Aksu,Lucrezia Stefanini
+2026-08-24,Final,US Open,Zheng Qinwen,You Xiaodi
+2026-08-24,Final,US Open,Elena Pridankina,Aliona Falei
+2026-08-24,Final,US Open,Kayla Day,Julieta Pareja
+2026-08-24,Final,US Open,Rebeka Masarova,Iryna Shymanovich
+2026-08-24,Final,US Open,Clara Burel,Ma YeXin
+2026-08-24,Final,US Open,Rebecca Marino,Fiona Ferro
+2026-08-24,Final,US Open,Rebecca Sramkova,Alevtina Ibragimova
+2026-08-24,Final,US Open,Erika Andreeva,Mariam Bolkvadze
+2026-08-24,Live,Winston-Salem Open,Felix Balshaw,Aleksandar Kovacevic
+2026-08-24,00:45,Winston-Salem Open,Daniel Altmaier,Francisco Comesana
+2026-08-24,Final,Winston-Salem Open,Jenson Brooksby,Stefanos Tsitsipas
+2026-08-24,Final,Winston-Salem Open,Roman Safiullin,Hugo Grenier
+2026-08-24,Final,Winston-Salem Open,Jan Choinski,Mees Rottgering
+2026-08-24,Final,Winston-Salem Open,Martin Damm,Abdullah Shelbayh
+2026-08-24,Final,Winston-Salem Open,Adam Walton,Jesper de Jong
+2026-08-24,Final,Winston-Salem Open,Sebastian Gorzny,Cruz Hewitt
+2026-08-24,Final,Winston-Salem Open,Kamil Majchrzak,Benjamin Bonzi
+2026-08-24,Final,Winston-Salem Open,Dhakshineswar Suresh,Marcos Giron
+2026-08-24,Final,Winston-Salem Open,Quinn Vandecasteele,James Duckworth
+2026-08-24,Final,Winston-Salem Open,Lorenzo Sonego,Pierre-Hugues Herbert
+2026-08-24,Live,Abierto GNP Seguros,Janice Tjen,Dayana Yastremska
+2026-08-24,Live,Abierto GNP Seguros,Alycia Parks,Petra Marcinko
+2026-08-24,01:30,Abierto GNP Seguros,Clara Tauson,Renata Zarazua
+2026-08-24,03:00,Abierto GNP Seguros,Diane Parry,Donna Vekic
+2026-08-24,Final,Abierto GNP Seguros,Camila Osorio,Ann Li
+2026-08-24,Live,Ennoble Care Philly Open,Mananchaya Sawangkaew,Sloane Stephens
+2026-08-24,Final,Ennoble Care Philly Open,Ariana Arseneault,Tereza Valentova
+2026-08-24,Final,Ennoble Care Philly Open,Talia Gibson,Lizette Cabrera
+2026-08-24,Final,Ennoble Care Philly Open,Simona Waltert,Fiona Crawley
+2026-08-24,Final,Ennoble Care Philly Open,Ella Seidel,Jessica Bouzas Maneiro
+2026-08-24,Final,Ennoble Care Philly Open,Oksana Selekhmeteva,Taylah Preston
+2026-08-24,Final,Ennoble Care Philly Open,Ekaterina Ovcharenko,Kaitlin Quevedo
+2026-08-24,TBD,Ennoble Care Philly Open,Lois Boisson,Capucine Jauffret
+2026-08-24,Final,Ennoble Care Philly Open,Tian Fangran,Lucciana Perez Alarcon
+2026-08-24,Final,Ennoble Care Philly Open,Jaeda Daniel,Kylie Collins
+2026-08-24,Final,Ennoble Care Philly Open,Veronika Erjavec,Julia Grabher
