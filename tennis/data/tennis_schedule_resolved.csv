@@ -89,12 +89,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-25,18:00,Ennoble Care Philly Open,Anastasia Zakharova,Kylie Collins,wta_103,wta_78,WTA,
 2026-08-25,22:00,Ennoble Care Philly Open,Julia Grabher,Ashlyn Krueger,wta_80,wta_100,WTA,
 2026-08-26,TBD,US Open,Jacob Fearnley,Luka Pavlovic,atp_84,atp_209,ATP,Hard
-2026-08-26,TBD,US Open,Daniel Rincon,Jordan Lee,atp_402,atp_111,ATP,Hard
+2026-08-26,TBD,US Open,Daniel Rincon,Jordan Lee,atp_402,wta_352,ATP,Hard
 2026-08-26,TBD,US Open,Genaro Alberto Olivieri,Tomas Barrios Vera,atp_228,atp_107,ATP,Hard
 2026-08-26,TBD,US Open,Dalibor Svrcina,Alexis Galarneau,atp_99,atp_242,ATP,Hard
 2026-08-26,TBD,US Open,Andrea Guerrieri,Joel Josef Schwaerzler,atp_484,atp_9030,ATP,Hard
 2026-08-26,TBD,US Open,Otto Virtanen,Jack Pinnington Jones,atp_128,atp_138,ATP,Hard
-2026-08-26,TBD,US Open,Elias Ymer,Cristian Garin,atp_187,atp_89,ATP,Hard
+2026-08-26,TBD,US Open,Elias Ymer,Cristian Garin,wta_9026,wta_38,ATP,Hard
 2026-08-26,TBD,US Open,Kyrian Jacquet,Aziz Dougaz,atp_153,atp_400,ATP,Hard
 2026-08-26,TBD,US Open,Remy Bertola,Harry Wendelken,atp_213,atp_276,ATP,Hard
 2026-08-26,TBD,US Open,Chak Lam Coleman Wong,Lukas Neumayer,atp_137,atp_222,ATP,Hard
@@ -110,7 +110,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-26,TBD,US Open,Heather Watson,Angela Fita Boluda,wta_278,wta_242,WTA,Hard
 2026-08-26,TBD,US Open,Linda Fruhvirtova,Carson Branstine,wta_118,wta_241,WTA,Hard
 2026-08-26,TBD,US Open,Robin Montgomery,Jeline Vandromme,wta_293,wta_291,WTA,Hard
-2026-08-26,TBD,US Open,Zheng Qinwen,Clara Burel,wta_372,wta_15,WTA,Hard
+2026-08-26,TBD,US Open,Zheng Qinwen,Clara Burel,wta_23,wta_15,WTA,Hard
 2026-08-26,TBD,US Open,Tyra Caterina Grant,Himeno Sakatsume,wta_269,wta_135,WTA,Hard
 2026-08-26,TBD,US Open,Alevtina Ibragimova,Mariam Bolkvadze,wta_321,wta_388,WTA,Hard
 2026-08-26,TBD,US Open,Anouk Koevermans,Linda Klimovicova,wta_172,wta_133,WTA,Hard
