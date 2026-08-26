@@ -42,7 +42,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-25,Final,US Open,Harmony Tan,Mary Stoiana,wta_229,wta_185,WTA,Hard
 2026-08-25,Final,US Open,Katie Swan,Katrina Scott,wta_271,wta_282,WTA,Hard
 2026-08-25,Final,US Open,Yeonwoo Ku,Astra Sharma,wta_188,wta_190,WTA,Hard
-2026-08-25,Final,US Open,Julia Avdeeva,Katherine Sebov,wta_457,wta_270,WTA,Hard
+2026-08-25,Final,US Open,Julia Avdeeva,Katherine Sebov,wta_265,wta_270,WTA,Hard
 2026-08-25,Final,US Open,Francesca Jones,Nuria Brancaccio,wta_72,wta_164,WTA,Hard
 2026-08-25,Final,US Open,Whitney Osuigwe,Mona Barthel,wta_162,wta_203,WTA,Hard
 2026-08-25,Final,US Open,Joanna Garland,Leyre Romero Gormaz,wta_125,wta_140,WTA,Hard
@@ -51,7 +51,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-25,Final,US Open,Alice Tubello,Priscilla Hon,wta_435,wta_130,WTA,Hard
 2026-08-25,Final,US Open,Lola Radivojevic,Kajsa Rinaldo Persson,wta_139,wta_264,WTA,Hard
 2026-08-25,Final,US Open,Martyna Kubka,Annika Penickova,wta_338,wta_984,WTA,Hard
-2026-08-25,Final,US Open,Anna Siskova,Noma Noha Akugue,wta_227,wta_255,WTA,Hard
+2026-08-25,Final,US Open,Anna Siskova,Noma Noha Akugue,wta_65,wta_255,WTA,Hard
 2026-08-25,Final,US Open,Viktoria Hruncakova,Julia Riera,wta_218,wta_187,WTA,Hard
 2026-08-25,Final,US Open,Arantxa Rus,Teodora Kostovic,wta_134,wta_171,WTA,Hard
 2026-08-25,Final,US Open,Alina Charaeva,Susan Bandecchi,wta_163,wta_233,WTA,Hard
@@ -63,10 +63,10 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-25,Final,US Open,Janae Preston,Nao Hibino,wta_147,wta_196,WTA,Hard
 2026-08-25,Final,US Open,Moyuka Uchijima,Polona Hercog,wta_90,wta_314,WTA,Hard
 2026-08-25,Final,US Open,Laura Samson,Tamara Zidansek,wta_212,wta_145,WTA,Hard
-2026-08-25,Final,Winston-Salem Open,Daniil Medvedev,Martin Damm,atp_11,atp_383,ATP,Hard
+2026-08-25,Final,Winston-Salem Open,Daniil Medvedev,Martin Damm,atp_11,atp_125,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Mattia Bellucci,Luciano Darderi,atp_109,atp_22,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Adam Walton,Ignacio Buse,atp_93,atp_91,ATP,Hard
-2026-08-25,Final,Winston-Salem Open,Arthur Fery,Cruz Hewitt,atp_156,wta_641,ATP,Hard
+2026-08-25,Final,Winston-Salem Open,Arthur Fery,Cruz Hewitt,atp_156,atp_670,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Raphael Collignon,Rinky Hijikata,atp_68,atp_112,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,James Duckworth,Mariano Navone,atp_80,atp_74,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Juan Manuel Cerundolo,Dhakshineswar Suresh,atp_19,atp_470,ATP,Hard
@@ -77,7 +77,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-25,Final,Winston-Salem Open,Botic Van De Zandschulp,Adolfo Daniel Vallejo,atp_55,atp_9021,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Mees Rottgering,Tomas Machac,atp_9010,atp_31,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Miomir Kecmanovic,Fabian Marozsan,atp_83,atp_47,ATP,Hard
-2026-08-25,03:50,Abierto GNP Seguros,Nikola Bartunkova,En-Shuo Liang,wta_104,wta_360,WTA,Hard
+2026-08-25,Live,Abierto GNP Seguros,Nikola Bartunkova,En-Shuo Liang,wta_104,wta_360,WTA,Hard
 2026-08-25,Final,Abierto GNP Seguros,Janice Tjen,Yuliia Starodubtseva,wta_47,wta_101,WTA,Hard
 2026-08-25,Final,Abierto GNP Seguros,Cristina Bucsa,Anna Bondar,wta_62,wta_65,WTA,Hard
 2026-08-25,Final,Abierto GNP Seguros,Oleksandra Oliynykova,Diane Parry,wta_71,wta_107,WTA,Hard
