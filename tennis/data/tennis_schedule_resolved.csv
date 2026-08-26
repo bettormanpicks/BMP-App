@@ -1,20 +1,20 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-25,Live,US Open,Maks Kasnikowski,Nicolai Budkov Kjaer,atp_386,atp_133,ATP,Hard
-2026-08-25,Live,US Open,Andre Ilagan,Tristan Boyer,atp_382,atp_216,ATP,Hard
-2026-08-25,Live,US Open,Zdenek Kolar,Borna Gojo,atp_194,atp_235,ATP,Hard
-2026-08-25,Live,US Open,Luca Nardi,Federico Cina,atp_94,atp_224,ATP,Hard
-2026-08-25,21:15,US Open,Bu Yunchaokete,Rio Noguchi,atp_147,atp_247,ATP,Hard
-2026-08-25,21:20,US Open,Jerome Kym,Dan Added,atp_195,atp_200,ATP,Hard
-2026-08-25,21:20,US Open,Colton Smith,Andrea Pellegrino,atp_141,atp_140,ATP,Hard
-2026-08-25,21:20,US Open,Moez Echargui,Hugo Dellien,atp_139,atp_157,ATP,Hard
-2026-08-25,22:20,US Open,SeongChan Hong,Nikoloz Basilashvili,atp_9100,atp_136,ATP,Hard
-2026-08-25,22:20,US Open,Taro Daniel,Andrew Johnson,atp_402,atp_448,ATP,Hard
-2026-08-25,22:20,US Open,Jack Secord,Tristan Schoolkate,atp_462,atp_108,ATP,Hard
-2026-08-25,22:20,US Open,Nicolas Mejia,Liam Draxl,atp_178,atp_148,ATP,Hard
+2026-08-25,Live,US Open,Taro Daniel,Andrew Johnson,atp_402,atp_448,ATP,Hard
+2026-08-25,Live,US Open,SeongChan Hong,Nikoloz Basilashvili,atp_9100,atp_136,ATP,Hard
+2026-08-25,Live,US Open,Nicolas Mejia,Liam Draxl,atp_178,atp_148,ATP,Hard
+2026-08-25,Final,US Open,Jack Secord,Tristan Schoolkate,atp_462,atp_108,ATP,Hard
+2026-08-25,Final,US Open,Moez Echargui,Hugo Dellien,atp_139,atp_157,ATP,Hard
+2026-08-25,Final,US Open,Jerome Kym,Dan Added,atp_195,atp_200,ATP,Hard
+2026-08-25,Final,US Open,Colton Smith,Andrea Pellegrino,atp_141,atp_140,ATP,Hard
+2026-08-25,Final,US Open,Bu Yunchaokete,Rio Noguchi,atp_147,atp_247,ATP,Hard
+2026-08-25,TBD,US Open,Luca Nardi,Federico Cina,atp_94,atp_224,ATP,Hard
+2026-08-25,Final,US Open,Zdenek Kolar,Borna Gojo,atp_194,atp_235,ATP,Hard
 2026-08-25,Final,US Open,Stefanos Sakellaridis,Christopher O'Connell,atp_275,atp_95,ATP,Hard
 2026-08-25,Final,US Open,Zsombor Piros,Max Alcala Gurri,atp_177,atp_401,ATP,Hard
 2026-08-25,Final,US Open,Pedro Martinez,Daniil Glinka,atp_101,atp_169,ATP,Hard
+2026-08-25,Final,US Open,Andre Ilagan,Tristan Boyer,atp_382,atp_216,ATP,Hard
 2026-08-25,Final,US Open,Hugo Gaston,Guido Ivan Justo,atp_96,atp_346,ATP,Hard
+2026-08-25,Final,US Open,Maks Kasnikowski,Nicolai Budkov Kjaer,atp_386,atp_133,ATP,Hard
 2026-08-25,Final,US Open,Clement Chidekh,Federico Coria,atp_205,atp_377,ATP,Hard
 2026-08-25,Final,US Open,Henrique Rocha,Michael Mmoh,atp_170,atp_353,ATP,Hard
 2026-08-25,Final,US Open,Arthur Gea,Sumit Nagal,atp_160,atp_297,ATP,Hard
@@ -31,24 +31,24 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-25,Final,US Open,Timofey Skatov,Gilles Arnaud Bailly,atp_193,atp_211,ATP,Hard
 2026-08-25,Final,US Open,Braden Shick,Clement Tabur,atp_423,atp_204,ATP,Hard
 2026-08-25,Final,US Open,Shintaro Mochizuki,Daniel Milavsky,atp_116,atp_402,ATP,Hard
-2026-08-25,Live,US Open,Alice Tubello,Priscilla Hon,wta_435,wta_130,WTA,Hard
-2026-08-25,Live,US Open,Kristina Liutova,Tatiana Prozorova,wta_364,wta_166,WTA,Hard
-2026-08-25,Live,US Open,Darya Astakhova,Marina Bassols Ribera,wta_380,wta_209,WTA,Hard
-2026-08-25,Live,US Open,Joanna Garland,Leyre Romero Gormaz,wta_125,wta_140,WTA,Hard
-2026-08-25,Live,US Open,Whitney Osuigwe,Mona Barthel,wta_162,wta_203,WTA,Hard
-2026-08-25,Live,US Open,Julia Avdeeva,Katherine Sebov,wta_457,wta_270,WTA,Hard
-2026-08-25,Live,US Open,Yeonwoo Ku,Astra Sharma,wta_188,wta_190,WTA,Hard
-2026-08-25,21:20,US Open,Yuan Yue,Guo Hanyu,wta_122,wta_186,WTA,Hard
-2026-08-25,21:20,US Open,Katie Swan,Katrina Scott,wta_271,wta_282,WTA,Hard
-2026-08-25,21:20,US Open,Harmony Tan,Mary Stoiana,wta_229,wta_185,WTA,Hard
-2026-08-25,21:20,US Open,Darja Semenistaja,Hayu Kinoshita,wta_97,wta_417,WTA,Hard
-2026-08-25,21:20,US Open,Anastasiia Sobolieva,Alexandra Shubladze,wta_268,wta_344,WTA,Hard
-2026-08-25,21:20,US Open,Storm Hunter,Maddison Inglis,wta_231,wta_123,WTA,Hard
-2026-08-25,21:35,US Open,Sofia Costoulas,Jennifer Ruggeri,wta_142,wta_315,WTA,Hard
-2026-08-25,22:20,US Open,Vendula Valdmannova,Maria Lourdes Carle,wta_286,wta_155,WTA,Hard
-2026-08-25,22:20,US Open,Dalma Galfi,Aliaksandra Sasnovich,wta_86,wta_113,WTA,Hard
-2026-08-25,22:20,US Open,Elvina Kalieva,Kristina Mladenovic,wta_158,wta_364,WTA,Hard
+2026-08-25,Live,US Open,Dalma Galfi,Aliaksandra Sasnovich,wta_86,wta_113,WTA,Hard
+2026-08-25,Final,US Open,Vendula Valdmannova,Maria Lourdes Carle,wta_286,wta_155,WTA,Hard
+2026-08-25,Final,US Open,Yuan Yue,Guo Hanyu,wta_122,wta_186,WTA,Hard
+2026-08-25,Final,US Open,Elvina Kalieva,Kristina Mladenovic,wta_158,wta_364,WTA,Hard
+2026-08-25,Final,US Open,Sofia Costoulas,Jennifer Ruggeri,wta_142,wta_315,WTA,Hard
+2026-08-25,Final,US Open,Anastasiia Sobolieva,Alexandra Shubladze,wta_268,wta_344,WTA,Hard
+2026-08-25,Final,US Open,Darja Semenistaja,Hayu Kinoshita,wta_97,wta_417,WTA,Hard
+2026-08-25,Final,US Open,Storm Hunter,Maddison Inglis,wta_231,wta_123,WTA,Hard
+2026-08-25,Final,US Open,Harmony Tan,Mary Stoiana,wta_229,wta_185,WTA,Hard
+2026-08-25,Final,US Open,Katie Swan,Katrina Scott,wta_271,wta_282,WTA,Hard
+2026-08-25,Final,US Open,Yeonwoo Ku,Astra Sharma,wta_188,wta_190,WTA,Hard
+2026-08-25,Final,US Open,Julia Avdeeva,Katherine Sebov,wta_457,wta_270,WTA,Hard
 2026-08-25,Final,US Open,Francesca Jones,Nuria Brancaccio,wta_72,wta_164,WTA,Hard
+2026-08-25,Final,US Open,Whitney Osuigwe,Mona Barthel,wta_162,wta_203,WTA,Hard
+2026-08-25,Final,US Open,Joanna Garland,Leyre Romero Gormaz,wta_125,wta_140,WTA,Hard
+2026-08-25,Final,US Open,Darya Astakhova,Marina Bassols Ribera,wta_380,wta_209,WTA,Hard
+2026-08-25,Final,US Open,Kristina Liutova,Tatiana Prozorova,wta_364,wta_166,WTA,Hard
+2026-08-25,Final,US Open,Alice Tubello,Priscilla Hon,wta_435,wta_130,WTA,Hard
 2026-08-25,Final,US Open,Lola Radivojevic,Kajsa Rinaldo Persson,wta_139,wta_264,WTA,Hard
 2026-08-25,Final,US Open,Martyna Kubka,Annika Penickova,wta_338,wta_984,WTA,Hard
 2026-08-25,Final,US Open,Anna Siskova,Noma Noha Akugue,wta_227,wta_255,WTA,Hard
@@ -63,82 +63,28 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-25,Final,US Open,Janae Preston,Nao Hibino,wta_147,wta_196,WTA,Hard
 2026-08-25,Final,US Open,Moyuka Uchijima,Polona Hercog,wta_90,wta_314,WTA,Hard
 2026-08-25,Final,US Open,Laura Samson,Tamara Zidansek,wta_212,wta_145,WTA,Hard
-2026-08-25,Live,Winston-Salem Open,Juan Manuel Cerundolo,Dhakshineswar Suresh,atp_19,atp_470,ATP,Hard
-2026-08-25,Live,Winston-Salem Open,Raphael Collignon,Rinky Hijikata,atp_68,atp_112,ATP,Hard
-2026-08-25,Live,Winston-Salem Open,Arthur Fery,Cruz Hewitt,atp_156,atp_670,ATP,Hard
-2026-08-25,21:40,Winston-Salem Open,James Duckworth,Mariano Navone,atp_80,atp_74,ATP,Hard
-2026-08-25,21:45,Winston-Salem Open,Mees Rottgering,Tomas Machac,atp_9010,atp_31,ATP,Hard
-2026-08-25,21:45,Winston-Salem Open,Hugo Grenier,Sebastian Baez,atp_191,atp_33,ATP,Hard
-2026-08-25,22:30,Winston-Salem Open,Daniil Medvedev,Martin Damm,atp_11,atp_125,ATP,Hard
-2026-08-25,23:15,Winston-Salem Open,Adrian Mannarino,Lorenzo Sonego,atp_48,atp_64,ATP,Hard
-2026-08-25,00:00,Winston-Salem Open,Miomir Kecmanovic,Fabian Marozsan,atp_83,atp_47,ATP,Hard
+2026-08-25,Live,Winston-Salem Open,Hugo Grenier,Sebastian Baez,atp_191,atp_33,ATP,Hard
+2026-08-25,Live,Winston-Salem Open,Miomir Kecmanovic,Fabian Marozsan,atp_83,atp_47,ATP,Hard
+2026-08-25,Live,Winston-Salem Open,Adrian Mannarino,Lorenzo Sonego,atp_48,atp_64,ATP,Hard
+2026-08-25,Final,Winston-Salem Open,Daniil Medvedev,Martin Damm,atp_11,atp_383,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Mattia Bellucci,Luciano Darderi,atp_109,atp_22,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Adam Walton,Ignacio Buse,atp_93,atp_91,ATP,Hard
+2026-08-25,Final,Winston-Salem Open,Arthur Fery,Cruz Hewitt,atp_156,atp_670,ATP,Hard
+2026-08-25,Final,Winston-Salem Open,Raphael Collignon,Rinky Hijikata,atp_68,atp_112,ATP,Hard
+2026-08-25,Final,Winston-Salem Open,James Duckworth,Mariano Navone,atp_80,atp_74,ATP,Hard
+2026-08-25,Final,Winston-Salem Open,Juan Manuel Cerundolo,Dhakshineswar Suresh,atp_19,atp_470,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Luca Van Assche,Aleksandar Kovacevic,atp_130,atp_75,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Benjamin Bonzi,Quentin Halys,atp_123,atp_72,ATP,Hard
 2026-08-25,Final,Winston-Salem Open,Botic Van De Zandschulp,Adolfo Daniel Vallejo,atp_55,atp_9021,ATP,Hard
-2026-08-25,Live,Abierto GNP Seguros,Cristina Bucsa,Anna Bondar,wta_62,wta_65,WTA,Hard
-2026-08-25,21:30,Abierto GNP Seguros,Zhang Shuai,Maria Timofeeva,wta_85,wta_54,WTA,Hard
-2026-08-25,21:30,Abierto GNP Seguros,Darja Vidmanova,Kimberly Birrell,wta_127,wta_94,WTA,Hard
-2026-08-25,22:30,Abierto GNP Seguros,Janice Tjen,Yuliia Starodubtseva,wta_47,wta_101,WTA,Hard
-2026-08-25,23:00,Abierto GNP Seguros,Panna Udvardy,Maya Joint,wta_93,wta_29,WTA,Hard
+2026-08-25,Final,Winston-Salem Open,Mees Rottgering,Tomas Machac,atp_9010,atp_31,ATP,Hard
+2026-08-25,Live,Abierto GNP Seguros,Janice Tjen,Yuliia Starodubtseva,wta_47,wta_101,WTA,Hard
+2026-08-25,Live,Abierto GNP Seguros,Panna Udvardy,Maya Joint,wta_93,wta_29,WTA,Hard
 2026-08-25,01:30,Abierto GNP Seguros,Oleksandra Oliynykova,Diane Parry,wta_71,wta_107,WTA,Hard
-2026-08-25,03:00,Abierto GNP Seguros,Nikola Bartunkova,Anastasia Potapova,wta_104,wta_75,WTA,Hard
-2026-08-25,22:00,Ennoble Care Philly Open,Julia Grabher,Ashlyn Krueger,wta_80,wta_100,WTA,
+2026-08-25,03:00,Abierto GNP Seguros,Nikola Bartunkova,En-Shuo Liang,wta_104,wta_360,WTA,Hard
+2026-08-25,Final,Abierto GNP Seguros,Cristina Bucsa,Anna Bondar,wta_62,wta_65,WTA,Hard
+2026-08-25,Final,Abierto GNP Seguros,Zhang Shuai,Maria Timofeeva,wta_85,wta_154,WTA,Hard
+2026-08-25,Final,Abierto GNP Seguros,Darja Vidmanova,Kimberly Birrell,wta_127,wta_94,WTA,Hard
+2026-08-25,Final,Ennoble Care Philly Open,Julia Grabher,Ashlyn Krueger,wta_80,wta_100,WTA,
 2026-08-25,Final,Ennoble Care Philly Open,Mia Pohankova,Katie Volynets,wta_346,wta_96,WTA,
 2026-08-25,Final,Ennoble Care Philly Open,Wang Xiyu,Jessica Bouzas Maneiro,wta_34,wta_48,WTA,
 2026-08-25,Final,Ennoble Care Philly Open,Anastasia Zakharova,Kylie Collins,wta_103,wta_78,WTA,
-2026-08-26,TBD,US Open,David Jorda Sanchis,Dusan Lajovic,atp_381,atp_129,ATP,Hard
-2026-08-26,TBD,US Open,Jacob Fearnley,Luka Pavlovic,atp_84,atp_209,ATP,Hard
-2026-08-26,TBD,US Open,Daniel Rincon,Jordan Lee,atp_402,wta_352,ATP,Hard
-2026-08-26,TBD,US Open,Genaro Alberto Olivieri,Tomas Barrios Vera,atp_228,atp_107,ATP,Hard
-2026-08-26,TBD,US Open,Arthur Gea,Clement Chidekh,atp_160,atp_205,ATP,Hard
-2026-08-26,TBD,US Open,Luka Mikrut,Nishesh Basavareddy,atp_163,atp_190,ATP,Hard
-2026-08-26,TBD,US Open,Timofey Skatov,Grigor Dimitrov,atp_193,atp_42,ATP,Hard
-2026-08-26,TBD,US Open,Dalibor Svrcina,Alexis Galarneau,atp_99,atp_242,ATP,Hard
-2026-08-26,TBD,US Open,Andrea Guerrieri,Joel Josef Schwaerzler,atp_484,atp_9030,ATP,Hard
-2026-08-26,TBD,US Open,Otto Virtanen,Jack Pinnington Jones,atp_128,atp_138,ATP,Hard
-2026-08-26,TBD,US Open,Elias Ymer,Cristian Garin,atp_187,atp_89,ATP,Hard
-2026-08-26,TBD,US Open,Kei Nishikori,Michael Antonius,atp_283,atp_353,ATP,Hard
-2026-08-26,TBD,US Open,Kyrian Jacquet,Aziz Dougaz,atp_153,atp_400,ATP,Hard
-2026-08-26,TBD,US Open,Remy Bertola,Harry Wendelken,atp_213,atp_276,ATP,Hard
-2026-08-26,TBD,US Open,Chak Lam Coleman Wong,Lukas Neumayer,atp_137,atp_222,ATP,Hard
-2026-08-26,TBD,US Open,Thiago Seyboth Wild,Mackenzie McDonald,atp_219,atp_115,ATP,Hard
-2026-08-26,TBD,US Open,Francesco Passaro,Tom Gentzsch,atp_161,atp_243,ATP,Hard
-2026-08-26,TBD,US Open,Vitaliy Sachko,Pablo Llamas Ruiz,atp_181,atp_197,ATP,Hard
-2026-08-26,TBD,US Open,Henrique Rocha,Lloyd Harris,atp_170,atp_179,ATP,Hard
-2026-08-26,TBD,US Open,Rei Sakamoto,Alexandre Muller,atp_173,atp_50,ATP,Hard
-2026-08-26,TBD,US Open,Vilius Gaubas,Marco Cecchinato,atp_126,atp_215,ATP,Hard
-2026-08-26,TBD,US Open,Shintaro Mochizuki,Braden Shick,atp_116,atp_423,ATP,Hard
-2026-08-26,TBD,US Open,Toby Samuel,Billy Harris,atp_241,atp_144,ATP,Hard
-2026-08-26,TBD,US Open,Frederico Ferreira Silva,Jurij Rodionov,atp_254,atp_175,ATP,Hard
-2026-08-26,TBD,US Open,Lucia Bronzetti,Polina Iatcenko,wta_138,wta_160,WTA,Hard
-2026-08-26,TBD,US Open,Susan Bandecchi,Viktoria Hruncakova,wta_233,wta_218,WTA,Hard
-2026-08-26,TBD,US Open,Despina Papamichail,Ekaterine Gorgodze,wta_157,wta_167,WTA,Hard
-2026-08-26,TBD,US Open,Elena Pridankina,Rebecca Marino,wta_192,wta_246,WTA,Hard
-2026-08-26,TBD,US Open,Nao Hibino,Anna Siskova,wta_196,wta_227,WTA,Hard
-2026-08-26,TBD,US Open,Heather Watson,Angela Fita Boluda,wta_278,wta_242,WTA,Hard
-2026-08-26,TBD,US Open,Kristina Penickova,Harriet Dart,wta_364,wta_169,WTA,Hard
-2026-08-26,TBD,US Open,Arantxa Rus,Suzan Lamens,wta_134,wta_109,WTA,Hard
-2026-08-26,TBD,US Open,Linda Fruhvirtova,Carson Branstine,wta_118,wta_241,WTA,Hard
-2026-08-26,TBD,US Open,Robin Montgomery,Jeline Vandromme,wta_293,wta_291,WTA,Hard
-2026-08-26,TBD,US Open,Moyuka Uchijima,Lucie Havlickova,wta_90,wta_276,WTA,Hard
-2026-08-26,TBD,US Open,Zheng Qinwen,Clara Burel,wta_23,wta_15,WTA,Hard
-2026-08-26,TBD,US Open,Tyra Caterina Grant,Himeno Sakatsume,wta_269,wta_135,WTA,Hard
-2026-08-26,TBD,US Open,Alevtina Ibragimova,Mariam Bolkvadze,wta_321,wta_388,WTA,Hard
-2026-08-26,TBD,US Open,Anouk Koevermans,Linda Klimovicova,wta_172,wta_133,WTA,Hard
-2026-08-26,TBD,US Open,Mai Hontama,Andrea Lazaro Garcia,wta_220,wta_206,WTA,Hard
-2026-08-26,TBD,US Open,Julieta Pareja,Iryna Shymanovich,wta_349,wta_156,WTA,Hard
-2026-08-26,TBD,US Open,Francisca Jorge,Mia Ristic,wta_207,wta_273,WTA,Hard
-2026-08-26,TBD,US Open,Madison Brengle,Lucrezia Stefanini,wta_400,wta_136,WTA,Hard
-2026-08-26,TBD,US Open,Tamara Zidansek,Guiomar Maristany Zuleta De Reales,wta_145,wta_165,WTA,Hard
-2026-08-26,TBD,US Open,Bianca Andreescu,Veronika Podrez,wta_161,wta_232,WTA,Hard
-2026-08-26,TBD,US Open,Dominika Salkova,Gabriela Knutson,wta_151,wta_184,WTA,Hard
-2026-08-26,18:00,Winston-Salem Open,Daniel Altmaier,Ignacio Buse,atp_402,atp_91,ATP,Hard
-2026-08-26,18:00,Winston-Salem Open,Botic Van De Zandschulp,Luciano Darderi,atp_55,atp_22,ATP,Hard
-2026-08-26,TBD,Abierto GNP Seguros,Maja Chwalinska,Alycia Parks,wta_126,wta_76,WTA,Hard
-2026-08-26,TBD,Abierto GNP Seguros,Ekaterina Alexandrova,Clara Tauson,wta_11,wta_15,WTA,Hard
-2026-08-26,15:00,Ennoble Care Philly Open,Lizette Cabrera,Mananchaya Sawangkaew,wta_274,wta_198,WTA,
-2026-08-26,16:30,Ennoble Care Philly Open,Tian Fangran,Tereza Valentova,wta_277,wta_42,WTA,
-2026-08-26,18:00,Ennoble Care Philly Open,Fiona Crawley,Ekaterina Ovcharenko,wta_201,wta_494,WTA,
-2026-08-26,22:00,Ennoble Care Philly Open,Oksana Selekhmeteva,Capucine Jauffret,wta_74,wta_9101,WTA,
