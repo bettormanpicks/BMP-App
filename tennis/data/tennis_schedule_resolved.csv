@@ -1,21 +1,31 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-27,TBD,US Open,Otto Virtanen,Grigor Dimitrov,atp_128,atp_42,ATP,Hard
-2026-08-27,Final,US Open,Aziz Dougaz,Andrea Guerrieri,atp_400,atp_484,ATP,Hard
-2026-08-27,Final,US Open,Chak Lam Coleman Wong,Dusan Lajovic,atp_137,atp_129,ATP,Hard
-2026-08-27,TBD,US Open,Toby Samuel,Cristian Garin,atp_241,wta_38,ATP,Hard
-2026-08-27,Final,US Open,Daniel Rincon,Tomas Barrios Vera,atp_402,atp_107,ATP,Hard
-2026-08-27,Final,US Open,Carson Branstine,Robin Montgomery,wta_241,wta_293,WTA,Hard
-2026-08-27,Final,US Open,Polina Iatcenko,Andrea Lazaro Garcia,wta_160,wta_206,WTA,Hard
-2026-08-27,Final,US Open,Julieta Pareja,Lucrezia Stefanini,wta_349,wta_136,WTA,Hard
-2026-08-27,Final,US Open,Gabriela Knutson,Ekaterine Gorgodze,wta_184,wta_167,WTA,Hard
-2026-08-27,00:10,Winston-Salem Open,Arthur Fery,Aleksandar Kovacevic,atp_156,atp_75,ATP,Hard
-2026-08-27,01:30,Winston-Salem Open,Fabian Marozsan,James Duckworth,atp_47,atp_80,ATP,Hard
-2026-08-27,Final,Winston-Salem Open,Juan Manuel Cerundolo,Ignacio Buse,atp_19,atp_91,ATP,Hard
-2026-08-27,Final,Winston-Salem Open,Benjamin Bonzi,Botic Van De Zandschulp,atp_123,atp_55,ATP,Hard
-2026-08-27,Live,Abierto GNP Seguros,Darja Vidmanova,Nikola Bartunkova,wta_127,wta_104,WTA,Hard
-2026-08-27,01:30,Abierto GNP Seguros,Clara Tauson,Diane Parry,wta_15,wta_107,WTA,Hard
-2026-08-27,03:00,Abierto GNP Seguros,Yuliia Starodubtseva,Elise Mertens,wta_101,wta_22,WTA,Hard
-2026-08-27,Final,Abierto GNP Seguros,Alycia Parks,Ann Li,wta_243,wta_36,WTA,Hard
-2026-08-27,00:30,Ennoble Care Philly Open,Mananchaya Sawangkaew,Katie Volynets,wta_198,wta_96,WTA,
-2026-08-27,Final,Ennoble Care Philly Open,Kylie Collins,Tereza Valentova,wta_78,wta_42,WTA,
-2026-08-27,TBD,Ennoble Care Philly Open,Fiona Crawley,Julia Grabher,wta_201,wta_80,WTA,
+2026-08-28,15:00,US Open,Jacob Fearnley,Jurij Rodionov,atp_84,atp_175,ATP,Hard
+2026-08-28,15:00,US Open,Zsombor Piros,Christopher O'Connell,atp_177,atp_95,ATP,Hard
+2026-08-28,15:00,US Open,Shintaro Mochizuki,Francesco Passaro,atp_116,atp_161,ATP,Hard
+2026-08-28,15:00,US Open,Lloyd Harris,Pablo Llamas Ruiz,atp_179,atp_197,ATP,Hard
+2026-08-28,15:00,US Open,Arthur Gea,Nishesh Basavareddy,atp_160,atp_190,ATP,Hard
+2026-08-28,15:00,US Open,Dalibor Svrcina,Mackenzie McDonald,atp_99,atp_115,ATP,Hard
+2026-08-28,15:00,US Open,Vilius Gaubas,Harry Wendelken,atp_126,atp_276,ATP,Hard
+2026-08-28,16:30,US Open,Liam Draxl,Tristan Schoolkate,atp_148,atp_108,ATP,Hard
+2026-08-28,16:30,US Open,Bu Yunchaokete,Federico Cina,atp_162,atp_224,ATP,Hard
+2026-08-28,16:30,US Open,Hugo Gaston,Colton Smith,atp_96,atp_141,ATP,Hard
+2026-08-28,16:30,US Open,Kei Nishikori,Rei Sakamoto,atp_283,atp_173,ATP,Hard
+2026-08-28,15:00,US Open,Darja Semenistaja,Storm Hunter,wta_97,wta_231,WTA,Hard
+2026-08-28,15:00,US Open,Susan Bandecchi,Arantxa Rus,wta_233,wta_134,WTA,Hard
+2026-08-28,15:00,US Open,Lucie Havlickova,Nao Hibino,wta_276,wta_196,WTA,Hard
+2026-08-28,15:00,US Open,Kristina Liutova,Martyna Kubka,wta_364,wta_338,WTA,Hard
+2026-08-28,15:00,US Open,Mariam Bolkvadze,Anouk Koevermans,wta_388,wta_172,WTA,Hard
+2026-08-28,15:00,US Open,Zheng Qinwen,Elena Pridankina,wta_372,wta_192,WTA,Hard
+2026-08-28,15:00,US Open,Tamara Zidansek,Bianca Andreescu,wta_145,wta_161,WTA,Hard
+2026-08-28,16:30,US Open,Francesca Jones,Joanna Garland,wta_72,wta_125,WTA,Hard
+2026-08-28,16:30,US Open,Elvina Kalieva,Vendula Valdmannova,wta_158,wta_286,WTA,Hard
+2026-08-28,16:30,US Open,Yuan Yue,Mary Stoiana,wta_122,wta_185,WTA,Hard
+2026-08-28,16:30,US Open,Mia Ristic,Himeno Sakatsume,wta_273,wta_135,WTA,Hard
+2026-08-28,16:30,US Open,Heather Watson,Harriet Dart,wta_278,wta_169,WTA,Hard
+2026-08-28,20:00,Winston-Salem Open,Ignacio Buse,Benjamin Bonzi,atp_91,atp_123,ATP,Hard
+2026-08-28,22:30,Winston-Salem Open,James Duckworth,Arthur Fery,atp_80,atp_156,ATP,Hard
+2026-08-28,23:00,Abierto GNP Seguros,Diane Parry,Ann Li,wta_107,wta_36,WTA,Hard
+2026-08-28,01:00,Abierto GNP Seguros,Nikola Bartunkova,Elise Mertens,wta_104,wta_22,WTA,Hard
+2026-08-28,20:00,Ennoble Care Philly Open,Tereza Valentova,Julia Grabher,wta_42,wta_80,WTA,
+2026-08-28,22:00,Ennoble Care Philly Open,Oksana Selekhmeteva,Katie Volynets,wta_74,wta_96,WTA,
+2026-08-28,TBD,Ennoble Care Philly Open,Oksana Selekhmeteva,Wang Xiyu,wta_74,wta_34,WTA,
