@@ -13,7 +13,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-30,17:00,US Open,Elvina Kalieva,Lanlana Tararudee,wta_158,wta_124,WTA,Hard
 2026-08-30,17:00,US Open,Lucrezia Stefanini,Dayana Yastremska,wta_136,wta_43,WTA,Hard
 2026-08-30,18:30,US Open,McCartney Kessler,Ekaterina Alexandrova,wta_31,wta_11,WTA,Hard
-2026-08-30,18:30,US Open,Carol Young Suh Lee,Katie Boulter,wta_170,wta_83,WTA,Hard
+2026-08-30,18:30,US Open,Carol Young Suh Lee,Katie Boulter,wta_352,wta_83,WTA,Hard
 2026-08-30,19:00,US Open,Hanne Vandewinkel,Karolina Pliskova,wta_128,wta_267,WTA,Hard
 2026-08-30,20:30,US Open,Taylah Preston,Alycia Parks,wta_147,wta_243,WTA,Hard
 2026-08-30,20:30,US Open,Kimberly Birrell,Petra Marcinko,wta_94,wta_69,WTA,Hard
@@ -37,7 +37,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-30,18:30,US Open,Miomir Kecmanovic,Denis Shapovalov,atp_83,atp_36,ATP,Hard
 2026-08-30,18:30,US Open,Aleksandar Vukic,Rei Sakamoto,atp_88,atp_173,ATP,Hard
 2026-08-30,20:00,US Open,Tomas Martin Etcheverry,Vit Kopriva,atp_53,atp_87,ATP,Hard
-2026-08-30,20:00,US Open,Martin Landaluce,Jacob Fearnley,atp_158,atp_84,ATP,Hard
+2026-08-30,20:00,US Open,Martin Landaluce,Jacob Fearnley,atp_383,atp_84,ATP,Hard
 2026-08-30,20:00,US Open,Sebastian Gorzny,Raphael Collignon,atp_132,atp_68,ATP,Hard
 2026-08-30,21:00,US Open,Alex Michelsen,Federico Cina,atp_41,atp_224,ATP,Hard
 2026-08-30,23:00,US Open,Mariano Navone,Novak Djokovic,atp_74,atp_3,ATP,Hard
