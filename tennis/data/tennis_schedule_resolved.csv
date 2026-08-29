@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-08-29,20:05,Winston-Salem Open,Arthur Fery,Ignacio Buse,atp_156,atp_91,ATP,Hard
+2026-08-29,Final,Winston-Salem Open,Arthur Fery,Ignacio Buse,atp_156,atp_91,ATP,Hard
 2026-08-29,23:30,Abierto GNP Seguros,Diane Parry,Elise Mertens,wta_107,wta_22,WTA,Hard
 2026-08-29,Final,Ennoble Care Philly Open,Katie Volynets,Tereza Valentova,wta_96,wta_42,WTA,
 2026-08-30,15:00,US Open,Kamilla Rakhimova,Barbora Krejcikova,wta_91,wta_53,WTA,Hard
@@ -35,7 +35,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-08-30,18:00,US Open,Thiago Agustin Tirante,Adrian Mannarino,atp_92,atp_48,ATP,Hard
 2026-08-30,18:00,US Open,Jaime Faria,Jenson Brooksby,atp_146,atp_46,ATP,Hard
 2026-08-30,18:30,US Open,Miomir Kecmanovic,Denis Shapovalov,atp_83,atp_36,ATP,Hard
-2026-08-30,18:30,US Open,Aleksandar Vukic,Rei Sakamoto,atp_88,atp_173,ATP,Hard
+2026-08-30,18:30,US Open,Aleksandar Vukic,Rei Sakamoto,atp_75,atp_173,ATP,Hard
 2026-08-30,20:00,US Open,Tomas Martin Etcheverry,Vit Kopriva,atp_53,atp_87,ATP,Hard
 2026-08-30,20:00,US Open,Martin Landaluce,Jacob Fearnley,atp_158,atp_84,ATP,Hard
 2026-08-30,20:00,US Open,Sebastian Gorzny,Raphael Collignon,atp_132,atp_68,ATP,Hard
