@@ -19,14 +19,14 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-02,20:30,US Open,Ann Li,Donna Vekic,wta_36,wta_99,WTA,Hard
 2026-09-02,21:00,US Open,Elina Svitolina,Maya Joint,wta_9,wta_29,WTA,Hard
 2026-09-02,23:00,US Open,Aryna Sabalenka,Polina Iatcenko,wta_1,wta_160,WTA,Hard
-2026-09-02,01:00,US Open,Lanlana Tararudee,Linda Noskova,wta_124,wta_118,WTA,Hard
+2026-09-02,01:00,US Open,Lanlana Tararudee,Linda Noskova,wta_124,wta_14,WTA,Hard
 2026-09-02,15:00,US Open,Jaume Munar,Arthur Rinderknech,atp_35,atp_30,ATP,Hard
 2026-09-02,15:00,US Open,Brandon Nakashima,Alex Michelsen,atp_29,atp_41,ATP,Hard
 2026-09-02,15:00,US Open,Daniel Merida,Andrey Rublev,atp_402,atp_14,ATP,Hard
 2026-09-02,15:00,US Open,Daniil Medvedev,Sebastian Gorzny,atp_11,atp_132,ATP,Hard
 2026-09-02,16:30,US Open,Andrea Guerrieri,Alex de Minaur,atp_484,atp_8,ATP,Hard
 2026-09-02,16:30,US Open,Jan Choinski,Botic Van De Zandschulp,atp_124,atp_55,ATP,Hard
-2026-09-02,16:30,US Open,Fabian Marozsan,Michael Zheng,atp_47,wta_372,ATP,Hard
+2026-09-02,16:30,US Open,Fabian Marozsan,Michael Zheng,atp_47,atp_152,ATP,Hard
 2026-09-02,16:30,US Open,Zachary Svajda,Daniel Altmaier,atp_106,atp_54,ATP,Hard
 2026-09-02,16:30,US Open,Tomas Martin Etcheverry,Jacob Fearnley,atp_53,atp_84,ATP,Hard
 2026-09-02,16:30,US Open,Marcos Giron,Ignacio Buse,atp_63,atp_91,ATP,Hard
@@ -52,10 +52,10 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-03,TBD,US Open,Oleksandra Oliynykova,Alexandra Eala,wta_71,wta_45,WTA,Hard
 2026-09-03,TBD,US Open,Cristina Bucsa,Himeno Sakatsume,wta_62,wta_135,WTA,Hard
 2026-09-03,TBD,US Open,Naomi Osaka,Katerina Siniakova,wta_16,wta_46,WTA,Hard
-2026-09-03,TBD,US Open,Zheng Qinwen,Yulia Putintseva,wta_372,wta_77,WTA,Hard
+2026-09-03,TBD,US Open,Zheng Qinwen,Yulia Putintseva,wta_23,wta_77,WTA,Hard
 2026-09-03,TBD,US Open,Anastasia Potapova,Leolia Jeanjean,wta_75,wta_115,WTA,Hard
 2026-09-03,TBD,US Open,Maria Timofeeva,Elise Mertens,wta_154,wta_22,WTA,Hard
-2026-09-03,TBD,US Open,Maria Sakkari,Yuliia Starodubtseva,wta_33,wta_101,WTA,Hard
+2026-09-03,TBD,US Open,Maria Sakkari,Yuliia Starodubtseva,wta_54,wta_101,WTA,Hard
 2026-09-03,TBD,US Open,Lilli Tagger,Amanda Anisimova,wta_114,wta_6,WTA,Hard
 2026-09-03,TBD,US Open,Jessica Bouzas Maneiro,Elena Rybakina,wta_48,wta_3,WTA,Hard
 2026-09-03,TBD,US Open,Felix Auger-Aliassime,Karen Khachanov,atp_6,atp_17,ATP,Hard
@@ -63,7 +63,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-03,TBD,US Open,Alexei Popyrin,Alejandro Tabilo,atp_51,atp_67,ATP,Hard
 2026-09-03,TBD,US Open,Dane Sweeny,Lorenzo Musetti,atp_134,atp_5,ATP,Hard
 2026-09-03,TBD,US Open,Luciano Darderi,Dalibor Svrcina,atp_22,atp_99,ATP,Hard
-2026-09-03,TBD,US Open,Jan-Lennard Struff,Francisco Cerundolo,atp_77,atp_62,ATP,Hard
+2026-09-03,TBD,US Open,Jan-Lennard Struff,Francisco Cerundolo,atp_77,atp_19,ATP,Hard
 2026-09-03,TBD,US Open,Alexander Blockx,Marco Trungelliti,atp_104,atp_131,ATP,Hard
 2026-09-03,TBD,US Open,Tristan Schoolkate,Flavio Cobolli,atp_108,atp_20,ATP,Hard
 2026-09-03,TBD,US Open,Jakub Mensik,Jurij Rodionov,atp_16,atp_175,ATP,Hard
