@@ -1,20 +1,20 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-09-04,Live,US Open,Jessica Pegula,Leylah Fernandez,wta_5,wta_28,WTA,Hard
-2026-09-04,Live,US Open,Taylor Townsend,Diana Shnaider,wta_116,wta_21,WTA,Hard
-2026-09-04,18:30,US Open,Emma Navarro,Karolina Muchova,wta_19,wta_13,WTA,Hard
-2026-09-04,18:30,US Open,Ann Li,Linda Noskova,wta_36,wta_118,WTA,Hard
-2026-09-04,01:00,US Open,Elina Svitolina,Anna Kalinskaya,wta_9,wta_24,WTA,Hard
+2026-09-04,Live,US Open,Emma Navarro,Karolina Muchova,wta_19,wta_13,WTA,Hard
+2026-09-04,20:00,US Open,Ann Li,Linda Noskova,wta_36,wta_14,WTA,Hard
+2026-09-04,01:00,US Open,Elina Svitolina,Anna Kalinskaya,wta_9,wta_65,WTA,Hard
 2026-09-04,Final,US Open,Aryna Sabalenka,Kamilla Rakhimova,wta_1,wta_91,WTA,Hard
+2026-09-04,Final,US Open,Jessica Pegula,Leylah Fernandez,wta_5,wta_28,WTA,Hard
 2026-09-04,Final,US Open,Marta Kostyuk,Ekaterina Alexandrova,wta_26,wta_11,WTA,Hard
+2026-09-04,Final,US Open,Taylor Townsend,Diana Shnaider,wta_116,wta_21,WTA,Hard
 2026-09-04,Final,US Open,Jasmine Paolini,Sorana Cirstea,wta_8,wta_30,WTA,Hard
-2026-09-04,Live,US Open,Daniil Medvedev,Arthur Rinderknech,atp_11,atp_30,ATP,Hard
 2026-09-04,Live,US Open,Alexander Bublik,Tommy Paul,atp_10,atp_24,ATP,Hard
-2026-09-04,18:00,US Open,Wu Yibing,Carlos Alcaraz,atp_145,atp_1,ATP,Hard
-2026-09-04,20:00,US Open,Tomas Martin Etcheverry,Mariano Navone,atp_53,atp_74,ATP,Hard
-2026-09-04,20:30,US Open,Alex Michelsen,Daniel Merida,atp_41,atp_402,ATP,Hard
+2026-09-04,Live,US Open,Wu Yibing,Carlos Alcaraz,atp_145,atp_1,ATP,Hard
+2026-09-04,20:10,US Open,Tomas Martin Etcheverry,Mariano Navone,atp_53,atp_74,ATP,Hard
+2026-09-04,20:50,US Open,Alex Michelsen,Daniel Merida,atp_41,atp_402,ATP,Hard
 2026-09-04,21:00,US Open,Jiri Lehecka,Stefanos Tsitsipas,atp_21,atp_32,ATP,Hard
 2026-09-04,23:00,US Open,Valentin Vacherot,Frances Tiafoe,atp_26,atp_28,ATP,Hard
 2026-09-04,00:30,US Open,Ben Shelton,Denis Shapovalov,atp_9,atp_36,ATP,Hard
+2026-09-04,Final,US Open,Daniil Medvedev,Arthur Rinderknech,atp_11,atp_30,ATP,Hard
 2026-09-05,15:00,US Open,Anastasia Potapova,Amanda Anisimova,wta_75,wta_6,WTA,Hard
 2026-09-05,15:00,US Open,Madison Keys,Zheng Qinwen,wta_17,wta_372,WTA,Hard
 2026-09-05,16:30,US Open,Mirra Andreeva,Nikola Bartunkova,wta_7,wta_104,WTA,Hard
