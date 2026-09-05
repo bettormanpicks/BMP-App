@@ -7,11 +7,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-05,21:00,US Open,Yuliia Starodubtseva,Elena Rybakina,wta_101,wta_3,WTA,Hard
 2026-09-05,23:00,US Open,Naomi Osaka,Elise Mertens,wta_16,wta_22,WTA,Hard
 2026-09-05,23:00,US Open,Iva Jovic,Alexandra Eala,wta_20,wta_45,WTA,Hard
-2026-09-05,15:30,US Open,Taylor Fritz,Francisco Cerundolo,atp_7,atp_19,ATP,Hard
+2026-09-05,15:30,US Open,Taylor Fritz,Francisco Cerundolo,atp_7,atp_62,ATP,Hard
 2026-09-05,16:30,US Open,Alexander Blockx,Flavio Cobolli,atp_104,atp_20,ATP,Hard
 2026-09-05,18:00,US Open,Karen Khachanov,Benjamin Bonzi,atp_17,atp_123,ATP,Hard
 2026-09-05,18:00,US Open,Luciano Darderi,Dane Sweeny,atp_22,atp_134,ATP,Hard
-2026-09-05,18:00,US Open,Michael Zheng,Arthur Gea,wta_372,atp_160,WTA,Hard
+2026-09-05,18:00,US Open,Michael Zheng,Arthur Gea,atp_152,atp_160,ATP,Hard
 2026-09-05,20:30,US Open,Zizou Bergs,Botic Van De Zandschulp,atp_43,atp_55,ATP,Hard
 2026-09-05,00:30,US Open,Alexander Zverev,Alejandro Tabilo,atp_4,atp_67,ATP,Hard
 2026-09-05,00:30,US Open,Jakub Mensik,Learner Tien,atp_16,atp_23,ATP,Hard
