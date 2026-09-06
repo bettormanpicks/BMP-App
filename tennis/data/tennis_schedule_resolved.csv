@@ -1,11 +1,11 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-09-06,Live,US Open,Marta Kostyuk,Linda Noskova,wta_26,wta_118,WTA,Hard
 2026-09-06,21:00,US Open,Jessica Pegula,Sorana Cirstea,wta_5,wta_30,WTA,Hard
-2026-09-06,01:00,US Open,Anna Kalinskaya,Emma Navarro,wta_65,wta_19,WTA,Hard
+2026-09-06,01:00,US Open,Anna Kalinskaya,Emma Navarro,wta_24,wta_19,WTA,Hard
 2026-09-06,Final,US Open,Aryna Sabalenka,Taylor Townsend,wta_1,wta_116,WTA,Hard
-2026-09-06,18:00,US Open,Tommy Paul,Carlos Alcaraz,atp_24,atp_1,ATP,Hard
-2026-09-06,18:30,US Open,Alex Michelsen,Tomas Martin Etcheverry,atp_41,atp_53,ATP,Hard
-2026-09-06,19:00,US Open,Daniil Medvedev,Frances Tiafoe,atp_11,atp_28,ATP,Hard
+2026-09-06,Final,US Open,Marta Kostyuk,Linda Noskova,wta_26,wta_14,WTA,Hard
+2026-09-06,Live,US Open,Tommy Paul,Carlos Alcaraz,atp_24,atp_1,ATP,Hard
+2026-09-06,Live,US Open,Alex Michelsen,Tomas Martin Etcheverry,atp_41,atp_53,ATP,Hard
+2026-09-06,Live,US Open,Daniil Medvedev,Frances Tiafoe,atp_11,atp_28,ATP,Hard
 2026-09-06,23:00,US Open,Ben Shelton,Stefanos Tsitsipas,atp_9,atp_32,ATP,Hard
 2026-09-06,Final,ATIK Antalya Open,Denislava Glushkova,Miriana Tona,wta_396,wta_384,WTA,
 2026-09-06,Final,ATIK Antalya Open,Aya Akan,Tena Lukas,wta_9100,wta_455,ATP,
@@ -15,7 +15,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-06,Final,ATIK Antalya Open,Ipek Oz,Dalila Jakupovic,wta_523,wta_385,WTA,
 2026-09-06,Final,ATIK Antalya Open,Ilay Yoruk,Sandra Samir,wta_809,wta_393,WTA,
 2026-09-06,Final,ATIK Antalya Open,Rada Zolotareva,Aneta Laboutkova,wta_295,wta_426,WTA,
-2026-09-06,Live,Montreux Nestlé Open,Lisa Zaar,Katerina Tsygourova,wta_466,wta_46,WTA,
+2026-09-06,Final,Montreux Nestlé Open,Lisa Zaar,Katerina Tsygourova,wta_466,wta_46,WTA,
 2026-09-06,TBD,Montreux Nestlé Open,Elsa Bonelli,Yelyzaveta Kotliar,wta_57,wta_499,WTA,
 2026-09-06,Final,Montreux Nestlé Open,Martina Trevisan,Julia Stusek,wta_685,wta_457,WTA,
 2026-09-06,Final,Montreux Nestlé Open,Deborah Chiesa,Diana Martynov,wta_539,wta_21,WTA,
@@ -24,10 +24,10 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-06,Final,Montreux Nestlé Open,Amandine Monnot,Lucie Nguyen Tan,wta_374,wta_229,WTA,
 2026-09-06,Final,Montreux Nestlé Open,Jule Niemeier,Lucija Ciric Bagaric,wta_302,wta_448,WTA,
 2026-09-07,15:00,US Open,Mirra Andreeva,Anastasia Potapova,wta_7,wta_75,WTA,Hard
-2026-09-07,15:30,US Open,Iga Swiatek,Zheng Qinwen,wta_2,wta_23,WTA,Hard
+2026-09-07,15:30,US Open,Iga Swiatek,Zheng Qinwen,wta_2,wta_372,WTA,Hard
 2026-09-07,18:30,US Open,Naomi Osaka,Elena Rybakina,wta_16,wta_3,WTA,Hard
 2026-09-07,23:00,US Open,Iva Jovic,Coco Gauff,wta_20,wta_4,WTA,Hard
-2026-09-07,17:00,US Open,Francisco Cerundolo,Alexander Blockx,atp_62,atp_104,ATP,Hard
+2026-09-07,17:00,US Open,Francisco Cerundolo,Alexander Blockx,atp_19,atp_104,ATP,Hard
 2026-09-07,20:00,US Open,Karen Khachanov,Learner Tien,atp_17,atp_23,ATP,Hard
 2026-09-07,20:30,US Open,Arthur Gea,Botic Van De Zandschulp,atp_160,atp_55,ATP,Hard
 2026-09-07,00:30,US Open,Alexander Zverev,Luciano Darderi,atp_4,atp_22,ATP,Hard
@@ -44,6 +44,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-07,09:00,Montreux Nestlé Open,Lucie Nguyen Tan,Dalila Spiteri,wta_229,wta_275,WTA,
 2026-09-07,09:00,Montreux Nestlé Open,Martina Trevisan,Elsa Bonelli,wta_685,wta_57,WTA,
 2026-09-07,09:00,Montreux Nestlé Open,Deborah Chiesa,Lucija Ciric Bagaric,wta_539,wta_448,WTA,
+2026-09-07,10:30,Montreux Nestlé Open,Katerina Tsygourova,Madison Sieg,wta_46,wta_467,WTA,
 2026-09-07,10:30,Montreux Nestlé Open,Anastasia Zolotareva,Despina Papamichail,wta_295,wta_157,WTA,
 2026-09-07,12:00,Montreux Nestlé Open,Tamara Zidansek,Tessa Johanna Brockmann,wta_145,wta_289,WTA,
 2026-09-07,12:00,Montreux Nestlé Open,Mina Hodzic,Anastasiia Sobolieva,wta_471,wta_268,WTA,

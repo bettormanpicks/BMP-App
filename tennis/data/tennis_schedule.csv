@@ -1,11 +1,11 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-09-06,Live,US Open,Marta Kostyuk,Linda Noskova
 2026-09-06,21:00,US Open,Jessica Pegula,Sorana Cirstea
 2026-09-06,01:00,US Open,Anna Kalinskaya,Emma Navarro
 2026-09-06,Final,US Open,Aryna Sabalenka,Taylor Townsend
-2026-09-06,18:00,US Open,Tommy Paul,Carlos Alcaraz
-2026-09-06,18:30,US Open,Alex Michelsen,Tomas Martin Etcheverry
-2026-09-06,19:00,US Open,Daniil Medvedev,Frances Tiafoe
+2026-09-06,Final,US Open,Marta Kostyuk,Linda Noskova
+2026-09-06,Live,US Open,Tommy Paul,Carlos Alcaraz
+2026-09-06,Live,US Open,Alex Michelsen,Tomas Martin Etcheverry
+2026-09-06,Live,US Open,Daniil Medvedev,Frances Tiafoe
 2026-09-06,23:00,US Open,Ben Shelton,Stefanos Tsitsipas
 2026-09-06,Final,ATIK Antalya Open,Denislava Glushkova,Miriana Tona
 2026-09-06,Final,ATIK Antalya Open,Aya Akan,Tena Lukas
@@ -15,7 +15,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-06,Final,ATIK Antalya Open,Ipek Oz,Dalila Jakupovic
 2026-09-06,Final,ATIK Antalya Open,Ilay Yoruk,Sandra Samir
 2026-09-06,Final,ATIK Antalya Open,Rada Zolotareva,Aneta Laboutkova
-2026-09-06,Live,Montreux Nestlé Open,Lisa Zaar,Katerina Tsygourova
+2026-09-06,Final,Montreux Nestlé Open,Lisa Zaar,Katerina Tsygourova
 2026-09-06,TBD,Montreux Nestlé Open,Elsa Bonelli,Yelyzaveta Kotliar
 2026-09-06,Final,Montreux Nestlé Open,Martina Trevisan,Julia Stusek
 2026-09-06,Final,Montreux Nestlé Open,Deborah Chiesa,Diana Martynov
@@ -44,6 +44,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-07,09:00,Montreux Nestlé Open,Lucie Nguyen Tan,Dalila Spiteri
 2026-09-07,09:00,Montreux Nestlé Open,Martina Trevisan,Elsa Bonelli
 2026-09-07,09:00,Montreux Nestlé Open,Deborah Chiesa,Lucija Ciric Bagaric
+2026-09-07,10:30,Montreux Nestlé Open,Katerina Tsygourova,Madison Sieg
 2026-09-07,10:30,Montreux Nestlé Open,Anastasia Zolotareva,Despina Papamichail
 2026-09-07,12:00,Montreux Nestlé Open,Tamara Zidansek,Tessa Johanna Brockmann
 2026-09-07,12:00,Montreux Nestlé Open,Mina Hodzic,Anastasiia Sobolieva
