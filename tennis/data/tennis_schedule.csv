@@ -7,16 +7,16 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-07,20:00,US Open,Karen Khachanov,Learner Tien
 2026-09-07,20:30,US Open,Arthur Gea,Botic Van De Zandschulp
 2026-09-07,00:30,US Open,Alexander Zverev,Luciano Darderi
-2026-09-07,07:35,ATIK Antalya Open,Nastasja Schunk,Tena Lukas
-2026-09-07,07:35,ATIK Antalya Open,Rada Zolotareva,Ipek Oz
-2026-09-07,07:40,ATIK Antalya Open,Samira De Stefano,Ilay Yoruk
-2026-09-07,08:30,ATIK Antalya Open,Lucia Bronzetti,Irene Burillo
-2026-09-07,08:30,ATIK Antalya Open,Radka Zelnickova,Zhibek Kulambayeva
-2026-09-07,09:00,ATIK Antalya Open,Rositsa Dencheva,Miriana Tona
-2026-09-07,10:00,ATIK Antalya Open,Weronika Falkowska,Elizara Yaneva
-2026-09-07,10:00,ATIK Antalya Open,Mia Ristic,Lina Gjorcheska
-2026-09-07,10:30,ATIK Antalya Open,Sofya Lansere,Aurora Zantedeschi
-2026-09-07,13:00,ATIK Antalya Open,Berfu Cengiz,Leyre Romero Gormaz
+2026-09-07,14:35,ATIK Antalya Open,Weronika Falkowska,Elizara Yaneva
+2026-09-07,16:00,ATIK Antalya Open,Berfu Cengiz,Leyre Romero Gormaz
+2026-09-07,Final,ATIK Antalya Open,Lucia Bronzetti,Irene Burillo
+2026-09-07,Final,ATIK Antalya Open,Mia Ristic,Lina Gjorcheska
+2026-09-07,Final,ATIK Antalya Open,Sofya Lansere,Aurora Zantedeschi
+2026-09-07,Final,ATIK Antalya Open,Rositsa Dencheva,Miriana Tona
+2026-09-07,Final,ATIK Antalya Open,Radka Zelnickova,Zhibek Kulambayeva
+2026-09-07,Final,ATIK Antalya Open,Samira De Stefano,Ilay Yoruk
+2026-09-07,Final,ATIK Antalya Open,Nastasja Schunk,Tena Lukas
+2026-09-07,Final,ATIK Antalya Open,Rada Zolotareva,Ipek Oz
 2026-09-07,15:00,Kia Open,Ena Koike,Laura Valentina Villamil Arias
 2026-09-07,15:00,Kia Open,Elsa Jacquemot,Ekaterina Ovcharenko
 2026-09-07,15:00,Kia Open,Lizette Cabrera,Anna Rogers
@@ -27,26 +27,29 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-07,19:00,Kia Open,Katrina Scott,Varvara Lepchenko
 2026-09-07,20:30,Kia Open,Nao Hibino,Maria Camila Torres Murcia
 2026-09-07,23:30,Kia Open,Julieta Pareja,Lucrezia Stefanini
-2026-09-07,09:00,Montreux Nestlé Open,Lucie Nguyen Tan,Dalila Spiteri
-2026-09-07,09:00,Montreux Nestlé Open,Martina Trevisan,Elsa Bonelli
-2026-09-07,09:00,Montreux Nestlé Open,Deborah Chiesa,Lucija Ciric Bagaric
-2026-09-07,10:30,Montreux Nestlé Open,Katerina Tsygourova,Madison Sieg
-2026-09-07,10:30,Montreux Nestlé Open,Anastasia Zolotareva,Despina Papamichail
-2026-09-07,12:00,Montreux Nestlé Open,Tamara Zidansek,Tessa Johanna Brockmann
-2026-09-07,12:00,Montreux Nestlé Open,Mina Hodzic,Anastasiia Sobolieva
-2026-09-07,13:30,Montreux Nestlé Open,Nuria Brancaccio,Francesca Curmi
+2026-09-07,Live,Montreux Nestlé Open,Tamara Zidansek,Tessa Johanna Brockmann
+2026-09-07,14:40,Montreux Nestlé Open,Mina Hodzic,Anastasiia Sobolieva
+2026-09-07,15:00,Montreux Nestlé Open,Nuria Brancaccio,Francesca Curmi
 2026-09-07,16:30,Montreux Nestlé Open,Denisa Zoldakova,Noma Noha Akugue
+2026-09-07,Final,Montreux Nestlé Open,Anastasia Zolotareva,Despina Papamichail
+2026-09-07,Final,Montreux Nestlé Open,Katerina Tsygourova,Madison Sieg
+2026-09-07,Final,Montreux Nestlé Open,Lucie Nguyen Tan,Dalila Spiteri
+2026-09-07,Final,Montreux Nestlé Open,Martina Trevisan,Elsa Bonelli
+2026-09-07,Final,Montreux Nestlé Open,Deborah Chiesa,Lucija Ciric Bagaric
 2026-09-08,TBD,US Open,Aryna Sabalenka,Linda Noskova
 2026-09-08,TBD,US Open,Jessica Pegula,Emma Navarro
 2026-09-08,TBD,US Open,Frances Tiafoe,Alex Michelsen
 2026-09-08,TBD,US Open,Ben Shelton,Carlos Alcaraz
-2026-09-08,TBD,ATIK Antalya Open,Eva Bennemann,Katarzyna Kawa
-2026-09-08,TBD,ATIK Antalya Open,Julie Struplova,Alevtina Ibragimova
-2026-09-08,TBD,ATIK Antalya Open,Yasmine Kabbaj,Cagla Buyukakcay
-2026-09-08,TBD,ATIK Antalya Open,Maria Lourdes Carle,Gina Feistel
-2026-09-08,TBD,ATIK Antalya Open,Federica Urgesi,Miriam Bulgaru
-2026-09-08,TBD,ATIK Antalya Open,Elena Pridankina,Ane Mintegi Del Olmo
-2026-09-08,TBD,ATIK Antalya Open,Francesca Jones,Raluka Serban
+2026-09-08,07:30,ATIK Antalya Open,Eva Bennemann,Katarzyna Kawa
+2026-09-08,07:30,ATIK Antalya Open,Maria Lourdes Carle,Gina Feistel
+2026-09-08,07:30,ATIK Antalya Open,Julie Struplova,Alevtina Ibragimova
+2026-09-08,09:00,ATIK Antalya Open,Samira De Stefano,Eva Vedder
+2026-09-08,09:00,ATIK Antalya Open,Federica Urgesi,Miriam Bulgaru
+2026-09-08,09:00,ATIK Antalya Open,Francesca Jones,Raluka Serban
+2026-09-08,10:30,ATIK Antalya Open,Nastasja Schunk,Alicia Herrero Linana
+2026-09-08,10:30,ATIK Antalya Open,Ipek Oz,Rositsa Dencheva
+2026-09-08,10:30,ATIK Antalya Open,Elena Pridankina,Ane Mintegi Del Olmo
+2026-09-08,13:00,ATIK Antalya Open,Yasmine Kabbaj,Cagla Buyukakcay
 2026-09-08,TBD,Kia Open,Emiliana Arango,Maria Paulina Perez Garcia
 2026-09-08,TBD,Kia Open,Jazmin Ortenzi,Mary Stoiana
 2026-09-08,TBD,Kia Open,You Xiaodi,Claire Liu
@@ -56,7 +59,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-08,TBD,Montreux Nestlé Open,Simona Waltert,Rebeka Masarova
 2026-09-08,TBD,Montreux Nestlé Open,Andrea Lazaro Garcia,Angela Fita Boluda
 2026-09-08,TBD,Montreux Nestlé Open,Lucie Havlickova,Lola Radivojevic
+2026-09-08,TBD,Montreux Nestlé Open,Martina Trevisan,Jennifer Ruggeri
 2026-09-08,TBD,Montreux Nestlé Open,Valentina Ryser,Dalma Galfi
+2026-09-08,TBD,Montreux Nestlé Open,Katerina Tsygourova,Clara Burel
+2026-09-08,TBD,Montreux Nestlé Open,Lucie Nguyen Tan,Alina Granwehr
+2026-09-08,TBD,Montreux Nestlé Open,Lucija Ciric Bagaric,Gabriella Price
 2026-09-08,TBD,Montreux Nestlé Open,Alice Tubello,Barbora Palicova
 2026-09-08,TBD,Montreux Nestlé Open,Fiona Ferro,Mona Barthel
 2026-09-08,TBD,Montreux Nestlé Open,Guiomar Maristany Zuleta De Reales,Marina Bassols Ribera
