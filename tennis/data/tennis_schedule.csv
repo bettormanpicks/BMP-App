@@ -1,14 +1,14 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-09-07,19:30,US Open,Naomi Osaka,Elena Rybakina
-2026-09-07,23:00,US Open,Iva Jovic,Coco Gauff
+2026-09-07,23:10,US Open,Iva Jovic,Coco Gauff
+2026-09-07,Final,US Open,Naomi Osaka,Elena Rybakina
 2026-09-07,Final,US Open,Mirra Andreeva,Anastasia Potapova
 2026-09-07,Final,US Open,Iga Swiatek,Zheng Qinwen
-2026-09-07,Live,US Open,Francisco Cerundolo,Alexander Blockx
-2026-09-07,20:30,US Open,Arthur Gea,Botic Van De Zandschulp
-2026-09-07,20:30,US Open,Karen Khachanov,Learner Tien
+2026-09-07,Live,US Open,Arthur Gea,Botic Van De Zandschulp
+2026-09-07,Live,US Open,Karen Khachanov,Learner Tien
 2026-09-07,00:30,US Open,Alexander Zverev,Luciano Darderi
-2026-09-07,Live,ATIK Antalya Open,Berfu Cengiz,Leyre Romero Gormaz
+2026-09-07,Final,US Open,Francisco Cerundolo,Alexander Blockx
 2026-09-07,Final,ATIK Antalya Open,Lucia Bronzetti,Irene Burillo
+2026-09-07,Final,ATIK Antalya Open,Berfu Cengiz,Leyre Romero Gormaz
 2026-09-07,Final,ATIK Antalya Open,Weronika Falkowska,Elizara Yaneva
 2026-09-07,Final,ATIK Antalya Open,Mia Ristic,Lina Gjorcheska
 2026-09-07,Final,ATIK Antalya Open,Sofya Lansere,Aurora Zantedeschi
@@ -17,17 +17,17 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-07,Final,ATIK Antalya Open,Samira De Stefano,Ilay Yoruk
 2026-09-07,Final,ATIK Antalya Open,Nastasja Schunk,Tena Lukas
 2026-09-07,Final,ATIK Antalya Open,Rada Zolotareva,Ipek Oz
-2026-09-07,Live,Kia Open,Anastasia Tikhonova,Darja Semenistaja
-2026-09-07,Live,Kia Open,Kayla Day,Suzan Lamens
-2026-09-07,19:00,Kia Open,Vendula Valdmannova,Carol Young Suh Lee
-2026-09-07,19:00,Kia Open,Katrina Scott,Varvara Lepchenko
-2026-09-07,20:30,Kia Open,Nao Hibino,Maria Camila Torres Murcia
-2026-09-07,23:30,Kia Open,Julieta Pareja,Lucrezia Stefanini
+2026-09-07,Live,Kia Open,Katrina Scott,Varvara Lepchenko
+2026-09-07,Live,Kia Open,Vendula Valdmannova,Carol Young Suh Lee
+2026-09-07,23:30,Kia Open,Nao Hibino,Maria Camila Torres Murcia
+2026-09-07,00:30,Kia Open,Julieta Pareja,Lucrezia Stefanini
+2026-09-07,Final,Kia Open,Anastasia Tikhonova,Darja Semenistaja
+2026-09-07,Final,Kia Open,Kayla Day,Suzan Lamens
 2026-09-07,Final,Kia Open,Carolina Alves,Antonia Vergara Rivera
 2026-09-07,Final,Kia Open,Elsa Jacquemot,Ekaterina Ovcharenko
 2026-09-07,Final,Kia Open,Ena Koike,Laura Valentina Villamil Arias
 2026-09-07,Final,Kia Open,Lizette Cabrera,Anna Rogers
-2026-09-07,Live,Montreux Nestlé Open,Denisa Zoldakova,Noma Noha Akugue
+2026-09-07,Final,Montreux Nestlé Open,Denisa Zoldakova,Noma Noha Akugue
 2026-09-07,Final,Montreux Nestlé Open,Tamara Zidansek,Tessa Johanna Brockmann
 2026-09-07,Final,Montreux Nestlé Open,Nuria Brancaccio,Francesca Curmi
 2026-09-07,Final,Montreux Nestlé Open,Mina Hodzic,Anastasiia Sobolieva
@@ -50,16 +50,16 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-08,10:30,ATIK Antalya Open,Ipek Oz,Rositsa Dencheva
 2026-09-08,10:30,ATIK Antalya Open,Elena Pridankina,Ane Mintegi Del Olmo
 2026-09-08,13:00,ATIK Antalya Open,Yasmine Kabbaj,Cagla Buyukakcay
-2026-09-08,TBD,Kia Open,Kaitlin Quevedo,Anna Rogers
-2026-09-08,TBD,Kia Open,Emiliana Arango,Maria Paulina Perez Garcia
-2026-09-08,TBD,Kia Open,Jazmin Ortenzi,Mary Stoiana
-2026-09-08,TBD,Kia Open,Emanuela Lares,Elsa Jacquemot
-2026-09-08,TBD,Kia Open,Ena Koike,Nadia Podoroska
-2026-09-08,TBD,Kia Open,You Xiaodi,Claire Liu
-2026-09-08,TBD,Kia Open,Dominika Salkova,Julia Riera
-2026-09-08,TBD,Kia Open,Valentina Mediorreal Arias,Anna Blinkova
-2026-09-08,TBD,Kia Open,Leolia Jeanjean,Carolina Alves
-2026-09-08,TBD,Kia Open,Cadence Brace,Sara Sorribes Tormo
+2026-09-08,18:30,Kia Open,Kaitlin Quevedo,Anna Rogers
+2026-09-08,18:30,Kia Open,You Xiaodi,Claire Liu
+2026-09-08,18:30,Kia Open,Leolia Jeanjean,Carolina Alves
+2026-09-08,20:00,Kia Open,Cadence Brace,Sara Sorribes Tormo
+2026-09-08,20:00,Kia Open,Ena Koike,Nadia Podoroska
+2026-09-08,20:00,Kia Open,Emanuela Lares,Elsa Jacquemot
+2026-09-08,21:30,Kia Open,Dominika Salkova,Julia Riera
+2026-09-08,21:30,Kia Open,Valentina Mediorreal Arias,Anna Blinkova
+2026-09-08,23:00,Kia Open,Jazmin Ortenzi,Mary Stoiana
+2026-09-08,23:30,Kia Open,Emiliana Arango,Maria Paulina Perez Garcia
 2026-09-08,09:00,Montreux Nestlé Open,Lucie Nguyen Tan,Alina Granwehr
 2026-09-08,09:00,Montreux Nestlé Open,Lucija Ciric Bagaric,Gabriella Price
 2026-09-08,09:00,Montreux Nestlé Open,Andrea Lazaro Garcia,Angela Fita Boluda
