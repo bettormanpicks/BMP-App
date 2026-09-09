@@ -1,7 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-09-08,Live,US Open,Jessica Pegula,Emma Navarro
 2026-09-08,Final,US Open,Aryna Sabalenka,Linda Noskova
-2026-09-08,02:20,US Open,Ben Shelton,Carlos Alcaraz
+2026-09-08,Final,US Open,Jessica Pegula,Emma Navarro
+2026-09-08,Final,US Open,Ben Shelton,Carlos Alcaraz
 2026-09-08,Final,US Open,Frances Tiafoe,Alex Michelsen
 2026-09-08,Final,ATIK Antalya Open,Francesca Jones,Raluka Serban
 2026-09-08,Final,ATIK Antalya Open,Eva Bennemann,Katarzyna Kawa
@@ -13,12 +13,12 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-08,Final,ATIK Antalya Open,Ipek Oz,Rositsa Dencheva
 2026-09-08,Final,ATIK Antalya Open,Maria Lourdes Carle,Gina Feistel
 2026-09-08,Final,ATIK Antalya Open,Julie Struplova,Alevtina Ibragimova
-2026-09-08,Live,Kia Open,Jazmin Ortenzi,Mary Stoiana
 2026-09-08,Final,Kia Open,Emiliana Arango,Maria Paulina Perez Garcia
 2026-09-08,Final,Kia Open,Valentina Mediorreal Arias,Anna Blinkova
 2026-09-08,Final,Kia Open,Kaitlin Quevedo,Anna Rogers
 2026-09-08,Final,Kia Open,You Xiaodi,Claire Liu
 2026-09-08,Final,Kia Open,Dominika Salkova,Julia Riera
+2026-09-08,Final,Kia Open,Jazmin Ortenzi,Mary Stoiana
 2026-09-08,Final,Kia Open,Emanuela Lares,Elsa Jacquemot
 2026-09-08,Final,Kia Open,Cadence Brace,Sara Sorribes Tormo
 2026-09-08,Final,Kia Open,Ena Koike,Nadia Podoroska
@@ -34,38 +34,12 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-08,Final,Montreux Nestlé Open,Katerina Tsygourova,Clara Burel
 2026-09-08,Final,Montreux Nestlé Open,Lucie Nguyen Tan,Alina Granwehr
 2026-09-08,Final,Montreux Nestlé Open,Lucija Ciric Bagaric,Gabriella Price
-2026-09-08,Live,US Open,Jessica Pegula,Emma Navarro
-2026-09-08,Final,US Open,Aryna Sabalenka,Linda Noskova
-2026-09-08,02:20,US Open,Ben Shelton,Carlos Alcaraz
-2026-09-08,Final,US Open,Frances Tiafoe,Alex Michelsen
-2026-09-08,Final,ATIK Antalya Open,Francesca Jones,Raluka Serban
-2026-09-08,Final,ATIK Antalya Open,Eva Bennemann,Katarzyna Kawa
-2026-09-08,Final,ATIK Antalya Open,Elena Pridankina,Ane Mintegi Del Olmo
-2026-09-08,Final,ATIK Antalya Open,Samira De Stefano,Eva Vedder
-2026-09-08,Final,ATIK Antalya Open,Nastasja Schunk,Alicia Herrero Linana
-2026-09-08,Final,ATIK Antalya Open,Yasmine Kabbaj,Cagla Buyukakcay
-2026-09-08,Final,ATIK Antalya Open,Federica Urgesi,Miriam Bulgaru
-2026-09-08,Final,ATIK Antalya Open,Ipek Oz,Rositsa Dencheva
-2026-09-08,Final,ATIK Antalya Open,Maria Lourdes Carle,Gina Feistel
-2026-09-08,Final,ATIK Antalya Open,Julie Struplova,Alevtina Ibragimova
-2026-09-08,Live,Kia Open,Jazmin Ortenzi,Mary Stoiana
-2026-09-08,Final,Kia Open,Emiliana Arango,Maria Paulina Perez Garcia
-2026-09-08,Final,Kia Open,Valentina Mediorreal Arias,Anna Blinkova
-2026-09-08,Final,Kia Open,Kaitlin Quevedo,Anna Rogers
-2026-09-08,Final,Kia Open,You Xiaodi,Claire Liu
-2026-09-08,Final,Kia Open,Dominika Salkova,Julia Riera
-2026-09-08,Final,Kia Open,Emanuela Lares,Elsa Jacquemot
-2026-09-08,Final,Kia Open,Cadence Brace,Sara Sorribes Tormo
-2026-09-08,Final,Kia Open,Ena Koike,Nadia Podoroska
-2026-09-08,Final,Kia Open,Leolia Jeanjean,Carolina Alves
-2026-09-08,Final,Montreux Nestlé Open,Simona Waltert,Rebeka Masarova
-2026-09-08,Final,Montreux Nestlé Open,Guiomar Maristany Zuleta De Reales,Marina Bassols Ribera
-2026-09-08,Final,Montreux Nestlé Open,Fiona Ferro,Mona Barthel
-2026-09-08,Final,Montreux Nestlé Open,Andrea Lazaro Garcia,Angela Fita Boluda
-2026-09-08,Final,Montreux Nestlé Open,Lucie Havlickova,Lola Radivojevic
-2026-09-08,Final,Montreux Nestlé Open,Valentina Ryser,Dalma Galfi
-2026-09-08,Final,Montreux Nestlé Open,Martina Trevisan,Jennifer Ruggeri
-2026-09-08,Final,Montreux Nestlé Open,Alice Tubello,Barbora Palicova
-2026-09-08,Final,Montreux Nestlé Open,Katerina Tsygourova,Clara Burel
-2026-09-08,Final,Montreux Nestlé Open,Lucie Nguyen Tan,Alina Granwehr
-2026-09-08,Final,Montreux Nestlé Open,Lucija Ciric Bagaric,Gabriella Price
+2026-09-10,TBD,US Open,Aryna Sabalenka,Jessica Pegula
+2026-09-10,TBD,ATIK Antalya Open,Cagla Buyukakcay,Eva Bennemann
+2026-09-10,TBD,ATIK Antalya Open,Maria Lourdes Carle,Eva Vedder
+2026-09-10,TBD,ATIK Antalya Open,Francesca Jones,Rositsa Dencheva
+2026-09-10,TBD,ATIK Antalya Open,Ane Mintegi Del Olmo,Alicia Herrero Linana
+2026-09-10,TBD,Montreux Nestlé Open,Martina Trevisan,Guiomar Maristany Zuleta De Reales
+2026-09-10,TBD,Montreux Nestlé Open,Simona Waltert,Despina Papamichail
+2026-09-10,TBD,Montreux Nestlé Open,Lucija Ciric Bagaric,Lucie Havlickova
+2026-09-10,TBD,Montreux Nestlé Open,Fiona Ferro,Barbora Palicova

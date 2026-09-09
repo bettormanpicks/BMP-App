@@ -1,7 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-09-08,Live,US Open,Jessica Pegula,Emma Navarro,wta_5,wta_19,WTA,Hard
-2026-09-08,Final,US Open,Aryna Sabalenka,Linda Noskova,wta_1,wta_118,WTA,Hard
-2026-09-08,02:20,US Open,Ben Shelton,Carlos Alcaraz,atp_9,atp_1,ATP,Hard
+2026-09-08,Final,US Open,Aryna Sabalenka,Linda Noskova,wta_1,wta_14,WTA,Hard
+2026-09-08,Final,US Open,Jessica Pegula,Emma Navarro,wta_5,wta_19,WTA,Hard
+2026-09-08,Final,US Open,Ben Shelton,Carlos Alcaraz,atp_9,atp_1,ATP,Hard
 2026-09-08,Final,US Open,Frances Tiafoe,Alex Michelsen,atp_28,atp_41,ATP,Hard
 2026-09-08,Final,ATIK Antalya Open,Francesca Jones,Raluka Serban,wta_72,wta_244,WTA,
 2026-09-08,Final,ATIK Antalya Open,Eva Bennemann,Katarzyna Kawa,wta_363,wta_143,WTA,
@@ -13,12 +13,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-08,Final,ATIK Antalya Open,Ipek Oz,Rositsa Dencheva,wta_523,wta_574,WTA,
 2026-09-08,Final,ATIK Antalya Open,Maria Lourdes Carle,Gina Feistel,wta_155,wta_650,WTA,
 2026-09-08,Final,ATIK Antalya Open,Julie Struplova,Alevtina Ibragimova,wta_320,wta_321,WTA,
-2026-09-08,Live,Kia Open,Jazmin Ortenzi,Mary Stoiana,wta_216,wta_185,WTA,
 2026-09-08,Final,Kia Open,Emiliana Arango,Maria Paulina Perez Garcia,wta_58,wta_206,WTA,
-2026-09-08,Final,Kia Open,Valentina Mediorreal Arias,Anna Blinkova,wta_9013,wta_65,WTA,
+2026-09-08,Final,Kia Open,Valentina Mediorreal Arias,Anna Blinkova,wta_9013,wta_82,WTA,
 2026-09-08,Final,Kia Open,Kaitlin Quevedo,Anna Rogers,wta_131,wta_65,WTA,
 2026-09-08,Final,Kia Open,You Xiaodi,Claire Liu,wta_252,wta_213,WTA,
 2026-09-08,Final,Kia Open,Dominika Salkova,Julia Riera,wta_151,wta_187,WTA,
+2026-09-08,Final,Kia Open,Jazmin Ortenzi,Mary Stoiana,wta_216,wta_185,WTA,
 2026-09-08,Final,Kia Open,Emanuela Lares,Elsa Jacquemot,wta_9100,wta_57,ATP,
 2026-09-08,Final,Kia Open,Cadence Brace,Sara Sorribes Tormo,wta_202,wta_451,WTA,
 2026-09-08,Final,Kia Open,Ena Koike,Nadia Podoroska,wta_200,wta_9006,WTA,
@@ -34,3 +34,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-08,Final,Montreux Nestlé Open,Katerina Tsygourova,Clara Burel,wta_46,wta_15,WTA,
 2026-09-08,Final,Montreux Nestlé Open,Lucie Nguyen Tan,Alina Granwehr,wta_229,wta_382,WTA,
 2026-09-08,Final,Montreux Nestlé Open,Lucija Ciric Bagaric,Gabriella Price,wta_448,atp_921,WTA,
+2026-09-10,TBD,US Open,Aryna Sabalenka,Jessica Pegula,wta_1,wta_5,WTA,Hard
+2026-09-10,TBD,ATIK Antalya Open,Cagla Buyukakcay,Eva Bennemann,wta_376,wta_363,WTA,
+2026-09-10,TBD,ATIK Antalya Open,Maria Lourdes Carle,Eva Vedder,wta_155,wta_254,WTA,
+2026-09-10,TBD,ATIK Antalya Open,Francesca Jones,Rositsa Dencheva,wta_72,wta_574,WTA,
+2026-09-10,TBD,ATIK Antalya Open,Ane Mintegi Del Olmo,Alicia Herrero Linana,wta_373,wta_308,WTA,
+2026-09-10,TBD,Montreux Nestlé Open,Martina Trevisan,Guiomar Maristany Zuleta De Reales,wta_685,wta_165,WTA,
+2026-09-10,TBD,Montreux Nestlé Open,Simona Waltert,Despina Papamichail,wta_81,wta_157,WTA,
+2026-09-10,TBD,Montreux Nestlé Open,Lucija Ciric Bagaric,Lucie Havlickova,wta_448,wta_276,WTA,
+2026-09-10,TBD,Montreux Nestlé Open,Fiona Ferro,Barbora Palicova,wta_239,wta_221,WTA,
