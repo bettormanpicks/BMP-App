@@ -1,31 +1,13 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-09-11,23:00,US Open,Frances Tiafoe,Ben Shelton,atp_28,atp_9,ATP,Hard
+2026-09-11,Live,US Open,Frances Tiafoe,Ben Shelton,atp_28,atp_9,ATP,Hard
 2026-09-11,Final,US Open,Alexander Zverev,Karen Khachanov,atp_4,atp_17,ATP,Hard
 2026-09-11,Final,ATIK Antalya Open,Irene Burillo,Elizara Yaneva,wta_249,wta_228,WTA,
 2026-09-11,Final,ATIK Antalya Open,Alicia Herrero Linana,Eva Bennemann,wta_308,wta_363,WTA,
 2026-09-11,Final,ATIK Antalya Open,Aurora Zantedeschi,Alevtina Ibragimova,wta_325,wta_321,WTA,
 2026-09-11,Final,ATIK Antalya Open,Rositsa Dencheva,Maria Lourdes Carle,wta_574,wta_155,WTA,
-2026-09-11,22:50,Kia Open,Elsa Jacquemot,Anna Blinkova,wta_57,wta_82,WTA,
+2026-09-11,Final,Kia Open,Elsa Jacquemot,Anna Blinkova,wta_57,wta_82,WTA,
 2026-09-11,Final,Kia Open,Leolia Jeanjean,Claire Liu,wta_115,wta_213,WTA,
 2026-09-11,Final,Montreux Nestlé Open,Simona Waltert,Dalma Galfi,wta_81,wta_86,WTA,
 2026-09-11,Final,Montreux Nestlé Open,Anastasiia Sobolieva,Noma Noha Akugue,wta_268,wta_255,WTA,
 2026-09-11,Final,Montreux Nestlé Open,Fiona Ferro,Lucie Havlickova,wta_239,wta_276,WTA,
 2026-09-11,Final,Montreux Nestlé Open,Clara Burel,Guiomar Maristany Zuleta De Reales,wta_15,wta_165,WTA,
-2026-09-12,20:00,US Open,Aryna Sabalenka,Elena Rybakina,wta_1,wta_3,WTA,Hard
-2026-09-12,10:00,ATIK Antalya Open,Rositsa Dencheva,Irene Burillo,wta_574,wta_249,WTA,
-2026-09-12,11:30,ATIK Antalya Open,Alevtina Ibragimova,Alicia Herrero Linana,wta_321,wta_308,WTA,
-2026-09-12,TBD,Guadalajara Open presentado por Santander,Lea Ma,Katarina Zavatska,wta_182,wta_310,WTA,
-2026-09-12,TBD,Guadalajara Open presentado por Santander,Iryna Shymanovich,Ana Sofia Sanchez,wta_156,wta_195,WTA,
-2026-09-12,TBD,Guadalajara Open presentado por Santander,Alexandra Panova,Katrina Scott,wta_344,wta_282,WTA,
-2026-09-12,TBD,Guadalajara Open presentado por Santander,Varvara Lepchenko,Nicole Melichar-Martinez,wta_149,atp_101,WTA,
-2026-09-12,TBD,Guadalajara Open presentado por Santander,Sara Sorribes Tormo,Ena Koike,wta_451,wta_200,WTA,
-2026-09-12,12:30,Montreux Nestlé Open,Noma Noha Akugue,Guiomar Maristany Zuleta De Reales,wta_255,wta_165,WTA,
-2026-09-12,14:00,Montreux Nestlé Open,Dalma Galfi,Fiona Ferro,wta_86,wta_239,WTA,
-2026-09-12,13:00,SP Open,Victoria Bosio,Lizette Cabrera,wta_337,wta_274,WTA,Hard
-2026-09-12,13:00,SP Open,You Xiaodi,Luiza Fullana,wta_252,wta_9045,WTA,Hard
-2026-09-12,13:00,SP Open,Justina Mikulskyte,Antonia Vergara Rivera,wta_247,wta_432,WTA,Hard
-2026-09-12,14:30,SP Open,Hayu Kinoshita,Victoria Rodriguez,wta_417,wta_418,WTA,Hard
-2026-09-12,14:30,SP Open,Ana Candiotto,Cadence Brace,wta_9046,wta_202,WTA,Hard
-2026-09-12,14:30,SP Open,Chloe Paquet,Martina Capurro Taborda,wta_215,wta_370,WTA,Hard
-2026-09-12,16:00,SP Open,Alana Smith,Anastasia Tikhonova,atp_141,wta_443,ATP,Hard
-2026-09-12,16:00,SP Open,Whitney Osuigwe,Fernanda Labrana,wta_162,wta_462,WTA,Hard
