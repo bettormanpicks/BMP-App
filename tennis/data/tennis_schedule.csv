@@ -1,22 +1,22 @@
 Date,Time,Tournament,Player 1,Player 2
 2026-09-13,18:00,US Open,Alexander Zverev,Ben Shelton
-2026-09-13,10:20,ATIK Antalya Open,Rositsa Dencheva,Alevtina Ibragimova
-2026-09-13,10:00,BBVA Open Internacional De Valencia,Nuria Sarganella Verdu,Dalila Jakupovic
-2026-09-13,10:00,BBVA Open Internacional De Valencia,Nastasja Schunk,Ekaterina Kazionova
-2026-09-13,11:30,BBVA Open Internacional De Valencia,Tena Lukas,Madison Sieg
-2026-09-13,11:30,BBVA Open Internacional De Valencia,Jessica Pieri,Ruth Roura Llaverias
-2026-09-13,13:00,BBVA Open Internacional De Valencia,Diletta Cherubini,Isabella Shinikova
-2026-09-13,13:00,BBVA Open Internacional De Valencia,Joelle Lilly Sophie Steur,Neus Torner Sensano
-2026-09-13,14:30,BBVA Open Internacional De Valencia,Dalila Spiteri,Mell Reasco Gonzalez
+2026-09-13,Final,ATIK Antalya Open,Rositsa Dencheva,Alevtina Ibragimova
+2026-09-13,Live,BBVA Open Internacional De Valencia,Joelle Lilly Sophie Steur,Neus Torner Sensano
+2026-09-13,13:40,BBVA Open Internacional De Valencia,Diletta Cherubini,Isabella Shinikova
+2026-09-13,14:50,BBVA Open Internacional De Valencia,Dalila Spiteri,Mell Reasco Gonzalez
 2026-09-13,15:00,BBVA Open Internacional De Valencia,Tessa Johanna Brockmann,Aran Teixido Garcia
-2026-09-13,09:00,Caldas da Rainha Ladies Open,Elena Malygina,Giulia  Pereira De Aguiar
-2026-09-13,09:00,Caldas da Rainha Ladies Open,Ekaterina Yashina,Kylie Collins
-2026-09-13,10:30,Caldas da Rainha Ladies Open,Angelina Voloshchuk,Teresa Franco Dias
-2026-09-13,10:30,Caldas da Rainha Ladies Open,Gabriella Da Silva Fick,Stephanie Judith Visscher
-2026-09-13,12:00,Caldas da Rainha Ladies Open,Georgina Garcia Perez,Ariana Arseneault
-2026-09-13,12:00,Caldas da Rainha Ladies Open,Margaux Rouvroy,Sofia Johnson
-2026-09-13,13:30,Caldas da Rainha Ladies Open,Zhibek Kulambayeva,Malaika Rapolu
-2026-09-13,13:30,Caldas da Rainha Ladies Open,Oceane Dodin,Reese Brantmeier
+2026-09-13,Final,BBVA Open Internacional De Valencia,Tena Lukas,Madison Sieg
+2026-09-13,Final,BBVA Open Internacional De Valencia,Jessica Pieri,Ruth Roura Llaverias
+2026-09-13,Final,BBVA Open Internacional De Valencia,Nuria Sarganella Verdu,Dalila Jakupovic
+2026-09-13,TBD,BBVA Open Internacional De Valencia,Nastasja Schunk,Ekaterina Kazionova
+2026-09-13,Live,Caldas da Rainha Ladies Open,Margaux Rouvroy,Sofia Johnson
+2026-09-13,Live,Caldas da Rainha Ladies Open,Oceane Dodin,Reese Brantmeier
+2026-09-13,14:30,Caldas da Rainha Ladies Open,Zhibek Kulambayeva,Malaika Rapolu
+2026-09-13,Final,Caldas da Rainha Ladies Open,Georgina Garcia Perez,Ariana Arseneault
+2026-09-13,Final,Caldas da Rainha Ladies Open,Gabriella Da Silva Fick,Stephanie Judith Visscher
+2026-09-13,Final,Caldas da Rainha Ladies Open,Angelina Voloshchuk,Teresa Franco Dias
+2026-09-13,Final,Caldas da Rainha Ladies Open,Elena Malygina,Giulia  Pereira De Aguiar
+2026-09-13,Final,Caldas da Rainha Ladies Open,Ekaterina Yashina,Kylie Collins
 2026-09-13,16:00,Guadalajara Open presentado por Santander,Nadiia Kichenok,Nao Hibino
 2026-09-13,16:00,Guadalajara Open presentado por Santander,Sara Sorribes Tormo,Caroline Dolehide
 2026-09-13,16:00,Guadalajara Open presentado por Santander,Carole Monnet,Katrina Scott
@@ -26,11 +26,24 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-13,19:30,Guadalajara Open presentado por Santander,Darja Vidmanova,Janice Tjen
 2026-09-13,20:30,Guadalajara Open presentado por Santander,Panna Udvardy,Lois Boisson
 2026-09-13,23:00,Guadalajara Open presentado por Santander,Cristina Bucsa,Bianca Andreescu
-2026-09-13,12:00,Montreux Nestlé Open,Fiona Ferro,Noma Noha Akugue
+2026-09-13,Final,Montreux Nestlé Open,Fiona Ferro,Noma Noha Akugue
 2026-09-13,15:00,SP Open,Justina Mikulskyte,Chloe Paquet
 2026-09-13,15:00,SP Open,You Xiaodi,Victoria Bosio
 2026-09-13,16:30,SP Open,Whitney Osuigwe,Anastasia Tikhonova
 2026-09-13,16:30,SP Open,Hayu Kinoshita,Cadence Brace
+2026-09-14,TBD,BBVA Open Internacional De Valencia,Nastasja Schunk,Dalila Jakupovic
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Aoi Ito,Gabriela Knutson
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Susan Bandecchi,Maria Martinez Vaquero
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Jeline Vandromme,Carla Tomai
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Matilde Jorge,Anastasia Gasanova
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Francisca Jorge,Gao Xinyu
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Mariia Nozdrachova,Kayla Cross
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Katherine Sebov,Victoria Jimenez Kasintseva
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Noma Noha Akugue,Ayana Akli
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Sana Garakani,Lisa Pigato
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Erika Andreeva,Viktoria Hruncakova
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Sinja Kraus,Mia Pohankova
+2026-09-14,TBD,Caldas da Rainha Ladies Open,Elena Micic,Anouk Koevermans
 2026-09-14,TBD,Guadalajara Open presentado por Santander,Tatjana Maria,Taylor Townsend
 2026-09-14,TBD,Guadalajara Open presentado por Santander,Elvina Kalieva,Kayla Day
 2026-09-14,TBD,Guadalajara Open presentado por Santander,Elsa Jacquemot,Liudmila Samsonova
@@ -40,7 +53,6 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-14,TBD,SP Open,Eva Lys,Gabriela Ce
 2026-09-14,TBD,SP Open,Lucrezia Stefanini,Nadia Podoroska
 2026-09-14,TBD,SP Open,Suzan Lamens,Carolina Alves
-2026-09-14,TBD,SP Open,Leolia Jeanjean,Kaitlin Quevedo
 2026-09-14,TBD,SP Open,Anna Blinkova,Carol Young Suh Lee
 2026-09-14,TBD,SP Open,Vendula Valdmannova,Laura Pigossi
 2026-09-14,TBD,SP Open,Julia Riera,Elina Avanesyan
