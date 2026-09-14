@@ -1,33 +1,62 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-09-13,Final,US Open,Alexander Zverev,Ben Shelton,atp_4,atp_9,ATP,Hard
-2026-09-13,Final,ATIK Antalya Open,Rositsa Dencheva,Alevtina Ibragimova,wta_574,wta_321,WTA,
-2026-09-13,Final,BBVA Open Internacional De Valencia,Dalila Spiteri,Mell Reasco Gonzalez,wta_275,wta_461,WTA,
-2026-09-13,Final,BBVA Open Internacional De Valencia,Tessa Johanna Brockmann,Aran Teixido Garcia,wta_289,wta_206,WTA,
-2026-09-13,Final,BBVA Open Internacional De Valencia,Diletta Cherubini,Isabella Shinikova,wta_389,wta_340,WTA,
-2026-09-13,Final,BBVA Open Internacional De Valencia,Joelle Lilly Sophie Steur,Neus Torner Sensano,wta_505,wta_918,WTA,
-2026-09-13,Final,BBVA Open Internacional De Valencia,Tena Lukas,Madison Sieg,wta_455,wta_467,WTA,
-2026-09-13,Final,BBVA Open Internacional De Valencia,Jessica Pieri,Ruth Roura Llaverias,wta_383,wta_481,WTA,
-2026-09-13,Final,BBVA Open Internacional De Valencia,Nuria Sarganella Verdu,Dalila Jakupovic,wta_9100,wta_385,ATP,
-2026-09-13,TBD,BBVA Open Internacional De Valencia,Nastasja Schunk,Ekaterina Kazionova,wta_365,wta_394,WTA,
-2026-09-13,Final,Caldas da Rainha Ladies Open,Zhibek Kulambayeva,Malaika Rapolu,wta_390,wta_9009,WTA,
-2026-09-13,Final,Caldas da Rainha Ladies Open,Oceane Dodin,Reese Brantmeier,atp_9056,atp_9101,WTA,
-2026-09-13,Final,Caldas da Rainha Ladies Open,Margaux Rouvroy,Sofia Johnson,wta_316,wta_407,WTA,
-2026-09-13,Final,Caldas da Rainha Ladies Open,Georgina Garcia Perez,Ariana Arseneault,atp_389,wta_476,ATP,
-2026-09-13,Final,Caldas da Rainha Ladies Open,Gabriella Da Silva Fick,Stephanie Judith Visscher,wta_600,wta_449,WTA,
-2026-09-13,Final,Caldas da Rainha Ladies Open,Angelina Voloshchuk,Teresa Franco Dias,wta_401,atp_253,WTA,
-2026-09-13,Final,Caldas da Rainha Ladies Open,Ekaterina Yashina,Kylie Collins,wta_494,wta_78,WTA,
-2026-09-13,Final,Caldas da Rainha Ladies Open,Elena Malygina,Giulia  Pereira De Aguiar,wta_347,wta_9102,WTA,
-2026-09-13,Final,Guadalajara Open presentado por Santander,Darja Vidmanova,Janice Tjen,wta_127,wta_47,WTA,
-2026-09-13,Final,Guadalajara Open presentado por Santander,Cristina Bucsa,Bianca Andreescu,wta_62,wta_161,WTA,
-2026-09-13,Final,Guadalajara Open presentado por Santander,Panna Udvardy,Lois Boisson,wta_93,wta_35,WTA,
-2026-09-13,Final,Guadalajara Open presentado por Santander,Alycia Parks,Varvara Lepchenko,wta_76,wta_149,WTA,
-2026-09-13,Final,Guadalajara Open presentado por Santander,Peyton Stearns,Emiliana Arango,wta_59,wta_58,WTA,
-2026-09-13,TBD,Guadalajara Open presentado por Santander,Iryna Shymanovich,Lea Ma,wta_156,wta_182,WTA,
-2026-09-13,Final,Guadalajara Open presentado por Santander,Carole Monnet,Katrina Scott,wta_177,wta_282,WTA,
-2026-09-13,Final,Guadalajara Open presentado por Santander,Sara Sorribes Tormo,Caroline Dolehide,wta_451,wta_121,WTA,
-2026-09-13,Final,Guadalajara Open presentado por Santander,Nadiia Kichenok,Nao Hibino,wta_9103,wta_196,ATP,
-2026-09-13,Final,Montreux Nestlé Open,Fiona Ferro,Noma Noha Akugue,wta_239,wta_255,WTA,
-2026-09-13,Final,SP Open,Hayu Kinoshita,Cadence Brace,wta_417,wta_202,WTA,Hard
-2026-09-13,Final,SP Open,Whitney Osuigwe,Anastasia Tikhonova,wta_162,wta_257,WTA,Hard
-2026-09-13,Final,SP Open,You Xiaodi,Victoria Bosio,wta_252,wta_442,WTA,Hard
-2026-09-13,Final,SP Open,Justina Mikulskyte,Chloe Paquet,wta_247,wta_215,WTA,Hard
+2026-09-14,Final,BBVA Open Internacional De Valencia,Dalila Spiteri,Mell Reasco Gonzalez,wta_275,wta_461,WTA,
+2026-09-14,Final,BBVA Open Internacional De Valencia,Tessa Johanna Brockmann,Aran Teixido Garcia,wta_289,wta_206,WTA,
+2026-09-14,Final,BBVA Open Internacional De Valencia,Diletta Cherubini,Isabella Shinikova,wta_389,wta_340,WTA,
+2026-09-14,Final,BBVA Open Internacional De Valencia,Joelle Lilly Sophie Steur,Neus Torner Sensano,wta_505,wta_918,WTA,
+2026-09-14,Final,BBVA Open Internacional De Valencia,Tena Lukas,Madison Sieg,wta_455,wta_467,WTA,
+2026-09-14,Final,BBVA Open Internacional De Valencia,Jessica Pieri,Ruth Roura Llaverias,wta_383,wta_481,WTA,
+2026-09-14,Final,BBVA Open Internacional De Valencia,Nuria Sarganella Verdu,Dalila Jakupovic,wta_9100,wta_385,ATP,
+2026-09-14,TBD,BBVA Open Internacional De Valencia,Nastasja Schunk,Ekaterina Kazionova,wta_365,wta_494,WTA,
+2026-09-14,Final,Caldas da Rainha Ladies Open,Zhibek Kulambayeva,Malaika Rapolu,wta_390,wta_9009,WTA,
+2026-09-14,Final,Caldas da Rainha Ladies Open,Oceane Dodin,Reese Brantmeier,atp_9056,atp_9101,WTA,
+2026-09-14,Final,Caldas da Rainha Ladies Open,Margaux Rouvroy,Sofia Johnson,wta_316,wta_407,WTA,
+2026-09-14,Final,Caldas da Rainha Ladies Open,Georgina Garcia Perez,Ariana Arseneault,atp_389,wta_476,ATP,
+2026-09-14,Final,Caldas da Rainha Ladies Open,Gabriella Da Silva Fick,Stephanie Judith Visscher,wta_600,wta_449,WTA,
+2026-09-14,Final,Caldas da Rainha Ladies Open,Angelina Voloshchuk,Teresa Franco Dias,wta_401,atp_253,WTA,
+2026-09-14,Final,Caldas da Rainha Ladies Open,Ekaterina Yashina,Kylie Collins,wta_494,wta_78,WTA,
+2026-09-14,Final,Caldas da Rainha Ladies Open,Elena Malygina,Giulia  Pereira De Aguiar,wta_347,wta_9102,WTA,
+2026-09-14,Final,Guadalajara Open presentado por Santander,Darja Vidmanova,Janice Tjen,wta_127,wta_47,WTA,
+2026-09-14,Final,Guadalajara Open presentado por Santander,Cristina Bucsa,Bianca Andreescu,wta_62,wta_161,WTA,
+2026-09-14,Final,Guadalajara Open presentado por Santander,Panna Udvardy,Lois Boisson,wta_93,wta_35,WTA,
+2026-09-14,Final,Guadalajara Open presentado por Santander,Alycia Parks,Varvara Lepchenko,wta_76,wta_149,WTA,
+2026-09-14,Final,Guadalajara Open presentado por Santander,Peyton Stearns,Emiliana Arango,wta_59,wta_58,WTA,
+2026-09-14,TBD,Guadalajara Open presentado por Santander,Iryna Shymanovich,Lea Ma,wta_156,wta_182,WTA,
+2026-09-14,Final,Guadalajara Open presentado por Santander,Carole Monnet,Katrina Scott,wta_177,wta_282,WTA,
+2026-09-14,Final,Guadalajara Open presentado por Santander,Sara Sorribes Tormo,Caroline Dolehide,wta_451,wta_121,WTA,
+2026-09-14,Final,Guadalajara Open presentado por Santander,Nadiia Kichenok,Nao Hibino,wta_9103,wta_196,ATP,
+2026-09-14,Final,SP Open,Hayu Kinoshita,Cadence Brace,wta_417,wta_202,WTA,Hard
+2026-09-14,Final,SP Open,Whitney Osuigwe,Anastasia Tikhonova,wta_162,wta_257,WTA,Hard
+2026-09-14,Final,SP Open,You Xiaodi,Victoria Bosio,wta_252,wta_442,WTA,Hard
+2026-09-14,Final,SP Open,Justina Mikulskyte,Chloe Paquet,wta_247,wta_215,WTA,Hard
+2026-09-15,TBD,BBVA Open Internacional De Valencia,Mina Hodzic,Rebeka Masarova,wta_471,wta_117,WTA,
+2026-09-15,TBD,BBVA Open Internacional De Valencia,Angela Fita Boluda,Yasmine Kabbaj,wta_242,wta_361,WTA,
+2026-09-15,TBD,BBVA Open Internacional De Valencia,Leyre Romero Gormaz,Martina Trevisan,wta_140,wta_685,WTA,
+2026-09-15,TBD,BBVA Open Internacional De Valencia,Jennifer Ruggeri,Eva Vedder,wta_315,wta_254,WTA,
+2026-09-15,TBD,BBVA Open Internacional De Valencia,Alicia Herrero Linana,Lucia Cortez Llorca,wta_308,wta_569,WTA,
+2026-09-15,TBD,BBVA Open Internacional De Valencia,Ane Mintegi Del Olmo,Ariana Geerlings,wta_373,wta_343,WTA,
+2026-09-15,TBD,BBVA Open Internacional De Valencia,Berfu Cengiz,Guiomar Maristany Zuleta De Reales,wta_480,wta_165,WTA,
+2026-09-15,TBD,Caldas da Rainha Ladies Open,Aoi Ito,Gabriela Knutson,wta_176,wta_184,WTA,
+2026-09-15,TBD,Caldas da Rainha Ladies Open,Susan Bandecchi,Maria Martinez Vaquero,wta_233,wta_479,WTA,
+2026-09-15,TBD,Caldas da Rainha Ladies Open,Elena Micic,Anouk Koevermans,wta_375,wta_172,WTA,
+2026-09-15,TBD,Caldas da Rainha Ladies Open,Noma Noha Akugue,Ayana Akli,wta_255,wta_248,WTA,
+2026-09-15,TBD,Caldas da Rainha Ladies Open,Katherine Sebov,Victoria Jimenez Kasintseva,wta_270,wta_119,WTA,
+2026-09-15,TBD,Caldas da Rainha Ladies Open,Francisca Jorge,Gao Xinyu,wta_207,wta_262,WTA,
+2026-09-15,TBD,Caldas da Rainha Ladies Open,Matilde Jorge,Anastasia Gasanova,wta_256,wta_189,WTA,
+2026-09-15,TBD,Guadalajara Open presentado por Santander,Diane Parry,Peyton Stearns,wta_107,wta_59,WTA,
+2026-09-15,TBD,Guadalajara Open presentado por Santander,Alycia Parks,Sara Bejlek,wta_76,wta_41,WTA,
+2026-09-15,TBD,Guadalajara Open presentado por Santander,Cristina Bucsa,Panna Udvardy,wta_62,wta_93,WTA,
+2026-09-15,TBD,SP Open,Mary Stoiana,Claire Liu,wta_185,wta_213,WTA,Hard
+2026-09-15,TBD,SP Open,Eva Lys,Gabriela Ce,wta_56,wta_9053,WTA,Hard
+2026-09-15,TBD,SP Open,Lucrezia Stefanini,Nadia Podoroska,wta_136,wta_9006,WTA,Hard
+2026-09-15,TBD,SP Open,Whitney Osuigwe,Kaitlin Quevedo,wta_162,wta_131,WTA,Hard
+2026-09-15,TBD,SP Open,Anna Blinkova,Carol Young Suh Lee,wta_65,wta_170,WTA,Hard
+2026-09-15,TBD,SP Open,Vendula Valdmannova,Laura Pigossi,wta_286,wta_214,WTA,Hard
+2026-09-15,TBD,SP Open,Teodora Kostovic,Victoria Luiza Barros,wta_171,wta_9044,WTA,Hard
+2026-09-15,TBD,SP Open,Nauhany Vitoria Leme Da Silva,Astra Sharma,wta_9042,wta_190,WTA,Hard
+2026-09-15,TBD,SP Open,Leylah Fernandez,Hayu Kinoshita,wta_28,wta_417,WTA,Hard
+2026-09-15,TBD,Zavarovalnica Triglav Ljubljana,Alice Tubello,Vivian Wolff,wta_435,wta_318,WTA,
+2026-09-15,TBD,Zavarovalnica Triglav Ljubljana,Lucie Havlickova,Aurora Zantedeschi,wta_276,wta_325,WTA,
+2026-09-15,TBD,Zavarovalnica Triglav Ljubljana,Pia Lovric,Dalma Galfi,wta_517,wta_86,WTA,
+2026-09-15,TBD,Zavarovalnica Triglav Ljubljana,Maria Lourdes Carle,Ekaterine Gorgodze,wta_155,wta_167,WTA,
+2026-09-15,TBD,Zavarovalnica Triglav Ljubljana,Weronika Falkowska,Kristina Novak,wta_493,wta_364,WTA,
+2026-09-15,TBD,Zavarovalnica Triglav Ljubljana,Francesca Jones,Alja Senica,wta_72,wta_9104,WTA,
