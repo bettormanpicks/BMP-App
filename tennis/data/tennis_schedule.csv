@@ -17,11 +17,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-14,Final,Caldas da Rainha Ladies Open,Sofia Johnson,Malaika Rapolu
 2026-09-14,Final,Caldas da Rainha Ladies Open,Elena Malygina,Gabriella Da Silva Fick
 2026-09-14,Final,Caldas da Rainha Ladies Open,Angelina Voloshchuk,Ariana Arseneault
-2026-09-14,Live,Guadalajara Open presentado por Santander,Tatjana Maria,Taylor Townsend
-2026-09-14,21:10,Guadalajara Open presentado por Santander,Renata Zarazua,Caroline Dolehide
-2026-09-14,22:30,Guadalajara Open presentado por Santander,Zeynep Sonmez,Iryna Shymanovich
-2026-09-14,22:30,Guadalajara Open presentado por Santander,Magdalena Frech,Nao Hibino
-2026-09-14,00:00,Guadalajara Open presentado por Santander,Elsa Jacquemot,Liudmila Samsonova
+2026-09-14,Live,Guadalajara Open presentado por Santander,Elsa Jacquemot,Liudmila Samsonova
+2026-09-14,Final,Guadalajara Open presentado por Santander,Magdalena Frech,Nao Hibino
+2026-09-14,Final,Guadalajara Open presentado por Santander,Zeynep Sonmez,Iryna Shymanovich
+2026-09-14,Final,Guadalajara Open presentado por Santander,Renata Zarazua,Caroline Dolehide
+2026-09-14,Final,Guadalajara Open presentado por Santander,Tatjana Maria,Taylor Townsend
 2026-09-14,Final,Guadalajara Open presentado por Santander,Carole Monnet,Sloane Stephens
 2026-09-14,Final,Guadalajara Open presentado por Santander,Elvina Kalieva,Kayla Day
 2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Lola Radivojevic,Noemi Basiletti
@@ -34,54 +34,38 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Lea Boskovic,Raluka Serban
 2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Radka Zelnickova,Kaja Najzer
 2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Martina Colmegna,Gabriella Price
-2026-09-15,08:00,BBVA Open Internacional De Valencia,Clara Burel,Aran Teixido Garcia
-2026-09-15,08:00,BBVA Open Internacional De Valencia,Ane Mintegi Del Olmo,Ariana Geerlings
-2026-09-15,09:30,BBVA Open Internacional De Valencia,Jennifer Ruggeri,Eva Vedder
-2026-09-15,09:30,BBVA Open Internacional De Valencia,Alicia Herrero Linana,Lucia Cortez Llorca
-2026-09-15,11:00,BBVA Open Internacional De Valencia,Oksana Selekhmeteva,Nastasja Schunk
-2026-09-15,11:00,BBVA Open Internacional De Valencia,Madison Sieg,Irene Burillo
-2026-09-15,12:30,BBVA Open Internacional De Valencia,Mina Hodzic,Rebeka Masarova
-2026-09-15,12:30,BBVA Open Internacional De Valencia,Leyre Romero Gormaz,Martina Trevisan
-2026-09-15,14:00,BBVA Open Internacional De Valencia,Joelle Lilly Sophie Steur,Charo Esquiva Banuls
-2026-09-15,14:00,BBVA Open Internacional De Valencia,Angela Fita Boluda,Yasmine Kabbaj
-2026-09-15,17:30,BBVA Open Internacional De Valencia,Berfu Cengiz,Guiomar Maristany Zuleta De Reales
-2026-09-15,09:00,Caldas da Rainha Ladies Open,Aoi Ito,Gabriela Knutson
-2026-09-15,09:00,Caldas da Rainha Ladies Open,Noma Noha Akugue,Ayana Akli
-2026-09-15,10:30,Caldas da Rainha Ladies Open,Katherine Sebov,Victoria Jimenez Kasintseva
-2026-09-15,10:30,Caldas da Rainha Ladies Open,Kylie Collins,Katie Swan
-2026-09-15,12:00,Caldas da Rainha Ladies Open,Caroline Werner,Malaika Rapolu
-2026-09-15,13:00,Caldas da Rainha Ladies Open,Elena Micic,Anouk Koevermans
-2026-09-15,13:30,Caldas da Rainha Ladies Open,Francisca Jorge,Gao Xinyu
-2026-09-15,14:30,Caldas da Rainha Ladies Open,Ayla Aksu,Elena Malygina
-2026-09-15,15:00,Caldas da Rainha Ladies Open,Matilde Jorge,Anastasia Gasanova
-2026-09-15,17:00,Caldas da Rainha Ladies Open,Susan Bandecchi,Maria Martinez Vaquero
-2026-09-15,17:30,Caldas da Rainha Ladies Open,Kajsa Rinaldo Persson,Angelina Voloshchuk
-2026-09-15,TBD,Guadalajara Open presentado por Santander,Diane Parry,Peyton Stearns
-2026-09-15,TBD,Guadalajara Open presentado por Santander,Sloane Stephens,Janice Tjen
-2026-09-15,TBD,Guadalajara Open presentado por Santander,Alycia Parks,Sara Bejlek
-2026-09-15,TBD,Guadalajara Open presentado por Santander,Cristina Bucsa,Panna Udvardy
-2026-09-15,13:30,SP Open,Darja Semenistaja,Hayu Kinoshita
-2026-09-15,13:30,SP Open,Teodora Kostovic,Victoria Luiza Barros
-2026-09-15,13:30,SP Open,Lucrezia Stefanini,Nadia Podoroska
-2026-09-15,15:00,SP Open,Julia Riera,Elina Avanesyan
-2026-09-15,15:00,SP Open,You Xiaodi,Alina Charaeva
-2026-09-15,16:00,SP Open,Eva Lys,Gabriela Ce
-2026-09-15,16:30,SP Open,Cadence Brace,Solana Sierra
-2026-09-15,16:30,SP Open,Jessica Bouzas Maneiro,Dominika Salkova
-2026-09-15,17:30,SP Open,Suzan Lamens,Carolina Alves
-2026-09-15,18:00,SP Open,Mary Stoiana,Claire Liu
-2026-09-15,18:00,SP Open,Jazmin Ortenzi,Chloe Paquet
-2026-09-15,19:30,SP Open,Whitney Osuigwe,Kaitlin Quevedo
-2026-09-15,19:30,SP Open,Anna Blinkova,Carol Young Suh Lee
-2026-09-15,20:30,SP Open,Justina Mikulskyte,Paula Badosa
-2026-09-15,22:00,SP Open,Vendula Valdmannova,Laura Pigossi
-2026-09-15,08:00,Zavarovalnica Triglav Ljubljana,Lucie Havlickova,Aurora Zantedeschi
-2026-09-15,08:00,Zavarovalnica Triglav Ljubljana,Anastasiia Sobolieva,Lea Boskovic
-2026-09-15,08:00,Zavarovalnica Triglav Ljubljana,Mona Barthel,Radka Zelnickova
-2026-09-15,09:30,Zavarovalnica Triglav Ljubljana,Francesca Jones,Alja Senica
-2026-09-15,09:30,Zavarovalnica Triglav Ljubljana,Lucija Ciric Bagaric,Laura Samson
-2026-09-15,09:30,Zavarovalnica Triglav Ljubljana,Martina Colmegna,Mia Ristic
-2026-09-15,11:00,Zavarovalnica Triglav Ljubljana,Alice Tubello,Vivian Wolff
-2026-09-15,11:00,Zavarovalnica Triglav Ljubljana,Weronika Falkowska,Kristina Novak
-2026-09-15,11:00,Zavarovalnica Triglav Ljubljana,Maria Lourdes Carle,Ekaterine Gorgodze
-2026-09-15,12:30,Zavarovalnica Triglav Ljubljana,Pia Lovric,Dalma Galfi
+2026-09-14,Final,BBVA Open Internacional De Valencia,Francesca Curmi,Veronika Erjavec
+2026-09-14,Final,BBVA Open Internacional De Valencia,Katarzyna Kawa,Maria Garcia Cid
+2026-09-14,Final,BBVA Open Internacional De Valencia,Eva Bennemann,Marina Bassols Ribera
+2026-09-14,Final,BBVA Open Internacional De Valencia,Andrea Lazaro Garcia,Carlota Martinez Cirez
+2026-09-14,Final,BBVA Open Internacional De Valencia,Nuria Brancaccio,Despina Papamichail
+2026-09-14,Final,BBVA Open Internacional De Valencia,Joelle Lilly Sophie Steur,Dalila Spiteri
+2026-09-14,Final,BBVA Open Internacional De Valencia,Aran Teixido Garcia,Diletta Cherubini
+2026-09-14,Final,BBVA Open Internacional De Valencia,Nastasja Schunk,Dalila Jakupovic
+2026-09-14,Final,BBVA Open Internacional De Valencia,Ruth Roura Llaverias,Madison Sieg
+2026-09-14,Final,Caldas da Rainha Ladies Open,Sinja Kraus,Mia Pohankova
+2026-09-14,Final,Caldas da Rainha Ladies Open,Sana Garakani,Lisa Pigato
+2026-09-14,Final,Caldas da Rainha Ladies Open,Jeline Vandromme,Carla Tomai
+2026-09-14,Final,Caldas da Rainha Ladies Open,Mariia Nozdrachova,Kayla Cross
+2026-09-14,Final,Caldas da Rainha Ladies Open,Erika Andreeva,Viktoria Hruncakova
+2026-09-14,Final,Caldas da Rainha Ladies Open,Reese Brantmeier,Kylie Collins
+2026-09-14,Final,Caldas da Rainha Ladies Open,Sofia Johnson,Malaika Rapolu
+2026-09-14,Final,Caldas da Rainha Ladies Open,Elena Malygina,Gabriella Da Silva Fick
+2026-09-14,Final,Caldas da Rainha Ladies Open,Angelina Voloshchuk,Ariana Arseneault
+2026-09-14,Live,Guadalajara Open presentado por Santander,Elsa Jacquemot,Liudmila Samsonova
+2026-09-14,Final,Guadalajara Open presentado por Santander,Magdalena Frech,Nao Hibino
+2026-09-14,Final,Guadalajara Open presentado por Santander,Zeynep Sonmez,Iryna Shymanovich
+2026-09-14,Final,Guadalajara Open presentado por Santander,Renata Zarazua,Caroline Dolehide
+2026-09-14,Final,Guadalajara Open presentado por Santander,Tatjana Maria,Taylor Townsend
+2026-09-14,Final,Guadalajara Open presentado por Santander,Carole Monnet,Sloane Stephens
+2026-09-14,Final,Guadalajara Open presentado por Santander,Elvina Kalieva,Kayla Day
+2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Lola Radivojevic,Noemi Basiletti
+2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Barbora Palicova,Gina Feistel
+2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Giorgia Pedone,Denisa Zoldakova
+2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Miriam Bulgaru,Lina Gjorcheska
+2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Arantxa Rus,Samira De Stefano
+2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Deborah Chiesa,Lucija Ciric Bagaric
+2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Polona Hercog,Julie Struplova
+2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Lea Boskovic,Raluka Serban
+2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Radka Zelnickova,Kaja Najzer
+2026-09-14,Final,Zavarovalnica Triglav Ljubljana,Martina Colmegna,Gabriella Price
