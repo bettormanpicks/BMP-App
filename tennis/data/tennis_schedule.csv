@@ -1,5 +1,4 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-09-16,Live,BBVA Open Internacional De Valencia,Guiomar Maristany Zuleta De Reales,Marina Bassols Ribera
 2026-09-16,Final,BBVA Open Internacional De Valencia,Andrea Lazaro Garcia,Ane Mintegi Del Olmo
 2026-09-16,Final,BBVA Open Internacional De Valencia,Jennifer Ruggeri,Despina Papamichail
 2026-09-16,Final,BBVA Open Internacional De Valencia,Joelle Lilly Sophie Steur,Francesca Curmi
@@ -8,21 +7,21 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-16,Final,Caldas da Rainha Ladies Open,Kajsa Rinaldo Persson,Lisa Pigato
 2026-09-16,Final,Caldas da Rainha Ladies Open,Susan Bandecchi,Viktoria Hruncakova
 2026-09-16,Final,Caldas da Rainha Ladies Open,Mia Pohankova,Matilde Jorge
-2026-09-16,19:00,Guadalajara Open presentado por Santander,Magdalena Frech,Caroline Dolehide
-2026-09-16,20:30,Guadalajara Open presentado por Santander,Zeynep Sonmez,Iva Jovic
-2026-09-16,23:00,Guadalajara Open presentado por Santander,Kayla Day,Liudmila Samsonova
+2026-09-16,00:45,Guadalajara Open presentado por Santander,Kayla Day,Liudmila Samsonova
 2026-09-16,TBD,Guadalajara Open presentado por Santander,Marta Kostyuk,Taylor Townsend
-2026-09-16,Live,SP Open,Nauhany Vitoria Leme Da Silva,Astra Sharma
-2026-09-16,Live,SP Open,Cadence Brace,Solana Sierra
-2026-09-16,Live,SP Open,Jazmin Ortenzi,Chloe Paquet
-2026-09-16,18:45,SP Open,Eva Lys,Gabriela Ce
-2026-09-16,19:15,SP Open,Darja Semenistaja,Teodora Kostovic
-2026-09-16,20:15,SP Open,Vendula Valdmannova,Laura Pigossi
-2026-09-16,21:45,SP Open,Justina Mikulskyte,Paula Badosa
+2026-09-16,Final,Guadalajara Open presentado por Santander,Zeynep Sonmez,Iva Jovic
+2026-09-16,Final,Guadalajara Open presentado por Santander,Magdalena Frech,Caroline Dolehide
+2026-09-16,Live,SP Open,Justina Mikulskyte,Paula Badosa
+2026-09-16,Final,SP Open,Cadence Brace,Solana Sierra
 2026-09-16,Final,SP Open,Anna Blinkova,Carol Young Suh Lee
+2026-09-16,Final,SP Open,Eva Lys,Gabriela Ce
 2026-09-16,Final,SP Open,Jessica Bouzas Maneiro,Dominika Salkova
 2026-09-16,Final,SP Open,Anastasia Tikhonova,Kaitlin Quevedo
 2026-09-16,Final,SP Open,You Xiaodi,Alina Charaeva
+2026-09-16,Final,SP Open,Darja Semenistaja,Teodora Kostovic
+2026-09-16,Final,SP Open,Vendula Valdmannova,Laura Pigossi
+2026-09-16,Final,SP Open,Jazmin Ortenzi,Chloe Paquet
+2026-09-16,Final,SP Open,Nauhany Vitoria Leme Da Silva,Astra Sharma
 2026-09-16,Final,SP Open,Mary Stoiana,Claire Liu
 2026-09-16,Final,SP Open,Suzan Lamens,Carolina Alves
 2026-09-16,Final,Zavarovalnica Triglav Ljubljana,Francesca Jones,Mona Barthel
@@ -33,6 +32,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-16,Final,Zavarovalnica Triglav Ljubljana,Miriam Bulgaru,Mia Ristic
 2026-09-16,Final,Zavarovalnica Triglav Ljubljana,Barbora Palicova,Samira De Stefano
 2026-09-16,Final,Zavarovalnica Triglav Ljubljana,Noemi Basiletti,Julie Struplova
+2026-09-17,13:30,BBVA Open Internacional De Valencia,Guiomar Maristany Zuleta De Reales,Marina Bassols Ribera
 2026-09-17,13:30,BBVA Open Internacional De Valencia,Nastasja Schunk,Irene Burillo
 2026-09-17,15:30,BBVA Open Internacional De Valencia,Alicia Herrero Linana,Rebeka Masarova
 2026-09-17,11:00,Caldas da Rainha Ladies Open,Jeline Vandromme,Elena Malygina
@@ -40,10 +40,15 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-17,13:30,Caldas da Rainha Ladies Open,Francisca Jorge,Victoria Jimenez Kasintseva
 2026-09-17,15:00,Caldas da Rainha Ladies Open,Anouk Koevermans,Gabriela Knutson
 2026-09-17,TBD,Caldas da Rainha Ladies Open,Kylie Collins,Kayla Cross
-2026-09-17,TBD,Guadalajara Open presentado por Santander,Cristina Bucsa,Sara Bejlek
-2026-09-17,TBD,Guadalajara Open presentado por Santander,Peyton Stearns,Sloane Stephens
-2026-09-17,TBD,SP Open,Elina Avanesyan,Alina Charaeva
-2026-09-17,TBD,SP Open,Dominika Salkova,Mary Stoiana
+2026-09-17,19:00,Guadalajara Open presentado por Santander,Cristina Bucsa,Sara Bejlek
+2026-09-17,20:30,Guadalajara Open presentado por Santander,Magdalena Frech,Iva Jovic
+2026-09-17,00:30,Guadalajara Open presentado por Santander,Peyton Stearns,Sloane Stephens
+2026-09-17,15:00,SP Open,Elina Avanesyan,Alina Charaeva
+2026-09-17,15:00,SP Open,Suzan Lamens,Solana Sierra
+2026-09-17,16:00,SP Open,Nauhany Vitoria Leme Da Silva,Kaitlin Quevedo
+2026-09-17,17:30,SP Open,Anna Blinkova,Vendula Valdmannova
+2026-09-17,17:30,SP Open,Dominika Salkova,Mary Stoiana
+2026-09-17,20:30,SP Open,Eva Lys,Nadia Podoroska
 2026-09-17,08:00,Zavarovalnica Triglav Ljubljana,Anastasiia Sobolieva,Laura Samson
 2026-09-17,08:00,Zavarovalnica Triglav Ljubljana,Mona Barthel,Mia Ristic
 2026-09-17,08:30,Zavarovalnica Triglav Ljubljana,Samira De Stefano,Alice Tubello
