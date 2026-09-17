@@ -6,14 +6,14 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-16,TBD,BBVA Open Internacional De Valencia,Martina Trevisan,Clara Burel,wta_685,wta_15,WTA,
 2026-09-16,Final,Caldas da Rainha Ladies Open,Kajsa Rinaldo Persson,Lisa Pigato,wta_264,wta_193,WTA,
 2026-09-16,Final,Caldas da Rainha Ladies Open,Susan Bandecchi,Viktoria Hruncakova,wta_233,wta_218,WTA,
-2026-09-16,Final,Caldas da Rainha Ladies Open,Mia Pohankova,Matilde Jorge,wta_346,wta_256,WTA,
-2026-09-16,00:45,Guadalajara Open presentado por Santander,Kayla Day,Liudmila Samsonova,wta_194,wta_18,WTA,
+2026-09-16,Final,Caldas da Rainha Ladies Open,Mia Pohankova,Matilde Jorge,wta_273,wta_256,WTA,
+2026-09-16,Live,Guadalajara Open presentado por Santander,Kayla Day,Liudmila Samsonova,wta_194,wta_18,WTA,
 2026-09-16,TBD,Guadalajara Open presentado por Santander,Marta Kostyuk,Taylor Townsend,wta_26,wta_116,WTA,
 2026-09-16,Final,Guadalajara Open presentado por Santander,Zeynep Sonmez,Iva Jovic,wta_84,wta_20,WTA,
 2026-09-16,Final,Guadalajara Open presentado por Santander,Magdalena Frech,Caroline Dolehide,wta_55,wta_121,WTA,
-2026-09-16,Live,SP Open,Justina Mikulskyte,Paula Badosa,wta_247,wta_70,WTA,Hard
+2026-09-16,Final,SP Open,Justina Mikulskyte,Paula Badosa,wta_247,wta_70,WTA,Hard
 2026-09-16,Final,SP Open,Cadence Brace,Solana Sierra,wta_202,wta_64,WTA,Hard
-2026-09-16,Final,SP Open,Anna Blinkova,Carol Young Suh Lee,wta_82,wta_352,WTA,Hard
+2026-09-16,Final,SP Open,Anna Blinkova,Carol Young Suh Lee,wta_65,wta_170,WTA,Hard
 2026-09-16,Final,SP Open,Eva Lys,Gabriela Ce,wta_56,wta_9053,WTA,Hard
 2026-09-16,Final,SP Open,Jessica Bouzas Maneiro,Dominika Salkova,wta_48,wta_151,WTA,Hard
 2026-09-16,Final,SP Open,Anastasia Tikhonova,Kaitlin Quevedo,wta_257,wta_131,WTA,Hard
@@ -32,24 +32,3 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-16,Final,Zavarovalnica Triglav Ljubljana,Miriam Bulgaru,Mia Ristic,wta_208,wta_273,WTA,
 2026-09-16,Final,Zavarovalnica Triglav Ljubljana,Barbora Palicova,Samira De Stefano,wta_221,wta_290,WTA,
 2026-09-16,Final,Zavarovalnica Triglav Ljubljana,Noemi Basiletti,Julie Struplova,wta_511,wta_320,WTA,
-2026-09-17,13:30,BBVA Open Internacional De Valencia,Guiomar Maristany Zuleta De Reales,Marina Bassols Ribera,wta_165,wta_209,WTA,
-2026-09-17,13:30,BBVA Open Internacional De Valencia,Nastasja Schunk,Irene Burillo,wta_365,wta_249,WTA,
-2026-09-17,15:30,BBVA Open Internacional De Valencia,Alicia Herrero Linana,Rebeka Masarova,wta_308,wta_117,WTA,
-2026-09-17,11:00,Caldas da Rainha Ladies Open,Jeline Vandromme,Elena Malygina,wta_291,wta_347,WTA,
-2026-09-17,12:00,Caldas da Rainha Ladies Open,Noma Noha Akugue,Malaika Rapolu,wta_255,wta_9009,WTA,
-2026-09-17,13:30,Caldas da Rainha Ladies Open,Francisca Jorge,Victoria Jimenez Kasintseva,wta_207,wta_119,WTA,
-2026-09-17,15:00,Caldas da Rainha Ladies Open,Anouk Koevermans,Gabriela Knutson,wta_172,wta_184,WTA,
-2026-09-17,TBD,Caldas da Rainha Ladies Open,Kylie Collins,Kayla Cross,wta_78,wta_197,WTA,
-2026-09-17,19:00,Guadalajara Open presentado por Santander,Cristina Bucsa,Sara Bejlek,wta_62,wta_41,WTA,
-2026-09-17,20:30,Guadalajara Open presentado por Santander,Magdalena Frech,Iva Jovic,wta_55,wta_20,WTA,
-2026-09-17,00:30,Guadalajara Open presentado por Santander,Peyton Stearns,Sloane Stephens,wta_59,wta_775,WTA,
-2026-09-17,15:00,SP Open,Elina Avanesyan,Alina Charaeva,wta_178,wta_163,WTA,Hard
-2026-09-17,15:00,SP Open,Suzan Lamens,Solana Sierra,wta_109,wta_64,WTA,Hard
-2026-09-17,16:00,SP Open,Nauhany Vitoria Leme Da Silva,Kaitlin Quevedo,wta_9042,wta_131,WTA,Hard
-2026-09-17,17:30,SP Open,Anna Blinkova,Vendula Valdmannova,wta_82,wta_286,WTA,Hard
-2026-09-17,17:30,SP Open,Dominika Salkova,Mary Stoiana,wta_151,wta_185,WTA,Hard
-2026-09-17,20:30,SP Open,Eva Lys,Nadia Podoroska,wta_56,wta_9006,WTA,Hard
-2026-09-17,08:00,Zavarovalnica Triglav Ljubljana,Anastasiia Sobolieva,Laura Samson,wta_268,wta_212,WTA,
-2026-09-17,08:00,Zavarovalnica Triglav Ljubljana,Mona Barthel,Mia Ristic,wta_203,wta_273,WTA,
-2026-09-17,08:30,Zavarovalnica Triglav Ljubljana,Samira De Stefano,Alice Tubello,wta_290,wta_435,WTA,
-2026-09-17,09:30,Zavarovalnica Triglav Ljubljana,Noemi Basiletti,Ekaterine Gorgodze,wta_511,wta_167,WTA,
