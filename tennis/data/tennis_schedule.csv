@@ -1,11 +1,11 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-09-18,14:00,BBVA Open Internacional De Valencia,Yasmine Kabbaj,Despina Papamichail
-2026-09-18,14:30,BBVA Open Internacional De Valencia,Irene Burillo,Alicia Herrero Linana
-2026-09-18,16:00,BBVA Open Internacional De Valencia,Andrea Lazaro Garcia,Joelle Lilly Sophie Steur
+2026-09-18,Live,BBVA Open Internacional De Valencia,Andrea Lazaro Garcia,Joelle Lilly Sophie Steur
+2026-09-18,Final,BBVA Open Internacional De Valencia,Yasmine Kabbaj,Despina Papamichail
+2026-09-18,Final,BBVA Open Internacional De Valencia,Irene Burillo,Alicia Herrero Linana
 2026-09-18,Final,BBVA Open Internacional De Valencia,Clara Burel,Guiomar Maristany Zuleta De Reales
-2026-09-18,Live,Caldas da Rainha Ladies Open,Malaika Rapolu,Gabriela Knutson
-2026-09-18,13:30,Caldas da Rainha Ladies Open,Jeline Vandromme,Francisca Jorge
-2026-09-18,15:00,Caldas da Rainha Ladies Open,Susan Bandecchi,Lisa Pigato
+2026-09-18,Live,Caldas da Rainha Ladies Open,Susan Bandecchi,Lisa Pigato
+2026-09-18,Final,Caldas da Rainha Ladies Open,Jeline Vandromme,Francisca Jorge
+2026-09-18,Final,Caldas da Rainha Ladies Open,Malaika Rapolu,Gabriela Knutson
 2026-09-18,Final,Caldas da Rainha Ladies Open,Mia Pohankova,Kylie Collins
 2026-09-18,23:00,Guadalajara Open presentado por Santander,Cristina Bucsa,Iva Jovic
 2026-09-18,00:30,Guadalajara Open presentado por Santander,Liudmila Samsonova,Peyton Stearns
@@ -17,10 +17,10 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-18,05:00,Korea Open,Yao Xinxin,Priscilla Hon
 2026-09-18,06:30,Korea Open,En-Shuo Liang,Sara Saito
 2026-09-18,06:30,Korea Open,Alevtina Ibragimova,Rina Saigo
-2026-09-18,16:00,SP Open,Teodora Kostovic,Kaitlin Quevedo
-2026-09-18,17:30,SP Open,Anna Blinkova,Alina Charaeva
+2026-09-18,18:00,SP Open,Anna Blinkova,Alina Charaeva
 2026-09-18,20:30,SP Open,Mary Stoiana,Paula Badosa
 2026-09-18,22:00,SP Open,Nadia Podoroska,Suzan Lamens
+2026-09-18,Final,SP Open,Teodora Kostovic,Kaitlin Quevedo
 2026-09-18,03:00,Singapore Tennis Open presented by BNP Paribas,Anna-Lena Friedsam,Desirae Krawczyk
 2026-09-18,03:00,Singapore Tennis Open presented by BNP Paribas,Wang Jiaqi,Anastasia Kulikova
 2026-09-18,04:30,Singapore Tennis Open presented by BNP Paribas,Nao Hibino,Kai Ning Chanya Ng
@@ -31,6 +31,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-18,Final,Zavarovalnica Triglav Ljubljana,Noemi Basiletti,Ekaterine Gorgodze
 2026-09-18,Final,Zavarovalnica Triglav Ljubljana,Mona Barthel,Mia Ristic
 2026-09-18,Final,Zavarovalnica Triglav Ljubljana,Samira De Stefano,Alice Tubello
+2026-09-19,16:30,BBVA Open Internacional De Valencia,Alicia Herrero Linana,Yasmine Kabbaj
+2026-09-19,10:00,Caldas da Rainha Ladies Open,Mia Pohankova,Gabriela Knutson
 2026-09-19,07:30,Singapore Tennis Open presented by BNP Paribas,Eva Marie Desvignes,Kyoka Okamura
 2026-09-19,07:30,Singapore Tennis Open presented by BNP Paribas,Mei Yamaguchi,Ulrikke Eikeri
 2026-09-19,10:00,Zavarovalnica Triglav Ljubljana,Samira De Stefano,Laura Samson
