@@ -1,14 +1,22 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-19,15:00,BBVA Open Internacional De Valencia,Clara Burel,Joelle Lilly Sophie Steur,wta_15,wta_505,WTA,
 2026-09-19,16:30,BBVA Open Internacional De Valencia,Alicia Herrero Linana,Yasmine Kabbaj,wta_308,wta_361,WTA,
-2026-09-19,10:00,Caldas da Rainha Ladies Open,Mia Pohankova,Gabriela Knutson,wta_346,wta_184,WTA,
-2026-09-19,11:30,Caldas da Rainha Ladies Open,Lisa Pigato,Jeline Vandromme,wta_193,wta_291,WTA,
+2026-09-19,Live,Caldas da Rainha Ladies Open,Mia Pohankova,Gabriela Knutson,wta_273,wta_184,WTA,
+2026-09-19,12:55,Caldas da Rainha Ladies Open,Lisa Pigato,Jeline Vandromme,wta_193,wta_291,WTA,
 2026-09-19,23:00,Guadalajara Open presentado por Santander,Peyton Stearns,Iva Jovic,wta_59,wta_20,WTA,
-2026-09-19,08:00,Korea Open,En-Shuo Liang,Sara Saito,wta_360,wta_236,WTA,Hard
-2026-09-19,08:00,Korea Open,Alevtina Ibragimova,Rina Saigo,wta_321,wta_298,WTA,Hard
-2026-09-19,16:00,SP Open,Kaitlin Quevedo,Anna Blinkova,wta_131,wta_65,WTA,Hard
+2026-09-19,02:00,Korea Open,Alexandra Shubladze,Darya Astakhova,wta_344,wta_380,WTA,Hard
+2026-09-19,02:00,Korea Open,Eunhye Lee,Ma YeXin,wta_313,wta_182,WTA,Hard
+2026-09-19,04:00,Korea Open,Miho Kuramochi,Yao Xinxin,wta_327,wta_468,WTA,Hard
+2026-09-19,04:30,Korea Open,Alevtina Ibragimova,Sara Saito,wta_321,wta_9018,WTA,Hard
+2026-09-19,Final,Korea Open,En-Shuo Liang,Sara Saito,wta_360,wta_9018,WTA,Hard
+2026-09-19,Final,Korea Open,Alevtina Ibragimova,Rina Saigo,wta_321,wta_298,WTA,Hard
+2026-09-19,16:00,SP Open,Kaitlin Quevedo,Anna Blinkova,wta_131,wta_82,WTA,Hard
 2026-09-19,17:00,SP Open,Nadia Podoroska,Paula Badosa,wta_9006,wta_70,WTA,Hard
-2026-09-19,Live,Singapore Tennis Open presented by BNP Paribas,Eva Marie Desvignes,Kyoka Okamura,wta_9100,wta_297,ATP,
-2026-09-19,08:00,Singapore Tennis Open presented by BNP Paribas,Mei Yamaguchi,Ulrikke Eikeri,wta_285,wta_9101,WTA,
-2026-09-19,10:00,Zavarovalnica Triglav Ljubljana,Samira De Stefano,Laura Samson,wta_290,wta_212,WTA,
-2026-09-19,11:30,Zavarovalnica Triglav Ljubljana,Mona Barthel,Noemi Basiletti,wta_203,wta_511,WTA,
+2026-09-19,04:00,Singapore Tennis Open presented by BNP Paribas,Anna-Lena Friedsam,Anastasia Kulikova,wta_204,wta_443,WTA,
+2026-09-19,04:00,Singapore Tennis Open presented by BNP Paribas,Nao Hibino,Aoi Ito,wta_196,wta_176,WTA,
+2026-09-19,05:30,Singapore Tennis Open presented by BNP Paribas,Mei Yamaguchi,Kyoka Okamura,wta_285,wta_297,WTA,
+2026-09-19,05:30,Singapore Tennis Open presented by BNP Paribas,Joanna Garland,Viktoria Morvayova,wta_125,wta_328,WTA,
+2026-09-19,Final,Singapore Tennis Open presented by BNP Paribas,Mei Yamaguchi,Ulrikke Eikeri,wta_285,wta_9100,WTA,
+2026-09-19,Final,Singapore Tennis Open presented by BNP Paribas,Eva Marie Desvignes,Kyoka Okamura,wta_9101,wta_297,ATP,
+2026-09-19,Live,Zavarovalnica Triglav Ljubljana,Mona Barthel,Noemi Basiletti,wta_203,wta_511,WTA,
+2026-09-19,Final,Zavarovalnica Triglav Ljubljana,Samira De Stefano,Laura Samson,wta_290,wta_212,WTA,
