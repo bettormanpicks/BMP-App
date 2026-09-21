@@ -1,15 +1,15 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-09-21,Live,Delta Motors Tolentino Open,Polona Hercog,Leyre Romero Gormaz
-2026-09-21,16:00,Delta Motors Tolentino Open,Federica Urgesi,Oksana Selekhmeteva
-2026-09-21,18:00,Delta Motors Tolentino Open,Laura Samson,Noemi Basiletti
+2026-09-21,Final,Delta Motors Tolentino Open,Federica Urgesi,Oksana Selekhmeteva
+2026-09-21,Final,Delta Motors Tolentino Open,Laura Samson,Noemi Basiletti
+2026-09-21,Final,Delta Motors Tolentino Open,Polona Hercog,Leyre Romero Gormaz
 2026-09-21,Final,Delta Motors Tolentino Open,Guiomar Maristany Zuleta De Reales,Despina Papamichail
 2026-09-21,Final,Delta Motors Tolentino Open,Mia Ristic,Arantxa Rus
 2026-09-21,Final,Delta Motors Tolentino Open,Aneta Laboutkova,Katerina Tsygourova
 2026-09-21,Final,Delta Motors Tolentino Open,Jessica Pieri,Aneta Kucmova
 2026-09-21,Final,Delta Motors Tolentino Open,Dalila Spiteri,Iva Primorac Pavicic
 2026-09-21,Final,Delta Motors Tolentino Open,Lisa Zaar,Enola Chiesa
-2026-09-21,Live,Eupago Porto Open,Susan Bandecchi,Oceane Dodin
 2026-09-21,Final,Eupago Porto Open,Lizette Cabrera,Sinja Kraus
+2026-09-21,Final,Eupago Porto Open,Susan Bandecchi,Oceane Dodin
 2026-09-21,Final,Eupago Porto Open,Kajsa Rinaldo Persson,Carla Tomai
 2026-09-21,Final,Eupago Porto Open,Anouk Koevermans,Ayana Akli
 2026-09-21,Final,Eupago Porto Open,Sahaja Yamalapalli,Naiktha Bains
@@ -24,7 +24,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-21,05:00,Korea Open,Alevtina Ibragimova,Yeonwoo Ku
 2026-09-21,06:00,Korea Open,Tamara Zidansek,Kimberly Birrell
 2026-09-21,Final,Korea Open,Darya Astakhova,Magda Linette
-2026-09-21,Live,SP Open,Kaitlin Quevedo,Nadia Podoroska
+2026-09-21,Final,SP Open,Kaitlin Quevedo,Nadia Podoroska
 2026-09-21,03:00,Singapore Tennis Open presented by BNP Paribas,Vivian Wolff,Oleksandra Oliynykova
 2026-09-21,04:30,Singapore Tennis Open presented by BNP Paribas,Alycia Parks,Mei Yamaguchi
 2026-09-21,05:30,Singapore Tennis Open presented by BNP Paribas,Tatiana Prozorova,Sofia Costoulas
@@ -32,10 +32,10 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-21,Final,Singapore Tennis Open presented by BNP Paribas,Rebecca Sramkova,Maja Chwalinska
 2026-09-21,Final,Singapore Tennis Open presented by BNP Paribas,Kyoka Okamura,Leylah Fernandez
 2026-09-21,Final,Singapore Tennis Open presented by BNP Paribas,Storm Hunter,Joanna Garland
-2026-09-21,Live,Turk Telekom Ankara Open,Lina Gjorcheska,Ksenia Zaytseva
-2026-09-21,Live,Turk Telekom Ankara Open,Aysegul Mert,Isabella Shinikova
-2026-09-21,16:30,Turk Telekom Ankara Open,Yuki Naito,Ayla Aksu
 2026-09-21,Final,Turk Telekom Ankara Open,Viktoria Hruncakova,Polina Iatcenko
+2026-09-21,Final,Turk Telekom Ankara Open,Yuki Naito,Ayla Aksu
+2026-09-21,Final,Turk Telekom Ankara Open,Aysegul Mert,Isabella Shinikova
+2026-09-21,Final,Turk Telekom Ankara Open,Lina Gjorcheska,Ksenia Zaytseva
 2026-09-21,Final,Turk Telekom Ankara Open,Aliona Falei,Tian Fangran
 2026-09-21,Final,Turk Telekom Ankara Open,Weronika Falkowska,Alana Smith
 2026-09-21,Final,Turk Telekom Ankara Open,Daria Egorova,Melisa Ercan
@@ -56,12 +56,18 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-22,13:30,Delta Motors Tolentino Open,Julie Struplova,Samira De Stefano
 2026-09-22,16:00,Delta Motors Tolentino Open,Jessica Pieri,Ginevra De Angelis
 2026-09-22,18:00,Delta Motors Tolentino Open,Jennifer Ruggeri,Julia Grabher
-2026-09-22,TBD,Eupago Porto Open,Matilde Jorge,Celia Cervino Ruiz
-2026-09-22,TBD,Eupago Porto Open,Mina Hodzic,Elena Malygina
-2026-09-22,TBD,Eupago Porto Open,Katherine Sebov,Gabriela Knutson
-2026-09-22,TBD,Eupago Porto Open,Francisca Jorge,Mia Pohankova
-2026-09-22,TBD,Eupago Porto Open,Veronika Podrez,Madalena Matias
-2026-09-22,TBD,Eupago Porto Open,Harmony Tan,Carol Young Suh Lee
+2026-09-22,10:00,Eupago Porto Open,Sahaja Yamalapalli,Katie Swan
+2026-09-22,10:00,Eupago Porto Open,Mina Hodzic,Elena Malygina
+2026-09-22,10:00,Eupago Porto Open,Angelina Voloshchuk,Teresa Franco Dias
+2026-09-22,11:30,Eupago Porto Open,Maria Timofeeva,Sofia Johnson
+2026-09-22,11:30,Eupago Porto Open,Katherine Sebov,Gabriela Knutson
+2026-09-22,12:00,Eupago Porto Open,Matilde Jorge,Celia Cervino Ruiz
+2026-09-22,13:00,Eupago Porto Open,Harmony Tan,Carol Young Suh Lee
+2026-09-22,13:00,Eupago Porto Open,Valentina Steiner,Caroline Werner
+2026-09-22,13:30,Eupago Porto Open,Francisca Jorge,Mia Pohankova
+2026-09-22,14:30,Eupago Porto Open,Erika Andreeva,Reese Brantmeier
+2026-09-22,14:30,Eupago Porto Open,Victoria Jimenez Kasintseva,Naiktha Bains
+2026-09-22,15:00,Eupago Porto Open,Veronika Podrez,Madalena Matias
 2026-09-22,07:00,Korea Open,Jelena Ostapenko,Anastasia Zakharova
 2026-09-22,08:30,Korea Open,Alina Charaeva,Sofia Kenin
 2026-09-22,10:30,Singapore Tennis Open presented by BNP Paribas,Barbora Krejcikova,Anna-Lena Friedsam
