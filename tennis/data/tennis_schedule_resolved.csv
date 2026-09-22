@@ -15,7 +15,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-22,06:30,Chengdu Open,Nikoloz Basilashvili,Federico Cina,atp_136,atp_224,ATP,Hard
 2026-09-22,Final,Chengdu Open,Nikoloz Basilashvili,Hanlei Lu,atp_136,wta_431,ATP,Hard
 2026-09-22,Final,Chengdu Open,Kaichi Uchida,Federico Cina,atp_240,atp_224,ATP,Hard
-2026-09-22,Live,Delta Motors Tolentino Open,Jennifer Ruggeri,Julia Grabher,wta_315,wta_80,WTA,
+2026-09-22,Final,Delta Motors Tolentino Open,Jennifer Ruggeri,Julia Grabher,wta_315,wta_80,WTA,
 2026-09-22,Final,Delta Motors Tolentino Open,Veronika Erjavec,Katerina Tsygourova,wta_112,wta_46,WTA,
 2026-09-22,Final,Delta Motors Tolentino Open,Ekaterine Gorgodze,Laura Pigossi,wta_167,wta_214,WTA,
 2026-09-22,Final,Delta Motors Tolentino Open,Lisa Zaar,Rebeka Masarova,wta_466,wta_117,WTA,
@@ -28,7 +28,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-22,Final,Delta Motors Tolentino Open,Alice Tubello,Dalila Spiteri,wta_435,wta_275,WTA,
 2026-09-22,Final,Eupago Porto Open,Maria Timofeeva,Sofia Johnson,wta_154,wta_407,WTA,
 2026-09-22,Final,Eupago Porto Open,Veronika Podrez,Madalena Matias,wta_232,atp_317,WTA,
-2026-09-22,Final,Eupago Porto Open,Harmony Tan,Carol Young Suh Lee,wta_229,wta_352,WTA,
+2026-09-22,Final,Eupago Porto Open,Harmony Tan,Carol Young Suh Lee,wta_229,wta_170,WTA,
 2026-09-22,Final,Eupago Porto Open,Katherine Sebov,Gabriela Knutson,wta_270,wta_184,WTA,
 2026-09-22,TBD,Eupago Porto Open,Victoria Jimenez Kasintseva,Naiktha Bains,wta_119,wta_391,WTA,
 2026-09-22,Final,Eupago Porto Open,Sahaja Yamalapalli,Katie Swan,wta_416,wta_271,WTA,
@@ -70,7 +70,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-23,12:00,Eupago Porto Open,Matilde Jorge,Sinja Kraus,wta_256,wta_105,WTA,
 2026-09-23,13:30,Eupago Porto Open,Maria Timofeeva,Kajsa Rinaldo Persson,wta_154,wta_264,WTA,
 2026-09-23,10:30,Singapore Tennis Open presented by BNP Paribas,Mirra Andreeva,Aliaksandra Sasnovich,wta_7,wta_113,WTA,
-2026-09-23,12:00,Singapore Tennis Open presented by BNP Paribas,Alycia Parks,Leylah Fernandez,wta_76,wta_28,WTA,
+2026-09-23,12:00,Singapore Tennis Open presented by BNP Paribas,Alycia Parks,Leylah Fernandez,wta_243,wta_28,WTA,
 2026-09-23,09:00,Turk Telekom Ankara Open,Solana Sierra,Deniz Dilek,wta_64,wta_9114,WTA,
 2026-09-23,10:00,Turk Telekom Ankara Open,Weronika Falkowska,Polina Iatcenko,wta_493,wta_160,WTA,
 2026-09-23,11:30,Turk Telekom Ankara Open,Elena Pridankina,Ksenia Zaytseva,wta_192,wta_561,WTA,
