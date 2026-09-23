@@ -938,6 +938,8 @@ with streamlit_analytics.track():
                 value=20
             )
 
+            remove_rematches = st.checkbox("Remove Rematches", value=False, key="remove_rematches")
+
             # --- Stat Selection ---
             stat_options = [
                 "NS%",
@@ -1025,6 +1027,8 @@ with streamlit_analytics.track():
                 for key in [f"min_{stat}", f"max_{stat}"]:
                     if key in st.session_state:
                         del st.session_state[key]
+            if "remove_rematches" in st.session_state:
+                del st.session_state["remove_rematches"]
             st.rerun()
 
         sidebar_footer()
@@ -1057,6 +1061,20 @@ with streamlit_analytics.track():
                 # --- Filter upcoming matches ---
                 grace_period = pd.Timedelta(minutes=20)
                 upcoming = schedule[schedule["date"] + grace_period >= now_ct]
+
+                # --- Remove rematches (same pair within 12 hours) ---
+                if remove_rematches:
+                    seen_pairs = {}
+                    rows_to_keep = []
+                    for idx, row in upcoming.sort_values("date").iterrows():
+                        pair = tuple(sorted([row["player1"], row["player2"]]))
+                        if pair in seen_pairs:
+                            last_seen = seen_pairs[pair]
+                            if (row["date"] - last_seen) <= pd.Timedelta(hours=12):
+                                continue  # skip rematch
+                        seen_pairs[pair] = row["date"]
+                        rows_to_keep.append(idx)
+                    upcoming = upcoming.loc[rows_to_keep]
 
                 def fmt_pct(val, n):
                     """Return formatted percentage string, or '--' if denominator is 0."""
