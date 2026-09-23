@@ -15,11 +15,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-23,06:30,Chengdu Open,Shang Juncheng,Adrian Mannarino,atp_259,atp_48,ATP,Hard
 2026-09-23,06:30,Chengdu Open,Moise Kouame,Alexandre Muller,atp_9040,atp_50,ATP,Hard
 2026-09-23,Final,Chengdu Open,Vit Kopriva,Hu Jia,atp_87,atp_38,ATP,Hard
-2026-09-23,Live,Delta Motors Tolentino Open,Noemi Basiletti,Mia Ristic,wta_511,wta_273,WTA,
 2026-09-23,Final,Delta Motors Tolentino Open,Jessica Pieri,Leyre Romero Gormaz,wta_383,wta_140,WTA,
 2026-09-23,Final,Delta Motors Tolentino Open,Isabella Maria Serban,Rebeka Masarova,wta_244,wta_117,WTA,
 2026-09-23,Final,Delta Motors Tolentino Open,Guiomar Maristany Zuleta De Reales,Marta Lombardini,wta_165,wta_26,WTA,
-2026-09-23,Final,Eupago Porto Open,Maria Timofeeva,Kajsa Rinaldo Persson,wta_154,wta_264,WTA,
+2026-09-23,Final,Delta Motors Tolentino Open,Noemi Basiletti,Mia Ristic,wta_768,wta_273,WTA,
+2026-09-23,Final,Eupago Porto Open,Maria Timofeeva,Kajsa Rinaldo Persson,wta_54,wta_264,WTA,
 2026-09-23,Final,Eupago Porto Open,Matilde Jorge,Sinja Kraus,wta_256,wta_105,WTA,
 2026-09-23,Final,Eupago Porto Open,Ayana Akli,Gabriela Knutson,wta_248,wta_184,WTA,
 2026-09-23,Final,Eupago Porto Open,Oceane Dodin,Elena Malygina,wta_9056,wta_347,WTA,
@@ -35,20 +35,20 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-23,Final,Turk Telekom Ankara Open,Elena Pridankina,Ksenia Zaytseva,wta_192,wta_561,WTA,
 2026-09-23,Final,Turk Telekom Ankara Open,Shi Han,Ayla Aksu,wta_330,wta_304,WTA,
 2026-09-23,Final,Turk Telekom Ankara Open,Berfu Cengiz,Aysegul Mert,wta_480,atp_379,WTA,
-2026-09-24,07:00,AITO Hangzhou Open,Bu Yunchaokete,Michael Zheng,atp_162,atp_152,ATP,
+2026-09-24,07:00,AITO Hangzhou Open,Bu Yunchaokete,Michael Zheng,atp_147,atp_152,ATP,
 2026-09-24,08:00,AITO Hangzhou Open,Mattia Bellucci,Kamil Majchrzak,atp_109,atp_56,ATP,
 2026-09-24,08:30,AITO Hangzhou Open,Cui Jie,Adolfo Daniel Vallejo,atp_421,atp_9021,ATP,
 2026-09-24,09:30,AITO Hangzhou Open,Sun Fajing,Roman Safiullin,atp_263,atp_185,ATP,
 2026-09-24,11:30,AITO Hangzhou Open,Zhang Zhizhen,Chak Lam Coleman Wong,atp_449,atp_137,ATP,
 2026-09-24,08:00,Chengdu Open,Lloyd Harris,Aleksandar Kovacevic,atp_179,atp_75,ATP,Hard
-2026-09-24,08:00,Chengdu Open,Martin Damm,Shintaro Mochizuki,atp_125,atp_116,ATP,Hard
+2026-09-24,08:00,Chengdu Open,Martin Damm,Shintaro Mochizuki,atp_383,atp_116,ATP,Hard
 2026-09-24,08:00,Chengdu Open,Aleksandr Shevchenko,Hubert Hurkacz,atp_79,atp_71,ATP,Hard
 2026-09-24,09:30,Chengdu Open,Juan Manuel Cerundolo,Zhou Yi,atp_19,atp_220,ATP,Hard
 2026-09-24,10:30,Delta Motors Tolentino Open,Alice Tubello,Julia Grabher,wta_435,wta_80,WTA,
 2026-09-24,12:00,Delta Motors Tolentino Open,Ekaterine Gorgodze,Barbora Palicova,wta_167,wta_221,WTA,
 2026-09-24,15:30,Delta Motors Tolentino Open,Samira De Stefano,Oksana Selekhmeteva,wta_290,wta_74,WTA,
 2026-09-24,17:30,Delta Motors Tolentino Open,Veronika Erjavec,Nuria Brancaccio,wta_112,wta_164,WTA,
-2026-09-24,10:00,Eupago Porto Open,Veronika Podrez,Mia Pohankova,wta_232,wta_346,WTA,
+2026-09-24,10:00,Eupago Porto Open,Veronika Podrez,Mia Pohankova,wta_232,wta_273,WTA,
 2026-09-24,11:30,Eupago Porto Open,Naiktha Bains,Reese Brantmeier,wta_391,wta_9100,WTA,
 2026-09-24,12:00,Eupago Porto Open,Angelina Voloshchuk,Harmony Tan,wta_401,wta_229,WTA,
 2026-09-24,13:30,Eupago Porto Open,Valentina Steiner,Katie Swan,wta_9030,wta_271,WTA,
