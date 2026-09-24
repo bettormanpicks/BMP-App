@@ -4,7 +4,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-24,Final,AITO Hangzhou Open,Mattia Bellucci,Kamil Majchrzak,atp_109,atp_56,ATP,
 2026-09-24,Final,AITO Hangzhou Open,Zhang Zhizhen,Chak Lam Coleman Wong,atp_449,atp_137,ATP,
 2026-09-24,Final,AITO Hangzhou Open,Sun Fajing,Roman Safiullin,atp_263,atp_185,ATP,
-2026-09-24,Final,AITO Hangzhou Open,Bu Yunchaokete,Michael Zheng,atp_147,atp_152,ATP,
+2026-09-24,Final,AITO Hangzhou Open,Bu Yunchaokete,Michael Zheng,atp_162,wta_372,ATP,
 2026-09-24,Final,AITO Hangzhou Open,Rinky Hijikata,Dalibor Svrcina,atp_112,atp_99,ATP,
 2026-09-24,Final,Billie Jean King Cup Finals,Jasmine Paolini,Zheng Qinwen,wta_8,wta_23,WTA,
 2026-09-24,Final,Billie Jean King Cup Finals,Elisabetta Cocciaretto,Zhang Shuai,wta_40,atp_449,WTA,
@@ -21,11 +21,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-24,Final,Chengdu Open,Miomir Kecmanovic,Nikoloz Basilashvili,atp_83,atp_136,ATP,Hard
 2026-09-24,Final,Chengdu Open,James Duckworth,Lorenzo Sonego,atp_80,atp_64,ATP,Hard
 2026-09-24,Final,Chengdu Open,Federico Cina,Camilo Ugo Carabelli,atp_224,atp_45,ATP,Hard
-2026-09-24,Live,Delta Motors Tolentino Open,Veronika Erjavec,Nuria Brancaccio,wta_112,wta_164,WTA,
 2026-09-24,Final,Delta Motors Tolentino Open,Samira De Stefano,Oksana Selekhmeteva,wta_290,wta_74,WTA,
 2026-09-24,Final,Delta Motors Tolentino Open,Alice Tubello,Julia Grabher,wta_435,wta_80,WTA,
+2026-09-24,TBD,Delta Motors Tolentino Open,Veronika Erjavec,Nuria Brancaccio,wta_112,wta_164,WTA,
 2026-09-24,Final,Delta Motors Tolentino Open,Ekaterine Gorgodze,Barbora Palicova,wta_167,wta_221,WTA,
-2026-09-24,Final,Eupago Porto Open,Veronika Podrez,Mia Pohankova,wta_232,wta_273,WTA,
+2026-09-24,Final,Eupago Porto Open,Veronika Podrez,Mia Pohankova,wta_232,wta_346,WTA,
 2026-09-24,Final,Eupago Porto Open,Valentina Steiner,Katie Swan,wta_9030,wta_271,WTA,
 2026-09-24,Final,Eupago Porto Open,Angelina Voloshchuk,Harmony Tan,wta_401,wta_229,WTA,
 2026-09-24,Final,Eupago Porto Open,Naiktha Bains,Reese Brantmeier,wta_391,wta_9100,WTA,
@@ -52,10 +52,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-25,10:30,Delta Motors Tolentino Open,Guiomar Maristany Zuleta De Reales,Rebeka Masarova,wta_165,wta_117,WTA,
 2026-09-25,12:00,Delta Motors Tolentino Open,Mia Ristic,Jessica Pieri,wta_273,wta_383,WTA,
 2026-09-25,15:30,Delta Motors Tolentino Open,Ekaterine Gorgodze,Oksana Selekhmeteva,wta_167,wta_74,WTA,
+2026-09-25,17:30,Delta Motors Tolentino Open,Nuria Brancaccio,Julia Grabher,wta_164,wta_80,WTA,
 2026-09-25,12:00,Eupago Porto Open,Reese Brantmeier,Angelina Voloshchuk,wta_9101,wta_401,ATP,
 2026-09-25,12:00,Eupago Porto Open,Elena Malygina,Sinja Kraus,wta_347,wta_105,WTA,
-2026-09-25,13:30,Eupago Porto Open,Maria Timofeeva,Gabriela Knutson,wta_54,wta_184,WTA,
-2026-09-25,13:30,Eupago Porto Open,Mia Pohankova,Katie Swan,wta_273,wta_271,WTA,
+2026-09-25,13:30,Eupago Porto Open,Maria Timofeeva,Gabriela Knutson,wta_154,wta_184,WTA,
+2026-09-25,13:30,Eupago Porto Open,Mia Pohankova,Katie Swan,wta_346,wta_271,WTA,
 2026-09-25,07:30,Korea Open,Lanlana Tararudee,Maya Joint,wta_124,wta_29,WTA,Hard
 2026-09-25,10:30,Singapore Tennis Open presented by BNP Paribas,Mirra Andreeva,Leylah Fernandez,wta_7,wta_28,WTA,
 2026-09-25,12:00,Singapore Tennis Open presented by BNP Paribas,Maria Sakkari,Talia Gibson,wta_33,wta_111,WTA,
