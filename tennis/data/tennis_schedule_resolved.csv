@@ -4,10 +4,10 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-24,Final,AITO Hangzhou Open,Mattia Bellucci,Kamil Majchrzak,atp_109,atp_56,ATP,
 2026-09-24,Final,AITO Hangzhou Open,Zhang Zhizhen,Chak Lam Coleman Wong,atp_449,atp_137,ATP,
 2026-09-24,Final,AITO Hangzhou Open,Sun Fajing,Roman Safiullin,atp_263,atp_185,ATP,
-2026-09-24,Final,AITO Hangzhou Open,Bu Yunchaokete,Michael Zheng,atp_162,wta_372,ATP,
+2026-09-24,Final,AITO Hangzhou Open,Bu Yunchaokete,Michael Zheng,atp_147,atp_152,ATP,
 2026-09-24,Final,AITO Hangzhou Open,Rinky Hijikata,Dalibor Svrcina,atp_112,atp_99,ATP,
 2026-09-24,Final,Billie Jean King Cup Finals,Jasmine Paolini,Zheng Qinwen,wta_8,wta_23,WTA,
-2026-09-24,Final,Billie Jean King Cup Finals,Elisabetta Cocciaretto,Zhang Shuai,wta_40,atp_449,WTA,
+2026-09-24,Final,Billie Jean King Cup Finals,Elisabetta Cocciaretto,Zhang Shuai,wta_40,wta_85,WTA,
 2026-09-24,05:00,Chengdu Open,Vit Kopriva,Denis Shapovalov,atp_87,atp_36,ATP,Hard
 2026-09-24,05:00,Chengdu Open,Jenson Brooksby,Lorenzo Sonego,atp_46,atp_64,ATP,Hard
 2026-09-24,06:30,Chengdu Open,Alejandro Tabilo,Adrian Mannarino,atp_67,atp_48,ATP,Hard
@@ -42,25 +42,3 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-24,Final,Turk Telekom Ankara Open,Carole Monnet,Anastasia Gasanova,wta_177,wta_189,WTA,
 2026-09-24,Final,Turk Telekom Ankara Open,Deniz Dilek,Cagla Buyukakcay,wta_9114,wta_376,WTA,
 2026-09-24,Final,Turk Telekom Ankara Open,Tian Fangran,Elena Micic,wta_277,wta_375,WTA,
-2026-09-25,07:00,AITO Hangzhou Open,Fabian Marozsan,Taro Daniel,atp_47,atp_402,ATP,
-2026-09-25,08:30,AITO Hangzhou Open,Rinky Hijikata,Andrey Rublev,atp_112,atp_14,ATP,
-2026-09-25,11:30,AITO Hangzhou Open,Jaime Faria,Hugo Gaston,atp_146,atp_96,ATP,
-2026-09-25,08:30,Chengdu Open,Nikoloz Basilashvili,Botic Van De Zandschulp,atp_136,atp_55,ATP,Hard
-2026-09-25,12:00,Laver Cup,Casper Ruud,Francisco Cerundolo,atp_13,atp_62,ATP,Hard
-2026-09-25,13:30,Laver Cup,Jakub Mensik,Brandon Nakashima,atp_16,atp_29,ATP,Hard
-2026-09-25,18:00,Laver Cup,Rafael Jodar,Alexander Bublik,atp_117,atp_10,ATP,Hard
-2026-09-25,10:30,Delta Motors Tolentino Open,Guiomar Maristany Zuleta De Reales,Rebeka Masarova,wta_165,wta_117,WTA,
-2026-09-25,12:00,Delta Motors Tolentino Open,Mia Ristic,Jessica Pieri,wta_273,wta_383,WTA,
-2026-09-25,15:30,Delta Motors Tolentino Open,Ekaterine Gorgodze,Oksana Selekhmeteva,wta_167,wta_74,WTA,
-2026-09-25,17:30,Delta Motors Tolentino Open,Nuria Brancaccio,Julia Grabher,wta_164,wta_80,WTA,
-2026-09-25,12:00,Eupago Porto Open,Reese Brantmeier,Angelina Voloshchuk,wta_9101,wta_401,ATP,
-2026-09-25,12:00,Eupago Porto Open,Elena Malygina,Sinja Kraus,wta_347,wta_105,WTA,
-2026-09-25,13:30,Eupago Porto Open,Maria Timofeeva,Gabriela Knutson,wta_154,wta_184,WTA,
-2026-09-25,13:30,Eupago Porto Open,Mia Pohankova,Katie Swan,wta_346,wta_271,WTA,
-2026-09-25,07:30,Korea Open,Lanlana Tararudee,Maya Joint,wta_124,wta_29,WTA,Hard
-2026-09-25,10:30,Singapore Tennis Open presented by BNP Paribas,Mirra Andreeva,Leylah Fernandez,wta_7,wta_28,WTA,
-2026-09-25,12:00,Singapore Tennis Open presented by BNP Paribas,Maria Sakkari,Talia Gibson,wta_33,wta_111,WTA,
-2026-09-25,09:00,Turk Telekom Ankara Open,Ksenia Zaytseva,Polina Iatcenko,wta_561,wta_160,WTA,
-2026-09-25,09:00,Turk Telekom Ankara Open,Teodora Kostovic,Tian Fangran,wta_171,wta_277,WTA,
-2026-09-25,11:00,Turk Telekom Ankara Open,Berfu Cengiz,Shi Han,wta_480,wta_330,WTA,
-2026-09-25,13:30,Turk Telekom Ankara Open,Deniz Dilek,Anastasia Gasanova,wta_9114,wta_189,WTA,
