@@ -1,24 +1,24 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-09-25,Live,AITO Hangzhou Open,Jaime Faria,Hugo Gaston
 2026-09-25,05:30,AITO Hangzhou Open,Quentin Halys,Roman Safiullin
 2026-09-25,Final,AITO Hangzhou Open,Rinky Hijikata,Andrey Rublev
 2026-09-25,Final,AITO Hangzhou Open,Fabian Marozsan,Taro Daniel
+2026-09-25,Final,AITO Hangzhou Open,Jaime Faria,Hugo Gaston
 2026-09-25,Final,Billie Jean King Cup Finals,Cristina Bucsa,Linda Noskova
 2026-09-25,Final,Billie Jean King Cup Finals,Jessica Bouzas Maneiro,Karolina Muchova
 2026-09-25,05:00,Chengdu Open,Juan Manuel Cerundolo,Alejandro Davidovich Fokina
 2026-09-25,06:30,Chengdu Open,Martin Damm,Hubert Hurkacz
 2026-09-25,06:30,Chengdu Open,Federico Cina,Alexandre Muller
 2026-09-25,Final,Chengdu Open,Nikoloz Basilashvili,Botic Van De Zandschulp
-2026-09-25,Live,Laver Cup,Casper Ruud,Francisco Cerundolo
-2026-09-25,14:30,Laver Cup,Jakub Mensik,Brandon Nakashima
-2026-09-25,18:00,Laver Cup,Rafael Jodar,Alexander Bublik
-2026-09-25,15:30,Delta Motors Tolentino Open,Ekaterine Gorgodze,Oksana Selekhmeteva
-2026-09-25,17:30,Delta Motors Tolentino Open,Nuria Brancaccio,Julia Grabher
+2026-09-25,Live,Laver Cup,Rafael Jodar,Alexander Bublik
+2026-09-25,Final,Laver Cup,Jakub Mensik,Brandon Nakashima
+2026-09-25,Final,Laver Cup,Casper Ruud,Francisco Cerundolo
+2026-09-25,Live,Delta Motors Tolentino Open,Nuria Brancaccio,Julia Grabher
+2026-09-25,Final,Delta Motors Tolentino Open,Ekaterine Gorgodze,Oksana Selekhmeteva
 2026-09-25,Final,Delta Motors Tolentino Open,Guiomar Maristany Zuleta De Reales,Rebeka Masarova
 2026-09-25,Final,Delta Motors Tolentino Open,Mia Ristic,Jessica Pieri
-2026-09-25,Live,Eupago Porto Open,Elena Malygina,Sinja Kraus
-2026-09-25,Live,Eupago Porto Open,Maria Timofeeva,Gabriela Knutson
-2026-09-25,14:20,Eupago Porto Open,Mia Pohankova,Katie Swan
+2026-09-25,Final,Eupago Porto Open,Maria Timofeeva,Gabriela Knutson
+2026-09-25,Final,Eupago Porto Open,Elena Malygina,Sinja Kraus
+2026-09-25,Final,Eupago Porto Open,Mia Pohankova,Katie Swan
 2026-09-25,Final,Eupago Porto Open,Reese Brantmeier,Angelina Voloshchuk
 2026-09-25,03:00,Jingshan Tennis Open,Kristiana Sidorova,Aruzhan  Sagandykova
 2026-09-25,03:00,Jingshan Tennis Open,Nika Radisic,Chengyiyi Yuan
@@ -31,16 +31,27 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-25,02:00,Korea Open,Katie Volynets,Kimberly Birrell
 2026-09-25,03:30,Korea Open,Taylah Preston,Alina Korneeva
 2026-09-25,03:30,Korea Open,Lanlana Tararudee,Maya Joint
-2026-09-25,Live,Singapore Tennis Open presented by BNP Paribas,Maria Sakkari,Talia Gibson
 2026-09-25,Final,Singapore Tennis Open presented by BNP Paribas,Mirra Andreeva,Leylah Fernandez
-2026-09-25,Live,Turk Telekom Ankara Open,Deniz Dilek,Anastasia Gasanova
+2026-09-25,Final,Singapore Tennis Open presented by BNP Paribas,Maria Sakkari,Talia Gibson
 2026-09-25,Final,Turk Telekom Ankara Open,Ksenia Zaytseva,Polina Iatcenko
 2026-09-25,Final,Turk Telekom Ankara Open,Teodora Kostovic,Tian Fangran
+2026-09-25,Final,Turk Telekom Ankara Open,Deniz Dilek,Anastasia Gasanova
 2026-09-25,Final,Turk Telekom Ankara Open,Berfu Cengiz,Shi Han
 2026-09-26,07:00,AITO Hangzhou Open,Bu Yunchaokete,Kamil Majchrzak
 2026-09-26,08:30,AITO Hangzhou Open,Daniil Medvedev,Valentin Royer
 2026-09-26,11:30,AITO Hangzhou Open,Chak Lam Coleman Wong,Adolfo Daniel Vallejo
 2026-09-26,08:30,Chengdu Open,Valentin Vacherot,Lloyd Harris
-2026-09-26,TBD,Delta Motors Tolentino Open,Guiomar Maristany Zuleta De Reales,Jessica Pieri
-2026-09-26,TBD,Singapore Tennis Open presented by BNP Paribas,Leylah Fernandez,Maja Chwalinska
-2026-09-26,TBD,Turk Telekom Ankara Open,Teodora Kostovic,Polina Iatcenko
+2026-09-26,07:30,Adana Open,Viktoria Hruncakova,Jaeda Daniel
+2026-09-26,07:30,Adana Open,Anna Siskova,Gina Feistel
+2026-09-26,07:30,Adana Open,Melis Keser,Elena Ruxandra Bertea
+2026-09-26,09:00,Adana Open,Erika Andreeva,Ilay Yoruk
+2026-09-26,09:00,Adana Open,Aysegul Mert,Anastasia Tikhonova
+2026-09-26,09:00,Adana Open,Fiona Crawley,Adelina Lacinova
+2026-09-26,10:00,Adana Open,Isabella Shinikova,Elena Micic
+2026-09-26,10:30,Adana Open,Piraye Ozdemir,Lois Boisson
+2026-09-26,14:00,Delta Motors Tolentino Open,Guiomar Maristany Zuleta De Reales,Jessica Pieri
+2026-09-26,10:00,Eupago Porto Open,Reese Brantmeier,Sinja Kraus
+2026-09-26,11:00,Eupago Porto Open,Maria Timofeeva,Mia Pohankova
+2026-09-26,10:00,Singapore Tennis Open presented by BNP Paribas,Leylah Fernandez,Maja Chwalinska
+2026-09-26,10:00,Turk Telekom Ankara Open,Teodora Kostovic,Polina Iatcenko
+2026-09-26,11:30,Turk Telekom Ankara Open,Deniz Dilek,Berfu Cengiz
