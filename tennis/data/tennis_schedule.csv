@@ -1,5 +1,5 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-09-27,Live,AITO Hangzhou Open,Daniil Medvedev,Chak Lam Coleman Wong
+2026-09-27,Final,AITO Hangzhou Open,Daniil Medvedev,Chak Lam Coleman Wong
 2026-09-27,Final,AITO Hangzhou Open,Hugo Gaston,Andrey Rublev
 2026-09-27,Final,AITO Hangzhou Open,Roman Safiullin,Bu Yunchaokete
 2026-09-27,Final,Billie Jean King Cup Finals,Elina Svitolina,Linda Noskova
@@ -36,14 +36,14 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-27,03:30,Kinoshita Group Japan Open Tennis Championships,Lorenzo Sonego,Kamil Majchrzak
 2026-09-27,05:30,Kinoshita Group Japan Open Tennis Championships,Adolfo Daniel Vallejo,Taro Daniel
 2026-09-27,06:30,Kinoshita Group Japan Open Tennis Championships,Shintaro Mochizuki,Jaime Faria
-2026-09-27,Live,Laver Cup,Alexander Zverev,Learner Tien
-2026-09-27,14:30,Laver Cup,Carlos Alcaraz,Alex de Minaur
-2026-09-27,15:30,Laver Cup,Rafael Jodar,Taylor Fritz
-2026-09-27,Live,Adana Open,Erika Andreeva,Elena Micic
-2026-09-27,Live,Adana Open,Fiona Crawley,Lois Boisson
+2026-09-27,TBD,Laver Cup,Rafael Jodar,Taylor Fritz
+2026-09-27,TBD,Laver Cup,Carlos Alcaraz,Alex de Minaur
+2026-09-27,Final,Laver Cup,Alexander Zverev,Learner Tien
+2026-09-27,Final,Adana Open,Fiona Crawley,Lois Boisson
+2026-09-27,Final,Adana Open,Erika Andreeva,Elena Micic
 2026-09-27,Final,Adana Open,Viktoria Hruncakova,Anastasia Tikhonova
 2026-09-27,TBD,Adana Open,Gina Feistel,Elena Ruxandra Bertea
-2026-09-27,Live,Delta Motors Tolentino Open,Guiomar Maristany Zuleta De Reales,Julia Grabher
+2026-09-27,Final,Delta Motors Tolentino Open,Guiomar Maristany Zuleta De Reales,Julia Grabher
 2026-09-27,Final,Eupago Porto Open,Maria Timofeeva,Reese Brantmeier
 2026-09-27,03:00,Jingshan Tennis Open,Sara Saito,Chenting Zhu
 2026-09-27,03:00,Jingshan Tennis Open,Yang Yidi,Fiona Ferro
@@ -54,6 +54,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-27,Final,Singapore Tennis Open presented by BNP Paribas,Leylah Fernandez,Talia Gibson
 2026-09-27,Final,Turk Telekom Ankara Open,Berfu Cengiz,Teodora Kostovic
 2026-09-28,09:30,AITO Hangzhou Open,Kyrian Jacquet,Andrey Rublev
+2026-09-28,11:30,AITO Hangzhou Open,Daniil Medvedev,Roman Safiullin
 2026-09-28,09:00,Chengdu Open,Nikoloz Basilashvili,Alejandro Davidovich Fokina
 2026-09-28,11:00,Chengdu Open,Hubert Hurkacz,Denis Shapovalov
 2026-09-28,07:30,China Open,Robin Montgomery,Aran Teixido Garcia
@@ -67,3 +68,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-28,07:30,China Open,Botic Van De Zandschulp,Valentin Royer
 2026-09-28,07:30,China Open,Cui Jie,Daniel Altmaier
 2026-09-28,08:00,China Open,Miomir Kecmanovic,Adrian Mannarino
+2026-09-28,08:30,Adana Open,Julia Riera,Anna Siskova
+2026-09-28,08:30,Adana Open,Emiliana Arango,Anna Blinkova
+2026-09-28,08:30,Adana Open,Antonia Ruzic,Vendula Valdmannova
+2026-09-28,10:00,Adana Open,Elena Ruxandra Bertea,Lucrezia Stefanini
+2026-09-28,10:00,Adana Open,Leolia Jeanjean,Suzan Lamens
+2026-09-28,10:30,Adana Open,Noma Noha Akugue,Fiona Crawley
+2026-09-28,11:30,Adana Open,Viktoria Hruncakova,Anastasia Gasanova
+2026-09-28,11:30,Adana Open,Ksenia Efremova,Martyna Kubka
