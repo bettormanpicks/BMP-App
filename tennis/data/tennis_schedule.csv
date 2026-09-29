@@ -21,15 +21,15 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-29,02:00,Kinoshita Group Japan Open Tennis Championships,Valentin Vacherot,Alexander Blockx
 2026-09-29,03:30,Kinoshita Group Japan Open Tennis Championships,Tomas Martin Etcheverry,Stefanos Tsitsipas
 2026-09-29,03:30,Kinoshita Group Japan Open Tennis Championships,Alejandro Tabilo,Tommy Paul
-2026-09-29,Live,Adana Open,Carole Monnet,Cagla Buyukakcay
-2026-09-29,17:15,Adana Open,Teodora Kostovic,Berfu Cengiz
 2026-09-29,Final,Adana Open,Anastasia Tikhonova,Simona Waltert
 2026-09-29,Final,Adana Open,Lucia Bronzetti,Lois Boisson
+2026-09-29,TBD,Adana Open,Teodora Kostovic,Berfu Cengiz
+2026-09-29,Final,Adana Open,Carole Monnet,Cagla Buyukakcay
 2026-09-29,Final,Adana Open,Ksenia Efremova,Martyna Kubka
 2026-09-29,Final,Adana Open,Polina Iatcenko,Erika Andreeva
 2026-09-29,Final,Adana Open,Lola Radivojevic,Melisa Ercan
-2026-09-29,Final,Adana Open,Elena Pridankina,Ayla Aksu
 2026-09-29,Final,Adana Open,Dalma Galfi,Elena Micic
+2026-09-29,Final,Adana Open,Elena Pridankina,Ayla Aksu
 2026-09-29,03:00,Jingshan Tennis Open,Alexandra Shubladze,Lu Jia-Jing
 2026-09-29,03:00,Jingshan Tennis Open,Chenting Zhu,Emerson Jones
 2026-09-29,06:00,Jingshan Tennis Open,Zheng Wushuang,Sara Sorribes Tormo
@@ -45,10 +45,12 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-30,11:00,China Open,Nuno Borges,Novak Djokovic
 2026-09-30,TBD,Kinoshita Group Japan Open Tennis Championships,Arthur Fils,Luca Van Assche
 2026-09-30,08:30,Kinoshita Group Japan Open Tennis Championships,Matteo Arnaldi,Rei Sakamoto
-2026-09-30,TBD,Adana Open,Fiona Crawley,Elena Pridankina
-2026-09-30,TBD,Adana Open,Viktoria Hruncakova,Anna Blinkova
-2026-09-30,TBD,Adana Open,Leolia Jeanjean,Melisa Ercan
-2026-09-30,09:00,Adana Open,Antonia Ruzic,Julia Riera
 2026-09-30,09:00,Adana Open,Erika Andreeva,Simona Waltert
+2026-09-30,09:00,Adana Open,Antonia Ruzic,Julia Riera
 2026-09-30,09:00,Adana Open,Lois Boisson,Martyna Kubka
+2026-09-30,11:00,Adana Open,Viktoria Hruncakova,Anna Blinkova
+2026-09-30,11:00,Adana Open,Fiona Crawley,Elena Pridankina
+2026-09-30,12:00,Adana Open,Teodora Kostovic,Dalma Galfi
+2026-09-30,13:30,Adana Open,Leolia Jeanjean,Melisa Ercan
+2026-09-30,15:00,Adana Open,Cagla Buyukakcay,Lucrezia Stefanini
 2026-09-30,07:30,Jingshan Tennis Open,Wei Sijia,Fiona Ferro

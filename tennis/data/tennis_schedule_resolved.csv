@@ -21,15 +21,15 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-29,02:00,Kinoshita Group Japan Open Tennis Championships,Valentin Vacherot,Alexander Blockx,atp_26,atp_104,ATP,Hard
 2026-09-29,03:30,Kinoshita Group Japan Open Tennis Championships,Tomas Martin Etcheverry,Stefanos Tsitsipas,atp_53,atp_32,ATP,Hard
 2026-09-29,03:30,Kinoshita Group Japan Open Tennis Championships,Alejandro Tabilo,Tommy Paul,atp_67,atp_24,ATP,Hard
-2026-09-29,Live,Adana Open,Carole Monnet,Cagla Buyukakcay,wta_177,wta_376,WTA,
-2026-09-29,17:15,Adana Open,Teodora Kostovic,Berfu Cengiz,wta_171,wta_480,WTA,
 2026-09-29,Final,Adana Open,Anastasia Tikhonova,Simona Waltert,wta_257,wta_81,WTA,
 2026-09-29,Final,Adana Open,Lucia Bronzetti,Lois Boisson,wta_138,wta_35,WTA,
+2026-09-29,TBD,Adana Open,Teodora Kostovic,Berfu Cengiz,wta_171,wta_480,WTA,
+2026-09-29,Final,Adana Open,Carole Monnet,Cagla Buyukakcay,wta_177,wta_376,WTA,
 2026-09-29,Final,Adana Open,Ksenia Efremova,Martyna Kubka,wta_595,wta_338,WTA,
-2026-09-29,Final,Adana Open,Polina Iatcenko,Erika Andreeva,wta_160,wta_362,WTA,
+2026-09-29,Final,Adana Open,Polina Iatcenko,Erika Andreeva,wta_160,wta_7,WTA,
 2026-09-29,Final,Adana Open,Lola Radivojevic,Melisa Ercan,wta_139,wta_637,WTA,
-2026-09-29,Final,Adana Open,Elena Pridankina,Ayla Aksu,wta_192,wta_304,WTA,
 2026-09-29,Final,Adana Open,Dalma Galfi,Elena Micic,wta_86,wta_375,WTA,
+2026-09-29,Final,Adana Open,Elena Pridankina,Ayla Aksu,wta_192,wta_304,WTA,
 2026-09-29,03:00,Jingshan Tennis Open,Alexandra Shubladze,Lu Jia-Jing,wta_344,wta_431,WTA,
 2026-09-29,03:00,Jingshan Tennis Open,Chenting Zhu,Emerson Jones,wta_9054,wta_72,WTA,
 2026-09-29,06:00,Jingshan Tennis Open,Zheng Wushuang,Sara Sorribes Tormo,wta_372,wta_451,WTA,
@@ -45,10 +45,12 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-30,11:00,China Open,Nuno Borges,Novak Djokovic,atp_44,atp_3,ATP,Hard
 2026-09-30,TBD,Kinoshita Group Japan Open Tennis Championships,Arthur Fils,Luca Van Assche,atp_40,atp_130,ATP,Hard
 2026-09-30,08:30,Kinoshita Group Japan Open Tennis Championships,Matteo Arnaldi,Rei Sakamoto,atp_85,atp_173,ATP,Hard
-2026-09-30,TBD,Adana Open,Fiona Crawley,Elena Pridankina,wta_201,wta_192,WTA,
-2026-09-30,TBD,Adana Open,Viktoria Hruncakova,Anna Blinkova,wta_328,wta_82,WTA,
-2026-09-30,TBD,Adana Open,Leolia Jeanjean,Melisa Ercan,wta_115,wta_637,WTA,
+2026-09-30,09:00,Adana Open,Erika Andreeva,Simona Waltert,wta_7,wta_81,WTA,
 2026-09-30,09:00,Adana Open,Antonia Ruzic,Julia Riera,wta_67,wta_187,WTA,
-2026-09-30,09:00,Adana Open,Erika Andreeva,Simona Waltert,wta_362,wta_81,WTA,
 2026-09-30,09:00,Adana Open,Lois Boisson,Martyna Kubka,wta_35,wta_338,WTA,
+2026-09-30,11:00,Adana Open,Viktoria Hruncakova,Anna Blinkova,wta_218,wta_82,WTA,
+2026-09-30,11:00,Adana Open,Fiona Crawley,Elena Pridankina,wta_201,wta_192,WTA,
+2026-09-30,12:00,Adana Open,Teodora Kostovic,Dalma Galfi,wta_171,wta_86,WTA,
+2026-09-30,13:30,Adana Open,Leolia Jeanjean,Melisa Ercan,wta_115,wta_637,WTA,
+2026-09-30,15:00,Adana Open,Cagla Buyukakcay,Lucrezia Stefanini,wta_376,wta_136,WTA,
 2026-09-30,07:30,Jingshan Tennis Open,Wei Sijia,Fiona Ferro,wta_358,wta_239,WTA,
