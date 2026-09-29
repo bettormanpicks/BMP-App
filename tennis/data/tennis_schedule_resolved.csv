@@ -39,7 +39,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-28,05:00,Kinoshita Group Japan Open Tennis Championships,Adolfo Daniel Vallejo,Jaime Faria,atp_9021,atp_146,ATP,Hard
 2026-09-28,Final,Kinoshita Group Japan Open Tennis Championships,Adolfo Daniel Vallejo,Taro Daniel,atp_9021,atp_402,ATP,Hard
 2026-09-28,Final,Adana Open,Antonia Ruzic,Vendula Valdmannova,wta_67,wta_286,WTA,
-2026-09-28,Final,Adana Open,Emiliana Arango,Anna Blinkova,wta_58,wta_82,WTA,
+2026-09-28,Final,Adana Open,Emiliana Arango,Anna Blinkova,wta_58,wta_65,WTA,
 2026-09-28,Final,Adana Open,Leolia Jeanjean,Suzan Lamens,wta_115,wta_109,WTA,
 2026-09-28,Final,Adana Open,Elena Ruxandra Bertea,Lucrezia Stefanini,wta_300,wta_136,WTA,
 2026-09-28,Final,Adana Open,Noma Noha Akugue,Fiona Crawley,wta_255,wta_201,WTA,
@@ -52,17 +52,3 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-28,04:30,Jingshan Tennis Open,Kristiana Sidorova,Daria Egorova,wta_434,wta_9033,WTA,
 2026-09-28,04:30,Jingshan Tennis Open,Viktoria Morvayova,Sara Sorribes Tormo,wta_328,wta_451,WTA,
 2026-09-28,06:00,Jingshan Tennis Open,Alevtina Ibragimova,Darya Khamutsianskaya,wta_321,wta_380,WTA,
-2026-09-29,11:30,AITO Hangzhou Open,Daniil Medvedev,Andrey Rublev,atp_11,atp_14,ATP,
-2026-09-29,11:00,Chengdu Open,Hubert Hurkacz,Alejandro Davidovich Fokina,atp_71,atp_15,ATP,Hard
-2026-09-29,09:00,Adana Open,Elena Pridankina,Ayla Aksu,wta_192,wta_304,WTA,
-2026-09-29,09:00,Adana Open,Anastasia Tikhonova,Simona Waltert,wta_257,wta_81,WTA,
-2026-09-29,09:00,Adana Open,Dalma Galfi,Elena Micic,wta_86,wta_375,WTA,
-2026-09-29,10:30,Adana Open,Lola Radivojevic,Melisa Ercan,wta_139,wta_637,WTA,
-2026-09-29,10:30,Adana Open,Lucia Bronzetti,Lois Boisson,wta_138,wta_35,WTA,
-2026-09-29,10:30,Adana Open,Polina Iatcenko,Erika Andreeva,wta_160,wta_362,WTA,
-2026-09-29,11:00,Adana Open,Ksenia Efremova,Martyna Kubka,wta_595,wta_338,WTA,
-2026-09-29,12:00,Adana Open,Carole Monnet,Cagla Buyukakcay,wta_177,wta_376,WTA,
-2026-09-29,14:30,Adana Open,Teodora Kostovic,Berfu Cengiz,wta_171,wta_480,WTA,
-2026-09-29,07:30,Jingshan Tennis Open,Amelia Rajecki,Wang Yuhan,wta_439,wta_355,WTA,
-2026-09-29,07:30,Jingshan Tennis Open,Katarina Zavatska,Sofya Lansere,wta_310,wta_420,WTA,
-2026-09-29,08:30,Jingshan Tennis Open,Jessica Bouzas Maneiro,Tian Fangran,wta_48,wta_277,WTA,
