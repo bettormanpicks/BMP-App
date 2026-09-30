@@ -1,15 +1,15 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-09-30,03:00,China Open,Alex Molcan,Arthur Rinderknech,atp_199,atp_30,ATP,Hard
+2026-09-30,03:00,China Open,Alex Molcan,Arthur Rinderknech,atp_415,atp_30,ATP,Hard
 2026-09-30,03:00,China Open,Alex de Minaur,Mariano Navone,atp_8,atp_74,ATP,Hard
 2026-09-30,04:30,China Open,Roman Safiullin,Flavio Cobolli,atp_185,atp_20,ATP,Hard
 2026-09-30,04:30,China Open,Ignacio Buse,Quentin Halys,atp_91,atp_72,ATP,Hard
-2026-09-30,04:30,China Open,Botic Van De Zandschulp,Francisco Cerundolo,atp_55,atp_62,ATP,Hard
+2026-09-30,04:30,China Open,Botic Van De Zandschulp,Francisco Cerundolo,atp_55,atp_19,ATP,Hard
 2026-09-30,06:00,China Open,Shang Juncheng,Sebastian Baez,atp_259,atp_33,ATP,Hard
 2026-09-30,Final,China Open,Nuno Borges,Novak Djokovic,atp_44,atp_3,ATP,Hard
 2026-09-30,Final,China Open,Zhang Zhizhen,Arthur Gea,atp_449,atp_160,ATP,Hard
-2026-09-30,Final,China Open,Juan Manuel Cerundolo,Bu Yunchaokete,atp_19,atp_162,ATP,Hard
+2026-09-30,Final,China Open,Juan Manuel Cerundolo,Bu Yunchaokete,atp_19,atp_147,ATP,Hard
 2026-09-30,03:00,China Open,Katie Volynets,Robin Montgomery,wta_96,wta_293,WTA,Hard
-2026-09-30,03:00,China Open,Zheng Qinwen,Shi Han,wta_23,wta_330,WTA,Hard
+2026-09-30,03:00,China Open,Zheng Qinwen,Shi Han,wta_372,wta_330,WTA,Hard
 2026-09-30,03:00,China Open,Sofia Kenin,Ashlyn Krueger,wta_32,wta_100,WTA,Hard
 2026-09-30,03:00,China Open,Yuliia Starodubtseva,Alina Charaeva,wta_101,wta_163,WTA,Hard
 2026-09-30,04:30,China Open,Paula Badosa,Daria Kasatkina,wta_70,wta_61,WTA,Hard
@@ -35,11 +35,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-09-30,06:30,Kinoshita Group Japan Open Tennis Championships,Denis Shapovalov,Sho Shimabukuro,atp_36,atp_135,ATP,Hard
 2026-09-30,Final,Kinoshita Group Japan Open Tennis Championships,Matteo Arnaldi,Rei Sakamoto,atp_85,atp_173,ATP,Hard
 2026-09-30,Final,Kinoshita Group Japan Open Tennis Championships,Arthur Fils,Luca Van Assche,atp_40,atp_130,ATP,Hard
-2026-09-30,Live,Adana Open,Leolia Jeanjean,Melisa Ercan,wta_115,wta_637,WTA,
-2026-09-30,17:10,Adana Open,Cagla Buyukakcay,Lucrezia Stefanini,wta_376,wta_136,WTA,
+2026-09-30,Live,Adana Open,Cagla Buyukakcay,Lucrezia Stefanini,wta_376,wta_136,WTA,
 2026-09-30,Final,Adana Open,Antonia Ruzic,Julia Riera,wta_67,wta_187,WTA,
 2026-09-30,Final,Adana Open,Viktoria Hruncakova,Anna Blinkova,wta_218,wta_82,WTA,
 2026-09-30,Final,Adana Open,Erika Andreeva,Simona Waltert,wta_362,wta_81,WTA,
+2026-09-30,Final,Adana Open,Leolia Jeanjean,Melisa Ercan,wta_115,wta_637,WTA,
 2026-09-30,Final,Adana Open,Teodora Kostovic,Dalma Galfi,wta_171,wta_86,WTA,
 2026-09-30,Final,Adana Open,Fiona Crawley,Elena Pridankina,wta_201,wta_192,WTA,
 2026-09-30,Final,Adana Open,Lois Boisson,Martyna Kubka,wta_35,wta_338,WTA,
