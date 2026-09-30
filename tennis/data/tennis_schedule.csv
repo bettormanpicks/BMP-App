@@ -1,17 +1,29 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-09-30,Live,China Open,Juan Manuel Cerundolo,Bu Yunchaokete
-2026-09-30,09:20,China Open,Zhang Zhizhen,Arthur Gea
-2026-09-30,11:00,China Open,Nuno Borges,Novak Djokovic
-2026-09-30,Live,China Open,Oleksandra Oliynykova,Yuan Yue
-2026-09-30,Live,China Open,Taylah Preston,Tamara Korpatsch
-2026-09-30,09:20,China Open,Mai Hontama,Katie Boulter
-2026-09-30,11:00,China Open,Elsa Jacquemot,Magdalena Frech
-2026-09-30,12:30,China Open,Anna Bondar,Renata Zarazua
+2026-09-30,03:00,China Open,Alex Molcan,Arthur Rinderknech
+2026-09-30,03:00,China Open,Alex de Minaur,Mariano Navone
+2026-09-30,04:30,China Open,Roman Safiullin,Flavio Cobolli
+2026-09-30,04:30,China Open,Ignacio Buse,Quentin Halys
+2026-09-30,04:30,China Open,Botic Van De Zandschulp,Francisco Cerundolo
+2026-09-30,06:00,China Open,Shang Juncheng,Sebastian Baez
+2026-09-30,Final,China Open,Nuno Borges,Novak Djokovic
+2026-09-30,Final,China Open,Zhang Zhizhen,Arthur Gea
+2026-09-30,Final,China Open,Juan Manuel Cerundolo,Bu Yunchaokete
+2026-09-30,03:00,China Open,Katie Volynets,Robin Montgomery
 2026-09-30,03:00,China Open,Zheng Qinwen,Shi Han
+2026-09-30,03:00,China Open,Sofia Kenin,Ashlyn Krueger
+2026-09-30,03:00,China Open,Yuliia Starodubtseva,Alina Charaeva
 2026-09-30,04:30,China Open,Paula Badosa,Daria Kasatkina
+2026-09-30,04:30,China Open,Aoi Ito,Kimberly Birrell
+2026-09-30,04:30,China Open,Sonay Kartal,Andrea Lazaro Garcia
 2026-09-30,06:00,China Open,Shao Yushan,Anastasia Zakharova
+2026-09-30,06:00,China Open,Magda Linette,Katerina Siniakova
+2026-09-30,06:00,China Open,Yu Jun Lin,Storm Hunter
+2026-09-30,Final,China Open,Anna Bondar,Renata Zarazua
+2026-09-30,Final,China Open,Elsa Jacquemot,Magdalena Frech
+2026-09-30,Final,China Open,Mai Hontama,Katie Boulter
+2026-09-30,Final,China Open,Taylah Preston,Tamara Korpatsch
 2026-09-30,Final,China Open,Bai Zhuoxuan,Linda Fruhvirtova
-2026-09-30,Live,Kinoshita Group Japan Open Tennis Championships,Matteo Arnaldi,Rei Sakamoto
+2026-09-30,Final,China Open,Oleksandra Oliynykova,Yuan Yue
 2026-09-30,02:00,Kinoshita Group Japan Open Tennis Championships,Jaime Faria,Arthur Fery
 2026-09-30,02:00,Kinoshita Group Japan Open Tennis Championships,Taylor Fritz,Jaume Munar
 2026-09-30,02:00,Kinoshita Group Japan Open Tennis Championships,Luciano Darderi,Casper Ruud
@@ -21,45 +33,33 @@ Date,Time,Tournament,Player 1,Player 2
 2026-09-30,03:30,Kinoshita Group Japan Open Tennis Championships,Kei Nishikori,Frances Tiafoe
 2026-09-30,05:00,Kinoshita Group Japan Open Tennis Championships,Jiri Lehecka,Zizou Bergs
 2026-09-30,06:30,Kinoshita Group Japan Open Tennis Championships,Denis Shapovalov,Sho Shimabukuro
+2026-09-30,Final,Kinoshita Group Japan Open Tennis Championships,Matteo Arnaldi,Rei Sakamoto
 2026-09-30,Final,Kinoshita Group Japan Open Tennis Championships,Arthur Fils,Luca Van Assche
-2026-09-30,09:05,Adana Open,Erika Andreeva,Simona Waltert
-2026-09-30,09:05,Adana Open,Antonia Ruzic,Julia Riera
-2026-09-30,09:05,Adana Open,Lois Boisson,Martyna Kubka
-2026-09-30,11:00,Adana Open,Viktoria Hruncakova,Anna Blinkova
-2026-09-30,11:00,Adana Open,Fiona Crawley,Elena Pridankina
-2026-09-30,12:00,Adana Open,Teodora Kostovic,Dalma Galfi
-2026-09-30,13:30,Adana Open,Leolia Jeanjean,Melisa Ercan
-2026-09-30,15:00,Adana Open,Cagla Buyukakcay,Lucrezia Stefanini
-2026-09-30,Live,Jingshan Tennis Open,Zheng Wushuang,Sara Sorribes Tormo
-2026-09-30,09:30,Jingshan Tennis Open,Wei Sijia,Fiona Ferro
+2026-09-30,Live,Adana Open,Leolia Jeanjean,Melisa Ercan
+2026-09-30,17:10,Adana Open,Cagla Buyukakcay,Lucrezia Stefanini
+2026-09-30,Final,Adana Open,Antonia Ruzic,Julia Riera
+2026-09-30,Final,Adana Open,Viktoria Hruncakova,Anna Blinkova
+2026-09-30,Final,Adana Open,Erika Andreeva,Simona Waltert
+2026-09-30,Final,Adana Open,Teodora Kostovic,Dalma Galfi
+2026-09-30,Final,Adana Open,Fiona Crawley,Elena Pridankina
+2026-09-30,Final,Adana Open,Lois Boisson,Martyna Kubka
 2026-09-30,03:00,Jingshan Tennis Open,Alevtina Ibragimova,Kyoka Okamura
 2026-09-30,03:00,Jingshan Tennis Open,Sofya Lansere,Sofia Costoulas
 2026-09-30,06:00,Jingshan Tennis Open,Jessica Bouzas Maneiro,Wang Yuhan
-2026-10-01,TBD,China Open,Learner Tien,Hubert Hurkacz
-2026-10-01,TBD,China Open,Alexander Zverev,Cameron Norrie
-2026-10-01,TBD,China Open,Roman Safiullin,Flavio Cobolli
-2026-10-01,TBD,China Open,Tallon Griekspoor,Andrey Rublev
-2026-10-01,TBD,China Open,Ignacio Buse,Quentin Halys
-2026-10-01,TBD,China Open,Alex Molcan,Arthur Rinderknech
-2026-10-01,TBD,China Open,Daniil Medvedev,Pablo Carreno Busta
-2026-10-01,TBD,China Open,Shang Juncheng,Sebastian Baez
-2026-10-01,TBD,China Open,Alex de Minaur,Mariano Navone
-2026-10-01,TBD,China Open,Alexander Bublik,Jakub Mensik
-2026-10-01,TBD,China Open,Botic Van De Zandschulp,Francisco Cerundolo
-2026-10-01,TBD,China Open,Lanlana Tararudee,Camila Osorio
-2026-10-01,TBD,China Open,Harriet Dart,Qu Yihan
-2026-10-01,TBD,China Open,Katie Volynets,Robin Montgomery
-2026-10-01,TBD,China Open,Aoi Ito,Kimberly Birrell
-2026-10-01,TBD,China Open,Sofia Kenin,Ashlyn Krueger
-2026-10-01,TBD,China Open,Magda Linette,Katerina Siniakova
-2026-10-01,TBD,China Open,Yu Jun Lin,Storm Hunter
-2026-10-01,TBD,China Open,Gao Xinyu,Panna Udvardy
-2026-10-01,TBD,China Open,Sonay Kartal,Andrea Lazaro Garcia
-2026-10-01,TBD,China Open,Yuliia Starodubtseva,Alina Charaeva
-2026-10-01,TBD,China Open,Marina Bassols Ribera,Kamilla Rakhimova
+2026-09-30,TBD,Jingshan Tennis Open,Wei Sijia,Fiona Ferro
+2026-09-30,Final,Jingshan Tennis Open,Zheng Wushuang,Sara Sorribes Tormo
+2026-10-01,07:00,China Open,Alexander Zverev,Cameron Norrie
+2026-10-01,08:00,China Open,Tallon Griekspoor,Andrey Rublev
+2026-10-01,11:00,China Open,Learner Tien,Hubert Hurkacz
+2026-10-01,12:30,China Open,Alexander Bublik,Jakub Mensik
+2026-10-01,07:30,China Open,Lanlana Tararudee,Camila Osorio
+2026-10-01,07:30,China Open,Harriet Dart,Qu Yihan
+2026-10-01,07:30,China Open,Marina Bassols Ribera,Kamilla Rakhimova
 2026-10-01,09:00,China Open,Alycia Parks,Zhu Lin
+2026-10-01,09:00,China Open,Gao Xinyu,Panna Udvardy
 2026-10-01,11:00,China Open,Eva Lys,Xinran Sun
 2026-10-01,07:00,Kinoshita Group Japan Open Tennis Championships,Carlos Alcaraz,Alex Michelsen
 2026-10-01,08:00,Kinoshita Group Japan Open Tennis Championships,Alejandro Davidovich Fokina,Matteo Berrettini
 2026-10-01,08:30,Kinoshita Group Japan Open Tennis Championships,Adolfo Daniel Vallejo,Rafael Jodar
+2026-10-01,10:30,Adana Open,Lois Boisson,Anna Blinkova
 2026-10-01,07:30,Jingshan Tennis Open,Aliona Falei,Kristiana Sidorova
