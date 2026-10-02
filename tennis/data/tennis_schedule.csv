@@ -1,37 +1,45 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-10-02,11:00,China Open,Hubert Hurkacz,Arthur Gea
-2026-10-02,12:30,China Open,Bu Yunchaokete,Novak Djokovic
 2026-10-02,03:00,China Open,Alex de Minaur,Quentin Halys
 2026-10-02,05:00,China Open,Andrey Rublev,Roman Safiullin
 2026-10-02,Final,China Open,Daniil Medvedev,Pablo Carreno Busta
-2026-10-02,Live,China Open,Sara Bejlek,Maddison Inglis
-2026-10-02,Live,China Open,Maria Timofeeva,Naomi Osaka
-2026-10-02,09:30,China Open,Nikola Bartunkova,Magdalena Frech
-2026-10-02,11:00,China Open,Renata Zarazua,Aryna Sabalenka
+2026-10-02,Final,China Open,Bu Yunchaokete,Novak Djokovic
+2026-10-02,Final,China Open,Hubert Hurkacz,Arthur Gea
 2026-10-02,03:00,China Open,Coco Gauff,Camila Osorio
+2026-10-02,03:00,China Open,Katie Volynets,Elise Mertens
 2026-10-02,03:00,China Open,Donna Vekic,Zhu Lin
+2026-10-02,03:00,China Open,Ashlyn Krueger,Ann Li
+2026-10-02,04:30,China Open,Katerina Siniakova,Elina Svitolina
+2026-10-02,04:30,China Open,Maria Sakkari,Storm Hunter
 2026-10-02,04:30,China Open,Jelena Ostapenko,Paula Badosa
 2026-10-02,05:00,China Open,Gao Xinyu,Iga Swiatek
 2026-10-02,06:00,China Open,Kamilla Rakhimova,Leylah Fernandez
+2026-10-02,06:00,China Open,Iva Jovic,Harriet Dart
 2026-10-02,06:30,China Open,Zheng Qinwen,Anna Kalinskaya
 2026-10-02,06:30,China Open,Belinda Bencic,Anastasia Zakharova
+2026-10-02,Final,China Open,Renata Zarazua,Aryna Sabalenka
 2026-10-02,Final,China Open,Karolina Muchova,Katie Boulter
+2026-10-02,Final,China Open,Maria Timofeeva,Naomi Osaka
+2026-10-02,Final,China Open,Sara Bejlek,Maddison Inglis
+2026-10-02,Final,China Open,Nikola Bartunkova,Magdalena Frech
 2026-10-02,Final,China Open,Clara Tauson,Polina Kudermetova
-2026-10-02,Live,Kinoshita Group Japan Open Tennis Championships,Kyrian Jacquet,Luciano Darderi
-2026-10-02,09:30,Kinoshita Group Japan Open Tennis Championships,Arthur Fils,Frances Tiafoe
 2026-10-02,02:00,Kinoshita Group Japan Open Tennis Championships,Denis Shapovalov,Alejandro Tabilo
 2026-10-02,03:30,Kinoshita Group Japan Open Tennis Championships,Carlos Alcaraz,Matteo Arnaldi
-2026-10-02,12:00,Adana Open,Elena Pridankina,Erika Andreeva
-2026-10-02,12:00,Adana Open,Leolia Jeanjean,Lucrezia Stefanini
-2026-10-02,13:30,Adana Open,Antonia Ruzic,Teodora Kostovic
-2026-10-02,Live,Jingshan Tennis Open,Alexandra Shubladze,Wei Sijia
-2026-10-03,TBD,China Open,Katerina Siniakova,Elina Svitolina
-2026-10-03,TBD,China Open,Maria Sakkari,Storm Hunter
-2026-10-03,TBD,China Open,Iva Jovic,Harriet Dart
-2026-10-03,TBD,China Open,Katie Volynets,Elise Mertens
-2026-10-03,TBD,China Open,Marie Bouzkova,Kimberly Birrell
-2026-10-03,TBD,China Open,Ashlyn Krueger,Ann Li
+2026-10-02,Final,Kinoshita Group Japan Open Tennis Championships,Arthur Fils,Frances Tiafoe
+2026-10-02,Final,Kinoshita Group Japan Open Tennis Championships,Kyrian Jacquet,Luciano Darderi
+2026-10-02,17:45,Adana Open,Antonia Ruzic,Teodora Kostovic
+2026-10-02,TBD,Adana Open,Leolia Jeanjean,Lucrezia Stefanini
+2026-10-02,Final,Adana Open,Elena Pridankina,Erika Andreeva
+2026-10-02,04:30,Jingshan Tennis Open,Emerson Jones,Alexandra Shubladze
+2026-10-02,05:30,Jingshan Tennis Open,Jessica Bouzas Maneiro,Aliona Falei
+2026-10-02,Final,Jingshan Tennis Open,Alexandra Shubladze,Wei Sijia
+2026-10-02,03:00,Suzhou Open,Shi Han,Chengyiyi Yuan
+2026-10-02,03:00,Suzhou Open,Yang Yidi,Rina Saigo
+2026-10-02,03:00,Suzhou Open,Yujia Huang,Darya Khamutsianskaya
+2026-10-02,05:00,Suzhou Open,Lu Jia-Jing,Li Zongyu
+2026-10-02,05:00,Suzhou Open,Katarina Zavatska,Kristiana Sidorova
+2026-10-02,06:00,Suzhou Open,Priska Nugroho,Kyoka Okamura
 2026-10-03,07:30,China Open,Xinran Sun,Cristina Bucsa
+2026-10-03,07:30,China Open,Marie Bouzkova,Kimberly Birrell
 2026-10-03,11:00,China Open,Sonay Kartal,Wang Xinyu
 2026-10-03,12:30,China Open,Elena Rybakina,Alina Charaeva
 2026-10-03,09:00,China Open,Francisco Cerundolo,Jakub Mensik
@@ -39,4 +47,6 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-03,11:00,China Open,Alexander Zverev,Shang Juncheng
 2026-10-03,07:00,Kinoshita Group Japan Open Tennis Championships,Matteo Berrettini,Adolfo Daniel Vallejo
 2026-10-03,08:30,Kinoshita Group Japan Open Tennis Championships,Ugo Humbert,Jiri Lehecka
-2026-10-03,TBD,Jingshan Tennis Open,Jessica Bouzas Maneiro,Aliona Falei
+2026-10-03,TBD,Adana Open,Erika Andreeva,Lois Boisson
+2026-10-03,08:00,Suzhou Open,Darya Astakhova,Wei Sijia
+2026-10-03,08:00,Suzhou Open,Sofya Lansere,Qu Yihan
