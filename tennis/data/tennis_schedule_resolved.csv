@@ -9,7 +9,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-02,03:00,China Open,Donna Vekic,Zhu Lin,wta_99,wta_141,WTA,Hard
 2026-10-02,03:00,China Open,Ashlyn Krueger,Ann Li,wta_100,wta_36,WTA,Hard
 2026-10-02,04:30,China Open,Katerina Siniakova,Elina Svitolina,wta_46,wta_9,WTA,Hard
-2026-10-02,04:30,China Open,Maria Sakkari,Storm Hunter,wta_54,wta_231,WTA,Hard
+2026-10-02,04:30,China Open,Maria Sakkari,Storm Hunter,wta_33,wta_231,WTA,Hard
 2026-10-02,04:30,China Open,Jelena Ostapenko,Paula Badosa,wta_27,wta_70,WTA,Hard
 2026-10-02,05:00,China Open,Gao Xinyu,Iga Swiatek,wta_262,wta_2,WTA,Hard
 2026-10-02,06:00,China Open,Kamilla Rakhimova,Leylah Fernandez,wta_91,wta_28,WTA,Hard
@@ -22,32 +22,13 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-02,Final,China Open,Sara Bejlek,Maddison Inglis,wta_41,wta_123,WTA,Hard
 2026-10-02,Final,China Open,Nikola Bartunkova,Magdalena Frech,wta_104,wta_55,WTA,Hard
 2026-10-02,Final,China Open,Clara Tauson,Polina Kudermetova,wta_15,wta_144,WTA,Hard
-2026-10-02,02:00,Kinoshita Group Japan Open Tennis Championships,Denis Shapovalov,Alejandro Tabilo,atp_36,atp_67,ATP,Hard
+2026-10-02,Live,Kinoshita Group Japan Open Tennis Championships,Denis Shapovalov,Alejandro Tabilo,atp_36,atp_67,ATP,Hard
 2026-10-02,03:30,Kinoshita Group Japan Open Tennis Championships,Carlos Alcaraz,Matteo Arnaldi,atp_1,atp_85,ATP,Hard
 2026-10-02,Final,Kinoshita Group Japan Open Tennis Championships,Arthur Fils,Frances Tiafoe,atp_40,atp_28,ATP,Hard
 2026-10-02,Final,Kinoshita Group Japan Open Tennis Championships,Kyrian Jacquet,Luciano Darderi,atp_153,atp_22,ATP,Hard
 2026-10-02,Final,Adana Open,Antonia Ruzic,Teodora Kostovic,wta_67,wta_171,WTA,
 2026-10-02,Final,Adana Open,Leolia Jeanjean,Lucrezia Stefanini,wta_115,wta_136,WTA,
-2026-10-02,Final,Adana Open,Elena Pridankina,Erika Andreeva,wta_192,wta_7,WTA,
+2026-10-02,Final,Adana Open,Elena Pridankina,Erika Andreeva,wta_192,wta_362,WTA,
 2026-10-02,04:30,Jingshan Tennis Open,Emerson Jones,Alexandra Shubladze,wta_152,wta_344,WTA,
 2026-10-02,05:30,Jingshan Tennis Open,Jessica Bouzas Maneiro,Aliona Falei,wta_48,wta_356,WTA,
 2026-10-02,Final,Jingshan Tennis Open,Alexandra Shubladze,Wei Sijia,wta_344,wta_358,WTA,
-2026-10-02,03:00,Suzhou Open,Shi Han,Chengyiyi Yuan,wta_330,wta_122,WTA,
-2026-10-02,03:00,Suzhou Open,Yang Yidi,Rina Saigo,wta_9002,wta_298,WTA,
-2026-10-02,03:00,Suzhou Open,Yujia Huang,Darya Khamutsianskaya,atp_495,wta_380,ATP,
-2026-10-02,05:00,Suzhou Open,Lu Jia-Jing,Li Zongyu,wta_431,wta_36,WTA,
-2026-10-02,05:00,Suzhou Open,Katarina Zavatska,Kristiana Sidorova,wta_310,wta_434,WTA,
-2026-10-02,06:00,Suzhou Open,Priska Nugroho,Kyoka Okamura,wta_428,wta_297,WTA,
-2026-10-03,07:30,China Open,Xinran Sun,Cristina Bucsa,wta_98,wta_62,WTA,Hard
-2026-10-03,07:30,China Open,Marie Bouzkova,Kimberly Birrell,wta_39,wta_94,WTA,Hard
-2026-10-03,11:00,China Open,Sonay Kartal,Wang Xinyu,wta_51,wta_34,WTA,Hard
-2026-10-03,12:30,China Open,Elena Rybakina,Alina Charaeva,wta_3,wta_163,WTA,Hard
-2026-10-03,09:00,China Open,Francisco Cerundolo,Jakub Mensik,atp_19,atp_16,ATP,Hard
-2026-10-03,09:00,China Open,Daniil Medvedev,Jan-Lennard Struff,atp_11,atp_77,ATP,Hard
-2026-10-03,11:00,China Open,Alexander Zverev,Shang Juncheng,atp_4,atp_259,ATP,Hard
-2026-10-03,07:00,Kinoshita Group Japan Open Tennis Championships,Matteo Berrettini,Adolfo Daniel Vallejo,atp_57,atp_9021,ATP,Hard
-2026-10-03,08:30,Kinoshita Group Japan Open Tennis Championships,Ugo Humbert,Jiri Lehecka,atp_38,atp_21,ATP,Hard
-2026-10-03,12:00,Adana Open,Erika Andreeva,Lois Boisson,wta_7,wta_35,WTA,
-2026-10-03,13:00,Adana Open,Antonia Ruzic,Leolia Jeanjean,wta_67,wta_115,WTA,
-2026-10-03,08:00,Suzhou Open,Darya Astakhova,Wei Sijia,wta_380,wta_358,WTA,
-2026-10-03,08:00,Suzhou Open,Sofya Lansere,Qu Yihan,wta_420,wta_9100,WTA,
