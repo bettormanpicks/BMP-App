@@ -946,12 +946,24 @@ with streamlit_analytics.track():
                 "1ALL%",
                 "P1 BB%",
                 "P1 BB#",
+                "P1 BB TR",
+                "P1 BB FO",
+                "P1 BB EF",
                 "P2 BB%",
                 "P2 BB#",
+                "P2 BB TR",
+                "P2 BB FO",
+                "P2 BB EF",
                 "P1 SR%",
                 "P1 SR#",
+                "P1 SR TR",
+                "P1 SR FO",
+                "P1 SR EF",
                 "P2 SR%",
                 "P2 SR#",
+                "P2 SR TR",
+                "P2 SR FO",
+                "P2 SR EF",
                 "P1 S",
                 "P2 S",
                 "Last S",
@@ -1083,6 +1095,47 @@ with streamlit_analytics.track():
                     rounded = round(val * 100, 1)
                     return str(int(rounded)) if rounded % 1 == 0 else str(rounded)
 
+                # --- BB% and SR% tier calibration tables ---
+                # Values from backtest: Reading → (True Rate, Fair Odds, Edge Floor)
+                BB_TIERS = [
+                    (90, 100, 74.3, "-289", "-237"),
+                    (80,  89, 62.8, "-169", "-148"),
+                    (70,  79, 59.2, "-145", "-131"),
+                    (60,  69, 58.1, "-139", "-127"),
+                ]
+
+                SR_TIERS = [
+                    (80, 100, 58.3, "-140", "-122"),
+                    (60,  79, 55.1, "-123", "-105"),
+                    ( 0,  59, 49.7, "+101", "+125"),
+                ]
+
+                def get_bb_tier(pct):
+                    """pct is already a percentage value like 83.3, or '--'"""
+                    if pct == "--":
+                        return "--", "--", "--"
+                    try:
+                        val = float(pct)
+                    except (ValueError, TypeError):
+                        return "--", "--", "--"
+                    for low, high, tr, fo, ef in BB_TIERS:
+                        if low <= val <= high:
+                            return f"{tr}%", fo, ef
+                    return "--", "--", "--"
+
+                def get_sr_tier(pct):
+                    """pct is already a percentage value like 66.7, or '--'"""
+                    if pct == "--":
+                        return "--", "--", "--"
+                    try:
+                        val = float(pct)
+                    except (ValueError, TypeError):
+                        return "--", "--", "--"
+                    for low, high, tr, fo, ef in SR_TIERS:
+                        if low <= val <= high:
+                            return f"{tr}%", fo, ef
+                    return "--", "--", "--"
+
                 rows = []
                 for _, row in upcoming.iterrows():
                     p1, p2 = row["player1"], row["player2"]
@@ -1146,6 +1199,26 @@ with streamlit_analytics.track():
                         "Last Played": stats["last_played"]
                     }
 
+                    p1_bb_tr, p1_bb_fo, p1_bb_ef = get_bb_tier(row_dict.get("P1 B%"))
+                    p2_bb_tr, p2_bb_fo, p2_bb_ef = get_bb_tier(row_dict.get("P2 B%"))
+                    p1_sr_tr, p1_sr_fo, p1_sr_ef = get_sr_tier(row_dict.get("P1 SR%"))
+                    p2_sr_tr, p2_sr_fo, p2_sr_ef = get_sr_tier(row_dict.get("P2 SR%"))
+
+                    row_dict.update({
+                        "P1 BB TR": p1_bb_tr,
+                        "P1 BB FO": p1_bb_fo,
+                        "P1 BB EF": p1_bb_ef,
+                        "P2 BB TR": p2_bb_tr,
+                        "P2 BB FO": p2_bb_fo,
+                        "P2 BB EF": p2_bb_ef,
+                        "P1 SR TR": p1_sr_tr,
+                        "P1 SR FO": p1_sr_fo,
+                        "P1 SR EF": p1_sr_ef,
+                        "P2 SR TR": p2_sr_tr,
+                        "P2 SR FO": p2_sr_fo,
+                        "P2 SR EF": p2_sr_ef,
+                    })
+
                     if len(selected_leagues) > 1:
                         row_dict["League"] = row["league"]
                     rows.append(row_dict)
@@ -1170,12 +1243,24 @@ with streamlit_analytics.track():
                 "One-All %": "1ALL%",
                 "P1 B%": "P1 BB%",
                 "P1 BB#": "P1 BB#",
+                "P1 BB TR": "P1 BB TR",
+                "P1 BB FO": "P1 BB FO",
+                "P1 BB EF": "P1 BB EF",
                 "P2 B%": "P2 BB%",
                 "P2 BB#": "P2 BB#",
+                "P2 BB TR": "P2 BB TR",
+                "P2 BB FO": "P2 BB FO",
+                "P2 BB EF": "P2 BB EF",
                 "P1 SR%": "P1 SR%",
                 "P1 SR#": "P1 SR#",
+                "P1 SR TR": "P1 SR TR",
+                "P1 SR FO": "P1 SR FO",
+                "P1 SR EF": "P1 SR EF",
                 "P2 SR%": "P2 SR%",
                 "P2 SR#": "P2 SR#",
+                "P2 SR TR": "P2 SR TR",
+                "P2 SR FO": "P2 SR FO",
+                "P2 SR EF": "P2 SR EF",
                 "P1 Sweeps": "P1 S",
                 "P2 Sweeps": "P2 S",
                 "Sweep Gap": "Last S",
