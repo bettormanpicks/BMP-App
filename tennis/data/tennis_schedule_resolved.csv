@@ -8,7 +8,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-03,Final,China Open,Elena Rybakina,Alina Charaeva,wta_3,wta_163,WTA,Hard
 2026-10-03,Final,China Open,Belinda Bencic,Anastasia Zakharova,wta_12,wta_103,WTA,Hard
 2026-10-03,Final,China Open,Iva Jovic,Harriet Dart,wta_20,wta_169,WTA,Hard
-2026-10-03,TBD,China Open,Zheng Qinwen,Anna Kalinskaya,wta_372,wta_24,WTA,Hard
+2026-10-03,TBD,China Open,Zheng Qinwen,Anna Kalinskaya,wta_372,wta_65,WTA,Hard
 2026-10-03,Final,China Open,Marie Bouzkova,Kimberly Birrell,wta_39,wta_94,WTA,Hard
 2026-10-03,Final,China Open,Kamilla Rakhimova,Leylah Fernandez,wta_91,wta_28,WTA,Hard
 2026-10-03,Final,China Open,Xinran Sun,Cristina Bucsa,wta_98,wta_62,WTA,Hard
@@ -17,7 +17,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-03,06:30,China Open,Alex de Minaur,Andrey Rublev,atp_8,atp_14,ATP,Hard
 2026-10-03,Final,China Open,Alexander Zverev,Shang Juncheng,atp_4,atp_259,ATP,Hard
 2026-10-03,Final,China Open,Daniil Medvedev,Jan-Lennard Struff,atp_11,atp_77,ATP,Hard
-2026-10-03,Final,China Open,Francisco Cerundolo,Jakub Mensik,atp_62,atp_16,ATP,Hard
+2026-10-03,Final,China Open,Francisco Cerundolo,Jakub Mensik,atp_19,atp_16,ATP,Hard
 2026-10-03,02:00,Kinoshita Group Japan Open Tennis Championships,Jaume Munar,Kyrian Jacquet,atp_35,atp_153,ATP,Hard
 2026-10-03,04:00,Kinoshita Group Japan Open Tennis Championships,Carlos Alcaraz,Denis Shapovalov,atp_1,atp_36,ATP,Hard
 2026-10-03,Final,Kinoshita Group Japan Open Tennis Championships,Ugo Humbert,Jiri Lehecka,atp_38,atp_21,ATP,Hard
@@ -33,7 +33,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-03,03:30,Suzhou Open,Yang Yidi,Rina Saigo,wta_9002,wta_298,WTA,
 2026-10-03,05:00,Suzhou Open,Rinko Matsuda,Wei Sijia,wta_433,wta_358,WTA,
 2026-10-03,05:00,Suzhou Open,Priska Nugroho,Kyoka Okamura,wta_428,wta_297,WTA,
-2026-10-04,08:30,China Open,Daniil Medvedev,Francisco Cerundolo,atp_11,atp_62,ATP,Hard
+2026-10-04,08:30,China Open,Daniil Medvedev,Francisco Cerundolo,atp_11,atp_19,ATP,Hard
 2026-10-04,11:00,China Open,Alexander Zverev,Novak Djokovic,atp_4,atp_3,ATP,Hard
 2026-10-04,11:00,China Open,Sara Bejlek,Naomi Osaka,wta_41,wta_16,WTA,Hard
 2026-10-04,12:30,China Open,Karolina Muchova,Liudmila Samsonova,wta_13,wta_18,WTA,Hard
