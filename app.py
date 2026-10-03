@@ -1111,7 +1111,6 @@ with streamlit_analytics.track():
                 ]
 
                 def get_bb_tier(pct):
-                    """pct is already a percentage value like 83.3, or '--'"""
                     if pct == "--":
                         return "--", "--", "--"
                     try:
@@ -1120,11 +1119,10 @@ with streamlit_analytics.track():
                         return "--", "--", "--"
                     for low, high, tr, fo, ef in BB_TIERS:
                         if low <= val <= high:
-                            return f"{tr}%", fo, ef
+                            return str(tr), fo, ef
                     return "--", "--", "--"
 
                 def get_sr_tier(pct):
-                    """pct is already a percentage value like 66.7, or '--'"""
                     if pct == "--":
                         return "--", "--", "--"
                     try:
@@ -1133,7 +1131,7 @@ with streamlit_analytics.track():
                         return "--", "--", "--"
                     for low, high, tr, fo, ef in SR_TIERS:
                         if low <= val <= high:
-                            return f"{tr}%", fo, ef
+                            return str(tr), fo, ef
                     return "--", "--", "--"
 
                 rows = []
