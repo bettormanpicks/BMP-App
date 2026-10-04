@@ -1328,20 +1328,20 @@ with streamlit_analytics.track():
                 if c in display_cols
             }
 
-            picks_df = df_display[display_cols].sort_values("Match Start")
+            picks_df = df_display.sort_values("Match Start")
 
             st.dataframe(
-                picks_df,
+                picks_df[display_cols],
                 width="stretch",
                 height=350,
                 hide_index=True,
                 column_config=col_config
             )
 
-            if not picks_df.empty and st.button("Create X graphic"):
+            if st.button("Create X Graphic"):
                 png = render_picks_png(picks_df)
                 st.image(png)
-                st.download_button("Download X graphic", png, "tt_picks.png", "image/png")
+                st.download_button("Download X Graphic", png, "tt_picks.png", "image/png")
 
 
     ############################################################
