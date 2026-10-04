@@ -44,7 +44,7 @@ from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
 # ───────────────────────── EDIT THESE ─────────────────────────
 TITLE_LINE_1 = "THEPONGFATHER'S"
 TITLE_LINE_2 = "TABLE TENNIS"
-TITLE_ACCENT = "PICKS"  # gold word at the end of line 2
+TITLE_ACCENT = "PICKS"  # last word of line 2 (can be colored separately below)
 FOOTER_LEFT = "X.COM/BETTORMANPICKS"
 FOOTER_RIGHT = "BET RESPONSIBLY"
 EF_SUFFIX = "EF"
@@ -63,17 +63,29 @@ COLUMNS = {
     "matchup": ["Matchup", "Match", "Players"],
 }
 
-# Colors - every row uses the same ones
-BLUE = (46, 139, 255)
-BLUE_LT = (132, 200, 255)
-CYAN = (53, 195, 255)
-GOLD = (236, 178, 52)
-GOLD_LT = (255, 212, 110)
-TIME_GOLD = (255, 200, 61)
+# Colors - matched to the Bettor Man Picks banner (black + neon green + white)
+ACCENT = (0, 232, 44)          # box outlines, date pill, rules
+ACCENT_HI = (0, 255, 36)       # clock, VS, footer dot
+ACCENT_LT = (150, 255, 160)    # labels on green boxes
+ACCENT2 = (198, 202, 207)      # outlines of the alternate (silver) boxes
+ACCENT2_LT = (238, 240, 242)   # labels on silver boxes
+ROW_LINE = (0, 176, 40)        # outline of each match row
+TIME_COLOR = (0, 255, 36)
+LEAGUE_COLOR = (206, 210, 214)
 WHITE = (255, 255, 255)
-MUTED = (172, 192, 220)
-PANEL_FILL = (9, 20, 46, 232)
-BOX_FILL = (5, 13, 32, 240)
+MUTED = (172, 177, 182)
+PANEL_FILL = (17, 17, 17, 236)
+BOX_FILL = (5, 5, 5, 242)
+PILL_FILL = (9, 9, 9, 245)
+FOOTER_COLOR = (226, 229, 232)
+_GREEN_TEXT = ((196, 255, 176), (0, 224, 16), (0, 255, 40, 120))    # top, bottom, glow
+_WHITE_TEXT = ((255, 255, 255), (186, 192, 198), (255, 255, 255, 60))
+LINE1_TOP, LINE1_BOTTOM, LINE1_GLOW = _WHITE_TEXT   # "THEPONGFATHER'S"
+LINE2_TOP, LINE2_BOTTOM, LINE2_GLOW = _GREEN_TEXT   # "TABLE TENNIS"
+PICKS_TOP, PICKS_BOTTOM, PICKS_GLOW = _GREEN_TEXT   # "PICKS"
+TITLE_SHADOW = (0, 0, 0, 240)
+BG_TOP, BG_MID, BG_BOTTOM = (21, 21, 21), (25, 25, 25), (9, 9, 9)
+BG_GLOW = (0, 255, 40)         # soft glow behind the title and in the lower corners
 # ──────────────────────────────────────────────────────────────
 
 BASE_W, BASE_H = 1600, 900
@@ -301,7 +313,7 @@ def _background(W, H):
     """Soft background, built at 1x and upscaled by the caller."""
     img = Image.new("RGB", (W, H))
     d = ImageDraw.Draw(img)
-    top, mid, bot = (7, 16, 42), (8, 23, 58), (3, 8, 22)
+    top, mid, bot = BG_TOP, BG_MID, BG_BOTTOM
     for y in range(H):
         t = y / (H - 1)
         c = _lerp(top, mid, t / 0.3) if t < 0.3 else _lerp(mid, bot, (t - 0.3) / 0.7)
@@ -310,9 +322,9 @@ def _background(W, H):
 
     glow = _layer((W, H))
     g = ImageDraw.Draw(glow)
-    g.ellipse((W / 2 - 640, -150, W / 2 + 640, 300), fill=(28, 112, 255, 120))
-    g.ellipse((-260, H - 150, 460, H + 220), fill=(20, 84, 225, 70))
-    g.ellipse((W - 460, H - 150, W + 260, H + 220), fill=(20, 84, 225, 70))
+    g.ellipse((W / 2 - 640, -150, W / 2 + 640, 300), fill=BG_GLOW + (30,))
+    g.ellipse((-260, H - 150, 460, H + 220), fill=BG_GLOW + (20,))
+    g.ellipse((W - 460, H - 150, W + 260, H + 220), fill=BG_GLOW + (20,))
     img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(110)))
 
     rnd = random.Random(7)  # fixed seed: same background every day
@@ -320,8 +332,8 @@ def _background(W, H):
     b = ImageDraw.Draw(bokeh)
     for _ in range(54):
         x, y = rnd.uniform(0, W), rnd.uniform(-10, 255)
-        r, a = rnd.uniform(5, 24), rnd.randint(16, 58)
-        b.ellipse((x - r, y - r, x + r, y + r), fill=(96, 176, 255, a))
+        r, a = rnd.uniform(5, 24), rnd.randint(6, 22)
+        b.ellipse((x - r, y - r, x + r, y + r), fill=ACCENT_LT + (a,))
     img.alpha_composite(bokeh.filter(ImageFilter.GaussianBlur(4)))
     return img
 
@@ -351,7 +363,7 @@ def _net(W, k):
     def bot(x):
         return h + (x - xl) / (xr - xl) * 24
 
-    mesh = (176, 208, 255, 84)
+    mesh = (205, 208, 212, 84)
     x = xl
     while x <= xr:
         d.line([(x * k, top(x) * k), (x * k, bot(x) * k)], fill=mesh, width=k)
@@ -485,8 +497,8 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
     a = ImageDraw.Draw(acc)
     for off, alpha, wd in ((0, 210, 3), (16, 120, 2)):
         if not photo:
-            a.line([(P(-10), P(128 + off)), (P(128 + off), P(-10))], fill=GOLD + (alpha,), width=wd * k // 2 + 1)
-        a.line([(P(W + 10), P(H - 128 - off)), (P(W - 128 - off), P(H + 10))], fill=GOLD + (alpha,), width=wd * k // 2 + 1)
+            a.line([(P(-10), P(128 + off)), (P(128 + off), P(-10))], fill=ACCENT + (alpha,), width=wd * k // 2 + 1)
+        a.line([(P(W + 10), P(H - 128 - off)), (P(W - 128 - off), P(H + 10))], fill=ACCENT + (alpha,), width=wd * k // 2 + 1)
     img.alpha_composite(acc)
 
     if not photo:  # no background.png: fall back to the drawn net, paddle and ball
@@ -507,19 +519,18 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
 
     halo = _layer(size)
     hd = ImageDraw.Draw(halo)
-    hd.text((x1, y1), TITLE_LINE_1, font=tf1, fill=(30, 130, 255, 150), anchor="ls")
-    hd.text((x2, y2), TITLE_LINE_2, font=tf, fill=(30, 130, 255, 150), anchor="ls")
-    hd.text((x2 + w2a, y2), TITLE_ACCENT, font=tf, fill=(255, 170, 30, 130), anchor="ls")
+    hd.text((x1, y1), TITLE_LINE_1, font=tf1, fill=LINE1_GLOW, anchor="ls")
+    hd.text((x2, y2), TITLE_LINE_2, font=tf, fill=LINE2_GLOW, anchor="ls")
+    hd.text((x2 + w2a, y2), TITLE_ACCENT, font=tf, fill=PICKS_GLOW, anchor="ls")
     img.alpha_composite(halo.filter(ImageFilter.GaussianBlur(P(13))))
     shadow = _layer(size)
     sd = ImageDraw.Draw(shadow)
     for (tx, ty, txt, f) in ((x1, y1, TITLE_LINE_1, tf1), (x2, y2, line2, tf)):
-        sd.text((tx + P(2), ty + P(4)), txt, font=f, fill=(2, 6, 20, 235), anchor="ls")
+        sd.text((tx + P(2), ty + P(4)), txt, font=f, fill=TITLE_SHADOW, anchor="ls")
     img.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(P(1.5))))
-    blue_top, blue_bot = (150, 230, 255), (24, 122, 255)
-    _gradient_text(img, (x1, y1), TITLE_LINE_1, tf1, blue_top, blue_bot)
-    _gradient_text(img, (x2, y2), TITLE_LINE_2, tf, blue_top, blue_bot)
-    _gradient_text(img, (x2 + w2a, y2), TITLE_ACCENT, tf, (255, 236, 140), (245, 158, 11))
+    _gradient_text(img, (x1, y1), TITLE_LINE_1, tf1, LINE1_TOP, LINE1_BOTTOM)
+    _gradient_text(img, (x2, y2), TITLE_LINE_2, tf, LINE2_TOP, LINE2_BOTTOM)
+    _gradient_text(img, (x2 + w2a, y2), TITLE_ACCENT, tf, PICKS_TOP, PICKS_BOTTOM)
 
     # ── date pill ──
     d = ImageDraw.Draw(img)
@@ -530,16 +541,16 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
     cut = P(16)
     pill = [(px0 + cut, py - ph / 2), (px1 - cut, py - ph / 2), (px1, py), (px1 - cut, py + ph / 2),
             (px0 + cut, py + ph / 2), (px0, py)]
-    d.polygon(pill, fill=(6, 16, 40, 245))
-    d.line(pill + [pill[0], pill[1]], fill=BLUE, width=P(2), joint="curve")
+    d.polygon(pill, fill=PILL_FILL)
+    d.line(pill + [pill[0], pill[1]], fill=ACCENT, width=P(2), joint="curve")
     d.text((cx, py), dtxt, font=df, fill=WHITE, anchor="mm")
     line_len = P(250)
     fade = _layer(size)
     fd = ImageDraw.Draw(fade)
     for i in range(line_len):
         al = int(235 * (1 - i / line_len))
-        fd.line([(px0 - P(14) - i, py - P(1)), (px0 - P(14) - i, py + P(1))], fill=GOLD + (al,))
-        fd.line([(px1 + P(14) + i, py - P(1)), (px1 + P(14) + i, py + P(1))], fill=GOLD + (al,))
+        fd.line([(px0 - P(14) - i, py - P(1)), (px0 - P(14) - i, py + P(1))], fill=ACCENT + (al,))
+        fd.line([(px1 + P(14) + i, py - P(1)), (px1 + P(14) + i, py + P(1))], fill=ACCENT + (al,))
     img.alpha_composite(fade)
 
     # ── rows ──
@@ -549,7 +560,7 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
     gd = ImageDraw.Draw(glow)
     for i in range(n):
         y0 = rows_top + i * (row_h + ROW_GAP)
-        gd.rounded_rectangle((P(X0), P(y0), P(X1), P(y0 + row_h)), radius=P(16), outline=BLUE + (190,), width=P(5))
+        gd.rounded_rectangle((P(X0), P(y0), P(X1), P(y0 + row_h)), radius=P(16), outline=ROW_LINE + (150,), width=P(5))
     img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(P(7))))
 
     panel = _layer(size)
@@ -582,18 +593,18 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
         y0 = rows_top + i * (row_h + ROW_GAP)
         mid = y0 + row_h / 2
         d.rounded_rectangle((P(X0), P(y0), P(X1), P(y0 + row_h)), radius=P(16), fill=PANEL_FILL,
-                            outline=BLUE, width=P(2))
-        _clock(d, P(X0 + 52), P(mid), P(25 * s), k, CYAN)
-        d.text((P(X0 + 96), P(mid - 11 * s)), _time(m.get("time")), font=f_time, fill=TIME_GOLD, anchor="lm")
-        d.text((P(X0 + 98), P(mid + 25 * s)), str(m.get("league", "")), font=f_league, fill=BLUE_LT, anchor="lm")
-        d.line([(P(286), P(y0 + 16 * s)), (P(286), P(y0 + row_h - 16 * s))], fill=BLUE + (150,), width=P(1.5))
+                            outline=ROW_LINE, width=P(2))
+        _clock(d, P(X0 + 52), P(mid), P(25 * s), k, ACCENT_HI)
+        d.text((P(X0 + 96), P(mid - 11 * s)), _time(m.get("time")), font=f_time, fill=TIME_COLOR, anchor="lm")
+        d.text((P(X0 + 98), P(mid + 25 * s)), str(m.get("league", "")), font=f_league, fill=LEAGUE_COLOR, anchor="lm")
+        d.line([(P(286), P(y0 + 16 * s)), (P(286), P(y0 + row_h - 16 * s))], fill=ROW_LINE + (170,), width=P(1.5))
 
         name_cx, name_w = P(473), P(340)
         p1, p2 = str(m.get("p1", "")), str(m.get("p2", ""))
         f_name = _fit(F_BOLD, max((p1, p2), key=len), 25 * s * k, name_w)
         f_name = _fit(F_BOLD, min((p1, p2), key=len), f_name.size, name_w)
         d.text((name_cx, P(mid - 26 * s)), p1, font=f_name, fill=WHITE, anchor="mm")
-        d.text((name_cx, P(mid)), "VS", font=f_vs, fill=CYAN, anchor="mm")
+        d.text((name_cx, P(mid)), "VS", font=f_vs, fill=ACCENT_HI, anchor="mm")
         d.text((name_cx, P(mid + 26 * s)), p2, font=f_name, fill=WHITE, anchor="mm")
 
         by0, by1 = y0 + 10 * s, y0 + row_h - 10 * s
@@ -601,7 +612,7 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
             main, sub = texts[i][j]
             bx0 = box_x0 + j * (box_w + box_gap)
             bcx = P(bx0 + box_w / 2)
-            line_c, label_c = (BLUE, BLUE_LT) if j % 2 == 0 else (GOLD, GOLD_LT)
+            line_c, label_c = (ACCENT, ACCENT_LT) if j % 2 == 0 else (ACCENT2, ACCENT2_LT)
             d.rounded_rectangle((P(bx0), P(by0), P(bx0 + box_w), P(by1)), radius=P(11), fill=BOX_FILL,
                                 outline=line_c, width=P(2))
             d.text((bcx, P(by0 + 16 * s)), label, font=label_fonts[j], fill=label_c, anchor="mm")
@@ -620,19 +631,19 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
     sep_w = P(54)
     wl, wr = _tracked_width(FOOTER_LEFT, ff, tr), _tracked_width(FOOTER_RIGHT, ff, tr)
     fx = P(W / 2) - (wl + sep_w + wr) / 2
-    foot_c = (198, 222, 255)
+    foot_c = FOOTER_COLOR
     end = _draw_tracked(d, fx, fy, FOOTER_LEFT, ff, foot_c, tr)
     dot_x, dot_r = fx + wl + sep_w / 2, P(4.5)
-    d.ellipse((dot_x - dot_r, fy - dot_r, dot_x + dot_r, fy + dot_r), fill=GOLD_LT)
+    d.ellipse((dot_x - dot_r, fy - dot_r, dot_x + dot_r, fy + dot_r), fill=ACCENT_HI)
     _draw_tracked(d, fx + wl + sep_w, fy, FOOTER_RIGHT, ff, foot_c, tr)
     rule = _layer(size)
     rd = ImageDraw.Draw(rule)
     rl = P(220)
     for i in range(rl):
         al = int(220 * (1 - i / rl))
-        rd.line([(fx - P(24) - i, fy - P(1)), (fx - P(24) - i, fy + P(1))], fill=GOLD + (al,))
+        rd.line([(fx - P(24) - i, fy - P(1)), (fx - P(24) - i, fy + P(1))], fill=ACCENT + (al,))
         xr = fx + wl + sep_w + wr + P(24) + i
-        rd.line([(xr, fy - P(1)), (xr, fy + P(1))], fill=GOLD + (al,))
+        rd.line([(xr, fy - P(1)), (xr, fy + P(1))], fill=ACCENT + (al,))
     img.alpha_composite(rule)
 
     out = img.convert("RGB").resize((int(W * scale), int(H * scale)), Image.LANCZOS)
