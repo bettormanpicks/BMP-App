@@ -12,21 +12,22 @@ drawn on top. If it is missing, a simpler drawn paddle and net are used.
 COMMAND LINE
     python tt_picks_image.py sample_picks.csv --out picks.png
 
-FROM PYTHON / STREAMLIT (df is the filtered DataFrame your table shows)
+FROM PYTHON / STREAMLIT (df is the filtered DataFrame behind your table)
     from tt_picks_image import render_picks_png
-    png = render_picks_png(df)   # date comes from the Match Start column
+    png = render_picks_png(df, stats=selected_stats or None)
     st.image(png)
     st.download_button("Download X graphic", png, "tt_picks.png", "image/png")
 
 INPUT
-    A CSV, a pandas DataFrame, or a list of dicts, one row per match.
-    Columns match the BMP App table: Match Start, League, Player 1, Player 2,
-    NS%, 1ALL%, P1 BB%, P1 BB EF, P2 BB%, P2 BB EF, P1 SR%, P1 SR EF, P2 SR%,
-    P2 SR EF. Extra columns (like Ms) are ignored. Names are matched loosely
-    (case, spaces and symbols are ignored); edit COLUMNS below if they change.
-    A stat can be two columns ("P1 BB%" and "P1 BB EF") or one combined
-    column holding "60 / -127". Players can be two columns or one
-    "Matchup" column holding "Player A vs Player B".
+    A CSV, a pandas DataFrame, or a list of dicts, one row per match, with
+    Match Start, League, Player 1 and Player 2 columns plus any stat columns.
+    The date comes from the Match Start column unless you pass one.
+
+WHICH STATS ARE SHOWN
+    stats = a list of column names, shown left to right, one box each.
+    When an "X%" column and its "X EF" column are both chosen they share one
+    box (percentage on top, EF underneath). Leave stats out (or pass None) to
+    get DEFAULT_STATS. About 6-8 boxes reads well; more than that gets small.
 """
 from __future__ import annotations
 
@@ -48,34 +49,19 @@ FOOTER_LEFT = "X.COM/BETTORMANPICKS"
 FOOTER_RIGHT = "BET RESPONSIBLY"
 EF_SUFFIX = "EF"
 
-# field -> accepted column names (compared with case/spaces/symbols removed)
+# Stats shown when none are chosen
+DEFAULT_STATS = ["NS%", "1ALL%", "P1 BB%", "P1 BB EF", "P2 BB%", "P2 BB EF",
+                 "P1 SR%", "P1 SR EF", "P2 SR%", "P2 SR EF"]
+ODDS_SUFFIXES = (" EF", " FO")  # columns shown as odds: +125 / -127
+
+# the columns that identify a match (compared with case/spaces removed)
 COLUMNS = {
     "time": ["Match Start", "Time", "Start", "Start Time"],
     "league": ["League", "Lg"],
     "p1": ["P1", "Player 1", "Player1"],
     "p2": ["P2", "Player 2", "Player2"],
     "matchup": ["Matchup", "Match", "Players"],
-    "ns": ["NS%", "NS"],
-    "all1": ["1ALL%", "1ALL", "1-ALL%"],
-    "p1_bb": ["P1 BB%", "P1 BB"],
-    "p1_bb_ef": ["P1 BB EF", "P1 BB %/EF", "P1 BB Odds"],
-    "p2_bb": ["P2 BB%", "P2 BB"],
-    "p2_bb_ef": ["P2 BB EF", "P2 BB %/EF", "P2 BB Odds"],
-    "p1_sr": ["P1 SR%", "P1 SR"],
-    "p1_sr_ef": ["P1 SR EF", "P1 SR %/EF", "P1 SR Odds"],
-    "p2_sr": ["P2 SR%", "P2 SR"],
-    "p2_sr_ef": ["P2 SR EF", "P2 SR %/EF", "P2 SR Odds"],
 }
-
-# (label, percent field, EF field or None, accent) - left to right
-STAT_BOXES = [
-    ("NS%", "ns", None, "blue"),
-    ("1ALL%", "all1", None, "gold"),
-    ("P1 BB %/EF", "p1_bb", "p1_bb_ef", "blue"),
-    ("P2 BB %/EF", "p2_bb", "p2_bb_ef", "gold"),
-    ("P1 SR %/EF", "p1_sr", "p1_sr_ef", "blue"),
-    ("P2 SR %/EF", "p2_sr", "p2_sr_ef", "gold"),
-]
 
 # Colors - every row uses the same ones
 BLUE = (46, 139, 255)
@@ -154,6 +140,70 @@ def _ef(v) -> str:
     return f"{s} {EF_SUFFIX}".strip()
 
 
+def _num(v) -> str:
+    if _blank(v):
+        return "-"
+    try:
+        n = float(str(v).replace(",", "").strip())
+    except ValueError:
+        return str(v).strip()
+    return f"{n:.0f}" if abs(n - round(n)) < 0.05 else f"{n:.1f}"
+
+
+def _odds(v) -> str:
+    if _blank(v):
+        return "-"
+    txt = str(v).replace("\u2212", "-").strip()
+    try:
+        return f"{int(round(float(txt))):+d}"
+    except ValueError:
+        return txt
+
+
+def _box_specs(stats, rows) -> list:
+    """Column names -> [(label, column, EF column or None)], one per box.
+    An "X EF" column is folded into the "X%" box when both are chosen."""
+    have = set()
+    for m in rows:
+        have.update(m["_raw"])
+    identity = {_norm(a) for names in COLUMNS.values() for a in names}
+    chosen, seen = [], set()
+    for c in stats:
+        c = str(c).strip()
+        n = _norm(c)
+        if n in have and n not in identity and n not in seen:
+            chosen.append(c)
+            seen.add(n)
+    pair = {}
+    for c in chosen:
+        ef = _norm(c[:-1] + " " + EF_SUFFIX)
+        if c.endswith("%") and ef in seen:
+            pair[_norm(c)] = ef
+    folded = set(pair.values())
+    specs = []
+    for c in chosen:
+        n = _norm(c)
+        if n in folded:
+            continue
+        if n in pair:
+            specs.append((f"{c[:-1].strip()} %/{EF_SUFFIX}", n, pair[n]))
+        else:
+            specs.append((c, n, None))
+    return specs
+
+
+def _box_text(label, m, col, ef_col):
+    """(main text, text underneath) for one box in one row."""
+    v = m["_raw"].get(col)
+    if ef_col:
+        return _pct(v), _ef(m["_raw"].get(ef_col))
+    if label.endswith("%"):
+        return _pct(v, "%"), ""
+    if label.upper().endswith(ODDS_SUFFIXES):
+        return _odds(v), ""
+    return _num(v), ""
+
+
 def _time(v) -> str:
     if hasattr(v, "strftime"):
         return v.strftime("%H:%M")
@@ -197,7 +247,7 @@ def _prepare(matches) -> list:
     lookup.update({_norm(field): field for field in COLUMNS})
     rows = []
     for rec in _records(matches):
-        m = {}
+        m = {"_raw": {_norm(col): val for col, val in rec.items()}}
         for col, val in rec.items():
             field = lookup.get(_norm(col))
             if field and not _blank(val):
@@ -206,11 +256,6 @@ def _prepare(matches) -> list:
             parts = re.split(r"\s+vs?\.?\s+", str(m["matchup"]), maxsplit=1, flags=re.I)
             if len(parts) == 2:
                 m["p1"], m["p2"] = parts[0].strip(), parts[1].strip()
-        for stat in ("p1_bb", "p2_bb", "p1_sr", "p2_sr"):  # combined "60 / -127"
-            combo = str(m.get(stat + "_ef", ""))
-            if stat not in m and "/" in combo:
-                pct, ef = combo.split("/", 1)
-                m[stat], m[stat + "_ef"] = pct.strip(), ef.strip()
         rows.append(m)
     if not rows:
         raise ValueError("No matches to draw.")
@@ -404,13 +449,14 @@ def _clock(d, cx, cy, r, k, color):
 
 
 # ───────────────────────── main render ─────────────────────────
-def render_picks(matches, picks_date=None, out_path=None, scale: float = 1):
+def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stats=None):
     """Render the graphic and return a PIL image. Saves a PNG if out_path is given.
 
     matches     CSV path, pandas DataFrame, or list of dicts (one per match)
     picks_date  date/datetime, "YYYY-MM-DD", or any text to print as typed.
                 Leave it out to use the date in the Match Start column.
     scale       1 = 1600x900 (ideal for X); 2 = 3200x1800
+    stats       list of stat column names to show (see top of file); None = DEFAULT_STATS
     """
     rows = _prepare(matches)
     if picks_date is None:
@@ -511,13 +557,26 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1):
     f_time = _font(F_XBOLD, 40 * s * k)
     f_league = _font(F_SEMI, 17.5 * s * k)
     f_vs = _font(F_XBOLD, 14 * s * k)
-    f_label = _font(F_BOLD, 13.5 * s * k)
-    f_val = _font(F_XBOLD, 30 * s * k)
-    f_big = _font(F_XBOLD, 35 * s * k)
-    f_ef = _font(F_SEMI, 14 * s * k)
 
-    box_x0, box_x1, box_gap = 660, X1 - 14, 10
-    box_w = (box_x1 - box_x0 - box_gap * (len(STAT_BOXES) - 1)) / len(STAT_BOXES)
+    specs = _box_specs(stats, rows) if stats else []
+    if not specs:
+        specs = _box_specs(DEFAULT_STATS, rows)
+    nb = len(specs)
+    area_x0, area_x1, box_gap = 660, X1 - 14, 10
+    box_w = min(210, (area_x1 - area_x0 - box_gap * (nb - 1)) / nb) if nb else 0
+    box_x0 = area_x0 + (area_x1 - area_x0 - (nb * box_w + box_gap * (nb - 1))) / 2
+    texts = [[_box_text(label, m, col, ef) for (label, col, ef) in specs] for m in rows]
+
+    # one value size for the whole graphic, shrunk only if a box is too narrow
+    vs = 1.0
+    for row_texts in texts:
+        for (label, col, ef), (main, _sub) in zip(specs, row_texts):
+            base = _font(F_XBOLD, (30 if ef else 35) * s * k)
+            vs = min(vs, P(box_w - 16) / max(1.0, base.getlength(main)))
+    f_val = _font(F_XBOLD, 30 * s * k * vs)
+    f_big = _font(F_XBOLD, 35 * s * k * vs)
+    f_ef = _font(F_SEMI, 14 * s * k * max(vs, 0.75))
+    label_fonts = [_fit(F_BOLD, label, 13.5 * s * k, P(box_w - 12)) for (label, _c, _e) in specs]
 
     for i, m in enumerate(rows):
         y0 = rows_top + i * (row_h + ROW_GAP)
@@ -538,18 +597,19 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1):
         d.text((name_cx, P(mid + 26 * s)), p2, font=f_name, fill=WHITE, anchor="mm")
 
         by0, by1 = y0 + 10 * s, y0 + row_h - 10 * s
-        for j, (label, pct_key, ef_key, accent) in enumerate(STAT_BOXES):
+        for j, (label, col, ef) in enumerate(specs):
+            main, sub = texts[i][j]
             bx0 = box_x0 + j * (box_w + box_gap)
             bcx = P(bx0 + box_w / 2)
-            line_c, label_c = (BLUE, BLUE_LT) if accent == "blue" else (GOLD, GOLD_LT)
+            line_c, label_c = (BLUE, BLUE_LT) if j % 2 == 0 else (GOLD, GOLD_LT)
             d.rounded_rectangle((P(bx0), P(by0), P(bx0 + box_w), P(by1)), radius=P(11), fill=BOX_FILL,
                                 outline=line_c, width=P(2))
-            d.text((bcx, P(by0 + 16 * s)), label, font=f_label, fill=label_c, anchor="mm")
-            if ef_key is None:
-                d.text((bcx, P(mid + 9 * s)), _pct(m.get(pct_key), "%"), font=f_big, fill=WHITE, anchor="mm")
+            d.text((bcx, P(by0 + 16 * s)), label, font=label_fonts[j], fill=label_c, anchor="mm")
+            if ef is None:
+                d.text((bcx, P(mid + 9 * s)), main, font=f_big, fill=WHITE, anchor="mm")
             else:
-                d.text((bcx, P(mid + 3 * s)), _pct(m.get(pct_key)), font=f_val, fill=WHITE, anchor="mm")
-                d.text((bcx, P(by1 - 15 * s)), _ef(m.get(ef_key)), font=f_ef, fill=MUTED, anchor="mm")
+                d.text((bcx, P(mid + 3 * s)), main, font=f_val, fill=WHITE, anchor="mm")
+                d.text((bcx, P(by1 - 15 * s)), sub, font=f_ef, fill=MUTED, anchor="mm")
     img.alpha_composite(panel)
 
     # ── footer ──
@@ -581,10 +641,10 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1):
     return out
 
 
-def render_picks_png(matches, picks_date=None, scale: float = 1) -> bytes:
+def render_picks_png(matches, picks_date=None, scale: float = 1, stats=None) -> bytes:
     """Same as render_picks but returns PNG bytes (handy for st.download_button)."""
     buf = io.BytesIO()
-    render_picks(matches, picks_date, scale=scale).save(buf, "PNG", optimize=True)
+    render_picks(matches, picks_date, scale=scale, stats=stats).save(buf, "PNG", optimize=True)
     return buf.getvalue()
 
 
@@ -594,6 +654,8 @@ if __name__ == "__main__":
     ap.add_argument("--date", default=None, help='YYYY-MM-DD or any text to print as typed (default: date in Match Start)')
     ap.add_argument("--out", default="tt_picks.png", help="output PNG path")
     ap.add_argument("--scale", type=float, default=1, help="1 = 1600x900, 2 = 3200x1800")
+    ap.add_argument("--stats", default=None, help='comma-separated stat columns, e.g. "NS%%,P1 BB%%,P1 BB EF"')
     args = ap.parse_args()
-    im = render_picks(args.csv, args.date, args.out, args.scale)
+    chosen = [c for c in args.stats.split(",")] if args.stats else None
+    im = render_picks(args.csv, args.date, args.out, args.scale, chosen)
     print(f"Saved {args.out} ({im.width}x{im.height})")
