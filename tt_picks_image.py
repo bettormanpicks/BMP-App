@@ -1,0 +1,598 @@
+#!/usr/bin/env python3
+"""
+tt_picks_image.py - daily table tennis picks graphic for X (1600x900 PNG).
+
+Only dependency: Pillow  (pip install pillow). Keep the "fonts" folder and
+background.png next to this file.
+
+background.png is the backdrop (3D-rendered paddle, ball and net). Replace it
+with any 16:9 image to change the look; the title, date, rows and footer are
+drawn on top. If it is missing, a simpler drawn paddle and net are used.
+
+COMMAND LINE
+    python tt_picks_image.py sample_picks.csv --out picks.png
+
+FROM PYTHON / STREAMLIT (df is the filtered DataFrame your table shows)
+    from tt_picks_image import render_picks_png
+    png = render_picks_png(df)   # date comes from the Match Start column
+    st.image(png)
+    st.download_button("Download X graphic", png, "tt_picks.png", "image/png")
+
+INPUT
+    A CSV, a pandas DataFrame, or a list of dicts, one row per match.
+    Columns match the BMP App table: Match Start, League, Player 1, Player 2,
+    NS%, 1ALL%, P1 BB%, P1 BB EF, P2 BB%, P2 BB EF, P1 SR%, P1 SR EF, P2 SR%,
+    P2 SR EF. Extra columns (like Ms) are ignored. Names are matched loosely
+    (case, spaces and symbols are ignored); edit COLUMNS below if they change.
+    A stat can be two columns ("P1 BB%" and "P1 BB EF") or one combined
+    column holding "60 / -127". Players can be two columns or one
+    "Matchup" column holding "Player A vs Player B".
+"""
+from __future__ import annotations
+
+import argparse
+import csv
+import io
+import random
+import re
+from datetime import date, datetime
+from pathlib import Path
+
+from PIL import Image, ImageChops, ImageDraw, ImageFilter, ImageFont
+
+# ───────────────────────── EDIT THESE ─────────────────────────
+TITLE_LINE_1 = "THEPONGFATHER'S"
+TITLE_LINE_2 = "TABLE TENNIS"
+TITLE_ACCENT = "PICKS"  # gold word at the end of line 2
+FOOTER_LEFT = "X.COM/BETTORMANPICKS"
+FOOTER_RIGHT = "BET RESPONSIBLY"
+EF_SUFFIX = "EF"
+
+# field -> accepted column names (compared with case/spaces/symbols removed)
+COLUMNS = {
+    "time": ["Match Start", "Time", "Start", "Start Time"],
+    "league": ["League", "Lg"],
+    "p1": ["P1", "Player 1", "Player1"],
+    "p2": ["P2", "Player 2", "Player2"],
+    "matchup": ["Matchup", "Match", "Players"],
+    "ns": ["NS%", "NS"],
+    "all1": ["1ALL%", "1ALL", "1-ALL%"],
+    "p1_bb": ["P1 BB%", "P1 BB"],
+    "p1_bb_ef": ["P1 BB EF", "P1 BB %/EF", "P1 BB Odds"],
+    "p2_bb": ["P2 BB%", "P2 BB"],
+    "p2_bb_ef": ["P2 BB EF", "P2 BB %/EF", "P2 BB Odds"],
+    "p1_sr": ["P1 SR%", "P1 SR"],
+    "p1_sr_ef": ["P1 SR EF", "P1 SR %/EF", "P1 SR Odds"],
+    "p2_sr": ["P2 SR%", "P2 SR"],
+    "p2_sr_ef": ["P2 SR EF", "P2 SR %/EF", "P2 SR Odds"],
+}
+
+# (label, percent field, EF field or None, accent) - left to right
+STAT_BOXES = [
+    ("NS%", "ns", None, "blue"),
+    ("1ALL%", "all1", None, "gold"),
+    ("P1 BB %/EF", "p1_bb", "p1_bb_ef", "blue"),
+    ("P2 BB %/EF", "p2_bb", "p2_bb_ef", "gold"),
+    ("P1 SR %/EF", "p1_sr", "p1_sr_ef", "blue"),
+    ("P2 SR %/EF", "p2_sr", "p2_sr_ef", "gold"),
+]
+
+# Colors - every row uses the same ones
+BLUE = (46, 139, 255)
+BLUE_LT = (132, 200, 255)
+CYAN = (53, 195, 255)
+GOLD = (236, 178, 52)
+GOLD_LT = (255, 212, 110)
+TIME_GOLD = (255, 200, 61)
+WHITE = (255, 255, 255)
+MUTED = (172, 192, 220)
+PANEL_FILL = (9, 20, 46, 232)
+BOX_FILL = (5, 13, 32, 240)
+# ──────────────────────────────────────────────────────────────
+
+BASE_W, BASE_H = 1600, 900
+HEADER_H, FOOTER_H = 268, 62
+ROW_MAX, ROW_MIN, ROW_GAP = 104, 84, 10
+SS = 2  # supersampling factor for smooth edges
+
+FONT_DIR = Path(__file__).resolve().parent / "fonts"
+BACKGROUND = Path(__file__).resolve().parent / "background.png"
+F_TITLE = "Montserrat-BlackItalic.ttf"
+F_ITALIC = "Montserrat-BoldItalic.ttf"
+F_XBOLD = "Montserrat-ExtraBold.ttf"
+F_BOLD = "Montserrat-Bold.ttf"
+F_SEMI = "Montserrat-SemiBold.ttf"
+
+_font_cache: dict = {}
+
+
+def _font(name: str, size: float) -> ImageFont.FreeTypeFont:
+    key = (name, int(round(size)))
+    if key not in _font_cache:
+        _font_cache[key] = ImageFont.truetype(str(FONT_DIR / name), key[1])
+    return _font_cache[key]
+
+
+def _fit(name: str, text: str, size: float, max_w: float) -> ImageFont.FreeTypeFont:
+    """Largest font at or under `size` whose text fits in max_w."""
+    f = _font(name, size)
+    while f.getlength(text) > max_w and size > 6:
+        size *= 0.96
+        f = _font(name, size)
+    return f
+
+
+# ───────────────────────── data handling ─────────────────────────
+def _norm(s) -> str:
+    return re.sub(r"[^a-z0-9]", "", str(s).lower())
+
+
+def _blank(v) -> bool:
+    return v is None or v != v or str(v).strip() in ("", "nan", "None", "NaN")
+
+
+def _pct(v, suffix: str = "") -> str:
+    if _blank(v):
+        return "-"
+    try:
+        n = float(str(v).replace("%", "").strip())
+    except ValueError:
+        return str(v).strip()
+    txt = f"{n:.0f}" if abs(n - round(n)) < 0.05 else f"{n:.1f}"
+    return txt + suffix
+
+
+def _ef(v) -> str:
+    if _blank(v):
+        return ""
+    s = str(v).replace(EF_SUFFIX, "").replace("−", "-").strip()
+    try:
+        s = f"{int(round(float(s))):+d}"
+    except ValueError:
+        pass
+    return f"{s} {EF_SUFFIX}".strip()
+
+
+def _time(v) -> str:
+    if hasattr(v, "strftime"):
+        return v.strftime("%H:%M")
+    if _blank(v):
+        return ""
+    hit = re.search(r"\d{1,2}:\d{2}", str(v))  # "2026-10-03 11:25" -> "11:25"
+    return hit.group(0) if hit else str(v).strip()
+
+
+def _date_text(d) -> str:
+    if d is None:
+        d = date.today()
+    if isinstance(d, str):
+        try:
+            d = datetime.strptime(d.strip()[:10], "%Y-%m-%d")
+        except ValueError:
+            return d  # already formatted, use as typed
+    return f"{d.strftime('%B')} {d.day}, {d.year}"
+
+
+def _date_from_rows(rows):
+    """Use the date in the first Match Start value when no date is passed."""
+    v = rows[0].get("time")
+    if hasattr(v, "year"):
+        return v
+    hit = re.search(r"\d{4}-\d{2}-\d{2}", str(v))
+    return hit.group(0) if hit else None
+
+
+def _records(matches) -> list:
+    if hasattr(matches, "to_dict"):  # pandas DataFrame
+        return matches.to_dict("records")
+    if isinstance(matches, (str, Path)):
+        with open(matches, newline="", encoding="utf-8-sig") as fh:
+            return list(csv.DictReader(fh))
+    return list(matches)
+
+
+def _prepare(matches) -> list:
+    lookup = {_norm(a): field for field, names in COLUMNS.items() for a in names}
+    lookup.update({_norm(field): field for field in COLUMNS})
+    rows = []
+    for rec in _records(matches):
+        m = {}
+        for col, val in rec.items():
+            field = lookup.get(_norm(col))
+            if field and not _blank(val):
+                m[field] = val
+        if "matchup" in m and ("p1" not in m or "p2" not in m):
+            parts = re.split(r"\s+vs?\.?\s+", str(m["matchup"]), maxsplit=1, flags=re.I)
+            if len(parts) == 2:
+                m["p1"], m["p2"] = parts[0].strip(), parts[1].strip()
+        for stat in ("p1_bb", "p2_bb", "p1_sr", "p2_sr"):  # combined "60 / -127"
+            combo = str(m.get(stat + "_ef", ""))
+            if stat not in m and "/" in combo:
+                pct, ef = combo.split("/", 1)
+                m[stat], m[stat + "_ef"] = pct.strip(), ef.strip()
+        rows.append(m)
+    if not rows:
+        raise ValueError("No matches to draw.")
+    return rows
+
+
+# ───────────────────────── drawing helpers ─────────────────────────
+def _lerp(a, b, t):
+    return tuple(int(round(a[i] + (b[i] - a[i]) * t)) for i in range(len(a)))
+
+
+def _layer(size):
+    return Image.new("RGBA", size, (0, 0, 0, 0))
+
+
+def _gradient_text(img, xy, text, font, top, bottom, anchor="ls"):
+    """Draw text filled with a vertical gradient onto img (in place)."""
+    x0, y0, x1, y1 = ImageDraw.Draw(img).textbbox(xy, text, font=font, anchor=anchor)
+    x0, y0, x1, y1 = int(x0) - 2, int(y0) - 2, int(x1) + 3, int(y1) + 3
+    w, h = x1 - x0, y1 - y0
+    mask = Image.new("L", (w, h), 0)
+    ImageDraw.Draw(mask).text((xy[0] - x0, xy[1] - y0), text, font=font, fill=255, anchor=anchor)
+    grad = Image.new("RGBA", (w, h))
+    gd = ImageDraw.Draw(grad)
+    for y in range(h):
+        gd.line([(0, y), (w, y)], fill=_lerp(top, bottom, y / max(1, h - 1)) + (255,))
+    grad.putalpha(mask)
+    img.alpha_composite(grad, (x0, y0))
+
+
+def _tracked_width(text, font, tr):
+    return sum(font.getlength(c) for c in text) + tr * (len(text) - 1)
+
+
+def _draw_tracked(d, x, y, text, font, fill, tr):
+    for c in text:
+        d.text((x, y), c, font=font, fill=fill, anchor="lm")
+        x += font.getlength(c) + tr
+    return x
+
+
+def _background(W, H):
+    """Soft background, built at 1x and upscaled by the caller."""
+    img = Image.new("RGB", (W, H))
+    d = ImageDraw.Draw(img)
+    top, mid, bot = (7, 16, 42), (8, 23, 58), (3, 8, 22)
+    for y in range(H):
+        t = y / (H - 1)
+        c = _lerp(top, mid, t / 0.3) if t < 0.3 else _lerp(mid, bot, (t - 0.3) / 0.7)
+        d.line([(0, y), (W, y)], fill=c)
+    img = img.convert("RGBA")
+
+    glow = _layer((W, H))
+    g = ImageDraw.Draw(glow)
+    g.ellipse((W / 2 - 640, -150, W / 2 + 640, 300), fill=(28, 112, 255, 120))
+    g.ellipse((-260, H - 150, 460, H + 220), fill=(20, 84, 225, 70))
+    g.ellipse((W - 460, H - 150, W + 260, H + 220), fill=(20, 84, 225, 70))
+    img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(110)))
+
+    rnd = random.Random(7)  # fixed seed: same background every day
+    bokeh = _layer((W, H))
+    b = ImageDraw.Draw(bokeh)
+    for _ in range(54):
+        x, y = rnd.uniform(0, W), rnd.uniform(-10, 255)
+        r, a = rnd.uniform(5, 24), rnd.randint(16, 58)
+        b.ellipse((x - r, y - r, x + r, y + r), fill=(96, 176, 255, a))
+    img.alpha_composite(bokeh.filter(ImageFilter.GaussianBlur(4)))
+    return img
+
+
+def _plate(W, H, k):
+    """background.png scaled to the canvas; taller canvases stretch its lower part."""
+    p = Image.open(BACKGROUND).convert("RGBA").resize((W * k, BASE_H * k), Image.LANCZOS)
+    if H == BASE_H:
+        return p
+    cut = 600 * k
+    out = Image.new("RGBA", (W * k, H * k))
+    out.paste(p.crop((0, 0, W * k, cut)), (0, 0))
+    out.paste(p.crop((0, cut, W * k, BASE_H * k)).resize((W * k, H * k - cut), Image.BICUBIC), (0, cut))
+    return out
+
+
+def _net(W, k):
+    """Table tennis net fading in at the top right."""
+    h = HEADER_H
+    L = _layer((W * k, h * k))
+    d = ImageDraw.Draw(L)
+    xl, xr = 1225, W + 12
+
+    def top(x):
+        return 80 - (x - xl) / (xr - xl) * 50
+
+    def bot(x):
+        return h + (x - xl) / (xr - xl) * 24
+
+    mesh = (176, 208, 255, 84)
+    x = xl
+    while x <= xr:
+        d.line([(x * k, top(x) * k), (x * k, bot(x) * k)], fill=mesh, width=k)
+        x += 12
+    for i in range(1, 18):
+        t = i / 18
+        yl = top(xl) + (bot(xl) - top(xl)) * t
+        yr = top(xr) + (bot(xr) - top(xr)) * t
+        d.line([(xl * k, yl * k), (xr * k, yr * k)], fill=mesh, width=k)
+    d.polygon(
+        [(xl * k, top(xl) * k), (xr * k, top(xr) * k), (xr * k, (top(xr) + 12) * k), (xl * k, (top(xl) + 8) * k)],
+        fill=(236, 243, 255, 225),
+    )
+    fade = Image.new("L", (W, h), 0)
+    fp = fade.load()
+    for y in range(h):
+        fy = 1.0 if y < 150 else max(0.0, 1 - (y - 150) / (h - 156))
+        for x in range(1225, W):
+            fx = min(1.0, max(0.0, (x - 1240) / 190))
+            fp[x, y] = int(255 * fx * fy)
+    fade = fade.resize(L.size, Image.BILINEAR)
+    L.putalpha(ImageChops.multiply(L.getchannel("A"), fade))
+    return L
+
+
+def _paddle(k):
+    """Red paddle on a square layer, blade centered, rotated into place."""
+    S = 620 * k
+    c = S / 2
+    L = _layer((S, S))
+    d = ImageDraw.Draw(L)
+    rx, ry = 104 * k, 114 * k
+    hw = 29 * k
+    hy0, hy1 = c + ry - 16 * k, c + ry + 150 * k
+    d.polygon(
+        [(c - 60 * k, c + ry - 50 * k), (c + 60 * k, c + ry - 50 * k), (c + hw, hy0 + 40 * k), (c - hw, hy0 + 40 * k)],
+        fill=(170, 118, 62),
+    )
+    d.rounded_rectangle((c - hw, hy0, c + hw, hy1), radius=11 * k, fill=(200, 150, 88))
+    d.rectangle((c - hw, hy0, c - hw + 9 * k, hy1 - 11 * k), fill=(146, 97, 48))
+    d.rectangle((c + hw - 9 * k, hy0, c + hw, hy1 - 11 * k), fill=(146, 97, 48))
+    d.line([(c, hy0 + 44 * k), (c, hy1 - 12 * k)], fill=(120, 78, 38), width=2 * k)
+    d.ellipse((c - rx, c - ry, c + rx, c + ry), fill=(104, 12, 20))
+    inner = (c - rx + 5 * k, c - ry + 5 * k, c + rx - 5 * k, c + ry - 5 * k)
+    d.ellipse(inner, fill=(212, 32, 42))
+
+    hl = _layer((S, S))
+    ImageDraw.Draw(hl).ellipse((c - rx * 0.75, c - ry * 0.85, c + rx * 0.25, c - ry * 0.02), fill=(255, 128, 128, 110))
+    hl = hl.filter(ImageFilter.GaussianBlur(24 * k))
+    blade = Image.new("L", (S, S), 0)
+    ImageDraw.Draw(blade).ellipse(inner, fill=255)
+    hl.putalpha(ImageChops.multiply(hl.getchannel("A"), blade))
+    L.alpha_composite(hl)
+    return L.rotate(-48, resample=Image.BICUBIC)
+
+
+def _ball(k, r=30):
+    size = int(r * 2 * k)
+    img = _layer((size, size))
+    px = img.load()
+    hx, hy = size * 0.36, size * 0.32
+    for y in range(size):
+        for x in range(size):
+            dist = ((x - hx) ** 2 + (y - hy) ** 2) ** 0.5 / (size * 0.62)
+            s = int(255 - 82 * min(1.0, dist) ** 1.6)
+            px[x, y] = (s, s, min(255, s + 5), 255)
+    mask = Image.new("L", (size, size), 0)
+    ImageDraw.Draw(mask).ellipse((0, 0, size - 1, size - 1), fill=255)
+    img.putalpha(mask)
+    return img
+
+
+def _place(canvas, sprite, cx, cy, shadow=(0, 0), shadow_blur=0, shadow_alpha=0):
+    """Composite sprite centered at (cx, cy); may hang off the canvas."""
+    layer = _layer(canvas.size)
+    pos = (int(cx - sprite.width / 2), int(cy - sprite.height / 2))
+    if shadow_alpha:
+        sh = _layer(sprite.size)
+        sh.putalpha(sprite.getchannel("A").point(lambda a: int(a * shadow_alpha / 255)))
+        sl = _layer(canvas.size)
+        sl.paste(sh, (pos[0] + shadow[0], pos[1] + shadow[1]))
+        canvas.alpha_composite(sl.filter(ImageFilter.GaussianBlur(shadow_blur)))
+    layer.paste(sprite, pos)
+    canvas.alpha_composite(layer)
+
+
+def _clock(d, cx, cy, r, k, color):
+    w = max(2, int(round(3.6 * k * r / (24 * k))))
+    d.ellipse((cx - r, cy - r, cx + r, cy + r), outline=color, width=w)
+    ends = [(cx, cy - r * 0.56), (cx + r * 0.40, cy + r * 0.22)]
+    for ex, ey in ends:
+        d.line([(cx, cy), (ex, ey)], fill=color, width=w)
+        d.ellipse((ex - w / 2, ey - w / 2, ex + w / 2, ey + w / 2), fill=color)
+    d.ellipse((cx - w / 2, cy - w / 2, cx + w / 2, cy + w / 2), fill=color)
+
+
+# ───────────────────────── main render ─────────────────────────
+def render_picks(matches, picks_date=None, out_path=None, scale: float = 1):
+    """Render the graphic and return a PIL image. Saves a PNG if out_path is given.
+
+    matches     CSV path, pandas DataFrame, or list of dicts (one per match)
+    picks_date  date/datetime, "YYYY-MM-DD", or any text to print as typed.
+                Leave it out to use the date in the Match Start column.
+    scale       1 = 1600x900 (ideal for X); 2 = 3200x1800
+    """
+    rows = _prepare(matches)
+    if picks_date is None:
+        picks_date = _date_from_rows(rows)
+    n = len(rows)
+    W = BASE_W
+    avail = BASE_H - HEADER_H - FOOTER_H
+    cap = ROW_MAX if n >= 5 else ROW_MAX * 1.15  # short slates get slightly taller rows
+    row_h = min(cap, (avail - ROW_GAP * (n - 1)) / n)
+    if row_h < ROW_MIN:  # too many rows for 16:9 - grow the canvas instead
+        row_h = ROW_MIN
+        avail = n * row_h + ROW_GAP * (n - 1)
+    H = int(HEADER_H + avail + FOOTER_H)
+    block = n * row_h + ROW_GAP * (n - 1)
+    rows_top = HEADER_H + (avail - block) / 2
+
+    k = int(round(SS * scale))
+    P = lambda v: int(round(v * k))  # noqa: E731  base units -> pixels
+    size = (W * k, H * k)
+
+    photo = BACKGROUND.exists()
+    img = _plate(W, H, k) if photo else _background(W, H).resize(size, Image.BICUBIC)
+
+    # corner accents
+    acc = _layer(size)
+    a = ImageDraw.Draw(acc)
+    for off, alpha, wd in ((0, 210, 3), (16, 120, 2)):
+        if not photo:
+            a.line([(P(-10), P(128 + off)), (P(128 + off), P(-10))], fill=GOLD + (alpha,), width=wd * k // 2 + 1)
+        a.line([(P(W + 10), P(H - 128 - off)), (P(W - 128 - off), P(H + 10))], fill=GOLD + (alpha,), width=wd * k // 2 + 1)
+    img.alpha_composite(acc)
+
+    if not photo:  # no background.png: fall back to the drawn net, paddle and ball
+        img.alpha_composite(_net(W, k))
+        _place(img, _paddle(k), P(160), P(104), shadow=(P(8), P(10)), shadow_blur=P(10), shadow_alpha=130)
+        _place(img, _ball(k), P(226), P(204), shadow=(P(5), P(7)), shadow_blur=P(7), shadow_alpha=120)
+
+    # ── title ──
+    line2 = f"{TITLE_LINE_2} {TITLE_ACCENT}"
+    tf = _fit(F_TITLE, line2, 82 * k, 990 * k)
+    tf1 = _fit(F_TITLE, TITLE_LINE_1, tf.size, 990 * k)
+    cx = P(W / 2 + 8)
+    y1, y2 = P(98), P(184)
+    w1 = tf1.getlength(TITLE_LINE_1)
+    w2a = tf.getlength(TITLE_LINE_2 + " ")
+    w2 = w2a + tf.getlength(TITLE_ACCENT)
+    x1, x2 = cx - w1 / 2, cx - w2 / 2
+
+    halo = _layer(size)
+    hd = ImageDraw.Draw(halo)
+    hd.text((x1, y1), TITLE_LINE_1, font=tf1, fill=(30, 130, 255, 150), anchor="ls")
+    hd.text((x2, y2), TITLE_LINE_2, font=tf, fill=(30, 130, 255, 150), anchor="ls")
+    hd.text((x2 + w2a, y2), TITLE_ACCENT, font=tf, fill=(255, 170, 30, 130), anchor="ls")
+    img.alpha_composite(halo.filter(ImageFilter.GaussianBlur(P(13))))
+    shadow = _layer(size)
+    sd = ImageDraw.Draw(shadow)
+    for (tx, ty, txt, f) in ((x1, y1, TITLE_LINE_1, tf1), (x2, y2, line2, tf)):
+        sd.text((tx + P(2), ty + P(4)), txt, font=f, fill=(2, 6, 20, 235), anchor="ls")
+    img.alpha_composite(shadow.filter(ImageFilter.GaussianBlur(P(1.5))))
+    blue_top, blue_bot = (150, 230, 255), (24, 122, 255)
+    _gradient_text(img, (x1, y1), TITLE_LINE_1, tf1, blue_top, blue_bot)
+    _gradient_text(img, (x2, y2), TITLE_LINE_2, tf, blue_top, blue_bot)
+    _gradient_text(img, (x2 + w2a, y2), TITLE_ACCENT, tf, (255, 236, 140), (245, 158, 11))
+
+    # ── date pill ──
+    d = ImageDraw.Draw(img)
+    dtxt = _date_text(picks_date)
+    df = _font(F_ITALIC, 27 * k)
+    pw, ph, py = df.getlength(dtxt) + P(84), P(44), P(228)
+    px0, px1 = cx - pw / 2, cx + pw / 2
+    cut = P(16)
+    pill = [(px0 + cut, py - ph / 2), (px1 - cut, py - ph / 2), (px1, py), (px1 - cut, py + ph / 2),
+            (px0 + cut, py + ph / 2), (px0, py)]
+    d.polygon(pill, fill=(6, 16, 40, 245))
+    d.line(pill + [pill[0], pill[1]], fill=BLUE, width=P(2), joint="curve")
+    d.text((cx, py), dtxt, font=df, fill=WHITE, anchor="mm")
+    line_len = P(250)
+    fade = _layer(size)
+    fd = ImageDraw.Draw(fade)
+    for i in range(line_len):
+        al = int(235 * (1 - i / line_len))
+        fd.line([(px0 - P(14) - i, py - P(1)), (px0 - P(14) - i, py + P(1))], fill=GOLD + (al,))
+        fd.line([(px1 + P(14) + i, py - P(1)), (px1 + P(14) + i, py + P(1))], fill=GOLD + (al,))
+    img.alpha_composite(fade)
+
+    # ── rows ──
+    s = row_h / ROW_MAX  # scale type with row height
+    X0, X1 = 32, W - 32
+    glow = _layer(size)
+    gd = ImageDraw.Draw(glow)
+    for i in range(n):
+        y0 = rows_top + i * (row_h + ROW_GAP)
+        gd.rounded_rectangle((P(X0), P(y0), P(X1), P(y0 + row_h)), radius=P(16), outline=BLUE + (190,), width=P(5))
+    img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(P(7))))
+
+    panel = _layer(size)
+    d = ImageDraw.Draw(panel)
+    f_time = _font(F_XBOLD, 40 * s * k)
+    f_league = _font(F_SEMI, 17.5 * s * k)
+    f_vs = _font(F_XBOLD, 14 * s * k)
+    f_label = _font(F_BOLD, 13.5 * s * k)
+    f_val = _font(F_XBOLD, 30 * s * k)
+    f_big = _font(F_XBOLD, 35 * s * k)
+    f_ef = _font(F_SEMI, 14 * s * k)
+
+    box_x0, box_x1, box_gap = 660, X1 - 14, 10
+    box_w = (box_x1 - box_x0 - box_gap * (len(STAT_BOXES) - 1)) / len(STAT_BOXES)
+
+    for i, m in enumerate(rows):
+        y0 = rows_top + i * (row_h + ROW_GAP)
+        mid = y0 + row_h / 2
+        d.rounded_rectangle((P(X0), P(y0), P(X1), P(y0 + row_h)), radius=P(16), fill=PANEL_FILL,
+                            outline=BLUE, width=P(2))
+        _clock(d, P(X0 + 52), P(mid), P(25 * s), k, CYAN)
+        d.text((P(X0 + 96), P(mid - 11 * s)), _time(m.get("time")), font=f_time, fill=TIME_GOLD, anchor="lm")
+        d.text((P(X0 + 98), P(mid + 25 * s)), str(m.get("league", "")), font=f_league, fill=BLUE_LT, anchor="lm")
+        d.line([(P(286), P(y0 + 16 * s)), (P(286), P(y0 + row_h - 16 * s))], fill=BLUE + (150,), width=P(1.5))
+
+        name_cx, name_w = P(473), P(340)
+        p1, p2 = str(m.get("p1", "")), str(m.get("p2", ""))
+        f_name = _fit(F_BOLD, max((p1, p2), key=len), 25 * s * k, name_w)
+        f_name = _fit(F_BOLD, min((p1, p2), key=len), f_name.size, name_w)
+        d.text((name_cx, P(mid - 26 * s)), p1, font=f_name, fill=WHITE, anchor="mm")
+        d.text((name_cx, P(mid)), "VS", font=f_vs, fill=CYAN, anchor="mm")
+        d.text((name_cx, P(mid + 26 * s)), p2, font=f_name, fill=WHITE, anchor="mm")
+
+        by0, by1 = y0 + 10 * s, y0 + row_h - 10 * s
+        for j, (label, pct_key, ef_key, accent) in enumerate(STAT_BOXES):
+            bx0 = box_x0 + j * (box_w + box_gap)
+            bcx = P(bx0 + box_w / 2)
+            line_c, label_c = (BLUE, BLUE_LT) if accent == "blue" else (GOLD, GOLD_LT)
+            d.rounded_rectangle((P(bx0), P(by0), P(bx0 + box_w), P(by1)), radius=P(11), fill=BOX_FILL,
+                                outline=line_c, width=P(2))
+            d.text((bcx, P(by0 + 16 * s)), label, font=f_label, fill=label_c, anchor="mm")
+            if ef_key is None:
+                d.text((bcx, P(mid + 9 * s)), _pct(m.get(pct_key), "%"), font=f_big, fill=WHITE, anchor="mm")
+            else:
+                d.text((bcx, P(mid + 3 * s)), _pct(m.get(pct_key)), font=f_val, fill=WHITE, anchor="mm")
+                d.text((bcx, P(by1 - 15 * s)), _ef(m.get(ef_key)), font=f_ef, fill=MUTED, anchor="mm")
+    img.alpha_composite(panel)
+
+    # ── footer ──
+    d = ImageDraw.Draw(img)
+    ff = _font(F_XBOLD, 22 * k)
+    tr = P(3.2)
+    fy = P(H - FOOTER_H / 2 + 2)
+    sep_w = P(54)
+    wl, wr = _tracked_width(FOOTER_LEFT, ff, tr), _tracked_width(FOOTER_RIGHT, ff, tr)
+    fx = P(W / 2) - (wl + sep_w + wr) / 2
+    foot_c = (198, 222, 255)
+    end = _draw_tracked(d, fx, fy, FOOTER_LEFT, ff, foot_c, tr)
+    dot_x, dot_r = fx + wl + sep_w / 2, P(4.5)
+    d.ellipse((dot_x - dot_r, fy - dot_r, dot_x + dot_r, fy + dot_r), fill=GOLD_LT)
+    _draw_tracked(d, fx + wl + sep_w, fy, FOOTER_RIGHT, ff, foot_c, tr)
+    rule = _layer(size)
+    rd = ImageDraw.Draw(rule)
+    rl = P(220)
+    for i in range(rl):
+        al = int(220 * (1 - i / rl))
+        rd.line([(fx - P(24) - i, fy - P(1)), (fx - P(24) - i, fy + P(1))], fill=GOLD + (al,))
+        xr = fx + wl + sep_w + wr + P(24) + i
+        rd.line([(xr, fy - P(1)), (xr, fy + P(1))], fill=GOLD + (al,))
+    img.alpha_composite(rule)
+
+    out = img.convert("RGB").resize((int(W * scale), int(H * scale)), Image.LANCZOS)
+    if out_path:
+        out.save(out_path, "PNG", optimize=True)
+    return out
+
+
+def render_picks_png(matches, picks_date=None, scale: float = 1) -> bytes:
+    """Same as render_picks but returns PNG bytes (handy for st.download_button)."""
+    buf = io.BytesIO()
+    render_picks(matches, picks_date, scale=scale).save(buf, "PNG", optimize=True)
+    return buf.getvalue()
+
+
+if __name__ == "__main__":
+    ap = argparse.ArgumentParser(description="Render the daily table tennis picks graphic.")
+    ap.add_argument("csv", help="CSV file with one row per match")
+    ap.add_argument("--date", default=None, help='YYYY-MM-DD or any text to print as typed (default: date in Match Start)')
+    ap.add_argument("--out", default="tt_picks.png", help="output PNG path")
+    ap.add_argument("--scale", type=float, default=1, help="1 = 1600x900, 2 = 3200x1800")
+    args = ap.parse_args()
+    im = render_picks(args.csv, args.date, args.out, args.scale)
+    print(f"Saved {args.out} ({im.width}x{im.height})")
