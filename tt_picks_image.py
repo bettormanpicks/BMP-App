@@ -124,11 +124,12 @@ def _fit(name: str, text: str, size: float, max_w: float) -> ImageFont.FreeTypeF
 
 # ───────────────────────── data handling ─────────────────────────
 def _norm(s) -> str:
-    return re.sub(r"[^a-z0-9]", "", str(s).lower())
+    # keep % and # so "P1 BB%" and "P1 BB#" stay different columns
+    return re.sub(r"[^a-z0-9%#]", "", str(s).lower())
 
 
 def _blank(v) -> bool:
-    return v is None or v != v or str(v).strip() in ("", "nan", "None", "NaN")
+    return v is None or v != v or str(v).strip() in ("", "nan", "None", "NaN", "-", "--")
 
 
 def _pct(v, suffix: str = "") -> str:
