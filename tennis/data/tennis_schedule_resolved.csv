@@ -1,25 +1,25 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-04,Final,China Open,Alexander Zverev,Novak Djokovic,atp_4,atp_3,ATP,Hard
-2026-10-04,Final,China Open,Daniil Medvedev,Francisco Cerundolo,atp_11,atp_62,ATP,Hard
+2026-10-04,Final,China Open,Daniil Medvedev,Francisco Cerundolo,atp_11,atp_19,ATP,Hard
 2026-10-04,Final,China Open,Alex de Minaur,Andrey Rublev,atp_8,atp_14,ATP,Hard
-2026-10-04,Live,China Open,Karolina Muchova,Liudmila Samsonova,wta_13,wta_18,WTA,Hard
 2026-10-04,03:00,China Open,Donna Vekic,Iga Swiatek,wta_99,wta_2,WTA,Hard
-2026-10-04,04:30,China Open,Marie Bouzkova,Zheng Qinwen,wta_39,wta_372,WTA,Hard
+2026-10-04,04:30,China Open,Marie Bouzkova,Zheng Qinwen,wta_39,wta_23,WTA,Hard
 2026-10-04,04:30,China Open,Iva Jovic,Kamilla Rakhimova,wta_20,wta_91,WTA,Hard
 2026-10-04,06:00,China Open,Alina Charaeva,Sonay Kartal,wta_163,wta_51,WTA,Hard
+2026-10-04,Final,China Open,Karolina Muchova,Liudmila Samsonova,wta_13,wta_18,WTA,Hard
 2026-10-04,Final,China Open,Sara Bejlek,Naomi Osaka,wta_41,wta_16,WTA,Hard
 2026-10-04,Final,China Open,Daria Snigur,Taylah Preston,wta_132,wta_147,WTA,Hard
 2026-10-04,Final,Kinoshita Group Japan Open Tennis Championships,Valentin Vacherot,Arthur Fils,atp_26,atp_40,ATP,Hard
 2026-10-04,Final,Kinoshita Group Japan Open Tennis Championships,Jiri Lehecka,Adolfo Daniel Vallejo,atp_21,atp_9021,ATP,Hard
-2026-10-04,Live,Adana Open,Leolia Jeanjean,Lois Boisson,wta_115,wta_35,WTA,
+2026-10-04,Final,Adana Open,Leolia Jeanjean,Lois Boisson,wta_115,wta_35,WTA,
 2026-10-04,Final,Samsun Open,Dalila Jakupovic,Lucija Ciric Bagaric,wta_385,wta_448,WTA,
 2026-10-04,Final,Samsun Open,Alya Naz Altinel,Mariam Bolkvadze,wta_9100,wta_388,ATP,
 2026-10-04,Final,Samsun Open,Caroline Werner,Ekaterina Yashina,wta_234,wta_494,WTA,
 2026-10-04,Final,Samsun Open,Adelina Lacinova,Alana Smith,wta_589,atp_141,WTA,
 2026-10-04,Final,Samsun Open,Doga Turkmen,Weronika Falkowska,wta_9101,wta_493,ATP,
 2026-10-04,Final,Samsun Open,Anastasia Tikhonova,Mariia Tkacheva,wta_257,wta_454,WTA,
-2026-10-04,Final,Samsun Open,Mariia Golovina,Elena Micic,wta_454,wta_375,WTA,
 2026-10-04,Final,Samsun Open,Noma Noha Akugue,Ilay Yoruk,wta_255,wta_809,WTA,
+2026-10-04,Final,Samsun Open,Mariia Golovina,Elena Micic,wta_454,wta_375,WTA,
 2026-10-04,02:00,Suzhou Open,Shi Han,Yang Yidi,wta_330,wta_9002,WTA,
 2026-10-04,02:00,Suzhou Open,Katarina Zavatska,Darya Khamutsianskaya,wta_310,wta_380,WTA,
 2026-10-04,02:00,Suzhou Open,Zheng Wushuang,Lu Jia-Jing,wta_372,wta_431,WTA,
@@ -36,7 +36,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-05,11:00,China Open,Novak Djokovic,Daniil Medvedev,atp_3,atp_11,ATP,Hard
 2026-10-05,07:00,China Open,Belinda Bencic,Ann Li,wta_12,wta_36,WTA,Hard
 2026-10-05,08:30,China Open,Jelena Ostapenko,Elise Mertens,wta_27,wta_22,WTA,Hard
-2026-10-05,08:30,China Open,Maria Sakkari,Elina Svitolina,wta_33,wta_9,WTA,Hard
+2026-10-05,08:30,China Open,Maria Sakkari,Elina Svitolina,wta_54,wta_9,WTA,Hard
 2026-10-05,12:30,China Open,Coco Gauff,Xinran Sun,wta_4,wta_98,WTA,Hard
 2026-10-05,07:00,Kinoshita Group Japan Open Tennis Championships,Carlos Alcaraz,Jaume Munar,atp_1,atp_35,ATP,Hard
 2026-10-05,09:00,Kinoshita Group Japan Open Tennis Championships,Jiri Lehecka,Valentin Vacherot,atp_21,atp_26,ATP,Hard
@@ -52,8 +52,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-05,08:30,Rolex Shanghai Masters,Chak Lam Coleman Wong,Cruz Hewitt,atp_137,atp_670,ATP,Hard
 2026-10-05,08:30,Rolex Shanghai Masters,Rio Noguchi,Alexandre Muller,atp_247,atp_50,ATP,Hard
 2026-10-05,08:30,Rolex Shanghai Masters,Mattia Bellucci,Elias Ymer,atp_109,atp_187,ATP,Hard
-2026-10-05,08:00,Samsun Open,Mariia Tkacheva,Mariam Bolkvadze,wta_454,wta_388,WTA,
 2026-10-05,08:00,Samsun Open,Noma Noha Akugue,Elena Micic,wta_255,wta_375,WTA,
+2026-10-05,08:00,Samsun Open,Mariia Tkacheva,Mariam Bolkvadze,wta_454,wta_388,WTA,
 2026-10-05,08:30,Samsun Open,Caroline Werner,Weronika Falkowska,wta_234,wta_493,WTA,
 2026-10-05,09:30,Samsun Open,Lucia Bronzetti,Fiona Crawley,wta_138,wta_201,WTA,
 2026-10-05,09:30,Samsun Open,Dalma Galfi,Julia Grabher,wta_86,wta_80,WTA,
