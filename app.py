@@ -1338,10 +1338,18 @@ with streamlit_analytics.track():
                 column_config=col_config
             )
 
-            if st.button("Create X Graphic"):
+            if len(picks_df) <= 10:
                 png = render_picks_png(picks_df)
                 st.image(png)
-                st.download_button("Download X Graphic", png, "tt_picks.png", "image/png")
+                st.download_button(
+                    "Download X Graphic",
+                    png,
+                    "tt_picks.png",
+                    "image/png",
+                    on_click="ignore"
+                )
+            else:
+                st.caption("Filter down to 10 or fewer matches to create the X graphic.")
 
 
     ############################################################
