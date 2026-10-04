@@ -1339,7 +1339,7 @@ with streamlit_analytics.track():
             )
 
             if len(picks_df) <= 10:
-                png = render_picks_png(picks_df)
+                png = render_picks_png(picks_df, stats=selected_stats or None)
                 st.image(png)
                 st.download_button(
                     "Download X Graphic",
