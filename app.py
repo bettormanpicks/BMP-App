@@ -924,19 +924,6 @@ with streamlit_analytics.track():
         if show_setka: selected_leagues.append("Setka")
         if show_cup: selected_leagues.append("TT Cup")
 
-        # --- Target Player Mode (outside form so thresholds appear immediately) ---
-        target_player_mode = st.sidebar.checkbox("Target Player Mode", value=False, key="target_player_mode")
-        if target_player_mode:
-            st.sidebar.markdown("**Target Thresholds**")
-            t_col1, t_col2 = st.sidebar.columns(2)
-            target_bb_min = t_col1.text_input("Min BB%", value="75", key="target_bb_min")
-            target_bb_n_min = t_col2.text_input("Min BB#", value="11", key="target_bb_n_min")
-            target_sr_min = t_col1.text_input("Min SR%", value="80", key="target_sr_min")
-            target_calculate = st.sidebar.button("Target Calculate", key="target_calculate")
-        else:
-            target_bb_min = target_bb_n_min = target_sr_min = None
-            target_calculate = False
-
         # --- Sidebar Filters ---
         with st.sidebar.form("TT Filters"):
 
@@ -1055,9 +1042,6 @@ with streamlit_analytics.track():
                         del st.session_state[key]
             if "remove_rematches" in st.session_state:
                 del st.session_state["remove_rematches"]
-            for key in ["target_player_mode", "target_bb_min", "target_bb_n_min", "target_sr_min", "target_calculate"]:
-                if key in st.session_state:
-                    del st.session_state[key]
             st.rerun()
 
         sidebar_footer()
@@ -1355,126 +1339,17 @@ with streamlit_analytics.track():
             )
 
             if len(picks_df) <= 10:
-                image_df = picks_df
-                image_stats = selected_stats or None
-                if image_df is not None:
-                    png = render_picks_png(image_df, stats=image_stats)
-                    st.image(png)
-                    st.download_button(
-                        "Download X Graphic",
-                        png,
-                        "tt_picks.png",
-                        "image/png",
-                        on_click="ignore"
-                    )
+                png = render_picks_png(picks_df, stats=selected_stats or None)
+                st.image(png)
+                st.download_button(
+                    "Download X Graphic",
+                    png,
+                    "tt_picks.png",
+                    "image/png",
+                    on_click="ignore"
+                )
             else:
                 st.caption("Filter down to 10 or fewer matches to create the X graphic.")
-
-            if target_calculate:
-                def parse_target(val):
-                    try:
-                        return float(val.strip()) if val and val.strip() else None
-                    except (ValueError, AttributeError):
-                        return None
-
-                t_bb = parse_target(target_bb_min)
-                t_bb_n = parse_target(target_bb_n_min)
-                t_sr = parse_target(target_sr_min)
-
-                def player_qualifies(bb_pct, bb_n, sr_pct):
-                    try:
-                        if t_bb is not None:
-                            if bb_pct == "--" or float(bb_pct) < t_bb:
-                                return False
-                        if t_bb_n is not None:
-                            if bb_n == "--" or float(bb_n) < t_bb_n:
-                                return False
-                        if t_sr is not None:
-                            if sr_pct == "--" or float(sr_pct) < t_sr:
-                                return False
-                    except (ValueError, TypeError):
-                        return False
-                    return True
-
-                # Build full results DataFrame from upcoming (unfiltered)
-                # by running compute_h2h_stats on all upcoming matches
-                target_rows = []
-                for _, row in upcoming.iterrows():
-                    p1, p2 = row["player1"], row["player2"]
-                    p1_display = row["player1_display"]
-                    p2_display = row["player2_display"]
-
-                    stats = compute_h2h_stats(h2h_index, p1, p2, window=recency_window)
-                    if stats is None:
-                        continue
-
-                    p1_bb = fmt_pct(stats.get("a_bounce_pct", 0), stats.get("a_bounce_n", 0))
-                    p1_bb_n = str(stats.get("a_bounce_n", 0)) if stats.get("a_bounce_n", 0) > 0 else "--"
-                    p1_sr = fmt_pct(stats.get("a_sr_pct", 0), stats.get("a_sr_n", 0))
-                    p2_bb = fmt_pct(stats.get("b_bounce_pct", 0), stats.get("b_bounce_n", 0))
-                    p2_bb_n = str(stats.get("b_bounce_n", 0)) if stats.get("b_bounce_n", 0) > 0 else "--"
-                    p2_sr = fmt_pct(stats.get("b_sr_pct", 0), stats.get("b_sr_n", 0))
-
-                    p1_bb_tr, p1_bb_fo, p1_bb_ef = get_bb_tier(p1_bb)
-                    p2_bb_tr, p2_bb_fo, p2_bb_ef = get_bb_tier(p2_bb)
-                    p1_sr_tr, p1_sr_fo, p1_sr_ef = get_sr_tier(p1_sr)
-                    p2_sr_tr, p2_sr_fo, p2_sr_ef = get_sr_tier(p2_sr)
-
-                    sweep_gap = stats.get("matches_since_last_sweep")
-                    sweep_gap_display = str(sweep_gap) if sweep_gap is not None else "--"
-
-                    p1_qualifies = player_qualifies(p1_bb, p1_bb_n, p1_sr)
-                    p2_qualifies = player_qualifies(p2_bb, p2_bb_n, p2_sr)
-
-                    for side, qualifies in [("P1", p1_qualifies), ("P2", p2_qualifies)]:
-                        if not qualifies:
-                            continue
-                        new_row = {
-                            "Match Start": row["date"].strftime("%Y-%m-%d %H:%M"),
-                            "League": row.get("league", ""),
-                        }
-                        if side == "P1":
-                            new_row["Player 1"] = p1_display
-                            new_row["Player 2"] = p2_display
-                            new_row["Target BB%"] = p1_bb
-                            new_row["Target BB#"] = p1_bb_n
-                            new_row["Target BB EF"] = p1_bb_ef
-                            new_row["Target SR%"] = p1_sr
-                            new_row["Target SR EF"] = p1_sr_ef
-                        else:
-                            # Swap so target is always on top
-                            new_row["Player 1"] = p2_display
-                            new_row["Player 2"] = p1_display
-                            new_row["Target BB%"] = p2_bb
-                            new_row["Target BB#"] = p2_bb_n
-                            new_row["Target BB EF"] = p2_bb_ef
-                            new_row["Target SR%"] = p2_sr
-                            new_row["Target SR EF"] = p2_sr_ef
-                        new_row["Sweep Gap"] = sweep_gap_display
-                        new_row["NS%"] = round(stats.get("non_sweep_pct", 0) * 100, 1)
-                        new_row["P1 W"] = stats["a_wins"] if side == "P1" else stats["b_wins"]
-                        new_row["P2 W"] = stats["b_wins"] if side == "P1" else stats["a_wins"]
-                        target_rows.append(new_row)
-
-                if not target_rows:
-                    st.warning("No players meet the target criteria.")
-                elif len(target_rows) > 16:
-                    st.warning(f"{len(target_rows)} players qualify — raise thresholds to get to 16 or fewer for the image.")
-                else:
-                    image_df = pd.DataFrame(target_rows).sort_values("Match Start")
-                    image_stats = ["Target BB%", "Target BB EF",
-                                   "Target BB#", "Target SR%",
-                                   "Target SR EF", "Sweep Gap",
-                                   "P1 W", "P2 W"]
-                    png = render_picks_png(image_df, stats=image_stats)
-                    st.image(png)
-                    st.download_button(
-                        "Download X Graphic",
-                        png,
-                        "tt_picks_target.png",
-                        "image/png",
-                        on_click="ignore"
-                    )
 
 
     ############################################################
