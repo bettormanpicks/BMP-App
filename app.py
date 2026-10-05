@@ -924,6 +924,17 @@ with streamlit_analytics.track():
         if show_setka: selected_leagues.append("Setka")
         if show_cup: selected_leagues.append("TT Cup")
 
+        # --- Target Player Mode (outside form so thresholds appear immediately) ---
+        target_player_mode = st.sidebar.checkbox("Target Player Mode", value=False, key="target_player_mode")
+        if target_player_mode:
+            st.sidebar.markdown("**Target Thresholds**")
+            t_col1, t_col2 = st.sidebar.columns(2)
+            target_bb_min = t_col1.text_input("Min BB%", value="75", key="target_bb_min")
+            target_bb_n_min = t_col2.text_input("Min BB#", value="11", key="target_bb_n_min")
+            target_sr_min = t_col1.text_input("Min SR%", value="80", key="target_sr_min")
+        else:
+            target_bb_min = target_bb_n_min = target_sr_min = None
+
         # --- Sidebar Filters ---
         with st.sidebar.form("TT Filters"):
 
@@ -940,7 +951,6 @@ with streamlit_analytics.track():
             )
 
             remove_rematches = st.checkbox("Remove Rematches", value=False, key="remove_rematches")
-            target_player_mode = st.checkbox("Target Player Mode", value=False, key="target_player_mode")
 
             # --- Stat Selection ---
             stat_options = [
@@ -1043,8 +1053,9 @@ with streamlit_analytics.track():
                         del st.session_state[key]
             if "remove_rematches" in st.session_state:
                 del st.session_state["remove_rematches"]
-            if "target_player_mode" in st.session_state:
-                del st.session_state["target_player_mode"]
+            for key in ["target_player_mode", "target_bb_min", "target_bb_n_min", "target_sr_min"]:
+                if key in st.session_state:
+                    del st.session_state[key]
             st.rerun()
 
         sidebar_footer()
@@ -1345,31 +1356,26 @@ with streamlit_analytics.track():
 
                 # --- Target Player Mode: build one row per qualifying side ---
                 if target_player_mode:
-                    # Define which stats to check for qualification
-                    # A player "qualifies" if they have numeric values in BB% and SR%
-                    # (i.e. not '--'), allowing the image to show their stats neutrally
-                    target_rows = []
+                    def parse_target(val):
+                        try:
+                            return float(val.strip()) if val.strip() else None
+                        except (ValueError, AttributeError):
+                            return None
 
-                    # Get the filter criteria from stat_thresholds
-                    # We check both P1 and P2 sides independently
-                    bb_min = stat_thresholds.get("P1 B%", {}).get("min") or \
-                             stat_thresholds.get("P2 B%", {}).get("min")
-                    bb_n_min = stat_thresholds.get("P1 BB#", {}).get("min") or \
-                               stat_thresholds.get("P2 BB#", {}).get("min")
-                    sr_min = stat_thresholds.get("P1 SR%", {}).get("min") or \
-                             stat_thresholds.get("P2 SR%", {}).get("min")
+                    t_bb = parse_target(target_bb_min)
+                    t_bb_n = parse_target(target_bb_n_min)
+                    t_sr = parse_target(target_sr_min)
 
                     def player_qualifies(bb_pct, bb_n, sr_pct):
-                        """Check if a player meets the active threshold criteria."""
                         try:
-                            if bb_min is not None:
-                                if bb_pct == "--" or float(bb_pct) < bb_min:
+                            if t_bb is not None:
+                                if bb_pct == "--" or float(bb_pct) < t_bb:
                                     return False
-                            if bb_n_min is not None:
-                                if bb_n == "--" or float(bb_n) < bb_n_min:
+                            if t_bb_n is not None:
+                                if bb_n == "--" or float(bb_n) < t_bb_n:
                                     return False
-                            if sr_min is not None:
-                                if sr_pct == "--" or float(sr_pct) < sr_min:
+                            if t_sr is not None:
+                                if sr_pct == "--" or float(sr_pct) < t_sr:
                                     return False
                         except (ValueError, TypeError):
                             return False
