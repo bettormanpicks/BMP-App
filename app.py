@@ -1355,16 +1355,16 @@ with streamlit_analytics.track():
             if len(picks_df) <= 10:
 
                 # --- Target Player Mode: build one row per qualifying side ---
-                if target_player_mode:
+                if st.session_state.get("target_player_mode", False):
                     def parse_target(val):
                         try:
                             return float(val.strip()) if val.strip() else None
                         except (ValueError, AttributeError):
                             return None
 
-                    t_bb = parse_target(target_bb_min)
-                    t_bb_n = parse_target(target_bb_n_min)
-                    t_sr = parse_target(target_sr_min)
+                    t_bb = parse_target(st.session_state.get("target_bb_min", ""))
+                    t_bb_n = parse_target(st.session_state.get("target_bb_n_min", ""))
+                    t_sr = parse_target(st.session_state.get("target_sr_min", ""))
 
                     def player_qualifies(bb_pct, bb_n, sr_pct):
                         try:
