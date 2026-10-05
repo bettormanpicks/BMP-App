@@ -1355,6 +1355,11 @@ with streamlit_analytics.track():
             if len(picks_df) <= 10:
 
                 # --- Target Player Mode: build one row per qualifying side ---
+                target_rows = []
+                st.write("DEBUG target mode:", st.session_state.get("target_player_mode"), 
+                         "bb:", st.session_state.get("target_bb_min"),
+                         "bb#:", st.session_state.get("target_bb_n_min"),
+                         "sr:", st.session_state.get("target_sr_min"))
                 if st.session_state.get("target_player_mode", False):
                     def parse_target(val):
                         try:
@@ -1383,14 +1388,14 @@ with streamlit_analytics.track():
 
                     for _, row in picks_df.iterrows():
                         p1_qualifies = player_qualifies(
-                            row.get("P1 BB%", "--"),
-                            row.get("P1 BB#", "--"),
-                            row.get("P1 SR%", "--")
+                            row["P1 BB%"] if "P1 BB%" in picks_df.columns else "--",
+                            row["P1 BB#"] if "P1 BB#" in picks_df.columns else "--",
+                            row["P1 SR%"] if "P1 SR%" in picks_df.columns else "--"
                         )
                         p2_qualifies = player_qualifies(
-                            row.get("P2 BB%", "--"),
-                            row.get("P2 BB#", "--"),
-                            row.get("P2 SR%", "--")
+                            row["P2 BB%"] if "P2 BB%" in picks_df.columns else "--",
+                            row["P2 BB#"] if "P2 BB#" in picks_df.columns else "--",
+                            row["P2 SR%"] if "P2 SR%" in picks_df.columns else "--"
                         )
 
                         for side, qualifies in [("P1", p1_qualifies), ("P2", p2_qualifies)]:
@@ -1398,19 +1403,19 @@ with streamlit_analytics.track():
                                 continue
                             new_row = row.copy()
                             if side == "P1":
-                                new_row["Target"] = row.get("Player 1", "")
-                                new_row["Target BB%"] = row.get("P1 B%", "--")
-                                new_row["Target BB#"] = row.get("P1 BB#", "--")
-                                new_row["Target BB EF"] = row.get("P1 BB EF", "--")
-                                new_row["Target SR%"] = row.get("P1 SR%", "--")
-                                new_row["Target SR EF"] = row.get("P1 SR EF", "--")
+                                new_row["Target"] = row["Player 1"]
+                                new_row["Target BB%"] = row["P1 BB%"]
+                                new_row["Target BB#"] = row["P1 BB#"]
+                                new_row["Target BB EF"] = row["P1 BB EF"]
+                                new_row["Target SR%"] = row["P1 SR%"]
+                                new_row["Target SR EF"] = row["P1 SR EF"]
                             else:
-                                new_row["Target"] = row.get("Player 2", "")
-                                new_row["Target BB%"] = row.get("P2 BB%", "--")
-                                new_row["Target BB#"] = row.get("P2 BB#", "--")
-                                new_row["Target BB EF"] = row.get("P2 BB EF", "--")
-                                new_row["Target SR%"] = row.get("P2 SR%", "--")
-                                new_row["Target SR EF"] = row.get("P2 SR EF", "--")
+                                new_row["Target"] = row["Player 2"]
+                                new_row["Target BB%"] = row["P2 BB%"]
+                                new_row["Target BB#"] = row["P2 BB#"]
+                                new_row["Target BB EF"] = row["P2 BB EF"]
+                                new_row["Target SR%"] = row["P2 SR%"]
+                                new_row["Target SR EF"] = row["P2 SR EF"]
                             target_rows.append(new_row)
 
                     if target_rows:
