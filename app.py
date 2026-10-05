@@ -932,8 +932,10 @@ with streamlit_analytics.track():
             target_bb_min = t_col1.text_input("Min BB%", value="75", key="target_bb_min")
             target_bb_n_min = t_col2.text_input("Min BB#", value="11", key="target_bb_n_min")
             target_sr_min = t_col1.text_input("Min SR%", value="80", key="target_sr_min")
+            target_calculate = st.sidebar.button("Target Calculate", key="target_calculate")
         else:
             target_bb_min = target_bb_n_min = target_sr_min = None
+            target_calculate = False
 
         # --- Sidebar Filters ---
         with st.sidebar.form("TT Filters"):
@@ -1053,7 +1055,7 @@ with streamlit_analytics.track():
                         del st.session_state[key]
             if "remove_rematches" in st.session_state:
                 del st.session_state["remove_rematches"]
-            for key in ["target_player_mode", "target_bb_min", "target_bb_n_min", "target_sr_min"]:
+            for key in ["target_player_mode", "target_bb_min", "target_bb_n_min", "target_sr_min", "target_calculate"]:
                 if key in st.session_state:
                     del st.session_state[key]
             st.rerun()
@@ -1353,86 +1355,9 @@ with streamlit_analytics.track():
             )
 
             if len(picks_df) <= 10:
-
-                # --- Target Player Mode: build one row per qualifying side ---
-                target_rows = []
-                st.write("DEBUG target mode:", st.session_state.get("target_player_mode"), 
-                         "bb:", st.session_state.get("target_bb_min"),
-                         "bb#:", st.session_state.get("target_bb_n_min"),
-                         "sr:", st.session_state.get("target_sr_min"))
-                if st.session_state.get("target_player_mode", False):
-                    def parse_target(val):
-                        try:
-                            return float(val.strip()) if val.strip() else None
-                        except (ValueError, AttributeError):
-                            return None
-
-                    t_bb = parse_target(st.session_state.get("target_bb_min", ""))
-                    t_bb_n = parse_target(st.session_state.get("target_bb_n_min", ""))
-                    t_sr = parse_target(st.session_state.get("target_sr_min", ""))
-
-                    def player_qualifies(bb_pct, bb_n, sr_pct):
-                        try:
-                            if t_bb is not None:
-                                if bb_pct == "--" or float(bb_pct) < t_bb:
-                                    return False
-                            if t_bb_n is not None:
-                                if bb_n == "--" or float(bb_n) < t_bb_n:
-                                    return False
-                            if t_sr is not None:
-                                if sr_pct == "--" or float(sr_pct) < t_sr:
-                                    return False
-                        except (ValueError, TypeError):
-                            return False
-                        return True
-
-                    for _, row in picks_df.iterrows():
-                        p1_qualifies = player_qualifies(
-                            row["P1 BB%"] if "P1 BB%" in picks_df.columns else "--",
-                            row["P1 BB#"] if "P1 BB#" in picks_df.columns else "--",
-                            row["P1 SR%"] if "P1 SR%" in picks_df.columns else "--"
-                        )
-                        p2_qualifies = player_qualifies(
-                            row["P2 BB%"] if "P2 BB%" in picks_df.columns else "--",
-                            row["P2 BB#"] if "P2 BB#" in picks_df.columns else "--",
-                            row["P2 SR%"] if "P2 SR%" in picks_df.columns else "--"
-                        )
-
-                        for side, qualifies in [("P1", p1_qualifies), ("P2", p2_qualifies)]:
-                            if not qualifies:
-                                continue
-                            new_row = row.copy()
-                            if side == "P1":
-                                new_row["Target BB%"] = row["P1 BB%"]
-                                new_row["Target BB#"] = row["P1 BB#"]
-                                new_row["Target BB EF"] = row["P1 BB EF"]
-                                new_row["Target SR%"] = row["P1 SR%"]
-                                new_row["Target SR EF"] = row["P1 SR EF"]
-                            else:
-                                # Swap P1/P2 so target (P2) is always on top
-                                new_row["Player 1"] = row["Player 2"]
-                                new_row["Player 2"] = row["Player 1"]
-                                new_row["Target BB%"] = row["P2 BB%"]
-                                new_row["Target BB#"] = row["P2 BB#"]
-                                new_row["Target BB EF"] = row["P2 BB EF"]
-                                new_row["Target SR%"] = row["P2 SR%"]
-                                new_row["Target SR EF"] = row["P2 SR EF"]
-                            target_rows.append(new_row)
-
-                    if target_rows:
-                        image_df = pd.DataFrame(target_rows).sort_values("Match Start")
-                        image_stats = ["Target BB%", "Target BB EF",
-                                       "Target BB#", "Target SR%",
-                                       "Target SR EF", "Sweep Gap",
-                                       "P1 W", "P2 W"]
-                    else:
-                        st.warning("No players meet the target criteria.")
-                        image_df = None
-                else:
-                    image_df = picks_df
-                    image_stats = selected_stats or None
-
-                if image_df is not None and len(image_df) <= 10:
+                image_df = picks_df
+                image_stats = selected_stats or None
+                if image_df is not None:
                     png = render_picks_png(image_df, stats=image_stats)
                     st.image(png)
                     st.download_button(
@@ -1442,8 +1367,114 @@ with streamlit_analytics.track():
                         "image/png",
                         on_click="ignore"
                     )
-                elif image_df is not None:
-                    st.caption("Filter down to 10 or fewer matches to create the X graphic.")
+            else:
+                st.caption("Filter down to 10 or fewer matches to create the X graphic.")
+
+            if target_calculate:
+                def parse_target(val):
+                    try:
+                        return float(val.strip()) if val and val.strip() else None
+                    except (ValueError, AttributeError):
+                        return None
+
+                t_bb = parse_target(target_bb_min)
+                t_bb_n = parse_target(target_bb_n_min)
+                t_sr = parse_target(target_sr_min)
+
+                def player_qualifies(bb_pct, bb_n, sr_pct):
+                    try:
+                        if t_bb is not None:
+                            if bb_pct == "--" or float(bb_pct) < t_bb:
+                                return False
+                        if t_bb_n is not None:
+                            if bb_n == "--" or float(bb_n) < t_bb_n:
+                                return False
+                        if t_sr is not None:
+                            if sr_pct == "--" or float(sr_pct) < t_sr:
+                                return False
+                    except (ValueError, TypeError):
+                        return False
+                    return True
+
+                # Build full results DataFrame from upcoming (unfiltered)
+                # by running compute_h2h_stats on all upcoming matches
+                target_rows = []
+                for _, row in upcoming.iterrows():
+                    p1, p2 = row["player1"], row["player2"]
+                    p1_display = row["player1_display"]
+                    p2_display = row["player2_display"]
+
+                    stats = compute_h2h_stats(h2h_index, p1, p2, window=recency_window)
+                    if stats is None:
+                        continue
+
+                    p1_bb = fmt_pct(stats.get("a_bounce_pct", 0), stats.get("a_bounce_n", 0))
+                    p1_bb_n = str(stats.get("a_bounce_n", 0)) if stats.get("a_bounce_n", 0) > 0 else "--"
+                    p1_sr = fmt_pct(stats.get("a_sr_pct", 0), stats.get("a_sr_n", 0))
+                    p2_bb = fmt_pct(stats.get("b_bounce_pct", 0), stats.get("b_bounce_n", 0))
+                    p2_bb_n = str(stats.get("b_bounce_n", 0)) if stats.get("b_bounce_n", 0) > 0 else "--"
+                    p2_sr = fmt_pct(stats.get("b_sr_pct", 0), stats.get("b_sr_n", 0))
+
+                    p1_bb_tr, p1_bb_fo, p1_bb_ef = get_bb_tier(p1_bb)
+                    p2_bb_tr, p2_bb_fo, p2_bb_ef = get_bb_tier(p2_bb)
+                    p1_sr_tr, p1_sr_fo, p1_sr_ef = get_sr_tier(p1_sr)
+                    p2_sr_tr, p2_sr_fo, p2_sr_ef = get_sr_tier(p2_sr)
+
+                    sweep_gap = stats.get("matches_since_last_sweep")
+                    sweep_gap_display = str(sweep_gap) if sweep_gap is not None else "--"
+
+                    p1_qualifies = player_qualifies(p1_bb, p1_bb_n, p1_sr)
+                    p2_qualifies = player_qualifies(p2_bb, p2_bb_n, p2_sr)
+
+                    for side, qualifies in [("P1", p1_qualifies), ("P2", p2_qualifies)]:
+                        if not qualifies:
+                            continue
+                        new_row = {
+                            "Match Start": row["date"].strftime("%Y-%m-%d %H:%M"),
+                            "League": row.get("league", ""),
+                        }
+                        if side == "P1":
+                            new_row["Player 1"] = p1_display
+                            new_row["Player 2"] = p2_display
+                            new_row["Target BB%"] = p1_bb
+                            new_row["Target BB#"] = p1_bb_n
+                            new_row["Target BB EF"] = p1_bb_ef
+                            new_row["Target SR%"] = p1_sr
+                            new_row["Target SR EF"] = p1_sr_ef
+                        else:
+                            # Swap so target is always on top
+                            new_row["Player 1"] = p2_display
+                            new_row["Player 2"] = p1_display
+                            new_row["Target BB%"] = p2_bb
+                            new_row["Target BB#"] = p2_bb_n
+                            new_row["Target BB EF"] = p2_bb_ef
+                            new_row["Target SR%"] = p2_sr
+                            new_row["Target SR EF"] = p2_sr_ef
+                        new_row["Sweep Gap"] = sweep_gap_display
+                        new_row["NS%"] = round(stats.get("non_sweep_pct", 0) * 100, 1)
+                        new_row["P1 W"] = stats["a_wins"] if side == "P1" else stats["b_wins"]
+                        new_row["P2 W"] = stats["b_wins"] if side == "P1" else stats["a_wins"]
+                        target_rows.append(new_row)
+
+                if not target_rows:
+                    st.warning("No players meet the target criteria.")
+                elif len(target_rows) > 16:
+                    st.warning(f"{len(target_rows)} players qualify — raise thresholds to get to 16 or fewer for the image.")
+                else:
+                    image_df = pd.DataFrame(target_rows).sort_values("Match Start")
+                    image_stats = ["Target BB%", "Target BB EF",
+                                   "Target BB#", "Target SR%",
+                                   "Target SR EF", "Sweep Gap",
+                                   "P1 W", "P2 W"]
+                    png = render_picks_png(image_df, stats=image_stats)
+                    st.image(png)
+                    st.download_button(
+                        "Download X Graphic",
+                        png,
+                        "tt_picks_target.png",
+                        "image/png",
+                        on_click="ignore"
+                    )
 
 
     ############################################################
