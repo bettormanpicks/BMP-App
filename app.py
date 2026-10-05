@@ -940,6 +940,7 @@ with streamlit_analytics.track():
             )
 
             remove_rematches = st.checkbox("Remove Rematches", value=False, key="remove_rematches")
+            target_player_mode = st.checkbox("Target Player Mode", value=False, key="target_player_mode")
 
             # --- Stat Selection ---
             stat_options = [
@@ -1042,6 +1043,8 @@ with streamlit_analytics.track():
                         del st.session_state[key]
             if "remove_rematches" in st.session_state:
                 del st.session_state["remove_rematches"]
+            if "target_player_mode" in st.session_state:
+                del st.session_state["target_player_mode"]
             st.rerun()
 
         sidebar_footer()
@@ -1339,17 +1342,96 @@ with streamlit_analytics.track():
             )
 
             if len(picks_df) <= 10:
-                png = render_picks_png(picks_df, stats=selected_stats or None)
-                st.image(png)
-                st.download_button(
-                    "Download X Graphic",
-                    png,
-                    "tt_picks.png",
-                    "image/png",
-                    on_click="ignore"
-                )
-            else:
-                st.caption("Filter down to 10 or fewer matches to create the X graphic.")
+
+                # --- Target Player Mode: build one row per qualifying side ---
+                if target_player_mode:
+                    # Define which stats to check for qualification
+                    # A player "qualifies" if they have numeric values in BB% and SR%
+                    # (i.e. not '--'), allowing the image to show their stats neutrally
+                    target_rows = []
+
+                    # Get the filter criteria from stat_thresholds
+                    # We check both P1 and P2 sides independently
+                    bb_min = stat_thresholds.get("P1 B%", {}).get("min") or \
+                             stat_thresholds.get("P2 B%", {}).get("min")
+                    bb_n_min = stat_thresholds.get("P1 BB#", {}).get("min") or \
+                               stat_thresholds.get("P2 BB#", {}).get("min")
+                    sr_min = stat_thresholds.get("P1 SR%", {}).get("min") or \
+                             stat_thresholds.get("P2 SR%", {}).get("min")
+
+                    def player_qualifies(bb_pct, bb_n, sr_pct):
+                        """Check if a player meets the active threshold criteria."""
+                        try:
+                            if bb_min is not None:
+                                if bb_pct == "--" or float(bb_pct) < bb_min:
+                                    return False
+                            if bb_n_min is not None:
+                                if bb_n == "--" or float(bb_n) < bb_n_min:
+                                    return False
+                            if sr_min is not None:
+                                if sr_pct == "--" or float(sr_pct) < sr_min:
+                                    return False
+                        except (ValueError, TypeError):
+                            return False
+                        return True
+
+                    for _, row in picks_df.iterrows():
+                        p1_qualifies = player_qualifies(
+                            row.get("P1 BB%", "--"),
+                            row.get("P1 BB#", "--"),
+                            row.get("P1 SR%", "--")
+                        )
+                        p2_qualifies = player_qualifies(
+                            row.get("P2 BB%", "--"),
+                            row.get("P2 BB#", "--"),
+                            row.get("P2 SR%", "--")
+                        )
+
+                        for side, qualifies in [("P1", p1_qualifies), ("P2", p2_qualifies)]:
+                            if not qualifies:
+                                continue
+                            new_row = row.copy()
+                            if side == "P1":
+                                new_row["Target"] = row.get("Player 1", "")
+                                new_row["Target BB%"] = row.get("P1 B%", "--")
+                                new_row["Target BB#"] = row.get("P1 BB#", "--")
+                                new_row["Target BB EF"] = row.get("P1 BB EF", "--")
+                                new_row["Target SR%"] = row.get("P1 SR%", "--")
+                                new_row["Target SR EF"] = row.get("P1 SR EF", "--")
+                            else:
+                                new_row["Target"] = row.get("Player 2", "")
+                                new_row["Target BB%"] = row.get("P2 BB%", "--")
+                                new_row["Target BB#"] = row.get("P2 BB#", "--")
+                                new_row["Target BB EF"] = row.get("P2 BB EF", "--")
+                                new_row["Target SR%"] = row.get("P2 SR%", "--")
+                                new_row["Target SR EF"] = row.get("P2 SR EF", "--")
+                            target_rows.append(new_row)
+
+                    if target_rows:
+                        image_df = pd.DataFrame(target_rows).sort_values("Match Start")
+                        image_stats = ["Target BB%", "Target BB EF",
+                                       "Target BB#", "Target SR%",
+                                       "Target SR EF", "Sweep Gap",
+                                       "P1 W", "P2 W"]
+                    else:
+                        st.warning("No players meet the target criteria.")
+                        image_df = None
+                else:
+                    image_df = picks_df
+                    image_stats = selected_stats or None
+
+                if image_df is not None and len(image_df) <= 10:
+                    png = render_picks_png(image_df, stats=image_stats)
+                    st.image(png)
+                    st.download_button(
+                        "Download X Graphic",
+                        png,
+                        "tt_picks.png",
+                        "image/png",
+                        on_click="ignore"
+                    )
+                elif image_df is not None:
+                    st.caption("Filter down to 10 or fewer matches to create the X graphic.")
 
 
     ############################################################
