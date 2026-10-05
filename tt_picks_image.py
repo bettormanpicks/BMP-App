@@ -21,7 +21,9 @@ FROM PYTHON / STREAMLIT (df is the filtered DataFrame behind your table)
 INPUT
     A CSV, a pandas DataFrame, or a list of dicts, one row per match, with
     Match Start, League, Player 1 and Player 2 columns plus any stat columns.
-    The date comes from the Match Start column unless you pass one.
+    The date comes from the Match Start column unless you pass one: it is the
+    day most of the matches fall on (a tie goes to the later day). A match on
+    a different day gets that day noted next to its league.
 
 WHICH STATS ARE SHOWN
     stats = a list of column names, shown left to right, one box each.
@@ -72,6 +74,8 @@ ACCENT2_LT = (238, 240, 242)   # labels on silver boxes
 ROW_LINE = (0, 176, 40)        # outline of each match row
 TIME_COLOR = (0, 255, 36)
 LEAGUE_COLOR = (206, 210, 214)
+OFF_DAY_COLOR = (255, 196, 60)  # date note on a match that is not on the banner's day
+SHOW_OFF_DAY = True            # e.g. "TT Elite · Oct 4" on a 23:30 match the night before
 WHITE = (255, 255, 255)
 MUTED = (172, 177, 182)
 PANEL_FILL = (17, 17, 17, 236)
@@ -236,13 +240,27 @@ def _date_text(d) -> str:
     return f"{d.strftime('%B')} {d.day}, {d.year}"
 
 
-def _date_from_rows(rows):
-    """Use the date in the first Match Start value when no date is passed."""
-    v = rows[0].get("time")
+def _as_date(v):
+    """A date from a date/datetime or from text containing YYYY-MM-DD, else None."""
     if hasattr(v, "year"):
-        return v
-    hit = re.search(r"\d{4}-\d{2}-\d{2}", str(v))
-    return hit.group(0) if hit else None
+        return date(v.year, v.month, v.day)
+    hit = re.search(r"(\d{4})-(\d{2})-(\d{2})", str(v))
+    try:
+        return date(*map(int, hit.groups())) if hit else None
+    except ValueError:
+        return None
+
+
+def _date_from_rows(rows):
+    """The slate's date when none is passed: the day most matches fall on.
+    A tie goes to the later day, so a late-night match the evening before
+    does not pull the banner back a day."""
+    counts = {}
+    for m in rows:
+        d = _as_date(m.get("time"))
+        if d:
+            counts[d] = counts.get(d, 0) + 1
+    return max(counts, key=lambda d: (counts[d], d)) if counts else None
 
 
 def _records(matches) -> list:
@@ -535,6 +553,7 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
     # ── date pill ──
     d = ImageDraw.Draw(img)
     dtxt = _date_text(picks_date)
+    banner_day = _as_date(picks_date)
     df = _font(F_ITALIC, 27 * k)
     pw, ph, py = df.getlength(dtxt) + P(84), P(44), P(228)
     px0, px1 = cx - pw / 2, cx + pw / 2
@@ -596,7 +615,17 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
                             outline=ROW_LINE, width=P(2))
         _clock(d, P(X0 + 52), P(mid), P(25 * s), k, ACCENT_HI)
         d.text((P(X0 + 96), P(mid - 11 * s)), _time(m.get("time")), font=f_time, fill=TIME_COLOR, anchor="lm")
-        d.text((P(X0 + 98), P(mid + 25 * s)), str(m.get("league", "")), font=f_league, fill=LEAGUE_COLOR, anchor="lm")
+        league = str(m.get("league", ""))
+        lx, ly = P(X0 + 98), P(mid + 25 * s)
+        day = _as_date(m.get("time"))
+        if SHOW_OFF_DAY and banner_day and day and day != banner_day:
+            note = f"{day.strftime('%b')} {day.day}"
+            lead = f"{league} \u00b7 " if league else ""
+            f_lg = _fit(F_SEMI, lead + note, f_league.size, P(286 - 12) - lx)
+            d.text((lx, ly), lead, font=f_lg, fill=LEAGUE_COLOR, anchor="lm")
+            d.text((lx + f_lg.getlength(lead), ly), note, font=f_lg, fill=OFF_DAY_COLOR, anchor="lm")
+        else:
+            d.text((lx, ly), league, font=f_league, fill=LEAGUE_COLOR, anchor="lm")
         d.line([(P(286), P(y0 + 16 * s)), (P(286), P(y0 + row_h - 16 * s))], fill=ROW_LINE + (170,), width=P(1.5))
 
         name_cx, name_w = P(473), P(340)
