@@ -1098,42 +1098,53 @@ with streamlit_analytics.track():
 
                 # --- BB% and SR% tier calibration tables ---
                 # Values from backtest: Reading → (True Rate, Fair Odds, Edge Floor)
+                # Ranges are low <= value < high, so decimals such as 59.09 or 69.57 never fall between tiers.
                 BB_TIERS = [
-                    (90, 100, 74.3, "-289", "-237"),
-                    (80,  89, 62.8, "-169", "-148"),
-                    (70,  79, 59.2, "-145", "-131"),
-                    (60,  69, 58.1, "-139", "-127"),
+                    (90, 100.01, 74.3, "-289", "-237"),
+                    (80,  90,    62.8, "-169", "-148"),
+                    (70,  80,    59.2, "-145", "-131"),
+                    (60,  70,    58.1, "-139", "-127"),
+                    (40,  60,    52.8, "-113", "-104"),
                 ]
 
                 SR_TIERS = [
-                    (80, 100, 58.3, "-140", "-122"),
-                    (60,  79, 55.1, "-123", "-105"),
-                    ( 0,  59, 49.7, "+101", "+125"),
+                    (80, 100.01, 58.3, "-140", "-122"),
+                    (60,  80,    55.1, "-123", "-105"),
+                    ( 0,  60,    49.7, "+101", "+125"),
                 ]
 
-                def get_bb_tier(pct):
+                # Leg 2 tiers used only when the player's BB% is in the 40-59 tier.
+                # These players have a lower true set 3 rate than the general SR% tiers.
+                # SR% under 60 is too thin to price, so it returns "--" (pass).
+                SR_TIERS_LOW_BB = [
+                    (80, 100.01, 57.5, "-135", "-119"),
+                    (60,  80,    49.1, "+104", "+124"),
+                ]
+
+                def _lookup(tiers, pct):
                     if pct == "--":
                         return "--", "--", "--"
                     try:
                         val = float(pct)
                     except (ValueError, TypeError):
                         return "--", "--", "--"
-                    for low, high, tr, fo, ef in BB_TIERS:
-                        if low <= val <= high:
+                    for low, high, tr, fo, ef in tiers:
+                        if low <= val < high:
                             return str(tr), fo, ef
                     return "--", "--", "--"
 
-                def get_sr_tier(pct):
-                    if pct == "--":
-                        return "--", "--", "--"
+                def get_bb_tier(pct):
+                    return _lookup(BB_TIERS, pct)
+
+                def get_sr_tier(pct, bb_pct=None):
+                    # If this player's BB% is 40-59, use the low-BB leg 2 table.
                     try:
-                        val = float(pct)
+                        bb_val = float(bb_pct)
                     except (ValueError, TypeError):
-                        return "--", "--", "--"
-                    for low, high, tr, fo, ef in SR_TIERS:
-                        if low <= val <= high:
-                            return str(tr), fo, ef
-                    return "--", "--", "--"
+                        bb_val = None
+                    if bb_val is not None and 40 <= bb_val < 60:
+                        return _lookup(SR_TIERS_LOW_BB, pct)
+                    return _lookup(SR_TIERS, pct)
 
                 rows = []
                 for _, row in upcoming.iterrows():
@@ -1200,8 +1211,8 @@ with streamlit_analytics.track():
 
                     p1_bb_tr, p1_bb_fo, p1_bb_ef = get_bb_tier(row_dict.get("P1 B%"))
                     p2_bb_tr, p2_bb_fo, p2_bb_ef = get_bb_tier(row_dict.get("P2 B%"))
-                    p1_sr_tr, p1_sr_fo, p1_sr_ef = get_sr_tier(row_dict.get("P1 SR%"))
-                    p2_sr_tr, p2_sr_fo, p2_sr_ef = get_sr_tier(row_dict.get("P2 SR%"))
+                    p1_sr_tr, p1_sr_fo, p1_sr_ef = get_sr_tier(row_dict.get("P1 SR%"), row_dict.get("P1 B%"))
+                    p2_sr_tr, p2_sr_fo, p2_sr_ef = get_sr_tier(row_dict.get("P2 SR%"), row_dict.get("P2 B%"))
 
                     row_dict.update({
                         "P1 BB TR": p1_bb_tr,
