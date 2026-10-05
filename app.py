@@ -1403,14 +1403,15 @@ with streamlit_analytics.track():
                                 continue
                             new_row = row.copy()
                             if side == "P1":
-                                new_row["Target"] = row["Player 1"]
                                 new_row["Target BB%"] = row["P1 BB%"]
                                 new_row["Target BB#"] = row["P1 BB#"]
                                 new_row["Target BB EF"] = row["P1 BB EF"]
                                 new_row["Target SR%"] = row["P1 SR%"]
                                 new_row["Target SR EF"] = row["P1 SR EF"]
                             else:
-                                new_row["Target"] = row["Player 2"]
+                                # Swap P1/P2 so target (P2) is always on top
+                                new_row["Player 1"] = row["Player 2"]
+                                new_row["Player 2"] = row["Player 1"]
                                 new_row["Target BB%"] = row["P2 BB%"]
                                 new_row["Target BB#"] = row["P2 BB#"]
                                 new_row["Target BB EF"] = row["P2 BB EF"]
