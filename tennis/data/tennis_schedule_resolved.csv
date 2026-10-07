@@ -1,10 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-10-07,Live,China Open,Alina Charaeva,Zheng Qinwen,wta_163,wta_23,WTA,Hard
-2026-10-07,12:40,China Open,Ann Li,Elina Svitolina,wta_36,wta_9,WTA,Hard
 2026-10-07,Final,China Open,Coco Gauff,Elise Mertens,wta_4,wta_22,WTA,Hard
-2026-10-07,Live,Rolex Shanghai Masters,Mattia Bellucci,Zhou Yi,atp_109,atp_220,ATP,Hard
-2026-10-07,Live,Rolex Shanghai Masters,Arthur Fery,Marin Cilic,atp_156,atp_52,ATP,Hard
-2026-10-07,12:25,Rolex Shanghai Masters,Holger Rune,Daniel Altmaier,atp_18,atp_54,ATP,Hard
+2026-10-07,Final,China Open,Ann Li,Elina Svitolina,wta_36,wta_9,WTA,Hard
+2026-10-07,Final,China Open,Alina Charaeva,Zheng Qinwen,wta_163,wta_23,WTA,Hard
 2026-10-07,04:00,Rolex Shanghai Masters,Kimmer Coppejans,Stefanos Tsitsipas,atp_248,atp_32,ATP,Hard
 2026-10-07,04:00,Rolex Shanghai Masters,Nuno Borges,Facundo Diaz Acosta,atp_44,atp_284,ATP,Hard
 2026-10-07,04:00,Rolex Shanghai Masters,Camilo Ugo Carabelli,Ilia Simakin,atp_45,atp_217,ATP,Hard
@@ -15,24 +12,28 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-07,05:30,Rolex Shanghai Masters,Thiago Agustin Tirante,Hamad Medjedovic,atp_92,atp_97,ATP,Hard
 2026-10-07,05:30,Rolex Shanghai Masters,Mariano Navone,Pablo Carreno Busta,atp_74,atp_122,ATP,Hard
 2026-10-07,05:30,Rolex Shanghai Masters,Hubert Hurkacz,James Duckworth,atp_71,atp_80,ATP,Hard
+2026-10-07,Final,Rolex Shanghai Masters,Holger Rune,Daniel Altmaier,atp_18,atp_54,ATP,Hard
+2026-10-07,Final,Rolex Shanghai Masters,Arthur Fery,Marin Cilic,atp_156,atp_52,ATP,Hard
+2026-10-07,Final,Rolex Shanghai Masters,Mattia Bellucci,Zhou Yi,atp_109,atp_220,ATP,Hard
 2026-10-07,Final,Rolex Shanghai Masters,Wu Yibing,Michael Zheng,atp_145,atp_152,ATP,Hard
 2026-10-07,Final,Rolex Shanghai Masters,Quentin Halys,Chak Lam Coleman Wong,atp_72,atp_137,ATP,Hard
 2026-10-07,Final,Rolex Shanghai Masters,Rinky Hijikata,Roman Safiullin,atp_112,atp_185,ATP,Hard
 2026-10-07,Final,Rolex Shanghai Masters,Marco Trungelliti,Rei Sakamoto,atp_131,atp_173,ATP,Hard
-2026-10-07,Live,Samsun Open,Polina Iatcenko,Dalma Galfi,wta_160,wta_86,WTA,
-2026-10-07,14:30,Samsun Open,Viktoria Hruncakova,Himeno Sakatsume,wta_218,wta_135,WTA,
 2026-10-07,Final,Samsun Open,Elena Pridankina,Anna Blinkova,wta_192,wta_65,WTA,
 2026-10-07,Final,Samsun Open,Fiona Crawley,Oksana Selekhmeteva,wta_201,wta_74,WTA,
 2026-10-07,Final,Samsun Open,Leolia Jeanjean,Mariam Bolkvadze,wta_115,wta_388,WTA,
+2026-10-07,Final,Samsun Open,Viktoria Hruncakova,Himeno Sakatsume,wta_218,wta_135,WTA,
 2026-10-07,Final,Samsun Open,Lucrezia Stefanini,Noma Noha Akugue,wta_136,wta_255,WTA,
-2026-10-07,Final,Samsun Open,Cagla Buyukakcay,Linda Klimovicova,wta_376,wta_118,WTA,
+2026-10-07,Final,Samsun Open,Polina Iatcenko,Dalma Galfi,wta_160,wta_86,WTA,
+2026-10-07,Final,Samsun Open,Cagla Buyukakcay,Linda Klimovicova,wta_376,wta_133,WTA,
 2026-10-07,Final,Samsun Open,Elvin Egribel,Caroline Werner,wta_9100,wta_234,ATP,
 2026-10-07,02:00,Suzhou Open,Elvina Kalieva,Tamara Korpatsch,wta_158,wta_106,WTA,
 2026-10-07,02:00,Suzhou Open,Bai Zhuoxuan,Emerson Jones,wta_379,wta_152,WTA,
 2026-10-07,03:30,Suzhou Open,Oleksandra Oliynykova,Aliona Falei,wta_71,wta_356,WTA,
 2026-10-07,03:30,Suzhou Open,Katarina Zavatska,Darya Khamutsianskaya,wta_310,wta_380,WTA,
+2026-10-08,07:00,China Open,Karolina Muchova,Nikola Bartunkova,wta_13,wta_104,WTA,Hard
 2026-10-08,11:00,China Open,Ekaterina Alexandrova,Mirra Andreeva,wta_11,wta_7,WTA,Hard
-2026-10-08,07:00,Rolex Shanghai Masters,Martin Landaluce,Jan-Lennard Struff,atp_158,atp_77,ATP,Hard
+2026-10-08,07:00,Rolex Shanghai Masters,Martin Landaluce,Jan-Lennard Struff,atp_383,atp_77,ATP,Hard
 2026-10-08,07:00,Rolex Shanghai Masters,Fabian Marozsan,Zachary Svajda,atp_47,atp_106,ATP,Hard
 2026-10-08,07:00,Rolex Shanghai Masters,Marcos Giron,Sebastian Baez,atp_63,atp_33,ATP,Hard
 2026-10-08,07:00,Rolex Shanghai Masters,Juan Manuel Cerundolo,Nicolas Mejia,atp_19,atp_178,ATP,Hard
@@ -40,6 +41,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-08,08:30,Rolex Shanghai Masters,Vit Kopriva,Zizou Bergs,atp_87,atp_43,ATP,Hard
 2026-10-08,10:00,Rolex Shanghai Masters,Luca Van Assche,Bu Yunchaokete,atp_130,atp_147,ATP,Hard
 2026-10-08,11:30,Rolex Shanghai Masters,Cameron Norrie,Dalibor Svrcina,atp_27,atp_99,ATP,Hard
-2026-10-08,TBD,Samsun Open,Mariam Bolkvadze,Bianca Andreescu,wta_388,wta_161,WTA,
-2026-10-08,TBD,Samsun Open,Alicia Dudeney,Ayla Aksu,wta_440,wta_304,WTA,
-2026-10-08,TBD,Samsun Open,Caroline Werner,Anna Blinkova,wta_234,wta_65,WTA,
+2026-10-08,08:00,Samsun Open,Alicia Dudeney,Ayla Aksu,wta_440,wta_304,WTA,
+2026-10-08,09:30,Samsun Open,Simona Waltert,Linda Klimovicova,wta_81,wta_133,WTA,
+2026-10-08,11:30,Samsun Open,Mariam Bolkvadze,Bianca Andreescu,wta_388,wta_161,WTA,
+2026-10-08,13:00,Samsun Open,Caroline Werner,Anna Blinkova,wta_234,wta_65,WTA,

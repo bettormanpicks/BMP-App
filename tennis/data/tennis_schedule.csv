@@ -1,10 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-10-07,Live,China Open,Alina Charaeva,Zheng Qinwen
-2026-10-07,12:40,China Open,Ann Li,Elina Svitolina
 2026-10-07,Final,China Open,Coco Gauff,Elise Mertens
-2026-10-07,Live,Rolex Shanghai Masters,Mattia Bellucci,Zhou Yi
-2026-10-07,Live,Rolex Shanghai Masters,Arthur Fery,Marin Cilic
-2026-10-07,12:25,Rolex Shanghai Masters,Holger Rune,Daniel Altmaier
+2026-10-07,Final,China Open,Ann Li,Elina Svitolina
+2026-10-07,Final,China Open,Alina Charaeva,Zheng Qinwen
 2026-10-07,04:00,Rolex Shanghai Masters,Kimmer Coppejans,Stefanos Tsitsipas
 2026-10-07,04:00,Rolex Shanghai Masters,Nuno Borges,Facundo Diaz Acosta
 2026-10-07,04:00,Rolex Shanghai Masters,Camilo Ugo Carabelli,Ilia Simakin
@@ -15,22 +12,26 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-07,05:30,Rolex Shanghai Masters,Thiago Agustin Tirante,Hamad Medjedovic
 2026-10-07,05:30,Rolex Shanghai Masters,Mariano Navone,Pablo Carreno Busta
 2026-10-07,05:30,Rolex Shanghai Masters,Hubert Hurkacz,James Duckworth
+2026-10-07,Final,Rolex Shanghai Masters,Holger Rune,Daniel Altmaier
+2026-10-07,Final,Rolex Shanghai Masters,Arthur Fery,Marin Cilic
+2026-10-07,Final,Rolex Shanghai Masters,Mattia Bellucci,Zhou Yi
 2026-10-07,Final,Rolex Shanghai Masters,Wu Yibing,Michael Zheng
 2026-10-07,Final,Rolex Shanghai Masters,Quentin Halys,Chak Lam Coleman Wong
 2026-10-07,Final,Rolex Shanghai Masters,Rinky Hijikata,Roman Safiullin
 2026-10-07,Final,Rolex Shanghai Masters,Marco Trungelliti,Rei Sakamoto
-2026-10-07,Live,Samsun Open,Polina Iatcenko,Dalma Galfi
-2026-10-07,14:30,Samsun Open,Viktoria Hruncakova,Himeno Sakatsume
 2026-10-07,Final,Samsun Open,Elena Pridankina,Anna Blinkova
 2026-10-07,Final,Samsun Open,Fiona Crawley,Oksana Selekhmeteva
 2026-10-07,Final,Samsun Open,Leolia Jeanjean,Mariam Bolkvadze
+2026-10-07,Final,Samsun Open,Viktoria Hruncakova,Himeno Sakatsume
 2026-10-07,Final,Samsun Open,Lucrezia Stefanini,Noma Noha Akugue
+2026-10-07,Final,Samsun Open,Polina Iatcenko,Dalma Galfi
 2026-10-07,Final,Samsun Open,Cagla Buyukakcay,Linda Klimovicova
 2026-10-07,Final,Samsun Open,Elvin Egribel,Caroline Werner
 2026-10-07,02:00,Suzhou Open,Elvina Kalieva,Tamara Korpatsch
 2026-10-07,02:00,Suzhou Open,Bai Zhuoxuan,Emerson Jones
 2026-10-07,03:30,Suzhou Open,Oleksandra Oliynykova,Aliona Falei
 2026-10-07,03:30,Suzhou Open,Katarina Zavatska,Darya Khamutsianskaya
+2026-10-08,07:00,China Open,Karolina Muchova,Nikola Bartunkova
 2026-10-08,11:00,China Open,Ekaterina Alexandrova,Mirra Andreeva
 2026-10-08,07:00,Rolex Shanghai Masters,Martin Landaluce,Jan-Lennard Struff
 2026-10-08,07:00,Rolex Shanghai Masters,Fabian Marozsan,Zachary Svajda
@@ -40,6 +41,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-08,08:30,Rolex Shanghai Masters,Vit Kopriva,Zizou Bergs
 2026-10-08,10:00,Rolex Shanghai Masters,Luca Van Assche,Bu Yunchaokete
 2026-10-08,11:30,Rolex Shanghai Masters,Cameron Norrie,Dalibor Svrcina
-2026-10-08,TBD,Samsun Open,Mariam Bolkvadze,Bianca Andreescu
-2026-10-08,TBD,Samsun Open,Alicia Dudeney,Ayla Aksu
-2026-10-08,TBD,Samsun Open,Caroline Werner,Anna Blinkova
+2026-10-08,08:00,Samsun Open,Alicia Dudeney,Ayla Aksu
+2026-10-08,09:30,Samsun Open,Simona Waltert,Linda Klimovicova
+2026-10-08,11:30,Samsun Open,Mariam Bolkvadze,Bianca Andreescu
+2026-10-08,13:00,Samsun Open,Caroline Werner,Anna Blinkova
