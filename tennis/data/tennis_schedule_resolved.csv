@@ -28,7 +28,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-10,TBD,Dongfeng Voyah Wuhan Open,Anna Bondar,Lois Boisson,wta_65,wta_35,WTA,
 2026-10-10,Final,Dongfeng Voyah Wuhan Open,Lanlana Tararudee,Claire Liu,wta_124,wta_213,WTA,
 2026-10-10,Final,Dongfeng Voyah Wuhan Open,Yuan Yue,Catherine McNally,wta_122,wta_68,WTA,
-2026-10-10,Final,Samsun Open,Lucrezia Stefanini,Anna Blinkova,wta_136,wta_65,WTA,
+2026-10-10,Final,Samsun Open,Lucrezia Stefanini,Anna Blinkova,wta_136,wta_82,WTA,
 2026-10-10,Final,Samsun Open,Ayla Aksu,Himeno Sakatsume,wta_304,wta_135,WTA,
 2026-10-11,11:30,China Open,Zheng Qinwen,Mirra Andreeva,wta_23,wta_7,WTA,Hard
 2026-10-11,07:00,Rolex Shanghai Masters,Francisco Cerundolo,Jakub Mensik,atp_62,atp_16,ATP,Hard
@@ -50,7 +50,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-11,11:30,RoveretOpen Città della Pace,Ana Tamindzic,Tessa Johanna Brockmann,wta_9046,wta_289,WTA,
 2026-10-11,11:30,RoveretOpen Città della Pace,Elsa Jacquemot,Camilla Zanolini,wta_57,wta_217,WTA,
 2026-10-11,13:00,RoveretOpen Città della Pace,Isabella Maria Serban,Li Zongyu,wta_244,wta_36,WTA,
-2026-10-11,13:00,RoveretOpen Città della Pace,Kristina Novak,Caroline Werner,wta_364,wta_234,WTA,
+2026-10-11,13:00,RoveretOpen Città della Pace,Kristina Novak,Caroline Werner,atp_3,wta_234,ATP,
 2026-10-11,10:00,Samsun Open,Ayla Aksu,Lucrezia Stefanini,wta_304,wta_136,WTA,
 2026-10-11,07:30,Suzhou Open,Rebecca Sramkova,Kyoka Okamura,wta_102,wta_297,WTA,
 2026-10-11,08:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Maria Garcia Cid,Amandine Hesse,wta_941,wta_402,WTA,
