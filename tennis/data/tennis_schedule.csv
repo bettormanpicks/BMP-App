@@ -35,14 +35,14 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-11,08:30,Rolex Shanghai Masters,Alexander Bublik,Brandon Nakashima
 2026-10-11,10:00,Rolex Shanghai Masters,Alexander Zverev,Quentin Halys
 2026-10-11,11:30,Rolex Shanghai Masters,Alejandro Davidovich Fokina,Frances Tiafoe
-2026-10-11,TBD,Lisboa Belem Open,Sara Cakarevic,Katerina Tsygourova
-2026-10-11,TBD,Lisboa Belem Open,Gina Feistel,Elina Nepliy
-2026-10-11,TBD,Lisboa Belem Open,Ana Filipa Santos,Tena Lukas
-2026-10-11,TBD,Lisboa Belem Open,Angelina Voloshchuk,Adrienn Nagy
-2026-10-11,TBD,Lisboa Belem Open,Teresa Franco Dias,Iva Primorac Pavicic
-2026-10-11,TBD,Lisboa Belem Open,Hannah Klugman,Maria Martinez Vaquero
-2026-10-11,TBD,Lisboa Belem Open,Pia Lovric,Loes Ebeling Koning
-2026-10-11,TBD,Lisboa Belem Open,Raluka Serban,Sarah Van Emst
+2026-10-11,10:00,Lisboa Belem Open,Ana Filipa Santos,Tena Lukas
+2026-10-11,10:00,Lisboa Belem Open,Hannah Klugman,Maria Martinez Vaquero
+2026-10-11,10:00,Lisboa Belem Open,Pia Lovric,Loes Ebeling Koning
+2026-10-11,11:30,Lisboa Belem Open,Sara Cakarevic,Katerina Tsygourova
+2026-10-11,11:30,Lisboa Belem Open,Gina Feistel,Elina Nepliy
+2026-10-11,11:30,Lisboa Belem Open,Angelina Voloshchuk,Adrienn Nagy
+2026-10-11,13:00,Lisboa Belem Open,Teresa Franco Dias,Iva Primorac Pavicic
+2026-10-11,13:00,Lisboa Belem Open,Raluka Serban,Sarah Van Emst
 2026-10-11,08:30,RoveretOpen Città della Pace,Anna-Lena Friedsam,Lisa Peer
 2026-10-11,08:30,RoveretOpen Città della Pace,Alja Senica,Lea Boskovic
 2026-10-11,10:00,RoveretOpen Città della Pace,Erika Andreeva,Giulia Alessia Monteleone
@@ -53,11 +53,11 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-11,13:00,RoveretOpen Città della Pace,Kristina Novak,Caroline Werner
 2026-10-11,10:00,Samsun Open,Ayla Aksu,Lucrezia Stefanini
 2026-10-11,07:30,Suzhou Open,Rebecca Sramkova,Kyoka Okamura
-2026-10-11,TBD,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Maria Garcia Cid,Amandine Hesse
-2026-10-11,TBD,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lia Karatancheva,Ida Wobker
-2026-10-11,TBD,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Cristina Diaz Adrover,Sapfo Sakellaridi
-2026-10-11,TBD,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lucie Nguyen Tan,Mireia Sagrista Bermejo
-2026-10-11,TBD,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Ruth Roura Llaverias,Aneta Laboutkova
-2026-10-11,TBD,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Daria Yesypchuk,Marie Vogt
-2026-10-11,TBD,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Isabella Shinikova,Aneta Kucmova
-2026-10-11,TBD,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lidia Encheva,Marie Mettraux
+2026-10-11,08:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Maria Garcia Cid,Amandine Hesse
+2026-10-11,08:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lucie Nguyen Tan,Mireia Sagrista Bermejo
+2026-10-11,08:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Isabella Shinikova,Aneta Kucmova
+2026-10-11,09:30,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Daria Yesypchuk,Marie Vogt
+2026-10-11,09:30,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lidia Encheva,Marie Mettraux
+2026-10-11,11:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Ruth Roura Llaverias,Aneta Laboutkova
+2026-10-11,12:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lia Karatancheva,Ida Wobker
+2026-10-11,13:30,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Cristina Diaz Adrover,Sapfo Sakellaridi
