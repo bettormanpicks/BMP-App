@@ -1,13 +1,13 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-10-11,Live,China Open,Zheng Qinwen,Mirra Andreeva
-2026-10-11,Live,Rolex Shanghai Masters,Alexander Zverev,Quentin Halys
-2026-10-11,Live,Rolex Shanghai Masters,Alexander Bublik,Brandon Nakashima
-2026-10-11,11:50,Rolex Shanghai Masters,Alejandro Davidovich Fokina,Frances Tiafoe
+2026-10-11,Final,China Open,Zheng Qinwen,Mirra Andreeva
 2026-10-11,04:00,Rolex Shanghai Masters,Learner Tien,Casper Ruud
 2026-10-11,04:00,Rolex Shanghai Masters,Pablo Carreno Busta,Felix Auger-Aliassime
 2026-10-11,05:30,Rolex Shanghai Masters,Jiri Lehecka,Rafael Jodar
 2026-10-11,05:30,Rolex Shanghai Masters,Stefanos Tsitsipas,Taylor Fritz
+2026-10-11,Final,Rolex Shanghai Masters,Alexander Zverev,Quentin Halys
+2026-10-11,Final,Rolex Shanghai Masters,Alejandro Davidovich Fokina,Frances Tiafoe
 2026-10-11,Final,Rolex Shanghai Masters,Francisco Cerundolo,Jakub Mensik
+2026-10-11,Final,Rolex Shanghai Masters,Alexander Bublik,Brandon Nakashima
 2026-10-11,03:00,Dongfeng Voyah Wuhan Open,Anhelina Kalinina,Sonay Kartal
 2026-10-11,03:00,Dongfeng Voyah Wuhan Open,Ekaterina Alexandrova,Leylah Fernandez
 2026-10-11,04:30,Dongfeng Voyah Wuhan Open,Clara Tauson,Marie Bouzkova
@@ -16,32 +16,32 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-11,06:00,Dongfeng Voyah Wuhan Open,Jasmine Paolini,Sara Bejlek
 2026-10-11,06:00,Dongfeng Voyah Wuhan Open,Maria Sakkari,Donna Vekic
 2026-10-11,06:00,Dongfeng Voyah Wuhan Open,Mananchaya Sawangkaew,Magdalena Frech
-2026-10-11,Live,Lisboa Belem Open,Mathilde Lollia,Maria Martinez Vaquero
-2026-10-11,Live,Lisboa Belem Open,Pia Lovric,Loes Ebeling Koning
-2026-10-11,Live,Lisboa Belem Open,Angelina Voloshchuk,Adrienn Nagy
-2026-10-11,12:00,Lisboa Belem Open,Sara Cakarevic,Katerina Tsygourova
-2026-10-11,12:00,Lisboa Belem Open,Gina Feistel,Elina Nepliy
-2026-10-11,13:00,Lisboa Belem Open,Teresa Franco Dias,Iva Primorac Pavicic
-2026-10-11,13:00,Lisboa Belem Open,Raluka Serban,Sarah Van Emst
+2026-10-11,Final,Lisboa Belem Open,Teresa Franco Dias,Iva Primorac Pavicic
+2026-10-11,Final,Lisboa Belem Open,Raluka Serban,Sarah Van Emst
+2026-10-11,Final,Lisboa Belem Open,Gina Feistel,Elina Nepliy
+2026-10-11,Final,Lisboa Belem Open,Sara Cakarevic,Katerina Tsygourova
+2026-10-11,Final,Lisboa Belem Open,Angelina Voloshchuk,Adrienn Nagy
 2026-10-11,Final,Lisboa Belem Open,Ana Filipa Santos,Tena Lukas
-2026-10-11,Live,RoveretOpen Città della Pace,Anouk Koevermans,Ankita Raina
-2026-10-11,12:00,RoveretOpen Città della Pace,Ana Tamindzic,Tessa Johanna Brockmann
-2026-10-11,13:00,RoveretOpen Città della Pace,Isabella Maria Serban,Li Zongyu
-2026-10-11,13:00,RoveretOpen Città della Pace,Kristina Novak,Caroline Werner
+2026-10-11,Final,Lisboa Belem Open,Mathilde Lollia,Maria Martinez Vaquero
+2026-10-11,Final,Lisboa Belem Open,Pia Lovric,Loes Ebeling Koning
+2026-10-11,Final,RoveretOpen Città della Pace,Kristina Novak,Caroline Werner
+2026-10-11,Final,RoveretOpen Città della Pace,Ana Tamindzic,Tessa Johanna Brockmann
+2026-10-11,Final,RoveretOpen Città della Pace,Isabella Maria Serban,Li Zongyu
 2026-10-11,Final,RoveretOpen Città della Pace,Elsa Jacquemot,Camilla Zanolini
+2026-10-11,Final,RoveretOpen Città della Pace,Anouk Koevermans,Ankita Raina
 2026-10-11,Final,RoveretOpen Città della Pace,Erika Andreeva,Giulia Alessia Monteleone
-2026-10-11,Final,RoveretOpen Città della Pace,Anna-Lena Friedsam,Lisa Peer
 2026-10-11,Final,RoveretOpen Città della Pace,Alja Senica,Lea Boskovic
-2026-10-11,Live,Samsun Open,Ayla Aksu,Lucrezia Stefanini
+2026-10-11,Final,RoveretOpen Città della Pace,Anna-Lena Friedsam,Lisa Peer
+2026-10-11,Final,Samsun Open,Ayla Aksu,Lucrezia Stefanini
 2026-10-11,Final,Suzhou Open,Rebecca Sramkova,Kyoka Okamura
-2026-10-11,Live,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Ruth Roura Llaverias,Aneta Laboutkova
-2026-10-11,11:45,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lidia Encheva,Marie Mettraux
-2026-10-11,13:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lia Karatancheva,Ida Wobker
-2026-10-11,13:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Cristina Diaz Adrover,Sapfo Sakellaridi
+2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Cristina Diaz Adrover,Sapfo Sakellaridi
+2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lia Karatancheva,Ida Wobker
+2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lidia Encheva,Marie Mettraux
+2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Ruth Roura Llaverias,Aneta Laboutkova
 2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lucie Nguyen Tan,Mireia Sagrista Bermejo
 2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Daria Yesypchuk,Marie Vogt
-2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Maria Garcia Cid,Amandine Hesse
 2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Isabella Shinikova,Aneta Kucmova
+2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Maria Garcia Cid,Amandine Hesse
 2026-10-12,07:00,Rolex Shanghai Masters,Daniil Medvedev,Dalibor Svrcina
 2026-10-12,08:30,Rolex Shanghai Masters,Arthur Fils,Botic Van De Zandschulp
 2026-10-12,10:00,Rolex Shanghai Masters,Zizou Bergs,Carlos Alcaraz
@@ -49,16 +49,36 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-12,07:30,Dongfeng Voyah Wuhan Open,Catherine McNally,Yuliia Starodubtseva
 2026-10-12,11:30,Dongfeng Voyah Wuhan Open,Wang Xiyu,Wang Xinyu
 2026-10-12,13:00,Dongfeng Voyah Wuhan Open,Alexandra Eala,Shi Han
-2026-10-12,TBD,RoveretOpen Città della Pace,Lola Radivojevic,Teodora Kostovic
-2026-10-12,TBD,RoveretOpen Città della Pace,Noemi Basiletti,Viktoria Hruncakova
-2026-10-12,TBD,RoveretOpen Città della Pace,Lisa Pigato,Julia Avdeeva
-2026-10-12,TBD,RoveretOpen Città della Pace,Linda Klimovicova,Lucie Havlickova
-2026-10-12,TBD,RoveretOpen Città della Pace,Antonia Ruzic,Anna Siskova
-2026-10-12,TBD,RoveretOpen Città della Pace,Martyna Kubka,Alina Charaeva
-2026-10-12,TBD,RoveretOpen Città della Pace,Bianca Andreescu,Mia Ristic
-2026-10-12,TBD,RoveretOpen Città della Pace,Dominika Salkova,Elisa Visentin
-2026-10-12,TBD,RoveretOpen Città della Pace,Polina Iatcenko,Harmony Tan
-2026-10-12,TBD,RoveretOpen Città della Pace,Susan Bandecchi,Gaia Maduzzi
-2026-10-12,TBD,RoveretOpen Città della Pace,Laura Mair,Lucrezia Stefanini
-2026-10-12,TBD,RoveretOpen Città della Pace,Mona Barthel,Lucia Bronzetti
-2026-10-12,TBD,RoveretOpen Città della Pace,Emiliana Arango,Gabriela Knutson
+2026-10-12,TBD,Lisboa Belem Open,Jessica Bouzas Maneiro,Milana Ivantsiv
+2026-10-12,TBD,Lisboa Belem Open,Gina Feistel,Tena Lukas
+2026-10-12,TBD,Lisboa Belem Open,Mathilde Lollia,Loes Ebeling Koning
+2026-10-12,TBD,Lisboa Belem Open,Martina Colmegna,Francesca Jones
+2026-10-12,TBD,Lisboa Belem Open,Clara Burel,Lina Gjorcheska
+2026-10-12,TBD,Lisboa Belem Open,Aurora Zantedeschi,Fiona Ferro
+2026-10-12,TBD,Lisboa Belem Open,Irene Burillo,Viktoria Morvayova
+2026-10-12,TBD,Lisboa Belem Open,Zhibek Kulambayeva,Francisca Jorge
+2026-10-12,TBD,Lisboa Belem Open,Barbora Palicova,Jazmin Ortenzi
+2026-10-12,TBD,Lisboa Belem Open,Lisa Zaar,Matilde Jorge
+2026-10-12,TBD,Lisboa Belem Open,Dalma Galfi,Beatriz Castro
+2026-10-12,TBD,Lisboa Belem Open,Martha Matoula,Giorgia Pedone
+2026-10-12,TBD,Lisboa Belem Open,Madalena Matias,Polona Hercog
+2026-10-12,TBD,Lisboa Belem Open,Leyre Romero Gormaz,Alice Rame
+2026-10-12,08:30,RoveretOpen Città della Pace,Elsa Jacquemot,Lea Boskovic
+2026-10-12,08:30,RoveretOpen Città della Pace,Anna-Lena Friedsam,Tessa Johanna Brockmann
+2026-10-12,10:00,RoveretOpen Città della Pace,Anouk Koevermans,Caroline Werner
+2026-10-12,10:00,RoveretOpen Città della Pace,Erika Andreeva,Li Zongyu
+2026-10-12,12:00,RoveretOpen Città della Pace,Emiliana Arango,Gabriela Knutson
+2026-10-12,13:30,RoveretOpen Città della Pace,Polina Iatcenko,Harmony Tan
+2026-10-12,13:30,RoveretOpen Città della Pace,Susan Bandecchi,Gaia Maduzzi
+2026-10-12,15:00,RoveretOpen Città della Pace,Linda Klimovicova,Lucie Havlickova
+2026-10-12,16:00,RoveretOpen Città della Pace,Lisa Pigato,Julia Avdeeva
+2026-10-12,17:30,RoveretOpen Città della Pace,Mona Barthel,Lucia Bronzetti
+2026-10-12,TBD,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Aneta Kucmova,Maria Garcia Cid
+2026-10-12,08:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lucie Nguyen Tan,Ruth Roura Llaverias
+2026-10-12,08:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Ida Wobker,Cristina Diaz Adrover
+2026-10-12,09:30,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Aran Teixido Garcia,Laura Samson
+2026-10-12,09:30,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Eva Vedder,Francesca Curmi
+2026-10-12,09:30,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lidia Encheva,Daria Yesypchuk
+2026-10-12,11:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Julia Grabher,Deborah Chiesa
+2026-10-12,11:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Jennifer Ruggeri,Elizara Yaneva
+2026-10-12,12:30,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Andrea Lazaro Garcia,Yasmine Kabbaj
