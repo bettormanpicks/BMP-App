@@ -1,32 +1,64 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-10-10,Final,China Open,Mirra Andreeva,Nikola Bartunkova,wta_7,wta_104,WTA,Hard
-2026-10-10,Final,China Open,Zheng Qinwen,Elise Mertens,wta_23,wta_22,WTA,Hard
-2026-10-10,04:00,Rolex Shanghai Masters,Karen Khachanov,Adrian Mannarino,atp_17,atp_48,ATP,Hard
-2026-10-10,04:00,Rolex Shanghai Masters,Ben Shelton,Arthur Gea,atp_9,atp_160,ATP,Hard
-2026-10-10,05:30,Rolex Shanghai Masters,Alex de Minaur,Rei Sakamoto,atp_8,atp_173,ATP,Hard
-2026-10-10,05:30,Rolex Shanghai Masters,Hubert Hurkacz,Zhou Yi,atp_71,atp_220,ATP,Hard
-2026-10-10,Final,Rolex Shanghai Masters,Juan Manuel Cerundolo,Carlos Alcaraz,atp_19,atp_1,ATP,Hard
-2026-10-10,Final,Rolex Shanghai Masters,Arthur Fils,Pavel Kotov,atp_40,atp_335,ATP,Hard
-2026-10-10,Final,Rolex Shanghai Masters,Learner Tien,Zachary Svajda,atp_23,atp_106,ATP,Hard
-2026-10-10,Final,Rolex Shanghai Masters,Tommy Paul,Adolfo Daniel Vallejo,atp_24,atp_9021,ATP,Hard
-2026-10-10,Final,Rolex Shanghai Masters,Sebastian Baez,Valentin Vacherot,atp_33,atp_26,ATP,Hard
-2026-10-10,Final,Rolex Shanghai Masters,Luciano Darderi,Stefanos Tsitsipas,atp_22,atp_32,ATP,Hard
-2026-10-10,Final,Rolex Shanghai Masters,Bu Yunchaokete,Casper Ruud,atp_147,atp_13,ATP,Hard
-2026-10-10,Final,Rolex Shanghai Masters,Botic Van De Zandschulp,Alex Michelsen,atp_55,atp_41,ATP,Hard
-2026-10-10,Final,Rolex Shanghai Masters,Ignacio Buse,Zizou Bergs,atp_91,atp_43,ATP,Hard
-2026-10-10,Live,Dongfeng Voyah Wuhan Open,Sara Sorribes Tormo,Daria Kasatkina,wta_451,wta_61,WTA,
-2026-10-10,Live,Dongfeng Voyah Wuhan Open,Magdalena Frech,Aoi Ito,wta_55,wta_176,WTA,
-2026-10-10,Live,Dongfeng Voyah Wuhan Open,Yulia Putintseva,Ashlyn Krueger,wta_77,wta_100,WTA,
-2026-10-10,Live,Dongfeng Voyah Wuhan Open,Zeynep Sonmez,Sinja Kraus,wta_84,wta_105,WTA,
-2026-10-10,04:30,Dongfeng Voyah Wuhan Open,Camila Osorio,Katie Volynets,wta_63,wta_96,WTA,
-2026-10-10,04:30,Dongfeng Voyah Wuhan Open,Lanlana Tararudee,Catherine McNally,wta_124,wta_68,WTA,
-2026-10-10,04:30,Dongfeng Voyah Wuhan Open,Anna Bondar,Mananchaya Sawangkaew,wta_65,wta_198,WTA,
-2026-10-10,04:30,Dongfeng Voyah Wuhan Open,Shi Han,Kamilla Rakhimova,wta_330,wta_91,WTA,
-2026-10-10,Final,Dongfeng Voyah Wuhan Open,Polina Kudermetova,Katie Volynets,wta_144,wta_96,WTA,
-2026-10-10,Final,Dongfeng Voyah Wuhan Open,Camila Osorio,Tyra Caterina Grant,wta_63,wta_269,WTA,
-2026-10-10,Final,Dongfeng Voyah Wuhan Open,Mananchaya Sawangkaew,Maya Joint,wta_198,wta_29,WTA,
-2026-10-10,TBD,Dongfeng Voyah Wuhan Open,Anna Bondar,Lois Boisson,wta_65,wta_35,WTA,
-2026-10-10,Final,Dongfeng Voyah Wuhan Open,Lanlana Tararudee,Claire Liu,wta_124,wta_213,WTA,
-2026-10-10,Final,Dongfeng Voyah Wuhan Open,Yuan Yue,Catherine McNally,wta_122,wta_68,WTA,
-2026-10-10,Final,Samsun Open,Lucrezia Stefanini,Anna Blinkova,wta_136,wta_65,WTA,
-2026-10-10,Final,Samsun Open,Ayla Aksu,Himeno Sakatsume,wta_304,wta_135,WTA,
+2026-10-11,Live,China Open,Zheng Qinwen,Mirra Andreeva,wta_23,wta_7,WTA,Hard
+2026-10-11,Live,Rolex Shanghai Masters,Alexander Zverev,Quentin Halys,atp_4,atp_72,ATP,Hard
+2026-10-11,Live,Rolex Shanghai Masters,Alexander Bublik,Brandon Nakashima,atp_10,atp_29,ATP,Hard
+2026-10-11,11:50,Rolex Shanghai Masters,Alejandro Davidovich Fokina,Frances Tiafoe,atp_15,atp_28,ATP,Hard
+2026-10-11,04:00,Rolex Shanghai Masters,Learner Tien,Casper Ruud,atp_23,atp_13,ATP,Hard
+2026-10-11,04:00,Rolex Shanghai Masters,Pablo Carreno Busta,Felix Auger-Aliassime,atp_122,atp_6,ATP,Hard
+2026-10-11,05:30,Rolex Shanghai Masters,Jiri Lehecka,Rafael Jodar,atp_21,atp_117,ATP,Hard
+2026-10-11,05:30,Rolex Shanghai Masters,Stefanos Tsitsipas,Taylor Fritz,atp_32,atp_7,ATP,Hard
+2026-10-11,Final,Rolex Shanghai Masters,Francisco Cerundolo,Jakub Mensik,atp_62,atp_16,ATP,Hard
+2026-10-11,03:00,Dongfeng Voyah Wuhan Open,Anhelina Kalinina,Sonay Kartal,wta_191,wta_51,WTA,
+2026-10-11,03:00,Dongfeng Voyah Wuhan Open,Ekaterina Alexandrova,Leylah Fernandez,wta_11,wta_28,WTA,
+2026-10-11,04:30,Dongfeng Voyah Wuhan Open,Clara Tauson,Marie Bouzkova,wta_15,wta_39,WTA,
+2026-10-11,04:30,Dongfeng Voyah Wuhan Open,Iva Jovic,Mia Pohankova,wta_20,wta_346,WTA,
+2026-10-11,04:30,Dongfeng Voyah Wuhan Open,Janice Tjen,Aoi Ito,wta_47,wta_176,WTA,
+2026-10-11,06:00,Dongfeng Voyah Wuhan Open,Jasmine Paolini,Sara Bejlek,wta_8,wta_41,WTA,
+2026-10-11,06:00,Dongfeng Voyah Wuhan Open,Maria Sakkari,Donna Vekic,wta_54,wta_99,WTA,
+2026-10-11,06:00,Dongfeng Voyah Wuhan Open,Mananchaya Sawangkaew,Magdalena Frech,wta_198,wta_55,WTA,
+2026-10-11,Live,Lisboa Belem Open,Mathilde Lollia,Maria Martinez Vaquero,wta_469,wta_479,WTA,
+2026-10-11,Live,Lisboa Belem Open,Pia Lovric,Loes Ebeling Koning,wta_517,wta_643,WTA,
+2026-10-11,Live,Lisboa Belem Open,Angelina Voloshchuk,Adrienn Nagy,wta_401,wta_658,WTA,
+2026-10-11,12:00,Lisboa Belem Open,Sara Cakarevic,Katerina Tsygourova,wta_9018,wta_46,WTA,
+2026-10-11,12:00,Lisboa Belem Open,Gina Feistel,Elina Nepliy,wta_650,wta_178,WTA,
+2026-10-11,13:00,Lisboa Belem Open,Teresa Franco Dias,Iva Primorac Pavicic,atp_253,atp_9100,ATP,
+2026-10-11,13:00,Lisboa Belem Open,Raluka Serban,Sarah Van Emst,wta_244,wta_512,WTA,
+2026-10-11,Final,Lisboa Belem Open,Ana Filipa Santos,Tena Lukas,wta_940,wta_455,WTA,
+2026-10-11,Live,RoveretOpen Città della Pace,Anouk Koevermans,Ankita Raina,wta_172,wta_665,WTA,
+2026-10-11,12:00,RoveretOpen Città della Pace,Ana Tamindzic,Tessa Johanna Brockmann,wta_9046,wta_289,WTA,
+2026-10-11,13:00,RoveretOpen Città della Pace,Isabella Maria Serban,Li Zongyu,wta_244,wta_36,WTA,
+2026-10-11,13:00,RoveretOpen Città della Pace,Kristina Novak,Caroline Werner,wta_364,wta_234,WTA,
+2026-10-11,Final,RoveretOpen Città della Pace,Elsa Jacquemot,Camilla Zanolini,wta_57,wta_217,WTA,
+2026-10-11,Final,RoveretOpen Città della Pace,Erika Andreeva,Giulia Alessia Monteleone,wta_362,wta_9101,WTA,
+2026-10-11,Final,RoveretOpen Città della Pace,Anna-Lena Friedsam,Lisa Peer,wta_204,wta_466,WTA,
+2026-10-11,Final,RoveretOpen Città della Pace,Alja Senica,Lea Boskovic,wta_9102,wta_311,ATP,
+2026-10-11,Live,Samsun Open,Ayla Aksu,Lucrezia Stefanini,wta_304,wta_136,WTA,
+2026-10-11,Final,Suzhou Open,Rebecca Sramkova,Kyoka Okamura,wta_102,wta_297,WTA,
+2026-10-11,Live,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Ruth Roura Llaverias,Aneta Laboutkova,wta_481,wta_426,WTA,
+2026-10-11,11:45,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lidia Encheva,Marie Mettraux,wta_520,wta_498,WTA,
+2026-10-11,13:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lia Karatancheva,Ida Wobker,wta_36,wta_736,WTA,
+2026-10-11,13:00,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Cristina Diaz Adrover,Sapfo Sakellaridi,wta_398,atp_275,WTA,
+2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Lucie Nguyen Tan,Mireia Sagrista Bermejo,wta_229,wta_9103,WTA,
+2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Daria Yesypchuk,Marie Vogt,wta_9033,wta_498,WTA,
+2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Maria Garcia Cid,Amandine Hesse,wta_941,wta_402,WTA,
+2026-10-11,Final,Vanda Pharmaceuticals Mallorca Women's Championships presented by Ecotrans Group,Isabella Shinikova,Aneta Kucmova,wta_340,wta_426,WTA,
+2026-10-12,07:00,Rolex Shanghai Masters,Daniil Medvedev,Dalibor Svrcina,atp_11,atp_99,ATP,Hard
+2026-10-12,08:30,Rolex Shanghai Masters,Arthur Fils,Botic Van De Zandschulp,atp_40,atp_55,ATP,Hard
+2026-10-12,10:00,Rolex Shanghai Masters,Zizou Bergs,Carlos Alcaraz,atp_43,atp_1,ATP,Hard
+2026-10-12,11:30,Rolex Shanghai Masters,Tommy Paul,Valentin Vacherot,atp_24,atp_26,ATP,Hard
+2026-10-12,07:30,Dongfeng Voyah Wuhan Open,Catherine McNally,Yuliia Starodubtseva,wta_68,wta_101,WTA,
+2026-10-12,11:30,Dongfeng Voyah Wuhan Open,Wang Xiyu,Wang Xinyu,wta_34,wta_34,WTA,
+2026-10-12,13:00,Dongfeng Voyah Wuhan Open,Alexandra Eala,Shi Han,wta_45,wta_330,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Lola Radivojevic,Teodora Kostovic,wta_139,wta_171,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Noemi Basiletti,Viktoria Hruncakova,wta_511,wta_218,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Lisa Pigato,Julia Avdeeva,wta_466,wta_265,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Linda Klimovicova,Lucie Havlickova,wta_133,wta_276,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Antonia Ruzic,Anna Siskova,wta_67,wta_227,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Martyna Kubka,Alina Charaeva,wta_338,wta_163,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Bianca Andreescu,Mia Ristic,wta_161,wta_273,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Dominika Salkova,Elisa Visentin,wta_151,wta_9104,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Polina Iatcenko,Harmony Tan,wta_160,wta_229,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Susan Bandecchi,Gaia Maduzzi,wta_233,wta_849,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Laura Mair,Lucrezia Stefanini,wta_306,wta_136,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Mona Barthel,Lucia Bronzetti,wta_203,wta_138,WTA,
+2026-10-12,TBD,RoveretOpen Città della Pace,Emiliana Arango,Gabriela Knutson,wta_58,wta_184,WTA,
