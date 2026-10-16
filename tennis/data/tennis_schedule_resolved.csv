@@ -21,21 +21,35 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-16,04:00,Kinoshita Group Japan Open,Claire Liu,Kanon Sawashiro,wta_213,wta_9102,WTA,Hard
 2026-10-16,05:30,Kinoshita Group Japan Open,Sara Sorribes Tormo,Maddison Inglis,wta_451,wta_123,WTA,Hard
 2026-10-16,05:30,Kinoshita Group Japan Open,Taylah Preston,Haruka Kaji,wta_147,wta_301,WTA,Hard
-2026-10-16,05:30,Kinoshita Group Japan Open,Heather Watson,Emerson Jones,wta_278,wta_152,WTA,Hard
+2026-10-16,05:30,Kinoshita Group Japan Open,Heather Watson,Emerson Jones,wta_278,wta_72,WTA,Hard
 2026-10-16,06:00,Kinoshita Group Japan Open,Mei Yamaguchi,Sofia Kenin,wta_285,wta_32,WTA,Hard
-2026-10-16,Live,Lisboa Belem Open,Jessica Bouzas Maneiro,Polona Hercog,wta_48,wta_314,WTA,
-2026-10-16,Live,Lisboa Belem Open,Clara Burel,Guiomar Maristany Zuleta De Reales,wta_15,wta_165,WTA,
+2026-10-16,Final,Lisboa Belem Open,Jessica Bouzas Maneiro,Polona Hercog,wta_48,wta_314,WTA,
 2026-10-16,Final,Lisboa Belem Open,Dalma Galfi,Francesca Jones,wta_86,wta_72,WTA,
 2026-10-16,Final,Lisboa Belem Open,Leyre Romero Gormaz,Fiona Ferro,wta_140,wta_239,WTA,
-2026-10-16,Live,RoveretOpen Città della Pace,Dominika Salkova,Lea Boskovic,wta_151,wta_311,WTA,
-2026-10-16,16:00,RoveretOpen Città della Pace,Lucie Havlickova,Jil Teichmann,wta_276,wta_175,WTA,
-2026-10-16,17:30,RoveretOpen Città della Pace,Bianca Andreescu,Lucrezia Stefanini,wta_161,wta_136,WTA,
+2026-10-16,Final,Lisboa Belem Open,Clara Burel,Guiomar Maristany Zuleta De Reales,wta_15,wta_165,WTA,
+2026-10-16,Live,RoveretOpen Città della Pace,Bianca Andreescu,Lucrezia Stefanini,wta_161,wta_136,WTA,
+2026-10-16,Final,RoveretOpen Città della Pace,Dominika Salkova,Lea Boskovic,wta_151,wta_311,WTA,
+2026-10-16,Final,RoveretOpen Città della Pace,Lucie Havlickova,Jil Teichmann,wta_276,wta_175,WTA,
 2026-10-16,TBD,RoveretOpen Città della Pace,Gabriela Knutson,Martyna Kubka,wta_184,wta_338,WTA,
-2026-10-16,13:40,Vanda Pharmaceuticals Mallorca Women's Championships,Andrea Lazaro Garcia,Laura Samson,wta_206,wta_212,WTA,
-2026-10-16,13:45,Vanda Pharmaceuticals Mallorca Women's Championships,Tamara Zidansek,Rebeka Masarova,wta_145,wta_117,WTA,
 2026-10-16,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Julia Grabher,Ariana Geerlings,wta_80,wta_343,WTA,
+2026-10-16,TBD,Vanda Pharmaceuticals Mallorca Women's Championships,Andrea Lazaro Garcia,Laura Samson,wta_206,wta_212,WTA,
+2026-10-16,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Tamara Zidansek,Rebeka Masarova,wta_145,wta_117,WTA,
 2026-10-16,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Francesca Curmi,Elizara Yaneva,wta_335,wta_228,WTA,
 2026-10-16,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Ane Mintegi Del Olmo,Rebeka Masarova,wta_373,wta_117,WTA,
+2026-10-17,07:30,Almaty Open,Adam Walton,Beibit Zhukayev,atp_93,atp_292,ATP,Hard
+2026-10-17,07:30,Almaty Open,Taro Daniel,Nikoloz Basilashvili,atp_402,atp_136,ATP,Hard
+2026-10-17,09:00,Almaty Open,Luka Pavlovic,Ilia Simakin,atp_209,atp_217,ATP,Hard
+2026-10-17,09:00,Almaty Open,Roman Safiullin,Ilya Ivashka,atp_185,atp_898,ATP,Hard
+2026-10-17,11:00,Almaty Open,Petr Bar Biryukov,Stefanos Sakellaridis,atp_303,atp_275,ATP,Hard
+2026-10-17,12:00,Almaty Open,Aleksandr Shevchenko,Daniil Glinka,atp_79,atp_169,ATP,Hard
+2026-10-17,10:30,BNP Paribas Fortis European Open,Harry Wendelken,Gauthier Onclin,atp_276,atp_312,ATP,Hard
+2026-10-17,10:30,BNP Paribas Fortis European Open,Joel Josef Schwaerzler,Federico Cina,atp_9030,atp_224,ATP,Hard
+2026-10-17,12:00,BNP Paribas Fortis European Open,Clement Chidekh,Gilles Arnaud Bailly,atp_205,atp_211,ATP,Hard
+2026-10-17,12:00,BNP Paribas Fortis European Open,Giovanni Mpetshi Perricard,Remy Bertola,atp_58,atp_213,ATP,Hard
+2026-10-17,13:30,BNP Paribas Fortis European Open,Nishesh Basavareddy,Edas Butvilas,atp_190,atp_250,ATP,Hard
+2026-10-17,13:30,BNP Paribas Fortis European Open,Kimmer Coppejans,Andrea Guerrieri,atp_248,atp_484,ATP,Hard
+2026-10-17,15:00,BNP Paribas Fortis European Open,Aziz Dougaz,Tom Gentzsch,atp_400,atp_243,ATP,Hard
+2026-10-17,15:00,BNP Paribas Fortis European Open,Martin Damm,Buvaysar Gadamauri,atp_383,atp_422,ATP,Hard
 2026-10-17,08:30,Rolex Shanghai Masters,Alexander Zverev,Alejandro Davidovich Fokina,atp_4,atp_15,ATP,Hard
 2026-10-17,11:00,Rolex Shanghai Masters,Rafael Jodar,Daniil Medvedev,atp_117,atp_11,ATP,Hard
 2026-10-17,07:30,BNB Ningbo Open,Mayar Sherif,Tatiana Prozorova,wta_108,wta_166,WTA,
@@ -43,5 +57,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-17,07:30,BNB Ningbo Open,Magdalena Frech,Shi Han,wta_55,wta_330,WTA,
 2026-10-17,09:00,Dongfeng Voyah Wuhan Open,Sonay Kartal,Jelena Ostapenko,wta_51,wta_27,WTA,
 2026-10-17,10:30,Dongfeng Voyah Wuhan Open,Iga Swiatek,Maja Chwalinska,wta_2,wta_126,WTA,
-2026-10-17,TBD,Lisboa Belem Open,Leyre Romero Gormaz,Dalma Galfi,wta_140,wta_86,WTA,
-2026-10-17,TBD,Vanda Pharmaceuticals Mallorca Women's Championships,Ariana Geerlings,Francesca Curmi,wta_343,wta_335,WTA,
+2026-10-17,10:00,Lisboa Belem Open,Leyre Romero Gormaz,Dalma Galfi,wta_140,wta_86,WTA,
+2026-10-17,11:30,Lisboa Belem Open,Jessica Bouzas Maneiro,Clara Burel,wta_48,wta_15,WTA,
+2026-10-17,11:00,RoveretOpen Città della Pace,Martyna Kubka,Dominika Salkova,wta_338,wta_151,WTA,
+2026-10-17,08:00,Vanda Pharmaceuticals Mallorca Women's Championships,Ariana Geerlings,Francesca Curmi,wta_343,wta_335,WTA,
+2026-10-17,09:30,Vanda Pharmaceuticals Mallorca Women's Championships,Tamara Zidansek,Laura Samson,wta_145,wta_212,WTA,

@@ -23,19 +23,33 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-16,05:30,Kinoshita Group Japan Open,Taylah Preston,Haruka Kaji
 2026-10-16,05:30,Kinoshita Group Japan Open,Heather Watson,Emerson Jones
 2026-10-16,06:00,Kinoshita Group Japan Open,Mei Yamaguchi,Sofia Kenin
-2026-10-16,Live,Lisboa Belem Open,Jessica Bouzas Maneiro,Polona Hercog
-2026-10-16,Live,Lisboa Belem Open,Clara Burel,Guiomar Maristany Zuleta De Reales
+2026-10-16,Final,Lisboa Belem Open,Jessica Bouzas Maneiro,Polona Hercog
 2026-10-16,Final,Lisboa Belem Open,Dalma Galfi,Francesca Jones
 2026-10-16,Final,Lisboa Belem Open,Leyre Romero Gormaz,Fiona Ferro
-2026-10-16,Live,RoveretOpen Città della Pace,Dominika Salkova,Lea Boskovic
-2026-10-16,16:00,RoveretOpen Città della Pace,Lucie Havlickova,Jil Teichmann
-2026-10-16,17:30,RoveretOpen Città della Pace,Bianca Andreescu,Lucrezia Stefanini
+2026-10-16,Final,Lisboa Belem Open,Clara Burel,Guiomar Maristany Zuleta De Reales
+2026-10-16,Live,RoveretOpen Città della Pace,Bianca Andreescu,Lucrezia Stefanini
+2026-10-16,Final,RoveretOpen Città della Pace,Dominika Salkova,Lea Boskovic
+2026-10-16,Final,RoveretOpen Città della Pace,Lucie Havlickova,Jil Teichmann
 2026-10-16,TBD,RoveretOpen Città della Pace,Gabriela Knutson,Martyna Kubka
-2026-10-16,13:40,Vanda Pharmaceuticals Mallorca Women's Championships,Andrea Lazaro Garcia,Laura Samson
-2026-10-16,13:45,Vanda Pharmaceuticals Mallorca Women's Championships,Tamara Zidansek,Rebeka Masarova
 2026-10-16,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Julia Grabher,Ariana Geerlings
+2026-10-16,TBD,Vanda Pharmaceuticals Mallorca Women's Championships,Andrea Lazaro Garcia,Laura Samson
+2026-10-16,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Tamara Zidansek,Rebeka Masarova
 2026-10-16,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Francesca Curmi,Elizara Yaneva
 2026-10-16,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Ane Mintegi Del Olmo,Rebeka Masarova
+2026-10-17,07:30,Almaty Open,Adam Walton,Beibit Zhukayev
+2026-10-17,07:30,Almaty Open,Taro Daniel,Nikoloz Basilashvili
+2026-10-17,09:00,Almaty Open,Luka Pavlovic,Ilia Simakin
+2026-10-17,09:00,Almaty Open,Roman Safiullin,Ilya Ivashka
+2026-10-17,11:00,Almaty Open,Petr Bar Biryukov,Stefanos Sakellaridis
+2026-10-17,12:00,Almaty Open,Aleksandr Shevchenko,Daniil Glinka
+2026-10-17,10:30,BNP Paribas Fortis European Open,Harry Wendelken,Gauthier Onclin
+2026-10-17,10:30,BNP Paribas Fortis European Open,Joel Josef Schwaerzler,Federico Cina
+2026-10-17,12:00,BNP Paribas Fortis European Open,Clement Chidekh,Gilles Arnaud Bailly
+2026-10-17,12:00,BNP Paribas Fortis European Open,Giovanni Mpetshi Perricard,Remy Bertola
+2026-10-17,13:30,BNP Paribas Fortis European Open,Nishesh Basavareddy,Edas Butvilas
+2026-10-17,13:30,BNP Paribas Fortis European Open,Kimmer Coppejans,Andrea Guerrieri
+2026-10-17,15:00,BNP Paribas Fortis European Open,Aziz Dougaz,Tom Gentzsch
+2026-10-17,15:00,BNP Paribas Fortis European Open,Martin Damm,Buvaysar Gadamauri
 2026-10-17,08:30,Rolex Shanghai Masters,Alexander Zverev,Alejandro Davidovich Fokina
 2026-10-17,11:00,Rolex Shanghai Masters,Rafael Jodar,Daniil Medvedev
 2026-10-17,07:30,BNB Ningbo Open,Mayar Sherif,Tatiana Prozorova
@@ -43,5 +57,8 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-17,07:30,BNB Ningbo Open,Magdalena Frech,Shi Han
 2026-10-17,09:00,Dongfeng Voyah Wuhan Open,Sonay Kartal,Jelena Ostapenko
 2026-10-17,10:30,Dongfeng Voyah Wuhan Open,Iga Swiatek,Maja Chwalinska
-2026-10-17,TBD,Lisboa Belem Open,Leyre Romero Gormaz,Dalma Galfi
-2026-10-17,TBD,Vanda Pharmaceuticals Mallorca Women's Championships,Ariana Geerlings,Francesca Curmi
+2026-10-17,10:00,Lisboa Belem Open,Leyre Romero Gormaz,Dalma Galfi
+2026-10-17,11:30,Lisboa Belem Open,Jessica Bouzas Maneiro,Clara Burel
+2026-10-17,11:00,RoveretOpen Città della Pace,Martyna Kubka,Dominika Salkova
+2026-10-17,08:00,Vanda Pharmaceuticals Mallorca Women's Championships,Ariana Geerlings,Francesca Curmi
+2026-10-17,09:30,Vanda Pharmaceuticals Mallorca Women's Championships,Tamara Zidansek,Laura Samson
