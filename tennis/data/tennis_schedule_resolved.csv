@@ -4,11 +4,11 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-17,Final,Almaty Open,Aleksandr Shevchenko,Daniil Glinka,atp_79,atp_169,ATP,Hard
 2026-10-17,Final,Almaty Open,Petr Bar Biryukov,Stefanos Sakellaridis,atp_303,atp_275,ATP,Hard
 2026-10-17,Final,Almaty Open,Luka Pavlovic,Ilia Simakin,atp_209,atp_217,ATP,Hard
-2026-10-17,Final,Almaty Open,Roman Safiullin,Ilya Ivashka,atp_185,atp_799,ATP,Hard
+2026-10-17,Final,Almaty Open,Roman Safiullin,Ilya Ivashka,atp_185,atp_898,ATP,Hard
 2026-10-17,Final,Almaty Open,Adam Walton,Beibit Zhukayev,atp_93,atp_292,ATP,Hard
 2026-10-17,Final,Almaty Open,Taro Daniel,Nikoloz Basilashvili,atp_402,atp_136,ATP,Hard
-2026-10-17,15:00,BNP Paribas Fortis European Open,Martin Damm,Buvaysar Gadamauri,atp_383,atp_422,ATP,Hard
-2026-10-17,15:00,BNP Paribas Fortis European Open,Aziz Dougaz,Tom Gentzsch,atp_400,atp_243,ATP,Hard
+2026-10-17,Final,BNP Paribas Fortis European Open,Martin Damm,Buvaysar Gadamauri,atp_125,atp_422,ATP,Hard
+2026-10-17,Final,BNP Paribas Fortis European Open,Aziz Dougaz,Tom Gentzsch,atp_400,atp_243,ATP,Hard
 2026-10-17,Final,BNP Paribas Fortis European Open,Kimmer Coppejans,Andrea Guerrieri,atp_248,atp_484,ATP,Hard
 2026-10-17,Final,BNP Paribas Fortis European Open,Nishesh Basavareddy,Edas Butvilas,atp_190,atp_250,ATP,Hard
 2026-10-17,Final,BNP Paribas Fortis European Open,Giovanni Mpetshi Perricard,Remy Bertola,atp_58,atp_213,ATP,Hard
@@ -30,7 +30,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-17,Final,BNB Ningbo Open,Jiali Dong,Alina Korneeva,wta_9100,wta_146,ATP,
 2026-10-17,Final,Dongfeng Voyah Wuhan Open,Iga Swiatek,Maja Chwalinska,wta_2,wta_126,WTA,
 2026-10-17,Final,Dongfeng Voyah Wuhan Open,Sonay Kartal,Jelena Ostapenko,wta_51,wta_27,WTA,
-2026-10-17,02:30,Kinoshita Group Japan Open,Maya Joint,Kayla Day,wta_29,wta_197,WTA,Hard
+2026-10-17,02:30,Kinoshita Group Japan Open,Maya Joint,Kayla Day,wta_29,wta_194,WTA,Hard
 2026-10-17,02:30,Kinoshita Group Japan Open,Taylah Preston,Emerson Jones,wta_147,wta_152,WTA,Hard
 2026-10-17,02:30,Kinoshita Group Japan Open,Mary Stoiana,Sayaka Ishii,wta_185,wta_9011,WTA,Hard
 2026-10-17,04:00,Kinoshita Group Japan Open,Harriet Dart,Aoi Ito,wta_169,wta_176,WTA,Hard
@@ -46,8 +46,18 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-18,10:00,Almaty Open,Aleksandr Shevchenko,Stefanos Sakellaridis,atp_79,atp_275,ATP,Hard
 2026-10-18,10:30,BNP Paribas Fortis European Open,Remy Bertola,Federico Cina,atp_213,atp_224,ATP,Hard
 2026-10-18,12:00,BNP Paribas Fortis European Open,Clement Chidekh,Gauthier Onclin,atp_205,atp_312,ATP,Hard
+2026-10-18,13:00,BNP Paribas Fortis European Open,Nishesh Basavareddy,Aziz Dougaz,atp_190,atp_400,ATP,Hard
+2026-10-18,14:00,BNP Paribas Fortis European Open,Martin Damm,Andrea Guerrieri,atp_125,atp_484,ATP,Hard
+2026-10-18,09:00,Grand Prix Auvergne-Rhône-Alpes,Otto Virtanen,Vitaliy Sachko,atp_128,atp_181,ATP,
+2026-10-18,09:00,Grand Prix Auvergne-Rhône-Alpes,Jurij Rodionov,Pierre-Hugues Herbert,atp_175,atp_189,ATP,
+2026-10-18,10:30,Grand Prix Auvergne-Rhône-Alpes,Kyrian Jacquet,Sascha Gueymard Wayenburg,atp_153,atp_266,ATP,
+2026-10-18,10:30,Grand Prix Auvergne-Rhône-Alpes,Maxim Mrva,Dusan Lajovic,atp_320,atp_129,ATP,
+2026-10-18,12:00,Grand Prix Auvergne-Rhône-Alpes,Valentin Royer,Clement Tabur,atp_59,atp_204,ATP,
+2026-10-18,12:00,Grand Prix Auvergne-Rhône-Alpes,Francesco Maestrelli,Borna Gojo,atp_110,atp_235,ATP,
+2026-10-18,13:30,Grand Prix Auvergne-Rhône-Alpes,Ugo Blanchet,Nicolai Budkov Kjaer,atp_162,atp_133,ATP,
+2026-10-18,13:30,Grand Prix Auvergne-Rhône-Alpes,Jan Kumstat,Michael Mmoh,atp_124,atp_353,ATP,
 2026-10-18,08:30,Rolex Shanghai Masters,Alejandro Davidovich Fokina,Rafael Jodar,atp_15,atp_117,ATP,Hard
 2026-10-18,10:30,Dongfeng Voyah Wuhan Open,Maja Chwalinska,Sonay Kartal,wta_126,wta_51,WTA,
 2026-10-18,10:00,Lisboa Belem Open,Clara Burel,Leyre Romero Gormaz,wta_15,wta_140,WTA,
-2026-10-18,Final,RoveretOpen Città della Pace,Bianca Andreescu,Dominika Salkova,wta_161,wta_151,WTA,
+2026-10-18,12:00,RoveretOpen Città della Pace,Bianca Andreescu,Dominika Salkova,wta_161,wta_151,WTA,
 2026-10-18,08:00,Vanda Pharmaceuticals Mallorca Women's Championships,Ariana Geerlings,Laura Samson,wta_343,wta_212,WTA,
