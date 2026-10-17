@@ -1,37 +1,45 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-10-17,07:30,Almaty Open,Adam Walton,Beibit Zhukayev,atp_93,atp_292,ATP,Hard
-2026-10-17,07:30,Almaty Open,Taro Daniel,Nikoloz Basilashvili,atp_402,atp_136,ATP,Hard
-2026-10-17,09:00,Almaty Open,Luka Pavlovic,Ilia Simakin,atp_209,atp_217,ATP,Hard
-2026-10-17,09:00,Almaty Open,Roman Safiullin,Ilya Ivashka,atp_185,atp_799,ATP,Hard
 2026-10-17,11:00,Almaty Open,Petr Bar Biryukov,Stefanos Sakellaridis,atp_303,atp_275,ATP,Hard
 2026-10-17,12:00,Almaty Open,Aleksandr Shevchenko,Daniil Glinka,atp_79,atp_169,ATP,Hard
+2026-10-17,06:00,Almaty Open,Gabriel Diallo,Rei Sakamoto,atp_39,atp_173,ATP,Hard
+2026-10-17,06:00,Almaty Open,Adam Walton,Nikoloz Basilashvili,atp_93,atp_136,ATP,Hard
+2026-10-17,Final,Almaty Open,Luka Pavlovic,Ilia Simakin,atp_209,atp_217,ATP,Hard
+2026-10-17,Final,Almaty Open,Roman Safiullin,Ilya Ivashka,atp_185,atp_799,ATP,Hard
+2026-10-17,Final,Almaty Open,Adam Walton,Beibit Zhukayev,atp_93,atp_292,ATP,Hard
+2026-10-17,Final,Almaty Open,Taro Daniel,Nikoloz Basilashvili,atp_402,atp_136,ATP,Hard
 2026-10-17,10:30,BNP Paribas Fortis European Open,Harry Wendelken,Gauthier Onclin,atp_276,atp_312,ATP,Hard
-2026-10-17,10:30,BNP Paribas Fortis European Open,Joel Josef Schwaerzler,Federico Cina,atp_9030,atp_224,ATP,Hard
 2026-10-17,12:00,BNP Paribas Fortis European Open,Clement Chidekh,Gilles Arnaud Bailly,atp_205,atp_211,ATP,Hard
 2026-10-17,12:00,BNP Paribas Fortis European Open,Giovanni Mpetshi Perricard,Remy Bertola,atp_58,atp_213,ATP,Hard
 2026-10-17,13:30,BNP Paribas Fortis European Open,Nishesh Basavareddy,Edas Butvilas,atp_190,atp_250,ATP,Hard
 2026-10-17,13:30,BNP Paribas Fortis European Open,Kimmer Coppejans,Andrea Guerrieri,atp_248,atp_484,ATP,Hard
-2026-10-17,15:00,BNP Paribas Fortis European Open,Aziz Dougaz,Tom Gentzsch,atp_400,atp_243,ATP,Hard
-2026-10-17,15:00,BNP Paribas Fortis European Open,Martin Damm,Buvaysar Gadamauri,atp_125,atp_422,ATP,Hard
-2026-10-17,08:30,Rolex Shanghai Masters,Alexander Zverev,Alejandro Davidovich Fokina,atp_4,atp_15,ATP,Hard
-2026-10-17,11:00,Rolex Shanghai Masters,Rafael Jodar,Daniil Medvedev,atp_117,atp_11,ATP,Hard
-2026-10-17,Live,BNB Ningbo Open,Jiali Dong,Alina Korneeva,wta_9100,wta_146,ATP,
-2026-10-17,Live,BNB Ningbo Open,Anhelina Kalinina,Simona Waltert,wta_191,wta_81,WTA,
-2026-10-17,07:30,BNB Ningbo Open,Mayar Sherif,Tatiana Prozorova,wta_108,wta_166,WTA,
-2026-10-17,08:00,BNB Ningbo Open,Dayana Yastremska,Kamilla Rakhimova,wta_43,wta_91,WTA,
-2026-10-17,08:00,BNB Ningbo Open,Magdalena Frech,Shi Han,wta_55,wta_330,WTA,
-2026-10-17,09:00,Dongfeng Voyah Wuhan Open,Sonay Kartal,Jelena Ostapenko,wta_51,wta_27,WTA,
-2026-10-17,10:30,Dongfeng Voyah Wuhan Open,Iga Swiatek,Maja Chwalinska,wta_2,wta_126,WTA,
+2026-10-17,15:00,BNP Paribas Fortis European Open,Aziz Dougaz,Tom Gentzsch,atp_400,atp_330,ATP,Hard
+2026-10-17,15:00,BNP Paribas Fortis European Open,Martin Damm,Buvaysar Gadamauri,atp_383,atp_422,ATP,Hard
+2026-10-17,Final,BNP Paribas Fortis European Open,Joel Josef Schwaerzler,Federico Cina,atp_9030,atp_224,ATP,Hard
+2026-10-17,Live,Rolex Shanghai Masters,Rafael Jodar,Daniil Medvedev,atp_117,atp_11,ATP,Hard
+2026-10-17,Final,Rolex Shanghai Masters,Alexander Zverev,Alejandro Davidovich Fokina,atp_4,atp_15,ATP,Hard
+2026-10-17,03:00,BNB Ningbo Open,Anastasia Zakharova,Polina Kudermetova,wta_103,wta_144,WTA,
+2026-10-17,03:00,BNB Ningbo Open,Daria Snigur,Katarzyna Kawa,wta_132,wta_143,WTA,
+2026-10-17,04:30,BNB Ningbo Open,Alycia Parks,Yulia Putintseva,wta_243,wta_77,WTA,
+2026-10-17,04:30,BNB Ningbo Open,Anhelina Kalinina,Aliaksandra Sasnovich,wta_191,wta_113,WTA,
+2026-10-17,06:00,BNB Ningbo Open,Shi Han,Alina Korneeva,wta_330,wta_146,WTA,
+2026-10-17,06:00,BNB Ningbo Open,Tatiana Prozorova,Kamilla Rakhimova,wta_166,wta_91,WTA,
+2026-10-17,Final,BNB Ningbo Open,Dayana Yastremska,Kamilla Rakhimova,wta_43,wta_91,WTA,
+2026-10-17,TBD,BNB Ningbo Open,Magdalena Frech,Shi Han,wta_55,wta_330,WTA,
+2026-10-17,Final,BNB Ningbo Open,Mayar Sherif,Tatiana Prozorova,wta_108,wta_166,WTA,
+2026-10-17,Final,BNB Ningbo Open,Anhelina Kalinina,Simona Waltert,wta_191,wta_81,WTA,
+2026-10-17,Final,BNB Ningbo Open,Jiali Dong,Alina Korneeva,wta_9100,wta_146,ATP,
+2026-10-17,Live,Dongfeng Voyah Wuhan Open,Iga Swiatek,Maja Chwalinska,wta_2,wta_126,WTA,
+2026-10-17,Final,Dongfeng Voyah Wuhan Open,Sonay Kartal,Jelena Ostapenko,wta_51,wta_27,WTA,
 2026-10-17,02:30,Kinoshita Group Japan Open,Maya Joint,Kayla Day,wta_29,wta_194,WTA,Hard
-2026-10-17,02:30,Kinoshita Group Japan Open,Taylah Preston,Emerson Jones,wta_147,wta_72,WTA,Hard
+2026-10-17,02:30,Kinoshita Group Japan Open,Taylah Preston,Emerson Jones,wta_147,wta_152,WTA,Hard
 2026-10-17,02:30,Kinoshita Group Japan Open,Mary Stoiana,Sayaka Ishii,wta_185,wta_9011,WTA,Hard
 2026-10-17,04:00,Kinoshita Group Japan Open,Harriet Dart,Aoi Ito,wta_169,wta_176,WTA,Hard
-2026-10-17,10:00,Lisboa Belem Open,Leyre Romero Gormaz,Dalma Galfi,wta_140,wta_86,WTA,
-2026-10-17,11:30,Lisboa Belem Open,Jessica Bouzas Maneiro,Clara Burel,wta_48,wta_15,WTA,
-2026-10-17,11:00,RoveretOpen Città della Pace,Martyna Kubka,Dominika Salkova,wta_338,wta_151,WTA,
+2026-10-17,04:00,Kinoshita Group Japan Open,Claire Liu,Maddison Inglis,wta_213,wta_123,WTA,Hard
+2026-10-17,04:00,Kinoshita Group Japan Open,Sinja Kraus,Sofia Kenin,wta_105,wta_32,WTA,Hard
+2026-10-17,Live,Lisboa Belem Open,Jessica Bouzas Maneiro,Clara Burel,wta_48,wta_15,WTA,
+2026-10-17,Final,Lisboa Belem Open,Leyre Romero Gormaz,Dalma Galfi,wta_140,wta_86,WTA,
+2026-10-17,Live,RoveretOpen Città della Pace,Martyna Kubka,Dominika Salkova,wta_338,wta_151,WTA,
 2026-10-17,13:00,RoveretOpen Città della Pace,Bianca Andreescu,Lucie Havlickova,wta_161,wta_276,WTA,
-2026-10-17,08:00,Vanda Pharmaceuticals Mallorca Women's Championships,Ariana Geerlings,Francesca Curmi,wta_343,wta_335,WTA,
-2026-10-17,09:30,Vanda Pharmaceuticals Mallorca Women's Championships,Tamara Zidansek,Laura Samson,wta_145,wta_212,WTA,
-2026-10-18,TBD,BNB Ningbo Open,Anastasia Zakharova,Polina Kudermetova,wta_103,wta_144,WTA,
-2026-10-18,TBD,BNB Ningbo Open,Daria Snigur,Katarzyna Kawa,wta_132,wta_143,WTA,
-2026-10-18,TBD,BNB Ningbo Open,Alycia Parks,Yulia Putintseva,wta_243,wta_77,WTA,
+2026-10-17,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Tamara Zidansek,Laura Samson,wta_145,wta_212,WTA,
+2026-10-17,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Ariana Geerlings,Francesca Curmi,wta_343,wta_335,WTA,
+2026-10-18,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Ariana Geerlings,Laura Samson,wta_343,wta_212,WTA,
