@@ -4,7 +4,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-17,Final,Almaty Open,Aleksandr Shevchenko,Daniil Glinka,atp_79,atp_169,ATP,Hard
 2026-10-17,Final,Almaty Open,Petr Bar Biryukov,Stefanos Sakellaridis,atp_303,atp_275,ATP,Hard
 2026-10-17,Final,Almaty Open,Luka Pavlovic,Ilia Simakin,atp_209,atp_217,ATP,Hard
-2026-10-17,Final,Almaty Open,Roman Safiullin,Ilya Ivashka,atp_185,atp_898,ATP,Hard
+2026-10-17,Final,Almaty Open,Roman Safiullin,Ilya Ivashka,atp_185,atp_799,ATP,Hard
 2026-10-17,Final,Almaty Open,Adam Walton,Beibit Zhukayev,atp_93,atp_292,ATP,Hard
 2026-10-17,Final,Almaty Open,Taro Daniel,Nikoloz Basilashvili,atp_402,atp_136,ATP,Hard
 2026-10-17,Final,BNP Paribas Fortis European Open,Martin Damm,Buvaysar Gadamauri,atp_125,atp_422,ATP,Hard
@@ -19,7 +19,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-17,Final,Rolex Shanghai Masters,Rafael Jodar,Daniil Medvedev,atp_117,atp_11,ATP,Hard
 2026-10-17,03:00,BNB Ningbo Open,Anastasia Zakharova,Polina Kudermetova,wta_103,wta_144,WTA,
 2026-10-17,03:00,BNB Ningbo Open,Daria Snigur,Katarzyna Kawa,wta_132,wta_143,WTA,
-2026-10-17,04:30,BNB Ningbo Open,Alycia Parks,Yulia Putintseva,wta_243,wta_77,WTA,
+2026-10-17,04:30,BNB Ningbo Open,Alycia Parks,Yulia Putintseva,wta_76,wta_77,WTA,
 2026-10-17,04:30,BNB Ningbo Open,Anhelina Kalinina,Aliaksandra Sasnovich,wta_191,wta_113,WTA,
 2026-10-17,06:00,BNB Ningbo Open,Tatiana Prozorova,Kamilla Rakhimova,wta_166,wta_91,WTA,
 2026-10-17,06:00,BNB Ningbo Open,Shi Han,Alina Korneeva,wta_330,wta_146,WTA,
@@ -41,7 +41,7 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-17,Final,RoveretOpen Città della Pace,Martyna Kubka,Dominika Salkova,wta_338,wta_151,WTA,
 2026-10-17,Final,RoveretOpen Città della Pace,Bianca Andreescu,Lucie Havlickova,wta_161,wta_276,WTA,
 2026-10-17,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Tamara Zidansek,Laura Samson,wta_145,wta_212,WTA,
-2026-10-17,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Ariana Geerlings,Francesca Curmi,wta_343,wta_335,WTA,
+2026-10-17,Final,Vanda Pharmaceuticals Mallorca Women's Championships,Ariana Geerlings,Francesca Curmi,wta_343,wta_339,WTA,
 2026-10-18,07:30,Almaty Open,Roman Safiullin,Ilia Simakin,atp_185,atp_217,ATP,Hard
 2026-10-18,10:00,Almaty Open,Aleksandr Shevchenko,Stefanos Sakellaridis,atp_79,atp_275,ATP,Hard
 2026-10-18,10:30,BNP Paribas Fortis European Open,Remy Bertola,Federico Cina,atp_213,atp_224,ATP,Hard
