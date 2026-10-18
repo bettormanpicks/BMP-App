@@ -3,12 +3,12 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-18,06:30,Almaty Open,Miomir Kecmanovic,James Duckworth
 2026-10-18,Final,Almaty Open,Aleksandr Shevchenko,Stefanos Sakellaridis
 2026-10-18,Final,Almaty Open,Roman Safiullin,Ilia Simakin
-2026-10-18,14:00,BNP Paribas Fortis European Open,Martin Damm,Andrea Guerrieri
+2026-10-18,Final,BNP Paribas Fortis European Open,Martin Damm,Andrea Guerrieri
 2026-10-18,Final,BNP Paribas Fortis European Open,Nishesh Basavareddy,Aziz Dougaz
 2026-10-18,Final,BNP Paribas Fortis European Open,Clement Chidekh,Gauthier Onclin
 2026-10-18,Final,BNP Paribas Fortis European Open,Remy Bertola,Federico Cina
-2026-10-18,13:30,Grand Prix Auvergne-Rhône-Alpes,Ugo Blanchet,Nicolai Budkov Kjaer
-2026-10-18,13:30,Grand Prix Auvergne-Rhône-Alpes,Jan Kumstat,Michael Mmoh
+2026-10-18,Final,Grand Prix Auvergne-Rhône-Alpes,Ugo Blanchet,Nicolai Budkov Kjaer
+2026-10-18,Final,Grand Prix Auvergne-Rhône-Alpes,Jan Kumstat,Michael Mmoh
 2026-10-18,Final,Grand Prix Auvergne-Rhône-Alpes,Francesco Maestrelli,Borna Gojo
 2026-10-18,Final,Grand Prix Auvergne-Rhône-Alpes,Valentin Royer,Clement Tabur
 2026-10-18,Final,Grand Prix Auvergne-Rhône-Alpes,Maxim Mrva,Dusan Lajovic
@@ -31,8 +31,13 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-19,08:00,Almaty Open,Adrian Mannarino,Aleksandar Vukic
 2026-10-19,09:30,Almaty Open,Marin Cilic,Nikoloz Basilashvili
 2026-10-19,14:30,Almaty Open,Mikhail Kukushkin,Stefanos Sakellaridis
+2026-10-19,10:00,BNP Paribas Fortis European Open,Federico Cina,Jaume Munar
+2026-10-19,11:30,BNP Paribas Fortis European Open,Yannick Hanfmann,Martin Damm
+2026-10-19,13:30,BNP Paribas Fortis European Open,Andrea Guerrieri,Alex Michelsen
 2026-10-19,09:00,Grand Prix Auvergne-Rhône-Alpes,Pierre-Hugues Herbert,Maxim Mrva
 2026-10-19,10:00,Grand Prix Auvergne-Rhône-Alpes,Vitaliy Sachko,Borna Gojo
+2026-10-19,10:30,Grand Prix Auvergne-Rhône-Alpes,Kyrian Jacquet,Michael Mmoh
+2026-10-19,11:30,Grand Prix Auvergne-Rhône-Alpes,Clement Tabur,Nicolai Budkov Kjaer
 2026-10-19,13:00,Grand Prix Auvergne-Rhône-Alpes,Jaime Faria,Felix Balshaw
 2026-10-19,14:30,Grand Prix Auvergne-Rhône-Alpes,Matteo Arnaldi,Lorenzo Musetti
 2026-10-19,16:00,Grand Prix Auvergne-Rhône-Alpes,Lorenzo Sonego,Moise Kouame
