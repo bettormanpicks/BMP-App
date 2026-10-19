@@ -1,65 +1,55 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-10-19,Live,Almaty Open,Adrian Mannarino,Aleksandar Vukic,atp_48,atp_88,ATP,Hard
-2026-10-19,09:30,Almaty Open,Marin Cilic,Nikoloz Basilashvili,atp_52,atp_136,ATP,Hard
-2026-10-19,14:30,Almaty Open,Mikhail Kukushkin,Stefanos Sakellaridis,atp_262,atp_275,ATP,Hard
-2026-10-19,10:00,BNP Paribas Fortis European Open,Federico Cina,Jaume Munar,atp_224,atp_35,ATP,Hard
-2026-10-19,11:30,BNP Paribas Fortis European Open,Yannick Hanfmann,Martin Damm,atp_90,atp_125,ATP,Hard
-2026-10-19,13:30,BNP Paribas Fortis European Open,Andrea Guerrieri,Alex Michelsen,atp_484,atp_41,ATP,Hard
-2026-10-19,09:00,Grand Prix Auvergne-Rhône-Alpes,Pierre-Hugues Herbert,Maxim Mrva,atp_189,atp_320,ATP,
-2026-10-19,10:00,Grand Prix Auvergne-Rhône-Alpes,Vitaliy Sachko,Borna Gojo,atp_181,atp_235,ATP,
-2026-10-19,10:30,Grand Prix Auvergne-Rhône-Alpes,Kyrian Jacquet,Michael Mmoh,atp_153,atp_353,ATP,
-2026-10-19,11:30,Grand Prix Auvergne-Rhône-Alpes,Clement Tabur,Nicolai Budkov Kjaer,atp_204,atp_133,ATP,
-2026-10-19,13:00,Grand Prix Auvergne-Rhône-Alpes,Jaime Faria,Felix Balshaw,atp_146,atp_321,ATP,
-2026-10-19,14:30,Grand Prix Auvergne-Rhône-Alpes,Matteo Arnaldi,Lorenzo Musetti,atp_85,atp_5,ATP,
-2026-10-19,16:00,Grand Prix Auvergne-Rhône-Alpes,Lorenzo Sonego,Moise Kouame,atp_64,atp_9040,ATP,
-2026-10-19,Live,BNB Ningbo Open,Sorana Cirstea,Shi Han,wta_30,wta_330,WTA,
-2026-10-19,08:15,BNB Ningbo Open,Daria Kasatkina,Aliaksandra Sasnovich,wta_61,wta_113,WTA,
-2026-10-19,09:30,BNB Ningbo Open,Kamilla Rakhimova,Marie Bouzkova,wta_91,wta_39,WTA,
-2026-10-19,11:30,BNB Ningbo Open,Alexandra Eala,Diane Parry,wta_45,wta_107,WTA,
-2026-10-19,02:30,Kinoshita Group Japan Open,Tereza Valentova,Zhang Shuai,wta_42,wta_85,WTA,Hard
-2026-10-19,02:30,Kinoshita Group Japan Open,Ann Li,Emerson Jones,wta_36,wta_152,WTA,Hard
+2026-10-19,Live,Almaty Open,Mikhail Kukushkin,Stefanos Sakellaridis,atp_262,atp_275,ATP,Hard
+2026-10-19,06:30,Almaty Open,Terence Atmane,Rinky Hijikata,atp_65,atp_112,ATP,Hard
+2026-10-19,06:30,Almaty Open,Sho Shimabukuro,Roman Safiullin,atp_135,atp_185,ATP,Hard
+2026-10-19,Final,Almaty Open,Marin Cilic,Nikoloz Basilashvili,atp_52,atp_136,ATP,Hard
+2026-10-19,Final,Almaty Open,Adrian Mannarino,Aleksandar Vukic,atp_48,atp_88,ATP,Hard
+2026-10-19,Final,BNP Paribas Fortis European Open,Andrea Guerrieri,Alex Michelsen,atp_484,atp_41,ATP,Hard
+2026-10-19,Final,BNP Paribas Fortis European Open,Yannick Hanfmann,Martin Damm,atp_90,atp_383,ATP,Hard
+2026-10-19,Final,BNP Paribas Fortis European Open,Federico Cina,Jaume Munar,atp_224,atp_35,ATP,Hard
+2026-10-19,Live,Grand Prix Auvergne-Rhône-Alpes,Matteo Arnaldi,Lorenzo Musetti,atp_85,atp_5,ATP,
+2026-10-19,16:30,Grand Prix Auvergne-Rhône-Alpes,Lorenzo Sonego,Moise Kouame,atp_64,atp_9040,ATP,
+2026-10-19,Final,Grand Prix Auvergne-Rhône-Alpes,Jaime Faria,Felix Balshaw,atp_146,atp_321,ATP,
+2026-10-19,Final,Grand Prix Auvergne-Rhône-Alpes,Clement Tabur,Nicolai Budkov Kjaer,atp_204,atp_133,ATP,
+2026-10-19,TBD,Grand Prix Auvergne-Rhône-Alpes,Kyrian Jacquet,Michael Mmoh,atp_153,atp_353,ATP,
+2026-10-19,Final,Grand Prix Auvergne-Rhône-Alpes,Vitaliy Sachko,Borna Gojo,atp_181,atp_235,ATP,
+2026-10-19,Final,Grand Prix Auvergne-Rhône-Alpes,Pierre-Hugues Herbert,Maxim Mrva,atp_189,atp_320,ATP,
+2026-10-19,05:00,BNB Ningbo Open,Sara Bejlek,Alycia Parks,wta_41,wta_243,WTA,
+2026-10-19,05:00,BNB Ningbo Open,Yulia Putintseva,Diana Shnaider,wta_77,wta_21,WTA,
+2026-10-19,06:30,BNB Ningbo Open,Jasmine Paolini,Anhelina Kalinina,wta_8,wta_191,WTA,
+2026-10-19,06:30,BNB Ningbo Open,Cristina Bucsa,Polina Kudermetova,wta_62,wta_144,WTA,
+2026-10-19,Final,BNB Ningbo Open,Sorana Cirstea,Shi Han,wta_30,wta_330,WTA,
+2026-10-19,Final,BNB Ningbo Open,Alexandra Eala,Diane Parry,wta_45,wta_107,WTA,
+2026-10-19,Final,BNB Ningbo Open,Kamilla Rakhimova,Marie Bouzkova,wta_91,wta_39,WTA,
+2026-10-19,Final,BNB Ningbo Open,Daria Kasatkina,Aliaksandra Sasnovich,wta_61,wta_113,WTA,
+2026-10-19,02:30,Kinoshita Group Japan Open,Tereza Valentova,Zhang Shuai,wta_42,atp_449,WTA,Hard
+2026-10-19,02:30,Kinoshita Group Japan Open,Ann Li,Emerson Jones,wta_36,wta_72,WTA,Hard
 2026-10-19,02:30,Kinoshita Group Japan Open,Claire Liu,Magda Linette,wta_213,wta_50,WTA,Hard
-2026-10-19,04:00,Kinoshita Group Japan Open,Moyuka Uchijima,Ena Shibahara,wta_90,wta_200,WTA,Hard
+2026-10-19,03:30,Kinoshita Group Japan Open,Katie Boulter,Himeno Sakatsume,wta_83,wta_135,WTA,Hard
 2026-10-19,04:00,Kinoshita Group Japan Open,Oleksandra Oliynykova,Mary Stoiana,wta_71,wta_185,WTA,Hard
 2026-10-19,04:00,Kinoshita Group Japan Open,Paula Badosa,Antonia Ruzic,wta_70,wta_67,WTA,Hard
+2026-10-19,05:00,Kinoshita Group Japan Open,Moyuka Uchijima,Ena Shibahara,wta_90,wta_200,WTA,Hard
 2026-10-19,05:30,Kinoshita Group Japan Open,Kayla Day,Kimberly Birrell,wta_194,wta_94,WTA,Hard
 2026-10-19,05:30,Kinoshita Group Japan Open,Maya Joint,Zeynep Sonmez,wta_29,wta_84,WTA,Hard
-2026-10-19,05:30,Kinoshita Group Japan Open,Katerina Siniakova,Peyton Stearns,wta_46,wta_59,WTA,Hard
-2026-10-19,TBD,Kinoshita Group Japan Open,Katie Boulter,Himeno Sakatsume,wta_83,wta_135,WTA,Hard
-2026-10-20,TBD,Almaty Open,Mattia Bellucci,Tomas Martin Etcheverry,atp_109,atp_53,ATP,Hard
-2026-10-20,TBD,Almaty Open,Sho Shimabukuro,Roman Safiullin,atp_135,atp_185,ATP,Hard
-2026-10-20,TBD,Almaty Open,Stefanos Tsitsipas,Aleksandar Kovacevic,atp_32,atp_75,ATP,Hard
-2026-10-20,TBD,Almaty Open,Zangar Nurlanuly,Tomas Machac,atp_9100,atp_31,ATP,Hard
-2026-10-20,TBD,Almaty Open,Rei Sakamoto,Karen Khachanov,atp_173,atp_17,ATP,Hard
-2026-10-20,TBD,Almaty Open,Terence Atmane,Rinky Hijikata,atp_65,atp_112,ATP,Hard
-2026-10-20,TBD,Almaty Open,Fabian Marozsan,Timofey Skatov,atp_47,atp_193,ATP,Hard
-2026-10-20,TBD,BNP Paribas Fortis European Open,Mariano Navone,Juan Manuel Cerundolo,atp_74,atp_19,ATP,Hard
-2026-10-20,TBD,BNP Paribas Fortis European Open,David Goffin,Remy Bertola,atp_118,atp_213,ATP,Hard
-2026-10-20,TBD,BNP Paribas Fortis European Open,Tallon Griekspoor,Max Schoenhaus,atp_25,atp_454,ATP,Hard
-2026-10-20,TBD,BNP Paribas Fortis European Open,Nishesh Basavareddy,Raphael Collignon,atp_190,atp_68,ATP,Hard
-2026-10-20,TBD,BNP Paribas Fortis European Open,Botic Van De Zandschulp,Clement Chidekh,atp_55,atp_205,ATP,Hard
-2026-10-20,TBD,BNP Paribas Fortis European Open,Jacob Fearnley,Hugo Gaston,atp_84,atp_96,ATP,Hard
-2026-10-20,TBD,BNP Paribas Fortis European Open,Dino Prizmic,Damir Dzumhur,atp_121,atp_61,ATP,Hard
-2026-10-20,TBD,BNP Paribas Fortis European Open,Jan-Lennard Struff,Marcos Giron,atp_77,atp_63,ATP,Hard
-2026-10-20,TBD,BNP Paribas Fortis European Open,Toby Samuel,Zizou Bergs,atp_241,atp_43,ATP,Hard
-2026-10-20,TBD,Grand Prix Auvergne-Rhône-Alpes,Ugo Humbert,Corentin Moutet,atp_38,atp_34,ATP,
-2026-10-20,TBD,Grand Prix Auvergne-Rhône-Alpes,Daniel Altmaier,Titouan Droguet,atp_54,atp_119,ATP,
-2026-10-20,TBD,Grand Prix Auvergne-Rhône-Alpes,Hamad Medjedovic,Brandon Nakashima,atp_97,atp_29,ATP,
-2026-10-20,TBD,Grand Prix Auvergne-Rhône-Alpes,Stan Wawrinka,Martin Landaluce,atp_98,atp_383,ATP,
-2026-10-20,TBD,Grand Prix Auvergne-Rhône-Alpes,Benjamin Bonzi,Cameron Norrie,atp_123,atp_27,ATP,
-2026-10-20,TBD,BNB Ningbo Open,Sara Bejlek,Wang Xiyu,wta_41,wta_34,WTA,
-2026-10-20,TBD,BNB Ningbo Open,Jasmine Paolini,Anhelina Kalinina,wta_8,wta_191,WTA,
-2026-10-20,TBD,BNB Ningbo Open,Jelena Ostapenko,Belinda Bencic,wta_27,wta_12,WTA,
-2026-10-20,TBD,BNB Ningbo Open,Guo Hanyu,Ekaterina Alexandrova,wta_186,wta_11,WTA,
-2026-10-20,TBD,BNB Ningbo Open,Yulia Putintseva,Diana Shnaider,wta_77,wta_21,WTA,
-2026-10-20,TBD,BNB Ningbo Open,Katarzyna Kawa,Daria Snigur,wta_143,wta_132,WTA,
-2026-10-20,TBD,BNB Ningbo Open,Cristina Bucsa,Polina Kudermetova,wta_62,wta_144,WTA,
-2026-10-20,TBD,Kinoshita Group Japan Open,Moyuka Uchijima,Ena Shibahara,wta_90,wta_200,WTA,Hard
-2026-10-20,TBD,Kinoshita Group Japan Open,Oleksandra Oliynykova,Mary Stoiana,wta_71,wta_185,WTA,Hard
-2026-10-20,TBD,Kinoshita Group Japan Open,Maya Joint,Zeynep Sonmez,wta_29,wta_84,WTA,Hard
-2026-10-20,TBD,Kinoshita Group Japan Open,Kayla Day,Kimberly Birrell,wta_194,wta_94,WTA,Hard
-2026-10-20,TBD,Kinoshita Group Japan Open,Ann Li,Emerson Jones,wta_36,wta_152,WTA,Hard
-2026-10-20,TBD,Kinoshita Group Japan Open,Paula Badosa,Antonia Ruzic,wta_70,wta_67,WTA,Hard
-2026-10-20,TBD,Kinoshita Group Japan Open,Claire Liu,Magda Linette,wta_213,wta_50,WTA,Hard
-2026-10-20,TBD,Kinoshita Group Japan Open,Katerina Siniakova,Peyton Stearns,wta_46,wta_59,WTA,Hard
-2026-10-20,TBD,Kinoshita Group Japan Open,Tereza Valentova,Zhang Shuai,wta_42,wta_85,WTA,Hard
+2026-10-19,06:30,Kinoshita Group Japan Open,Katerina Siniakova,Peyton Stearns,wta_46,wta_59,WTA,Hard
+2026-10-20,08:00,Almaty Open,Stefanos Tsitsipas,Aleksandar Kovacevic,atp_32,atp_75,ATP,Hard
+2026-10-20,09:30,Almaty Open,Fabian Marozsan,Timofey Skatov,atp_47,atp_193,ATP,Hard
+2026-10-20,14:30,Almaty Open,Rei Sakamoto,Karen Khachanov,atp_173,atp_17,ATP,Hard
+2026-10-20,09:30,BNP Paribas Fortis European Open,Mariano Navone,Juan Manuel Cerundolo,atp_74,atp_19,ATP,Hard
+2026-10-20,09:30,BNP Paribas Fortis European Open,Tallon Griekspoor,Max Schoenhaus,atp_25,atp_454,ATP,Hard
+2026-10-20,11:00,BNP Paribas Fortis European Open,Botic Van De Zandschulp,Clement Chidekh,atp_55,atp_205,ATP,Hard
+2026-10-20,11:00,BNP Paribas Fortis European Open,Jan-Lennard Struff,Marcos Giron,atp_77,atp_63,ATP,Hard
+2026-10-20,14:00,BNP Paribas Fortis European Open,Jacob Fearnley,Hugo Gaston,atp_84,atp_96,ATP,Hard
+2026-10-20,16:00,BNP Paribas Fortis European Open,Toby Samuel,Zizou Bergs,atp_241,atp_43,ATP,Hard
+2026-10-20,17:30,BNP Paribas Fortis European Open,Nishesh Basavareddy,Raphael Collignon,atp_190,atp_68,ATP,Hard
+2026-10-20,10:00,Grand Prix Auvergne-Rhône-Alpes,Pierre-Hugues Herbert,Sebastian Baez,atp_189,atp_33,ATP,
+2026-10-20,11:30,Grand Prix Auvergne-Rhône-Alpes,Arthur Fery,Borna Gojo,atp_156,atp_235,ATP,
+2026-10-20,12:00,Grand Prix Auvergne-Rhône-Alpes,Ugo Humbert,Corentin Moutet,atp_38,atp_34,ATP,
+2026-10-20,13:00,Grand Prix Auvergne-Rhône-Alpes,Daniel Altmaier,Titouan Droguet,atp_402,atp_119,ATP,
+2026-10-20,13:30,Grand Prix Auvergne-Rhône-Alpes,Benjamin Bonzi,Cameron Norrie,atp_123,atp_27,ATP,
+2026-10-20,14:30,Grand Prix Auvergne-Rhône-Alpes,Luca Van Assche,Clement Tabur,atp_130,atp_204,ATP,
+2026-10-20,17:00,Grand Prix Auvergne-Rhône-Alpes,Matteo Berrettini,Kyrian Jacquet,atp_57,atp_153,ATP,
+2026-10-20,18:30,Grand Prix Auvergne-Rhône-Alpes,Hamad Medjedovic,Brandon Nakashima,atp_97,atp_29,ATP,
+2026-10-20,08:00,BNB Ningbo Open,Jelena Ostapenko,Belinda Bencic,wta_27,wta_12,WTA,
+2026-10-20,09:30,BNB Ningbo Open,Katarzyna Kawa,Daria Snigur,wta_143,wta_132,WTA,
+2026-10-20,11:00,BNB Ningbo Open,Guo Hanyu,Ekaterina Alexandrova,wta_186,wta_11,WTA,
