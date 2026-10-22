@@ -1,16 +1,16 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-10-22,14:30,Almaty Open,Alexander Bublik,Fabian Marozsan,atp_10,atp_47,ATP,Hard
 2026-10-22,06:30,Almaty Open,Nikoloz Basilashvili,Adrian Mannarino,atp_136,atp_48,ATP,Hard
 2026-10-22,Final,Almaty Open,Daniil Medvedev,Sho Shimabukuro,atp_11,atp_135,ATP,Hard
+2026-10-22,TBD,Almaty Open,Alexander Bublik,Fabian Marozsan,atp_10,atp_47,ATP,Hard
 2026-10-22,Final,Almaty Open,Tomas Machac,Karen Khachanov,atp_31,atp_17,ATP,Hard
-2026-10-22,Live,BNP Paribas Fortis European Open,David Goffin,Alex Michelsen,atp_118,atp_41,ATP,Hard
-2026-10-22,15:00,BNP Paribas Fortis European Open,Damir Dzumhur,Zizou Bergs,atp_61,atp_43,ATP,Hard
 2026-10-22,TBD,BNP Paribas Fortis European Open,Arthur Fils,Jaume Munar,atp_40,atp_35,ATP,Hard
 2026-10-22,Final,BNP Paribas Fortis European Open,Raphael Collignon,Jiri Lehecka,atp_68,atp_21,ATP,Hard
-2026-10-22,Live,Grand Prix Auvergne-Rhône-Alpes,Valentin Vacherot,Luca Van Assche,atp_26,atp_130,ATP,
-2026-10-22,14:30,Grand Prix Auvergne-Rhône-Alpes,Pierre-Hugues Herbert,Taylor Fritz,atp_189,atp_7,ATP,
-2026-10-22,17:00,Grand Prix Auvergne-Rhône-Alpes,Flavio Cobolli,Stan Wawrinka,atp_20,atp_98,ATP,
-2026-10-22,18:30,Grand Prix Auvergne-Rhône-Alpes,Kyrian Jacquet,Brandon Nakashima,atp_153,atp_29,ATP,
+2026-10-22,Final,BNP Paribas Fortis European Open,David Goffin,Alex Michelsen,atp_118,atp_41,ATP,Hard
+2026-10-22,Final,BNP Paribas Fortis European Open,Damir Dzumhur,Zizou Bergs,atp_61,atp_43,ATP,Hard
+2026-10-22,Live,Grand Prix Auvergne-Rhône-Alpes,Kyrian Jacquet,Brandon Nakashima,atp_153,atp_29,ATP,
+2026-10-22,Final,Grand Prix Auvergne-Rhône-Alpes,Flavio Cobolli,Stan Wawrinka,atp_20,atp_98,ATP,
+2026-10-22,Final,Grand Prix Auvergne-Rhône-Alpes,Pierre-Hugues Herbert,Taylor Fritz,atp_189,atp_7,ATP,
+2026-10-22,Final,Grand Prix Auvergne-Rhône-Alpes,Valentin Vacherot,Luca Van Assche,atp_26,atp_130,ATP,
 2026-10-22,Final,Grand Prix Auvergne-Rhône-Alpes,Borna Gojo,Daniel Altmaier,atp_235,atp_54,ATP,
 2026-10-22,05:00,BNB Ningbo Open,Sara Bejlek,Marie Bouzkova,wta_41,wta_39,WTA,
 2026-10-22,06:30,BNB Ningbo Open,Leylah Fernandez,Ekaterina Alexandrova,wta_28,wta_11,WTA,
@@ -21,9 +21,14 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-22,05:30,Kinoshita Group Japan Open,Mary Stoiana,Katerina Siniakova,wta_185,wta_46,WTA,Hard
 2026-10-23,08:00,Almaty Open,Stefanos Tsitsipas,James Duckworth,atp_32,atp_80,ATP,Hard
 2026-10-23,09:30,Almaty Open,Daniil Medvedev,Terence Atmane,atp_11,atp_65,ATP,Hard
+2026-10-23,14:30,Almaty Open,Alexander Bublik,Karen Khachanov,atp_10,atp_17,ATP,Hard
 2026-10-23,12:00,BNP Paribas Fortis European Open,Clement Chidekh,Francisco Cerundolo,atp_205,atp_19,ATP,Hard
 2026-10-23,14:00,BNP Paribas Fortis European Open,Tallon Griekspoor,Jiri Lehecka,atp_25,atp_21,ATP,Hard
+2026-10-23,16:30,BNP Paribas Fortis European Open,Arthur Fils,Alex Michelsen,atp_40,atp_41,ATP,Hard
+2026-10-23,18:00,BNP Paribas Fortis European Open,Jan-Lennard Struff,Zizou Bergs,atp_77,atp_43,ATP,Hard
 2026-10-23,12:00,Grand Prix Auvergne-Rhône-Alpes,Corentin Moutet,Tommy Paul,atp_34,atp_24,ATP,
+2026-10-23,13:30,Grand Prix Auvergne-Rhône-Alpes,Daniel Altmaier,Taylor Fritz,atp_54,atp_7,ATP,
+2026-10-23,18:30,Grand Prix Auvergne-Rhône-Alpes,Luca Van Assche,Lorenzo Musetti,atp_130,atp_5,ATP,
 2026-10-23,08:00,BNB Ningbo Open,Iva Jovic,Diana Shnaider,wta_20,wta_21,WTA,
 2026-10-23,11:00,BNB Ningbo Open,Elena Rybakina,Katarzyna Kawa,wta_3,wta_143,WTA,
 2026-10-23,07:00,Kinoshita Group Japan Open,Katie Boulter,Antonia Ruzic,wta_83,wta_67,WTA,Hard
