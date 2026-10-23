@@ -2,21 +2,21 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-23,Final,Almaty Open,Daniil Medvedev,Terence Atmane
 2026-10-23,Final,Almaty Open,Alexander Bublik,Karen Khachanov
 2026-10-23,Final,Almaty Open,Stefanos Tsitsipas,James Duckworth
-2026-10-23,18:55,BNP Paribas Fortis European Open,Jan-Lennard Struff,Zizou Bergs
 2026-10-23,Final,BNP Paribas Fortis European Open,Arthur Fils,Alex Michelsen
 2026-10-23,Final,BNP Paribas Fortis European Open,Tallon Griekspoor,Jiri Lehecka
 2026-10-23,Final,BNP Paribas Fortis European Open,Clement Chidekh,Francisco Cerundolo
-2026-10-23,Live,Grand Prix Auvergne-Rhône-Alpes,Flavio Cobolli,Brandon Nakashima
-2026-10-23,19:15,Grand Prix Auvergne-Rhône-Alpes,Luca Van Assche,Lorenzo Musetti
+2026-10-23,Final,BNP Paribas Fortis European Open,Jan-Lennard Struff,Zizou Bergs
+2026-10-23,Final,Grand Prix Auvergne-Rhône-Alpes,Flavio Cobolli,Brandon Nakashima
 2026-10-23,Final,Grand Prix Auvergne-Rhône-Alpes,Daniel Altmaier,Taylor Fritz
 2026-10-23,Final,Grand Prix Auvergne-Rhône-Alpes,Corentin Moutet,Tommy Paul
+2026-10-23,Final,Grand Prix Auvergne-Rhône-Alpes,Luca Van Assche,Lorenzo Musetti
 2026-10-23,Final,BNB Ningbo Open,Elena Rybakina,Katarzyna Kawa
 2026-10-23,Final,BNB Ningbo Open,Iva Jovic,Diana Shnaider
 2026-10-23,Final,BNB Ningbo Open,Leylah Fernandez,Ekaterina Alexandrova
 2026-10-23,03:00,Guangzhou Open,Polina Kudermetova,Alevtina Ibragimova
 2026-10-23,03:00,Guangzhou Open,Polina Iatcenko,Alexandra Shubladze
-2026-10-23,04:30,Guangzhou Open,Elena Pridankina,Tyra Caterina Grant
 2026-10-23,04:30,Guangzhou Open,Jeline Vandromme,Carol Young Suh Lee
+2026-10-23,04:30,Guangzhou Open,Elena Pridankina,Tyra Caterina Grant
 2026-10-23,06:00,Guangzhou Open,Hong Yi Cody Wong,Emerson Jones
 2026-10-23,06:00,Guangzhou Open,Tatiana Prozorova,Ekaterine Gorgodze
 2026-10-23,03:00,Kinoshita Group Japan Open,Ann Li,Ashlyn Krueger
@@ -37,6 +37,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-24,10:00,Almaty Open,Nikoloz Basilashvili,Stefanos Tsitsipas
 2026-10-24,13:00,Almaty Open,Daniil Medvedev,Alexander Bublik
 2026-10-24,14:00,BNP Paribas Fortis European Open,Francisco Cerundolo,Tallon Griekspoor
+2026-10-24,16:30,BNP Paribas Fortis European Open,Arthur Fils,Jan-Lennard Struff
 2026-10-24,09:00,Erste Bank Open,Jacob Fearnley,Pablo Carreno Busta
 2026-10-24,09:30,Erste Bank Open,Vit Kopriva,Lukas Neumayer
 2026-10-24,10:30,Erste Bank Open,Adolfo Daniel Vallejo,Lorenzo Sonego
@@ -46,6 +47,7 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-24,14:00,Erste Bank Open,Corentin Moutet,Tomas Machac
 2026-10-24,16:00,Erste Bank Open,Thiago Agustin Tirante,Adrian Mannarino
 2026-10-24,12:00,Grand Prix Auvergne-Rhône-Alpes,Tommy Paul,Taylor Fritz
+2026-10-24,13:30,Grand Prix Auvergne-Rhône-Alpes,Flavio Cobolli,Lorenzo Musetti
 2026-10-24,09:00,Swiss Indoors Basel,Marcos Giron,Yannick Hanfmann
 2026-10-24,09:00,Swiss Indoors Basel,Miomir Kecmanovic,Rinky Hijikata
 2026-10-24,10:30,Swiss Indoors Basel,Jaime Faria,Mika Brunold
