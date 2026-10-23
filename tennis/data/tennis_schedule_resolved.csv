@@ -1,17 +1,44 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-10-23,08:05,Almaty Open,Stefanos Tsitsipas,James Duckworth,atp_32,atp_80,ATP,Hard
-2026-10-23,09:30,Almaty Open,Daniil Medvedev,Terence Atmane,atp_11,atp_65,ATP,Hard
 2026-10-23,14:30,Almaty Open,Alexander Bublik,Karen Khachanov,atp_10,atp_17,ATP,Hard
-2026-10-23,12:00,BNP Paribas Fortis European Open,Clement Chidekh,Francisco Cerundolo,atp_205,atp_19,ATP,Hard
+2026-10-23,Final,Almaty Open,Daniil Medvedev,Terence Atmane,atp_11,atp_65,ATP,Hard
+2026-10-23,Final,Almaty Open,Stefanos Tsitsipas,James Duckworth,atp_32,atp_80,ATP,Hard
 2026-10-23,14:00,BNP Paribas Fortis European Open,Tallon Griekspoor,Jiri Lehecka,atp_25,atp_21,ATP,Hard
 2026-10-23,16:30,BNP Paribas Fortis European Open,Arthur Fils,Alex Michelsen,atp_40,atp_41,ATP,Hard
 2026-10-23,18:00,BNP Paribas Fortis European Open,Jan-Lennard Struff,Zizou Bergs,atp_77,atp_43,ATP,Hard
-2026-10-23,12:00,Grand Prix Auvergne-Rhône-Alpes,Corentin Moutet,Tommy Paul,atp_34,atp_24,ATP,
-2026-10-23,13:30,Grand Prix Auvergne-Rhône-Alpes,Daniel Altmaier,Taylor Fritz,atp_54,atp_7,ATP,
+2026-10-23,Final,BNP Paribas Fortis European Open,Clement Chidekh,Francisco Cerundolo,atp_205,atp_19,ATP,Hard
+2026-10-23,14:00,Grand Prix Auvergne-Rhône-Alpes,Daniel Altmaier,Taylor Fritz,atp_54,atp_7,ATP,
 2026-10-23,17:00,Grand Prix Auvergne-Rhône-Alpes,Flavio Cobolli,Brandon Nakashima,atp_20,atp_29,ATP,
 2026-10-23,18:30,Grand Prix Auvergne-Rhône-Alpes,Luca Van Assche,Lorenzo Musetti,atp_130,atp_5,ATP,
-2026-10-23,Live,BNB Ningbo Open,Leylah Fernandez,Ekaterina Alexandrova,wta_28,wta_11,WTA,
-2026-10-23,08:30,BNB Ningbo Open,Iva Jovic,Diana Shnaider,wta_20,wta_21,WTA,
-2026-10-23,11:00,BNB Ningbo Open,Elena Rybakina,Katarzyna Kawa,wta_3,wta_143,WTA,
-2026-10-23,Live,Kinoshita Group Japan Open,Katie Boulter,Antonia Ruzic,wta_83,wta_67,WTA,Hard
-2026-10-24,TBD,Kinoshita Group Japan Open,Ann Li,Ashlyn Krueger,wta_36,wta_100,WTA,Hard
+2026-10-23,TBD,Grand Prix Auvergne-Rhône-Alpes,Corentin Moutet,Tommy Paul,atp_34,atp_24,ATP,
+2026-10-23,Live,BNB Ningbo Open,Elena Rybakina,Katarzyna Kawa,wta_3,wta_143,WTA,
+2026-10-23,Final,BNB Ningbo Open,Iva Jovic,Diana Shnaider,wta_20,wta_21,WTA,
+2026-10-23,Final,BNB Ningbo Open,Leylah Fernandez,Ekaterina Alexandrova,wta_28,wta_11,WTA,
+2026-10-23,03:00,Guangzhou Open,Polina Kudermetova,Alevtina Ibragimova,wta_144,wta_321,WTA,Hard
+2026-10-23,03:00,Guangzhou Open,Polina Iatcenko,Alexandra Shubladze,wta_160,wta_344,WTA,Hard
+2026-10-23,04:30,Guangzhou Open,Elena Pridankina,Tyra Caterina Grant,wta_192,wta_269,WTA,Hard
+2026-10-23,04:30,Guangzhou Open,Jeline Vandromme,Carol Young Suh Lee,wta_291,wta_170,WTA,Hard
+2026-10-23,06:00,Guangzhou Open,Hong Yi Cody Wong,Emerson Jones,atp_137,wta_72,ATP,Hard
+2026-10-23,06:00,Guangzhou Open,Tatiana Prozorova,Ekaterine Gorgodze,wta_166,wta_167,WTA,Hard
+2026-10-23,03:00,Kinoshita Group Japan Open,Ann Li,Ashlyn Krueger,wta_36,wta_100,WTA,Hard
+2026-10-23,04:30,Kinoshita Group Japan Open,Katie Boulter,Katerina Siniakova,wta_83,wta_46,WTA,Hard
+2026-10-23,Final,Kinoshita Group Japan Open,Katie Boulter,Antonia Ruzic,wta_83,wta_67,WTA,Hard
+2026-10-23,01:30,Toray Pan Pacific Open Tennis,Yuliia Starodubtseva,Aliaksandra Sasnovich,wta_101,wta_113,WTA,Hard
+2026-10-23,01:30,Toray Pan Pacific Open Tennis,Shiho Tsujioka,Kamilla Rakhimova,wta_887,wta_91,WTA,Hard
+2026-10-23,01:30,Toray Pan Pacific Open Tennis,Liudmila Samsonova,Heather Watson,wta_18,wta_278,WTA,Hard
+2026-10-23,03:00,Toray Pan Pacific Open Tennis,Ena Shibahara,Alycia Parks,wta_200,wta_243,WTA,Hard
+2026-10-23,03:00,Toray Pan Pacific Open Tennis,Maya Joint,Viktorija Golubic,wta_29,wta_88,WTA,Hard
+2026-10-23,03:00,Toray Pan Pacific Open Tennis,Oleksandra Oliynykova,Mai Hontama,wta_71,wta_220,WTA,Hard
+2026-10-23,04:30,Toray Pan Pacific Open Tennis,Kimberly Birrell,Aoi Ito,wta_94,wta_176,WTA,Hard
+2026-10-23,04:30,Toray Pan Pacific Open Tennis,Kayla Day,Zhang Shuai,wta_194,wta_85,WTA,Hard
+2026-10-23,04:30,Toray Pan Pacific Open Tennis,Ma YeXin,Daria Kasatkina,wta_182,wta_61,WTA,Hard
+2026-10-23,06:00,Toray Pan Pacific Open Tennis,Wang Xinyu,Tereza Valentova,wta_34,wta_42,WTA,Hard
+2026-10-23,06:00,Toray Pan Pacific Open Tennis,Hayu Kinoshita,Yulia Putintseva,wta_417,wta_77,WTA,Hard
+2026-10-23,06:30,Toray Pan Pacific Open Tennis,Katie Boulter,Sayaka Ishii,wta_83,wta_9011,WTA,Hard
+2026-10-24,10:00,Almaty Open,Nikoloz Basilashvili,Stefanos Tsitsipas,atp_136,atp_32,ATP,Hard
+2026-10-24,07:00,BNB Ningbo Open,Leylah Fernandez,Marie Bouzkova,wta_28,wta_39,WTA,
+2026-10-24,07:30,Guangzhou Open,Harriet Dart,Cheuk Ying Shek,wta_169,wta_711,WTA,Hard
+2026-10-24,07:30,Guangzhou Open,Joanna Garland,Maddison Inglis,wta_125,wta_123,WTA,Hard
+2026-10-24,09:30,Guangzhou Open,Dayana Yastremska,You Xiaodi,wta_43,wta_252,WTA,Hard
+2026-10-24,10:00,Guangzhou Open,Qu Yihan,Teodora Kostovic,wta_9100,wta_171,ATP,Hard
+2026-10-24,10:00,Guangzhou Open,Linda Fruhvirtova,Katarzyna Kawa,wta_118,wta_143,WTA,Hard
+2026-10-24,11:00,Guangzhou Open,Anastasia Zakharova,Zhang Ruien,wta_103,wta_9047,WTA,Hard
