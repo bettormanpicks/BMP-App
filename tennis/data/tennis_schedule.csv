@@ -1,42 +1,51 @@
 Date,Time,Tournament,Player 1,Player 2
-2026-10-24,10:00,Almaty Open,Nikoloz Basilashvili,Stefanos Tsitsipas
 2026-10-24,13:00,Almaty Open,Daniil Medvedev,Alexander Bublik
+2026-10-24,Final,Almaty Open,Nikoloz Basilashvili,Stefanos Tsitsipas
 2026-10-24,14:00,BNP Paribas Fortis European Open,Francisco Cerundolo,Tallon Griekspoor
 2026-10-24,16:30,BNP Paribas Fortis European Open,Arthur Fils,Jan-Lennard Struff
-2026-10-24,09:00,Erste Bank Open,Jacob Fearnley,Pablo Carreno Busta
-2026-10-24,09:30,Erste Bank Open,Vit Kopriva,Lukas Neumayer
 2026-10-24,10:30,Erste Bank Open,Adolfo Daniel Vallejo,Lorenzo Sonego
 2026-10-24,11:00,Erste Bank Open,Joel Josef Schwaerzler,Titouan Droguet
 2026-10-24,12:00,Erste Bank Open,Alex Molcan,Hamad Medjedovic
 2026-10-24,12:30,Erste Bank Open,Fabian Marozsan,Sebastian Sorger
 2026-10-24,14:00,Erste Bank Open,Corentin Moutet,Tomas Machac
 2026-10-24,16:00,Erste Bank Open,Thiago Agustin Tirante,Adrian Mannarino
-2026-10-24,12:00,Grand Prix Auvergne-Rhône-Alpes,Tommy Paul,Taylor Fritz
+2026-10-24,Final,Erste Bank Open,Vit Kopriva,Lukas Neumayer
+2026-10-24,Final,Erste Bank Open,Jacob Fearnley,Pablo Carreno Busta
+2026-10-24,Live,Grand Prix Auvergne-Rhône-Alpes,Tommy Paul,Taylor Fritz
 2026-10-24,14:00,Grand Prix Auvergne-Rhône-Alpes,Flavio Cobolli,Lorenzo Musetti
-2026-10-24,09:00,Swiss Indoors Basel,Marcos Giron,Yannick Hanfmann
-2026-10-24,09:00,Swiss Indoors Basel,Miomir Kecmanovic,Rinky Hijikata
 2026-10-24,10:30,Swiss Indoors Basel,Jaime Faria,Mika Brunold
-2026-10-24,10:30,Swiss Indoors Basel,Juan Manuel Cerundolo,Zachary Svajda
 2026-10-24,12:00,Swiss Indoors Basel,Sebastian Baez,Giovanni Mpetshi Perricard
 2026-10-24,12:30,Swiss Indoors Basel,Henry Bernet,Daniel Altmaier
 2026-10-24,13:30,Swiss Indoors Basel,Aleksandar Kovacevic,James Duckworth
-2026-10-24,Live,BNB Ningbo Open,Leylah Fernandez,Marie Bouzkova
-2026-10-24,09:30,BNB Ningbo Open,Elena Rybakina,Diana Shnaider
-2026-10-24,Live,Guangzhou Open,Tatiana Prozorova,Ekaterine Gorgodze
-2026-10-24,08:00,Guangzhou Open,Hong Yi Cody Wong,Emerson Jones
-2026-10-24,08:30,Guangzhou Open,Joanna Garland,Maddison Inglis
-2026-10-24,09:30,Guangzhou Open,Dayana Yastremska,You Xiaodi
-2026-10-24,09:30,Guangzhou Open,Harriet Dart,Cheuk Ying Shek
-2026-10-24,10:00,Guangzhou Open,Linda Fruhvirtova,Mei Yamaguchi
-2026-10-24,11:00,Guangzhou Open,Qu Yihan,Teodora Kostovic
-2026-10-24,11:00,Guangzhou Open,Anastasia Zakharova,Zhang Ruien
-2026-10-24,23:00,Guangzhou Open,Alevtina Ibragimova,Polina Iatcenko
-2026-10-24,07:45,Kinoshita Group Japan Open,Katie Boulter,Katerina Siniakova
-2026-10-24,Live,Toray Pan Pacific Open Tennis,Kimberly Birrell,Aoi Ito
-2026-10-24,08:00,Toray Pan Pacific Open Tennis,Ma YeXin,Daria Kasatkina
-2026-10-24,08:30,Toray Pan Pacific Open Tennis,Hayu Kinoshita,Yulia Putintseva
-2026-10-24,09:00,Toray Pan Pacific Open Tennis,Kayla Day,Zhang Shuai
-2026-10-24,10:00,Toray Pan Pacific Open Tennis,Kyoka Okamura,Sayaka Ishii
-2026-10-24,10:30,Toray Pan Pacific Open Tennis,En-Shuo Liang,Tereza Valentova
-2026-10-24,23:00,Toray Pan Pacific Open Tennis,Aliaksandra Sasnovich,Kamilla Rakhimova
-2026-10-24,23:00,Toray Pan Pacific Open Tennis,Heather Watson,Alycia Parks
+2026-10-24,14:00,Swiss Indoors Basel,Remy Bertola,Jakub Paul
+2026-10-24,Final,Swiss Indoors Basel,Juan Manuel Cerundolo,Zachary Svajda
+2026-10-24,Final,Swiss Indoors Basel,Marcos Giron,Yannick Hanfmann
+2026-10-24,Final,Swiss Indoors Basel,Miomir Kecmanovic,Rinky Hijikata
+2026-10-24,Final,BNB Ningbo Open,Elena Rybakina,Diana Shnaider
+2026-10-24,Final,BNB Ningbo Open,Leylah Fernandez,Marie Bouzkova
+2026-10-24,Live,Guangzhou Open,Dayana Yastremska,You Xiaodi
+2026-10-24,Live,Guangzhou Open,Linda Fruhvirtova,Mei Yamaguchi
+2026-10-24,13:00,Guangzhou Open,Qu Yihan,Teodora Kostovic
+2026-10-24,13:10,Guangzhou Open,Anastasia Zakharova,Zhang Ruien
+2026-10-24,03:00,Guangzhou Open,Carol Young Suh Lee,Elena Pridankina
+2026-10-24,03:00,Guangzhou Open,Alevtina Ibragimova,Polina Iatcenko
+2026-10-24,05:00,Guangzhou Open,Tatiana Prozorova,Joanna Garland
+2026-10-24,Final,Guangzhou Open,Harriet Dart,Cheuk Ying Shek
+2026-10-24,Final,Guangzhou Open,Joanna Garland,Maddison Inglis
+2026-10-24,Final,Guangzhou Open,Hong Yi Cody Wong,Emerson Jones
+2026-10-24,Final,Guangzhou Open,Tatiana Prozorova,Ekaterine Gorgodze
+2026-10-24,04:30,Kinoshita Group Japan Open,Ashlyn Krueger,Katerina Siniakova
+2026-10-24,Final,Kinoshita Group Japan Open,Katie Boulter,Katerina Siniakova
+2026-10-24,Live,Toray Pan Pacific Open Tennis,Kayla Day,Zhang Shuai
+2026-10-24,13:10,Toray Pan Pacific Open Tennis,En-Shuo Liang,Tereza Valentova
+2026-10-24,01:30,Toray Pan Pacific Open Tennis,Aliaksandra Sasnovich,Kamilla Rakhimova
+2026-10-24,01:30,Toray Pan Pacific Open Tennis,Heather Watson,Alycia Parks
+2026-10-24,02:00,Toray Pan Pacific Open Tennis,Mai Hontama,Maya Joint
+2026-10-24,03:00,Toray Pan Pacific Open Tennis,Kimberly Birrell,Daria Kasatkina
+2026-10-24,04:30,Toray Pan Pacific Open Tennis,Sayaka Ishii,Yulia Putintseva
+2026-10-24,Final,Toray Pan Pacific Open Tennis,Kyoka Okamura,Sayaka Ishii
+2026-10-24,Final,Toray Pan Pacific Open Tennis,Ma YeXin,Daria Kasatkina
+2026-10-24,Final,Toray Pan Pacific Open Tennis,Hayu Kinoshita,Yulia Putintseva
+2026-10-24,Final,Toray Pan Pacific Open Tennis,Kimberly Birrell,Aoi Ito
+2026-10-25,TBD,Swiss Indoors Basel,Rinky Hijikata,Yannick Hanfmann
+2026-10-25,09:00,BNB Ningbo Open,Elena Rybakina,Leylah Fernandez
