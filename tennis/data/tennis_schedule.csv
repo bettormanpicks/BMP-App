@@ -5,16 +5,16 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-28,Final,Erste Bank Open,Jakub Mensik,Adrian Mannarino
 2026-10-28,Final,Erste Bank Open,Jurij Rodionov,Nikoloz Basilashvili
 2026-10-28,Final,Erste Bank Open,Tallon Griekspoor,Brandon Nakashima
-2026-10-28,Live,Swiss Indoors Basel,Hubert Hurkacz,Holger Rune
 2026-10-28,Final,Swiss Indoors Basel,Novak Djokovic,Ugo Humbert
 2026-10-28,Final,Swiss Indoors Basel,Taylor Fritz,Rinky Hijikata
 2026-10-28,Final,Swiss Indoors Basel,Nuno Borges,Casper Ruud
+2026-10-28,Final,Swiss Indoors Basel,Hubert Hurkacz,Holger Rune
 2026-10-28,Final,Swiss Indoors Basel,Remy Bertola,Denis Shapovalov
 2026-10-28,Final,Swiss Indoors Basel,Yannick Hanfmann,Jan-Lennard Struff
-2026-10-28,Live,Curitiba Open,Nauhany Vitoria Leme Da Silva,Luisina Giovannini
 2026-10-28,Final,Curitiba Open,Gabriela Ce,Solana Sierra
 2026-10-28,Final,Curitiba Open,Leyre Romero Gormaz,Antonia Vergara Rivera
 2026-10-28,Final,Curitiba Open,Lourdes Ayala,Jazmin Ortenzi
+2026-10-28,Final,Curitiba Open,Nauhany Vitoria Leme Da Silva,Luisina Giovannini
 2026-10-28,Final,Curitiba Open,Alice Tubello,Luna Maria Cinalli
 2026-10-28,05:00,Guangzhou Open,Claire Liu,Katerina Siniakova
 2026-10-28,05:00,Guangzhou Open,Jil Teichmann,Zeynep Sonmez
@@ -22,13 +22,12 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-28,Final,Guangzhou Open,Harriet Dart,Janice Tjen
 2026-10-28,Final,Guangzhou Open,Paula Badosa,Sinja Kraus
 2026-10-28,Final,Guangzhou Open,Shi Han,Dayana Yastremska
-2026-10-28,Live,Queretaro Open,Carmen Andreea Herea,Carole Monnet
-2026-10-28,23:00,Queretaro Open,Selena Janicijevic,Elizabeth Mandlik
-2026-10-28,00:30,Queretaro Open,Fiona Ferro,Adriana Reami
-2026-10-28,01:30,Toray Pan Pacific Open Tennis,Alycia Parks,Kimberly Birrell
-2026-10-28,02:30,Toray Pan Pacific Open Tennis,Leylah Fernandez,Elise Mertens
+2026-10-28,Final,Queretaro Open,Selena Janicijevic,Elizabeth Mandlik
+2026-10-28,Final,Queretaro Open,Carmen Andreea Herea,Carole Monnet
+2026-10-28,Live,Toray Pan Pacific Open Tennis,Leylah Fernandez,Elise Mertens
 2026-10-28,05:30,Toray Pan Pacific Open Tennis,Naomi Osaka,Mia Pohankova
 2026-10-28,Final,Toray Pan Pacific Open Tennis,Alexandra Eala,Talia Gibson
+2026-10-28,Final,Toray Pan Pacific Open Tennis,Alycia Parks,Kimberly Birrell
 2026-10-28,Final,Valle D'Aosta Ladies Open,Gabriela Knutson,Alina Charaeva
 2026-10-28,Final,Valle D'Aosta Ladies Open,Elizara Yaneva,Oksana Selekhmeteva
 2026-10-28,Final,Valle D'Aosta Ladies Open,Robin Montgomery,Lisa Pigato
@@ -36,31 +35,39 @@ Date,Time,Tournament,Player 1,Player 2
 2026-10-28,Final,Valle D'Aosta Ladies Open,Elsa Jacquemot,Caroline Werner
 2026-10-28,Final,Valle D'Aosta Ladies Open,Laura Mair,Katarina Zavatska
 2026-10-28,Final,Valle D'Aosta Ladies Open,Yelyzaveta Kotliar,Erika Andreeva
-2026-10-29,12:30,Erste Bank Open,Cameron Norrie,Daniil Medvedev
-2026-10-29,12:30,Erste Bank Open,Tommy Paul,Luciano Darderi
-2026-10-29,14:00,Erste Bank Open,Nikoloz Basilashvili,Carlos Alcaraz
-2026-10-29,16:00,Erste Bank Open,Arthur Fery,Lorenzo Musetti
-2026-10-29,16:30,Erste Bank Open,Alexander Zverev,Tallon Griekspoor
-2026-10-29,19:00,Erste Bank Open,Flavio Cobolli,Matteo Berrettini
-2026-10-29,11:00,Swiss Indoors Basel,Valentin Vacherot,Rafael Jodar
-2026-10-29,13:00,Swiss Indoors Basel,Alex Michelsen,Arthur Fils
-2026-10-29,14:30,Swiss Indoors Basel,Taylor Fritz,Denis Shapovalov
-2026-10-29,15:00,Swiss Indoors Basel,Daniel Altmaier,Jiri Lehecka
-2026-10-29,17:00,Swiss Indoors Basel,Novak Djokovic,Jan-Lennard Struff
-2026-10-29,18:30,Swiss Indoors Basel,Ben Shelton,Jerome Kym
-2026-10-29,15:00,Curitiba Open,Julia Riera,Yasmine Kabbaj
-2026-10-29,16:30,Curitiba Open,Francesca Jones,Marjorie Souza
-2026-10-29,18:00,Curitiba Open,Maria Lourdes Carle,Julia Grabher
-2026-10-29,08:00,Guangzhou Open,Anna Bondar,Kaitlin Quevedo
-2026-10-29,11:00,Guangzhou Open,Lilli Tagger,Magda Linette
-2026-10-29,TBD,Queretaro Open,Polona Hercog,Valeriya Strakhova
-2026-10-29,TBD,Queretaro Open,Tamara Zidansek,Alicia Herrero Linana
-2026-10-29,TBD,Queretaro Open,Nadia Podoroska,Miriam Bulgaru
-2026-10-29,TBD,Queretaro Open,Tatjana Maria,Martina Colmegna
-2026-10-29,TBD,Queretaro Open,Diletta Cherubini,Bianca Andreescu
-2026-10-29,08:00,Toray Pan Pacific Open Tennis,Elena Rybakina,Yulia Putintseva
-2026-10-29,13:00,Valle D'Aosta Ladies Open,Marina Bassols Ribera,Erika Andreeva
-2026-10-29,14:00,Valle D'Aosta Ladies Open,Susan Bandecchi,Elsa Jacquemot
-2026-10-29,14:30,Valle D'Aosta Ladies Open,Lucrezia Stefanini,Ayla Aksu
-2026-10-29,16:00,Valle D'Aosta Ladies Open,Anna Blinkova,Katarina Zavatska
-2026-10-29,17:30,Valle D'Aosta Ladies Open,Martyna Kubka,Lisa Pigato
+2026-10-28,Final,Erste Bank Open,Daniel Merida,Daniil Medvedev
+2026-10-28,Final,Erste Bank Open,Learner Tien,Alex de Minaur
+2026-10-28,Final,Erste Bank Open,Lorenzo Musetti,Frances Tiafoe
+2026-10-28,Final,Erste Bank Open,Jakub Mensik,Adrian Mannarino
+2026-10-28,Final,Erste Bank Open,Jurij Rodionov,Nikoloz Basilashvili
+2026-10-28,Final,Erste Bank Open,Tallon Griekspoor,Brandon Nakashima
+2026-10-28,Final,Swiss Indoors Basel,Novak Djokovic,Ugo Humbert
+2026-10-28,Final,Swiss Indoors Basel,Taylor Fritz,Rinky Hijikata
+2026-10-28,Final,Swiss Indoors Basel,Nuno Borges,Casper Ruud
+2026-10-28,Final,Swiss Indoors Basel,Hubert Hurkacz,Holger Rune
+2026-10-28,Final,Swiss Indoors Basel,Remy Bertola,Denis Shapovalov
+2026-10-28,Final,Swiss Indoors Basel,Yannick Hanfmann,Jan-Lennard Struff
+2026-10-28,Final,Curitiba Open,Gabriela Ce,Solana Sierra
+2026-10-28,Final,Curitiba Open,Leyre Romero Gormaz,Antonia Vergara Rivera
+2026-10-28,Final,Curitiba Open,Lourdes Ayala,Jazmin Ortenzi
+2026-10-28,Final,Curitiba Open,Nauhany Vitoria Leme Da Silva,Luisina Giovannini
+2026-10-28,Final,Curitiba Open,Alice Tubello,Luna Maria Cinalli
+2026-10-28,05:00,Guangzhou Open,Claire Liu,Katerina Siniakova
+2026-10-28,05:00,Guangzhou Open,Jil Teichmann,Zeynep Sonmez
+2026-10-28,06:30,Guangzhou Open,Maria Timofeeva,Xinran Sun
+2026-10-28,Final,Guangzhou Open,Harriet Dart,Janice Tjen
+2026-10-28,Final,Guangzhou Open,Paula Badosa,Sinja Kraus
+2026-10-28,Final,Guangzhou Open,Shi Han,Dayana Yastremska
+2026-10-28,Final,Queretaro Open,Selena Janicijevic,Elizabeth Mandlik
+2026-10-28,Final,Queretaro Open,Carmen Andreea Herea,Carole Monnet
+2026-10-28,Live,Toray Pan Pacific Open Tennis,Leylah Fernandez,Elise Mertens
+2026-10-28,05:30,Toray Pan Pacific Open Tennis,Naomi Osaka,Mia Pohankova
+2026-10-28,Final,Toray Pan Pacific Open Tennis,Alexandra Eala,Talia Gibson
+2026-10-28,Final,Toray Pan Pacific Open Tennis,Alycia Parks,Kimberly Birrell
+2026-10-28,Final,Valle D'Aosta Ladies Open,Gabriela Knutson,Alina Charaeva
+2026-10-28,Final,Valle D'Aosta Ladies Open,Elizara Yaneva,Oksana Selekhmeteva
+2026-10-28,Final,Valle D'Aosta Ladies Open,Robin Montgomery,Lisa Pigato
+2026-10-28,Final,Valle D'Aosta Ladies Open,Linda Klimovicova,Noma Noha Akugue
+2026-10-28,Final,Valle D'Aosta Ladies Open,Elsa Jacquemot,Caroline Werner
+2026-10-28,Final,Valle D'Aosta Ladies Open,Laura Mair,Katarina Zavatska
+2026-10-28,Final,Valle D'Aosta Ladies Open,Yelyzaveta Kotliar,Erika Andreeva
