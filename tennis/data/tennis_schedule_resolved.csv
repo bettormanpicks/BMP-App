@@ -1,16 +1,16 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-10-30,Live,Erste Bank Open,Alexander Zverev,Arthur Fery,atp_4,atp_156,ATP,Hard
-2026-10-30,19:00,Erste Bank Open,Matteo Berrettini,Alex de Minaur,atp_57,atp_8,ATP,Hard
+2026-10-30,Final,Erste Bank Open,Alexander Zverev,Arthur Fery,atp_4,atp_156,ATP,Hard
 2026-10-30,Final,Erste Bank Open,Tommy Paul,Carlos Alcaraz,atp_24,atp_1,ATP,Hard
 2026-10-30,Final,Erste Bank Open,Adrian Mannarino,Daniil Medvedev,atp_48,atp_11,ATP,Hard
-2026-10-30,Live,Swiss Indoors Basel,Jerome Kym,Jiri Lehecka,atp_195,atp_21,ATP,Hard
-2026-10-30,18:30,Swiss Indoors Basel,Jan-Lennard Struff,Nuno Borges,atp_77,atp_44,ATP,Hard
+2026-10-30,Final,Erste Bank Open,Matteo Berrettini,Alex de Minaur,atp_57,atp_8,ATP,Hard
 2026-10-30,TBD,Swiss Indoors Basel,Taylor Fritz,Arthur Fils,atp_7,atp_40,ATP,Hard
+2026-10-30,Final,Swiss Indoors Basel,Jerome Kym,Jiri Lehecka,atp_195,atp_21,ATP,Hard
+2026-10-30,Final,Swiss Indoors Basel,Jan-Lennard Struff,Nuno Borges,atp_77,atp_44,ATP,Hard
 2026-10-30,Final,Swiss Indoors Basel,Holger Rune,Valentin Vacherot,atp_18,atp_26,ATP,Hard
-2026-10-30,Live,Curitiba Open,Leyre Romero Gormaz,Julia Grabher,wta_140,wta_80,WTA,
-2026-10-30,Live,Curitiba Open,Julia Riera,Solana Sierra,wta_187,wta_64,WTA,
-2026-10-30,17:40,Curitiba Open,Francesca Jones,Nauhany Vitoria Leme Da Silva,wta_72,wta_9042,WTA,
-2026-10-30,19:00,Curitiba Open,Alice Tubello,Jazmin Ortenzi,wta_435,wta_216,WTA,
+2026-10-30,Live,Curitiba Open,Alice Tubello,Jazmin Ortenzi,wta_435,wta_216,WTA,
+2026-10-30,TBD,Curitiba Open,Francesca Jones,Nauhany Vitoria Leme Da Silva,wta_72,wta_9042,WTA,
+2026-10-30,Final,Curitiba Open,Leyre Romero Gormaz,Julia Grabher,wta_140,wta_80,WTA,
+2026-10-30,Final,Curitiba Open,Julia Riera,Solana Sierra,wta_187,wta_64,WTA,
 2026-10-30,Final,Guangzhou Open,Lilli Tagger,Shi Han,wta_114,wta_330,WTA,Hard
 2026-10-30,Final,Guangzhou Open,Xinran Sun,Claire Liu,wta_98,wta_213,WTA,Hard
 2026-10-30,Final,Guangzhou Open,Kaitlin Quevedo,Jil Teichmann,wta_131,wta_175,WTA,Hard
@@ -22,19 +22,35 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-30,03:30,Prudential Hong Kong Tennis Open,Elena Pridankina,Ekaterine Gorgodze,wta_192,wta_167,WTA,Hard
 2026-10-30,05:00,Prudential Hong Kong Tennis Open,Zhang Ying,Alexandra Shubladze,atp_449,wta_344,ATP,Hard
 2026-10-30,05:00,Prudential Hong Kong Tennis Open,Ching Laam Lai,Carol Young Suh Lee,wta_9100,wta_170,ATP,Hard
-2026-10-30,20:00,Queretaro Open,Tatjana Maria,Valeriya Strakhova,wta_54,wta_405,WTA,
-2026-10-30,21:30,Queretaro Open,Nadia Podoroska,Carole Monnet,wta_9006,wta_177,WTA,
+2026-10-30,Live,Queretaro Open,Tatjana Maria,Valeriya Strakhova,wta_54,wta_405,WTA,
+2026-10-30,21:45,Queretaro Open,Nadia Podoroska,Carole Monnet,wta_9006,wta_177,WTA,
 2026-10-30,00:00,Queretaro Open,Fiona Ferro,Elizabeth Mandlik,wta_239,wta_168,WTA,
 2026-10-30,01:30,Queretaro Open,Alicia Herrero Linana,Bianca Andreescu,wta_308,wta_161,WTA,
 2026-10-30,03:00,Toray Pan Pacific Open Tennis,Leylah Fernandez,Kamilla Rakhimova,wta_28,wta_91,WTA,Hard
-2026-10-30,04:30,Toray Pan Pacific Open Tennis,Diana Shnaider,Mia Pohankova,wta_21,wta_273,WTA,Hard
+2026-10-30,04:30,Toray Pan Pacific Open Tennis,Diana Shnaider,Mia Pohankova,wta_21,wta_346,WTA,Hard
 2026-10-30,Final,Toray Pan Pacific Open Tennis,Alexandra Eala,Diana Shnaider,wta_45,wta_21,WTA,Hard
-2026-10-30,Live,Valle D'Aosta Ladies Open,Elsa Jacquemot,Elizara Yaneva,wta_57,wta_228,WTA,
-2026-10-30,Final,Valle D'Aosta Ladies Open,Anna Blinkova,Martyna Kubka,wta_65,wta_338,WTA,
+2026-10-30,Final,Valle D'Aosta Ladies Open,Anna Blinkova,Martyna Kubka,wta_82,wta_338,WTA,
 2026-10-30,Final,Valle D'Aosta Ladies Open,Marina Bassols Ribera,Alina Charaeva,wta_209,wta_163,WTA,
 2026-10-30,Final,Valle D'Aosta Ladies Open,Ayla Aksu,Noma Noha Akugue,wta_304,wta_255,WTA,
-2026-10-31,TBD,Erste Bank Open,Daniil Medvedev,Carlos Alcaraz,atp_11,atp_1,ATP,Hard
+2026-10-30,Final,Valle D'Aosta Ladies Open,Elsa Jacquemot,Elizara Yaneva,wta_57,wta_228,WTA,
+2026-10-31,14:00,Erste Bank Open,Daniil Medvedev,Carlos Alcaraz,atp_11,atp_1,ATP,Hard
+2026-10-31,15:30,Erste Bank Open,Alexander Zverev,Alex de Minaur,atp_4,atp_8,ATP,Hard
+2026-10-31,10:00,Rolex Paris Masters,Pablo Carreno Busta,Mattia Bellucci,atp_122,atp_109,ATP,Hard
+2026-10-31,10:00,Rolex Paris Masters,Thiago Agustin Tirante,Zachary Svajda,atp_92,atp_106,ATP,Hard
+2026-10-31,10:00,Rolex Paris Masters,Jaime Faria,Rinky Hijikata,atp_146,atp_112,ATP,Hard
+2026-10-31,11:00,Rolex Paris Masters,Hugo Gaston,Vit Kopriva,atp_96,atp_87,ATP,Hard
+2026-10-31,11:30,Rolex Paris Masters,Juan Manuel Cerundolo,Aleksandar Kovacevic,atp_19,atp_75,ATP,Hard
+2026-10-31,11:30,Rolex Paris Masters,James Duckworth,Miomir Kecmanovic,atp_80,atp_83,ATP,Hard
+2026-10-31,11:30,Rolex Paris Masters,Tomas Machac,Martin Landaluce,atp_31,atp_158,ATP,Hard
+2026-10-31,12:30,Rolex Paris Masters,Tallon Griekspoor,Benjamin Bonzi,atp_25,atp_123,ATP,Hard
+2026-10-31,13:00,Rolex Paris Masters,Sebastian Baez,Damir Dzumhur,atp_33,atp_61,ATP,Hard
+2026-10-31,13:00,Rolex Paris Masters,Lorenzo Sonego,Jaume Munar,atp_64,atp_35,ATP,Hard
+2026-10-31,13:00,Rolex Paris Masters,Felix Balshaw,Yannick Hanfmann,atp_321,atp_90,ATP,Hard
+2026-10-31,14:30,Rolex Paris Masters,Adolfo Daniel Vallejo,Grigor Dimitrov,atp_9021,atp_42,ATP,Hard
+2026-10-31,14:30,Rolex Paris Masters,Alex Molcan,Daniel Altmaier,atp_199,atp_54,ATP,Hard
+2026-10-31,15:00,Rolex Paris Masters,Nuno Borges,Adrian Mannarino,atp_44,atp_48,ATP,Hard
 2026-10-31,14:00,Swiss Indoors Basel,Valentin Vacherot,Taylor Fritz,atp_26,atp_7,ATP,Hard
+2026-10-31,16:00,Swiss Indoors Basel,Jiri Lehecka,Jan-Lennard Struff,atp_21,atp_77,ATP,Hard
 2026-10-31,09:30,Chennai Open,Aliona Falei,Ekaterina Yashina,wta_356,wta_494,WTA,Hard
 2026-10-31,09:30,Chennai Open,Mariia Tkacheva,Rada Zolotareva,wta_454,wta_295,WTA,Hard
 2026-10-31,09:30,Chennai Open,Kyoka Okamura,Diya Ramesh Ramesh,wta_297,wta_9101,WTA,Hard
@@ -43,6 +59,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-31,11:00,Chennai Open,Rinko Matsuda,Momoko Kobori,wta_433,wta_427,WTA,Hard
 2026-10-31,12:30,Chennai Open,Mei Yamaguchi,Zeel Desai,wta_285,wta_626,WTA,Hard
 2026-10-31,12:30,Chennai Open,Zhibek Kulambayeva,Yelyzaveta Kotliar,wta_390,wta_499,WTA,Hard
+2026-10-31,14:00,Curitiba Open,Julia Riera,Julia Grabher,wta_187,wta_80,WTA,
 2026-10-31,08:30,Guangzhou Open,Xinran Sun,Harriet Dart,wta_98,wta_169,WTA,Hard
 2026-10-31,10:00,Guangzhou Open,Kaitlin Quevedo,Lilli Tagger,wta_131,wta_114,WTA,Hard
-2026-10-31,13:30,Valle D'Aosta Ladies Open,Anna Blinkova,Noma Noha Akugue,wta_65,wta_255,WTA,
+2026-10-31,13:30,Valle D'Aosta Ladies Open,Anna Blinkova,Noma Noha Akugue,wta_82,wta_255,WTA,
+2026-10-31,15:00,Valle D'Aosta Ladies Open,Elsa Jacquemot,Alina Charaeva,wta_57,wta_163,WTA,
