@@ -1,10 +1,10 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-10-31,Live,Erste Bank Open,Alexander Zverev,Alex de Minaur,atp_4,atp_8,ATP,Hard
+2026-10-31,Final,Erste Bank Open,Alexander Zverev,Alex de Minaur,atp_4,atp_8,ATP,Hard
 2026-10-31,Final,Erste Bank Open,Daniil Medvedev,Carlos Alcaraz,atp_11,atp_1,ATP,Hard
-2026-10-31,Live,Rolex Paris Masters,Lorenzo Sonego,Jaume Munar,atp_64,atp_35,ATP,Hard
-2026-10-31,Live,Rolex Paris Masters,Nuno Borges,Adrian Mannarino,atp_44,atp_48,ATP,Hard
-2026-10-31,Live,Rolex Paris Masters,Alex Molcan,Daniel Altmaier,atp_199,atp_54,ATP,Hard
-2026-10-31,16:30,Rolex Paris Masters,Adolfo Daniel Vallejo,Grigor Dimitrov,atp_9021,atp_42,ATP,Hard
+2026-10-31,Final,Rolex Paris Masters,Adolfo Daniel Vallejo,Grigor Dimitrov,atp_9021,atp_42,ATP,Hard
+2026-10-31,Final,Rolex Paris Masters,Alex Molcan,Daniel Altmaier,atp_415,atp_54,ATP,Hard
+2026-10-31,Final,Rolex Paris Masters,Nuno Borges,Adrian Mannarino,atp_44,atp_48,ATP,Hard
+2026-10-31,Final,Rolex Paris Masters,Lorenzo Sonego,Jaume Munar,atp_64,atp_35,ATP,Hard
 2026-10-31,Final,Rolex Paris Masters,Sebastian Baez,Damir Dzumhur,atp_33,atp_61,ATP,Hard
 2026-10-31,Final,Rolex Paris Masters,Felix Balshaw,Yannick Hanfmann,atp_321,atp_90,ATP,Hard
 2026-10-31,Final,Rolex Paris Masters,Tallon Griekspoor,Benjamin Bonzi,atp_25,atp_123,ATP,Hard
@@ -15,8 +15,8 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-31,Final,Rolex Paris Masters,Jaime Faria,Rinky Hijikata,atp_146,atp_112,ATP,Hard
 2026-10-31,Final,Rolex Paris Masters,Pablo Carreno Busta,Mattia Bellucci,atp_122,atp_109,ATP,Hard
 2026-10-31,Final,Rolex Paris Masters,Thiago Agustin Tirante,Zachary Svajda,atp_92,atp_106,ATP,Hard
-2026-10-31,Live,Swiss Indoors Basel,Jiri Lehecka,Jan-Lennard Struff,atp_21,atp_77,ATP,Hard
 2026-10-31,Final,Swiss Indoors Basel,Valentin Vacherot,Taylor Fritz,atp_26,atp_7,ATP,Hard
+2026-10-31,Final,Swiss Indoors Basel,Jiri Lehecka,Jan-Lennard Struff,atp_21,atp_77,ATP,Hard
 2026-10-31,Final,Chennai Open,Zhibek Kulambayeva,Yelyzaveta Kotliar,wta_390,wta_499,WTA,Hard
 2026-10-31,Final,Chennai Open,Mei Yamaguchi,Zeel Desai,wta_285,wta_626,WTA,Hard
 2026-10-31,Final,Chennai Open,Jensi Dipakbhai Kanabar,Weronika Falkowska,wta_9100,wta_493,ATP,Hard
@@ -25,27 +25,35 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-10-31,Final,Chennai Open,Kyoka Okamura,Diya Ramesh Ramesh,wta_297,wta_9101,WTA,Hard
 2026-10-31,Final,Chennai Open,Aliona Falei,Ekaterina Yashina,wta_356,wta_494,WTA,Hard
 2026-10-31,TBD,Chennai Open,Mariia Tkacheva,Rada Zolotareva,wta_454,wta_295,WTA,Hard
-2026-10-31,Live,Curitiba Open,Nauhany Vitoria Leme Da Silva,Alice Tubello,wta_9042,wta_435,WTA,
 2026-10-31,Final,Curitiba Open,Julia Riera,Julia Grabher,wta_187,wta_80,WTA,
+2026-10-31,Final,Curitiba Open,Nauhany Vitoria Leme Da Silva,Alice Tubello,wta_9042,wta_435,WTA,
 2026-10-31,Final,Guangzhou Open,Kaitlin Quevedo,Lilli Tagger,wta_131,wta_114,WTA,Hard
 2026-10-31,Final,Guangzhou Open,Xinran Sun,Harriet Dart,wta_98,wta_169,WTA,Hard
 2026-10-31,02:00,Prudential Hong Kong Tennis Open,Tatiana Prozorova,Mika Stojsavljevic,wta_166,wta_280,WTA,Hard
-2026-10-31,02:00,Prudential Hong Kong Tennis Open,Aliaksandra Sasnovich,Carol Young Suh Lee,wta_113,wta_352,WTA,Hard
-2026-10-31,03:30,Prudential Hong Kong Tennis Open,Emerson Jones,Alexandra Shubladze,wta_152,wta_344,WTA,Hard
+2026-10-31,02:00,Prudential Hong Kong Tennis Open,Aliaksandra Sasnovich,Carol Young Suh Lee,wta_113,wta_170,WTA,Hard
+2026-10-31,03:30,Prudential Hong Kong Tennis Open,Emerson Jones,Alexandra Shubladze,wta_72,wta_344,WTA,Hard
 2026-10-31,03:30,Prudential Hong Kong Tennis Open,Himeno Sakatsume,Elena Pridankina,wta_135,wta_192,WTA,Hard
 2026-10-31,00:00,Queretaro Open,Tatjana Maria,Fiona Ferro,wta_54,wta_239,WTA,
 2026-10-31,01:30,Queretaro Open,Bianca Andreescu,Carole Monnet,wta_161,wta_177,WTA,
 2026-10-31,03:00,Toray Pan Pacific Open Tennis,Leylah Fernandez,Diana Shnaider,wta_28,wta_21,WTA,Hard
-2026-10-31,Live,Valle D'Aosta Ladies Open,Elsa Jacquemot,Alina Charaeva,wta_57,wta_163,WTA,
-2026-10-31,Final,Valle D'Aosta Ladies Open,Anna Blinkova,Noma Noha Akugue,wta_65,wta_255,WTA,
-2026-11-01,TBD,Rolex Paris Masters,Juan Manuel Cerundolo,Miomir Kecmanovic,atp_19,atp_83,ATP,Hard
-2026-11-01,TBD,Rolex Paris Masters,Thiago Agustin Tirante,Mattia Bellucci,atp_92,atp_109,ATP,Hard
-2026-11-01,TBD,Rolex Paris Masters,Rinky Hijikata,Vit Kopriva,atp_112,atp_87,ATP,Hard
+2026-10-31,Final,Valle D'Aosta Ladies Open,Anna Blinkova,Noma Noha Akugue,wta_82,wta_255,WTA,
+2026-10-31,Final,Valle D'Aosta Ladies Open,Elsa Jacquemot,Alina Charaeva,wta_57,wta_163,WTA,
+2026-11-01,13:00,Erste Bank Open,Alex de Minaur,Carlos Alcaraz,atp_8,atp_1,ATP,Hard
+2026-11-01,10:00,Rolex Paris Masters,Thiago Agustin Tirante,Mattia Bellucci,atp_92,atp_109,ATP,Hard
+2026-11-01,10:00,Rolex Paris Masters,Rinky Hijikata,Vit Kopriva,atp_112,atp_87,ATP,Hard
+2026-11-01,11:00,Rolex Paris Masters,Juan Manuel Cerundolo,Miomir Kecmanovic,atp_19,atp_83,ATP,Hard
+2026-11-01,11:30,Rolex Paris Masters,Benjamin Bonzi,Yannick Hanfmann,atp_123,atp_90,ATP,Hard
+2026-11-01,11:30,Rolex Paris Masters,Sebastian Baez,Tomas Machac,atp_33,atp_31,ATP,Hard
+2026-11-01,13:00,Rolex Paris Masters,Adolfo Daniel Vallejo,Lorenzo Sonego,atp_9021,atp_64,ATP,Hard
+2026-11-01,13:30,Rolex Paris Masters,Nuno Borges,Alex Molcan,atp_44,atp_415,ATP,Hard
+2026-11-01,14:30,Swiss Indoors Basel,Jiri Lehecka,Valentin Vacherot,atp_21,atp_26,ATP,Hard
 2026-11-01,10:00,Angola Ladies Open,Prathyusha Rachapudi,Ashmitha Easwaramurthi,atp_9102,atp_9103,ATP,
 2026-11-01,11:30,Angola Ladies Open,Abigayel Vosloo,Saumya Vig,atp_9104,atp_9105,ATP,
-2026-11-01,13:00,Angola Ladies Open,Darja Suvirdjonkova,Emma VAN POPPEL,wta_97,wta_9106,WTA,
+2026-11-01,13:00,Angola Ladies Open,Darja Suvirdjonkova,Emma Van Poppel,wta_127,wta_9106,WTA,
 2026-11-01,08:30,Chennai Open,Kyoka Okamura,Momoko Kobori,wta_297,wta_427,WTA,Hard
 2026-11-01,08:30,Chennai Open,Aliona Falei,Rada Zolotareva,wta_356,wta_295,WTA,Hard
 2026-11-01,08:30,Chennai Open,Viktoria Morvayova,Weronika Falkowska,wta_328,wta_493,WTA,Hard
 2026-11-01,09:30,Chennai Open,Mei Yamaguchi,Zhibek Kulambayeva,wta_285,wta_390,WTA,Hard
+2026-11-01,14:00,Curitiba Open,Alice Tubello,Julia Grabher,wta_435,wta_80,WTA,
 2026-11-01,08:30,Guangzhou Open,Lilli Tagger,Harriet Dart,wta_114,wta_169,WTA,Hard
+2026-11-01,14:00,Valle D'Aosta Ladies Open,Noma Noha Akugue,Alina Charaeva,wta_255,wta_163,WTA,
