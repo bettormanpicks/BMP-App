@@ -21,50 +21,35 @@ Date,Time,Tournament,Player 1,Player 2
 2026-11-01,06:00,Prudential Hong Kong Tennis Open,Viktorija Golubic,Katie Boulter
 2026-11-01,07:30,Prudential Hong Kong Tennis Open,Katie Volynets,Aliaksandra Sasnovich
 2026-11-01,07:30,Prudential Hong Kong Tennis Open,Carol Young Suh Lee,Maria Sakkari
-2026-11-01,22:00,Queretaro Open,Tatjana Maria,Bianca Andreescu
-2026-11-01,Live,Reto Win Tennis Cali Open,Elizabeth Mandlik,Selena Janicijevic
-2026-11-01,Live,Reto Win Tennis Cali Open,Maria Herazo Gonzalez,Katrina Scott
+2026-11-01,Live,Queretaro Open,Tatjana Maria,Bianca Andreescu
+2026-11-01,Final,Reto Win Tennis Cali Open,Maria Herazo Gonzalez,Katrina Scott
+2026-11-01,Final,Reto Win Tennis Cali Open,Elizabeth Mandlik,Selena Janicijevic
 2026-11-01,Final,Reto Win Tennis Cali Open,Polona Hercog,Maria Jose Rico Sanchez
-2026-11-01,TBD,Reto Win Tennis Cali Open,Carolina Alves,Maria Paulina Perez Garcia
 2026-11-01,Final,Valle D'Aosta Ladies Open,Noma Noha Akugue,Alina Charaeva
-2026-11-02,10:00,Rolex Paris Masters,Luciano Darderi,Rinky Hijikata
-2026-11-02,10:00,Rolex Paris Masters,Lorenzo Musetti,Hubert Hurkacz
-2026-11-02,10:00,Rolex Paris Masters,Ignacio Buse,Zizou Bergs
-2026-11-02,11:30,Rolex Paris Masters,Luca Van Assche,Mariano Navone
-2026-11-02,11:30,Rolex Paris Masters,Alejandro Tabilo,Rafael Jodar
-2026-11-02,13:00,Rolex Paris Masters,Daniel Merida,Alexander Blockx
-2026-11-02,13:00,Rolex Paris Masters,Cameron Norrie,Matteo Arnaldi
-2026-11-02,13:00,Rolex Paris Masters,Casper Ruud,Juan Manuel Cerundolo
-2026-11-02,14:30,Rolex Paris Masters,Mattia Bellucci,Lorenzo Sonego
-2026-11-02,14:30,Rolex Paris Masters,Kyrian Jacquet,Tomas Machac
-2026-11-02,16:00,Rolex Paris Masters,Alex Molcan,Titouan Droguet
-2026-11-02,18:00,Rolex Paris Masters,Denis Shapovalov,Karen Khachanov
-2026-11-02,19:30,Rolex Paris Masters,Ugo Humbert,Botic Van De Zandschulp
-2026-11-02,09:00,Angola Ladies Open,Ana Sofia Sanchez,Abigayel Vosloo
-2026-11-02,09:00,Angola Ladies Open,Franziska Sziedat,Madhurima Sawant
-2026-11-02,10:30,Angola Ladies Open,Laura Bohner,Prathyusha Rachapudi
-2026-11-02,11:00,Angola Ladies Open,Isabella Shinikova,Dune Vaissaud
-2026-11-02,12:00,Angola Ladies Open,Warona Mdlulwa,Kristina Novak
-2026-11-02,12:30,Angola Ladies Open,Jahnie Van Zyl,Yasmine Kabbaj
-2026-11-02,15:30,Angola Ladies Open,Diana Martynov,Sandra Samir
-2026-11-02,09:30,Chennai Open,Mananchaya Sawangkaew,Mai Hontama
-2026-11-02,09:30,Chennai Open,Aliona Falei,Magda Linette
-2026-11-02,09:30,Chennai Open,Jeline Vandromme,Kyoka Okamura
-2026-11-02,10:30,Chennai Open,Mei Yamaguchi,Zhibek Kulambayeva
-2026-11-02,11:00,Chennai Open,Linda Fruhvirtova,Weronika Falkowska
-2026-11-02,11:00,Chennai Open,Moyuka Uchijima,Rebecca Sramkova
-2026-11-02,12:30,Chennai Open,Sahaja Yamalapalli,Simona Waltert
-2026-11-02,10:30,Prudential Hong Kong Tennis Open,Venus Williams,Mary Stoiana
-2026-11-02,12:00,Prudential Hong Kong Tennis Open,Wang Xinyu,Adithya Karunaratne
-2026-11-02,TBD,Reto Win Tennis Cali Open,Rebeka Masarova,Alice Tubello
-2026-11-02,TBD,Reto Win Tennis Cali Open,Maria Lourdes Carle,Despina Papamichail
-2026-11-02,TBD,Reto Win Tennis Cali Open,Nadia Podoroska,Renata Zarazua
-2026-11-02,TBD,Reto Win Tennis Cali Open,Elvina Kalieva,Irene Burillo
-2026-11-02,TBD,Reto Win Tennis Cali Open,Maria Camila Torres Murcia,Luisina Giovannini
-2026-11-02,TBD,Reto Win Tennis Cali Open,Jazmin Ortenzi,Caroline Dolehide
-2026-11-02,TBD,Reto Win Tennis Cali Open,Laura Samson,Yuliana Lizarazo
-2026-11-02,TBD,Reto Win Tennis Cali Open,Sofia Costoulas,Marina Bassols Ribera
-2026-11-02,TBD,Reto Win Tennis Cali Open,Valentina Mediorreal Arias,Julia Riera
-2026-11-02,TBD,Reto Win Tennis Cali Open,Julia Grabher,Laura Pigossi
-2026-11-02,TBD,Reto Win Tennis Cali Open,Leolia Jeanjean,Lucia Bronzetti
-2026-11-02,TBD,Reto Win Tennis Cali Open,Tamara Zidansek,Bianca Andreescu
+2026-11-01,Final,Erste Bank Open,Alex de Minaur,Carlos Alcaraz
+2026-11-01,Final,Rolex Paris Masters,Nuno Borges,Alex Molcan
+2026-11-01,Final,Rolex Paris Masters,Adolfo Daniel Vallejo,Lorenzo Sonego
+2026-11-01,Final,Rolex Paris Masters,Sebastian Baez,Tomas Machac
+2026-11-01,Final,Rolex Paris Masters,Benjamin Bonzi,Yannick Hanfmann
+2026-11-01,Final,Rolex Paris Masters,Juan Manuel Cerundolo,Miomir Kecmanovic
+2026-11-01,Final,Rolex Paris Masters,Thiago Agustin Tirante,Mattia Bellucci
+2026-11-01,Final,Rolex Paris Masters,Rinky Hijikata,Vit Kopriva
+2026-11-01,Final,Swiss Indoors Basel,Jiri Lehecka,Valentin Vacherot
+2026-11-01,Final,Angola Ladies Open,Darja Suvirdjonkova,Emma Van Poppel
+2026-11-01,Final,Angola Ladies Open,Abigayel Vosloo,Saumya Vig
+2026-11-01,Final,Angola Ladies Open,Prathyusha Rachapudi,Ashmitha Easwaramurthi
+2026-11-01,Final,Chennai Open,Mei Yamaguchi,Zhibek Kulambayeva
+2026-11-01,Final,Chennai Open,Viktoria Morvayova,Weronika Falkowska
+2026-11-01,Final,Chennai Open,Aliona Falei,Rada Zolotareva
+2026-11-01,Final,Chennai Open,Kyoka Okamura,Momoko Kobori
+2026-11-01,Final,Curitiba Open,Alice Tubello,Julia Grabher
+2026-11-01,Final,Guangzhou Open,Lilli Tagger,Harriet Dart
+2026-11-01,06:00,Prudential Hong Kong Tennis Open,Claire Liu,Tatiana Prozorova
+2026-11-01,06:00,Prudential Hong Kong Tennis Open,Viktorija Golubic,Katie Boulter
+2026-11-01,07:30,Prudential Hong Kong Tennis Open,Katie Volynets,Aliaksandra Sasnovich
+2026-11-01,07:30,Prudential Hong Kong Tennis Open,Carol Young Suh Lee,Maria Sakkari
+2026-11-01,Live,Queretaro Open,Tatjana Maria,Bianca Andreescu
+2026-11-01,Final,Reto Win Tennis Cali Open,Maria Herazo Gonzalez,Katrina Scott
+2026-11-01,Final,Reto Win Tennis Cali Open,Elizabeth Mandlik,Selena Janicijevic
+2026-11-01,Final,Reto Win Tennis Cali Open,Polona Hercog,Maria Jose Rico Sanchez
+2026-11-01,Final,Valle D'Aosta Ladies Open,Noma Noha Akugue,Alina Charaeva
