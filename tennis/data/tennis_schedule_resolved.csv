@@ -1,39 +1,28 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-11-04,Final,Rolex Paris Masters,Alexander Zverev,Lorenzo Musetti,atp_4,atp_5,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Alex Michelsen,Carlos Alcaraz,atp_41,atp_1,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Ignacio Buse,Daniil Medvedev,atp_91,atp_11,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Arthur Fils,Tomas Machac,atp_40,atp_31,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Quentin Halys,Frances Tiafoe,atp_72,atp_28,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Tomas Martin Etcheverry,Alex de Minaur,atp_53,atp_8,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Novak Djokovic,Rinky Hijikata,atp_3,atp_112,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Alex Molcan,Taylor Fritz,atp_415,atp_7,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Tommy Paul,Daniel Merida,atp_24,atp_402,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Luca Van Assche,Learner Tien,atp_130,atp_23,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Thiago Agustin Tirante,Jan-Lennard Struff,atp_92,atp_77,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Matteo Berrettini,Ugo Humbert,atp_57,atp_38,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Nuno Borges,Karen Khachanov,atp_44,atp_17,ATP,Hard
-2026-11-04,Final,Rolex Paris Masters,Mattia Bellucci,Arthur Rinderknech,atp_109,atp_30,ATP,Hard
-2026-11-04,Final,Angola Ladies Open,Wozuko Mdlulwa,Noma Noha Akugue,wta_895,wta_255,WTA,
-2026-11-04,Final,Angola Ladies Open,Franziska Sziedat,Martyna Kubka,wta_713,wta_338,WTA,
-2026-11-04,Final,Angola Ladies Open,Suzan Lamens,Kristina Kroitor,wta_109,wta_364,WTA,
-2026-11-04,Final,Angola Ladies Open,Diana Martynov,Yasmine Kabbaj,wta_21,wta_361,WTA,
-2026-11-04,Final,Angola Ladies Open,Sofya Lansere,Kristina Novak,wta_420,wta_364,WTA,
-2026-11-04,Final,Angola Ladies Open,Isabella Shinikova,Gina Feistel,wta_340,wta_650,WTA,
-2026-11-04,Final,Chennai Open,Janice Tjen,Joanna Garland,wta_47,wta_125,WTA,Hard
-2026-11-04,Final,Chennai Open,Oksana Selekhmeteva,Polina Kudermetova,wta_74,wta_144,WTA,Hard
-2026-11-04,Final,Chennai Open,Weronika Falkowska,Maaya Rajeshwaran Revathi,wta_493,wta_9049,WTA,Hard
-2026-11-04,Final,Chennai Open,Robin Montgomery,Jeline Vandromme,wta_293,wta_291,WTA,Hard
-2026-11-04,06:00,Prudential Hong Kong Tennis Open,Elena Pridankina,Alexandra Shubladze,wta_192,wta_344,WTA,Hard
-2026-11-04,06:00,Prudential Hong Kong Tennis Open,Wang Xinyu,Antonia Ruzic,wta_34,wta_67,WTA,Hard
-2026-11-04,07:30,Prudential Hong Kong Tennis Open,Mika Stojsavljevic,Zeynep Sonmez,wta_280,wta_84,WTA,Hard
-2026-11-04,Final,Prudential Hong Kong Tennis Open,Maya Joint,Maria Sakkari,wta_29,wta_33,WTA,Hard
-2026-11-04,Final,Prudential Hong Kong Tennis Open,Talia Gibson,Aliaksandra Sasnovich,wta_111,wta_113,WTA,Hard
-2026-11-04,Final,Prudential Hong Kong Tennis Open,Claire Liu,Katie Boulter,wta_213,wta_83,WTA,Hard
-2026-11-04,Final,Reto Win Tennis Cali Open,Leolia Jeanjean,Carolina Alves,wta_115,wta_230,WTA,
-2026-11-04,Final,Reto Win Tennis Cali Open,Despina Papamichail,Renata Zarazua,wta_157,wta_87,WTA,
-2026-11-04,Final,Reto Win Tennis Cali Open,Leyre Romero Gormaz,Solana Sierra,wta_140,wta_64,WTA,
-2026-11-04,Final,Reto Win Tennis Cali Open,Laura Samson,Carole Monnet,wta_212,wta_177,WTA,
-2026-11-04,Final,Reto Win Tennis Cali Open,Julia Grabher,Julia Riera,wta_80,wta_187,WTA,
-2026-11-04,Final,Reto Win Tennis Cali Open,Alice Tubello,Marina Bassols Ribera,wta_435,wta_209,WTA,
-2026-11-04,Final,Reto Win Tennis Cali Open,Jazmin Ortenzi,Bianca Andreescu,wta_216,wta_161,WTA,
-2026-11-04,Final,Reto Win Tennis Cali Open,Irene Burillo,Luisina Giovannini,wta_249,wta_240,WTA,
+2026-11-05,10:05,Rolex Paris Masters,Tommy Paul,Quentin Halys,atp_24,atp_72,ATP,Hard
+2026-11-05,11:30,Rolex Paris Masters,Ben Shelton,Arthur Rinderknech,atp_9,atp_30,ATP,Hard
+2026-11-05,13:00,Rolex Paris Masters,Rinky Hijikata,Tomas Martin Etcheverry,atp_112,atp_53,ATP,Hard
+2026-11-05,13:00,Rolex Paris Masters,Lorenzo Musetti,Luca Van Assche,atp_5,atp_130,ATP,Hard
+2026-11-05,14:30,Rolex Paris Masters,Nuno Borges,Ignacio Buse,atp_44,atp_91,ATP,Hard
+2026-11-05,16:00,Rolex Paris Masters,Jan-Lennard Struff,Casper Ruud,atp_77,atp_13,ATP,Hard
+2026-11-05,18:00,Rolex Paris Masters,Matteo Berrettini,Carlos Alcaraz,atp_57,atp_1,ATP,Hard
+2026-11-05,19:30,Rolex Paris Masters,Arthur Fils,Taylor Fritz,atp_40,atp_7,ATP,Hard
+2026-11-05,Live,Angola Ladies Open,Anna Blinkova,Li Zongyu,wta_82,wta_36,WTA,
+2026-11-05,Live,Angola Ladies Open,Kristina Kroitor,Ksenia Zaytseva,wta_364,wta_561,WTA,
+2026-11-05,10:30,Angola Ladies Open,Justina Mikulskyte,Tiphanie Lemaitre,wta_247,wta_317,WTA,
+2026-11-05,12:00,Angola Ladies Open,Madhurima Sawant,Noma Noha Akugue,wta_9100,wta_255,ATP,
+2026-11-05,Live,Chennai Open,Moyuka Uchijima,Magda Linette,wta_90,wta_50,WTA,Hard
+2026-11-05,Live,Chennai Open,Mai Hontama,Zhibek Kulambayeva,wta_220,wta_390,WTA,Hard
+2026-11-05,11:00,Chennai Open,Simona Waltert,Lucrezia Stefanini,wta_81,wta_136,WTA,Hard
+2026-11-05,12:30,Chennai Open,Anastasia Zakharova,Vaishnavi Adkar,wta_103,wta_9050,WTA,Hard
+2026-11-05,Live,Prudential Hong Kong Tennis Open,Mika Stojsavljevic,Zeynep Sonmez,wta_280,wta_84,WTA,Hard
+2026-11-05,10:30,Prudential Hong Kong Tennis Open,Tereza Valentova,Alexandra Eala,wta_42,wta_45,WTA,Hard
+2026-11-05,12:00,Prudential Hong Kong Tennis Open,Sorana Cirstea,Mary Stoiana,wta_30,wta_185,WTA,Hard
+2026-11-05,17:00,Reto Win Tennis Cali Open,Carole Monnet,Leyre Romero Gormaz,wta_177,wta_140,WTA,
+2026-11-05,17:00,Reto Win Tennis Cali Open,Julia Riera,Renata Zarazua,wta_187,wta_87,WTA,
+2026-11-05,18:30,Reto Win Tennis Cali Open,Leolia Jeanjean,Alice Tubello,wta_115,wta_435,WTA,
+2026-11-05,19:00,Reto Win Tennis Cali Open,Luisina Giovannini,Bianca Andreescu,wta_240,wta_161,WTA,
+2026-11-06,TBD,Angola Ladies Open,Sofya Lansere,Martyna Kubka,wta_420,wta_338,WTA,
+2026-11-06,TBD,Chennai Open,Robin Montgomery,Maaya Rajeshwaran Revathi,wta_293,wta_9049,WTA,Hard
+2026-11-06,TBD,Chennai Open,Janice Tjen,Polina Kudermetova,wta_47,wta_144,WTA,Hard
+2026-11-06,TBD,Prudential Hong Kong Tennis Open,Aliaksandra Sasnovich,Maria Sakkari,wta_113,wta_33,WTA,Hard
