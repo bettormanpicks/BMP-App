@@ -1,25 +1,18 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-11-05,TBD,Rolex Paris Masters,Matteo Berrettini,Carlos Alcaraz,atp_57,atp_1,ATP,Hard
-2026-11-05,Final,Rolex Paris Masters,Ben Shelton,Arthur Rinderknech,atp_9,atp_30,ATP,Hard
-2026-11-05,Final,Rolex Paris Masters,Arthur Fils,Taylor Fritz,atp_40,atp_7,ATP,Hard
-2026-11-05,Final,Rolex Paris Masters,Tommy Paul,Quentin Halys,atp_24,atp_72,ATP,Hard
-2026-11-05,Final,Rolex Paris Masters,Jan-Lennard Struff,Casper Ruud,atp_77,atp_13,ATP,Hard
-2026-11-05,Final,Rolex Paris Masters,Nuno Borges,Ignacio Buse,atp_44,atp_91,ATP,Hard
-2026-11-05,Final,Rolex Paris Masters,Lorenzo Musetti,Luca Van Assche,atp_5,atp_130,ATP,Hard
-2026-11-05,Final,Rolex Paris Masters,Rinky Hijikata,Tomas Martin Etcheverry,atp_112,atp_53,ATP,Hard
-2026-11-05,Final,Angola Ladies Open,Anna Blinkova,Li Zongyu,wta_82,wta_36,WTA,
-2026-11-05,Final,Angola Ladies Open,Madhurima Sawant,Noma Noha Akugue,wta_9100,wta_255,ATP,
-2026-11-05,Final,Angola Ladies Open,Justina Mikulskyte,Tiphanie Lemaitre,wta_247,wta_317,WTA,
-2026-11-05,Final,Angola Ladies Open,Kristina Kroitor,Ksenia Zaytseva,wta_364,wta_561,WTA,
-2026-11-05,Final,Chennai Open,Moyuka Uchijima,Magda Linette,wta_90,wta_50,WTA,Hard
-2026-11-05,Final,Chennai Open,Anastasia Zakharova,Vaishnavi Adkar,wta_103,wta_9050,WTA,Hard
-2026-11-05,Final,Chennai Open,Simona Waltert,Lucrezia Stefanini,wta_81,wta_136,WTA,Hard
-2026-11-05,Final,Chennai Open,Mai Hontama,Zhibek Kulambayeva,wta_220,wta_390,WTA,Hard
-2026-11-05,06:00,Prudential Hong Kong Tennis Open,Zeynep Sonmez,Claire Liu,wta_84,wta_213,WTA,Hard
-2026-11-05,Final,Prudential Hong Kong Tennis Open,Sorana Cirstea,Mary Stoiana,wta_30,wta_185,WTA,Hard
-2026-11-05,Final,Prudential Hong Kong Tennis Open,Tereza Valentova,Alexandra Eala,wta_42,wta_45,WTA,Hard
-2026-11-05,Final,Prudential Hong Kong Tennis Open,Mika Stojsavljevic,Zeynep Sonmez,wta_280,wta_84,WTA,Hard
-2026-11-05,Final,Reto Win Tennis Cali Open,Leolia Jeanjean,Alice Tubello,wta_115,wta_435,WTA,
-2026-11-05,Final,Reto Win Tennis Cali Open,Julia Riera,Renata Zarazua,wta_187,wta_87,WTA,
-2026-11-05,Final,Reto Win Tennis Cali Open,Luisina Giovannini,Bianca Andreescu,wta_240,wta_161,WTA,
-2026-11-05,Final,Reto Win Tennis Cali Open,Carole Monnet,Leyre Romero Gormaz,wta_177,wta_140,WTA,
+2026-11-06,13:00,Rolex Paris Masters,Ben Shelton,Tommy Paul,atp_9,atp_24,ATP,Hard
+2026-11-06,14:30,Rolex Paris Masters,Luca Van Assche,Rinky Hijikata,atp_130,atp_112,ATP,Hard
+2026-11-06,18:00,Rolex Paris Masters,Taylor Fritz,Carlos Alcaraz,atp_7,atp_1,ATP,Hard
+2026-11-06,19:30,Rolex Paris Masters,Casper Ruud,Nuno Borges,atp_13,atp_44,ATP,Hard
+2026-11-06,10:30,Angola Ladies Open,Sofya Lansere,Martyna Kubka,wta_420,wta_338,WTA,
+2026-11-06,11:00,Angola Ladies Open,Ksenia Zaytseva,Gina Feistel,wta_595,wta_650,WTA,
+2026-11-06,12:00,Angola Ladies Open,Justina Mikulskyte,Noma Noha Akugue,wta_247,wta_255,WTA,
+2026-11-06,15:30,Angola Ladies Open,Anna Blinkova,Yasmine Kabbaj,wta_65,wta_361,WTA,
+2026-11-06,Live,Chennai Open,Janice Tjen,Polina Kudermetova,wta_47,wta_144,WTA,Hard
+2026-11-06,11:00,Chennai Open,Robin Montgomery,Maaya Rajeshwaran Revathi,wta_293,wta_9049,WTA,Hard
+2026-11-06,12:30,Chennai Open,Mai Hontama,Magda Linette,wta_220,wta_50,WTA,Hard
+2026-11-06,14:00,Chennai Open,Anastasia Zakharova,Lucrezia Stefanini,wta_103,wta_136,WTA,Hard
+2026-11-06,Live,Prudential Hong Kong Tennis Open,Sorana Cirstea,Alexandra Shubladze,wta_30,wta_344,WTA,Hard
+2026-11-06,10:30,Prudential Hong Kong Tennis Open,Aliaksandra Sasnovich,Maria Sakkari,wta_113,wta_33,WTA,Hard
+2026-11-06,12:00,Prudential Hong Kong Tennis Open,Antonia Ruzic,Alexandra Eala,wta_67,wta_45,WTA,Hard
+2026-11-06,17:00,Reto Win Tennis Cali Open,Leyre Romero Gormaz,Julia Riera,wta_140,wta_187,WTA,
+2026-11-06,18:30,Reto Win Tennis Cali Open,Alice Tubello,Bianca Andreescu,wta_435,wta_161,WTA,
