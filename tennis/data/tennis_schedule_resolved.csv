@@ -1,7 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-11-06,18:55,Rolex Paris Masters,Taylor Fritz,Carlos Alcaraz,atp_7,atp_1,ATP,Hard
-2026-11-06,19:30,Rolex Paris Masters,Casper Ruud,Nuno Borges,atp_13,atp_44,ATP,Hard
+2026-11-06,Final,Rolex Paris Masters,Taylor Fritz,Carlos Alcaraz,atp_7,atp_1,ATP,Hard
 2026-11-06,Final,Rolex Paris Masters,Ben Shelton,Tommy Paul,atp_9,atp_24,ATP,Hard
+2026-11-06,Final,Rolex Paris Masters,Casper Ruud,Nuno Borges,atp_13,atp_44,ATP,Hard
 2026-11-06,Final,Rolex Paris Masters,Luca Van Assche,Rinky Hijikata,atp_130,atp_112,ATP,Hard
 2026-11-06,Final,Angola Ladies Open,Justina Mikulskyte,Noma Noha Akugue,wta_247,wta_255,WTA,
 2026-11-06,Final,Angola Ladies Open,Sofya Lansere,Martyna Kubka,wta_420,wta_338,WTA,
@@ -14,19 +14,5 @@ Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
 2026-11-06,Final,Prudential Hong Kong Tennis Open,Sorana Cirstea,Alexandra Shubladze,wta_30,wta_344,WTA,Hard
 2026-11-06,Final,Prudential Hong Kong Tennis Open,Antonia Ruzic,Alexandra Eala,wta_67,wta_45,WTA,Hard
 2026-11-06,Final,Prudential Hong Kong Tennis Open,Aliaksandra Sasnovich,Maria Sakkari,wta_113,wta_33,WTA,Hard
-2026-11-06,Live,Reto Win Tennis Cali Open,Leyre Romero Gormaz,Julia Riera,wta_140,wta_187,WTA,
-2026-11-06,18:40,Reto Win Tennis Cali Open,Alice Tubello,Bianca Andreescu,wta_435,wta_161,WTA,
-2026-11-07,10:00,Bybit Stockholm Open,Mika Brunold,Borna Gojo,atp_460,atp_235,ATP,
-2026-11-07,10:00,Bybit Stockholm Open,Nikoloz Basilashvili,Francesco Passaro,atp_136,atp_161,ATP,
-2026-11-07,11:30,Bybit Stockholm Open,Olle Wallin,Lorenzo Sonego,atp_408,atp_64,ATP,
-2026-11-07,11:30,Bybit Stockholm Open,Damir Dzumhur,Inaki Montes-De La Torre,atp_61,atp_375,ATP,
-2026-11-07,13:00,Bybit Stockholm Open,Karl Friberg,Toby Samuel,atp_976,atp_241,ATP,
-2026-11-07,13:00,Bybit Stockholm Open,Viktor Durasovic,Aleksandr Shevchenko,atp_325,atp_79,ATP,
-2026-11-07,14:30,Bybit Stockholm Open,Adrian Mannarino,Jan Simonsson,atp_48,atp_124,ATP,
-2026-11-07,14:30,Bybit Stockholm Open,Jacob Fearnley,Arthur Nagel,atp_84,atp_411,ATP,
-2026-11-07,13:30,Rolex Paris Masters,Luca Van Assche,Ben Shelton,atp_130,atp_9,ATP,Hard
-2026-11-07,10:00,Angola Ladies Open,Anna Blinkova,Yasmine Kabbaj,wta_65,wta_361,WTA,
-2026-11-07,12:30,Angola Ladies Open,Sofya Lansere,Noma Noha Akugue,wta_420,wta_255,WTA,
-2026-11-07,12:30,Chennai Open,Janice Tjen,Robin Montgomery,wta_47,wta_293,WTA,Hard
-2026-11-07,14:00,Chennai Open,Magda Linette,Anastasia Zakharova,wta_50,wta_103,WTA,Hard
-2026-11-07,08:00,Prudential Hong Kong Tennis Open,Maria Sakkari,Alexandra Eala,wta_33,wta_45,WTA,Hard
+2026-11-06,TBD,Reto Win Tennis Cali Open,Alice Tubello,Bianca Andreescu,wta_435,wta_161,WTA,
+2026-11-06,Final,Reto Win Tennis Cali Open,Leyre Romero Gormaz,Julia Riera,wta_140,wta_187,WTA,
