@@ -1,7 +1,7 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-11-13,Final,Bybit Stockholm Open,Taylor Fritz,Lorenzo Musetti,atp_7,atp_5,ATP,
-2026-11-13,Final,Bybit Stockholm Open,Alejandro Tabilo,Thiago Agustin Tirante,atp_67,atp_92,ATP,
-2026-11-13,Final,DIRECTV Open Presentado por Compesar,Polona Hercog,Bianca Andreescu,wta_314,wta_161,WTA,
-2026-11-13,Final,DIRECTV Open Presentado por Compesar,Laura Samson,Elizabeth Mandlik,wta_212,wta_168,WTA,
-2026-11-13,Final,FAGE WTA Finals Indian Wells,Aryna Sabalenka,Elina Svitolina,wta_1,wta_9,WTA,
-2026-11-13,Final,FAGE WTA Finals Indian Wells,Mirra Andreeva,Diana Shnaider,wta_7,wta_21,WTA,
+2026-11-14,Live,Bybit Stockholm Open,Taylor Fritz,Thiago Agustin Tirante,atp_7,atp_92,ATP,
+2026-11-14,17:00,DIRECTV Open Presentado por Compesar,Bianca Andreescu,Elizabeth Mandlik,wta_161,wta_168,WTA,
+2026-11-14,20:00,FAGE WTA Finals Indian Wells,Jessica Pegula,Mirra Andreeva,wta_5,wta_7,WTA,
+2026-11-14,21:30,FAGE WTA Finals Indian Wells,Linda Noskova,Elina Svitolina,wta_118,wta_9,WTA,
+2026-11-15,13:00,Nitto ATP Finals,Alexander Zverev,Rafael Jodar,atp_4,atp_117,ATP,Hard
+2026-11-15,19:30,Nitto ATP Finals,Ben Shelton,Arthur Fils,atp_9,atp_40,ATP,Hard
