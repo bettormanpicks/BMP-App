@@ -1,8 +1,23 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-11-15,Final,Nitto ATP Finals,Alexander Zverev,Rafael Jodar,atp_4,atp_117,ATP,Hard
-2026-11-15,Final,Nitto ATP Finals,Ben Shelton,Arthur Fils,atp_9,atp_40,ATP,Hard
-2026-11-15,Final,FAGE WTA Finals Indian Wells,Elina Svitolina,Mirra Andreeva,wta_9,wta_7,WTA,
-2026-11-15,Final,LP Open by IND,Zhibek Kulambayeva,Valeriya Strakhova,wta_390,wta_405,WTA,
-2026-11-15,Final,LP Open by IND,Ariana Geerlings,Camila Rodero Contreras,wta_343,wta_9100,WTA,
-2026-11-15,Final,LP Open by IND,Martina Trevisan,Samantha Alvarez,wta_685,wta_9029,WTA,
-2026-11-15,Final,LP Open by IND,Diletta Cherubini,Alexandra Osborne,wta_389,wta_344,WTA,
+2026-11-16,13:00,Nitto ATP Finals,Carlos Alcaraz,Frances Tiafoe,atp_1,atp_28,ATP,Hard
+2026-11-16,19:30,Nitto ATP Finals,Daniil Medvedev,Flavio Cobolli,atp_11,atp_20,ATP,Hard
+2026-11-16,14:00,LP Open by IND,Katrina Scott,Anastasia Zolotareva,wta_282,wta_295,WTA,
+2026-11-16,14:00,LP Open by IND,Rebeka Masarova,Diletta Cherubini,wta_117,wta_389,WTA,
+2026-11-16,15:30,LP Open by IND,Guiomar Maristany Zuleta De Reales,Martina Trevisan,wta_165,wta_685,WTA,
+2026-11-16,15:30,LP Open by IND,Sofia Costoulas,Nuria Brancaccio,wta_142,wta_164,WTA,
+2026-11-16,17:00,LP Open by IND,Victoria Jimenez Kasintseva,Carole Monnet,wta_119,wta_177,WTA,
+2026-11-16,17:00,LP Open by IND,Leyre Romero Gormaz,Ipek Oz,wta_140,wta_523,WTA,
+2026-11-16,21:00,LP Open by IND,Valeriya Strakhova,Anastasia Tikhonova,wta_405,wta_257,WTA,
+2026-11-16,22:00,LP Open by IND,Luisina Giovannini,Ariana Geerlings,wta_240,wta_343,WTA,
+2026-11-17,TBD,Nitto ATP Finals,Daniil Medvedev,Frances Tiafoe,atp_11,atp_28,ATP,Hard
+2026-11-17,TBD,Nitto ATP Finals,Flavio Cobolli,Frances Tiafoe,atp_20,atp_28,ATP,Hard
+2026-11-17,13:00,Nitto ATP Finals,Arthur Fils,Rafael Jodar,atp_40,atp_117,ATP,Hard
+2026-11-17,19:30,Nitto ATP Finals,Alexander Zverev,Ben Shelton,atp_4,atp_9,ATP,Hard
+2026-11-17,TBD,LP Open by IND,Barbara Gatica,Andrea Lazaro Garcia,wta_9100,wta_206,ATP,
+2026-11-17,TBD,LP Open by IND,Maria Lourdes Carle,Veronika Erjavec,wta_155,wta_112,WTA,
+2026-11-17,TBD,LP Open by IND,Lucia Bronzetti,Alicia Herrero Linana,wta_138,wta_308,WTA,
+2026-11-17,TBD,LP Open by IND,Despina Papamichail,Laura Samson,wta_157,wta_212,WTA,
+2026-11-17,TBD,LP Open by IND,Irene Burillo,Darja Semenistaja,wta_249,wta_97,WTA,
+2026-11-17,TBD,LP Open by IND,Nadia Podoroska,Varvara Lepchenko,wta_9006,wta_149,WTA,
+2026-11-17,TBD,LP Open by IND,Fernanda Labrana,Antonia Vergara Rivera,wta_462,wta_432,WTA,
+2026-11-17,TBD,LP Open by IND,Polona Hercog,Miriam Bulgaru,wta_314,wta_208,WTA,
