@@ -1,21 +1,11 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-11-16,Live,Nitto ATP Finals,Daniil Medvedev,Flavio Cobolli,atp_11,atp_20,ATP,Hard
 2026-11-16,Final,Nitto ATP Finals,Carlos Alcaraz,Frances Tiafoe,atp_1,atp_28,ATP,Hard
-2026-11-16,Live,LP Open by IND,Valeriya Strakhova,Anastasia Tikhonova,wta_405,wta_443,WTA,
-2026-11-16,22:00,LP Open by IND,Luisina Giovannini,Ariana Geerlings,wta_240,wta_343,WTA,
+2026-11-16,Final,Nitto ATP Finals,Daniil Medvedev,Flavio Cobolli,atp_11,atp_20,ATP,Hard
 2026-11-16,Final,LP Open by IND,Leyre Romero Gormaz,Ipek Oz,wta_140,wta_523,WTA,
 2026-11-16,Final,LP Open by IND,Guiomar Maristany Zuleta De Reales,Martina Trevisan,wta_165,wta_685,WTA,
 2026-11-16,Final,LP Open by IND,Rebeka Masarova,Diletta Cherubini,wta_117,wta_389,WTA,
+2026-11-16,Final,LP Open by IND,Luisina Giovannini,Ariana Geerlings,wta_240,wta_343,WTA,
+2026-11-16,Final,LP Open by IND,Valeriya Strakhova,Anastasia Tikhonova,wta_405,wta_443,WTA,
 2026-11-16,Final,LP Open by IND,Victoria Jimenez Kasintseva,Carole Monnet,wta_119,wta_177,WTA,
 2026-11-16,Final,LP Open by IND,Sofia Costoulas,Nuria Brancaccio,wta_142,wta_164,WTA,
-2026-11-16,Final,LP Open by IND,Katrina Scott,Anastasia Zolotareva,wta_282,wta_443,WTA,
-2026-11-17,13:00,Nitto ATP Finals,Arthur Fils,Rafael Jodar,atp_40,atp_117,ATP,Hard
-2026-11-17,19:30,Nitto ATP Finals,Alexander Zverev,Ben Shelton,atp_4,atp_9,ATP,Hard
-2026-11-17,14:00,LP Open by IND,Irene Burillo,Darja Semenistaja,wta_249,wta_97,WTA,
-2026-11-17,14:00,LP Open by IND,Nadia Podoroska,Varvara Lepchenko,wta_9006,wta_149,WTA,
-2026-11-17,15:30,LP Open by IND,Polona Hercog,Miriam Bulgaru,wta_314,wta_208,WTA,
-2026-11-17,15:30,LP Open by IND,Lucia Bronzetti,Alicia Herrero Linana,wta_138,wta_308,WTA,
-2026-11-17,17:00,LP Open by IND,Maria Lourdes Carle,Veronika Erjavec,wta_155,wta_112,WTA,
-2026-11-17,20:00,LP Open by IND,Despina Papamichail,Laura Samson,wta_157,wta_212,WTA,
-2026-11-17,20:30,LP Open by IND,Barbara Gatica,Andrea Lazaro Garcia,wta_9100,wta_206,ATP,
-2026-11-17,22:00,LP Open by IND,Fernanda Labrana,Antonia Vergara Rivera,wta_462,wta_432,WTA,
+2026-11-16,Final,LP Open by IND,Katrina Scott,Anastasia Zolotareva,wta_282,wta_295,WTA,
