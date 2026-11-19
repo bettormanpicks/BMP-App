@@ -1,7 +1,10 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-11-18,Final,Nitto ATP Finals,Carlos Alcaraz,Daniil Medvedev,atp_1,atp_11,ATP,Hard
-2026-11-18,Final,Nitto ATP Finals,Flavio Cobolli,Frances Tiafoe,atp_20,atp_28,ATP,Hard
-2026-11-18,Final,LP Open by IND,Leyre Romero Gormaz,Nadia Podoroska,wta_140,wta_9006,WTA,
-2026-11-18,Final,LP Open by IND,Ariana Geerlings,Laura Samson,wta_343,wta_212,WTA,
-2026-11-18,Final,LP Open by IND,Guiomar Maristany Zuleta De Reales,Sofia Costoulas,wta_165,wta_142,WTA,
-2026-11-18,Final,LP Open by IND,Rebeka Masarova,Polona Hercog,wta_117,wta_314,WTA,
+2026-11-19,13:00,Nitto ATP Finals,Ben Shelton,Rafael Jodar,atp_9,atp_117,ATP,Hard
+2026-11-19,19:30,Nitto ATP Finals,Alexander Zverev,Arthur Fils,atp_4,atp_40,ATP,Hard
+2026-11-19,14:30,LP Open by IND,Lucia Bronzetti,Carole Monnet,wta_138,wta_177,WTA,
+2026-11-19,16:00,LP Open by IND,Valeriya Strakhova,Veronika Erjavec,wta_405,wta_112,WTA,
+2026-11-19,18:30,LP Open by IND,Anastasia Zolotareva,Irene Burillo,wta_295,wta_249,WTA,
+2026-11-19,22:00,LP Open by IND,Fernanda Labrana,Andrea Lazaro Garcia,wta_462,wta_206,WTA,
+2026-11-20,13:00,Nitto ATP Finals,Carlos Alcaraz,Flavio Cobolli,atp_1,atp_20,ATP,Hard
+2026-11-20,19:30,Nitto ATP Finals,Daniil Medvedev,Frances Tiafoe,atp_11,atp_28,ATP,Hard
+2026-11-20,TBD,LP Open by IND,Rebeka Masarova,Laura Samson,wta_117,wta_212,WTA,
