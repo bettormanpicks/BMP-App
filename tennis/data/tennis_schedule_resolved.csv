@@ -1,7 +1,26 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-11-19,Final,Nitto ATP Finals,Alexander Zverev,Arthur Fils,atp_4,atp_40,ATP,Hard
-2026-11-19,Final,Nitto ATP Finals,Ben Shelton,Rafael Jodar,atp_9,atp_117,ATP,Hard
-2026-11-19,Final,LP Open by IND,Lucia Bronzetti,Carole Monnet,wta_138,wta_177,WTA,
-2026-11-19,Final,LP Open by IND,Fernanda Labrana,Andrea Lazaro Garcia,wta_462,wta_206,WTA,
-2026-11-19,Final,LP Open by IND,Valeriya Strakhova,Veronika Erjavec,wta_405,wta_112,WTA,
-2026-11-19,Final,LP Open by IND,Anastasia Zolotareva,Irene Burillo,wta_443,wta_249,WTA,
+2026-11-20,12:00,Billie Jean King Cup Play-offs,Dalila Jakupovic,Mischka Goenadi,wta_385,wta_9100,WTA,
+2026-11-20,13:30,Billie Jean King Cup Play-offs,Tamara Zidansek,Lulwa Naswardhani,wta_145,wta_9101,WTA,
+2026-11-20,16:00,Billie Jean King Cup Play-offs,Gina Feistel,Kajsa Rinaldo Persson,wta_650,wta_264,WTA,
+2026-11-20,17:00,Billie Jean King Cup Play-offs,Nauhany Vitoria Leme Da Silva,Bianca Andreescu,wta_9042,wta_161,WTA,
+2026-11-20,17:30,Billie Jean King Cup Play-offs,Martyna Kubka,Caijsa Hennemann,wta_338,wta_377,WTA,
+2026-11-20,18:30,Billie Jean King Cup Play-offs,Laura Pigossi,Kayla Cross,wta_214,wta_197,WTA,
+2026-11-20,03:00,Billie Jean King Cup Play-offs,Mai Hontama,Justina Gonzalez Daniele,wta_220,atp_196,WTA,
+2026-11-20,04:30,Billie Jean King Cup Play-offs,Himeno Sakatsume,Maria Urrutia,wta_135,wta_54,WTA,
+2026-11-20,06:00,Billie Jean King Cup Play-offs,Mananchaya Sawangkaew,Viktorija Golubic,wta_198,wta_88,WTA,
+2026-11-20,07:30,Billie Jean King Cup Play-offs,Lanlana Tararudee,Jil Teichmann,wta_124,wta_175,WTA,
+2026-11-20,13:00,Nitto ATP Finals,Carlos Alcaraz,Flavio Cobolli,atp_1,atp_20,ATP,Hard
+2026-11-20,19:30,Nitto ATP Finals,Daniil Medvedev,Frances Tiafoe,atp_11,atp_28,ATP,Hard
+2026-11-20,15:00,LP Open by IND,Leyre Romero Gormaz,Irene Burillo,wta_140,wta_249,WTA,
+2026-11-20,16:30,LP Open by IND,Lucia Bronzetti,Valeriya Strakhova,wta_138,wta_405,WTA,
+2026-11-20,20:30,LP Open by IND,Guiomar Maristany Zuleta De Reales,Andrea Lazaro Garcia,wta_165,wta_206,WTA,
+2026-11-20,22:00,LP Open by IND,Rebeka Masarova,Laura Samson,wta_117,wta_212,WTA,
+2026-11-21,11:30,Billie Jean King Cup Play-offs,Tamara Zidansek,Mischka Goenadi,wta_145,wta_9102,WTA,
+2026-11-21,13:00,Billie Jean King Cup Play-offs,Dalila Jakupovic,Lulwa Naswardhani,wta_385,wta_9103,WTA,
+2026-11-21,13:30,Billie Jean King Cup Play-offs,Martyna Kubka,Kajsa Rinaldo Persson,wta_338,wta_264,WTA,
+2026-11-21,15:00,Billie Jean King Cup Play-offs,Gina Feistel,Caijsa Hennemann,wta_650,wta_377,WTA,
+2026-11-21,17:30,Billie Jean King Cup Play-offs,Laura Pigossi,Bianca Andreescu,wta_214,wta_161,WTA,
+2026-11-21,19:00,Billie Jean King Cup Play-offs,Nauhany Vitoria Leme Da Silva,Kayla Cross,wta_9042,wta_197,WTA,
+2026-11-21,03:30,Billie Jean King Cup Play-offs,Himeno Sakatsume,Justina Gonzalez Daniele,wta_135,atp_196,WTA,
+2026-11-21,05:00,Billie Jean King Cup Play-offs,Mai Hontama,Maria Urrutia,wta_220,wta_54,WTA,
+2026-11-21,07:30,Billie Jean King Cup Play-offs,Lanlana Tararudee,Viktorija Golubic,wta_124,wta_88,WTA,
