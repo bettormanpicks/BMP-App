@@ -1,17 +1,16 @@
 Date,Time,Tournament,Player 1,Player 2,player_id,opponent_id,Tour,Surface
-2026-11-23,14:00,IEB+ Argentina Open,Martina Trevisan,Ayana Akli,wta_685,wta_248,WTA,Clay
-2026-11-23,14:00,IEB+ Argentina Open,Berta Bonardi,Carole Monnet,wta_636,wta_177,WTA,Clay
-2026-11-23,15:30,IEB+ Argentina Open,Polona Hercog,Ipek Oz,wta_314,wta_523,WTA,Clay
-2026-11-23,15:30,IEB+ Argentina Open,Josefina Estevez,Ariana Geerlings,atp_442,wta_343,ATP,Clay
-2026-11-23,17:00,IEB+ Argentina Open,Nuria Brancaccio,Anastasia Zolotareva,wta_164,wta_295,WTA,Clay
-2026-11-23,17:00,IEB+ Argentina Open,Varvara Lepchenko,Abigail Rencheli,wta_149,wta_900,WTA,Clay
-2026-11-23,19:00,IEB+ Argentina Open,Despina Papamichail,Julia Riera,wta_157,wta_187,WTA,Clay
-2026-11-24,TBD,IEB+ Argentina Open,Guiomar Maristany Zuleta De Reales,Luna Maria Cinalli,wta_165,wta_9100,WTA,Clay
-2026-11-24,TBD,IEB+ Argentina Open,Sol Ailin Larraya Guidi,Maria Lourdes Carle,wta_9101,wta_155,ATP,Clay
-2026-11-24,TBD,IEB+ Argentina Open,Nadia Podoroska,Leyre Romero Gormaz,wta_9006,wta_140,WTA,Clay
-2026-11-24,TBD,IEB+ Argentina Open,Rebeka Masarova,Sofia Costoulas,wta_117,wta_142,WTA,Clay
-2026-11-24,TBD,IEB+ Argentina Open,Lucia Bronzetti,Alicia Herrero Linana,wta_138,wta_308,WTA,Clay
-2026-11-24,TBD,IEB+ Argentina Open,Victoria Bosio,Laura Samson,wta_337,wta_212,WTA,Clay
-2026-11-24,TBD,IEB+ Argentina Open,Zhibek Kulambayeva,Veronika Erjavec,wta_390,wta_112,WTA,Clay
-2026-11-24,TBD,IEB+ Argentina Open,Lourdes Ayala,Irene Burillo,wta_9102,wta_249,ATP,Clay
-2026-11-24,TBD,IEB+ Argentina Open,Solana Sierra,Victoria Jimenez Kasintseva,wta_64,wta_119,WTA,Clay
+2026-11-23,Final,IEB+ Argentina Open,Despina Papamichail,Julia Riera,wta_157,wta_187,WTA,Clay
+2026-11-23,Final,IEB+ Argentina Open,Varvara Lepchenko,Abigail Rencheli,wta_149,wta_900,WTA,Clay
+2026-11-23,Final,IEB+ Argentina Open,Nuria Brancaccio,Anastasia Zolotareva,wta_164,wta_295,WTA,Clay
+2026-11-23,Final,IEB+ Argentina Open,Alexandra Osborne,Ipek Oz,wta_344,wta_523,WTA,Clay
+2026-11-23,Final,IEB+ Argentina Open,Josefina Estevez,Ariana Geerlings,atp_442,wta_343,ATP,Clay
+2026-11-23,Final,IEB+ Argentina Open,Berta Bonardi,Carole Monnet,wta_636,wta_177,WTA,Clay
+2026-11-23,Final,IEB+ Argentina Open,Martina Trevisan,Ayana Akli,wta_685,wta_248,WTA,Clay
+2026-11-24,14:00,IEB+ Argentina Open,Victoria Bosio,Laura Samson,wta_337,wta_212,WTA,Clay
+2026-11-24,14:00,IEB+ Argentina Open,Zhibek Kulambayeva,Veronika Erjavec,wta_390,wta_112,WTA,Clay
+2026-11-24,15:30,IEB+ Argentina Open,Guiomar Maristany Zuleta De Reales,Luna Maria Cinalli,wta_165,wta_9100,WTA,Clay
+2026-11-24,15:30,IEB+ Argentina Open,Lucia Bronzetti,Alicia Herrero Linana,wta_138,wta_308,WTA,Clay
+2026-11-24,18:00,IEB+ Argentina Open,Lourdes Ayala,Irene Burillo,wta_9101,wta_249,ATP,Clay
+2026-11-24,18:00,IEB+ Argentina Open,Solana Sierra,Victoria Jimenez Kasintseva,wta_64,wta_119,WTA,Clay
+2026-11-24,19:30,IEB+ Argentina Open,Nadia Podoroska,Leyre Romero Gormaz,wta_9006,wta_140,WTA,Clay
+2026-11-24,19:30,IEB+ Argentina Open,Polona Hercog,Sofia Costoulas,wta_314,wta_142,WTA,Clay
