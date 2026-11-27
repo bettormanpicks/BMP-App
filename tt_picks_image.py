@@ -25,6 +25,11 @@ INPUT
     day most of the matches fall on (a tie goes to the later day). A match on
     a different day gets that day noted next to its league.
 
+COMBINING FILTER RUNS (e.g. a P1 filter and a P2 filter in one image)
+    png = render_sections_png([("P2", p2_df, p2_stats), ("P1", p1_df, p1_stats)])
+    In Streamlit, st_add_section / st_clear_sections (bottom of file) keep the
+    sections between runs for you.
+
 WHICH STATS ARE SHOWN
     stats = a list of column names, shown left to right, one box each.
     When an "X%" column and its "X EF" column are both chosen they share one
@@ -95,6 +100,7 @@ BG_GLOW = (0, 255, 40)         # soft glow behind the title and in the lower cor
 BASE_W, BASE_H = 1600, 900
 HEADER_H, FOOTER_H = 268, 62
 ROW_MAX, ROW_MIN, ROW_GAP = 104, 84, 10
+LABEL_H, SECTION_GAP = 50, 14  # heading band above a labelled section, space between sections
 SS = 2  # supersampling factor for smooth edges
 
 FONT_DIR = Path(__file__).resolve().parent / "fonts"
@@ -488,20 +494,51 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
     scale       1 = 1600x900 (ideal for X); 2 = 3200x1800
     stats       list of stat column names to show (see top of file); None = DEFAULT_STATS
     """
-    rows = _prepare(matches)
+    return render_sections([(None, matches, stats)], picks_date, out_path, scale)
+
+
+def render_sections(sections, picks_date=None, out_path=None, scale: float = 1):
+    """Several filter results in one graphic, each under its own label.
+
+    sections    list of (label, matches, stats), drawn top to bottom,
+                e.g. [("P2", p2_df, p2_stats), ("P1", p1_df, p1_stats)].
+                A label of None or "" draws that section without a heading.
+    """
+    secs = []
+    for label, matches, stats in sections:
+        rows = _prepare(matches)
+        specs = _box_specs(stats, rows) if stats else []
+        if not specs:
+            specs = _box_specs(DEFAULT_STATS, rows)
+        secs.append((str(label).strip() if label else "", rows, specs))
+    all_rows = [m for _lab, rows, _sp in secs for m in rows]
     if picks_date is None:
-        picks_date = _date_from_rows(rows)
-    n = len(rows)
+        picks_date = _date_from_rows(all_rows)
+
+    n = len(all_rows)
     W = BASE_W
+    fixed = sum((LABEL_H if lab else 0) + ROW_GAP * (len(rows) - 1) for lab, rows, _sp in secs)
+    fixed += SECTION_GAP * (len(secs) - 1)
     avail = BASE_H - HEADER_H - FOOTER_H
     cap = ROW_MAX if n >= 5 else ROW_MAX * 1.15  # short slates get slightly taller rows
-    row_h = min(cap, (avail - ROW_GAP * (n - 1)) / n)
+    row_h = min(cap, (avail - fixed) / n)
     if row_h < ROW_MIN:  # too many rows for 16:9 - grow the canvas instead
         row_h = ROW_MIN
-        avail = n * row_h + ROW_GAP * (n - 1)
+        avail = n * row_h + fixed
     H = int(HEADER_H + avail + FOOTER_H)
-    block = n * row_h + ROW_GAP * (n - 1)
-    rows_top = HEADER_H + (avail - block) / 2
+    y = HEADER_H + (avail - (n * row_h + fixed)) / 2
+
+    headings, placed = [], []  # placed: (top y, match, section index, row index in section)
+    for si, (lab, rows, _sp) in enumerate(secs):
+        if si:
+            y += SECTION_GAP
+        if lab:
+            headings.append((y, lab))
+            y += LABEL_H
+        for ri, m in enumerate(rows):
+            placed.append((y, m, si, ri))
+            y += row_h + ROW_GAP
+        y -= ROW_GAP
 
     k = int(round(SS * scale))
     P = lambda v: int(round(v * k))  # noqa: E731  base units -> pixels
@@ -577,8 +614,7 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
     X0, X1 = 32, W - 32
     glow = _layer(size)
     gd = ImageDraw.Draw(glow)
-    for i in range(n):
-        y0 = rows_top + i * (row_h + ROW_GAP)
+    for y0, _m, _si, _ri in placed:
         gd.rounded_rectangle((P(X0), P(y0), P(X1), P(y0 + row_h)), radius=P(16), outline=ROW_LINE + (150,), width=P(5))
     img.alpha_composite(glow.filter(ImageFilter.GaussianBlur(P(7))))
 
@@ -588,28 +624,41 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
     f_league = _font(F_SEMI, 17.5 * s * k)
     f_vs = _font(F_XBOLD, 14 * s * k)
 
-    specs = _box_specs(stats, rows) if stats else []
-    if not specs:
-        specs = _box_specs(DEFAULT_STATS, rows)
-    nb = len(specs)
+    # section headings: label plus a short fading rule
+    f_head = _font(F_TITLE, 34 * k)
+    for hy, lab in headings:
+        ty = P(hy + LABEL_H / 2 + 1)
+        d.text((P(X0 + 6), ty), lab, font=f_head, fill=WHITE, anchor="lm")
+        rx0 = P(X0 + 6) + f_head.getlength(lab) + P(16)
+        rl = P(360)
+        for i in range(rl):
+            al = int(220 * (1 - i / rl))
+            d.line([(rx0 + i, ty - P(1)), (rx0 + i, ty + P(1))], fill=ACCENT + (al,))
+
+    # boxes are laid out per section, since each section can show different stats
     area_x0, area_x1, box_gap = 660, X1 - 14, 10
-    box_w = min(210, (area_x1 - area_x0 - box_gap * (nb - 1)) / nb) if nb else 0
-    box_x0 = area_x0 + (area_x1 - area_x0 - (nb * box_w + box_gap * (nb - 1))) / 2
-    texts = [[_box_text(label, m, col, ef) for (label, col, ef) in specs] for m in rows]
+    geo = []
+    for _lab, rows, specs in secs:
+        nb = len(specs)
+        box_w = min(210, (area_x1 - area_x0 - box_gap * (nb - 1)) / nb) if nb else 0
+        box_x0 = area_x0 + (area_x1 - area_x0 - (nb * box_w + box_gap * (nb - 1))) / 2
+        texts = [[_box_text(label, m, col, ef) for (label, col, ef) in specs] for m in rows]
+        label_fonts = [_fit(F_BOLD, label, 13.5 * s * k, P(box_w - 12)) for (label, _c, _e) in specs]
+        geo.append((specs, box_w, box_x0, texts, label_fonts))
 
     # one value size for the whole graphic, shrunk only if a box is too narrow
     vs = 1.0
-    for row_texts in texts:
-        for (label, col, ef), (main, _sub) in zip(specs, row_texts):
-            base = _font(F_XBOLD, (30 if ef else 35) * s * k)
-            vs = min(vs, P(box_w - 16) / max(1.0, base.getlength(main)))
+    for specs, box_w, _bx, texts, _lf in geo:
+        for row_texts in texts:
+            for (label, col, ef), (main, _sub) in zip(specs, row_texts):
+                base = _font(F_XBOLD, (30 if ef else 35) * s * k)
+                vs = min(vs, P(box_w - 16) / max(1.0, base.getlength(main)))
     f_val = _font(F_XBOLD, 30 * s * k * vs)
     f_big = _font(F_XBOLD, 35 * s * k * vs)
     f_ef = _font(F_SEMI, 14 * s * k * max(vs, 0.75))
-    label_fonts = [_fit(F_BOLD, label, 13.5 * s * k, P(box_w - 12)) for (label, _c, _e) in specs]
 
-    for i, m in enumerate(rows):
-        y0 = rows_top + i * (row_h + ROW_GAP)
+    for y0, m, si, ri in placed:
+        specs, box_w, box_x0, texts, label_fonts = geo[si]
         mid = y0 + row_h / 2
         d.rounded_rectangle((P(X0), P(y0), P(X1), P(y0 + row_h)), radius=P(16), fill=PANEL_FILL,
                             outline=ROW_LINE, width=P(2))
@@ -638,7 +687,7 @@ def render_picks(matches, picks_date=None, out_path=None, scale: float = 1, stat
 
         by0, by1 = y0 + 10 * s, y0 + row_h - 10 * s
         for j, (label, col, ef) in enumerate(specs):
-            main, sub = texts[i][j]
+            main, sub = texts[ri][j]
             bx0 = box_x0 + j * (box_w + box_gap)
             bcx = P(bx0 + box_w / 2)
             line_c, label_c = (ACCENT, ACCENT_LT) if j % 2 == 0 else (ACCENT2, ACCENT2_LT)
@@ -686,6 +735,37 @@ def render_picks_png(matches, picks_date=None, scale: float = 1, stats=None) -> 
     buf = io.BytesIO()
     render_picks(matches, picks_date, scale=scale, stats=stats).save(buf, "PNG", optimize=True)
     return buf.getvalue()
+
+
+def render_sections_png(sections, picks_date=None, scale: float = 1) -> bytes:
+    """Same as render_sections but returns PNG bytes."""
+    buf = io.BytesIO()
+    render_sections(sections, picks_date, scale=scale).save(buf, "PNG", optimize=True)
+    return buf.getvalue()
+
+
+def guess_section_label(stats) -> str:
+    """ "P1" or "P2" depending on which player most of the chosen stats are about."""
+    p1 = sum(str(c).strip().upper().startswith("P1") for c in (stats or []))
+    p2 = sum(str(c).strip().upper().startswith("P2") for c in (stats or []))
+    return "P1" if p1 > p2 else "P2" if p2 > p1 else "PICKS"
+
+
+# ───────────── Streamlit helpers for the combined graphic ─────────────
+# Use as on_click callbacks; the combined PNG is built once per change and kept
+# in st.session_state["tt_sections_png"], so page reruns cost nothing.
+def st_add_section(label, df, stats, key="tt_sections"):
+    import streamlit as st
+    sections = st.session_state.setdefault(key, {})
+    sections[label] = (df.copy(), list(stats) if stats else None)  # same label replaces, keeps its place
+    st.session_state[key + "_png"] = render_sections_png(
+        [(lab, sdf, sstats) for lab, (sdf, sstats) in sections.items()])
+
+
+def st_clear_sections(key="tt_sections"):
+    import streamlit as st
+    st.session_state.pop(key, None)
+    st.session_state.pop(key + "_png", None)
 
 
 if __name__ == "__main__":

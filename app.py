@@ -908,7 +908,27 @@ with streamlit_analytics.track():
             load_tt_all_leagues,
             compute_h2h_stats
         )
-        from tt_picks_image import render_picks_png
+        from tt_picks_image import (
+            render_picks_png,
+            guess_section_label,
+            st_add_section,
+            st_clear_sections,
+        )
+
+        # --- Combined X graphic: sections added from the results below ---
+        if st.session_state.get("tt_sections_png"):
+            labels = " + ".join(st.session_state["tt_sections"])
+            with st.expander(f"Combined X graphic ({labels})", expanded=True):
+                st.image(st.session_state["tt_sections_png"])
+                col_dl, col_clear = st.columns(2)
+                col_dl.download_button(
+                    "Download combined graphic",
+                    st.session_state["tt_sections_png"],
+                    "tt_picks_combined.png",
+                    "image/png",
+                    on_click="ignore"
+                )
+                col_clear.button("Clear combined graphic", on_click=st_clear_sections)
 
         # --- League selector ---
         st.sidebar.markdown("**Select Leagues**")
@@ -1353,11 +1373,17 @@ with streamlit_analytics.track():
                 png = render_picks_png(picks_df, stats=selected_stats or None)
                 st.image(png)
                 st.download_button(
-                    "Download X Graphic",
+                    "Download X graphic",
                     png,
                     "tt_picks.png",
                     "image/png",
                     on_click="ignore"
+                )
+                section = guess_section_label(selected_stats)
+                st.button(
+                    f"Add to combined graphic as {section}",
+                    on_click=st_add_section,
+                    args=(section, picks_df, selected_stats)
                 )
             else:
                 st.caption("Filter down to 10 or fewer matches to create the X graphic.")
