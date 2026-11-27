@@ -55,6 +55,7 @@ TITLE_ACCENT = "PICKS"  # last word of line 2 (can be colored separately below)
 FOOTER_LEFT = "X.COM/BETTORMANPICKS"
 FOOTER_RIGHT = "BET RESPONSIBLY"
 EF_SUFFIX = "EF"
+SECTION_LABEL_BOTH = "STANDARD"  # combined-graphic heading when stats cover both players
 
 # Stats shown when none are chosen
 DEFAULT_STATS = ["NS%", "1ALL%", "P1 BB%", "P1 BB EF", "P2 BB%", "P2 BB EF",
@@ -745,10 +746,11 @@ def render_sections_png(sections, picks_date=None, scale: float = 1) -> bytes:
 
 
 def guess_section_label(stats) -> str:
-    """ "P1" or "P2" depending on which player most of the chosen stats are about."""
+    """ "P1" or "P2" when most of the chosen stats are about one player,
+    otherwise SECTION_LABEL_BOTH (stats for both players, e.g. Standard plays)."""
     p1 = sum(str(c).strip().upper().startswith("P1") for c in (stats or []))
     p2 = sum(str(c).strip().upper().startswith("P2") for c in (stats or []))
-    return "P1" if p1 > p2 else "P2" if p2 > p1 else "PICKS"
+    return "P1" if p1 > p2 else "P2" if p2 > p1 else SECTION_LABEL_BOTH
 
 
 # ───────────── Streamlit helpers for the combined graphic ─────────────
