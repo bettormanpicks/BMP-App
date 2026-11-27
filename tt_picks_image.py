@@ -55,6 +55,7 @@ TITLE_ACCENT = "PICKS"  # last word of line 2 (can be colored separately below)
 FOOTER_LEFT = "X.COM/BETTORMANPICKS"
 FOOTER_RIGHT = "BET RESPONSIBLY"
 EF_SUFFIX = "EF"
+TIME_ZONE_NOTE = "ALL TIMES CT"  # shown in the date banner; set to "" to hide
 SECTION_LABEL_BOTH = "STANDARD"  # combined-graphic heading when stats cover both players
 
 # Stats shown when none are chosen
@@ -593,14 +594,22 @@ def render_sections(sections, picks_date=None, out_path=None, scale: float = 1):
     dtxt = _date_text(picks_date)
     banner_day = _as_date(picks_date)
     df = _font(F_ITALIC, 27 * k)
-    pw, ph, py = df.getlength(dtxt) + P(84), P(44), P(228)
+    f_tz = _font(F_XBOLD, 16 * k)
+    tz_gap = P(34)  # room for the dot between date and note
+    tz_w = (tz_gap + _tracked_width(TIME_ZONE_NOTE, f_tz, P(1.6))) if TIME_ZONE_NOTE else 0
+    pw, ph, py = df.getlength(dtxt) + tz_w + P(84), P(44), P(228)
     px0, px1 = cx - pw / 2, cx + pw / 2
     cut = P(16)
     pill = [(px0 + cut, py - ph / 2), (px1 - cut, py - ph / 2), (px1, py), (px1 - cut, py + ph / 2),
             (px0 + cut, py + ph / 2), (px0, py)]
     d.polygon(pill, fill=PILL_FILL)
     d.line(pill + [pill[0], pill[1]], fill=ACCENT, width=P(2), joint="curve")
-    d.text((cx, py), dtxt, font=df, fill=WHITE, anchor="mm")
+    tx = cx - (df.getlength(dtxt) + tz_w) / 2
+    d.text((tx, py), dtxt, font=df, fill=WHITE, anchor="lm")
+    if TIME_ZONE_NOTE:
+        dot_cx, dot_r = tx + df.getlength(dtxt) + tz_gap / 2, P(3.5)
+        d.ellipse((dot_cx - dot_r, py - dot_r, dot_cx + dot_r, py + dot_r), fill=ACCENT_HI)
+        _draw_tracked(d, tx + df.getlength(dtxt) + tz_gap, py + P(1), TIME_ZONE_NOTE, f_tz, ACCENT_LT, P(1.6))
     line_len = P(250)
     fade = _layer(size)
     fd = ImageDraw.Draw(fade)
